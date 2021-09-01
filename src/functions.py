@@ -1,4 +1,5 @@
 #!/bin/python
+'''Functions to be used by this project'''
 
 import os
 

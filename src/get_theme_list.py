@@ -1,4 +1,5 @@
 #!/bin/python
+'''Get list of installed GDM themes'''
 
 import os, glob
 
