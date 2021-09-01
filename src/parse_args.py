@@ -1,5 +1,5 @@
 #!/bin/python
-import argparse
+import sys, argparse
 from get_theme_list import ThemeList
 import functions
 
@@ -33,7 +33,7 @@ parser_set_arggroup.add_argument("theme", nargs='?', help='name of GDM theme', m
 parser_set.add_argument('background', nargs='?', help='background image/color')
 
 # Arguments to 'backup' subcommand
-subparsers_backup = parser_backup.add_subparsers()
+subparsers_backup = parser_backup.add_subparsers(required=True)
 desc='update backup of default theme'
 parser_backup_update = subparsers_backup.add_parser(name='update', aliases=['u'], help=desc, description=desc)
 desc='restore default theme from backup'
@@ -54,4 +54,11 @@ parser_manual.set_defaults(func=functions.show_manual)
 parser_examples.set_defaults(func=functions.show_examples)
 
 # Finally, parse arguments
-args = parser.parse_args()
+try:
+    args = parser.parse_args()
+# When no argument is given to the backup subcommand, ArgumentParser
+# raises TypeError for some reason instead of handling it gracefully.
+# Following code is for that situation 
+except TypeError:
+    parser_backup.print_usage(file=sys.stderr)
+    parser.exit(status=2, message=parser.prog+': error: one of the arguments u/update r/restore is required\n')

@@ -1,5 +1,5 @@
 #!/bin/python
 
 from parse_args import args
-
-print(args)
+args.func(args)
+print('\n'+str(args))
