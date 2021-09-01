@@ -1,11 +1,6 @@
 #!/bin/python
-import os, glob, argparse
-
-ThemeList=['default']
-for dir in sorted(glob.glob('/usr/share/themes/*'), key=str.casefold):
-    if os.path.isfile(dir + "/gnome-shell/gnome-shell.css"):
-        ThemeList.append(os.path.basename(dir))
-#print(*ThemeList, sep='\n')
+import argparse
+from get_theme_list import ThemeList
 
 parser = argparse.ArgumentParser(description='set GDM theme and background'
                                 , epilog="run '%(prog)s subcommand --help' for help about a specific subcommand"
@@ -45,6 +40,4 @@ parser_extract = subparsers.add_parser(name='extract', aliases=['x'], help=desc,
 parser_extract.add_argument('dir', nargs='?', help='extract to this directory')
 parser_extract.add_argument('theme', nargs='?', metavar='theme', help='theme to extract (possible values: default,distro-default)', choices=['default', 'distro-default'])
 
-del desc
 args = parser.parse_args()
-print(args)
