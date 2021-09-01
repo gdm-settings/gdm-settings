@@ -20,7 +20,7 @@ parser_set.add_argument('background', nargs='?', help='background image/color')
 
 desc='list installed themes'
 parser_list = subparsers.add_parser(name='list', aliases=['l'], help=desc, description=desc)
-desc='list names of acceptable colors'
+desc='list acceptable background color names'
 parser_list_colors = subparsers.add_parser(name='list-colors', aliases=['lc'], help=desc, description=desc)
 desc='show manual page'
 parser_manual = subparsers.add_parser(name='manual', aliases=['m'], help=desc, description=desc)
