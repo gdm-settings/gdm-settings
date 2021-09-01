@@ -7,7 +7,6 @@ parser = argparse.ArgumentParser(description='set GDM theme and background'
                                 , epilog="run '%(prog)s subcommand --help' for help about a specific subcommand"
                                 , usage='%(prog)s [-h] subcommand {options}'
                                 )
-
 # SubParsers
 subparsers = parser.add_subparsers(title='subcommands', metavar=None, prog=parser.prog)
 desc='set theme and/or background'
@@ -56,6 +55,7 @@ parser_examples.set_defaults(func=functions.show_examples)
 # Finally, parse arguments
 try:
     args = parser.parse_args()
+    setattr(args, 'prog', parser.prog)
 # When no argument is given to the backup subcommand, ArgumentParser
 # raises TypeError for some reason instead of handling it gracefully.
 # Following code is for that situation 
