@@ -1,13 +1,27 @@
 #!/bin/python
 '''Functions to be used by this project'''
 
-import os
+import os, magic, re
 
 from get_theme_list import ThemeList
 import variables
 
 def set_background(background):
-    print('background: ' + background)
+    if background == 'none':
+        print('remove background')
+    elif background in variables.AcceptableColors:
+        print('background color name')
+    elif re.fullmatch('^#(([0-9a-fA-F]){3}){1,2}$', background):
+        print('background color code')
+    else:
+        if os.path.exists(background):
+            if 'image' == magic.detect_from_filename(background).mime_type.split('/')[0]:
+                print('background image')
+            else:
+                print("'"+background+"'", 'is not an image')
+        else:
+            print('file', "'"+background+"'", 'does not exist')
+
 def set_theme(args):
     if args.re_apply:
         print('re-apply')
