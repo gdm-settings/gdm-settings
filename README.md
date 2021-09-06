@@ -6,6 +6,6 @@ It is supposed to be a alternative written in Python to [gdm-tools](https://gith
 
 **Additionally**, it is supposed to have a Graphical interface as well
 
-# Note!
+## Note
 
-## This is not complete enough yet. Please, don't try to use it.
+### This is not complete enough yet. Please, don't try to use it
