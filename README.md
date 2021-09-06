@@ -4,7 +4,7 @@ An uncomplete app to change/manage settings, theme and background of Gnome's Dis
 
 It is supposed to be a alternative written in Python to [gdm-tools](https://github.com/realmazharhussain/gdm-tools.git) written in bash.
 
-**Additionally**, it is supposed to have a Graphical interface as well
+**Additionally**, it is supposed to have a Graphical interface as well.
 
 ## Note
 
