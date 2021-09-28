@@ -1,12 +1,14 @@
 #!/bin/python
 import sys, argparse
 from get_theme_list import ThemeList
-import functions
+import functions, variables
 
 parser = argparse.ArgumentParser(description='set GDM theme and background'
                                 , epilog="run '%(prog)s subcommand --help' for help about a specific subcommand"
                                 , usage='%(prog)s [-h] subcommand {options}'
                                 )
+# AskPass Option
+parser.add_argument('-a','--askpass', default='sudo', help='use a different program for elevated privilages')
 # SubParsers
 subparsers = parser.add_subparsers(title='subcommands', metavar=None, prog=parser.prog)
 desc='set theme and/or background'
