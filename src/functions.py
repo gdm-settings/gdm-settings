@@ -2,7 +2,6 @@
 '''Functions to be used by this project'''
 
 import os, magic, re, shutil
-from posixpath import join, sep
 
 from get_theme_list import ThemeList
 import variables
