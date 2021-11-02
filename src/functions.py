@@ -9,9 +9,9 @@ import variables
 def listdir_recursive(dir:str):
     files=[]
     for file in os.listdir(dir):
-        if os.path.isdir(dir + '/' + file):
-            for subdir_file in listdir_recursive(dir + '/' + file):
-                files += [file + '/' + subdir_file]
+        if os.path.isdir(os.path.join(dir, file)):
+            for subdir_file in listdir_recursive(os.path.join(dir, file)):
+                files += [os.path.join(file, subdir_file)]
         else:
             files += [file]
     return files
