@@ -30,7 +30,7 @@ def compile_theme(shellDir:str):
     GresourceXmlWrite.writelines(['<?xml version="1.0" encoding="UTF-8"?>',
                             '<gresources>',
                             ' <gresource prefix="/org/gnome/shell/theme">'])
-    for file in listdir_recursive(shellDir):
+    for file in listdir_recursive(variables.TempShellDir):
         GresourceXmlWrite.write('  <file>' + file + '</file>')
     GresourceXmlWrite.writelines([' </gresource>',
                             '</gresources>'])
