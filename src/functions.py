@@ -16,14 +16,12 @@ def listdir_recursive(dir:str):
             files += [file]
     return files
 
-
 def compile_theme(shellDir:str):
     # Copy gnome-shell dir of theme to temporary directory
     shutil.copytree(shellDir, variables.TempShellDir)
-    # Inject custom-theme identity (doesn't work yet)
-    CutomIdentity = open(os.path.join(variables.TempShellDir, variables.CustomThemeIdentity), 'w')
-    CutomIdentity.write('yes')
-    CutomIdentity.close()
+    # Inject custom-theme identity
+    open(os.path.join(variables.TempShellDir, variables.CustomThemeIdentity), 'w').close()
+
     # Open /tmp/gdm-settings/gnome-shell/gnome-shell-theme.gresource.xml for writing
     GresourceXml = os.path.join(variables.TempShellDir, 'gnome-shell-theme.gresource.xml')
     GresourceXmlWrite = open(GresourceXml, 'w')
