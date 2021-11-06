@@ -20,13 +20,13 @@ Nothing
 
 - ### Apply Themes
 
-  The app can apply themes to GDM. But, only third-party themes can be applied and the default GDM theme gets replaced by the theme you apply. As a result, the default theme is gone after you apply a theme using this app.
+  The app can apply themes to GDM. But, only third-party themes can be applied and the default GDM theme gets replaced by the theme you apply. As a result, the default theme is gone after you apply a third-party theme.
 
   #### Solutions:
 
   - Re-install 'gnome-shell-common' package (or 'gnome-shell' package if 'gnome-shell-common' is not available) to restore the default theme.
   - Use '[gdm-tools](https://github.com/realmazharhussain/gdm-tools.git)' to create and restore backup of the default theme
-  - Manually backup `/usr/share/gnome-shell/gnome-shell-theme.gresource` before applying a theme
+  - Manually backup the theme file `/usr/share/gnome-shell/gnome-shell-theme.gresource` before applying a theme
 
 ## How to Install?
 
