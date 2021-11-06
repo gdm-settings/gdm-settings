@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> <interface>
+  <requires lib="gtk+" version="4.4"/>
+  <object id="dialog_error" class="GtkMessageDialog">
+    <property name="text">Error!</property>
+    <property name="secondary-text">Please, choose a theme first.</property>
+    <property name="buttons">close</property>
+    <property name="transient-for">window_main</property>
+  </object>
+</interface>
