@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?> <interface>
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
   <requires lib="gtk+" version="4.4"/>
   <object id="dialog_error" class="GtkMessageDialog">
     <property name="text">Error!</property>
