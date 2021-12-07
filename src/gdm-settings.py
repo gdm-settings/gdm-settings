@@ -65,7 +65,6 @@ class MyApplication(Gtk.Application):
         try:
             set_theme(args)
         except TypeError:
-            self.builder.add_from_file(os.path.join(script_dir, "error-dialog.ui"))
             dialog = self.builder.get_object("dialog_error")
             def destroy_dialog(self, *args, **kwargs):
                 dialog.destroy()
