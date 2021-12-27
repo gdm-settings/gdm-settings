@@ -59,9 +59,9 @@ class MyApplication(Gtk.Application):
         
     def call_set_theme(self, widget=None):
         selected_theme = self.combobox.get_active_text()
-        try:
+        if selected_theme:
             set_theme(theme=selected_theme, askpass="pkexec")
-        except TypeError:
+        else:
             self.dialog_error.present()
 
 if __name__ == '__main__':
