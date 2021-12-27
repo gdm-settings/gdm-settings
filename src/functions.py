@@ -1,10 +1,16 @@
 #!/bin/python
 '''Functions to be used by this project'''
 
-import os, magic, re, shutil
-
-from get_theme_list import ThemeList
+import os, glob, magic, re, shutil
 import variables
+
+
+def get_theme_list():
+    List=['default']
+    for dir in sorted(glob.glob('/usr/share/themes/*'), key=str.casefold):
+        if os.path.isfile(dir + "/gnome-shell/gnome-shell.css"):
+            List.append(os.path.basename(dir))
+    return List
 
 def listdir_recursive(dir:str):
     files=[]
@@ -42,7 +48,7 @@ def compile_theme(shellDir:str):
     shutil.rmtree(variables.TempShellDir)
     return  os.path.join(variables.TempDir,'gnome-shell-theme.gresource')
 
-def set_background(background):
+def set_background(background:str):
     if background == 'none':
         print('remove background')
     elif background in variables.AcceptableColors:
@@ -51,39 +57,32 @@ def set_background(background):
         print('background color code')
     else:
         if os.path.exists(background):
-            if 'image' == magic.detect_from_filename(background).mime_type.split('/')[0]:
+            if magic.detect_from_filename(background).mime_type.split('/')[0] == 'image':
                 print('background image')
             else:
                 print(f"'{background}' is not an image")
         else:
             print(f"file '{background}' does not exist")
 
-def set_theme(args):
-    if args.re_apply:
-        print('re-apply')
-    elif args.opt_background:
-        set_background(args.opt_background)
-    else:
-        if not os.path.exists(variables.TempDir):
-            os.mkdir(variables.TempDir)
-        if args.background:
-            set_background(args.background)
-        print('theme: ' + args.theme)
-        compiled_file = compile_theme(f'/usr/share/themes/{args.theme}/gnome-shell')
-        os.system(f'{args.askpass} mv {compiled_file} {variables.GdmGresourceFile}')
-        shutil.rmtree(variables.TempDir)
+def set_theme(theme:str, askpass:str="sudo"):
+    if not os.path.exists(variables.TempDir):
+        os.mkdir(variables.TempDir)
+    print('theme: ' + theme)
+    compiled_file = compile_theme(f'/usr/share/themes/{theme}/gnome-shell')
+    os.system(f'{askpass} mv {compiled_file} {variables.GdmGresourceFile}')
+    shutil.rmtree(variables.TempDir)
     
-def list_themes(args):
-    print(*ThemeList, sep='\n')
-def list_colors(args):
+def print_theme_list():
+    print(*get_theme_list(), sep='\n')
+def print_color_list():
     print(*variables.AcceptableColors, sep='\n')
-def backup_update(args):
+def backup_update():
     print('update backup')
-def backup_restore(args):
+def backup_restore():
     print('restore backup')
-def extract_default_theme(args):
+def extract_default_theme():
     print('extract default theme')
-def show_manual(args):
-    os.system('man ' + args.prog)
-def show_examples(args):
+def show_manual(progName:str):
+    os.system('man ' + progName)
+def show_examples(progName:str):
     print('show examples')

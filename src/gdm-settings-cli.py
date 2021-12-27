@@ -1,8 +1,38 @@
 #!/bin/python
-import sys, argparse
-from get_theme_list import ThemeList
+import os, sys, argparse
 import functions, variables
 
+ThemeList=functions.get_theme_list()
+
+# Fuctions for ArgumentParser
+def set_theme(args):
+    if args.re_apply:
+        print('re-apply')
+    elif args.opt_background:
+        functions.set_background(args.opt_background)
+    else:
+        if not os.path.exists(variables.TempDir):
+            os.mkdir(variables.TempDir)
+        if args.background:
+            functions.set_background(args.background)
+        functions.set_theme(args.theme)
+    
+def list_themes(args):
+    functions.print_theme_list()
+def list_colors(args):
+    functions.print_color_list()
+def backup_update(args):
+    functions.backup_update()
+def backup_restore(args):
+    functions.backup_restore()
+def extract_default_theme(args):
+    functions.extract_default_theme()
+def show_manual(args):
+    functions.show_manual(args.prog)
+def show_examples(args):
+    functions.show_examples(args.prog)
+
+# Argument Parser Definition
 parser = argparse.ArgumentParser(description='set GDM theme and background'
                                 , epilog="run '%(prog)s subcommand --help' for help about a specific subcommand"
                                 , usage='%(prog)s [-h] subcommand {options}'
@@ -45,19 +75,22 @@ parser_extract.add_argument('dir', nargs='?', help='extract to this directory')
 parser_extract.add_argument('theme', nargs='?', metavar='theme', help='theme to extract (possible values: default,distro-default)', choices=['default', 'distro-default'])
 
 # Set Default Functions
-parser_set.set_defaults(func=functions.set_theme)
-parser_list.set_defaults(func=functions.list_themes)
-parser_list_colors.set_defaults(func=functions.list_colors)
-parser_extract.set_defaults(func=functions.extract_default_theme)
-parser_backup_update.set_defaults(func=functions.backup_update)
-parser_backup_restore.set_defaults(func=functions.backup_restore)
-parser_manual.set_defaults(func=functions.show_manual)
-parser_examples.set_defaults(func=functions.show_examples)
+parser_set.set_defaults(func=set_theme)
+parser_list.set_defaults(func=list_themes)
+parser_list_colors.set_defaults(func=list_colors)
+parser_extract.set_defaults(func=extract_default_theme)
+parser_backup_update.set_defaults(func=backup_update)
+parser_backup_restore.set_defaults(func=backup_restore)
+parser_manual.set_defaults(func=show_manual)
+parser_examples.set_defaults(func=show_examples)
 
 # Finally, parse arguments
 try:
     args = parser.parse_args()
     setattr(args, 'prog', parser.prog)
+    # Run associated function
+    args.func(args)
+
 # When no argument is given to the backup subcommand, ArgumentParser
 # raises TypeError for some reason instead of handling it gracefully.
 # Following code is for that situation 

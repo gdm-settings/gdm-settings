@@ -4,8 +4,7 @@ gi.require_version("Gtk", '4.0')
 gi.require_version("Gio", '2.0')
 from gi.repository import Gtk
 
-from functions import set_theme
-from get_theme_list import get_theme_list
+from functions import set_theme, get_theme_list
 
 # Empty class to store arbitrary function arguments
 class namespace:
