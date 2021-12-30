@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?> <interface>
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
   <requires lib="gtk+" version="4.4"/>
+  <!-- Main Window -->
   <object id="window_main" class="GtkApplicationWindow">
     <property name="title">GDM Settings</property>
-    <property name="resizable">False</property>
+    <property name="resizable">True</property>
     <child>
+      <!-- Main Box for Main Window -->
       <object class="GtkBox" id="vbox_main">
         <property name="orientation">vertical</property>
         <property name="hexpand">true</property>
@@ -14,44 +17,55 @@
         <property name="margin-start">10</property>
         <property name="margin-end">10</property>
         <child>
+          <!-- Box to contain Theme Selection Widgets -->
           <object class="GtkBox" id="hbox_combobox">
             <property name="orientation">horizontal</property>
             <property name="spacing">10</property>
             <property name="hexpand">True</property>
+
             <child>
               <object class="GtkLabel" id="label_combobox">
                 <property name="label">Theme</property>
               </object>
             </child>
+
             <child>
               <object class="GtkComboBoxText" id="combobox">
                 <property name="halign">end</property>
               </object>
             </child>
-          </object>
+
+          </object> <!-- hbox_combobox -->
         </child>
+
         <child>
+          <!-- Box for Bottom Buttons (Quit, Apply) -->
           <object class="GtkBox" id="hbox_buttons">
             <property name="orientation">horizontal</property>
             <property name="spacing">10</property>
             <property name="hexpand">True</property>
             <property name="valign">end</property>
+
             <child>
               <object class="GtkButton" id="button_quit">
                 <property name="label">Quit</property>
               </object>
             </child>
+
             <child>
               <object class="GtkButton" id="button_set_theme">
                 <property name="label">Apply Theme</property>
               </object>
             </child>
-          </object>
-        </child>
-      </object>
-    </child>
-  </object>
 
+          </object> <!-- hbox_buttons -->
+        </child>
+      </object> <!-- vbox_main -->
+    </child>
+  </object> <!-- window_main -->
+
+
+  <!-- Error Dialog shown when no theme selected -->
   <object id="dialog_error" class="GtkMessageDialog">
     <property name="text">Error!</property>
     <property name="secondary-text">Please, choose a theme first.</property>
