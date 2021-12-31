@@ -1,7 +1,7 @@
 #!/bin/python
 '''Functions to be used by this project'''
 
-import os, glob, magic, re, shutil
+import os, glob, magic, re, shutil, subprocess
 import variables
 
 
@@ -21,6 +21,13 @@ def listdir_recursive(dir:str):
         else:
             files += [file]
     return files
+
+def is_default_gresource(gresourceFile:str):
+    if os.path.exists(gresourceFile):
+        if subprocess.getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/gnome-shell.css"):
+            if not subprocess.getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/{variables.CustomThemeIdentity}"):
+                return True
+    return False
 
 def compile_theme(shellDir:str):
     # Copy gnome-shell dir of theme to temporary directory
