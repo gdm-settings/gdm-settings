@@ -3,6 +3,7 @@ import os, sys, argparse
 import functions, variables
 
 ThemeList=functions.get_theme_list()
+functions.elevated_commands_list.elevator("sudo")
 
 # Fuctions for ArgumentParser
 def set_theme(args):
@@ -31,6 +32,8 @@ def show_manual(args):
     functions.show_manual(args.prog)
 def show_examples(args):
     functions.show_examples(args.prog)
+def print_help(args):
+    parser.print_help()
 
 # Argument Parser Definition
 parser = argparse.ArgumentParser(description='set GDM theme and background'
@@ -39,6 +42,7 @@ parser = argparse.ArgumentParser(description='set GDM theme and background'
                                 )
 # AskPass Option
 parser.add_argument('-a','--askpass', default='sudo', help='use a different program for elevated privilages')
+parser.set_defaults(func=print_help)
 # SubParsers
 subparsers = parser.add_subparsers(title='subcommands', metavar=None, prog=parser.prog)
 desc='set theme and/or background'
@@ -85,15 +89,10 @@ parser_manual.set_defaults(func=show_manual)
 parser_examples.set_defaults(func=show_examples)
 
 # Finally, parse arguments
-try:
-    args = parser.parse_args()
-    setattr(args, 'prog', parser.prog)
-    # Run associated function
-    args.func(args)
-
-# When no argument is given to the backup subcommand, ArgumentParser
-# raises TypeError for some reason instead of handling it gracefully.
-# Following code is for that situation 
-except TypeError:
-    parser_backup.print_usage(file=sys.stderr)
-    parser.exit(status=2, message=parser.prog+': error: one of the arguments u/update r/restore is required\n')
+args = parser.parse_args()
+# Set Program Name as 'prog' member of args namespace
+setattr(args, 'prog', parser.prog)
+# Run associated function
+args.func(args)
+# Run commands that need elevated privilages
+functions.elevated_commands_list.run()

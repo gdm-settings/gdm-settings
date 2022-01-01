@@ -10,23 +10,26 @@ It is written in Python and provides a Graphical interface using GTK+ library. I
 
 This app is in very early stage of development. So, it has only a small number of features and may crash frequently. Also, every aspect of this app is subject to significant change.
 
-## What works perfectly?
+## What works in Graphical Interface?
 
-Nothing
+- Apply themes
 
-## What works with "problems"?
+## What works in Command-line Interface?
 
-**Note:** The problems are planned to be resolved in future versions
+- Apply themes
+- Create/Restore a backup of the default theme
+- Extract default theme for use in gnome-shell
 
-- ### Apply Themes
+## What works with some issues?
 
-  The app can apply themes to GDM. But, only third-party themes can be applied and the default GDM theme gets replaced by the theme you apply. As a result, the default theme is gone after you apply a third-party theme.
+**Note:** These issues are planned to be resolved
 
-  #### Solutions:
-
-  - Re-install 'gnome-shell-common' package (or 'gnome-shell' package if 'gnome-shell-common' is not available) to restore the default theme.
-  - Use '[gdm-tools](https://github.com/realmazharhussain/gdm-tools.git)' to create and restore backup of the default theme
-  - Manually backup the theme file `/usr/share/gnome-shell/gnome-shell-theme.gresource` before applying a theme
+- Change Background Image
+  **Issues:**
+  - You need to manually put an image as the file `/usr/share/gnome-shell/theme/gdm-background` (Note: no extension)
+- Apply Custom Styling to a Theme
+  **Issues:**
+  - You need to manually create CSS file `/etc/gdm-settings/custom.css` and put your custom CSS code in there
 
 ## How to Install?
 
@@ -39,9 +42,7 @@ Currently there is no way to install this app. Just clone the git repository and
 
 ## Planned Features
 
-- Save/Backup default theme before applying third-party themes
-- Apply default theme
-- Change background image/color
+- Change background image/color (<font color="red">partially done</font>)
 - Change icon theme
 - Change cursor theme
 - Night light settings
@@ -52,7 +53,7 @@ Currently there is no way to install this app. Just clone the git repository and
   - make text white or black
   - disable arrows in top bar
   - make top bar partially/fully transparent
-- Add user-specified CSS to  the theme before applying it
-- A command-line interface
+- Add user-specified CSS to  the theme before applying it (<font color="red">partially done</font>)
+- A command-line interface (<font color="red">partially done</font>)
 - Tab-completion for the command-line interface
 
