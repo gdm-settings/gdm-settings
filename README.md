@@ -1,4 +1,4 @@
-# gdm-settings
+# GDM Settings
 
 An app to change settings of Gnome's Display/Login Manager.
 
