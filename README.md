@@ -24,10 +24,10 @@ This app is in very early stage of development. So, it has only a small number o
 
 **Note:** These issues are planned to be resolved
 
-- Change Background Image
+- Change Background Image\
   **Issues:**
   - You need to manually put an image as the file `/usr/share/gnome-shell/theme/gdm-background` (Note: no extension)
-- Apply Custom Styling to a Theme
+- Apply Custom Styling to a Theme\
   **Issues:**
   - You need to manually create CSS file `/etc/gdm-settings/custom.css` and put your custom CSS code in there
 
@@ -37,8 +37,8 @@ This app is in very early stage of development. So, it has only a small number o
 
 0. Make sure all build-time and run-time dependencies are installed
 
-1. Download and extract [this zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip)
-   OR
+1. Download and extract [this zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip)\
+   OR\
    Clone this repository. You can do so with the command `git clone --depth=1 --singe-branch https://github.com/realmazharhussain/gdm-settings`
 2. Go to the folder where you extracted/cloned this file/repo
 3. Open your terminal application in that folder
