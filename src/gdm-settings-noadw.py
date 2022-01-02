@@ -2,16 +2,14 @@
 import gi, sys, os.path
 
 gi.require_version("Gtk", '4.0')
-gi.require_version("Adw", '1')
+from gi.repository import Gtk
 
-from gi.repository import Gtk, Adw
-
-from functions import get_theme_list, set_theme
+from functions import get_theme_list, set_theme, elevated_commands_list
 
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
 script_dir = os.path.dirname(script_realpath)
-main_window_ui_file = os.path.join(script_dir, "main-window-adw.ui")
+main_window_ui_file = os.path.join(script_dir, "main-window-noadw.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -28,12 +26,14 @@ def load_widgets():
     widgets.button_quit = widgets.builder.get_object("button_quit")
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
 
-def call_set_theme(widget=None):
+def on_apply(*args, **kwargs):
     selected_theme = widgets.combobox.get_active_text()
     if selected_theme:
-        set_theme(theme=selected_theme, askpass="pkexec")
+        set_theme(theme=selected_theme)
     else:
         widgets.dialog_error.present()
+
+    elevated_commands_list.run()
 
 def on_activate(app):
     # Load Widgets
@@ -42,11 +42,10 @@ def on_activate(app):
     # Add Theme List to combobox
     for theme in get_theme_list():
         widgets.combobox.append_text(theme)
-    widgets.combobox.remove(0)
 
     # Connect Signals
     widgets.button_quit.connect("clicked", lambda x: widgets.window_main.close())
-    widgets.button_set_theme.connect("clicked", call_set_theme)
+    widgets.button_set_theme.connect("clicked", on_apply)
     widgets.dialog_error.connect("response", lambda x,y: widgets.dialog_error.hide())
 
     # Add Window to app
@@ -55,7 +54,8 @@ def on_activate(app):
     # Show Window
     widgets.window_main.present()
 
+
 if __name__ == '__main__':
-    app = Adw.Application(application_id="org.gtk.gdm-settings")
+    app = Gtk.Application(application_id="org.gtk.gdm-settings")
     app.connect("activate", on_activate)
     app.run(sys.argv)

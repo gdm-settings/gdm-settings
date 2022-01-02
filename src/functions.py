@@ -1,4 +1,3 @@
-#!/bin/python
 '''Functions to be used by this project'''
 
 import os, glob, magic, re, shutil, subprocess

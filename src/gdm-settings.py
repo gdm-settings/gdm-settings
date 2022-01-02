@@ -2,7 +2,9 @@
 import gi, sys, os.path
 
 gi.require_version("Gtk", '4.0')
-from gi.repository import Gtk
+gi.require_version("Adw", '1')
+
+from gi.repository import Gtk, Adw
 
 from functions import get_theme_list, set_theme, elevated_commands_list
 
@@ -22,30 +24,29 @@ def load_widgets():
     # Get Widgets from builder
     widgets.window_main = widgets.builder.get_object("window_main")
     widgets.dialog_error = widgets.builder.get_object("dialog_error")
-    widgets.combobox = widgets.builder.get_object("combobox")
+    widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
     widgets.button_quit = widgets.builder.get_object("button_quit")
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
 
-def on_apply(*args, **kwargs):
-    selected_theme = widgets.combobox.get_active_text()
-    if selected_theme:
-        set_theme(theme=selected_theme)
-    else:
-        widgets.dialog_error.present()
-
+def call_set_theme(widget=None):
+    selected_position = widgets.comborow.get_selected()
+    selected_theme = widgets.stringlist_theme_list.get_string(selected_position)
+    set_theme(selected_theme)
     elevated_commands_list.run()
 
 def on_activate(app):
     # Load Widgets
     load_widgets()
 
-    # Add Theme List to combobox
+    # Add Themes to List
+    widgets.stringlist_theme_list = Gtk.StringList()
     for theme in get_theme_list():
-        widgets.combobox.append_text(theme)
+        widgets.stringlist_theme_list.append(theme)
+    widgets.comborow.set_model(widgets.stringlist_theme_list)
 
     # Connect Signals
     widgets.button_quit.connect("clicked", lambda x: widgets.window_main.close())
-    widgets.button_set_theme.connect("clicked", on_apply)
+    widgets.button_set_theme.connect("clicked", call_set_theme)
     widgets.dialog_error.connect("response", lambda x,y: widgets.dialog_error.hide())
 
     # Add Window to app
@@ -54,8 +55,7 @@ def on_activate(app):
     # Show Window
     widgets.window_main.present()
 
-
 if __name__ == '__main__':
-    app = Gtk.Application(application_id="org.gtk.gdm-settings")
+    app = Adw.Application(application_id="org.gtk.gdm-settings")
     app.connect("activate", on_activate)
     app.run(sys.argv)

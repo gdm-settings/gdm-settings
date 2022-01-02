@@ -2,7 +2,7 @@
 
 An app to change settings of Gnome's Display/Login Manager.
 
-It is written in Python and provides a Graphical interface using GTK+ library. It is an alternative to '[gdm-tools](https://github.com/realmazharhussain/gdm-tools.git)'  which is written in bash and has no Graphical Interface.
+It is written in Python and provides a Graphical interface using GTK+ and LibAdwaita. It is an alternative to '[gdm-tools](https://github.com/realmazharhussain/gdm-tools.git)'  which is written in bash and has no Graphical Interface.
 
 <center><img src="resources/screenshot.png" alt="screenshot"/></center>
 
@@ -33,12 +33,34 @@ This app is in very early stage of development. So, it has only a small number o
 
 ## How to Install?
 
-Currently there is no way to install this app. Just clone the git repository and double-click on the file 'gdm-settings' to run the app or manually integrate it with the system by using the desktop file.
+### Manual Installation
 
-## Issues to be resolved
+0. Make sure all build-time and run-time dependencies are installed
 
-- No easy method to install the app
-- No icon for the app
+1. Download and extract [this zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip)
+   OR
+   Clone this repository. You can do so with the command `git clone --depth=1 --singe-branch https://github.com/realmazharhussain/gdm-settings`
+2. Go to the folder where you extracted/cloned this file/repo
+3. Open your terminal application in that folder
+4. Type `./install.sh` and press Enter
+5. Type your password and press Enter
+
+### Arch-based distros
+
+This app is available in the AUR as [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper.
+
+## Dependencies
+
+### Run-time Dependencies
+
+- LibAdwaita (version 1)
+- Glib (version 2)
+- python-magic
+
+### Build-time Dependencies
+
+- Bash
+- ImageMagick
 
 ## Planned Features
 

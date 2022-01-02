@@ -1,4 +1,3 @@
-#!/bin/python
 '''Variable Definitions'''
 TempDir = '/tmp/gdm-settings'
 TempShellDir = f'{TempDir}/gnome-shell'
