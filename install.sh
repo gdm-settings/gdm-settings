@@ -6,6 +6,8 @@ DESTDIR=${DESTDIR:-}
 appID=org.gtk.GdmSettings
 use_relative_links=auto
 
+source "$progDir"/colors.sh
+
 HelpText="A script to install 'GDM Settings' app
 
 Usage: $0 [Options]
