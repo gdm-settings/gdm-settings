@@ -1,0 +1,8 @@
+files=('src/*.{ui,py}':'share/gdm-settings'
+       'resources/*.desktop':'share/applications'
+       'resources/*.appdata.xml':'share/metainfo')
+
+dirs=('resources/icons':'share/icons/hicolor')
+
+links=('share/gdm-settings/gdm-settings.py':'bin/gdm-settings'
+       'share/gdm-settings/gdm-settings-cli.py':'bin/gdm-settings-cli')
