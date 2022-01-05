@@ -93,15 +93,13 @@ if requires_sudo "$DESTDIR" || requires_sudo "${targetDir}"; then
    SUDO=sudo
 fi
 
-link_option=''
-case $use_relative_links in
-   auto)
-      test -n "$DESTDIR" && link_option='-r'
-      ;;
-   true)
-      link_option='-r'
-      ;;
-esac
+if test $use_relative_links = auto; then
+   if test -n "$DESTDIR"; then
+      use_relative_links=true
+   else
+      use_relative_links=false
+   fi
+fi
 
 source "$progDir"/filemaps
 
@@ -136,6 +134,7 @@ for dirmap in "${dirs[@]}"; do
    fi
 done
 echo "${bold}Making symlinks ...${normal}"
+pushd ${DESTDIR:-/} >/dev/null
 for linkmap in "${links[@]}"; do
    source=${linkmap%:*}
    target=${linkmap#*:}
@@ -144,7 +143,13 @@ for linkmap in "${links[@]}"; do
    source_nice=${DESTDIR}${PREFIX}/${source}
    target_nice=${DESTDIR}${PREFIX}/${target}
    $SUDO mkdir -p "$(dirname "$target_full")"
-   if $SUDO ln -sfT $link_option "$source_full" "$target_full"; then
+   if test $use_relative_links = true; then
+      command="ln -srfT '$source_full' '$target_full'"
+   else
+      command="ln -sfT '${PREFIX}/${source}' '$target_full'"
+   fi
+   if eval $SUDO $command; then
       print_message "$source_nice" "$target_nice"
    fi
 done
+popd >/dev/null
