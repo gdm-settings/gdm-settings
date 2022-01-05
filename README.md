@@ -53,14 +53,14 @@ This app is available in the AUR as [gdm-settings-git](https://aur.archlinux.org
 
 ### Run-time Dependencies
 
-- LibAdwaita (version 1)
-- Glib (version 2)
+- LibAdwaita-1
+- Glib-2 (development version)
+- python-gobject a.k.a PyGObject
 - python-magic
 
 ### Build-time Dependencies
 
 - Bash
-- ImageMagick
 
 ## Planned Features
 
