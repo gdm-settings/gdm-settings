@@ -3,6 +3,7 @@
   <!-- Main Window -->
   <object id="window_main" class="AdwApplicationWindow">
     <property name="title">GDM Settings</property>
+    <property name="icon_name">gdm-settings</property>
     <property name="content">
 
       <!-- Vertical Box for the Main Window -->
@@ -12,77 +13,42 @@
       
         <!-- Header Bar -->
         <child>
-          <object class="AdwHeaderBar"></object>
-        </child>
-  
-        <!-- Main Vertical Box for Window Content -->
-        <child>
-          <object class="GtkBox">
-            <property name="orientation">vertical</property>
-            <property name="vexpand">true</property>
-            
-            <!-- ComboRow for Theme Choice -->
-            <child>
-              <object class="GtkListBox" id="listbox_theme_choice">
-                <child>
-                  <object class="AdwComboRow" id="comborow_theme_choice">
-                    <property name="title">Theme</property>
-                    <property name="use_subtitle">false</property>
-                    <property name="valign">start</property>
-                  </object>
-                </child>
+          <object class="AdwHeaderBar">
+            <!--
+            <property name="centering-policy">strict</property>
+            -->
+            <property name="title-widget">
+              <object class="AdwViewSwitcherTitle" id="title">
+                <property name="stack">stack</property>
+                <binding name="title">
+                   <lookup name="title">window_main</lookup>
+                </binding>
               </object>
-            </child>
-
-            <child>
-               <object class="GtkLabel">
-                  <property name="vexpand">true</property>
-               </object>
-            </child>
-  
-            <!-- Box for Buttons -->
-            <child>
-              <object class="GtkBox">
-                <property name="orientation">horizontal</property>
-                <property name="spacing">5</property>
-                <property name="margin-end">5</property>
-                <property name="margin-bottom">5</property>
-                <property name="valign">end</property>
-                
-                <child>
-                  <object class="GtkLabel">
-                    <property name="hexpand">true</property>
-                  </object>
-                </child>
-                
-                <!-- Quit Button -->
-                <child>
-                  <object class="GtkButton" id="button_quit">
-                    <property name="label">Quit</property>
-                  </object>
-                </child>
-  
-                <!-- Apply Button -->
-                <child>
-                  <object class="GtkButton" id="button_set_theme">
-                    <property name="label">Apply Theme</property>
-                  </object>
-                </child>
-  
-              </object>
-            </child>
+            </property>
           </object>
         </child>
+
+        <child>
+          <object class="AdwClamp">
+            <property name="maximum_size">500</property>
+            <child>
+              <object class="AdwViewStack" id="stack">
+                <property name="vexpand">True</property>
+              </object> <!--AdwViewStack-->
+            </child>
+          </object>  <!--AdwClamp-->
+        </child>
+
+        <child>
+          <object class="AdwViewSwitcherBar">
+            <property name="stack">stack</property>
+            <binding name="reveal">
+              <lookup name="title-visible">title</lookup>
+            </binding>
+          </object>
+        </child>
+
       </object>
     </property>
   </object>
-
-  <!-- Choose Theme Error Dialog -->
-  <object id="dialog_error" class="GtkMessageDialog">
-    <property name="text">Error!</property>
-    <property name="secondary-text">Please, choose a theme first.</property>
-    <property name="buttons">close</property>
-    <property name="transient-for">window_main</property>
-  </object>
-
 </interface>

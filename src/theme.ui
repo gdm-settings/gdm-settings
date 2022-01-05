@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkBox" id="theme_page">
+    <property name="orientation">vertical</property>
+    <property name="margin-top">24</property>
+    <property name="margin-bottom">24</property>
+    <property name="margin-start">12</property>
+    <property name="margin-end">12</property>
+    <property name="spacing">24</property>
+    <property name="vexpand">true</property>
+
+    <!-- ComboRow for Theme Choice -->
+    <child>
+      <object class="GtkListBox" id="listbox_theme_choice">
+      <style> <class name="boxed-list"/> </style>
+        <child>
+          <object class="AdwComboRow" id="comborow_theme_choice">
+            <property name="title">Theme</property>
+            <property name="use_subtitle">false</property>
+            <property name="valign">start</property>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+       <object class="GtkLabel">
+          <property name="vexpand">true</property>
+       </object>
+    </child>
+
+    <!-- Box for Buttons -->
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">5</property>
+        <property name="margin-end">5</property>
+        <property name="margin-bottom">5</property>
+        <property name="valign">end</property>
+        
+        <child>
+          <object class="GtkLabel">
+            <property name="hexpand">true</property>
+          </object>
+        </child>
+        
+        <!-- Quit Button -->
+        <child>
+          <object class="GtkButton" id="button_quit">
+            <property name="label">Quit</property>
+          </object>
+        </child>
+
+        <!-- Apply Button -->
+        <child>
+          <object class="GtkButton" id="button_set_theme">
+            <property name="label">Apply</property>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>

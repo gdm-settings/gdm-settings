@@ -8,10 +8,13 @@ from gi.repository import Gtk, Adw
 
 from functions import get_theme_list, set_theme, elevated_commands_list
 
+application_id = "org.gtk.GdmSettings"
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
 script_dir = os.path.dirname(script_realpath)
 main_window_ui_file = os.path.join(script_dir, "main-window.ui")
+theme_page_ui_file = os.path.join(script_dir, "theme.ui")
+settings_page_ui_file = os.path.join(script_dir, "settings.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -20,10 +23,16 @@ widgets = WidgetContainer()
 
 def load_widgets():
     # Initialize Builder
-    widgets.builder = Gtk.Builder.new_from_file(main_window_ui_file)
+    widgets.builder = Gtk.Builder()
+    # Load UI files
+    widgets.builder.add_from_file(main_window_ui_file)
+    widgets.builder.add_from_file(theme_page_ui_file)
+    widgets.builder.add_from_file(settings_page_ui_file)
     # Get Widgets from builder
     widgets.window_main = widgets.builder.get_object("window_main")
-    widgets.dialog_error = widgets.builder.get_object("dialog_error")
+    widgets.stack_pages = widgets.builder.get_object("stack")
+    widgets.box_page_theme = widgets.builder.get_object("theme_page")
+    widgets.box_page_settings = widgets.builder.get_object("settings_page")
     widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
     widgets.button_quit = widgets.builder.get_object("button_quit")
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
@@ -47,7 +56,17 @@ def on_activate(app):
     # Connect Signals
     widgets.button_quit.connect("clicked", lambda x: widgets.window_main.close())
     widgets.button_set_theme.connect("clicked", call_set_theme)
-    widgets.dialog_error.connect("response", lambda x,y: widgets.dialog_error.hide())
+
+    # Add Pages to Page Stack
+    widgets.page_theme = widgets.stack_pages.add(widgets.box_page_theme)
+    widgets.page_settings = widgets.stack_pages.add(widgets.box_page_settings)
+
+    # Set Page Properties
+    widgets.page_theme.set_title("Theme")
+    widgets.page_theme.set_icon_name(f"{application_id}-theme")
+    print(widgets.page_theme.get_icon_name())
+    widgets.page_settings.set_title("Settings")
+    widgets.page_settings.set_icon_name(f"{application_id}-settings")
 
     # Add Window to app
     app.add_window(widgets.window_main)
@@ -56,6 +75,6 @@ def on_activate(app):
     widgets.window_main.present()
 
 if __name__ == '__main__':
-    app = Adw.Application(application_id="org.gtk.gdm-settings")
+    app = Adw.Application(application_id=application_id)
     app.connect("activate", on_activate)
-    app.run(sys.argv)
+    exit(app.run(sys.argv))
