@@ -1,4 +1,4 @@
-# GDM Settings <img src="resources/icons/scalable/apps/org.gtk.GdmSettings.svg" alt="app_icon" style="zoom:10%;" />
+# GDM Settings 
 
 An app to change settings of Gnome's Display/Login Manager.
 
