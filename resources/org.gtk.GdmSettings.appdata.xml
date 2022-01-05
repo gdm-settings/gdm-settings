@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gtk.GdmSettings.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <project_group>GNOME</project_group>
+  <developer_name>Mazhar Hussain</developer_name>
+  <update_contact>mmazharhussainkgb1145_at_gmail.com</update_contact>
+  <name>GDM Settings</name>
+  <summary>A settings app for GNOME's Login Manager (GDM)</summary>
+  <description>
+    <p>
+       Configure GDM to your liking.
+    </p>
+    <p>
+       It can apply theme and background, change cursor theme, icon theme
+       and night light settings, among other things.
+    </p>
+  </description>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+  <screenshots>
+    <screenshot type="default">
+       <image>https://github.com/realmazharhussain/gdm-settings/raw/main/resources/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/realmazharhussain/gdm-settings</url>
+  <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
+  <!--
+  <url type="donation">https://www.gnome.org/friends/</url>
+  -->
+</component>
