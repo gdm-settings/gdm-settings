@@ -3,6 +3,7 @@ progName=$(basename "$0")
 progDir=$(realpath "$0" | xargs dirname)
 PREFIX=${PREFIX:-/usr/local}
 DESTDIR=${DESTDIR:-}
+appID=org.gtk.GdmSettings
 use_relative_links=auto
 
 HelpText="A script to install 'GDM Settings' app
