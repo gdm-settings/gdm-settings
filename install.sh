@@ -8,18 +8,18 @@ use_relative_links=auto
 
 source "$progDir"/colors.sh
 
-HelpText="A script to install 'GDM Settings' app
+HelpText="${bold}A script to install 'GDM Settings' app
 
-Usage: $0 [Options]
+Usage:${normal} $0 [Options]
 
-Options:
+${bold}Options:${normal}
     -h,--help      Print this help message
     -r,--relative  Use relative symlinks
                    Optional values: auto (default), yes, no
     --destdir      Destination root directory
     --prefix       Prefix directory (e.g. /usr or /usr/local)
 
-Note: This script also supports DESTDIR and PREFIX environment variables"
+${bold}Note:${normal} This script also supports DESTDIR and PREFIX environment variables"
 
 # Start Option Parsing
 TEMP=$(getopt -l 'help,destdir:,prefix:,relative::' -o 'h,r::' -n "$0" -- "$@")
@@ -54,7 +54,7 @@ while true; do
             *)
                {
                   echo "$0: -r,--relative option does not accept value '$2'"
-                  echo "Acceptable values: auto, yes,true,1, no,false,0"
+                  echo "${bold}Acceptable values:${normal} auto, yes,true,1, no,false,0"
                } >&2
                exit 3
                ;;
@@ -103,20 +103,48 @@ case $use_relative_links in
       ;;
 esac
 
-$SUDO mkdir -p "$targetDir"/{bin,share/{applications,gdm-settings}}
-$SUDO cp "$progDir"/src/*.{ui,py} "$targetDir"/share/gdm-settings/
-$SUDO cp "$progDir"/resources/*.desktop "$targetDir"/share/applications/
-$SUDO ln -sf $link_option "$targetDir"/share/gdm-settings/gdm-settings.py "$targetDir"/bin/gdm-settings
-$SUDO ln -sf $link_option "$targetDir"/share/gdm-settings/gdm-settings-cli.py "$targetDir"/bin/gdm-settings-cli
+source "$progDir"/filemaps
 
-# Build and install app icon
-hicolorDir="$targetDir"/share/icons/hicolor
-iconSource="$progDir"/resources/gdm-settings.svg
-for size in 16 24 32 48 64 96 128; do
-   iconDir="$hicolorDir"/${size}x${size}/apps
-   $SUDO mkdir -p "$iconDir"
-   $SUDO magick -background none "$iconSource" -resize $size "$iconDir"/gdm-settings.png
+print_message() {
+   echo "   $1 $lime->$normal $2"
+}
+
+echo "${bold}Copying files ...${normal}"
+for filemap in "${files[@]}"; do
+   target=${filemap#*:}
+   target_full=${targetDir}/${target}
+   target_nice=${DESTDIR}${PREFIX}/${target}/
+   sources_string=${filemap%:*}
+   eval sources_list=("'$progDir'/$sources_string")
+   $SUDO mkdir -p "$target_full"
+   if $SUDO cp -f "${sources_list[@]}" "$target_full"/; then
+      for source_full in "${sources_list[@]}"; do
+         source_nice=${source_full#"$progDir/"}
+         print_message "$source_nice" "$target_nice"
+      done
+   fi
 done
-iconDir="$hicolorDir"/scalable/apps
-$SUDO mkdir -p "$iconDir"
-$SUDO cp -t "$iconDir" "$iconSource"
+for dirmap in "${dirs[@]}"; do
+   target=${dirmap#*:}
+   target_full=${targetDir}/${target}
+   target_nice=${DESTDIR}${PREFIX}/${target}
+   source_nice=${dirmap%:*}
+   source_full=${progDir}/${source_nice}
+   $SUDO mkdir -p "$target_full"
+   if $SUDO cp -rfT "$source_full" "$target_full"/; then
+      print_message "$source_nice" "$target_nice"
+   fi
+done
+echo "${bold}Making symlinks ...${normal}"
+for linkmap in "${links[@]}"; do
+   source=${linkmap%:*}
+   target=${linkmap#*:}
+   source_full=${targetDir}/${source}
+   target_full=${targetDir}/${target}
+   source_nice=${DESTDIR}${PREFIX}/${source}
+   target_nice=${DESTDIR}${PREFIX}/${target}
+   $SUDO mkdir -p "$(dirname "$target_full")"
+   if $SUDO ln -sfT $link_option "$source_full" "$target_full"; then
+      print_message "$source_nice" "$target_nice"
+   fi
+done
