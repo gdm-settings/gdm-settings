@@ -22,6 +22,7 @@ ln -sfr "$AppDir"/usr/share/applications/$application_id.desktop "$AppDir"/
 ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/
 echo "$AppRun" > "${AppDir}/AppRun"
 chmod +x "${AppDir}/AppRun"
+echo '  Done.'
 
 echo "${bold}${italic}Building AppImage ...${normal}"
 if output=$(appimagetool "$AppDir" "$buildDir/$application_name.AppImage" 2>&1); then
@@ -34,5 +35,5 @@ else
    while read line; do echo "  $line"; done <<< "$output"
 fi
 echo "${bold}${italic}Removing temporary AppDir ...${normal}"
-rm -rf "$AppDir"
+rm -rf "$AppDir" && echo '  Done.'
 exit $status
