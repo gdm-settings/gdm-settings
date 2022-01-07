@@ -14,7 +14,6 @@ script_basename = os.path.basename(script_realpath)
 script_dir = os.path.dirname(script_realpath)
 main_window_ui_file = os.path.join(script_dir, "main-window.ui")
 theme_page_ui_file = os.path.join(script_dir, "theme.ui")
-settings_page_ui_file = os.path.join(script_dir, "settings.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -27,12 +26,10 @@ def load_widgets():
     # Load UI files
     widgets.builder.add_from_file(main_window_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
-    widgets.builder.add_from_file(settings_page_ui_file)
     # Get Widgets from builder
     widgets.window_main = widgets.builder.get_object("window_main")
     widgets.stack_pages = widgets.builder.get_object("stack")
     widgets.box_page_theme = widgets.builder.get_object("theme_page")
-    widgets.box_page_settings = widgets.builder.get_object("settings_page")
     widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
     widgets.button_quit = widgets.builder.get_object("button_quit")
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
@@ -59,14 +56,10 @@ def on_activate(app):
 
     # Add Pages to Page Stack
     widgets.page_theme = widgets.stack_pages.add(widgets.box_page_theme)
-    widgets.page_settings = widgets.stack_pages.add(widgets.box_page_settings)
 
     # Set Page Properties
     widgets.page_theme.set_title("Theme")
     widgets.page_theme.set_icon_name(f"{application_id}-theme")
-    print(widgets.page_theme.get_icon_name())
-    widgets.page_settings.set_title("Settings")
-    widgets.page_settings.set_icon_name(f"{application_id}-settings")
 
     # Set Title Main Window to Application Name
     widgets.window_main.set_title(application_name)
