@@ -11,8 +11,7 @@ source "$progDir"/colors.sh
 
 AppRun='#!/usr/bin/bash
 progDir=$(dirname "$(realpath "$0")")
-export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/local/share:/usr/share}
-export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS}"
+export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 export PATH="${progDir}/usr/bin:${PATH}"
 '"$project_name"
 
