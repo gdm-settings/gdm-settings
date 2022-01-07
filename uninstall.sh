@@ -3,11 +3,11 @@ progName=$(basename "$0")
 progDir=$(realpath "$0" | xargs dirname)
 PREFIX=${PREFIX:-/usr/local}
 DESTDIR=${DESTDIR:-}
-appID=org.gtk.GdmSettings
 
+eval $("$progDir"/load_info.sh)
 source "$progDir"/colors.sh
 
-HelpText="${bold}A script to uninstall 'GDM Settings' app${normal}
+HelpText="${bold}A script to uninstall '$application_name' app${normal}
 
 ${bold}Usage:${normal} $0 [Options]
 

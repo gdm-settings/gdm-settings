@@ -1,8 +1,8 @@
-files=('src/*.{ui,py}':'share/gdm-settings'
+files=('src/*.{ui,py}':"share/$project_name"
        'resources/*.desktop':'share/applications'
        'resources/*.appdata.xml':'share/metainfo')
 
 dirs=('resources/icons':'share/icons/hicolor')
 
-links=('share/gdm-settings/gdm-settings.py':'bin/gdm-settings'
-       'share/gdm-settings/gdm-settings-cli.py':'bin/gdm-settings-cli')
+links=("share/${project_name}/${project_name}.py":"bin/$project_name"
+       "share/${project_name}/${project_name}-cli.py":"bin/${project_name}-cli")

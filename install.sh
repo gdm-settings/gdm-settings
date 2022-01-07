@@ -3,12 +3,12 @@ progName=$(basename "$0")
 progDir=$(realpath "$0" | xargs dirname)
 PREFIX=${PREFIX:-/usr/local}
 DESTDIR=${DESTDIR:-}
-appID=org.gtk.GdmSettings
 use_relative_links=auto
 
+eval $("$progDir"/load_info.sh)
 source "$progDir"/colors.sh
 
-HelpText="${bold}A script to install 'GDM Settings' app
+HelpText="${bold}A script to install '$application_name' app
 
 Usage:${normal} $0 [Options]
 
