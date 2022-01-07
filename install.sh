@@ -104,7 +104,7 @@ fi
 source "$progDir"/filemaps
 
 print_message() {
-   echo "   $1 $lime->$normal $2"
+   echo "   $1 $lime→$normal $2"
 }
 
 echo "${bold}Copying files ...${normal}"
