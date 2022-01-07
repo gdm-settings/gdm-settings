@@ -30,11 +30,11 @@ while true; do
          exit 0
          ;;
       --prefix)
-         PREFIX=$2
+         PREFIX=${2%/}
          shift 2
          ;;
       --destdir)
-         DESTDIR=$2
+         DESTDIR=${2%/}
          shift 2
          ;;
       --)
