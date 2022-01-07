@@ -6,9 +6,9 @@ gi.require_version("Adw", '1')
 
 from gi.repository import Gtk, Adw
 
+from info import *
 from functions import get_theme_list, set_theme, elevated_commands_list
 
-application_id = "org.gtk.GdmSettings"
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
 script_dir = os.path.dirname(script_realpath)
@@ -67,6 +67,9 @@ def on_activate(app):
     print(widgets.page_theme.get_icon_name())
     widgets.page_settings.set_title("Settings")
     widgets.page_settings.set_icon_name(f"{application_id}-settings")
+
+    # Set Title Main Window to Application Name
+    widgets.window_main.set_title(application_name)
 
     # Add Window to app
     app.add_window(widgets.window_main)
