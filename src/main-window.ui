@@ -2,8 +2,6 @@
 <interface>
   <!-- Main Window -->
   <object id="window_main" class="AdwApplicationWindow">
-    <property name="title">GDM Settings</property>
-    <property name="icon_name">gdm-settings</property>
     <property name="content">
 
       <!-- Vertical Box for the Main Window -->
