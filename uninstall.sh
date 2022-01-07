@@ -7,16 +7,16 @@ appID=org.gtk.GdmSettings
 
 source "$progDir"/colors.sh
 
-HelpText="A script to uninstall 'GDM Settings' app
+HelpText="${bold}A script to uninstall 'GDM Settings' app${normal}
 
-Usage: $0 [Options]
+${bold}Usage:${normal} $0 [Options]
 
-Options:
+${bold}Options:${normal}
     -h,--help      Print this help message
     --destdir      Destination root directory
     --prefix       Prefix directory (e.g. /usr or /usr/local)
 
-Note: This script also supports DESTDIR and PREFIX environment variables"
+${bold}Note:${normal} This script also supports DESTDIR and PREFIX environment variables"
 
 # Start Option Parsing
 TEMP=$(getopt -l 'help,destdir:,prefix:' -o 'h' -n "$0" -- "$@")
