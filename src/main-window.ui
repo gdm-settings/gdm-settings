@@ -14,9 +14,7 @@
         <!-- Header Bar -->
         <child>
           <object class="AdwHeaderBar">
-            <!--
-            <property name="centering-policy">strict</property>
-            -->
+
             <property name="title-widget">
               <object class="AdwViewSwitcherTitle" id="title">
                 <property name="stack">stack</property>
