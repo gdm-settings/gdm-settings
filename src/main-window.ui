@@ -34,14 +34,9 @@
         </child>
 
         <child>
-          <object class="AdwClamp">
-            <property name="maximum_size">500</property>
-            <child>
-              <object class="AdwViewStack" id="stack">
-                <property name="vexpand">True</property>
-              </object> <!--AdwViewStack-->
-            </child>
-          </object>  <!--AdwClamp-->
+          <object class="AdwViewStack" id="stack">
+            <property name="vexpand">True</property>
+          </object> <!--AdwViewStack-->
         </child>
 
         <child>
