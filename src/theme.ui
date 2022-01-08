@@ -9,56 +9,99 @@
     <property name="spacing">24</property>
     <property name="vexpand">true</property>
 
-    <!-- ComboRow for Theme Choice -->
     <child>
-      <object class="GtkListBox" id="listbox_theme_choice">
-      <style> <class name="boxed-list"/> </style>
+      <object class="GtkScrolledWindow">
+        <property name="propagate-natural-height">true</property>
+        <property name="height-request">150</property>
+        <property name="vexpand">true</property>
+        <binding name="width-request">
+          <lookup name="width-request">theme_page_content_clamp</lookup>
+        </binding>
+
         <child>
-          <object class="AdwComboRow" id="comborow_theme_choice">
-            <property name="title">Theme</property>
-            <property name="use_subtitle">false</property>
-            <property name="valign">start</property>
+          <object class="AdwClamp" id="theme_page_content_clamp">
+            <property name="maximum-size">500</property>
+            <property name="width-request">250</property>
+            <property name="vexpand">true</property>
+            <property name="hexpand">true</property>
+
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <binding name="spacing">
+                  <lookup name="spacing">theme_page</lookup>
+                </binding>
+
+                <child>
+                  <object class="AdwPreferencesGroup" id="listbox_theme_choice">
+                    <property name="title">Theme</property>
+                    <!-- ComboRow for Theme Choice -->
+                    <child>
+                      <object class="AdwComboRow" id="comborow_theme_choice">
+                        <property name="title">Theme</property>
+                        <property name="use_subtitle">false</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="AdwPreferencesGroup">
+                    <property name="title">Background</property>
+                    <child>
+                      <object class="AdwComboRow">
+                        <property name="title">Type</property>
+                        <property name="use_subtitle">false</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>  <!--AdwClamp-->
+            </child>
+
           </object>
         </child>
       </object>
-    </child>
-
-    <child>
-       <object class="GtkLabel">
-          <property name="vexpand">true</property>
-       </object>
     </child>
 
     <!-- Box for Buttons -->
     <child>
-      <object class="GtkBox">
-        <property name="orientation">horizontal</property>
-        <property name="spacing">5</property>
-        <property name="margin-end">5</property>
-        <property name="margin-bottom">5</property>
-        <property name="valign">end</property>
-        
+      <object class="AdwClamp">
+        <binding name="maximum-size">
+          <lookup name="maximum-size">theme_page_content_clamp</lookup>
+        </binding>
         <child>
-          <object class="GtkLabel">
-            <property name="hexpand">true</property>
-          </object>
-        </child>
-        
-        <!-- Quit Button -->
-        <child>
-          <object class="GtkButton" id="button_quit">
-            <property name="label">Quit</property>
-          </object>
-        </child>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">5</property>
+            <property name="margin-end">5</property>
+            <property name="margin-bottom">5</property>
+            <property name="valign">end</property>
 
-        <!-- Apply Button -->
-        <child>
-          <object class="GtkButton" id="button_set_theme">
-            <property name="label">Apply</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="hexpand">true</property>
+              </object>
+            </child>
+
+            <!-- Quit Button -->
+            <child>
+              <object class="GtkButton" id="button_quit">
+                <property name="label">Quit</property>
+              </object>
+            </child>
+
+            <!-- Apply Button -->
+            <child>
+              <object class="GtkButton" id="button_set_theme">
+                <property name="label">Apply</property>
+              </object>
+            </child>
+
           </object>
         </child>
-
       </object>
     </child>
+
   </object>
 </interface>
