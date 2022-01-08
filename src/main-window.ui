@@ -23,6 +23,13 @@
                 </binding>
               </object>
             </property>
+
+            <child type="end">
+              <object class="GtkMenuButton" id="menubutton_main">
+                <property name="icon-name">open-menu-symbolic</property>
+              </object>
+            </child>
+
           </object>
         </child>
 
