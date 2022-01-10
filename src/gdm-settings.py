@@ -40,8 +40,7 @@ def load_widgets():
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
 
 def call_set_theme(widget=None):
-    selected_position = widgets.comborow.get_selected()
-    selected_theme = widgets.stringlist_theme_list.get_string(selected_position)
+    selected_theme = widgets.comborow.get_selected_item().get_string()
     set_theme(selected_theme)
     elevated_commands_list.run()
 
