@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- Main Window -->
-  <object id="window_main" class="AdwApplicationWindow">
+  <object id="main_window" class="AdwApplicationWindow">
     <property name="default-width">700</property>
     <property name="default-height">360</property>
     <property name="content">
@@ -19,7 +19,7 @@
               <object class="AdwViewSwitcherTitle" id="title">
                 <property name="stack">stack</property>
                 <binding name="title">
-                   <lookup name="title">window_main</lookup>
+                   <lookup name="title">main_window</lookup>
                 </binding>
               </object>
             </property>

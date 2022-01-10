@@ -32,7 +32,7 @@ def load_widgets():
     widgets.builder.add_from_file(about_dialog_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
     # Get Widgets from builder
-    widgets.window_main = widgets.builder.get_object("window_main")
+    widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.stack_pages = widgets.builder.get_object("stack")
@@ -82,13 +82,13 @@ def on_activate(app):
     widgets.page_theme.set_icon_name(f"{application_id}-theme")
 
     # Set Title Main Window to Application Name
-    widgets.window_main.set_title(application_name)
+    widgets.main_window.set_title(application_name)
 
     # Add Window to app
-    app.add_window(widgets.window_main)
+    app.add_window(widgets.main_window)
 
     # Show Window
-    widgets.window_main.present()
+    widgets.main_window.present()
 
 if __name__ == '__main__':
     app = Adw.Application(application_id=application_id)
