@@ -17,6 +17,7 @@ export PATH="${progDir}/usr/bin:${PATH}"
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 "$progDir"/install.sh --relative | while IFS='' read line; do echo "  $line"; done
+glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
 rm -rf "$AppDir"/usr/share/metainfo
 ln -sfr "$AppDir"/usr/share/applications/$application_id.desktop "$AppDir"/
 ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/

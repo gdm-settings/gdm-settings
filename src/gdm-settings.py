@@ -3,7 +3,7 @@ import gi, sys, os.path
 
 gi.require_version("Adw", '1')
 
-from gi.repository import Gtk, Adw
+from gi.repository import Adw, Gtk, Gio
 
 from info import *
 from functions import get_theme_list, set_theme, elevated_commands_list
@@ -43,6 +43,22 @@ def call_set_theme(widget=None):
     selected_theme = widgets.comborow.get_selected_item().get_string()
     set_theme(selected_theme)
     elevated_commands_list.run()
+    widgets.settings.set_string("theme", selected_theme)
+
+def init_settings():
+    widgets.settings = Gio.Settings(schema_id=application_id)
+
+    # Load Settings
+    set_theme = widgets.settings.get_string("theme")
+    if set_theme:
+        position = 0;
+        for theme in widgets.stringlist_theme_list:
+            if set_theme == theme.get_string():
+                widgets.comborow.set_selected(position)
+                break
+            else:
+                position += 1
+
 
 def on_activate(app):
     # Load Widgets
@@ -53,6 +69,9 @@ def on_activate(app):
     for theme in get_theme_list():
         widgets.stringlist_theme_list.append(theme)
     widgets.comborow.set_model(widgets.stringlist_theme_list)
+
+    # Initialize GSettings
+    init_settings()
 
     # Connect Signals
     widgets.button_set_theme.connect("clicked", call_set_theme)
