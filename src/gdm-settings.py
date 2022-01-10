@@ -34,13 +34,13 @@ def load_widgets():
     widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
-    widgets.stack_pages = widgets.builder.get_object("stack")
-    widgets.box_page_theme = widgets.builder.get_object("theme_page")
-    widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
-    widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
+    widgets.page_stack = widgets.builder.get_object("stack")
+    widgets.theme_page_box = widgets.builder.get_object("theme_page_box")
+    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
+    widgets.theme_page_apply_button = widgets.builder.get_object("theme_page_apply_button")
 
 def call_set_theme(widget=None):
-    selected_theme = widgets.comborow.get_selected_item().get_string()
+    selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
     set_theme(selected_theme)
     elevated_commands_list.run()
     widgets.settings.set_string("theme", selected_theme)
@@ -52,9 +52,9 @@ def init_settings():
     set_theme = widgets.settings.get_string("theme")
     if set_theme:
         position = 0;
-        for theme in widgets.stringlist_theme_list:
+        for theme in widgets.theme_list_stringlist:
             if set_theme == theme.get_string():
-                widgets.comborow.set_selected(position)
+                widgets.theme_choice_comborow.set_selected(position)
                 break
             else:
                 position += 1
@@ -65,16 +65,16 @@ def on_activate(app):
     load_widgets()
 
     # Add Themes to List
-    widgets.stringlist_theme_list = Gtk.StringList()
+    widgets.theme_list_stringlist = Gtk.StringList()
     for theme in get_theme_list():
-        widgets.stringlist_theme_list.append(theme)
-    widgets.comborow.set_model(widgets.stringlist_theme_list)
+        widgets.theme_list_stringlist.append(theme)
+    widgets.theme_choice_comborow.set_model(widgets.theme_list_stringlist)
 
     # Initialize GSettings
     init_settings()
 
     # Connect Signals
-    widgets.button_set_theme.connect("clicked", call_set_theme)
+    widgets.theme_page_apply_button.connect("clicked", call_set_theme)
 
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
@@ -92,11 +92,11 @@ def on_activate(app):
     app.set_accels_for_action("quit", ["<Ctrl>Q"])
 
     # Add Pages to Page Stack
-    widgets.page_theme = widgets.stack_pages.add(widgets.box_page_theme)
+    widgets.theme_page = widgets.page_stack.add(widgets.theme_page_box)
 
     # Set Page Properties
-    widgets.page_theme.set_title("Theme")
-    widgets.page_theme.set_icon_name(f"{application_id}-theme")
+    widgets.theme_page.set_title("Theme")
+    widgets.theme_page.set_icon_name(f"{application_id}-theme")
 
     # Set Title Main Window to Application Name
     widgets.main_window.set_title(application_name)

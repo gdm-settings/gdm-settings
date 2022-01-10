@@ -25,7 +25,7 @@
             </property>
 
             <child type="end">
-              <object class="GtkMenuButton" id="menubutton_main">
+              <object class="GtkMenuButton">
                 <property name="icon-name">open-menu-symbolic</property>
                 <property name="menu-model">app_menu</property>
               </object>

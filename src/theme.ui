@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkBox" id="theme_page">
+  <object class="GtkBox" id="theme_page_box">
     <property name="orientation">vertical</property>
     <property name="margin-top">24</property>
     <property name="margin-bottom">24</property>
@@ -29,15 +29,15 @@
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
                 <binding name="spacing">
-                  <lookup name="spacing">theme_page</lookup>
+                  <lookup name="spacing">theme_page_box</lookup>
                 </binding>
 
                 <child>
-                  <object class="AdwPreferencesGroup" id="listbox_theme_choice">
+                  <object class="AdwPreferencesGroup">
                     <property name="title">Theme</property>
                     <!-- ComboRow for Theme Choice -->
                     <child>
-                      <object class="AdwComboRow" id="comborow_theme_choice">
+                      <object class="AdwComboRow" id="theme_choice_comborow">
                         <property name="title">Theme</property>
                         <property name="use_subtitle">false</property>
                       </object>
@@ -86,7 +86,7 @@
 
             <!-- Apply Button -->
             <child>
-              <object class="GtkButton" id="button_set_theme">
+              <object class="GtkButton" id="theme_page_apply_button">
                 <property name="label">Apply</property>
               </object>
             </child>
