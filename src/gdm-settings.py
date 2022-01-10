@@ -38,7 +38,6 @@ def load_widgets():
     widgets.stack_pages = widgets.builder.get_object("stack")
     widgets.box_page_theme = widgets.builder.get_object("theme_page")
     widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
-    widgets.button_quit = widgets.builder.get_object("button_quit")
     widgets.button_set_theme = widgets.builder.get_object("button_set_theme")
 
 def call_set_theme(widget=None):
@@ -58,7 +57,6 @@ def on_activate(app):
     widgets.comborow.set_model(widgets.stringlist_theme_list)
 
     # Connect Signals
-    widgets.button_quit.connect("clicked", lambda x: widgets.window_main.close())
     widgets.button_set_theme.connect("clicked", call_set_theme)
 
     # Create Actions

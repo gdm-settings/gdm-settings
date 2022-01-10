@@ -84,13 +84,6 @@
               </object>
             </child>
 
-            <!-- Quit Button -->
-            <child>
-              <object class="GtkButton" id="button_quit">
-                <property name="label">Quit</property>
-              </object>
-            </child>
-
             <!-- Apply Button -->
             <child>
               <object class="GtkButton" id="button_set_theme">
