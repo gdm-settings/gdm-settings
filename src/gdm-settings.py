@@ -12,7 +12,10 @@ from functions import get_theme_list, set_theme, elevated_commands_list
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
 script_dir = os.path.dirname(script_realpath)
+
 main_window_ui_file = os.path.join(script_dir, "main-window.ui")
+app_menu_ui_file = os.path.join(script_dir, "app-menu.ui")
+about_dialog_ui_file = os.path.join(script_dir, "about-dialog.ui")
 theme_page_ui_file = os.path.join(script_dir, "theme.ui")
 
 # Empty Class+Object to contain widgets
@@ -53,6 +56,21 @@ def on_activate(app):
     # Connect Signals
     widgets.button_quit.connect("clicked", lambda x: widgets.window_main.close())
     widgets.button_set_theme.connect("clicked", call_set_theme)
+
+    # Create Actions
+    widgets.quit_action = Gio.SimpleAction(name="quit")
+    widgets.about_action = Gio.SimpleAction(name="about")
+
+    # Connect Signals
+    widgets.quit_action.connect("activate", lambda x,y: app.quit())
+    widgets.about_action.connect("activate", lambda x,y: widgets.about_dialog.present())
+
+    # Add Actions to app
+    app.add_action(widgets.quit_action)
+    app.add_action(widgets.about_action)
+
+    # Create Keyboard Shortcuts
+    app.set_accels_for_action("quit", ["<Ctrl>Q"])
 
     # Add Pages to Page Stack
     widgets.page_theme = widgets.stack_pages.add(widgets.box_page_theme)
