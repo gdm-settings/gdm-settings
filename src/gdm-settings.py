@@ -27,10 +27,14 @@ def load_widgets():
     # Initialize Builder
     widgets.builder = Gtk.Builder()
     # Load UI files
+    widgets.builder.add_from_file(app_menu_ui_file)
     widgets.builder.add_from_file(main_window_ui_file)
+    widgets.builder.add_from_file(about_dialog_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
     # Get Widgets from builder
     widgets.window_main = widgets.builder.get_object("window_main")
+    widgets.app_menu = widgets.builder.get_object("app_menu")
+    widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.stack_pages = widgets.builder.get_object("stack")
     widgets.box_page_theme = widgets.builder.get_object("theme_page")
     widgets.comborow = widgets.builder.get_object("comborow_theme_choice")
