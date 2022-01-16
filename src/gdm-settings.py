@@ -39,12 +39,6 @@ def load_widgets():
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.theme_page_apply_button = widgets.builder.get_object("theme_page_apply_button")
 
-def call_set_theme(widget=None):
-    selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
-    set_theme(selected_theme)
-    elevated_commands_list.run()
-    widgets.settings.set_string("theme", selected_theme)
-
 def init_settings():
     widgets.settings = Gio.Settings(schema_id=application_id)
 
@@ -59,6 +53,12 @@ def init_settings():
             else:
                 position += 1
 
+def on_theme_page_apply_button_clicked(widget):
+    # Theme
+    selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
+    set_theme(selected_theme)
+    elevated_commands_list.run()
+    widgets.settings.set_string("theme", selected_theme)
 
 def on_activate(app):
     # Load Widgets
@@ -70,11 +70,11 @@ def on_activate(app):
         widgets.theme_list_stringlist.append(theme)
     widgets.theme_choice_comborow.set_model(widgets.theme_list_stringlist)
 
+    # Connect Signals
+    widgets.theme_page_apply_button.connect("clicked", on_theme_page_apply_button_clicked)
+
     # Initialize GSettings
     init_settings()
-
-    # Connect Signals
-    widgets.theme_page_apply_button.connect("clicked", call_set_theme)
 
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
