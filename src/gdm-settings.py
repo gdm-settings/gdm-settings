@@ -3,7 +3,7 @@ import gi, sys, os.path
 
 gi.require_version("Adw", '1')
 
-from gi.repository import Adw, Gtk, Gio
+from gi.repository import Adw, Gtk, Gio, Gdk
 
 from info import *
 from functions import *
@@ -16,6 +16,7 @@ main_window_ui_file = os.path.join(script_dir, "main-window.ui")
 app_menu_ui_file = os.path.join(script_dir, "app-menu.ui")
 about_dialog_ui_file = os.path.join(script_dir, "about-dialog.ui")
 theme_page_ui_file = os.path.join(script_dir, "theme.ui")
+image_chooser_ui_file = os.path.join(script_dir, "image-chooser.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -30,6 +31,7 @@ def load_widgets():
     widgets.builder.add_from_file(main_window_ui_file)
     widgets.builder.add_from_file(about_dialog_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
+    widgets.builder.add_from_file(image_chooser_ui_file)
     # Get Widgets from builder
     widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
@@ -38,11 +40,18 @@ def load_widgets():
     widgets.theme_page_box = widgets.builder.get_object("theme_page_box")
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.theme_page_apply_button = widgets.builder.get_object("theme_page_apply_button")
+    widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
+    widgets.bg_type_list = widgets.builder.get_object("bg_type_list")
+    widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
+    widgets.bg_image_button = widgets.builder.get_object("bg_image_button")
+    widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
+    widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
+    widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
 
 def init_settings():
     widgets.settings = Gio.Settings(schema_id=application_id)
 
-    # Load Settings
+    # Load Theme Name
     set_theme = widgets.settings.get_string("theme")
     if set_theme:
         position = 0;
@@ -53,12 +62,66 @@ def init_settings():
             else:
                 position += 1
 
+    # Load Background Type
+    set_bg_type = widgets.settings.get_string("background-type")
+    position = 0
+    for bg_type in widgets.bg_type_list:
+        if bg_type.get_string() == set_bg_type:
+            widgets.bg_type_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+
+    # Load Background Color
+    set_bg_color = widgets.settings.get_string("background-color")
+    set_bg_color_rgba = Gdk.RGBA()
+    Gdk.RGBA.parse(set_bg_color_rgba, set_bg_color)
+    widgets.bg_color_button.set_rgba(set_bg_color_rgba)
+
+    # Load Background Image
+    set_bg_image = widgets.settings.get_string("background-image")
+    if set_bg_image:
+        widgets.bg_image_button.set_label(os.path.basename(set_bg_image))
+        widgets.bg_image_chooser.set_file(Gio.File.new_for_path(set_bg_image))
+
 def on_theme_page_apply_button_clicked(widget):
+    # Background
+    background_type = widgets.bg_type_comborow.get_selected_item().get_string()
+    widgets.settings.set_string("background-type", background_type)
+    if background_type == "Image":
+        background_image = widgets.bg_image_chooser.get_file().get_path()
+        widgets.settings.set_string("background-image", background_image)
+    elif background_type == "Color":
+        background_color = widgets.bg_color_button.get_rgba().to_string()
+        widgets.settings.set_string("background-color", background_color)
+
     # Theme
     selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
     set_theme(selected_theme)
     elevated_commands_list.run()
     widgets.settings.set_string("theme", selected_theme)
+
+def on_bg_type_change():
+    selected_type = widgets.bg_type_comborow.get_selected_item().get_string()
+    if selected_type == "None":
+        widgets.bg_image_actionrow.hide()
+        widgets.bg_color_actionrow.hide()
+    elif selected_type == "Image":
+        widgets.bg_color_actionrow.hide()
+        widgets.bg_image_actionrow.show()
+    elif selected_type == "Color":
+        widgets.bg_image_actionrow.hide()
+        widgets.bg_color_actionrow.show()
+
+def on_bg_image_button_clicked():
+    widgets.bg_image_chooser.present()
+
+def on_bg_image_chooser_response(widget, response):
+    if response == Gtk.ResponseType.OK:
+      image_file = widgets.bg_image_chooser.get_file()
+      image_basename = image_file.get_basename()
+      widgets.bg_image_button.set_label(image_basename)
+    widgets.bg_image_chooser.hide()
 
 def on_activate(app):
     # Load Widgets
@@ -72,6 +135,9 @@ def on_activate(app):
 
     # Connect Signals
     widgets.theme_page_apply_button.connect("clicked", on_theme_page_apply_button_clicked)
+    widgets.bg_type_comborow.connect("notify::selected", lambda x,y: on_bg_type_change())
+    widgets.bg_image_button.connect("clicked", lambda x: on_bg_image_button_clicked())
+    widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)
 
     # Initialize GSettings
     init_settings()
