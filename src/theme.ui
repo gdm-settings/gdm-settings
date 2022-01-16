@@ -49,10 +49,20 @@
                 <child>
                   <object class="AdwPreferencesGroup">
                     <property name="title">Background</property>
+
                     <child>
-                      <object class="AdwComboRow">
+                      <object class="AdwComboRow" id="bg_type_comborow">
                         <property name="title">Type</property>
                         <property name="use_subtitle">false</property>
+                        <property name="model">
+                          <object class="GtkStringList" id="bg_type_list">
+                            <items>
+                              <item>None</item>
+                              <item>Image</item>
+                              <item>Color</item>
+                            </items>
+                          </object>
+                        </property>
                       </object>
                     </child>
                   </object>
