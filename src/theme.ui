@@ -65,6 +65,42 @@
                         </property>
                       </object>
                     </child>
+
+                    <child>
+                      <object class="AdwActionRow" id="bg_image_actionrow">
+                        <property name="title">Image</property>
+                        <property name="subtitle">The image to use as background</property>
+                        <property name="visible">false</property>
+                        <property name="activatable-widget">bg_image_button</property>
+
+                        <child>
+                          <object class="GtkButton" id="bg_image_button">
+                            <!-- <style> <class name="flat"/> </style> -->
+                            <property name="label">Choose File</property>
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="AdwActionRow" id="bg_color_actionrow">
+                        <property name="title">Color</property>
+                        <property name="subtitle">The color to use as background</property>
+                        <property name="visible">false</property>
+                        <property name="activatable-widget">bg_color_button</property>
+
+                        <child>
+                          <object class="GtkColorButton" id="bg_color_button">
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                          </object>
+                        </child>
+
+                      </object>
+                    </child>
+
                   </object>
                 </child>
               </object>  <!--AdwClamp-->
