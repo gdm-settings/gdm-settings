@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkFileChooserDialog" id="bg_image_chooser">
+    <property name="transient-for">main_window</property>
+
+    <property name="filter">
+      <object class="GtkFileFilter">
+        <property name="name">Images</property>
+        <mime-types>
+          <mime-type>image/*</mime-type>
+        </mime-types>
+      </object>
+    </property>
+
+    <child type="action">
+      <object class="GtkButton" id="button_cancel">
+        <property name="label">Cancel</property>
+      </object>
+    </child>
+
+    <child type="action">
+      <object class="GtkButton" id="button_select">
+        <property name="label">Select</property>
+      </object>
+    </child>
+
+    <action-widgets>
+      <action-widget response="cancel">button_cancel</action-widget>
+      <action-widget response="ok" default="true">button_select</action-widget>
+    </action-widgets>
+
+  </object>
+</interface>
