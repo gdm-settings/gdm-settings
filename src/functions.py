@@ -207,6 +207,9 @@ def extract_default_theme(name:str="default-extracted"):
     elevated_commands_list.add(f"mkdir -p {target_theme_dir}")
     elevated_commands_list.add(f"mv -T {source_shell_dir} {target_shell_dir}")
 
+def remove_temp_dir():
+    shutil.rmtree(path=TempDir, ignore_errors=True)
+
 def show_manual(progName:str):
     os.system('man ' + progName)
 
