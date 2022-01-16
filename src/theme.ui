@@ -12,6 +12,7 @@
     <child>
       <object class="GtkScrolledWindow">
         <property name="propagate-natural-height">true</property>
+        <property name="propagate-natural-width">true</property>
         <property name="height-request">150</property>
         <property name="vexpand">true</property>
         <binding name="width-request">
