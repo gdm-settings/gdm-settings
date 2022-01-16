@@ -6,7 +6,7 @@ gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio
 
 from info import *
-from functions import get_theme_list, set_theme, elevated_commands_list
+from functions import *
 
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
