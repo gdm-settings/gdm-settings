@@ -107,7 +107,11 @@ def on_activate(app):
     # Show Window
     widgets.main_window.present()
 
+def on_shutdown(app):
+    remove_temp_dir()
+
 if __name__ == '__main__':
     app = Adw.Application(application_id=application_id)
     app.connect("activate", on_activate)
+    app.connect("shutdown", on_shutdown)
     exit(app.run(sys.argv))
