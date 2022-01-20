@@ -86,14 +86,16 @@ def init_settings():
 
 def on_theme_page_apply_button_clicked(widget):
     # Background
+    background = 'none'
     background_type = widgets.bg_type_comborow.get_selected_item().get_string()
     widgets.settings.set_string("background-type", background_type)
     if background_type == "Image":
-        background_image = widgets.bg_image_chooser.get_file().get_path()
-        widgets.settings.set_string("background-image", background_image)
+        background = widgets.bg_image_chooser.get_file().get_path()
+        widgets.settings.set_string("background-image", background)
     elif background_type == "Color":
-        background_color = widgets.bg_color_button.get_rgba().to_string()
-        widgets.settings.set_string("background-color", background_color)
+        background = widgets.bg_color_button.get_rgba().to_string()
+        widgets.settings.set_string("background-color", background)
+    set_background(background)
 
     # Theme
     selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
