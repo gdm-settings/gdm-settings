@@ -1,10 +1,10 @@
-# GDM Settings 
+# Login Settings (gdm-settings)
 
 An app to change settings of Gnome's Display/Login Manager.
 
 It is written in Python and provides a Graphical interface using GTK+ and LibAdwaita. It is an alternative to '[gdm-tools](https://github.com/realmazharhussain/gdm-tools)'  which is written in bash and has no Graphical Interface.
 
-<center><img src="resources/screenshot.png" alt="screenshot"/></center>
+<center><img src="data/screenshot.png" alt="screenshot"/></center>
 
 ## Important Note! (Alpha-Stage Software)
 
@@ -22,13 +22,13 @@ This app is in very early stage of development. So, it has only a small number o
 ### Manual Installation
 
 0. Make sure all build-time and run-time dependencies are installed
-
 1. Download and extract this [zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip) (or this [tar.gz file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz))\
    OR\
    Clone this repository. You can do so with the command `git clone --depth=1 --singe-branch https://github.com/realmazharhussain/gdm-settings`
 2. Go to the folder where you extracted/cloned this file/repo
 3. Open your terminal application in that folder
-4. Type `./install.sh` and press Enter
+4. Type `meson build` and press Enter
+5. Type `meson install -C build` and press Enter
 5. Type your password and press Enter
 
 ### Arch-based distros
@@ -45,7 +45,7 @@ This app is available in the AUR as [gdm-settings-git](https://aur.archlinux.org
 
 ### Build-time Dependencies
 
-- Bash
+- Meson
 
 ## Planned Features
 
