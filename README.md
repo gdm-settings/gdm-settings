@@ -10,10 +10,12 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 This app is in very early stage of development. So, it has only a small number of features and may crash frequently. Also, every aspect of this app is subject to significant change.
 
-## What works?
+## Features
 
 - Apply themes
 - Change Background Image/Color
+
+**Note:** See [Planned Features](#planned-features) for upcoming features
 
 ## How to Install?
 
@@ -21,7 +23,7 @@ This app is in very early stage of development. So, it has only a small number o
 
 0. Make sure all build-time and run-time dependencies are installed
 
-1. Download and extract [this zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip)\
+1. Download and extract [this zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip) (or [this tar.gz file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz))\
    OR\
    Clone this repository. You can do so with the command `git clone --depth=1 --singe-branch https://github.com/realmazharhussain/gdm-settings`
 2. Go to the folder where you extracted/cloned this file/repo
