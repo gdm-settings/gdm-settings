@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=Application
-Name=GDM Settings
-Comment=Change Settings of Gnome Display/Login Manager
-Icon=org.gtk.GdmSettings
+Name=@application_name@
+Comment=@description@
+Icon=@application_id@
 Exec=gdm-settings
 TryExec=gdm-settings
 Terminal=false
 StartupNotify=false
-StartupWMClass=org.gtk.GdmSettings
+StartupWMClass=@application_id@
 Categories=GNOME;GTK;System;Settings;DesktopSettings;
 Keywords=Login;

@@ -1,9 +1,0 @@
-files=('src/*.{ui,py}':"share/$project_name"
-       'resources/*.desktop':'share/applications'
-       'resources/*.gschema.xml':'share/glib-2.0/schemas'
-       'resources/*.appdata.xml':'share/metainfo')
-
-dirs=('resources/icons':'share/icons/hicolor')
-
-links=("share/${project_name}/${project_name}.py":"bin/$project_name"
-       "share/${project_name}/${project_name}-cli.py":"bin/${project_name}-cli")

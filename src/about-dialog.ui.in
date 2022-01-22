@@ -3,9 +3,12 @@
   <object class="GtkAboutDialog" id="about_dialog">
     <property name="transient-for">main_window</property>
     <property name="modal">true</property>
-    <property name="program-name">GDM Settings</property>
-    <property name="comments">A settings app for GNOME's Login Manager (GDM)</property>
-    <property name="logo-icon-name">org.gtk.GdmSettings</property>
+    <property name="program-name">@application_name@</property>
+    <property name="comments">@version@
+
+@description@
+    </property>
+    <property name="logo-icon-name">@application_id@</property>
     <property name="website">https://github.com/realmazharhussain/gdm-settings</property>
     <property name="copyright">Copyright © 2021 Mazhar Hussain</property>
     <property name="license-type">GTK_LICENSE_GPL_3_0</property>
