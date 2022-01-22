@@ -2,11 +2,11 @@
 import gi, sys, os.path
 
 gi.require_version("Adw", '1')
-
 from gi.repository import Adw, Gtk, Gio, Gdk
 
 from info import *
 from functions import *
+from theme_settings_manager import *
 
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)
@@ -49,59 +49,49 @@ def load_widgets():
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
 
 def init_settings():
-    widgets.settings = Gio.Settings(schema_id=application_id)
+    widgets.theme_settings = ThemeSettings()
 
     # Load Theme Name
-    set_theme = widgets.settings.get_string("theme")
-    if set_theme:
-        position = 0;
-        for theme in widgets.theme_list_stringlist:
-            if set_theme == theme.get_string():
-                widgets.theme_choice_comborow.set_selected(position)
-                break
-            else:
-                position += 1
+    saved_theme = widgets.theme_settings.theme
+    position = 0;
+    for theme in widgets.theme_list_stringlist:
+        if saved_theme  == theme.get_string():
+            widgets.theme_choice_comborow.set_selected(position)
+            break
+        else:
+            position += 1
 
     # Load Background Type
-    set_bg_type = widgets.settings.get_string("background-type")
     position = 0
+    saved_bg_type = widgets.theme_settings.background_type
     for bg_type in widgets.bg_type_list:
-        if bg_type.get_string() == set_bg_type:
+        if bg_type.get_string() == saved_bg_type:
             widgets.bg_type_comborow.set_selected(position)
             break
         else:
             position += 1
 
     # Load Background Color
-    set_bg_color = widgets.settings.get_string("background-color")
-    set_bg_color_rgba = Gdk.RGBA()
-    Gdk.RGBA.parse(set_bg_color_rgba, set_bg_color)
-    widgets.bg_color_button.set_rgba(set_bg_color_rgba)
+    saved_bg_color = widgets.theme_settings.background_color
+    saved_bg_color_rgba = Gdk.RGBA()
+    Gdk.RGBA.parse(saved_bg_color_rgba, saved_bg_color)
+    widgets.bg_color_button.set_rgba(saved_bg_color_rgba)
 
     # Load Background Image
-    set_bg_image = widgets.settings.get_string("background-image")
-    if set_bg_image:
-        widgets.bg_image_button.set_label(os.path.basename(set_bg_image))
-        widgets.bg_image_chooser.set_file(Gio.File.new_for_path(set_bg_image))
+    saved_bg_image = widgets.theme_settings.background_image
+    if saved_bg_image:
+        widgets.bg_image_button.set_label(os.path.basename(saved_bg_image))
+        widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
 
 def on_theme_page_apply_button_clicked(widget):
     # Background
-    background = 'none'
-    background_type = widgets.bg_type_comborow.get_selected_item().get_string()
-    widgets.settings.set_string("background-type", background_type)
-    if background_type == "Image":
-        background = widgets.bg_image_chooser.get_file().get_path()
-        widgets.settings.set_string("background-image", background)
-    elif background_type == "Color":
-        background = widgets.bg_color_button.get_rgba().to_string()
-        widgets.settings.set_string("background-color", background)
-    set_background(background)
-
+    widgets.theme_settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
+    widgets.theme_settings.background_image = widgets.bg_image_chooser.get_file().get_path()
+    widgets.theme_settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Theme
-    selected_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
-    set_theme(selected_theme)
-    elevated_commands_list.run()
-    widgets.settings.set_string("theme", selected_theme)
+    widgets.theme_settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
+    # Apply
+    widgets.theme_settings.apply_settings()
 
 def on_bg_type_change():
     selected_type = widgets.bg_type_comborow.get_selected_item().get_string()
@@ -176,7 +166,7 @@ def on_activate(app):
     widgets.main_window.present()
 
 def on_shutdown(app):
-    remove_temp_dir()
+    shutil.rmtree(path=TempDir, ignore_errors=True)
 
 if __name__ == '__main__':
     app = Adw.Application(application_id=application_id)

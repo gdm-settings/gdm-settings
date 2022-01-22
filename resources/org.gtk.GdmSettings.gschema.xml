@@ -31,5 +31,13 @@
 	     The Color to use as GDM background
 	   </description>
 	 </key>
+	 <key name="enabled-tweaks" type="s">
+	   <default>"[]"</default>
+	   <summary>Enabled Tweaks</summary>
+	 </key>
+	 <key name="custom-css" type="s">
+	   <default>""</default>
+	   <summary>Custom CSS</summary>
+	 </key>
   </schema>
 </schemalist>
