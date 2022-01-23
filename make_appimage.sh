@@ -5,6 +5,7 @@ AppDir="$buildDir"/AppDir
 export ARCH=x86_64
 export DESTDIR=${AppDir#"$PWD/"}
 export PREFIX=/usr
+export USE_RELATIVE_SYMLINKS=true
 
 rm -rf "$buildDir"
 meson "$buildDir" --prefix=$PREFIX
@@ -17,7 +18,7 @@ AppRun='#!/usr/bin/bash
 progDir=$(dirname "$(realpath "$0")")
 export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 export PATH="${progDir}/usr/bin:${PATH}"
-"$progDir"/usr/share/'"$project_name/$project_name.py"
+'"$project_name"
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas

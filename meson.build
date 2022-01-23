@@ -1,6 +1,10 @@
 project('gdm-settings',
         version: '0.1.1-alpha',
-  meson_version: '>= 0.50.0')
+  meson_version: '>= 0.57.0')
+
+dependency('pygobject-3.0')
+dependency('libadwaita-1')
+dependency('glib-2.0')
 
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 
@@ -19,3 +23,10 @@ conf.set('schema_path', schema_path)
 
 subdir('src')
 subdir('data')
+
+postinstall_file = configure_file(
+  input: 'build-aux/meson/postinstall.py.in',
+  output: 'postinstall.py',
+  configuration: conf
+  )
+meson.add_install_script(postinstall_file)

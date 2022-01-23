@@ -43,7 +43,4 @@ if compile_schemas.found()
   )
 endif
 
-install_subdir(
-  'icons/hicolor',
-  install_dir: join_paths(get_option('datadir'), 'icons')
-)
+subdir('icons')
