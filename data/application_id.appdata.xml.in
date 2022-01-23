@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
-  <id>@application_id@.desktop</id>
+<component type="desktop-application">
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0+</project_license>
-  <project_group>GNOME</project_group>
-  <developer_name>Mazhar Hussain</developer_name>
-  <update_contact>mmazharhussainkgb1145_at_gmail.com</update_contact>
+  <project_license>AGPL-3.0-or-later</project_license>
+
+  <id>@application_id@</id>
+  <launchable type="desktop-id">@application_id@.desktop</launchable>
+
   <name>@application_name@</name>
   <summary>@description@</summary>
+
   <description>
     <p>
        Configure GDM to your liking.
@@ -17,15 +18,37 @@
        and night light settings, among other things.
     </p>
   </description>
-  <kudos>
-    <kudo>HiDpiIcon</kudo>
-    <kudo>ModernToolkit</kudo>
-  </kudos>
+
+  <icon type="stock">@application_id@</icon>
+  <icon type="remote">https://github.com/realmazharhussain/gdm-settings/raw/main/data/icons/scalable/apps/application_id.svg</icon>
+
+  <categories>
+    <category>GNOME</category>
+    <category>GTK</category>
+    <category>System</category>
+    <category>Settings</category>
+    <category>DesktopSettings</category>
+  </categories>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+
+  <provides>
+    <binary>gdm-settings</binary>
+  </provides>
+
+  <developer_name>Mazhar Hussain</developer_name>
+  <update_contact>mmazharhussainkgb1145_at_gmail.com</update_contact>
+
   <screenshots>
     <screenshot type="default">
-       <image>https://github.com/realmazharhussain/gdm-settings/raw/main/resources/screenshot.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/blob/main/data/screenshot.png</image>
     </screenshot>
   </screenshots>
+
   <url type="homepage">https://github.com/realmazharhussain/gdm-settings</url>
   <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
   <!--
