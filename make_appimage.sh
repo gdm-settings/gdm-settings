@@ -30,8 +30,8 @@ chmod +x "${AppDir}/AppRun"
 echo '  Done.'
 
 echo "${bold}${italic}Building AppImage ...${normal}"
-if output=$(appimagetool "$AppDir" "$buildDir/$application_name.AppImage" 2>&1); then
-   echo "  Success! AppImage saved as '${buildDir/$PWD/.}/$application_name.AppImage'"
+if output=$(appimagetool "$AppDir" "$buildDir/$project_name.AppImage" 2>&1); then
+   echo "  Success! AppImage saved as '${buildDir/$PWD/.}/$project_name.AppImage'"
    status=0
 else
    echo "  ${bold}${red}${light_bg}Failed!${normal}"
