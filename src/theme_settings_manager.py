@@ -44,13 +44,13 @@ class ThemeSettings():
         css += self.custom_css
         return css
 
-    def apply_settings(self, elevator="pkexec"):
+    def apply_settings(self):
         auto_backup()
         os.makedirs(TempDir, exist_ok=True)
         shelldir = None
         if self.theme != "default":
             shelldir = f"/usr/share/themes/{self.theme}/gnome-shell"
         compiled_file = compile_theme(shellDir=shelldir, additional_css=self.get_setting_css())
-        returncode = subprocess.run(args=[elevator, 'mv',compiled_file, GdmGresourceFile]).returncode
-        if returncode == 0:
+        elevated_commands_list.add(f"mv {compiled_file} {GdmGresourceFile}")
+        if elevated_commands_list.run():
             self.save_to_gsettings()

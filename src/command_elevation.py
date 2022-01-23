@@ -31,24 +31,29 @@ class ElevatedCommandsList:
 
     def add(self, cmd:str):
         """ Add a new command to the list """
-        self.__list.append(cmd)
+        return self.__list.append(cmd)
 
     def clear(self):
         """ Clear command list """
-        self.__list.clear()
+        return self.__list.clear()
 
-    def run_only(self):
+    def run_only(self) -> bool:
         """ Run commands but DO NOT clear command list """
+        returncode = 0
         if len(self.__list):
             os.makedirs(name=TempDir, exist_ok=True)
             script_file = f"{TempDir}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
             os.chmod(path=script_file, mode=755)
-            subprocess.run(args=[self.__elevator, script_file])
+            returncode = subprocess.run(args=[self.__elevator, script_file]).returncode
             os.remove(script_file)
+        # Return Code 0 of subprocess means success, but boolean with value 0 is interpreted as False
+        # So, 'not returncode' boolean will be True when the subprocess succeeds
+        return not returncode
 
-    def run(self):
+    def run(self) -> bool:
         """ Run commands and clear command list"""
-        self.run_only()
+        status = self.run_only()
         self.clear()
+        return status
