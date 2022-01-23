@@ -33,7 +33,7 @@ This app is in very early stage of development. So, it has only a small number o
 
 ### Arch-based distros
 
-This app is available in the AUR as [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper.
+This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper.
 
 ## Dependencies
 
