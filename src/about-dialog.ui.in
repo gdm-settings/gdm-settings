@@ -4,10 +4,8 @@
     <property name="transient-for">main_window</property>
     <property name="modal">true</property>
     <property name="program-name">@application_name@</property>
-    <property name="comments">@version@
-
-@description@
-    </property>
+    <property name="version">@version@</property>
+    <property name="comments">@description@</property>
     <property name="logo-icon-name">@application_id@</property>
     <property name="website">https://github.com/realmazharhussain/gdm-settings</property>
     <property name="copyright">Copyright © 2021 Mazhar Hussain</property>
