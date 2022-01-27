@@ -18,7 +18,7 @@ AppRun='#!/usr/bin/bash
 progDir=$(dirname "$(realpath "$0")")
 export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 export PATH="${progDir}/usr/bin:${PATH}"
-'"$project_name"
+gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
