@@ -39,7 +39,7 @@ def load_widgets():
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.theme_page_box = widgets.builder.get_object("theme_page_box")
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
-    widgets.theme_page_apply_button = widgets.builder.get_object("theme_page_apply_button")
+    widgets.apply_button = widgets.builder.get_object("apply_button")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
     widgets.bg_type_list = widgets.builder.get_object("bg_type_list")
     widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
@@ -83,7 +83,7 @@ def init_settings():
         widgets.bg_image_button.set_label(os.path.basename(saved_bg_image))
         widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
 
-def on_theme_page_apply_button_clicked(widget):
+def on_apply(widget):
     # Background
     widgets.theme_settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
     widgets.theme_settings.background_image = widgets.bg_image_chooser.get_file().get_path()
@@ -126,7 +126,7 @@ def on_activate(app):
     widgets.theme_choice_comborow.set_model(widgets.theme_list_stringlist)
 
     # Connect Signals
-    widgets.theme_page_apply_button.connect("clicked", on_theme_page_apply_button_clicked)
+    widgets.apply_button.connect("clicked", on_apply)
     widgets.bg_type_comborow.connect("notify::selected", lambda x,y: on_bg_type_change())
     widgets.bg_image_button.connect("clicked", lambda x: on_bg_image_button_clicked())
     widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)

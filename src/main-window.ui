@@ -31,6 +31,19 @@
               </object>
             </child>
 
+            <child type="end">
+               <object class="GtkSeparator">
+                <property name="margin-start">10</property>
+               </object>
+            </child>
+
+            <child type="end">
+              <object class="GtkButton" id="apply_button">
+                <property name="label">Apply</property>
+                <style> <class name="suggested-action"/> </style>
+              </object>
+            </child>
+
           </object>
         </child>
 

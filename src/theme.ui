@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkBox" id="theme_page_box">
-    <property name="orientation">vertical</property>
-    <property name="margin-top">24</property>
-    <property name="margin-bottom">24</property>
-    <property name="margin-start">12</property>
-    <property name="margin-end">12</property>
-    <property name="spacing">24</property>
+  <object class="GtkScrolledWindow">
+    <property name="propagate-natural-height">true</property>
+    <property name="propagate-natural-width">true</property>
+    <property name="height-request">150</property>
     <property name="vexpand">true</property>
+    <binding name="width-request">
+      <lookup name="width-request">theme_page_content_clamp</lookup>
+    </binding>
 
     <child>
-      <object class="GtkScrolledWindow">
-        <property name="propagate-natural-height">true</property>
-        <property name="propagate-natural-width">true</property>
-        <property name="height-request">150</property>
+      <object class="GtkBox" id="theme_page_box">
+        <property name="orientation">vertical</property>
+        <property name="margin-top">24</property>
+        <property name="margin-bottom">24</property>
+        <property name="margin-start">12</property>
+        <property name="margin-end">12</property>
+        <property name="spacing">24</property>
         <property name="vexpand">true</property>
-        <binding name="width-request">
-          <lookup name="width-request">theme_page_content_clamp</lookup>
-        </binding>
 
         <child>
           <object class="AdwClamp" id="theme_page_content_clamp">
@@ -104,38 +104,6 @@
                   </object>
                 </child>
               </object>  <!--AdwClamp-->
-            </child>
-
-          </object>
-        </child>
-      </object>
-    </child>
-
-    <!-- Box for Buttons -->
-    <child>
-      <object class="AdwClamp">
-        <binding name="maximum-size">
-          <lookup name="maximum-size">theme_page_content_clamp</lookup>
-        </binding>
-        <child>
-          <object class="GtkBox">
-            <property name="orientation">horizontal</property>
-            <property name="spacing">5</property>
-            <property name="margin-end">5</property>
-            <property name="margin-bottom">5</property>
-            <property name="valign">end</property>
-
-            <child>
-              <object class="GtkLabel">
-                <property name="hexpand">true</property>
-              </object>
-            </child>
-
-            <!-- Apply Button -->
-            <child>
-              <object class="GtkButton" id="theme_page_apply_button">
-                <property name="label">Apply</property>
-              </object>
             </child>
 
           </object>
