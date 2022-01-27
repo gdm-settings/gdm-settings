@@ -1,113 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkScrolledWindow">
+  <object class="GtkScrolledWindow" id="theme_page_content">
     <property name="propagate-natural-height">true</property>
-    <property name="propagate-natural-width">true</property>
-    <property name="height-request">150</property>
-    <property name="vexpand">true</property>
-    <binding name="width-request">
-      <lookup name="width-request">theme_page_content_clamp</lookup>
-    </binding>
-
     <child>
-      <object class="GtkBox" id="theme_page_box">
-        <property name="orientation">vertical</property>
-        <property name="margin-top">24</property>
-        <property name="margin-bottom">24</property>
-        <property name="margin-start">12</property>
-        <property name="margin-end">12</property>
-        <property name="spacing">24</property>
-        <property name="vexpand">true</property>
+      <object class="AdwClamp" id="theme_page_clamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
 
         <child>
-          <object class="AdwClamp" id="theme_page_content_clamp">
-            <property name="maximum-size">500</property>
-            <property name="width-request">250</property>
-            <property name="vexpand">true</property>
-            <property name="hexpand">true</property>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
 
             <child>
-              <object class="GtkBox">
-                <property name="orientation">vertical</property>
-                <binding name="spacing">
-                  <lookup name="spacing">theme_page_box</lookup>
-                </binding>
-
+              <object class="AdwPreferencesGroup">
+                <property name="title">Theme</property>
+                <!-- ComboRow for Theme Choice -->
                 <child>
-                  <object class="AdwPreferencesGroup">
+                  <object class="AdwComboRow" id="theme_choice_comborow">
                     <property name="title">Theme</property>
-                    <!-- ComboRow for Theme Choice -->
+                    <property name="use_subtitle">false</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Background</property>
+
+                <child>
+                  <object class="AdwComboRow" id="bg_type_comborow">
+                    <property name="title">Type</property>
+                    <property name="use_subtitle">false</property>
+                    <property name="model">
+                      <object class="GtkStringList" id="bg_type_list">
+                        <items>
+                          <item>None</item>
+                          <item>Image</item>
+                          <item>Color</item>
+                        </items>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="AdwActionRow" id="bg_image_actionrow">
+                    <property name="title">Image</property>
+                    <property name="subtitle">The image to use as background</property>
+                    <property name="visible">false</property>
+                    <property name="activatable-widget">bg_image_button</property>
+
                     <child>
-                      <object class="AdwComboRow" id="theme_choice_comborow">
-                        <property name="title">Theme</property>
-                        <property name="use_subtitle">false</property>
+                      <object class="GtkButton" id="bg_image_button">
+                        <!-- <style> <class name="flat"/> </style> -->
+                        <property name="label">Choose File</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
                       </object>
                     </child>
                   </object>
                 </child>
 
                 <child>
-                  <object class="AdwPreferencesGroup">
-                    <property name="title">Background</property>
+                  <object class="AdwActionRow" id="bg_color_actionrow">
+                    <property name="title">Color</property>
+                    <property name="subtitle">The color to use as background</property>
+                    <property name="visible">false</property>
+                    <property name="activatable-widget">bg_color_button</property>
 
                     <child>
-                      <object class="AdwComboRow" id="bg_type_comborow">
-                        <property name="title">Type</property>
-                        <property name="use_subtitle">false</property>
-                        <property name="model">
-                          <object class="GtkStringList" id="bg_type_list">
-                            <items>
-                              <item>None</item>
-                              <item>Image</item>
-                              <item>Color</item>
-                            </items>
-                          </object>
-                        </property>
-                      </object>
-                    </child>
-
-                    <child>
-                      <object class="AdwActionRow" id="bg_image_actionrow">
-                        <property name="title">Image</property>
-                        <property name="subtitle">The image to use as background</property>
-                        <property name="visible">false</property>
-                        <property name="activatable-widget">bg_image_button</property>
-
-                        <child>
-                          <object class="GtkButton" id="bg_image_button">
-                            <!-- <style> <class name="flat"/> </style> -->
-                            <property name="label">Choose File</property>
-                            <property name="margin-top">5</property>
-                            <property name="margin-bottom">5</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-
-                    <child>
-                      <object class="AdwActionRow" id="bg_color_actionrow">
-                        <property name="title">Color</property>
-                        <property name="subtitle">The color to use as background</property>
-                        <property name="visible">false</property>
-                        <property name="activatable-widget">bg_color_button</property>
-
-                        <child>
-                          <object class="GtkColorButton" id="bg_color_button">
-                            <property name="margin-top">5</property>
-                            <property name="margin-bottom">5</property>
-                          </object>
-                        </child>
-
+                      <object class="GtkColorButton" id="bg_color_button">
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
                       </object>
                     </child>
 
                   </object>
                 </child>
-              </object>  <!--AdwClamp-->
+
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Theme Tweaks</property>
+
+                <child>
+                  <object class="AdwActionRow" id="disable_top_bar_arrows_actionrow">
+                    <property name="title">Disable Top Bar Arrows</property>
+                    <property name="activatable-widget">disable_top_bar_arrows_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="disable_top_bar_arrows_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Custom CSS</property>
+
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Enable</property>
+                    <property name="subtitle">Whether to apply custom CSS or not</property>
+                    <property name="activatable-widget">custom_css_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="custom_css_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="AdwExpanderRow" id="custom_css_expanderrow">
+                    <property name="title">Custom CSS</property>
+                    <property name="subtitle">CSS to append to theme before applying it</property>
+
+                    <child>
+                      <object class="GtkTextView" id="custom_css_textview">
+                      </object>
+                    </child>
+
+                  </object>
+                </child>
+
+              </object>
             </child>
 
           </object>
         </child>
+
       </object>
     </child>
 

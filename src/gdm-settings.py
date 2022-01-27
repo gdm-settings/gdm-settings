@@ -37,7 +37,7 @@ def load_widgets():
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
-    widgets.theme_page_box = widgets.builder.get_object("theme_page_box")
+    widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.apply_button = widgets.builder.get_object("apply_button")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
@@ -47,6 +47,8 @@ def load_widgets():
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
+    widgets.custom_css_switch = widgets.builder.get_object("custom_css_switch")
+    widgets.custom_css_textview = widgets.builder.get_object("custom_css_textview")
 
 def init_settings():
     widgets.theme_settings = ThemeSettings()
@@ -82,6 +84,10 @@ def init_settings():
     if saved_bg_image:
         widgets.bg_image_button.set_label(os.path.basename(saved_bg_image))
         widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
+
+    # Load Custom CSS
+    saved_custom_css = widgets.theme_settings.custom_css
+    widgets.custom_css_textview.get_buffer().set_text(saved_custom_css)
 
 def on_apply(widget):
     # Background
@@ -150,7 +156,7 @@ def on_activate(app):
     app.set_accels_for_action("quit", ["<Ctrl>Q"])
 
     # Add Pages to Page Stack
-    widgets.theme_page = widgets.page_stack.add(widgets.theme_page_box)
+    widgets.theme_page = widgets.page_stack.add(widgets.theme_page_content)
 
     # Set Page Properties
     widgets.theme_page.set_title("Theme")
