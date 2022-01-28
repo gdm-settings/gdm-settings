@@ -118,7 +118,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="top_bar_text_color_actionrow">
-                    <property name="title">Color</property>
+                    <property name="title">Top Bar Text Color</property>
                     <property name="subtitle">The color of text in top bar</property>
                     <property name="activatable-widget">top_bar_text_color_button</property>
                     <binding name="visible">
