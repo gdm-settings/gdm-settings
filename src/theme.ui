@@ -104,6 +104,19 @@
                 </child>
 
                 <child>
+                  <object class="AdwActionRow" id="disable_top_bar_corners_actionrow">
+                    <property name="title">Disable Top Bar Corners</property>
+                    <property name="activatable-widget">disable_top_bar_corners_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="disable_top_bar_corners_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
+                <child>
                   <object class="AdwActionRow" id="change_top_bar_text_color_actionrow">
                     <property name="title">Change Top Bar Text Color</property>
                     <property name="activatable-widget">change_top_bar_text_color_switch</property>

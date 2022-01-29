@@ -48,6 +48,7 @@ def load_widgets():
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
+    widgets.disable_top_bar_corners_switch = widgets.builder.get_object("disable_top_bar_corners_switch")
     widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
     widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
@@ -94,6 +95,9 @@ def init_settings():
     # Top Bar Arrows
     disable_top_bar_arrows = widgets.theme_settings.disable_top_bar_arrows
     widgets.disable_top_bar_arrows_switch.set_active(disable_top_bar_arrows)
+    # Top Bar Corners
+    disable_top_bar_corners = widgets.theme_settings.disable_top_bar_corners
+    widgets.disable_top_bar_corners_switch.set_active(disable_top_bar_corners)
     # Top Bar Text Color
     change_top_bar_text_color = widgets.theme_settings.change_top_bar_text_color
     widgets.change_top_bar_text_color_switch.set_active(change_top_bar_text_color)
@@ -118,6 +122,7 @@ def on_apply(widget):
     widgets.theme_settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
     # Theme Tweaks
     widgets.theme_settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
+    widgets.theme_settings.disable_top_bar_corners = widgets.disable_top_bar_corners_switch.get_active()
     widgets.theme_settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
     widgets.theme_settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
     widgets.theme_settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()

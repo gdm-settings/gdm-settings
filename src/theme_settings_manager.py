@@ -22,6 +22,7 @@ class ThemeSettings():
         self.background_image = self.gsettings.get_string("background-image")
         self.background_color = self.gsettings.get_string("background-color")
         self.disable_top_bar_arrows = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-arrows")
+        self.disable_top_bar_corners = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-corners")
         self.change_top_bar_text_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-text-color")
         self.top_bar_text_color = self.theme_tweaks_gsettings.get_string("top-bar-text-color")
         self.change_top_bar_background_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-background-color")
@@ -33,6 +34,7 @@ class ThemeSettings():
         self.gsettings.set_string("background-image", self.background_image)
         self.gsettings.set_string("background-color", self.background_color)
         self.theme_tweaks_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
+        self.theme_tweaks_gsettings.set_boolean("disable-top-bar-corners", self.disable_top_bar_corners)
         self.theme_tweaks_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
         self.theme_tweaks_gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
         self.theme_tweaks_gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
@@ -51,6 +53,11 @@ class ThemeSettings():
         # Disable Top Bar Arrows
         if self.disable_top_bar_arrows:
             css += "#panel .popup-menu-arrow { width: 0px; }\n"
+        # Disable Top Bar Corners
+        if self.disable_top_bar_corners:
+            css +=  "#panel .panel-corner {\n"
+            css += f"  -panel-corner-opacity: 0;\n"
+            css +=  "}\n"
         # Change Top Bar Text Color
         if self.change_top_bar_text_color:
             css +=  "#panel .panel-button {\n"
@@ -61,10 +68,11 @@ class ThemeSettings():
             css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
             css += f"  background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
-            css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
-            css += f"  -panel-corner-opacity: 1;\n"
-            css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
-            css +=  "}\n"
+            if not self.disable_top_bar_corners:
+                css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
+                css += f"  -panel-corner-opacity: 1;\n"
+                css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
+                css +=  "}\n"
         return css
 
     def apply_settings(self):

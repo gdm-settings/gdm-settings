@@ -48,6 +48,10 @@
       <default>false</default>
       <summary>Whether to disable top bar arrows</summary>
     </key>
+    <key name="disable-top-bar-corners" type="b">
+      <default>false</default>
+      <summary>Whether to disable top bar corners</summary>
+    </key>
     <key name="change-top-bar-text-color" type="b">
       <default>false</default>
       <summary>Whether to change top bar text color</summary>
