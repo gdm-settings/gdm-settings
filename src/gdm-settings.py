@@ -61,6 +61,7 @@ def load_widgets():
 
 def init_settings():
     widgets.theme_settings = ThemeSettings()
+    widgets.misc_settings = MiscSettings()
 
     # Load Theme Name
     saved_theme = widgets.theme_settings.theme

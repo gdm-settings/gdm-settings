@@ -39,11 +39,9 @@
 	   <default>""</default>
 	   <summary>Custom CSS</summary>
 	 </key>
-
-	 <child name="theme-tweaks" schema="@application_id@.theme-tweaks"/>
   </schema>
 
-  <schema id="@application_id@.theme-tweaks">
+  <schema id="@application_id@.theme-tweaks" path="@schema_path@theme-tweaks/">
     <key name="disable-top-bar-arrows" type="b">
       <default>false</default>
       <summary>Whether to disable top bar arrows</summary>
@@ -68,6 +66,9 @@
 	   <default>"rgb(0,0,0)"</default>
       <summary>Top bar background color</summary>
     </key>
+  </schema>
+
+  <schema id="@application_id@.settings" path="@schema_path@settings/">
   </schema>
 
 </schemalist>

@@ -13,7 +13,7 @@ from functions import *
 class ThemeSettings:
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=application_id)
-        self.theme_tweaks_gsettings = self.gsettings.get_child("theme-tweaks")
+        self.theme_tweaks_gsettings = Gio.Settings(schema_id=f"{application_id}.theme-tweaks")
         self.load_from_gsettings()
     
     def load_from_gsettings(self):
@@ -87,5 +87,8 @@ class ThemeSettings:
             self.save_to_gsettings()
 
 class MiscSettings:
-    def __init__():
+    def __init__(self):
+        self.gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
+        self.load_from_gsettings()
+    def load_from_gsettings(self):
         pass
