@@ -1,4 +1,4 @@
-'''Theme Settings Manager'''
+'''Settings Manager'''
 
 import os
 import subprocess
@@ -10,7 +10,7 @@ from gi.repository import Gio
 from info import *
 from functions import *
 
-class ThemeSettings():
+class ThemeSettings:
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=application_id)
         self.theme_tweaks_gsettings = self.gsettings.get_child("theme-tweaks")
@@ -85,3 +85,7 @@ class ThemeSettings():
         elevated_commands_list.add(f"mv {compiled_file} {GdmGresourceFile}")
         if elevated_commands_list.run():
             self.save_to_gsettings()
+
+class MiscSettings:
+    def __init__():
+        pass

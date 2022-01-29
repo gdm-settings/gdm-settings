@@ -17,6 +17,7 @@ app_menu_ui_file = os.path.join(script_dir, "app-menu.ui")
 about_dialog_ui_file = os.path.join(script_dir, "about-dialog.ui")
 theme_page_ui_file = os.path.join(script_dir, "theme.ui")
 image_chooser_ui_file = os.path.join(script_dir, "image-chooser.ui")
+settings_page_ui_file = os.path.join(script_dir, "settings.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -32,12 +33,14 @@ def load_widgets():
     widgets.builder.add_from_file(about_dialog_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
     widgets.builder.add_from_file(image_chooser_ui_file)
+    widgets.builder.add_from_file(settings_page_ui_file)
     # Get Widgets from builder
     widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
+    widgets.settings_page_content = widgets.builder.get_object("settings_page_content")
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.apply_button = widgets.builder.get_object("apply_button")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
@@ -188,10 +191,15 @@ def on_activate(app):
 
     # Add Pages to Page Stack
     widgets.theme_page = widgets.page_stack.add(widgets.theme_page_content)
+    widgets.settings_page = widgets.page_stack.add(widgets.settings_page_content)
 
-    # Set Page Properties
+    # Set Theme Page Properties
     widgets.theme_page.set_title("Theme")
     widgets.theme_page.set_icon_name(f"{application_id}-theme")
+
+    # Set Settings Page Properties
+    widgets.settings_page.set_title("Settings")
+    widgets.settings_page.set_icon_name(f"{application_id}-settings")
 
     # Set Title Main Window to Application Name
     widgets.main_window.set_title(application_name)

@@ -26,6 +26,7 @@ source_files = [
   'functions.py',
   'gdm-settings.py',
   'settings_manager.py',
+  'settings.ui',
 ]
 
 install_data(source_files, install_dir: pkgdatadir)
