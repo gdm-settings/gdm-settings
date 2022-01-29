@@ -6,7 +6,7 @@ from gi.repository import Adw, Gtk, Gio, Gdk
 
 from info import *
 from functions import *
-from theme_settings_manager import *
+from settings_manager import *
 
 script_realpath = os.path.realpath(sys.argv[0])
 script_basename = os.path.basename(script_realpath)

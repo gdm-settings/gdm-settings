@@ -25,7 +25,7 @@ source_files = [
   'command_elevation.py',
   'functions.py',
   'gdm-settings.py',
-  'theme_settings_manager.py',
+  'settings_manager.py',
 ]
 
 install_data(source_files, install_dir: pkgdatadir)
