@@ -13,7 +13,12 @@ This app is in very early stage of development. So, it has only a small number o
 ## Features
 
 - Apply themes
-- Change Background Image/Color
+- Set Image/Color as Background
+- Theme (Top Bar) Tweaks
+  - Disable arrows
+  - Disable rounded corners
+  - Change text color
+  - Change background color & transparency (either both or none)
 
 **Note:** See [Planned Features](#planned-features) for upcoming features
 
@@ -57,11 +62,6 @@ This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/pac
 - Show/Hide battery percentage
 - Touchpad settings (speed, tap-to-click)
 - Clock settings (show/hide weekday, AM/PM or 24h)
-- Tweak the theme before applying it. For example, 
-  - change text color
-  - disable arrows in top bar
-  - make top bar partially/fully transparent
-- Add user-specified CSS to  the theme before applying it (<font color="red">partially done</font>)
 - A command-line interface
 - Tab-completion for the command-line interface
 
