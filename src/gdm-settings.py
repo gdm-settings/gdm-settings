@@ -119,9 +119,13 @@ def add_string_lists_to_comborows():
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
 def init_settings():
+    widgets.main_gsettings = Gio.Settings(schema_id=application_id)
     widgets.theme_settings = ThemeSettings()
     widgets.misc_settings = MiscSettings()
 
+    # Open Last visited Page
+    page_name = widgets.main_gsettings.get_string("last-visited-page")
+    widgets.page_stack.set_visible_child_name(page_name)
     # Load Theme Name
     saved_theme = widgets.theme_settings.theme
     position = 0;
@@ -227,9 +231,6 @@ def on_activate(app):
     widgets.bg_image_button.connect("clicked", lambda x: on_bg_image_button_clicked())
     widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)
 
-    # Initialize GSettings
-    init_settings()
-
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
     widgets.about_action = Gio.SimpleAction(name="about")
@@ -250,12 +251,17 @@ def on_activate(app):
     widgets.settings_page = widgets.page_stack.add(widgets.settings_page_content)
 
     # Set Theme Page Properties
+    widgets.theme_page.set_name("theme")
     widgets.theme_page.set_title("Theme")
     widgets.theme_page.set_icon_name(f"{application_id}-theme")
 
     # Set Settings Page Properties
+    widgets.settings_page.set_name("settings")
     widgets.settings_page.set_title("Settings")
     widgets.settings_page.set_icon_name(f"{application_id}-settings")
+
+    # Load GSettings
+    init_settings()
 
     # Set Title Main Window to Application Name
     widgets.main_window.set_title(application_name)
@@ -267,6 +273,10 @@ def on_activate(app):
     widgets.main_window.present()
 
 def on_shutdown(app):
+    # Save Last visited Page
+    page_name = widgets.page_stack.get_visible_child_name()
+    widgets.main_gsettings.set_string("last-visited-page", page_name)
+
     shutil.rmtree(path=TempDir, ignore_errors=True)
 
 if __name__ == '__main__':

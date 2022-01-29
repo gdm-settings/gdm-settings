@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="@application_id@" path="@schema_path@">
+	 <key name="last-visited-page" type="s">
+	   <default>"theme"</default>
+	   <choices>
+	     <choice value="theme"/>
+	     <choice value="settings"/>
+	   </choices>
+	 </key>
 	 <key name="theme" type="s">
 	   <default>"default"</default>
 	   <summary>Theme Name</summary>
