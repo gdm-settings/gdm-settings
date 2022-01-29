@@ -2,7 +2,7 @@
 <interface>
   <!-- Main Window -->
   <object id="main_window" class="AdwApplicationWindow">
-    <property name="default-width">700</property>
+    <property name="default-width">600</property>
     <!-- <property name="default-height">410</property> -->
     <property name="content">
 
