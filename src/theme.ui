@@ -88,11 +88,11 @@
 
             <child>
               <object class="AdwPreferencesGroup">
-                <property name="title">Theme Tweaks</property>
+                <property name="title">Top Bar Tweaks</property>
 
                 <child>
                   <object class="AdwActionRow" id="disable_top_bar_arrows_actionrow">
-                    <property name="title">Disable Top Bar Arrows</property>
+                    <property name="title">Disable Arrows</property>
                     <property name="activatable-widget">disable_top_bar_arrows_switch</property>
                     <child>
                       <object class="GtkSwitch" id="disable_top_bar_arrows_switch">
@@ -105,7 +105,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="disable_top_bar_corners_actionrow">
-                    <property name="title">Disable Top Bar Corners</property>
+                    <property name="title">Disable Corners</property>
                     <property name="activatable-widget">disable_top_bar_corners_switch</property>
                     <child>
                       <object class="GtkSwitch" id="disable_top_bar_corners_switch">
@@ -118,7 +118,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="change_top_bar_text_color_actionrow">
-                    <property name="title">Change Top Bar Text Color</property>
+                    <property name="title">Change Text Color</property>
                     <property name="activatable-widget">change_top_bar_text_color_switch</property>
                     <child>
                       <object class="GtkSwitch" id="change_top_bar_text_color_switch">
@@ -131,7 +131,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="top_bar_text_color_actionrow">
-                    <property name="title">Top Bar Text Color</property>
+                    <property name="title">Text Color</property>
                     <property name="subtitle">The color of text in top bar</property>
                     <property name="activatable-widget">top_bar_text_color_button</property>
                     <binding name="visible">
@@ -151,7 +151,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="change_top_bar_background_color_actionrow">
-                    <property name="title">Change Top Bar Background Color</property>
+                    <property name="title">Change Background Color</property>
                     <property name="activatable-widget">change_top_bar_background_color_switch</property>
                     <child>
                       <object class="GtkSwitch" id="change_top_bar_background_color_switch">
@@ -164,7 +164,7 @@
 
                 <child>
                   <object class="AdwActionRow" id="top_bar_background_color_actionrow">
-                    <property name="title">Top Bar Background Color</property>
+                    <property name="title"> Background Color</property>
                     <property name="subtitle">The color of top bar background</property>
                     <property name="activatable-widget">top_bar_background_color_button</property>
                     <binding name="visible">
