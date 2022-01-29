@@ -183,6 +183,12 @@
                     </child>
         
                     <child>
+                      <object class="GtkSeparator">
+                        <style><class name="spacer"/></style>
+                      </object>
+                    </child>
+
+                    <child>
                       <object class="GtkLabel">
                         <property name="label">To</property>
                         <style><class name="dim-label"/></style>
