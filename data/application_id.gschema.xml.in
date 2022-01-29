@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="@application_id@" path="@schema_path@">
+    <key name="first-run" type="b">
+      <default>true</default>
+    </key>
 	 <key name="last-visited-page" type="s">
 	   <default>"theme"</default>
 	   <choices>
