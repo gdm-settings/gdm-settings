@@ -106,9 +106,9 @@
                 <child>
                   <object class="AdwActionRow" id="change_top_bar_text_color_actionrow">
                     <property name="title">Change Top Bar Text Color</property>
-                    <property name="activatable-widget">top_bar_text_color_switch</property>
+                    <property name="activatable-widget">change_top_bar_text_color_switch</property>
                     <child>
-                      <object class="GtkSwitch" id="top_bar_text_color_switch">
+                      <object class="GtkSwitch" id="change_top_bar_text_color_switch">
                         <property name="margin-top">15</property>
                         <property name="margin-bottom">15</property>
                       </object>
@@ -122,7 +122,7 @@
                     <property name="subtitle">The color of text in top bar</property>
                     <property name="activatable-widget">top_bar_text_color_button</property>
                     <binding name="visible">
-                       <lookup name="active">top_bar_text_color_switch</lookup>
+                       <lookup name="active">change_top_bar_text_color_switch</lookup>
                     </binding>
 
                     <child>
@@ -135,6 +135,7 @@
                   </object>
                 </child>
 
+                <!--
                 <child>
                   <object class="AdwActionRow" id="change_top_bar_transparency_actionrow">
                     <property name="title">Change Top Bar Transparency</property>
@@ -148,43 +149,29 @@
                   </object>
                 </child>
 
-              </object>
-            </child>
-
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Custom CSS</property>
-
                 <child>
-                  <object class="AdwActionRow">
-                    <property name="title">Enable</property>
-                    <property name="subtitle">Whether to apply custom CSS or not</property>
-                    <property name="activatable-widget">custom_css_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="custom_css_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-
-                <child>
-                  <object class="AdwExpanderRow" id="custom_css_expanderrow">
+                  <object class="AdwActionRow" id="top_bar_transparency_actionrow">
+                    <property name="title">Top Bar Transparency</property>
                     <binding name="visible">
-                      <lookup name="active">custom_css_switch</lookup>
+                       <lookup name="active">top_bar_transparency_switch</lookup>
                     </binding>
-                    <property name="title">Custom CSS</property>
-                    <property name="subtitle">CSS to append to theme before applying it</property>
-
                     <child>
-                      <object class="GtkTextView" id="custom_css_textview">
-                        <style><class name="card"/></style>
+                      <object class="GtkScale" id="top_bar_transparency_scale">
+                        <property name="orientation">horizontal</property>
+                        <property name="digits">2</property>
+                        <property name="value-pos">right</property>
+                        <property name="hexpand">true</property>
+                        <property name="draw-value">yes</property>
+                        <property name="show-fill-level">yes</property>
+                        <marks>
+                          <mark position="top" value="0">0.00</mark>
+                          <mark position="top" value="1">1.00</mark>
+                        </marks>
                       </object>
                     </child>
-
                   </object>
                 </child>
+                -->
 
               </object>
             </child>

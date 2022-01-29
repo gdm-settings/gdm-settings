@@ -13,6 +13,7 @@ from functions import *
 class ThemeSettings():
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=application_id)
+        self.theme_tweaks_gsettings = self.gsettings.get_child("theme-tweaks")
         self.load_from_gsettings()
     
     def load_from_gsettings(self):
@@ -20,28 +21,37 @@ class ThemeSettings():
         self.background_type = self.gsettings.get_string("background-type")
         self.background_image = self.gsettings.get_string("background-image")
         self.background_color = self.gsettings.get_string("background-color")
-        self.enabled_tweaks = self.gsettings.get_string("enabled-tweaks")
-        self.custom_css = self.gsettings.get_string("custom-css")
+        self.disable_top_bar_arrows = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-arrows")
+        self.change_top_bar_text_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-text-color")
+        self.top_bar_text_color = self.theme_tweaks_gsettings.get_string("top-bar-text-color")
 
     def save_to_gsettings(self):
         self.gsettings.set_string("theme", self.theme)
         self.gsettings.set_string("background-type", self.background_type)
         self.gsettings.set_string("background-image", self.background_image)
         self.gsettings.set_string("background-color", self.background_color)
-        self.gsettings.set_string("enabled-tweaks", self.enabled_tweaks)
-        self.gsettings.set_string("custom-css", self.custom_css)
+        self.theme_tweaks_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
+        self.theme_tweaks_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
+        self.theme_tweaks_gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
     
     def get_setting_css(self) -> str:
         css = "\n/* 'GDM Settings' App Provided CSS */\n"
+        # Background
         if self.background_type == "Image":
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('file://"+ self.background_image + "');\n"
             css += "  background-size: cover;\n"
-            css += "}"
+            css += "}\n"
         elif self.background_type == "Color":
             css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
-        css += "\n/* User-Provided CSS */\n"
-        css += self.custom_css
+        # Disable Top Bar Arrows
+        if self.disable_top_bar_arrows:
+            css += "#panel .popup-menu-arrow { width: 0px; }\n"
+        # Change Top Bar Text Color
+        if self.change_top_bar_text_color:
+            css +=  "#panel.unlock-screen, #panel.login-screen, #panel .panel-button {\n"
+            css += f"  color: {self.top_bar_text_color};\n"
+            css +=  "}\n"
         return css
 
     def apply_settings(self):

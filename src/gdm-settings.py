@@ -47,8 +47,11 @@ def load_widgets():
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
-    widgets.custom_css_switch = widgets.builder.get_object("custom_css_switch")
-    widgets.custom_css_textview = widgets.builder.get_object("custom_css_textview")
+    widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
+    widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
+    widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
+    #widgets.top_bar_transparency_scale = widgets.builder.get_object("top_bar_transparency_scale")
+    #widgets.top_bar_transparency_scale.set_range(0, 1)
 
 def init_settings():
     widgets.theme_settings = ThemeSettings()
@@ -85,9 +88,17 @@ def init_settings():
         widgets.bg_image_button.set_label(os.path.basename(saved_bg_image))
         widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
 
-    # Load Custom CSS
-    saved_custom_css = widgets.theme_settings.custom_css
-    widgets.custom_css_textview.get_buffer().set_text(saved_custom_css)
+    #### Load Theme Tweaks
+    # Top Bar Arrows
+    disable_top_bar_arrows = widgets.theme_settings.disable_top_bar_arrows
+    widgets.disable_top_bar_arrows_switch.set_active(disable_top_bar_arrows)
+    # Top Bar Text Color
+    change_top_bar_text_color = widgets.theme_settings.change_top_bar_text_color
+    widgets.change_top_bar_text_color_switch.set_active(change_top_bar_text_color)
+    top_bar_text_color = widgets.theme_settings.top_bar_text_color
+    top_bar_text_color_rgba = Gdk.RGBA()
+    top_bar_text_color_rgba.parse(top_bar_text_color)
+    widgets.top_bar_text_color_button.set_rgba(top_bar_text_color_rgba)
 
 def on_apply(widget):
     # Background
@@ -96,6 +107,10 @@ def on_apply(widget):
     widgets.theme_settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Theme
     widgets.theme_settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
+    # Theme Tweaks
+    widgets.theme_settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
+    widgets.theme_settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
+    widgets.theme_settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
     # Apply
     widgets.theme_settings.apply_settings()
 
