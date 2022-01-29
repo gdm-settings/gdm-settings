@@ -62,7 +62,7 @@ class ThemeSettings():
             css += f"  background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
             css +=  "#panel .panel-corner {\n"
-            css += f"  -panel-corner-opacity: 0;\n"
+            css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
         return css
 
