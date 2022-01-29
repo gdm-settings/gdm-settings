@@ -1,4 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkBox" id="settings_page_content"/>
+  <object class="GtkScrolledWindow" id="settings_page_content">
+    <property name="propagate-natural-height">true</property>
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Appearance</property>
+        
+                <child>
+                  <object class="AdwComboRow" id="icon_theme_comborow">
+                    <property name="title">Icon Theme</property>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwComboRow" id="cursor_theme_comborow">
+                    <property name="title">Cursor Theme</property>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Sound</property>
+        
+                <child>
+                  <object class="AdwComboRow" id="sound_theme_comborow">
+                    <property name="title">Sound Theme</property>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Clock</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show Weekday</property>
+                    <property name="activatable-widget">show_weekday_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_weekday_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwComboRow" id="time_format_comborow">
+                    <property name="title">Time Format</property>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Power</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show battery percentage</property>
+                    <property name="activatable-widget">show_battery_percentage_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_battery_percentage_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Touchpad</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Tap to Click</property>
+                    <property name="activatable-widget">tap_to_click_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="tap_to_click_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Touchpad Speed</property>
+                    <child>
+                      <object class="GtkScale" id="touchpad_speed_scale">
+                        <property name="orientation">horizontal</property>
+                        <property name="hexpand">true</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Night Light</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Enable</property>
+                    <property name="activatable-widget">night_light_enable_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="night_light_enable_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwComboRow" id="night_light_schedule_comborow">
+                    <property name="title">Schedule</property>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Times</property>
+        
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">From</property>
+                        <style><class name="dim-label"/></style>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkSpinButton" id="night_light_start_hour_spinbutton">
+                        <property name="orientation">vertical</property>
+                        <property name="width-chars">2</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">:</property>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkSpinButton" id="night_light_start_minute_spinbutton">
+                        <property name="orientation">vertical</property>
+                        <property name="width-chars">2</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">To</property>
+                        <style><class name="dim-label"/></style>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkSpinButton" id="night_light_end_hour_spinbutton">
+                        <property name="orientation">vertical</property>
+                        <property name="width-chars">2</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">:</property>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="GtkSpinButton" id="night_light_end_minute_spinbutton">
+                        <property name="orientation">vertical</property>
+                        <property name="width-chars">2</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+        
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Color Temperature</property>
+                    <child>
+                      <object class="GtkScale" id="night_light_color_temperature_scale">
+                        <property name="orientation">horizontal</property>
+                        <property name="hexpand">true</property>
+                        <property name="inverted">true</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </object>
 </interface>

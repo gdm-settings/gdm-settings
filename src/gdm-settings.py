@@ -27,6 +27,7 @@ widgets = WidgetContainer()
 def load_widgets():
     # Initialize Builder
     widgets.builder = Gtk.Builder()
+
     # Load UI files
     widgets.builder.add_from_file(app_menu_ui_file)
     widgets.builder.add_from_file(main_window_ui_file)
@@ -34,17 +35,22 @@ def load_widgets():
     widgets.builder.add_from_file(theme_page_ui_file)
     widgets.builder.add_from_file(image_chooser_ui_file)
     widgets.builder.add_from_file(settings_page_ui_file)
-    # Get Widgets from builder
+
+
+    #### Get Widgets from builder ####
+
+    # Main Widgets
     widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
     widgets.settings_page_content = widgets.builder.get_object("settings_page_content")
-    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.apply_button = widgets.builder.get_object("apply_button")
+
+    # Widgets from Theme page
+    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
-    widgets.bg_type_list = widgets.builder.get_object("bg_type_list")
     widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
     widgets.bg_image_button = widgets.builder.get_object("bg_image_button")
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
@@ -56,8 +62,61 @@ def load_widgets():
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
     widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
     widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
-    #widgets.top_bar_transparency_scale = widgets.builder.get_object("top_bar_transparency_scale")
-    #widgets.top_bar_transparency_scale.set_range(0, 1)
+
+    # Widgets from Settings page
+    widgets.icon_theme_comborow = widgets.builder.get_object("icon_theme_comborow")
+    widgets.cursor_theme_comborow = widgets.builder.get_object("cursor_theme_comborow")
+    widgets.sound_theme_comborow = widgets.builder.get_object("sound_theme_comborow")
+    widgets.time_format_comborow = widgets.builder.get_object("time_format_comborow")
+    widgets.touchpad_speed_scale = widgets.builder.get_object("touchpad_speed_scale")
+    widgets.touchpad_speed_scale.set_range(-1, 1)
+    widgets.night_light_enable_switch = widgets.builder.get_object("night_light_enable_switch")
+    widgets.night_light_schedule_comborow = widgets.builder.get_object("night_light_schedule_comborow")
+    widgets.night_light_start_hour_spinbutton = widgets.builder.get_object("night_light_start_hour_spinbutton")
+    widgets.night_light_start_hour_spinbutton.set_range(0, 23)
+    widgets.night_light_start_hour_spinbutton.set_increments(1,2)
+    widgets.night_light_start_minute_spinbutton = widgets.builder.get_object("night_light_start_minute_spinbutton")
+    widgets.night_light_start_minute_spinbutton.set_range(0, 59)
+    widgets.night_light_start_minute_spinbutton.set_increments(1,5)
+    widgets.night_light_end_hour_spinbutton = widgets.builder.get_object("night_light_end_hour_spinbutton")
+    widgets.night_light_end_hour_spinbutton.set_range(0, 23)
+    widgets.night_light_end_hour_spinbutton.set_increments(1,2)
+    widgets.night_light_end_minute_spinbutton = widgets.builder.get_object("night_light_end_minute_spinbutton")
+    widgets.night_light_end_minute_spinbutton.set_range(0, 59)
+    widgets.night_light_end_minute_spinbutton.set_increments(1,5)
+    widgets.night_light_color_temperature_scale = widgets.builder.get_object("night_light_color_temperature_scale")
+    widgets.night_light_color_temperature_scale.set_range(1700, 4700)
+
+def add_string_lists_to_comborows():
+    # GDM Background Types
+    widgets.bg_type_list = Gtk.StringList.new(['None', 'Image', 'Color'])
+    widgets.bg_type_comborow.set_model(widgets.bg_type_list)
+    # Time Formats
+    widgets.time_format_list = Gtk.StringList.new(['AM/PM', '24 Hours'])
+    widgets.time_format_comborow.set_model(widgets.time_format_list)
+    # Night Light Schedule Types
+    widgets.night_light_schedule_list = Gtk.StringList.new(['Sunset to Sunrise', 'Manual Schedule'])
+    widgets.night_light_schedule_comborow.set_model(widgets.night_light_schedule_list)
+    # GDM Themes
+    widgets.gdm_theme_list = Gtk.StringList()
+    for theme in get_gdm_theme_list():
+        widgets.gdm_theme_list.append(theme)
+    widgets.theme_choice_comborow.set_model(widgets.gdm_theme_list)
+    # Icon Themes
+    widgets.icon_theme_list = Gtk.StringList()
+    for theme in get_icon_theme_list():
+        widgets.icon_theme_list.append(theme)
+    widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
+    # Cursor Themes
+    widgets.cursor_theme_list = Gtk.StringList()
+    for theme in get_cursor_theme_list():
+        widgets.cursor_theme_list.append(theme)
+    widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
+    # Sound Themes
+    widgets.sound_theme_list = Gtk.StringList()
+    for theme in get_sound_theme_list():
+        widgets.sound_theme_list.append(theme)
+    widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
 def init_settings():
     widgets.theme_settings = ThemeSettings()
@@ -66,7 +125,7 @@ def init_settings():
     # Load Theme Name
     saved_theme = widgets.theme_settings.theme
     position = 0;
-    for theme in widgets.theme_list_stringlist:
+    for theme in widgets.gdm_theme_list:
         if saved_theme  == theme.get_string():
             widgets.theme_choice_comborow.set_selected(position)
             break
@@ -157,14 +216,10 @@ def on_bg_image_chooser_response(widget, response):
     widgets.bg_image_chooser.hide()
 
 def on_activate(app):
-    # Load Widgets
+
     load_widgets()
 
-    # Add Themes to List
-    widgets.theme_list_stringlist = Gtk.StringList()
-    for theme in get_theme_list():
-        widgets.theme_list_stringlist.append(theme)
-    widgets.theme_choice_comborow.set_model(widgets.theme_list_stringlist)
+    add_string_lists_to_comborows()
 
     # Connect Signals
     widgets.apply_button.connect("clicked", on_apply)
