@@ -56,14 +56,13 @@
 	   <default>"rgb(250,250,250)"</default>
       <summary>Top bar text color</summary>
     </key>
-    <key name="change-top-bar-transparency" type="b">
+    <key name="change-top-bar-background-color" type="b">
       <default>false</default>
-      <summary>Whether to change top bar transparency</summary>
+      <summary>Whether to change top bar background</summary>
     </key>
-    <key name="top-bar-transparency" type="d">
-      <range min="0" max="1"/>
-      <default>1</default>
-      <summary>Top bar transparency</summary>
+    <key name="top-bar-background-color" type="s">
+	   <default>"rgb(0,0,0)"</default>
+      <summary>Top bar background color</summary>
     </key>
   </schema>
 

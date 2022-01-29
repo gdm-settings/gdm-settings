@@ -50,6 +50,8 @@ def load_widgets():
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
     widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
+    widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
+    widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
     #widgets.top_bar_transparency_scale = widgets.builder.get_object("top_bar_transparency_scale")
     #widgets.top_bar_transparency_scale.set_range(0, 1)
 
@@ -99,6 +101,13 @@ def init_settings():
     top_bar_text_color_rgba = Gdk.RGBA()
     top_bar_text_color_rgba.parse(top_bar_text_color)
     widgets.top_bar_text_color_button.set_rgba(top_bar_text_color_rgba)
+    # Top Bar Background Color
+    change_top_bar_background_color = widgets.theme_settings.change_top_bar_background_color
+    widgets.change_top_bar_background_color_switch.set_active(change_top_bar_background_color)
+    top_bar_background_color = widgets.theme_settings.top_bar_background_color
+    top_bar_background_color_rgba = Gdk.RGBA()
+    top_bar_background_color_rgba.parse(top_bar_background_color)
+    widgets.top_bar_background_color_button.set_rgba(top_bar_background_color_rgba)
 
 def on_apply(widget):
     # Background
@@ -111,6 +120,8 @@ def on_apply(widget):
     widgets.theme_settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
     widgets.theme_settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
     widgets.theme_settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
+    widgets.theme_settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()
+    widgets.theme_settings.top_bar_background_color = widgets.top_bar_background_color_button.get_rgba().to_string()
     # Apply
     widgets.theme_settings.apply_settings()
 

@@ -24,6 +24,8 @@ class ThemeSettings():
         self.disable_top_bar_arrows = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-arrows")
         self.change_top_bar_text_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-text-color")
         self.top_bar_text_color = self.theme_tweaks_gsettings.get_string("top-bar-text-color")
+        self.change_top_bar_background_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-background-color")
+        self.top_bar_background_color = self.theme_tweaks_gsettings.get_string("top-bar-background-color")
 
     def save_to_gsettings(self):
         self.gsettings.set_string("theme", self.theme)
@@ -33,6 +35,8 @@ class ThemeSettings():
         self.theme_tweaks_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
         self.theme_tweaks_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
         self.theme_tweaks_gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
+        self.theme_tweaks_gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
+        self.theme_tweaks_gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
     
     def get_setting_css(self) -> str:
         css = "\n/* 'GDM Settings' App Provided CSS */\n"
@@ -49,8 +53,16 @@ class ThemeSettings():
             css += "#panel .popup-menu-arrow { width: 0px; }\n"
         # Change Top Bar Text Color
         if self.change_top_bar_text_color:
-            css +=  "#panel.unlock-screen, #panel.login-screen, #panel .panel-button {\n"
+            css +=  "#panel .panel-button {\n"
             css += f"  color: {self.top_bar_text_color};\n"
+            css +=  "}\n"
+        # Change Top Bar Background Color
+        if self.change_top_bar_background_color:
+            css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
+            css += f"  background-color: {self.top_bar_background_color};\n"
+            css +=  "}\n"
+            css +=  "#panel .panel-corner {\n"
+            css += f"  -panel-corner-opacity: 0;\n"
             css +=  "}\n"
         return css
 

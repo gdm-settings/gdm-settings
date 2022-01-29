@@ -129,19 +129,19 @@
                       <object class="GtkColorButton" id="top_bar_text_color_button">
                         <property name="margin-top">5</property>
                         <property name="margin-bottom">5</property>
+                        <property name="use-alpha">true</property>
                       </object>
                     </child>
 
                   </object>
                 </child>
 
-                <!--
                 <child>
-                  <object class="AdwActionRow" id="change_top_bar_transparency_actionrow">
-                    <property name="title">Change Top Bar Transparency</property>
-                    <property name="activatable-widget">top_bar_transparency_switch</property>
+                  <object class="AdwActionRow" id="change_top_bar_background_color_actionrow">
+                    <property name="title">Change Top Bar Background Color</property>
+                    <property name="activatable-widget">change_top_bar_background_color_switch</property>
                     <child>
-                      <object class="GtkSwitch" id="top_bar_transparency_switch">
+                      <object class="GtkSwitch" id="change_top_bar_background_color_switch">
                         <property name="margin-top">15</property>
                         <property name="margin-bottom">15</property>
                       </object>
@@ -150,28 +150,24 @@
                 </child>
 
                 <child>
-                  <object class="AdwActionRow" id="top_bar_transparency_actionrow">
-                    <property name="title">Top Bar Transparency</property>
+                  <object class="AdwActionRow" id="top_bar_background_color_actionrow">
+                    <property name="title">Top Bar Background Color</property>
+                    <property name="subtitle">The color of top bar background</property>
+                    <property name="activatable-widget">top_bar_background_color_button</property>
                     <binding name="visible">
-                       <lookup name="active">top_bar_transparency_switch</lookup>
+                       <lookup name="active">change_top_bar_background_color_switch</lookup>
                     </binding>
+
                     <child>
-                      <object class="GtkScale" id="top_bar_transparency_scale">
-                        <property name="orientation">horizontal</property>
-                        <property name="digits">2</property>
-                        <property name="value-pos">right</property>
-                        <property name="hexpand">true</property>
-                        <property name="draw-value">yes</property>
-                        <property name="show-fill-level">yes</property>
-                        <marks>
-                          <mark position="top" value="0">0.00</mark>
-                          <mark position="top" value="1">1.00</mark>
-                        </marks>
+                      <object class="GtkColorButton" id="top_bar_background_color_button">
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                        <property name="use-alpha">true</property>
                       </object>
                     </child>
+
                   </object>
                 </child>
-                -->
 
               </object>
             </child>
