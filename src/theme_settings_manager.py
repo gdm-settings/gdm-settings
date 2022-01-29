@@ -61,7 +61,8 @@ class ThemeSettings():
             css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
             css += f"  background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
-            css +=  "#panel .panel-corner {\n"
+            css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
+            css += f"  -panel-corner-opacity: 1;\n"
             css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
         return css
