@@ -26,6 +26,7 @@ This app is in an early stage of development (it is mostly feature complete). It
 - Show/Hide battery percentage
 - Touchpad settings (speed, tap-to-click)
 - Clock settings (show/hide weekday, AM/PM or 24h)
+- Import user/session settings
 
 **Note:** See [Planned Features](#planned-features) for upcoming features
 

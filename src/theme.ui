@@ -94,7 +94,7 @@
         
                 <child>
                   <object class="AdwActionRow" id="disable_top_bar_corners_actionrow">
-                    <property name="title">Disable Corners</property>
+                    <property name="title">Disable Rounded Corners</property>
                     <property name="activatable-widget">disable_top_bar_corners_switch</property>
                     <child>
                       <object class="GtkSwitch" id="disable_top_bar_corners_switch">
