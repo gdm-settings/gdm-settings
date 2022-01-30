@@ -8,7 +8,7 @@ dependency('glib-2.0')
 
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
 
-application_name='Login Settings'
+application_name='Login Manager Settings'
 description = 'A settings app for GNOME\'s Login Manager (GDM)'
 application_id='com.github.realmazharhussain.GdmSettings'
 schema_path = '/com/github/realmazharhussain/GdmSettings/'
