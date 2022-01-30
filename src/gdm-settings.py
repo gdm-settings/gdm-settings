@@ -339,9 +339,6 @@ def on_bg_type_change():
         widgets.bg_image_actionrow.hide()
         widgets.bg_color_actionrow.show()
 
-def on_bg_image_button_clicked():
-    widgets.bg_image_chooser.present()
-
 def on_bg_image_chooser_response(widget, response):
     if response == Gtk.ResponseType.OK:
       image_file = widgets.bg_image_chooser.get_file()
@@ -358,7 +355,7 @@ def on_activate(app):
     # Connect Signals
     widgets.apply_button.connect("clicked", lambda x: on_apply())
     widgets.bg_type_comborow.connect("notify::selected", lambda x,y: on_bg_type_change())
-    widgets.bg_image_button.connect("clicked", lambda x: on_bg_image_button_clicked())
+    widgets.bg_image_button.connect("clicked", lambda x: widgets.bg_image_chooser.present())
     widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)
 
     # Create Actions
