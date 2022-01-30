@@ -124,10 +124,6 @@ def add_string_lists_to_comborows():
         widgets.sound_theme_list.append(theme)
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
-def import_user_settings():
-    widgets.misc_settings.load_user_settings()
-    load_misc_settings()
-
 def load_misc_settings():
     #### Get Settings ####
     misc_settings = widgets.misc_settings
@@ -202,6 +198,14 @@ def load_misc_settings():
     widgets.night_light_end_hour_spinbutton.set_value(night_light_end_hour)
     widgets.night_light_end_minute_spinbutton.set_value(night_light_end_minute)
     widgets.night_light_color_temperature_scale.set_value(night_light_temperature)
+
+def reload_misc_settings():
+    widgets.misc_settings.load_settings()
+    load_misc_settings()
+
+def import_user_settings():
+    widgets.misc_settings.load_user_settings()
+    load_misc_settings()
 
 def load_theme_settings():
     # Load Theme Name
@@ -361,14 +365,20 @@ def on_activate(app):
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
     widgets.about_action = Gio.SimpleAction(name="about")
+    widgets.import_user_settings_action = Gio.SimpleAction(name="import_user_settings")
+    widgets.reload_settings_action = Gio.SimpleAction(name="reload_settings")
 
     # Connect Signals
     widgets.quit_action.connect("activate", lambda x,y: app.quit())
     widgets.about_action.connect("activate", lambda x,y: widgets.about_dialog.present())
+    widgets.import_user_settings_action.connect("activate", lambda x,y: import_user_settings())
+    widgets.reload_settings_action.connect("activate", lambda x,y: reload_misc_settings())
 
     # Add Actions to app
     app.add_action(widgets.quit_action)
     app.add_action(widgets.about_action)
+    app.add_action(widgets.import_user_settings_action)
+    app.add_action(widgets.reload_settings_action)
 
     # Create Keyboard Shortcuts
     app.set_accels_for_action("quit", ["<Ctrl>Q"])

@@ -86,7 +86,10 @@ class ThemeSettings:
 class MiscSettings:
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
+        self.load_settings()
 
+
+    def load_settings(self):
         if Gio.Settings(schema_id=f"{application_id}").get_boolean("first-run"):
             self.load_user_settings()
         else:
