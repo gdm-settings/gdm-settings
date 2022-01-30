@@ -153,7 +153,7 @@ class MiscSettings:
             gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"
             gdm_conf_contents +=  "#----------------------------------------\n"
             gdm_conf_contents += f"night-light-enabled={str(self.night_light_enabled).lower()}\n"
-            gdm_conf_contents += f"night-light-temperature=uint32 {self.night_light_temperature}\n"
+            gdm_conf_contents += f"night-light-temperature=uint32 {round(self.night_light_temperature)}\n"
             gdm_conf_contents += f"night-light-schedule-automatic={str(self.night_light_schedule_automatic).lower()}\n"
             gdm_conf_contents += f"night-light-schedule-from={self.night_light_schedule_from}\n"
             gdm_conf_contents += f"night-light-schedule-to={self.night_light_schedule_to}\n"
