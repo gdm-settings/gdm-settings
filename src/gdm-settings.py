@@ -124,84 +124,9 @@ def add_string_lists_to_comborows():
         widgets.sound_theme_list.append(theme)
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
-def load_settings_from_user_session():
-    #### Get Settings ####
-    # Interface Settings
-    interface_settings = Gio.Settings(schema_id="org.gnome.desktop.interface")
-    icon_theme = interface_settings.get_string("icon-theme")
-    cursor_theme = interface_settings.get_string("cursor-theme")
-    show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
-    clock_show_weekday = interface_settings.get_boolean("clock-show-weekday")
-    clock_format = interface_settings.get_string("clock-format")
-    # Sound Settings
-    sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
-    sound_theme = sound_settings.get_string("theme-name")
-    # Touchpad
-    touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
-    tap_to_click = touchpad_settings.get_boolean("tap-to-click")
-    touchpad_speed = touchpad_settings.get_double("speed")
-    # Night Light
-    night_light_settings = Gio.Settings(schema_id="org.gnome.settings-daemon.plugins.color")
-    night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
-    night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
-    night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
-    night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
-    night_light_temperature = night_light_settings.get_uint("night-light-temperature")
-
-    #### Calculate Stuff ####
-    night_light_start_hour = trunc(night_light_schedule_from)
-    night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
-    night_light_end_hour = trunc(night_light_schedule_to)
-    night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
-
-    #### Load to Widgets ####
-    # Icon Theme
-    position = 0;
-    for theme in widgets.icon_theme_list:
-        if icon_theme  == theme.get_string():
-            widgets.icon_theme_comborow.set_selected(position)
-            break
-        else:
-            position += 1
-    # Cursor Theme
-    position = 0;
-    for theme in widgets.cursor_theme_list:
-        if cursor_theme  == theme.get_string():
-            widgets.cursor_theme_comborow.set_selected(position)
-            break
-        else:
-            position += 1
-    # Sound Theme
-    position = 0;
-    for theme in widgets.sound_theme_list:
-        if sound_theme  == theme.get_string():
-            widgets.sound_theme_comborow.set_selected(position)
-            break
-        else:
-            position += 1
-    # Show Weekday
-    widgets.show_weekday_switch.set_active(clock_show_weekday)
-    # Clock Format
-    if clock_format == "12h":
-        widgets.time_format_comborow.set_selected(0)
-    else:
-        widgets.time_format_comborow.set_selected(1)
-    # Show Battery Percentage
-    widgets.show_battery_percentage_switch.set_active(show_battery_percentage)
-    # Touchpad
-    widgets.tap_to_click_switch.set_active(tap_to_click)
-    widgets.touchpad_speed_scale.set_value(touchpad_speed)
-    # Night Light
-    widgets.night_light_enable_switch.set_active(night_light_enabled)
-    if night_light_schedule_automatic:
-        widgets.night_light_schedule_comborow.set_selected(0)
-    else:
-        widgets.night_light_schedule_comborow.set_selected(1)
-    widgets.night_light_start_hour_spinbutton.set_value(night_light_start_hour)
-    widgets.night_light_start_minute_spinbutton.set_value(night_light_start_minute)
-    widgets.night_light_end_hour_spinbutton.set_value(night_light_end_hour)
-    widgets.night_light_end_minute_spinbutton.set_value(night_light_end_minute)
-    widgets.night_light_color_temperature_scale.set_value(night_light_temperature)
+def import_user_settings():
+    widgets.misc_settings.load_user_settings()
+    load_misc_settings()
 
 def load_misc_settings():
     #### Get Settings ####
@@ -343,11 +268,7 @@ def load_all_settings():
     widgets.page_stack.set_visible_child_name(page_name)
 
     load_theme_settings()
-
-    if widgets.main_gsettings.get_boolean("first-run"):
-        load_settings_from_user_session()
-    else:
-        load_misc_settings()
+    load_misc_settings()
 
 def set_misc_settings():
     misc_settings = widgets.misc_settings

@@ -86,7 +86,32 @@ class ThemeSettings:
 class MiscSettings:
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
-        self.load_from_gsettings()
+
+        if Gio.Settings(schema_id=f"{application_id}").get_boolean("first-run"):
+            self.load_user_settings()
+        else:
+            self.load_from_gsettings()
+
+    def load_user_settings(self):
+        interface_settings = Gio.Settings(schema_id="org.gnome.desktop.interface")
+        sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
+        touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
+        night_light_settings = Gio.Settings(schema_id="org.gnome.settings-daemon.plugins.color")
+
+        self.icon_theme = interface_settings.get_string("icon-theme")
+        self.cursor_theme = interface_settings.get_string("cursor-theme")
+        self.show_weekday = interface_settings.get_boolean("clock-show-weekday")
+        self.time_format = interface_settings.get_string("clock-format")
+        self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
+        self.sound_theme = sound_settings.get_string("theme-name")
+        self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
+        self.touchpad_speed = touchpad_settings.get_double("speed")
+        self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
+        self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
+        self.night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
+        self.night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+        self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
+
     def load_from_gsettings(self):
         self.icon_theme = self.gsettings.get_string('icon-theme')
         self.cursor_theme = self.gsettings.get_string('cursor-theme')
@@ -101,6 +126,7 @@ class MiscSettings:
         self.night_light_temperature = self.gsettings.get_uint('night-light-temperature')
         self.night_light_schedule_from = self.gsettings.get_double('night-light-schedule-from')
         self.night_light_schedule_to = self.gsettings.get_double('night-light-schedule-to')
+
     def save_to_gsettings(self):
         self.gsettings.set_string('icon-theme', self.icon_theme)
         self.gsettings.set_string('cursor-theme', self.cursor_theme)
@@ -115,6 +141,7 @@ class MiscSettings:
         self.gsettings.set_uint('night-light-temperature', self.night_light_temperature)
         self.gsettings.set_double('night-light-schedule-from', self.night_light_schedule_from)
         self.gsettings.set_double('night-light-schedule-to', self.night_light_schedule_to)
+
     def apply_settings(self):
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
         gdm_profile_dir = "/etc/dconf/profile"
