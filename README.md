@@ -8,7 +8,7 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 ## Important Note! (Alpha-Stage Software)
 
-This app is in very early stage of development. So, it has only a small number of features and may crash frequently. Also, every aspect of this app is subject to significant change.
+This app is in an early stage of development (it is mostly feature complete). It may crash frequently.
 
 ## Features
 
@@ -19,6 +19,13 @@ This app is in very early stage of development. So, it has only a small number o
   - Disable rounded corners
   - Change text color
   - Change background color & transparency (either both or none)
+- Change icon theme
+- Change cursor theme
+- Change sound theme
+- Night light settings
+- Show/Hide battery percentage
+- Touchpad settings (speed, tap-to-click)
+- Clock settings (show/hide weekday, AM/PM or 24h)
 
 **Note:** See [Planned Features](#planned-features) for upcoming features
 
@@ -56,12 +63,6 @@ This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/pac
 
 - Set a gradient as the background
 - Apply blur effect to the background image
-- Change icon theme
-- Change cursor theme
-- Night light settings
-- Show/Hide battery percentage
-- Touchpad settings (speed, tap-to-click)
-- Clock settings (show/hide weekday, AM/PM or 24h)
 - A command-line interface
 - Tab-completion for the command-line interface
 
