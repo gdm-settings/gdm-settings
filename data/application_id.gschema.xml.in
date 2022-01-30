@@ -49,6 +49,8 @@
 	   <default>""</default>
 	   <summary>Custom CSS</summary>
 	 </key>
+	 <child name="theme-tweaks" schema="@application_id@.theme-tweaks"/>
+	 <child name="settings" schema="@application_id@.settings"/>
   </schema>
 
   <schema id="@application_id@.theme-tweaks" path="@schema_path@theme-tweaks/">
