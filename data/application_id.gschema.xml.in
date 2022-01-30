@@ -118,7 +118,7 @@
       <description>Night light mode changes the color temperature of your display when the sun has gone down or at preset times.</description>
     </key>
     <key name="night-light-temperature" type="u">
-      <default>2700</default>
+      <default>3000</default>
       <summary>Temperature of the display when enabled</summary>
       <description>This temperature in Kelvin is used to modify the screen tones when night light mode is enabled. Higher values are bluer, lower redder.</description>
     </key>

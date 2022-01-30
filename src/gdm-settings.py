@@ -282,6 +282,10 @@ def on_apply(widget):
     widgets.theme_settings.top_bar_background_color = widgets.top_bar_background_color_button.get_rgba().to_string()
     # Apply
     widgets.theme_settings.apply_settings()
+    widgets.misc_settings.apply_settings()
+    if elevated_commands_list.run():
+        widgets.theme_settings.save_to_gsettings()
+        widgets.misc_settings.save_to_gsettings()
 
 def on_bg_type_change():
     selected_type = widgets.bg_type_comborow.get_selected_item().get_string()

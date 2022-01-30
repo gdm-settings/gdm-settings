@@ -1,7 +1,6 @@
 '''Settings Manager'''
 
 import os
-import subprocess
 import gi
 
 gi.require_version("Gio", '2.0')
@@ -83,12 +82,85 @@ class ThemeSettings:
             shelldir = f"/usr/share/themes/{self.theme}/gnome-shell"
         compiled_file = compile_theme(shellDir=shelldir, additional_css=self.get_setting_css())
         elevated_commands_list.add(f"mv {compiled_file} {GdmGresourceFile}")
-        if elevated_commands_list.run():
-            self.save_to_gsettings()
 
 class MiscSettings:
     def __init__(self):
         self.gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
         self.load_from_gsettings()
     def load_from_gsettings(self):
-        pass
+        self.icon_theme = self.gsettings.get_string('icon-theme')
+        self.cursor_theme = self.gsettings.get_string('cursor-theme')
+        self.sound_theme = self.gsettings.get_string('sound-theme')
+        self.show_weekday = self.gsettings.get_boolean('show-weekday')
+        self.time_format = self.gsettings.get_string('time-format')
+        self.show_battery_percentage = self.gsettings.get_boolean('show-battery-percentage')
+        self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
+        self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
+        self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
+        self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
+        self.night_light_temperature = self.gsettings.get_uint('night-light-temperature')
+        self.night_light_schedule_from = self.gsettings.get_double('night-light-schedule-from')
+        self.night_light_schedule_to = self.gsettings.get_double('night-light-schedule-to')
+    def save_to_gsettings(self):
+        self.gsettings.set_string('icon-theme', self.icon_theme)
+        self.gsettings.set_string('cursor-theme', self.cursor_theme)
+        self.gsettings.set_string('sound-theme', self.sound_theme)
+        self.gsettings.set_boolean('show-weekday', self.show_weekday)
+        self.gsettings.set_string('time-format', self.time_format)
+        self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
+        self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
+        self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
+        self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
+        self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
+        self.gsettings.set_uint('night-light-temperature', self.night_light_temperature)
+        self.gsettings.set_double('night-light-schedule-from', self.night_light_schedule_from)
+        self.gsettings.set_double('night-light-schedule-to', self.night_light_schedule_to)
+    def apply_settings(self):
+        gdm_conf_dir = "/etc/dconf/db/gdm.d"
+        gdm_profile_dir = "/etc/dconf/profile"
+        gdm_profile_path = f"{gdm_profile_dir}/gdm"
+
+        temp_profile_path = f"{TempDir}/gdm-profile"
+        with open(temp_profile_path, "w+") as temp_profile_file:
+            gdm_profile_contents  = "user-db:user\n"
+            gdm_profile_contents += "system-db:gdm\n"
+            gdm_profile_contents += "file-db:/usr/share/gdm/greeter-dconf-defaults"
+            print(gdm_profile_contents, file=temp_profile_file)
+
+        temp_conf_path = f"{TempDir}/95-gdm-settings"
+        with open(temp_conf_path, "w+") as temp_conf_file:
+            gdm_conf_contents  =  "#-------- Interface ---------\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
+            gdm_conf_contents +=  "#----------------------------\n"
+            gdm_conf_contents += f"cursor-theme='{self.cursor_theme}'\n"
+            gdm_conf_contents += f"icon-theme='{self.icon_theme}'\n"
+            gdm_conf_contents += f"show-battery-percentage={str(self.show_battery_percentage).lower()}\n"
+            gdm_conf_contents += f"clock-show-weekday={str(self.show_weekday).lower()}\n"
+            gdm_conf_contents += f"clock-format='{self.time_format}'\n"
+            gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#-------- Sound ---------\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/sound]\n"
+            gdm_conf_contents +=  "#------------------------\n"
+            gdm_conf_contents += f"theme-name='{self.sound_theme}'\n"
+            gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
+            gdm_conf_contents +=  "#---------------------------------------\n"
+            gdm_conf_contents += f"speed={self.touchpad_speed}\n"
+            gdm_conf_contents += f"tap-to-click={str(self.tap_to_click).lower()}\n"
+            gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#------------- Night Light --------------\n"
+            gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"
+            gdm_conf_contents +=  "#----------------------------------------\n"
+            gdm_conf_contents += f"night-light-enabled={str(self.night_light_enabled).lower()}\n"
+            gdm_conf_contents += f"night-light-temperature=uint32 {self.night_light_temperature}\n"
+            gdm_conf_contents += f"night-light-schedule-automatic={str(self.night_light_schedule_automatic).lower()}\n"
+            gdm_conf_contents += f"night-light-schedule-from={self.night_light_schedule_from}\n"
+            gdm_conf_contents += f"night-light-schedule-to={self.night_light_schedule_to}\n"
+     
+            print(gdm_conf_contents, file=temp_conf_file)
+
+        elevated_commands_list.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
+        elevated_commands_list.add(f"mv -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
+        elevated_commands_list.add(f"mv -fT '{temp_profile_path}' '{gdm_profile_path}'")
+        elevated_commands_list.add("dconf update")
