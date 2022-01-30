@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema id="@application_id@" path="@schema_path@">
+    <key name="first-run" type="b">
+      <default>true</default>
+    </key>
+	 <key name="last-visited-page" type="s">
+	   <default>"theme"</default>
+	   <choices>
+	     <choice value="theme"/>
+	     <choice value="settings"/>
+	   </choices>
+	 </key>
 	 <key name="theme" type="s">
 	   <default>"default"</default>
 	   <summary>Theme Name</summary>
@@ -39,11 +49,11 @@
 	   <default>""</default>
 	   <summary>Custom CSS</summary>
 	 </key>
-
 	 <child name="theme-tweaks" schema="@application_id@.theme-tweaks"/>
+	 <child name="settings" schema="@application_id@.settings"/>
   </schema>
 
-  <schema id="@application_id@.theme-tweaks">
+  <schema id="@application_id@.theme-tweaks" path="@schema_path@theme-tweaks/">
     <key name="disable-top-bar-arrows" type="b">
       <default>false</default>
       <summary>Whether to disable top bar arrows</summary>
@@ -67,6 +77,67 @@
     <key name="top-bar-background-color" type="s">
 	   <default>"rgb(0,0,0)"</default>
       <summary>Top bar background color</summary>
+    </key>
+  </schema>
+
+  <schema id="@application_id@.settings" path="@schema_path@settings/">
+    <key name="icon-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+    <key name="cursor-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+    <key name="sound-theme" type="s">
+      <default>"freedesktop"</default>
+    </key>
+    <key name="show-weekday" type="b">
+      <default>false</default>
+    </key>
+    <key name="time-format" type="s">
+      <default>"24h"</default>
+      <choices>
+        <choice value="12h"/>
+        <choice value="24h"/>
+      </choices>
+    </key>
+    <key name="show-battery-percentage" type="b">
+      <default>false</default>
+    </key>
+    <key name="tap-to-click" type="b">
+      <default>true</default>
+    </key>
+    <key name="touchpad-speed" type="d">
+      <default>0.35</default>
+      <summary>Pointer speed</summary>
+      <description>Pointer speed for the touchpad. Accepted values are in the [-1..1] range (from “unaccelerated” to “fast”). A value of 0 is the system default.</description>
+      <range min="-1" max="1"/>
+    </key>
+    <key name="night-light-enabled" type="b">
+      <default>false</default>
+      <summary>If the night light mode is enabled</summary>
+      <description>Night light mode changes the color temperature of your display when the sun has gone down or at preset times.</description>
+    </key>
+    <key name="night-light-temperature" type="u">
+      <default>3000</default>
+      <summary>Temperature of the display when enabled</summary>
+      <description>This temperature in Kelvin is used to modify the screen tones when night light mode is enabled. Higher values are bluer, lower redder.</description>
+    </key>
+    <key name="night-light-schedule-automatic" type="b">
+      <default>true</default>
+      <summary>Use the sunrise and sunset</summary>
+      <description>Calculate the sunrise and sunset times automatically, from the current location.</description>
+    </key>
+    <key name="night-light-schedule-from" type="d">
+      <default>19.00</default>
+      <summary>The start time</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours from midnight.</description>
+      <range min="0.0" max="23.984"/>
+    </key>
+    <key name="night-light-schedule-to" type="d">
+      <default>6.00</default>
+      <summary>The end time</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this end time in hours from midnight.</description>
+      <range min="0.0" max="23.984"/>
     </key>
   </schema>
 

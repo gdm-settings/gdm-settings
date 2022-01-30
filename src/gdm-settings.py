@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
-import gi, sys, os.path
+import gi
+import sys
+from os import path
+from math import trunc
 
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
 from info import *
 from functions import *
-from theme_settings_manager import *
+from settings_manager import *
 
-script_realpath = os.path.realpath(sys.argv[0])
-script_basename = os.path.basename(script_realpath)
-script_dir = os.path.dirname(script_realpath)
+script_realpath = path.realpath(sys.argv[0])
+script_basename = path.basename(script_realpath)
+script_dir = path.dirname(script_realpath)
 
-main_window_ui_file = os.path.join(script_dir, "main-window.ui")
-app_menu_ui_file = os.path.join(script_dir, "app-menu.ui")
-about_dialog_ui_file = os.path.join(script_dir, "about-dialog.ui")
-theme_page_ui_file = os.path.join(script_dir, "theme.ui")
-image_chooser_ui_file = os.path.join(script_dir, "image-chooser.ui")
+main_window_ui_file = path.join(script_dir, "main-window.ui")
+app_menu_ui_file = path.join(script_dir, "app-menu.ui")
+about_dialog_ui_file = path.join(script_dir, "about-dialog.ui")
+theme_page_ui_file = path.join(script_dir, "theme.ui")
+image_chooser_ui_file = path.join(script_dir, "image-chooser.ui")
+settings_page_ui_file = path.join(script_dir, "settings.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -26,22 +30,30 @@ widgets = WidgetContainer()
 def load_widgets():
     # Initialize Builder
     widgets.builder = Gtk.Builder()
+
     # Load UI files
     widgets.builder.add_from_file(app_menu_ui_file)
     widgets.builder.add_from_file(main_window_ui_file)
     widgets.builder.add_from_file(about_dialog_ui_file)
     widgets.builder.add_from_file(theme_page_ui_file)
     widgets.builder.add_from_file(image_chooser_ui_file)
-    # Get Widgets from builder
+    widgets.builder.add_from_file(settings_page_ui_file)
+
+
+    #### Get Widgets from builder ####
+
+    # Main Widgets
     widgets.main_window = widgets.builder.get_object("main_window")
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
-    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
+    widgets.settings_page_content = widgets.builder.get_object("settings_page_content")
     widgets.apply_button = widgets.builder.get_object("apply_button")
+
+    # Widgets from Theme page
+    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
-    widgets.bg_type_list = widgets.builder.get_object("bg_type_list")
     widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
     widgets.bg_image_button = widgets.builder.get_object("bg_image_button")
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
@@ -53,16 +65,224 @@ def load_widgets():
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
     widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
     widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
-    #widgets.top_bar_transparency_scale = widgets.builder.get_object("top_bar_transparency_scale")
-    #widgets.top_bar_transparency_scale.set_range(0, 1)
 
-def init_settings():
-    widgets.theme_settings = ThemeSettings()
+    # Widgets from Settings page
+    widgets.icon_theme_comborow = widgets.builder.get_object("icon_theme_comborow")
+    widgets.cursor_theme_comborow = widgets.builder.get_object("cursor_theme_comborow")
+    widgets.sound_theme_comborow = widgets.builder.get_object("sound_theme_comborow")
+    widgets.time_format_comborow = widgets.builder.get_object("time_format_comborow")
+    widgets.touchpad_speed_scale = widgets.builder.get_object("touchpad_speed_scale")
+    widgets.touchpad_speed_scale.set_range(-1, 1)
+    widgets.show_battery_percentage_switch = widgets.builder.get_object("show_battery_percentage_switch")
+    widgets.show_weekday_switch = widgets.builder.get_object("show_weekday_switch")
+    widgets.tap_to_click_switch = widgets.builder.get_object("tap_to_click_switch")
+    widgets.night_light_enable_switch = widgets.builder.get_object("night_light_enable_switch")
+    widgets.night_light_schedule_comborow = widgets.builder.get_object("night_light_schedule_comborow")
+    widgets.night_light_start_hour_spinbutton = widgets.builder.get_object("night_light_start_hour_spinbutton")
+    widgets.night_light_start_hour_spinbutton.set_range(0, 23)
+    widgets.night_light_start_hour_spinbutton.set_increments(1,2)
+    widgets.night_light_start_minute_spinbutton = widgets.builder.get_object("night_light_start_minute_spinbutton")
+    widgets.night_light_start_minute_spinbutton.set_range(0, 59)
+    widgets.night_light_start_minute_spinbutton.set_increments(1,5)
+    widgets.night_light_end_hour_spinbutton = widgets.builder.get_object("night_light_end_hour_spinbutton")
+    widgets.night_light_end_hour_spinbutton.set_range(0, 23)
+    widgets.night_light_end_hour_spinbutton.set_increments(1,2)
+    widgets.night_light_end_minute_spinbutton = widgets.builder.get_object("night_light_end_minute_spinbutton")
+    widgets.night_light_end_minute_spinbutton.set_range(0, 59)
+    widgets.night_light_end_minute_spinbutton.set_increments(1,5)
+    widgets.night_light_color_temperature_scale = widgets.builder.get_object("night_light_color_temperature_scale")
+    widgets.night_light_color_temperature_scale.set_range(1700, 4700)
 
+def add_string_lists_to_comborows():
+    # GDM Background Types
+    widgets.bg_type_list = Gtk.StringList.new(['None', 'Image', 'Color'])
+    widgets.bg_type_comborow.set_model(widgets.bg_type_list)
+    # Time Formats
+    widgets.time_format_list = Gtk.StringList.new(['AM/PM', '24 Hours'])
+    widgets.time_format_comborow.set_model(widgets.time_format_list)
+    # Night Light Schedule Types
+    widgets.night_light_schedule_list = Gtk.StringList.new(['Sunset to Sunrise', 'Manual Schedule'])
+    widgets.night_light_schedule_comborow.set_model(widgets.night_light_schedule_list)
+    # GDM Themes
+    widgets.gdm_theme_list = Gtk.StringList()
+    for theme in get_gdm_theme_list():
+        widgets.gdm_theme_list.append(theme)
+    widgets.theme_choice_comborow.set_model(widgets.gdm_theme_list)
+    # Icon Themes
+    widgets.icon_theme_list = Gtk.StringList()
+    for theme in get_icon_theme_list():
+        widgets.icon_theme_list.append(theme)
+    widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
+    # Cursor Themes
+    widgets.cursor_theme_list = Gtk.StringList()
+    for theme in get_cursor_theme_list():
+        widgets.cursor_theme_list.append(theme)
+    widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
+    # Sound Themes
+    widgets.sound_theme_list = Gtk.StringList()
+    for theme in get_sound_theme_list():
+        widgets.sound_theme_list.append(theme)
+    widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
+
+def load_settings_from_user_session():
+    #### Get Settings ####
+    # Interface Settings
+    interface_settings = Gio.Settings(schema_id="org.gnome.desktop.interface")
+    icon_theme = interface_settings.get_string("icon-theme")
+    cursor_theme = interface_settings.get_string("cursor-theme")
+    show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
+    clock_show_weekday = interface_settings.get_boolean("clock-show-weekday")
+    clock_format = interface_settings.get_string("clock-format")
+    # Sound Settings
+    sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
+    sound_theme = sound_settings.get_string("theme-name")
+    # Touchpad
+    touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
+    tap_to_click = touchpad_settings.get_boolean("tap-to-click")
+    touchpad_speed = touchpad_settings.get_double("speed")
+    # Night Light
+    night_light_settings = Gio.Settings(schema_id="org.gnome.settings-daemon.plugins.color")
+    night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
+    night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
+    night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
+    night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+    night_light_temperature = night_light_settings.get_uint("night-light-temperature")
+
+    #### Calculate Stuff ####
+    night_light_start_hour = trunc(night_light_schedule_from)
+    night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
+    night_light_end_hour = trunc(night_light_schedule_to)
+    night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
+
+    #### Load to Widgets ####
+    # Icon Theme
+    position = 0;
+    for theme in widgets.icon_theme_list:
+        if icon_theme  == theme.get_string():
+            widgets.icon_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Cursor Theme
+    position = 0;
+    for theme in widgets.cursor_theme_list:
+        if cursor_theme  == theme.get_string():
+            widgets.cursor_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Sound Theme
+    position = 0;
+    for theme in widgets.sound_theme_list:
+        if sound_theme  == theme.get_string():
+            widgets.sound_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Show Weekday
+    widgets.show_weekday_switch.set_active(clock_show_weekday)
+    # Clock Format
+    if clock_format == "12h":
+        widgets.time_format_comborow.set_selected(0)
+    else:
+        widgets.time_format_comborow.set_selected(1)
+    # Show Battery Percentage
+    widgets.show_battery_percentage_switch.set_active(show_battery_percentage)
+    # Touchpad
+    widgets.tap_to_click_switch.set_active(tap_to_click)
+    widgets.touchpad_speed_scale.set_value(touchpad_speed)
+    # Night Light
+    widgets.night_light_enable_switch.set_active(night_light_enabled)
+    if night_light_schedule_automatic:
+        widgets.night_light_schedule_comborow.set_selected(0)
+    else:
+        widgets.night_light_schedule_comborow.set_selected(1)
+    widgets.night_light_start_hour_spinbutton.set_value(night_light_start_hour)
+    widgets.night_light_start_minute_spinbutton.set_value(night_light_start_minute)
+    widgets.night_light_end_hour_spinbutton.set_value(night_light_end_hour)
+    widgets.night_light_end_minute_spinbutton.set_value(night_light_end_minute)
+    widgets.night_light_color_temperature_scale.set_value(night_light_temperature)
+
+def load_misc_settings():
+    #### Get Settings ####
+    misc_settings = widgets.misc_settings
+
+    icon_theme = misc_settings.icon_theme
+    cursor_theme = misc_settings.cursor_theme
+    sound_theme = misc_settings.sound_theme
+    show_battery_percentage = misc_settings.show_battery_percentage
+    show_weekday = misc_settings.show_weekday
+    time_format = misc_settings.time_format
+    # Touchpad
+    tap_to_click = misc_settings.tap_to_click
+    touchpad_speed = misc_settings.touchpad_speed
+    # Night Light
+    night_light_enabled = misc_settings.night_light_enabled
+    night_light_schedule_automatic = misc_settings.night_light_schedule_automatic
+    night_light_schedule_from = misc_settings.night_light_schedule_from
+    night_light_schedule_to = misc_settings.night_light_schedule_to
+    night_light_temperature = misc_settings.night_light_temperature
+
+    #### Calculate Stuff ####
+    night_light_start_hour = trunc(night_light_schedule_from)
+    night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
+    night_light_end_hour = trunc(night_light_schedule_to)
+    night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
+
+    #### Load to Widgets ####
+    # Icon Theme
+    position = 0;
+    for theme in widgets.icon_theme_list:
+        if icon_theme  == theme.get_string():
+            widgets.icon_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Cursor Theme
+    position = 0;
+    for theme in widgets.cursor_theme_list:
+        if cursor_theme  == theme.get_string():
+            widgets.cursor_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Sound Theme
+    position = 0;
+    for theme in widgets.sound_theme_list:
+        if sound_theme  == theme.get_string():
+            widgets.sound_theme_comborow.set_selected(position)
+            break
+        else:
+            position += 1
+    # Show Weekday
+    widgets.show_weekday_switch.set_active(show_weekday)
+    # Clock Format
+    if time_format == "12h":
+        widgets.time_format_comborow.set_selected(0)
+    else:
+        widgets.time_format_comborow.set_selected(1)
+    # Show Battery Percentage
+    widgets.show_battery_percentage_switch.set_active(show_battery_percentage)
+    # Touchpad
+    widgets.tap_to_click_switch.set_active(tap_to_click)
+    widgets.touchpad_speed_scale.set_value(touchpad_speed)
+    # Night Light
+    widgets.night_light_enable_switch.set_active(night_light_enabled)
+    if night_light_schedule_automatic:
+        widgets.night_light_schedule_comborow.set_selected(0)
+    else:
+        widgets.night_light_schedule_comborow.set_selected(1)
+    widgets.night_light_start_hour_spinbutton.set_value(night_light_start_hour)
+    widgets.night_light_start_minute_spinbutton.set_value(night_light_start_minute)
+    widgets.night_light_end_hour_spinbutton.set_value(night_light_end_hour)
+    widgets.night_light_end_minute_spinbutton.set_value(night_light_end_minute)
+    widgets.night_light_color_temperature_scale.set_value(night_light_temperature)
+
+def load_theme_settings():
     # Load Theme Name
     saved_theme = widgets.theme_settings.theme
     position = 0;
-    for theme in widgets.theme_list_stringlist:
+    for theme in widgets.gdm_theme_list:
         if saved_theme  == theme.get_string():
             widgets.theme_choice_comborow.set_selected(position)
             break
@@ -88,7 +308,7 @@ def init_settings():
     # Load Background Image
     saved_bg_image = widgets.theme_settings.background_image
     if saved_bg_image:
-        widgets.bg_image_button.set_label(os.path.basename(saved_bg_image))
+        widgets.bg_image_button.set_label(path.basename(saved_bg_image))
         widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
 
     #### Load Theme Tweaks
@@ -113,22 +333,78 @@ def init_settings():
     top_bar_background_color_rgba.parse(top_bar_background_color)
     widgets.top_bar_background_color_button.set_rgba(top_bar_background_color_rgba)
 
-def on_apply(widget):
+def load_all_settings():
+    widgets.main_gsettings = Gio.Settings(schema_id=application_id)
+    widgets.theme_settings = ThemeSettings()
+    widgets.misc_settings = MiscSettings()
+
+    # Open Last visited Page
+    page_name = widgets.main_gsettings.get_string("last-visited-page")
+    widgets.page_stack.set_visible_child_name(page_name)
+
+    load_theme_settings()
+
+    if widgets.main_gsettings.get_boolean("first-run"):
+        load_settings_from_user_session()
+    else:
+        load_misc_settings()
+
+def set_misc_settings():
+    misc_settings = widgets.misc_settings
+
+    misc_settings.icon_theme     = widgets.icon_theme_comborow.get_selected_item().get_string()
+    misc_settings.cursor_theme   = widgets.cursor_theme_comborow.get_selected_item().get_string()
+    misc_settings.sound_theme    = widgets.sound_theme_comborow.get_selected_item().get_string()
+    misc_settings.show_weekday   = widgets.show_weekday_switch.get_active()
+    misc_settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
+    misc_settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
+    misc_settings.show_battery_percentage  = widgets.show_battery_percentage_switch.get_active()
+    misc_settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
+    misc_settings.night_light_temperature  = widgets.night_light_color_temperature_scale.get_value()
+
+    night_light_start_hour   = widgets.night_light_start_hour_spinbutton.get_value()
+    night_light_start_minute = widgets.night_light_start_minute_spinbutton.get_value()
+    night_light_end_hour     = widgets.night_light_end_hour_spinbutton.get_value()
+    night_light_end_minute   = widgets.night_light_end_minute_spinbutton.get_value()
+
+    misc_settings.night_light_schedule_from = night_light_start_hour + ( night_light_start_minute / 60 )
+    misc_settings.night_light_schedule_to   = night_light_end_hour + ( night_light_end_minute / 60 )
+
+    misc_settings.time_format    = "24h"
+    misc_settings.night_light_schedule_automatic = True
+
+    if widgets.time_format_comborow.get_selected() == 0:
+        misc_settings.time_format = "12h"
+
+    if widgets.night_light_schedule_comborow.get_selected() == 1:
+        misc_settings.night_light_schedule_automatic = False
+
+def set_theme_settings():
+    theme_settings = widgets.theme_settings
     # Background
-    widgets.theme_settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
-    widgets.theme_settings.background_image = widgets.bg_image_chooser.get_file().get_path()
-    widgets.theme_settings.background_color = widgets.bg_color_button.get_rgba().to_string()
+    theme_settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
+    theme_settings.background_image = widgets.bg_image_chooser.get_file().get_path()
+    theme_settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Theme
-    widgets.theme_settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
-    # Theme Tweaks
-    widgets.theme_settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
-    widgets.theme_settings.disable_top_bar_corners = widgets.disable_top_bar_corners_switch.get_active()
-    widgets.theme_settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
-    widgets.theme_settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
-    widgets.theme_settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()
-    widgets.theme_settings.top_bar_background_color = widgets.top_bar_background_color_button.get_rgba().to_string()
+    theme_settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
+    # Top Bar Tweaks
+    theme_settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
+    theme_settings.disable_top_bar_corners = widgets.disable_top_bar_corners_switch.get_active()
+    theme_settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
+    theme_settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
+    theme_settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()
+    theme_settings.top_bar_background_color = widgets.top_bar_background_color_button.get_rgba().to_string()
+
+def on_apply():
+    set_theme_settings()
+    set_misc_settings()
     # Apply
     widgets.theme_settings.apply_settings()
+    widgets.misc_settings.apply_settings()
+    if elevated_commands_list.run():
+        widgets.theme_settings.save_to_gsettings()
+        widgets.misc_settings.save_to_gsettings()
+        widgets.main_gsettings.set_boolean("first-run", False)
 
 def on_bg_type_change():
     selected_type = widgets.bg_type_comborow.get_selected_item().get_string()
@@ -153,23 +429,16 @@ def on_bg_image_chooser_response(widget, response):
     widgets.bg_image_chooser.hide()
 
 def on_activate(app):
-    # Load Widgets
+
     load_widgets()
 
-    # Add Themes to List
-    widgets.theme_list_stringlist = Gtk.StringList()
-    for theme in get_theme_list():
-        widgets.theme_list_stringlist.append(theme)
-    widgets.theme_choice_comborow.set_model(widgets.theme_list_stringlist)
+    add_string_lists_to_comborows()
 
     # Connect Signals
-    widgets.apply_button.connect("clicked", on_apply)
+    widgets.apply_button.connect("clicked", lambda x: on_apply())
     widgets.bg_type_comborow.connect("notify::selected", lambda x,y: on_bg_type_change())
     widgets.bg_image_button.connect("clicked", lambda x: on_bg_image_button_clicked())
     widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)
-
-    # Initialize GSettings
-    init_settings()
 
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
@@ -188,10 +457,20 @@ def on_activate(app):
 
     # Add Pages to Page Stack
     widgets.theme_page = widgets.page_stack.add(widgets.theme_page_content)
+    widgets.settings_page = widgets.page_stack.add(widgets.settings_page_content)
 
-    # Set Page Properties
+    # Set Theme Page Properties
+    widgets.theme_page.set_name("theme")
     widgets.theme_page.set_title("Theme")
     widgets.theme_page.set_icon_name(f"{application_id}-theme")
+
+    # Set Settings Page Properties
+    widgets.settings_page.set_name("settings")
+    widgets.settings_page.set_title("Settings")
+    widgets.settings_page.set_icon_name(f"{application_id}-settings")
+
+    # Load GSettings
+    load_all_settings()
 
     # Set Title Main Window to Application Name
     widgets.main_window.set_title(application_name)
@@ -203,6 +482,10 @@ def on_activate(app):
     widgets.main_window.present()
 
 def on_shutdown(app):
+    # Save Last visited Page
+    page_name = widgets.page_stack.get_visible_child_name()
+    widgets.main_gsettings.set_string("last-visited-page", page_name)
+
     shutil.rmtree(path=TempDir, ignore_errors=True)
 
 if __name__ == '__main__':

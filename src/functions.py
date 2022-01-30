@@ -21,12 +21,39 @@ def listdir_recursive(dir:str):
             files += [file]
     return files
 
-def get_theme_list():
+def get_gdm_theme_list():
     """get a list of installed gnome-shell/GDM themes"""
 
     List=['default']
     for dir in sorted(glob.glob('/usr/share/themes/*'), key=str.casefold):
         if os.path.isfile(dir + "/gnome-shell/gnome-shell.css"):
+            List.append(os.path.basename(dir))
+    return List
+
+def get_sound_theme_list():
+    """get a list of installed sound themes"""
+
+    List=[]
+    for dir in sorted(glob.glob('/usr/share/sounds/*'), key=str.casefold):
+        if os.path.isfile(dir + "/index.theme"):
+            List.append(os.path.basename(dir))
+    return List
+
+def get_icon_theme_list():
+    """get a list of installed icon themes"""
+
+    List=[]
+    for dir in sorted(glob.glob('/usr/share/icons/*'), key=str.casefold):
+        if os.path.isfile(dir + "/index.theme"):
+            List.append(os.path.basename(dir))
+    return List
+
+def get_cursor_theme_list():
+    """get a list of installed cursor themes"""
+
+    List=[]
+    for dir in sorted(glob.glob('/usr/share/icons/*'), key=str.casefold):
+        if os.path.isdir(dir + "/cursors"):
             List.append(os.path.basename(dir))
     return List
 
