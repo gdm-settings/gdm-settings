@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import gi
-import sys
+from sys import argv
 from os import path
 from math import trunc
 
+import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
@@ -11,7 +11,7 @@ from info import *
 from functions import *
 from settings_manager import *
 
-script_realpath = path.realpath(sys.argv[0])
+script_realpath = path.realpath(argv[0])
 script_basename = path.basename(script_realpath)
 script_dir = path.dirname(script_realpath)
 
@@ -410,4 +410,4 @@ if __name__ == '__main__':
     app = Adw.Application(application_id=application_id)
     app.connect("activate", on_activate)
     app.connect("shutdown", on_shutdown)
-    exit(app.run(sys.argv))
+    exit(app.run(argv))
