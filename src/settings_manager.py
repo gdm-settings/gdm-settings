@@ -9,17 +9,20 @@ from gi.repository import Gio
 from info import *
 from functions import *
 
-class ThemeSettings:
+class GResourceSettings:
     def __init__(self):
-        self.gsettings = Gio.Settings(schema_id=application_id)
+        self.main_gsettings = Gio.Settings(schema_id=application_id)
         self.theme_tweaks_gsettings = Gio.Settings(schema_id=f"{application_id}.theme-tweaks")
-        self.load_from_gsettings()
+        self.load_settings()
     
+    def load_settings(self):
+        load_from_gsettings()
+
     def load_from_gsettings(self):
-        self.theme = self.gsettings.get_string("theme")
-        self.background_type = self.gsettings.get_string("background-type")
-        self.background_image = self.gsettings.get_string("background-image")
-        self.background_color = self.gsettings.get_string("background-color")
+        self.theme = self.main_gsettings.get_string("theme")
+        self.background_type = self.main_gsettings.get_string("background-type")
+        self.background_image = self.main_gsettings.get_string("background-image")
+        self.background_color = self.main_gsettings.get_string("background-color")
         self.disable_top_bar_arrows = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-arrows")
         self.disable_top_bar_corners = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-corners")
         self.change_top_bar_text_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-text-color")
@@ -28,10 +31,10 @@ class ThemeSettings:
         self.top_bar_background_color = self.theme_tweaks_gsettings.get_string("top-bar-background-color")
 
     def save_to_gsettings(self):
-        self.gsettings.set_string("theme", self.theme)
-        self.gsettings.set_string("background-type", self.background_type)
-        self.gsettings.set_string("background-image", self.background_image)
-        self.gsettings.set_string("background-color", self.background_color)
+        self.main_gsettings.set_string("theme", self.theme)
+        self.main_gsettings.set_string("background-type", self.background_type)
+        self.main_gsettings.set_string("background-image", self.background_image)
+        self.main_gsettings.set_string("background-color", self.background_color)
         self.theme_tweaks_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
         self.theme_tweaks_gsettings.set_boolean("disable-top-bar-corners", self.disable_top_bar_corners)
         self.theme_tweaks_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
@@ -83,14 +86,15 @@ class ThemeSettings:
         compiled_file = compile_theme(shellDir=shelldir, additional_css=self.get_setting_css())
         elevated_commands_list.add(f"mv {compiled_file} {GdmGresourceFile}")
 
-class MiscSettings:
+class DConfSettings:
     def __init__(self):
-        self.gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
+        self.main_gsettings = Gio.Settings(schema_id=f"{application_id}")
+        self.settings_gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
         self.load_settings()
 
 
     def load_settings(self):
-        if Gio.Settings(schema_id=f"{application_id}").get_boolean("first-run"):
+        if main_gsettings.get_boolean("first-run"):
             self.load_user_settings()
         else:
             self.load_from_gsettings()
@@ -116,34 +120,34 @@ class MiscSettings:
         self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
 
     def load_from_gsettings(self):
-        self.icon_theme = self.gsettings.get_string('icon-theme')
-        self.cursor_theme = self.gsettings.get_string('cursor-theme')
-        self.sound_theme = self.gsettings.get_string('sound-theme')
-        self.show_weekday = self.gsettings.get_boolean('show-weekday')
-        self.time_format = self.gsettings.get_string('time-format')
-        self.show_battery_percentage = self.gsettings.get_boolean('show-battery-percentage')
-        self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
-        self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
-        self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
-        self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
-        self.night_light_temperature = self.gsettings.get_uint('night-light-temperature')
-        self.night_light_schedule_from = self.gsettings.get_double('night-light-schedule-from')
-        self.night_light_schedule_to = self.gsettings.get_double('night-light-schedule-to')
+        self.icon_theme = self.settings_gsettings.get_string('icon-theme')
+        self.cursor_theme = self.settings_gsettings.get_string('cursor-theme')
+        self.sound_theme = self.settings_gsettings.get_string('sound-theme')
+        self.show_weekday = self.settings_gsettings.get_boolean('show-weekday')
+        self.time_format = self.settings_gsettings.get_string('time-format')
+        self.show_battery_percentage = self.settings_gsettings.get_boolean('show-battery-percentage')
+        self.tap_to_click = self.settings_gsettings.get_boolean('tap-to-click')
+        self.touchpad_speed = self.settings_gsettings.get_double('touchpad-speed')
+        self.night_light_enabled = self.settings_gsettings.get_boolean('night-light-enabled')
+        self.night_light_schedule_automatic = self.settings_gsettings.get_boolean('night-light-schedule-automatic')
+        self.night_light_temperature = self.settings_gsettings.get_uint('night-light-temperature')
+        self.night_light_schedule_from = self.settings_gsettings.get_double('night-light-schedule-from')
+        self.night_light_schedule_to = self.settings_gsettings.get_double('night-light-schedule-to')
 
     def save_to_gsettings(self):
-        self.gsettings.set_string('icon-theme', self.icon_theme)
-        self.gsettings.set_string('cursor-theme', self.cursor_theme)
-        self.gsettings.set_string('sound-theme', self.sound_theme)
-        self.gsettings.set_boolean('show-weekday', self.show_weekday)
-        self.gsettings.set_string('time-format', self.time_format)
-        self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
-        self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
-        self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
-        self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
-        self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
-        self.gsettings.set_uint('night-light-temperature', self.night_light_temperature)
-        self.gsettings.set_double('night-light-schedule-from', self.night_light_schedule_from)
-        self.gsettings.set_double('night-light-schedule-to', self.night_light_schedule_to)
+        self.settings_gsettings.set_string('icon-theme', self.icon_theme)
+        self.settings_gsettings.set_string('cursor-theme', self.cursor_theme)
+        self.settings_gsettings.set_string('sound-theme', self.sound_theme)
+        self.settings_gsettings.set_boolean('show-weekday', self.show_weekday)
+        self.settings_gsettings.set_string('time-format', self.time_format)
+        self.settings_gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
+        self.settings_gsettings.set_boolean('tap-to-click', self.tap_to_click)
+        self.settings_gsettings.set_double('touchpad-speed', self.touchpad_speed)
+        self.settings_gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
+        self.settings_gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
+        self.settings_gsettings.set_uint('night-light-temperature', self.night_light_temperature)
+        self.settings_gsettings.set_double('night-light-schedule-from', self.night_light_schedule_from)
+        self.settings_gsettings.set_double('night-light-schedule-to', self.night_light_schedule_to)
 
     def apply_settings(self):
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
@@ -194,3 +198,25 @@ class MiscSettings:
         elevated_commands_list.add(f"mv -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
         elevated_commands_list.add(f"mv -fT '{temp_profile_path}' '{gdm_profile_path}'")
         elevated_commands_list.add("dconf update")
+
+class Settings(GResourceSettings, DConfSettings):
+    def __init__(self):
+        self.main_gsettings = Gio.Settings(schema_id=application_id)
+        self.theme_tweaks_gsettings = Gio.Settings(schema_id=f"{application_id}.theme-tweaks")
+        self.settings_gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
+        self.load_settings()
+    def load_settings(self):
+        GResourceSettings.load_from_gsettings(self)
+        if self.main_gsettings.get_boolean("first-run"):
+            DConfSettings.load_user_settings(self)
+        else:
+            DConfSettings.load_from_gsettings(self)
+    def load_from_gsettings(self):
+        GResourceSettings.load_from_gsettings(self)
+        DConfSettings.load_from_gsettings(self)
+    def save_to_gsettings(self):
+        GResourceSettings.save_to_gsettings(self)
+        DConfSettings.save_to_gsettings(self)
+    def apply_settings(self):
+        GResourceSettings.apply_settings(self)
+        DConfSettings.apply_settings(self)
