@@ -9,23 +9,6 @@ configure_file(
   )
 
 configure_file(
-  input: 'scalable/categories/application_id-theme-symbolic.svg',
-  output: application_id + '-theme-symbolic.svg',
-  copy: true,
-  install: true,
-  install_dir: join_paths(hicolor_dir, 'scalable/categories'),
-  )
-
-configure_file(
-  input: 'scalable/categories/application_id-settings-symbolic.svg',
-  output: application_id + '-settings-symbolic.svg',
-  copy: true,
-  install: true,
-  install_dir: join_paths(hicolor_dir, 'scalable/categories'),
-  )
-
-
-configure_file(
   input: 'symbolic/apps/application_id-symbolic.svg',
   output: application_id + '-symbolic.svg',
   copy: true,

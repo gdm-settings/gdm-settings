@@ -46,6 +46,9 @@ def load_widgets():
 
     # Main Widgets
     widgets.main_window = widgets.builder.get_object("main_window")
+    widgets.paned = widgets.builder.get_object("paned")
+    widgets.paned.set_shrink_start_child(False)
+    widgets.paned.set_shrink_end_child(False)
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
@@ -392,18 +395,16 @@ def on_activate(app):
     app.set_accels_for_action("quit", ["<Ctrl>Q"])
 
     # Add Pages to Page Stack
-    widgets.theme_page = widgets.page_stack.add(widgets.theme_page_content)
-    widgets.settings_page = widgets.page_stack.add(widgets.settings_page_content)
+    widgets.theme_page = widgets.page_stack.add_child(widgets.theme_page_content)
+    widgets.settings_page = widgets.page_stack.add_child(widgets.settings_page_content)
 
     # Set Theme Page Properties
     widgets.theme_page.set_name("theme")
     widgets.theme_page.set_title("Theme")
-    widgets.theme_page.set_icon_name(f"{application_id}-theme")
 
     # Set Settings Page Properties
     widgets.settings_page.set_name("settings")
     widgets.settings_page.set_title("Settings")
-    widgets.settings_page.set_icon_name(f"{application_id}-settings")
 
     # Load GSettings
     load_all_settings()

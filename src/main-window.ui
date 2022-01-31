@@ -2,24 +2,17 @@
 <interface>
   <!-- Main Window -->
   <object id="main_window" class="AdwApplicationWindow">
-    <property name="default-width">600</property>
-    <!-- <property name="default-height">410</property> -->
-    <property name="content">
+    <property name="default-width">800</property>
 
-      <!-- Vertical Box for the Main Window -->
+    <property name="content">
       <object class="GtkBox">
         <property name="orientation">vertical</property>
-        <property name="vexpand">true</property>
-      
-        <!-- Header Bar -->
         <child>
           <object class="AdwHeaderBar">
-
             <property name="title-widget">
-              <object class="AdwViewSwitcherTitle" id="title">
-                <property name="stack">stack</property>
+              <object class="AdwWindowTitle">
                 <binding name="title">
-                   <lookup name="title">main_window</lookup>
+                  <lookup name="title">main_window</lookup>
                 </binding>
               </object>
             </property>
@@ -48,25 +41,30 @@
         </child>
 
         <child>
-          <object class="AdwToastOverlay" id="main_toast_overlay">
-            <child>
-              <object class="AdwViewStack" id="stack">
-                <property name="vexpand">True</property>
-              </object> <!--AdwViewStack-->
-            </child>
-          </object>
-        </child>
+          <object class="GtkPaned" id="paned">
+            <property name="position">200</property>
 
-        <child>
-          <object class="AdwViewSwitcherBar">
-            <property name="stack">stack</property>
-            <binding name="reveal">
-              <lookup name="title-visible">title</lookup>
-            </binding>
+            <child type="start">
+              <object class="GtkStackSidebar">
+                <property name="stack">stack</property>
+              </object>
+            </child>
+
+            <child type="end">
+              <object class="AdwToastOverlay" id="main_toast_overlay">
+                <property name="hexpand">true</property>
+                <property name="width-request">300</property>
+                <child>
+                  <object class="GtkStack" id="stack"/>
+                </child>
+              </object>
+            </child>
+
           </object>
         </child>
 
       </object>
     </property>
+
   </object>
 </interface>
