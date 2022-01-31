@@ -21,6 +21,7 @@ about_dialog_ui_file = path.join(script_dir, "about-dialog.ui")
 theme_page_ui_file = path.join(script_dir, "theme.ui")
 image_chooser_ui_file = path.join(script_dir, "image-chooser.ui")
 settings_page_ui_file = path.join(script_dir, "settings.ui")
+responses_ui_file = path.join(script_dir, "responses.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -38,6 +39,7 @@ def load_widgets():
     widgets.builder.add_from_file(theme_page_ui_file)
     widgets.builder.add_from_file(image_chooser_ui_file)
     widgets.builder.add_from_file(settings_page_ui_file)
+    widgets.builder.add_from_file(responses_ui_file)
 
 
     #### Get Widgets from builder ####
@@ -50,6 +52,9 @@ def load_widgets():
     widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
     widgets.settings_page_content = widgets.builder.get_object("settings_page_content")
     widgets.apply_button = widgets.builder.get_object("apply_button")
+    widgets.main_toast_overlay = widgets.builder.get_object("main_toast_overlay")
+    widgets.apply_failed_toast = widgets.builder.get_object("apply_failed_toast")
+    widgets.apply_succeeded_toast = widgets.builder.get_object("apply_succeeded_toast")
 
     # Widgets from Theme page
     widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
@@ -330,6 +335,9 @@ def on_apply():
         widgets.theme_settings.save_to_gsettings()
         widgets.misc_settings.save_to_gsettings()
         widgets.main_gsettings.set_boolean("first-run", False)
+        widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
+    else:
+        widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
 
 def on_bg_type_change():
     selected_type = widgets.bg_type_comborow.get_selected_item().get_string()

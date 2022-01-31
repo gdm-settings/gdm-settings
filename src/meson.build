@@ -21,6 +21,7 @@ source_files = [
   'image-chooser.ui',
   'main-window.ui',
   'theme.ui',
+  'responses.ui',
 
   'command_elevation.py',
   'functions.py',

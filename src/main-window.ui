@@ -54,6 +54,10 @@
         </child>
 
         <child>
+          <object class="AdwToastOverlay" id="main_toast_overlay"/>
+        </child>
+
+        <child>
           <object class="AdwViewSwitcherBar">
             <property name="stack">stack</property>
             <binding name="reveal">
