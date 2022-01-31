@@ -1,16 +1,18 @@
 '''Settings Manager'''
 
 from glob import glob
-from subprocess import call, getoutput
-from os import path, listdir, makedirs, remove
+from subprocess import run, getoutput
+from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
+
+from info import project_name, application_id
 
 import gi
 gi.require_version("Gio", '2.0')
 from gi.repository import Gio
 
-from info import *
-from command_elevation import ElevatedCommandsList
+TempDir   = f'/tmp/{project_name}'
+ConfigDir = f'/etc/{project_name}'
 
 def __get_theme_list(themes_directory:str, decider:str, initial_list:list[str]):
     List = initial_list
@@ -43,9 +45,74 @@ def get_cursor_theme_list():
                             decider='cursors',
                             initial_list=[])
 
+class CommandElevator:
+    """ Runs a list of commands with elevated privilages """
+    def __init__(self) -> None:
+        self.__list = []
+        self.__shebang = "#!/bin/sh"
+        self.__elevator = "pkexec"
+
+    def shebang(self, shebang:str=None):
+        """ Shebang to determine shell for running elevated commands """
+        if shebang:
+            self.__shebang = shebang
+        else:
+            return self.__shebang
+
+    def elevator(self, elevator:str=None):
+        """
+        Program to use for privilage elevation 
+        
+        Example: "sudo", "doas", "pkexec", etc.
+        """
+        if elevator:
+            self.__elevator = elevator
+        else:
+            return self.__elevator
+
+    def add(self, cmd:str):
+        """ Add a new command to the list """
+        return self.__list.append(cmd)
+
+    def clear(self):
+        """ Clear command list """
+        return self.__list.clear()
+
+    def run_only(self) -> bool:
+        """ Run commands but DO NOT clear command list """
+        returncode = 0
+        if len(self.__list):
+            makedirs(name=TempDir, exist_ok=True)
+            script_file = f"{TempDir}/run-elevated"
+            with open(script_file, "w") as open_script_file:
+                print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
+            chmod(path=script_file, mode=755)
+            returncode = run(args=[self.__elevator, script_file]).returncode
+            remove(script_file)
+        # Return Code 0 of subprocess means success, but boolean with value 0 is interpreted as False
+        # So, 'not returncode' boolean will be True when the subprocess succeeds
+        return not returncode
+
+    def run(self) -> bool:
+        """ Run commands and clear command list"""
+        status = self.run_only()
+        self.clear()
+        return status
+
 class GResourceUtils:
+    TempShellDir = f'{TempDir}/gnome-shell'
+    ThemesDir = '/usr/share/themes'
+    GnomeShellDir = '/usr/share/gnome-shell'
+    GdmGresourceFile = f'{GnomeShellDir}/gnome-shell-theme.gresource'
+    UbuntuGdmGresourceFile = f'{GnomeShellDir}/gdm3-theme.gresource'
+    GdmGresourceManualBackup = f'{GdmGresourceFile}.bak'
+    GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
+    GdmBackground = f'{GnomeShellDir}/theme/gdm-background'
+    GresourceBasename = 'gnome-shell-theme.gresource'
+    CustomThemeIdentity = 'custom-theme'
+
     def __init__(self):
-        self.elevated_commands = ElevatedCommandsList()
+        self.elevated_commands = CommandElevator()
 
     def __listdir_recursive(self, dir:str):
         """list files (only) inside a directory recursively"""
@@ -64,14 +131,14 @@ class GResourceUtils:
 
         if path.exists(gresourceFile):
             if getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/gnome-shell.css"):
-                if not getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
+                if not getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/{self.CustomThemeIdentity}"):
                     return True
         return False
 
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in GdmGresourceFile, GdmGresourceAutoBackup, GdmGresourceManualBackup:
+        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup, self.GdmGresourceManualBackup:
            if self.is_default(file):
                return file
 
@@ -96,7 +163,7 @@ class GResourceUtils:
         they can be used as a gnome-shell/GDM theme"""
 
         source_shell_dir = self.extract_theme(gresource_file=self.get_default())
-        target_theme_dir = f"{ThemesDir}/{name}"
+        target_theme_dir = f"{self.ThemesDir}/{name}"
         target_shell_dir = f"{target_theme_dir}/gnome-shell"
         self.elevated_commands.add(f"rm -rf {target_theme_dir}")
         self.elevated_commands.add(f"mkdir -p {target_theme_dir}")
@@ -107,61 +174,61 @@ class GResourceUtils:
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != GdmGresourceAutoBackup:
+        if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
             print("saving default theme ...")
-            self.elevated_commands.add(f"cp {default_gresource} {GdmGresourceAutoBackup}")
+            self.elevated_commands.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
 
     def backup_update(self):
         """update backup of the default theme's GResource file on demand
         for its use as a restore point for the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != GdmGresourceManualBackup:
+        if default_gresource and default_gresource != self.GdmGresourceManualBackup:
             print("updating backup of default theme ...")
-            self.elevated_commands.add(f"cp {default_gresource} {GdmGresourceManualBackup}")
+            self.elevated_commands.add(f"cp {default_gresource} {self.GdmGresourceManualBackup}")
 
     def backup_restore(self):
         """restore the 'default' theme's GResource file from the manually created backup"""
 
-        if  path.isfile(GdmGresourceManualBackup):
+        if  path.isfile(self.GdmGresourceManualBackup):
             print("restoring default theme from backup ...")
-            self.elevated_commands.add(f"cp {GdmGresourceManualBackup} {GdmGresourceAutoBackup}")
+            self.elevated_commands.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
 
     def compile(self, shellDir:str, additional_css:str):
         """Compile a theme into a GResource file for its use as the GDM theme"""
 
         # Remove temporary directory if already exists
-        if path.exists(TempShellDir):
-            rmtree(TempShellDir)
+        if path.exists(self.TempShellDir):
+            rmtree(self.TempShellDir)
         tempGresourceFile = path.join(TempDir, 'gnome-shell-theme.gresource')
         # Remove temporary file if already exists
         if path.exists(tempGresourceFile):
             remove(tempGresourceFile)
         # Copy default resources to temporary directory
-        copytree(self.extract_theme(self.get_default()), TempShellDir)
+        copytree(self.extract_theme(self.get_default()), self.TempShellDir)
         # Copy gnome-shell dir of theme to temporary directory
         if shellDir:
-            copytree(shellDir, TempShellDir, dirs_exist_ok=True)
+            copytree(shellDir, self.TempShellDir, dirs_exist_ok=True)
         # Inject custom-theme identity
-        open(path.join(TempShellDir, CustomThemeIdentity), 'w').close()
+        open(path.join(self.TempShellDir, self.CustomThemeIdentity), 'w').close()
         # Background CSS
-        with open(f"{TempShellDir}/gnome-shell.css", "a") as shell_css:
+        with open(f"{self.TempShellDir}/gnome-shell.css", "a") as shell_css:
             print(additional_css, file=shell_css)
             pass
 
         # Copy gnome-shell.css to gdm.css and gdm3.css
-        copy(src=f"{TempShellDir}/gnome-shell.css", dst=f"{TempShellDir}/gdm.css")
-        copy(src=f"{TempShellDir}/gnome-shell.css", dst=f"{TempShellDir}/gdm3.css")
+        copy(src=f"{self.TempShellDir}/gnome-shell.css", dst=f"{self.TempShellDir}/gdm.css")
+        copy(src=f"{self.TempShellDir}/gnome-shell.css", dst=f"{self.TempShellDir}/gdm3.css")
 
         # Open /tmp/gdm-settings/gnome-shell/gnome-shell-theme.gresource.xml for writing
-        with open(path.join(TempShellDir, 'gnome-shell-theme.gresource.xml'), 'w') as GresourceXml:
+        with open(path.join(self.TempShellDir, 'gnome-shell-theme.gresource.xml'), 'w') as GresourceXml:
             # Fill gnome-shell-theme.gresource.xml
             print('<?xml version="1.0" encoding="UTF-8"?>',
                   '<gresources>',
                   ' <gresource prefix="/org/gnome/shell/theme">',
                   sep='\n',
                   file=GresourceXml)
-            for file in self.__listdir_recursive(TempShellDir):
+            for file in self.__listdir_recursive(self.TempShellDir):
                 print('  <file>' + file + '</file>', file=GresourceXml)
             print(' </gresource>',
                   '</gresources>',
@@ -169,9 +236,9 @@ class GResourceUtils:
                   file=GresourceXml)
 
         # Compile Theme
-        call(f'glib-compile-resources --sourcedir={TempShellDir} {TempShellDir}/gnome-shell-theme.gresource.xml')
-        move(path.join(TempShellDir,'gnome-shell-theme.gresource'), TempDir)
-        rmtree(TempShellDir)
+        run(['glib-compile-resources', f'--sourcedir={self.TempShellDir}', f'{self.TempShellDir}/gnome-shell-theme.gresource.xml'])
+        move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), TempDir)
+        rmtree(self.TempShellDir)
         return  tempGresourceFile
 
 gresource_utils = GResourceUtils()
@@ -256,13 +323,13 @@ class GResourceSettings(Common):
         return css
 
     def apply_settings(self):
-        self.auto_backup()
+        gresource_utils.auto_backup()
         makedirs(TempDir, exist_ok=True)
         shelldir = None
         if self.theme != "default":
             shelldir = f"/usr/share/themes/{self.theme}/gnome-shell"
-        compiled_file = self.compile(shellDir=shelldir, additional_css=self.get_setting_css())
-        self.elevated_commands.add(f"mv {compiled_file} {GdmGresourceFile}")
+        compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
+        self.elevated_commands.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
 
 class DConfSettings(Common):
     def __init__(self):

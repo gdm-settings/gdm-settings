@@ -41,22 +41,25 @@
         </child>
 
         <child>
-          <object class="GtkPaned" id="paned">
-            <property name="position">200</property>
+          <object class="AdwToastOverlay" id="main_toast_overlay">
 
-            <child type="start">
-              <object class="GtkStackSidebar">
-                <property name="stack">stack</property>
-              </object>
-            </child>
+            <child>
+              <object class="GtkPaned" id="paned">
+                <property name="position">200</property>
 
-            <child type="end">
-              <object class="AdwToastOverlay" id="main_toast_overlay">
-                <property name="hexpand">true</property>
-                <property name="width-request">300</property>
-                <child>
-                  <object class="GtkStack" id="stack"/>
+                <child type="start">
+                  <object class="GtkStackSidebar">
+                    <property name="stack">stack</property>
+                  </object>
                 </child>
+
+                <child type="end">
+                  <object class="GtkStack" id="stack">
+                    <property name="hexpand">true</property>
+                    <property name="width-request">300</property>
+                  </object>
+                </child>
+
               </object>
             </child>
 

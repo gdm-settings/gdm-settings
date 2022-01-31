@@ -21,12 +21,11 @@ source_files = [
   'image-chooser.ui',
   'main-window.ui',
   'theme.ui',
+  'settings.ui',
   'responses.ui',
 
-  'command_elevation.py',
   'gdm-settings.py',
   'settings_manager.py',
-  'settings.ui',
 ]
 
 install_data(source_files, install_dir: pkgdatadir)
