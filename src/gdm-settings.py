@@ -8,8 +8,7 @@ gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
 from info import *
-from functions import *
-from settings_manager import Settings
+import settings_manager
 
 script_realpath = path.realpath(argv[0])
 script_basename = path.basename(script_realpath)
@@ -113,28 +112,31 @@ def add_string_lists_to_comborows():
     widgets.night_light_schedule_comborow.set_model(widgets.night_light_schedule_list)
     # GDM Themes
     widgets.gdm_theme_list = Gtk.StringList()
-    for theme in get_gdm_theme_list():
+    for theme in settings_manager.get_gdm_theme_list():
         widgets.gdm_theme_list.append(theme)
     widgets.theme_choice_comborow.set_model(widgets.gdm_theme_list)
     # Icon Themes
     widgets.icon_theme_list = Gtk.StringList()
-    for theme in get_icon_theme_list():
+    for theme in settings_manager.get_icon_theme_list():
         widgets.icon_theme_list.append(theme)
     widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
     # Cursor Themes
     widgets.cursor_theme_list = Gtk.StringList()
-    for theme in get_cursor_theme_list():
+    for theme in settings_manager.get_cursor_theme_list():
         widgets.cursor_theme_list.append(theme)
     widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
     # Sound Themes
     widgets.sound_theme_list = Gtk.StringList()
-    for theme in get_sound_theme_list():
+    for theme in settings_manager.get_sound_theme_list():
         widgets.sound_theme_list.append(theme)
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
-def load_settings_to_widgets():
+def init_settings():
     widgets.main_gsettings = Gio.Settings(schema_id=application_id)
-    settings = widgets.settings = Settings()
+    widgets.settings = settings_manager.Settings()
+
+def load_settings_to_widgets():
+    settings = widgets.settings
 
     # Open Last visited Page
     page_name = widgets.main_gsettings.get_string("last-visited-page")
@@ -394,7 +396,8 @@ def on_activate(app):
     widgets.settings_page.set_name("settings")
     widgets.settings_page.set_title("Settings")
 
-    # Load GSettings
+    # Initialize and Load Settings
+    init_settings()
     load_settings_to_widgets()
 
     # Set Title Main Window to Application Name
@@ -411,7 +414,7 @@ def on_shutdown(app):
     page_name = widgets.page_stack.get_visible_child_name()
     widgets.main_gsettings.set_string("last-visited-page", page_name)
 
-    shutil.rmtree(path=TempDir, ignore_errors=True)
+    widgets.settings.cleanup()
 
 if __name__ == '__main__':
     app = Adw.Application(application_id=application_id)

@@ -24,7 +24,6 @@ source_files = [
   'responses.ui',
 
   'command_elevation.py',
-  'functions.py',
   'gdm-settings.py',
   'settings_manager.py',
   'settings.ui',
