@@ -48,13 +48,13 @@
         </child>
 
         <child>
-          <object class="AdwViewStack" id="stack">
-            <property name="vexpand">True</property>
-          </object> <!--AdwViewStack-->
-        </child>
-
-        <child>
-          <object class="AdwToastOverlay" id="main_toast_overlay"/>
+          <object class="AdwToastOverlay" id="main_toast_overlay">
+            <child>
+              <object class="AdwViewStack" id="stack">
+                <property name="vexpand">True</property>
+              </object> <!--AdwViewStack-->
+            </child>
+          </object>
         </child>
 
         <child>
