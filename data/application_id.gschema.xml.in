@@ -24,6 +24,7 @@
 	     <choice value="sound"/>
 	     <choice value="top_bar"/>
 	     <choice value="touchpad"/>
+	     <choice value="misc"/>
 	   </choices>
 	 </key>
 

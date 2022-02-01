@@ -30,7 +30,21 @@
                     </child>
                   </object>
                 </child>
-        
+
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Natural Scrolling</property>
+                    <property name="subtitle">Scrolling moves the content, not the view.</property>
+                    <property name="activatable-widget">natural_scrolling_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="natural_scrolling_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+
                 <child>
                   <object class="AdwActionRow">
                     <property name="title">Touchpad Speed</property>
@@ -40,6 +54,21 @@
                         <property name="hexpand">true</property>
                       </object>
                     </child>
+                  </object>
+                </child>
+
+                <child>
+                  <object class="AdwComboRow" id="scrolling_method_comborow">
+                    <property name="title">Scrolling Method</property>
+                    <property name="model">
+                      <object class="GtkStringList">
+                        <items>
+                          <item>Two-finger</item>
+                          <item>Edge</item>
+                          <item>Disable</item>
+                        </items>
+                      </object>
+                    </property>
                   </object>
                 </child>
         

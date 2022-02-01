@@ -47,6 +47,8 @@ def get_widgets():
     widgets.builder.add_from_file(top_bar_page_ui_file)
     touchpad_page_ui_file = path.join(ui_dir, "touchpad-page.ui")
     widgets.builder.add_from_file(touchpad_page_ui_file)
+    misc_page_ui_file = path.join(ui_dir, "misc-page.ui")
+    widgets.builder.add_from_file(misc_page_ui_file)
 
 
     #### Get Widgets from builder ####
@@ -65,6 +67,7 @@ def get_widgets():
     widgets.sound_page_content = widgets.builder.get_object("sound_page_content")
     widgets.top_bar_page_content = widgets.builder.get_object("top_bar_page_content")
     widgets.touchpad_page_content = widgets.builder.get_object("touchpad_page_content")
+    widgets.misc_page_content = widgets.builder.get_object("misc_page_content")
     widgets.apply_button = widgets.builder.get_object("apply_button")
     widgets.main_toast_overlay = widgets.builder.get_object("main_toast_overlay")
     widgets.apply_failed_toast = widgets.builder.get_object("apply_failed_toast")
@@ -423,6 +426,7 @@ def on_activate(app):
     widgets.sound_page = widgets.page_stack.add_child(widgets.sound_page_content)
     widgets.touchpad_page = widgets.page_stack.add_child(widgets.touchpad_page_content)
     widgets.night_light_page = widgets.page_stack.add_child(widgets.night_light_page_content)
+    widgets.misc_page = widgets.page_stack.add_child(widgets.misc_page_content)
 
     # Set Appearance Page Properties
     widgets.appearance_page.set_name("appearance")
@@ -447,6 +451,10 @@ def on_activate(app):
     # Set Touchpad Page Properties
     widgets.touchpad_page.set_name("touchpad")
     widgets.touchpad_page.set_title("Touchpad")
+
+    # Set Misc Page Properties
+    widgets.misc_page.set_name("misc")
+    widgets.misc_page.set_title("Miscellaneous")
 
     # Initialize and Load Settings
     init_settings()

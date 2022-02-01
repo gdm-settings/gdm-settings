@@ -20,6 +20,7 @@ ui_files = [
   'sound-page.ui',
   'top-bar-page.ui',
   'touchpad-page.ui',
+  'misc-page.ui',
 ]
 
 install_data(ui_files, install_dir: ui_dir)

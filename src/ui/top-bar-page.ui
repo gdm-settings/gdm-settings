@@ -130,6 +130,19 @@
                     </child>
                   </object>
                 </child>
+
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show Seconds</property>
+                    <property name="activatable-widget">show_seconds_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_seconds_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
         
                 <child>
                   <object class="AdwComboRow" id="time_format_comborow">
