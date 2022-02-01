@@ -14,13 +14,14 @@ script_realpath = path.realpath(argv[0])
 script_basename = path.basename(script_realpath)
 script_dir = path.dirname(script_realpath)
 
-main_window_ui_file = path.join(script_dir, "main-window.ui")
-app_menu_ui_file = path.join(script_dir, "app-menu.ui")
-about_dialog_ui_file = path.join(script_dir, "about-dialog.ui")
-theme_page_ui_file = path.join(script_dir, "theme.ui")
-image_chooser_ui_file = path.join(script_dir, "image-chooser.ui")
-settings_page_ui_file = path.join(script_dir, "settings.ui")
-responses_ui_file = path.join(script_dir, "responses.ui")
+ui_dir = path.join(script_dir, "ui")
+main_window_ui_file = path.join(ui_dir, "main-window.ui")
+app_menu_ui_file = path.join(ui_dir, "app-menu.ui")
+about_dialog_ui_file = path.join(ui_dir, "about-dialog.ui")
+theme_page_ui_file = path.join(ui_dir, "theme.ui")
+image_chooser_ui_file = path.join(ui_dir, "image-chooser.ui")
+settings_page_ui_file = path.join(ui_dir, "settings.ui")
+responses_ui_file = path.join(ui_dir, "responses.ui")
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
