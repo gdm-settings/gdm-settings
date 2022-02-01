@@ -15,6 +15,7 @@ ui_files = [
   'responses.ui',
 
   'appearance-page.ui',
+  'fonts-page.ui',
   'night-light-page.ui',
   'sound-page.ui',
   'top-bar-page.ui',

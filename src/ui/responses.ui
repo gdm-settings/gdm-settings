@@ -8,7 +8,7 @@
   </object>
 
   <object class="AdwToast" id="apply_succeeded_toast">
-    <property name="title" translatable="yes">Settings applied successfully</property>
+    <property name="title" translatable="yes">Settings applied</property>
     <property name="timeout">2.5</property>
     <property name="priority">high</property>
   </object>

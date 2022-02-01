@@ -37,6 +37,8 @@ def get_widgets():
     widgets.builder.add_from_file(responses_ui_file)
     appearance_page_ui_file = path.join(ui_dir, "appearance-page.ui")
     widgets.builder.add_from_file(appearance_page_ui_file)
+    fonts_page_ui_file = path.join(ui_dir, "fonts-page.ui")
+    widgets.builder.add_from_file(fonts_page_ui_file)
     night_light_page_ui_file = path.join(ui_dir, "night-light-page.ui")
     widgets.builder.add_from_file(night_light_page_ui_file)
     sound_page_ui_file = path.join(ui_dir, "sound-page.ui")
@@ -58,6 +60,7 @@ def get_widgets():
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.appearance_page_content = widgets.builder.get_object("appearance_page_content")
+    widgets.fonts_page_content = widgets.builder.get_object("fonts_page_content")
     widgets.night_light_page_content = widgets.builder.get_object("night_light_page_content")
     widgets.sound_page_content = widgets.builder.get_object("sound_page_content")
     widgets.top_bar_page_content = widgets.builder.get_object("top_bar_page_content")
@@ -77,6 +80,8 @@ def get_widgets():
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
+    # Widgets from Fonts page
+    widgets.font_button = widgets.builder.get_object("font_button")
     # Widgets from Top Bar page
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
     widgets.disable_top_bar_rounded_corners_switch = widgets.builder.get_object("disable_top_bar_rounded_corners_switch")
@@ -413,6 +418,7 @@ def on_activate(app):
 
     # Add Pages to Page Stack
     widgets.appearance_page = widgets.page_stack.add_child(widgets.appearance_page_content)
+    widgets.fonts_page = widgets.page_stack.add_child(widgets.fonts_page_content)
     widgets.top_bar_page = widgets.page_stack.add_child(widgets.top_bar_page_content)
     widgets.sound_page = widgets.page_stack.add_child(widgets.sound_page_content)
     widgets.touchpad_page = widgets.page_stack.add_child(widgets.touchpad_page_content)
@@ -421,6 +427,10 @@ def on_activate(app):
     # Set Appearance Page Properties
     widgets.appearance_page.set_name("appearance")
     widgets.appearance_page.set_title("Appearance")
+
+    # Set Fonts Page Properties
+    widgets.fonts_page.set_name("fonts")
+    widgets.fonts_page.set_title("Fonts")
 
     # Set Night Light Page Properties
     widgets.night_light_page.set_name("night_light")
