@@ -27,6 +27,7 @@
                 <child>
                   <object class="AdwActionRow">
                     <property name="title">Over Amplification</property>
+                    <property name="subtitle">Allow raising volume above 100%</property>
                     <property name="activatable-widget">over_amplification_switch</property>
                     <child>
                       <object class="GtkSwitch" id="over_amplification_switch">
