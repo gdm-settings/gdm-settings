@@ -1,5 +1,5 @@
 project('gdm-settings',
-        version: '0.2-alpha',
+        version: '0.3-alpha',
   meson_version: '>= 0.57.0')
 
 dependency('pygobject-3.0')
