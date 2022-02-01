@@ -88,9 +88,9 @@ def get_widgets():
     # Widgets from Top Bar page
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
     widgets.disable_top_bar_rounded_corners_switch = widgets.builder.get_object("disable_top_bar_rounded_corners_switch")
-    widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
+    widgets.top_bar_text_color_switch = widgets.builder.get_object("top_bar_text_color_switch")
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
-    widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
+    widgets.top_bar_background_color_switch = widgets.builder.get_object("top_bar_background_color_switch")
     widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
     widgets.show_weekday_switch = widgets.builder.get_object("show_weekday_switch")
     widgets.time_format_comborow = widgets.builder.get_object("time_format_comborow")
@@ -296,14 +296,14 @@ def load_settings_to_widgets():
     widgets.disable_top_bar_rounded_corners_switch.set_active(disable_top_bar_rounded_corners)
     # Top Bar Text Color
     change_top_bar_text_color = widgets.settings.change_top_bar_text_color
-    widgets.change_top_bar_text_color_switch.set_active(change_top_bar_text_color)
+    widgets.top_bar_text_color_switch.set_active(change_top_bar_text_color)
     top_bar_text_color = widgets.settings.top_bar_text_color
     top_bar_text_color_rgba = Gdk.RGBA()
     top_bar_text_color_rgba.parse(top_bar_text_color)
     widgets.top_bar_text_color_button.set_rgba(top_bar_text_color_rgba)
     # Top Bar Background Color
     change_top_bar_background_color = widgets.settings.change_top_bar_background_color
-    widgets.change_top_bar_background_color_switch.set_active(change_top_bar_background_color)
+    widgets.top_bar_background_color_switch.set_active(change_top_bar_background_color)
     top_bar_background_color = widgets.settings.top_bar_background_color
     top_bar_background_color_rgba = Gdk.RGBA()
     top_bar_background_color_rgba.parse(top_bar_background_color)
@@ -353,9 +353,9 @@ def set_settings():
     # Top Bar Tweaks
     settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
     settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
-    settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
+    settings.change_top_bar_text_color = widgets.top_bar_text_color_switch.get_active()
     settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
-    settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()
+    settings.change_top_bar_background_color = widgets.top_bar_background_color_switch.get_active()
     settings.top_bar_background_color = widgets.top_bar_background_color_button.get_rgba().to_string()
 
 def on_apply():

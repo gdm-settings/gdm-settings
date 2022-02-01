@@ -20,6 +20,79 @@
                 <property name="title">Tweaks</property>
         
                 <child>
+                  <object class="AdwExpanderRow" id="top_bar_text_color_expanderrow">
+                    <property name="title">Change Text Color</property>
+                    <binding name="expanded">
+                      <lookup name="active">top_bar_text_color_switch</lookup>
+                    </binding>
+
+                    <child type="action">
+                      <object class="GtkSwitch" id="top_bar_text_color_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                        <binding name="active">
+                          <lookup name="expanded">top_bar_text_color_expanderrow</lookup>
+                        </binding>
+                      </object>
+                    </child>
+
+                    <child>
+                      <object class="AdwActionRow" id="top_bar_text_color_actionrow">
+                        <property name="title">Text Color</property>
+                        <property name="subtitle">The color of text in top bar</property>
+                        <property name="activatable-widget">top_bar_text_color_button</property>
+        
+                        <child>
+                          <object class="GtkColorButton" id="top_bar_text_color_button">
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                            <property name="use-alpha">true</property>
+                          </object>
+                        </child>
+        
+                      </object>
+                    </child>
+        
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwExpanderRow" id="top_bar_background_color_expanderrow">
+                    <property name="title">Change Background Color</property>
+                    <binding name="expanded">
+                      <lookup name="active">top_bar_background_color_switch</lookup>
+                    </binding>
+                    <child type="action">
+                      <object class="GtkSwitch" id="top_bar_background_color_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                        <binding name="active">
+                           <lookup name="expanded">top_bar_background_color_expanderrow</lookup>
+                        </binding>
+                      </object>
+                    </child>
+        
+                    <child>
+                      <object class="AdwActionRow" id="top_bar_background_color_actionrow">
+                        <property name="title"> Background Color</property>
+                        <property name="subtitle">The color of top bar background</property>
+                        <property name="activatable-widget">top_bar_background_color_button</property>
+        
+                        <child>
+                          <object class="GtkColorButton" id="top_bar_background_color_button">
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                            <property name="use-alpha">true</property>
+                          </object>
+                        </child>
+        
+                      </object>
+                    </child>
+
+                  </object>
+                </child>
+        
+                <child>
                   <object class="AdwActionRow" id="disable_top_bar_arrows_actionrow">
                     <property name="title">Disable Arrows</property>
                     <property name="activatable-widget">disable_top_bar_arrows_switch</property>
@@ -42,72 +115,6 @@
                         <property name="margin-bottom">15</property>
                       </object>
                     </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="change_top_bar_text_color_actionrow">
-                    <property name="title">Change Text Color</property>
-                    <property name="activatable-widget">change_top_bar_text_color_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="change_top_bar_text_color_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="top_bar_text_color_actionrow">
-                    <property name="title">Text Color</property>
-                    <property name="subtitle">The color of text in top bar</property>
-                    <property name="activatable-widget">top_bar_text_color_button</property>
-                    <binding name="visible">
-                       <lookup name="active">change_top_bar_text_color_switch</lookup>
-                    </binding>
-        
-                    <child>
-                      <object class="GtkColorButton" id="top_bar_text_color_button">
-                        <property name="margin-top">5</property>
-                        <property name="margin-bottom">5</property>
-                        <property name="use-alpha">true</property>
-                      </object>
-                    </child>
-        
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="change_top_bar_background_color_actionrow">
-                    <property name="title">Change Background Color</property>
-                    <property name="activatable-widget">change_top_bar_background_color_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="change_top_bar_background_color_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="top_bar_background_color_actionrow">
-                    <property name="title"> Background Color</property>
-                    <property name="subtitle">The color of top bar background</property>
-                    <property name="activatable-widget">top_bar_background_color_button</property>
-                    <binding name="visible">
-                       <lookup name="active">change_top_bar_background_color_switch</lookup>
-                    </binding>
-        
-                    <child>
-                      <object class="GtkColorButton" id="top_bar_background_color_button">
-                        <property name="margin-top">5</property>
-                        <property name="margin-bottom">5</property>
-                        <property name="use-alpha">true</property>
-                      </object>
-                    </child>
-        
                   </object>
                 </child>
         
