@@ -3,7 +3,7 @@
   <object class="GtkAboutDialog" id="about_dialog">
     <property name="transient-for">main_window</property>
     <property name="modal">true</property>
-    <property name="program-name">@application_name@</property>
+    <property name="program-name">@application_name@ (@project_name@)</property>
     <property name="version">@version@</property>
     <property name="comments">@description@</property>
     <property name="logo-icon-name">@application_id@</property>
