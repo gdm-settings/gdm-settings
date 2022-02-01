@@ -4,6 +4,7 @@ from glob import glob
 from subprocess import run, getoutput
 from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
+from math import trunc
 
 from info import project_name, application_id
 
@@ -246,7 +247,7 @@ gresource_utils = GResourceUtils()
 class Common:
     def __init__(self):
         self.elevated_commands = gresource_utils.elevated_commands
-        self.main_gsettings = Gio.Settings(schema_id=application_id)
+        self.gsettings = Gio.Settings(schema_id=application_id)
 
     def cleanup(self):
         rmtree(path=TempDir, ignore_errors=True)
@@ -254,38 +255,31 @@ class Common:
 class GResourceSettings(Common):
     def __init__(self):
         super().__init__()
-        self.init()
         self.load_settings()
 
-    def init(self):
-        self.theme_tweaks_gsettings = Gio.Settings(schema_id=f"{application_id}.theme-tweaks")
-
     def load_settings(self):
-        load_from_gsettings()
+        self.shell_theme = self.gsettings.get_string("shell-theme")
+        self.background_type = self.gsettings.get_string("background-type")
+        self.background_image = self.gsettings.get_string("background-image")
+        self.background_color = self.gsettings.get_string("background-color")
+        self.disable_top_bar_arrows = self.gsettings.get_boolean("disable-top-bar-arrows")
+        self.disable_top_bar_rounded_corners = self.gsettings.get_boolean("disable-top-bar-rounded-corners")
+        self.change_top_bar_text_color = self.gsettings.get_boolean("change-top-bar-text-color")
+        self.top_bar_text_color = self.gsettings.get_string("top-bar-text-color")
+        self.change_top_bar_background_color = self.gsettings.get_boolean("change-top-bar-background-color")
+        self.top_bar_background_color = self.gsettings.get_string("top-bar-background-color")
 
-    def load_from_gsettings(self):
-        self.theme = self.main_gsettings.get_string("theme")
-        self.background_type = self.main_gsettings.get_string("background-type")
-        self.background_image = self.main_gsettings.get_string("background-image")
-        self.background_color = self.main_gsettings.get_string("background-color")
-        self.disable_top_bar_arrows = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-arrows")
-        self.disable_top_bar_corners = self.theme_tweaks_gsettings.get_boolean("disable-top-bar-corners")
-        self.change_top_bar_text_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-text-color")
-        self.top_bar_text_color = self.theme_tweaks_gsettings.get_string("top-bar-text-color")
-        self.change_top_bar_background_color = self.theme_tweaks_gsettings.get_boolean("change-top-bar-background-color")
-        self.top_bar_background_color = self.theme_tweaks_gsettings.get_string("top-bar-background-color")
-
-    def save_to_gsettings(self):
-        self.main_gsettings.set_string("theme", self.theme)
-        self.main_gsettings.set_string("background-type", self.background_type)
-        self.main_gsettings.set_string("background-image", self.background_image)
-        self.main_gsettings.set_string("background-color", self.background_color)
-        self.theme_tweaks_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
-        self.theme_tweaks_gsettings.set_boolean("disable-top-bar-corners", self.disable_top_bar_corners)
-        self.theme_tweaks_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
-        self.theme_tweaks_gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
-        self.theme_tweaks_gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
-        self.theme_tweaks_gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
+    def save_settings(self):
+        self.gsettings.set_string("shell-theme", self.shell_theme)
+        self.gsettings.set_string("background-type", self.background_type)
+        self.gsettings.set_string("background-image", self.background_image)
+        self.gsettings.set_string("background-color", self.background_color)
+        self.gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
+        self.gsettings.set_boolean("disable-top-bar-rounded-corners", self.disable_top_bar_rounded_corners)
+        self.gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
+        self.gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
+        self.gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
+        self.gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
 
     def get_setting_css(self) -> str:
         css = "\n/* 'GDM Settings' App Provided CSS */\n"
@@ -301,7 +295,7 @@ class GResourceSettings(Common):
         if self.disable_top_bar_arrows:
             css += "#panel .popup-menu-arrow { width: 0px; }\n"
         # Disable Top Bar Corners
-        if self.disable_top_bar_corners:
+        if self.disable_top_bar_rounded_corners:
             css +=  "#panel .panel-corner {\n"
             css += f"  -panel-corner-opacity: 0;\n"
             css +=  "}\n"
@@ -315,7 +309,7 @@ class GResourceSettings(Common):
             css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
             css += f"  background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
-            if not self.disable_top_bar_corners:
+            if not self.disable_top_bar_rounded_corners:
                 css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
                 css += f"  -panel-corner-opacity: 1;\n"
                 css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
@@ -327,21 +321,17 @@ class GResourceSettings(Common):
         makedirs(TempDir, exist_ok=True)
         shelldir = None
         if self.theme != "default":
-            shelldir = f"/usr/share/themes/{self.theme}/gnome-shell"
+            shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
         compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
         self.elevated_commands.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
 
 class DConfSettings(Common):
     def __init__(self):
         super().__init__()
-        self.init()
         self.load_settings()
 
-    def init(self):
-        self.settings_gsettings = Gio.Settings(schema_id=f"{application_id}.settings")
-
     def load_settings(self):
-        if main_gsettings.get_boolean("first-run"):
+        if self.gsettings.get_boolean("never-applied"):
             self.load_user_settings()
         else:
             self.load_from_gsettings()
@@ -362,39 +352,56 @@ class DConfSettings(Common):
         self.touchpad_speed = touchpad_settings.get_double("speed")
         self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
         self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
-        self.night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
-        self.night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
         self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
 
-    def load_from_gsettings(self):
-        self.icon_theme = self.settings_gsettings.get_string('icon-theme')
-        self.cursor_theme = self.settings_gsettings.get_string('cursor-theme')
-        self.sound_theme = self.settings_gsettings.get_string('sound-theme')
-        self.show_weekday = self.settings_gsettings.get_boolean('show-weekday')
-        self.time_format = self.settings_gsettings.get_string('time-format')
-        self.show_battery_percentage = self.settings_gsettings.get_boolean('show-battery-percentage')
-        self.tap_to_click = self.settings_gsettings.get_boolean('tap-to-click')
-        self.touchpad_speed = self.settings_gsettings.get_double('touchpad-speed')
-        self.night_light_enabled = self.settings_gsettings.get_boolean('night-light-enabled')
-        self.night_light_schedule_automatic = self.settings_gsettings.get_boolean('night-light-schedule-automatic')
-        self.night_light_temperature = self.settings_gsettings.get_uint('night-light-temperature')
-        self.night_light_schedule_from = self.settings_gsettings.get_double('night-light-schedule-from')
-        self.night_light_schedule_to = self.settings_gsettings.get_double('night-light-schedule-to')
+        night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
+        night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
 
-    def save_to_gsettings(self):
-        self.settings_gsettings.set_string('icon-theme', self.icon_theme)
-        self.settings_gsettings.set_string('cursor-theme', self.cursor_theme)
-        self.settings_gsettings.set_string('sound-theme', self.sound_theme)
-        self.settings_gsettings.set_boolean('show-weekday', self.show_weekday)
-        self.settings_gsettings.set_string('time-format', self.time_format)
-        self.settings_gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
-        self.settings_gsettings.set_boolean('tap-to-click', self.tap_to_click)
-        self.settings_gsettings.set_double('touchpad-speed', self.touchpad_speed)
-        self.settings_gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
-        self.settings_gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
-        self.settings_gsettings.set_uint('night-light-temperature', self.night_light_temperature)
-        self.settings_gsettings.set_double('night-light-schedule-from', self.night_light_schedule_from)
-        self.settings_gsettings.set_double('night-light-schedule-to', self.night_light_schedule_to)
+        self.night_light_start_hour = trunc(night_light_schedule_from)
+        self.night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
+        if self.night_light_start_minute == 60:
+            self.night_light_start_hour += 1
+            self.night_light_start_minute = 0
+
+        self.night_light_end_hour = trunc(night_light_schedule_to)
+        self.night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
+        if self.night_light_end_minute == 60:
+            self.night_light_end_hour += 1
+            self.night_light_end_minute = 0
+
+    def load_from_gsettings(self):
+        self.icon_theme = self.gsettings.get_string('icon-theme')
+        self.cursor_theme = self.gsettings.get_string('cursor-theme')
+        self.sound_theme = self.gsettings.get_string('sound-theme')
+        self.show_weekday = self.gsettings.get_boolean('show-weekday')
+        self.time_format = self.gsettings.get_string('time-format')
+        self.show_battery_percentage = self.gsettings.get_boolean('show-battery-percentage')
+        self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
+        self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
+        self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
+        self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
+        self.night_light_temperature = self.gsettings.get_uint('night-light-temperature')
+        self.night_light_start_hour = self.gsettings.get_int('night-light-start-hour')
+        self.night_light_start_minute = self.gsettings.get_int('night-light-start-minute')
+        self.night_light_end_hour = self.gsettings.get_int('night-light-end-hour')
+        self.night_light_end_minute = self.gsettings.get_int('night-light-end-minute')
+
+    def save_settings(self):
+        self.gsettings.set_string('icon-theme', self.icon_theme)
+        self.gsettings.set_string('cursor-theme', self.cursor_theme)
+        self.gsettings.set_string('sound-theme', self.sound_theme)
+        self.gsettings.set_boolean('show-weekday', self.show_weekday)
+        self.gsettings.set_string('time-format', self.time_format)
+        self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
+        self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
+        self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
+        self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
+        self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
+        self.gsettings.set_uint('night-light-temperature', self.night_light_temperature)
+        self.gsettings.set_int('night-light-start-hour', self.night_light_start_hour)
+        self.gsettings.set_int('night-light-start-minute', self.night_light_start_minute)
+        self.gsettings.set_int('night-light-end-hour', self.night_light_end_hour)
+        self.gsettings.set_int('night-light-end-minute', self.night_light_end_minute)
 
     def apply_settings(self):
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
@@ -407,6 +414,11 @@ class DConfSettings(Common):
             gdm_profile_contents += "system-db:gdm\n"
             gdm_profile_contents += "file-db:/usr/share/gdm/greeter-dconf-defaults"
             print(gdm_profile_contents, file=temp_profile_file)
+
+        night_light_schedule_from  = self.night_light_start_hour
+        night_light_schedule_from += self.night_light_start_minute / 60
+        night_light_schedule_to  = self.night_light_end_hour
+        night_light_schedule_to += self.night_light_end_minute / 60 
 
         temp_conf_path = f"{TempDir}/95-gdm-settings"
         with open(temp_conf_path, "w+") as temp_conf_file:
@@ -436,8 +448,8 @@ class DConfSettings(Common):
             gdm_conf_contents += f"night-light-enabled={str(self.night_light_enabled).lower()}\n"
             gdm_conf_contents += f"night-light-temperature=uint32 {round(self.night_light_temperature)}\n"
             gdm_conf_contents += f"night-light-schedule-automatic={str(self.night_light_schedule_automatic).lower()}\n"
-            gdm_conf_contents += f"night-light-schedule-from={self.night_light_schedule_from}\n"
-            gdm_conf_contents += f"night-light-schedule-to={self.night_light_schedule_to}\n"
+            gdm_conf_contents += f"night-light-schedule-from={night_light_schedule_from}\n"
+            gdm_conf_contents += f"night-light-schedule-to={night_light_schedule_to}\n"
 
             print(gdm_conf_contents, file=temp_conf_file)
 
@@ -449,20 +461,11 @@ class DConfSettings(Common):
 class Settings(GResourceSettings, DConfSettings):
     def __init__(self):
         Common.__init__(self)
-        GResourceSettings.init(self)
-        DConfSettings.init(self)
         self.load_settings()
-
     def load_settings(self):
-        GResourceSettings.load_from_gsettings(self)
-        if self.main_gsettings.get_boolean("first-run"):
-            DConfSettings.load_user_settings(self)
-        else:
-            DConfSettings.load_from_gsettings(self)
-    def load_from_gsettings(self):
-        GResourceSettings.load_from_gsettings(self)
-        DConfSettings.load_from_gsettings(self)
-    def save_to_gsettings(self):
+        GResourceSettings.load_settings(self)
+        DConfSettings.load_settings(self)
+    def save_settings(self):
         GResourceSettings.save_to_gsettings(self)
         DConfSettings.save_to_gsettings(self)
     def apply_settings(self):

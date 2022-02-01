@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from sys import argv
 from os import path
-from math import trunc
 
 import gi
 gi.require_version("Adw", '1')
@@ -28,7 +27,7 @@ class WidgetContainer:
     pass
 widgets = WidgetContainer()
 
-def load_widgets():
+def get_widgets():
     # Initialize Builder
     widgets.builder = Gtk.Builder()
 
@@ -68,7 +67,7 @@ def load_widgets():
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
-    widgets.disable_top_bar_corners_switch = widgets.builder.get_object("disable_top_bar_corners_switch")
+    widgets.disable_top_bar_rounded_corners_switch = widgets.builder.get_object("disable_top_bar_rounded_corners_switch")
     widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
     widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
@@ -132,16 +131,17 @@ def add_string_lists_to_comborows():
         widgets.sound_theme_list.append(theme)
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
+def restore_window_state():
+    # Open Last visited Page
+    page_name = widgets.window_state.get_string("last-visited-page")
+    widgets.page_stack.set_visible_child_name(page_name)
+
 def init_settings():
-    widgets.main_gsettings = Gio.Settings(schema_id=application_id)
     widgets.settings = settings_manager.Settings()
+    widgets.window_state = Gio.Settings(schema_id=f'{application_id}.window-state')
 
 def load_settings_to_widgets():
     settings = widgets.settings
-
-    # Open Last visited Page
-    page_name = widgets.main_gsettings.get_string("last-visited-page")
-    widgets.page_stack.set_visible_child_name(page_name)
 
     #### Get Settings ####
     # Interface
@@ -157,15 +157,11 @@ def load_settings_to_widgets():
     # Night Light
     night_light_enabled = settings.night_light_enabled
     night_light_schedule_automatic = settings.night_light_schedule_automatic
-    night_light_schedule_from = settings.night_light_schedule_from
-    night_light_schedule_to = settings.night_light_schedule_to
     night_light_temperature = settings.night_light_temperature
-
-    #### Calculate Stuff ####
-    night_light_start_hour = trunc(night_light_schedule_from)
-    night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
-    night_light_end_hour = trunc(night_light_schedule_to)
-    night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
+    night_light_start_hour = settings.night_light_start_hour
+    night_light_start_minute = settings.night_light_start_minute
+    night_light_end_hour = settings.night_light_end_hour
+    night_light_end_minute = settings.night_light_end_minute
 
     #### Load to Widgets ####
     # Icon Theme
@@ -217,10 +213,10 @@ def load_settings_to_widgets():
     widgets.night_light_color_temperature_scale.set_value(night_light_temperature)
 
     # Load Theme Name
-    saved_theme = widgets.settings.theme
+    shell_theme = widgets.settings.shell_theme
     position = 0;
     for theme in widgets.gdm_theme_list:
-        if saved_theme  == theme.get_string():
+        if shell_theme  == theme.get_string():
             widgets.theme_choice_comborow.set_selected(position)
             break
         else:
@@ -253,8 +249,8 @@ def load_settings_to_widgets():
     disable_top_bar_arrows = widgets.settings.disable_top_bar_arrows
     widgets.disable_top_bar_arrows_switch.set_active(disable_top_bar_arrows)
     # Top Bar Corners
-    disable_top_bar_corners = widgets.settings.disable_top_bar_corners
-    widgets.disable_top_bar_corners_switch.set_active(disable_top_bar_corners)
+    disable_top_bar_rounded_corners = widgets.settings.disable_top_bar_rounded_corners
+    widgets.disable_top_bar_rounded_corners_switch.set_active(disable_top_bar_rounded_corners)
     # Top Bar Text Color
     change_top_bar_text_color = widgets.settings.change_top_bar_text_color
     widgets.change_top_bar_text_color_switch.set_active(change_top_bar_text_color)
@@ -291,13 +287,10 @@ def set_settings():
     settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
     settings.night_light_temperature  = widgets.night_light_color_temperature_scale.get_value()
 
-    night_light_start_hour   = widgets.night_light_start_hour_spinbutton.get_value()
-    night_light_start_minute = widgets.night_light_start_minute_spinbutton.get_value()
-    night_light_end_hour     = widgets.night_light_end_hour_spinbutton.get_value()
-    night_light_end_minute   = widgets.night_light_end_minute_spinbutton.get_value()
-
-    settings.night_light_schedule_from = night_light_start_hour + ( night_light_start_minute / 60 )
-    settings.night_light_schedule_to   = night_light_end_hour + ( night_light_end_minute / 60 )
+    settings.night_light_start_hour   = widgets.night_light_start_hour_spinbutton.get_value()
+    settings.night_light_start_minute = widgets.night_light_start_minute_spinbutton.get_value()
+    settings.night_light_end_hour     = widgets.night_light_end_hour_spinbutton.get_value()
+    settings.night_light_end_minute   = widgets.night_light_end_minute_spinbutton.get_value()
 
     settings.time_format    = "24h"
     settings.night_light_schedule_automatic = True
@@ -313,10 +306,10 @@ def set_settings():
     settings.background_image = widgets.bg_image_chooser.get_file().get_path()
     settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Theme
-    settings.theme = widgets.theme_choice_comborow.get_selected_item().get_string()
+    settings.shell_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
     # Top Bar Tweaks
     settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
-    settings.disable_top_bar_corners = widgets.disable_top_bar_corners_switch.get_active()
+    settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
     settings.change_top_bar_text_color = widgets.change_top_bar_text_color_switch.get_active()
     settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
     settings.change_top_bar_background_color = widgets.change_top_bar_background_color_switch.get_active()
@@ -330,7 +323,7 @@ def on_apply():
 
     if widgets.settings.elevated_commands.run():
         widgets.settings.save_to_gsettings()
-        widgets.main_gsettings.set_boolean("first-run", False)
+        widgets.window_state.set_boolean("first-run", False)
         widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
     else:
         widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
@@ -356,7 +349,7 @@ def on_bg_image_chooser_response(widget, response):
 
 def on_activate(app):
 
-    load_widgets()
+    get_widgets()
 
     add_string_lists_to_comborows()
 
@@ -403,6 +396,9 @@ def on_activate(app):
     init_settings()
     load_settings_to_widgets()
 
+    # Restore window state
+    restore_window_state()
+
     # Set Title Main Window to Application Name
     widgets.main_window.set_title(application_name)
 
@@ -415,7 +411,7 @@ def on_activate(app):
 def on_shutdown(app):
     # Save Last visited Page
     page_name = widgets.page_stack.get_visible_child_name()
-    widgets.main_gsettings.set_string("last-visited-page", page_name)
+    widgets.window_state.set_string("last-visited-page", page_name)
 
     widgets.settings.cleanup()
 

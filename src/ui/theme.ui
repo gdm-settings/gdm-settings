@@ -93,11 +93,11 @@
                 </child>
         
                 <child>
-                  <object class="AdwActionRow" id="disable_top_bar_corners_actionrow">
+                  <object class="AdwActionRow" id="disable_top_bar_rounded_corners_actionrow">
                     <property name="title">Disable Rounded Corners</property>
-                    <property name="activatable-widget">disable_top_bar_corners_switch</property>
+                    <property name="activatable-widget">disable_top_bar_rounded_corners_switch</property>
                     <child>
-                      <object class="GtkSwitch" id="disable_top_bar_corners_switch">
+                      <object class="GtkSwitch" id="disable_top_bar_rounded_corners_switch">
                         <property name="margin-top">15</property>
                         <property name="margin-bottom">15</property>
                       </object>
