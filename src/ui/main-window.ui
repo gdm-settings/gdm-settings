@@ -2,7 +2,6 @@
 <interface>
   <!-- Main Window -->
   <object id="main_window" class="AdwApplicationWindow">
-    <property name="default-width">800</property>
 
     <property name="content">
       <object class="GtkBox">
@@ -45,7 +44,6 @@
 
             <child>
               <object class="GtkPaned" id="paned">
-                <property name="position">200</property>
 
                 <child type="start">
                   <object class="GtkStackSidebar">

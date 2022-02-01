@@ -143,8 +143,31 @@ def add_string_lists_to_comborows():
         widgets.sound_theme_list.append(theme)
     widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
+def save_window_state():
+    # Window Size
+    width, height = widgets.main_window.get_default_size()
+    widgets.window_state.set_uint("width", width)
+    widgets.window_state.set_uint("height", height)
+
+    # Paned Position
+    paned_position = widgets.paned.get_position()
+    widgets.window_state.set_uint("paned-position", paned_position)
+
+    # Last visited Page
+    page_name = widgets.page_stack.get_visible_child_name()
+    widgets.window_state.set_string("last-visited-page", page_name)
+
 def restore_window_state():
-    # Open Last visited Page
+    # Window Size
+    width = widgets.window_state.get_uint("width")
+    height = widgets.window_state.get_uint("height")
+    widgets.main_window.set_default_size(width, height)
+
+    # Paned Position
+    paned_position = widgets.window_state.get_uint("paned-position")
+    widgets.paned.set_position(paned_position)
+
+    # Last visited Page
     page_name = widgets.window_state.get_string("last-visited-page")
     widgets.page_stack.set_visible_child_name(page_name)
 
@@ -432,10 +455,7 @@ def on_activate(app):
     widgets.main_window.present()
 
 def on_shutdown(app):
-    # Save Last visited Page
-    page_name = widgets.page_stack.get_visible_child_name()
-    widgets.window_state.set_string("last-visited-page", page_name)
-
+    save_window_state()
     widgets.settings.cleanup()
 
 if __name__ == '__main__':
