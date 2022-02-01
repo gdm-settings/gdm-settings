@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkScrolledWindow" id="settings_page_content">
+  <object class="GtkScrolledWindow" id="night_light_page_content">
     <property name="propagate-natural-height">true</property>
     <child>
       <object class="AdwClamp">
@@ -13,116 +13,6 @@
           <object class="GtkBox">
             <property name="orientation">vertical</property>
             <property name="spacing">20</property>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Appearance</property>
-        
-                <child>
-                  <object class="AdwComboRow" id="icon_theme_comborow">
-                    <property name="title">Icon Theme</property>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwComboRow" id="cursor_theme_comborow">
-                    <property name="title">Cursor Theme</property>
-                  </object>
-                </child>
-        
-              </object>
-            </child>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Sound</property>
-        
-                <child>
-                  <object class="AdwComboRow" id="sound_theme_comborow">
-                    <property name="title">Sound Theme</property>
-                  </object>
-                </child>
-        
-              </object>
-            </child>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Clock</property>
-        
-                <child>
-                  <object class="AdwActionRow">
-                    <property name="title">Show Weekday</property>
-                    <property name="activatable-widget">show_weekday_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="show_weekday_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwComboRow" id="time_format_comborow">
-                    <property name="title">Time Format</property>
-                  </object>
-                </child>
-        
-              </object>
-            </child>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Power</property>
-        
-                <child>
-                  <object class="AdwActionRow">
-                    <property name="title">Show battery percentage</property>
-                    <property name="activatable-widget">show_battery_percentage_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="show_battery_percentage_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-              </object>
-            </child>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Touchpad</property>
-        
-                <child>
-                  <object class="AdwActionRow">
-                    <property name="title">Tap to Click</property>
-                    <property name="activatable-widget">tap_to_click_switch</property>
-                    <child>
-                      <object class="GtkSwitch" id="tap_to_click_switch">
-                        <property name="margin-top">15</property>
-                        <property name="margin-bottom">15</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow">
-                    <property name="title">Touchpad Speed</property>
-                    <child>
-                      <object class="GtkScale" id="touchpad_speed_scale">
-                        <property name="orientation">horizontal</property>
-                        <property name="hexpand">true</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-              </object>
-            </child>
         
             <child>
               <object class="AdwPreferencesGroup">

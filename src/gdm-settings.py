@@ -13,32 +13,38 @@ script_realpath = path.realpath(argv[0])
 script_basename = path.basename(script_realpath)
 script_dir = path.dirname(script_realpath)
 
-ui_dir = path.join(script_dir, "ui")
-main_window_ui_file = path.join(ui_dir, "main-window.ui")
-app_menu_ui_file = path.join(ui_dir, "app-menu.ui")
-about_dialog_ui_file = path.join(ui_dir, "about-dialog.ui")
-theme_page_ui_file = path.join(ui_dir, "theme.ui")
-image_chooser_ui_file = path.join(ui_dir, "image-chooser.ui")
-settings_page_ui_file = path.join(ui_dir, "settings.ui")
-responses_ui_file = path.join(ui_dir, "responses.ui")
-
 # Empty Class+Object to contain widgets
 class WidgetContainer:
     pass
 widgets = WidgetContainer()
 
 def get_widgets():
+    ui_dir = path.join(script_dir, "ui")
+
     # Initialize Builder
     widgets.builder = Gtk.Builder()
 
     # Load UI files
+    app_menu_ui_file = path.join(ui_dir, "app-menu.ui")
     widgets.builder.add_from_file(app_menu_ui_file)
+    main_window_ui_file = path.join(ui_dir, "main-window.ui")
     widgets.builder.add_from_file(main_window_ui_file)
+    about_dialog_ui_file = path.join(ui_dir, "about-dialog.ui")
     widgets.builder.add_from_file(about_dialog_ui_file)
-    widgets.builder.add_from_file(theme_page_ui_file)
+    image_chooser_ui_file = path.join(ui_dir, "image-chooser.ui")
     widgets.builder.add_from_file(image_chooser_ui_file)
-    widgets.builder.add_from_file(settings_page_ui_file)
+    responses_ui_file = path.join(ui_dir, "responses.ui")
     widgets.builder.add_from_file(responses_ui_file)
+    appearance_page_ui_file = path.join(ui_dir, "appearance-page.ui")
+    widgets.builder.add_from_file(appearance_page_ui_file)
+    night_light_page_ui_file = path.join(ui_dir, "night-light-page.ui")
+    widgets.builder.add_from_file(night_light_page_ui_file)
+    sound_page_ui_file = path.join(ui_dir, "sound-page.ui")
+    widgets.builder.add_from_file(sound_page_ui_file)
+    top_bar_page_ui_file = path.join(ui_dir, "top-bar-page.ui")
+    widgets.builder.add_from_file(top_bar_page_ui_file)
+    touchpad_page_ui_file = path.join(ui_dir, "touchpad-page.ui")
+    widgets.builder.add_from_file(touchpad_page_ui_file)
 
 
     #### Get Widgets from builder ####
@@ -51,38 +57,44 @@ def get_widgets():
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
     widgets.page_stack = widgets.builder.get_object("stack")
-    widgets.theme_page_content = widgets.builder.get_object("theme_page_content")
-    widgets.settings_page_content = widgets.builder.get_object("settings_page_content")
+    widgets.appearance_page_content = widgets.builder.get_object("appearance_page_content")
+    widgets.night_light_page_content = widgets.builder.get_object("night_light_page_content")
+    widgets.sound_page_content = widgets.builder.get_object("sound_page_content")
+    widgets.top_bar_page_content = widgets.builder.get_object("top_bar_page_content")
+    widgets.touchpad_page_content = widgets.builder.get_object("touchpad_page_content")
     widgets.apply_button = widgets.builder.get_object("apply_button")
     widgets.main_toast_overlay = widgets.builder.get_object("main_toast_overlay")
     widgets.apply_failed_toast = widgets.builder.get_object("apply_failed_toast")
     widgets.apply_succeeded_toast = widgets.builder.get_object("apply_succeeded_toast")
 
-    # Widgets from Theme page
-    widgets.theme_choice_comborow = widgets.builder.get_object("theme_choice_comborow")
+    # Widgets from Appearance page
+    widgets.shell_theme_comborow = widgets.builder.get_object("shell_theme_comborow")
+    widgets.icon_theme_comborow = widgets.builder.get_object("icon_theme_comborow")
+    widgets.cursor_theme_comborow = widgets.builder.get_object("cursor_theme_comborow")
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
     widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
     widgets.bg_image_button = widgets.builder.get_object("bg_image_button")
     widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
+    # Widgets from Top Bar page
     widgets.disable_top_bar_arrows_switch = widgets.builder.get_object("disable_top_bar_arrows_switch")
     widgets.disable_top_bar_rounded_corners_switch = widgets.builder.get_object("disable_top_bar_rounded_corners_switch")
     widgets.change_top_bar_text_color_switch = widgets.builder.get_object("change_top_bar_text_color_switch")
     widgets.top_bar_text_color_button = widgets.builder.get_object("top_bar_text_color_button")
     widgets.change_top_bar_background_color_switch = widgets.builder.get_object("change_top_bar_background_color_switch")
     widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
-
-    # Widgets from Settings page
-    widgets.icon_theme_comborow = widgets.builder.get_object("icon_theme_comborow")
-    widgets.cursor_theme_comborow = widgets.builder.get_object("cursor_theme_comborow")
-    widgets.sound_theme_comborow = widgets.builder.get_object("sound_theme_comborow")
+    widgets.show_weekday_switch = widgets.builder.get_object("show_weekday_switch")
     widgets.time_format_comborow = widgets.builder.get_object("time_format_comborow")
+    widgets.show_battery_percentage_switch = widgets.builder.get_object("show_battery_percentage_switch")
+
+    # Widgets from Sound page
+    widgets.sound_theme_comborow = widgets.builder.get_object("sound_theme_comborow")
+    # Widgets from Touchpad page
+    widgets.tap_to_click_switch = widgets.builder.get_object("tap_to_click_switch")
     widgets.touchpad_speed_scale = widgets.builder.get_object("touchpad_speed_scale")
     widgets.touchpad_speed_scale.set_range(-1, 1)
-    widgets.show_battery_percentage_switch = widgets.builder.get_object("show_battery_percentage_switch")
-    widgets.show_weekday_switch = widgets.builder.get_object("show_weekday_switch")
-    widgets.tap_to_click_switch = widgets.builder.get_object("tap_to_click_switch")
+    # Widgets from Night Light page
     widgets.night_light_enable_switch = widgets.builder.get_object("night_light_enable_switch")
     widgets.night_light_schedule_comborow = widgets.builder.get_object("night_light_schedule_comborow")
     widgets.night_light_start_hour_spinbutton = widgets.builder.get_object("night_light_start_hour_spinbutton")
@@ -110,11 +122,11 @@ def add_string_lists_to_comborows():
     # Night Light Schedule Types
     widgets.night_light_schedule_list = Gtk.StringList.new(['Sunset to Sunrise', 'Manual Schedule'])
     widgets.night_light_schedule_comborow.set_model(widgets.night_light_schedule_list)
-    # GDM Themes
-    widgets.gdm_theme_list = Gtk.StringList()
-    for theme in settings_manager.get_gdm_theme_list():
-        widgets.gdm_theme_list.append(theme)
-    widgets.theme_choice_comborow.set_model(widgets.gdm_theme_list)
+    # Shell Themes
+    widgets.shell_theme_list = Gtk.StringList()
+    for theme in settings_manager.get_shell_theme_list():
+        widgets.shell_theme_list.append(theme)
+    widgets.shell_theme_comborow.set_model(widgets.shell_theme_list)
     # Icon Themes
     widgets.icon_theme_list = Gtk.StringList()
     for theme in settings_manager.get_icon_theme_list():
@@ -215,9 +227,9 @@ def load_settings_to_widgets():
     # Load Theme Name
     shell_theme = widgets.settings.shell_theme
     position = 0;
-    for theme in widgets.gdm_theme_list:
+    for theme in widgets.shell_theme_list:
         if shell_theme  == theme.get_string():
-            widgets.theme_choice_comborow.set_selected(position)
+            widgets.shell_theme_comborow.set_selected(position)
             break
         else:
             position += 1
@@ -301,12 +313,12 @@ def set_settings():
     if widgets.night_light_schedule_comborow.get_selected() == 1:
         settings.night_light_schedule_automatic = False
 
+    # Theme
+    settings.shell_theme = widgets.shell_theme_comborow.get_selected_item().get_string()
     # Background
     settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
     settings.background_image = widgets.bg_image_chooser.get_file().get_path()
     settings.background_color = widgets.bg_color_button.get_rgba().to_string()
-    # Theme
-    settings.shell_theme = widgets.theme_choice_comborow.get_selected_item().get_string()
     # Top Bar Tweaks
     settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
     settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
@@ -377,16 +389,31 @@ def on_activate(app):
     app.set_accels_for_action("quit", ["<Ctrl>Q"])
 
     # Add Pages to Page Stack
-    widgets.theme_page = widgets.page_stack.add_child(widgets.theme_page_content)
-    widgets.settings_page = widgets.page_stack.add_child(widgets.settings_page_content)
+    widgets.appearance_page = widgets.page_stack.add_child(widgets.appearance_page_content)
+    widgets.top_bar_page = widgets.page_stack.add_child(widgets.top_bar_page_content)
+    widgets.sound_page = widgets.page_stack.add_child(widgets.sound_page_content)
+    widgets.touchpad_page = widgets.page_stack.add_child(widgets.touchpad_page_content)
+    widgets.night_light_page = widgets.page_stack.add_child(widgets.night_light_page_content)
 
-    # Set Theme Page Properties
-    widgets.theme_page.set_name("theme")
-    widgets.theme_page.set_title("Theme")
+    # Set Appearance Page Properties
+    widgets.appearance_page.set_name("appearance")
+    widgets.appearance_page.set_title("Appearance")
 
-    # Set Settings Page Properties
-    widgets.settings_page.set_name("settings")
-    widgets.settings_page.set_title("Settings")
+    # Set Night Light Page Properties
+    widgets.night_light_page.set_name("night_light")
+    widgets.night_light_page.set_title("Night Light")
+
+    # Set Sound Page Properties
+    widgets.sound_page.set_name("sound")
+    widgets.sound_page.set_title("Sound")
+
+    # Set Top Bar Page Properties
+    widgets.top_bar_page.set_name("top_bar")
+    widgets.top_bar_page.set_title("Top Bar")
+
+    # Set Touchpad Page Properties
+    widgets.touchpad_page.set_name("touchpad")
+    widgets.touchpad_page.set_title("Touchpad")
 
     # Initialize and Load Settings
     init_settings()

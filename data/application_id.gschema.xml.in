@@ -4,10 +4,13 @@
   <schema id="@application_id@.window-state" path="@schema_path@window-state/">
 
 	 <key name="last-visited-page" type="s">
-	   <default>"theme"</default>
+	   <default>"appearance"</default>
 	   <choices>
-	     <choice value="theme"/>
-	     <choice value="settings"/>
+	     <choice value="appearance"/>
+	     <choice value="night_light"/>
+	     <choice value="sound"/>
+	     <choice value="top_bar"/>
+	     <choice value="touchpad"/>
 	   </choices>
 	 </key>
 

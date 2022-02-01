@@ -9,12 +9,16 @@ configure_file(
 )
 
 ui_files = [
+  'main-window.ui',
   'app-menu.ui',
   'image-chooser.ui',
-  'main-window.ui',
-  'theme.ui',
-  'settings.ui',
   'responses.ui',
+
+  'appearance-page.ui',
+  'night-light-page.ui',
+  'sound-page.ui',
+  'top-bar-page.ui',
+  'touchpad-page.ui',
 ]
 
 install_data(ui_files, install_dir: ui_dir)

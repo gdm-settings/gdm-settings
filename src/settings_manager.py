@@ -22,7 +22,7 @@ def __get_theme_list(themes_directory:str, decider:str, initial_list:list[str]):
             List.append(path.basename(dir))
     return List
 
-def get_gdm_theme_list():
+def get_shell_theme_list():
     """get a list of installed gnome-shell/GDM themes"""
     return __get_theme_list(themes_directory='/usr/share/themes',
                             decider='gnome-shell/gnome-shell.css',

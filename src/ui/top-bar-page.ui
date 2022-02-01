@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkScrolledWindow" id="theme_page_content">
+  <object class="GtkScrolledWindow" id="top_bar_page_content">
     <property name="propagate-natural-height">true</property>
     <child>
       <object class="AdwClamp">
@@ -14,70 +14,10 @@
             <property name="orientation">vertical</property>
             <property name="spacing">20</property>
         
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Theme</property>
-                <!-- ComboRow for Theme Choice -->
-                <child>
-                  <object class="AdwComboRow" id="theme_choice_comborow">
-                    <property name="title">Theme</property>
-                    <property name="use_subtitle">false</property>
-                  </object>
-                </child>
-              </object>
-            </child>
         
             <child>
               <object class="AdwPreferencesGroup">
-                <property name="title">Background</property>
-        
-                <child>
-                  <object class="AdwComboRow" id="bg_type_comborow">
-                    <property name="title">Type</property>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="bg_image_actionrow">
-                    <property name="title">Image</property>
-                    <property name="subtitle">The image to use as background</property>
-                    <property name="visible">false</property>
-                    <property name="activatable-widget">bg_image_button</property>
-        
-                    <child>
-                      <object class="GtkButton" id="bg_image_button">
-                        <!-- <style> <class name="flat"/> </style> -->
-                        <property name="label">Choose File</property>
-                        <property name="margin-top">5</property>
-                        <property name="margin-bottom">5</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-        
-                <child>
-                  <object class="AdwActionRow" id="bg_color_actionrow">
-                    <property name="title">Color</property>
-                    <property name="subtitle">The color to use as background</property>
-                    <property name="visible">false</property>
-                    <property name="activatable-widget">bg_color_button</property>
-        
-                    <child>
-                      <object class="GtkColorButton" id="bg_color_button">
-                        <property name="margin-top">5</property>
-                        <property name="margin-bottom">5</property>
-                      </object>
-                    </child>
-        
-                  </object>
-                </child>
-        
-              </object>
-            </child>
-        
-            <child>
-              <object class="AdwPreferencesGroup">
-                <property name="title">Top Bar Tweaks</property>
+                <property name="title">Tweaks</property>
         
                 <child>
                   <object class="AdwActionRow" id="disable_top_bar_arrows_actionrow">
@@ -168,6 +108,52 @@
                       </object>
                     </child>
         
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Clock</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show Weekday</property>
+                    <property name="activatable-widget">show_weekday_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_weekday_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+        
+                <child>
+                  <object class="AdwComboRow" id="time_format_comborow">
+                    <property name="title">Time Format</property>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Power</property>
+        
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show battery percentage</property>
+                    <property name="activatable-widget">show_battery_percentage_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_battery_percentage_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
                   </object>
                 </child>
         

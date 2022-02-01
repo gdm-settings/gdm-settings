@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <object class="GtkScrolledWindow" id="sound_page_content">
+    <property name="propagate-natural-height">true</property>
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
+        
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Sound</property>
+        
+                <child>
+                  <object class="AdwComboRow" id="sound_theme_comborow">
+                    <property name="title">Sound Theme</property>
+                  </object>
+                </child>
+        
+              </object>
+            </child>
+        
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </object>
+</interface>
