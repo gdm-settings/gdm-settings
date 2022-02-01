@@ -320,7 +320,7 @@ class GResourceSettings(Common):
         gresource_utils.auto_backup()
         makedirs(TempDir, exist_ok=True)
         shelldir = None
-        if self.theme != "default":
+        if self.shell_theme != "default":
             shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
         compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
         self.elevated_commands.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
@@ -466,8 +466,13 @@ class Settings(GResourceSettings, DConfSettings):
         GResourceSettings.load_settings(self)
         DConfSettings.load_settings(self)
     def save_settings(self):
-        GResourceSettings.save_to_gsettings(self)
-        DConfSettings.save_to_gsettings(self)
-    def apply_settings(self):
+        GResourceSettings.save_settings(self)
+        DConfSettings.save_settings(self)
+    def apply_settings(self) -> bool:
         GResourceSettings.apply_settings(self)
         DConfSettings.apply_settings(self)
+        if self.elevated_commands.run():
+            self.save_settings()
+            self.gsettings.set_boolean("never-applied", False)
+            return True
+        return False

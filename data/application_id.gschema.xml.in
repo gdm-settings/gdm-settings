@@ -15,7 +15,7 @@
 
 
   <schema id="@application_id@" path="@schema_path@">
-	 <child name="theme-tweaks" schema="@application_id@.theme-tweaks"/>
+	 <child name="window-state" schema="@application_id@.window-state"/>
 
     <key name="never-applied" type="b">
       <default>true</default>

@@ -319,11 +319,7 @@ def on_apply():
     set_settings()
 
     # Apply
-    widgets.settings.apply_settings()
-
-    if widgets.settings.elevated_commands.run():
-        widgets.settings.save_to_gsettings()
-        widgets.window_state.set_boolean("first-run", False)
+    if widgets.settings.apply_settings():
         widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
     else:
         widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
