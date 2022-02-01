@@ -4,7 +4,9 @@ An app to change settings of Gnome's Display/Login Manager.
 
 It is written in Python and provides a Graphical interface using GTK+ and LibAdwaita.
 
-<img src="screenshots/screenshot-1.png#gh-light-mode-only" alt="screenshot" width=50%/><img src="screenshots/screenshot-1-dark.png#gh-dark-mode-only" alt="screenshot" width=50%/><img src="screenshots/screenshot-2.png#gh-light-mode-only" alt="screenshot" width=50%/><img src="screenshots/screenshot-2-dark.png#gh-dark-mode-only" alt="screenshot" width=50%/>
+<img src="screenshots/screenshot-1.png#gh-light-mode-only" alt="screenshot" width=100%/><img src="screenshots/screenshot-1-dark.png#gh-dark-mode-only" alt="screenshot" width=100%/>
+
+<center><a href="screenshots">More Screenshots</a></center>
 
 ## Important Note! (Alpha-Stage Software)
 
