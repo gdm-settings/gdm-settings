@@ -6,6 +6,3 @@ print(f"version='{version}'")
 print(f"application_id='{application_id}'")
 
 print(f"py_modules_dir='{py_modules_dir}'")
-print(f"destdir='{destdir}'")
-print(f"ui_dir='{ui_dir}'")
-print(f"bindir='{bindir}'")
