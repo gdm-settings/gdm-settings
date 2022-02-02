@@ -348,7 +348,8 @@ def set_settings():
     settings.shell_theme = widgets.shell_theme_comborow.get_selected_item().get_string()
     # Background
     settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
-    settings.background_image = widgets.bg_image_chooser.get_file().get_path()
+    if image_file := widgets.bg_image_chooser.get_file():
+        settings.background_image = image_file.get_path()
     settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Top Bar Tweaks
     settings.disable_top_bar_arrows = widgets.disable_top_bar_arrows_switch.get_active()
