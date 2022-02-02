@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkScrolledWindow" id="top_bar_page_content">
+    <property name="propagate-natural-height">true</property>
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Tweaks</property>
+                <child>
+                  <object class="AdwExpanderRow" id="top_bar_text_color_expanderrow">
+                    <property name="title">Change Text Color</property>
+                    <child type="action">
+                      <object class="GtkSwitch" id="top_bar_text_color_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                        <property name="active" bind-source="top_bar_text_color_expanderrow" bind-property="expanded" bind-flags="sync-create|bidirectional"/>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow" id="top_bar_text_color_actionrow">
+                        <property name="title">Text Color</property>
+                        <property name="subtitle">The color of text in top bar</property>
+                        <property name="activatable-widget">top_bar_text_color_button</property>
+                        <child>
+                          <object class="GtkColorButton" id="top_bar_text_color_button">
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                            <property name="use-alpha">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwExpanderRow">
+                    <property name="title">Change Background Color</property>
+                    <property name="expanded" bind-source="top_bar_background_color_switch" bind-property="active" bind-flags="sync-create|bidirectional"/>
+                    <child type="action">
+                      <object class="GtkSwitch" id="top_bar_background_color_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwActionRow" id="top_bar_background_color_actionrow">
+                        <property name="title"> Background Color</property>
+                        <property name="subtitle">The color of top bar background</property>
+                        <property name="activatable-widget">top_bar_background_color_button</property>
+                        <child>
+                          <object class="GtkColorButton" id="top_bar_background_color_button">
+                            <property name="margin-top">5</property>
+                            <property name="margin-bottom">5</property>
+                            <property name="use-alpha">true</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="disable_top_bar_arrows_actionrow">
+                    <property name="title">Disable Arrows</property>
+                    <property name="activatable-widget">disable_top_bar_arrows_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="disable_top_bar_arrows_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="disable_top_bar_rounded_corners_actionrow">
+                    <property name="title">Disable Rounded Corners</property>
+                    <property name="activatable-widget">disable_top_bar_rounded_corners_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="disable_top_bar_rounded_corners_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Clock</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show Weekday</property>
+                    <property name="activatable-widget">show_weekday_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_weekday_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show Seconds</property>
+                    <property name="activatable-widget">show_seconds_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_seconds_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="time_format_comborow">
+                    <property name="title">Time Format</property>
+                    <property name="model">
+                      <object class="GtkStringList">
+                        <items>
+                          <item>AM/PM</item>
+                          <item>24 Hours</item>
+                        </items>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Power</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Show battery percentage</property>
+                    <property name="activatable-widget">show_battery_percentage_switch</property>
+                    <child>
+                      <object class="GtkSwitch" id="show_battery_percentage_switch">
+                        <property name="margin-top">15</property>
+                        <property name="margin-bottom">15</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

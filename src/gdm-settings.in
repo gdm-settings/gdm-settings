@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from @py_module_name@ import gdm_settings_gui
+gdm_settings_gui.main()

@@ -7,9 +7,9 @@ ScrolledWindow top_bar_page_content {
   Adw.Clamp {
     maximum-size: 500;
     margin-top: 20;
-    margin-bottom: bind self.margin-top;
-    margin-start: bind self.margin-top;
-    margin-end: bind self.margin-top;
+    margin-bottom: 20;
+    margin-start: 20;
+    margin-end: 20;
 
     Box {
       orientation: vertical;
@@ -34,7 +34,7 @@ ScrolledWindow top_bar_page_content {
 
             ColorButton top_bar_text_color_button {
               margin-top: 5;
-              margin-bottom: bind self.margin-top;
+              margin-bottom: 5;
               use-alpha: true;
             }
           }
@@ -46,7 +46,7 @@ ScrolledWindow top_bar_page_content {
 
           [action] Switch top_bar_background_color_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
 
           Adw.ActionRow top_bar_background_color_actionrow {
@@ -56,7 +56,7 @@ ScrolledWindow top_bar_page_content {
 
             ColorButton top_bar_background_color_button {
               margin-top: 5;
-              margin-bottom: bind self.margin-top;
+              margin-bottom: 5;
               use-alpha: true;
             }
           }
@@ -68,7 +68,7 @@ ScrolledWindow top_bar_page_content {
 
           Switch disable_top_bar_arrows_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
         }
 
@@ -78,7 +78,7 @@ ScrolledWindow top_bar_page_content {
 
           Switch disable_top_bar_rounded_corners_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
         }
       }
@@ -92,7 +92,7 @@ ScrolledWindow top_bar_page_content {
 
           Switch show_weekday_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
         }
 
@@ -102,7 +102,7 @@ ScrolledWindow top_bar_page_content {
 
           Switch show_seconds_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
         }
 
@@ -121,7 +121,7 @@ ScrolledWindow top_bar_page_content {
 
           Switch show_battery_percentage_switch {
             margin-top: 15;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 15;
           }
         }
       }

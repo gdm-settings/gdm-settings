@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from sys import argv
 from os import path
 
@@ -6,12 +5,8 @@ import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
-from info import *
-import settings_manager
-
-script_realpath = path.realpath(argv[0])
-script_basename = path.basename(script_realpath)
-script_dir = path.dirname(script_realpath)
+from . import settings_manager
+from .info import *
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -19,22 +14,12 @@ class WidgetContainer:
 widgets = WidgetContainer()
 
 def get_widgets():
-    ui_dir = path.join(script_dir, "ui")
-
     # Initialize Builder
     widgets.builder = Gtk.Builder()
 
     # Load UI files
-    app_menu_ui_file = path.join(ui_dir, "app-menu.ui")
-    widgets.builder.add_from_file(app_menu_ui_file)
     main_window_ui_file = path.join(ui_dir, "main-window.ui")
     widgets.builder.add_from_file(main_window_ui_file)
-    about_dialog_ui_file = path.join(ui_dir, "about-dialog.ui")
-    widgets.builder.add_from_file(about_dialog_ui_file)
-    image_chooser_ui_file = path.join(ui_dir, "image-chooser.ui")
-    widgets.builder.add_from_file(image_chooser_ui_file)
-    responses_ui_file = path.join(ui_dir, "responses.ui")
-    widgets.builder.add_from_file(responses_ui_file)
     appearance_page_ui_file = path.join(ui_dir, "appearance-page.ui")
     widgets.builder.add_from_file(appearance_page_ui_file)
     fonts_page_ui_file = path.join(ui_dir, "fonts-page.ui")
@@ -80,7 +65,7 @@ def get_widgets():
     widgets.bg_type_comborow = widgets.builder.get_object("bg_type_comborow")
     widgets.bg_image_actionrow = widgets.builder.get_object("bg_image_actionrow")
     widgets.bg_image_button = widgets.builder.get_object("bg_image_button")
-    widgets.bg_image_chooser = widgets.builder.get_object("bg_image_chooser")
+    widgets.image_chooser = widgets.builder.get_object("image_chooser")
     widgets.bg_color_actionrow = widgets.builder.get_object("bg_color_actionrow")
     widgets.bg_color_button = widgets.builder.get_object("bg_color_button")
     # Widgets from Fonts page
@@ -285,7 +270,7 @@ def load_settings_to_widgets():
     saved_bg_image = widgets.settings.background_image
     if saved_bg_image:
         widgets.bg_image_button.set_label(path.basename(saved_bg_image))
-        widgets.bg_image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
+        widgets.image_chooser.set_file(Gio.File.new_for_path(saved_bg_image))
 
     #### Load Theme Tweaks
     # Top Bar Arrows
@@ -348,7 +333,7 @@ def set_settings():
     settings.shell_theme = widgets.shell_theme_comborow.get_selected_item().get_string()
     # Background
     settings.background_type = widgets.bg_type_comborow.get_selected_item().get_string()
-    if image_file := widgets.bg_image_chooser.get_file():
+    if image_file := widgets.image_chooser.get_file():
         settings.background_image = image_file.get_path()
     settings.background_color = widgets.bg_color_button.get_rgba().to_string()
     # Top Bar Tweaks
@@ -380,12 +365,12 @@ def on_bg_type_change():
         widgets.bg_image_actionrow.hide()
         widgets.bg_color_actionrow.show()
 
-def on_bg_image_chooser_response(widget, response):
+def on_image_chooser_response(widget, response):
     if response == Gtk.ResponseType.OK:
-      image_file = widgets.bg_image_chooser.get_file()
+      image_file = widgets.image_chooser.get_file()
       image_basename = image_file.get_basename()
       widgets.bg_image_button.set_label(image_basename)
-    widgets.bg_image_chooser.hide()
+    widgets.image_chooser.hide()
 
 def on_activate(app):
 
@@ -396,8 +381,8 @@ def on_activate(app):
     # Connect Signals
     widgets.apply_button.connect("clicked", lambda x: on_apply())
     widgets.bg_type_comborow.connect("notify::selected", lambda x,y: on_bg_type_change())
-    widgets.bg_image_button.connect("clicked", lambda x: widgets.bg_image_chooser.present())
-    widgets.bg_image_chooser.connect("response", on_bg_image_chooser_response)
+    widgets.bg_image_button.connect("clicked", lambda x: widgets.image_chooser.present())
+    widgets.image_chooser.connect("response", on_image_chooser_response)
 
     # Create Actions
     widgets.quit_action = Gio.SimpleAction(name="quit")
@@ -477,8 +462,11 @@ def on_shutdown(app):
     save_window_state()
     widgets.settings.cleanup()
 
-if __name__ == '__main__':
+def main():
     app = Adw.Application(application_id=application_id)
     app.connect("activate", on_activate)
     app.connect("shutdown", on_shutdown)
     exit(app.run(argv))
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkScrolledWindow" id="appearance_page_content">
+    <property name="propagate-natural-height">true</property>
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Themes</property>
+                <child>
+                  <object class="AdwComboRow" id="shell_theme_comborow">
+                    <property name="title">Shell</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="icon_theme_comborow">
+                    <property name="title">Icons</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="cursor_theme_comborow">
+                    <property name="title">Cursor</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Background</property>
+                <child>
+                  <object class="AdwComboRow" id="bg_type_comborow">
+                    <property name="title">Type</property>
+                    <property name="model">
+                      <object class="GtkStringList">
+                        <items>
+                          <item>None</item>
+                          <item>Image</item>
+                          <item>Color</item>
+                        </items>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="bg_image_actionrow">
+                    <property name="title">Image</property>
+                    <property name="subtitle">The image to use as background</property>
+                    <property name="visible">false</property>
+                    <property name="activatable-widget">bg_image_button</property>
+                    <child>
+                      <object class="GtkButton" id="bg_image_button">
+                        <property name="label">Choose File</property>
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="bg_color_actionrow">
+                    <property name="title">Color</property>
+                    <property name="subtitle">The color to use as background</property>
+                    <property name="visible">false</property>
+                    <property name="activatable-widget">bg_color_button</property>
+                    <child>
+                      <object class="GtkColorButton" id="bg_color_button">
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

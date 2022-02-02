@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+  <schema id="com.github.realmazharhussain.GdmSettings.window-state" path="/com/github/realmazharhussain/GdmSettings/window-state/">
+
+	 <key name="width" type="u">
+	   <default>800</default>
+	 </key>
+
+	 <key name="height" type="u">
+	   <default>500</default>
+	 </key>
+
+	 <key name="paned-position" type="u">
+	   <default>170</default>
+	 </key>
+
+	 <key name="last-visited-page" type="s">
+	   <default>"appearance"</default>
+	   <choices>
+	     <choice value="appearance"/>
+	     <choice value="fonts"/>
+	     <choice value="night_light"/>
+	     <choice value="sound"/>
+	     <choice value="top_bar"/>
+	     <choice value="touchpad"/>
+	     <choice value="misc"/>
+	   </choices>
+	 </key>
+
+  </schema>
+
+
+  <schema id="com.github.realmazharhussain.GdmSettings" path="/com/github/realmazharhussain/GdmSettings/">
+	 <child name="window-state" schema="com.github.realmazharhussain.GdmSettings.window-state"/>
+
+    <key name="never-applied" type="b">
+      <default>true</default>
+    </key>
+    
+	 <key name="shell-theme" type="s">
+	   <default>"default"</default>
+	   <summary>Theme Name</summary>
+	 </key>
+
+    <key name="icon-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+
+    <key name="cursor-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+
+    <key name="sound-theme" type="s">
+      <default>"freedesktop"</default>
+    </key>
+
+	 <key name="background-type" type="s">
+	   <default>"None"</default>
+	   <summary>Type of Background</summary>
+	   <description>
+	     Wether GDM background should be an Image, Color or None.
+	   </description>
+	   <choices>
+	     <choice value="None"/>
+	     <choice value="Image"/>
+	     <choice value="Color"/>
+	   </choices>
+	 </key>
+
+	 <key name="background-image" type="s">
+	   <default>""</default>
+	   <summary>Background Image</summary>
+	   <description>
+	     The image file to use as GDM background
+	   </description>
+	 </key>
+
+	 <key name="background-color" type="s">
+	   <default>"rgb(40,40,40)"</default>
+	   <summary>Background Color</summary>
+	   <description>
+	     The Color to use as GDM background
+	   </description>
+	 </key>
+
+    <key name="disable-top-bar-arrows" type="b">
+      <default>false</default>
+      <summary>Whether to disable top bar arrows</summary>
+    </key>
+
+    <key name="disable-top-bar-rounded-corners" type="b">
+      <default>false</default>
+      <summary>Whether to disable top bar rounded corners</summary>
+    </key>
+
+    <key name="change-top-bar-text-color" type="b">
+      <default>false</default>
+      <summary>Whether to change top bar text color</summary>
+    </key>
+
+    <key name="top-bar-text-color" type="s">
+	   <default>"rgb(250,250,250)"</default>
+      <summary>Top bar text color</summary>
+    </key>
+
+    <key name="change-top-bar-background-color" type="b">
+      <default>false</default>
+      <summary>Whether to change top bar background</summary>
+    </key>
+
+    <key name="top-bar-background-color" type="s">
+	   <default>"rgb(0,0,0)"</default>
+      <summary>Top bar background color</summary>
+    </key>
+
+    <key name="show-weekday" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="time-format" type="s">
+      <default>"24h"</default>
+      <choices>
+        <choice value="12h"/>
+        <choice value="24h"/>
+      </choices>
+    </key>
+
+    <key name="show-battery-percentage" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="tap-to-click" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="touchpad-speed" type="d">
+      <default>0.35</default>
+      <summary>Pointer speed</summary>
+      <description>Pointer speed for the touchpad. Accepted values are in the [-1..1] range (from “unaccelerated” to “fast”). A value of 0 is the system default.</description>
+      <range min="-1" max="1"/>
+    </key>
+
+    <key name="night-light-enabled" type="b">
+      <default>false</default>
+      <summary>If the night light mode is enabled</summary>
+      <description>Night light mode changes the color temperature of your display when the sun has gone down or at preset times.</description>
+    </key>
+
+    <key name="night-light-temperature" type="u">
+      <default>3000</default>
+      <summary>Temperature of the display when enabled</summary>
+      <description>This temperature in Kelvin is used to modify the screen tones when night light mode is enabled. Higher values are bluer, lower redder.</description>
+    </key>
+
+    <key name="night-light-schedule-automatic" type="b">
+      <default>true</default>
+      <summary>Use the sunrise and sunset</summary>
+      <description>Calculate the sunrise and sunset times automatically, from the current location.</description>
+    </key>
+
+    <key name="night-light-start-hour" type="i">
+      <default>19</default>
+      <summary>The start time's hour</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours.</description>
+      <range min="0" max="23"/>
+    </key>
+
+    <key name="night-light-start-minute" type="i">
+      <default>0</default>
+      <summary>The start time's minute</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time minutes.</description>
+      <range min="0" max="59"/>
+    </key>
+
+    <key name="night-light-end-hour" type="i">
+      <default>6</default>
+      <summary>The start time's hour</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours.</description>
+      <range min="0" max="23"/>
+    </key>
+
+    <key name="night-light-end-minute" type="i">
+      <default>0</default>
+      <summary>The end time's minute</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this end time minutes.</description>
+      <range min="0" max="59"/>
+    </key>
+
+  </schema>
+
+</schemalist>

@@ -33,23 +33,25 @@ Adw.ApplicationWindow main_window {
 }
 
 AboutDialog about_dialog {
-   transient-for: main_window;
-   modal: true;
-   program-name: "@application_name@ (@project_name@)";
-   version: "@version@";
-   comments: "@description@";
-   logo-icon-name: "@application_id@";
-   website: "https://github.com/realmazharhussain/gdm-settings";
-   website-label: "Homepage";
-   license-type: agpl_3_0;
-   copyright: "Copyright © 2021 Mazhar Hussain";
+  transient-for: main_window;
+  modal: true;
+  program-name: "@application_name@ (@project_name@)";
+  version: "@version@";
+  comments: "@description@";
+  logo-icon-name: "@application_id@";
+  website: "https://github.com/realmazharhussain/gdm-settings";
+  website-label: "Homepage";
+  license-type: agpl_3_0;
+  copyright: "Copyright © 2021 Mazhar Hussain";
 }
 
 FileChooserDialog image_chooser {
+  transient-for: main_window;
   filter: FileFilter { name: "Images"; mime-types ["image/*"] };
 
   [action] Button button_cancel { label: "Cancel"; }
   [action] Button button_select { label: "Select"; }
+
 }
 
 Adw.Toast apply_failed_toast {

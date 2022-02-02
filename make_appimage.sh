@@ -11,13 +11,15 @@ rm -rf "$buildDir"
 meson "$buildDir" --prefix=$PREFIX
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
-eval $("$progDir"/load_info.sh "$buildDir/src/info.py")
+eval $("$progDir"/load_info.py)
+#eval $("$progDir"/load_info.sh "$buildDir/src/info.py")
 source "$progDir"/colors.sh
 
 AppRun='#!/usr/bin/bash
 progDir=$(dirname "$(realpath "$0")")
 export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 export PATH="${progDir}/usr/bin:${PATH}"
+export PYTHONPATH="${progDir}/'"${py_modules_dir}"':${PYTHONPATH:-'"$py_modules_dir}"'"
 gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"

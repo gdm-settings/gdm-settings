@@ -3,14 +3,21 @@ configure_file(
   output: 'info.py',
   configuration: conf,
   install: true,
-  install_dir: pkgdatadir
+  install_dir: py_proj_dir,
 )
 
 source_files = [
   '__init__.py',
   'settings_manager.py',
-  'gdm-settings.py',
+  'gdm_settings_gui.py',
 ]
-install_data(source_files, install_dir: pkgdatadir)
+install_data(source_files, install_dir: py_proj_dir)
+
+configure_file(
+  input: 'gdm-settings.in',
+  output: '@BASENAME@',
+  configuration: conf,
+  install_dir: get_option('bindir'),
+)
 
 subdir('blueprints')

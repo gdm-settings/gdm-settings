@@ -1,4 +1,16 @@
+from sys import argv
+from os  import path
+
 project_name = '@project_name@'
 application_name = '@application_name@'
 version = '@version@'
 application_id = '@application_id@'
+
+prefix = '@prefix@'
+bindir = '@bindir@'
+datadir = '@datadir@'
+py_modules_dir = '@py_modules_dir@'
+py_module_name = '@py_module_name@'
+
+destdir = path.dirname(argv[0]).split(bindir)[0].replace(prefix,'')
+ui_dir = path.join(destdir, datadir.strip('/'), project_name.strip('/'))

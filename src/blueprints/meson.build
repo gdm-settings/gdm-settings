@@ -25,8 +25,8 @@ ui_files = blueprint_compiler.process(blueprints)
 
 custom_target('ui_files',
   input: ui_files,
-  output: 'ui',
+  output: project_name,
   command: [find_program('install'), '-Dm644', '-t', '@OUTPUT@', '@INPUT@'],
   install: true,
-  install_dir: pkgdatadir,
+  install_dir: datadir,
 )

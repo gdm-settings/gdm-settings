@@ -7,9 +7,9 @@ ScrolledWindow appearance_page_content {
   Adw.Clamp {
     maximum-size: 500;
     margin-top: 20;
-    margin-bottom: bind self.margin-top;
-    margin-start: bind self.margin-top;
-    margin-end: bind self.margin-top;
+    margin-bottom: 20;
+    margin-start: 20;
+    margin-end: 20;
 
     Box {
       orientation: vertical;
@@ -41,7 +41,7 @@ ScrolledWindow appearance_page_content {
           Button bg_image_button {
             label: "Choose File";
             margin-top: 5;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 5;
           }
         }
 
@@ -53,7 +53,7 @@ ScrolledWindow appearance_page_content {
 
           ColorButton bg_color_button {
             margin-top: 5;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 5;
           }
         }
       }

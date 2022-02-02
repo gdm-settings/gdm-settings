@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Login Manager Settings
+Comment=A settings app for GNOME's Login Manager (GDM)
+Icon=com.github.realmazharhussain.GdmSettings
+Exec=gdm-settings
+TryExec=gdm-settings
+Terminal=false
+StartupNotify=false
+StartupWMClass=com.github.realmazharhussain.GdmSettings
+Categories=GNOME;GTK;System;Settings;DesktopSettings;
+Keywords=Login;

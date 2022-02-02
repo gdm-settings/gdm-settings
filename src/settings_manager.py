@@ -6,7 +6,7 @@ from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
 from math import trunc
 
-from info import project_name, application_id
+from .info import project_name, application_id
 
 import gi
 gi.require_version("Gio", '2.0')

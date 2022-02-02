@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkScrolledWindow" id="fonts_page_content">
+    <property name="propagate-natural-height">true</property>
+    <child>
+      <object class="AdwClamp">
+        <property name="maximum-size">500</property>
+        <property name="margin-top">20</property>
+        <property name="margin-bottom">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="spacing">20</property>
+            <child>
+              <object class="AdwPreferencesGroup">
+                <property name="title">Fonts</property>
+                <child>
+                  <object class="AdwActionRow">
+                    <property name="title">Font</property>
+                    <property name="activatable-widget">font_button</property>
+                    <child>
+                      <object class="GtkFontButton" id="font_button">
+                        <property name="margin-top">5</property>
+                        <property name="margin-bottom">5</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="antialiasing_comborow">
+                    <property name="title">Antialiasing</property>
+                    <property name="model">
+                      <object class="GtkStringList">
+                        <items>
+                          <item>Standard</item>
+                          <item>Subpixel</item>
+                          <item>None</item>
+                        </items>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwComboRow" id="hinting_comborow">
+                    <property name="title">Hinting</property>
+                    <property name="model">
+                      <object class="GtkStringList">
+                        <items>
+                          <item>Full</item>
+                          <item>Medium</item>
+                          <item>Slight</item>
+                          <item>None</item>
+                        </items>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwActionRow" id="text_scaling_comborow">
+                    <property name="title">Scaling Factor</property>
+                    <child>
+                      <object class="GtkSpinButton" id="text_scaling_spinbutton">
+                        <property name="digits">2</property>
+                        <property name="margin-top">10</property>
+                        <property name="margin-bottom">10</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

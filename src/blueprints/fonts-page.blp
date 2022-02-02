@@ -7,9 +7,9 @@ ScrolledWindow fonts_page_content {
   Adw.Clamp {
     maximum-size: 500;
     margin-top: 20;
-    margin-bottom: bind self.margin-top;
-    margin-start: bind self.margin-top;
-    margin-end: bind self.margin-top;
+    margin-bottom: 20;
+    margin-start: 20;
+    margin-end: 20;
 
     Box {
       orientation: vertical;
@@ -24,7 +24,7 @@ ScrolledWindow fonts_page_content {
 
           FontButton font_button {
             margin-top: 5;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 5;
           }
         }
 
@@ -53,7 +53,7 @@ ScrolledWindow fonts_page_content {
           SpinButton text_scaling_spinbutton {
             digits: 2;
             margin-top: 10;
-            margin-bottom: bind self.margin-top;
+            margin-bottom: 10;
           }
         }
       }
