@@ -1,0 +1,90 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow night_light_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Night Light";
+
+        Adw.ActionRow {
+          title: "Enable";
+          activatable-widget: night_light_enable_switch;
+
+          Switch night_light_enable_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ComboRow night_light_schedule_comborow {
+          title: "Schedule";
+          model: StringList { strings ["Sunset to Sunrise", "Manual Schedule"] };
+        }
+
+        Adw.ActionRow {
+          title: "Times";
+
+          Label { label: "From"; styles ["dim-label"] }
+
+          SpinButton night_light_start_hour_spinbutton {
+            orientation: vertical;
+            width-chars: 2;
+            margin-top: 10;
+            margin-bottom: bind self.margin-top;
+          }
+
+          Label { label: ":"; }
+
+          SpinButton night_light_start_minute_spinbutton {
+            orientation: vertical;
+            width-chars: 2;
+            margin-top: 10;
+            margin-bottom: bind self.margin-top;
+          }
+
+          Separator { styles ["spacer"] }
+
+          Label { label: "To"; styles ["dim-label"] }
+
+          SpinButton night_light_end_hour_spinbutton {
+            orientation: vertical;
+            width-chars: 2;
+            margin-top: 10;
+            margin-bottom: bind self.margin-top;
+          }
+
+          Label { label: ":"; }
+
+          SpinButton night_light_end_minute_spinbutton {
+            orientation: vertical;
+            width-chars: 2;
+            margin-top: 10;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Color Temperature";
+
+          Scale night_light_color_temperature_scale {
+            orientation: horizontal;
+            hexpand: true;
+            inverted: true;
+          }
+        }
+      }
+    }
+  }
+}

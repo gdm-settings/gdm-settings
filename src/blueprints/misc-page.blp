@@ -1,0 +1,92 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow misc_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Miscellaneous";
+
+        Adw.ExpanderRow welcome_message_expanderrow {
+          title: "Welcome Message";
+          expanded: bind welcome_message_switch.active sync-create bidirectional;
+
+          [action]
+          Switch welcome_message_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+
+          Entry welcome_message_entry { }
+        }
+
+        Adw.ExpanderRow logo_expanderrow {
+          title: "Enable Logo";
+          subtitle: "Whether to show a logo below user list";
+          expanded: bind logo_switch.active sync-create bidirectional;
+
+          [action]
+          Switch logo_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+
+          Adw.ActionRow {
+            title: "Logo";
+            subtitle: "The image to show below user list";
+            activatable-widget: logo_button;
+
+            Button logo_button {
+              label: "Choose File";
+              margin-top: 5;
+              margin-bottom: bind self.margin-top;
+            }
+          }
+
+          Adw.ActionRow {
+            title: "Fallback Logo";
+            subtitle: "The image to show below user list if cannot show \'Logo\'";
+            activatable-widget: fallback_logo_button;
+
+            Button fallback_logo_button {
+              label: "Choose File";
+              margin-top: 5;
+              margin-bottom: bind self.margin-top;
+            }
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Disable Restart Buttons";
+          activatable-widget: disable_restart_buttons_switch;
+
+          Switch disable_restart_buttons_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Disable User List";
+          activatable-widget: disable_user_list_switch;
+
+          Switch disable_user_list_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+      }
+    }
+  }
+}

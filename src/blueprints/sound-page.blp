@@ -1,0 +1,56 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow sound_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Sound";
+
+        Adw.ComboRow sound_theme_comborow { title: "Theme"; }
+
+        Adw.ActionRow {
+          title: "Over Amplification";
+          subtitle: "Allow raising volume above 100%";
+          activatable-widget: over_amplification_switch;
+
+          Switch over_amplification_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Event Sounds";
+          activatable-widget: event_sounds_switch;
+
+          Switch event_sounds_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Input Feedback Sounds";
+          activatable-widget: input_feedback_sounds_switch;
+
+          Switch input_feedback_sounds_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+      }
+    }
+  }
+}

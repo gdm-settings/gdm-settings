@@ -1,0 +1,58 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow touchpad_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Touchpad";
+
+        Adw.ActionRow {
+          title: "Tap to Click";
+          activatable-widget: tap_to_click_switch;
+
+          Switch tap_to_click_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Natural Scrolling";
+          subtitle: "Scrolling moves the content, not the view.";
+          activatable-widget: natural_scrolling_switch;
+
+          Switch natural_scrolling_switch {
+            margin-top: 15;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow {
+          title: "Touchpad Speed";
+
+          Scale touchpad_speed_scale {
+            orientation: horizontal;
+            hexpand: true;
+          }
+        }
+
+        Adw.ComboRow scrolling_method_comborow {
+          title: "Scrolling Method";
+          model: StringList { strings ["Two-finger", "Edge", "Disable"] };
+        }
+      }
+    }
+  }
+}

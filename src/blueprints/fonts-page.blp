@@ -1,0 +1,62 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow fonts_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Fonts";
+
+        Adw.ActionRow {
+          title: "Font";
+          activatable-widget: font_button;
+
+          FontButton font_button {
+            margin-top: 5;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ComboRow antialiasing_comborow {
+          title: "Antialiasing";
+          model: StringList { strings [
+            "Standard",
+            "Subpixel",
+            "None",
+          ]};
+        }
+
+        Adw.ComboRow hinting_comborow {
+          title: "Hinting";
+          model: StringList { strings [
+            "Full",
+            "Medium",
+            "Slight",
+            "None",
+          ]};
+        }
+
+        Adw.ActionRow text_scaling_comborow {
+          title: "Scaling Factor";
+
+          SpinButton text_scaling_spinbutton {
+            digits: 2;
+            margin-top: 10;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+      }
+    }
+  }
+}

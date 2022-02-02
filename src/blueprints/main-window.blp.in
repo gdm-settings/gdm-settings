@@ -1,0 +1,65 @@
+using Gtk 4.0;
+using Adw 1;
+
+menu app_menu {
+  section {
+    item (_("Reload settings"), "app.reload_settings")
+    item (_("Import user settings"), "app.import_user_settings")
+  }
+  section {
+    item (_("About"), "app.about")
+    item (_("Quit"), "app.quit")
+  }
+}
+
+Adw.ApplicationWindow main_window {
+  content: Box {
+    orientation: vertical;
+
+    Adw.HeaderBar {
+      title-widget: Adw.WindowTitle { title: bind main_window.title sync-create; };
+      [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
+      [end] Separator { margin-start: 10; }
+      [end] Button apply_button { label: "Apply"; styles ["suggested-action"] }
+    }
+
+    Adw.ToastOverlay main_toast_overlay {
+      Paned paned {
+        [start] StackSidebar { stack: stack; }
+        [end]   Stack stack { hexpand: true; width-request: 300; }
+      }
+    }
+  };
+}
+
+AboutDialog about_dialog {
+   transient-for: main_window;
+   modal: true;
+   program-name: "@application_name@ (@project_name@)";
+   version: "@version@";
+   comments: "@description@";
+   logo-icon-name: "@application_id@";
+   website: "https://github.com/realmazharhussain/gdm-settings";
+   website-label: "Homepage";
+   license-type: agpl_3_0;
+   copyright: "Copyright © 2021 Mazhar Hussain";
+}
+
+FileChooserDialog image_chooser {
+  filter: FileFilter { name: "Images"; mime-types ["image/*"] };
+
+  [action] Button button_cancel { label: "Cancel"; }
+  [action] Button button_select { label: "Select"; }
+}
+
+Adw.Toast apply_failed_toast {
+  title: _("Failed to apply settings");
+  timeout: 2.5;
+  priority: high;
+}
+
+Adw.Toast apply_succeeded_toast {
+  title: _("Settings applied");
+  timeout: 2.5;
+  priority: high;
+}

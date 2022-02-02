@@ -13,4 +13,4 @@ source_files = [
 ]
 install_data(source_files, install_dir: pkgdatadir)
 
-subdir('ui')
+subdir('blueprints')

@@ -1,0 +1,62 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow appearance_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: bind self.margin-top;
+    margin-start: bind self.margin-top;
+    margin-end: bind self.margin-top;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Themes";
+
+        Adw.ComboRow shell_theme_comborow { title: "Shell"; }
+        Adw.ComboRow icon_theme_comborow { title: "Icons"; }
+        Adw.ComboRow cursor_theme_comborow { title: "Cursor"; }
+      }
+
+      Adw.PreferencesGroup {
+        title: "Background";
+
+        Adw.ComboRow bg_type_comborow {
+          title: "Type";
+          model: StringList { strings ["None", "Image", "Color"] };
+
+        }
+
+        Adw.ActionRow bg_image_actionrow {
+          title: "Image";
+          subtitle: "The image to use as background";
+          visible: false;
+          activatable-widget: bg_image_button;
+
+          Button bg_image_button {
+            label: "Choose File";
+            margin-top: 5;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+
+        Adw.ActionRow bg_color_actionrow {
+          title: "Color";
+          subtitle: "The color to use as background";
+          visible: false;
+          activatable-widget: bg_color_button;
+
+          ColorButton bg_color_button {
+            margin-top: 5;
+            margin-bottom: bind self.margin-top;
+          }
+        }
+      }
+    }
+  }
+}
