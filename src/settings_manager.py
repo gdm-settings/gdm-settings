@@ -349,8 +349,12 @@ class DConfSettings(Common):
         self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
         self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
         self.sound_theme = sound_settings.get_string("theme-name")
+        self.event_sounds = sound_settings.get_boolean("event-sounds")
+        self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
+        self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
         self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
-        self.natural_scrolling = touchpad_settings.get_boolean("natural-scrolling")
+        self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
+        self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling")
         self.touchpad_speed = touchpad_settings.get_double("speed")
         self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
         self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
@@ -375,12 +379,16 @@ class DConfSettings(Common):
         self.icon_theme = self.gsettings.get_string('icon-theme')
         self.cursor_theme = self.gsettings.get_string('cursor-theme')
         self.sound_theme = self.gsettings.get_string('sound-theme')
+        self.event_sounds = self.gsettings.get_boolean('event-sounds')
+        self.feedback_sounds = self.gsettings.get_boolean('feedback-sounds')
+        self.over_amplification = self.gsettings.get_boolean('over-amplification')
         self.show_weekday = self.gsettings.get_boolean('show-weekday')
         self.time_format = self.gsettings.get_string('time-format')
         self.show_seconds = self.gsettings.get_boolean('show-seconds')
         self.show_battery_percentage = self.gsettings.get_boolean('show-seconds')
         self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
         self.natural_scrolling = self.gsettings.get_boolean('natural-scrolling')
+        self.two_finger_scrolling = self.gsettings.get_boolean('two-finger-scrolling')
         self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
         self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
         self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
@@ -400,6 +408,10 @@ class DConfSettings(Common):
         self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
         self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
         self.gsettings.set_boolean('natural-scrolling', self.natural_scrolling)
+        self.gsettings.set_boolean('event-sounds', self.event_sounds)
+        self.gsettings.set_boolean('feedback-sounds', self.feedback_sounds)
+        self.gsettings.set_boolean('over-amplification', self.over_amplification)
+        self.gsettings.set_boolean('two-finger-scrolling', self.two_finger_scrolling)
         self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
         self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
         self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
@@ -442,6 +454,9 @@ class DConfSettings(Common):
             gdm_conf_contents +=  "[org/gnome/desktop/sound]\n"
             gdm_conf_contents +=  "#------------------------\n"
             gdm_conf_contents += f"theme-name='{self.sound_theme}'\n"
+            gdm_conf_contents += f"event-sounds={str(self.event_sounds).lower()}\n"
+            gdm_conf_contents += f"input-feedback-sounds={str(self.feedback_sounds).lower()}\n"
+            gdm_conf_contents += f"allow-volume-above-100-percent={str(self.over_amplification).lower()}\n"
             gdm_conf_contents +=  "\n"
             gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
@@ -449,6 +464,7 @@ class DConfSettings(Common):
             gdm_conf_contents += f"speed={self.touchpad_speed}\n"
             gdm_conf_contents += f"tap-to-click={str(self.tap_to_click).lower()}\n"
             gdm_conf_contents += f"natural-scroll={str(self.natural_scrolling).lower()}\n"
+            gdm_conf_contents += f"two-finger-scrolling-enabled={str(self.two_finger_scrolling).lower()}\n"
             gdm_conf_contents +=  "\n"
             gdm_conf_contents +=  "#------------- Night Light --------------\n"
             gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"

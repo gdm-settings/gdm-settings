@@ -40,6 +40,16 @@ ScrolledWindow touchpad_page_content {
         }
 
         Adw.ActionRow {
+          title: "Two-finger Scrolling";
+          activatable-widget: two_finger_scrolling_switch;
+
+          Switch two_finger_scrolling_switch {
+            margin-top: 15;
+            margin-bottom: 15;
+          }
+        }
+
+        Adw.ActionRow {
           title: "Touchpad Speed";
 
           Scale touchpad_speed_scale {
@@ -48,10 +58,6 @@ ScrolledWindow touchpad_page_content {
           }
         }
 
-        Adw.ComboRow scrolling_method_comborow {
-          title: "Scrolling Method";
-          model: StringList { strings ["Two-finger", "Edge", "Disable"] };
-        }
       }
     }
   }

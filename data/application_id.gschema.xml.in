@@ -55,6 +55,18 @@
       <default>"freedesktop"</default>
     </key>
 
+    <key name="over-amplification" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="event-sounds" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="feedback-sounds" type="b">
+      <default>false</default>
+    </key>
+
 	 <key name="background-type" type="s">
 	   <default>"None"</default>
 	   <summary>Type of Background</summary>
@@ -139,6 +151,10 @@
     </key>
 
     <key name="natural-scrolling" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="two-finger-scrolling" type="b">
       <default>true</default>
     </key>
 
