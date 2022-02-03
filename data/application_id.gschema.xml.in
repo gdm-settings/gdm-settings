@@ -130,6 +130,10 @@
       <default>false</default>
     </key>
 
+    <key name="show-seconds" type="b">
+      <default>false</default>
+    </key>
+
     <key name="tap-to-click" type="b">
       <default>true</default>
     </key>

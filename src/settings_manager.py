@@ -346,6 +346,7 @@ class DConfSettings(Common):
         self.cursor_theme = interface_settings.get_string("cursor-theme")
         self.show_weekday = interface_settings.get_boolean("clock-show-weekday")
         self.time_format = interface_settings.get_string("clock-format")
+        self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
         self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
         self.sound_theme = sound_settings.get_string("theme-name")
         self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
@@ -375,7 +376,8 @@ class DConfSettings(Common):
         self.sound_theme = self.gsettings.get_string('sound-theme')
         self.show_weekday = self.gsettings.get_boolean('show-weekday')
         self.time_format = self.gsettings.get_string('time-format')
-        self.show_battery_percentage = self.gsettings.get_boolean('show-battery-percentage')
+        self.show_seconds = self.gsettings.get_boolean('show-seconds')
+        self.show_battery_percentage = self.gsettings.get_boolean('show-seconds')
         self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
         self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
         self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
@@ -392,6 +394,7 @@ class DConfSettings(Common):
         self.gsettings.set_string('sound-theme', self.sound_theme)
         self.gsettings.set_boolean('show-weekday', self.show_weekday)
         self.gsettings.set_string('time-format', self.time_format)
+        self.gsettings.set_boolean('show-seconds', self.show_seconds)
         self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
         self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
         self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
@@ -428,6 +431,7 @@ class DConfSettings(Common):
             gdm_conf_contents += f"cursor-theme='{self.cursor_theme}'\n"
             gdm_conf_contents += f"icon-theme='{self.icon_theme}'\n"
             gdm_conf_contents += f"show-battery-percentage={str(self.show_battery_percentage).lower()}\n"
+            gdm_conf_contents += f"clock-show-seconds={str(self.show_seconds).lower()}\n"
             gdm_conf_contents += f"clock-show-weekday={str(self.show_weekday).lower()}\n"
             gdm_conf_contents += f"clock-format='{self.time_format}'\n"
             gdm_conf_contents +=  "\n"

@@ -83,6 +83,7 @@ def get_widgets():
     widgets.top_bar_background_color_switch = widgets.builder.get_object("top_bar_background_color_switch")
     widgets.top_bar_background_color_button = widgets.builder.get_object("top_bar_background_color_button")
     widgets.show_weekday_switch = widgets.builder.get_object("show_weekday_switch")
+    widgets.show_seconds_switch = widgets.builder.get_object("show_seconds_switch")
     widgets.time_format_comborow = widgets.builder.get_object("time_format_comborow")
     widgets.show_battery_percentage_switch = widgets.builder.get_object("show_battery_percentage_switch")
 
@@ -214,6 +215,8 @@ def load_settings_to_widgets():
             position += 1
     # Show Weekday
     widgets.show_weekday_switch.set_active(show_weekday)
+    # Show Seconds
+    widgets.show_seconds_switch.set_active(settings.show_seconds)
     # Clock Format
     if time_format == "12h":
         widgets.time_format_comborow.set_selected(0)
@@ -303,6 +306,7 @@ def set_settings():
     settings.cursor_theme   = widgets.cursor_theme_comborow.get_selected_item().get_string()
     settings.sound_theme    = widgets.sound_theme_comborow.get_selected_item().get_string()
     settings.show_weekday   = widgets.show_weekday_switch.get_active()
+    settings.show_seconds   = widgets.show_seconds_switch.get_active()
     settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
     settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
     settings.show_battery_percentage  = widgets.show_battery_percentage_switch.get_active()
