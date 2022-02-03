@@ -1,8 +1,8 @@
-blueprint_compiler = generator(
-  find_program('blueprint-compiler'),
-  output: '@BASENAME@.ui', #.replace('.blp', '.ui'),
-  arguments: ['compile', '@INPUT@', '--output', '@OUTPUT@'],
-)
+#blueprint_compiler = generator(
+#  find_program('blueprint-compiler'),
+#  output: '@BASENAME@.ui', #.replace('.blp', '.ui'),
+#  arguments: ['compile', '@INPUT@', '--output', '@OUTPUT@'],
+#)
 
 main_window_blp = configure_file(
   input:  'main-window.blp.in',
@@ -21,12 +21,22 @@ blueprints = [main_window_blp] + files(
   'misc-page.blp',
 )
 
-ui_files = blueprint_compiler.process(blueprints)
-
-custom_target('ui_files',
-  input: ui_files,
+custom_target('blueprints',
+  input: blueprints,
   output: project_name,
-  command: [find_program('install'), '-Dm644', '-t', '@OUTPUT@', '@INPUT@'],
+  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@INPUT@'],
   install: true,
   install_dir: datadir,
 )
+
+install_data(files('image-chooser.ui'), install_dir: pkgdatadir)
+
+#ui_files = blueprint_compiler.process(blueprints)
+
+#custom_target('ui_files',
+#  input: ui_files,
+#  output: project_name,
+#  command: [find_program('install'), '-Dm644', '-t', '@OUTPUT@', '@INPUT@'],
+#  install: true,
+#  install_dir: datadir,
+#)

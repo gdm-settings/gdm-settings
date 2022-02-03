@@ -20,6 +20,8 @@ def get_widgets():
     # Load UI files
     main_window_ui_file = path.join(ui_dir, "main-window.ui")
     widgets.builder.add_from_file(main_window_ui_file)
+    image_chooser_ui_file = path.join(ui_dir, "image-chooser.ui")
+    widgets.builder.add_from_file(image_chooser_ui_file)
     appearance_page_ui_file = path.join(ui_dir, "appearance-page.ui")
     widgets.builder.add_from_file(appearance_page_ui_file)
     fonts_page_ui_file = path.join(ui_dir, "fonts-page.ui")
@@ -45,6 +47,9 @@ def get_widgets():
     widgets.paned.set_shrink_end_child(False)
     widgets.app_menu = widgets.builder.get_object("app_menu")
     widgets.about_dialog = widgets.builder.get_object("about_dialog")
+    widgets.about_dialog.set_authors(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
+    widgets.about_dialog.set_artists(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
+    widgets.about_dialog.set_documenters(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
     widgets.page_stack = widgets.builder.get_object("stack")
     widgets.appearance_page_content = widgets.builder.get_object("appearance_page_content")
     widgets.fonts_page_content = widgets.builder.get_object("fonts_page_content")

@@ -45,6 +45,7 @@ AboutDialog about_dialog {
   copyright: "Copyright © 2021 Mazhar Hussain";
 }
 
+/*
 FileChooserDialog image_chooser {
   transient-for: main_window;
   filter: FileFilter { name: "Images"; mime-types ["image/*"] };
@@ -53,6 +54,7 @@ FileChooserDialog image_chooser {
   [action] Button button_select { label: "Select"; }
 
 }
+*/
 
 Adw.Toast apply_failed_toast {
   title: _("Failed to apply settings");
