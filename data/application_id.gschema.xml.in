@@ -127,7 +127,7 @@
     </key>
 
     <key name="show-battery-percentage" type="b">
-      <default>false</default>
+      <default>true</default>
     </key>
 
     <key name="show-seconds" type="b">
@@ -135,6 +135,10 @@
     </key>
 
     <key name="tap-to-click" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="natural-scrolling" type="b">
       <default>true</default>
     </key>
 

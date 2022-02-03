@@ -91,6 +91,7 @@ def get_widgets():
     widgets.sound_theme_comborow = widgets.builder.get_object("sound_theme_comborow")
     # Widgets from Touchpad page
     widgets.tap_to_click_switch = widgets.builder.get_object("tap_to_click_switch")
+    widgets.natural_scrolling_switch = widgets.builder.get_object("natural_scrolling_switch")
     widgets.touchpad_speed_scale = widgets.builder.get_object("touchpad_speed_scale")
     widgets.touchpad_speed_scale.set_range(-1, 1)
     # Widgets from Night Light page
@@ -226,6 +227,7 @@ def load_settings_to_widgets():
     widgets.show_battery_percentage_switch.set_active(show_battery_percentage)
     # Touchpad
     widgets.tap_to_click_switch.set_active(tap_to_click)
+    widgets.natural_scrolling_switch.set_active(settings.natural_scrolling)
     widgets.touchpad_speed_scale.set_value(touchpad_speed)
     # Night Light
     widgets.night_light_enable_switch.set_active(night_light_enabled)
@@ -309,6 +311,7 @@ def set_settings():
     settings.show_seconds   = widgets.show_seconds_switch.get_active()
     settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
     settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
+    settings.natural_scrolling   = widgets.natural_scrolling_switch.get_active()
     settings.show_battery_percentage  = widgets.show_battery_percentage_switch.get_active()
     settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
     settings.night_light_temperature  = widgets.night_light_color_temperature_scale.get_value()

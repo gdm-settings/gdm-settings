@@ -350,6 +350,7 @@ class DConfSettings(Common):
         self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
         self.sound_theme = sound_settings.get_string("theme-name")
         self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
+        self.natural_scrolling = touchpad_settings.get_boolean("natural-scrolling")
         self.touchpad_speed = touchpad_settings.get_double("speed")
         self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
         self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
@@ -379,6 +380,7 @@ class DConfSettings(Common):
         self.show_seconds = self.gsettings.get_boolean('show-seconds')
         self.show_battery_percentage = self.gsettings.get_boolean('show-seconds')
         self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
+        self.natural_scrolling = self.gsettings.get_boolean('natural-scrolling')
         self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
         self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
         self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
@@ -397,6 +399,7 @@ class DConfSettings(Common):
         self.gsettings.set_boolean('show-seconds', self.show_seconds)
         self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
         self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
+        self.gsettings.set_boolean('natural-scrolling', self.natural_scrolling)
         self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
         self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
         self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
@@ -445,6 +448,7 @@ class DConfSettings(Common):
             gdm_conf_contents +=  "#---------------------------------------\n"
             gdm_conf_contents += f"speed={self.touchpad_speed}\n"
             gdm_conf_contents += f"tap-to-click={str(self.tap_to_click).lower()}\n"
+            gdm_conf_contents += f"natural-scroll={str(self.natural_scrolling).lower()}\n"
             gdm_conf_contents +=  "\n"
             gdm_conf_contents +=  "#------------- Night Light --------------\n"
             gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"
