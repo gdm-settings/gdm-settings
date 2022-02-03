@@ -111,15 +111,6 @@ def get_widgets():
     widgets.night_light_color_temperature_scale.set_range(1700, 4700)
 
 def add_string_lists_to_comborows():
-    # GDM Background Types
-    widgets.bg_type_list = Gtk.StringList.new(['None', 'Image', 'Color'])
-    widgets.bg_type_comborow.set_model(widgets.bg_type_list)
-    # Time Formats
-    widgets.time_format_list = Gtk.StringList.new(['AM/PM', '24 Hours'])
-    widgets.time_format_comborow.set_model(widgets.time_format_list)
-    # Night Light Schedule Types
-    widgets.night_light_schedule_list = Gtk.StringList.new(['Sunset to Sunrise', 'Manual Schedule'])
-    widgets.night_light_schedule_comborow.set_model(widgets.night_light_schedule_list)
     # Shell Themes
     widgets.shell_theme_list = Gtk.StringList()
     for theme in settings_manager.get_shell_theme_list():
@@ -256,14 +247,12 @@ def load_settings_to_widgets():
             position += 1
 
     # Load Background Type
-    position = 0
-    saved_bg_type = widgets.settings.background_type
-    for bg_type in widgets.bg_type_list:
-        if bg_type.get_string() == saved_bg_type:
-            widgets.bg_type_comborow.set_selected(position)
-            break
-        else:
-            position += 1
+    if widgets.settings.background_type == 'None':
+        widgets.bg_type_comborow.set_selected(0)
+    elif widgets.settings.background_type == 'Image':
+        widgets.bg_type_comborow.set_selected(1)
+    elif widgets.settings.background_type == 'Color':
+        widgets.bg_type_comborow.set_selected(2)
 
     # Load Background Color
     saved_bg_color = widgets.settings.background_color
