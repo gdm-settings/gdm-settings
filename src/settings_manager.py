@@ -354,7 +354,7 @@ class DConfSettings(Common):
         self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
         self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
         self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
-        self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling")
+        self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
         self.touchpad_speed = touchpad_settings.get_double("speed")
         self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
         self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
