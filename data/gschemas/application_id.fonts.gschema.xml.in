@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.fonts" path="@schema_path@fonts/">
+
+  </schema>
+</schemalist>

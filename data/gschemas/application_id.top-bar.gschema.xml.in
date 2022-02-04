@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.top-bar" path="@schema_path@top-bar/">
+
+    <key name="disable-top-bar-arrows" type="b">
+      <default>false</default>
+      <summary>Whether to disable top bar arrows</summary>
+    </key>
+
+    <key name="disable-top-bar-rounded-corners" type="b">
+      <default>false</default>
+      <summary>Whether to disable top bar rounded corners</summary>
+    </key>
+
+    <key name="change-top-bar-text-color" type="b">
+      <default>false</default>
+      <summary>Whether to change top bar text color</summary>
+    </key>
+
+    <key name="top-bar-text-color" type="s">
+	   <default>"rgb(250,250,250)"</default>
+      <summary>Top bar text color</summary>
+    </key>
+
+    <key name="change-top-bar-background-color" type="b">
+      <default>false</default>
+      <summary>Whether to change top bar background</summary>
+    </key>
+
+    <key name="top-bar-background-color" type="s">
+	   <default>"rgb(0,0,0)"</default>
+      <summary>Top bar background color</summary>
+    </key>
+
+    <key name="show-weekday" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="time-format" type="s">
+      <default>"24h"</default>
+      <choices>
+        <choice value="12h"/>
+        <choice value="24h"/>
+      </choices>
+    </key>
+
+    <key name="show-seconds" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="show-battery-percentage" type="b">
+      <default>true</default>
+    </key>
+
+  </schema>
+</schemalist>

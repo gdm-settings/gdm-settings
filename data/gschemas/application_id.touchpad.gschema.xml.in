@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.touchpad" path="@schema_path@touchpad/">
+
+    <key name="tap-to-click" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="natural-scrolling" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="two-finger-scrolling" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="touchpad-speed" type="d">
+      <default>0.35</default>
+      <summary>Pointer speed</summary>
+      <description>Pointer speed for the touchpad. Accepted values are in the [-1..1] range (from “unaccelerated” to “fast”). A value of 0 is the system default.</description>
+      <range min="-1" max="1"/>
+    </key>
+
+  </schema>
+</schemalist>

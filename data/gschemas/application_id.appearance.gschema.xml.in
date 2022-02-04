@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.appearance" path="@schema_path@appearance/">
+
+	 <key name="shell-theme" type="s">
+	   <default>"default"</default>
+	   <summary>Theme Name</summary>
+	 </key>
+
+    <key name="icon-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+
+    <key name="cursor-theme" type="s">
+      <default>"Adwaita"</default>
+    </key>
+
+	 <key name="background-type" type="s">
+	   <default>"None"</default>
+	   <summary>Type of Background</summary>
+	   <description>
+	     Wether GDM background should be an Image, Color or None.
+	   </description>
+	   <choices>
+	     <choice value="None"/>
+	     <choice value="Image"/>
+	     <choice value="Color"/>
+	   </choices>
+	 </key>
+
+	 <key name="background-image" type="s">
+	   <default>""</default>
+	   <summary>Background Image</summary>
+	   <description>
+	     The image file to use as GDM background
+	   </description>
+	 </key>
+
+	 <key name="background-color" type="s">
+	   <default>"rgb(40,40,40)"</default>
+	   <summary>Background Color</summary>
+	   <description>
+	     The Color to use as GDM background
+	   </description>
+	 </key>
+
+  </schema>
+</schemalist>

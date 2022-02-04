@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.window-state" path="@schema_path@window-state/">
+
+	 <key name="width" type="u">
+	   <default>800</default>
+	 </key>
+
+	 <key name="height" type="u">
+	   <default>500</default>
+	 </key>
+
+	 <key name="paned-position" type="u">
+	   <default>170</default>
+	 </key>
+
+	 <key name="last-visited-page" type="s">
+	   <default>"appearance"</default>
+	   <choices>
+	     <choice value="appearance"/>
+	     <choice value="fonts"/>
+	     <choice value="night_light"/>
+	     <choice value="sound"/>
+	     <choice value="top_bar"/>
+	     <choice value="touchpad"/>
+	     <choice value="misc"/>
+	   </choices>
+	 </key>
+
+  </schema>
+</schemalist>

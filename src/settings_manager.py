@@ -252,7 +252,16 @@ gresource_utils = GResourceUtils()
 class Settings:
     def __init__(self):
         self.command_elevator = gresource_utils.command_elevator
-        self.gsettings = Gio.Settings(schema_id=application_id)
+
+        self.main_gsettings = Gio.Settings(schema_id=application_id)
+        self.appearance_gsettings = Gio.Settings(schema_id=f'{application_id}.appearance')
+        self.fonts_gsettings = Gio.Settings(schema_id=f'{application_id}.fonts')
+        self.top_bar_gsettings = Gio.Settings(schema_id=f'{application_id}.top-bar')
+        self.sound_gsettings = Gio.Settings(schema_id=f'{application_id}.sound')
+        self.touchpad_gsettings = Gio.Settings(schema_id=f'{application_id}.touchpad')
+        self.night_light_gsettings = Gio.Settings(schema_id=f'{application_id}.night-light')
+        self.misc_gsettings = Gio.Settings(schema_id=f'{application_id}.misc')
+
         self.load_settings()
 
     def load_settings(self):
@@ -260,7 +269,7 @@ class Settings:
 
         self.load_from_gsettings()
 
-        if self.gsettings.get_boolean("never-applied"):
+        if self.main_gsettings.get_boolean("never-applied"):
             self.load_user_settings()
 
     def load_user_settings(self):
@@ -313,95 +322,95 @@ class Settings:
         ''' Load settings from this app's GSettings '''
 
         ### Appearance ###
-        self.shell_theme = self.gsettings.get_string("shell-theme")
-        self.icon_theme = self.gsettings.get_string('icon-theme')
-        self.cursor_theme = self.gsettings.get_string('cursor-theme')
-        self.background_type = self.gsettings.get_string("background-type")
-        self.background_image = self.gsettings.get_string("background-image")
-        self.background_color = self.gsettings.get_string("background-color")
+        self.shell_theme = self.appearance_gsettings.get_string("shell-theme")
+        self.icon_theme = self.appearance_gsettings.get_string('icon-theme')
+        self.cursor_theme = self.appearance_gsettings.get_string('cursor-theme')
+        self.background_type = self.appearance_gsettings.get_string("background-type")
+        self.background_image = self.appearance_gsettings.get_string("background-image")
+        self.background_color = self.appearance_gsettings.get_string("background-color")
 
         ### Top Bar ###
         # Tweaks
-        self.disable_top_bar_arrows = self.gsettings.get_boolean("disable-top-bar-arrows")
-        self.disable_top_bar_rounded_corners = self.gsettings.get_boolean("disable-top-bar-rounded-corners")
-        self.change_top_bar_text_color = self.gsettings.get_boolean("change-top-bar-text-color")
-        self.top_bar_text_color = self.gsettings.get_string("top-bar-text-color")
-        self.change_top_bar_background_color = self.gsettings.get_boolean("change-top-bar-background-color")
-        self.top_bar_background_color = self.gsettings.get_string("top-bar-background-color")
+        self.disable_top_bar_arrows = self.top_bar_gsettings.get_boolean("disable-top-bar-arrows")
+        self.disable_top_bar_rounded_corners = self.top_bar_gsettings.get_boolean("disable-top-bar-rounded-corners")
+        self.change_top_bar_text_color = self.top_bar_gsettings.get_boolean("change-top-bar-text-color")
+        self.top_bar_text_color = self.top_bar_gsettings.get_string("top-bar-text-color")
+        self.change_top_bar_background_color = self.top_bar_gsettings.get_boolean("change-top-bar-background-color")
+        self.top_bar_background_color = self.top_bar_gsettings.get_string("top-bar-background-color")
         # Time/Clock
-        self.show_weekday = self.gsettings.get_boolean('show-weekday')
-        self.time_format = self.gsettings.get_string('time-format')
-        self.show_seconds = self.gsettings.get_boolean('show-seconds')
+        self.show_weekday = self.top_bar_gsettings.get_boolean('show-weekday')
+        self.time_format = self.top_bar_gsettings.get_string('time-format')
+        self.show_seconds = self.top_bar_gsettings.get_boolean('show-seconds')
         # Power
-        self.show_battery_percentage = self.gsettings.get_boolean('show-seconds')
+        self.show_battery_percentage = self.top_bar_gsettings.get_boolean('show-seconds')
 
         ### Sound ###
-        self.sound_theme = self.gsettings.get_string('sound-theme')
-        self.event_sounds = self.gsettings.get_boolean('event-sounds')
-        self.feedback_sounds = self.gsettings.get_boolean('feedback-sounds')
-        self.over_amplification = self.gsettings.get_boolean('over-amplification')
+        self.sound_theme = self.sound_gsettings.get_string('sound-theme')
+        self.event_sounds = self.sound_gsettings.get_boolean('event-sounds')
+        self.feedback_sounds = self.sound_gsettings.get_boolean('feedback-sounds')
+        self.over_amplification = self.sound_gsettings.get_boolean('over-amplification')
 
         ### Touchpad ###
-        self.tap_to_click = self.gsettings.get_boolean('tap-to-click')
-        self.natural_scrolling = self.gsettings.get_boolean('natural-scrolling')
-        self.two_finger_scrolling = self.gsettings.get_boolean('two-finger-scrolling')
-        self.touchpad_speed = self.gsettings.get_double('touchpad-speed')
+        self.tap_to_click = self.touchpad_gsettings.get_boolean('tap-to-click')
+        self.natural_scrolling = self.touchpad_gsettings.get_boolean('natural-scrolling')
+        self.two_finger_scrolling = self.touchpad_gsettings.get_boolean('two-finger-scrolling')
+        self.touchpad_speed = self.touchpad_gsettings.get_double('touchpad-speed')
 
         ### Night Light ###
-        self.night_light_enabled = self.gsettings.get_boolean('night-light-enabled')
-        self.night_light_schedule_automatic = self.gsettings.get_boolean('night-light-schedule-automatic')
-        self.night_light_temperature = self.gsettings.get_uint('night-light-temperature')
-        self.night_light_start_hour = self.gsettings.get_int('night-light-start-hour')
-        self.night_light_start_minute = self.gsettings.get_int('night-light-start-minute')
-        self.night_light_end_hour = self.gsettings.get_int('night-light-end-hour')
-        self.night_light_end_minute = self.gsettings.get_int('night-light-end-minute')
+        self.night_light_enabled = self.night_light_gsettings.get_boolean('night-light-enabled')
+        self.night_light_schedule_automatic = self.night_light_gsettings.get_boolean('night-light-schedule-automatic')
+        self.night_light_temperature = self.night_light_gsettings.get_uint('night-light-temperature')
+        self.night_light_start_hour = self.night_light_gsettings.get_int('night-light-start-hour')
+        self.night_light_start_minute = self.night_light_gsettings.get_int('night-light-start-minute')
+        self.night_light_end_hour = self.night_light_gsettings.get_int('night-light-end-hour')
+        self.night_light_end_minute = self.night_light_gsettings.get_int('night-light-end-minute')
 
     def save_settings(self):
         ''' Save settings to GSettings of this app '''
 
         ### Appearance ###
-        self.gsettings.set_string("shell-theme", self.shell_theme)
-        self.gsettings.set_string('icon-theme', self.icon_theme)
-        self.gsettings.set_string('cursor-theme', self.cursor_theme)
-        self.gsettings.set_string("background-type", self.background_type)
-        self.gsettings.set_string("background-image", self.background_image)
-        self.gsettings.set_string("background-color", self.background_color)
+        self.appearance_gsettings.set_string("shell-theme", self.shell_theme)
+        self.appearance_gsettings.set_string('icon-theme', self.icon_theme)
+        self.appearance_gsettings.set_string('cursor-theme', self.cursor_theme)
+        self.appearance_gsettings.set_string("background-type", self.background_type)
+        self.appearance_gsettings.set_string("background-image", self.background_image)
+        self.appearance_gsettings.set_string("background-color", self.background_color)
 
         ### Top Bar ###
         # Tweaks
-        self.gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
-        self.gsettings.set_boolean("disable-top-bar-rounded-corners", self.disable_top_bar_rounded_corners)
-        self.gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
-        self.gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
-        self.gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
-        self.gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
+        self.top_bar_gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
+        self.top_bar_gsettings.set_boolean("disable-top-bar-rounded-corners", self.disable_top_bar_rounded_corners)
+        self.top_bar_gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
+        self.top_bar_gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
+        self.top_bar_gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
+        self.top_bar_gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
         # Time/Clock
-        self.gsettings.set_boolean('show-weekday', self.show_weekday)
-        self.gsettings.set_string('time-format', self.time_format)
-        self.gsettings.set_boolean('show-seconds', self.show_seconds)
+        self.top_bar_gsettings.set_boolean('show-weekday', self.show_weekday)
+        self.top_bar_gsettings.set_string('time-format', self.time_format)
+        self.top_bar_gsettings.set_boolean('show-seconds', self.show_seconds)
         # Power
-        self.gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
+        self.top_bar_gsettings.set_boolean('show-battery-percentage', self.show_battery_percentage)
 
         ### Sound ###
-        self.gsettings.set_string('sound-theme', self.sound_theme)
-        self.gsettings.set_boolean('event-sounds', self.event_sounds)
-        self.gsettings.set_boolean('feedback-sounds', self.feedback_sounds)
-        self.gsettings.set_boolean('over-amplification', self.over_amplification)
+        self.sound_gsettings.set_string('sound-theme', self.sound_theme)
+        self.sound_gsettings.set_boolean('event-sounds', self.event_sounds)
+        self.sound_gsettings.set_boolean('feedback-sounds', self.feedback_sounds)
+        self.sound_gsettings.set_boolean('over-amplification', self.over_amplification)
 
         ### Touchpad ###
-        self.gsettings.set_boolean('tap-to-click', self.tap_to_click)
-        self.gsettings.set_boolean('natural-scrolling', self.natural_scrolling)
-        self.gsettings.set_boolean('two-finger-scrolling', self.two_finger_scrolling)
-        self.gsettings.set_double('touchpad-speed', self.touchpad_speed)
+        self.touchpad_gsettings.set_boolean('tap-to-click', self.tap_to_click)
+        self.touchpad_gsettings.set_boolean('natural-scrolling', self.natural_scrolling)
+        self.touchpad_gsettings.set_boolean('two-finger-scrolling', self.two_finger_scrolling)
+        self.touchpad_gsettings.set_double('touchpad-speed', self.touchpad_speed)
 
         ### Night Light ###
-        self.gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
-        self.gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
-        self.gsettings.set_uint('night-light-temperature', self.night_light_temperature)
-        self.gsettings.set_int('night-light-start-hour', self.night_light_start_hour)
-        self.gsettings.set_int('night-light-start-minute', self.night_light_start_minute)
-        self.gsettings.set_int('night-light-end-hour', self.night_light_end_hour)
-        self.gsettings.set_int('night-light-end-minute', self.night_light_end_minute)
+        self.night_light_gsettings.set_boolean('night-light-enabled', self.night_light_enabled)
+        self.night_light_gsettings.set_boolean('night-light-schedule-automatic', self.night_light_schedule_automatic)
+        self.night_light_gsettings.set_uint('night-light-temperature', self.night_light_temperature)
+        self.night_light_gsettings.set_int('night-light-start-hour', self.night_light_start_hour)
+        self.night_light_gsettings.set_int('night-light-start-minute', self.night_light_start_minute)
+        self.night_light_gsettings.set_int('night-light-end-hour', self.night_light_end_hour)
+        self.night_light_gsettings.set_int('night-light-end-minute', self.night_light_end_minute)
 
     def get_setting_css(self) -> str:
         ''' Get CSS for current settings (to append to theme's 'gnome-shell.css' resource) '''
@@ -523,7 +532,7 @@ class Settings:
         self.apply_dconf_settings()
         if self.command_elevator.run():
             self.save_settings()
-            self.gsettings.set_boolean("never-applied", False)
+            self.main_gsettings.set_boolean("never-applied", False)
             return True
         return False
 

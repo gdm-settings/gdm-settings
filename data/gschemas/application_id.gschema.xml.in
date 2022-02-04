@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@" path="@schema_path@">
+
+    <child name="window-state" schema="@application_id@.window-state"/>
+
+    <child name="appearance" schema="@application_id@.appearance"/>
+    <child name="fonts" schema="@application_id@.fonts"/>
+    <child name="top-bar" schema="@application_id@.top-bar"/>
+    <child name="sound" schema="@application_id@.sound"/>
+    <child name="touchpad" schema="@application_id@.touchpad"/>
+    <child name="night-light" schema="@application_id@.night-light"/>
+    <child name="misc" schema="@application_id@.misc"/>
+
+    <key name="never-applied" type="b">
+      <default>true</default>
+    </key>
+    
+  </schema>
+</schemalist>

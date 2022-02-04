@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.night-light" path="@schema_path@night-light/">
+
+    <key name="night-light-enabled" type="b">
+      <default>false</default>
+      <summary>If the night light mode is enabled</summary>
+      <description>Night light mode changes the color temperature of your display when the sun has gone down or at preset times.</description>
+    </key>
+
+    <key name="night-light-temperature" type="u">
+      <default>3000</default>
+      <summary>Temperature of the display when enabled</summary>
+      <description>This temperature in Kelvin is used to modify the screen tones when night light mode is enabled. Higher values are bluer, lower redder.</description>
+    </key>
+
+    <key name="night-light-schedule-automatic" type="b">
+      <default>true</default>
+      <summary>Use the sunrise and sunset</summary>
+      <description>Calculate the sunrise and sunset times automatically, from the current location.</description>
+    </key>
+
+    <key name="night-light-start-hour" type="i">
+      <default>19</default>
+      <summary>The start time's hour</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours.</description>
+      <range min="0" max="23"/>
+    </key>
+
+    <key name="night-light-start-minute" type="i">
+      <default>0</default>
+      <summary>The start time's minute</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time minutes.</description>
+      <range min="0" max="59"/>
+    </key>
+
+    <key name="night-light-end-hour" type="i">
+      <default>6</default>
+      <summary>The start time's hour</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours.</description>
+      <range min="0" max="23"/>
+    </key>
+
+    <key name="night-light-end-minute" type="i">
+      <default>0</default>
+      <summary>The end time's minute</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this end time minutes.</description>
+      <range min="0" max="59"/>
+    </key>
+
+  </schema>
+</schemalist>

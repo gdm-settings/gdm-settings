@@ -40,11 +40,3 @@ conf.set('datadir',          datadir)
 
 subdir('src')
 subdir('data')
-
-postinstall_file = configure_file(
-  input: 'build-aux/meson/postinstall.py.in',
-  output: 'postinstall.py',
-  configuration: conf
-  )
-
-#meson.add_install_script(postinstall_file)

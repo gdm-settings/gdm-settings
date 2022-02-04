@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.sound" path="@schema_path@sound/">
+
+    <key name="sound-theme" type="s">
+      <default>"freedesktop"</default>
+    </key>
+
+    <key name="over-amplification" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="event-sounds" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="feedback-sounds" type="b">
+      <default>false</default>
+    </key>
+
+  </schema>
+</schemalist>
