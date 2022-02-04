@@ -101,6 +101,8 @@ class CommandElevator:
         return status
 
 class GResourceUtils:
+    ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
+
     TempShellDir = f'{TempDir}/gnome-shell'
     ThemesDir = '/usr/share/themes'
     GnomeShellDir = '/usr/share/gnome-shell'
@@ -112,8 +114,11 @@ class GResourceUtils:
     GresourceBasename = 'gnome-shell-theme.gresource'
     CustomThemeIdentity = 'custom-theme'
 
-    def __init__(self):
-        self.elevated_commands = CommandElevator()
+    def __init__(self, command_elevator:CommandElevator=None):
+        if command_elevator:
+            self.command_elevator = command_elevator
+        else:
+            self.command_elevator = CommandElevator()
 
     def __listdir_recursive(self, dir:str):
         """list files (only) inside a directory recursively"""
@@ -166,9 +171,9 @@ class GResourceUtils:
         source_shell_dir = self.extract_theme(gresource_file=self.get_default())
         target_theme_dir = f"{self.ThemesDir}/{name}"
         target_shell_dir = f"{target_theme_dir}/gnome-shell"
-        self.elevated_commands.add(f"rm -rf {target_theme_dir}")
-        self.elevated_commands.add(f"mkdir -p {target_theme_dir}")
-        self.elevated_commands.add(f"mv -T {source_shell_dir} {target_shell_dir}")
+        self.command_elevator.add(f"rm -rf {target_theme_dir}")
+        self.command_elevator.add(f"mkdir -p {target_theme_dir}")
+        self.command_elevator.add(f"mv -T {source_shell_dir} {target_shell_dir}")
 
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
@@ -177,7 +182,7 @@ class GResourceUtils:
         default_gresource =  self.get_default()
         if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
             print("saving default theme ...")
-            self.elevated_commands.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
+            self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
 
     def backup_update(self):
         """update backup of the default theme's GResource file on demand
@@ -186,14 +191,14 @@ class GResourceUtils:
         default_gresource =  self.get_default()
         if default_gresource and default_gresource != self.GdmGresourceManualBackup:
             print("updating backup of default theme ...")
-            self.elevated_commands.add(f"cp {default_gresource} {self.GdmGresourceManualBackup}")
+            self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceManualBackup}")
 
     def backup_restore(self):
         """restore the 'default' theme's GResource file from the manually created backup"""
 
         if  path.isfile(self.GdmGresourceManualBackup):
             print("restoring default theme from backup ...")
-            self.elevated_commands.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
+            self.command_elevator.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
 
     def compile(self, shellDir:str, additional_css:str):
         """Compile a theme into a GResource file for its use as the GDM theme"""
@@ -244,99 +249,23 @@ class GResourceUtils:
 
 gresource_utils = GResourceUtils()
 
-class Common:
+class Settings:
     def __init__(self):
-        self.elevated_commands = gresource_utils.elevated_commands
+        self.command_elevator = gresource_utils.command_elevator
         self.gsettings = Gio.Settings(schema_id=application_id)
-
-    def cleanup(self):
-        rmtree(path=TempDir, ignore_errors=True)
-
-class GResourceSettings(Common):
-    def __init__(self):
-        super().__init__()
         self.load_settings()
 
     def load_settings(self):
-        self.shell_theme = self.gsettings.get_string("shell-theme")
-        self.background_type = self.gsettings.get_string("background-type")
-        self.background_image = self.gsettings.get_string("background-image")
-        self.background_color = self.gsettings.get_string("background-color")
-        self.disable_top_bar_arrows = self.gsettings.get_boolean("disable-top-bar-arrows")
-        self.disable_top_bar_rounded_corners = self.gsettings.get_boolean("disable-top-bar-rounded-corners")
-        self.change_top_bar_text_color = self.gsettings.get_boolean("change-top-bar-text-color")
-        self.top_bar_text_color = self.gsettings.get_string("top-bar-text-color")
-        self.change_top_bar_background_color = self.gsettings.get_boolean("change-top-bar-background-color")
-        self.top_bar_background_color = self.gsettings.get_string("top-bar-background-color")
+        ''' Load settings '''
 
-    def save_settings(self):
-        self.gsettings.set_string("shell-theme", self.shell_theme)
-        self.gsettings.set_string("background-type", self.background_type)
-        self.gsettings.set_string("background-image", self.background_image)
-        self.gsettings.set_string("background-color", self.background_color)
-        self.gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
-        self.gsettings.set_boolean("disable-top-bar-rounded-corners", self.disable_top_bar_rounded_corners)
-        self.gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
-        self.gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
-        self.gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
-        self.gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
+        self.load_from_gsettings()
 
-    def get_setting_css(self) -> str:
-        css = "\n/* 'GDM Settings' App Provided CSS */\n"
-        # Background
-        if self.background_type == "Image":
-            css += "#lockDialogGroup {\n"
-            css += "  background-image: url('file://"+ self.background_image + "');\n"
-            css += "  background-size: cover;\n"
-            css += "}\n"
-        elif self.background_type == "Color":
-            css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
-        # Disable Top Bar Arrows
-        if self.disable_top_bar_arrows:
-            css += "#panel .popup-menu-arrow { width: 0px; }\n"
-        # Disable Top Bar Corners
-        if self.disable_top_bar_rounded_corners:
-            css +=  "#panel .panel-corner {\n"
-            css += f"  -panel-corner-opacity: 0;\n"
-            css +=  "}\n"
-        # Change Top Bar Text Color
-        if self.change_top_bar_text_color:
-            css +=  "#panel .panel-button {\n"
-            css += f"  color: {self.top_bar_text_color};\n"
-            css +=  "}\n"
-        # Change Top Bar Background Color
-        if self.change_top_bar_background_color:
-            css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
-            css += f"  background-color: {self.top_bar_background_color};\n"
-            css +=  "}\n"
-            if not self.disable_top_bar_rounded_corners:
-                css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
-                css += f"  -panel-corner-opacity: 1;\n"
-                css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
-                css +=  "}\n"
-        return css
-
-    def apply_settings(self):
-        gresource_utils.auto_backup()
-        makedirs(TempDir, exist_ok=True)
-        shelldir = None
-        if self.shell_theme != "default":
-            shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
-        compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
-        self.elevated_commands.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
-
-class DConfSettings(Common):
-    def __init__(self):
-        super().__init__()
-        self.load_settings()
-
-    def load_settings(self):
         if self.gsettings.get_boolean("never-applied"):
             self.load_user_settings()
-        else:
-            self.load_from_gsettings()
 
     def load_user_settings(self):
+        ''' Load settings from user's session '''
+
         interface_settings = Gio.Settings(schema_id="org.gnome.desktop.interface")
         sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
         touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
@@ -376,6 +305,19 @@ class DConfSettings(Common):
             self.night_light_end_minute = 0
 
     def load_from_gsettings(self):
+        ''' Load settings from this app's GSettings '''
+
+        self.shell_theme = self.gsettings.get_string("shell-theme")
+        self.background_type = self.gsettings.get_string("background-type")
+        self.background_image = self.gsettings.get_string("background-image")
+        self.background_color = self.gsettings.get_string("background-color")
+        self.disable_top_bar_arrows = self.gsettings.get_boolean("disable-top-bar-arrows")
+        self.disable_top_bar_rounded_corners = self.gsettings.get_boolean("disable-top-bar-rounded-corners")
+        self.change_top_bar_text_color = self.gsettings.get_boolean("change-top-bar-text-color")
+        self.top_bar_text_color = self.gsettings.get_string("top-bar-text-color")
+        self.change_top_bar_background_color = self.gsettings.get_boolean("change-top-bar-background-color")
+        self.top_bar_background_color = self.gsettings.get_string("top-bar-background-color")
+
         self.icon_theme = self.gsettings.get_string('icon-theme')
         self.cursor_theme = self.gsettings.get_string('cursor-theme')
         self.sound_theme = self.gsettings.get_string('sound-theme')
@@ -399,6 +341,19 @@ class DConfSettings(Common):
         self.night_light_end_minute = self.gsettings.get_int('night-light-end-minute')
 
     def save_settings(self):
+        ''' Save settings to GSettings of this app '''
+
+        self.gsettings.set_string("shell-theme", self.shell_theme)
+        self.gsettings.set_string("background-type", self.background_type)
+        self.gsettings.set_string("background-image", self.background_image)
+        self.gsettings.set_string("background-color", self.background_color)
+        self.gsettings.set_boolean("disable-top-bar-arrows", self.disable_top_bar_arrows)
+        self.gsettings.set_boolean("disable-top-bar-rounded-corners", self.disable_top_bar_rounded_corners)
+        self.gsettings.set_boolean("change-top-bar-text-color", self.change_top_bar_text_color)
+        self.gsettings.set_string("top-bar-text-color", self.top_bar_text_color)
+        self.gsettings.set_boolean("change-top-bar-background-color", self.change_top_bar_background_color)
+        self.gsettings.set_string("top-bar-background-color", self.top_bar_background_color)
+
         self.gsettings.set_string('icon-theme', self.icon_theme)
         self.gsettings.set_string('cursor-theme', self.cursor_theme)
         self.gsettings.set_string('sound-theme', self.sound_theme)
@@ -421,7 +376,57 @@ class DConfSettings(Common):
         self.gsettings.set_int('night-light-end-hour', self.night_light_end_hour)
         self.gsettings.set_int('night-light-end-minute', self.night_light_end_minute)
 
-    def apply_settings(self):
+    def get_setting_css(self) -> str:
+        ''' Get CSS for current settings (to append to theme's 'gnome-shell.css' resource) '''
+
+        css = "\n/* 'GDM Settings' App Provided CSS */\n"
+        # Background
+        if self.background_type == "Image":
+            css += "#lockDialogGroup {\n"
+            css += "  background-image: url('file://"+ self.background_image + "');\n"
+            css += "  background-size: cover;\n"
+            css += "}\n"
+        elif self.background_type == "Color":
+            css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
+        # Disable Top Bar Arrows
+        if self.disable_top_bar_arrows:
+            css += "#panel .popup-menu-arrow { width: 0px; }\n"
+        # Disable Top Bar Corners
+        if self.disable_top_bar_rounded_corners:
+            css +=  "#panel .panel-corner {\n"
+            css += f"  -panel-corner-opacity: 0;\n"
+            css +=  "}\n"
+        # Change Top Bar Text Color
+        if self.change_top_bar_text_color:
+            css +=  "#panel .panel-button {\n"
+            css += f"  color: {self.top_bar_text_color};\n"
+            css +=  "}\n"
+        # Change Top Bar Background Color
+        if self.change_top_bar_background_color:
+            css +=  "#panel, #panel.unlock-screen, #panel.login-screen {\n"
+            css += f"  background-color: {self.top_bar_background_color};\n"
+            css +=  "}\n"
+            if not self.disable_top_bar_rounded_corners:
+                css +=  "#panel .panel-corner, #panel.unlock-screen .panel-corner, #panel.login-screen .panel-corner {\n"
+                css += f"  -panel-corner-opacity: 1;\n"
+                css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
+                css +=  "}\n"
+        return css
+
+    def apply_gresource_settings(self):
+        ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
+
+        gresource_utils.auto_backup()
+        makedirs(TempDir, exist_ok=True)
+        shelldir = None
+        if self.shell_theme != "default":
+            shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
+        compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
+        self.command_elevator.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
+
+    def apply_dconf_settings(self):
+        ''' Apply settings that are applied through 'dconf' '''
+
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
         gdm_profile_dir = "/etc/dconf/profile"
         gdm_profile_path = f"{gdm_profile_dir}/gdm"
@@ -477,26 +482,21 @@ class DConfSettings(Common):
 
             print(gdm_conf_contents, file=temp_conf_file)
 
-        self.elevated_commands.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
-        self.elevated_commands.add(f"mv -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
-        self.elevated_commands.add(f"mv -fT '{temp_profile_path}' '{gdm_profile_path}'")
-        self.elevated_commands.add("dconf update")
+        self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
+        self.command_elevator.add(f"mv -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
+        self.command_elevator.add(f"mv -fT '{temp_profile_path}' '{gdm_profile_path}'")
+        self.command_elevator.add("dconf update")
 
-class Settings(GResourceSettings, DConfSettings):
-    def __init__(self):
-        Common.__init__(self)
-        self.load_settings()
-    def load_settings(self):
-        GResourceSettings.load_settings(self)
-        DConfSettings.load_settings(self)
-    def save_settings(self):
-        GResourceSettings.save_settings(self)
-        DConfSettings.save_settings(self)
     def apply_settings(self) -> bool:
-        GResourceSettings.apply_settings(self)
-        DConfSettings.apply_settings(self)
-        if self.elevated_commands.run():
+        ''' Apply all settings '''
+
+        self.apply_gresource_settings()
+        self.apply_dconf_settings()
+        if self.command_elevator.run():
             self.save_settings()
             self.gsettings.set_boolean("never-applied", False)
             return True
         return False
+
+    def cleanup(self):
+        rmtree(path=TempDir, ignore_errors=True)
