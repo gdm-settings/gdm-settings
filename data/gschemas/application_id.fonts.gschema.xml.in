@@ -2,5 +2,33 @@
 <schemalist>
   <schema id="@application_id@.fonts" path="@schema_path@fonts/">
 
+    <key name="font" type="s">
+      <default>"Sans 11"</default>
+    </key>
+
+    <key name="antialiasing" type="s">
+      <default>"Standard"</default>
+      <choices>
+        <choice value="Standard"/>
+        <choice value="Subpixel"/>
+        <choice value="None"/>
+      </choices>
+    </key>
+
+    <key name="hinting" type="s">
+      <default>"Slight"</default>
+      <choices>
+        <choice value="Full"/>
+        <choice value="Medium"/>
+        <choice value="Slight"/>
+        <choice value="None"/>
+      </choices>
+    </key>
+
+    <key name="scaling-factor" type="d">
+      <default>1.0</default>
+      <range min="0.5" max="3"/>
+    </key>
+
   </schema>
 </schemalist>
