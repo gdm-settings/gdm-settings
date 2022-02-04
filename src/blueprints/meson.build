@@ -21,7 +21,7 @@ blueprints = [main_window_blp] + files(
   'misc-page.blp',
 )
 
-custom_target('blueprints',
+custom_target('ui_files',
   input: blueprints,
   output: project_name,
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@INPUT@'],

@@ -342,7 +342,7 @@ class Settings:
         self.time_format = self.top_bar_gsettings.get_string('time-format')
         self.show_seconds = self.top_bar_gsettings.get_boolean('show-seconds')
         # Power
-        self.show_battery_percentage = self.top_bar_gsettings.get_boolean('show-seconds')
+        self.show_battery_percentage = self.top_bar_gsettings.get_boolean('show-battery-percentage')
 
         ### Sound ###
         self.sound_theme = self.sound_gsettings.get_string('sound-theme')
