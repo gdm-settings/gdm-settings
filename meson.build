@@ -2,16 +2,18 @@ project('gdm-settings',
         version: '0.3-alpha',
   meson_version: '>= 0.57.0')
 
+dependency('pygobject-3.0')
+dependency('libadwaita-1')
+dependency('glib-2.0')
+
+subproject('blueprint-compiler')
+
 version = meson.project_version()
 project_name = meson.project_name()
 application_name='Login Manager Settings'
 description = 'A settings app for GNOME\'s Login Manager (GDM)'
 application_id='com.github.realmazharhussain.GdmSettings'
 schema_path = '/com/github/realmazharhussain/GdmSettings/'
-
-dependency('pygobject-3.0')
-dependency('libadwaita-1')
-dependency('glib-2.0')
 
 python = import('python')
 python3 = python.find_installation('python3')
