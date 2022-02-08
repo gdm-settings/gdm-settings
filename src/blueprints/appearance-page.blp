@@ -26,32 +26,32 @@ ScrolledWindow appearance_page_content {
       Adw.PreferencesGroup {
         title: "Background";
 
-        Adw.ComboRow bg_type_comborow {
+        Adw.ComboRow background_type_comborow {
           title: "Type";
           model: StringList { strings ["None", "Image", "Color"] };
 
         }
 
-        Adw.ActionRow bg_image_actionrow {
+        Adw.ActionRow background_image_actionrow {
           title: "Image";
           subtitle: "The image to use as background";
           visible: false;
-          activatable-widget: bg_image_button;
+          activatable-widget: background_image_button;
 
-          Button bg_image_button {
+          Button background_image_button {
             label: "Choose File";
             margin-top: 5;
             margin-bottom: 5;
           }
         }
 
-        Adw.ActionRow bg_color_actionrow {
+        Adw.ActionRow background_color_actionrow {
           title: "Color";
           subtitle: "The color to use as background";
           visible: false;
-          activatable-widget: bg_color_button;
+          activatable-widget: background_color_button;
 
-          ColorButton bg_color_button {
+          ColorButton background_color_button {
             margin-top: 5;
             margin-bottom: 5;
           }

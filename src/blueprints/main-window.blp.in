@@ -13,6 +13,8 @@ menu app_menu {
 }
 
 Adw.ApplicationWindow main_window {
+  title: "@application_name@";
+
   content: Box {
     orientation: vertical;
 
@@ -25,8 +27,8 @@ Adw.ApplicationWindow main_window {
 
     Adw.ToastOverlay main_toast_overlay {
       Paned paned {
-        [start] StackSidebar { stack: stack; }
-        [end]   Stack stack { hexpand: true; width-request: 300; }
+        [start] StackSidebar { stack: page_stack; }
+        [end]   Stack page_stack { hexpand: true; width-request: 300; }
       }
     }
   };
@@ -58,12 +60,24 @@ FileChooserDialog image_chooser {
 
 Adw.Toast apply_failed_toast {
   title: _("Failed to apply settings");
-  timeout: 2.5;
+  timeout: 2;
   priority: high;
 }
 
 Adw.Toast apply_succeeded_toast {
-  title: _("Settings applied");
-  timeout: 2.5;
+  title: _("Settings applied successfully");
+  timeout: 2;
+  priority: high;
+}
+
+Adw.Toast user_settings_imported_toast {
+  title: _("User settings imported");
+  timeout: 1;
+  priority: high;
+}
+
+Adw.Toast settings_reloaded_toast {
+  title: _("Settings reloaded");
+  timeout: 1;
   priority: high;
 }

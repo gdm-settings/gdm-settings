@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <object class="GtkFileChooserDialog" id="image_chooser">
+  <object class="GtkFileChooserDialog" id="background_image_chooser">
     <property name="transient-for">main_window</property>
     <property name="modal">true</property>
 
