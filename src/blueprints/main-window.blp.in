@@ -47,16 +47,18 @@ AboutDialog about_dialog {
   copyright: "Copyright © 2021 Mazhar Hussain";
 }
 
-/*
-FileChooserDialog image_chooser {
+FileChooserDialog background_image_chooser {
   transient-for: main_window;
+  modal: true;
   filter: FileFilter { name: "Images"; mime-types ["image/*"] };
 
-  [action] Button button_cancel { label: "Cancel"; }
-  [action] Button button_select { label: "Select"; }
+  [action response=cancel]
+  Button button_cancel { label: "Cancel"; }
+
+  [action response=ok default]
+  Button button_select { label: "Select"; }
 
 }
-*/
 
 Adw.Toast apply_failed_toast {
   title: _("Failed to apply settings");

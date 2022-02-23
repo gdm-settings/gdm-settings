@@ -29,8 +29,6 @@ custom_target('ui_files',
   install_dir: datadir,
 )
 
-install_data(files('image-chooser.ui'), install_dir: pkgdatadir)
-
 #ui_files = blueprint_compiler.process(blueprints)
 
 #custom_target('ui_files',

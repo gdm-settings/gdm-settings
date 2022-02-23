@@ -123,7 +123,6 @@ class GDM_Settings(Adw.Application, App_Utils):
 
         ui_files = [
             "main-window.ui",
-            "image-chooser.ui",
             "appearance-page.ui",
             "fonts-page.ui",
             "night-light-page.ui",
@@ -270,7 +269,7 @@ class GDM_Settings(Adw.Application, App_Utils):
     def connect_signals(self):
         self.connect_signal("apply_button", "clicked", self.on_apply)
         self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
-        self.connect_signal("background_image_button", "clicked", lambda x,y: widgets.background_image_chooser.present())
+        self.connect_signal("background_image_button", "clicked", lambda x: widgets.background_image_chooser.present())
         self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
 
     def load_settings_to_widgets(self):
