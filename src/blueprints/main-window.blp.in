@@ -19,7 +19,7 @@ Adw.ApplicationWindow main_window {
     orientation: vertical;
 
     Adw.HeaderBar {
-      title-widget: Adw.WindowTitle { title: bind main_window.title sync-create; };
+      title-widget: Adw.WindowTitle { title: bind main_window.title; };
       [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
       [end] Separator { margin-start: 10; }
       [end] Button apply_button { label: "Apply"; styles ["suggested-action"] }

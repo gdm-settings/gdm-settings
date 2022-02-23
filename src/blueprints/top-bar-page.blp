@@ -24,7 +24,7 @@ ScrolledWindow top_bar_page_content {
           [action] Switch top_bar_text_color_switch {
             margin-top: 15;
             margin-bottom: 15;
-            active: bind top_bar_text_color_expanderrow.expanded sync-create bidirectional;
+            active: bind top_bar_text_color_expanderrow.expanded bidirectional;
           }
 
           Adw.ActionRow top_bar_text_color_actionrow {
@@ -42,7 +42,7 @@ ScrolledWindow top_bar_page_content {
 
         Adw.ExpanderRow {
           title: "Change Background Color";
-          expanded: bind top_bar_background_color_switch.active sync-create bidirectional;
+          expanded: bind top_bar_background_color_switch.active bidirectional;
 
           [action] Switch top_bar_background_color_switch {
             margin-top: 15;
