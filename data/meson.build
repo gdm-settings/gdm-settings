@@ -3,7 +3,7 @@ appstream_file = configure_file(
   output: application_id + '.appdata.xml',
   configuration: conf,
   install: true,
-  install_dir: join_paths(get_option('datadir'), 'metainfo')
+  install_dir: datadir / 'metainfo',
 )
 
 appstreamcli = find_program('appstreamcli', required: false)
@@ -18,7 +18,7 @@ desktop_file = configure_file(
   output: application_id + '.desktop',
   configuration: conf,
   install: true,
-  install_dir: join_paths(get_option('datadir'), 'applications')
+  install_dir: datadir / 'applications',
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)

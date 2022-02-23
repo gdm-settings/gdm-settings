@@ -16,7 +16,7 @@ foreach gschema_file: gschema_files
     output: gschema_file.replace('application_id', application_id).replace('.in', ''),
     configuration: conf,
     install: true,
-    install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
+    install_dir: datadir / 'glib-2.0/schemas',
   )
 endforeach
 

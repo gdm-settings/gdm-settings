@@ -31,6 +31,12 @@ custom_target('ui_files',
 
 #ui_files = blueprint_compiler.process(blueprints)
 
+#foreach file: ui_files
+#  install_data(file,
+#    install_dir: datadir / project_name,
+#  )
+#endforeach
+
 #custom_target('ui_files',
 #  input: ui_files,
 #  output: project_name,
