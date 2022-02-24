@@ -12,26 +12,6 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 This app is in an early stage of development (it is mostly feature complete). It may crash frequently.
 
-## Features
-
-- Apply themes
-- Set Image/Color as Background
-- Theme (Top Bar) Tweaks
-  - Disable arrows
-  - Disable rounded corners
-  - Change text color
-  - Change background color & transparency (either both or none)
-- Change icon theme
-- Change cursor theme
-- Change sound theme
-- Night light settings
-- Show/Hide battery percentage
-- Touchpad settings (speed, tap-to-click)
-- Clock settings (show/hide weekday, AM/PM or 24h)
-- Import user/session settings
-
-**Note:** See [Planned Features](#planned-features) for upcoming features
-
 ## How to Install?
 
 ### Manual Installation
@@ -61,6 +41,47 @@ This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/pac
 ### Build-time Dependencies
 
 - Meson
+- Blueprint Compiler
+
+## Features
+
+- Import user/session settings
+- Change Background/Wallpaper (Image/Color)
+- Apply themes
+  - Shell
+  - Icon
+  - Cursor
+  - Sound
+- Font Settings
+  - Font
+  - Antialiasing
+  - Hinting
+  - Scaling
+- Top Bar Settings
+  - Disable arrows
+  - Disable rounded corners
+  - Change text color
+  - Change background color
+  - Show/Hide weekday, seconds, battery percentage
+  - Clock format (AM/PM or 24h)
+- Sound Settings
+  - Raise volume over 100%
+  - Event sounds
+  - Input feedback sounds
+- Touchpad settings
+  - Speed
+  - Tap to Click
+  - Natural Scrolling
+  - Two-finger scrolling
+- Night light settings
+  - Enable/Disable
+  - Automatic/Manual Schedule
+  - Temperature
+- Miscellaneous Settings
+  - Welcome Message
+  - Logo
+  - Disable restart buttons
+  - Disable user list
 
 ## Planned Features
 
