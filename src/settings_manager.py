@@ -350,6 +350,9 @@ class Settings:
         # Appearance
         self.icon_theme = interface_settings.get_string("icon-theme")
         self.cursor_theme = interface_settings.get_string("cursor-theme")
+        if user_theme_schema := Gio.SettingsSchemaSource.get_default().lookup('org.gnome.shell.extensions.user-theme', recursive=True):
+            user_theme_settings = Gio.Settings(schema_id=user_theme_schema.get_id())
+            self.shell_theme = user_theme_settings.get_string('name')
         # Fonts
         self.font = interface_settings.get_string("font-name")
         self.antialiasing = interface_settings.get_string("font-antialiasing")
