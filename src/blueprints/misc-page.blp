@@ -20,10 +20,10 @@ ScrolledWindow misc_page_content {
 
         Adw.ExpanderRow welcome_message_expanderrow {
           title: "Welcome Message";
-          expanded: bind welcome_message_switch.active bidirectional;
+          expanded: bind enable_welcome_message_switch.active bidirectional;
 
           [action]
-          Switch welcome_message_switch {
+          Switch enable_welcome_message_switch {
             margin-top: 15;
             margin-bottom: 15;
           }
@@ -34,10 +34,10 @@ ScrolledWindow misc_page_content {
         Adw.ExpanderRow logo_expanderrow {
           title: "Enable Logo";
           subtitle: "Whether to show a logo below user list";
-          expanded: bind logo_switch.active bidirectional;
+          expanded: bind enable_logo_switch.active bidirectional;
 
           [action]
-          Switch logo_switch {
+          Switch enable_logo_switch {
             margin-top: 15;
             margin-bottom: 15;
           }

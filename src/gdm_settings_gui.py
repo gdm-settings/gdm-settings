@@ -109,6 +109,13 @@ class GDM_Settings(Adw.Application, App_Utils):
           widgets.background_image_button.set_label(image_basename)
         widgets.background_image_chooser.hide()
 
+    def on_logo_chooser_response(self, widget, response):
+        if response == Gtk.ResponseType.OK:
+          image_file = widgets.logo_chooser.get_file()
+          image_basename = image_file.get_basename()
+          widgets.logo_button.set_label(image_basename)
+        widgets.logo_chooser.hide()
+
     ## Other methods ##
 
     def initialize_settings(self):
@@ -198,6 +205,15 @@ class GDM_Settings(Adw.Application, App_Utils):
             "night_light_end_hour_spinbutton",
             "night_light_end_minute_spinbutton",
             "night_light_color_temperature_scale",
+
+            # Widgets from Misc page
+            "enable_logo_switch",
+            "logo_button",
+            "enable_welcome_message_switch",
+            "welcome_message_entry",
+            "disable_restart_buttons_switch",
+            "disable_user_list_switch",
+            "logo_chooser",
         ]
 
         # Initialize Builder
@@ -267,6 +283,8 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
         self.connect_signal("background_image_button", "clicked", lambda x: widgets.background_image_chooser.present())
         self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
+        self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.present())
+        self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
 
     def load_settings_to_widgets(self):
         #### Appearance ####
@@ -393,6 +411,16 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.night_light_end_minute_spinbutton.set_value(self.settings.night_light_end_minute)
         widgets.night_light_color_temperature_scale.set_value(self.settings.night_light_temperature)
 
+        #### Misc ####
+        widgets.disable_restart_buttons_switch.set_active(self.settings.disable_restart_buttons)
+        widgets.disable_user_list_switch.set_active(self.settings.disable_user_list)
+        widgets.enable_welcome_message_switch.set_active(self.settings.enable_welcome_message)
+        widgets.welcome_message_entry.set_text(self.settings.welcome_message)
+        widgets.enable_logo_switch.set_active(self.settings.enable_logo)
+        if self.settings.logo:
+            widgets.logo_button.set_label(path.basename(self.settings.logo))
+            widgets.logo_chooser.set_file(Gio.File.new_for_path(self.settings.logo))
+
     def add_pages_to_page_stack(self):
         self.add_page_to_page_stack("Appearance")
         self.add_page_to_page_stack("Fonts")
@@ -500,6 +528,14 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.settings.night_light_schedule_automatic = False
         if widgets.night_light_schedule_comborow.get_selected() == 0:
             self.settings.night_light_schedule_automatic = True
+
+        #### Misc ####
+        self.set_switch_setting("disable_restart_buttons")
+        self.set_switch_setting("disable_user_list")
+        self.set_switch_setting("enable_logo")
+        self.set_file_chooser_setting("logo")
+        self.set_switch_setting("enable_welcome_message")
+        self.settings.welcome_message = widgets.welcome_message_entry.get_text()
 
 def main():
     app = GDM_Settings()

@@ -345,6 +345,7 @@ class Settings:
         sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
         touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
         night_light_settings = Gio.Settings(schema_id="org.gnome.settings-daemon.plugins.color")
+        login_screen_settings = Gio.Settings(schema_id="org.gnome.login-screen")
 
         # Appearance
         self.icon_theme = interface_settings.get_string("icon-theme")
@@ -388,6 +389,13 @@ class Settings:
         if self.night_light_end_minute == 60:
             self.night_light_end_hour += 1
             self.night_light_end_minute = 0
+        # Login Screen
+        self.enable_welcome_message = login_screen_settings.get_boolean("banner-message-enable")
+        self.welcome_message = login_screen_settings.get_string("banner-message-text")
+        self.logo = login_screen_settings.get_string("logo")
+        self.enable_logo = bool(self.logo)
+        self.disable_restart_buttons = login_screen_settings.get_boolean("disable-restart-buttons")
+        self.disable_user_list = login_screen_settings.get_boolean("disable-user-list")
 
     def __load_value(self, section, key, key_type):
         gsettings = getattr(self, section.replace('-','_') + '_gsettings')
@@ -521,6 +529,15 @@ class Settings:
             gdm_conf_contents += f"night-light-schedule-automatic={str(self.night_light_schedule_automatic).lower()}\n"
             gdm_conf_contents += f"night-light-schedule-from={night_light_schedule_from}\n"
             gdm_conf_contents += f"night-light-schedule-to={night_light_schedule_to}\n"
+            gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#----- Login Screen ----\n"
+            gdm_conf_contents +=  "[org/gnome/login-screen]\n"
+            gdm_conf_contents +=  "#-----------------------\n"
+            gdm_conf_contents += f"logo='{self.logo if self.enable_logo else ''}'\n"
+            gdm_conf_contents += f"banner-message-enable={str(self.enable_welcome_message).lower()}\n"
+            gdm_conf_contents += f"banner-message-text='{self.welcome_message}'\n"
+            gdm_conf_contents += f"disable-restart-buttons={str(self.disable_restart_buttons).lower()}\n"
+            gdm_conf_contents += f"disable-user-list={str(self.disable_user_list).lower()}\n"
 
             print(gdm_conf_contents, file=temp_conf_file)
 

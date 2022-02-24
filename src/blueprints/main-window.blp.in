@@ -53,11 +53,22 @@ FileChooserDialog background_image_chooser {
   filter: FileFilter { name: "Images"; mime-types ["image/*"] };
 
   [action response=cancel]
-  Button button_cancel { label: "Cancel"; }
+  Button background_image_chooser_button_cancel { label: "Cancel"; }
 
   [action response=ok default]
-  Button button_select { label: "Select"; }
+  Button background_image_chooser_button_select { label: "Select"; }
+}
 
+FileChooserDialog logo_chooser {
+  transient-for: main_window;
+  modal: true;
+  filter: FileFilter { name: "Images"; mime-types ["image/*"] };
+
+  [action response=cancel]
+  Button logo_chooser_button_cancel { label: "Cancel"; }
+
+  [action response=ok default]
+  Button logo_chooser_button_select { label: "Select"; }
 }
 
 Adw.Toast apply_failed_toast {
