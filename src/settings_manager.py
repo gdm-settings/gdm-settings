@@ -200,7 +200,7 @@ class GResourceUtils:
             print("restoring default theme from backup ...")
             self.command_elevator.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
 
-    def compile(self, shellDir:str, additional_css:str):
+    def compile(self, shellDir:str, additional_css:str, background_image:str=None):
         """Compile a theme into a GResource file for its use as the GDM theme"""
 
         # Remove temporary directory if already exists
@@ -217,7 +217,10 @@ class GResourceUtils:
             copytree(shellDir, self.TempShellDir, dirs_exist_ok=True)
         # Inject custom-theme identity
         open(path.join(self.TempShellDir, self.CustomThemeIdentity), 'w').close()
-        # Background CSS
+        # Background Image
+        if background_image:
+            copy(src=background_image, dst=path.join(self.TempShellDir, 'background'))
+        # Additional CSS
         with open(f"{self.TempShellDir}/gnome-shell.css", "a") as shell_css:
             print(additional_css, file=shell_css)
             pass
@@ -409,11 +412,11 @@ class Settings:
     def get_setting_css(self) -> str:
         ''' Get CSS for current settings (to append to theme's 'gnome-shell.css' resource) '''
 
-        css = "\n/* 'GDM Settings' App Provided CSS */\n"
+        css = "\n/* 'Login Manager Settings' App Provided CSS */\n"
         ### Background ###
-        if self.background_type == "Image":
+        if self.background_type == "Image" and self.background_image:
             css += "#lockDialogGroup {\n"
-            css += "  background-image: url('file://"+ self.background_image + "');\n"
+            css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
             css += "  background-size: cover;\n"
             css += "}\n"
         elif self.background_type == "Color":
@@ -453,7 +456,10 @@ class Settings:
         shelldir = None
         if self.shell_theme != "default":
             shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
-        compiled_file = gresource_utils.compile(shellDir=shelldir, additional_css=self.get_setting_css())
+        background_image=None
+        if self.background_type == "Image" and self.background_image:
+            background_image = self.background_image
+        compiled_file = gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
         self.command_elevator.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
 
     def apply_dconf_settings(self):
