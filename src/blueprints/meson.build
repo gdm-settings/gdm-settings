@@ -1,5 +1,10 @@
+blueprint_compiler_prog = find_program('blueprint-compiler', required: false)
+if not blueprint_compiler_prog.found()
+  subproject('blueprint-compiler')
+  blueprint_compiler_prog = find_program('blueprint-compiler')
+
 blueprint_compiler = generator(
-  find_program('blueprint-compiler'),
+  blueprint_compiler_prog,
   output: '@BASENAME@.ui', #.replace('.blp', '.ui'),
   arguments: ['compile', '@INPUT@', '--output', '@OUTPUT@'],
 )

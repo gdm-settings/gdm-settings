@@ -6,8 +6,6 @@ dependency('pygobject-3.0')
 dependency('libadwaita-1')
 dependency('glib-2.0')
 
-subproject('blueprint-compiler')
-
 version = meson.project_version()
 project_name = meson.project_name()
 application_name='Login Manager Settings'
