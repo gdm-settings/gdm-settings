@@ -2,6 +2,7 @@ blueprint_compiler_prog = find_program('blueprint-compiler', required: false)
 if not blueprint_compiler_prog.found()
   subproject('blueprint-compiler')
   blueprint_compiler_prog = find_program('blueprint-compiler')
+endif
 
 blueprint_compiler = generator(
   blueprint_compiler_prog,
