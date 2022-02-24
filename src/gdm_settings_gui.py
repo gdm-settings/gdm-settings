@@ -76,7 +76,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.load_settings_to_widgets()
         self.add_pages_to_page_stack()
         self.create_actions()
-        self.set_accels_for_action("quit", ["<Ctrl>Q"])
+        self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.restore_window_state()
         self.add_window(widgets.main_window)
         widgets.main_window.present()
