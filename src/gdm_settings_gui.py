@@ -30,34 +30,30 @@ class App_Utils:
         page.set_name(name)
         page.set_title(title)
 
-    def set_widget_setting(self, name, suffix, method):
-        widget = getattr(widgets, name.removeprefix('change_') + '_' + suffix)
-        value = widget
-        found = True
-        for temp in method.split('.'):
-            if not (value := getattr(value, temp)()):
-                found = False
-                break
-        if found:
-            setattr(self.settings, name, value)
-
     def set_comborow_setting(self, name):
-        self.set_widget_setting(name, 'comborow', 'get_selected_item.get_string')
+        comborow = getattr(widgets, name+'_comborow')
+        setattr(self.settings, name, comborow.get_selected_item().get_string())
 
     def set_switch_setting(self, name):
-        self.set_widget_setting(name, 'switch', 'get_active')
+        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
+        setattr(self.settings, name, switch.get_active())
 
     def set_color_setting(self, name):
-        self.set_widget_setting(name, 'button', 'get_rgba.to_string')
+        color_button = getattr(widgets, name+'_button')
+        setattr(self.settings, name, color_button.get_rgba().to_string())
 
     def set_file_chooser_setting(self, name):
-        self.set_widget_setting(name, 'chooser', 'get_file.get_path')
+        file_chooser = getattr(widgets, name+'_chooser')
+        if file := file_chooser.get_file():
+            setattr(self.settings, name, file.get_path())
 
     def set_font_setting(self, name):
-        self.set_widget_setting(name, 'button', 'get_font')
+        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
+        setattr(self.settings, name, font_button.get_font())
 
     def set_spinbutton_setting(self, name):
-        self.set_widget_setting(name, 'spinbutton', 'get_value')
+        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
+        setattr(self.settings, name, spinbutton.get_value())
 
 class GDM_Settings(Adw.Application, App_Utils):
     def __init__(self):
