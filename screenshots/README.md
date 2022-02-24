@@ -5,3 +5,6 @@
 <img src="screenshot-3.png" width=50%/><img src="screenshot-3-dark.png" width=50%/>
 <img src="screenshot-4.png" width=50%/><img src="screenshot-4-dark.png" width=50%/>
 <img src="screenshot-5.png" width=50%/><img src="screenshot-5-dark.png" width=50%/>
+<img src="screenshot-6.png" width=50%/><img src="screenshot-6-dark.png" width=50%/>
+<img src="screenshot-7.png" width=50%/><img src="screenshot-7-dark.png" width=50%/>
+
