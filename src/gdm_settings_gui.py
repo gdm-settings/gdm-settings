@@ -18,10 +18,10 @@ class App_Utils:
         getattr(widgets, widget).connect(signal, function)
 
     def create_action(self, action_name, function):
-        setattr(widgets, action_name + '_action', Gio.SimpleAction(name=action_name))
-        action = getattr(widgets, action_name + '_action')
+        action = Gio.SimpleAction(name=action_name)
         action.connect("activate", function)
         self.add_action(action)
+        setattr(widgets, action_name+'_action', action)
 
     def add_page_to_page_stack(self, title, name=None):
         name = name or title.lower().replace(" ", "_")
