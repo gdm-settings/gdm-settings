@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
+  <content_rating type="oars-1.1"/>
 
   <id>@application_id@</id>
   <launchable type="desktop-id">@application_id@.desktop</launchable>
@@ -11,16 +12,10 @@
 
   <description>
     <p>
-       Configure GDM to your liking.
-    </p>
-    <p>
-       It can apply theme and background, change cursor theme, icon theme
+       Change GDM Settings; Apply theme and background, change cursor theme, icon theme
        and night light settings, among other things.
     </p>
   </description>
-
-  <icon type="stock">@application_id@</icon>
-  <icon type="remote">https://github.com/realmazharhussain/gdm-settings/raw/main/data/icons/scalable/apps/application_id.svg</icon>
 
   <categories>
     <category>GNOME</category>
@@ -59,7 +54,17 @@
     <screenshot>
       <image>https://github.com/realmazharhussain/gdm-settings/blob/main/screenshots/screenshot-5.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://github.com/realmazharhussain/gdm-settings/blob/main/screenshots/screenshot-6.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://github.com/realmazharhussain/gdm-settings/blob/main/screenshots/screenshot-7.png</image>
+    </screenshot>
   </screenshots>
+
+  <releases>
+    <release version="@version@" date="2022-02-25"/>
+  </releases>
 
   <url type="homepage">https://github.com/realmazharhussain/gdm-settings</url>
   <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
