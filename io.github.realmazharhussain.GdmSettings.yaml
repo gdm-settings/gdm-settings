@@ -4,11 +4,14 @@ runtime-version: master
 sdk: org.gnome.Platform
 command: gdm-settings
 finish-args:
-  - --share=network
   - --share=ipc
-  - --socket=fallback-x11
   - --device=dri
   - --socket=wayland
+  - --socket=fallback-x11
+  - --filesystem=/etc/dconf/db/gdm.d
+  - --filesystem=/etc/dconf/profile/gdm
+  - --filesystem=/usr/share/gnome-shell/gnome-shell-theme.gresource
+  - --filesystem=/usr/share/gnome-shell/gnome-shell-theme.gresource.default
 cleanup:
   - /include
   - /lib/pkgconfig
