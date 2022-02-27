@@ -3,7 +3,7 @@
 from os import environ, path, makedirs
 from subprocess import call
 
-datadir = path.join(prefix, 'share')
+datadir = path.join(environ.get('MESON_INSTALL_DESTDIR_PREFIX', '/usr'), 'share')
 destdir = environ.get('DESTDIR', '')
 
 # Package managers set this so we don't need to run
