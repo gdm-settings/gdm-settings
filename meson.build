@@ -1,6 +1,8 @@
 project('gdm-settings',
         version: '0.3-alpha',
-  meson_version: '>= 0.57.0')
+  meson_version: '>= 0.57.0',
+default_options: ['prefix=/usr'],
+  )
 
 dependency('pygobject-3.0')
 dependency('libadwaita-1')
