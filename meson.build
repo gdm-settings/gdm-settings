@@ -42,3 +42,5 @@ conf.set('datadir',          datadir)
 
 subdir('src')
 subdir('data')
+
+meson.add_install_script('build-aux/meson/postinstall.py')
