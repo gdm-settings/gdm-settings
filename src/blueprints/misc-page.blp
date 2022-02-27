@@ -18,17 +18,24 @@ ScrolledWindow misc_page_content {
       Adw.PreferencesGroup {
         title: "Miscellaneous";
 
-        Adw.ExpanderRow welcome_message_expanderrow {
-          title: "Welcome Message";
-          expanded: bind enable_welcome_message_switch.active bidirectional;
+        Adw.ActionRow {
+          title: "Disable Restart Buttons";
+          activatable-widget: disable_restart_buttons_switch;
 
-          [action]
-          Switch enable_welcome_message_switch {
+          Switch disable_restart_buttons_switch {
             margin-top: 15;
             margin-bottom: 15;
           }
+        }
 
-          Entry welcome_message_entry { }
+        Adw.ActionRow {
+          title: "Disable User List";
+          activatable-widget: disable_user_list_switch;
+
+          Switch disable_user_list_switch {
+            margin-top: 15;
+            margin-bottom: 15;
+          }
         }
 
         Adw.ExpanderRow logo_expanderrow {
@@ -55,24 +62,17 @@ ScrolledWindow misc_page_content {
           }
         }
 
-        Adw.ActionRow {
-          title: "Disable Restart Buttons";
-          activatable-widget: disable_restart_buttons_switch;
+        Adw.ExpanderRow welcome_message_expanderrow {
+          title: "Welcome Message";
+          expanded: bind enable_welcome_message_switch.active bidirectional;
 
-          Switch disable_restart_buttons_switch {
+          [action]
+          Switch enable_welcome_message_switch {
             margin-top: 15;
             margin-bottom: 15;
           }
-        }
 
-        Adw.ActionRow {
-          title: "Disable User List";
-          activatable-widget: disable_user_list_switch;
-
-          Switch disable_user_list_switch {
-            margin-top: 15;
-            margin-bottom: 15;
-          }
+          Entry welcome_message_entry { }
         }
       }
     }
