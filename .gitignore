@@ -1,5 +1,7 @@
 /subprojects/blueprint-compiler
 /*flatpak*/
+/cache/
+/tmp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
