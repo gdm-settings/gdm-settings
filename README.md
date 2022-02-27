@@ -41,7 +41,9 @@ This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/pac
 ### Build-time Dependencies
 
 - Meson
-- Blueprint Compiler
+- Blueprint Compiler (Do not install it manually)
+
+**Note:** Blueprint Compiler will automatically be downloaded and configured for this app
 
 ## Features
 
