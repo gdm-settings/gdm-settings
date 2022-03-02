@@ -19,7 +19,7 @@ This app is in an early stage of development (it is mostly feature complete). It
 0. Make sure all build-time and run-time dependencies are installed
 1. Download and extract this [zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip) (or this [tar.gz file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz))\
    OR\
-   Clone this repository. You can do so with the command `git clone --depth=1 --singe-branch https://github.com/realmazharhussain/gdm-settings`
+   Clone this repository. You can do so with the command `git clone --depth=1 --single-branch https://github.com/realmazharhussain/gdm-settings`
 2. Go to the folder where you extracted/cloned this file/repo
 3. Open your terminal application in that folder
 4. Type `meson build` and press Enter
