@@ -72,7 +72,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.load_settings_to_widgets()
         self.add_pages_to_page_stack()
         self.create_actions()
-        self.set_accels_for_action("app.quit", ["<Ctrl>q"])
+        self.keyboard_shortcuts()
         self.restore_window_state()
         self.add_window(widgets.main_window)
         widgets.main_window.present()
@@ -435,6 +435,12 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.create_action("about", lambda x,y: widgets.about_dialog.present())
         self.create_action("import_user_settings", lambda x,y: self.import_user_settings())
         self.create_action("reload_settings", lambda x,y: self.reload_settings_to_widgets())
+
+    def keyboard_shortcuts(self):
+        self.set_accels_for_action("app.quit", ["<Ctrl>q"])
+        self.set_accels_for_action("app.about", ["<Ctrl>a"])
+        self.set_accels_for_action("app.import_user_settings", ["<Ctrl>i"])
+        self.set_accels_for_action("app.reload_settings", ["<Ctrl>r", "F5"])
 
     def restore_window_state(self):
         # Window Size
