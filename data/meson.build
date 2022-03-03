@@ -6,10 +6,10 @@ appstream_file = configure_file(
   install_dir: datadir / 'metainfo',
 )
 
-appstreamcli = find_program('appstreamcli', required: false)
-if appstreamcli.found()
-  test('Validate appstream file', appstreamcli,
-    args: ['validate', '--no-net', '--pedantic', appstream_file]
+appstream_util = find_program('appstream-util', required: false)
+if appstream_util.found()
+  test('Validate appstream file', appstream_util,
+    args: ['validate', 'validate-relax', '--nonet', appstream_file]
   )
 endif
 
