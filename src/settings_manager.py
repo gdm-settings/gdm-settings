@@ -365,19 +365,19 @@ class Settings:
             self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
             self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
 
-        if sound_settings := self._settings("org.gnome.desktop.sound")
+        if sound_settings := self._settings("org.gnome.desktop.sound"):
             self.sound_theme = sound_settings.get_string("theme-name")
             self.event_sounds = sound_settings.get_boolean("event-sounds")
             self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
             self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
 
-        if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad")
+        if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad"):
             self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
             self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
             self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
             self.touchpad_speed = touchpad_settings.get_double("speed")
 
-        if night_light_settings := self._settings("org.gnome.settings-daemon.plugins.color")
+        if night_light_settings := self._settings("org.gnome.settings-daemon.plugins.color"):
             self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
             self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
             self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
@@ -397,7 +397,7 @@ class Settings:
                 self.night_light_end_hour += 1
                 self.night_light_end_minute = 0
 
-        if login_screen_settings := self._settings("org.gnome.login-screen")
+        if login_screen_settings := self._settings("org.gnome.login-screen"):
             self.enable_welcome_message = login_screen_settings.get_boolean("banner-message-enable")
             self.welcome_message = login_screen_settings.get_string("banner-message-text")
             self.logo = login_screen_settings.get_string("logo")
