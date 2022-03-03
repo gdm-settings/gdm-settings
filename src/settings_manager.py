@@ -338,67 +338,72 @@ class Settings:
         if self.main_gsettings.get_boolean("never-applied"):
             self.load_user_settings()
 
+    def _settings(self, schema_id:str):
+        if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
+            return Gio.Settings(schema_id=schema_id)
+
+
     def load_user_settings(self):
         ''' Load settings from user's session '''
 
-        interface_settings = Gio.Settings(schema_id="org.gnome.desktop.interface")
-        sound_settings = Gio.Settings(schema_id="org.gnome.desktop.sound")
-        touchpad_settings = Gio.Settings(schema_id="org.gnome.desktop.peripherals.touchpad")
-        night_light_settings = Gio.Settings(schema_id="org.gnome.settings-daemon.plugins.color")
-        login_screen_settings = Gio.Settings(schema_id="org.gnome.login-screen")
+
+        if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
+            self.shell_theme = user_theme_settings.get_string('name')
 
         # Appearance
-        self.icon_theme = interface_settings.get_string("icon-theme")
-        self.cursor_theme = interface_settings.get_string("cursor-theme")
-        if user_theme_schema := Gio.SettingsSchemaSource.get_default().lookup('org.gnome.shell.extensions.user-theme', recursive=True):
-            user_theme_settings = Gio.Settings(schema_id=user_theme_schema.get_id())
-            self.shell_theme = user_theme_settings.get_string('name')
-        # Fonts
-        self.font = interface_settings.get_string("font-name")
-        self.antialiasing = interface_settings.get_string("font-antialiasing")
-        self.hinting = interface_settings.get_string("font-hinting")
-        self.scaling_factor = interface_settings.get_double("text-scaling-factor")
-        # Top Bar
-        self.show_weekday = interface_settings.get_boolean("clock-show-weekday")
-        self.time_format = interface_settings.get_string("clock-format")
-        self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
-        self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
-        # Sound
-        self.sound_theme = sound_settings.get_string("theme-name")
-        self.event_sounds = sound_settings.get_boolean("event-sounds")
-        self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
-        self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
-        # Touchpad
-        self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
-        self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
-        self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
-        self.touchpad_speed = touchpad_settings.get_double("speed")
-        # Night Light
-        self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
-        self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
-        self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
+        if interface_settings := self._settings("org.gnome.desktop.interface"):
+            self.icon_theme = interface_settings.get_string("icon-theme")
+            self.cursor_theme = interface_settings.get_string("cursor-theme")
 
-        night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
-        night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+            self.font = interface_settings.get_string("font-name")
+            self.antialiasing = interface_settings.get_string("font-antialiasing")
+            self.hinting = interface_settings.get_string("font-hinting")
+            self.scaling_factor = interface_settings.get_double("text-scaling-factor")
 
-        self.night_light_start_hour = trunc(night_light_schedule_from)
-        self.night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
-        if self.night_light_start_minute == 60:
-            self.night_light_start_hour += 1
-            self.night_light_start_minute = 0
+            self.show_weekday = interface_settings.get_boolean("clock-show-weekday")
+            self.time_format = interface_settings.get_string("clock-format")
+            self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
+            self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
 
-        self.night_light_end_hour = trunc(night_light_schedule_to)
-        self.night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
-        if self.night_light_end_minute == 60:
-            self.night_light_end_hour += 1
-            self.night_light_end_minute = 0
-        # Login Screen
-        self.enable_welcome_message = login_screen_settings.get_boolean("banner-message-enable")
-        self.welcome_message = login_screen_settings.get_string("banner-message-text")
-        self.logo = login_screen_settings.get_string("logo")
-        self.enable_logo = bool(self.logo)
-        self.disable_restart_buttons = login_screen_settings.get_boolean("disable-restart-buttons")
-        self.disable_user_list = login_screen_settings.get_boolean("disable-user-list")
+        if sound_settings := self._settings("org.gnome.desktop.sound")
+            self.sound_theme = sound_settings.get_string("theme-name")
+            self.event_sounds = sound_settings.get_boolean("event-sounds")
+            self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
+            self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
+
+        if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad")
+            self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
+            self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
+            self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
+            self.touchpad_speed = touchpad_settings.get_double("speed")
+
+        if night_light_settings := self._settings("org.gnome.settings-daemon.plugins.color")
+            self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
+            self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
+            self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
+
+            night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
+            night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+
+            self.night_light_start_hour = trunc(night_light_schedule_from)
+            self.night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
+            if self.night_light_start_minute == 60:
+                self.night_light_start_hour += 1
+                self.night_light_start_minute = 0
+
+            self.night_light_end_hour = trunc(night_light_schedule_to)
+            self.night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
+            if self.night_light_end_minute == 60:
+                self.night_light_end_hour += 1
+                self.night_light_end_minute = 0
+
+        if login_screen_settings := self._settings("org.gnome.login-screen")
+            self.enable_welcome_message = login_screen_settings.get_boolean("banner-message-enable")
+            self.welcome_message = login_screen_settings.get_string("banner-message-text")
+            self.logo = login_screen_settings.get_string("logo")
+            self.enable_logo = bool(self.logo)
+            self.disable_restart_buttons = login_screen_settings.get_boolean("disable-restart-buttons")
+            self.disable_user_list = login_screen_settings.get_boolean("disable-user-list")
 
     def __load_value(self, section, key, key_type):
         gsettings = getattr(self, section.replace('-','_') + '_gsettings')
