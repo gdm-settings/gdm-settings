@@ -1,6 +1,6 @@
 project('gdm-settings',
         version: '0.3-alpha',
-  meson_version: '>= 0.57.0',
+  meson_version: '>= 0.58',
 default_options: ['prefix=/usr'],
   )
 
