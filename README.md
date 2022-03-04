@@ -14,36 +14,84 @@ This app is in an early stage of development (it is mostly feature complete). It
 
 ## How to Install?
 
+### Package Installation
+
+#### On Arch/Manjaro
+
+This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper. For example,
+
+````bash
+yay -S gdm-settings
+````
+
+or
+
+```bash
+paru -S gdm-settings
+```
+
+or
+
+```bash
+pamac install gdm-settings
+```
+
 ### Manual Installation
 
-0. Make sure all build-time and run-time dependencies are installed
-1. Download and extract this [zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip) (or this [tar.gz file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz))\
-   OR\
-   Clone this repository. You can do so with the command `git clone --depth=1 --single-branch https://github.com/realmazharhussain/gdm-settings`
-2. Go to the folder where you extracted/cloned this file/repo
-3. Open your terminal application in that folder
-4. Type `meson build` and press Enter
-5. Type `meson install -C build` and press Enter
-5. Type your password and press Enter
+First of all, make sure all build-time and run-time dependencies are installed
 
-### Arch-based distros
+#### Method 1
 
-This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper.
+1. Download and extract this [zip file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.zip) (or this [tar.gz file](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz))
+1. Go to the folder where you extracted that file
+1. Open your terminal application in that folder
+1. Type `meson build` and press Enter
+1. Type `meson install -C build` and press Enter
+1. Type your password and press Enter
+
+#### Method 2
+
+First, make sure git is installed on your system then run the following commands in the terminal
+
+```bash
+git clone --depth=1 --single-branch https://github.com/realmazharhussain/gdm-settings
+cd gdm-settings
+meson build
+meson install -C build
+```
 
 ## Dependencies
 
 ### Run-time Dependencies
 
-- LibAdwaita-1
-- Glib-2 (development version)
-- python-gobject a.k.a PyGObject
+- [LibAdwaita](https://gnome.pages.gitlab.gnome.org/libadwaita)
+- [GLib](https://gitlab.gnome.org/GNOME/glib)
+- [PyGObject](https://pygobject.readthedocs.io)
 
 ### Build-time Dependencies
 
-- Meson
-- Blueprint Compiler (Do not install it manually)
+- [Meson](https://mesonbuild.com) (v0.58 or newer)
+- [Blueprint Compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler) (latest) (Do not install it manually)
 
 **Note:** Blueprint Compiler will automatically be downloaded and configured for this app
+
+### How to install dependencies?
+
+You need to run the following commands in terminal to install the dependencies
+
+#### On Debian/Ubuntu
+
+```bash
+sudo apt install libadwaita-1-dev libglib2.0-dev python-gi-dev #Runtime Dependencies
+sudo apt install meson #Build Dependencies
+```
+
+#### On Arch/Manjaro
+
+```bash
+sudo pacman -S libadwaita glib2 python-gobject #Runtime Dependencies
+sudo pacman -S meson #Build Dependencies
+```
 
 ## Features
 
