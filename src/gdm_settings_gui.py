@@ -133,6 +133,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "top-bar-page.ui",
             "touchpad-page.ui",
             "misc-page.ui",
+            "tools-page.ui",
         ]
 
         widget_list = [
@@ -149,6 +150,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "top_bar_page_content",
             "touchpad_page_content",
             "misc_page_content",
+            "tools_page_content",
             "apply_button",
             "main_toast_overlay",
             "apply_failed_toast",
@@ -429,6 +431,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.add_page_to_page_stack("Touchpad")
         self.add_page_to_page_stack("Night Light")
         self.add_page_to_page_stack("Miscellaneous", "misc")
+        self.add_page_to_page_stack("Tools")
 
     def create_actions(self):
         self.create_action("quit", lambda x,y: self.quit())

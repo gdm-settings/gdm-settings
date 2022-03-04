@@ -1,0 +1,46 @@
+using Gtk 4.0;
+using Adw 1;
+
+ScrolledWindow tools_page_content {
+  propagate-natural-height: true;
+
+  Adw.Clamp {
+    maximum-size: 500;
+    margin-top: 20;
+    margin-bottom: 20;
+    margin-start: 20;
+    margin-end: 20;
+
+    Box {
+      orientation: vertical;
+      spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: "Display";
+        description: "Apply current display settings";
+
+        Button { label: "Apply"; }
+      }
+
+      Adw.PreferencesGroup {
+        title: "Shell Theme";
+        description: "Extract default shell theme";
+
+        Adw.ActionRow {
+          title: "Include Top Bar Tweaks";
+          activatable-widget: include_top_bar_tweaks_switch;
+
+          Switch include_top_bar_tweaks_switch {
+            margin-top: 15;
+            margin-bottom: 15;
+          }
+        }
+
+        Adw.PreferencesRow {
+          Button { label: "Extract"; }
+        }
+      }
+
+    }
+  }
+}

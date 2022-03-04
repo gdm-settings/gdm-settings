@@ -24,6 +24,7 @@
 	     <choice value="top_bar"/>
 	     <choice value="touchpad"/>
 	     <choice value="misc"/>
+	     <choice value="tools"/>
 	   </choices>
 	 </key>
 

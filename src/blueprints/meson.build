@@ -25,6 +25,7 @@ blueprints = [main_window_blp] + files(
   'top-bar-page.blp',
   'touchpad-page.blp',
   'misc-page.blp',
+  'tools-page.blp',
 )
 
 #custom_target('ui_files',
