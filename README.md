@@ -81,6 +81,8 @@ You need to run the following commands in terminal to install the dependencies
 
 #### On Debian/Ubuntu
 
+**Note:** LibAdwaita (libadwaita-1-dev) will only be available in Debian 12 and Ubuntu 22.04 or later
+
 ```bash
 sudo apt install libadwaita-1-dev libglib2.0-dev python-gi-dev #Runtime Dependencies
 sudo apt install meson #Build Dependencies
