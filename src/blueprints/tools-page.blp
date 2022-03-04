@@ -19,7 +19,9 @@ ScrolledWindow tools_page_content {
         title: "Display";
         description: "Apply current display settings";
 
-        Button { label: "Apply"; }
+        Adw.PreferencesRow {
+          Button { label: "Apply"; margin-top: 1; margin-bottom: 1; margin-start: 1; margin-end: 1; }
+        }
       }
 
       Adw.PreferencesGroup {
@@ -37,10 +39,9 @@ ScrolledWindow tools_page_content {
         }
 
         Adw.PreferencesRow {
-          Button { label: "Extract"; }
+          Button { label: "Extract"; margin-top: 1; margin-bottom: 1; margin-start: 1; margin-end: 1; }
         }
       }
-
     }
   }
 }
