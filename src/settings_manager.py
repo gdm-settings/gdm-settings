@@ -164,16 +164,32 @@ class GResourceUtils:
                 open_file.write(content)
         return TempExtractedDir
 
-    def extract_default_theme(self, name:str="default-extracted"):
+    def extract_default_theme(self, target_dir:str=None, apply_tweaks:bool=False):
         """extracts resources of the default theme and puts them in a structure so that
         they can be used as a gnome-shell/GDM theme"""
 
+        target_dir = target_dir or self.ThemesDir
+        target_theme_dir = target_dir + "/default-extracted"
+        target_shell_dir = target_theme_dir + "/gnome-shell"
         source_shell_dir = self.extract_theme(gresource_file=self.get_default())
-        target_theme_dir = f"{self.ThemesDir}/{name}"
-        target_shell_dir = f"{target_theme_dir}/gnome-shell"
-        self.command_elevator.add(f"rm -rf {target_theme_dir}")
-        self.command_elevator.add(f"mkdir -p {target_theme_dir}")
-        self.command_elevator.add(f"mv -T {source_shell_dir} {target_shell_dir}")
+        status = True
+
+        if apply_tweaks:
+            with open(source_shell_dir + "/gnome-shell.css", "a") as shell_css:
+                print(self.get_setting_css(), file=shell_css)
+
+        if run(['test', '-w', target_dir]).returncode == 0:
+            if path.exists(target_theme_dir):
+                rmtree(target_theme_dir)
+            makedirs(target_theme_dir)
+            copytree(source_shell_dir, target_shell_dir)
+        else:
+            self.command_elevator.add(f"rm -rf {target_theme_dir}")
+            self.command_elevator.add(f"mkdir -p {target_theme_dir}")
+            self.command_elevator.add(f"mv -T {source_shell_dir} {target_shell_dir}")
+            status = self.command_elevator.run()
+
+        return status
 
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
@@ -223,7 +239,6 @@ class GResourceUtils:
         # Additional CSS
         with open(f"{self.TempShellDir}/gnome-shell.css", "a") as shell_css:
             print(additional_css, file=shell_css)
-            pass
 
         # Copy gnome-shell.css to gdm.css and gdm3.css
         copy(src=f"{self.TempShellDir}/gnome-shell.css", dst=f"{self.TempShellDir}/gdm.css")
