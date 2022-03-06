@@ -124,6 +124,17 @@ class GDM_Settings(Adw.Application, App_Utils):
             toast.set_title("Failed to apply current display settings")
         widgets.main_toast_overlay.add_toast(toast)
 
+    #def on_extracted_theme_destination_chooser_response(self, widget, response):
+    #    if response == Gtk.ResponseType.OK:
+    #        toast = Adw.Toast(timeout=2, priority="high")
+    #        widgets.main_toast_overlay.add_toast(toast)
+    #        target_dir = widgets.extracted_theme_destination_chooser.get_file().get_path()
+    #        if self.settings.extract_default_theme(target_dir):
+    #            toast.set_title(f"Default theme saved as '{target_dir}/default-extracted'")
+    #        else:
+    #            toast.set_title("Failed to extract default theme")
+    #    widgets.extracted_theme_destination_chooser.hide()
+
     ## Other methods ##
 
     def initialize_settings(self):
@@ -227,6 +238,8 @@ class GDM_Settings(Adw.Application, App_Utils):
 
             # Widgets from Tools page
             "apply_current_display_settings_button",
+            #"extract_shell_theme_button",
+            #"extracted_theme_destination_chooser",
         ]
 
         # Initialize Builder
@@ -302,6 +315,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
 
         self.connect_signal("apply_current_display_settings_button", "clicked", self.on_apply_current_display_settings)
+        #self.connect_signal("extract_shell_theme_button", "clicked",
+        #        lambda x: widgets.extracted_theme_destination_chooser.show()
+        #        )
+        #self.connect_signal("extracted_theme_destination_chooser", "response", self.on_extracted_theme_destination_chooser_response)
 
     def load_settings_to_widgets(self):
         #### Appearance ####

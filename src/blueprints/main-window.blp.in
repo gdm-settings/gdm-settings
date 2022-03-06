@@ -71,6 +71,20 @@ FileChooserDialog logo_chooser {
   Button logo_chooser_button_select { label: "Select"; }
 }
 
+/*
+FileChooserDialog extracted_theme_destination_chooser {
+  transient-for: main_window;
+  modal: true;
+  filter: FileFilter { name: "Directories"; mime-types ["inode/directory"] };
+
+  [action response=cancel]
+  Button extracted_theme_destination_chooser_button_cancel { label: "Cancel"; }
+
+  [action response=ok default]
+  Button extracted_theme_destination_chooser_button_select { label: "Select"; }
+}
+*/
+
 Adw.Toast apply_failed_toast {
   title: _("Failed to apply settings");
   timeout: 2;
