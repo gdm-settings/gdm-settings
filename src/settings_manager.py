@@ -164,19 +164,19 @@ class GResourceUtils:
                 open_file.write(content)
         return TempExtractedDir
 
-    def extract_default_theme(self, target_dir:str=None, apply_tweaks:bool=False):
+    def extract_default_theme(self, target_dir:str=None, additional_css:str="", name:str="default-extracted"):
         """extracts resources of the default theme and puts them in a structure so that
         they can be used as a gnome-shell/GDM theme"""
 
         target_dir = target_dir or self.ThemesDir
-        target_theme_dir = target_dir + "/default-extracted"
+        target_theme_dir = target_dir + "/" + name
         target_shell_dir = target_theme_dir + "/gnome-shell"
         source_shell_dir = self.extract_theme(gresource_file=self.get_default())
         status = True
 
-        if apply_tweaks:
+        if additional_css:
             with open(source_shell_dir + "/gnome-shell.css", "a") as shell_css:
-                print(self.get_setting_css(), file=shell_css)
+                print(additional_css, file=shell_css)
 
         if run(['test', '-w', target_dir]).returncode == 0:
             if path.exists(target_theme_dir):

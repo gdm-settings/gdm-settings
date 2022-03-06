@@ -124,6 +124,17 @@ class GDM_Settings(Adw.Application, App_Utils):
             toast.set_title("Failed to apply current display settings")
         widgets.main_toast_overlay.add_toast(toast)
 
+    def on_extract_shell_theme(self, button):
+        toast = Adw.Toast(timeout=2, priority="high")
+        additional_css = ""
+        if widgets.include_top_bar_tweaks_switch.get_active():
+            additional_css = self.settings.get_setting_css()
+        if settings_manager.gresource_utils.extract_default_theme(additional_css=additional_css):
+            toast.set_title("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'")
+        else:
+            toast.set_title("Failed to extract default theme")
+        widgets.main_toast_overlay.add_toast(toast)
+
     #def on_extracted_theme_destination_chooser_response(self, widget, response):
     #    if response == Gtk.ResponseType.OK:
     #        toast = Adw.Toast(timeout=2, priority="high")
@@ -238,7 +249,8 @@ class GDM_Settings(Adw.Application, App_Utils):
 
             # Widgets from Tools page
             "apply_current_display_settings_button",
-            #"extract_shell_theme_button",
+            "include_top_bar_tweaks_switch",
+            "extract_shell_theme_button",
             #"extracted_theme_destination_chooser",
         ]
 
@@ -315,6 +327,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
 
         self.connect_signal("apply_current_display_settings_button", "clicked", self.on_apply_current_display_settings)
+        self.connect_signal("extract_shell_theme_button", "clicked", self.on_extract_shell_theme)
         #self.connect_signal("extract_shell_theme_button", "clicked",
         #        lambda x: widgets.extracted_theme_destination_chooser.show()
         #        )
