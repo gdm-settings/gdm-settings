@@ -17,31 +17,33 @@ ScrolledWindow tools_page_content {
 
       Adw.PreferencesGroup {
         title: "Display";
-        description: "Apply current display settings";
 
-        Adw.PreferencesRow {
-          Button { label: "Apply"; margin-top: 1; margin-bottom: 1; margin-start: 1; margin-end: 1; }
+        Adw.ActionRow {
+          title: "Apply current display settings";
+          activatable-widget: apply_display_settings_button;
+
+          Button apply_display_settings_button { label: "Apply"; margin-top: 5; margin-bottom: 5; }
         }
       }
 
       Adw.PreferencesGroup {
-        title: "Shell Theme";
-        description: "Extract default shell theme";
+        title: "Default Shell Theme";
 
         Adw.ActionRow {
           title: "Include Top Bar Tweaks";
           activatable-widget: include_top_bar_tweaks_switch;
 
-          Switch include_top_bar_tweaks_switch {
-            margin-top: 15;
-            margin-bottom: 15;
-          }
+          Switch include_top_bar_tweaks_switch { margin-top: 15; margin-bottom: 15; }
         }
 
-        Adw.PreferencesRow {
-          Button { label: "Extract"; margin-top: 1; margin-bottom: 1; margin-start: 1; margin-end: 1; }
+        Adw.ActionRow {
+          title: "Extract default shell theme";
+          activatable-widget: extract_shell_theme_button;
+
+          Button extract_shell_theme_button { label: "Extract"; margin-top: 5; margin-bottom: 5; }
         }
       }
+
     }
   }
 }
