@@ -116,6 +116,14 @@ class GDM_Settings(Adw.Application, App_Utils):
           widgets.logo_button.set_label(image_basename)
         widgets.logo_chooser.hide()
 
+    def on_apply_current_display_settings(self, button):
+        toast = Adw.Toast(timeout=2, priority="high")
+        if self.settings.apply_current_display_settings():
+            toast.set_title("Applied current display settings")
+        else:
+            toast.set_title("Failed to apply current display settings")
+        widgets.main_toast_overlay.add_toast(toast)
+
     ## Other methods ##
 
     def initialize_settings(self):
@@ -216,6 +224,9 @@ class GDM_Settings(Adw.Application, App_Utils):
             "disable_restart_buttons_switch",
             "disable_user_list_switch",
             "logo_chooser",
+
+            # Widgets from Tools page
+            "apply_current_display_settings_button",
         ]
 
         # Initialize Builder
@@ -283,10 +294,14 @@ class GDM_Settings(Adw.Application, App_Utils):
     def connect_signals(self):
         self.connect_signal("apply_button", "clicked", self.on_apply)
         self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
-        self.connect_signal("background_image_button", "clicked", lambda x: widgets.background_image_chooser.present())
+        self.connect_signal("background_image_button", "clicked",
+                lambda x: widgets.background_image_chooser.present()
+                )
         self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
         self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.present())
         self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
+
+        self.connect_signal("apply_current_display_settings_button", "clicked", self.on_apply_current_display_settings)
 
     def load_settings_to_widgets(self):
         #### Appearance ####
