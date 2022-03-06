@@ -7,21 +7,21 @@
     </key>
 
     <key name="antialiasing" type="s">
-      <default>"Standard"</default>
+      <default>"grayscale"</default>
       <choices>
-        <choice value="Standard"/>
-        <choice value="Subpixel"/>
-        <choice value="None"/>
+        <choice value="grayscale"/>
+        <choice value="rgba"/>
+        <choice value="none"/>
       </choices>
     </key>
 
     <key name="hinting" type="s">
-      <default>"Slight"</default>
+      <default>"slight"</default>
       <choices>
-        <choice value="Full"/>
-        <choice value="Medium"/>
-        <choice value="Slight"/>
-        <choice value="None"/>
+        <choice value="full"/>
+        <choice value="medium"/>
+        <choice value="slight"/>
+        <choice value="none"/>
       </choices>
     </key>
 

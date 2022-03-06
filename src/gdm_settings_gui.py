@@ -369,19 +369,19 @@ class GDM_Settings(Adw.Application, App_Utils):
 
         #### Fonts ####
         widgets.font_button.set_font(self.settings.font)
-        if self.settings.antialiasing == 'Standard':
+        if self.settings.antialiasing == 'grayscale':
             widgets.antialiasing_comborow.set_selected(0)
-        elif self.settings.antialiasing == 'Subpixel':
+        elif self.settings.antialiasing == 'rgba':
             widgets.antialiasing_comborow.set_selected(1)
-        elif self.settings.antialiasing == 'None':
+        elif self.settings.antialiasing == 'none':
             widgets.antialiasing_comborow.set_selected(3)
-        if self.settings.hinting == 'Full':
+        if self.settings.hinting == 'full':
             widgets.hinting_comborow.set_selected(0)
-        elif self.settings.hinting == 'Medium':
+        elif self.settings.hinting == 'medium':
             widgets.hinting_comborow.set_selected(1)
-        elif self.settings.hinting == 'Slight':
+        elif self.settings.hinting == 'slight':
             widgets.hinting_comborow.set_selected(2)
-        elif self.settings.hinting == 'None':
+        elif self.settings.hinting == 'none':
             widgets.hinting_comborow.set_selected(3)
         widgets.scaling_factor_spinbutton.set_value(self.settings.scaling_factor)
 
@@ -538,9 +538,25 @@ class GDM_Settings(Adw.Application, App_Utils):
 
         ## Fonts ##
         self.set_font_setting("font")
-        self.set_comborow_setting("antialiasing")
-        self.set_comborow_setting("hinting")
         self.set_spinbutton_setting("scaling_factor")
+
+        antialiasing = widgets.antialiasing_comborow.get_selected()
+        if antialiasing == 0:
+            self.settings.antialiasing = 'grayscale'
+        elif antialiasing == 1:
+            self.settings.antialiasing = 'rgba'
+        elif antialiasing == 2:
+            self.settings.antialiasing = 'none'
+
+        hinting = widgets.hinting_comborow.get_selected()
+        if hinting == 0:
+            self.settings.hinting = 'full'
+        elif hinting == 1:
+            self.settings.hinting = 'medium'
+        elif hinting == 2:
+            self.settings.hinting = 'slight'
+        elif hinting == 3:
+            self.settings.hinting = 'none'
 
         ## Tob Bar ##
         # Tweaks
