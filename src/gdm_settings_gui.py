@@ -470,12 +470,14 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.create_action("about", lambda x,y: widgets.about_dialog.present())
         self.create_action("import_user_settings", lambda x,y: self.import_user_settings())
         self.create_action("reload_settings", lambda x,y: self.reload_settings_to_widgets())
+        self.create_action("reset_settings", lambda x,y: self.reset_settings())
 
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.about", ["<Ctrl>a"])
         self.set_accels_for_action("app.import_user_settings", ["<Ctrl>i"])
-        self.set_accels_for_action("app.reload_settings", ["<Ctrl>r", "F5"])
+        self.set_accels_for_action("app.reload_settings", ["<Ctrl>l", "F5"])
+        self.set_accels_for_action("app.reset_settings", ["<Ctrl>r"])
 
     def restore_window_state(self):
         # Window Size
@@ -514,6 +516,16 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.settings.load_user_settings()
         self.load_settings_to_widgets()
         widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
+
+    def reset_settings(self):
+        toast = Adw.Toast(timeout=2, priority="high",
+                          title="Failed to reset settings")
+
+        if self.settings.reset_settings():
+            self.load_settings_to_widgets()
+            toast.set_title("Reset settings successfully")
+
+        widgets.main_toast_overlay.add_toast(toast)
 
     def set_settings(self):
         ## Appearance ##

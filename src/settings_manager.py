@@ -430,6 +430,10 @@ class Settings:
         set_value = getattr(gsettings, 'set_' + key_type)
         set_value(key, getattr(self, key.replace('-','_')))
 
+    def __reset_value(self, section, key, key_type):
+        gsettings = getattr(self, section.replace('-','_') + '_gsettings')
+        gsettings.reset(key)
+
     def load_from_gsettings(self):
         ''' Load settings from this app's GSettings '''
         for key_item in self.__key_list:
@@ -583,9 +587,27 @@ class Settings:
     def apply_current_display_settings(self) -> bool:
         ''' Apply current display settings '''
 
-        self.command_elevator.add("eval install -D ~{$(logname),gdm}/.config/monitors.xml")
+        self.command_elevator.add("eval install -Dm644 ~{$(logname),gdm}/.config/monitors.xml")
         self.command_elevator.add("chown gdm: ~gdm/.config/monitors.xml")
         return self.command_elevator.run()
+
+    def reset_settings(self) -> bool:
+        status = False
+
+        if path.exists(gresource_utils.GdmGresourceAutoBackup):
+            self.command_elevator.add(f"mv -f {gresource_utils.GdmGresourceAutoBackup} {gresource_utils.GdmGresourceFile}")
+        self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
+        self.command_elevator.add("dconf update")
+
+        if self.command_elevator.run():
+            for key_item in self.__key_list:
+                self.__reset_value(**key_item)
+            self.main_gsettings.reset("never-applied")
+
+            self.load_settings()
+            status = True
+
+        return status
 
     def cleanup(self):
         rmtree(path=TempDir, ignore_errors=True)

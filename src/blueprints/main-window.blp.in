@@ -3,8 +3,9 @@ using Adw 1;
 
 menu app_menu {
   section {
-    item (_("Reload settings"), "app.reload_settings")
     item (_("Import user settings"), "app.import_user_settings")
+    item (_("Reload settings"), "app.reload_settings")
+    item (_("Reset settings"), "app.reset_settings")
   }
   section {
     item (_("About"), "app.about")
