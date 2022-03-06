@@ -565,5 +565,12 @@ class Settings:
             return True
         return False
 
+    def apply_current_display_settings(self) -> bool:
+        ''' Apply current display settings '''
+
+        self.command_elevator.add("eval install -D ~{$(logname),gdm}/.config/monitors.xml")
+        self.command_elevator.add("chown gdm: ~gdm/.config/monitors.xml")
+        return self.command_elevator.run()
+
     def cleanup(self):
         rmtree(path=TempDir, ignore_errors=True)
