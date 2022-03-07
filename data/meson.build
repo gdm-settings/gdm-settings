@@ -1,7 +1,13 @@
-appstream_file = configure_file(
+_appstream_file = configure_file(
   input:  'application_id.appdata.xml.in',
-  output: application_id + '.appdata.xml',
+  output: '@BASENAME@',
   configuration: conf,
+)
+
+appstream_file = i18n.merge_file(
+  input: _appstream_file,
+  output: application_id + '.appdata.xml',
+  po_dir: '../po',
   install: true,
   install_dir: datadir / 'metainfo',
 )
@@ -13,10 +19,17 @@ if appstream_util.found()
   )
 endif
 
-desktop_file = configure_file(
+_desktop_file = configure_file(
   input:  'application_id.desktop.in',
-  output: application_id + '.desktop',
+  output: '@BASENAME@',
   configuration: conf,
+)
+
+desktop_file = i18n.merge_file(
+  input: _desktop_file,
+  output: application_id + '.desktop',
+  type: 'desktop',
+  po_dir: '../po',
   install: true,
   install_dir: datadir / 'applications',
 )

@@ -40,6 +40,10 @@ conf.set('py_proj_dir',      py_proj_dir)
 conf.set('bindir',           bindir)
 conf.set('datadir',          datadir)
 
-subdir('src')
+i18n = import('i18n')
+
 subdir('data')
+subdir('src')
+subdir('po')
+
 subdir('build-aux')
