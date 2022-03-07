@@ -128,6 +128,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         toast = Adw.Toast(timeout=2, priority="high")
         additional_css = ""
         if widgets.include_top_bar_tweaks_switch.get_active():
+            self.set_settings()
             additional_css = self.settings.get_setting_css()
         if settings_manager.gresource_utils.extract_default_theme(additional_css=additional_css):
             toast.set_title("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'")
