@@ -7,6 +7,7 @@ gschema_files = [
   'application_id.sound.gschema.xml.in',
   'application_id.top-bar.gschema.xml.in',
   'application_id.touchpad.gschema.xml.in',
+  'application_id.tools.gschema.xml.in',
   'application_id.window-state.gschema.xml.in',
   ]
 

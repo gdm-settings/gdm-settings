@@ -66,6 +66,7 @@ class GDM_Settings(Adw.Application, App_Utils):
     def on_activate(self, app):
         self.initialize_settings()
         self.get_widgets()
+        self.bind_to_gsettings()
         self.set_widget_properties()
         self.load_theme_lists()
         self.connect_signals()
@@ -266,6 +267,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         # Get Widgets from builder ####
         for widget in widget_list:
             setattr(widgets, widget, self.builder.get_object(widget))
+
+    def bind_to_gsettings(self):
+        tools_gsettings = Gio.Settings(schema_id=f"{application_id}.tools")
+        tools_gsettings.bind('top-bar-tweaks', widgets.include_top_bar_tweaks_switch, 'active', Gio.SettingsBindFlags.DEFAULT)
 
     def set_widget_properties(self):
         # Paned
