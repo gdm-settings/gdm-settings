@@ -1,3 +1,14 @@
 #!/usr/bin/env python3
+import os
+import sys
+import gettext
+
+APPDIR = os.environ.get('APPDIR', '')             # required for AppImage
+py_modules_dir = APPDIR + '@py_modules_dir@'
+localedir = APPDIR + '@localedir@'
+
+sys.path.insert(1, py_modules_dir)
+gettext.install('@project_name@', localedir)
+
 from @py_module_name@ import gdm_settings_gui
 gdm_settings_gui.main()
