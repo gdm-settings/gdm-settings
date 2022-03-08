@@ -18,7 +18,7 @@ This app is in an early stage of development (it is mostly feature complete). It
 
 #### On Arch/Manjaro
 
-This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper. For example,
+This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git) (recommended). You can install it using your favorite AUR helper. For example,
 
 ````bash
 yay -S gdm-settings-git
