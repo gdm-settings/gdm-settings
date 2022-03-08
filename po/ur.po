@@ -1,0 +1,55 @@
+# Urdu Translation.
+# Copyright (C) 2022 Mazhar Hussain
+# This file is distributed under the same license as the gdm-settings package.
+# Mazhar Hussain <mmazharhussainkgb1145@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-08 23:15+0500\n"
+"PO-Revision-Date: 2022-03-08 23:13+0500\n"
+"Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
+"Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 41.0\n"
+
+#: ../src/blueprints/main-window.blp.in:6
+msgid "Refresh"
+msgstr "ریفریش"
+
+#: ../src/blueprints/main-window.blp.in:7
+msgid "Import user settings"
+msgstr "یوزر کی سیٹنگز امپورٹ کریں"
+
+#: ../src/blueprints/main-window.blp.in:8
+msgid "Reset settings"
+msgstr "سیٹنگز کو ریسیٹ کریں"
+
+#: ../src/blueprints/main-window.blp.in:11
+msgid "About"
+msgstr "تفصیلات"
+
+#: ../src/blueprints/main-window.blp.in:12
+msgid "Quit"
+msgstr "بند کریں"
+
+#: ../src/blueprints/main-window.blp.in:90
+msgid "Failed to apply settings"
+msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
+
+#: ../src/blueprints/main-window.blp.in:96
+msgid "Settings applied successfully"
+msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+
+#: ../src/blueprints/main-window.blp.in:102
+msgid "User settings imported"
+msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
+
+#: ../src/blueprints/main-window.blp.in:108
+msgid "Settings reloaded"
+msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
