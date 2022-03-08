@@ -21,20 +21,22 @@ This app is in an early stage of development (it is mostly feature complete). It
 This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git). You can install it using your favorite AUR helper. For example,
 
 ````bash
-yay -S gdm-settings
+yay -S gdm-settings-git
 ````
 
 or
 
 ```bash
-paru -S gdm-settings
+paru -S gdm-settings-git
 ```
 
 or
 
 ```bash
-pamac install gdm-settings
+pamac install gdm-settings-git
 ```
+
+**Note:**  I recommend installing `gdm-settings-git` instead of regular `gdm-settings` package because in this stage of development, `gdm-settings-git`, having new fixes included, may have fewer issues (relatively).
 
 ### Manual Installation
 
