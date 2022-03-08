@@ -493,10 +493,7 @@ class GDM_Settings(Adw.Application, App_Utils):
 
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
-        self.set_accels_for_action("app.about", ["<Ctrl>a"])
-        self.set_accels_for_action("app.import_user_settings", ["<Ctrl>i"])
-        self.set_accels_for_action("app.reload_settings", ["<Ctrl>l", "F5"])
-        self.set_accels_for_action("app.reset_settings", ["<Ctrl>r"])
+        self.set_accels_for_action("app.reload_settings", ["<Ctrl>r", "F5"])
 
     def restore_window_state(self):
         # Window Size
