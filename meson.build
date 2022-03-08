@@ -23,6 +23,7 @@ py_proj_dir = py_modules_dir / py_module_name
 
 prefix = get_option('prefix')
 bindir = get_option('bindir')
+localedir = prefix / get_option('localedir')
 datadir = prefix / get_option('datadir')
 pkgdatadir = datadir / meson.project_name()
 
@@ -39,6 +40,7 @@ conf.set('py_module_name',   py_module_name)
 conf.set('py_proj_dir',      py_proj_dir)
 conf.set('bindir',           bindir)
 conf.set('datadir',          datadir)
+conf.set('localedir',        localedir)
 
 i18n = import('i18n')
 
