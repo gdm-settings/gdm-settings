@@ -191,6 +191,11 @@ class GResourceUtils:
 
         return status
 
+    def _extract_default_pure_theme(self):
+        makedirs(TempDir, exist_ok=True)
+        self.extract_default_theme(target_dir=TempDir, name='default-pure')
+        self.command_elevator.add(f"mv -t {self.ThemesDir} {TempDir}/default-pure")
+
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
         for its use as the 'default' theme"""
@@ -199,6 +204,9 @@ class GResourceUtils:
         if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
             print("saving default theme ...")
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
+            self._extract_default_pure_theme()
+        elif not path.exists(self.ThemesDir + '/default-pure'):
+            self._extract_default_pure_theme()
 
     def backup_update(self):
         """update backup of the default theme's GResource file on demand
@@ -503,6 +511,7 @@ class Settings:
 
         gresource_utils.auto_backup()
         makedirs(TempDir, exist_ok=True)
+
         shelldir = None
         if self.shell_theme != "default":
             shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
@@ -593,10 +602,22 @@ class Settings:
 
         self.apply_gresource_settings()
         self.apply_dconf_settings()
+
         if self.command_elevator.run():
+            # When we change GDM shell theme it becomes the 'default' theme but for the users
+            # who didn't want to change shell theme for their session, we need to set it to a
+            # pure/original version of the default shell theme
+            # Note: We don't want to change user's shell theme if user set it explicitly to
+            # 'default' in order to match their GDM theme
+            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
+                if user_theme_settings.get_string('name') == '':
+                    if self.main_gsettings.get_boolean("never-applied"):
+                        user_theme_settings.set_string('name', 'default-pure')
+
             self.save_settings()
             self.main_gsettings.set_boolean("never-applied", False)
             return True
+
         return False
 
     def apply_current_display_settings(self) -> bool:
