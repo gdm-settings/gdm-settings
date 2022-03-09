@@ -3,7 +3,7 @@
   <schema id="@application_id@.tools" path="@schema_path@tools/">
 
     <key name="top-bar-tweaks" type="b">
-      <default>false</default>
+      <default>true</default>
       <summary>
          Whether to apply top bar tweaks to extracted theme
       </summary>
