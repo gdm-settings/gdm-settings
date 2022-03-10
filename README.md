@@ -11,7 +11,7 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 ## Important Note! (Alpha-Stage Software)
 
-This app is in an early stage of development (it is mostly feature complete). It may crash frequently.
+This app is in an early stage of development (but mostly feature complete). There may be some weirdness here and there.
 
 ## How to Install?
 
@@ -55,7 +55,7 @@ First of all, make sure all build-time and run-time dependencies are installed
 First, make sure git is installed on your system then run the following commands in the terminal
 
 ```bash
-git clone --depth=1 --single-branch https://github.com/realmazharhussain/gdm-settings
+git clone --depth=1 https://github.com/realmazharhussain/gdm-settings
 cd gdm-settings
 meson build
 meson install -C build
