@@ -22,3 +22,4 @@ src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
 src/blueprints/touchpad-page.blp
 src/gdm_settings_gui.py
+src/settings_manager.py
