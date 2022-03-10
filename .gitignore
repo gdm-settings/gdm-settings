@@ -2,6 +2,7 @@
 /*flatpak*/
 /cache/
 /tmp/
+*.pot
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
