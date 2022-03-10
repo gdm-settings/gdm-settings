@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.1\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-10 21:57+0500\n"
-"PO-Revision-Date: 2022-03-10 14:39+0500\n"
+"Project-Id-Version: gdm-settings 0.3\n"
+"Report-Msgid-Bugs-To: https://github.com/realmazharhussain/gdm-settings\n"
+"POT-Creation-Date: 2022-03-10 22:09+0500\n"
+"PO-Revision-Date: 2022-03-10 22:14+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
 "Language: ur\n"
@@ -77,44 +77,48 @@ msgstr "ڈسپلے"
 msgid "Apply current display settings"
 msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 
-#: ../src/blueprints/display-page.blp:25
+#: ../src/blueprints/display-page.blp:23
+msgid "Resolution, refresh rate, fractional sclaing, monitor positions, etc"
+msgstr "ریزولوشن، ریفریش ریٹ، فریکشنل سکیلنگ، مانیٹرز کی پوزیشن، وغیرہ"
+
+#: ../src/blueprints/display-page.blp:26
 #: ../src/blueprints/main-window.blp.in:26
 msgid "Apply"
 msgstr "اپلائی"
 
-#: ../src/blueprints/display-page.blp:30
+#: ../src/blueprints/display-page.blp:31
 msgid "Night Light"
 msgstr "رات کی روشنی"
 
-#: ../src/blueprints/display-page.blp:33
+#: ../src/blueprints/display-page.blp:34
 msgid "Enable"
 msgstr "دکھائیں"
 
-#: ../src/blueprints/display-page.blp:43
+#: ../src/blueprints/display-page.blp:44
 msgid "Schedule"
 msgstr "شیڈول"
 
-#: ../src/blueprints/display-page.blp:44
+#: ../src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
 msgstr "صبح سے شام"
 
-#: ../src/blueprints/display-page.blp:44
+#: ../src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
 msgstr "اپنا شیڈول"
 
-#: ../src/blueprints/display-page.blp:48
+#: ../src/blueprints/display-page.blp:49
 msgid "Times"
 msgstr "اوکات"
 
-#: ../src/blueprints/display-page.blp:50
+#: ../src/blueprints/display-page.blp:51
 msgid "From"
 msgstr "شروع"
 
-#: ../src/blueprints/display-page.blp:70
+#: ../src/blueprints/display-page.blp:71
 msgid "To"
 msgstr "ختم"
 
-#: ../src/blueprints/display-page.blp:90
+#: ../src/blueprints/display-page.blp:91
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
