@@ -194,6 +194,7 @@ class GResourceUtils:
     def _extract_default_pure_theme(self):
         makedirs(TempDir, exist_ok=True)
         self.extract_default_theme(target_dir=TempDir, name='default-pure')
+        self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
         self.command_elevator.add(f"mv -t {self.ThemesDir} {TempDir}/default-pure")
 
     def auto_backup(self):
