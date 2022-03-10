@@ -453,7 +453,7 @@ class Settings:
         for key_item in self.__key_list:
             self.__save_value(**key_item)
 
-    def get_setting_css(self, target:str='login') -> str:
+    def get_setting_css(self) -> str:
         ''' Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)
 
             target: either 'login' or 'session'
@@ -470,37 +470,35 @@ class Settings:
             css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
 
         ### Top Bar ###
-        def select_elem(elem:str) -> str:
-            if target == 'login':
-                return f"#panel.login-screen {elem}, #panel.unlock-screen {elem}"
-            elif target == 'session':
-                return f"#panel {elem}"
+        def select_elem(elem:str='') -> str:
+            if elem:
+                return f"#panel .{elem}, #panel.login-screen .{elem}, #panel.unlock-screen .{elem}"
             else:
-                raise ValueError(f"wrong value for target. allowed values are 'login' and 'session' only")
+                return f"#panel, #panel.login-screen, #panel.unlock-screen"
 
         # Arrows
         if self.disable_top_bar_arrows:
-            css += select_elem(".popup-menu-arrow") + " { width: 0px; }\n"
+            css += select_elem("popup-menu-arrow") + " { width: 0px; }\n"
         # Rounded Corners
         if self.disable_top_bar_rounded_corners:
-            css +=  select_elem(".panel-corner")
+            css +=  select_elem("panel-corner")
             css +=  " {\n"
             css += f"  -panel-corner-opacity: 0;\n"
             css +=  "}\n"
         # Text Color
         if self.change_top_bar_text_color:
-            css +=  select_elem('.panel-button')
+            css +=  select_elem('panel-button')
             css +=  " {\n"
             css += f"  color: {self.top_bar_text_color};\n"
             css +=  "}\n"
         # Background Color
         if self.change_top_bar_background_color:
-            css +=  select_elem('')
-            css +=  "{\n"
+            css +=  select_elem()
+            css +=  " {\n"
             css += f"  background-color: {self.top_bar_background_color};\n"
             css +=  "}\n"
             if not self.disable_top_bar_rounded_corners:
-                css +=  select_elem(".panel-corner")
+                css +=  select_elem("panel-corner")
                 css +=  " {\n"
                 css += f"  -panel-corner-opacity: 1;\n"
                 css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
