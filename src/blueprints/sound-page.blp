@@ -16,13 +16,13 @@ ScrolledWindow sound_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Sound";
+        title: _("Sound");
 
-        Adw.ComboRow sound_theme_comborow { title: "Theme"; }
+        Adw.ComboRow sound_theme_comborow { title: _("Theme"); }
 
         Adw.ActionRow {
-          title: "Over Amplification";
-          subtitle: "Allow raising volume above 100%";
+          title: _("Over Amplification");
+          subtitle: _("Allow raising volume above 100%");
           activatable-widget: over_amplification_switch;
 
           Switch over_amplification_switch {
@@ -32,7 +32,7 @@ ScrolledWindow sound_page_content {
         }
 
         Adw.ActionRow {
-          title: "Event Sounds";
+          title: _("Event Sounds");
           activatable-widget: event_sounds_switch;
 
           Switch event_sounds_switch {
@@ -42,7 +42,7 @@ ScrolledWindow sound_page_content {
         }
 
         Adw.ActionRow {
-          title: "Input Feedback Sounds";
+          title: _("Input Feedback Sounds");
           activatable-widget: feedback_sounds_switch;
 
           Switch feedback_sounds_switch {

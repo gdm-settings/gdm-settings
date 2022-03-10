@@ -16,38 +16,38 @@ ScrolledWindow appearance_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Themes";
+        title: _("Themes");
 
-        Adw.ComboRow shell_theme_comborow { title: "Shell"; }
-        Adw.ComboRow icon_theme_comborow { title: "Icons"; }
-        Adw.ComboRow cursor_theme_comborow { title: "Cursor"; }
+        Adw.ComboRow shell_theme_comborow { title: _("Shell"); }
+        Adw.ComboRow icon_theme_comborow { title: _("Icons"); }
+        Adw.ComboRow cursor_theme_comborow { title: _("Cursor"); }
       }
 
       Adw.PreferencesGroup {
-        title: "Background";
+        title: _("Background");
 
         Adw.ComboRow background_type_comborow {
-          title: "Type";
-          model: StringList { strings ["None", "Image", "Color"] };
+          title: _("Type");
+          model: StringList { strings [_("None"), _("Image"), _("Color")] };
 
         }
 
         Adw.ActionRow background_image_actionrow {
-          title: "Image";
-          subtitle: "The image to use as background";
+          title: _("Image");
+          subtitle: _("The image to use as background");
           visible: false;
           activatable-widget: background_image_button;
 
           Button background_image_button {
-            label: "Choose File";
+            label: _("Choose File");
             margin-top: 5;
             margin-bottom: 5;
           }
         }
 
         Adw.ActionRow background_color_actionrow {
-          title: "Color";
-          subtitle: "The color to use as background";
+          title: _("Color");
+          subtitle: _("The color to use as background");
           visible: false;
           activatable-widget: background_color_button;
 

@@ -120,9 +120,9 @@ class GDM_Settings(Adw.Application, App_Utils):
     def on_apply_current_display_settings(self, button):
         toast = Adw.Toast(timeout=2, priority="high")
         if self.settings.apply_current_display_settings():
-            toast.set_title("Applied current display settings")
+            toast.set_title(_("Applied current display settings"))
         else:
-            toast.set_title("Failed to apply current display settings")
+            toast.set_title(_("Failed to apply current display settings"))
         widgets.main_toast_overlay.add_toast(toast)
 
     def on_extract_shell_theme(self, button):
@@ -132,9 +132,9 @@ class GDM_Settings(Adw.Application, App_Utils):
             self.set_settings()
             additional_css = self.settings.get_setting_css()
         if settings_manager.gresource_utils.extract_default_theme(additional_css=additional_css):
-            toast.set_title("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'")
+            toast.set_title(_("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"))
         else:
-            toast.set_title("Failed to extract default theme")
+            toast.set_title(_("Failed to extract default theme"))
         widgets.main_toast_overlay.add_toast(toast)
 
     #def on_extracted_theme_destination_chooser_response(self, widget, response):
@@ -143,9 +143,9 @@ class GDM_Settings(Adw.Application, App_Utils):
     #        widgets.main_toast_overlay.add_toast(toast)
     #        target_dir = widgets.extracted_theme_destination_chooser.get_file().get_path()
     #        if self.settings.extract_default_theme(target_dir):
-    #            toast.set_title(f"Default theme saved as '{target_dir}/default-extracted'")
+    #            toast.set_title(_(f"Default theme saved as '{target_dir}/default-extracted'"))
     #        else:
-    #            toast.set_title("Failed to extract default theme")
+    #            toast.set_title(_("Failed to extract default theme"))
     #    widgets.extracted_theme_destination_chooser.hide()
 
     ## Other methods ##
@@ -277,9 +277,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.paned.set_shrink_start_child(False)
         widgets.paned.set_shrink_end_child(False)
         # About Dialog
-        widgets.about_dialog.set_authors(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
-        widgets.about_dialog.set_artists(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
-        widgets.about_dialog.set_documenters(["Mazhar Hussain <mmazharhussainkgb1145@gmail.com>"])
+        dev_mazhar_hussain = _("Mazhar Hussain") + " <mmazharhussainkgb1145@gmail.com>"
+        widgets.about_dialog.set_authors([dev_mazhar_hussain])
+        widgets.about_dialog.set_artists([dev_mazhar_hussain])
+        widgets.about_dialog.set_documenters([dev_mazhar_hussain])
         # Font Scaling Factor SpinButton
         widgets.scaling_factor_spinbutton.set_range(0.5, 3)
         widgets.scaling_factor_spinbutton.set_increments(0.1,0.5)
@@ -475,14 +476,14 @@ class GDM_Settings(Adw.Application, App_Utils):
             widgets.logo_chooser.set_file(Gio.File.new_for_path(self.settings.logo))
 
     def add_pages_to_page_stack(self):
-        self.add_page_to_page_stack("Appearance")
-        self.add_page_to_page_stack("Fonts")
-        self.add_page_to_page_stack("Top Bar")
-        self.add_page_to_page_stack("Sound")
-        self.add_page_to_page_stack("Touchpad")
-        self.add_page_to_page_stack("Night Light")
-        self.add_page_to_page_stack("Miscellaneous", "misc")
-        self.add_page_to_page_stack("Tools")
+        self.add_page_to_page_stack(_("Appearance"), 'appearance')
+        self.add_page_to_page_stack(_("Fonts"), 'fonts')
+        self.add_page_to_page_stack(_("Top Bar"), 'top_bar')
+        self.add_page_to_page_stack(_("Sound"), 'sound')
+        self.add_page_to_page_stack(_("Touchpad"), 'touchpad')
+        self.add_page_to_page_stack(_("Night Light"), 'night_light')
+        self.add_page_to_page_stack(_("Miscellaneous"), "misc")
+        self.add_page_to_page_stack(_("Tools"), 'tools')
 
     def create_actions(self):
         self.create_action("quit", lambda x,y: self.quit())
@@ -535,11 +536,11 @@ class GDM_Settings(Adw.Application, App_Utils):
 
     def reset_settings(self):
         toast = Adw.Toast(timeout=2, priority="high",
-                          title="Failed to reset settings")
+                          title=_("Failed to reset settings"))
 
         if self.settings.reset_settings():
             self.load_settings_to_widgets()
-            toast.set_title("Reset settings successfully")
+            toast.set_title(_("Reset settings successfully"))
 
         widgets.main_toast_overlay.add_toast(toast)
 

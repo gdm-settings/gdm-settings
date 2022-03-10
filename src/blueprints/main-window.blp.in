@@ -23,7 +23,7 @@ Adw.ApplicationWindow main_window {
       title-widget: Adw.WindowTitle { title: bind main_window.title; };
       [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
       [end] Separator { margin-start: 10; }
-      [end] Button apply_button { label: "Apply"; styles ["suggested-action"] }
+      [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
     }
 
     Adw.ToastOverlay main_toast_overlay {
@@ -43,46 +43,46 @@ AboutDialog about_dialog {
   comments: "@description@";
   logo-icon-name: "@application_id@";
   website: "https://github.com/realmazharhussain/gdm-settings";
-  website-label: "Homepage";
+  website-label: _("Homepage");
   license-type: agpl_3_0;
-  copyright: "Copyright © 2021 Mazhar Hussain";
+  copyright: _("Copyright © 2021 Mazhar Hussain");
 }
 
 FileChooserDialog background_image_chooser {
   transient-for: main_window;
   modal: true;
-  filter: FileFilter { name: "Images"; mime-types ["image/*"] };
+  filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
 
   [action response=cancel]
-  Button background_image_chooser_button_cancel { label: "Cancel"; }
+  Button background_image_chooser_button_cancel { label: _("Cancel"); }
 
   [action response=ok default]
-  Button background_image_chooser_button_select { label: "Select"; }
+  Button background_image_chooser_button_select { label: _("Select"); }
 }
 
 FileChooserDialog logo_chooser {
   transient-for: main_window;
   modal: true;
-  filter: FileFilter { name: "Images"; mime-types ["image/*"] };
+  filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
 
   [action response=cancel]
-  Button logo_chooser_button_cancel { label: "Cancel"; }
+  Button logo_chooser_button_cancel { label: _("Cancel"); }
 
   [action response=ok default]
-  Button logo_chooser_button_select { label: "Select"; }
+  Button logo_chooser_button_select { label: _("Select"); }
 }
 
 /*
 FileChooserDialog extracted_theme_destination_chooser {
   transient-for: main_window;
   modal: true;
-  filter: FileFilter { name: "Directories"; mime-types ["inode/directory"] };
+  filter: FileFilter { name: _("Directories"); mime-types ["inode/directory"] };
 
   [action response=cancel]
-  Button extracted_theme_destination_chooser_button_cancel { label: "Cancel"; }
+  Button extracted_theme_destination_chooser_button_cancel { label: _("Cancel"); }
 
   [action response=ok default]
-  Button extracted_theme_destination_chooser_button_select { label: "Select"; }
+  Button extracted_theme_destination_chooser_button_select { label: _("Select"); }
 }
 */
 

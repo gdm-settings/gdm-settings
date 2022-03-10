@@ -16,10 +16,10 @@ ScrolledWindow top_bar_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Tweaks";
+        title: _("Tweaks");
 
         Adw.ExpanderRow top_bar_text_color_expanderrow {
-          title: "Change Text Color";
+          title: _("Change Text Color");
 
           [action] Switch top_bar_text_color_switch {
             margin-top: 15;
@@ -28,8 +28,8 @@ ScrolledWindow top_bar_page_content {
           }
 
           Adw.ActionRow top_bar_text_color_actionrow {
-            title: "Text Color";
-            subtitle: "The color of text in top bar";
+            title: _("Text Color");
+            subtitle: _("The color of text in top bar");
             activatable-widget: top_bar_text_color_button;
 
             ColorButton top_bar_text_color_button {
@@ -41,7 +41,7 @@ ScrolledWindow top_bar_page_content {
         }
 
         Adw.ExpanderRow {
-          title: "Change Background Color";
+          title: _("Change Background Color");
           expanded: bind top_bar_background_color_switch.active bidirectional;
 
           [action] Switch top_bar_background_color_switch {
@@ -50,8 +50,8 @@ ScrolledWindow top_bar_page_content {
           }
 
           Adw.ActionRow top_bar_background_color_actionrow {
-            title: " Background Color";
-            subtitle: "The color of top bar background";
+            title: _("Background Color");
+            subtitle: _("The color of top bar background");
             activatable-widget: top_bar_background_color_button;
 
             ColorButton top_bar_background_color_button {
@@ -63,7 +63,7 @@ ScrolledWindow top_bar_page_content {
         }
 
         Adw.ActionRow disable_top_bar_arrows_actionrow {
-          title: "Disable Arrows";
+          title: _("Disable Arrows");
           activatable-widget: disable_top_bar_arrows_switch;
 
           Switch disable_top_bar_arrows_switch {
@@ -73,7 +73,7 @@ ScrolledWindow top_bar_page_content {
         }
 
         Adw.ActionRow disable_top_bar_rounded_corners_actionrow {
-          title: "Disable Rounded Corners";
+          title: _("Disable Rounded Corners");
           activatable-widget: disable_top_bar_rounded_corners_switch;
 
           Switch disable_top_bar_rounded_corners_switch {
@@ -84,10 +84,10 @@ ScrolledWindow top_bar_page_content {
       }
 
       Adw.PreferencesGroup {
-        title: "Clock";
+        title: _("Clock");
 
         Adw.ActionRow {
-          title: "Show Weekday";
+          title: _("Show Weekday");
           activatable-widget: show_weekday_switch;
 
           Switch show_weekday_switch {
@@ -97,7 +97,7 @@ ScrolledWindow top_bar_page_content {
         }
 
         Adw.ActionRow {
-          title: "Show Seconds";
+          title: _("Show Seconds");
           activatable-widget: show_seconds_switch;
 
           Switch show_seconds_switch {
@@ -107,16 +107,16 @@ ScrolledWindow top_bar_page_content {
         }
 
         Adw.ComboRow time_format_comborow {
-          title: "Time Format";
-          model: StringList { strings ["AM/PM", "24 Hours"] };
+          title: _("Time Format");
+          model: StringList { strings [_("AM/PM"), _("24 Hours")] };
         }
       }
 
       Adw.PreferencesGroup {
-        title: "Power";
+        title: _("Power");
 
         Adw.ActionRow {
-          title: "Show battery percentage";
+          title: _("Show battery percentage");
           activatable-widget: show_battery_percentage_switch;
 
           Switch show_battery_percentage_switch {

@@ -16,10 +16,10 @@ ScrolledWindow night_light_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Night Light";
+        title: _("Night Light");
 
         Adw.ActionRow {
-          title: "Enable";
+          title: _("Enable");
           activatable-widget: night_light_enable_switch;
 
           Switch night_light_enable_switch {
@@ -29,14 +29,14 @@ ScrolledWindow night_light_page_content {
         }
 
         Adw.ComboRow night_light_schedule_comborow {
-          title: "Schedule";
-          model: StringList { strings ["Sunset to Sunrise", "Manual Schedule"] };
+          title: _("Schedule");
+          model: StringList { strings [_("Sunset to Sunrise"), _("Manual Schedule")] };
         }
 
         Adw.ActionRow {
-          title: "Times";
+          title: _("Times");
 
-          Label { label: "From"; styles ["dim-label"] }
+          Label { label: _("From"); styles ["dim-label"] }
 
           SpinButton night_light_start_hour_spinbutton {
             orientation: vertical;
@@ -56,7 +56,7 @@ ScrolledWindow night_light_page_content {
 
           Separator { styles ["spacer"] }
 
-          Label { label: "To"; styles ["dim-label"] }
+          Label { label: _("To"); styles ["dim-label"] }
 
           SpinButton night_light_end_hour_spinbutton {
             orientation: vertical;
@@ -76,7 +76,7 @@ ScrolledWindow night_light_page_content {
         }
 
         Adw.ActionRow {
-          title: "Color Temperature";
+          title: _("Color Temperature");
 
           Scale night_light_color_temperature_scale {
             orientation: horizontal;

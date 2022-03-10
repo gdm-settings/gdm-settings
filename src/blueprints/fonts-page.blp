@@ -16,10 +16,10 @@ ScrolledWindow fonts_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Fonts";
+        title: _("Fonts");
 
         Adw.ActionRow {
-          title: "Font";
+          title: _("Font");
           activatable-widget: font_button;
 
           FontButton font_button {
@@ -29,26 +29,26 @@ ScrolledWindow fonts_page_content {
         }
 
         Adw.ComboRow antialiasing_comborow {
-          title: "Antialiasing";
+          title: _("Antialiasing");
           model: StringList { strings [
-            "Standard",
-            "Subpixel",
-            "None",
+            _("Standard"),
+            _("Subpixel"),
+            _("None"),
           ]};
         }
 
         Adw.ComboRow hinting_comborow {
-          title: "Hinting";
+          title: _("Hinting");
           model: StringList { strings [
-            "Full",
-            "Medium",
-            "Slight",
-            "None",
+            _("Full"),
+            _("Medium"),
+            _("Slight"),
+            _("None"),
           ]};
         }
 
         Adw.ActionRow scaling_factor_actionrow {
-          title: "Scaling Factor";
+          title: _("Scaling Factor");
 
           SpinButton scaling_factor_spinbutton {
             digits: 2;

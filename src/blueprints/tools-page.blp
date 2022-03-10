@@ -16,31 +16,31 @@ ScrolledWindow tools_page_content {
       spacing: 20;
 
       Adw.PreferencesGroup {
-        title: "Display";
+        title: _("Display");
 
         Adw.ActionRow {
-          title: "Apply current display settings";
+          title: _("Apply current display settings");
           activatable-widget: apply_current_display_settings_button;
 
-          Button apply_current_display_settings_button { label: "Apply"; margin-top: 5; margin-bottom: 5; }
+          Button apply_current_display_settings_button { label: _("Apply"); margin-top: 5; margin-bottom: 5; }
         }
       }
 
       Adw.PreferencesGroup {
-        title: "Default Shell Theme";
+        title: _("Default Shell Theme");
 
         Adw.ActionRow {
-          title: "Include Top Bar Tweaks";
+          title: _("Include Top Bar Tweaks");
           activatable-widget: include_top_bar_tweaks_switch;
 
           Switch include_top_bar_tweaks_switch { margin-top: 15; margin-bottom: 15; }
         }
 
         Adw.ActionRow {
-          title: "Extract default shell theme";
+          title: _("Extract default shell theme");
           activatable-widget: extract_shell_theme_button;
 
-          Button extract_shell_theme_button { label: "Extract"; margin-top: 5; margin-bottom: 5; }
+          Button extract_shell_theme_button { label: _("Extract"); margin-top: 5; margin-bottom: 5; }
         }
       }
 

@@ -203,7 +203,7 @@ class GResourceUtils:
 
         default_gresource =  self.get_default()
         if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
-            print("saving default theme ...")
+            print(_("saving default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
             self._extract_default_pure_theme()
         elif not path.exists(self.ThemesDir + '/default-pure'):
@@ -215,14 +215,14 @@ class GResourceUtils:
 
         default_gresource =  self.get_default()
         if default_gresource and default_gresource != self.GdmGresourceManualBackup:
-            print("updating backup of default theme ...")
+            print(_("updating backup of default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceManualBackup}")
 
     def backup_restore(self):
         """restore the 'default' theme's GResource file from the manually created backup"""
 
         if  path.isfile(self.GdmGresourceManualBackup):
-            print("restoring default theme from backup ...")
+            print(_("restoring default theme from backup ..."))
             self.command_elevator.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
 
     def compile(self, shellDir:str, additional_css:str, background_image:str=None):
