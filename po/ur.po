@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-08 23:15+0500\n"
-"PO-Revision-Date: 2022-03-08 23:13+0500\n"
+"POT-Creation-Date: 2022-03-10 13:55+0500\n"
+"PO-Revision-Date: 2022-03-10 14:39+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
 "Language: ur\n"
@@ -17,6 +17,97 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 41.0\n"
+
+#: ../src/blueprints/appearance-page.blp:19
+msgid "Themes"
+msgstr "تھیمز"
+
+#: ../src/blueprints/appearance-page.blp:21
+msgid "Shell"
+msgstr "خول"
+
+#: ../src/blueprints/appearance-page.blp:22
+msgid "Icons"
+msgstr "اَئیکان"
+
+#: ../src/blueprints/appearance-page.blp:23
+msgid "Cursor"
+msgstr "تیر"
+
+#: ../src/blueprints/appearance-page.blp:27
+msgid "Background"
+msgstr "بیک گرائونڈ"
+
+#: ../src/blueprints/appearance-page.blp:30
+msgid "Type"
+msgstr "قِسم"
+
+#: ../src/blueprints/appearance-page.blp:31 ../src/blueprints/fonts-page.blp:36
+#: ../src/blueprints/fonts-page.blp:46
+msgid "None"
+msgstr "کچھ نہیں"
+
+#: ../src/blueprints/appearance-page.blp:31
+#: ../src/blueprints/appearance-page.blp:36
+msgid "Image"
+msgstr "تصویر"
+
+#: ../src/blueprints/appearance-page.blp:31
+#: ../src/blueprints/appearance-page.blp:49
+msgid "Color"
+msgstr "رنگ"
+
+#: ../src/blueprints/appearance-page.blp:37
+msgid "The image to use as background"
+msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
+
+#: ../src/blueprints/appearance-page.blp:42 ../src/blueprints/misc-page.blp:58
+msgid "Choose File"
+msgstr "فائل چُنیں"
+
+#: ../src/blueprints/appearance-page.blp:50
+msgid "The color to use as background"
+msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
+
+#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:480
+msgid "Fonts"
+msgstr "خط"
+
+#: ../src/blueprints/fonts-page.blp:22
+msgid "Font"
+msgstr "خط"
+
+#: ../src/blueprints/fonts-page.blp:32
+msgid "Antialiasing"
+msgstr "اینٹی اےلیاسِنگ"
+
+#: ../src/blueprints/fonts-page.blp:34
+msgid "Standard"
+msgstr "سٹینڈرڈ"
+
+#: ../src/blueprints/fonts-page.blp:35
+msgid "Subpixel"
+msgstr "سب پکسل"
+
+#: ../src/blueprints/fonts-page.blp:41
+msgid "Hinting"
+msgstr "ہِنٹنگ"
+
+#: ../src/blueprints/fonts-page.blp:43
+msgid "Full"
+msgstr "فُل"
+
+#: ../src/blueprints/fonts-page.blp:44
+msgid "Medium"
+msgstr "مِیڈِیّم"
+
+#: ../src/blueprints/fonts-page.blp:45
+msgid "Slight"
+msgstr "تھوڑی"
+
+#: ../src/blueprints/fonts-page.blp:51
+msgid "Scaling Factor"
+msgstr "کھچائو کا انصر"
 
 #: ../src/blueprints/main-window.blp.in:6
 msgid "Refresh"
@@ -38,6 +129,33 @@ msgstr "تفصیلات"
 msgid "Quit"
 msgstr "بند کریں"
 
+#: ../src/blueprints/main-window.blp.in:26 ../src/blueprints/tools-page.blp:25
+msgid "Apply"
+msgstr "اپلائی"
+
+#: ../src/blueprints/main-window.blp.in:46
+msgid "Homepage"
+msgstr "ہوم پیج"
+
+#: ../src/blueprints/main-window.blp.in:48
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr "کاپی رائیٹ © 2021 مظہر حسین"
+
+#: ../src/blueprints/main-window.blp.in:54
+#: ../src/blueprints/main-window.blp.in:66
+msgid "Images"
+msgstr "تصویریں"
+
+#: ../src/blueprints/main-window.blp.in:57
+#: ../src/blueprints/main-window.blp.in:69
+msgid "Cancel"
+msgstr "کینسل"
+
+#: ../src/blueprints/main-window.blp.in:60
+#: ../src/blueprints/main-window.blp.in:72
+msgid "Select"
+msgstr "سیلیکٹ"
+
 #: ../src/blueprints/main-window.blp.in:90
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
@@ -53,3 +171,267 @@ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 #: ../src/blueprints/main-window.blp.in:108
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
+
+#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:485
+msgid "Miscellaneous"
+msgstr "دوسری چیزیں"
+
+#: ../src/blueprints/misc-page.blp:22
+msgid "Disable Restart Buttons"
+msgstr "ریسٹارٹ بٹن ختم کریں"
+
+#: ../src/blueprints/misc-page.blp:32
+msgid "Disable User List"
+msgstr "یوزر کی لسٹ ختم کریں"
+
+#: ../src/blueprints/misc-page.blp:42
+msgid "Enable Logo"
+msgstr "لوگو دکھائیں"
+
+#: ../src/blueprints/misc-page.blp:43
+msgid "Whether to show a logo below user list"
+msgstr "یوزر کی لسٹ کے نیچے لوگو دکھائیں یا نہیں"
+
+#: ../src/blueprints/misc-page.blp:53
+msgid "Logo"
+msgstr "لوگو"
+
+#: ../src/blueprints/misc-page.blp:54
+msgid "The image to show below user list"
+msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
+
+#: ../src/blueprints/misc-page.blp:66
+msgid "Welcome Message"
+msgstr "خوش آمدید کا پیغام"
+
+#: ../src/blueprints/night-light-page.blp:19 ../src/gdm_settings_gui.py:484
+msgid "Night Light"
+msgstr "رات کی روشنی"
+
+#: ../src/blueprints/night-light-page.blp:22
+msgid "Enable"
+msgstr "دکھائیں"
+
+#: ../src/blueprints/night-light-page.blp:32
+msgid "Schedule"
+msgstr "شیڈول"
+
+#: ../src/blueprints/night-light-page.blp:33
+msgid "Sunset to Sunrise"
+msgstr "صبح سے شام"
+
+#: ../src/blueprints/night-light-page.blp:33
+msgid "Manual Schedule"
+msgstr "اپنا شیڈول"
+
+#: ../src/blueprints/night-light-page.blp:37
+msgid "Times"
+msgstr "اوکات"
+
+#: ../src/blueprints/night-light-page.blp:39
+msgid "From"
+msgstr "شروع"
+
+#: ../src/blueprints/night-light-page.blp:59
+msgid "To"
+msgstr "ختم"
+
+#: ../src/blueprints/night-light-page.blp:79
+msgid "Color Temperature"
+msgstr "رنگ کا ٹمپریچر"
+
+#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:482
+msgid "Sound"
+msgstr "آواز"
+
+#: ../src/blueprints/sound-page.blp:21
+msgid "Theme"
+msgstr "تھیم"
+
+#: ../src/blueprints/sound-page.blp:24
+msgid "Over Amplification"
+msgstr "حد سے اونچی آواز"
+
+#: ../src/blueprints/sound-page.blp:25
+msgid "Allow raising volume above 100%"
+msgstr "آواز 100% سے بھی اونچی ہونے دیں"
+
+#: ../src/blueprints/sound-page.blp:35
+msgid "Event Sounds"
+msgstr "ایوَنٹ کی آوازیں"
+
+#: ../src/blueprints/sound-page.blp:45
+msgid "Input Feedback Sounds"
+msgstr "اندراج کے جواب کی آوازیں"
+
+#: ../src/blueprints/tools-page.blp:19
+msgid "Display"
+msgstr "ڈسپلے"
+
+#: ../src/blueprints/tools-page.blp:22
+msgid "Apply current display settings"
+msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
+
+#: ../src/blueprints/tools-page.blp:30
+msgid "Default Shell Theme"
+msgstr "شیل کا ڈیفالٹ تھیم"
+
+#: ../src/blueprints/tools-page.blp:33
+msgid "Include Top Bar Tweaks"
+msgstr "اوپر والی پٹی کی ٹویکس شامل کریں"
+
+#: ../src/blueprints/tools-page.blp:40
+msgid "Extract default shell theme"
+msgstr "شیل کا ڈیفالٹ تھیم ایکسٹرہکٹ کریں"
+
+#: ../src/blueprints/tools-page.blp:43
+msgid "Extract"
+msgstr "ایکسٹریکٹ"
+
+#: ../src/blueprints/top-bar-page.blp:19
+msgid "Tweaks"
+msgstr "ٹویکس"
+
+#: ../src/blueprints/top-bar-page.blp:22
+msgid "Change Text Color"
+msgstr "لکھائی کا رنگ بدلیں"
+
+#: ../src/blueprints/top-bar-page.blp:31
+msgid "Text Color"
+msgstr "لکھائی کا رنگ"
+
+#: ../src/blueprints/top-bar-page.blp:32
+msgid "The color of text in top bar"
+msgstr "اوپر والی پٹی میں لکھائی کا رنگ"
+
+#: ../src/blueprints/top-bar-page.blp:44
+msgid "Change Background Color"
+msgstr "بیک گرائونڈ کا رنگ تبدیل کریں"
+
+#: ../src/blueprints/top-bar-page.blp:53
+msgid "Background Color"
+msgstr "بیک گرائونڈ کا رنگ"
+
+#: ../src/blueprints/top-bar-page.blp:54
+msgid "The color of top bar background"
+msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ"
+
+#: ../src/blueprints/top-bar-page.blp:66
+msgid "Disable Arrows"
+msgstr "تیر ختم کریں"
+
+#: ../src/blueprints/top-bar-page.blp:76
+msgid "Disable Rounded Corners"
+msgstr "مڑے ہوئے کونے ختم کریں"
+
+#: ../src/blueprints/top-bar-page.blp:87
+msgid "Clock"
+msgstr "گھڑی"
+
+#: ../src/blueprints/top-bar-page.blp:90
+msgid "Show Weekday"
+msgstr "ہفتے کا دن دکھائیں"
+
+#: ../src/blueprints/top-bar-page.blp:100
+msgid "Show Seconds"
+msgstr "سیکنڈ دکھائیں"
+
+#: ../src/blueprints/top-bar-page.blp:110
+msgid "Time Format"
+msgstr "ٹائم کی فارمیٹ"
+
+#: ../src/blueprints/top-bar-page.blp:111
+msgid "AM/PM"
+msgstr "ش/م"
+
+#: ../src/blueprints/top-bar-page.blp:111
+msgid "24 Hours"
+msgstr "24 گھنٹے"
+
+#: ../src/blueprints/top-bar-page.blp:116
+msgid "Power"
+msgstr "پاوَر"
+
+#: ../src/blueprints/top-bar-page.blp:119
+msgid "Show battery percentage"
+msgstr "بیٹری کی شرح دکھائیں"
+
+#: ../src/blueprints/touchpad-page.blp:19 ../src/gdm_settings_gui.py:483
+msgid "Touchpad"
+msgstr "ٹچ پیڈ"
+
+#: ../src/blueprints/touchpad-page.blp:22
+msgid "Tap to Click"
+msgstr "کلک کیلئے ٹَیپ کریں"
+
+#: ../src/blueprints/touchpad-page.blp:32
+msgid "Natural Scrolling"
+msgstr "قدرتی سکرولِنگ"
+
+#: ../src/blueprints/touchpad-page.blp:33
+msgid "Scrolling moves the content, not the view."
+msgstr "سکرولِنگ سے مواد جگہ بدلتا ہے نہ کہ ویئو"
+
+#: ../src/blueprints/touchpad-page.blp:43
+msgid "Two-finger Scrolling"
+msgstr "دو انگلیئوں کے ساتھ سکرولِنگ"
+
+#: ../src/blueprints/touchpad-page.blp:53
+msgid "Touchpad Speed"
+msgstr "ٹچ پیڈ کی سپیڈ"
+
+#: ../src/gdm_settings_gui.py:123
+msgid "Applied current display settings"
+msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
+
+#: ../src/gdm_settings_gui.py:125
+msgid "Failed to apply current display settings"
+msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
+
+#: ../src/gdm_settings_gui.py:135
+msgid ""
+"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
+msgstr ""
+"ڈیفالٹ شیل تھیم 'usr/share/themes/' میں 'default-extracted' کے نام سے سیو ہو "
+"گیا ہے"
+
+#: ../src/gdm_settings_gui.py:137
+msgid "Failed to extract default theme"
+msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
+
+#. About Dialog
+#: ../src/gdm_settings_gui.py:280
+msgid "Mazhar Hussain"
+msgstr "مظہر حسین"
+
+#: ../src/gdm_settings_gui.py:479
+msgid "Appearance"
+msgstr "شکل"
+
+#: ../src/gdm_settings_gui.py:481
+msgid "Top Bar"
+msgstr "اوپر والی پٹی"
+
+#: ../src/gdm_settings_gui.py:486
+msgid "Tools"
+msgstr "آلات"
+
+#: ../src/gdm_settings_gui.py:539
+msgid "Failed to reset settings"
+msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
+
+#: ../src/gdm_settings_gui.py:543
+msgid "Reset settings successfully"
+msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
+
+#: ../src/settings_manager.py:206
+msgid "saving default theme ..."
+msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
+
+#: ../src/settings_manager.py:218
+msgid "updating backup of default theme ..."
+msgstr "ڈیفالٹ تھیم کا بیک اپ اپڈیٹ ہو رہا ہے ۔۔۔"
+
+#: ../src/settings_manager.py:225
+msgid "restoring default theme from backup ..."
+msgstr "ڈیفالٹ تھیم بیک اپ سے ریسٹور ہو رہا ہے ۔۔۔"
