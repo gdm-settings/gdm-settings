@@ -160,7 +160,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "main-window.ui",
             "appearance-page.ui",
             "fonts-page.ui",
-            "night-light-page.ui",
+            "display-page.ui",
             "sound-page.ui",
             "top-bar-page.ui",
             "touchpad-page.ui",
@@ -177,7 +177,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "page_stack",
             "appearance_page_content",
             "fonts_page_content",
-            "night_light_page_content",
+            "display_page_content",
             "sound_page_content",
             "top_bar_page_content",
             "touchpad_page_content",
@@ -231,7 +231,8 @@ class GDM_Settings(Adw.Application, App_Utils):
             "two_finger_scrolling_switch",
             "touchpad_speed_scale",
 
-            # Widgets from Night Light page
+            # Widgets from Display page
+            "apply_current_display_settings_button",
             "night_light_enable_switch",
             "night_light_schedule_comborow",
             "night_light_start_hour_spinbutton",
@@ -250,7 +251,6 @@ class GDM_Settings(Adw.Application, App_Utils):
             "logo_chooser",
 
             # Widgets from Tools page
-            "apply_current_display_settings_button",
             "include_top_bar_tweaks_switch",
             "extract_shell_theme_button",
             #"extracted_theme_destination_chooser",
@@ -481,7 +481,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.add_page_to_page_stack(_("Top Bar"), 'top_bar')
         self.add_page_to_page_stack(_("Sound"), 'sound')
         self.add_page_to_page_stack(_("Touchpad"), 'touchpad')
-        self.add_page_to_page_stack(_("Night Light"), 'night_light')
+        self.add_page_to_page_stack(_("Display"), 'display')
         self.add_page_to_page_stack(_("Miscellaneous"), "misc")
         self.add_page_to_page_stack(_("Tools"), 'tools')
 

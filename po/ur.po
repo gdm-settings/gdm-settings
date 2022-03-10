@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-10 13:55+0500\n"
+"POT-Creation-Date: 2022-03-10 21:57+0500\n"
 "PO-Revision-Date: 2022-03-10 14:39+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
@@ -69,6 +69,55 @@ msgstr "فائل چُنیں"
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
+#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:484
+msgid "Display"
+msgstr "ڈسپلے"
+
+#: ../src/blueprints/display-page.blp:22
+msgid "Apply current display settings"
+msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
+
+#: ../src/blueprints/display-page.blp:25
+#: ../src/blueprints/main-window.blp.in:26
+msgid "Apply"
+msgstr "اپلائی"
+
+#: ../src/blueprints/display-page.blp:30
+msgid "Night Light"
+msgstr "رات کی روشنی"
+
+#: ../src/blueprints/display-page.blp:33
+msgid "Enable"
+msgstr "دکھائیں"
+
+#: ../src/blueprints/display-page.blp:43
+msgid "Schedule"
+msgstr "شیڈول"
+
+#: ../src/blueprints/display-page.blp:44
+msgid "Sunset to Sunrise"
+msgstr "صبح سے شام"
+
+#: ../src/blueprints/display-page.blp:44
+msgid "Manual Schedule"
+msgstr "اپنا شیڈول"
+
+#: ../src/blueprints/display-page.blp:48
+msgid "Times"
+msgstr "اوکات"
+
+#: ../src/blueprints/display-page.blp:50
+msgid "From"
+msgstr "شروع"
+
+#: ../src/blueprints/display-page.blp:70
+msgid "To"
+msgstr "ختم"
+
+#: ../src/blueprints/display-page.blp:90
+msgid "Color Temperature"
+msgstr "رنگ کا ٹمپریچر"
+
 #: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:480
 msgid "Fonts"
 msgstr "خط"
@@ -128,10 +177,6 @@ msgstr "تفصیلات"
 #: ../src/blueprints/main-window.blp.in:12
 msgid "Quit"
 msgstr "بند کریں"
-
-#: ../src/blueprints/main-window.blp.in:26 ../src/blueprints/tools-page.blp:25
-msgid "Apply"
-msgstr "اپلائی"
 
 #: ../src/blueprints/main-window.blp.in:46
 msgid "Homepage"
@@ -204,42 +249,6 @@ msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
 msgid "Welcome Message"
 msgstr "خوش آمدید کا پیغام"
 
-#: ../src/blueprints/night-light-page.blp:19 ../src/gdm_settings_gui.py:484
-msgid "Night Light"
-msgstr "رات کی روشنی"
-
-#: ../src/blueprints/night-light-page.blp:22
-msgid "Enable"
-msgstr "دکھائیں"
-
-#: ../src/blueprints/night-light-page.blp:32
-msgid "Schedule"
-msgstr "شیڈول"
-
-#: ../src/blueprints/night-light-page.blp:33
-msgid "Sunset to Sunrise"
-msgstr "صبح سے شام"
-
-#: ../src/blueprints/night-light-page.blp:33
-msgid "Manual Schedule"
-msgstr "اپنا شیڈول"
-
-#: ../src/blueprints/night-light-page.blp:37
-msgid "Times"
-msgstr "اوکات"
-
-#: ../src/blueprints/night-light-page.blp:39
-msgid "From"
-msgstr "شروع"
-
-#: ../src/blueprints/night-light-page.blp:59
-msgid "To"
-msgstr "ختم"
-
-#: ../src/blueprints/night-light-page.blp:79
-msgid "Color Temperature"
-msgstr "رنگ کا ٹمپریچر"
-
 #: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:482
 msgid "Sound"
 msgstr "آواز"
@@ -265,26 +274,18 @@ msgid "Input Feedback Sounds"
 msgstr "اندراج کے جواب کی آوازیں"
 
 #: ../src/blueprints/tools-page.blp:19
-msgid "Display"
-msgstr "ڈسپلے"
-
-#: ../src/blueprints/tools-page.blp:22
-msgid "Apply current display settings"
-msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
-
-#: ../src/blueprints/tools-page.blp:30
 msgid "Default Shell Theme"
 msgstr "شیل کا ڈیفالٹ تھیم"
 
-#: ../src/blueprints/tools-page.blp:33
+#: ../src/blueprints/tools-page.blp:22
 msgid "Include Top Bar Tweaks"
 msgstr "اوپر والی پٹی کی ٹویکس شامل کریں"
 
-#: ../src/blueprints/tools-page.blp:40
+#: ../src/blueprints/tools-page.blp:29
 msgid "Extract default shell theme"
 msgstr "شیل کا ڈیفالٹ تھیم ایکسٹرہکٹ کریں"
 
-#: ../src/blueprints/tools-page.blp:43
+#: ../src/blueprints/tools-page.blp:32
 msgid "Extract"
 msgstr "ایکسٹریکٹ"
 

@@ -19,7 +19,7 @@
 	   <choices>
 	     <choice value="appearance"/>
 	     <choice value="fonts"/>
-	     <choice value="night_light"/>
+	     <choice value="display"/>
 	     <choice value="sound"/>
 	     <choice value="top_bar"/>
 	     <choice value="touchpad"/>

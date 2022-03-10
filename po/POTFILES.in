@@ -13,10 +13,10 @@ data/gschemas/application_id.top-bar.gschema.xml.in
 data/gschemas/application_id.touchpad.gschema.xml.in
 data/gschemas/application_id.window-state.gschema.xml.in
 src/blueprints/appearance-page.blp
+src/blueprints/display-page.blp
 src/blueprints/fonts-page.blp
 src/blueprints/main-window.blp.in
 src/blueprints/misc-page.blp
-src/blueprints/night-light-page.blp
 src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp

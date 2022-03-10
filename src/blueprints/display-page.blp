@@ -1,7 +1,7 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow night_light_page_content {
+ScrolledWindow display_page_content {
   propagate-natural-height: true;
 
   Adw.Clamp {
@@ -14,6 +14,17 @@ ScrolledWindow night_light_page_content {
     Box {
       orientation: vertical;
       spacing: 20;
+
+      Adw.PreferencesGroup {
+        title: _("Display");
+
+        Adw.ActionRow {
+          title: _("Apply current display settings");
+          activatable-widget: apply_current_display_settings_button;
+
+          Button apply_current_display_settings_button { label: _("Apply"); margin-top: 5; margin-bottom: 5; }
+        }
+      }
 
       Adw.PreferencesGroup {
         title: _("Night Light");

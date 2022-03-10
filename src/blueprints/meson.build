@@ -20,7 +20,7 @@ main_window_blp = configure_file(
 blueprints = [main_window_blp] + files(
   'appearance-page.blp',
   'fonts-page.blp',
-  'night-light-page.blp',
+  'display-page.blp',
   'sound-page.blp',
   'top-bar-page.blp',
   'touchpad-page.blp',
