@@ -6,7 +6,8 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 <img src="screenshots/screenshot-1.png#gh-light-mode-only" alt="screenshot" width=100%/><img src="screenshots/screenshot-1-dark.png#gh-dark-mode-only" alt="screenshot" width=100%/>
 
-<center><a href="screenshots/README.md">More Screenshots</a></center>
+- [Screenshots](screenshots/README.md)
+- [Features](docs/features.md)
 
 ## Important Note! (Alpha-Stage Software)
 
@@ -14,9 +15,7 @@ This app is in an early stage of development (it is mostly feature complete). It
 
 ## How to Install?
 
-### Package Installation
-
-#### On Arch/Manjaro
+### On Arch/Manjaro
 
 This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git) (recommended). You can install it using your favorite AUR helper. For example,
 
@@ -73,9 +72,9 @@ meson install -C build
 ### Build-time Dependencies
 
 - [Meson](https://mesonbuild.com) (v0.58 or newer)
-- [Blueprint Compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler) (latest) (Do not install it manually)
+- [Blueprint Compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler) (latest) (No need to install it manually)
 
-**Note:** Blueprint Compiler will automatically be downloaded and configured for this app
+**Note:** Blueprint Compiler will automatically be downloaded and configured (only) for this app
 
 ### How to install dependencies?
 
@@ -97,50 +96,8 @@ sudo pacman -S libadwaita glib2 python-gobject #Runtime Dependencies
 sudo pacman -S meson #Build Dependencies
 ```
 
-## Features
+## Contribute
 
-- Import user/session settings
-- Change Background/Wallpaper (Image/Color)
-- Apply themes
-  - Shell
-  - Icon
-  - Cursor
-  - Sound
-- Font Settings
-  - Font
-  - Antialiasing
-  - Hinting
-  - Scaling
-- Top Bar Settings
-  - Disable arrows
-  - Disable rounded corners
-  - Change text color
-  - Change background color
-  - Show/Hide weekday, seconds, battery percentage
-  - Clock format (AM/PM or 24h)
-- Sound Settings
-  - Raise volume over 100%
-  - Event sounds
-  - Input feedback sounds
-- Touchpad settings
-  - Speed
-  - Tap to Click
-  - Natural Scrolling
-  - Two-finger scrolling
-- Night light settings
-  - Enable/Disable
-  - Automatic/Manual Schedule
-  - Temperature
-- Miscellaneous Settings
-  - Welcome Message
-  - Logo
-  - Disable restart buttons
-  - Disable user list
-
-## Planned Features
-
-- Set a gradient as the background
-- Apply blur effect to the background image
-- A command-line interface
-- Tab-completion for the command-line interface
-
+- Report Bugs
+- [Translate](docs/translate.md)
+- [Donate](https://www.patreon.com/mazharhussain)
