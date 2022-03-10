@@ -1,0 +1,40 @@
+# Features
+
+- Import user/session settings
+- Change Background/Wallpaper (Image/Color)
+- Apply themes
+  - Shell
+  - Icon
+  - Cursor
+  - Sound
+- Font Settings
+  - Font
+  - Antialiasing
+  - Hinting
+  - Scaling
+- Top Bar Settings
+  - Disable arrows
+  - Disable rounded corners
+  - Change text color
+  - Change background color
+  - Show/Hide weekday, seconds, battery percentage
+  - Clock format (AM/PM or 24h)
+- Sound Settings
+  - Raise volume over 100%
+  - Event sounds
+  - Input feedback sounds
+- Touchpad settings
+  - Speed
+  - Tap to Click
+  - Natural Scrolling
+  - Two-finger scrolling
+- Night light settings
+  - Enable/Disable
+  - Automatic/Manual Schedule
+  - Temperature
+- Miscellaneous Settings
+  - Welcome Message
+  - Logo
+  - Disable restart buttons
+  - Disable user list
+
