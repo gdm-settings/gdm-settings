@@ -29,7 +29,7 @@
   - Natural Scrolling
   - Two-finger scrolling
 - Dislplay settings
-  - Apply current display settings
+  - Apply current(session) display settings to GDM
     - Display positions
     - Resolution
     - Fractional Scaling
