@@ -28,13 +28,21 @@
   - Tap to Click
   - Natural Scrolling
   - Two-finger scrolling
-- Night light settings
-  - Enable/Disable
-  - Automatic/Manual Schedule
-  - Temperature
+- Dislplay settings
+  - Apply current display settings
+    - Display positions
+    - Resolution
+    - Fractional Scaling
+    - Refresh rate
+  - Night light settings
+    - Enable/Disable
+    - Automatic/Manual Schedule
+    - Temperature
 - Miscellaneous Settings
   - Welcome Message
   - Logo
   - Disable restart buttons
   - Disable user list
+- Tools
+  - Extract default shell theme (with or without top bar tweaks)
 
