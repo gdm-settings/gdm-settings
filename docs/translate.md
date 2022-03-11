@@ -60,17 +60,21 @@ If you mistyped some information and want to change it later,
 
    **Note:** We changed file extension from `pot` to `po`
 
-4. Open GTranslator
+4. Add your language code (on its own line) to `LINGUAS` file
 
-5. Click on 'Open' and choose newly created `po` file for your language
+   It is recommended (but not necessary) that you keep language codes in `LINGUAS` file alphabetically sorted
 
-6. Once your file is open, click on the hamburger menu (three bars) at top of the application window
+5. Open GTranslator
 
-7. Click on 'Edit header'
+6. Click on 'Open' and choose newly created `po` file for your language
 
-8. Fill in the information as appropriate
+7. Once your file is open, click on the hamburger menu (three bars) at top of the application window
 
-9. Press 'Ctrl+S' or click on 'Save' button
+8. Click on 'Edit header'
+
+9. Fill in the information as appropriate
+
+10. Press 'Ctrl+S' or click on 'Save' button
 
 Now, you have successfully created translation for a new language. It does not contain any translated text yet. We will add it later in the next step.
 
