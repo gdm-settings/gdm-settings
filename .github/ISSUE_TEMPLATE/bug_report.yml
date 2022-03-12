@@ -61,7 +61,7 @@ body:
       label: Environment
       description: |
         examples:
-          - **OS**: Ubuntu 20.04
+          - **OS**: Ubuntu 22.04
           - **GNOME**: 41.3
       value: |
           - **OS**: 
