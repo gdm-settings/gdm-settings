@@ -98,6 +98,6 @@ sudo pacman -S meson #Build Dependencies
 
 ## Contribute
 
-- Report Bugs
+- [Report Bugs](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+)
 - [Translate](docs/translate.md)
 - [Donate](https://www.patreon.com/mazharhussain)
