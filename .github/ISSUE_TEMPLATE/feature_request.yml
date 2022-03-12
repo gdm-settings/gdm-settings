@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking your time!
+        ## Thanks for taking your time!
   - type: textarea
     attributes:
       label: Description
