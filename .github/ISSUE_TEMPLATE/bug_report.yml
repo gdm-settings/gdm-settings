@@ -1,0 +1,71 @@
+name: Bug Report
+description: Report a bug
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happend
+    attributes:
+      label: What happened?
+      description: Describe concisely
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What was supposed to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior
+    validations:
+      required: true
+  - type: textarea
+    id: explaination
+    attributes:
+      label: Detailed Explaination (Optional)
+      description: Explain the problem in detail
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: Application Version
+      options:
+        - latest development version
+        - v0.3-alpha
+        - v0.2-alpha
+        - v0.1.1-alpha
+        - v0.1.0-alpha
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Source
+      description: How did you get the application?
+      options:
+        - Arch User Repository
+        - AppImage
+        - Source Code
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: |
+        examples:
+          - **OS**: Ubuntu 20.04
+          - **GNOME**: 41.3
+      value: |
+          - **OS**: 
+          - **GNOME**: 
+      render: markdown
+    validations:
+      required: true
