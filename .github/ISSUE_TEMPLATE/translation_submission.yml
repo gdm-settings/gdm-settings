@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Thanks for taking the time to translate this application!
+        # Thanks for taking the time to translate this application!
   - type: input
     attributes:
       label: Language
