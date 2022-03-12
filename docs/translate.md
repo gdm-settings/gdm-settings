@@ -110,4 +110,4 @@ Create a pull request
 
 **OR**
 
-Open an issue and provide your translation file there
+[Open an issue](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=translation&template=translation_submission.yml&title=%5BL10N%5D+) and provide your translation file there
