@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.3\n"
-"Report-Msgid-Bugs-To: https://github.com/realmazharhussain/gdm-settings\n"
-"POT-Creation-Date: 2022-03-10 22:09+0500\n"
-"PO-Revision-Date: 2022-03-10 22:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 13:56+0500\n"
+"PO-Revision-Date: 2022-03-12 13:56+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
 "Language: ur\n"
@@ -78,8 +78,8 @@ msgid "Apply current display settings"
 msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 
 #: ../src/blueprints/display-page.blp:23
-msgid "Resolution, refresh rate, fractional sclaing, monitor positions, etc"
-msgstr "ریزولوشن، ریفریش ریٹ، فریکشنل سکیلنگ، مانیٹرز کی پوزیشن، وغیرہ"
+msgid "Resolution, refresh rate, monitor positions, etc"
+msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
 
 #: ../src/blueprints/display-page.blp:26
 #: ../src/blueprints/main-window.blp.in:26
