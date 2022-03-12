@@ -1,0 +1,438 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-12 13:56+0100\n"
+"PO-Revision-Date: 2022-03-12 14:29+0100\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../src/blueprints/appearance-page.blp:19
+msgid "Themes"
+msgstr "Thema's"
+
+#: ../src/blueprints/appearance-page.blp:21
+msgid "Shell"
+msgstr "Shell"
+
+#: ../src/blueprints/appearance-page.blp:22
+msgid "Icons"
+msgstr "Pictogrammen"
+
+#: ../src/blueprints/appearance-page.blp:23
+msgid "Cursor"
+msgstr "Cursor"
+
+#: ../src/blueprints/appearance-page.blp:27
+msgid "Background"
+msgstr "Achtergrond"
+
+#: ../src/blueprints/appearance-page.blp:30
+msgid "Type"
+msgstr "Soort"
+
+#: ../src/blueprints/appearance-page.blp:31 ../src/blueprints/fonts-page.blp:36
+#: ../src/blueprints/fonts-page.blp:46
+msgid "None"
+msgstr "Geen"
+
+#: ../src/blueprints/appearance-page.blp:31
+#: ../src/blueprints/appearance-page.blp:36
+msgid "Image"
+msgstr "Afbeelding"
+
+#: ../src/blueprints/appearance-page.blp:31
+#: ../src/blueprints/appearance-page.blp:49
+msgid "Color"
+msgstr "Kleur"
+
+#: ../src/blueprints/appearance-page.blp:37
+msgid "The image to use as background"
+msgstr "De afbeelding die wordt ingesteld als achtergrond"
+
+#: ../src/blueprints/appearance-page.blp:42 ../src/blueprints/misc-page.blp:58
+msgid "Choose File"
+msgstr "Kies een bestand"
+
+#: ../src/blueprints/appearance-page.blp:50
+msgid "The color to use as background"
+msgstr "De kleur die wordt ingesteld als achtergrond"
+
+#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:484
+msgid "Display"
+msgstr "Beeldscherm"
+
+#: ../src/blueprints/display-page.blp:22
+msgid "Apply current display settings"
+msgstr "Huidige beeldscherminstellingen toepassen"
+
+#: ../src/blueprints/display-page.blp:23
+msgid "Resolution, refresh rate, monitor positions, etc"
+msgstr "Resolutie, ververssnelheid, schermposities, etc."
+
+#: ../src/blueprints/display-page.blp:26
+#: ../src/blueprints/main-window.blp.in:26
+msgid "Apply"
+msgstr "Toepassen"
+
+#: ../src/blueprints/display-page.blp:31
+msgid "Night Light"
+msgstr "Nachtlicht"
+
+#: ../src/blueprints/display-page.blp:34
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: ../src/blueprints/display-page.blp:44
+msgid "Schedule"
+msgstr "Schema"
+
+#: ../src/blueprints/display-page.blp:45
+msgid "Sunset to Sunrise"
+msgstr "Van zonsondergang tot zonsopkomst"
+
+#: ../src/blueprints/display-page.blp:45
+msgid "Manual Schedule"
+msgstr "Eigen schema"
+
+#: ../src/blueprints/display-page.blp:49
+msgid "Times"
+msgstr "Tijdstippen"
+
+#: ../src/blueprints/display-page.blp:51
+msgid "From"
+msgstr "Van"
+
+#: ../src/blueprints/display-page.blp:71
+msgid "To"
+msgstr "Tot"
+
+#: ../src/blueprints/display-page.blp:91
+msgid "Color Temperature"
+msgstr "Kleurtemperatuur"
+
+#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:480
+msgid "Fonts"
+msgstr "Lettertypen"
+
+#: ../src/blueprints/fonts-page.blp:22
+msgid "Font"
+msgstr "Lettertype"
+
+#: ../src/blueprints/fonts-page.blp:32
+msgid "Antialiasing"
+msgstr "Anti-kartelvorming"
+
+#: ../src/blueprints/fonts-page.blp:34
+msgid "Standard"
+msgstr "Standaard"
+
+#: ../src/blueprints/fonts-page.blp:35
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: ../src/blueprints/fonts-page.blp:41
+msgid "Hinting"
+msgstr "Hinten"
+
+#: ../src/blueprints/fonts-page.blp:43
+msgid "Full"
+msgstr "Volledig"
+
+#: ../src/blueprints/fonts-page.blp:44
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: ../src/blueprints/fonts-page.blp:45
+msgid "Slight"
+msgstr "Licht"
+
+#: ../src/blueprints/fonts-page.blp:51
+msgid "Scaling Factor"
+msgstr "Beeldgrootte"
+
+#: ../src/blueprints/main-window.blp.in:6
+msgid "Refresh"
+msgstr "Herladen"
+
+#: ../src/blueprints/main-window.blp.in:7
+msgid "Import user settings"
+msgstr "Eigen voorkeuren importeren"
+
+#: ../src/blueprints/main-window.blp.in:8
+msgid "Reset settings"
+msgstr "Standaardwaarden herstellen"
+
+#: ../src/blueprints/main-window.blp.in:11
+msgid "About"
+msgstr "Over"
+
+#: ../src/blueprints/main-window.blp.in:12
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: ../src/blueprints/main-window.blp.in:46
+msgid "Homepage"
+msgstr "Website"
+
+#: ../src/blueprints/main-window.blp.in:48
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#: ../src/blueprints/main-window.blp.in:54
+#: ../src/blueprints/main-window.blp.in:66
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: ../src/blueprints/main-window.blp.in:57
+#: ../src/blueprints/main-window.blp.in:69
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../src/blueprints/main-window.blp.in:60
+#: ../src/blueprints/main-window.blp.in:72
+msgid "Select"
+msgstr "Kiezen"
+
+#: ../src/blueprints/main-window.blp.in:90
+msgid "Failed to apply settings"
+msgstr "De voorkeuren kunnen niet worden ingesteld"
+
+#: ../src/blueprints/main-window.blp.in:96
+msgid "Settings applied successfully"
+msgstr "De voorkeuren zijn ingesteld"
+
+#: ../src/blueprints/main-window.blp.in:102
+msgid "User settings imported"
+msgstr "De voorkeuren zijn geïmporteerd"
+
+#: ../src/blueprints/main-window.blp.in:108
+msgid "Settings reloaded"
+msgstr "De voorkeuren zijn opnieuw geladen"
+
+#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:485
+msgid "Miscellaneous"
+msgstr "Overig"
+
+#: ../src/blueprints/misc-page.blp:22
+msgid "Disable Restart Buttons"
+msgstr "Herstartknoppen verbergen"
+
+#: ../src/blueprints/misc-page.blp:32
+msgid "Disable User List"
+msgstr "Gebruikerslijst verbergen"
+
+#: ../src/blueprints/misc-page.blp:42
+msgid "Enable Logo"
+msgstr "Logo tonen"
+
+#: ../src/blueprints/misc-page.blp:43
+msgid "Whether to show a logo below user list"
+msgstr "Of er een logo dient te worden getoond onder de gebruikerslijst"
+
+#: ../src/blueprints/misc-page.blp:53
+msgid "Logo"
+msgstr "Logo"
+
+#: ../src/blueprints/misc-page.blp:54
+msgid "The image to show below user list"
+msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
+
+#: ../src/blueprints/misc-page.blp:66
+msgid "Welcome Message"
+msgstr "Welkomstbericht"
+
+#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:482
+msgid "Sound"
+msgstr "Geluid"
+
+#: ../src/blueprints/sound-page.blp:21
+msgid "Theme"
+msgstr "Thema"
+
+#: ../src/blueprints/sound-page.blp:24
+msgid "Over Amplification"
+msgstr "Versterking"
+
+#: ../src/blueprints/sound-page.blp:25
+msgid "Allow raising volume above 100%"
+msgstr "Volume verhogen tot boven de 100%"
+
+#: ../src/blueprints/sound-page.blp:35
+msgid "Event Sounds"
+msgstr "Gebeurtenisgeluiden"
+
+#: ../src/blueprints/sound-page.blp:45
+msgid "Input Feedback Sounds"
+msgstr "Invoergeluiden"
+
+#: ../src/blueprints/tools-page.blp:19
+msgid "Default Shell Theme"
+msgstr "Standaard Shell-thema"
+
+#: ../src/blueprints/tools-page.blp:22
+msgid "Include Top Bar Tweaks"
+msgstr "Aanpassingen aan bovenbalk toepassen"
+
+#: ../src/blueprints/tools-page.blp:29
+msgid "Extract default shell theme"
+msgstr "Standaard Shell-thema extraheren"
+
+#: ../src/blueprints/tools-page.blp:32
+msgid "Extract"
+msgstr "Extraheren"
+
+#: ../src/blueprints/top-bar-page.blp:19
+msgid "Tweaks"
+msgstr "Afstellingen"
+
+#: ../src/blueprints/top-bar-page.blp:22
+msgid "Change Text Color"
+msgstr "Tekstkleur aanpassen"
+
+#: ../src/blueprints/top-bar-page.blp:31
+msgid "Text Color"
+msgstr "Tekstkleur"
+
+#: ../src/blueprints/top-bar-page.blp:32
+msgid "The color of text in top bar"
+msgstr "De kleur van de tekst op de bovenbalk"
+
+#: ../src/blueprints/top-bar-page.blp:44
+msgid "Change Background Color"
+msgstr "Achtergrondkleur wijzigen"
+
+#: ../src/blueprints/top-bar-page.blp:53
+msgid "Background Color"
+msgstr "Achtergrondkleur"
+
+#: ../src/blueprints/top-bar-page.blp:54
+msgid "The color of top bar background"
+msgstr "De kleur van de achtergrond van de bovenbalk"
+
+#: ../src/blueprints/top-bar-page.blp:66
+msgid "Disable Arrows"
+msgstr "Pijlen verbergen"
+
+#: ../src/blueprints/top-bar-page.blp:76
+msgid "Disable Rounded Corners"
+msgstr "Geen afgeronde hoeken tonen"
+
+#: ../src/blueprints/top-bar-page.blp:87
+msgid "Clock"
+msgstr "Klok"
+
+#: ../src/blueprints/top-bar-page.blp:90
+msgid "Show Weekday"
+msgstr "Weekdagen tonen"
+
+#: ../src/blueprints/top-bar-page.blp:100
+msgid "Show Seconds"
+msgstr "Seconden tonen"
+
+#: ../src/blueprints/top-bar-page.blp:110
+msgid "Time Format"
+msgstr "Tijdsopmaak"
+
+#: ../src/blueprints/top-bar-page.blp:111
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: ../src/blueprints/top-bar-page.blp:111
+msgid "24 Hours"
+msgstr "24 uur"
+
+#: ../src/blueprints/top-bar-page.blp:116
+msgid "Power"
+msgstr "Energie"
+
+#: ../src/blueprints/top-bar-page.blp:119
+msgid "Show battery percentage"
+msgstr "Accupercentage tonen"
+
+#: ../src/blueprints/touchpad-page.blp:19 ../src/gdm_settings_gui.py:483
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: ../src/blueprints/touchpad-page.blp:22
+msgid "Tap to Click"
+msgstr "Tik om te klikken"
+
+#: ../src/blueprints/touchpad-page.blp:32
+msgid "Natural Scrolling"
+msgstr "Natuurlijk scrollen"
+
+#: ../src/blueprints/touchpad-page.blp:33
+msgid "Scrolling moves the content, not the view."
+msgstr "Scrollen verplaatst de inhoud, niet de weergave."
+
+#: ../src/blueprints/touchpad-page.blp:43
+msgid "Two-finger Scrolling"
+msgstr "Scrollen met twee vingers"
+
+#: ../src/blueprints/touchpad-page.blp:53
+msgid "Touchpad Speed"
+msgstr "Touchpadsnelheid"
+
+#: ../src/gdm_settings_gui.py:123
+msgid "Applied current display settings"
+msgstr "De huidige beeldscherminstellingen zijn toegepast"
+
+#: ../src/gdm_settings_gui.py:125
+msgid "Failed to apply current display settings"
+msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
+
+#: ../src/gdm_settings_gui.py:135
+msgid "Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
+msgstr "Het standaard Shell-thema is uitgepakt naar ‘/usr/share/themes’ onder de naam ‘default-extracted’"
+
+#: ../src/gdm_settings_gui.py:137
+msgid "Failed to extract default theme"
+msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
+
+#. About Dialog
+#: ../src/gdm_settings_gui.py:280
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: ../src/gdm_settings_gui.py:479
+msgid "Appearance"
+msgstr "Vormgeving"
+
+#: ../src/gdm_settings_gui.py:481
+msgid "Top Bar"
+msgstr "Bovenbalk"
+
+#: ../src/gdm_settings_gui.py:486
+msgid "Tools"
+msgstr "Hulpmiddelen"
+
+#: ../src/gdm_settings_gui.py:539
+msgid "Failed to reset settings"
+msgstr "De standaardwaarden kunnen niet worden hersteld"
+
+#: ../src/gdm_settings_gui.py:543
+msgid "Reset settings successfully"
+msgstr "De standaardwaarden zijn hersteld"
+
+#: ../src/settings_manager.py:206
+msgid "saving default theme ..."
+msgstr "Bezig met opslaan van huidig thema…"
+
+#: ../src/settings_manager.py:218
+msgid "updating backup of default theme ..."
+msgstr "Bezig met bijwerken van reservekopie…"
+
+#: ../src/settings_manager.py:225
+msgid "restoring default theme from backup ..."
+msgstr "Bezig met herstellen van reservekopie…"
