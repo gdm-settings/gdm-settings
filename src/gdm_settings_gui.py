@@ -258,6 +258,7 @@ class GDM_Settings(Adw.Application, App_Utils):
 
         # Initialize Builder
         self.builder = Gtk.Builder()
+        self.builder.set_translation_domain(project_name)
 
         # Load UI files
         for filename in ui_files:
