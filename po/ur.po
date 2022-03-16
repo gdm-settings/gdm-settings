@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-12 13:56+0500\n"
-"PO-Revision-Date: 2022-03-12 13:56+0500\n"
+"POT-Creation-Date: 2022-03-16 20:18+0500\n"
+"PO-Revision-Date: 2022-03-16 20:20+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
 "Language: ur\n"
@@ -69,7 +69,7 @@ msgstr "فائل چُنیں"
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:484
+#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:486
 msgid "Display"
 msgstr "ڈسپلے"
 
@@ -122,7 +122,7 @@ msgstr "ختم"
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
-#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:480
+#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:482
 msgid "Fonts"
 msgstr "خط"
 
@@ -221,7 +221,7 @@ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:485
+#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:487
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
@@ -253,7 +253,7 @@ msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
 msgid "Welcome Message"
 msgstr "خوش آمدید کا پیغام"
 
-#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:482
+#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:484
 msgid "Sound"
 msgstr "آواز"
 
@@ -361,7 +361,7 @@ msgstr "پاوَر"
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
 
-#: ../src/blueprints/touchpad-page.blp:19 ../src/gdm_settings_gui.py:483
+#: ../src/blueprints/touchpad-page.blp:19 ../src/gdm_settings_gui.py:485
 msgid "Touchpad"
 msgstr "ٹچ پیڈ"
 
@@ -405,27 +405,31 @@ msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
 #. About Dialog
-#: ../src/gdm_settings_gui.py:280
+#: ../src/gdm_settings_gui.py:281
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: ../src/gdm_settings_gui.py:479
+#: ../src/gdm_settings_gui.py:285
+msgid "translator-credits"
+msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
+
+#: ../src/gdm_settings_gui.py:481
 msgid "Appearance"
 msgstr "شکل"
 
-#: ../src/gdm_settings_gui.py:481
+#: ../src/gdm_settings_gui.py:483
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: ../src/gdm_settings_gui.py:486
+#: ../src/gdm_settings_gui.py:488
 msgid "Tools"
 msgstr "آلات"
 
-#: ../src/gdm_settings_gui.py:539
+#: ../src/gdm_settings_gui.py:541
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: ../src/gdm_settings_gui.py:543
+#: ../src/gdm_settings_gui.py:545
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
