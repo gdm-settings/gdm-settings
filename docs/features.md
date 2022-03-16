@@ -32,7 +32,6 @@
   - Apply current(session) display settings to GDM
     - Display positions
     - Resolution
-    - Fractional Scaling
     - Refresh rate
   - Night light settings
     - Enable/Disable
