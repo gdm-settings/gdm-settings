@@ -73,6 +73,7 @@ meson install -C build
 
 - [Meson](https://mesonbuild.com) (v0.58 or newer)
 - [Blueprint Compiler](https://jwestman.pages.gitlab.gnome.org/blueprint-compiler) (latest) (No need to install it manually)
+- [GObject Introspection](https://gi.readthedocs.io) (required by 'Blueprint Compiler')
 
 **Note:** Blueprint Compiler will automatically be downloaded and configured (only) for this app
 
