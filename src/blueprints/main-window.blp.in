@@ -38,8 +38,8 @@ Adw.ApplicationWindow main_window {
 AboutDialog about_dialog {
   transient-for: main_window;
   modal: true;
-  program-name: "@application_name@ (@project_name@)";
-  version: "@version@";
+  program-name: "@application_name@";
+  version: "@project_name@ v@version@";
   comments: "@description@";
   logo-icon-name: "@application_id@";
   website: "https://github.com/realmazharhussain/gdm-settings";
