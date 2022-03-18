@@ -1,0 +1,578 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: gdm-settings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-18 23:40+0100\n"
+"PO-Revision-Date: 2022-03-18 23:44+0100\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: data/application_id.appdata.xml.in:14
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+"Cambiar la configuración de GDM; aplicar el tema y el fondo, cambiar el tema "
+"del cursor, el tema de los iconos y la configuración de la luz nocturna, "
+"entre otras cosas."
+
+#: data/application_id.desktop.in:13
+msgid "Login;"
+msgstr "Login;"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:7
+msgid "Theme Name"
+msgstr "Nombre del tema"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:20
+msgid "Type of Background"
+msgstr "Tipo de fondo"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:21
+msgid "Wether GDM background should be an Image, Color or None."
+msgstr "Si el fondo de GDM debe ser una imagen, un color o ninguno."
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:33
+msgid "Background Image"
+msgstr "Imagen de fondo"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:34
+msgid "The image file to use as GDM background"
+msgstr "El archivo de imagen que se usará como fondo de GDM"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:41
+#: src/blueprints/top-bar-page.blp:53
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:42
+msgid "The Color to use as GDM background"
+msgstr "El color a usar como fondo de GDM"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:7
+msgid "If the night light mode is enabled"
+msgstr "Si el modo de luz nocturna está activado"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:8
+msgid ""
+"Night light mode changes the color temperature of your display when the sun "
+"has gone down or at preset times."
+msgstr ""
+"El modo de luz nocturna cambia la temperatura del color de la pantalla "
+"cuando el sol se ha puesto o a horas preestablecidas."
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:13
+msgid "Temperature of the display when enabled"
+msgstr "Temperatura de la pantalla cuando está activada"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:14
+msgid ""
+"This temperature in Kelvin is used to modify the screen tones when night "
+"light mode is enabled. Higher values are bluer, lower redder."
+msgstr ""
+"Esta temperatura en Kelvin se usa para modificar los tonos de la pantalla "
+"cuando se activa el modo de luz nocturna. Los valores más altos son más "
+"azules, los más bajos más rojos."
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:19
+msgid "Use the sunrise and sunset"
+msgstr "Usar el amanecer y el atardecer"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:20
+msgid ""
+"Calculate the sunrise and sunset times automatically, from the current "
+"location."
+msgstr ""
+"Calcula la hora de salida y puesta del sol automáticamente, a partir de la "
+"ubicación actual."
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:25
+#: data/gschemas/application_id.night-light.gschema.xml.in:39
+msgid "The start time's hour"
+msgstr "La hora de inicio"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:26
+#: data/gschemas/application_id.night-light.gschema.xml.in:40
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time in "
+"hours."
+msgstr ""
+"Cuando “night-light-schedule-automatic” está desactivado, usa esta hora de "
+"inicio en horas."
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:32
+msgid "The start time's minute"
+msgstr "El minuto de la hora de inicio"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:33
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time "
+"minutes."
+msgstr ""
+"Cuando “night-light-schedule-automatic” está desactivado, usa esta hora de "
+"inicio minutos."
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:46
+msgid "The end time's minute"
+msgstr "El minuto de finalización"
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:47
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+msgstr ""
+"Cuando “night-light-schedule-automatic” está desactivado, usa esta hora de "
+"finalización de minutos."
+
+#: data/gschemas/application_id.tools.gschema.xml.in:7
+msgid "Whether to apply top bar tweaks to extracted theme"
+msgstr "Si se aplican los ajustes de la barra superior al tema extraído"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:7
+msgid "Whether to disable top bar arrows"
+msgstr "Si se desactivan las flechas de la barra superior"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:12
+msgid "Whether to disable top bar rounded corners"
+msgstr "Desactivar las esquinas redondeadas de la barra superior"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:17
+msgid "Whether to change top bar text color"
+msgstr "Si se cambia el color del texto de la barra superior"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:22
+msgid "Top bar text color"
+msgstr "Color del texto de la barra superior"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:27
+msgid "Whether to change top bar background"
+msgstr "Si se cambia el fondo de la barra superior"
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:32
+msgid "Top bar background color"
+msgstr "Color de fondo de la barra superior"
+
+#: data/gschemas/application_id.touchpad.gschema.xml.in:19
+msgid "Pointer speed"
+msgstr "Velocidad del puntero"
+
+#: data/gschemas/application_id.touchpad.gschema.xml.in:20
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+"Velocidad del puntero para el panel táctil. Los valores aceptados están en "
+"el rango [-1..1] (desde “no acelerado” hasta “rápido”). Un valor de 0 es el "
+"valor predeterminado del sistema."
+
+#: src/blueprints/appearance-page.blp:19
+msgid "Themes"
+msgstr "Temas"
+
+#: src/blueprints/appearance-page.blp:21
+msgid "Shell"
+msgstr "Shell"
+
+#: src/blueprints/appearance-page.blp:22
+msgid "Icons"
+msgstr "Iconos"
+
+#: src/blueprints/appearance-page.blp:23
+msgid "Cursor"
+msgstr "Cursor"
+
+#: src/blueprints/appearance-page.blp:27
+msgid "Background"
+msgstr "Fondo"
+
+#: src/blueprints/appearance-page.blp:30
+msgid "Type"
+msgstr "Tipo"
+
+#: src/blueprints/appearance-page.blp:31 src/blueprints/fonts-page.blp:36
+#: src/blueprints/fonts-page.blp:46
+msgid "None"
+msgstr "Ninguno"
+
+#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:36
+msgid "Image"
+msgstr "Imagen"
+
+#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:49
+msgid "Color"
+msgstr "Color"
+
+#: src/blueprints/appearance-page.blp:37
+msgid "The image to use as background"
+msgstr "La imagen a usar como fondo"
+
+#: src/blueprints/appearance-page.blp:42 src/blueprints/misc-page.blp:58
+msgid "Choose File"
+msgstr "Elegir archivo"
+
+#: src/blueprints/appearance-page.blp:50
+msgid "The color to use as background"
+msgstr "El color a usar como fondo"
+
+#: src/blueprints/display-page.blp:19 src/gdm_settings_gui.py:486
+msgid "Display"
+msgstr "Pantalla"
+
+#: src/blueprints/display-page.blp:22
+msgid "Apply current display settings"
+msgstr "Aplicar la configuración actual de la pantalla"
+
+#: src/blueprints/display-page.blp:23
+msgid "Resolution, refresh rate, monitor positions, etc"
+msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc"
+
+#: src/blueprints/display-page.blp:26 src/blueprints/main-window.blp.in:26
+msgid "Apply"
+msgstr "Aplicar"
+
+#: src/blueprints/display-page.blp:31
+msgid "Night Light"
+msgstr "Luz nocturna"
+
+#: src/blueprints/display-page.blp:34
+msgid "Enable"
+msgstr "Activar"
+
+#: src/blueprints/display-page.blp:44
+msgid "Schedule"
+msgstr "Programar"
+
+#: src/blueprints/display-page.blp:45
+msgid "Sunset to Sunrise"
+msgstr "Desde la puesta de sol hasta el amanecer"
+
+#: src/blueprints/display-page.blp:45
+msgid "Manual Schedule"
+msgstr "Programación manual"
+
+#: src/blueprints/display-page.blp:49
+msgid "Times"
+msgstr "Horas"
+
+#: src/blueprints/display-page.blp:51
+msgid "From"
+msgstr "De"
+
+#: src/blueprints/display-page.blp:71
+msgid "To"
+msgstr "Hasta"
+
+#: src/blueprints/display-page.blp:91
+msgid "Color Temperature"
+msgstr "Temperatura del color"
+
+#: src/blueprints/fonts-page.blp:19 src/gdm_settings_gui.py:482
+msgid "Fonts"
+msgstr "Tipografías"
+
+#: src/blueprints/fonts-page.blp:22
+msgid "Font"
+msgstr "Tipografía"
+
+#: src/blueprints/fonts-page.blp:32
+msgid "Antialiasing"
+msgstr "Antialiasing"
+
+#: src/blueprints/fonts-page.blp:34
+msgid "Standard"
+msgstr "Estándar"
+
+#: src/blueprints/fonts-page.blp:35
+msgid "Subpixel"
+msgstr "Subpíxel"
+
+#: src/blueprints/fonts-page.blp:41
+msgid "Hinting"
+msgstr "Hinting"
+
+#: src/blueprints/fonts-page.blp:43
+msgid "Full"
+msgstr "Completo"
+
+#: src/blueprints/fonts-page.blp:44
+msgid "Medium"
+msgstr "Medio"
+
+#: src/blueprints/fonts-page.blp:45
+msgid "Slight"
+msgstr "Ligero"
+
+#: src/blueprints/fonts-page.blp:51
+msgid "Scaling Factor"
+msgstr "Factor de escalado"
+
+#: src/blueprints/main-window.blp.in:6
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: src/blueprints/main-window.blp.in:7
+msgid "Import user settings"
+msgstr "Importar la configuración del usuario"
+
+#: src/blueprints/main-window.blp.in:8
+msgid "Reset settings"
+msgstr "Restablecer la configuración"
+
+#: src/blueprints/main-window.blp.in:11
+msgid "About"
+msgstr "Acerca de"
+
+#: src/blueprints/main-window.blp.in:12
+msgid "Quit"
+msgstr "Salir"
+
+#: src/blueprints/main-window.blp.in:46
+msgid "Homepage"
+msgstr "Página web"
+
+#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:66
+msgid "Images"
+msgstr "Imágenes"
+
+#: src/blueprints/main-window.blp.in:57 src/blueprints/main-window.blp.in:69
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/blueprints/main-window.blp.in:60 src/blueprints/main-window.blp.in:72
+msgid "Select"
+msgstr "Seleccionar"
+
+#: src/blueprints/main-window.blp.in:90
+msgid "Failed to apply settings"
+msgstr "No se ha podido aplicar la configuración"
+
+#: src/blueprints/main-window.blp.in:96
+msgid "Settings applied successfully"
+msgstr "Configuración aplicada con éxito"
+
+#: src/blueprints/main-window.blp.in:102
+msgid "User settings imported"
+msgstr "Configuración del usuario importada"
+
+#: src/blueprints/main-window.blp.in:108
+msgid "Settings reloaded"
+msgstr "Configuración recargada"
+
+#: src/blueprints/misc-page.blp:19 src/gdm_settings_gui.py:487
+msgid "Miscellaneous"
+msgstr "Miscelánea"
+
+#: src/blueprints/misc-page.blp:22
+msgid "Disable Restart Buttons"
+msgstr "Desactivar los botones de reinicio"
+
+#: src/blueprints/misc-page.blp:32
+msgid "Disable User List"
+msgstr "Desactivar la lista de usuarios"
+
+#: src/blueprints/misc-page.blp:42
+msgid "Enable Logo"
+msgstr "Activar logotipo"
+
+#: src/blueprints/misc-page.blp:43
+msgid "Whether to show a logo below user list"
+msgstr "Mostrar o no un logotipo debajo de la lista de usuarios"
+
+#: src/blueprints/misc-page.blp:53
+msgid "Logo"
+msgstr "Logotipo"
+
+#: src/blueprints/misc-page.blp:54
+msgid "The image to show below user list"
+msgstr "La imagen para mostrar debajo de la lista de usuarios"
+
+#: src/blueprints/misc-page.blp:66
+msgid "Welcome Message"
+msgstr "Mensaje de bienvenida"
+
+#: src/blueprints/sound-page.blp:19 src/gdm_settings_gui.py:484
+msgid "Sound"
+msgstr "Sonido"
+
+#: src/blueprints/sound-page.blp:21
+msgid "Theme"
+msgstr "Tema"
+
+#: src/blueprints/sound-page.blp:24
+msgid "Over Amplification"
+msgstr "Sobreamplificación"
+
+#: src/blueprints/sound-page.blp:25
+msgid "Allow raising volume above 100%"
+msgstr "Permitir aumentar el volumen por encima del 100%"
+
+#: src/blueprints/sound-page.blp:35
+msgid "Event Sounds"
+msgstr "Sonidos de eventos"
+
+#: src/blueprints/sound-page.blp:45
+msgid "Input Feedback Sounds"
+msgstr "Sonidos de retroalimentación de entrada"
+
+#: src/blueprints/tools-page.blp:19
+msgid "Default Shell Theme"
+msgstr "Tema de shell predeterminado"
+
+#: src/blueprints/tools-page.blp:22
+msgid "Include Top Bar Tweaks"
+msgstr "Incluir ajustes en la barra superior"
+
+#: src/blueprints/tools-page.blp:29
+msgid "Extract default shell theme"
+msgstr "Extraer el tema de shell predeterminado"
+
+#: src/blueprints/tools-page.blp:32
+msgid "Extract"
+msgstr "Extraer"
+
+#: src/blueprints/top-bar-page.blp:19
+msgid "Tweaks"
+msgstr "Ajustes"
+
+#: src/blueprints/top-bar-page.blp:22
+msgid "Change Text Color"
+msgstr "Cambiar el color del texto"
+
+#: src/blueprints/top-bar-page.blp:31
+msgid "Text Color"
+msgstr "Color del texto"
+
+#: src/blueprints/top-bar-page.blp:32
+msgid "The color of text in top bar"
+msgstr "El color del texto en la barra superior"
+
+#: src/blueprints/top-bar-page.blp:44
+msgid "Change Background Color"
+msgstr "Cambiar el color de fondo"
+
+#: src/blueprints/top-bar-page.blp:54
+msgid "The color of top bar background"
+msgstr "El color del fondo de la barra superior"
+
+#: src/blueprints/top-bar-page.blp:66
+msgid "Disable Arrows"
+msgstr "Desactivar flechas"
+
+#: src/blueprints/top-bar-page.blp:76
+msgid "Disable Rounded Corners"
+msgstr "Desactivar las esquinas redondeadas"
+
+#: src/blueprints/top-bar-page.blp:87
+msgid "Clock"
+msgstr "Reloj"
+
+#: src/blueprints/top-bar-page.blp:90
+msgid "Show Weekday"
+msgstr "Mostrar día de la semana"
+
+#: src/blueprints/top-bar-page.blp:100
+msgid "Show Seconds"
+msgstr "Mostrar segundos"
+
+#: src/blueprints/top-bar-page.blp:110
+msgid "Time Format"
+msgstr "Formato de la hora"
+
+#: src/blueprints/top-bar-page.blp:111
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: src/blueprints/top-bar-page.blp:111
+msgid "24 Hours"
+msgstr "24 horas"
+
+#: src/blueprints/top-bar-page.blp:116
+msgid "Power"
+msgstr "Energía"
+
+#: src/blueprints/top-bar-page.blp:119
+msgid "Show battery percentage"
+msgstr "Mostrar porcentaje de la batería"
+
+#: src/blueprints/touchpad-page.blp:19 src/gdm_settings_gui.py:485
+msgid "Touchpad"
+msgstr "Panel táctil"
+
+#: src/blueprints/touchpad-page.blp:22
+msgid "Tap to Click"
+msgstr "Tocar para pulsar"
+
+#: src/blueprints/touchpad-page.blp:32
+msgid "Natural Scrolling"
+msgstr "Desplazamiento natural"
+
+#: src/blueprints/touchpad-page.blp:33
+msgid "Scrolling moves the content, not the view."
+msgstr "El desplazamiento mueve la vista, no el contenido."
+
+#: src/blueprints/touchpad-page.blp:43
+msgid "Two-finger Scrolling"
+msgstr "Desplazamiento con dos dedos"
+
+#: src/blueprints/touchpad-page.blp:53
+msgid "Touchpad Speed"
+msgstr "Velocidad del panel táctil"
+
+#: src/gdm_settings_gui.py:123
+msgid "Applied current display settings"
+msgstr "Aplicada la configuración actual de la pantalla"
+
+#: src/gdm_settings_gui.py:125
+msgid "Failed to apply current display settings"
+msgstr "No se ha podido aplicar la configuración actual de la pantalla"
+
+#: src/gdm_settings_gui.py:135
+msgid ""
+"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
+msgstr ""
+"Tema de shell predeterminado extraído a '/usr/share/themes' como 'default-"
+"extracted'"
+
+#: src/gdm_settings_gui.py:137
+msgid "Failed to extract default theme"
+msgstr "Fallo al extraer el tema predeterminado"
+
+#: src/gdm_settings_gui.py:285
+msgid "translator-credits"
+msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
+
+#: src/gdm_settings_gui.py:481
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/gdm_settings_gui.py:483
+msgid "Top Bar"
+msgstr "Barra superior"
+
+#: src/gdm_settings_gui.py:488
+msgid "Tools"
+msgstr "Herramientas"
+
+#: src/gdm_settings_gui.py:541
+msgid "Failed to reset settings"
+msgstr "Fallo en el restablecimiento de la configuración"
+
+#: src/gdm_settings_gui.py:545
+msgid "Reset settings successfully"
+msgstr "Restablecida la configuración correctamente"
+
+#: src/settings_manager.py:206
+msgid "saving default theme ..."
+msgstr "guardando el tema predeterminado ..."
+
+#: src/settings_manager.py:218
+msgid "updating backup of default theme ..."
+msgstr "actualizando la copia de seguridad del tema predeterminado ..."
+
+#: src/settings_manager.py:225
+msgid "restoring default theme from backup ..."
+msgstr "restaurando el tema predeterminado desde una copia de seguridad ..."
