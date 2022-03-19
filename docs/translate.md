@@ -100,7 +100,9 @@ Now, you have successfully created translation for a new language. It does not c
 
    **Note:** Do not change anything in 'Original Message' text box. Otherwise, translation will be rendered useless.
    
-   **Also Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format; `name <email>`.
+   **Also Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format
+   
+   `name <email>`
 
 6. Save your translations by pressing 'Ctrl+S' or clicking on 'Save'
 
