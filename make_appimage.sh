@@ -7,8 +7,11 @@ export DESTDIR=${AppDir#"$PWD/"}
 export PREFIX=/usr
 export USE_RELATIVE_SYMLINKS=true
 
-rm -rf "$buildDir"
-meson "$buildDir" --prefix=$PREFIX
+if test -d "$buildDir"; then
+  meson "$buildDir" --prefix=$PREFIX --reconfigure
+else
+  meson "$buildDir" --prefix=$PREFIX
+fi
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
 eval $("$progDir"/load_info.py)
@@ -16,9 +19,11 @@ eval $("$progDir"/load_info.py)
 source "$progDir"/colors.sh
 
 AppRun='#!/usr/bin/bash
-progDir=$(dirname "$(realpath "$0")")
+#progDir=$(dirname "$(realpath "$0")")
+progDir=$APPDIR
 export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 export PATH="${progDir}/usr/bin:${PATH}"
+export TEXTDOMAINDIR="${progDir}"/usr/share/locale:"$TEXTDOMAINDIR"
 gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
