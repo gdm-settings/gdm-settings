@@ -14,8 +14,6 @@ You need the following things before starting to translate
   git clone --depth=1 https://github.com/realmazharhussain/gdm-settings.git
   ```
 
-- build and run-time dependencies of this app
-
 - [intltool](https://launchpad.net/intltool)
 
 - [GTranslator](https://gitlab.gnome.org/GNOME/gtranslator.git)
@@ -101,6 +99,8 @@ Now, you have successfully created translation for a new language. It does not c
    Click on any text and you can change its translation by changing text in 'Translated Text' text box
 
    **Note:** Do not change anything in 'Original Message' text box. Otherwise, translation will be rendered useless.
+   
+   **Also Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format; `name <email>`.
 
 6. Save your translations by pressing 'Ctrl+S' or clicking on 'Save'
 
