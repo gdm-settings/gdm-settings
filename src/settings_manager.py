@@ -405,7 +405,7 @@ class Settings:
 
         if mouse_settings := self._settings("org.gnome.desktop.peripherals.mouse"):
             self.pointer_acceleration = mouse_settings.get_string("accel-profile")
-            self.inverse_scrolling = touchpad_settings.get_boolean("natural-scroll")
+            self.inverse_scrolling = mouse_settings.get_boolean("natural-scroll")
             self.mouse_speed = mouse_settings.get_double("speed")
 
         if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad"):
