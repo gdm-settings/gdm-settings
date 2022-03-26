@@ -239,6 +239,8 @@ class GDM_Settings(Adw.Application, App_Utils):
             "apply_current_display_settings_button",
             "night_light_enable_switch",
             "night_light_schedule_comborow",
+            "night_light_start_box",
+            "night_light_end_box",
             "night_light_start_hour_spinbutton",
             "night_light_start_minute_spinbutton",
             "night_light_end_hour_spinbutton",
@@ -294,6 +296,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.mouse_speed_scale.set_range(-1, 1)
         # Touchpad Speed Scale
         widgets.touchpad_speed_scale.set_range(-1, 1)
+        # Night Light Start Box
+        widgets.night_light_start_box.set_direction(Gtk.TextDirection.LTR)
+        # Night Light End Box
+        widgets.night_light_end_box.set_direction(Gtk.TextDirection.LTR)
         # Night Light Start Hour SpinButton
         widgets.night_light_start_hour_spinbutton.set_range(0, 23)
         widgets.night_light_start_hour_spinbutton.set_increments(1,2)
