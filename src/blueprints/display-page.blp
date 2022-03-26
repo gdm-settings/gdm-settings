@@ -24,6 +24,7 @@ ScrolledWindow display_page_content {
           activatable-widget: apply_current_display_settings_button;
 
           Button apply_current_display_settings_button { label: _("Apply"); valign: center; }
+        }
       }
 
       Adw.PreferencesGroup {
@@ -48,36 +49,44 @@ ScrolledWindow display_page_content {
 
           Label { label: _("From"); styles ["dim-label"] }
 
-          SpinButton night_light_start_hour_spinbutton {
-            orientation: vertical;
-            width-chars: 2;
-            valign: center;
-          }
+          Box night_light_start_box {
+            spacing: 5;
 
-          Label { label: ":"; }
+            SpinButton night_light_start_hour_spinbutton {
+              orientation: vertical;
+              width-chars: 2;
+              valign: center;
+            }
 
-          SpinButton night_light_start_minute_spinbutton {
-            orientation: vertical;
-            width-chars: 2;
-            valign: center;
+            Label { label: ":"; }
+
+            SpinButton night_light_start_minute_spinbutton {
+              orientation: vertical;
+              width-chars: 2;
+              valign: center;
+            }
           }
 
           Separator { styles ["spacer"] }
 
           Label { label: _("To"); styles ["dim-label"] }
 
-          SpinButton night_light_end_hour_spinbutton {
-            orientation: vertical;
-            width-chars: 2;
-            valign: center;
-          }
+          Box night_light_end_box{
+            spacing: 5;
 
-          Label { label: ":"; }
+            SpinButton night_light_end_hour_spinbutton {
+              orientation: vertical;
+              width-chars: 2;
+              valign: center;
+            }
 
-          SpinButton night_light_end_minute_spinbutton {
-            orientation: vertical;
-            width-chars: 2;
-            valign: center;
+            Label { label: ":"; }
+
+            SpinButton night_light_end_minute_spinbutton {
+              orientation: vertical;
+              width-chars: 2;
+              valign: center;
+            }
           }
         }
 
