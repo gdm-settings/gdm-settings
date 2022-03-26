@@ -23,8 +23,7 @@ ScrolledWindow display_page_content {
           subtitle: _("Resolution, refresh rate, monitor positions, etc");
           activatable-widget: apply_current_display_settings_button;
 
-          Button apply_current_display_settings_button { label: _("Apply"); margin-top: 5; margin-bottom: 5; }
-        }
+          Button apply_current_display_settings_button { label: _("Apply"); valign: center; }
       }
 
       Adw.PreferencesGroup {
@@ -35,8 +34,7 @@ ScrolledWindow display_page_content {
           activatable-widget: night_light_enable_switch;
 
           Switch night_light_enable_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
 
@@ -53,8 +51,7 @@ ScrolledWindow display_page_content {
           SpinButton night_light_start_hour_spinbutton {
             orientation: vertical;
             width-chars: 2;
-            margin-top: 10;
-            margin-bottom: 10;
+            valign: center;
           }
 
           Label { label: ":"; }
@@ -62,8 +59,7 @@ ScrolledWindow display_page_content {
           SpinButton night_light_start_minute_spinbutton {
             orientation: vertical;
             width-chars: 2;
-            margin-top: 10;
-            margin-bottom: 10;
+            valign: center;
           }
 
           Separator { styles ["spacer"] }
@@ -73,8 +69,7 @@ ScrolledWindow display_page_content {
           SpinButton night_light_end_hour_spinbutton {
             orientation: vertical;
             width-chars: 2;
-            margin-top: 10;
-            margin-bottom: 10;
+            valign: center;
           }
 
           Label { label: ":"; }
@@ -82,8 +77,7 @@ ScrolledWindow display_page_content {
           SpinButton night_light_end_minute_spinbutton {
             orientation: vertical;
             width-chars: 2;
-            margin-top: 10;
-            margin-bottom: 10;
+            valign: center;
           }
         }
 

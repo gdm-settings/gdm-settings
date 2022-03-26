@@ -22,8 +22,7 @@ ScrolledWindow top_bar_page_content {
           title: _("Change Text Color");
 
           [action] Switch top_bar_text_color_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
             active: bind top_bar_text_color_expanderrow.expanded bidirectional;
           }
 
@@ -33,8 +32,7 @@ ScrolledWindow top_bar_page_content {
             activatable-widget: top_bar_text_color_button;
 
             ColorButton top_bar_text_color_button {
-              margin-top: 5;
-              margin-bottom: 5;
+              valign: center;
               use-alpha: true;
             }
           }
@@ -45,8 +43,7 @@ ScrolledWindow top_bar_page_content {
           expanded: bind top_bar_background_color_switch.active bidirectional;
 
           [action] Switch top_bar_background_color_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
 
           Adw.ActionRow top_bar_background_color_actionrow {
@@ -55,8 +52,7 @@ ScrolledWindow top_bar_page_content {
             activatable-widget: top_bar_background_color_button;
 
             ColorButton top_bar_background_color_button {
-              margin-top: 5;
-              margin-bottom: 5;
+              valign: center;
               use-alpha: true;
             }
           }
@@ -67,8 +63,7 @@ ScrolledWindow top_bar_page_content {
           activatable-widget: disable_top_bar_arrows_switch;
 
           Switch disable_top_bar_arrows_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
 
@@ -77,8 +72,7 @@ ScrolledWindow top_bar_page_content {
           activatable-widget: disable_top_bar_rounded_corners_switch;
 
           Switch disable_top_bar_rounded_corners_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
       }
@@ -91,8 +85,7 @@ ScrolledWindow top_bar_page_content {
           activatable-widget: show_weekday_switch;
 
           Switch show_weekday_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
 
@@ -101,8 +94,7 @@ ScrolledWindow top_bar_page_content {
           activatable-widget: show_seconds_switch;
 
           Switch show_seconds_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
 
@@ -120,8 +112,7 @@ ScrolledWindow top_bar_page_content {
           activatable-widget: show_battery_percentage_switch;
 
           Switch show_battery_percentage_switch {
-            margin-top: 15;
-            margin-bottom: 15;
+            valign: center;
           }
         }
       }
