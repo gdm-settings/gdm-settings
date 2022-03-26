@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-16 20:18+0500\n"
-"PO-Revision-Date: 2022-03-16 20:20+0500\n"
+"POT-Creation-Date: 2022-03-26 20:49+0500\n"
+"PO-Revision-Date: 2022-03-26 20:55+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
 "Language: ur\n"
@@ -69,7 +69,7 @@ msgstr "فائل چُنیں"
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:486
+#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:503
 msgid "Display"
 msgstr "ڈسپلے"
 
@@ -122,7 +122,7 @@ msgstr "ختم"
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
-#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:482
+#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:499
 msgid "Fonts"
 msgstr "خط"
 
@@ -221,7 +221,7 @@ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:487
+#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:504
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
@@ -253,7 +253,65 @@ msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
 msgid "Welcome Message"
 msgstr "خوش آمدید کا پیغام"
 
-#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:484
+#: ../src/blueprints/pointing-page.blp:19
+msgid "Mouse"
+msgstr "مائوس"
+
+#: ../src/blueprints/pointing-page.blp:22
+msgid "Pointer Acceleration"
+msgstr "پوائنٹر ایکسلریشن"
+
+#: ../src/blueprints/pointing-page.blp:24
+msgid "Automatic"
+msgstr "آٹومیٹک"
+
+#: ../src/blueprints/pointing-page.blp:25
+msgid "Disabled"
+msgstr "بند"
+
+#: ../src/blueprints/pointing-page.blp:26
+msgid "Enabled"
+msgstr "چالو"
+
+#: ../src/blueprints/pointing-page.blp:31
+msgid "Inverse Scrolling"
+msgstr "الٹی سکرولِنگ"
+
+#: ../src/blueprints/pointing-page.blp:32
+#: ../src/blueprints/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "سکرولِنگ سے مواد جگہ بدلتا ہے نہ کہ ویئو"
+
+#: ../src/blueprints/pointing-page.blp:39
+#: ../src/blueprints/pointing-page.blp:82
+msgid "Pointer Speed"
+msgstr "تیر کی سپیڈ"
+
+#: ../src/blueprints/pointing-page.blp:49
+msgid "Touchpad"
+msgstr "ٹچ پیڈ"
+
+#: ../src/blueprints/pointing-page.blp:52
+msgid "Tap to Click"
+msgstr "کلک کیلئے ٹَیپ کریں"
+
+#: ../src/blueprints/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "قدرتی سکرولِنگ"
+
+#: ../src/blueprints/pointing-page.blp:67
+msgid "Two-finger Scrolling"
+msgstr "دو انگلیئوں کے ساتھ سکرولِنگ"
+
+#: ../src/blueprints/pointing-page.blp:68
+msgid "Scroll by swiping with two fingers."
+msgstr "دو انگلیوں کے ساتھ سوائیپ کریں"
+
+#: ../src/blueprints/pointing-page.blp:75
+msgid "Disable while Typing"
+msgstr "ٹائپ کرتے وقت بند کریں"
+
+#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:501
 msgid "Sound"
 msgstr "آواز"
 
@@ -361,30 +419,6 @@ msgstr "پاوَر"
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
 
-#: ../src/blueprints/touchpad-page.blp:19 ../src/gdm_settings_gui.py:485
-msgid "Touchpad"
-msgstr "ٹچ پیڈ"
-
-#: ../src/blueprints/touchpad-page.blp:22
-msgid "Tap to Click"
-msgstr "کلک کیلئے ٹَیپ کریں"
-
-#: ../src/blueprints/touchpad-page.blp:32
-msgid "Natural Scrolling"
-msgstr "قدرتی سکرولِنگ"
-
-#: ../src/blueprints/touchpad-page.blp:33
-msgid "Scrolling moves the content, not the view."
-msgstr "سکرولِنگ سے مواد جگہ بدلتا ہے نہ کہ ویئو"
-
-#: ../src/blueprints/touchpad-page.blp:43
-msgid "Two-finger Scrolling"
-msgstr "دو انگلیئوں کے ساتھ سکرولِنگ"
-
-#: ../src/blueprints/touchpad-page.blp:53
-msgid "Touchpad Speed"
-msgstr "ٹچ پیڈ کی سپیڈ"
-
 #: ../src/gdm_settings_gui.py:123
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
@@ -405,31 +439,35 @@ msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
 #. About Dialog
-#: ../src/gdm_settings_gui.py:281
+#: ../src/gdm_settings_gui.py:285
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: ../src/gdm_settings_gui.py:285
+#: ../src/gdm_settings_gui.py:289
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: ../src/gdm_settings_gui.py:481
+#: ../src/gdm_settings_gui.py:498
 msgid "Appearance"
 msgstr "شکل"
 
-#: ../src/gdm_settings_gui.py:483
+#: ../src/gdm_settings_gui.py:500
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: ../src/gdm_settings_gui.py:488
+#: ../src/gdm_settings_gui.py:502
+msgid "Mouse & Touchpad"
+msgstr "مائوس اور ٹچ پیڈ"
+
+#: ../src/gdm_settings_gui.py:505
 msgid "Tools"
 msgstr "آلات"
 
-#: ../src/gdm_settings_gui.py:541
+#: ../src/gdm_settings_gui.py:558
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: ../src/gdm_settings_gui.py:545
+#: ../src/gdm_settings_gui.py:562
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
@@ -444,3 +482,6 @@ msgstr "ڈیفالٹ تھیم کا بیک اپ اپڈیٹ ہو رہا ہے ۔۔�
 #: ../src/settings_manager.py:225
 msgid "restoring default theme from backup ..."
 msgstr "ڈیفالٹ تھیم بیک اپ سے ریسٹور ہو رہا ہے ۔۔۔"
+
+#~ msgid "Touchpad Speed"
+#~ msgstr "ٹچ پیڈ کی سپیڈ"
