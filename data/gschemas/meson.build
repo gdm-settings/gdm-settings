@@ -6,7 +6,9 @@ gschema_files = [
   'application_id.night-light.gschema.xml.in',
   'application_id.sound.gschema.xml.in',
   'application_id.top-bar.gschema.xml.in',
-  'application_id.touchpad.gschema.xml.in',
+  'application_id.pointing.gschema.xml.in',
+  'application_id.pointing.mouse.gschema.xml.in',
+  'application_id.pointing.touchpad.gschema.xml.in',
   'application_id.tools.gschema.xml.in',
   'application_id.window-state.gschema.xml.in',
   ]

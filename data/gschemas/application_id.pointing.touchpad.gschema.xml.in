@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.touchpad" path="@schema_path@touchpad/">
+  <schema id="@application_id@.pointing.touchpad" path="@schema_path@pointing/touchpad/">
 
     <key name="tap-to-click" type="b">
       <default>true</default>
@@ -11,6 +11,10 @@
     </key>
 
     <key name="two-finger-scrolling" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="disable-while-typing" type="b">
       <default>true</default>
     </key>
 

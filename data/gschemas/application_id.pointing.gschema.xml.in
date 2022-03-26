@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="@application_id@.pointing" path="@schema_path@pointing/">
+
+    <child name="mouse" schema="@application_id@.pointing.mouse"/>
+    <child name="touchpad" schema="@application_id@.pointing.touchpad"/>
+
+  </schema>
+</schemalist>

@@ -316,10 +316,16 @@ class Settings:
         {section:"sound", key:'feedback-sounds', key_type:"boolean"},
         {section:"sound", key:'over-amplification', key_type:"boolean"},
 
-        ## Touchpad ##
+        ## Pointing ##
+        # Mouse
+        {section:"mouse", key:'pointer-acceleration', key_type:"string"},
+        {section:"mouse", key:'inverse-scrolling', key_type:"boolean"},
+        {section:"mouse", key:'mouse-speed', key_type:"double"},
+        # Touchpad
         {section:"touchpad", key:'tap-to-click', key_type:"boolean"},
         {section:"touchpad", key:'natural-scrolling', key_type:"boolean"},
         {section:"touchpad", key:'two-finger-scrolling', key_type:"boolean"},
+        {section:"touchpad", key:'disable-while-typing', key_type:"boolean"},
         {section:"touchpad", key:'touchpad-speed', key_type:"double"},
 
         ## Night Light ##
@@ -348,7 +354,9 @@ class Settings:
         self.fonts_gsettings = Gio.Settings(schema_id=f'{application_id}.fonts')
         self.top_bar_gsettings = Gio.Settings(schema_id=f'{application_id}.top-bar')
         self.sound_gsettings = Gio.Settings(schema_id=f'{application_id}.sound')
-        self.touchpad_gsettings = Gio.Settings(schema_id=f'{application_id}.touchpad')
+        self.pointing_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing')
+        self.mouse_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing.mouse')
+        self.touchpad_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing.touchpad')
         self.night_light_gsettings = Gio.Settings(schema_id=f'{application_id}.night-light')
         self.misc_gsettings = Gio.Settings(schema_id=f'{application_id}.misc')
 
@@ -395,10 +403,16 @@ class Settings:
             self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
             self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
 
+        if mouse_settings := self._settings("org.gnome.desktop.peripherals.mouse"):
+            self.pointer_acceleration = mouse_settings.get_string("accel-profile")
+            self.inverse_scrolling = touchpad_settings.get_boolean("natural-scroll")
+            self.mouse_speed = mouse_settings.get_double("speed")
+
         if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad"):
             self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
             self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
             self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
+            self.disable_while_typing = touchpad_settings.get_boolean("disable-while-typing")
             self.touchpad_speed = touchpad_settings.get_double("speed")
 
         if night_light_settings := self._settings("org.gnome.settings-daemon.plugins.color"):
@@ -563,6 +577,13 @@ class Settings:
             gdm_conf_contents += f"input-feedback-sounds={str(self.feedback_sounds).lower()}\n"
             gdm_conf_contents += f"allow-volume-above-100-percent={str(self.over_amplification).lower()}\n"
             gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#-------------- Mouse ---------------\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/peripherals/mouse]\n"
+            gdm_conf_contents +=  "#------------------------------------\n"
+            gdm_conf_contents += f"accel-profile='{self.pointer_acceleration}'\n"
+            gdm_conf_contents += f"natural-scroll={str(self.inverse_scrolling).lower()}\n"
+            gdm_conf_contents += f"speed={self.mouse_speed}\n"
+            gdm_conf_contents +=  "\n"
             gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
             gdm_conf_contents +=  "#---------------------------------------\n"
@@ -570,6 +591,7 @@ class Settings:
             gdm_conf_contents += f"tap-to-click={str(self.tap_to_click).lower()}\n"
             gdm_conf_contents += f"natural-scroll={str(self.natural_scrolling).lower()}\n"
             gdm_conf_contents += f"two-finger-scrolling-enabled={str(self.two_finger_scrolling).lower()}\n"
+            gdm_conf_contents += f"disable-while-typing={str(self.disable_while_typing).lower()}\n"
             gdm_conf_contents +=  "\n"
             gdm_conf_contents +=  "#------------- Night Light --------------\n"
             gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"

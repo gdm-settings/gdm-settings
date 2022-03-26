@@ -22,7 +22,7 @@
 	     <choice value="display"/>
 	     <choice value="sound"/>
 	     <choice value="top_bar"/>
-	     <choice value="touchpad"/>
+	     <choice value="pointing"/>
 	     <choice value="misc"/>
 	     <choice value="tools"/>
 	   </choices>

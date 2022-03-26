@@ -23,7 +23,7 @@ blueprints = [main_window_blp] + files(
   'display-page.blp',
   'sound-page.blp',
   'top-bar-page.blp',
-  'touchpad-page.blp',
+  'pointing-page.blp',
   'misc-page.blp',
   'tools-page.blp',
 )

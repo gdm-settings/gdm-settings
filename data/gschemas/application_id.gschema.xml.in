@@ -8,7 +8,7 @@
     <child name="fonts" schema="@application_id@.fonts"/>
     <child name="top-bar" schema="@application_id@.top-bar"/>
     <child name="sound" schema="@application_id@.sound"/>
-    <child name="touchpad" schema="@application_id@.touchpad"/>
+    <child name="pointing" schema="@application_id@.pointing"/>
     <child name="night-light" schema="@application_id@.night-light"/>
     <child name="misc" schema="@application_id@.misc"/>
 

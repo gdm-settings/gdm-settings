@@ -163,7 +163,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "display-page.ui",
             "sound-page.ui",
             "top-bar-page.ui",
-            "touchpad-page.ui",
+            "pointing-page.ui",
             "misc-page.ui",
             "tools-page.ui",
         ]
@@ -180,7 +180,7 @@ class GDM_Settings(Adw.Application, App_Utils):
             "display_page_content",
             "sound_page_content",
             "top_bar_page_content",
-            "touchpad_page_content",
+            "pointing_page_content",
             "misc_page_content",
             "tools_page_content",
             "apply_button",
@@ -225,10 +225,14 @@ class GDM_Settings(Adw.Application, App_Utils):
             "feedback_sounds_switch",
             "over_amplification_switch",
 
-            # Widgets from Touchpad page
+            # Widgets from Mouse & Touchpad page
+            "mouse_speed_scale",
+            "pointer_acceleration_comborow",
+            "mouse_inverse_scrolling_switch",
             "tap_to_click_switch",
             "natural_scrolling_switch",
             "two_finger_scrolling_switch",
+            "disable_while_typing_switch",
             "touchpad_speed_scale",
 
             # Widgets from Display page
@@ -286,6 +290,8 @@ class GDM_Settings(Adw.Application, App_Utils):
         # Font Scaling Factor SpinButton
         widgets.scaling_factor_spinbutton.set_range(0.5, 3)
         widgets.scaling_factor_spinbutton.set_increments(0.1,0.5)
+        # Mouse Speed Scale
+        widgets.mouse_speed_scale.set_range(-1, 1)
         # Touchpad Speed Scale
         widgets.touchpad_speed_scale.set_range(-1, 1)
         # Night Light Start Hour SpinButton
@@ -447,10 +453,21 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.feedback_sounds_switch.set_active(self.settings.feedback_sounds)
         widgets.over_amplification_switch.set_active(self.settings.over_amplification)
 
-        #### Touchpad ####
+        #### Pointing ####
+        ## Mouse ##
+        widgets.mouse_inverse_scrolling_switch.set_active(self.settings.inverse_scrolling)
+        if self.settings.pointer_acceleration == 'default':
+            widgets.pointer_acceleration_comborow.set_selected(0)
+        elif self.settings.pointer_acceleration == 'flat':
+            widgets.pointer_acceleration_comborow.set_selected(1)
+        elif self.settings.pointer_acceleration == 'adaptive':
+            widgets.pointer_acceleration_comborow.set_selected(2)
+        widgets.mouse_speed_scale.set_value(self.settings.mouse_speed)
+        ## Touchpad ##
         widgets.tap_to_click_switch.set_active(self.settings.tap_to_click)
         widgets.natural_scrolling_switch.set_active(self.settings.natural_scrolling)
         widgets.two_finger_scrolling_switch.set_active(self.settings.two_finger_scrolling)
+        widgets.disable_while_typing_switch.set_active(self.settings.disable_while_typing)
         widgets.touchpad_speed_scale.set_value(self.settings.touchpad_speed)
 
         #### Night Light ####
@@ -482,7 +499,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.add_page_to_page_stack(_("Fonts"), 'fonts')
         self.add_page_to_page_stack(_("Top Bar"), 'top_bar')
         self.add_page_to_page_stack(_("Sound"), 'sound')
-        self.add_page_to_page_stack(_("Touchpad"), 'touchpad')
+        self.add_page_to_page_stack(_("Mouse & Touchpad"), 'pointing')
         self.add_page_to_page_stack(_("Display"), 'display')
         self.add_page_to_page_stack(_("Miscellaneous"), "misc")
         self.add_page_to_page_stack(_("Tools"), 'tools')
@@ -599,11 +616,23 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.settings.feedback_sounds   = widgets.feedback_sounds_switch.get_active()
         self.settings.over_amplification   = widgets.over_amplification_switch.get_active()
 
-        ## Touchpad ##
+        ## Pointing ##
+        # Mouse
+        self.settings.mouse_speed = widgets.mouse_speed_scale.get_value()
+        self.settings.inverse_scrolling   = widgets.mouse_inverse_scrolling_switch.get_active()
+        accel_profile = widgets.pointer_acceleration_comborow.get_selected()
+        if accel_profile == 0:
+            self.settings.pointer_acceleration = 'default'
+        elif accel_profile == 1:
+            self.settings.pointer_acceleration = 'flat'
+        elif accel_profile == 2:
+            self.settings.pointer_acceleration = 'adaptive'
+        # Touchpad
         self.settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
-        self.settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
         self.settings.natural_scrolling   = widgets.natural_scrolling_switch.get_active()
         self.settings.two_finger_scrolling   = widgets.two_finger_scrolling_switch.get_active()
+        self.settings.disable_while_typing   = widgets.disable_while_typing_switch.get_active()
+        self.settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
 
         ## Night Light ##
         self.settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
