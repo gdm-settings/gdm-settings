@@ -23,11 +23,16 @@
   - Raise volume over 100%
   - Event sounds
   - Input feedback sounds
+- Mouse settings
+  - Pointer Acceleration
+  - Inverse Scrolling
+  - Pointer Speed
 - Touchpad settings
-  - Speed
   - Tap to Click
   - Natural Scrolling
-  - Two-finger scrolling
+  - Two-finger Scrolling
+  - Disable while Typing
+  - Pointer Speed
 - Dislplay settings
   - Apply current(session) display settings to GDM
     - Display positions
