@@ -87,15 +87,15 @@ You need to run the following commands in terminal to install the dependencies
 **Note:** LibAdwaita (libadwaita-1-dev) will only be available in Debian 12 and Ubuntu 22.04 or later
 
 ```bash
-sudo apt install libadwaita-1-dev libglib2.0-dev python-gi-dev #Runtime Dependencies
-sudo apt install meson #Build Dependencies
+sudo apt install libadwaita-1-dev libglib2.0-dev python-gi-dev gettext #Runtime Dependencies
+sudo apt install meson gobject-introspection #Build Dependencies
 ```
 
 #### On Arch/Manjaro
 
 ```bash
-sudo pacman -S libadwaita glib2 python-gobject #Runtime Dependencies
-sudo pacman -S meson #Build Dependencies
+sudo pacman -S libadwaita glib2 python-gobject gettext #Runtime Dependencies
+sudo pacman -S meson gobject-introspection #Build Dependencies
 ```
 
 ## Contribute
