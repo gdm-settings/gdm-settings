@@ -9,10 +9,6 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 - [Screenshots](screenshots/README.md)
 - [Features](docs/features.md)
 
-## Important Note! (Alpha-Stage Software)
-
-This app is in an early stage of development (but mostly feature complete). There may be some weirdness here and there.
-
 ## How to Install?
 
 ### On Arch/Manjaro
