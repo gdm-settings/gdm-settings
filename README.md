@@ -68,6 +68,7 @@ meson install -C build
 - [LibAdwaita](https://gnome.pages.gitlab.gnome.org/libadwaita)
 - [GLib](https://gitlab.gnome.org/GNOME/glib)
 - [PyGObject](https://pygobject.readthedocs.io)
+- [GetText](https://www.gnu.org/software/gettext)
 
 ### Build-time Dependencies
 
