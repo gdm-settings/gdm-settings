@@ -8,11 +8,9 @@ finish-args:
   - --device=dri
   - --socket=wayland
   - --socket=fallback-x11
-  - --filesystem=/etc/dconf/db/gdm.d
-  - --filesystem=/etc/dconf/profile/gdm
-  - --filesystem=/usr/share/gnome-shell/gnome-shell-theme.gresource
-  - --filesystem=/usr/share/gnome-shell/gnome-shell-theme.gresource.default
+  - --filesystem=host
 cleanup:
+  - /bin/blueprint-compiler
   - /include
   - /lib/pkgconfig
   - /man

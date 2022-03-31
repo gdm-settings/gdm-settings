@@ -10,5 +10,6 @@ localedir = APPDIR + '@localedir@'
 sys.path.insert(1, py_modules_dir)
 gettext.install('@project_name@', localedir)
 
+from @py_module_name@ import pkg_detect
 from @py_module_name@ import gdm_settings_gui
 gdm_settings_gui.main()

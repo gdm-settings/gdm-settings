@@ -3,9 +3,9 @@ project('gdm-settings',
   meson_version: '>= 0.58',
   )
 
+dependency('glib-2.0')
 dependency('pygobject-3.0')
 dependency('libadwaita-1')
-dependency('glib-2.0')
 
 version = meson.project_version()
 project_name = meson.project_name()
