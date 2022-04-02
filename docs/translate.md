@@ -113,3 +113,7 @@ Create a pull request
 **OR**
 
 [Open an issue](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=translation&template=translation_submission.yml&title=%5BL10N%5D+) and provide your translation file there
+
+## Get notified when translations need updates
+
+You can subscribe to the '[Translation Updates](https://github.com/realmazharhussain/gdm-settings/discussions/23)' discussion and get notified when there's a new release coming and requires translations to be updated for new/modified text.
