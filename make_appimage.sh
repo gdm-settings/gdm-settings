@@ -31,7 +31,11 @@ echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
 rm -rf "$AppDir"/usr/share/metainfo
 ln -sfr "$AppDir"/usr/share/applications/$application_id.desktop "$AppDir"/
-ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/
+if which magick &>/dev/null; then
+  magick -background none "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/$application_id.png
+else
+  ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/
+fi
 echo "$AppRun" > "${AppDir}/AppRun"
 chmod +x "${AppDir}/AppRun"
 echo '  Done.'
