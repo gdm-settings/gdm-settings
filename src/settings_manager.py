@@ -11,8 +11,7 @@ from gi.repository import Gio
 from .info import project_name, application_id
 from .get_env import XDG_CACHE_HOME, SYSTEM_DATA_DIRS
 
-TempDir   = f'/tmp/{project_name}'
-ConfigDir = f'/etc/{project_name}'
+TEMP_DIR   = path.join(XDG_CACHE_HOME, project_name)
 
 class Theme:
     def __init__(self, name:str, path:str):
@@ -103,8 +102,8 @@ class CommandElevator:
         """ Run commands but DO NOT clear command list """
         returncode = 0
         if len(self.__list):
-            makedirs(name=TempDir, exist_ok=True)
-            script_file = f"{TempDir}/run-elevated"
+            makedirs(name=TEMP_DIR, exist_ok=True)
+            script_file = f"{TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=755)
@@ -123,7 +122,7 @@ class CommandElevator:
 class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
-    TempShellDir = f'{TempDir}/gnome-shell'
+    TempShellDir = f'{TEMP_DIR}/gnome-shell'
     ThemesDir = '/usr/share/themes'
     GnomeShellDir = '/usr/share/gnome-shell'
     GdmGresourceFile = f'{GnomeShellDir}/gnome-shell-theme.gresource'
@@ -173,7 +172,7 @@ class GResourceUtils:
 
         Returns: path to a directory inside which resources of the theme were extracted"""
 
-        TempExtractedDir = f"{TempDir}/extracted"
+        TempExtractedDir = f"{TEMP_DIR}/extracted"
         resource_list = getoutput(f"gresource list {gresource_file}").splitlines()
         for resource in resource_list:
             filename = resource.removeprefix("/org/gnome/shell/theme/")
@@ -212,10 +211,10 @@ class GResourceUtils:
         return status
 
     def _extract_default_pure_theme(self):
-        makedirs(TempDir, exist_ok=True)
-        self.extract_default_theme(target_dir=TempDir, name='default-pure')
+        makedirs(TEMP_DIR, exist_ok=True)
+        self.extract_default_theme(target_dir=TEMP_DIR, name='default-pure')
         self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
-        self.command_elevator.add(f"mv -t {self.ThemesDir} {TempDir}/default-pure")
+        self.command_elevator.add(f"mv -t {self.ThemesDir} {TEMP_DIR}/default-pure")
 
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
@@ -226,24 +225,8 @@ class GResourceUtils:
             print(_("saving default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
             self._extract_default_pure_theme()
-        elif not path.exists(self.ThemesDir + '/default-pure'):
+        elif not path.exists(HOST_ROOT + self.ThemesDir + '/default-pure'):
             self._extract_default_pure_theme()
-
-    def backup_update(self):
-        """update backup of the default theme's GResource file on demand
-        for its use as a restore point for the 'default' theme"""
-
-        default_gresource =  self.get_default()
-        if default_gresource and default_gresource != self.GdmGresourceManualBackup:
-            print(_("updating backup of default theme ..."))
-            self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceManualBackup}")
-
-    def backup_restore(self):
-        """restore the 'default' theme's GResource file from the manually created backup"""
-
-        if  path.isfile(self.GdmGresourceManualBackup):
-            print(_("restoring default theme from backup ..."))
-            self.command_elevator.add(f"cp {self.GdmGresourceManualBackup} {self.GdmGresourceAutoBackup}")
 
     def compile(self, shellDir:str, additional_css:str, background_image:str=None):
         """Compile a theme into a GResource file for its use as the GDM theme"""
@@ -251,7 +234,7 @@ class GResourceUtils:
         # Remove temporary directory if already exists
         if path.exists(self.TempShellDir):
             rmtree(self.TempShellDir)
-        tempGresourceFile = path.join(TempDir, 'gnome-shell-theme.gresource')
+        tempGresourceFile = path.join(TEMP_DIR, 'gnome-shell-theme.gresource')
         # Remove temporary file if already exists
         if path.exists(tempGresourceFile):
             remove(tempGresourceFile)
@@ -290,7 +273,7 @@ class GResourceUtils:
 
         # Compile Theme
         run(['glib-compile-resources', f'--sourcedir={self.TempShellDir}', f'{self.TempShellDir}/gnome-shell-theme.gresource.xml'])
-        move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), TempDir)
+        move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), TEMP_DIR)
         rmtree(self.TempShellDir)
         return  tempGresourceFile
 
@@ -543,7 +526,7 @@ class Settings:
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
         gresource_utils.auto_backup()
-        makedirs(TempDir, exist_ok=True)
+        makedirs(TEMP_DIR, exist_ok=True)
 
         shelldir = None
         if self.shell_theme != "default":
@@ -561,7 +544,7 @@ class Settings:
         gdm_profile_dir = "/etc/dconf/profile"
         gdm_profile_path = f"{gdm_profile_dir}/gdm"
 
-        temp_profile_path = f"{TempDir}/gdm-profile"
+        temp_profile_path = f"{TEMP_DIR}/gdm-profile"
         with open(temp_profile_path, "w+") as temp_profile_file:
             gdm_profile_contents  = "user-db:user\n"
             gdm_profile_contents += "system-db:gdm\n"
@@ -573,7 +556,7 @@ class Settings:
         night_light_schedule_to  = self.night_light_end_hour
         night_light_schedule_to += self.night_light_end_minute / 60 
 
-        temp_conf_path = f"{TempDir}/95-gdm-settings"
+        temp_conf_path = f"{TEMP_DIR}/95-gdm-settings"
         with open(temp_conf_path, "w+") as temp_conf_file:
             gdm_conf_contents  =  "#-------- Interface ---------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
@@ -687,4 +670,4 @@ class Settings:
         return status
 
     def cleanup(self):
-        rmtree(path=TempDir, ignore_errors=True)
+        rmtree(path=TEMP_DIR, ignore_errors=True)
