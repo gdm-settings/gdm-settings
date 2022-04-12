@@ -2,7 +2,8 @@ from sys import argv
 from os  import path
 
 project_name = '@project_name@'
-application_name = '@application_name@'
+application_name = _('Login Manager Settings')
+description = _('A settings app for GNOME\'s Login Manager (GDM)')
 version = '@version@'
 application_id = '@application_id@'
 
