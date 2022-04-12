@@ -14,98 +14,84 @@ You need the following things before starting to translate
   git clone --depth=1 https://github.com/realmazharhussain/gdm-settings.git
   ```
 
-- [intltool](https://launchpad.net/intltool)
-
-- [GTranslator](https://gitlab.gnome.org/GNOME/gtranslator.git)
+- [Poedit](https://poedit.net)
 
 ## How to translate?
 
-### Configure/Prepare GTranslator
-
-Once installed, GTranslator is available as 'Translation Editor' in the applications menu. The first time you open up GTranslator, It will present a window asking for some information (name, email, language). Fill in the information as appropriate.
-
-If you mistyped some information and want to change it later,
-
-1. Click on the hamburger menu (three bars) at top of the application window
-2. Click on 'preferences'
-3. Go to 'profiles' tab
-4. Select the active profile
-5. Click on 'Edit Profile'
-6. Change required information
-7. Click 'OK'
-
 ### Create a new translation
 
-0. Make sure you have configured GTranslator as mentioned above
+1. Open main folder of source code inside a terminal
 
-1. Open 'po' sub-folder of source code inside a terminal
+2. Add your language code (on its own line) to `LINGUAS` file in `po` sub-folder of the source code
 
-2. Run the following command
+   **Language Code examples:** `en` for 'English', `en_US` for 'English (United States)', `ur` for 'Urdu', `ur_PK` for 'Urdu (Pakistan)', `ar` for 'Arabic', etc.
 
-   ```bash
-   intltool-update --pot
-   ```
+   **Note:** It is recommended (but not necessary) that you keep language codes in `LINGUAS` file alphabetically sorted
 
-   This will create a file named `untitled.pot`
-
-3. Rename `untitled.pot` to `<your_language_code>.po`
-
-   For example, `en.po` for 'English', `en_US.po` for 'English (United States)', `ur.po` for 'Urdu', `ur_PK` for 'Urdu (Pakistan)', `ar.po` for 'Arabic', etc.
+3. Run the following command
 
    ```bash
-   mv untitled.pot <your_language_code>.po
+   ./po/update-pot-file.sh
    ```
 
-   **Note:** We changed file extension from `pot` to `po`
+   This will create a file named `gdm-settings.pot`
 
-4. Add your language code (on its own line) to `LINGUAS` file
+4. Open Poedit
 
-   It is recommended (but not necessary) that you keep language codes in `LINGUAS` file alphabetically sorted
+5. Click on 'Create new...' and choose newly created `gdm-settings.pot` file
 
-5. Open GTranslator
+6. Select your language
 
-6. Click on 'Open' and choose newly created `po` file for your language
+7. In the top menu-bar, Click on 'Edit' and then on 'Preferences' in the menu that appears
 
-7. Once your file is open, click on the hamburger menu (three bars) at top of the application window
+8. Fill in your name and email address and then close the preferences window
 
-8. Click on 'Edit header'
+9. Start translating
 
-9. Fill in the information as appropriate
+   **Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format (including '<' and '>')
 
-10. Press 'Ctrl+S' or click on 'Save' button
+   `name <email>`
 
-Now, you have successfully created translation for a new language. It does not contain any translated text yet. We will add it later in the next step.
+10. Press 'Ctrl+S' or click on 'Save' button to save your translations
+
+Now, you have successfully created translation for a new language.
 
 ### Update existing translation
 
-0. Make sure you have configured GTranslator as mentioned above
-
-1. Open 'po' sub-folder of source code inside a terminal
+1. Open main folder of source code inside a terminal
 
 2. Run the following command
 
    ```bash
-   intltool-update <your_language_code>
+   ./po/update-pot-file.sh
    ```
 
-   This will add/remove text from translation file for your language (`<your_language_code>.po`) based on what text has been added/removed from the application itself
+   This will create a file named `gdm-settings.pot`
 
-3. Open GTranslator
+3. Open Poedit
 
-4. Click on 'Open' and choose translation file for your language (`<your_language_code>.po`)
+4. Click on 'Browse files' and choose `.po` file for your language
 
-5. Change/add translations
+   For example, `ur.po` for Urdu, `ur_PK.po` for Urdu (Pakistan), `en_US.po` for English (United States), etc.
 
-   Click on any text and you can change its translation by changing text in 'Translated Text' text box
+   **Note:** `.po` files are located in `po` sub-folder of the source code
 
-   **Note:** Do not change anything in 'Original Message' text box. Otherwise, translation will be rendered useless.
-   
-   **Also Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format
-   
+5. In the top menu-bar, Click on 'Translation' and then on 'Update from POT file...' in the menu that appears
+
+6. Click on 'OK'
+
+7. In the top menu-bar, Click on 'Edit' and then on 'Preferences' in the menu that appears
+
+8. Fill in your name and email address and then close the preferences window
+
+9. Start translating
+
+   **Note:** Text `translator-credits` is special. Don't translate it. You can put your information here in place of translated text (in your language) and it will show up in the about dialog of this application. It is recommended that you put text here with following format (including '<' and '>')
+
    `name <email>`
 
-6. Save your translations by pressing 'Ctrl+S' or clicking on 'Save'
-
+10. Press 'Ctrl+S' or click on 'Save' button to save your translations
+   
 ### Submit your translation
 
 Create a pull request
