@@ -160,7 +160,7 @@ class GResourceUtils:
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup, self.GdmGresourceManualBackup:
+        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup:
            if self.is_default(file):
                return file
 
