@@ -6,6 +6,8 @@ In this document, are the instructions for translating 'Login Manager Settings' 
 
 You need the following things before starting to translate
 
+- [Poedit](https://poedit.net)
+
 - A copy of the source code for this app
 
   You can get a [tar.gz](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz) archive and extract it **OR** you can run the following command in terminal to get it
@@ -13,8 +15,6 @@ You need the following things before starting to translate
   ```bash
   git clone --depth=1 https://github.com/realmazharhussain/gdm-settings.git
   ```
-
-- [Poedit](https://poedit.net)
 
 ## How to translate?
 
