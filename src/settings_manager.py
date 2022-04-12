@@ -123,10 +123,13 @@ class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
     TempShellDir = f'{TEMP_DIR}/gnome-shell'
-    ThemesDir = '/usr/share/themes'
-    GnomeShellDir = '/usr/share/gnome-shell'
-    GdmGresourceFile = f'{GnomeShellDir}/gnome-shell-theme.gresource'
-    UbuntuGdmGresourceFile = f'{GnomeShellDir}/gdm3-theme.gresource'
+    ThemesDir = path.join(SYSTEM_DATA_DIRS[0], 'themes')
+    for data_dir in SYSTEM_DATA_DIRS:
+        file = path.join(data_dir, 'gnome-shell', 'gnome-shell-theme.gresource')
+        if path.isfile(HOST_ROOT + file):
+            GdmGresourceFile = file
+            UbuntuGdmGresourceFile = path.join(data_dir, 'gnome-shell', 'gdm3-theme.gresource')
+            break
     GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
     CustomThemeIdentity = 'custom-theme'
 
@@ -367,7 +370,8 @@ class Settings:
 
         self.load_from_gsettings()
 
-        if self.main_gsettings.get_boolean("never-applied"):
+        if self.main_gsettings.get_boolean("never-applied") \
+        and PACKAGE_TYPE != 'Flatpak':
             self.load_user_settings()
 
     def _settings(self, schema_id:str):
@@ -537,8 +541,8 @@ class Settings:
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
 
-        gdm_conf_dir = "/etc/dconf/db/gdm.d"
-        gdm_profile_dir = "/etc/dconf/profile"
+        gdm_conf_dir = HOST_ROOT + "/etc/dconf/db/gdm.d"
+        gdm_profile_dir = HOST_ROOT + "/etc/dconf/profile"
         gdm_profile_path = f"{gdm_profile_dir}/gdm"
 
         temp_profile_path = f"{TEMP_DIR}/gdm-profile"
