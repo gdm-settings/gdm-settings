@@ -2,7 +2,7 @@ app-id: io.github.realmazharhussain.GdmSettings
 command: gdm-settings
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
-runtime-version: master
+runtime-version: "42"
 finish-args:
   - --share=ipc
   - --device=dri
