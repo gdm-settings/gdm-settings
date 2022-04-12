@@ -8,7 +8,7 @@ configure_file(
 
 source_files = [
   '__init__.py',
-  'pkg_detect.py',
+  'pkg_setup.py',
   'settings_manager.py',
   'gdm_settings_gui.py',
 ]
