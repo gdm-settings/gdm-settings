@@ -318,23 +318,23 @@ class GDM_Settings(Adw.Application, App_Utils):
     def load_theme_lists(self):
         # Shell Themes
         widgets.shell_theme_list = Gtk.StringList()
-        for theme in settings_manager.get_shell_theme_list():
-            widgets.shell_theme_list.append(theme)
+        for theme in settings_manager.shell_themes:
+            widgets.shell_theme_list.append(theme.name)
         widgets.shell_theme_comborow.set_model(widgets.shell_theme_list)
         # Icon Themes
         widgets.icon_theme_list = Gtk.StringList()
-        for theme in settings_manager.get_icon_theme_list():
-            widgets.icon_theme_list.append(theme)
+        for theme in settings_manager.icon_themes:
+            widgets.icon_theme_list.append(theme.name)
         widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
         # Cursor Themes
         widgets.cursor_theme_list = Gtk.StringList()
-        for theme in settings_manager.get_cursor_theme_list():
-            widgets.cursor_theme_list.append(theme)
+        for theme in settings_manager.cursor_themes:
+            widgets.cursor_theme_list.append(theme.name)
         widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
         # Sound Themes
         widgets.sound_theme_list = Gtk.StringList()
-        for theme in settings_manager.get_sound_theme_list():
-            widgets.sound_theme_list.append(theme)
+        for theme in settings_manager.sound_themes:
+            widgets.sound_theme_list.append(theme.name)
         widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
     def connect_signals(self):
