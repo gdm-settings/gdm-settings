@@ -555,9 +555,14 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.main_toast_overlay.add_toast(widgets.settings_reloaded_toast)
 
     def import_user_settings(self):
-        self.settings.load_user_settings()
-        self.load_settings_to_widgets()
-        widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
+        if PACKAGE_TYPE != 'Flatpak':
+            self.settings.load_user_settings()
+            self.load_settings_to_widgets()
+            widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
+        else:
+            toast = Adw.Toast(timeout=2, priority="high")
+            toast.set_title(_("Importing user settings is NOT supported in Flatpak version"))
+            widgets.main_toast_overlay.add_toast(toast)
 
     def reset_settings(self):
         toast = Adw.Toast(timeout=2, priority="high",
