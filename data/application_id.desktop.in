@@ -9,4 +9,3 @@ Terminal=false
 StartupNotify=true
 StartupWMClass=@application_id@
 Categories=GNOME;GTK;System;Settings;DesktopSettings;
-Keywords=Login;
