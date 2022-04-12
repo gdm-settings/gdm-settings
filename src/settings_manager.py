@@ -9,40 +9,62 @@ from math import trunc
 from gi.repository import Gio
 
 from .info import project_name, application_id
+from .get_env import XDG_CACHE_HOME, SYSTEM_DATA_DIRS
 
 TempDir   = f'/tmp/{project_name}'
 ConfigDir = f'/etc/{project_name}'
 
-def __get_theme_list(themes_directory:str, decider:str, initial_list:list[str]):
-    List = initial_list
-    for dir in sorted(glob(f"{themes_directory}/*"), key=str.casefold):
-        if path.exists(dir + f"/{decider}"):
-            List.append(path.basename(dir))
-    return List
+class Theme:
+    def __init__(self, name:str, path:str):
+        self.name = name
+        self.path = path
+    def __lt__(self, value, /):
+        return self.name.casefold() < value.name.casefold()
+    def __repr__(self):
+        return f"Theme(name='{self.name}', path='{self.path}')"
 
-def get_shell_theme_list():
-    """get a list of installed gnome-shell/GDM themes"""
-    return __get_theme_list(themes_directory='/usr/share/themes',
-                            decider='gnome-shell/gnome-shell.css',
-                            initial_list=['default'])
+def update_theme_list(type:str):
+    temp_list = []
 
-def get_sound_theme_list():
-    """get a list of installed sound themes"""
-    return __get_theme_list(themes_directory='/usr/share/sounds',
-                            decider='index.theme',
-                            initial_list=[])
+    if type == 'shell':
+        dirname = 'themes'
+        decider = 'gnome-shell'
+        temp_list.append(Theme('default', None))
+        theme_list = shell_themes
+    elif type in ['sound', 'sounds']:
+        dirname = 'sounds'
+        decider = 'index.theme'
+        theme_list = sound_themes
+    elif type in ['icon', 'icons']:
+        dirname = 'icons'
+        decider = 'index.theme'
+        theme_list = icon_themes
+    elif type in ['cursor', 'cursors']:
+        dirname = 'icons'
+        decider = 'cursors'
+        theme_list = cursor_themes
+    else:
+        raise ValueError(f"invalid type '{type}'")
 
-def get_icon_theme_list():
-    """get a list of installed icon themes"""
-    return __get_theme_list(themes_directory='/usr/share/icons',
-                            decider='index.theme',
-                            initial_list=[])
+    for data_dir in SYSTEM_DATA_DIRS:
+        for theme_dir in glob(f"{HOST_ROOT}{data_dir}/{dirname}/*"):
+            theme_name = path.basename(theme_dir)
+            if path.exists(path.join(theme_dir, decider)) and theme_name not in [theme.name for theme in temp_list]:
+                temp_list.append(Theme(theme_name, theme_dir))
 
-def get_cursor_theme_list():
-    """get a list of installed cursor themes"""
-    return __get_theme_list(themes_directory='/usr/share/icons',
-                            decider='cursors',
-                            initial_list=[])
+    theme_list.clear()
+    theme_list += sorted(temp_list)
+
+def update_all_theme_lists():
+    for type in 'shell', 'icons', 'cursors', 'sound':
+        update_theme_list(type)
+
+# Theme Lists
+shell_themes  = []
+icon_themes   = []
+cursor_themes = []
+sound_themes  = []
+update_all_theme_lists()
 
 class CommandElevator:
     """ Runs a list of commands with elevated privilages """
