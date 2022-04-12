@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-26 20:49+0500\n"
+"POT-Creation-Date: 2022-03-31 19:29+0500\n"
 "PO-Revision-Date: 2022-03-26 20:55+0500\n"
 "Last-Translator: Mazhar Hussain <mmazharhussainkgb1145@gmail.com>\n"
 "Language-Team: Urdu <mmazharhussainkgb1145@gmail.com>\n"
@@ -42,8 +42,8 @@ msgstr "بیک گرائونڈ"
 msgid "Type"
 msgstr "قِسم"
 
-#: ../src/blueprints/appearance-page.blp:31 ../src/blueprints/fonts-page.blp:36
-#: ../src/blueprints/fonts-page.blp:46
+#: ../src/blueprints/appearance-page.blp:31 ../src/blueprints/fonts-page.blp:35
+#: ../src/blueprints/fonts-page.blp:45
 msgid "None"
 msgstr "کچھ نہیں"
 
@@ -53,7 +53,7 @@ msgid "Image"
 msgstr "تصویر"
 
 #: ../src/blueprints/appearance-page.blp:31
-#: ../src/blueprints/appearance-page.blp:49
+#: ../src/blueprints/appearance-page.blp:48
 msgid "Color"
 msgstr "رنگ"
 
@@ -61,15 +61,15 @@ msgstr "رنگ"
 msgid "The image to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
 
-#: ../src/blueprints/appearance-page.blp:42 ../src/blueprints/misc-page.blp:58
+#: ../src/blueprints/appearance-page.blp:42 ../src/blueprints/misc-page.blp:55
 msgid "Choose File"
 msgstr "فائل چُنیں"
 
-#: ../src/blueprints/appearance-page.blp:50
+#: ../src/blueprints/appearance-page.blp:49
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:503
+#: ../src/blueprints/display-page.blp:19 ../src/gdm_settings_gui.py:509
 msgid "Display"
 msgstr "ڈسپلے"
 
@@ -94,35 +94,35 @@ msgstr "رات کی روشنی"
 msgid "Enable"
 msgstr "دکھائیں"
 
-#: ../src/blueprints/display-page.blp:44
+#: ../src/blueprints/display-page.blp:43
 msgid "Schedule"
 msgstr "شیڈول"
 
-#: ../src/blueprints/display-page.blp:45
+#: ../src/blueprints/display-page.blp:44
 msgid "Sunset to Sunrise"
 msgstr "صبح سے شام"
 
-#: ../src/blueprints/display-page.blp:45
+#: ../src/blueprints/display-page.blp:44
 msgid "Manual Schedule"
 msgstr "اپنا شیڈول"
 
-#: ../src/blueprints/display-page.blp:49
+#: ../src/blueprints/display-page.blp:48
 msgid "Times"
 msgstr "اوکات"
 
-#: ../src/blueprints/display-page.blp:51
+#: ../src/blueprints/display-page.blp:50
 msgid "From"
 msgstr "شروع"
 
-#: ../src/blueprints/display-page.blp:71
+#: ../src/blueprints/display-page.blp:72
 msgid "To"
 msgstr "ختم"
 
-#: ../src/blueprints/display-page.blp:91
+#: ../src/blueprints/display-page.blp:94
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
-#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:499
+#: ../src/blueprints/fonts-page.blp:19 ../src/gdm_settings_gui.py:505
 msgid "Fonts"
 msgstr "خط"
 
@@ -130,35 +130,35 @@ msgstr "خط"
 msgid "Font"
 msgstr "خط"
 
-#: ../src/blueprints/fonts-page.blp:32
+#: ../src/blueprints/fonts-page.blp:31
 msgid "Antialiasing"
 msgstr "اینٹی اےلیاسِنگ"
 
-#: ../src/blueprints/fonts-page.blp:34
+#: ../src/blueprints/fonts-page.blp:33
 msgid "Standard"
 msgstr "سٹینڈرڈ"
 
-#: ../src/blueprints/fonts-page.blp:35
+#: ../src/blueprints/fonts-page.blp:34
 msgid "Subpixel"
 msgstr "سب پکسل"
 
-#: ../src/blueprints/fonts-page.blp:41
+#: ../src/blueprints/fonts-page.blp:40
 msgid "Hinting"
 msgstr "ہِنٹنگ"
 
-#: ../src/blueprints/fonts-page.blp:43
+#: ../src/blueprints/fonts-page.blp:42
 msgid "Full"
 msgstr "فُل"
 
-#: ../src/blueprints/fonts-page.blp:44
+#: ../src/blueprints/fonts-page.blp:43
 msgid "Medium"
 msgstr "مِیڈِیّم"
 
-#: ../src/blueprints/fonts-page.blp:45
+#: ../src/blueprints/fonts-page.blp:44
 msgid "Slight"
 msgstr "تھوڑی"
 
-#: ../src/blueprints/fonts-page.blp:51
+#: ../src/blueprints/fonts-page.blp:50
 msgid "Scaling Factor"
 msgstr "کھچائو کا انصر"
 
@@ -221,7 +221,7 @@ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:504
+#: ../src/blueprints/misc-page.blp:19 ../src/gdm_settings_gui.py:510
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
@@ -229,27 +229,27 @@ msgstr "دوسری چیزیں"
 msgid "Disable Restart Buttons"
 msgstr "ریسٹارٹ بٹن ختم کریں"
 
-#: ../src/blueprints/misc-page.blp:32
+#: ../src/blueprints/misc-page.blp:31
 msgid "Disable User List"
 msgstr "یوزر کی لسٹ ختم کریں"
 
-#: ../src/blueprints/misc-page.blp:42
+#: ../src/blueprints/misc-page.blp:40
 msgid "Enable Logo"
 msgstr "لوگو دکھائیں"
 
-#: ../src/blueprints/misc-page.blp:43
+#: ../src/blueprints/misc-page.blp:41
 msgid "Whether to show a logo below user list"
 msgstr "یوزر کی لسٹ کے نیچے لوگو دکھائیں یا نہیں"
 
-#: ../src/blueprints/misc-page.blp:53
+#: ../src/blueprints/misc-page.blp:50
 msgid "Logo"
 msgstr "لوگو"
 
-#: ../src/blueprints/misc-page.blp:54
+#: ../src/blueprints/misc-page.blp:51
 msgid "The image to show below user list"
 msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
 
-#: ../src/blueprints/misc-page.blp:66
+#: ../src/blueprints/misc-page.blp:62
 msgid "Welcome Message"
 msgstr "خوش آمدید کا پیغام"
 
@@ -311,7 +311,7 @@ msgstr "دو انگلیوں کے ساتھ سوائیپ کریں"
 msgid "Disable while Typing"
 msgstr "ٹائپ کرتے وقت بند کریں"
 
-#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:501
+#: ../src/blueprints/sound-page.blp:19 ../src/gdm_settings_gui.py:507
 msgid "Sound"
 msgstr "آواز"
 
@@ -327,11 +327,11 @@ msgstr "حد سے اونچی آواز"
 msgid "Allow raising volume above 100%"
 msgstr "آواز 100% سے بھی اونچی ہونے دیں"
 
-#: ../src/blueprints/sound-page.blp:35
+#: ../src/blueprints/sound-page.blp:34
 msgid "Event Sounds"
 msgstr "ایوَنٹ کی آوازیں"
 
-#: ../src/blueprints/sound-page.blp:45
+#: ../src/blueprints/sound-page.blp:43
 msgid "Input Feedback Sounds"
 msgstr "اندراج کے جواب کی آوازیں"
 
@@ -359,63 +359,63 @@ msgstr "ٹویکس"
 msgid "Change Text Color"
 msgstr "لکھائی کا رنگ بدلیں"
 
-#: ../src/blueprints/top-bar-page.blp:31
+#: ../src/blueprints/top-bar-page.blp:30
 msgid "Text Color"
 msgstr "لکھائی کا رنگ"
 
-#: ../src/blueprints/top-bar-page.blp:32
+#: ../src/blueprints/top-bar-page.blp:31
 msgid "The color of text in top bar"
 msgstr "اوپر والی پٹی میں لکھائی کا رنگ"
 
-#: ../src/blueprints/top-bar-page.blp:44
+#: ../src/blueprints/top-bar-page.blp:42
 msgid "Change Background Color"
 msgstr "بیک گرائونڈ کا رنگ تبدیل کریں"
 
-#: ../src/blueprints/top-bar-page.blp:53
+#: ../src/blueprints/top-bar-page.blp:50
 msgid "Background Color"
 msgstr "بیک گرائونڈ کا رنگ"
 
-#: ../src/blueprints/top-bar-page.blp:54
+#: ../src/blueprints/top-bar-page.blp:51
 msgid "The color of top bar background"
 msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ"
 
-#: ../src/blueprints/top-bar-page.blp:66
+#: ../src/blueprints/top-bar-page.blp:62
 msgid "Disable Arrows"
 msgstr "تیر ختم کریں"
 
-#: ../src/blueprints/top-bar-page.blp:76
+#: ../src/blueprints/top-bar-page.blp:71
 msgid "Disable Rounded Corners"
 msgstr "مڑے ہوئے کونے ختم کریں"
 
-#: ../src/blueprints/top-bar-page.blp:87
+#: ../src/blueprints/top-bar-page.blp:81
 msgid "Clock"
 msgstr "گھڑی"
 
-#: ../src/blueprints/top-bar-page.blp:90
+#: ../src/blueprints/top-bar-page.blp:84
 msgid "Show Weekday"
 msgstr "ہفتے کا دن دکھائیں"
 
-#: ../src/blueprints/top-bar-page.blp:100
+#: ../src/blueprints/top-bar-page.blp:93
 msgid "Show Seconds"
 msgstr "سیکنڈ دکھائیں"
 
-#: ../src/blueprints/top-bar-page.blp:110
+#: ../src/blueprints/top-bar-page.blp:102
 msgid "Time Format"
 msgstr "ٹائم کی فارمیٹ"
 
-#: ../src/blueprints/top-bar-page.blp:111
+#: ../src/blueprints/top-bar-page.blp:103
 msgid "AM/PM"
 msgstr "ش/م"
 
-#: ../src/blueprints/top-bar-page.blp:111
+#: ../src/blueprints/top-bar-page.blp:103
 msgid "24 Hours"
 msgstr "24 گھنٹے"
 
-#: ../src/blueprints/top-bar-page.blp:116
+#: ../src/blueprints/top-bar-page.blp:108
 msgid "Power"
 msgstr "پاوَر"
 
-#: ../src/blueprints/top-bar-page.blp:119
+#: ../src/blueprints/top-bar-page.blp:111
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
 
@@ -439,37 +439,45 @@ msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
 #. About Dialog
-#: ../src/gdm_settings_gui.py:285
+#: ../src/gdm_settings_gui.py:287
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: ../src/gdm_settings_gui.py:289
+#: ../src/gdm_settings_gui.py:291
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: ../src/gdm_settings_gui.py:498
+#: ../src/gdm_settings_gui.py:504
 msgid "Appearance"
 msgstr "شکل"
 
-#: ../src/gdm_settings_gui.py:500
+#: ../src/gdm_settings_gui.py:506
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: ../src/gdm_settings_gui.py:502
+#: ../src/gdm_settings_gui.py:508
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: ../src/gdm_settings_gui.py:505
+#: ../src/gdm_settings_gui.py:511
 msgid "Tools"
 msgstr "آلات"
 
-#: ../src/gdm_settings_gui.py:558
+#: ../src/gdm_settings_gui.py:564
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: ../src/gdm_settings_gui.py:562
+#: ../src/gdm_settings_gui.py:568
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
+
+#: ../src/info.py.in:5
+msgid "Login Manager Settings"
+msgstr "لاگن مینیجر کی سیٹنگز"
+
+#: ../src/info.py.in:6
+msgid "A settings app for GNOME's Login Manager (GDM)"
+msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
 
 #: ../src/settings_manager.py:206
 msgid "saving default theme ..."
