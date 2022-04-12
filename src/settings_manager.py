@@ -6,11 +6,9 @@ from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
 from math import trunc
 
-from .info import project_name, application_id
-
-import gi
-gi.require_version("Gio", '2.0')
 from gi.repository import Gio
+
+from .info import project_name, application_id
 
 TempDir   = f'/tmp/{project_name}'
 ConfigDir = f'/etc/{project_name}'
