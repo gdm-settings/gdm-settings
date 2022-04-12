@@ -7,14 +7,14 @@
   <id>@application_id@</id>
   <launchable type="desktop-id">@application_id@.desktop</launchable>
 
-  <name>@application_name@</name>
-  <summary>@description@</summary>
+  <name>Login Manager Settings</name>
+  <summary>A settings app for GNOME's Login Manager (GDM)</summary>
 
   <description>
-    <p>
-       Change GDM Settings; Apply theme and background, change cursor theme, icon theme
-       and night light settings, among other things.
-    </p>
+     <p>
+        Change GDM Settings; Apply theme and background, change cursor theme, icon theme
+        and night light settings, among other things.
+     </p>
   </description>
 
   <categories>

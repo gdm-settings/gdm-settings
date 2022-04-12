@@ -14,7 +14,7 @@ menu app_menu {
 }
 
 Adw.ApplicationWindow main_window {
-  title: "@application_name@";
+  title: _("Login Manager Settings");
 
   content: Box {
     orientation: vertical;
@@ -38,9 +38,9 @@ Adw.ApplicationWindow main_window {
 AboutDialog about_dialog {
   transient-for: main_window;
   modal: true;
-  program-name: "@application_name@";
+  program-name: _("Login Manager Settings");
   version: "@project_name@ v@version@";
-  comments: "@description@";
+  comments: _("A settings app for GNOME's Login Manager (GDM)");
   logo-icon-name: "@application_id@";
   website: "https://github.com/realmazharhussain/gdm-settings";
   website-label: _("Homepage");
