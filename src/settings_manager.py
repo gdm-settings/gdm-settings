@@ -122,6 +122,7 @@ class CommandElevator:
 class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
+    CustomThemeIdentity = 'custom-theme'
     TempShellDir = f'{TEMP_DIR}/gnome-shell'
     ThemesDir = path.join(SYSTEM_DATA_DIRS[0], 'themes')
     for data_dir in SYSTEM_DATA_DIRS:
@@ -131,7 +132,6 @@ class GResourceUtils:
             UbuntuGdmGresourceFile = path.join(data_dir, 'gnome-shell', 'gdm3-theme.gresource')
             break
     GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
-    CustomThemeIdentity = 'custom-theme'
 
     def __init__(self, command_elevator:CommandElevator=None):
         if command_elevator:
@@ -634,10 +634,10 @@ class Settings:
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
             # 'default' in order to match their GDM theme
-            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
-                if user_theme_settings.get_string('name') == '':
-                    if self.main_gsettings.get_boolean("never-applied"):
-                        user_theme_settings.set_string('name', 'default-pure')
+            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme') \
+            and user_theme_settings.get_string('name') == '' \
+            and self.main_gsettings.get_boolean("never-applied"):
+                user_theme_settings.set_string('name', 'default-pure')
 
             self.save_settings()
             self.main_gsettings.set_boolean("never-applied", False)
