@@ -127,10 +127,7 @@ class GResourceUtils:
     GnomeShellDir = '/usr/share/gnome-shell'
     GdmGresourceFile = f'{GnomeShellDir}/gnome-shell-theme.gresource'
     UbuntuGdmGresourceFile = f'{GnomeShellDir}/gdm3-theme.gresource'
-    GdmGresourceManualBackup = f'{GdmGresourceFile}.bak'
     GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
-    GdmBackground = f'{GnomeShellDir}/theme/gdm-background'
-    GresourceBasename = 'gnome-shell-theme.gresource'
     CustomThemeIdentity = 'custom-theme'
 
     def __init__(self, command_elevator:CommandElevator=None):
