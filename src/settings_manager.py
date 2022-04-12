@@ -530,8 +530,10 @@ class Settings:
         makedirs(TEMP_DIR, exist_ok=True)
 
         shelldir = None
-        if self.shell_theme != "default":
-            shelldir = f"/usr/share/themes/{self.shell_theme}/gnome-shell"
+        for theme in shell_themes:
+            if theme.name == self.shell_theme:
+                shelldir = theme.path
+                break
         background_image=None
         if self.background_type == "Image" and self.background_image:
             background_image = self.background_image
