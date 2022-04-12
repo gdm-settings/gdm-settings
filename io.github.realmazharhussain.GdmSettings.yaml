@@ -8,6 +8,7 @@ finish-args:
   - --device=dri
   - --socket=wayland
   - --socket=fallback-x11
+  - --talk-name=org.freedesktop.Flatpak
   - --filesystem=host
 cleanup:
   - /bin/blueprint-compiler
