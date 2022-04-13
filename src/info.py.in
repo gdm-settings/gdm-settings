@@ -1,6 +1,7 @@
 from sys import argv
 from os  import path
 
+build_type = '@build_type@'
 application_name = _("Login Manager Settings")
 project_name = '@project_name@'
 version = '@version@'
