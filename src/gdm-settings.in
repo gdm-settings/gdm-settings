@@ -5,7 +5,7 @@ import gettext
 
 APPDIR = os.environ.get('APPDIR', '')             # required for AppImage
 py_modules_dir = APPDIR + '@py_modules_dir@'
-localedir = APPDIR + '@localedir@'
+localedir = APPDIR + '@locale_dir@'
 
 sys.path.insert(1, py_modules_dir)
 gettext.install('@project_name@', localedir)
