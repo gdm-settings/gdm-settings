@@ -282,6 +282,8 @@ class GDM_Settings(Adw.Application, App_Utils):
         tools_gsettings.bind('top-bar-tweaks', widgets.include_top_bar_tweaks_switch, 'active', Gio.SettingsBindFlags.DEFAULT)
 
     def set_widget_properties(self):
+        # Main Window
+        widgets.main_window.add_css_class('devel')
         # Paned
         widgets.paned.set_shrink_start_child(False)
         widgets.paned.set_shrink_end_child(False)
