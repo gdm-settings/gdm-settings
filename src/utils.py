@@ -1,3 +1,8 @@
+import builtins
+
+def set_value(name, obj):
+    builtins.__dict__[name] = obj
+
 class PATH:
     '''stores value of a PATH-like variable and provides easy functionality for it.
 

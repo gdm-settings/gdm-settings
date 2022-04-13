@@ -1,15 +1,12 @@
 from os import environ as env
-import builtins
+from .utils import set_value
 
-def install(name, obj):
-    builtins.__dict__[name] = obj
-
-install('PACKAGE_TYPE', None)
-install('HOST_ROOT',    '')
+set_value('PACKAGE_TYPE', None)
+set_value('HOST_ROOT',    '')
 
 if env.get('FLATPAK_ID'): # Flatpak
-    install('PACKAGE_TYPE', 'Flatpak')
-    install('HOST_ROOT',    '/var/run/host')
+    set_value('PACKAGE_TYPE', 'Flatpak')
+    set_value('HOST_ROOT',    '/var/run/host')
 
 elif env.get('APPDIR'):   # AppImage
-    install('PACKAGE_TYPE', 'AppImage')
+    set_value('PACKAGE_TYPE', 'AppImage')
