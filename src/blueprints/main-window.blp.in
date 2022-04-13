@@ -48,32 +48,20 @@ AboutDialog about_dialog {
   copyright: _("Copyright © 2021 Mazhar Hussain");
 }
 
-FileChooserDialog background_image_chooser {
+FileChooserNative background_image_chooser {
   transient-for: main_window;
   modal: true;
   filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
-
-  [action response=cancel]
-  Button background_image_chooser_button_cancel { label: _("Cancel"); }
-
-  [action response=ok default]
-  Button background_image_chooser_button_select { label: _("Select"); }
 }
 
-FileChooserDialog logo_chooser {
+FileChooserNative logo_chooser {
   transient-for: main_window;
   modal: true;
   filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
-
-  [action response=cancel]
-  Button logo_chooser_button_cancel { label: _("Cancel"); }
-
-  [action response=ok default]
-  Button logo_chooser_button_select { label: _("Select"); }
 }
 
 /*
-FileChooserDialog extracted_theme_destination_chooser {
+FileChooserNative extracted_theme_destination_chooser {
   transient-for: main_window;
   modal: true;
   filter: FileFilter { name: _("Directories"); mime-types ["inode/directory"] };

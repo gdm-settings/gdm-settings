@@ -5,6 +5,8 @@ import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
+from .utils import set_value
+set_value('INTERFACE_TYPE', 'GUI')
 from . import settings_manager
 from .info import *
 
@@ -104,14 +106,14 @@ class GDM_Settings(Adw.Application, App_Utils):
             widgets.background_color_actionrow.hide()
 
     def on_background_image_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.OK:
+        if response == Gtk.ResponseType.ACCEPT:
           image_file = widgets.background_image_chooser.get_file()
           image_basename = image_file.get_basename()
           widgets.background_image_button.set_label(image_basename)
         widgets.background_image_chooser.hide()
 
     def on_logo_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.OK:
+        if response == Gtk.ResponseType.ACCEPT:
           image_file = widgets.logo_chooser.get_file()
           image_basename = image_file.get_basename()
           widgets.logo_button.set_label(image_basename)
@@ -341,10 +343,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.connect_signal("apply_button", "clicked", self.on_apply)
         self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
         self.connect_signal("background_image_button", "clicked",
-                lambda x: widgets.background_image_chooser.present()
+                lambda x: widgets.background_image_chooser.show()
                 )
         self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
-        self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.present())
+        self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.show())
         self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
 
         self.connect_signal("apply_current_display_settings_button", "clicked", self.on_apply_current_display_settings)
