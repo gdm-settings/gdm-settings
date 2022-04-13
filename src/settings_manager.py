@@ -188,7 +188,7 @@ class GResourceUtils:
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup:
+        for file in HOST_ROOT + self.GdmGresourceFile, HOST_ROOT + self.GdmGresourceAutoBackup:
            if self.is_default(file):
                return file
 
@@ -247,7 +247,7 @@ class GResourceUtils:
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
+        if default_gresource and default_gresource != HOST_ROOT + self.GdmGresourceAutoBackup:
             print(_("saving default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
             self._extract_default_pure_theme()
@@ -569,8 +569,8 @@ class Settings:
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
 
-        gdm_conf_dir = HOST_ROOT + "/etc/dconf/db/gdm.d"
-        gdm_profile_dir = HOST_ROOT + "/etc/dconf/profile"
+        gdm_conf_dir = "/etc/dconf/db/gdm.d"
+        gdm_profile_dir = "/etc/dconf/profile"
         gdm_profile_path = f"{gdm_profile_dir}/gdm"
 
         temp_profile_path = f"{TEMP_DIR}/gdm-profile"
@@ -637,7 +637,7 @@ class Settings:
             gdm_conf_contents +=  "#----- Login Screen ----\n"
             gdm_conf_contents +=  "[org/gnome/login-screen]\n"
             gdm_conf_contents +=  "#-----------------------\n"
-            gdm_conf_contents += f"logo='{self.logo if self.enable_logo else ''}'\n"
+            gdm_conf_contents += f"logo='{self.logo.removeprefix(HOST_ROOT) if self.enable_logo else ''}'\n"
             gdm_conf_contents += f"banner-message-enable={str(self.enable_welcome_message).lower()}\n"
             gdm_conf_contents += f"banner-message-text='{self.welcome_message}'\n"
             gdm_conf_contents += f"disable-restart-buttons={str(self.disable_restart_buttons).lower()}\n"
