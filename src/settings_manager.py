@@ -662,10 +662,10 @@ class Settings:
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
             # 'default' in order to match their GDM theme
-            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme') \
-            and user_theme_settings.get_string('name') == '' \
-            and self.main_gsettings.get_boolean("never-applied"):
-                user_theme_settings.set_string('name', 'default-pure')
+            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
+                if user_theme_settings.get_string('name') == '' \
+                and self.main_gsettings.get_boolean("never-applied"):
+                    user_theme_settings.set_string('name', 'default-pure')
 
             self.save_settings()
             self.main_gsettings.set_boolean("never-applied", False)
