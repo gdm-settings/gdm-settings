@@ -67,28 +67,53 @@ update_all_theme_lists()
 
 class CommandElevator:
     """ Runs a list of commands with elevated privilages """
-    def __init__(self) -> None:
+    def __init__(self, elevator:str=None, shebang:str=None) -> None:
         self.__list = []
-        self.__shebang = "#!/bin/sh"
-        self.__elevator = "pkexec"
-
-    def shebang(self, shebang:str=None):
-        """ Shebang to determine shell for running elevated commands """
-        if shebang:
-            self.__shebang = shebang
+        self.shebang = shebang or "#!/bin/sh"
+        if elevator:
+            self.elevator = elevator
         else:
-            return self.__shebang
+            self.autodetect_elevator()
 
-    def elevator(self, elevator:str=None):
+    @property
+    def shebang(self):
+        """ Shebang to determine shell for running elevated commands """
+        return self.__shebang
+    @shebang.setter
+    def shebang(self, value):
+        if value.startswith('#!/'):
+            self.__shebang = value
+        else:
+            raise ValueError("shebang does not start with '#!/'")
+
+    @property
+    def elevator(self):
         """
         Program to use for privilage elevation 
         
         Example: "sudo", "doas", "pkexec", etc.
         """
-        if elevator:
-            self.__elevator = elevator
+        return self.__elevator
+    @elevator.setter
+    def elevator(self, value):
+        if isinstance(value, str):
+            self.__elevator = value.strip(' ').split(' ')
+        elif isinstance(value, list):
+            self.__elevator = value
         else:
-            return self.__elevator
+            raise ValueError("elevator is not of type 'str' or 'list'")
+
+    def autodetect_elevator(self):
+        if INTERFACE_TYPE == 'GUI':
+            if PACKAGE_TYPE == 'Flatpak':
+                self.elevator = "flatpak-spawn --host pkexec"
+            else:
+                self.elevator = "pkexec"
+        else:
+            if PACKAGE_TYPE == 'Flatpak':
+                self.elevator = "flatpak-spawn --host sudo"
+            else:
+                self.elevator = "sudo"
 
     def add(self, cmd:str):
         """ Add a new command to the list """
@@ -107,7 +132,7 @@ class CommandElevator:
             with open(script_file, "w") as open_script_file:
                 print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=755)
-            returncode = run(args=[self.__elevator, script_file]).returncode
+            returncode = run(args=[*self.__elevator, script_file]).returncode
             remove(script_file)
         # Return Code 0 of subprocess means success, but boolean with value 0 is interpreted as False
         # So, 'not returncode' boolean will be True when the subprocess succeeds
