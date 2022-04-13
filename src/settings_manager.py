@@ -8,10 +8,10 @@ from math import trunc
 
 from gi.repository import Gio
 
+from . import env
 from .info import project_name, application_id
-from .get_env import XDG_CACHE_HOME, SYSTEM_DATA_DIRS
 
-TEMP_DIR   = path.join(XDG_CACHE_HOME, project_name)
+TEMP_DIR   = path.join(env.XDG_CACHE_HOME, project_name)
 
 class Theme:
     def __init__(self, name:str, path:str):
@@ -45,8 +45,8 @@ def update_theme_list(type:str):
     else:
         raise ValueError(f"invalid type '{type}'")
 
-    for data_dir in SYSTEM_DATA_DIRS:
-        for theme_dir in glob(f"{HOST_ROOT}{data_dir}/{dirname}/*"):
+    for data_dir in env.SYSTEM_DATA_DIRS:
+        for theme_dir in glob(f"{env.HOST_ROOT}{data_dir}/{dirname}/*"):
             theme_name = path.basename(theme_dir)
             if path.exists(path.join(theme_dir, decider)) and theme_name not in [theme.name for theme in temp_list]:
                 temp_list.append(Theme(theme_name, theme_dir))
@@ -104,13 +104,13 @@ class CommandElevator:
             raise ValueError("elevator is not of type 'str' or 'list'")
 
     def autodetect_elevator(self):
-        if INTERFACE_TYPE == 'GUI':
-            if PACKAGE_TYPE == 'Flatpak':
+        if env.INTERFACE_TYPE is env.InterfaceType.Graphical:
+            if env.PACKAGE_TYPE is env.PackageType.Flatpak:
                 self.elevator = "flatpak-spawn --host pkexec"
             else:
                 self.elevator = "pkexec"
         else:
-            if PACKAGE_TYPE == 'Flatpak':
+            if env.PACKAGE_TYPE is env.PackageType.Flatpak:
                 self.elevator = "flatpak-spawn --host sudo"
             else:
                 self.elevator = "sudo"
@@ -149,10 +149,10 @@ class GResourceUtils:
 
     CustomThemeIdentity = 'custom-theme'
     TempShellDir = f'{TEMP_DIR}/gnome-shell'
-    ThemesDir = path.join(SYSTEM_DATA_DIRS[0], 'themes')
-    for data_dir in SYSTEM_DATA_DIRS:
+    ThemesDir = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
+    for data_dir in env.SYSTEM_DATA_DIRS:
         file = path.join(data_dir, 'gnome-shell', 'gnome-shell-theme.gresource')
-        if path.isfile(HOST_ROOT + file):
+        if path.isfile(env.HOST_ROOT + file):
             GdmGresourceFile = file
             UbuntuGdmGresourceFile = path.join(data_dir, 'gnome-shell', 'gdm3-theme.gresource')
             break
@@ -188,7 +188,7 @@ class GResourceUtils:
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in HOST_ROOT + self.GdmGresourceFile, HOST_ROOT + self.GdmGresourceAutoBackup:
+        for file in env.HOST_ROOT + self.GdmGresourceFile, env.HOST_ROOT + self.GdmGresourceAutoBackup:
            if self.is_default(file):
                return file
 
@@ -247,11 +247,11 @@ class GResourceUtils:
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != HOST_ROOT + self.GdmGresourceAutoBackup:
+        if default_gresource and default_gresource != env.HOST_ROOT + self.GdmGresourceAutoBackup:
             print(_("saving default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
             self._extract_default_pure_theme()
-        elif not path.exists(HOST_ROOT + self.ThemesDir + '/default-pure'):
+        elif not path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure'):
             self._extract_default_pure_theme()
 
     def compile(self, shellDir:str, additional_css:str, background_image:str=None):
@@ -397,7 +397,7 @@ class Settings:
         self.load_from_gsettings()
 
         if self.main_gsettings.get_boolean("never-applied") \
-        and PACKAGE_TYPE != 'Flatpak':
+        and env.PACKAGE_TYPE is not env.PackageType.Flatpak:
             self.load_user_settings()
 
     def _settings(self, schema_id:str):
@@ -637,7 +637,7 @@ class Settings:
             gdm_conf_contents +=  "#----- Login Screen ----\n"
             gdm_conf_contents +=  "[org/gnome/login-screen]\n"
             gdm_conf_contents +=  "#-----------------------\n"
-            gdm_conf_contents += f"logo='{self.logo.removeprefix(HOST_ROOT) if self.enable_logo else ''}'\n"
+            gdm_conf_contents += f"logo='{self.logo.removeprefix(env.HOST_ROOT) if self.enable_logo else ''}'\n"
             gdm_conf_contents += f"banner-message-enable={str(self.enable_welcome_message).lower()}\n"
             gdm_conf_contents += f"banner-message-text='{self.welcome_message}'\n"
             gdm_conf_contents += f"disable-restart-buttons={str(self.disable_restart_buttons).lower()}\n"

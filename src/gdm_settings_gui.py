@@ -5,8 +5,9 @@ import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
-from .utils import set_value
-set_value('INTERFACE_TYPE', 'GUI')
+from . import env
+env.INTERFACE_TYPE = env.InterfaceType.Graphical
+
 from . import settings_manager
 from .info import *
 
@@ -560,7 +561,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.main_toast_overlay.add_toast(widgets.settings_reloaded_toast)
 
     def import_user_settings(self):
-        if PACKAGE_TYPE != 'Flatpak':
+        if env.PACKAGE_TYPE is not env.PackageType.Flatpak:
             self.settings.load_user_settings()
             self.load_settings_to_widgets()
             widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
