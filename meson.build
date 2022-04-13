@@ -21,10 +21,10 @@ py_module_name = meson.project_name().underscorify()
 py_proj_dir = py_modules_dir / py_module_name
 
 prefix = get_option('prefix')
-bindir = get_option('bindir')
-localedir = prefix / get_option('localedir')
-datadir = prefix / get_option('datadir')
-pkgdatadir = datadir / meson.project_name()
+bin_dir = get_option('bindir')
+locale_dir = prefix / get_option('localedir')
+data_dir = prefix / get_option('datadir')
+pkg_data_dir = data_dir / meson.project_name()
 build_type = get_option('buildtype')
 
 conf = configuration_data()
@@ -39,9 +39,9 @@ conf.set('prefix',           prefix)
 conf.set('py_modules_dir',   py_modules_dir)
 conf.set('py_module_name',   py_module_name)
 conf.set('py_proj_dir',      py_proj_dir)
-conf.set('bindir',           bindir)
-conf.set('datadir',          datadir)
-conf.set('localedir',        localedir)
+conf.set('bin_dir',           bin_dir)
+conf.set('data_dir',          data_dir)
+conf.set('locale_dir',        locale_dir)
 
 i18n = import('i18n')
 

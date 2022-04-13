@@ -33,14 +33,14 @@ blueprints = [main_window_blp] + files(
 #  output: project_name,
 #  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@INPUT@'],
 #  install: true,
-#  install_dir: datadir,
+#  install_dir: data_dir,
 #)
 
 ui_files = blueprint_compiler.process(blueprints)
 
 #foreach file: ui_files
 #  install_data(file,
-#    install_dir: datadir / project_name,
+#    install_dir: data_dir / project_name,
 #  )
 #endforeach
 
@@ -49,5 +49,5 @@ custom_target('ui_files',
   output: project_name,
   command: [find_program('install'), '-Dm644', '-t', '@OUTPUT@', '@INPUT@'],
   install: true,
-  install_dir: datadir,
+  install_dir: data_dir,
 )

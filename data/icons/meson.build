@@ -1,4 +1,4 @@
-hicolor_dir = datadir / 'icons/hicolor'
+hicolor_dir = data_dir / 'icons/hicolor'
 
 configure_file(
   input: 'scalable/apps/application_id.svg',

@@ -8,10 +8,10 @@ version = '@version@'
 application_id = '@application_id@'
 
 prefix = '@prefix@'
-bindir = '@bindir@'
-datadir = '@datadir@'
+bin_dir = '@bin_dir@'
+data_dir = '@data_dir@'
 py_modules_dir = '@py_modules_dir@'
 py_module_name = '@py_module_name@'
 
-destdir = path.dirname(argv[0]).split(bindir)[0].replace(prefix,'')
-ui_dir = path.join(destdir, datadir.strip('/'), project_name.strip('/'))
+dest_dir = path.dirname(argv[0]).split(bin_dir)[0].replace(prefix,'')
+ui_dir = path.join(dest_dir, data_dir.strip('/'), project_name.strip('/'))

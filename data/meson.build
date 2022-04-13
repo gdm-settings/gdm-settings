@@ -9,7 +9,7 @@ appstream_file = i18n.merge_file(
   output: application_id + '.appdata.xml',
   po_dir: '../po',
   install: true,
-  install_dir: datadir / 'metainfo',
+  install_dir: data_dir / 'metainfo',
 )
 
 appstream_util = find_program('appstream-util', required: false)
@@ -31,7 +31,7 @@ desktop_file = i18n.merge_file(
   type: 'desktop',
   po_dir: '../po',
   install: true,
-  install_dir: datadir / 'applications',
+  install_dir: data_dir / 'applications',
 )
 
 desktop_utils = find_program('desktop-file-validate', required: false)
