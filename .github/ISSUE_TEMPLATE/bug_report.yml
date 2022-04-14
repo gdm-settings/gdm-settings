@@ -35,23 +35,20 @@ body:
       description: Explain the problem in detail
     validations:
       required: false
-  - type: dropdown
+  - type: input
     attributes:
       label: Application Version
-      options:
-        - latest development version
-        - v0.3-alpha
-        - v0.2-alpha
-        - v0.1.1-alpha
-        - v0.1.0-alpha
     validations:
       required: true
-  - type: dropdown
+  - type: input
     attributes:
       label: Source
-      description: How did you get the application?
-      options:
-        - Arch User Repository
+      render: markdown
+      description: |
+        How did you get the application?
+        Examples:
+        - AUR
+        - Flatpak
         - AppImage
         - Source Code
     validations:
