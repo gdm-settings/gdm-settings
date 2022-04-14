@@ -1,3 +1,14 @@
+from os import path
+
+def find_file(file, locations):
+    found_path = ''
+    for location in locations:
+        file_path = path.join(location, file.lstrip('/'))
+        if path.exists(file_path):
+            found_path = file_path
+            break
+    return found_path
+
 class PATH:
     '''stores value of a PATH-like variable and provides easy functionality for it.
 

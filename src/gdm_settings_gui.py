@@ -5,11 +5,12 @@ import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, Gdk
 
+from .info import *
+from .utils import find_file
 from . import env
 env.INTERFACE_TYPE = env.InterfaceType.Graphical
 
 from . import settings_manager
-from .info import *
 
 # Empty Class+Object to contain widgets
 class WidgetContainer:
@@ -270,8 +271,8 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.builder.set_translation_domain(project_name)
 
         # Load UI files
-        for filename in ui_files:
-            file = path.join(ui_dir, filename)
+        for ui_file_name in ui_files:
+            file = find_file(f"{project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
             self.builder.add_from_file(file)
 
         # Get Widgets from builder ####
