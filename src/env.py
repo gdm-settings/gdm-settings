@@ -7,7 +7,8 @@ InterfaceType = Enum('InterfaceType', ['NONE', 'Graphical', 'CommandLine'])
 
 HOME = environ.get('HOME')
 XDG_CACHE_HOME = environ.get('XDG_CACHE_HOME', f"{HOME}/.cache")
-XDG_DATA_DIRS = PATH(environ.get('XDG_DATA_DIRS', f'{HOME}/.local/share:/usr/local/share:/usr/share'))
+XDG_DATA_HOME = PATH(environ.get('XDG_DATA_HOME', '{HOME}/.local/share'))
+XDG_DATA_DIRS = PATH(environ.get('XDG_DATA_DIRS', '/usr/local/share:/usr/share'))
 SYSTEM_DATA_DIRS = PATH(environ.get('SYSTEM_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 INTERFACE_TYPE = InterfaceType.NONE
