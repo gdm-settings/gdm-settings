@@ -10,6 +10,7 @@ body:
   - type: textarea
     id: what-happend
     attributes:
+      render: markdown
       label: What happened?
       description: Describe concisely
     validations:
@@ -17,6 +18,7 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
+      render: markdown
       label: Expected behavior
       description: What was supposed to happen?
     validations:
@@ -24,6 +26,7 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
+      render: markdown
       label: To Reproduce
       description: Steps to reproduce the behavior
     validations:
@@ -31,6 +34,7 @@ body:
   - type: textarea
     id: explaination
     attributes:
+      render: markdown
       label: Detailed Explaination (Optional)
       description: Explain the problem in detail
     validations:
@@ -46,6 +50,7 @@ body:
       render: markdown
       description: |
         How did you get the application?
+
         Examples:
         - AUR
         - Flatpak
@@ -55,6 +60,7 @@ body:
       required: true
   - type: textarea
     attributes:
+      render: markdown
       label: Environment
       description: |
         examples:

@@ -9,6 +9,7 @@ body:
         # Thanks for taking the time to translate this application!
   - type: input
     attributes:
+      render: markdown
       label: Language
       description: |
         Examples:
@@ -28,6 +29,7 @@ body:
       required: true
   - type: textarea
     attributes:
+      render: markdown
       label: Changes (Optional)
       description: |
         What changes did you make to the translation?
@@ -41,6 +43,7 @@ body:
       required: false
   - type: textarea
     attributes:
+      render: markdown
       label: Translation File
       description: Link-to/contents-of your translation (.po) file
     validations:

@@ -9,13 +9,15 @@ body:
         # Thanks for taking your time!
   - type: textarea
     attributes:
+      render: markdown
       label: Description
       description: Short Description
     validations:
       required: true
   - type: textarea
     attributes:
+      render: markdown
       label: Explaination
-      description: Detailed Explaination
+      description: Detailed Explaination (if required any)
     validations:
       required: false
