@@ -1,4 +1,4 @@
-'''Settings Manager'''
+'''The actual settings manager'''
 
 from glob import glob
 from subprocess import run, getoutput

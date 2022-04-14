@@ -1,3 +1,5 @@
+'''Some random utility functions, classes, objects, etc. used throughout the source code'''
+
 from os import path
 
 def find_file(file, locations):

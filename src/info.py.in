@@ -1,10 +1,9 @@
-from sys import argv
-from os  import path
+'''Information about the application itself got from the build system'''
 
-build_type = '@build_type@'
 application_name = _("Login Manager Settings")
-project_name = '@project_name@'
-version = '@version@'
-application_id = '@application_id@'
+project_name     =   '@project_name@'
+application_id   =   '@application_id@'
+version          =   '@version@'
+build_type       =   '@build_type@'
 
-py_modules_dir = '@py_modules_dir@'
+py_modules_dir   =   '@py_modules_dir@'

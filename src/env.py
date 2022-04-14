@@ -1,3 +1,5 @@
+'''get information about program's environment'''
+
 from os import environ
 from enum import Enum
 from .utils import PATH

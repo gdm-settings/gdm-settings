@@ -1,3 +1,5 @@
+'''The graphical user interface of the application'''
+
 from sys import argv
 from os import path
 
