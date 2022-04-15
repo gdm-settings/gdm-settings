@@ -9,7 +9,6 @@ body:
         # Thanks for taking the time to translate this application!
   - type: input
     attributes:
-      render: markdown
       label: Language
       description: |
         Examples:
@@ -38,7 +37,6 @@ body:
         - Add translation for new text 
         - Correct incorrect/inappropriate translations
         - Shorten some translations
-      render: markdown
     validations:
       required: false
   - type: textarea

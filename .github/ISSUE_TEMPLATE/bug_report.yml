@@ -47,7 +47,6 @@ body:
   - type: input
     attributes:
       label: Source
-      render: markdown
       description: |
         How did you get the application?
 
@@ -69,6 +68,5 @@ body:
       value: |
           - **OS**: 
           - **GNOME**: 
-      render: markdown
     validations:
       required: true
