@@ -555,11 +555,12 @@ class Settings:
         gresource_utils.auto_backup()
         makedirs(TEMP_DIR, exist_ok=True)
 
-        shelldir = None
+        theme_path = None
         for theme in shell_themes:
             if theme.name == self.shell_theme:
-                shelldir = theme.path
+                theme_path = theme.path
                 break
+        shelldir = path.join(theme_path, 'gnome-shell') if theme_path else None
         background_image=None
         if self.background_type == "Image" and self.background_image:
             background_image = self.background_image
