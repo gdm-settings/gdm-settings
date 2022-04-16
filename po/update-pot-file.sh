@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 progDir=$(dirname "$(realpath "$0")")
 pot_file="$progDir"/gdm-settings.pot
 cd "$progDir"/..
