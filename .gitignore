@@ -1,5 +1,5 @@
 /subprojects/blueprint-compiler
-/*flatpak*/
+/*flatpak*
 /cache/
 /tmp/
 *.pot
