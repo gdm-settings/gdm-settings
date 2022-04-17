@@ -94,6 +94,13 @@ sudo pacman -S libadwaita glib2 python-gobject gettext #Runtime Dependencies
 sudo pacman -S meson gobject-introspection #Build Dependencies
 ```
 
+#### On Fedora
+
+```bash
+sudo dnf install libadwaita-devel glib2-devel pygobject3-devel gettext #Runtime Dependencies
+sudo dnf install meson gobject-introspection #Build Dependencies
+```
+
 ## Contribute
 
 - [Report Bugs](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+)
