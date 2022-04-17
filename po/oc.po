@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-18 23:40+0100\n"
-"PO-Revision-Date: 2022-04-03 14:10+0200\n"
+"POT-Creation-Date: 2022-04-17 22:12+0200\n"
+"PO-Revision-Date: 2022-04-17 22:28+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: \n"
 "Language: oc\n"
@@ -12,7 +12,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: data/application_id.appdata.xml.in:14
+#: data/application_id.appdata.xml.in:10 data/application_id.desktop.in:4
+#: src/info.py.in:3 src/blueprints/main-window.blp.in:17
+#: src/blueprints/main-window.blp.in:41
+msgid "Login Manager Settings"
+msgstr "Paramètres del gestionari de fenèstra de connexion"
+
+#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:5
+#: src/blueprints/main-window.blp.in:43
+msgid "A settings app for GNOME's Login Manager (GDM)"
+msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME (GDM)"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/application_id.appdata.xml.in:15
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -21,9 +33,9 @@ msgstr ""
 "cursors, de las icònas e los paramètres de lum nocturna, demest autras "
 "causas."
 
-#: data/application_id.desktop.in:13
-msgid "Login;"
-msgstr "Login;"
+#: data/application_id.appdata.xml.in:39 src/gdm_settings_gui.py:296
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -33,24 +45,27 @@ msgstr "Nom del tèma"
 msgid "Type of Background"
 msgstr "Tipe de fons"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:21
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:22
 msgid "Wether GDM background should be an Image, Color or None."
 msgstr ""
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:33
+#: data/gschemas/application_id.appearance.gschema.xml.in:34
 msgid "Background Image"
 msgstr "Imatge de fons"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:36
 msgid "The image file to use as GDM background"
 msgstr "Lo fichièr imatge d’emplegar coma fons de GDM"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:41
-#: src/blueprints/top-bar-page.blp:53
+#: data/gschemas/application_id.appearance.gschema.xml.in:43
+#: src/blueprints/top-bar-page.blp:50
 msgid "Background Color"
 msgstr "Color de fons"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:42
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:45
 msgid "The Color to use as GDM background"
 msgstr "La color d’emplegar coma fons de GDM"
 
@@ -124,6 +139,18 @@ msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 
+#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
+#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
+msgid "Pointer speed"
+msgstr "Velocitat del puntador"
+
+#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
+#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+
 #: data/gschemas/application_id.tools.gschema.xml.in:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
@@ -142,7 +169,7 @@ msgstr ""
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Color del tèxte de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:27
 msgid "Whether to change top bar background"
@@ -152,15 +179,75 @@ msgstr ""
 msgid "Top bar background color"
 msgstr "Color de fons barra superiora"
 
-#: data/gschemas/application_id.touchpad.gschema.xml.in:19
-msgid "Pointer speed"
-msgstr "Velocitat del puntador"
+#: src/gdm_settings_gui.py:129
+msgid "Applied current display settings"
+msgstr "Paramètres d’afichatge actual aplicats"
 
-#: data/gschemas/application_id.touchpad.gschema.xml.in:20
+#: src/gdm_settings_gui.py:131
+msgid "Failed to apply current display settings"
+msgstr "Fracàs en aplicant los paramètres d’afichatge actuals"
+
+#: src/gdm_settings_gui.py:141
 msgid ""
-"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
-"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
 msgstr ""
+
+#: src/gdm_settings_gui.py:143
+msgid "Failed to extract default theme"
+msgstr "Fracàs en ensajar de traire lo tèma shell per defaut"
+
+#. Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
+#: src/gdm_settings_gui.py:301
+msgid "translator-credits"
+msgstr "Quentin PAGÈS"
+
+#: src/gdm_settings_gui.py:514
+msgid "Appearance"
+msgstr "Aparéncia"
+
+#: src/gdm_settings_gui.py:515 src/blueprints/fonts-page.blp:19
+msgid "Fonts"
+msgstr "Poliças"
+
+#: src/gdm_settings_gui.py:516
+msgid "Top Bar"
+msgstr "Barra superiora"
+
+#: src/gdm_settings_gui.py:517 src/blueprints/sound-page.blp:19
+msgid "Sound"
+msgstr "Son"
+
+#: src/gdm_settings_gui.py:518
+msgid "Mouse & Touchpad"
+msgstr "Mirga & pavat tac­til"
+
+#: src/gdm_settings_gui.py:519 src/blueprints/display-page.blp:19
+msgid "Display"
+msgstr "Afichatge"
+
+#: src/gdm_settings_gui.py:520 src/blueprints/misc-page.blp:19
+msgid "Miscellaneous"
+msgstr "Divèrs"
+
+#: src/gdm_settings_gui.py:521
+msgid "Tools"
+msgstr "Aisinas"
+
+#: src/gdm_settings_gui.py:574
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+
+#: src/gdm_settings_gui.py:579
+msgid "Failed to reset settings"
+msgstr "Fracàs en reïnicializant los paramètres"
+
+#: src/gdm_settings_gui.py:583
+msgid "Reset settings successfully"
+msgstr "Reïnicializacion dels paramètres reüssida"
+
+#: src/settings_manager.py:251
+msgid "saving default theme ..."
+msgstr "enregistrament del tèma per defaut…"
 
 #: src/blueprints/appearance-page.blp:19
 msgid "Themes"
@@ -186,8 +273,8 @@ msgstr "Fonzes"
 msgid "Type"
 msgstr "Tipe"
 
-#: src/blueprints/appearance-page.blp:31 src/blueprints/fonts-page.blp:36
-#: src/blueprints/fonts-page.blp:46
+#: src/blueprints/appearance-page.blp:31 src/blueprints/fonts-page.blp:35
+#: src/blueprints/fonts-page.blp:45
 msgid "None"
 msgstr "Pas cap"
 
@@ -195,7 +282,7 @@ msgstr "Pas cap"
 msgid "Image"
 msgstr "Imatge"
 
-#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:48
 msgid "Color"
 msgstr "Color"
 
@@ -203,25 +290,21 @@ msgstr "Color"
 msgid "The image to use as background"
 msgstr "L’imatge d’emplegar coma fons"
 
-#: src/blueprints/appearance-page.blp:42 src/blueprints/misc-page.blp:58
+#: src/blueprints/appearance-page.blp:42 src/blueprints/misc-page.blp:55
 msgid "Choose File"
 msgstr "Causir un fichièr"
 
-#: src/blueprints/appearance-page.blp:50
+#: src/blueprints/appearance-page.blp:49
 msgid "The color to use as background"
 msgstr "La color d’emplegar coma fons"
 
-#: src/blueprints/display-page.blp:19 src/gdm_settings_gui.py:486
-msgid "Display"
-msgstr "Afichatge"
-
 #: src/blueprints/display-page.blp:22
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Aplicar los paramètres d’afichatge actuals"
 
 #: src/blueprints/display-page.blp:23
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr ""
+msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
 #: src/blueprints/display-page.blp:26 src/blueprints/main-window.blp.in:26
 msgid "Apply"
@@ -235,71 +318,69 @@ msgstr "Lum nocturna"
 msgid "Enable"
 msgstr "Activar"
 
-#: src/blueprints/display-page.blp:44
+#: src/blueprints/display-page.blp:43
 msgid "Schedule"
 msgstr "Programar"
 
-#: src/blueprints/display-page.blp:45
+#: src/blueprints/display-page.blp:44
 msgid "Sunset to Sunrise"
 msgstr "Levar al colcar del solelh"
 
-#: src/blueprints/display-page.blp:45
+#: src/blueprints/display-page.blp:44
 msgid "Manual Schedule"
 msgstr "Programacion manuala"
 
-#: src/blueprints/display-page.blp:49
+#: src/blueprints/display-page.blp:48
 msgid "Times"
 msgstr "Oras"
 
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:51
 msgid "From"
 msgstr "De"
 
-#: src/blueprints/display-page.blp:71
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:73
 msgid "To"
 msgstr "dusca"
 
-#: src/blueprints/display-page.blp:91
+#: src/blueprints/display-page.blp:95
 msgid "Color Temperature"
 msgstr "Temperatura de la color"
-
-#: src/blueprints/fonts-page.blp:19 src/gdm_settings_gui.py:482
-msgid "Fonts"
-msgstr "Poliças"
 
 #: src/blueprints/fonts-page.blp:22
 msgid "Font"
 msgstr "Poliça"
 
-#: src/blueprints/fonts-page.blp:32
+#: src/blueprints/fonts-page.blp:31
 msgid "Antialiasing"
 msgstr "Anticrenelatge"
 
-#: src/blueprints/fonts-page.blp:34
+#: src/blueprints/fonts-page.blp:33
 msgid "Standard"
 msgstr "Estandard"
 
-#: src/blueprints/fonts-page.blp:35
+#: src/blueprints/fonts-page.blp:34
 msgid "Subpixel"
 msgstr "Sospixèl"
 
-#: src/blueprints/fonts-page.blp:41
+#: src/blueprints/fonts-page.blp:40
 msgid "Hinting"
 msgstr "Optimizacion"
 
-#: src/blueprints/fonts-page.blp:43
+#: src/blueprints/fonts-page.blp:42
 msgid "Full"
 msgstr "Complèt"
 
-#: src/blueprints/fonts-page.blp:44
+#: src/blueprints/fonts-page.blp:43
 msgid "Medium"
 msgstr "Mejan"
 
-#: src/blueprints/fonts-page.blp:45
+#: src/blueprints/fonts-page.blp:44
 msgid "Slight"
 msgstr "Leugièr"
 
-#: src/blueprints/fonts-page.blp:51
+#: src/blueprints/fonts-page.blp:50
 msgid "Scaling Factor"
 msgstr "Factor d'escala"
 
@@ -327,65 +408,113 @@ msgstr "Quitar"
 msgid "Homepage"
 msgstr "Pagina d’acuèlh"
 
-#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:66
+#: src/blueprints/main-window.blp.in:48
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:60
 msgid "Images"
 msgstr "Imatges"
 
-#: src/blueprints/main-window.blp.in:57 src/blueprints/main-window.blp.in:69
-msgid "Cancel"
-msgstr "Anullar"
-
-#: src/blueprints/main-window.blp.in:60 src/blueprints/main-window.blp.in:72
-msgid "Select"
-msgstr "Seleccionar"
-
-#: src/blueprints/main-window.blp.in:90
+#: src/blueprints/main-window.blp.in:78
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/blueprints/main-window.blp.in:96
+#: src/blueprints/main-window.blp.in:84
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/blueprints/main-window.blp.in:102
+#: src/blueprints/main-window.blp.in:90
 msgid "User settings imported"
 msgstr "Paramètres de l’utilizaire importats"
 
-#: src/blueprints/main-window.blp.in:108
+#: src/blueprints/main-window.blp.in:96
 msgid "Settings reloaded"
 msgstr "Paramètres recargats"
-
-#: src/blueprints/misc-page.blp:19 src/gdm_settings_gui.py:487
-msgid "Miscellaneous"
-msgstr "Divèrs"
 
 #: src/blueprints/misc-page.blp:22
 msgid "Disable Restart Buttons"
 msgstr "Desactivar los botons de reaviada"
 
-#: src/blueprints/misc-page.blp:32
+#: src/blueprints/misc-page.blp:31
 msgid "Disable User List"
 msgstr "Desactivar la lista d’utilizaires"
 
-#: src/blueprints/misc-page.blp:42
+#: src/blueprints/misc-page.blp:40
 msgid "Enable Logo"
 msgstr "Activar lo lògo"
 
-#: src/blueprints/misc-page.blp:43
+#: src/blueprints/misc-page.blp:41
 msgid "Whether to show a logo below user list"
 msgstr "Indica se cal afichar un lògo jos la lista d’utilizaires"
 
-#: src/blueprints/misc-page.blp:54
+#: src/blueprints/misc-page.blp:50
+msgid "Logo"
+msgstr "Lògo"
+
+#: src/blueprints/misc-page.blp:51
 msgid "The image to show below user list"
 msgstr "L’imatge d’afichar jos la lista d’utilizaires"
 
-#: src/blueprints/misc-page.blp:66
+#: src/blueprints/misc-page.blp:62
 msgid "Welcome Message"
 msgstr "Messatge de benvenguda"
 
-#: src/blueprints/sound-page.blp:19 src/gdm_settings_gui.py:484
-msgid "Sound"
-msgstr "Son"
+#: src/blueprints/pointing-page.blp:19
+msgid "Mouse"
+msgstr "Mirga"
+
+#: src/blueprints/pointing-page.blp:22
+msgid "Pointer Acceleration"
+msgstr "Acceleracion del puntador"
+
+#: src/blueprints/pointing-page.blp:24
+msgid "Automatic"
+msgstr "Automatic"
+
+#: src/blueprints/pointing-page.blp:25
+msgid "Disabled"
+msgstr "Desactivat"
+
+#: src/blueprints/pointing-page.blp:26
+msgid "Enabled"
+msgstr "Activat"
+
+#: src/blueprints/pointing-page.blp:31
+msgid "Inverse Scrolling"
+msgstr "Desfilament inversat"
+
+#: src/blueprints/pointing-page.blp:32 src/blueprints/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Lo desfilament desplaça lo contengut, pas la vista."
+
+#: src/blueprints/pointing-page.blp:39 src/blueprints/pointing-page.blp:82
+msgid "Pointer Speed"
+msgstr "Velocitat del puntador"
+
+#: src/blueprints/pointing-page.blp:49
+msgid "Touchpad"
+msgstr "Pavat tactil"
+
+#: src/blueprints/pointing-page.blp:52
+msgid "Tap to Click"
+msgstr "Tocar per clicar"
+
+#: src/blueprints/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Desfilament natural"
+
+#: src/blueprints/pointing-page.blp:67
+msgid "Two-finger Scrolling"
+msgstr "Desfilament de dos dets"
+
+#: src/blueprints/pointing-page.blp:68
+msgid "Scroll by swiping with two fingers."
+msgstr "Desfilar en bolegant dos dets."
+
+#: src/blueprints/pointing-page.blp:75
+msgid "Disable while Typing"
+msgstr "Desactivar en picant"
 
 #: src/blueprints/sound-page.blp:21
 msgid "Theme"
@@ -399,25 +528,25 @@ msgstr "Subre-amplificacion"
 msgid "Allow raising volume above 100%"
 msgstr "Permetre lo volum al dessús de 100%"
 
-#: src/blueprints/sound-page.blp:35
+#: src/blueprints/sound-page.blp:34
 msgid "Event Sounds"
 msgstr "Sons dels eveniments"
 
-#: src/blueprints/sound-page.blp:45
+#: src/blueprints/sound-page.blp:43
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Entrada de retorn sonòr"
 
 #: src/blueprints/tools-page.blp:19
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Tèma Shell per defaut"
 
 #: src/blueprints/tools-page.blp:22
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Inclure ajustament barra superiora"
 
 #: src/blueprints/tools-page.blp:29
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Traire lo tèma shell per defaut"
 
 #: src/blueprints/tools-page.blp:32
 msgid "Extract"
@@ -431,135 +560,76 @@ msgstr "Ajustaments"
 msgid "Change Text Color"
 msgstr "Cambiar la color del tèxt"
 
-#: src/blueprints/top-bar-page.blp:31
+#: src/blueprints/top-bar-page.blp:30
 msgid "Text Color"
 msgstr "Color del tèxt"
 
-#: src/blueprints/top-bar-page.blp:32
+#: src/blueprints/top-bar-page.blp:31
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Color del tèxte barra superiora"
 
-#: src/blueprints/top-bar-page.blp:44
+#: src/blueprints/top-bar-page.blp:42
 msgid "Change Background Color"
 msgstr "Cambiar la color de fons"
 
-#: src/blueprints/top-bar-page.blp:54
+#: src/blueprints/top-bar-page.blp:51
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Color de fons barra superiora"
 
-#: src/blueprints/top-bar-page.blp:66
+#: src/blueprints/top-bar-page.blp:62
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Desactivar sagetas"
 
-#: src/blueprints/top-bar-page.blp:76
+#: src/blueprints/top-bar-page.blp:71
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Caires arredondits desactivats"
 
-#: src/blueprints/top-bar-page.blp:87
+#: src/blueprints/top-bar-page.blp:81
 msgid "Clock"
 msgstr "Relòtge"
 
-#: src/blueprints/top-bar-page.blp:90
+#: src/blueprints/top-bar-page.blp:84
 msgid "Show Weekday"
 msgstr "Afichar los jorns de la setmana"
 
-#: src/blueprints/top-bar-page.blp:100
+#: src/blueprints/top-bar-page.blp:93
 msgid "Show Seconds"
 msgstr "Afichar las segondas"
 
-#: src/blueprints/top-bar-page.blp:110
+#: src/blueprints/top-bar-page.blp:102
 msgid "Time Format"
 msgstr "Format de l'ora"
 
-#: src/blueprints/top-bar-page.blp:111
+#: src/blueprints/top-bar-page.blp:103
 msgid "AM/PM"
 msgstr "AM/PM"
 
-#: src/blueprints/top-bar-page.blp:111
+#: src/blueprints/top-bar-page.blp:103
 msgid "24 Hours"
 msgstr "24 oras"
 
-#: src/blueprints/top-bar-page.blp:116
+#: src/blueprints/top-bar-page.blp:108
 msgid "Power"
 msgstr "Energia"
 
-#: src/blueprints/top-bar-page.blp:119
+#: src/blueprints/top-bar-page.blp:111
 msgid "Show battery percentage"
 msgstr "Afichar lo percentatge de batariá"
 
-#: src/blueprints/touchpad-page.blp:19 src/gdm_settings_gui.py:485
-msgid "Touchpad"
-msgstr "Pavat tactil"
+#~ msgid "Login;"
+#~ msgstr "Login;"
 
-#: src/blueprints/touchpad-page.blp:22
-msgid "Tap to Click"
-msgstr ""
+#~ msgid "Cancel"
+#~ msgstr "Anullar"
 
-#: src/blueprints/touchpad-page.blp:32
-msgid "Natural Scrolling"
-msgstr "Desfilament natural"
+#~ msgid "Select"
+#~ msgstr "Seleccionar"
 
-#: src/blueprints/touchpad-page.blp:33
-msgid "Scrolling moves the content, not the view."
-msgstr ""
+#~ msgid "Touchpad Speed"
+#~ msgstr "Velocitat del pavat tactil"
 
-#: src/blueprints/touchpad-page.blp:43
-msgid "Two-finger Scrolling"
-msgstr "Desfilament de dos dets"
+#~ msgid "updating backup of default theme ..."
+#~ msgstr "actualizacion de la salvagarda del tèma per defaut…"
 
-#: src/blueprints/touchpad-page.blp:53
-msgid "Touchpad Speed"
-msgstr "Velocitat del pavat tactil"
-
-#: src/gdm_settings_gui.py:123
-msgid "Applied current display settings"
-msgstr ""
-
-#: src/gdm_settings_gui.py:125
-msgid "Failed to apply current display settings"
-msgstr ""
-
-#: src/gdm_settings_gui.py:135
-msgid ""
-"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
-msgstr ""
-
-#: src/gdm_settings_gui.py:137
-msgid "Failed to extract default theme"
-msgstr ""
-
-#: src/gdm_settings_gui.py:285
-msgid "translator-credits"
-msgstr "Quentin PAGÈS"
-
-#: src/gdm_settings_gui.py:481
-msgid "Appearance"
-msgstr "Aparéncia"
-
-#: src/gdm_settings_gui.py:483
-msgid "Top Bar"
-msgstr "Barra superiora"
-
-#: src/gdm_settings_gui.py:488
-msgid "Tools"
-msgstr "Aisinas"
-
-#: src/gdm_settings_gui.py:541
-msgid "Failed to reset settings"
-msgstr ""
-
-#: src/gdm_settings_gui.py:545
-msgid "Reset settings successfully"
-msgstr "Reïnicializacion dels paramètres reüssida"
-
-#: src/settings_manager.py:206
-msgid "saving default theme ..."
-msgstr "enregistrament del tèma per defaut…"
-
-#: src/settings_manager.py:218
-msgid "updating backup of default theme ..."
-msgstr "actualizacion de la salvagarda del tèma per defaut…"
-
-#: src/settings_manager.py:225
-msgid "restoring default theme from backup ..."
-msgstr "restauracion del tèma per defaut de la salvagarda estant…"
+#~ msgid "restoring default theme from backup ..."
+#~ msgstr "restauracion del tèma per defaut de la salvagarda estant…"
