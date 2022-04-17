@@ -297,6 +297,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         widgets.about_dialog.set_authors([dev_mazhar_hussain])
         widgets.about_dialog.set_artists([dev_mazhar_hussain])
         widgets.about_dialog.set_documenters([dev_mazhar_hussain])
+        # Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
         widgets.about_dialog.set_translator_credits(_("translator-credits"))
         # Font Scaling Factor SpinButton
         widgets.scaling_factor_spinbutton.set_range(0.5, 3)

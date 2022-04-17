@@ -18,6 +18,7 @@
 	 <key name="background-type" type="s">
 	   <default>"None"</default>
 	   <summary>Type of Background</summary>
+      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
 	   <description>
 	     Wether GDM background should be an Image, Color or None.
 	   </description>
@@ -31,6 +32,7 @@
 	 <key name="background-image" type="s">
 	   <default>""</default>
 	   <summary>Background Image</summary>
+      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
 	   <description>
 	     The image file to use as GDM background
 	   </description>
@@ -39,6 +41,7 @@
 	 <key name="background-color" type="s">
 	   <default>"rgb(40,40,40)"</default>
 	   <summary>Background Color</summary>
+      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
 	   <description>
 	     The Color to use as GDM background
 	   </description>

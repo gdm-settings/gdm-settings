@@ -11,6 +11,7 @@
   <summary>A settings app for GNOME's Login Manager (GDM)</summary>
 
   <description>
+     <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
      <p>
         Change GDM Settings; Apply theme and background, change cursor theme, icon theme
         and night light settings, among other things.
