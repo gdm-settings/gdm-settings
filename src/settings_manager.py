@@ -188,8 +188,8 @@ class GResourceUtils:
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in env.HOST_ROOT + self.GdmGresourceFile, env.HOST_ROOT + self.GdmGresourceAutoBackup:
-           if self.is_default(file):
+        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup:
+           if self.is_default(env.HOST_ROOT + file):
                return file
 
     def extract_theme(self, gresource_file:str):
@@ -247,7 +247,7 @@ class GResourceUtils:
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != env.HOST_ROOT + self.GdmGresourceAutoBackup:
+        if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
             print(_("saving default theme ..."))
             self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
             self._extract_default_pure_theme()
@@ -265,7 +265,7 @@ class GResourceUtils:
         if path.exists(tempGresourceFile):
             remove(tempGresourceFile)
         # Copy default resources to temporary directory
-        copytree(self.extract_theme(self.get_default()), self.TempShellDir)
+        copytree(self.extract_theme(env.HOST_ROOT + self.get_default()), self.TempShellDir)
         # Copy gnome-shell dir of theme to temporary directory
         if shellDir:
             copytree(shellDir, self.TempShellDir, dirs_exist_ok=True)
