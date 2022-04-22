@@ -2,7 +2,13 @@
 import gettext
 gettext.install('gdm-settings')
 
-from build.src.info import *
+from sys import argv
+
+info = ""
+with open (argv[1]) as info_file:
+    info = info_file.read()
+exec(info)
+
 print(f"project_name='{project_name}'")
 print(f"application_name='{application_name}'")
 print(f"version='{version}'")

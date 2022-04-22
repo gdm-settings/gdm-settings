@@ -14,8 +14,7 @@ else
 fi
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
-eval $("$progDir"/load_info.py)
-#eval $("$progDir"/load_info.sh "$buildDir/src/info.py")
+eval $("$progDir"/load_info.py "$buildDir"/src/info.py)
 source "$progDir"/colors.sh
 
 AppRun='#!/usr/bin/bash
