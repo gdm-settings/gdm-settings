@@ -13,6 +13,7 @@ finish-args:
   - --filesystem=host-etc
 cleanup:
   - /bin/blueprint-compiler
+  - /lib/*/site-packages/blueprintcompiler
   - /include
   - /lib/pkgconfig
   - /man
@@ -23,6 +24,13 @@ cleanup:
   - '*.la'
   - '*.a'
 modules:
+  - name: blueprint-compiler
+    builddir: true
+    buildsystem: meson
+    sources:
+      - type: git
+        url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
+        branch: main
   - name: gdm-settings
     builddir: true
     buildsystem: meson
