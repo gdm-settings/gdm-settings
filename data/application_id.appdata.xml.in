@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2022 Mazhar Hussain -->
 <component type="desktop-application">
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
@@ -64,7 +65,26 @@
   </screenshots>
 
   <releases>
-    <release version="@version@" date="2022-02-25"/>
+    <release version="0.5" date="2022-04-23">
+      <description>
+        <p>Added:</p>
+        <ul>
+          <li>Mouse Settings</li>
+          <li>Flatpak Support</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>Support for Right-to-Left Languages</li>
+          <li>More Text got Translated</li>
+        </ul>
+        <p>New Translations:</p>
+        <ul>
+          <li>German</li>
+          <li>Occitan</li>
+          <li>Spanish</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 
   <url type="homepage">https://github.com/realmazharhussain/gdm-settings</url>
