@@ -202,9 +202,9 @@ class GResourceUtils:
         for resource in resource_list:
             filename = resource.removeprefix("/org/gnome/shell/theme/")
             filepath = path.join(TempExtractedDir, filename)
-            content = getoutput(f"gresource extract {gresource_file} {resource}")
+            content = run(["gresource", "extract", gresource_file, resource], capture_output=True).stdout
             makedirs(path.dirname(filepath), exist_ok=True)
-            with open(file=filepath, mode="w+") as open_file:
+            with open(file=filepath, mode="wb") as open_file:
                 open_file.write(content)
         return TempExtractedDir
 
