@@ -65,6 +65,11 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.1" date="2022-04-24">
+      <description>
+        <p>Fixed: A fatal bug</p>
+      </description>
+    </release>
     <release version="0.5" date="2022-04-23">
       <description>
         <p>Added:</p>
