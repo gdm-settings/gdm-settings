@@ -589,9 +589,16 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.set_comborow_setting("shell_theme")
         self.set_comborow_setting("icon_theme")
         self.set_comborow_setting("cursor_theme")
-        self.set_comborow_setting("background_type")
         self.set_file_chooser_setting("background_image")
         self.set_color_setting("background_color")
+
+        background_type = widgets.background_type_comborow.get_selected()
+        if background_type == 0:
+            self.settings.background_type = 'None'
+        elif background_type == 1:
+            self.settings.background_type = 'Image'
+        elif background_type == 2:
+            self.settings.background_type = 'Color'
 
         ## Fonts ##
         self.set_font_setting("font")
