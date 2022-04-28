@@ -1,7 +1,7 @@
 '''The actual settings manager'''
 
 from glob import glob
-from subprocess import run, getoutput
+from subprocess import run
 from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
 from math import trunc
@@ -10,6 +10,7 @@ from gi.repository import Gio
 
 from . import env
 from .info import project_name, application_id
+from .utils import getstdout
 
 TEMP_DIR   = path.join(env.XDG_CACHE_HOME, project_name)
 
@@ -180,8 +181,8 @@ class GResourceUtils:
         """checks if the provided file is a GResource file of the default theme"""
 
         if path.exists(gresourceFile):
-            if getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/gnome-shell.css"):
-                if not getoutput(f"gresource list {gresourceFile} /org/gnome/shell/theme/{self.CustomThemeIdentity}"):
+            if getstdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
+                if not getstdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{self.CustomThemeIdentity}"):
                     return True
         return False
 
@@ -198,11 +199,11 @@ class GResourceUtils:
         Returns: path to a directory inside which resources of the theme were extracted"""
 
         TempExtractedDir = f"{TEMP_DIR}/extracted"
-        resource_list = getoutput(f"gresource list {gresource_file}").splitlines()
+        resource_list = getstdout(["gresource", "list", gresource_file]).decode().splitlines()
         for resource in resource_list:
             filename = resource.removeprefix("/org/gnome/shell/theme/")
             filepath = path.join(TempExtractedDir, filename)
-            content = run(["gresource", "extract", gresource_file, resource], capture_output=True).stdout
+            content = getstdout(["gresource", "extract", gresource_file, resource])
             makedirs(path.dirname(filepath), exist_ok=True)
             with open(file=filepath, mode="wb") as open_file:
                 open_file.write(content)
