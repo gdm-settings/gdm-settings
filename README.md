@@ -11,6 +11,11 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 ## How to Install?
 
+### Flatpak
+This application is now available on [FlatHub](https://flathub.com). Just search for 'gdm settings' or 'login manager settings' in your software store and install it if FlatHub is correctly configured on your computer. If not, click [here](https://flatpak.org/setup) for instructions on how to setup Flatpak and FlatHub on your computer.
+
+**Note:** If available, it is recommended that you install distro-specific version of the app instead of this Flatpak.
+
 ### On Arch/Manjaro
 
 This app is available in the AUR as [gdm-settings](https://aur.archlinux.org/packages/gdm-settings) and [gdm-settings-git](https://aur.archlinux.org/packages/gdm-settings-git) (recommended). You can install it using your favorite AUR helper. For example,
