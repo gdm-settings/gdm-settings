@@ -68,6 +68,11 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.2" date="2022-04-28">
+      <description>
+        <p>Fixed: Could not change background-image/wallpaper if language is not English</p>
+      </description>
+    </release>
     <release version="0.5.1" date="2022-04-24">
       <description>
         <p>Fixed: A fatal bug</p>
