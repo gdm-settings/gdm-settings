@@ -216,7 +216,7 @@ class GResourceUtils:
         target_dir = target_dir or self.ThemesDir
         target_theme_dir = target_dir + "/" + name
         target_shell_dir = target_theme_dir + "/gnome-shell"
-        source_shell_dir = self.extract_theme(gresource_file=self.get_default())
+        source_shell_dir = self.extract_theme(gresource_file=env.HOST_ROOT+self.get_default())
         status = True
 
         if additional_css:
