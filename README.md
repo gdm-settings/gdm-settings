@@ -62,6 +62,14 @@ meson build
 meson install -C build
 ```
 
+#### How to uninstall?
+If installed using manual installation method, open the folder that you extracted/cloned during installation in the terminal and then run the following commands
+
+```bash
+meson build
+ninja -C build uninstall
+```
+
 ## Dependencies
 
 ### Run-time Dependencies
