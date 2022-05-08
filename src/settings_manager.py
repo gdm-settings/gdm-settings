@@ -12,10 +12,10 @@ from . import env
 from .info import project_name, application_id
 from .utils import getstdout
 
-from platform import freedesktop_os_release
-OS_RELEASE = freedesktop_os_release()
-
-TEMP_DIR   = path.join(env.XDG_CACHE_HOME, project_name)
+if env.PACKAGE_TYPE == env.PackageType.Flatpak:
+    TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp')
+else:
+    TEMP_DIR = path.join(env.XDG_CACHE_HOME, project_name)
 
 class Theme:
     def __init__(self, name:str, path:str):
@@ -159,12 +159,13 @@ class GResourceUtils:
         if path.isfile(env.HOST_ROOT + file):
             GdmGresourceFile = file
             CustomGresourceFile = GdmGresourceFile + ".gdm_settings"
-            if float(OS_RELEASE.get('VERSION_ID', '-1')) >= 21.10:
-                UbuntuGdmGresourceFile = path.join(data_dir, 'gnome-shell', 'gdm-theme.gresource')
-            else:
-                UbuntuGdmGresourceFile = path.join(data_dir, 'gnome-shell', 'gdm3-theme.gresource')
             break
     GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
+    UbuntuGdmGresourceFile = None
+    if path.isfile(env.HOST_ROOT + '/usr/share/gnome-shell/gdm-theme.gresource'):
+        UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
+    elif path.isfile(env.HOST_ROOT + '/usr/share/gnome-shell/gdm3-theme.gresource'):
+        UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
 
     def __init__(self, command_elevator:CommandElevator=None):
         if command_elevator:
@@ -573,10 +574,10 @@ class Settings:
         if self.background_type == "Image" and self.background_image:
             background_image = self.background_image
         compiled_file = gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
-        if OS_RELEASE.get("ID") == "ubuntu" or OS_RELEASE.get("ID_LIKE") == "ubuntu":
+        if gresource_utils.UbuntuGdmGresourceFile:
             self.command_elevator.add(f"mv {compiled_file} {gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {UbuntuGdmGresourceFile} {path.basename(UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
+            self.command_elevator.add(f'update-alternatives --quiet --install {gresource_utils.UbuntuGdmGresourceFile} {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile} 0')
+            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
         else:
             self.command_elevator.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
 
@@ -697,8 +698,8 @@ class Settings:
     def reset_settings(self) -> bool:
         status = False
 
-        if OS_RELEASE.get("ID") == "ubuntu" or OS_RELEASE.get("ID_LIKE") == "ubuntu":
-            self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
+        if gresource_utils.UbuntuGdmGresourceFile:
+            self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
             self.command_elevator.add(f'rm -f {gresource_utils.CustomGresourceFile}')
         elif path.exists(gresource_utils.GdmGresourceAutoBackup):
                 self.command_elevator.add(f"mv -f {gresource_utils.GdmGresourceAutoBackup} {gresource_utils.GdmGresourceFile}")
