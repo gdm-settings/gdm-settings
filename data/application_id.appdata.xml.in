@@ -68,6 +68,12 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.3" date="2022-05-08">
+      <description>
+        <p>Added: Support for Ubuntu</p>
+        <p>Fixed: Could not apply settings on some systems</p>
+      </description>
+    </release>
     <release version="0.5.2" date="2022-04-28">
       <description>
         <p>Fixed: Could not change background-image/wallpaper if language is not English</p>
