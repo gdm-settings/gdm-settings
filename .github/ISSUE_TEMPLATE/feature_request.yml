@@ -1,6 +1,5 @@
 name: Feature Request
 description: Request a Feature
-title: "[FEATURE] "
 labels: ["enhancement"]
 body:
   - type: markdown

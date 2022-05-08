@@ -1,6 +1,5 @@
 name: Translation Submission
 description: Submit a Translation
-title: "[L10N] "
 labels: ["translation"]
 body:
   - type: markdown
