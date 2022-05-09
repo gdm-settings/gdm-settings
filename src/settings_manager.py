@@ -13,9 +13,9 @@ from .info import project_name, application_id
 from .utils import getstdout
 
 if env.PACKAGE_TYPE == env.PackageType.Flatpak:
-    TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp')
+    TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
 else:
-    TEMP_DIR = path.join(env.XDG_CACHE_HOME, project_name)
+    TEMP_DIR = path.join(env.XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
 
 class Theme:
     def __init__(self, name:str, path:str):
