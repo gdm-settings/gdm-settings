@@ -654,7 +654,7 @@ class Settings:
             gdm_conf_contents +=  "#-----------------------\n"
             gdm_conf_contents += f"logo='{self.logo.removeprefix(env.HOST_ROOT) if self.enable_logo else ''}'\n"
             gdm_conf_contents += f"banner-message-enable={str(self.enable_welcome_message).lower()}\n"
-            gdm_conf_contents += f"banner-message-text='{self.welcome_message}'\n"
+            gdm_conf_contents +=  "banner-message-text='"+self.welcome_message.replace("'", "\\'")+"'\n"
             gdm_conf_contents += f"disable-restart-buttons={str(self.disable_restart_buttons).lower()}\n"
             gdm_conf_contents += f"disable-user-list={str(self.disable_user_list).lower()}\n"
 
