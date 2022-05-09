@@ -14,7 +14,9 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 ### Flatpak
 This application is now available on [FlatHub](https://flathub.org/apps/details/io.github.realmazharhussain.GdmSettings). Just search for 'gdm settings' or 'login manager settings' in your software store and install it if FlatHub is correctly configured on your computer. If not, click [here](https://flatpak.org/setup) for instructions on how to setup Flatpak and FlatHub on your computer.
 
-**Note:** If available, it is recommended that you install distro-specific version of the app instead of this Flatpak.
+**Note:** All flatpak applications need [xdg-desktop-portal](https://github.com/flatpak/xdg-desktop-portal) package and an `xdg-desktop-portal` implementation ([xdg-desktop-portal-gnome](https://gitlab.gnome.org/GNOME/xdg-desktop-portal-gnome) for GNOME, [xdg-desktop-portal-kde](https://github.com/KDE/xdg-desktop-portal-kde) for KDE and other Qt/KDE based DEs, [xdg-desktop-portal-lxqt](https://github.com/lxqt/xdg-desktop-portal-lxqt) for LXQt, [xdg-desktop-portal-gtk](https://github.com/flatpak/xdg-desktop-portal-gtk) for GTK-based DEs like cinnamon and xfce, [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) for [wlroots](https://gitlab.freedesktop.org/wlroots/wlroots)-based DEs/WMs like [sway](https://github.com/swaywm/sway), etc.) to work properly.
+
+**Also Note:** If available, it is recommended that you install distro-specific version of the app instead of this Flatpak.
 
 ### On Arch/Manjaro
 
@@ -63,7 +65,11 @@ meson install -C build
 ```
 
 #### How to uninstall?
-If installed using manual installation method, open the folder that you extracted/cloned during installation in the terminal and then run the command `ninja -C build uninstall`.
+If installed using manual installation method, open the folder that you extracted/cloned during installation in the terminal and then run the command
+
+```bash
+ninja -C build uninstall
+```
 
 ## Dependencies
 
