@@ -2,6 +2,7 @@
 
 from sys import argv
 from os import path
+from types import SimpleNamespace
 
 import gi
 gi.require_version("Adw", '1')
@@ -14,10 +15,8 @@ env.INTERFACE_TYPE = env.InterfaceType.Graphical
 
 from . import settings_manager
 
-# Empty Class+Object to contain widgets
-class WidgetContainer:
-    pass
-widgets = WidgetContainer()
+# Namespace to contain widgets
+widgets = SimpleNamespace()
 
 class App_Utils:
     def connect_signal(self, widget, signal, function):
