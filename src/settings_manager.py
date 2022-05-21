@@ -152,12 +152,14 @@ class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
     CustomThemeIdentity = 'custom-theme'
-    TempShellDir = f'{TEMP_DIR}/gnome-shell'
-    ThemesDir = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
+    TempShellDir        = f'{TEMP_DIR}/gnome-shell'
+    ThemesDir           = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
+    GdmGresourceFile    = None
+    CustomGresourceFile = None
     for data_dir in env.SYSTEM_DATA_DIRS:
         file = path.join(data_dir, 'gnome-shell', 'gnome-shell-theme.gresource')
         if path.isfile(env.HOST_ROOT + file):
-            GdmGresourceFile = file
+            GdmGresourceFile    = file
             CustomGresourceFile = GdmGresourceFile + ".gdm_settings"
             break
     GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
