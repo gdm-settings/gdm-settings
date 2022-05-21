@@ -578,10 +578,14 @@ class Settings:
         compiled_file = gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
         if gresource_utils.UbuntuGdmGresourceFile:
             self.command_elevator.add(f"mv {compiled_file} {gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chown root: {gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f'update-alternatives --quiet --install {gresource_utils.UbuntuGdmGresourceFile} {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile} 0')
             self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
         else:
             self.command_elevator.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chown root: {gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {gresource_utils.GdmGresourceFile}")
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -705,6 +709,8 @@ class Settings:
             self.command_elevator.add(f'rm -f {gresource_utils.CustomGresourceFile}')
         elif path.exists(gresource_utils.GdmGresourceAutoBackup):
                 self.command_elevator.add(f"mv -f {gresource_utils.GdmGresourceAutoBackup} {gresource_utils.GdmGresourceFile}")
+                self.command_elevator.add(f"chown root: {gresource_utils.GdmGresourceFile}")
+                self.command_elevator.add(f"chmod 644 {gresource_utils.GdmGresourceFile}")
 
         self.command_elevator.add("rm -f /etc/dconf/profile/gdm")
         self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
