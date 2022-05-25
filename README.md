@@ -9,6 +9,6 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 - [Installation Instructions](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
 - [Screenshots](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots)
 - [Features](https://github.com/realmazharhussain/gdm-settings/wiki/Features)
-- [Translate](https://github.com/realmazharhussain/gdm-settings/wiki/Translations)
+- [Translate](https://github.com/realmazharhussain/gdm-settings/wiki/Translation-Manual)
 - [Report Bugs](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml)
 - [Donate](https://www.patreon.com/mazharhussain)
