@@ -576,14 +576,17 @@ class Settings:
         if self.background_type == "Image" and self.background_image:
             background_image = self.background_image
         compiled_file = gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
+
+        # We need to copy the compiled gresource file instead of moving it because the copy gets correct
+        # SELinux context/label where applicable and prevents breakage of GDM in such situations.
         if gresource_utils.UbuntuGdmGresourceFile:
-            self.command_elevator.add(f"mv {compiled_file} {gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"cp {compiled_file} {gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chown root: {gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chmod 644 {gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f'update-alternatives --quiet --install {gresource_utils.UbuntuGdmGresourceFile} {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile} 0')
             self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
         else:
-            self.command_elevator.add(f"mv {compiled_file} {gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"cp {compiled_file} {gresource_utils.GdmGresourceFile}")
             self.command_elevator.add(f"chown root: {gresource_utils.GdmGresourceFile}")
             self.command_elevator.add(f"chmod 644 {gresource_utils.GdmGresourceFile}")
 
