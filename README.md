@@ -1,4 +1,4 @@
-# Login Manager Settings (gdm-settings)
+# Login Manager Settings
 
 An app to change settings of Gnome's Display/Login Manager.
 
