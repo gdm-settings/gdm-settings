@@ -8,6 +8,7 @@ configure_file(
 
 source_files = [
   '__init__.py',
+  'colors.py',
   'utils.py',
   'env.py',
   'settings_manager.py',
