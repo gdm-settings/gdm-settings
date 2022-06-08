@@ -1,5 +1,7 @@
 '''The actual settings manager'''
 
+import logging
+
 from glob import glob
 from subprocess import run
 from os import path, listdir, makedirs, remove, chmod
@@ -151,29 +153,33 @@ class CommandElevator:
 class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
-    CustomThemeIdentity = 'custom-theme'
-    TempShellDir        = f'{TEMP_DIR}/gnome-shell'
-    ThemesDir           = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
-    GdmGresourceFile    = None
-    CustomGresourceFile = None
-    for data_dir in env.SYSTEM_DATA_DIRS:
-        file = path.join(data_dir, 'gnome-shell', 'gnome-shell-theme.gresource')
-        if path.isfile(env.HOST_ROOT + file):
-            GdmGresourceFile    = file
-            CustomGresourceFile = GdmGresourceFile + ".gdm_settings"
-            break
-    GdmGresourceAutoBackup = f'{GdmGresourceFile}.default'
-    UbuntuGdmGresourceFile = None
-    if path.isfile(env.HOST_ROOT + '/usr/share/gnome-shell/gdm-theme.gresource'):
-        UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
-    elif path.isfile(env.HOST_ROOT + '/usr/share/gnome-shell/gdm3-theme.gresource'):
-        UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
-
     def __init__(self, command_elevator:CommandElevator=None):
-        if command_elevator:
-            self.command_elevator = command_elevator
-        else:
-            self.command_elevator = CommandElevator()
+        self.command_elevator         = command_elevator or CommandElevator()
+        self.CustomThemeIdentity      = 'custom-theme'
+        self.TempShellDir             = f'{TEMP_DIR}/gnome-shell'
+        self.ThemesDir                = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
+        self.GdmGresourceFile         = None
+        self.GdmGresourceAutoBackup   = None
+        self.CustomGresourceFile      = None
+        self.UbuntuGdmGresourceFile   = None
+
+        for data_dir in env.SYSTEM_DATA_DIRS:
+            file = path.join (data_dir,  'gnome-shell', '{}-theme.gresource')
+
+            if path.isfile (env.HOST_ROOT + file.format ('gnome-shell')):
+                self.GdmGresourceFile       = file.format ('gnome-shell')
+                self.GdmGresourceAutoBackup = self.GdmGresourceFile + ".default"
+                self.CustomGresourceFile    = self.GdmGresourceFile + ".gdm_settings"
+
+                if path.isfile (env.HOST_ROOT + file.format ('gdm')):
+                    self.UbuntuGdmGresourceFile = file.format ('gdm')
+                elif path.isfile (env.HOST_ROOT + file.format ('gdm3')):
+                    self.UbuntuGdmGresourceFile = file.format ('gdm3')
+
+                break
+
+        logging.info(f"{self.GdmGresourceFile = }")
+        logging.info(f"{self.UbuntuGdmGresourceFile = }")
 
     def __listdir_recursive(self, dir:str):
         """list files (only) inside a directory recursively"""
@@ -314,8 +320,6 @@ class GResourceUtils:
         rmtree(self.TempShellDir)
         return  tempGresourceFile
 
-gresource_utils = GResourceUtils()
-
 class Settings:
     section = "section"
     key = "key"
@@ -387,18 +391,23 @@ class Settings:
     ]
 
     def __init__(self):
-        self.command_elevator = gresource_utils.command_elevator
+        logging.info(f"{TEMP_DIR = }")
 
-        self.main_gsettings = Gio.Settings(schema_id=application_id)
-        self.appearance_gsettings = Gio.Settings(schema_id=f'{application_id}.appearance')
-        self.fonts_gsettings = Gio.Settings(schema_id=f'{application_id}.fonts')
-        self.top_bar_gsettings = Gio.Settings(schema_id=f'{application_id}.top-bar')
-        self.sound_gsettings = Gio.Settings(schema_id=f'{application_id}.sound')
-        self.pointing_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing')
-        self.mouse_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing.mouse')
-        self.touchpad_gsettings = Gio.Settings(schema_id=f'{application_id}.pointing.touchpad')
-        self.night_light_gsettings = Gio.Settings(schema_id=f'{application_id}.night-light')
-        self.misc_gsettings = Gio.Settings(schema_id=f'{application_id}.misc')
+        self.gresource_utils  = GResourceUtils()
+        self.command_elevator = self.gresource_utils.command_elevator
+
+        gsettings = lambda x=None: Gio.Settings (schema_id=application_id+('.'+x if x else ''))
+
+        self.main_gsettings        = gsettings ()
+        self.appearance_gsettings  = gsettings ('appearance')
+        self.fonts_gsettings       = gsettings ('fonts')
+        self.top_bar_gsettings     = gsettings ('top-bar')
+        self.sound_gsettings       = gsettings ('sound')
+        self.pointing_gsettings    = gsettings ('pointing')
+        self.mouse_gsettings       = gsettings ('pointing.mouse')
+        self.touchpad_gsettings    = gsettings ('pointing.touchpad')
+        self.night_light_gsettings = gsettings ('night-light')
+        self.misc_gsettings        = gsettings ('misc')
 
         self.load_settings()
 
@@ -563,7 +572,7 @@ class Settings:
     def apply_gresource_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
-        gresource_utils.auto_backup()
+        self.gresource_utils.auto_backup()
         makedirs(TEMP_DIR, exist_ok=True)
 
         theme_path = None
@@ -575,20 +584,22 @@ class Settings:
         background_image=None
         if self.background_type == "Image" and self.background_image:
             background_image = self.background_image
-        compiled_file = gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
+        compiled_file = self.gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
 
         # We need to copy the compiled gresource file instead of moving it because the copy gets correct
         # SELinux context/label where applicable and prevents breakage of GDM in such situations.
-        if gresource_utils.UbuntuGdmGresourceFile:
-            self.command_elevator.add(f"cp {compiled_file} {gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chown root: {gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {gresource_utils.UbuntuGdmGresourceFile} {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
+        if self.gresource_utils.UbuntuGdmGresourceFile:
+            logging.info("Applying GResource settings for Ubuntu ...")
+            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chown root: {self.gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {self.gresource_utils.CustomGresourceFile}")
+            self.command_elevator.add(f'update-alternatives --quiet --install {self.gresource_utils.UbuntuGdmGresourceFile} {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile} 0')
+            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
         else:
-            self.command_elevator.add(f"cp {compiled_file} {gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chown root: {gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {gresource_utils.GdmGresourceFile}")
+            logging.info("Applying GResource settings for non-Ubuntu systems ...")
+            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chown root: {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {self.gresource_utils.GdmGresourceFile}")
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -707,13 +718,15 @@ class Settings:
     def reset_settings(self) -> bool:
         status = False
 
-        if gresource_utils.UbuntuGdmGresourceFile:
-            self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(gresource_utils.UbuntuGdmGresourceFile)} {gresource_utils.CustomGresourceFile}')
-            self.command_elevator.add(f'rm -f {gresource_utils.CustomGresourceFile}')
-        elif path.exists(gresource_utils.GdmGresourceAutoBackup):
-                self.command_elevator.add(f"mv -f {gresource_utils.GdmGresourceAutoBackup} {gresource_utils.GdmGresourceFile}")
-                self.command_elevator.add(f"chown root: {gresource_utils.GdmGresourceFile}")
-                self.command_elevator.add(f"chmod 644 {gresource_utils.GdmGresourceFile}")
+        if self.gresource_utils.UbuntuGdmGresourceFile:
+            logging.info("Resetting GResource settings for Ubuntu ...")
+            self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
+            self.command_elevator.add(f'rm -f {self.gresource_utils.CustomGresourceFile}')
+        elif path.exists(self.gresource_utils.GdmGresourceAutoBackup):
+            logging.info("Resetting GResource settings for non-Ubuntu systems ...")
+            self.command_elevator.add(f"mv -f {self.gresource_utils.GdmGresourceAutoBackup} {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chown root: {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {self.gresource_utils.GdmGresourceFile}")
 
         self.command_elevator.add("rm -f /etc/dconf/profile/gdm")
         self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")

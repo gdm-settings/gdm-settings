@@ -2,6 +2,9 @@
 import os
 import sys
 import gettext
+import logging
+
+from @py_module_name@ import colors
 
 APPDIR = os.environ.get('APPDIR', '')             # required for AppImage
 py_modules_dir = APPDIR + '@py_modules_dir@'
@@ -9,6 +12,7 @@ localedir = APPDIR + '@locale_dir@'
 
 sys.path.insert(1, py_modules_dir)
 gettext.install('@project_name@', localedir)
+logging.basicConfig(format=f'{colors.bold}%(levelname)s:{colors.reset} %(message)s')
 
 from @py_module_name@ import gdm_settings_gui
 gdm_settings_gui.main()

@@ -1,12 +1,13 @@
 '''The graphical user interface of the application'''
 
-from sys import argv
+import sys
+import logging
 from os import path
 from types import SimpleNamespace
 
 import gi
 gi.require_version("Adw", '1')
-from gi.repository import Adw, Gtk, Gio, Gdk
+from gi.repository import Adw, Gtk, Gio, GLib, Gdk
 
 from .info import *
 from .utils import find_file
@@ -63,12 +64,46 @@ class App_Utils:
 class GDM_Settings(Adw.Application, App_Utils):
     def __init__(self):
         Adw.Application.__init__(self, application_id=application_id)
+
+        self.add_main_option("version", 0,
+                             GLib.OptionFlags.NONE,
+                             GLib.OptionArg.NONE,
+                             _("Show application version"),
+                             None,
+                             )
+
+        self.add_main_option("verbosity", 0,
+                             GLib.OptionFlags.NONE,
+                             GLib.OptionArg.INT,
+                             _("Set verbosity level manually (from 0 to 5)"),
+                             # Translators: 'LEVEL' is the argument of --verbosity option.
+                             _("LEVEL"),
+                             )
+
+        self.add_main_option("verbose", "v".encode(),
+                             GLib.OptionFlags.NONE,
+                             GLib.OptionArg.NONE,
+                             _("Enable verbose mode (set verbosity level 5)"),
+                             None,
+                             )
+
+        self.add_main_option("quiet", "q".encode(),
+                             GLib.OptionFlags.NONE,
+                             GLib.OptionArg.NONE,
+                             # Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
+                             _("Enable quiet mode   (set verbosity level 0)"),
+                             None,
+                             )
+
         self.connect("activate", self.on_activate)
+        self.connect("handle-local-options", self.handle_local_options)
         self.connect("shutdown", self.on_shutdown)
 
     ## Signal Handlers ##
 
     def on_activate(self, app):
+        logging.info(f"PackageType = {env.PACKAGE_TYPE.name}")
+
         self.initialize_settings()
         self.get_widgets()
         self.bind_to_gsettings()
@@ -82,6 +117,47 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.restore_window_state()
         self.add_window(widgets.main_window)
         widgets.main_window.present()
+
+    def handle_local_options(self, klass, options):
+
+        if options.contains("version"):
+            print (application_name, f"({project_name})", f"v{version}")
+            return 0
+
+        def set_logging_level(verbosity):
+            # Logging Levels are integers with following values
+            # logging.CRITICAL = 50
+            # logging.ERROR    = 40
+            # logging.WARNING  = 30
+            # logging.INFO     = 20
+            # logging.DEBUG    = 10
+            # and integer values above 50 disable logging completely
+            # But this is what the values of our app's --verbosity option represent
+            # 0 = DISABLE, 1 = CRITICAL, 2 = ERROR, 3 = WARNING, 4 = INFO, 5 = DEBUG
+            # So, we use following formula to get appropriate integer that represents chosen level
+            # For example, with --verbosity=0 we get, (6-verbosity)*10 = (6-0)*10 = 6*10 = 60 (no logging)
+            #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
+            #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
+            level = (6 - verbosity) * 10
+            logging.root.setLevel(level)
+
+        if options.contains("verbose"):
+            set_logging_level (5)
+
+        if options.contains("quiet"):
+            set_logging_level (0)
+
+        if verbosity_gvariant := options.lookup_value("verbosity", GLib.VariantType("i")):
+            verbosity_level = verbosity_gvariant.get_int32()
+
+            if verbosity_level >= 0 and verbosity_level <= 5:
+                set_logging_level (verbosity_level)
+            else:
+                print (verbosity_level, "is an invalid verbosity level. Accepted values are 0 to 5.", file=sys.stderr)
+                print ("Assuming Verbosity level 4.", file=sys.stderr)
+                set_logging_level (4)
+
+        return -1
 
     def on_shutdown(self, app):
         self.save_window_state()
@@ -136,7 +212,7 @@ class GDM_Settings(Adw.Application, App_Utils):
         if widgets.include_top_bar_tweaks_switch.get_active():
             self.set_settings()
             additional_css = self.settings.get_setting_css()
-        if settings_manager.gresource_utils.extract_default_theme(additional_css=additional_css):
+        if self.settings.gresource_utils.extract_default_theme(additional_css=additional_css):
             toast.set_title(_("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"))
         else:
             toast.set_title(_("Failed to extract default theme"))
@@ -683,7 +759,7 @@ class GDM_Settings(Adw.Application, App_Utils):
 
 def main():
     app = GDM_Settings()
-    return app.run(argv)
+    return app.run(sys.argv)
 
 if __name__ == '__main__':
     main()
