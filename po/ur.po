@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-12 22:59+0500\n"
-"PO-Revision-Date: 2022-04-12 23:01+0500\n"
+"POT-Creation-Date: 2022-06-08 19:49+0500\n"
+"PO-Revision-Date: 2022-06-08 20:18+0500\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <realmazharhussain@gmail.com>\n"
 "Language: ur\n"
@@ -19,18 +19,19 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: .\n"
 
-#: data/application_id.appdata.xml.in:10 data/application_id.desktop.in:4
-#: src/info.py.in:4 src/blueprints/main-window.blp.in:17
+#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
+#: src/info.py.in:3 src/blueprints/main-window.blp.in:17
 #: src/blueprints/main-window.blp.in:41
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
-#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:5
+#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
 #: src/blueprints/main-window.blp.in:43
 msgid "A settings app for GNOME's Login Manager (GDM)"
 msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
 
-#: data/application_id.appdata.xml.in:14
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/application_id.appdata.xml.in:16
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -38,9 +39,66 @@ msgstr ""
 "جی۔ڈی۔ایم کی سیٹنگز بدلیں؛ تھیم اور بیکگرائونڈ اپلائی کریں، تیر کا تھیم، آئیکن "
 "تھیم اور رات کی روشنی کی سیٹنگز، وغیرہ بدلیں۔"
 
-#: data/application_id.appdata.xml.in:38 src/gdm_settings_gui.py:287
+#: data/application_id.appdata.xml.in:40 src/gdm_settings_gui.py:372
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
+
+#: data/application_id.appdata.xml.in:73
+msgid "Added: Support for Ubuntu"
+msgstr "Ubuntu کے لیے سپورٹ شامل کی"
+
+#: data/application_id.appdata.xml.in:74
+msgid "Fixed: Could not apply settings on some systems"
+msgstr "درستگی: کچھ سسٹمز پر سیٹنگز اپلائی نہیں ہو سکتی تھیں"
+
+#: data/application_id.appdata.xml.in:79
+msgid ""
+"Fixed: Could not change background-image/wallpaper if language is not English"
+msgstr "درستگی: اگر زبان انگریزی نہ ہو تو والپیپر تبدیل نہیں ہو سکتا تھا"
+
+#: data/application_id.appdata.xml.in:84
+msgid "Fixed: A fatal bug"
+msgstr "درستگی: بہت ہنگامی مسئلہ"
+
+#: data/application_id.appdata.xml.in:89
+msgid "Added:"
+msgstr "اضافہ کیا:"
+
+#: data/application_id.appdata.xml.in:91
+msgid "Mouse Settings"
+msgstr "مائوس کی سیٹنگز"
+
+#: data/application_id.appdata.xml.in:92
+msgid "Flatpak Support"
+msgstr "فلَیٹپَیک کی سپورٹ"
+
+#: data/application_id.appdata.xml.in:94
+msgid "Improved:"
+msgstr "بہتر کیا؛"
+
+#: data/application_id.appdata.xml.in:96
+msgid "Support for Right-to-Left Languages"
+msgstr "دائیں سے بائیں لکھی جانے والی زبانوں کی سپورٹ"
+
+#: data/application_id.appdata.xml.in:97
+msgid "More Text got Translated"
+msgstr "مزید مواد کا ترجمہ کیا"
+
+#: data/application_id.appdata.xml.in:99
+msgid "New Translations:"
+msgstr "نئے ترجمے:"
+
+#: data/application_id.appdata.xml.in:101
+msgid "German"
+msgstr "جرمن"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Occitan"
+msgstr "آکسِیٹَن"
+
+#: data/application_id.appdata.xml.in:103
+msgid "Spanish"
+msgstr "سپَینِش"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -50,24 +108,27 @@ msgstr "تھیم کا نام"
 msgid "Type of Background"
 msgstr "بیک گرائونڈ کی قصم"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:21
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:22
 msgid "Wether GDM background should be an Image, Color or None."
 msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا کچھ نہیں"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:33
+#: data/gschemas/application_id.appearance.gschema.xml.in:34
 msgid "Background Image"
 msgstr "بیک گرائونڈ کی تصویر"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:36
 msgid "The image file to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:41
+#: data/gschemas/application_id.appearance.gschema.xml.in:43
 #: src/blueprints/top-bar-page.blp:50
 msgid "Background Color"
 msgstr "بیک گرائونڈ کا رنگ"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:42
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:45
 msgid "The Color to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
@@ -184,74 +245,96 @@ msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ تبد
 msgid "Top bar background color"
 msgstr "بیک گرائونڈ کا رنگ"
 
-#: src/gdm_settings_gui.py:123
+#: src/gdm_settings_gui.py:71
+msgid "Show application version"
+msgstr "اَیپلی کیشن کا ورژن دکھائیں"
+
+#: src/gdm_settings_gui.py:78
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "وربوسِٹی کا لیوَل سیٹ کریں (0 سے 5 تک)"
+
+#. Translators: 'LEVEL' is the argument of --verbosity option.
+#: src/gdm_settings_gui.py:80
+msgid "LEVEL"
+msgstr "لیوَل"
+
+#: src/gdm_settings_gui.py:86
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 سیٹ کریں)"
+
+#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
+#: src/gdm_settings_gui.py:94
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 سیٹ کریں)"
+
+#: src/gdm_settings_gui.py:204
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/gdm_settings_gui.py:125
+#: src/gdm_settings_gui.py:206
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/gdm_settings_gui.py:135
-msgid ""
-"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
-msgstr ""
-"ڈیفالٹ شیل تھیم 'usr/share/themes/' میں 'default-extracted' کے نام سے سیو ہو "
-"گیا ہے"
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/gdm_settings_gui.py:217
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr "ڈیفالٹ شیل تھیم '{path}' میں 'default-extracted' کے نام سے سیو ہو گیا ہے"
 
-#: src/gdm_settings_gui.py:137
+#: src/gdm_settings_gui.py:219
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/gdm_settings_gui.py:291
+#. Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
+#: src/gdm_settings_gui.py:377
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: src/gdm_settings_gui.py:504
+#: src/gdm_settings_gui.py:590
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/gdm_settings_gui.py:505 src/blueprints/fonts-page.blp:19
+#: src/gdm_settings_gui.py:591 src/blueprints/fonts-page.blp:19
 msgid "Fonts"
 msgstr "خط"
 
-#: src/gdm_settings_gui.py:506
+#: src/gdm_settings_gui.py:592
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/gdm_settings_gui.py:507 src/blueprints/sound-page.blp:19
+#: src/gdm_settings_gui.py:593 src/blueprints/sound-page.blp:19
 msgid "Sound"
 msgstr "آواز"
 
-#: src/gdm_settings_gui.py:508
+#: src/gdm_settings_gui.py:594
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/gdm_settings_gui.py:509 src/blueprints/display-page.blp:19
+#: src/gdm_settings_gui.py:595 src/blueprints/display-page.blp:19
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/gdm_settings_gui.py:510 src/blueprints/misc-page.blp:19
+#: src/gdm_settings_gui.py:596 src/blueprints/misc-page.blp:19
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
-#: src/gdm_settings_gui.py:511
+#: src/gdm_settings_gui.py:597
 msgid "Tools"
 msgstr "آلات"
 
-#: src/gdm_settings_gui.py:564
+#: src/gdm_settings_gui.py:650
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
-#: src/gdm_settings_gui.py:569
+#: src/gdm_settings_gui.py:655
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: src/gdm_settings_gui.py:573
+#: src/gdm_settings_gui.py:659
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
-#: src/settings_manager.py:226
+#: src/settings_manager.py:268
 msgid "saving default theme ..."
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
 
@@ -340,15 +423,17 @@ msgstr "اپنا شیڈول"
 msgid "Times"
 msgstr "اوکات"
 
-#: src/blueprints/display-page.blp:50
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:51
 msgid "From"
 msgstr "شروع"
 
-#: src/blueprints/display-page.blp:72
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:73
 msgid "To"
 msgstr "ختم"
 
-#: src/blueprints/display-page.blp:94
+#: src/blueprints/display-page.blp:95
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
@@ -416,37 +501,23 @@ msgstr "ہوم پیج"
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "کاپی رائیٹ © 2021 مظہر حسین"
 
-#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:66
+#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:60
 msgid "Images"
 msgstr "تصویریں"
 
-#: src/blueprints/main-window.blp.in:57 src/blueprints/main-window.blp.in:69
-#: src/blueprints/main-window.blp.in:82
-msgid "Cancel"
-msgstr "کینسل"
-
-#: src/blueprints/main-window.blp.in:60 src/blueprints/main-window.blp.in:72
-#: src/blueprints/main-window.blp.in:85
-msgid "Select"
-msgstr "سیلیکٹ"
-
-#: src/blueprints/main-window.blp.in:79
-msgid "Directories"
-msgstr "فولڈر"
-
-#: src/blueprints/main-window.blp.in:90
+#: src/blueprints/main-window.blp.in:78
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/blueprints/main-window.blp.in:96
+#: src/blueprints/main-window.blp.in:84
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/blueprints/main-window.blp.in:102
+#: src/blueprints/main-window.blp.in:90
 msgid "User settings imported"
 msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 
-#: src/blueprints/main-window.blp.in:108
+#: src/blueprints/main-window.blp.in:96
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
@@ -633,6 +704,15 @@ msgstr "پاوَر"
 #: src/blueprints/top-bar-page.blp:111
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
+
+#~ msgid "Cancel"
+#~ msgstr "کینسل"
+
+#~ msgid "Select"
+#~ msgstr "سیلیکٹ"
+
+#~ msgid "Directories"
+#~ msgstr "فولڈر"
 
 #~ msgid "updating backup of default theme ..."
 #~ msgstr "ڈیفالٹ تھیم کا بیک اپ اپڈیٹ ہو رہا ہے ۔۔۔"
