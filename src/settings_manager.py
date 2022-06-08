@@ -158,8 +158,8 @@ class GResourceUtils:
         self.CustomThemeIdentity      = 'custom-theme'
         self.TempShellDir             = f'{TEMP_DIR}/gnome-shell'
         self.ThemesDir                = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
-        self.GdmGresourceFile         = None
-        self.GdmGresourceAutoBackup   = None
+        self.ShellGresourceFile       = None
+        self.ShellGresourceAutoBackup = None
         self.CustomGresourceFile      = None
         self.UbuntuGdmGresourceFile   = None
 
@@ -167,9 +167,9 @@ class GResourceUtils:
             file = path.join (data_dir,  'gnome-shell', '{}-theme.gresource')
 
             if path.isfile (env.HOST_ROOT + file.format ('gnome-shell')):
-                self.GdmGresourceFile       = file.format ('gnome-shell')
-                self.GdmGresourceAutoBackup = self.GdmGresourceFile + ".default"
-                self.CustomGresourceFile    = self.GdmGresourceFile + ".gdm_settings"
+                self.ShellGresourceFile       = file.format ('gnome-shell')
+                self.ShellGresourceAutoBackup = self.ShellGresourceFile + ".default"
+                self.CustomGresourceFile      = self.ShellGresourceFile + ".gdm_settings"
 
                 if path.isfile (env.HOST_ROOT + file.format ('gdm')):
                     self.UbuntuGdmGresourceFile = file.format ('gdm')
@@ -178,7 +178,7 @@ class GResourceUtils:
 
                 break
 
-        logging.info(f"{self.GdmGresourceFile = }")
+        logging.info(f"{self.ShellGresourceFile = }")
         logging.info(f"{self.UbuntuGdmGresourceFile = }")
 
     def __listdir_recursive(self, dir:str):
@@ -205,7 +205,7 @@ class GResourceUtils:
     def get_default(self) -> str:
         """get full path to the GResource file of the default theme (if the file exists)"""
 
-        for file in self.GdmGresourceFile, self.GdmGresourceAutoBackup:
+        for file in self.ShellGresourceFile, self.ShellGresourceAutoBackup:
            if self.is_default(env.HOST_ROOT + file):
                return file
 
@@ -264,9 +264,9 @@ class GResourceUtils:
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != self.GdmGresourceAutoBackup:
+        if default_gresource and default_gresource != self.ShellGresourceAutoBackup:
             print(_("saving default theme ..."))
-            self.command_elevator.add(f"cp {default_gresource} {self.GdmGresourceAutoBackup}")
+            self.command_elevator.add(f"cp {default_gresource} {self.ShellGresourceAutoBackup}")
             self._extract_default_pure_theme()
         elif not path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure'):
             self._extract_default_pure_theme()
@@ -528,6 +528,7 @@ class Settings:
         if self.background_type == "Image" and self.background_image:
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
+            #css += "  background-color: transparent !important;\n"
             css += "  background-size: cover;\n"
             css += "}\n"
         elif self.background_type == "Color":
@@ -597,9 +598,9 @@ class Settings:
             self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
         else:
             logging.info("Applying GResource settings for non-Ubuntu systems ...")
-            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chown root: {self.gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -722,11 +723,11 @@ class Settings:
             logging.info("Resetting GResource settings for Ubuntu ...")
             self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
             self.command_elevator.add(f'rm -f {self.gresource_utils.CustomGresourceFile}')
-        elif path.exists(self.gresource_utils.GdmGresourceAutoBackup):
+        elif path.exists(self.gresource_utils.ShellGresourceAutoBackup):
             logging.info("Resetting GResource settings for non-Ubuntu systems ...")
-            self.command_elevator.add(f"mv -f {self.gresource_utils.GdmGresourceAutoBackup} {self.gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chown root: {self.gresource_utils.GdmGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {self.gresource_utils.GdmGresourceFile}")
+            self.command_elevator.add(f"mv -f {self.gresource_utils.ShellGresourceAutoBackup} {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
 
         self.command_elevator.add("rm -f /etc/dconf/profile/gdm")
         self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
