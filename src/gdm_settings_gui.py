@@ -213,7 +213,8 @@ class GDM_Settings(Adw.Application, App_Utils):
             self.set_settings()
             additional_css = self.settings.get_setting_css()
         if self.settings.gresource_utils.extract_default_theme(additional_css=additional_css):
-            toast.set_title(_("Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"))
+            # Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+            toast.set_title(_("Default shell theme extracted to '{path}' as 'default-extracted'").format(path=self.settings.gresource_utils.ThemesDir))
         else:
             toast.set_title(_("Failed to extract default theme"))
         widgets.main_toast_overlay.add_toast(toast)
