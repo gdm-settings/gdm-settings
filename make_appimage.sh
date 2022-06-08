@@ -12,6 +12,7 @@ if test -d "$buildDir"; then
 else
   meson "$buildDir" --prefix=$PREFIX
 fi
+meson compile -C "$buildDir"
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
 eval $("$progDir"/load_info.py "$buildDir"/src/info.py)
