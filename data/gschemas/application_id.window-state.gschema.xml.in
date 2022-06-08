@@ -3,7 +3,7 @@
   <schema id="@application_id@.window-state" path="@schema_path@window-state/">
 
 	 <key name="width" type="u">
-	   <default>800</default>
+	   <default>900</default>
 	 </key>
 
 	 <key name="height" type="u">
