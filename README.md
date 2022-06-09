@@ -7,7 +7,7 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 ![screenshot](https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png)
 
 - [Installation Instructions](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
-- [Screenshots](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots)
+- Screenshots ([Light](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots-(Light)) / [Dark](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots-(Dark)))
 - [Features](https://github.com/realmazharhussain/gdm-settings/wiki/Features)
 - [Translate](https://github.com/realmazharhussain/gdm-settings/wiki/Translation-Manual)
 - [Report Bugs](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml)
