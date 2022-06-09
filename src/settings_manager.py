@@ -171,9 +171,9 @@ class GResourceUtils:
                 self.ShellGresourceAutoBackup = self.ShellGresourceFile + ".default"
                 self.CustomGresourceFile      = self.ShellGresourceFile + ".gdm_settings"
 
-                if path.isfile (env.HOST_ROOT + file.format ('gdm')):
+                if path.islink (env.HOST_ROOT + file.format ('gdm')):
                     self.UbuntuGdmGresourceFile = file.format ('gdm')
-                elif path.isfile (env.HOST_ROOT + file.format ('gdm3')):
+                elif path.islink (env.HOST_ROOT + file.format ('gdm3')):
                     self.UbuntuGdmGresourceFile = file.format ('gdm3')
 
                 break
