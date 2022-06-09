@@ -178,7 +178,7 @@ class GResourceUtils:
 
                 break
 
-        logging.info(f"{self.ShellGresourceFile = }")
+        logging.info(f"{self.ShellGresourceFile     = }")
         logging.info(f"{self.UbuntuGdmGresourceFile = }")
 
     def __listdir_recursive(self, dir:str):
@@ -391,7 +391,7 @@ class Settings:
     ]
 
     def __init__(self):
-        logging.info(f"{TEMP_DIR = }")
+        logging.info(f"{TEMP_DIR    = }")
 
         self.gresource_utils  = GResourceUtils()
         self.command_elevator = self.gresource_utils.command_elevator
