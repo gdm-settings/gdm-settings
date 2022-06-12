@@ -68,6 +68,37 @@
   </screenshots>
 
   <releases>
+    <release version="0.5.99" date="2022-05-08">
+      <description>
+        <p>Added:</p>
+        <ul>
+          <li>Support for verbose/quiet mode</li>
+          <li>Support for setting manual verbosity level</li>
+          <li>Command-line options for verbose/qeiet mode and manual verbosity level</li>
+          <li>Command-line option --version</li>
+          <li>Wider application window on first launch</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Welcome message could not contain single qoutes</li>
+          <li>Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)</li>
+          <li>Maximized or big application window looked bad (content was much smaller than the window)</li>
+          <li>Showed wrong destination directory/folder path while extracting default shell theme</li>
+          <li>Clicking 'Apply' did nothing if selected background image was deleted before applying</li>
+          <li>Clicking 'Apply' applied only some settings on Ubuntu</li>
+        </ul>
+        <p>New Translations:</p>
+        <ul>
+          <li>French</li>
+          <li>Hebrew</li>
+          <li>Persian</li>
+        </ul>
+        <p>Updated Translations:</p>
+        <ul>
+          <li>Urdu</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.5.3" date="2022-05-08">
       <description>
         <p>Added: Support for Ubuntu</p>
