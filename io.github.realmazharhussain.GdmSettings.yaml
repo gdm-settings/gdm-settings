@@ -3,6 +3,7 @@ command: gdm-settings
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
 runtime-version: "42"
+
 finish-args:
   - --share=ipc
   - --device=dri
@@ -10,11 +11,8 @@ finish-args:
   - --socket=fallback-x11
   - --talk-name=org.freedesktop.Flatpak
   - --filesystem=host-os
-  - --filesystem=/etc/dconf/db/gdm.d
-  - --filesystem=/etc/dconf/profile/gdm
+
 cleanup:
-  - /bin/blueprint-compiler
-  - /lib/*/site-packages/blueprintcompiler
   - /include
   - /lib/pkgconfig
   - /man
@@ -24,6 +22,7 @@ cleanup:
   - /share/pkgconfig
   - '*.la'
   - '*.a'
+
 modules:
   - name: blueprint-compiler
     builddir: true
@@ -31,7 +30,10 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
-        branch: main
+        commit: 3b39e0d541ed3f18441420228f1270bd167fa7fa
+    cleanup:
+      - "*"
+
   - name: gdm-settings
     builddir: true
     buildsystem: meson
