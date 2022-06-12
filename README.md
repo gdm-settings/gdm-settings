@@ -6,6 +6,8 @@ It is written in Python and provides a Graphical interface using GTK+ and LibAdw
 
 ![screenshot](https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png)
 
+<center> [Show in App Store](appstream://io.github.realmazharhussain.GdmSettings) </center>
+
 - [Installation Instructions](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
 - Screenshots ([Light](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots-(Light)) / [Dark](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots-(Dark)))
 - [Features](https://github.com/realmazharhussain/gdm-settings/wiki/Features)
