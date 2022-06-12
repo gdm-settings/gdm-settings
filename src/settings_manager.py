@@ -247,7 +247,7 @@ class GResourceUtils:
         else:
             self.command_elevator.add(f"rm -rf {target_theme_dir}")
             self.command_elevator.add(f"mkdir -p {target_theme_dir}")
-            self.command_elevator.add(f"mv -T {source_shell_dir} {target_shell_dir}")
+            self.command_elevator.add(f"cp -rT {source_shell_dir} {target_shell_dir}")
             status = self.command_elevator.run()
 
         return status
@@ -257,7 +257,7 @@ class GResourceUtils:
         self.extract_default_theme(target_dir=TEMP_DIR, name='default-pure')
         self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
         self.command_elevator.add(f"mkdir -p {self.ThemesDir}")
-        self.command_elevator.add(f"mv -t {self.ThemesDir} {TEMP_DIR}/default-pure")
+        self.command_elevator.add(f"cp -rt {self.ThemesDir} {TEMP_DIR}/default-pure")
 
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
@@ -682,8 +682,8 @@ class Settings:
             print(gdm_conf_contents, file=temp_conf_file)
 
         self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
-        self.command_elevator.add(f"mv -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
-        self.command_elevator.add(f"mv -fT '{temp_profile_path}' '{gdm_profile_path}'")
+        self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
+        self.command_elevator.add(f"cp -fT '{temp_profile_path}' '{gdm_profile_path}'")
         self.command_elevator.add("dconf update")
 
     def apply_settings(self) -> bool:
