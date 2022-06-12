@@ -102,7 +102,7 @@ class GDM_Settings(Adw.Application, App_Utils):
     ## Signal Handlers ##
 
     def on_activate(self, app):
-        logging.info(f"PackageType = {env.PACKAGE_TYPE.name}")
+        logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
 
         self.initialize_settings()
         self.get_widgets()
