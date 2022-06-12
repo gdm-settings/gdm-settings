@@ -529,7 +529,6 @@ class Settings:
         if self.background_type == "Image" and self.background_image:
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
-            #css += "  background-color: transparent !important;\n"
             css += "  background-size: cover;\n"
             css += "}\n"
         elif self.background_type == "Color":
