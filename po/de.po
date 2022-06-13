@@ -3,21 +3,21 @@
 # This file is distributed under the same license as the gdm-settings package.
 #
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
-#
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
-"PO-Revision-Date: 2022-04-17 14:13+0200\n"
+"PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/info.py.in:3 src/blueprints/main-window.blp.in:17
@@ -47,136 +47,149 @@ msgstr "Mazhar Hussain"
 
 #: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
 msgid "Added:"
-msgstr ""
+msgstr "Hinzugefügt:"
 
 #: data/application_id.appdata.xml.in:75
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "Unterstützung für einen detaillierten/stillen Modus"
 
 #: data/application_id.appdata.xml.in:76
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "Unterstützung für das manuelle Setzen eines Detaillevels"
 
 #: data/application_id.appdata.xml.in:77
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr ""
+"Kommandozeilenoptionen für einen detaillierten, stillen und normalen Modus"
 
 #: data/application_id.appdata.xml.in:78
 msgid "Command-line option --version"
-msgstr ""
+msgstr "Kommandozeilenoption --version"
 
 #: data/application_id.appdata.xml.in:79
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "Breiteres Anwendungsfenster beim ersten Start"
 
 #: data/application_id.appdata.xml.in:81
 msgid "Fixed:"
-msgstr ""
+msgstr "Behoben:"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "Willkommensnachricht konnte keine einzelnen Anführungszeichen enthalten"
 
 #: data/application_id.appdata.xml.in:84
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"Login Manager (GDM) funktionierte nicht auf Systemen, die SELinux aktiviert "
+"haben (hauptsächlich Fedora)"
 
 #: data/application_id.appdata.xml.in:85
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"Maximiertes oder großes Anwendungsfenster sah nicht gut aus (der Inhalt war "
+"viel kleiner als das Fenster)"
 
 #: data/application_id.appdata.xml.in:86
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
+"Beim Extrahieren des Vorgabe-Shellthemas wurde ein falsches Zielverzeichnis "
+"angezeigt"
 
 #: data/application_id.appdata.xml.in:87
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"Beim Drücken auf »Anwenden« ist nichts geschehen, wenn das ausgewählte "
+"Hintergrundbild vor dem Anwenden gelöscht wurde"
 
 #: data/application_id.appdata.xml.in:88
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
+"Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
+"angewendet"
 
 #: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
 msgid "New Translations:"
-msgstr ""
+msgstr "Neue Übersetzungen:"
 
 #: data/application_id.appdata.xml.in:92
 msgid "French"
-msgstr ""
+msgstr "Französisch"
 
 #: data/application_id.appdata.xml.in:93
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebräisch"
 
 #: data/application_id.appdata.xml.in:94
 msgid "Persian"
-msgstr ""
+msgstr "Persisch"
 
 #: data/application_id.appdata.xml.in:96
 msgid "Updated Translations:"
-msgstr ""
+msgstr "Aktualisierte Übersetzungen:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Urdu"
-msgstr ""
+msgstr "Urdu"
 
 #: data/application_id.appdata.xml.in:104
 msgid "Added: Support for Ubuntu"
-msgstr ""
+msgstr "Hinzugefügt: Unterstützung für Ubuntu"
 
 #: data/application_id.appdata.xml.in:105
 msgid "Fixed: Could not apply settings on some systems"
 msgstr ""
+"Behoben: Einstellungen konnten auf manchen Systemen nicht angewendet werden"
 
 #: data/application_id.appdata.xml.in:110
 msgid ""
 "Fixed: Could not change background-image/wallpaper if language is not English"
 msgstr ""
+"Behoben: Hintergrundbild konnte bei einer anderen Sprache als Englisch nicht "
+"geändert werden"
 
 #: data/application_id.appdata.xml.in:115
 msgid "Fixed: A fatal bug"
-msgstr ""
+msgstr "Behoben: Ein schwerwiegender Fehler"
 
 #: data/application_id.appdata.xml.in:122
-#, fuzzy
 msgid "Mouse Settings"
-msgstr "Einstellungen zurücksetzen"
+msgstr "Maus-Einstellungen"
 
 #: data/application_id.appdata.xml.in:123
 msgid "Flatpak Support"
-msgstr ""
+msgstr "Flatpak-Unterstützung"
 
 #: data/application_id.appdata.xml.in:125
 msgid "Improved:"
-msgstr ""
+msgstr "Verbessert:"
 
 #: data/application_id.appdata.xml.in:127
 msgid "Support for Right-to-Left Languages"
-msgstr ""
+msgstr "Unterstützung für RTL-Sprachen"
 
 #: data/application_id.appdata.xml.in:128
 msgid "More Text got Translated"
-msgstr ""
+msgstr "Mehr Texte übersetzt"
 
 #: data/application_id.appdata.xml.in:132
 msgid "German"
-msgstr ""
+msgstr "Deutsch"
 
 #: data/application_id.appdata.xml.in:133
 msgid "Occitan"
-msgstr ""
+msgstr "Okzitanisch"
 
 #: data/application_id.appdata.xml.in:134
 msgid "Spanish"
-msgstr ""
+msgstr "Spanisch"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -334,31 +347,33 @@ msgstr "Hintergrundfarbe der oberen Leiste"
 
 #: src/gdm_settings_gui.py:71
 msgid "Show application version"
-msgstr ""
+msgstr "Version der Anwendung anzeigen"
 
 #: src/gdm_settings_gui.py:78
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Detaillevel manuell setzen (von 0 bis 5)"
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
 #: src/gdm_settings_gui.py:80
 msgid "LEVEL"
-msgstr ""
+msgstr "LEVEL"
 
 #: src/gdm_settings_gui.py:86
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "Hohes Detaillevel aktivieren (Level 5)"
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
 #: src/gdm_settings_gui.py:94
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "Stillen Modus aktivieren (Level 0)"
 
 #: src/gdm_settings_gui.py:178
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
+"Nicht angewendet. Das ausgewählte Hintergrundbild konnte nicht gefunden "
+"werden. Bitte versuchen Sie es erneut."
 
 #: src/gdm_settings_gui.py:210
 msgid "Applied current display settings"
@@ -370,11 +385,9 @@ msgstr "Anwenden der aktuellen Displayeinstellungen fehlgeschlagen"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/gdm_settings_gui.py:223
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Shell-Vorgabethema wurde nach »/usr/share/themes« als »default-extracted« "
-"entpackt"
+msgstr "Shell-Vorgabethema wurde nach »{path}« als »default-extracted« entpackt"
 
 #: src/gdm_settings_gui.py:225
 msgid "Failed to extract default theme"
