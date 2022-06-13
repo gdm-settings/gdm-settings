@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-14 12:08+0200\n"
+"POT-Creation-Date: 2022-06-13 11:11+0500\n"
 "PO-Revision-Date: 2022-04-14 13:40+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <>\n"
@@ -17,61 +17,193 @@ msgstr ""
 "X-Generator: Lokalize 22.03.90\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/application_id.appdata.xml.in:10 data/application_id.desktop.in:4
-#: src/info.py.in:5 src/blueprints/main-window.blp.in:17
+#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
+#: src/info.py.in:3 src/blueprints/main-window.blp.in:17
 #: src/blueprints/main-window.blp.in:41
 msgid "Login Manager Settings"
 msgstr "Aanmeldvenstervoorkeuren"
 
-#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:5
+#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
 #: src/blueprints/main-window.blp.in:43
 msgid "A settings app for GNOME's Login Manager (GDM)"
 msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
 
-#: data/application_id.appdata.xml.in:14
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/application_id.appdata.xml.in:16
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere achtergrond,"
-" een ander cursor- of "
-"pictogramthema, pas de nachtlichtvoorkeuren aan en nog veel meer."
+"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere "
+"achtergrond, een ander cursor- of pictogramthema, pas de "
+"nachtlichtvoorkeuren aan en nog veel meer."
 
-#: data/application_id.appdata.xml.in:38 src/gdm_settings_gui.py:293
+#: data/application_id.appdata.xml.in:40 src/gdm_settings_gui.py:378
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
+#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+msgid "Added:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:75
+msgid "Support for verbose/quiet mode"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:76
+msgid "Support for setting manual verbosity level"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:77
+msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:78
+msgid "Command-line option --version"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:79
+msgid "Wider application window on first launch"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:81
+msgid "Fixed:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:83
+msgid "Welcome message could not contain single qoutes"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:84
+msgid ""
+"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:85
+msgid ""
+"Maximized or big application window looked bad (content was much smaller "
+"than the window)"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:86
+msgid ""
+"Showed wrong destination directory/folder path while extracting default "
+"shell theme"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:87
+msgid ""
+"Clicking 'Apply' did nothing if selected background image was deleted before "
+"applying"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:88
+msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+msgid "New Translations:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:92
+msgid "French"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:93
+msgid "Hebrew"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:94
+msgid "Persian"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:96
+msgid "Updated Translations:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:98
+msgid "Urdu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:104
+msgid "Added: Support for Ubuntu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:105
+msgid "Fixed: Could not apply settings on some systems"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:110
+msgid ""
+"Fixed: Could not change background-image/wallpaper if language is not English"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:115
+msgid "Fixed: A fatal bug"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:122
+#, fuzzy
+msgid "Mouse Settings"
+msgstr "Standaardwaarden herstellen"
+
+#: data/application_id.appdata.xml.in:123
+msgid "Flatpak Support"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:125
+msgid "Improved:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:127
+msgid "Support for Right-to-Left Languages"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:128
+msgid "More Text got Translated"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:132
+msgid "German"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:133
+msgid "Occitan"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:134
+msgid "Spanish"
+msgstr ""
+
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
-#| msgid "Theme"
 msgid "Theme Name"
 msgstr "Themanaam"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:20
-#| msgid "Background"
 msgid "Type of Background"
 msgstr "Soort achtergrond"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:21
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:22
 msgid "Wether GDM background should be an Image, Color or None."
 msgstr "Of de GDM-achtergrond een afbeelding, kleur of blanco dient te zijn."
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:33
-#| msgid "Background"
+#: data/gschemas/application_id.appearance.gschema.xml.in:34
 msgid "Background Image"
 msgstr "Achtergrondafbeelding"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
-#| msgid "The image to use as background"
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:36
 msgid "The image file to use as GDM background"
 msgstr "Het afbeeldingsbestand dat wordt ingesteld als achtergrond"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:41
-#: src/blueprints/top-bar-page.blp:50
+#: data/gschemas/application_id.appearance.gschema.xml.in:43
+#: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:42
-#| msgid "The color to use as background"
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:45
 msgid "The Color to use as GDM background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
@@ -84,9 +216,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"De nachtlichtmodus past de kleurtemperatuur van uw scherm, na zonsondergang"
-" of "
-"op vaste, ingestelde tijden, aan."
+"De nachtlichtmodus past de kleurtemperatuur van uw scherm, na zonsondergang "
+"of op vaste, ingestelde tijden, aan."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:13
 msgid "Temperature of the display when enabled"
@@ -97,9 +228,8 @@ msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
-"Deze temperatuur, in Kelvin, wordt gebruikt om de schermtint aan te passen"
-" als "
-"nachtlicht is ingeschakeld. Hoger = blauwer; lager = roder."
+"Deze temperatuur, in Kelvin, wordt gebruikt om de schermtint aan te passen "
+"als nachtlicht is ingeschakeld. Hoger = blauwer; lager = roder."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:19
 msgid "Use the sunrise and sunset"
@@ -124,9 +254,8 @@ msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze"
-" starttijd "
-"aangehouden."
+"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
+"starttijd aangehouden."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:32
 msgid "The start time's minute"
@@ -137,9 +266,8 @@ msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze"
-" starttijd "
-"aangehouden."
+"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
+"starttijd aangehouden."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:46
 msgid "The end time's minute"
@@ -149,9 +277,8 @@ msgstr "Uitschakelen om (minuut)"
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze"
-" eindtijd "
-"aangehouden."
+"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
+"eindtijd aangehouden."
 
 #: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
 #: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
@@ -164,9 +291,9 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"De aanwijzersnelheid bij gebruik van het touchpad. Geldige waarden liggen"
-" tussen [-1 en 1] "
-"(geen versnelling tot hoge versnelling). 0 = systeemstandaard."
+"De aanwijzersnelheid bij gebruik van het touchpad. Geldige waarden liggen "
+"tussen [-1 en 1] (geen versnelling tot hoge versnelling). 0 = "
+"systeemstandaard."
 
 #: data/gschemas/application_id.tools.gschema.xml.in:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -178,7 +305,6 @@ msgid "Whether to disable top bar arrows"
 msgstr "Of pijlen op de bovenbalk dienen te worden uitgeschakeld"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:12
-#| msgid "Disable Rounded Corners"
 msgid "Whether to disable top bar rounded corners"
 msgstr "Of afgeronde hoeken van de bovenbalk dienen te worden uitgeschakeld"
 
@@ -187,222 +313,250 @@ msgid "Whether to change top bar text color"
 msgstr "Of de tekstkleur op de bovenbalk moet worden aangepast"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:22
-#| msgid "Text Color"
 msgid "Top bar text color"
 msgstr "Tekstkleur op bovenbalk"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:27
-#| msgid "The color of top bar background"
 msgid "Whether to change top bar background"
 msgstr "Of de achtergrond van de bovenbalk moet worden gewijzigd"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:32
-#| msgid "Background Color"
 msgid "Top bar background color"
 msgstr "Achtergrondkleur van bovenbalk"
 
-#: src/gdm_settings_gui.py:126
+#: src/gdm_settings_gui.py:71
+msgid "Show application version"
+msgstr ""
+
+#: src/gdm_settings_gui.py:78
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#. Translators: 'LEVEL' is the argument of --verbosity option.
+#: src/gdm_settings_gui.py:80
+msgid "LEVEL"
+msgstr ""
+
+#: src/gdm_settings_gui.py:86
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr ""
+
+#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
+#: src/gdm_settings_gui.py:94
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr ""
+
+#: src/gdm_settings_gui.py:178
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+
+#: src/gdm_settings_gui.py:210
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/gdm_settings_gui.py:128
+#: src/gdm_settings_gui.py:212
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
-#: src/gdm_settings_gui.py:138
-msgid ""
-"Default shell theme extracted to '/usr/share/themes' as 'default-extracted'"
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/gdm_settings_gui.py:223
+#, fuzzy, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "Het standaard Shell-thema is uitgepakt naar ‘/usr/share/themes’ onder de "
 "naam ‘default-extracted’"
 
-#: src/gdm_settings_gui.py:140
+#: src/gdm_settings_gui.py:225
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/gdm_settings_gui.py:297
+#. Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
+#: src/gdm_settings_gui.py:383
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/gdm_settings_gui.py:510
+#: src/gdm_settings_gui.py:596
 msgid "Appearance"
 msgstr "Vormgeving"
 
-#: src/gdm_settings_gui.py:511 src/blueprints/fonts-page.blp:19
+#: src/gdm_settings_gui.py:597 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Lettertypen"
 
-#: src/gdm_settings_gui.py:512
+#: src/gdm_settings_gui.py:598
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-#: src/gdm_settings_gui.py:513 src/blueprints/sound-page.blp:19
+#: src/gdm_settings_gui.py:599 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Geluid"
 
-#: src/gdm_settings_gui.py:514
-#| msgid "Touchpad"
+#: src/gdm_settings_gui.py:600
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
 
-#: src/gdm_settings_gui.py:515 src/blueprints/display-page.blp:19
+#: src/gdm_settings_gui.py:601 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: src/gdm_settings_gui.py:516 src/blueprints/misc-page.blp:19
+#: src/gdm_settings_gui.py:602 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Overig"
 
-#: src/gdm_settings_gui.py:517
+#: src/gdm_settings_gui.py:603
 msgid "Tools"
 msgstr "Hulpmiddelen"
 
-#: src/gdm_settings_gui.py:570
+#: src/gdm_settings_gui.py:656
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
 
-#: src/gdm_settings_gui.py:575
+#: src/gdm_settings_gui.py:661
 msgid "Failed to reset settings"
 msgstr "De standaardwaarden kunnen niet worden hersteld"
 
-#: src/gdm_settings_gui.py:579
+#: src/gdm_settings_gui.py:665
 msgid "Reset settings successfully"
 msgstr "De standaardwaarden zijn hersteld"
 
-#: src/settings_manager.py:251
+#: src/settings_manager.py:268
 msgid "saving default theme ..."
 msgstr "Bezig met opslaan van huidig thema…"
 
-#: src/blueprints/appearance-page.blp:19
+#: src/blueprints/appearance-page.blp:20
 msgid "Themes"
 msgstr "Thema's"
 
-#: src/blueprints/appearance-page.blp:21
+#: src/blueprints/appearance-page.blp:22
 msgid "Shell"
 msgstr "Shell"
 
-#: src/blueprints/appearance-page.blp:22
+#: src/blueprints/appearance-page.blp:23
 msgid "Icons"
 msgstr "Pictogrammen"
 
-#: src/blueprints/appearance-page.blp:23
+#: src/blueprints/appearance-page.blp:24
 msgid "Cursor"
 msgstr "Cursor"
 
-#: src/blueprints/appearance-page.blp:27
+#: src/blueprints/appearance-page.blp:28
 msgid "Background"
 msgstr "Achtergrond"
 
-#: src/blueprints/appearance-page.blp:30
+#: src/blueprints/appearance-page.blp:31
 msgid "Type"
 msgstr "Soort"
 
-#: src/blueprints/appearance-page.blp:31 src/blueprints/fonts-page.blp:35
-#: src/blueprints/fonts-page.blp:45
+#: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
+#: src/blueprints/fonts-page.blp:46
 msgid "None"
 msgstr "Geen"
 
-#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:36
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
 msgid "Image"
 msgstr "Afbeelding"
 
-#: src/blueprints/appearance-page.blp:31 src/blueprints/appearance-page.blp:48
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
 msgid "Color"
 msgstr "Kleur"
 
-#: src/blueprints/appearance-page.blp:37
+#: src/blueprints/appearance-page.blp:38
 msgid "The image to use as background"
 msgstr "De afbeelding die wordt ingesteld als achtergrond"
 
-#: src/blueprints/appearance-page.blp:42 src/blueprints/misc-page.blp:55
+#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
 msgid "Choose File"
 msgstr "Kies een bestand"
 
-#: src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: src/blueprints/display-page.blp:22
+#: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "Huidige beeldscherminstellingen toepassen"
 
-#: src/blueprints/display-page.blp:23
+#: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "Resolutie, ververssnelheid, schermposities, etc."
 
-#: src/blueprints/display-page.blp:26 src/blueprints/main-window.blp.in:26
+#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
 msgid "Apply"
 msgstr "Toepassen"
 
-#: src/blueprints/display-page.blp:31
+#: src/blueprints/display-page.blp:32
 msgid "Night Light"
 msgstr "Nachtlicht"
 
-#: src/blueprints/display-page.blp:34
+#: src/blueprints/display-page.blp:35
 msgid "Enable"
 msgstr "Inschakelen"
 
-#: src/blueprints/display-page.blp:43
+#: src/blueprints/display-page.blp:44
 msgid "Schedule"
 msgstr "Schema"
 
-#: src/blueprints/display-page.blp:44
+#: src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
 msgstr "Van zonsondergang tot zonsopkomst"
 
-#: src/blueprints/display-page.blp:44
+#: src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
 msgstr "Eigen schema"
 
-#: src/blueprints/display-page.blp:48
+#: src/blueprints/display-page.blp:49
 msgid "Times"
 msgstr "Tijdstippen"
 
-#: src/blueprints/display-page.blp:50
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:52
 msgid "From"
 msgstr "Van"
 
-#: src/blueprints/display-page.blp:72
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:74
 msgid "To"
 msgstr "Tot"
 
-#: src/blueprints/display-page.blp:94
+#: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Kleurtemperatuur"
 
-#: src/blueprints/fonts-page.blp:22
+#: src/blueprints/fonts-page.blp:23
 msgid "Font"
 msgstr "Lettertype"
 
-#: src/blueprints/fonts-page.blp:31
+#: src/blueprints/fonts-page.blp:32
 msgid "Antialiasing"
 msgstr "Anti-kartelvorming"
 
-#: src/blueprints/fonts-page.blp:33
+#: src/blueprints/fonts-page.blp:34
 msgid "Standard"
 msgstr "Standaard"
 
-#: src/blueprints/fonts-page.blp:34
+#: src/blueprints/fonts-page.blp:35
 msgid "Subpixel"
 msgstr "Subpixel"
 
-#: src/blueprints/fonts-page.blp:40
+#: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
 msgstr "Hinten"
 
-#: src/blueprints/fonts-page.blp:42
+#: src/blueprints/fonts-page.blp:43
 msgid "Full"
 msgstr "Volledig"
 
-#: src/blueprints/fonts-page.blp:43
+#: src/blueprints/fonts-page.blp:44
 msgid "Medium"
 msgstr "Gemiddeld"
 
-#: src/blueprints/fonts-page.blp:44
+#: src/blueprints/fonts-page.blp:45
 msgid "Slight"
 msgstr "Licht"
 
-#: src/blueprints/fonts-page.blp:50
+#: src/blueprints/fonts-page.blp:51
 msgid "Scaling Factor"
 msgstr "Beeldgrootte"
 
@@ -438,18 +592,6 @@ msgstr "Copyright © 2021 Mazhar Hussain"
 msgid "Images"
 msgstr "Afbeeldingen"
 
-#: src/blueprints/main-window.blp.in:67
-msgid "Directories"
-msgstr "Mappen"
-
-#: src/blueprints/main-window.blp.in:70
-msgid "Cancel"
-msgstr "Annuleren"
-
-#: src/blueprints/main-window.blp.in:73
-msgid "Select"
-msgstr "Kiezen"
-
 #: src/blueprints/main-window.blp.in:78
 msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
@@ -466,192 +608,198 @@ msgstr "De voorkeuren zijn geïmporteerd"
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
-#: src/blueprints/misc-page.blp:22
+#: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
 msgstr "Herstartknoppen verbergen"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/misc-page.blp:32
 msgid "Disable User List"
 msgstr "Gebruikerslijst verbergen"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/misc-page.blp:41
 msgid "Enable Logo"
 msgstr "Logo tonen"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/misc-page.blp:42
 msgid "Whether to show a logo below user list"
 msgstr "Of er een logo dient te worden getoond onder de gebruikerslijst"
 
-#: src/blueprints/misc-page.blp:50
+#: src/blueprints/misc-page.blp:51
 msgid "Logo"
 msgstr "Logo"
 
-#: src/blueprints/misc-page.blp:51
+#: src/blueprints/misc-page.blp:52
 msgid "The image to show below user list"
 msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
 
-#: src/blueprints/misc-page.blp:62
+#: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
 msgstr "Welkomstbericht"
 
-#: src/blueprints/pointing-page.blp:19
+#: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
 msgstr "Muis"
 
-#: src/blueprints/pointing-page.blp:22
+#: src/blueprints/pointing-page.blp:23
 msgid "Pointer Acceleration"
 msgstr "Aanwijzerversnelling"
 
-#: src/blueprints/pointing-page.blp:24
+#: src/blueprints/pointing-page.blp:25
 msgid "Automatic"
 msgstr "Automatisch"
 
-#: src/blueprints/pointing-page.blp:25
-#| msgid "Disable Arrows"
+#: src/blueprints/pointing-page.blp:26
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
-#: src/blueprints/pointing-page.blp:26
-#| msgid "Enable"
+#: src/blueprints/pointing-page.blp:27
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/blueprints/pointing-page.blp:31
-#| msgid "Two-finger Scrolling"
+#: src/blueprints/pointing-page.blp:32
 msgid "Inverse Scrolling"
 msgstr "Natuurlijk scrollen"
 
-#: src/blueprints/pointing-page.blp:32 src/blueprints/pointing-page.blp:60
+#: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
 msgid "Scrolling moves the content, not the view."
 msgstr "Scrollen verplaatst de inhoud, niet de weergave."
 
-#: src/blueprints/pointing-page.blp:39 src/blueprints/pointing-page.blp:82
+#: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
 msgid "Pointer Speed"
 msgstr "Aanwijzersnelheid"
 
-#: src/blueprints/pointing-page.blp:49
+#: src/blueprints/pointing-page.blp:50
 msgid "Touchpad"
 msgstr "Touchpad"
 
-#: src/blueprints/pointing-page.blp:52
+#: src/blueprints/pointing-page.blp:53
 msgid "Tap to Click"
 msgstr "Tik om te klikken"
 
-#: src/blueprints/pointing-page.blp:59
+#: src/blueprints/pointing-page.blp:60
 msgid "Natural Scrolling"
 msgstr "Natuurlijk scrollen"
 
-#: src/blueprints/pointing-page.blp:67
+#: src/blueprints/pointing-page.blp:68
 msgid "Two-finger Scrolling"
 msgstr "Scrollen met twee vingers"
 
-#: src/blueprints/pointing-page.blp:68
+#: src/blueprints/pointing-page.blp:69
 msgid "Scroll by swiping with two fingers."
 msgstr "Scroll door met twee vingers te vegen."
 
-#: src/blueprints/pointing-page.blp:75
+#: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Uitschakelen tijdens typen"
 
-#: src/blueprints/sound-page.blp:21
+#: src/blueprints/sound-page.blp:22
 msgid "Theme"
 msgstr "Thema"
 
-#: src/blueprints/sound-page.blp:24
+#: src/blueprints/sound-page.blp:25
 msgid "Over Amplification"
 msgstr "Versterking"
 
-#: src/blueprints/sound-page.blp:25
+#: src/blueprints/sound-page.blp:26
 msgid "Allow raising volume above 100%"
 msgstr "Volume verhogen tot boven de 100%"
 
-#: src/blueprints/sound-page.blp:34
+#: src/blueprints/sound-page.blp:35
 msgid "Event Sounds"
 msgstr "Gebeurtenisgeluiden"
 
-#: src/blueprints/sound-page.blp:43
+#: src/blueprints/sound-page.blp:44
 msgid "Input Feedback Sounds"
 msgstr "Invoergeluiden"
 
-#: src/blueprints/tools-page.blp:19
+#: src/blueprints/tools-page.blp:20
 msgid "Default Shell Theme"
 msgstr "Standaard Shell-thema"
 
-#: src/blueprints/tools-page.blp:22
+#: src/blueprints/tools-page.blp:23
 msgid "Include Top Bar Tweaks"
 msgstr "Aanpassingen aan bovenbalk toepassen"
 
-#: src/blueprints/tools-page.blp:29
+#: src/blueprints/tools-page.blp:30
 msgid "Extract default shell theme"
 msgstr "Standaard Shell-thema extraheren"
 
-#: src/blueprints/tools-page.blp:32
+#: src/blueprints/tools-page.blp:33
 msgid "Extract"
 msgstr "Extraheren"
 
-#: src/blueprints/top-bar-page.blp:19
+#: src/blueprints/top-bar-page.blp:20
 msgid "Tweaks"
 msgstr "Afstellingen"
 
-#: src/blueprints/top-bar-page.blp:22
+#: src/blueprints/top-bar-page.blp:23
 msgid "Change Text Color"
 msgstr "Tekstkleur aanpassen"
 
-#: src/blueprints/top-bar-page.blp:30
+#: src/blueprints/top-bar-page.blp:31
 msgid "Text Color"
 msgstr "Tekstkleur"
 
-#: src/blueprints/top-bar-page.blp:31
+#: src/blueprints/top-bar-page.blp:32
 msgid "The color of text in top bar"
 msgstr "De kleur van de tekst op de bovenbalk"
 
-#: src/blueprints/top-bar-page.blp:42
+#: src/blueprints/top-bar-page.blp:43
 msgid "Change Background Color"
 msgstr "Achtergrondkleur wijzigen"
 
-#: src/blueprints/top-bar-page.blp:51
+#: src/blueprints/top-bar-page.blp:52
 msgid "The color of top bar background"
 msgstr "De kleur van de achtergrond van de bovenbalk"
 
-#: src/blueprints/top-bar-page.blp:62
+#: src/blueprints/top-bar-page.blp:63
 msgid "Disable Arrows"
 msgstr "Pijlen verbergen"
 
-#: src/blueprints/top-bar-page.blp:71
+#: src/blueprints/top-bar-page.blp:72
 msgid "Disable Rounded Corners"
 msgstr "Geen afgeronde hoeken tonen"
 
-#: src/blueprints/top-bar-page.blp:81
+#: src/blueprints/top-bar-page.blp:82
 msgid "Clock"
 msgstr "Klok"
 
-#: src/blueprints/top-bar-page.blp:84
+#: src/blueprints/top-bar-page.blp:85
 msgid "Show Weekday"
 msgstr "Weekdagen tonen"
 
-#: src/blueprints/top-bar-page.blp:93
+#: src/blueprints/top-bar-page.blp:94
 msgid "Show Seconds"
 msgstr "Seconden tonen"
 
-#: src/blueprints/top-bar-page.blp:102
+#: src/blueprints/top-bar-page.blp:103
 msgid "Time Format"
 msgstr "Tijdsopmaak"
 
-#: src/blueprints/top-bar-page.blp:103
+#: src/blueprints/top-bar-page.blp:104
 msgid "AM/PM"
 msgstr "AM/PM"
 
-#: src/blueprints/top-bar-page.blp:103
+#: src/blueprints/top-bar-page.blp:104
 msgid "24 Hours"
 msgstr "24 uur"
 
-#: src/blueprints/top-bar-page.blp:108
+#: src/blueprints/top-bar-page.blp:109
 msgid "Power"
 msgstr "Energie"
 
-#: src/blueprints/top-bar-page.blp:111
+#: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Accupercentage tonen"
+
+#~ msgid "Directories"
+#~ msgstr "Mappen"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuleren"
+
+#~ msgid "Select"
+#~ msgstr "Kiezen"
 
 #~ msgid "Touchpad Speed"
 #~ msgstr "Touchpadsnelheid"
