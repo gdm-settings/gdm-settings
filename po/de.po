@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 #
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
+# J. Lavoie <j.lavoie@net-c.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
-"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
