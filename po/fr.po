@@ -799,3 +799,10 @@ msgstr "Énergie"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Montrer le pourcentage de batterie"
+
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "Thème par défaut extrait vers '/usr/share/themes' sous le nom 'default-"
+#~ "extracted'"

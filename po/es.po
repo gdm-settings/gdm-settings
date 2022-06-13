@@ -799,3 +799,10 @@ msgstr "Mostrar porcentaje de la batería"
 
 #~ msgid "Directories"
 #~ msgstr "Directorios"
+
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "Tema de shell predeterminado extraído a '/usr/share/themes' como 'default-"
+#~ "extracted'"

@@ -816,3 +816,10 @@ msgstr "Prozentsatz der Akkuladung anzeigen"
 
 #~ msgid "restoring default theme from backup ..."
 #~ msgstr "Vorgabethema wird aus Backup wiederhergestellt …"
+
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "Shell-Vorgabethema wurde nach »/usr/share/themes« als »default-extracted« "
+#~ "entpackt"

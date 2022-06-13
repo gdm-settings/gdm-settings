@@ -809,3 +809,10 @@ msgstr "Accupercentage tonen"
 
 #~ msgid "restoring default theme from backup ..."
 #~ msgstr "Bezig met herstellen van reservekopie…"
+
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "Het standaard Shell-thema is uitgepakt naar ‘/usr/share/themes’ onder de "
+#~ "naam ‘default-extracted’"

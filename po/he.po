@@ -787,3 +787,10 @@ msgstr "חשמל"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "הצגת אחוז סוללה"
+
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎/usr/share/themes’ בתור "
+#~ "‚default-extracted’."

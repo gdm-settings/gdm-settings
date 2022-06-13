@@ -778,3 +778,11 @@ msgstr "انرژی"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "نمایش درصد باتری"
+
+# در این رشته از نویسهٔ LRM استفاده شده است
+#~ msgid ""
+#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
+#~ "extracted'"
+#~ msgstr ""
+#~ "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «‎/usr/share/themes» "
+#~ "استخراج شد"
