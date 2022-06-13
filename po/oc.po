@@ -1,16 +1,19 @@
+# Quentin PAGÈS <quentinantonin@free.fr>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
-"PO-Revision-Date: 2022-04-17 22:28+0200\n"
-"Last-Translator: Quentin PAGÈS\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2022-06-14 01:46+0000\n"
+"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
+"Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/info.py.in:3 src/blueprints/main-window.blp.in:17
@@ -39,136 +42,146 @@ msgstr "Mazhar Hussain"
 
 #: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
 msgid "Added:"
-msgstr ""
+msgstr "Ajustat :"
 
 #: data/application_id.appdata.xml.in:75
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "Presa en carga mòde verbiós/silenciós"
 
 #: data/application_id.appdata.xml.in:76
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "Presa en carga del nivèl manual de verbiositat"
 
 #: data/application_id.appdata.xml.in:77
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr ""
+"Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
+"verbiositat"
 
 #: data/application_id.appdata.xml.in:78
 msgid "Command-line option --version"
-msgstr ""
+msgstr "Opcion de linha de comanda --version"
 
 #: data/application_id.appdata.xml.in:79
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
 
 #: data/application_id.appdata.xml.in:81
 msgid "Fixed:"
-msgstr ""
+msgstr "Reglats :"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
 
 #: data/application_id.appdata.xml.in:84
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
+"activat (principalament Fedora)"
 
 #: data/application_id.appdata.xml.in:85
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a la "
+"fenèstra)"
 
 #: data/application_id.appdata.xml.in:86
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
+"Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
+"tèma shell per defaut"
 
 #: data/application_id.appdata.xml.in:87
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
+"abans aplicacion"
 
 #: data/application_id.appdata.xml.in:88
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
+msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
 
 #: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
 msgid "New Translations:"
-msgstr ""
+msgstr "Traduccions novèlas :"
 
 #: data/application_id.appdata.xml.in:92
 msgid "French"
-msgstr ""
+msgstr "Francés"
 
 #: data/application_id.appdata.xml.in:93
 msgid "Hebrew"
-msgstr ""
+msgstr "Ebrèu"
 
 #: data/application_id.appdata.xml.in:94
 msgid "Persian"
-msgstr ""
+msgstr "Persian"
 
 #: data/application_id.appdata.xml.in:96
 msgid "Updated Translations:"
-msgstr ""
+msgstr "Traduccions actualizadas :"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Urdu"
-msgstr ""
+msgstr "Ordo"
 
 #: data/application_id.appdata.xml.in:104
 msgid "Added: Support for Ubuntu"
-msgstr ""
+msgstr "Ajustat : presa en carga d’Ubuntu"
 
 #: data/application_id.appdata.xml.in:105
 msgid "Fixed: Could not apply settings on some systems"
-msgstr ""
+msgstr "Reglat : aplicacion impossibla dels paramètres sus d’unes sistèmas"
 
 #: data/application_id.appdata.xml.in:110
 msgid ""
 "Fixed: Could not change background-image/wallpaper if language is not English"
 msgstr ""
+"Reglat : cambiament impossible del rèireplan se la lenga es pas l’anglés"
 
 #: data/application_id.appdata.xml.in:115
 msgid "Fixed: A fatal bug"
-msgstr ""
+msgstr "Reglat : anomalia critica"
 
 #: data/application_id.appdata.xml.in:122
-#, fuzzy
 msgid "Mouse Settings"
-msgstr "Reïnicializar los paramètres"
+msgstr "Paramètres de la mirga"
 
 #: data/application_id.appdata.xml.in:123
 msgid "Flatpak Support"
-msgstr ""
+msgstr "Presa en carga de Flatpak"
 
 #: data/application_id.appdata.xml.in:125
 msgid "Improved:"
-msgstr ""
+msgstr "Melhorat :"
 
 #: data/application_id.appdata.xml.in:127
 msgid "Support for Right-to-Left Languages"
-msgstr ""
+msgstr "Presa en carga de las lengas RTL"
 
 #: data/application_id.appdata.xml.in:128
 msgid "More Text got Translated"
-msgstr ""
+msgstr "Mai de tèxtes traduches"
 
 #: data/application_id.appdata.xml.in:132
 msgid "German"
-msgstr ""
+msgstr "Alemand"
 
 #: data/application_id.appdata.xml.in:133
 msgid "Occitan"
-msgstr ""
+msgstr "Occitan"
 
 #: data/application_id.appdata.xml.in:134
 msgid "Spanish"
-msgstr ""
+msgstr "Espanhòl"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -181,7 +194,7 @@ msgstr "Tipe de fons"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/application_id.appearance.gschema.xml.in:22
 msgid "Wether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "Indica se lo rèireplan deu èsser un imatge, una colora o pas res."
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:34
 msgid "Background Image"
@@ -262,6 +275,8 @@ msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
 msgstr ""
+"Quand la foncion de lum nocturn automatica es activada, utilizar aquesta ora "
+"de debuta en minutas."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:46
 msgid "The end time's minute"
@@ -271,6 +286,8 @@ msgstr "Minuta de l’ora de fin"
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
+"ora de fin en minutas."
 
 #: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
 #: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
@@ -283,22 +300,26 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Velocitat del puntador pel pavat tactil. Las valors acceptadas son dins la "
+"plaja [-1..1] (a partir de « cap d’accelaracion » fins a « rapid »). La "
+"valor 0 es la valor per defaut del sistèma."
 
 #: data/gschemas/application_id.tools.gschema.xml.in:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
+"Indica se cal aplicar los paramètres de la barra superiora al tèma extrach"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Indicar se cal activar o desactivar las sagetas de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Indicar se cal utilizar los angles redonds de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Indica se cal cambiar la color del tèxte de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:22
 msgid "Top bar text color"
@@ -306,7 +327,7 @@ msgstr "Color del tèxte de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Indica se cal cambiar lo fons de la barra superiora"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:32
 msgid "Top bar background color"
@@ -314,31 +335,33 @@ msgstr "Color de fons barra superiora"
 
 #: src/gdm_settings_gui.py:71
 msgid "Show application version"
-msgstr ""
+msgstr "Afichar la version de l’aplicacion"
 
 #: src/gdm_settings_gui.py:78
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Definir manualament lo nivèl de verbiositat (de 0 a 5)"
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
 #: src/gdm_settings_gui.py:80
 msgid "LEVEL"
-msgstr ""
+msgstr "NIVÈL"
 
 #: src/gdm_settings_gui.py:86
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "Activar lo mòde verbiós (definir lo nivèl a 5)"
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
 #: src/gdm_settings_gui.py:94
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "Activar lo mòde silenciós   (definir lo nivèl de verbiositat a 0)"
 
 #: src/gdm_settings_gui.py:178
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
+"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
+"un autre."
 
 #: src/gdm_settings_gui.py:210
 msgid "Applied current display settings"
@@ -353,6 +376,7 @@ msgstr "Fracàs en aplicant los paramètres d’afichatge actuals"
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
+"Tèma shell predeterminat extrach dins « {path} » coma « defautl-extracted »"
 
 #: src/gdm_settings_gui.py:225
 msgid "Failed to extract default theme"
@@ -398,6 +422,8 @@ msgstr "Aisinas"
 #: src/gdm_settings_gui.py:656
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
+"L’importacion dels paramètres utilizaire es pas suportada dins la version "
+"Flatpak"
 
 #: src/gdm_settings_gui.py:661
 msgid "Failed to reset settings"
