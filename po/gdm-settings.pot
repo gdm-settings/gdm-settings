@@ -1,0 +1,771 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-13 09:43+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
+#: src/info.py.in:3 src/blueprints/main-window.blp.in:17
+#: src/blueprints/main-window.blp.in:41
+msgid "Login Manager Settings"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
+#: src/blueprints/main-window.blp.in:43
+msgid "A settings app for GNOME's Login Manager (GDM)"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/application_id.appdata.xml.in:16
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+
+#: data/application_id.appdata.xml.in:40 src/gdm_settings_gui.py:378
+msgid "Mazhar Hussain"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+msgid "Added:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:75
+msgid "Support for verbose/quiet mode"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:76
+msgid "Support for setting manual verbosity level"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:77
+msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:78
+msgid "Command-line option --version"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:79
+msgid "Wider application window on first launch"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:81
+msgid "Fixed:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:83
+msgid "Welcome message could not contain single qoutes"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:84
+msgid ""
+"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:85
+msgid ""
+"Maximized or big application window looked bad (content was much smaller "
+"than the window)"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:86
+msgid ""
+"Showed wrong destination directory/folder path while extracting default "
+"shell theme"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:87
+msgid ""
+"Clicking 'Apply' did nothing if selected background image was deleted before "
+"applying"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:88
+msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+msgid "New Translations:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:92
+msgid "French"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:93
+msgid "Hebrew"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:94
+msgid "Persian"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:96
+msgid "Updated Translations:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:98
+msgid "Urdu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:104
+msgid "Added: Support for Ubuntu"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:105
+msgid "Fixed: Could not apply settings on some systems"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:110
+msgid ""
+"Fixed: Could not change background-image/wallpaper if language is not English"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:115
+msgid "Fixed: A fatal bug"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:122
+msgid "Mouse Settings"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:123
+msgid "Flatpak Support"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:125
+msgid "Improved:"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:127
+msgid "Support for Right-to-Left Languages"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:128
+msgid "More Text got Translated"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:132
+msgid "German"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:133
+msgid "Occitan"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:134
+msgid "Spanish"
+msgstr ""
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:7
+msgid "Theme Name"
+msgstr ""
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:20
+msgid "Type of Background"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:22
+msgid "Wether GDM background should be an Image, Color or None."
+msgstr ""
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:34
+msgid "Background Image"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:36
+msgid "The image file to use as GDM background"
+msgstr ""
+
+#: data/gschemas/application_id.appearance.gschema.xml.in:43
+#: src/blueprints/top-bar-page.blp:51
+msgid "Background Color"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/application_id.appearance.gschema.xml.in:45
+msgid "The Color to use as GDM background"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:7
+msgid "If the night light mode is enabled"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:8
+msgid ""
+"Night light mode changes the color temperature of your display when the sun "
+"has gone down or at preset times."
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:13
+msgid "Temperature of the display when enabled"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:14
+msgid ""
+"This temperature in Kelvin is used to modify the screen tones when night "
+"light mode is enabled. Higher values are bluer, lower redder."
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:19
+msgid "Use the sunrise and sunset"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:20
+msgid ""
+"Calculate the sunrise and sunset times automatically, from the current "
+"location."
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:25
+#: data/gschemas/application_id.night-light.gschema.xml.in:39
+msgid "The start time's hour"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:26
+#: data/gschemas/application_id.night-light.gschema.xml.in:40
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time in "
+"hours."
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:32
+msgid "The start time's minute"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:33
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time "
+"minutes."
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:46
+msgid "The end time's minute"
+msgstr ""
+
+#: data/gschemas/application_id.night-light.gschema.xml.in:47
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+msgstr ""
+
+#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
+#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
+msgid "Pointer speed"
+msgstr ""
+
+#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
+#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+
+#: data/gschemas/application_id.tools.gschema.xml.in:7
+msgid "Whether to apply top bar tweaks to extracted theme"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:7
+msgid "Whether to disable top bar arrows"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:12
+msgid "Whether to disable top bar rounded corners"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:17
+msgid "Whether to change top bar text color"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:22
+msgid "Top bar text color"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:27
+msgid "Whether to change top bar background"
+msgstr ""
+
+#: data/gschemas/application_id.top-bar.gschema.xml.in:32
+msgid "Top bar background color"
+msgstr ""
+
+#: src/gdm_settings_gui.py:71
+msgid "Show application version"
+msgstr ""
+
+#: src/gdm_settings_gui.py:78
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#. Translators: 'LEVEL' is the argument of --verbosity option.
+#: src/gdm_settings_gui.py:80
+msgid "LEVEL"
+msgstr ""
+
+#: src/gdm_settings_gui.py:86
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr ""
+
+#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
+#: src/gdm_settings_gui.py:94
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr ""
+
+#: src/gdm_settings_gui.py:178
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+
+#: src/gdm_settings_gui.py:210
+msgid "Applied current display settings"
+msgstr ""
+
+#: src/gdm_settings_gui.py:212
+msgid "Failed to apply current display settings"
+msgstr ""
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/gdm_settings_gui.py:223
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+
+#: src/gdm_settings_gui.py:225
+msgid "Failed to extract default theme"
+msgstr ""
+
+#. Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
+#: src/gdm_settings_gui.py:383
+msgid "translator-credits"
+msgstr ""
+
+#: src/gdm_settings_gui.py:596
+msgid "Appearance"
+msgstr ""
+
+#: src/gdm_settings_gui.py:597 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr ""
+
+#: src/gdm_settings_gui.py:598
+msgid "Top Bar"
+msgstr ""
+
+#: src/gdm_settings_gui.py:599 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr ""
+
+#: src/gdm_settings_gui.py:600
+msgid "Mouse & Touchpad"
+msgstr ""
+
+#: src/gdm_settings_gui.py:601 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr ""
+
+#: src/gdm_settings_gui.py:602 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/gdm_settings_gui.py:603
+msgid "Tools"
+msgstr ""
+
+#: src/gdm_settings_gui.py:656
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+
+#: src/gdm_settings_gui.py:661
+msgid "Failed to reset settings"
+msgstr ""
+
+#: src/gdm_settings_gui.py:665
+msgid "Reset settings successfully"
+msgstr ""
+
+#: src/settings_manager.py:268
+msgid "saving default theme ..."
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:20
+msgid "Themes"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:22
+msgid "Shell"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:23
+msgid "Icons"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:24
+msgid "Cursor"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:28
+msgid "Background"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:31
+msgid "Type"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
+#: src/blueprints/fonts-page.blp:46
+msgid "None"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
+msgid "Image"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
+msgid "Color"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:38
+msgid "The image to use as background"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
+msgid "Choose File"
+msgstr ""
+
+#: src/blueprints/appearance-page.blp:50
+msgid "The color to use as background"
+msgstr ""
+
+#: src/blueprints/display-page.blp:23
+msgid "Apply current display settings"
+msgstr ""
+
+#: src/blueprints/display-page.blp:24
+msgid "Resolution, refresh rate, monitor positions, etc"
+msgstr ""
+
+#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
+msgid "Apply"
+msgstr ""
+
+#: src/blueprints/display-page.blp:32
+msgid "Night Light"
+msgstr ""
+
+#: src/blueprints/display-page.blp:35
+msgid "Enable"
+msgstr ""
+
+#: src/blueprints/display-page.blp:44
+msgid "Schedule"
+msgstr ""
+
+#: src/blueprints/display-page.blp:45
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: src/blueprints/display-page.blp:45
+msgid "Manual Schedule"
+msgstr ""
+
+#: src/blueprints/display-page.blp:49
+msgid "Times"
+msgstr ""
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:52
+msgid "From"
+msgstr ""
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:74
+msgid "To"
+msgstr ""
+
+#: src/blueprints/display-page.blp:96
+msgid "Color Temperature"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:23
+msgid "Font"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:32
+msgid "Antialiasing"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:34
+msgid "Standard"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:35
+msgid "Subpixel"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:41
+msgid "Hinting"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:43
+msgid "Full"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:44
+msgid "Medium"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:45
+msgid "Slight"
+msgstr ""
+
+#: src/blueprints/fonts-page.blp:51
+msgid "Scaling Factor"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:6
+msgid "Refresh"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:7
+msgid "Import user settings"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:8
+msgid "Reset settings"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:11
+msgid "About"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:12
+msgid "Quit"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:46
+msgid "Homepage"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:48
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:60
+msgid "Images"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:78
+msgid "Failed to apply settings"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:84
+msgid "Settings applied successfully"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:90
+msgid "User settings imported"
+msgstr ""
+
+#: src/blueprints/main-window.blp.in:96
+msgid "Settings reloaded"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:23
+msgid "Disable Restart Buttons"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:32
+msgid "Disable User List"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:41
+msgid "Enable Logo"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:42
+msgid "Whether to show a logo below user list"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:51
+msgid "Logo"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:52
+msgid "The image to show below user list"
+msgstr ""
+
+#: src/blueprints/misc-page.blp:63
+msgid "Welcome Message"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:20
+msgid "Mouse"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:23
+msgid "Pointer Acceleration"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:25
+msgid "Automatic"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:26
+msgid "Disabled"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:27
+msgid "Enabled"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:32
+msgid "Inverse Scrolling"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
+msgid "Scrolling moves the content, not the view."
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
+msgid "Pointer Speed"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:50
+msgid "Touchpad"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:53
+msgid "Tap to Click"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:60
+msgid "Natural Scrolling"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:68
+msgid "Two-finger Scrolling"
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:69
+msgid "Scroll by swiping with two fingers."
+msgstr ""
+
+#: src/blueprints/pointing-page.blp:76
+msgid "Disable while Typing"
+msgstr ""
+
+#: src/blueprints/sound-page.blp:22
+msgid "Theme"
+msgstr ""
+
+#: src/blueprints/sound-page.blp:25
+msgid "Over Amplification"
+msgstr ""
+
+#: src/blueprints/sound-page.blp:26
+msgid "Allow raising volume above 100%"
+msgstr ""
+
+#: src/blueprints/sound-page.blp:35
+msgid "Event Sounds"
+msgstr ""
+
+#: src/blueprints/sound-page.blp:44
+msgid "Input Feedback Sounds"
+msgstr ""
+
+#: src/blueprints/tools-page.blp:20
+msgid "Default Shell Theme"
+msgstr ""
+
+#: src/blueprints/tools-page.blp:23
+msgid "Include Top Bar Tweaks"
+msgstr ""
+
+#: src/blueprints/tools-page.blp:30
+msgid "Extract default shell theme"
+msgstr ""
+
+#: src/blueprints/tools-page.blp:33
+msgid "Extract"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:20
+msgid "Tweaks"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:23
+msgid "Change Text Color"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:31
+msgid "Text Color"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:32
+msgid "The color of text in top bar"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:43
+msgid "Change Background Color"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:52
+msgid "The color of top bar background"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:63
+msgid "Disable Arrows"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:72
+msgid "Disable Rounded Corners"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:82
+msgid "Clock"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:85
+msgid "Show Weekday"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:94
+msgid "Show Seconds"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:103
+msgid "Time Format"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:104
+msgid "AM/PM"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:104
+msgid "24 Hours"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:109
+msgid "Power"
+msgstr ""
+
+#: src/blueprints/top-bar-page.blp:112
+msgid "Show battery percentage"
+msgstr ""
