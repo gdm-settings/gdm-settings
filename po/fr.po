@@ -1,34 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# J. Lavoie <j.lavoie@net-c.ca>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
-"PO-Revision-Date: 2022-05-25 11:16+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2022-06-14 01:46+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/info.py.in:3 src/blueprints/main-window.blp.in:17
 #: src/blueprints/main-window.blp.in:41
 msgid "Login Manager Settings"
-msgstr "Gestionnaire de Paramètres de Connexion"
+msgstr "Gestionnaire de paramètres de connexion"
 
 #: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
 #: src/blueprints/main-window.blp.in:43
 msgid "A settings app for GNOME's Login Manager (GDM)"
 msgstr ""
-"Une application de paramétrage pour le Gestionnaire de Connexion de GNOME "
+"Une application de paramétrage pour le Gestionnaire de connexion de GNOME "
 "(GDM)"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
