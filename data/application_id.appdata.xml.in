@@ -68,7 +68,7 @@
   </screenshots>
 
   <releases>
-    <release version="0.5.99" date="2022-05-08">
+    <release version="0.6" date="2022-06-20">
       <description>
         <p>Added:</p>
         <ul>
@@ -96,42 +96,6 @@
         <p>Updated Translations:</p>
         <ul>
           <li>Urdu</li>
-        </ul>
-      </description>
-    </release>
-    <release version="0.5.3" date="2022-05-08">
-      <description>
-        <p>Added: Support for Ubuntu</p>
-        <p>Fixed: Could not apply settings on some systems</p>
-      </description>
-    </release>
-    <release version="0.5.2" date="2022-04-28">
-      <description>
-        <p>Fixed: Could not change background-image/wallpaper if language is not English</p>
-      </description>
-    </release>
-    <release version="0.5.1" date="2022-04-24">
-      <description>
-        <p>Fixed: A fatal bug</p>
-      </description>
-    </release>
-    <release version="0.5" date="2022-04-23">
-      <description>
-        <p>Added:</p>
-        <ul>
-          <li>Mouse Settings</li>
-          <li>Flatpak Support</li>
-        </ul>
-        <p>Improved:</p>
-        <ul>
-          <li>Support for Right-to-Left Languages</li>
-          <li>More Text got Translated</li>
-        </ul>
-        <p>New Translations:</p>
-        <ul>
-          <li>German</li>
-          <li>Occitan</li>
-          <li>Spanish</li>
         </ul>
       </description>
     </release>
