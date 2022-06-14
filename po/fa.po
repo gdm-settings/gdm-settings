@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# Eshagh Shahedany <eshagh094@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
-"PO-Revision-Date: 2022-05-15 08:37+0430\n"
-"Last-Translator: eshagh <eshagh094@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2022-06-15 03:20+0000\n"
+"Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Weblate 4.13-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/info.py.in:3 src/blueprints/main-window.blp.in:17
@@ -48,27 +48,27 @@ msgstr "اضافه شده:"
 
 #: data/application_id.appdata.xml.in:75
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "پشتیبانی از حالت پُر حرف و ساکت"
 
 #: data/application_id.appdata.xml.in:76
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
 
 #: data/application_id.appdata.xml.in:77
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr ""
+msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
 
 #: data/application_id.appdata.xml.in:78
 msgid "Command-line option --version"
-msgstr ""
+msgstr "گزینهٔ خط فرمانی ‎--version"
 
 #: data/application_id.appdata.xml.in:79
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
 
 #: data/application_id.appdata.xml.in:81
 msgid "Fixed:"
-msgstr ""
+msgstr "برطرف شده:"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
@@ -107,24 +107,23 @@ msgstr "ترجمه‌های جدید:"
 
 #: data/application_id.appdata.xml.in:92
 msgid "French"
-msgstr ""
+msgstr "فرانسوی"
 
 #: data/application_id.appdata.xml.in:93
 msgid "Hebrew"
-msgstr ""
+msgstr "عبری"
 
 #: data/application_id.appdata.xml.in:94
 msgid "Persian"
-msgstr ""
+msgstr "فارسی"
 
 #: data/application_id.appdata.xml.in:96
-#, fuzzy
 msgid "Updated Translations:"
-msgstr "ترجمه‌های جدید:"
+msgstr "ترجمه‌های به‌روز رسانی شده:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Urdu"
-msgstr ""
+msgstr "اُردو"
 
 #: data/application_id.appdata.xml.in:104
 msgid "Added: Support for Ubuntu"
@@ -348,11 +347,10 @@ msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/gdm_settings_gui.py:223
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
-"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «‎/usr/share/themes» "
-"استخراج شد"
+"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
 
 #: src/gdm_settings_gui.py:225
 msgid "Failed to extract default theme"
