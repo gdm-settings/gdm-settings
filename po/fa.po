@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-13 11:14+0500\n"
-"PO-Revision-Date: 2022-06-15 03:20+0000\n"
+"PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
@@ -72,34 +72,42 @@ msgstr "برطرف شده:"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
 
 #: data/application_id.appdata.xml.in:84
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
+"فدورا)"
 
 #: data/application_id.appdata.xml.in:85
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از پنجره "
+"بود)"
 
 #: data/application_id.appdata.xml.in:86
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
+"هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان "
+"می‌داد"
 
 #: data/application_id.appdata.xml.in:87
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» "
+"کاری انجام نمی‌داد"
 
 #: data/application_id.appdata.xml.in:88
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
+msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
 
 #: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
 msgid "New Translations:"
