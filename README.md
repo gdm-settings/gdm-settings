@@ -2,7 +2,7 @@
 
 An app to change settings of Gnome's Display/Login Manager.
 
-It is written in Python and provides a Graphical interface using GTK+ and LibAdwaita.
+It is written in Python and uses LibAdwaita for its graphical interface.
 
 ![screenshot](https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png)
 
