@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "Nieuw:"
 
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "De knop ‘Toepassen’ pastte slechts enkele voorkeuren toe op Ubuntu"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "Nieuwe vertalingen:"
 
@@ -132,60 +132,24 @@ msgid "Updated Translations:"
 msgstr "Bijgewerkte vertalingen:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "Urdu"
-
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Nieuw: ondersteuning voor Ubuntu"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
+msgid "Dutch"
 msgstr ""
-"Opgelost: de voorkeuren konden niet worden toegepast op sommige systemen"
 
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr ""
-"Opgelost: de achtergrondafbeelding kon niet worden gewijzigd op niet-"
-"Engelstalige systemen"
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "Opgelost: een kritieke fout"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "Cursorvoorkeuren"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "Flatpakondersteuning"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "Verbeterd:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "Ondersteuning voor van-recht-naar-linkstalen"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "Er is meer tekst vertaald"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "Duits"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "Occitaans"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "Spaans"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "Urdu"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -805,6 +769,38 @@ msgstr "Energie"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Accupercentage tonen"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Nieuw: ondersteuning voor Ubuntu"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr ""
+#~ "Opgelost: de voorkeuren konden niet worden toegepast op sommige systemen"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "Opgelost: de achtergrondafbeelding kon niet worden gewijzigd op niet-"
+#~ "Engelstalige systemen"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "Opgelost: een kritieke fout"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Cursorvoorkeuren"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "Flatpakondersteuning"
+
+#~ msgid "Improved:"
+#~ msgstr "Verbeterd:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "Ondersteuning voor van-recht-naar-linkstalen"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "Er is meer tekst vertaald"
 
 #~ msgid "Directories"
 #~ msgstr "Mappen"

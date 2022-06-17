@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "Añadido:"
 
@@ -80,8 +80,8 @@ msgstr "El mensaje de bienvenida no puede contener comillas simples"
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
-"Login Manager (GDM) no funcionaba en sistemas con SELinux activado ("
-"principalmente Fedora)"
+"Login Manager (GDM) no funcionaba en sistemas con SELinux activado "
+"(principalmente Fedora)"
 
 #: data/application_id.appdata.xml.in:85
 msgid ""
@@ -112,7 +112,7 @@ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
 "Al hacer clic en \"Aplicar\" sólo se aplicaban algunos ajustes en Ubuntu"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "Traducciones nuevas:"
 
@@ -133,59 +133,24 @@ msgid "Updated Translations:"
 msgstr "Traducciones actualizadas:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "Urdu"
-
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Añadido: Soporte para Ubuntu"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "Corregido: No se podía aplicar la configuración en algunos sistemas"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
+msgid "Dutch"
 msgstr ""
-"Corregido: No se podía cambiar la imagen de fondo si el idioma no era el "
-"inglés"
 
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "Corregido: Un error fatal"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "Configuración del ratón"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "Soporte para Flatpak"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "Mejorado:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "Soporte para las lenguas de derecha a izquierda"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "Más texto traducido"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "Alemán"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "Occitano"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "Español"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "Urdu"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -806,6 +771,37 @@ msgstr "Energía"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Mostrar porcentaje de la batería"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Añadido: Soporte para Ubuntu"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr "Corregido: No se podía aplicar la configuración en algunos sistemas"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "Corregido: No se podía cambiar la imagen de fondo si el idioma no era el "
+#~ "inglés"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "Corregido: Un error fatal"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Configuración del ratón"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "Soporte para Flatpak"
+
+#~ msgid "Improved:"
+#~ msgstr "Mejorado:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "Soporte para las lenguas de derecha a izquierda"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "Más texto traducido"
 
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"

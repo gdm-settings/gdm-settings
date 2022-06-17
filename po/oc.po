@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -40,7 +40,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "Ajustat :"
 
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "Traduccions novèlas :"
 
@@ -130,58 +130,24 @@ msgid "Updated Translations:"
 msgstr "Traduccions actualizadas :"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "Ordo"
-
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Ajustat : presa en carga d’Ubuntu"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "Reglat : aplicacion impossibla dels paramètres sus d’unes sistèmas"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
+msgid "Dutch"
 msgstr ""
-"Reglat : cambiament impossible del rèireplan se la lenga es pas l’anglés"
 
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "Reglat : anomalia critica"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "Paramètres de la mirga"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "Presa en carga de Flatpak"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "Melhorat :"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "Presa en carga de las lengas RTL"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "Mai de tèxtes traduches"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "Alemand"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "Occitan"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "Espanhòl"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "Ordo"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -803,6 +769,36 @@ msgstr "Energia"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Afichar lo percentatge de batariá"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Ajustat : presa en carga d’Ubuntu"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr "Reglat : aplicacion impossibla dels paramètres sus d’unes sistèmas"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "Reglat : cambiament impossible del rèireplan se la lenga es pas l’anglés"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "Reglat : anomalia critica"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Paramètres de la mirga"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "Presa en carga de Flatpak"
+
+#~ msgid "Improved:"
+#~ msgstr "Melhorat :"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "Presa en carga de las lengas RTL"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "Mai de tèxtes traduches"
 
 #~ msgid "Login;"
 #~ msgstr "Login;"

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "اضافه شده:"
 
@@ -94,22 +94,21 @@ msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
-"هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان "
-"می‌داد"
+"هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان می‌داد"
 
 #: data/application_id.appdata.xml.in:87
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
-"اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» "
-"کاری انجام نمی‌داد"
+"اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» کاری "
+"انجام نمی‌داد"
 
 #: data/application_id.appdata.xml.in:88
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "ترجمه‌های جدید:"
 
@@ -130,58 +129,24 @@ msgid "Updated Translations:"
 msgstr "ترجمه‌های به‌روز رسانی شده:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "اُردو"
-
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "اضافه شده: پشتیبانی از اوبونتو"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "برطرف شده: اِعمال نشدن تنظیمات در بعضی سامانه‌ها"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
+msgid "Dutch"
 msgstr ""
-"برطرف شده: تغییر نکردن تصویر پس‌زمینه/کاغذ دیواری اگر زبان انگلیسی نباشد"
 
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "برطرف شده: یک مشکل مهلک"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "تنظیمات موشی"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "پشتیبانی فلت‌پک"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "بهبود یافته:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "پشتیبانی از زبان‌های راست‌به‌چپ"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "متن‌های بیشتری ترجمه شدند"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "آلمانی"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "اکسیتانی"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "اسپانیایی"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "اُردو"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -784,6 +749,36 @@ msgstr "انرژی"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "نمایش درصد باتری"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "اضافه شده: پشتیبانی از اوبونتو"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr "برطرف شده: اِعمال نشدن تنظیمات در بعضی سامانه‌ها"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "برطرف شده: تغییر نکردن تصویر پس‌زمینه/کاغذ دیواری اگر زبان انگلیسی نباشد"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "برطرف شده: یک مشکل مهلک"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "تنظیمات موشی"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "پشتیبانی فلت‌پک"
+
+#~ msgid "Improved:"
+#~ msgstr "بهبود یافته:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "پشتیبانی از زبان‌های راست‌به‌چپ"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "متن‌های بیشتری ترجمه شدند"
 
 # در این رشته از نویسهٔ LRM استفاده شده است
 #~ msgid ""

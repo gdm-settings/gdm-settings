@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -45,7 +45,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "Ajouté :"
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "Nouvelles traductions :"
 
@@ -126,59 +126,24 @@ msgid "Updated Translations:"
 msgstr "Nouvelles traductions :"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
+msgid "Dutch"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Ajout : support pour Ubuntu"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "Corrigé : Impossible d'appliquer les paramètres sur certains systèmes"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr ""
-"Corrigé : Impossible de changer l'image d'arrière-plan si le langage n'est "
-"pas anglais"
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "Corrigé : Un bogue fatal"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "Paramètres de la souris"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "Support Flatpak"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "Amélioré :"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "Support pour les langages RTL"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "Plus de texte traduit"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "Allemand"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "Occitan"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "Espagnol"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr ""
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -799,6 +764,38 @@ msgstr "Énergie"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Montrer le pourcentage de batterie"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Ajout : support pour Ubuntu"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr ""
+#~ "Corrigé : Impossible d'appliquer les paramètres sur certains systèmes"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "Corrigé : Impossible de changer l'image d'arrière-plan si le langage "
+#~ "n'est pas anglais"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "Corrigé : Un bogue fatal"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Paramètres de la souris"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "Support Flatpak"
+
+#~ msgid "Improved:"
+#~ msgstr "Amélioré :"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "Support pour les langages RTL"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "Plus de texte traduit"
 
 #~ msgid ""
 #~ "Default shell theme extracted to '/usr/share/themes' as 'default-"

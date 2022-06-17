@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "اضافہ کیا:"
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "نئے ترجمے:"
 
@@ -126,57 +126,24 @@ msgid "Updated Translations:"
 msgstr "نئے ترجمے:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "اردو"
+msgid "Dutch"
+msgstr ""
 
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Ubuntu کے لیے سپورٹ شامل کی"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "درستگی: کچھ سسٹمز پر سیٹنگز اپلائی نہیں ہو سکتی تھیں"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr "درستگی: اگر زبان انگریزی نہ ہو تو والپیپر تبدیل نہیں ہو سکتا تھا"
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "درستگی: بہت ہنگامی مسئلہ"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "مائوس کی سیٹنگز"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "فلَیٹپَیک کی سپورٹ"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "بہتر کیا:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "دائیں سے بائیں لکھی جانے والی زبانوں کی سپورٹ"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "مزید مواد کا ترجمہ کیا"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "جرمن"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "آکسِیٹَن"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "سپَینِش"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "اردو"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -792,6 +759,35 @@ msgstr "پاوَر"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Ubuntu کے لیے سپورٹ شامل کی"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr "درستگی: کچھ سسٹمز پر سیٹنگز اپلائی نہیں ہو سکتی تھیں"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr "درستگی: اگر زبان انگریزی نہ ہو تو والپیپر تبدیل نہیں ہو سکتا تھا"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "درستگی: بہت ہنگامی مسئلہ"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "مائوس کی سیٹنگز"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "فلَیٹپَیک کی سپورٹ"
+
+#~ msgid "Improved:"
+#~ msgstr "بہتر کیا:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "دائیں سے بائیں لکھی جانے والی زبانوں کی سپورٹ"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "مزید مواد کا ترجمہ کیا"
 
 #~ msgid "Cancel"
 #~ msgstr "کینسل"

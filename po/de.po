@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "Hinzugefügt:"
 
@@ -77,7 +77,8 @@ msgstr "Behoben:"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
-msgstr "Willkommensnachricht konnte keine einzelnen Anführungszeichen enthalten"
+msgstr ""
+"Willkommensnachricht konnte keine einzelnen Anführungszeichen enthalten"
 
 #: data/application_id.appdata.xml.in:84
 msgid ""
@@ -116,7 +117,7 @@ msgstr ""
 "Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
 "angewendet"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "Neue Übersetzungen:"
 
@@ -137,60 +138,24 @@ msgid "Updated Translations:"
 msgstr "Aktualisierte Übersetzungen:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "Urdu"
-
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "Hinzugefügt: Unterstützung für Ubuntu"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
+msgid "Dutch"
 msgstr ""
-"Behoben: Einstellungen konnten auf manchen Systemen nicht angewendet werden"
 
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr ""
-"Behoben: Hintergrundbild konnte bei einer anderen Sprache als Englisch nicht "
-"geändert werden"
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "Behoben: Ein schwerwiegender Fehler"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "Maus-Einstellungen"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "Flatpak-Unterstützung"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "Verbessert:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "Unterstützung für RTL-Sprachen"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "Mehr Texte übersetzt"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "Deutsch"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "Okzitanisch"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "Spanisch"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "Urdu"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -388,7 +353,8 @@ msgstr "Anwenden der aktuellen Displayeinstellungen fehlgeschlagen"
 #: src/gdm_settings_gui.py:223
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr "Shell-Vorgabethema wurde nach »{path}« als »default-extracted« entpackt"
+msgstr ""
+"Shell-Vorgabethema wurde nach »{path}« als »default-extracted« entpackt"
 
 #: src/gdm_settings_gui.py:225
 msgid "Failed to extract default theme"
@@ -815,6 +781,39 @@ msgstr "Energie"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Prozentsatz der Akkuladung anzeigen"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "Hinzugefügt: Unterstützung für Ubuntu"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr ""
+#~ "Behoben: Einstellungen konnten auf manchen Systemen nicht angewendet "
+#~ "werden"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr ""
+#~ "Behoben: Hintergrundbild konnte bei einer anderen Sprache als Englisch "
+#~ "nicht geändert werden"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "Behoben: Ein schwerwiegender Fehler"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "Maus-Einstellungen"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "Flatpak-Unterstützung"
+
+#~ msgid "Improved:"
+#~ msgstr "Verbessert:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "Unterstützung für RTL-Sprachen"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "Mehr Texte übersetzt"
 
 #~ msgid "Directories"
 #~ msgstr "Verzeichnisse"

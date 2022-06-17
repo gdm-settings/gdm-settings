@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr "נוסף:"
 
@@ -102,7 +102,7 @@ msgstr "לחיצה על ‚החלה’ לא עשתה כלום אם תמונת ה
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "לחיצה על ‚החלה’ החילה רק חלק מההגדרות באובונטו"
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr "תרגומים חדשים:"
 
@@ -123,57 +123,24 @@ msgid "Updated Translations:"
 msgstr "תרגומים עדכניים:"
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
-msgstr "אורדו"
+msgid "Dutch"
+msgstr ""
 
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr "נוספה: תמיכה באובונטו"
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr "תיקון: לא ניתן להחיל הגדרות בחלק מהמערכות"
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr "תיקון: אי אפשר להחליף תמונת רקע אם השפה אינה אנגלית"
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr "תיקון: תקלה משמעותית"
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr "הגדרות עכבר"
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr "תמיכה ב־Flatpak"
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr "השתפר:"
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr "תמיכה בשפות מימין לשמאל"
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr "טקסט נוסף תורגם"
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr "גרמנית"
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr "אוקסיטנית"
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
 msgstr "ספרדית"
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
+msgstr "אורדו"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
@@ -785,6 +752,35 @@ msgstr "חשמל"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "הצגת אחוז סוללה"
+
+#~ msgid "Added: Support for Ubuntu"
+#~ msgstr "נוספה: תמיכה באובונטו"
+
+#~ msgid "Fixed: Could not apply settings on some systems"
+#~ msgstr "תיקון: לא ניתן להחיל הגדרות בחלק מהמערכות"
+
+#~ msgid ""
+#~ "Fixed: Could not change background-image/wallpaper if language is not "
+#~ "English"
+#~ msgstr "תיקון: אי אפשר להחליף תמונת רקע אם השפה אינה אנגלית"
+
+#~ msgid "Fixed: A fatal bug"
+#~ msgstr "תיקון: תקלה משמעותית"
+
+#~ msgid "Mouse Settings"
+#~ msgstr "הגדרות עכבר"
+
+#~ msgid "Flatpak Support"
+#~ msgstr "תמיכה ב־Flatpak"
+
+#~ msgid "Improved:"
+#~ msgstr "השתפר:"
+
+#~ msgid "Support for Right-to-Left Languages"
+#~ msgstr "תמיכה בשפות מימין לשמאל"
+
+#~ msgid "More Text got Translated"
+#~ msgstr "טקסט נוסף תורגם"
 
 #~ msgid ""
 #~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
