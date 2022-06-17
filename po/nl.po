@@ -2,13 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Heimen Stoffels <vistausss@fastmail.com>, 2022.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-17 07:59+0500\n"
-"PO-Revision-Date: 2022-06-14 01:46+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -133,7 +134,7 @@ msgstr "Bijgewerkte vertalingen:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Dutch"
-msgstr ""
+msgstr "Nederlands"
 
 #: data/application_id.appdata.xml.in:99
 msgid "German"
