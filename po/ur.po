@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-17 07:59+0500\n"
-"PO-Revision-Date: 2022-06-14 01:46+0000\n"
+"PO-Revision-Date: 2022-06-18 04:20+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -127,7 +127,7 @@ msgstr "نئے ترجمے:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Dutch"
-msgstr ""
+msgstr "ڈَچ"
 
 #: data/application_id.appdata.xml.in:99
 msgid "German"
