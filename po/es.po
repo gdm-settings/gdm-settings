@@ -1,11 +1,12 @@
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2022.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-17 07:59+0500\n"
-"PO-Revision-Date: 2022-06-14 01:46+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -134,7 +135,7 @@ msgstr "Traducciones actualizadas:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Dutch"
-msgstr ""
+msgstr "Holandés"
 
 #: data/application_id.appdata.xml.in:99
 msgid "German"
