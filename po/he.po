@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-17 07:59+0500\n"
-"PO-Revision-Date: 2022-06-17 04:08+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
 "Language: he\n"
@@ -125,7 +125,7 @@ msgstr "תרגומים עדכניים:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Dutch"
-msgstr "הוֹלַנדִי"
+msgstr "הולנדית"
 
 #: data/application_id.appdata.xml.in:99
 msgid "German"
