@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # J. Lavoie <j.lavoie@net-c.ca>, 2022.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-17 07:59+0500\n"
-"PO-Revision-Date: 2022-06-14 01:46+0000\n"
-"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
+"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -51,7 +52,7 @@ msgstr "Ajouté :"
 
 #: data/application_id.appdata.xml.in:75
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "Néerlandais"
 
 #: data/application_id.appdata.xml.in:76
 msgid "Support for setting manual verbosity level"
