@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-13 11:14+0500\n"
+"POT-Creation-Date: 2022-06-17 07:59+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:73 data/application_id.appdata.xml.in:120
+#: data/application_id.appdata.xml.in:73
 msgid "Added:"
 msgstr ""
 
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:90 data/application_id.appdata.xml.in:130
+#: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
 msgstr ""
 
@@ -119,56 +119,23 @@ msgid "Updated Translations:"
 msgstr ""
 
 #: data/application_id.appdata.xml.in:98
-msgid "Urdu"
+msgid "Dutch"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:104
-msgid "Added: Support for Ubuntu"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:105
-msgid "Fixed: Could not apply settings on some systems"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:110
-msgid ""
-"Fixed: Could not change background-image/wallpaper if language is not English"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:115
-msgid "Fixed: A fatal bug"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:122
-msgid "Mouse Settings"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:123
-msgid "Flatpak Support"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:125
-msgid "Improved:"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:127
-msgid "Support for Right-to-Left Languages"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:128
-msgid "More Text got Translated"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:132
+#: data/application_id.appdata.xml.in:99
 msgid "German"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:133
+#: data/application_id.appdata.xml.in:100
 msgid "Occitan"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:134
+#: data/application_id.appdata.xml.in:101
 msgid "Spanish"
+msgstr ""
+
+#: data/application_id.appdata.xml.in:102
+msgid "Urdu"
 msgstr ""
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
