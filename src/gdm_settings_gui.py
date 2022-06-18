@@ -14,6 +14,7 @@ from .utils import find_file
 from . import env
 env.INTERFACE_TYPE = env.InterfaceType.Graphical
 
+from . import dialogs
 from . import settings_manager
 
 # Namespace to contain widgets
@@ -163,6 +164,10 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.save_window_state()
         self.settings.cleanup()
 
+    def show_about_dialog(self):
+        dialog = dialogs.AboutDialog (widgets.main_window)
+        dialog.present()
+
     def on_apply(self, widget):
         try:
             self.set_settings()
@@ -261,7 +266,6 @@ class GDM_Settings(Adw.Application, App_Utils):
             "main_window",
             "paned",
             "app_menu",
-            "about_dialog",
             "page_stack",
             "appearance_page_content",
             "fonts_page_content",
@@ -374,13 +378,6 @@ class GDM_Settings(Adw.Application, App_Utils):
         # Paned
         widgets.paned.set_shrink_start_child(False)
         widgets.paned.set_shrink_end_child(False)
-        # About Dialog
-        dev_mazhar_hussain = _("Mazhar Hussain") + " <mmazharhussainkgb1145@gmail.com>"
-        widgets.about_dialog.set_authors([dev_mazhar_hussain])
-        widgets.about_dialog.set_artists([dev_mazhar_hussain])
-        widgets.about_dialog.set_documenters([dev_mazhar_hussain])
-        # Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
-        widgets.about_dialog.set_translator_credits(_("translator-credits"))
         # Font Scaling Factor SpinButton
         widgets.scaling_factor_spinbutton.set_range(0.5, 3)
         widgets.scaling_factor_spinbutton.set_increments(0.1,0.5)
@@ -604,7 +601,7 @@ class GDM_Settings(Adw.Application, App_Utils):
 
     def create_actions(self):
         self.create_action("quit", lambda x,y: self.quit())
-        self.create_action("about", lambda x,y: widgets.about_dialog.present())
+        self.create_action("about", lambda x,y: self.show_about_dialog())
         self.create_action("import_user_settings", lambda x,y: self.import_user_settings())
         self.create_action("reload_settings", lambda x,y: self.reload_settings_to_widgets())
         self.create_action("reset_settings", lambda x,y: self.reset_settings())

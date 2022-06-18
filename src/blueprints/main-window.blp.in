@@ -35,19 +35,6 @@ Adw.ApplicationWindow main_window {
   };
 }
 
-AboutDialog about_dialog {
-  transient-for: main_window;
-  modal: true;
-  program-name: _("Login Manager Settings");
-  version: "@project_name@ v@version@";
-  comments: _("A settings app for GNOME's Login Manager (GDM)");
-  logo-icon-name: "@application_id@";
-  website: "https://github.com/realmazharhussain/gdm-settings";
-  website-label: _("Homepage");
-  license-type: agpl_3_0;
-  copyright: _("Copyright © 2021 Mazhar Hussain");
-}
-
 FileChooserNative background_image_chooser {
   transient-for: main_window;
   modal: true;
