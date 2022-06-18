@@ -12,7 +12,6 @@ project_name = meson.project_name()
 application_name='Login Manager Settings'
 description = 'A settings app for GNOME\'s Login Manager (GDM)'
 application_id='io.github.realmazharhussain.GdmSettings'
-schema_path = '/io/github/realmazharhussain/GdmSettings/'
 
 python = import('python')
 python3 = python.find_installation('python3')
@@ -34,7 +33,6 @@ conf.set('application_name', application_name)
 conf.set('version',          version)
 conf.set('description',      description)
 conf.set('application_id',   application_id)
-conf.set('schema_path',      schema_path)
 conf.set('prefix',           prefix)
 conf.set('py_modules_dir',   py_modules_dir)
 conf.set('py_module_name',   py_module_name)

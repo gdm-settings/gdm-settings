@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.pointing.mouse" path="@schema_path@pointing/mouse/">
+  <schema id="io.github.realmazharhussain.GdmSettings.pointing.mouse" path="/io/github/realmazharhussain/GdmSettings/pointing/mouse/">
 
     <key name="pointer-acceleration" type="s">
       <default>"default"</default>

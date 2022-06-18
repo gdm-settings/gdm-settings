@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.pointing.touchpad" path="@schema_path@pointing/touchpad/">
+  <schema id="io.github.realmazharhussain.GdmSettings.pointing.touchpad" path="/io/github/realmazharhussain/GdmSettings/pointing/touchpad/">
 
     <key name="tap-to-click" type="b">
       <default>true</default>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.night-light" path="@schema_path@night-light/">
+  <schema id="io.github.realmazharhussain.GdmSettings.night-light" path="/io/github/realmazharhussain/GdmSettings/night-light/">
 
     <key name="night-light-enabled" type="b">
       <default>false</default>
