@@ -28,9 +28,9 @@ modules:
     builddir: true
     buildsystem: meson
     sources:
-      - type: git
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler.git
-        commit: 3b39e0d541ed3f18441420228f1270bd167fa7fa
+      - type: archive
+        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.2.0/blueprint-compiler-v0.2.0.tar.bz2
+        sha256: 74bb99161ba30abfc7302d2b3cbc400f05bcbda21ccb01c4b2e6f8f3f9874ca2
     cleanup:
       - "*"
 
