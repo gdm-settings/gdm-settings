@@ -743,5 +743,18 @@ class Settings:
 
         return status
 
+    def get_overriding_files(self):
+        gdm_conf_dir = "/etc/dconf/db/gdm.d"
+        overriding_files = []
+
+        if path.isdir (env.HOST_ROOT + gdm_conf_dir):
+            files = set (listdir (env.HOST_ROOT + gdm_conf_dir))
+            files.add ('95-gdm-settings')
+            files = sorted (files)
+            index_of_next_file = files.index('95-gdm-settings') + 1
+            overriding_files = files[index_of_next_file:]
+
+        return overriding_files
+
     def cleanup(self):
         rmtree(path=TEMP_DIR, ignore_errors=True)
