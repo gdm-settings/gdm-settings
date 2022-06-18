@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 15:22+0500\n"
+"POT-Creation-Date: 2022-06-18 15:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -433,23 +433,23 @@ msgstr ""
 msgid "Quit"
 msgstr ""
 
-#: src/blueprints/main-window.blp.in:56 src/blueprints/main-window.blp.in:62
+#: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
 msgid "Images"
 msgstr ""
 
-#: src/blueprints/main-window.blp.in:80
+#: src/blueprints/main-window.blp.in:65
 msgid "Failed to apply settings"
 msgstr ""
 
-#: src/blueprints/main-window.blp.in:86
+#: src/blueprints/main-window.blp.in:71
 msgid "Settings applied successfully"
 msgstr ""
 
-#: src/blueprints/main-window.blp.in:92
+#: src/blueprints/main-window.blp.in:77
 msgid "User settings imported"
 msgstr ""
 
-#: src/blueprints/main-window.blp.in:98
+#: src/blueprints/main-window.blp.in:83
 msgid "Settings reloaded"
 msgstr ""
 
