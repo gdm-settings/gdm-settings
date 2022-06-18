@@ -5,8 +5,8 @@
   <project_license>AGPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
 
-  <id>@application_id@</id>
-  <launchable type="desktop-id">@application_id@.desktop</launchable>
+  <id>io.github.realmazharhussain.GdmSettings</id>
+  <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
 
   <name>Login Manager Settings</name>
   <summary>A settings app for GNOME's Login Manager (GDM)</summary>
