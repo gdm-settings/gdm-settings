@@ -47,4 +47,4 @@ subdir('data')
 subdir('src')
 subdir('po')
 
-subdir('build-aux')
+meson.add_install_script('build-aux/postinstall.py')
