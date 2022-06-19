@@ -15,12 +15,12 @@ configure_file(
 
 install_data([
   '__init__.py',
-  'dialogs.py',
   'colors.py',
-  'utils.py',
+  'dialogs.py',
   'env.py',
+  'gui.py',
   'settings_manager.py',
-  'gdm_settings_gui.py',
+  'utils.py',
   ],
   install_dir: py_proj_dir,
 )
