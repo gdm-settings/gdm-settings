@@ -19,6 +19,10 @@
      </p>
   </description>
 
+  <custom>
+    <value key="GnomeSoftware::key-colors">[(100, 180, 255), (50, 100, 200)]</value>
+  </custom>
+
   <categories>
     <category>GNOME</category>
     <category>GTK</category>
