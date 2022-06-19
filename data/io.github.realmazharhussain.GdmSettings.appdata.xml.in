@@ -72,6 +72,11 @@
   </screenshots>
 
   <releases>
+    <release version="0.6.1" date="2022-06-20">
+      <description>
+        <p>Updated the app store page of app</p>
+      </description>
+    </release>
     <release version="0.6" date="2022-06-20">
       <description>
         <p>Added:</p>
