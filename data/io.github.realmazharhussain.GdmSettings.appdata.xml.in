@@ -9,7 +9,7 @@
   <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
 
   <name>Login Manager Settings</name>
-  <summary>A settings app for GNOME's Login Manager (GDM)</summary>
+  <summary>A settings app for GNOME's Login Manager, GDM</summary>
 
   <description>
      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->

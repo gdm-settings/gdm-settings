@@ -10,7 +10,7 @@ class AboutDialog (Gtk.AboutDialog):
         self.props.program_name   = info.application_name;
         self.props.logo_icon_name = info.application_id;
         self.props.version        =  f"{info.project_name} v{info.version}";
-        self.props.comments       = _("A settings app for GNOME's Login Manager (GDM)");
+        self.props.comments       = _("A settings app for GNOME's Login Manager, GDM");
         self.props.copyright      = _("Copyright © 2021 Mazhar Hussain");
         self.props.website_label  = _("Homepage");
         self.props.website        = "https://realmazharhussain.github.io/gdm-settings";

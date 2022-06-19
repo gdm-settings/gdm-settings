@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Login Manager Settings
-Comment=A settings app for GNOME's Login Manager (GDM)
+Comment=A settings app for GNOME's Login Manager, GDM
 Icon=io.github.realmazharhussain.GdmSettings
 Exec=gdm-settings
 TryExec=gdm-settings
