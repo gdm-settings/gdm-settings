@@ -760,10 +760,3 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.set_file_chooser_setting("logo")
         self.set_switch_setting("enable_welcome_message")
         self.settings.welcome_message = widgets.welcome_message_entry.get_text()
-
-def main():
-    app = GDM_Settings()
-    return app.run(sys.argv)
-
-if __name__ == '__main__':
-    main()

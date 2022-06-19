@@ -15,5 +15,6 @@ gettext.install('@project_name@', localedir)
 from @py_module_name@ import colors
 logging.basicConfig(format=f'{colors.bold}%(levelname)s:{colors.reset} %(message)s')
 
-from @py_module_name@ import gdm_settings_gui
-gdm_settings_gui.main()
+from @py_module_name@ import gui
+app = gui.GDM_Settings()
+exit(app.run(sys.argv))
