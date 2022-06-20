@@ -1,5 +1,5 @@
 appstream_file = i18n.merge_file(
-  input:  'io.github.realmazharhussain.GdmSettings.appdata.xml.in',
+  input:  'io.github.realmazharhussain.GdmSettings.metainfo.xml.in',
   output: '@BASENAME@',
   po_dir: '../po',
   install: true,
