@@ -7,6 +7,9 @@ export DESTDIR=${AppDir#"$PWD/"}
 export PREFIX=/usr
 export USE_RELATIVE_SYMLINKS=true
 
+ProjectName=gdm-settings
+ApplicationId=io.github.realmazharhussain.GdmSettings
+
 # Text styles and colors
 normal=$'\e[0m'
 bold=$'\e[1m'
@@ -22,7 +25,7 @@ fi
 meson compile -C "$buildDir"
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
-eval $("$progDir"/load_info.py "$buildDir"/src/info.py)
+#eval $("$progDir"/load_info.py "$buildDir"/src/info.py)
 
 AppRun='#!/usr/bin/bash
 #progDir=$(dirname "$(realpath "$0")")
@@ -36,19 +39,19 @@ gdm-settings "$@"'
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
 rm -rf "$AppDir"/usr/share/metainfo
-ln -sfr "$AppDir"/usr/share/applications/$application_id.desktop "$AppDir"/
+ln -sfr "$AppDir"/usr/share/applications/$ApplicationId.desktop "$AppDir"/
 if which magick &>/dev/null; then
-  magick -background none "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/$application_id.png
+  magick -background none "$AppDir"/usr/share/icons/hicolor/scalable/apps/$ApplicationId.svg "$AppDir"/$ApplicationId.png
 else
-  ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$application_id.svg "$AppDir"/
+  ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$ApplicationId.svg "$AppDir"/
 fi
 echo "$AppRun" > "${AppDir}/AppRun"
 chmod +x "${AppDir}/AppRun"
 echo '  Done.'
 
 echo "${bold}${italic}Building AppImage ...${normal}"
-if output=$(appimagetool "$AppDir" "$buildDir/$project_name.AppImage" 2>&1); then
-   echo "  Success! AppImage saved as '${buildDir/$PWD/.}/$project_name.AppImage'"
+if output=$(appimagetool "$AppDir" "$buildDir/$ProjectName.AppImage" 2>&1); then
+   echo "  Success! AppImage saved as '${buildDir/$PWD/.}/$ProjectName.AppImage'"
    status=0
 else
    echo "  ${bold}${red}${light_bg}Failed!${normal}"
