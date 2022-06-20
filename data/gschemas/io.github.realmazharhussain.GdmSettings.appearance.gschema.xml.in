@@ -20,7 +20,7 @@
 	   <summary>Type of Background</summary>
       <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
 	   <description>
-	     Wether GDM background should be an Image, Color or None.
+	     Whether GDM background should be an Image, Color or None.
 	   </description>
 	   <choices>
 	     <choice value="None"/>
