@@ -18,9 +18,9 @@ if not blueprint_compiler.found()
 endif
 
 custom_target('ui_files',
-  input: blueprints,
-  output: project_name,
-  command: [blueprint_compiler, 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
-  install: true,
+        input: blueprints,
+       output: project_name,
+      command: [blueprint_compiler, 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
+      install: true,
   install_dir: data_dir,
 )
