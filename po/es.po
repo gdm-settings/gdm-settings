@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-17 07:59+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-18 15:54+0500\n"
 "PO-Revision-Date: 2022-06-18 04:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -17,13 +17,12 @@ msgstr ""
 "X-Generator: Weblate 4.13-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
-#: src/info.py.in:3 src/blueprints/main-window.blp.in:17
-#: src/blueprints/main-window.blp.in:41
+#: src/blueprints/main-window.blp.in:17 src/info.py.in:3
 msgid "Login Manager Settings"
 msgstr "Configuración del gestor de inicio de sesión"
 
 #: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
-#: src/blueprints/main-window.blp.in:43
+#: src/dialogs.py:13
 msgid "A settings app for GNOME's Login Manager (GDM)"
 msgstr ""
 "Una aplicación de configuración para el Gestor de inicio de sesión de GNOME "
@@ -39,7 +38,7 @@ msgstr ""
 "del cursor, el tema de los iconos y la configuración de la luz nocturna, "
 "entre otras cosas."
 
-#: data/application_id.appdata.xml.in:40 src/gdm_settings_gui.py:378
+#: data/application_id.appdata.xml.in:40 src/dialogs.py:18
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -302,110 +301,6 @@ msgstr "Si se cambia el fondo de la barra superior"
 msgid "Top bar background color"
 msgstr "Color de fondo de la barra superior"
 
-#: src/gdm_settings_gui.py:71
-msgid "Show application version"
-msgstr "Mostrar la versión de la aplicación"
-
-#: src/gdm_settings_gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gdm_settings_gui.py:80
-msgid "LEVEL"
-msgstr "NIVEL"
-
-#: src/gdm_settings_gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gdm_settings_gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
-
-#: src/gdm_settings_gui.py:178
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
-"favor, elija de nuevo."
-
-#: src/gdm_settings_gui.py:210
-msgid "Applied current display settings"
-msgstr "Aplicada la configuración actual de la pantalla"
-
-#: src/gdm_settings_gui.py:212
-msgid "Failed to apply current display settings"
-msgstr "No se ha podido aplicar la configuración actual de la pantalla"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gdm_settings_gui.py:223
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Tema de shell predeterminado extraído a '{path}' como 'default-extracted'"
-
-#: src/gdm_settings_gui.py:225
-msgid "Failed to extract default theme"
-msgstr "Fallo al extraer el tema predeterminado"
-
-#. Translators: Do not translate this string. Put your info here in the form 'name <email>' including < and > but not qoutes.
-#: src/gdm_settings_gui.py:383
-msgid "translator-credits"
-msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
-
-#: src/gdm_settings_gui.py:596
-msgid "Appearance"
-msgstr "Apariencia"
-
-#: src/gdm_settings_gui.py:597 src/blueprints/fonts-page.blp:20
-msgid "Fonts"
-msgstr "Tipografías"
-
-#: src/gdm_settings_gui.py:598
-msgid "Top Bar"
-msgstr "Barra superior"
-
-#: src/gdm_settings_gui.py:599 src/blueprints/sound-page.blp:20
-msgid "Sound"
-msgstr "Sonido"
-
-#: src/gdm_settings_gui.py:600
-msgid "Mouse & Touchpad"
-msgstr "Ratón y panel táctil"
-
-#: src/gdm_settings_gui.py:601 src/blueprints/display-page.blp:20
-msgid "Display"
-msgstr "Pantalla"
-
-#: src/gdm_settings_gui.py:602 src/blueprints/misc-page.blp:20
-msgid "Miscellaneous"
-msgstr "Miscelánea"
-
-#: src/gdm_settings_gui.py:603
-msgid "Tools"
-msgstr "Herramientas"
-
-#: src/gdm_settings_gui.py:656
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
-"La importación de la configuración del usuario NO es compatible con la "
-"versión Flatpak"
-
-#: src/gdm_settings_gui.py:661
-msgid "Failed to reset settings"
-msgstr "Fallo en el restablecimiento de la configuración"
-
-#: src/gdm_settings_gui.py:665
-msgid "Reset settings successfully"
-msgstr "Restablecida la configuración correctamente"
-
-#: src/settings_manager.py:268
-msgid "saving default theme ..."
-msgstr "guardando el tema predeterminado ..."
-
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
 msgstr "Temas"
@@ -454,6 +349,10 @@ msgstr "Elegir archivo"
 #: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
 msgstr "El color a usar como fondo"
+
+#: src/blueprints/display-page.blp:20 src/gdm_settings_gui.py:598
+msgid "Display"
+msgstr "Pantalla"
 
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
@@ -504,6 +403,10 @@ msgstr "Hasta"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Temperatura del color"
+
+#: src/blueprints/fonts-page.blp:20 src/gdm_settings_gui.py:594
+msgid "Fonts"
+msgstr "Tipografías"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -561,33 +464,29 @@ msgstr "Acerca de"
 msgid "Quit"
 msgstr "Salir"
 
-#: src/blueprints/main-window.blp.in:46
-msgid "Homepage"
-msgstr "Página web"
-
-#: src/blueprints/main-window.blp.in:48
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/blueprints/main-window.blp.in:54 src/blueprints/main-window.blp.in:60
+#: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
 msgid "Images"
 msgstr "Imágenes"
 
-#: src/blueprints/main-window.blp.in:78
+#: src/blueprints/main-window.blp.in:65
 msgid "Failed to apply settings"
 msgstr "No se ha podido aplicar la configuración"
 
-#: src/blueprints/main-window.blp.in:84
+#: src/blueprints/main-window.blp.in:71
 msgid "Settings applied successfully"
 msgstr "Configuración aplicada con éxito"
 
-#: src/blueprints/main-window.blp.in:90
+#: src/blueprints/main-window.blp.in:77
 msgid "User settings imported"
 msgstr "Configuración del usuario importada"
 
-#: src/blueprints/main-window.blp.in:96
+#: src/blueprints/main-window.blp.in:83
 msgid "Settings reloaded"
 msgstr "Configuración recargada"
+
+#: src/blueprints/misc-page.blp:20 src/gdm_settings_gui.py:599
+msgid "Miscellaneous"
+msgstr "Miscelánea"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -672,6 +571,10 @@ msgstr "Desplazar deslizando dos dedos."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Desactivar mientras se teclea"
+
+#: src/blueprints/sound-page.blp:20 src/gdm_settings_gui.py:596
+msgid "Sound"
+msgstr "Sonido"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -772,6 +675,103 @@ msgstr "Energía"
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
 msgstr "Mostrar porcentaje de la batería"
+
+#: src/dialogs.py:14
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#: src/dialogs.py:15
+msgid "Homepage"
+msgstr "Página web"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/dialogs.py:24
+msgid "translator-credits"
+msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
+
+#: src/gdm_settings_gui.py:72
+msgid "Show application version"
+msgstr "Mostrar la versión de la aplicación"
+
+#: src/gdm_settings_gui.py:79
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
+
+#. Translators: 'LEVEL' is the argument of --verbosity option.
+#: src/gdm_settings_gui.py:81
+msgid "LEVEL"
+msgstr "NIVEL"
+
+#: src/gdm_settings_gui.py:87
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
+
+#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
+#: src/gdm_settings_gui.py:95
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
+
+#: src/gdm_settings_gui.py:183
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
+"favor, elija de nuevo."
+
+#: src/gdm_settings_gui.py:215
+msgid "Applied current display settings"
+msgstr "Aplicada la configuración actual de la pantalla"
+
+#: src/gdm_settings_gui.py:217
+msgid "Failed to apply current display settings"
+msgstr "No se ha podido aplicar la configuración actual de la pantalla"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/gdm_settings_gui.py:228
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"Tema de shell predeterminado extraído a '{path}' como 'default-extracted'"
+
+#: src/gdm_settings_gui.py:230
+msgid "Failed to extract default theme"
+msgstr "Fallo al extraer el tema predeterminado"
+
+#: src/gdm_settings_gui.py:593
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/gdm_settings_gui.py:595
+msgid "Top Bar"
+msgstr "Barra superior"
+
+#: src/gdm_settings_gui.py:597
+msgid "Mouse & Touchpad"
+msgstr "Ratón y panel táctil"
+
+#: src/gdm_settings_gui.py:600
+msgid "Tools"
+msgstr "Herramientas"
+
+#: src/gdm_settings_gui.py:653
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+"La importación de la configuración del usuario NO es compatible con la "
+"versión Flatpak"
+
+#: src/gdm_settings_gui.py:658
+msgid "Failed to reset settings"
+msgstr "Fallo en el restablecimiento de la configuración"
+
+#: src/gdm_settings_gui.py:662
+msgid "Reset settings successfully"
+msgstr "Restablecida la configuración correctamente"
+
+#: src/settings_manager.py:268
+msgid "saving default theme ..."
+msgstr "guardando el tema predeterminado ..."
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Añadido: Soporte para Ubuntu"
