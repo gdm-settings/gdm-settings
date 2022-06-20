@@ -5,25 +5,28 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-18 15:54+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-21 03:43+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/blueprints/main-window.blp.in:17 src/info.py.in:3
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Giriş Yöneticisi Ayarları"
 
 #: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
 #: src/dialogs.py:13
 msgid "A settings app for GNOME's Login Manager (GDM)"
-msgstr ""
+msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/application_id.appdata.xml.in:16
@@ -31,176 +34,195 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"GDM Ayarlarını Değiştirin; diğer şeylerin yanında tema ve arka plan "
+"uygulayın, imleç temasını, simge temasını ve gece ışığı ayarlarını "
+"değiştirin."
 
 #: data/application_id.appdata.xml.in:40 src/dialogs.py:18
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/application_id.appdata.xml.in:73
 msgid "Added:"
-msgstr ""
+msgstr "Eklendi:"
 
 #: data/application_id.appdata.xml.in:75
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "Detaylı/sessiz kip desteği"
 
 #: data/application_id.appdata.xml.in:76
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "Detay düzeyini elle ayarlama desteği"
 
 #: data/application_id.appdata.xml.in:77
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr ""
+"Ayrıntılı/sessiz kip ve el ile ayrıntı düzeyi için komut satırı seçenekleri"
 
 #: data/application_id.appdata.xml.in:78
 msgid "Command-line option --version"
-msgstr ""
+msgstr "Komut satırı seçeneği -version"
 
 #: data/application_id.appdata.xml.in:79
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "İlk çalıştırmada daha geniş uygulama penceresi"
 
 #: data/application_id.appdata.xml.in:81
 msgid "Fixed:"
-msgstr ""
+msgstr "Düzeltildi:"
 
 #: data/application_id.appdata.xml.in:83
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "Hoşgeldin mesajı tek tırnak içeremez"
 
 #: data/application_id.appdata.xml.in:84
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"Giriş Yöneticisi (GDM), SELinux'un etkin olduğu sistemlerde (çoğunlukla "
+"Fedora) çalışmıyor"
 
 #: data/application_id.appdata.xml.in:85
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"Büyütülmüş veya büyük uygulama penceresi kötü görünüyordu (içerik pencereden "
+"daha küçüktü)"
 
 #: data/application_id.appdata.xml.in:86
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
+"Öntanımlı shell teması çıkarılırken yanlış hedef dizin/klasör yolu gösterildi"
 
 #: data/application_id.appdata.xml.in:87
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"Seçilen arka plan resmi uygulanmadan önce silinmişse 'Uygula' seçeneğine "
+"tıklamak hiçbir şey yapmadı"
 
 #: data/application_id.appdata.xml.in:88
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
+"Ubuntu'da 'Uygula' seçeneğine tıklandığında yalnızca bazı ayarlar "
+"uygulanıyordu"
 
 #: data/application_id.appdata.xml.in:90
 msgid "New Translations:"
-msgstr ""
+msgstr "Yeni Çeviriler:"
 
 #: data/application_id.appdata.xml.in:92
 msgid "French"
-msgstr ""
+msgstr "Fransızca"
 
 #: data/application_id.appdata.xml.in:93
 msgid "Hebrew"
-msgstr ""
+msgstr "İbranice"
 
 #: data/application_id.appdata.xml.in:94
 msgid "Persian"
-msgstr ""
+msgstr "Farsça"
 
 #: data/application_id.appdata.xml.in:96
 msgid "Updated Translations:"
-msgstr ""
+msgstr "Güncellenen Çeviriler:"
 
 #: data/application_id.appdata.xml.in:98
 msgid "Dutch"
-msgstr ""
+msgstr "Felemenkçe"
 
 #: data/application_id.appdata.xml.in:99
 msgid "German"
-msgstr ""
+msgstr "Almanca"
 
 #: data/application_id.appdata.xml.in:100
 msgid "Occitan"
-msgstr ""
+msgstr "Oksitanca"
 
 #: data/application_id.appdata.xml.in:101
 msgid "Spanish"
-msgstr ""
+msgstr "İspanyolca"
 
 #: data/application_id.appdata.xml.in:102
 msgid "Urdu"
-msgstr ""
+msgstr "Urduca"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:7
 msgid "Theme Name"
-msgstr ""
+msgstr "Tema Adı"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:20
 msgid "Type of Background"
-msgstr ""
+msgstr "Arka Plan Türü"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/application_id.appearance.gschema.xml.in:22
 msgid "Wether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "GDM arka planının Resim, Renk veya Hiçbiri olup olmayacağı."
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:34
 msgid "Background Image"
-msgstr ""
+msgstr "Arka Plan Resmi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/application_id.appearance.gschema.xml.in:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "GDM arka planı olarak kullanılacak resim"
 
 #: data/gschemas/application_id.appearance.gschema.xml.in:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
-msgstr ""
+msgstr "Arkaplan Rengi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/application_id.appearance.gschema.xml.in:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "GDM arka planı olarak kullanılacak Renk"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Gece ışığı kipi etkinse"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Gece ışığı kipi, güneş battığında veya önceden ayarlanmış zamanda "
+"ekranınızın renk sıcaklığını değiştirir."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Etkinleştirildiğinde ekran sıcaklığı"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Bu sıcaklık Kelvin cinsinden olup, gece ışığı kipi etkinleştirildiğinde "
+"ekran tonlarını değiştirmek için kullanılır. Yüksek değerler daha mavi, "
+"düşük değerler daha kırmızı anlamına gelir."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Gün doğumu ve gün batımını kullan"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Gün doğumu ve gün batımı saatlerini, geçerli konumdan, kendiliğinden hesapla."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:25
 #: data/gschemas/application_id.night-light.gschema.xml.in:39
 msgid "The start time's hour"
-msgstr ""
+msgstr "Başlangıç saati"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:26
 #: data/gschemas/application_id.night-light.gschema.xml.in:40
@@ -208,30 +230,36 @@ msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
 msgstr ""
+"“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
+"saat olarak kullan."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Başlangıç saati dakikası"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
 msgstr ""
+"“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
+"dakika olarak kullan."
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Bitiş saati dakikası"
 
 #: data/gschemas/application_id.night-light.gschema.xml.in:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"“night-light-schedule-automatic” pasifleştirildiğinde, bu bitiş saatini "
+"dakika olarak kullan."
 
 #: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
 #: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "İmleç hızı"
 
 #: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
 #: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
@@ -239,498 +267,503 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Dokunmatik yüzey için imleç hızı. Kabul edilen değerler [-1..1] "
+"aralığındadır (\"hızlandırılmamış\" ile \"hızlı\" arasında). 0 değeri sistem "
+"varsayılanıdır."
 
 #: data/gschemas/application_id.tools.gschema.xml.in:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Tepe çubuğu ince ayarlarının çıkartılan temaya uygulanma durumu"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Tepe çubuğu oklarının pasifleştirilme durumu"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Tepe çubuğu yuvarlatılmış köşelerinin pasifleştirilme durumu"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Tepe çubuğu metin renginin değiştirilme durumu"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Tepe çubuğu metin rengi"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Tepe çubuğu arka planının değiştirilme durumu"
 
 #: data/gschemas/application_id.top-bar.gschema.xml.in:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Tepe çubuğu arka plan rengi"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
-msgstr ""
+msgstr "Temalar"
 
 #: src/blueprints/appearance-page.blp:22
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: src/blueprints/appearance-page.blp:23
 msgid "Icons"
-msgstr ""
+msgstr "Simgeler"
 
 #: src/blueprints/appearance-page.blp:24
 msgid "Cursor"
-msgstr ""
+msgstr "İmleç"
 
 #: src/blueprints/appearance-page.blp:28
 msgid "Background"
-msgstr ""
+msgstr "Arka plan"
 
 #: src/blueprints/appearance-page.blp:31
 msgid "Type"
-msgstr ""
+msgstr "Tür"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
 #: src/blueprints/fonts-page.blp:46
 msgid "None"
-msgstr ""
+msgstr "Yok"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
 msgid "Image"
-msgstr ""
+msgstr "Resim"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
 msgid "Color"
-msgstr ""
+msgstr "Renk"
 
 #: src/blueprints/appearance-page.blp:38
 msgid "The image to use as background"
-msgstr ""
+msgstr "Arka plan olarak kullanılacak resim"
 
 #: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
 msgid "Choose File"
-msgstr ""
+msgstr "Dosya Seç"
 
 #: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
-msgstr ""
+msgstr "Arka plan olarak kullanılacak renk"
 
 #: src/blueprints/display-page.blp:20 src/gdm_settings_gui.py:598
 msgid "Display"
-msgstr ""
+msgstr "Ekran"
 
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Geçerli ekran ayarlarını uygula"
 
 #: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr ""
+msgstr "Çözünürlük, tazeleme hızı, ekran konumları vb"
 
 #: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
 msgid "Apply"
-msgstr ""
+msgstr "Uygula"
 
 #: src/blueprints/display-page.blp:32
 msgid "Night Light"
-msgstr ""
+msgstr "Gece Işığı"
 
 #: src/blueprints/display-page.blp:35
 msgid "Enable"
-msgstr ""
+msgstr "Etkinleştir"
 
 #: src/blueprints/display-page.blp:44
 msgid "Schedule"
-msgstr ""
+msgstr "Zamanla"
 
 #: src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Gün Batımından Gün Doğumuna"
 
 #: src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Elle Zamanla"
 
 #: src/blueprints/display-page.blp:49
 msgid "Times"
-msgstr ""
+msgstr "Saatler"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:52
 msgid "From"
-msgstr ""
+msgstr "Başlangıç Saati"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:74
 msgid "To"
-msgstr ""
+msgstr "Bitiş Saati"
 
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
-msgstr ""
+msgstr "Renk Sıcaklığı"
 
 #: src/blueprints/fonts-page.blp:20 src/gdm_settings_gui.py:594
 msgid "Fonts"
-msgstr ""
+msgstr "Yazı Tipleri"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
-msgstr ""
+msgstr "Yazı tipi"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Antialiasing"
-msgstr ""
+msgstr "Kenar yumuşatma"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Standard"
-msgstr ""
+msgstr "Standart"
 
 #: src/blueprints/fonts-page.blp:35
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpixel"
 
 #: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
-msgstr ""
+msgstr "Düzeltme"
 
 #: src/blueprints/fonts-page.blp:43
 msgid "Full"
-msgstr ""
+msgstr "Tam"
 
 #: src/blueprints/fonts-page.blp:44
 msgid "Medium"
-msgstr ""
+msgstr "Orta"
 
 #: src/blueprints/fonts-page.blp:45
 msgid "Slight"
-msgstr ""
+msgstr "Düşük"
 
 #: src/blueprints/fonts-page.blp:51
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Ölçekleme Oranı"
 
 #: src/blueprints/main-window.blp.in:6
 msgid "Refresh"
-msgstr ""
+msgstr "Tazeleme"
 
 #: src/blueprints/main-window.blp.in:7
 msgid "Import user settings"
-msgstr ""
+msgstr "Kullanıcı ayarlarını içe aktar"
 
 #: src/blueprints/main-window.blp.in:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Ayarları sıfırla"
 
 #: src/blueprints/main-window.blp.in:11
 msgid "About"
-msgstr ""
+msgstr "Hakkında"
 
 #: src/blueprints/main-window.blp.in:12
 msgid "Quit"
-msgstr ""
+msgstr "Çık"
 
 #: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
 msgid "Images"
-msgstr ""
+msgstr "Resimler"
 
 #: src/blueprints/main-window.blp.in:65
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Ayarlar uygulanamadı"
 
 #: src/blueprints/main-window.blp.in:71
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Ayarlar uygulandı"
 
 #: src/blueprints/main-window.blp.in:77
 msgid "User settings imported"
-msgstr ""
+msgstr "Kullanıcı ayarları içe aktarıldı"
 
 #: src/blueprints/main-window.blp.in:83
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Ayarlar yeniden yüklendi"
 
 #: src/blueprints/misc-page.blp:20 src/gdm_settings_gui.py:599
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Çeşitli"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Yeniden Başlatma Düğmelerini Pasifleştir"
 
 #: src/blueprints/misc-page.blp:32
 msgid "Disable User List"
-msgstr ""
+msgstr "Kullanıcı Listesini Pasifleştir"
 
 #: src/blueprints/misc-page.blp:41
 msgid "Enable Logo"
-msgstr ""
+msgstr "Logo'yu Etkinleştir"
 
 #: src/blueprints/misc-page.blp:42
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Kullanıcı listesinin altında logo gösterilme durumu"
 
 #: src/blueprints/misc-page.blp:51
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/blueprints/misc-page.blp:52
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Kullanıcı listesinin altında gösterilecek resim"
 
 #: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
-msgstr ""
+msgstr "Hoşgeldin Mesajı"
 
 #: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
-msgstr ""
+msgstr "Fare"
 
 #: src/blueprints/pointing-page.blp:23
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "İmleç Hızlandırma"
 
 #: src/blueprints/pointing-page.blp:25
 msgid "Automatic"
-msgstr ""
+msgstr "Kendiliğinden"
 
 #: src/blueprints/pointing-page.blp:26
 msgid "Disabled"
-msgstr ""
+msgstr "Pasif"
 
 #: src/blueprints/pointing-page.blp:27
 msgid "Enabled"
-msgstr ""
+msgstr "Etkin"
 
 #: src/blueprints/pointing-page.blp:32
 msgid "Inverse Scrolling"
-msgstr ""
+msgstr "Ters Kaydırma"
 
 #: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Kaydırma, görünümü değil içeriği taşır."
 
 #: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
 msgid "Pointer Speed"
-msgstr ""
+msgstr "İmleç Hızı"
 
 #: src/blueprints/pointing-page.blp:50
 msgid "Touchpad"
-msgstr ""
+msgstr "Dokunmatik Yüzey"
 
 #: src/blueprints/pointing-page.blp:53
 msgid "Tap to Click"
-msgstr ""
+msgstr "Tıklamak için Dokun"
 
 #: src/blueprints/pointing-page.blp:60
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Doğal Kaydırma"
 
 #: src/blueprints/pointing-page.blp:68
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "İki Parmak Kaydırma"
 
 #: src/blueprints/pointing-page.blp:69
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "İki parmağınızla kaydırın."
 
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Yazarken Devre Dışı Bırak"
 
 #: src/blueprints/sound-page.blp:20 src/gdm_settings_gui.py:596
 msgid "Sound"
-msgstr ""
+msgstr "Ses"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: src/blueprints/sound-page.blp:25
 msgid "Over Amplification"
-msgstr ""
+msgstr "Aşırı Yükseltme"
 
 #: src/blueprints/sound-page.blp:26
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Sesin %100’ü geçmesine izin ver"
 
 #: src/blueprints/sound-page.blp:35
 msgid "Event Sounds"
-msgstr ""
+msgstr "Olay Sesleri"
 
 #: src/blueprints/sound-page.blp:44
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Giriş Geri Bildirim Sesleri"
 
 #: src/blueprints/tools-page.blp:20
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Öntanımlı Shell Teması"
 
 #: src/blueprints/tools-page.blp:23
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Tepe Çubuğu İnce Ayarlarını Dahil Et"
 
 #: src/blueprints/tools-page.blp:30
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Öntanımlı shell temasını çıkart"
 
 #: src/blueprints/tools-page.blp:33
 msgid "Extract"
-msgstr ""
+msgstr "Çıkart"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Tweaks"
-msgstr ""
+msgstr "İnce Ayarlar"
 
 #: src/blueprints/top-bar-page.blp:23
 msgid "Change Text Color"
-msgstr ""
+msgstr "Metin Rengini Değiştir"
 
 #: src/blueprints/top-bar-page.blp:31
 msgid "Text Color"
-msgstr ""
+msgstr "Metin Rengi"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Tepe çubuğu metin rengi"
 
 #: src/blueprints/top-bar-page.blp:43
 msgid "Change Background Color"
-msgstr ""
+msgstr "Arka Plan Rengini Değiştir"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Tepe çubuğu arka plan rengi"
 
 #: src/blueprints/top-bar-page.blp:63
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Okları Pasifleştir"
 
 #: src/blueprints/top-bar-page.blp:72
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Yuvarlatılmış Köşeleri Pasifleştir"
 
 #: src/blueprints/top-bar-page.blp:82
 msgid "Clock"
-msgstr ""
+msgstr "Saat"
 
 #: src/blueprints/top-bar-page.blp:85
 msgid "Show Weekday"
-msgstr ""
+msgstr "Haftanın Günlerini Göster"
 
 #: src/blueprints/top-bar-page.blp:94
 msgid "Show Seconds"
-msgstr ""
+msgstr "Saniyeleri Göster"
 
 #: src/blueprints/top-bar-page.blp:103
 msgid "Time Format"
-msgstr ""
+msgstr "Zaman Biçimi"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "AM/PM"
-msgstr ""
+msgstr "ÖÖ/ÖS"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "24 Hours"
-msgstr ""
+msgstr "24 Saat"
 
 #: src/blueprints/top-bar-page.blp:109
 msgid "Power"
-msgstr ""
+msgstr "Güç"
 
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Batarya yüzdesini göster"
 
 #: src/dialogs.py:14
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr ""
+msgstr "Copyright © 2021 Mazhar Hussain"
 
 #: src/dialogs.py:15
 msgid "Homepage"
-msgstr ""
+msgstr "Ana sayfa"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:24
 msgid "translator-credits"
-msgstr ""
+msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/gdm_settings_gui.py:72
 msgid "Show application version"
-msgstr ""
+msgstr "Uygulama sürümünü göster"
 
 #: src/gdm_settings_gui.py:79
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
 #: src/gdm_settings_gui.py:81
 msgid "LEVEL"
-msgstr ""
+msgstr "SEVİYE"
 
 #: src/gdm_settings_gui.py:87
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "Ayrıntılı kipi etkinleştir (ayrıntı düzeyini 5 olarak ayarla)"
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
 #: src/gdm_settings_gui.py:95
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
 
 #: src/gdm_settings_gui.py:183
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
-msgstr ""
+msgstr "Uygulanamadı! Seçilen arka plan resmi bulunamadı. Lütfen tekrar seçin."
 
 #: src/gdm_settings_gui.py:215
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Uygulanan geçerli ekran ayarları"
 
 #: src/gdm_settings_gui.py:217
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Geçerli ekran ayarları uygulanamadı"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/gdm_settings_gui.py:228
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
+"Öntanımlı shell teması, 'default-extracted' olarak \"{path}\" dizinine "
+"çıkarıldı"
 
 #: src/gdm_settings_gui.py:230
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Öntanımlı shell teması çıkartılamadı"
 
 #: src/gdm_settings_gui.py:593
 msgid "Appearance"
-msgstr ""
+msgstr "Görünüm"
 
 #: src/gdm_settings_gui.py:595
 msgid "Top Bar"
-msgstr ""
+msgstr "Tepe Çubuğu"
 
 #: src/gdm_settings_gui.py:597
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Fare ve Dokunmatik Yüzey"
 
 #: src/gdm_settings_gui.py:600
 msgid "Tools"
-msgstr ""
+msgstr "Araçlar"
 
 #: src/gdm_settings_gui.py:653
 msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
 
 #: src/gdm_settings_gui.py:658
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Ayarlar sıfırlanamadı"
 
 #: src/gdm_settings_gui.py:662
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Ayarlar sıfırlandı"
 
 #: src/settings_manager.py:268
 msgid "saving default theme ..."
-msgstr ""
+msgstr "öntanımlı tema kaydediliyor ..."
