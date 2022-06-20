@@ -12,8 +12,11 @@ sys.path.insert(1, py_modules_dir)
 localedir = APPDIR + '@locale_dir@'
 gettext.install('@project_name@', localedir)
 
-from @py_module_name@ import colors
-logging.basicConfig(format=f'{colors.bold}%(levelname)s:{colors.reset} %(message)s')
+# Terminal Text Styles
+style_normal = '\033[0m'
+style_bold   = '\033[1m'
+
+logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)s')
 
 from @py_module_name@ import gui
 app = gui.GDM_Settings()
