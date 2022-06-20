@@ -5,25 +5,29 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-18 15:54+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-21 03:43+0000\n"
+"Last-Translator: oussaid1 <oussaid.abdellatif@gmail.com>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/blueprints/main-window.blp.in:17 src/info.py.in:3
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "اعدادات مدير الدخول"
 
 #: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
 #: src/dialogs.py:13
 msgid "A settings app for GNOME's Login Manager (GDM)"
-msgstr ""
+msgstr "تطبيق ﻹعدادات مديرالدخول  Gnome (GDM)"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/application_id.appdata.xml.in:16
