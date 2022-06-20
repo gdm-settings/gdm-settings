@@ -12,7 +12,6 @@ from gi.repository import Adw, Gtk, Gio, GLib, Gdk
 from .info import *
 from .utils import find_file
 from . import env
-env.INTERFACE_TYPE = env.InterfaceType.Graphical
 
 from . import dialogs
 from . import settings_manager

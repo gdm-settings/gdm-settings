@@ -110,16 +110,10 @@ class CommandElevator:
             raise ValueError("elevator is not of type 'str' or 'list'")
 
     def autodetect_elevator(self):
-        if env.INTERFACE_TYPE is env.InterfaceType.Graphical:
-            if env.PACKAGE_TYPE is env.PackageType.Flatpak:
-                self.elevator = "flatpak-spawn --host pkexec"
-            else:
-                self.elevator = "pkexec"
+        if env.PACKAGE_TYPE is env.PackageType.Flatpak:
+            self.elevator = "flatpak-spawn --host pkexec"
         else:
-            if env.PACKAGE_TYPE is env.PackageType.Flatpak:
-                self.elevator = "flatpak-spawn --host sudo"
-            else:
-                self.elevator = "sudo"
+            self.elevator = "pkexec"
 
     def add(self, cmd:str):
         """ Add a new command to the list """
