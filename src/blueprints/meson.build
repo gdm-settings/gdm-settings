@@ -1,23 +1,5 @@
-blueprint_compiler_prog = find_program('blueprint-compiler', required: false)
-if not blueprint_compiler_prog.found()
-  subproject('blueprint-compiler')
-  blueprint_compiler_prog = find_program('blueprint-compiler')
-endif
-
-blueprint_compiler = generator(
-  blueprint_compiler_prog,
-  output: '@BASENAME@.ui', #.replace('.blp', '.ui'),
-  arguments: ['compile', '@INPUT@', '--output', '@OUTPUT@'],
-)
-
-main_window_blp = configure_file(
-  input:  'main-window.blp.in',
-  output: 'main-window.blp',
-  configuration: conf,
-  install: false,
-)
-
-blueprints = [main_window_blp] + files(
+blueprints = files(
+  'main-window.blp',
   'app-preferences.blp',
   'appearance-page.blp',
   'fonts-page.blp',
@@ -29,26 +11,16 @@ blueprints = [main_window_blp] + files(
   'tools-page.blp',
 )
 
-#custom_target('ui_files',
-#  input: blueprints,
-#  output: project_name,
-#  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@INPUT@'],
-#  install: true,
-#  install_dir: data_dir,
-#)
-
-ui_files = blueprint_compiler.process(blueprints)
-
-#foreach file: ui_files
-#  install_data(file,
-#    install_dir: data_dir / project_name,
-#  )
-#endforeach
+blueprint_compiler = find_program('blueprint-compiler', required: false)
+if not blueprint_compiler.found()
+  subproject('blueprint-compiler')
+  blueprint_compiler = find_program('blueprint-compiler')
+endif
 
 custom_target('ui_files',
-  input: ui_files,
+  input: blueprints,
   output: project_name,
-  command: [find_program('install'), '-Dm644', '-t', '@OUTPUT@', '@INPUT@'],
+  command: [blueprint_compiler, 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
   install: true,
   install_dir: data_dir,
 )
