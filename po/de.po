@@ -5,13 +5,14 @@
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2022.
 # J. Lavoie <j.lavoie@net-c.ca>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# jagfwajgf <juri26@outlook.de>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-18 15:54+0500\n"
-"PO-Revision-Date: 2022-06-18 04:19+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-06-21 03:43+0000\n"
+"Last-Translator: jagfwajgf <juri26@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
 #: src/blueprints/main-window.blp.in:17 src/info.py.in:3
@@ -370,7 +371,7 @@ msgstr "Aktuelle Bildschirmeinstellungen anwenden"
 
 #: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr "Auflösung, Aktulisierungsrate, Bildschirmpositionen, etc."
+msgstr "Auflösung, Aktulisierungsrate, Bildschirmpositionen, etc"
 
 #: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
 msgid "Apply"
@@ -436,7 +437,7 @@ msgstr "Subpixel"
 
 #: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
-msgstr "Hinting"
+msgstr "Hinweis"
 
 #: src/blueprints/fonts-page.blp:43
 msgid "Full"
