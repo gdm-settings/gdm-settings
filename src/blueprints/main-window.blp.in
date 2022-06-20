@@ -8,6 +8,7 @@ menu app_menu {
     item (_("Reset settings"), "app.reset_settings")
   }
   section {
+    item (_("App Preferences"), "app.preferences")
     item (_("About"), "app.about")
     item (_("Quit"), "app.quit")
   }
