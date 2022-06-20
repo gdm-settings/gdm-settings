@@ -168,6 +168,13 @@ class GDM_Settings(Adw.Application, App_Utils):
         dialog = dialogs.AboutDialog (widgets.main_window)
         dialog.present()
 
+    def show_app_preferences(self):
+        file = find_file(f"{project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
+        builder = Gtk.Builder.new_from_file(file)
+        pref_window = builder.get_object('app_preferences_window')
+        pref_window.set_transient_for(widgets.main_window)
+        pref_window.present()
+
     def on_apply(self, widget):
         try:
             self.set_settings()
@@ -602,6 +609,7 @@ class GDM_Settings(Adw.Application, App_Utils):
     def create_actions(self):
         self.create_action("quit", lambda x,y: self.quit())
         self.create_action("about", lambda x,y: self.show_about_dialog())
+        self.create_action("preferences", lambda x,y: self.show_app_preferences())
         self.create_action("import_user_settings", lambda x,y: self.import_user_settings())
         self.create_action("reload_settings", lambda x,y: self.reload_settings_to_widgets())
         self.create_action("reset_settings", lambda x,y: self.reset_settings())

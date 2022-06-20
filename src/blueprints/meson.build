@@ -18,6 +18,7 @@ main_window_blp = configure_file(
 )
 
 blueprints = [main_window_blp] + files(
+  'app-preferences.blp',
   'appearance-page.blp',
   'fonts-page.blp',
   'display-page.blp',

@@ -1,0 +1,26 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.PreferencesWindow app_preferences_window {
+  title: _("App Preferences");
+
+  Adw.PreferencesPage {
+
+    Adw.PreferencesGroup {
+      title: _("Shell Theme");
+
+      Adw.ComboRow {
+        title: _("Apply Method");
+        subtitle: _("Should the theme be overlayed on top of the default theme?");
+        model: StringList { strings [_("No Overlay"), _("Overlay Resources"), _("Complete Overlay")] };
+      }
+    }
+
+    /*
+    Adw.PreferencesGroup {
+      title: _("Ignore (Do Not Delete) Files");
+      description: _("Filenames should be relative to /etc/dconf/db/gdm.d/");
+    }
+    */
+  }
+}
