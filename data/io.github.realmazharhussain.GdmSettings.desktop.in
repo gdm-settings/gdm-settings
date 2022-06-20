@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=Application
 Name=Login Manager Settings
-Comment=A settings app for GNOME's Login Manager (GDM)
-Icon=@application_id@
+Comment=A settings app for GNOME's Login Manager, GDM
+Icon=io.github.realmazharhussain.GdmSettings
 Exec=gdm-settings
 TryExec=gdm-settings
 Terminal=false
 StartupNotify=true
-StartupWMClass=@application_id@
+StartupWMClass=io.github.realmazharhussain.GdmSettings
 Categories=GNOME;GTK;System;Settings;DesktopSettings;

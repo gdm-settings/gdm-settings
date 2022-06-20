@@ -1,9 +1,13 @@
 #!/bin/bash
-progDir=$(dirname "$(realpath "$0")")
-pot_file="$progDir"/gdm-settings.pot
-cd "$progDir"/..
-POTFILES=(data{,/gschemas}/application_id.* src/*.py*)
-BLPFILES=(src/blueprints/*.blp*)
-rm -f "$pot_file"
-xgettext --add-comments=Translators -o "$pot_file" "${POTFILES[@]}"
-xgettext --add-comments=Translators -j -L ObjectiveC --from-code=UTF-8 -o "$pot_file" "${BLPFILES[@]}"
+po_dir=$(dirname "$(realpath "$0")")
+
+options=(
+  -f "$po_dir"/POTFILES.in
+  -o "$po_dir"/gdm-settings.pot
+  --add-comments=Translators
+  --keyword=_
+  --keyword=C_:1c,2
+  --from-code=UTF-8
+)
+
+xgettext "${options[@]}" 2>/dev/null

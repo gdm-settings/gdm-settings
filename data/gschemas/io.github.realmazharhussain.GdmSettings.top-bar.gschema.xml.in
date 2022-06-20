@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.top-bar" path="@schema_path@top-bar/">
+  <schema id="io.github.realmazharhussain.GdmSettings.top-bar" path="/io/github/realmazharhussain/GdmSettings/top-bar/">
 
     <key name="disable-top-bar-arrows" type="b">
       <default>false</default>

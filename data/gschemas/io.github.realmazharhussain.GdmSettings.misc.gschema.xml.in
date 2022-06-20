@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.misc" path="@schema_path@misc/">
+  <schema id="io.github.realmazharhussain.GdmSettings.misc" path="/io/github/realmazharhussain/GdmSettings/misc/">
     
     <key name="enable-welcome-message" type="b">
       <default>false</default>

@@ -5,11 +5,11 @@
   <project_license>AGPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
 
-  <id>@application_id@</id>
-  <launchable type="desktop-id">@application_id@.desktop</launchable>
+  <id>io.github.realmazharhussain.GdmSettings</id>
+  <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
 
   <name>Login Manager Settings</name>
-  <summary>A settings app for GNOME's Login Manager (GDM)</summary>
+  <summary>A settings app for GNOME's Login Manager, GDM</summary>
 
   <description>
      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
@@ -18,6 +18,10 @@
         and night light settings, among other things.
      </p>
   </description>
+
+  <custom>
+    <value key="GnomeSoftware::key-colors">[(100, 180, 255), (50, 100, 200)]</value>
+  </custom>
 
   <categories>
     <category>GNOME</category>
@@ -68,6 +72,11 @@
   </screenshots>
 
   <releases>
+    <release version="0.6.1" date="2022-06-20">
+      <description>
+        <p>Updated the app store page of app</p>
+      </description>
+    </release>
     <release version="0.6" date="2022-06-20">
       <description>
         <p>Added:</p>
@@ -105,9 +114,8 @@
     </release>
   </releases>
 
-  <url type="homepage">https://github.com/realmazharhussain/gdm-settings</url>
+  <url type="homepage">https://realmazharhussain.github.io/gdm-settings</url>
   <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
-  <!--
-  <url type="donation">https://www.gnome.org/friends/</url>
-  -->
+  <url type="translate">https://github.com/realmazharhussain/gdm-settings/wiki/Translation-Manual</url>
+  <url type="donation">https://patreon.com/mazharhussain</url>
 </component>

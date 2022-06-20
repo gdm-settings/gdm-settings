@@ -1,12 +1,6 @@
-_appstream_file = configure_file(
-  input:  'application_id.appdata.xml.in',
-  output: '@BASENAME@',
-  configuration: conf,
-)
-
 appstream_file = i18n.merge_file(
-  input: _appstream_file,
-  output: application_id + '.appdata.xml',
+  input:  'io.github.realmazharhussain.GdmSettings.appdata.xml.in',
+  output: '@BASENAME@',
   po_dir: '../po',
   install: true,
   install_dir: data_dir / 'metainfo',
@@ -19,15 +13,9 @@ if appstream_util.found()
   )
 endif
 
-_desktop_file = configure_file(
-  input:  'application_id.desktop.in',
-  output: '@BASENAME@',
-  configuration: conf,
-)
-
 desktop_file = i18n.merge_file(
-  input: _desktop_file,
-  output: application_id + '.desktop',
+  input:  'io.github.realmazharhussain.GdmSettings.desktop.in',
+  output: '@BASENAME@',
   type: 'desktop',
   po_dir: '../po',
   install: true,

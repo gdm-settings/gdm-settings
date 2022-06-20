@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="@application_id@.appearance" path="@schema_path@appearance/">
+  <schema id="io.github.realmazharhussain.GdmSettings.appearance" path="/io/github/realmazharhussain/GdmSettings/appearance/">
 
 	 <key name="shell-theme" type="s">
 	   <default>"default"</default>

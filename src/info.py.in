@@ -1,9 +1,8 @@
 '''Information about the application itself got from the build system'''
 
 application_name = _("Login Manager Settings")
-project_name     =   '@project_name@'
-application_id   =   '@application_id@'
-version          =   '@version@'
-build_type       =   '@build_type@'
-
-py_modules_dir   =   '@py_modules_dir@'
+application_id   = 'io.github.realmazharhussain.GdmSettings'
+project_name     = 'gdm-settings'
+version          = '@version@'
+build_type       = '@build_type@'
+py_modules_dir   = '@py_modules_dir@'
