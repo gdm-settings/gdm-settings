@@ -14,6 +14,7 @@ data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
 data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
 data/io.github.realmazharhussain.GdmSettings.desktop.in
+src/app.py
 src/blueprints/app-preferences.blp
 src/blueprints/appearance-page.blp
 src/blueprints/display-page.blp
@@ -25,6 +26,5 @@ src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
 src/dialogs.py
-src/gui.py
 src/info.py.in
 src/settings_manager.py
