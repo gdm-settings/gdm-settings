@@ -18,6 +18,7 @@ style_bold   = '\033[1m'
 
 logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)s')
 
-from @py_module_name@ import gui
-app = gui.GDM_Settings()
-exit(app.run(sys.argv))
+from @py_module_name@.gui import GDM_Settings
+app = GDM_Settings()
+return_value = app.run(sys.argv)
+exit(return_value)
