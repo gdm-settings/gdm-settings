@@ -9,61 +9,18 @@ import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, GLib, Gdk
 
-from .info import *
-from .utils import find_file
-from . import env
-
-from . import dialogs
-from . import settings_manager
+from gdm_settings import env
+from gdm_settings import info
+from gdm_settings import utils
+from gdm_settings import dialogs
+from gdm_settings import settings_manager
 
 # Namespace to contain widgets
 widgets = SimpleNamespace()
 
-class App_Utils:
-    def connect_signal(self, widget, signal, function):
-        getattr(widgets, widget).connect(signal, function)
-
-    def create_action(self, action_name, function):
-        action = Gio.SimpleAction(name=action_name)
-        action.connect("activate", function)
-        self.add_action(action)
-        setattr(widgets, action_name+'_action', action)
-
-    def add_page_to_page_stack(self, title, name=None):
-        name = name or title.lower().replace(" ", "_")
-        page_content = getattr(widgets, name + '_page_content')
-        page = widgets.page_stack.add_child(page_content)
-        page.set_name(name)
-        page.set_title(title)
-
-    def set_comborow_setting(self, name):
-        comborow = getattr(widgets, name+'_comborow')
-        setattr(self.settings, name, comborow.get_selected_item().get_string())
-
-    def set_switch_setting(self, name):
-        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
-        setattr(self.settings, name, switch.get_active())
-
-    def set_color_setting(self, name):
-        color_button = getattr(widgets, name+'_button')
-        setattr(self.settings, name, color_button.get_rgba().to_string())
-
-    def set_file_chooser_setting(self, name):
-        file_chooser = getattr(widgets, name+'_chooser')
-        if file := file_chooser.get_file():
-            setattr(self.settings, name, file.get_path())
-
-    def set_font_setting(self, name):
-        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
-        setattr(self.settings, name, font_button.get_font())
-
-    def set_spinbutton_setting(self, name):
-        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
-        setattr(self.settings, name, spinbutton.get_value())
-
-class GDM_Settings(Adw.Application, App_Utils):
+class GDM_Settings(Adw.Application):
     def __init__(self):
-        Adw.Application.__init__(self, application_id=application_id)
+        Adw.Application.__init__(self, application_id=info.application_id)
 
         self.add_main_option("version", 0,
                              GLib.OptionFlags.NONE,
@@ -99,7 +56,55 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.connect("handle-local-options", self.handle_local_options)
         self.connect("shutdown", self.on_shutdown)
 
-    ## Signal Handlers ##
+
+    ### Some utility functions ###
+
+    def connect_signal(self, widget, signal, function):
+        getattr(widgets, widget).connect(signal, function)
+
+    def create_action(self, action_name, function):
+        action = Gio.SimpleAction(name=action_name)
+        action.connect("activate", function)
+        self.add_action(action)
+        setattr(widgets, action_name+'_action', action)
+
+    def add_page_to_page_stack(self, title, name=None):
+        name = name or title.lower().replace(" ", "_")
+        page_content = getattr(widgets, name + '_page_content')
+        page = widgets.page_stack.add_child(page_content)
+        page.set_name(name)
+        page.set_title(title)
+
+
+    ### Settings setter functions ###
+
+    def set_comborow_setting(self, name):
+        comborow = getattr(widgets, name+'_comborow')
+        setattr(self.settings, name, comborow.get_selected_item().get_string())
+
+    def set_switch_setting(self, name):
+        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
+        setattr(self.settings, name, switch.get_active())
+
+    def set_color_setting(self, name):
+        color_button = getattr(widgets, name+'_button')
+        setattr(self.settings, name, color_button.get_rgba().to_string())
+
+    def set_file_chooser_setting(self, name):
+        file_chooser = getattr(widgets, name+'_chooser')
+        if file := file_chooser.get_file():
+            setattr(self.settings, name, file.get_path())
+
+    def set_font_setting(self, name):
+        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
+        setattr(self.settings, name, font_button.get_font())
+
+    def set_spinbutton_setting(self, name):
+        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
+        setattr(self.settings, name, spinbutton.get_value())
+
+
+    ## Core App Signal Handlers ##
 
     def on_activate(self, app):
         logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
@@ -121,7 +126,7 @@ class GDM_Settings(Adw.Application, App_Utils):
     def handle_local_options(self, klass, options):
 
         if options.contains("version"):
-            print (application_name, f"({project_name})", f"v{version}")
+            print (info.application_name, f"({info.project_name})", f"v{info.version}")
             return 0
 
         def set_logging_level(verbosity):
@@ -163,12 +168,15 @@ class GDM_Settings(Adw.Application, App_Utils):
         self.save_window_state()
         self.settings.cleanup()
 
+
+    ### Signal handlers for Widgets ###
+
     def show_about_dialog(self):
         dialog = dialogs.AboutDialog (widgets.main_window)
         dialog.present()
 
     def show_app_preferences(self):
-        file = find_file(f"{project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
+        file = utils.find_file(f"{info.project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
         builder = Gtk.Builder.new_from_file(file)
         pref_window = builder.get_object('app_preferences_window')
         pref_window.set_transient_for(widgets.main_window)
@@ -236,22 +244,12 @@ class GDM_Settings(Adw.Application, App_Utils):
             toast.set_title(_("Failed to extract default theme"))
         widgets.main_toast_overlay.add_toast(toast)
 
-    #def on_extracted_theme_destination_chooser_response(self, widget, response):
-    #    if response == Gtk.ResponseType.OK:
-    #        toast = Adw.Toast(timeout=2, priority="high")
-    #        widgets.main_toast_overlay.add_toast(toast)
-    #        target_dir = widgets.extracted_theme_destination_chooser.get_file().get_path()
-    #        if self.settings.extract_default_theme(target_dir):
-    #            toast.set_title(_(f"Default theme saved as '{target_dir}/default-extracted'"))
-    #        else:
-    #            toast.set_title(_("Failed to extract default theme"))
-    #    widgets.extracted_theme_destination_chooser.hide()
 
-    ## Other methods ##
+    ### Other functions ###
 
     def initialize_settings(self):
         self.settings = settings_manager.Settings()
-        self.window_state = Gio.Settings(schema_id=f'{application_id}.window-state')
+        self.window_state = Gio.Settings(schema_id=f'{info.application_id}.window-state')
 
     def get_widgets(self):
 
@@ -362,11 +360,11 @@ class GDM_Settings(Adw.Application, App_Utils):
 
         # Initialize Builder
         self.builder = Gtk.Builder()
-        self.builder.set_translation_domain(project_name)
+        self.builder.set_translation_domain(info.project_name)
 
         # Load UI files
         for ui_file_name in ui_files:
-            file = find_file(f"{project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
+            file = utils.find_file(f"{info.project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
             self.builder.add_from_file(file)
 
         # Get Widgets from builder ####
@@ -374,12 +372,12 @@ class GDM_Settings(Adw.Application, App_Utils):
             setattr(widgets, widget, self.builder.get_object(widget))
 
     def bind_to_gsettings(self):
-        tools_gsettings = Gio.Settings(schema_id=f"{application_id}.tools")
+        tools_gsettings = Gio.Settings(schema_id=f"{info.application_id}.tools")
         tools_gsettings.bind('top-bar-tweaks', widgets.include_top_bar_tweaks_switch, 'active', Gio.SettingsBindFlags.DEFAULT)
 
     def set_widget_properties(self):
         # Main Window
-        if build_type != 'release':
+        if info.build_type != 'release':
             widgets.main_window.add_css_class('devel')
         # Paned
         widgets.paned.set_shrink_start_child(False)
