@@ -16,9 +16,9 @@ configure_file(
 
 source_files = files(
   '__init__.py',
+  'app.py',
   'dialogs.py',
   'env.py',
-  'gui.py',
   'settings_manager.py',
   'utils.py',
 )
