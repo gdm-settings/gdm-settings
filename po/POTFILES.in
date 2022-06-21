@@ -1,17 +1,17 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/gschemas/application_id.appearance.gschema.xml
-data/gschemas/application_id.fonts.gschema.xml
-data/gschemas/application_id.gschema.xml
-data/gschemas/application_id.misc.gschema.xml
-data/gschemas/application_id.night-light.gschema.xml
-data/gschemas/application_id.pointing.gschema.xml
-data/gschemas/application_id.pointing.mouse.gschema.xml
-data/gschemas/application_id.pointing.touchpad.gschema.xml
-data/gschemas/application_id.sound.gschema.xml
-data/gschemas/application_id.tools.gschema.xml
-data/gschemas/application_id.top-bar.gschema.xml
-data/gschemas/application_id.window-state.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.appearance.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.fonts.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.misc.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.night-light.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.mouse.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.touchpad.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.sound.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.tools.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.top-bar.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettigs.window-state.gschema.xml
 data/io.github.realmazharhussain.GdmSettigs.appdata.xml.in
 data/io.github.realmazharhussain.GdmSettigs.desktop.in
 src/blueprints/app-preferences.blp
