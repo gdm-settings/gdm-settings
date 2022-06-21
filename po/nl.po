@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-21 08:42+0500\n"
-"PO-Revision-Date: 2022-06-18 04:19+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-06-22 04:54+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -29,7 +29,6 @@ msgstr "Soort achtergrond"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Of de GDM-achtergrond een afbeelding, kleur of blanco dient te zijn."
 
@@ -177,7 +176,6 @@ msgstr "Aanmeldvenstervoorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
 
@@ -198,7 +196,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Bijgewerkt: de bijbehorende winkelpagina"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -310,32 +308,31 @@ msgstr "Urdu"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "Toepassingsvoorkeuren"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
-msgstr "Standaard Shell-thema"
+msgstr "Shell-thema"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Instelmethode"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "Moet het thema worden ingesteld bovenop het standaardthema?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Niet bovenop"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Deels bovenop"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Volledig bovenop"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
