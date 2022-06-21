@@ -1,19 +1,19 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/gschemas/io.github.realmazharhussain.GdmSettigs.appearance.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.fonts.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.misc.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.night-light.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.mouse.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.pointing.touchpad.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.sound.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.tools.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.top-bar.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettigs.window-state.gschema.xml
-data/io.github.realmazharhussain.GdmSettigs.appdata.xml.in
-data/io.github.realmazharhussain.GdmSettigs.desktop.in
+data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.fonts.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.misc.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.sound.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
+data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
+data/io.github.realmazharhussain.GdmSettings.desktop.in
 src/blueprints/app-preferences.blp
 src/blueprints/appearance-page.blp
 src/blueprints/display-page.blp
