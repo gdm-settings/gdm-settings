@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-21 08:42+0500\n"
-"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -30,7 +30,6 @@ msgstr "סוג רקע"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "האם הרקע של GDM אמור להיות תמונה, צבע או ריק."
 
@@ -173,9 +172,8 @@ msgstr "הגדרות מנהל הכניסה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏(GDM)"
+msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏- GDM"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -193,7 +191,7 @@ msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "עמוד חנות היישומים של היישום התעדכן"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -296,32 +294,31 @@ msgstr "אורדו"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "העדפות היישום"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
-msgstr "ערכת העיצוב של המעטפת כברירת מחדל"
+msgstr "ערכת עיצוב המעטפת"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "החלת שיטה"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "האם ערכת העיצוב אמורה להיות מעל לערכת העיצוב כברירת מחדל?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "לא מעל"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "משאבי על"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "לגמרי מעל"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
