@@ -3,10 +3,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-21 08:42+0500\n"
-"PO-Revision-Date: 2022-06-18 04:19+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-06-22 04:54+0000\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -26,7 +26,6 @@ msgstr "Tipo de fondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Si el fondo de GDM debe ser una imagen, un color o ninguno."
 
@@ -174,11 +173,10 @@ msgstr "Configuración del gestor de inicio de sesión"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
-"Una aplicación de configuración para el Gestor de inicio de sesión de GNOME "
-"(GDM)"
+"Una aplicación de configuración para el Gestor de Inicio de Sesión de GNOME, "
+"GDM"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -197,7 +195,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Actualizada la página de la tienda de aplicaciones"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -311,32 +309,31 @@ msgstr "Urdu"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "Preferencias de la aplicación"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
-msgstr "Tema de shell predeterminado"
+msgstr "Tema de shell"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Aplicar método"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "¿Debe superponerse el tema sobre el tema predeterminado?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Sin superposición"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Recursos superpuestos"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Superposición completa"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
