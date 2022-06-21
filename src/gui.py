@@ -129,38 +129,21 @@ class GDM_Settings(Adw.Application):
             print (info.application_name, f"({info.project_name})", f"v{info.version}")
             return 0
 
-        def set_logging_level(verbosity):
-            # Logging Levels are integers with following values
-            # logging.CRITICAL = 50
-            # logging.ERROR    = 40
-            # logging.WARNING  = 30
-            # logging.INFO     = 20
-            # logging.DEBUG    = 10
-            # and integer values above 50 disable logging completely
-            # But this is what the values of our app's --verbosity option represent
-            # 0 = DISABLE, 1 = CRITICAL, 2 = ERROR, 3 = WARNING, 4 = INFO, 5 = DEBUG
-            # So, we use following formula to get appropriate integer that represents chosen level
-            # For example, with --verbosity=0 we get, (6-verbosity)*10 = (6-0)*10 = 6*10 = 60 (no logging)
-            #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
-            #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
-            level = (6 - verbosity) * 10
-            logging.root.setLevel(level)
-
         if options.contains("verbose"):
-            set_logging_level (5)
+            self.set_logging_level (5)
 
         if options.contains("quiet"):
-            set_logging_level (0)
+            self.set_logging_level (0)
 
         if verbosity_gvariant := options.lookup_value("verbosity", GLib.VariantType("i")):
             verbosity_level = verbosity_gvariant.get_int32()
 
             if verbosity_level >= 0 and verbosity_level <= 5:
-                set_logging_level (verbosity_level)
+                self.set_logging_level (verbosity_level)
             else:
                 print (verbosity_level, "is an invalid verbosity level. Accepted values are 0 to 5.", file=sys.stderr)
                 print ("Assuming Verbosity level 4.", file=sys.stderr)
-                set_logging_level (4)
+                self.set_logging_level (4)
 
         return -1
 
@@ -246,6 +229,23 @@ class GDM_Settings(Adw.Application):
 
 
     ### Other functions ###
+
+    def set_logging_level(self, verbosity):
+        # Logging Levels are integers with following values
+        # logging.CRITICAL = 50
+        # logging.ERROR    = 40
+        # logging.WARNING  = 30
+        # logging.INFO     = 20
+        # logging.DEBUG    = 10
+        # and integer values above 50 disable logging completely
+        # But this is what the values of our app's --verbosity option represent
+        # 0 = DISABLE, 1 = CRITICAL, 2 = ERROR, 3 = WARNING, 4 = INFO, 5 = DEBUG
+        # So, we use following formula to get appropriate integer that represents chosen level
+        # For example, with --verbosity=0 we get, (6-verbosity)*10 = (6-0)*10 = 6*10 = 60 (no logging)
+        #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
+        #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
+        level = (6 - verbosity) * 10
+        logging.root.setLevel(level)
 
     def initialize_settings(self):
         self.settings = settings_manager.Settings()
