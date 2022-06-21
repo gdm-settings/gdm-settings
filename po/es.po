@@ -27,7 +27,6 @@ msgstr "Tipo de fondo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 #, fuzzy
-#| msgid "Wether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Si el fondo de GDM debe ser una imagen, un color o ninguno."
 
@@ -176,7 +175,6 @@ msgstr "Configuración del gestor de inicio de sesión"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
 #, fuzzy
-#| msgid "A settings app for GNOME's Login Manager (GDM)"
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 "Una aplicación de configuración para el Gestor de inicio de sesión de GNOME "
@@ -317,7 +315,6 @@ msgstr ""
 
 #: src/blueprints/app-preferences.blp:10
 #, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Shell Theme"
 msgstr "Tema de shell predeterminado"
 
