@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 15:54+0500\n"
+"POT-Creation-Date: 2022-06-21 08:42+0500\n"
 "PO-Revision-Date: 2022-06-18 04:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -19,175 +19,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.13-dev\n"
 
-#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
-#: src/blueprints/main-window.blp.in:17 src/info.py.in:3
-msgid "Login Manager Settings"
-msgstr "Aanmeldvenstervoorkeuren"
-
-#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
-#: src/dialogs.py:13
-msgid "A settings app for GNOME's Login Manager (GDM)"
-msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
-
-#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/application_id.appdata.xml.in:16
-msgid ""
-"Change GDM Settings; Apply theme and background, change cursor theme, icon "
-"theme and night light settings, among other things."
-msgstr ""
-"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere "
-"achtergrond, een ander cursor- of pictogramthema, pas de "
-"nachtlichtvoorkeuren aan en nog veel meer."
-
-#: data/application_id.appdata.xml.in:40 src/dialogs.py:18
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: data/application_id.appdata.xml.in:73
-msgid "Added:"
-msgstr "Nieuw:"
-
-#: data/application_id.appdata.xml.in:75
-msgid "Support for verbose/quiet mode"
-msgstr "Ondersteuning voor uitgebreide en stille modi"
-
-#: data/application_id.appdata.xml.in:76
-msgid "Support for setting manual verbosity level"
-msgstr "Ondersteuning voor het instellen van het uitgebreide niveau"
-
-#: data/application_id.appdata.xml.in:77
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr ""
-"Opdrachtregelopties omtrent uitgebreide/stille modus en zelfgekozen "
-"foutopsporingsniveau"
-
-#: data/application_id.appdata.xml.in:78
-msgid "Command-line option --version"
-msgstr "Opdrachtregeloptie --version"
-
-#: data/application_id.appdata.xml.in:79
-msgid "Wider application window on first launch"
-msgstr "Breder toepassingsvenster na eerste keer opstarten"
-
-#: data/application_id.appdata.xml.in:81
-msgid "Fixed:"
-msgstr "Opgelost:"
-
-#: data/application_id.appdata.xml.in:83
-msgid "Welcome message could not contain single qoutes"
-msgstr "Het welkomstbericht kon geen enkele aanhalingstekens tonen"
-
-#: data/application_id.appdata.xml.in:84
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
-"Aanmeldbeheer (GDM) werkte niet op systemet met SELinux (met name Fedora)"
-
-#: data/application_id.appdata.xml.in:85
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"Gemaximaliseerde of vergrote toepassingsvensters zagen er niet goed uit (de "
-"inhoud was te klein)"
-
-#: data/application_id.appdata.xml.in:86
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Er werd een verkeerde bestemmingsmap getoond tijdens het uitpakken van het "
-"standaardthema"
-
-#: data/application_id.appdata.xml.in:87
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"De knop ‘Toepassen’ werkte niet als de gekozen achtergrondafbeelding vooraf "
-"verwijderd was"
-
-#: data/application_id.appdata.xml.in:88
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "De knop ‘Toepassen’ pastte slechts enkele voorkeuren toe op Ubuntu"
-
-#: data/application_id.appdata.xml.in:90
-msgid "New Translations:"
-msgstr "Nieuwe vertalingen:"
-
-#: data/application_id.appdata.xml.in:92
-msgid "French"
-msgstr "Frans"
-
-#: data/application_id.appdata.xml.in:93
-msgid "Hebrew"
-msgstr "Hebreeuws"
-
-#: data/application_id.appdata.xml.in:94
-msgid "Persian"
-msgstr "Perzisch"
-
-#: data/application_id.appdata.xml.in:96
-msgid "Updated Translations:"
-msgstr "Bijgewerkte vertalingen:"
-
-#: data/application_id.appdata.xml.in:98
-msgid "Dutch"
-msgstr "Nederlands"
-
-#: data/application_id.appdata.xml.in:99
-msgid "German"
-msgstr "Duits"
-
-#: data/application_id.appdata.xml.in:100
-msgid "Occitan"
-msgstr "Occitaans"
-
-#: data/application_id.appdata.xml.in:101
-msgid "Spanish"
-msgstr "Spaans"
-
-#: data/application_id.appdata.xml.in:102
-msgid "Urdu"
-msgstr "Urdu"
-
-#: data/gschemas/application_id.appearance.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
 msgstr "Themanaam"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
 msgstr "Soort achtergrond"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:22
-msgid "Wether GDM background should be an Image, Color or None."
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#, fuzzy
+#| msgid "Wether GDM background should be an Image, Color or None."
+msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Of de GDM-achtergrond een afbeelding, kleur of blanco dient te zijn."
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
 msgstr "Achtergrondafbeelding"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
 msgstr "Het afbeeldingsbestand dat wordt ingesteld als achtergrond"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
 msgstr "Of nachtlicht is ingeschakeld"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:8
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
@@ -195,11 +65,11 @@ msgstr ""
 "De nachtlichtmodus past de kleurtemperatuur van uw scherm, na zonsondergang "
 "of op vaste, ingestelde tijden, aan."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:13
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
 msgstr "Kleurtemperatuur indien ingeschakeld"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:14
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
@@ -207,11 +77,11 @@ msgstr ""
 "Deze temperatuur, in Kelvin, wordt gebruikt om de schermtint aan te passen "
 "als nachtlicht is ingeschakeld. Hoger = blauwer; lager = roder."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:19
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
 msgstr "Zonsopkomst en -ondergang volgen"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
@@ -219,13 +89,13 @@ msgstr ""
 "Bepaal de zonsopkomst en -ondergangtijden automatisch op basis van de "
 "huidige locatie."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:25
-#: data/gschemas/application_id.night-light.gschema.xml.in:39
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
 msgstr "Inschakelen om (uur)"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:26
-#: data/gschemas/application_id.night-light.gschema.xml.in:40
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
@@ -233,11 +103,11 @@ msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "starttijd aangehouden."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:32
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Inschakelen om (minuut)"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:33
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
@@ -245,24 +115,24 @@ msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "starttijd aangehouden."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:46
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Uitschakelen om (minuut)"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:47
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "eindtijd aangehouden."
 
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "Cursorsnelheid"
 
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -271,34 +141,204 @@ msgstr ""
 "tussen [-1 en 1] (geen versnelling tot hoge versnelling). 0 = "
 "systeemstandaard."
 
-#: data/gschemas/application_id.tools.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
 "Of de bovenbalkaanpassingen van het gekozen thema dienen te worden gebruikt"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
 msgstr "Of pijlen op de bovenbalk dienen te worden uitgeschakeld"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:12
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
 msgstr "Of afgeronde hoeken van de bovenbalk dienen te worden uitgeschakeld"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:17
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
 msgstr "Of de tekstkleur op de bovenbalk moet worden aangepast"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
 msgstr "Tekstkleur op bovenbalk"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:27
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
 msgstr "Of de achtergrond van de bovenbalk moet worden gewijzigd"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:32
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
 msgstr "Achtergrondkleur van bovenbalk"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: src/blueprints/main-window.blp:18 src/info.py.in:3
+msgid "Login Manager Settings"
+msgstr "Aanmeldvenstervoorkeuren"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#, fuzzy
+#| msgid "A settings app for GNOME's Login Manager (GDM)"
+msgid "A settings app for GNOME's Login Manager, GDM"
+msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere "
+"achtergrond, een ander cursor- of pictogramthema, pas de "
+"nachtlichtvoorkeuren aan en nog veel meer."
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: src/dialogs.py:18
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+msgid "Updated the app store page of app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Added:"
+msgstr "Nieuw:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "Support for verbose/quiet mode"
+msgstr "Ondersteuning voor uitgebreide en stille modi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+msgid "Support for setting manual verbosity level"
+msgstr "Ondersteuning voor het instellen van het uitgebreide niveau"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgstr ""
+"Opdrachtregelopties omtrent uitgebreide/stille modus en zelfgekozen "
+"foutopsporingsniveau"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid "Command-line option --version"
+msgstr "Opdrachtregeloptie --version"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Wider application window on first launch"
+msgstr "Breder toepassingsvenster na eerste keer opstarten"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid "Fixed:"
+msgstr "Opgelost:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Welcome message could not contain single qoutes"
+msgstr "Het welkomstbericht kon geen enkele aanhalingstekens tonen"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid ""
+"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+msgstr ""
+"Aanmeldbeheer (GDM) werkte niet op systemet met SELinux (met name Fedora)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid ""
+"Maximized or big application window looked bad (content was much smaller "
+"than the window)"
+msgstr ""
+"Gemaximaliseerde of vergrote toepassingsvensters zagen er niet goed uit (de "
+"inhoud was te klein)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid ""
+"Showed wrong destination directory/folder path while extracting default "
+"shell theme"
+msgstr ""
+"Er werd een verkeerde bestemmingsmap getoond tijdens het uitpakken van het "
+"standaardthema"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Clicking 'Apply' did nothing if selected background image was deleted before "
+"applying"
+msgstr ""
+"De knop ‘Toepassen’ werkte niet als de gekozen achtergrondafbeelding vooraf "
+"verwijderd was"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgstr "De knop ‘Toepassen’ pastte slechts enkele voorkeuren toe op Ubuntu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "New Translations:"
+msgstr "Nieuwe vertalingen:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "French"
+msgstr "Frans"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Hebrew"
+msgstr "Hebreeuws"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Persian"
+msgstr "Perzisch"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Updated Translations:"
+msgstr "Bijgewerkte vertalingen:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+msgid "Dutch"
+msgstr "Nederlands"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+msgid "German"
+msgstr "Duits"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+msgid "Occitan"
+msgstr "Occitaans"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+msgid "Spanish"
+msgstr "Spaans"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+msgid "Urdu"
+msgstr "Urdu"
+
+#: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
+msgid "App Preferences"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:10
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Shell Theme"
+msgstr "Standaard Shell-thema"
+
+#: src/blueprints/app-preferences.blp:13
+msgid "Apply Method"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:14
+msgid "Should the theme be overlayed on top of the default theme?"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "No Overlay"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "Overlay Resources"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "Complete Overlay"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
@@ -349,7 +389,7 @@ msgstr "Kies een bestand"
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: src/blueprints/display-page.blp:20 src/gdm_settings_gui.py:598
+#: src/blueprints/display-page.blp:20 src/gui.py:604
 msgid "Display"
 msgstr "Beeldscherm"
 
@@ -361,7 +401,7 @@ msgstr "Huidige beeldscherminstellingen toepassen"
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "Resolutie, ververssnelheid, schermposities, etc."
 
-#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
+#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
 msgstr "Toepassen"
 
@@ -403,7 +443,7 @@ msgstr "Tot"
 msgid "Color Temperature"
 msgstr "Kleurtemperatuur"
 
-#: src/blueprints/fonts-page.blp:20 src/gdm_settings_gui.py:594
+#: src/blueprints/fonts-page.blp:20 src/gui.py:600
 msgid "Fonts"
 msgstr "Lettertypen"
 
@@ -443,47 +483,47 @@ msgstr "Licht"
 msgid "Scaling Factor"
 msgstr "Beeldgrootte"
 
-#: src/blueprints/main-window.blp.in:6
+#: src/blueprints/main-window.blp:6
 msgid "Refresh"
 msgstr "Herladen"
 
-#: src/blueprints/main-window.blp.in:7
+#: src/blueprints/main-window.blp:7
 msgid "Import user settings"
 msgstr "Eigen voorkeuren importeren"
 
-#: src/blueprints/main-window.blp.in:8
+#: src/blueprints/main-window.blp:8
 msgid "Reset settings"
 msgstr "Standaardwaarden herstellen"
 
-#: src/blueprints/main-window.blp.in:11
+#: src/blueprints/main-window.blp:12
 msgid "About"
 msgstr "Over"
 
-#: src/blueprints/main-window.blp.in:12
+#: src/blueprints/main-window.blp:13
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
+#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
 msgstr "Afbeeldingen"
 
-#: src/blueprints/main-window.blp.in:65
+#: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
 
-#: src/blueprints/main-window.blp.in:71
+#: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
 msgstr "De voorkeuren zijn ingesteld"
 
-#: src/blueprints/main-window.blp.in:77
+#: src/blueprints/main-window.blp:78
 msgid "User settings imported"
 msgstr "De voorkeuren zijn geïmporteerd"
 
-#: src/blueprints/main-window.blp.in:83
+#: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
-#: src/blueprints/misc-page.blp:20 src/gdm_settings_gui.py:599
+#: src/blueprints/misc-page.blp:20 src/gui.py:605
 msgid "Miscellaneous"
 msgstr "Overig"
 
@@ -571,7 +611,7 @@ msgstr "Scroll door met twee vingers te vegen."
 msgid "Disable while Typing"
 msgstr "Uitschakelen tijdens typen"
 
-#: src/blueprints/sound-page.blp:20 src/gdm_settings_gui.py:596
+#: src/blueprints/sound-page.blp:20 src/gui.py:602
 msgid "Sound"
 msgstr "Geluid"
 
@@ -689,29 +729,29 @@ msgstr "Website"
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/gdm_settings_gui.py:72
+#: src/gui.py:71
 msgid "Show application version"
 msgstr "Toepassingsversie tonen"
 
-#: src/gdm_settings_gui.py:79
+#: src/gui.py:78
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Foutopsporingsniveau instellen (0-5)"
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gdm_settings_gui.py:81
+#: src/gui.py:80
 msgid "LEVEL"
 msgstr "NIVEAU"
 
-#: src/gdm_settings_gui.py:87
+#: src/gui.py:86
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Uitgebreide modus inschakelen (foutopsporingsniveau 5)"
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gdm_settings_gui.py:95
+#: src/gui.py:94
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Stille modus inschakelen   (foutopsporingsniveau 0)"
 
-#: src/gdm_settings_gui.py:183
+#: src/gui.py:189
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -719,55 +759,55 @@ msgstr ""
 "De afbeelding is niet ingesteld omdat het bestand niet is aangetroffen. Kies "
 "een andere afbeelding."
 
-#: src/gdm_settings_gui.py:215
+#: src/gui.py:221
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/gdm_settings_gui.py:217
+#: src/gui.py:223
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gdm_settings_gui.py:228
+#: src/gui.py:234
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "Het standaard Shell-thema is uitgepakt naar ‘{path}’ onder de naam ‘default-"
 "extracted’"
 
-#: src/gdm_settings_gui.py:230
+#: src/gui.py:236
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/gdm_settings_gui.py:593
+#: src/gui.py:599
 msgid "Appearance"
 msgstr "Vormgeving"
 
-#: src/gdm_settings_gui.py:595
+#: src/gui.py:601
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-#: src/gdm_settings_gui.py:597
+#: src/gui.py:603
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
 
-#: src/gdm_settings_gui.py:600
+#: src/gui.py:606
 msgid "Tools"
 msgstr "Hulpmiddelen"
 
-#: src/gdm_settings_gui.py:653
+#: src/gui.py:660
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
 
-#: src/gdm_settings_gui.py:658
+#: src/gui.py:665
 msgid "Failed to reset settings"
 msgstr "De standaardwaarden kunnen niet worden hersteld"
 
-#: src/gdm_settings_gui.py:662
+#: src/gui.py:669
 msgid "Reset settings successfully"
 msgstr "De standaardwaarden zijn hersteld"
 
-#: src/settings_manager.py:268
+#: src/settings_manager.py:262
 msgid "saving default theme ..."
 msgstr "Bezig met opslaan van huidig thema…"
 

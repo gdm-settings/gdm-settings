@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 15:54+0500\n"
+"POT-Creation-Date: 2022-06-21 08:42+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -15,176 +15,45 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.13-dev\n"
 
-#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
-#: src/blueprints/main-window.blp.in:17 src/info.py.in:3
-msgid "Login Manager Settings"
-msgstr "Paramètres del gestionari de fenèstra de connexion"
-
-#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
-#: src/dialogs.py:13
-msgid "A settings app for GNOME's Login Manager (GDM)"
-msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME (GDM)"
-
-#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/application_id.appdata.xml.in:16
-msgid ""
-"Change GDM Settings; Apply theme and background, change cursor theme, icon "
-"theme and night light settings, among other things."
-msgstr ""
-"Cambiar paramètres GDM : aplicar tèmas e fonzes, cambiar lo tèma dels "
-"cursors, de las icònas e los paramètres de lum nocturna, demest autras "
-"causas."
-
-#: data/application_id.appdata.xml.in:40 src/dialogs.py:18
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: data/application_id.appdata.xml.in:73
-msgid "Added:"
-msgstr "Ajustat :"
-
-#: data/application_id.appdata.xml.in:75
-msgid "Support for verbose/quiet mode"
-msgstr "Presa en carga mòde verbiós/silenciós"
-
-#: data/application_id.appdata.xml.in:76
-msgid "Support for setting manual verbosity level"
-msgstr "Presa en carga del nivèl manual de verbiositat"
-
-#: data/application_id.appdata.xml.in:77
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr ""
-"Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
-"verbiositat"
-
-#: data/application_id.appdata.xml.in:78
-msgid "Command-line option --version"
-msgstr "Opcion de linha de comanda --version"
-
-#: data/application_id.appdata.xml.in:79
-msgid "Wider application window on first launch"
-msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
-
-#: data/application_id.appdata.xml.in:81
-msgid "Fixed:"
-msgstr "Reglats :"
-
-#: data/application_id.appdata.xml.in:83
-msgid "Welcome message could not contain single qoutes"
-msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
-
-#: data/application_id.appdata.xml.in:84
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
-"Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
-"activat (principalament Fedora)"
-
-#: data/application_id.appdata.xml.in:85
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a la "
-"fenèstra)"
-
-#: data/application_id.appdata.xml.in:86
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
-"tèma shell per defaut"
-
-#: data/application_id.appdata.xml.in:87
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
-"abans aplicacion"
-
-#: data/application_id.appdata.xml.in:88
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
-
-#: data/application_id.appdata.xml.in:90
-msgid "New Translations:"
-msgstr "Traduccions novèlas :"
-
-#: data/application_id.appdata.xml.in:92
-msgid "French"
-msgstr "Francés"
-
-#: data/application_id.appdata.xml.in:93
-msgid "Hebrew"
-msgstr "Ebrèu"
-
-#: data/application_id.appdata.xml.in:94
-msgid "Persian"
-msgstr "Persian"
-
-#: data/application_id.appdata.xml.in:96
-msgid "Updated Translations:"
-msgstr "Traduccions actualizadas :"
-
-#: data/application_id.appdata.xml.in:98
-msgid "Dutch"
-msgstr ""
-
-#: data/application_id.appdata.xml.in:99
-msgid "German"
-msgstr "Alemand"
-
-#: data/application_id.appdata.xml.in:100
-msgid "Occitan"
-msgstr "Occitan"
-
-#: data/application_id.appdata.xml.in:101
-msgid "Spanish"
-msgstr "Espanhòl"
-
-#: data/application_id.appdata.xml.in:102
-msgid "Urdu"
-msgstr "Ordo"
-
-#: data/gschemas/application_id.appearance.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
 msgstr "Nom del tèma"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
 msgstr "Tipe de fons"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:22
-msgid "Wether GDM background should be an Image, Color or None."
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#, fuzzy
+#| msgid "Wether GDM background should be an Image, Color or None."
+msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Indica se lo rèireplan deu èsser un imatge, una colora o pas res."
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
 msgstr "Imatge de fons"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
 msgstr "Lo fichièr imatge d’emplegar coma fons de GDM"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
 msgstr "Color de fons"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "La color d’emplegar coma fons de GDM"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
 msgstr "Se lo mòde nuèch es activat"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:8
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
@@ -192,11 +61,11 @@ msgstr ""
 "Lo mòde nuèch modifica la temperatura de las colors de l’ecran quand la lutz "
 "baissa o a d’oras definidas."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:13
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
 msgstr "La temperatura de l’ecran es activada quand"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:14
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
@@ -205,11 +74,11 @@ msgstr ""
 "d’afichatge quand lo mòde lum de nuèch es activat. Las valors mai nautas "
 "tiban al blau, las mai baissas al roge."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:19
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
 msgstr "Utilizar la sortida del solelh e la colcada del solelh"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
@@ -217,13 +86,13 @@ msgstr ""
 "Calcul automatic de l'ora de sortida e de colcada del solelh a partir de la "
 "posicion actuala."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:25
-#: data/gschemas/application_id.night-light.gschema.xml.in:39
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
 msgstr "Ora de debuta"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:26
-#: data/gschemas/application_id.night-light.gschema.xml.in:40
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
@@ -231,11 +100,11 @@ msgstr ""
 "Quand « night-light-schedule-automatic » es desactivat, utilizar aquesta ora "
 "de debuta."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:32
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Minuta de l’ora de debuta"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:33
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
@@ -243,24 +112,24 @@ msgstr ""
 "Quand la foncion de lum nocturn automatica es activada, utilizar aquesta ora "
 "de debuta en minutas."
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:46
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Minuta de l’ora de fin"
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:47
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
 "ora de fin en minutas."
 
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "Velocitat del puntador"
 
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -269,34 +138,205 @@ msgstr ""
 "plaja [-1..1] (a partir de « cap d’accelaracion » fins a « rapid »). La "
 "valor 0 es la valor per defaut del sistèma."
 
-#: data/gschemas/application_id.tools.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
 "Indica se cal aplicar los paramètres de la barra superiora al tèma extrach"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
 msgstr "Indicar se cal activar o desactivar las sagetas de la barra superiora"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:12
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
 msgstr "Indicar se cal utilizar los angles redonds de la barra superiora"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:17
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
 msgstr "Indica se cal cambiar la color del tèxte de la barra superiora"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
 msgstr "Color del tèxte de la barra superiora"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:27
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
 msgstr "Indica se cal cambiar lo fons de la barra superiora"
 
-#: data/gschemas/application_id.top-bar.gschema.xml.in:32
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
 msgstr "Color de fons barra superiora"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: src/blueprints/main-window.blp:18 src/info.py.in:3
+msgid "Login Manager Settings"
+msgstr "Paramètres del gestionari de fenèstra de connexion"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#, fuzzy
+#| msgid "A settings app for GNOME's Login Manager (GDM)"
+msgid "A settings app for GNOME's Login Manager, GDM"
+msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME (GDM)"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+"Cambiar paramètres GDM : aplicar tèmas e fonzes, cambiar lo tèma dels "
+"cursors, de las icònas e los paramètres de lum nocturna, demest autras "
+"causas."
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: src/dialogs.py:18
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+msgid "Updated the app store page of app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Added:"
+msgstr "Ajustat :"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "Support for verbose/quiet mode"
+msgstr "Presa en carga mòde verbiós/silenciós"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+msgid "Support for setting manual verbosity level"
+msgstr "Presa en carga del nivèl manual de verbiositat"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgstr ""
+"Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
+"verbiositat"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid "Command-line option --version"
+msgstr "Opcion de linha de comanda --version"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Wider application window on first launch"
+msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid "Fixed:"
+msgstr "Reglats :"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Welcome message could not contain single qoutes"
+msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid ""
+"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+msgstr ""
+"Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
+"activat (principalament Fedora)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid ""
+"Maximized or big application window looked bad (content was much smaller "
+"than the window)"
+msgstr ""
+"La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a la "
+"fenèstra)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid ""
+"Showed wrong destination directory/folder path while extracting default "
+"shell theme"
+msgstr ""
+"Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
+"tèma shell per defaut"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Clicking 'Apply' did nothing if selected background image was deleted before "
+"applying"
+msgstr ""
+"Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
+"abans aplicacion"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "New Translations:"
+msgstr "Traduccions novèlas :"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "French"
+msgstr "Francés"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Hebrew"
+msgstr "Ebrèu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Persian"
+msgstr "Persian"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Updated Translations:"
+msgstr "Traduccions actualizadas :"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+msgid "Dutch"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+msgid "German"
+msgstr "Alemand"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+msgid "Occitan"
+msgstr "Occitan"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+msgid "Spanish"
+msgstr "Espanhòl"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+msgid "Urdu"
+msgstr "Ordo"
+
+#: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
+msgid "App Preferences"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:10
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Shell Theme"
+msgstr "Tèma Shell per defaut"
+
+#: src/blueprints/app-preferences.blp:13
+msgid "Apply Method"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:14
+msgid "Should the theme be overlayed on top of the default theme?"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "No Overlay"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "Overlay Resources"
+msgstr ""
+
+#: src/blueprints/app-preferences.blp:15
+msgid "Complete Overlay"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
@@ -347,7 +387,7 @@ msgstr "Causir un fichièr"
 msgid "The color to use as background"
 msgstr "La color d’emplegar coma fons"
 
-#: src/blueprints/display-page.blp:20 src/gdm_settings_gui.py:598
+#: src/blueprints/display-page.blp:20 src/gui.py:604
 msgid "Display"
 msgstr "Afichatge"
 
@@ -359,7 +399,7 @@ msgstr "Aplicar los paramètres d’afichatge actuals"
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
-#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
+#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -401,7 +441,7 @@ msgstr "dusca"
 msgid "Color Temperature"
 msgstr "Temperatura de la color"
 
-#: src/blueprints/fonts-page.blp:20 src/gdm_settings_gui.py:594
+#: src/blueprints/fonts-page.blp:20 src/gui.py:600
 msgid "Fonts"
 msgstr "Poliças"
 
@@ -441,47 +481,47 @@ msgstr "Leugièr"
 msgid "Scaling Factor"
 msgstr "Factor d'escala"
 
-#: src/blueprints/main-window.blp.in:6
+#: src/blueprints/main-window.blp:6
 msgid "Refresh"
 msgstr "Refrescar"
 
-#: src/blueprints/main-window.blp.in:7
+#: src/blueprints/main-window.blp:7
 msgid "Import user settings"
 msgstr "Importar paramètres de l’utilizaire"
 
-#: src/blueprints/main-window.blp.in:8
+#: src/blueprints/main-window.blp:8
 msgid "Reset settings"
 msgstr "Reïnicializar los paramètres"
 
-#: src/blueprints/main-window.blp.in:11
+#: src/blueprints/main-window.blp:12
 msgid "About"
 msgstr "A prepaus de"
 
-#: src/blueprints/main-window.blp.in:12
+#: src/blueprints/main-window.blp:13
 msgid "Quit"
 msgstr "Quitar"
 
-#: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
+#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
 msgstr "Imatges"
 
-#: src/blueprints/main-window.blp.in:65
+#: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/blueprints/main-window.blp.in:71
+#: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/blueprints/main-window.blp.in:77
+#: src/blueprints/main-window.blp:78
 msgid "User settings imported"
 msgstr "Paramètres de l’utilizaire importats"
 
-#: src/blueprints/main-window.blp.in:83
+#: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "Paramètres recargats"
 
-#: src/blueprints/misc-page.blp:20 src/gdm_settings_gui.py:599
+#: src/blueprints/misc-page.blp:20 src/gui.py:605
 msgid "Miscellaneous"
 msgstr "Divèrs"
 
@@ -569,7 +609,7 @@ msgstr "Desfilar en bolegant dos dets."
 msgid "Disable while Typing"
 msgstr "Desactivar en picant"
 
-#: src/blueprints/sound-page.blp:20 src/gdm_settings_gui.py:596
+#: src/blueprints/sound-page.blp:20 src/gui.py:602
 msgid "Sound"
 msgstr "Son"
 
@@ -687,29 +727,29 @@ msgstr "Pagina d’acuèlh"
 msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
-#: src/gdm_settings_gui.py:72
+#: src/gui.py:71
 msgid "Show application version"
 msgstr "Afichar la version de l’aplicacion"
 
-#: src/gdm_settings_gui.py:79
+#: src/gui.py:78
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Definir manualament lo nivèl de verbiositat (de 0 a 5)"
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gdm_settings_gui.py:81
+#: src/gui.py:80
 msgid "LEVEL"
 msgstr "NIVÈL"
 
-#: src/gdm_settings_gui.py:87
+#: src/gui.py:86
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Activar lo mòde verbiós (definir lo nivèl a 5)"
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gdm_settings_gui.py:95
+#: src/gui.py:94
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Activar lo mòde silenciós   (definir lo nivèl de verbiositat a 0)"
 
-#: src/gdm_settings_gui.py:183
+#: src/gui.py:189
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -717,56 +757,56 @@ msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/gdm_settings_gui.py:215
+#: src/gui.py:221
 msgid "Applied current display settings"
 msgstr "Paramètres d’afichatge actual aplicats"
 
-#: src/gdm_settings_gui.py:217
+#: src/gui.py:223
 msgid "Failed to apply current display settings"
 msgstr "Fracàs en aplicant los paramètres d’afichatge actuals"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gdm_settings_gui.py:228
+#: src/gui.py:234
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "Tèma shell predeterminat extrach dins « {path} » coma « defautl-extracted »"
 
-#: src/gdm_settings_gui.py:230
+#: src/gui.py:236
 msgid "Failed to extract default theme"
 msgstr "Fracàs en ensajar de traire lo tèma shell per defaut"
 
-#: src/gdm_settings_gui.py:593
+#: src/gui.py:599
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: src/gdm_settings_gui.py:595
+#: src/gui.py:601
 msgid "Top Bar"
 msgstr "Barra superiora"
 
-#: src/gdm_settings_gui.py:597
+#: src/gui.py:603
 msgid "Mouse & Touchpad"
 msgstr "Mirga & pavat tac­til"
 
-#: src/gdm_settings_gui.py:600
+#: src/gui.py:606
 msgid "Tools"
 msgstr "Aisinas"
 
-#: src/gdm_settings_gui.py:653
+#: src/gui.py:660
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "L’importacion dels paramètres utilizaire es pas suportada dins la version "
 "Flatpak"
 
-#: src/gdm_settings_gui.py:658
+#: src/gui.py:665
 msgid "Failed to reset settings"
 msgstr "Fracàs en reïnicializant los paramètres"
 
-#: src/gdm_settings_gui.py:662
+#: src/gui.py:669
 msgid "Reset settings successfully"
 msgstr "Reïnicializacion dels paramètres reüssida"
 
-#: src/settings_manager.py:268
+#: src/settings_manager.py:262
 msgid "saving default theme ..."
 msgstr "enregistrament del tèma per defaut…"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 15:54+0500\n"
+"POT-Creation-Date: 2022-06-21 08:42+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -18,18 +18,156 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Generator: Weblate 4.13-dev\n"
 
-#: data/application_id.appdata.xml.in:11 data/application_id.desktop.in:4
-#: src/blueprints/main-window.blp.in:17 src/info.py.in:3
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+msgid "Theme Name"
+msgstr "نام زمینه"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+msgid "Type of Background"
+msgstr "نوع پس‌زمینه"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#, fuzzy
+#| msgid "Wether GDM background should be an Image, Color or None."
+msgid "Whether GDM background should be an Image, Color or None."
+msgstr "پس‌زمینه GDM باید یک تصویر، رنگ یا هیچ‌کدام باشد."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+msgid "Background Image"
+msgstr "تصویر پس‌زمینه"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+msgid "The image file to use as GDM background"
+msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: src/blueprints/top-bar-page.blp:51
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+msgid "The Color to use as GDM background"
+msgstr "رنگی که به عنوان پس‌زمینه GDM استفاده می‌شود"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
+msgid "If the night light mode is enabled"
+msgstr "اگر حالت نور شب به کار افتاده باشد"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
+msgid ""
+"Night light mode changes the color temperature of your display when the sun "
+"has gone down or at preset times."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
+msgid "Temperature of the display when enabled"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
+msgid ""
+"This temperature in Kelvin is used to modify the screen tones when night "
+"light mode is enabled. Higher values are bluer, lower redder."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
+msgid "Use the sunrise and sunset"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
+msgid ""
+"Calculate the sunrise and sunset times automatically, from the current "
+"location."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
+msgid "The start time's hour"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time in "
+"hours."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
+msgid "The start time's minute"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this start time "
+"minutes."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
+msgid "The end time's minute"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
+msgid "Pointer speed"
+msgstr "سرعت نشانگر"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
+msgid "Whether to apply top bar tweaks to extracted theme"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
+msgid "Whether to disable top bar arrows"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
+msgid "Whether to disable top bar rounded corners"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
+msgid "Whether to change top bar text color"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
+msgid "Top bar text color"
+msgstr "رنگ متن نوار بالا"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
+msgid "Whether to change top bar background"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
+msgid "Top bar background color"
+msgstr "رنگ پس‌زمینهٔ نوار بالا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: src/blueprints/main-window.blp:18 src/info.py.in:3
 msgid "Login Manager Settings"
 msgstr "تنظیمات مدیر ورود"
 
-#: data/application_id.appdata.xml.in:12 data/application_id.desktop.in:5
-#: src/dialogs.py:13
-msgid "A settings app for GNOME's Login Manager (GDM)"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#, fuzzy
+#| msgid "A settings app for GNOME's Login Manager (GDM)"
+msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم (GDM)"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/application_id.appdata.xml.in:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -37,50 +175,55 @@ msgstr ""
 "تغییرات تنظیمات GDM؛ اِعمال زمینه و پس‌زمینه، تغییر زمینهٔ اشاره‌گر، زمینه نقشک "
 "و تنظیمات نور شب، و همینطور چیزهایی دیگر."
 
-#: data/application_id.appdata.xml.in:40 src/dialogs.py:18
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: src/dialogs.py:18
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: data/application_id.appdata.xml.in:73
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+msgid "Updated the app store page of app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
 msgstr "اضافه شده:"
 
-#: data/application_id.appdata.xml.in:75
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Support for verbose/quiet mode"
 msgstr "پشتیبانی از حالت پُر حرف و ساکت"
 
-#: data/application_id.appdata.xml.in:76
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Support for setting manual verbosity level"
 msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
 
-#: data/application_id.appdata.xml.in:77
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
 
-#: data/application_id.appdata.xml.in:78
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "Command-line option --version"
 msgstr "گزینهٔ خط فرمانی ‎--version"
 
-#: data/application_id.appdata.xml.in:79
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Wider application window on first launch"
 msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
 
-#: data/application_id.appdata.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed:"
 msgstr "برطرف شده:"
 
-#: data/application_id.appdata.xml.in:83
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Welcome message could not contain single qoutes"
 msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
 
-#: data/application_id.appdata.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
 "مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
 "فدورا)"
 
-#: data/application_id.appdata.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
@@ -88,14 +231,14 @@ msgstr ""
 "پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از پنجره "
 "بود)"
 
-#: data/application_id.appdata.xml.in:86
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
 "هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان می‌داد"
 
-#: data/application_id.appdata.xml.in:87
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
@@ -103,182 +246,79 @@ msgstr ""
 "اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» کاری "
 "انجام نمی‌داد"
 
-#: data/application_id.appdata.xml.in:88
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
 
-#: data/application_id.appdata.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "New Translations:"
 msgstr "ترجمه‌های جدید:"
 
-#: data/application_id.appdata.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "French"
 msgstr "فرانسوی"
 
-#: data/application_id.appdata.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Hebrew"
 msgstr "عبری"
 
-#: data/application_id.appdata.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Persian"
 msgstr "فارسی"
 
-#: data/application_id.appdata.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated Translations:"
 msgstr "ترجمه‌های به‌روز رسانی شده:"
 
-#: data/application_id.appdata.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
 msgstr ""
 
-#: data/application_id.appdata.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
 msgstr "آلمانی"
 
-#: data/application_id.appdata.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Occitan"
 msgstr "اکسیتانی"
 
-#: data/application_id.appdata.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Spanish"
 msgstr "اسپانیایی"
 
-#: data/application_id.appdata.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Urdu"
 msgstr "اُردو"
 
-#: data/gschemas/application_id.appearance.gschema.xml.in:7
-msgid "Theme Name"
-msgstr "نام زمینه"
-
-#: data/gschemas/application_id.appearance.gschema.xml.in:20
-msgid "Type of Background"
-msgstr "نوع پس‌زمینه"
-
-#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:22
-msgid "Wether GDM background should be an Image, Color or None."
-msgstr "پس‌زمینه GDM باید یک تصویر، رنگ یا هیچ‌کدام باشد."
-
-#: data/gschemas/application_id.appearance.gschema.xml.in:34
-msgid "Background Image"
-msgstr "تصویر پس‌زمینه"
-
-#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:36
-msgid "The image file to use as GDM background"
-msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
-
-#: data/gschemas/application_id.appearance.gschema.xml.in:43
-#: src/blueprints/top-bar-page.blp:51
-msgid "Background Color"
-msgstr "رنگ پس‌زمینه"
-
-#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/application_id.appearance.gschema.xml.in:45
-msgid "The Color to use as GDM background"
-msgstr "رنگی که به عنوان پس‌زمینه GDM استفاده می‌شود"
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:7
-msgid "If the night light mode is enabled"
-msgstr "اگر حالت نور شب به کار افتاده باشد"
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:8
-msgid ""
-"Night light mode changes the color temperature of your display when the sun "
-"has gone down or at preset times."
+#: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
+msgid "App Preferences"
 msgstr ""
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:13
-msgid "Temperature of the display when enabled"
+#: src/blueprints/app-preferences.blp:10
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Shell Theme"
+msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
+
+#: src/blueprints/app-preferences.blp:13
+msgid "Apply Method"
 msgstr ""
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:14
-msgid ""
-"This temperature in Kelvin is used to modify the screen tones when night "
-"light mode is enabled. Higher values are bluer, lower redder."
+#: src/blueprints/app-preferences.blp:14
+msgid "Should the theme be overlayed on top of the default theme?"
 msgstr ""
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:19
-msgid "Use the sunrise and sunset"
+#: src/blueprints/app-preferences.blp:15
+msgid "No Overlay"
 msgstr ""
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:20
-msgid ""
-"Calculate the sunrise and sunset times automatically, from the current "
-"location."
+#: src/blueprints/app-preferences.blp:15
+msgid "Overlay Resources"
 msgstr ""
 
-#: data/gschemas/application_id.night-light.gschema.xml.in:25
-#: data/gschemas/application_id.night-light.gschema.xml.in:39
-msgid "The start time's hour"
+#: src/blueprints/app-preferences.blp:15
+msgid "Complete Overlay"
 msgstr ""
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:26
-#: data/gschemas/application_id.night-light.gschema.xml.in:40
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time in "
-"hours."
-msgstr ""
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:32
-msgid "The start time's minute"
-msgstr ""
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:33
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time "
-"minutes."
-msgstr ""
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:46
-msgid "The end time's minute"
-msgstr ""
-
-#: data/gschemas/application_id.night-light.gschema.xml.in:47
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
-
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:20
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:23
-msgid "Pointer speed"
-msgstr "سرعت نشانگر"
-
-#: data/gschemas/application_id.pointing.mouse.gschema.xml.in:21
-#: data/gschemas/application_id.pointing.touchpad.gschema.xml.in:24
-msgid ""
-"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
-"(from “unaccelerated” to “fast”). A value of 0 is the system default."
-msgstr ""
-
-#: data/gschemas/application_id.tools.gschema.xml.in:7
-msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:7
-msgid "Whether to disable top bar arrows"
-msgstr ""
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:12
-msgid "Whether to disable top bar rounded corners"
-msgstr ""
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:17
-msgid "Whether to change top bar text color"
-msgstr ""
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:22
-msgid "Top bar text color"
-msgstr "رنگ متن نوار بالا"
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:27
-msgid "Whether to change top bar background"
-msgstr ""
-
-#: data/gschemas/application_id.top-bar.gschema.xml.in:32
-msgid "Top bar background color"
-msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
@@ -329,7 +369,7 @@ msgstr "انتخاب پرونده"
 msgid "The color to use as background"
 msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
 
-#: src/blueprints/display-page.blp:20 src/gdm_settings_gui.py:598
+#: src/blueprints/display-page.blp:20 src/gui.py:604
 msgid "Display"
 msgstr "نمایشگر"
 
@@ -341,7 +381,7 @@ msgstr "اِعمال تنظیمات نمایشگر کنونی"
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
 
-#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp.in:26
+#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
 msgstr "اِعمال"
 
@@ -383,7 +423,7 @@ msgstr "تا"
 msgid "Color Temperature"
 msgstr "دمای رنگ"
 
-#: src/blueprints/fonts-page.blp:20 src/gdm_settings_gui.py:594
+#: src/blueprints/fonts-page.blp:20 src/gui.py:600
 msgid "Fonts"
 msgstr "قلم‌ها"
 
@@ -423,47 +463,47 @@ msgstr "خفیف"
 msgid "Scaling Factor"
 msgstr "ضریب مقیاس"
 
-#: src/blueprints/main-window.blp.in:6
+#: src/blueprints/main-window.blp:6
 msgid "Refresh"
 msgstr "نوسازی"
 
-#: src/blueprints/main-window.blp.in:7
+#: src/blueprints/main-window.blp:7
 msgid "Import user settings"
 msgstr "درون‌ریزی تنظیمات کاربر"
 
-#: src/blueprints/main-window.blp.in:8
+#: src/blueprints/main-window.blp:8
 msgid "Reset settings"
 msgstr "بازنشانی تنظیمات"
 
-#: src/blueprints/main-window.blp.in:11
+#: src/blueprints/main-window.blp:12
 msgid "About"
 msgstr "درباره"
 
-#: src/blueprints/main-window.blp.in:12
+#: src/blueprints/main-window.blp:13
 msgid "Quit"
 msgstr "خروج"
 
-#: src/blueprints/main-window.blp.in:41 src/blueprints/main-window.blp.in:47
+#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
 msgstr "تصاویر"
 
-#: src/blueprints/main-window.blp.in:65
+#: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
 msgstr "اِعمال تنظیمات شکست خورد"
 
-#: src/blueprints/main-window.blp.in:71
+#: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
 msgstr "تنظیمات با موفّقیت اِعمال شد"
 
-#: src/blueprints/main-window.blp.in:77
+#: src/blueprints/main-window.blp:78
 msgid "User settings imported"
 msgstr "تنظیمات کاربر درون‌ریزی شد"
 
-#: src/blueprints/main-window.blp.in:83
+#: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "تنظیمات مجدداً بارگزاری شد"
 
-#: src/blueprints/misc-page.blp:20 src/gdm_settings_gui.py:599
+#: src/blueprints/misc-page.blp:20 src/gui.py:605
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
@@ -551,7 +591,7 @@ msgstr ""
 msgid "Disable while Typing"
 msgstr ""
 
-#: src/blueprints/sound-page.blp:20 src/gdm_settings_gui.py:596
+#: src/blueprints/sound-page.blp:20 src/gui.py:602
 msgid "Sound"
 msgstr "صدا"
 
@@ -670,83 +710,83 @@ msgstr "صفحهٔ خانگی"
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
-#: src/gdm_settings_gui.py:72
+#: src/gui.py:71
 msgid "Show application version"
 msgstr ""
 
-#: src/gdm_settings_gui.py:79
+#: src/gui.py:78
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
 #. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gdm_settings_gui.py:81
+#: src/gui.py:80
 msgid "LEVEL"
 msgstr ""
 
-#: src/gdm_settings_gui.py:87
+#: src/gui.py:86
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr ""
 
 #. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gdm_settings_gui.py:95
+#: src/gui.py:94
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr ""
 
-#: src/gdm_settings_gui.py:183
+#: src/gui.py:189
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 
-#: src/gdm_settings_gui.py:215
+#: src/gui.py:221
 msgid "Applied current display settings"
 msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
 
-#: src/gdm_settings_gui.py:217
+#: src/gui.py:223
 msgid "Failed to apply current display settings"
 msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gdm_settings_gui.py:228
+#: src/gui.py:234
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
 
-#: src/gdm_settings_gui.py:230
+#: src/gui.py:236
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/gdm_settings_gui.py:593
+#: src/gui.py:599
 msgid "Appearance"
 msgstr "ظاهر"
 
-#: src/gdm_settings_gui.py:595
+#: src/gui.py:601
 msgid "Top Bar"
 msgstr "نوار بالا"
 
-#: src/gdm_settings_gui.py:597
+#: src/gui.py:603
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
-#: src/gdm_settings_gui.py:600
+#: src/gui.py:606
 msgid "Tools"
 msgstr "ابزارها"
 
-#: src/gdm_settings_gui.py:653
+#: src/gui.py:660
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/gdm_settings_gui.py:658
+#: src/gui.py:665
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
-#: src/gdm_settings_gui.py:662
+#: src/gui.py:669
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
-#: src/settings_manager.py:268
+#: src/settings_manager.py:262
 msgid "saving default theme ..."
 msgstr "درحال ذخیره کردن زمینهٔ پیش‌گزیده ..."
 
