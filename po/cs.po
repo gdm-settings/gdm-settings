@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -165,12 +165,12 @@ msgstr "Barva pozadí horní lišty"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "Nastavení přihlašovací obrazovky"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "Nastavení pro správce přihlášení GNOME, GDM"
 
@@ -184,7 +184,7 @@ msgstr ""
 "ikon, nastavení nočního světla a další možnosti."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -299,6 +299,111 @@ msgstr "Španělský"
 msgid "Urdu"
 msgstr "Urdský"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Show application version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "Zobrazit verzi aplikace"
+
+#: src/app.py:41
+#, fuzzy
+#| msgid "Set verbosity level manually (from 0 to 5)"
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Nastavit ručně úroveň „upovídanosti“ (od 0 do 5)"
+
+#: src/app.py:43
+#, fuzzy
+#| msgid "LEVEL"
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "ÚROVEŇ"
+
+#: src/app.py:50
+#, fuzzy
+#| msgid "Enable verbose mode (set verbosity level 5)"
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "Povolit „upovídaný“ režim (na hodnotě „upovídanosti“ 5)"
+
+#: src/app.py:59
+#, fuzzy
+#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "Současná nastavení displeje použita"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "Nepodařilo se použít současná nastavení displeje"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr "Výchozí téma shellu extrahováno do „{path}“ jako „default-extracted“"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "Nepodařilo se extrahovat výchozí téma"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "Písma"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "Horní lišta"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "Zvuk"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "Myš a touchpad"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "Displej"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "Smíšené"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "Nástroje"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+"Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
+"Flatpak"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "Nepodařilo se resetovat nastavení"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "Nastavení úspěšně resetována"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr "Předvolby aplikace"
@@ -376,10 +481,6 @@ msgstr "Vybrat soubor"
 msgid "The color to use as background"
 msgstr "Barva pro použití na pozadí"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "Displej"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "Použít současná nastavení displeje"
@@ -429,10 +530,6 @@ msgstr "do"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Teplota barvy"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "Písma"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -509,10 +606,6 @@ msgstr "Uživatelská nastavení naimportována"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "Nastavení obnovena"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "Smíšené"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -597,10 +690,6 @@ msgstr "Posouvání přejetím dvěma prsty."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Zablokovat během psaní"
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "Zvuk"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -702,96 +791,20 @@ msgstr "Napájení"
 msgid "Show battery percentage"
 msgstr "Zobrazovat procenta baterie"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "Webová stránka"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "Vojtěch Perník <translations@pervoj.cz>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr "Zobrazit verzi aplikace"
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Nastavit ručně úroveň „upovídanosti“ (od 0 do 5)"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr "ÚROVEŇ"
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "Povolit „upovídaný“ režim (na hodnotě „upovídanosti“ 5)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "Současná nastavení displeje použita"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "Nepodařilo se použít současná nastavení displeje"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr "Výchozí téma shellu extrahováno do „{path}“ jako „default-extracted“"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "Nepodařilo se extrahovat výchozí téma"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "Vzhled"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "Horní lišta"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "Myš a touchpad"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "Nástroje"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
-"Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
-"Flatpak"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "Nepodařilo se resetovat nastavení"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "Nastavení úspěšně resetována"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "Ukládá se výchozí téma…"

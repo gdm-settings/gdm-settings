@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -154,12 +154,12 @@ msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "تنظیمات مدیر ورود"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 #, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم (GDM)"
@@ -174,7 +174,7 @@ msgstr ""
 "و تنظیمات نور شب، و همینطور چیزهایی دیگر."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
@@ -288,6 +288,103 @@ msgstr "اسپانیایی"
 msgid "Urdu"
 msgstr "اُردو"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Command-line option --version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "گزینهٔ خط فرمانی ‎--version"
+
+#: src/app.py:41
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: src/app.py:43
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr ""
+
+#: src/app.py:50
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr ""
+
+#: src/app.py:59
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr ""
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
+
+# در این رشته از نویسهٔ LRM استفاده شده است
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "قلم‌ها"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "نوار بالا"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "صدا"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "موشی و صفحه‌لمسی"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "نمایشگر"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "متفرقه"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "ابزارها"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "بازنشانی تنظیمات شکست خورد"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "تنظیمات با موفّقیت بازنشانی شدند"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr ""
@@ -366,10 +463,6 @@ msgstr "انتخاب پرونده"
 msgid "The color to use as background"
 msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "نمایشگر"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "اِعمال تنظیمات نمایشگر کنونی"
@@ -419,10 +512,6 @@ msgstr "تا"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "دمای رنگ"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "قلم‌ها"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -499,10 +588,6 @@ msgstr "تنظیمات کاربر درون‌ریزی شد"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "تنظیمات مجدداً بارگزاری شد"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "متفرقه"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -587,10 +672,6 @@ msgstr ""
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr ""
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "صدا"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -693,97 +774,21 @@ msgstr "انرژی"
 msgid "Show battery percentage"
 msgstr "نمایش درصد باتری"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "صفحهٔ خانگی"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr ""
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr ""
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
-
-# در این رشته از نویسهٔ LRM استفاده شده است
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "ظاهر"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "نوار بالا"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "موشی و صفحه‌لمسی"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "ابزارها"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "بازنشانی تنظیمات شکست خورد"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "تنظیمات با موفّقیت بازنشانی شدند"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "درحال ذخیره کردن زمینهٔ پیش‌گزیده ..."
 

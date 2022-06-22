@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -167,12 +167,12 @@ msgstr "Color de fondo de la barra superior"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "Configuración del gestor de inicio de sesión"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 "Una aplicación de configuración para el Gestor de Inicio de Sesión de GNOME, "
@@ -189,7 +189,7 @@ msgstr ""
 "entre otras cosas."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -307,6 +307,114 @@ msgstr "Español"
 msgid "Urdu"
 msgstr "Urdu"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Show application version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "Mostrar la versión de la aplicación"
+
+#: src/app.py:41
+#, fuzzy
+#| msgid "Set verbosity level manually (from 0 to 5)"
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
+
+#: src/app.py:43
+#, fuzzy
+#| msgid "LEVEL"
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "NIVEL"
+
+#: src/app.py:50
+#, fuzzy
+#| msgid "Enable verbose mode (set verbosity level 5)"
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
+
+#: src/app.py:59
+#, fuzzy
+#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
+"favor, elija de nuevo."
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "Aplicada la configuración actual de la pantalla"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "No se ha podido aplicar la configuración actual de la pantalla"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"Tema de shell predeterminado extraído a '{path}' como 'default-extracted'"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "Fallo al extraer el tema predeterminado"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "Tipografías"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "Barra superior"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "Sonido"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "Ratón y panel táctil"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "Pantalla"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "Miscelánea"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "Herramientas"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+"La importación de la configuración del usuario NO es compatible con la "
+"versión Flatpak"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "Fallo en el restablecimiento de la configuración"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "Restablecida la configuración correctamente"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr "Preferencias de la aplicación"
@@ -384,10 +492,6 @@ msgstr "Elegir archivo"
 msgid "The color to use as background"
 msgstr "El color a usar como fondo"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "Pantalla"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "Aplicar la configuración actual de la pantalla"
@@ -437,10 +541,6 @@ msgstr "Hasta"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Temperatura del color"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "Tipografías"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -517,10 +617,6 @@ msgstr "Configuración del usuario importada"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "Configuración recargada"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "Miscelánea"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -605,10 +701,6 @@ msgstr "Desplazar deslizando dos dedos."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Desactivar mientras se teclea"
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "Sonido"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -710,100 +802,21 @@ msgstr "Energía"
 msgid "Show battery percentage"
 msgstr "Mostrar porcentaje de la batería"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "Página web"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr "Mostrar la versión de la aplicación"
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr "NIVEL"
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
-"favor, elija de nuevo."
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "Aplicada la configuración actual de la pantalla"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "No se ha podido aplicar la configuración actual de la pantalla"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Tema de shell predeterminado extraído a '{path}' como 'default-extracted'"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "Fallo al extraer el tema predeterminado"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "Apariencia"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "Barra superior"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "Ratón y panel táctil"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "Herramientas"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
-"La importación de la configuración del usuario NO es compatible con la "
-"versión Flatpak"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "Fallo en el restablecimiento de la configuración"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "Restablecida la configuración correctamente"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "guardando el tema predeterminado ..."
 

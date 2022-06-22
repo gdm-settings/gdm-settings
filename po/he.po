@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -166,12 +166,12 @@ msgstr "צבע רקע הסרגל העליון"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "הגדרות מנהל הכניסה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏- GDM"
 
@@ -185,7 +185,7 @@ msgstr ""
 "המצביעים ואת הגדרות תאורת הלילה לרבות דברים נוספים."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
@@ -292,6 +292,110 @@ msgstr "ספרדית"
 msgid "Urdu"
 msgstr "אורדו"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Show application version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "הצגת גרסת היישום"
+
+#: src/app.py:41
+#, fuzzy
+#| msgid "Set verbosity level manually (from 0 to 5)"
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "הגדרת רמת פירוט"
+
+#: src/app.py:43
+#, fuzzy
+#| msgid "LEVEL"
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "רמה"
+
+#: src/app.py:50
+#, fuzzy
+#| msgid "Enable verbose mode (set verbosity level 5)"
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "הפעלת מצב פירוט (הגדרת רמת הפירוט ל־5)"
+
+#: src/app.py:59
+#, fuzzy
+#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "הפעלת מצב שקט (הגדרת מצב הפירוט ל־0)"
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr "לא חל. לא ניתן למצוא את תמונת הרקע הנבחרת. נא לבחור שוב."
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "הגדרות התצוגה הנוכחיות הוחלו"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎{path}’ בתור ‚default-extracted’"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "מראה"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "גופנים"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "סרגל עליון"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "שמע"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "עכבר ומשטח מגע"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "תצוגה"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "שונות"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "כלים"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "איפוס ההגדרות נכשל"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "ההגדרות אופסו בהצלחה"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr "העדפות היישום"
@@ -369,10 +473,6 @@ msgstr "בחירת קובץ"
 msgid "The color to use as background"
 msgstr "הצבע שישמש כרקע"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "תצוגה"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות"
@@ -422,10 +522,6 @@ msgstr "סיום"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "טמפרטורת הצבע"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "גופנים"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -502,10 +598,6 @@ msgstr "הגדרות המשתמש ייובאו"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "שונות"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -590,10 +682,6 @@ msgstr "גלילה בהחלקה עם שתי אצבעות."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "השבתה בעת הקלדה"
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "שמע"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -695,96 +783,21 @@ msgstr "חשמל"
 msgid "Show battery percentage"
 msgstr "הצגת אחוז סוללה"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "כל הזכויות שמורות © 2021 מזהר חוסיין"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "עמוד הבית"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr "הצגת גרסת היישום"
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "הגדרת רמת פירוט"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr "רמה"
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "הפעלת מצב פירוט (הגדרת רמת הפירוט ל־5)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "הפעלת מצב שקט (הגדרת מצב הפירוט ל־0)"
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr "לא חל. לא ניתן למצוא את תמונת הרקע הנבחרת. נא לבחור שוב."
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "הגדרות התצוגה הנוכחיות הוחלו"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎{path}’ בתור ‚default-extracted’"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "מראה"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "סרגל עליון"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "עכבר ומשטח מגע"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "כלים"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "איפוס ההגדרות נכשל"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "ההגדרות אופסו בהצלחה"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "ערכת העיצוב כברירת המחדל נשמרת…"
 

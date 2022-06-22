@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -168,12 +168,12 @@ msgstr "Tepe çubuğu arka plan rengi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "Giriş Yöneticisi Ayarları"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
 
@@ -188,7 +188,7 @@ msgstr ""
 "değiştirin."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -305,6 +305,111 @@ msgstr "İspanyolca"
 msgid "Urdu"
 msgstr "Urduca"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Show application version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "Uygulama sürümünü göster"
+
+#: src/app.py:41
+#, fuzzy
+#| msgid "Set verbosity level manually (from 0 to 5)"
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
+
+#: src/app.py:43
+#, fuzzy
+#| msgid "LEVEL"
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "SEVİYE"
+
+#: src/app.py:50
+#, fuzzy
+#| msgid "Enable verbose mode (set verbosity level 5)"
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "Ayrıntılı kipi etkinleştir (ayrıntı düzeyini 5 olarak ayarla)"
+
+#: src/app.py:59
+#, fuzzy
+#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr "Uygulanamadı! Seçilen arka plan resmi bulunamadı. Lütfen tekrar seçin."
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "Uygulanan geçerli ekran ayarları"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "Geçerli ekran ayarları uygulanamadı"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"Öntanımlı shell teması, 'default-extracted' olarak \"{path}\" dizinine "
+"çıkarıldı"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "Öntanımlı shell teması çıkartılamadı"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "Yazı Tipleri"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "Tepe Çubuğu"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "Ses"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "Fare ve Dokunmatik Yüzey"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "Ekran"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "Çeşitli"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "Araçlar"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "Ayarlar sıfırlanamadı"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "Ayarlar sıfırlandı"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr "Uygulama Tercihleri"
@@ -382,10 +487,6 @@ msgstr "Dosya Seç"
 msgid "The color to use as background"
 msgstr "Arka plan olarak kullanılacak renk"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "Ekran"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "Geçerli ekran ayarlarını uygula"
@@ -435,10 +536,6 @@ msgstr "Bitiş Saati"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Renk Sıcaklığı"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "Yazı Tipleri"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -515,10 +612,6 @@ msgstr "Kullanıcı ayarları içe aktarıldı"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "Çeşitli"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -603,10 +696,6 @@ msgstr "İki parmağınızla kaydırın."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Yazarken Devre Dışı Bırak"
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "Ses"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -708,96 +797,20 @@ msgstr "Güç"
 msgid "Show battery percentage"
 msgstr "Batarya yüzdesini göster"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "Ana sayfa"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr "Uygulama sürümünü göster"
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr "SEVİYE"
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "Ayrıntılı kipi etkinleştir (ayrıntı düzeyini 5 olarak ayarla)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr "Uygulanamadı! Seçilen arka plan resmi bulunamadı. Lütfen tekrar seçin."
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "Uygulanan geçerli ekran ayarları"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "Geçerli ekran ayarları uygulanamadı"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Öntanımlı shell teması, 'default-extracted' olarak \"{path}\" dizinine "
-"çıkarıldı"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "Öntanımlı shell teması çıkartılamadı"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "Görünüm"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "Tepe Çubuğu"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "Fare ve Dokunmatik Yüzey"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "Araçlar"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "Ayarlar sıfırlanamadı"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "Ayarlar sıfırlandı"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "öntanımlı tema kaydediliyor ..."

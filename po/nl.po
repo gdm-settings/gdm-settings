@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -170,12 +170,12 @@ msgstr "Achtergrondkleur van bovenbalk"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr "Aanmeldvenstervoorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
 
@@ -190,7 +190,7 @@ msgstr ""
 "nachtlichtvoorkeuren aan en nog veel meer."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -306,6 +306,113 @@ msgstr "Spaans"
 msgid "Urdu"
 msgstr "Urdu"
 
+#: src/app.py:33
+#, fuzzy
+#| msgid "Show application version"
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr "Toepassingsversie tonen"
+
+#: src/app.py:41
+#, fuzzy
+#| msgid "Set verbosity level manually (from 0 to 5)"
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Foutopsporingsniveau instellen (0-5)"
+
+#: src/app.py:43
+#, fuzzy
+#| msgid "LEVEL"
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "NIVEAU"
+
+#: src/app.py:50
+#, fuzzy
+#| msgid "Enable verbose mode (set verbosity level 5)"
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr "Uitgebreide modus inschakelen (foutopsporingsniveau 5)"
+
+#: src/app.py:59
+#, fuzzy
+#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr "Stille modus inschakelen   (foutopsporingsniveau 0)"
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+"De afbeelding is niet ingesteld omdat het bestand niet is aangetroffen. Kies "
+"een andere afbeelding."
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr "De huidige beeldscherminstellingen zijn toegepast"
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+"Het standaard Shell-thema is uitgepakt naar ‘{path}’ onder de naam ‘default-"
+"extracted’"
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr "Vormgeving"
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr "Lettertypen"
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr "Bovenbalk"
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr "Geluid"
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr "Muis en touchpad"
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr "Beeldscherm"
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr "Overig"
+
+#: src/app.py:613
+msgid "Tools"
+msgstr "Hulpmiddelen"
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr "De standaardwaarden kunnen niet worden hersteld"
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr "De standaardwaarden zijn hersteld"
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr "Toepassingsvoorkeuren"
@@ -383,10 +490,6 @@ msgstr "Kies een bestand"
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr "Beeldscherm"
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr "Huidige beeldscherminstellingen toepassen"
@@ -436,10 +539,6 @@ msgstr "Tot"
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
 msgstr "Kleurtemperatuur"
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
-msgstr "Lettertypen"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
@@ -516,10 +615,6 @@ msgstr "De voorkeuren zijn geïmporteerd"
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
-msgstr "Overig"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
@@ -604,10 +699,6 @@ msgstr "Scroll door met twee vingers te vegen."
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
 msgstr "Uitschakelen tijdens typen"
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
-msgstr "Geluid"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
@@ -709,99 +800,21 @@ msgstr "Energie"
 msgid "Show battery percentage"
 msgstr "Accupercentage tonen"
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr "Website"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr "Toepassingsversie tonen"
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Foutopsporingsniveau instellen (0-5)"
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr "NIVEAU"
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr "Uitgebreide modus inschakelen (foutopsporingsniveau 5)"
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr "Stille modus inschakelen   (foutopsporingsniveau 0)"
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-"De afbeelding is niet ingesteld omdat het bestand niet is aangetroffen. Kies "
-"een andere afbeelding."
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr "De huidige beeldscherminstellingen zijn toegepast"
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Het standaard Shell-thema is uitgepakt naar ‘{path}’ onder de naam ‘default-"
-"extracted’"
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr "Vormgeving"
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr "Bovenbalk"
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr "Muis en touchpad"
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr "Hulpmiddelen"
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr "De standaardwaarden kunnen niet worden hersteld"
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr "De standaardwaarden zijn hersteld"
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr "Bezig met opslaan van huidig thema…"
 
