@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 10:42+0500\n"
-"PO-Revision-Date: 2022-06-14 01:46+0000\n"
+"PO-Revision-Date: 2022-06-23 09:24+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -25,7 +25,6 @@ msgstr "Tipe de fons"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "Indica se lo rèireplan deu èsser un imatge, una colora o pas res."
 
@@ -174,9 +173,8 @@ msgstr "Paramètres del gestionari de fenèstra de connexion"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME (GDM)"
+msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME, GDM"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -195,7 +193,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Pagina de la botiga d’aplicacions actualizada"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -288,7 +286,7 @@ msgstr "Traduccions actualizadas :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
-msgstr ""
+msgstr "Neerlandés"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
@@ -307,36 +305,26 @@ msgid "Urdu"
 msgstr "Ordo"
 
 #: src/app.py:33
-#, fuzzy
-#| msgid "Show application version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "Afichar la version de l’aplicacion"
 
 #: src/app.py:41
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Definir manualament lo nivèl de verbiositat (de 0 a 5)"
 
 #: src/app.py:43
-#, fuzzy
-#| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVÈL"
 
 #: src/app.py:50
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Activar lo mòde verbiós (definir lo nivèl a 5)"
 
 #: src/app.py:59
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Activar lo mòde silenciós   (definir lo nivèl de verbiositat a 0)"
@@ -416,16 +404,15 @@ msgstr "Reïnicializacion dels paramètres reüssida"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "Preferéncias de l’aplicacion"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
 msgstr "Tèma Shell per defaut"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Aplicar lo metòde"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
@@ -817,17 +804,13 @@ msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
 #: src/settings_manager.py:263
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "enregistrament del tèma per defaut…"
 
 #: src/settings_manager.py:588
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
+msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 
 #: src/settings_manager.py:595
 msgctxt "Command-line output"
