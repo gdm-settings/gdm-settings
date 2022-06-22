@@ -35,11 +35,11 @@ class PATH:
         else:
             raise ValueError("provided value is not of type 'str' or 'list'.")
 
-    def __repr__(self):
-        return f"PATH{self.val}"
-
     def __str__(self):
         return str.join(':', self.val)
+
+    def __repr__(self):
+        return self.__class__.__name__ + '(' + self.__str__().__repr__() + ')'
 
     def __iter__(self):
         for item in self.val:
