@@ -15,7 +15,7 @@ from types import SimpleNamespace
 widgets = SimpleNamespace()
 
 def char(string, /):
-    '''Get 1st character as an int from string'''
+    '''Get 1st character from string as an int'''
     str_bytes = string.encode()
     character = str_bytes[0]
     return character
@@ -69,53 +69,6 @@ class Application(Adw.Application):
         self.connect("shutdown", self.on_shutdown)
 
 
-    ### Some utility functions ###
-
-    def connect_signal(self, widget, signal, function):
-        getattr(widgets, widget).connect(signal, function)
-
-    def create_action(self, action_name, function):
-        action = Gio.SimpleAction(name=action_name)
-        action.connect("activate", function)
-        self.add_action(action)
-        setattr(widgets, action_name+'_action', action)
-
-    def add_page_to_page_stack(self, title, name=None):
-        name = name or title.lower().replace(" ", "_")
-        page_content = getattr(widgets, name + '_page_content')
-        page = widgets.page_stack.add_child(page_content)
-        page.set_name(name)
-        page.set_title(title)
-
-
-    ### Settings setter functions ###
-
-    def set_comborow_setting(self, name):
-        comborow = getattr(widgets, name+'_comborow')
-        setattr(self.settings, name, comborow.get_selected_item().get_string())
-
-    def set_switch_setting(self, name):
-        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
-        setattr(self.settings, name, switch.get_active())
-
-    def set_color_setting(self, name):
-        color_button = getattr(widgets, name+'_button')
-        setattr(self.settings, name, color_button.get_rgba().to_string())
-
-    def set_file_chooser_setting(self, name):
-        file_chooser = getattr(widgets, name+'_chooser')
-        if file := file_chooser.get_file():
-            setattr(self.settings, name, file.get_path())
-
-    def set_font_setting(self, name):
-        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
-        setattr(self.settings, name, font_button.get_font())
-
-    def set_spinbutton_setting(self, name):
-        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
-        setattr(self.settings, name, spinbutton.get_value())
-
-
     ## Core App Signal Handlers ##
 
     def on_activate(self, app):
@@ -164,6 +117,53 @@ class Application(Adw.Application):
     def on_shutdown(self, app):
         self.save_window_state()
         self.settings.cleanup()
+
+
+    ### Some utility functions ###
+
+    def connect_signal(self, widget, signal, function):
+        getattr(widgets, widget).connect(signal, function)
+
+    def create_action(self, action_name, function):
+        action = Gio.SimpleAction(name=action_name)
+        action.connect("activate", function)
+        self.add_action(action)
+        setattr(widgets, action_name+'_action', action)
+
+    def add_page_to_page_stack(self, title, name=None):
+        name = name or title.lower().replace(" ", "_")
+        page_content = getattr(widgets, name + '_page_content')
+        page = widgets.page_stack.add_child(page_content)
+        page.set_name(name)
+        page.set_title(title)
+
+
+    ### Settings setter functions ###
+
+    def set_comborow_setting(self, name):
+        comborow = getattr(widgets, name+'_comborow')
+        setattr(self.settings, name, comborow.get_selected_item().get_string())
+
+    def set_switch_setting(self, name):
+        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
+        setattr(self.settings, name, switch.get_active())
+
+    def set_color_setting(self, name):
+        color_button = getattr(widgets, name+'_button')
+        setattr(self.settings, name, color_button.get_rgba().to_string())
+
+    def set_file_chooser_setting(self, name):
+        file_chooser = getattr(widgets, name+'_chooser')
+        if file := file_chooser.get_file():
+            setattr(self.settings, name, file.get_path())
+
+    def set_font_setting(self, name):
+        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
+        setattr(self.settings, name, font_button.get_font())
+
+    def set_spinbutton_setting(self, name):
+        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
+        setattr(self.settings, name, spinbutton.get_value())
 
 
     ### Signal handlers for Widgets ###
