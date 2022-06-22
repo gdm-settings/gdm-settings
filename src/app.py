@@ -24,33 +24,37 @@ class Application(Adw.Application):
     def __init__(self):
         Adw.Application.__init__(self, application_id=info.application_id)
 
-        self.add_main_option("version", 0,
-                             GLib.OptionFlags.NONE,
-                             GLib.OptionArg.NONE,
-                             _("Show application version"),
-                             None,
+        self.add_main_option('version', 0,                   # long name, short name (0 means no short name)
+                             GLib.OptionFlags.NONE,          # OptionFlags
+                             GLib.OptionArg.NONE,            # OptionArg (type of argument required by this option)
+                             C_('Description of --version option',
+                                'Show application version'), # description of the option
+                             None,                           # name of this option's argument
                              )
 
-        self.add_main_option("verbosity", 0,
+        self.add_main_option('verbosity', 0,
                              GLib.OptionFlags.NONE,
                              GLib.OptionArg.INT,
-                             _("Set verbosity level manually (from 0 to 5)"),
-                             # Translators: 'LEVEL' is the argument of --verbosity option.
-                             _("LEVEL"),
+                             C_('Description of --verbosity option',
+                                'Set verbosity level manually (from 0 to 5)'),
+                             C_('Argument of --verbosity option',
+                                'LEVEL'),
                              )
 
-        self.add_main_option("verbose", "v".encode(),
+        self.add_main_option('verbose', 'v'.encode(),
                              GLib.OptionFlags.NONE,
                              GLib.OptionArg.NONE,
-                             _("Enable verbose mode (set verbosity level 5)"),
+                             C_('Description of --verbose option',
+                                'Enable verbose mode (set verbosity level 5)'),
                              None,
                              )
 
-        self.add_main_option("quiet", "q".encode(),
+        self.add_main_option('quiet', 'q'.encode(),
                              GLib.OptionFlags.NONE,
                              GLib.OptionArg.NONE,
                              # Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-                             _("Enable quiet mode   (set verbosity level 0)"),
+                             C_('Description of --quiet option',
+                                'Enable quiet mode   (set verbosity level 0)'),
                              None,
                              )
 
