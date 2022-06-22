@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 09:54+0500\n"
-"PO-Revision-Date: 2022-06-18 04:20+0000\n"
+"PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -30,7 +30,6 @@ msgstr "بیک گرائونڈ کی قصم"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا کچھ نہیں-"
 
@@ -176,7 +175,6 @@ msgstr "لاگن مینیجر کی سیٹنگز"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
 
@@ -196,7 +194,7 @@ msgstr "مظہر حسین"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "ایپلیکیشن کا ایپ سٹور والا صفحہ اپڈیٹ کیا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -300,36 +298,26 @@ msgid "Urdu"
 msgstr "اردو"
 
 #: src/app.py:33
-#, fuzzy
-#| msgid "Show application version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "اَیپلی کیشن کا ورژن دکھائیں"
 
 #: src/app.py:41
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "وربوسِٹی کا لیوَل سیٹ کریں (0 سے 5 تک)"
 
 #: src/app.py:43
-#, fuzzy
-#| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "لیوَل"
 
 #: src/app.py:50
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 سیٹ کریں)"
 
 #: src/app.py:59
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 سیٹ کریں)"
@@ -406,32 +394,31 @@ msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "ایپلیکیشن کی سیٹنگز"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
-msgstr "شیل کا ڈیفالٹ تھیم"
+msgstr "شیل کا تھیم"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "اپلائی کرنے کا طریقہ"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "کیا تھیم کو ڈیفالٹ تھیم پر اوورلے کرنا چاہئے؟"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "کوئی اوورلے نہیں"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "ریسورسز کا اوورلے"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "مکمل اوورلے"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
