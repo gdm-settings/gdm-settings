@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 09:54+0500\n"
+"POT-Creation-Date: 2022-06-22 10:42+0500\n"
 "PO-Revision-Date: 2022-06-21 03:43+0000\n"
 "Last-Translator: jagfwajgf <juri26@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -831,8 +831,34 @@ msgid "translator-credits"
 msgstr "Philipp Kiemle <philipp.kiemle@gmail.com>, 2022"
 
 #: src/settings_manager.py:263
-msgid "saving default theme ..."
+#, fuzzy
+#| msgid "saving default theme ..."
+msgid "saving default theme …"
 msgstr "Vorgabethema wird gespeichert …"
+
+#: src/settings_manager.py:588
+#, fuzzy
+#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr ""
+"Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
+"angewendet"
+
+#: src/settings_manager.py:595
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr ""
+
+#: src/settings_manager.py:718
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:722
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
+msgstr ""
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Hinzugefügt: Unterstützung für Ubuntu"

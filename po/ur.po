@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-22 09:54+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-22 10:42+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -794,8 +794,32 @@ msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
 #: src/settings_manager.py:263
-msgid "saving default theme ..."
+#, fuzzy
+#| msgid "saving default theme ..."
+msgid "saving default theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
+
+#: src/settings_manager.py:588
+#, fuzzy
+#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
+
+#: src/settings_manager.py:595
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr ""
+
+#: src/settings_manager.py:718
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:722
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
+msgstr ""
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Ubuntu کے لیے سپورٹ شامل کی"

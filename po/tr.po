@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 09:54+0500\n"
+"POT-Creation-Date: 2022-06-22 10:42+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -812,5 +812,31 @@ msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/settings_manager.py:263
-msgid "saving default theme ..."
+#, fuzzy
+#| msgid "saving default theme ..."
+msgid "saving default theme …"
 msgstr "öntanımlı tema kaydediliyor ..."
+
+#: src/settings_manager.py:588
+#, fuzzy
+#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr ""
+"Ubuntu'da 'Uygula' seçeneğine tıklandığında yalnızca bazı ayarlar "
+"uygulanıyordu"
+
+#: src/settings_manager.py:595
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr ""
+
+#: src/settings_manager.py:718
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:722
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
+msgstr ""

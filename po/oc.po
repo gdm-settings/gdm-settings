@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 09:54+0500\n"
+"POT-Creation-Date: 2022-06-22 10:42+0500\n"
 "PO-Revision-Date: 2022-06-14 01:46+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -817,8 +817,32 @@ msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
 #: src/settings_manager.py:263
-msgid "saving default theme ..."
+#, fuzzy
+#| msgid "saving default theme ..."
+msgid "saving default theme …"
 msgstr "enregistrament del tèma per defaut…"
+
+#: src/settings_manager.py:588
+#, fuzzy
+#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
+
+#: src/settings_manager.py:595
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr ""
+
+#: src/settings_manager.py:718
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:722
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
+msgstr ""
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Ajustat : presa en carga d’Ubuntu"
