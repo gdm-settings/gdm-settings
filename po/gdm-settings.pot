@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-21 08:42+0500\n"
+"POT-Creation-Date: 2022-06-22 09:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,12 +152,12 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:3
+#: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:13
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 
@@ -169,7 +169,7 @@ msgid ""
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:18
+#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr ""
 
@@ -276,6 +276,99 @@ msgstr ""
 msgid "Urdu"
 msgstr ""
 
+#: src/app.py:33
+msgctxt "Description of --version option"
+msgid "Show application version"
+msgstr ""
+
+#: src/app.py:41
+msgctxt "Description of --verbosity option"
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: src/app.py:43
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr ""
+
+#: src/app.py:50
+msgctxt "Description of --verbose option"
+msgid "Enable verbose mode (set verbosity level 5)"
+msgstr ""
+
+#: src/app.py:59
+msgctxt "Description of --quiet option"
+msgid "Enable quiet mode   (set verbosity level 0)"
+msgstr ""
+
+#: src/app.py:189
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+
+#: src/app.py:221
+msgid "Applied current display settings"
+msgstr ""
+
+#: src/app.py:223
+msgid "Failed to apply current display settings"
+msgstr ""
+
+#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
+#: src/app.py:234
+#, python-brace-format
+msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgstr ""
+
+#: src/app.py:236
+msgid "Failed to extract default theme"
+msgstr ""
+
+#: src/app.py:606
+msgid "Appearance"
+msgstr ""
+
+#: src/app.py:607 src/blueprints/fonts-page.blp:20
+msgid "Fonts"
+msgstr ""
+
+#: src/app.py:608
+msgid "Top Bar"
+msgstr ""
+
+#: src/app.py:609 src/blueprints/sound-page.blp:20
+msgid "Sound"
+msgstr ""
+
+#: src/app.py:610
+msgid "Mouse & Touchpad"
+msgstr ""
+
+#: src/app.py:611 src/blueprints/display-page.blp:20
+msgid "Display"
+msgstr ""
+
+#: src/app.py:612 src/blueprints/misc-page.blp:20
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/app.py:613
+msgid "Tools"
+msgstr ""
+
+#: src/app.py:667
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr ""
+
+#: src/app.py:672
+msgid "Failed to reset settings"
+msgstr ""
+
+#: src/app.py:676
+msgid "Reset settings successfully"
+msgstr ""
+
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
 msgstr ""
@@ -353,10 +446,6 @@ msgstr ""
 msgid "The color to use as background"
 msgstr ""
 
-#: src/blueprints/display-page.blp:20 src/gui.py:604
-msgid "Display"
-msgstr ""
-
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
 msgstr ""
@@ -405,10 +494,6 @@ msgstr ""
 
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
-msgstr ""
-
-#: src/blueprints/fonts-page.blp:20 src/gui.py:600
-msgid "Fonts"
 msgstr ""
 
 #: src/blueprints/fonts-page.blp:23
@@ -485,10 +570,6 @@ msgstr ""
 
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
-msgstr ""
-
-#: src/blueprints/misc-page.blp:20 src/gui.py:605
-msgid "Miscellaneous"
 msgstr ""
 
 #: src/blueprints/misc-page.blp:23
@@ -573,10 +654,6 @@ msgstr ""
 
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
-msgstr ""
-
-#: src/blueprints/sound-page.blp:20 src/gui.py:602
-msgid "Sound"
 msgstr ""
 
 #: src/blueprints/sound-page.blp:22
@@ -679,94 +756,20 @@ msgstr ""
 msgid "Show battery percentage"
 msgstr ""
 
-#: src/dialogs.py:14
+#: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr ""
 
-#: src/dialogs.py:15
+#: src/dialogs.py:16
 msgid "Homepage"
 msgstr ""
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:24
+#: src/dialogs.py:25
 msgid "translator-credits"
 msgstr ""
 
-#: src/gui.py:71
-msgid "Show application version"
-msgstr ""
-
-#: src/gui.py:78
-msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
-
-#. Translators: 'LEVEL' is the argument of --verbosity option.
-#: src/gui.py:80
-msgid "LEVEL"
-msgstr ""
-
-#: src/gui.py:86
-msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
-
-#. Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
-#: src/gui.py:94
-msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
-
-#: src/gui.py:189
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-
-#: src/gui.py:221
-msgid "Applied current display settings"
-msgstr ""
-
-#: src/gui.py:223
-msgid "Failed to apply current display settings"
-msgstr ""
-
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/gui.py:234
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-
-#: src/gui.py:236
-msgid "Failed to extract default theme"
-msgstr ""
-
-#: src/gui.py:599
-msgid "Appearance"
-msgstr ""
-
-#: src/gui.py:601
-msgid "Top Bar"
-msgstr ""
-
-#: src/gui.py:603
-msgid "Mouse & Touchpad"
-msgstr ""
-
-#: src/gui.py:606
-msgid "Tools"
-msgstr ""
-
-#: src/gui.py:660
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
-
-#: src/gui.py:665
-msgid "Failed to reset settings"
-msgstr ""
-
-#: src/gui.py:669
-msgid "Reset settings successfully"
-msgstr ""
-
-#: src/settings_manager.py:262
+#: src/settings_manager.py:263
 msgid "saving default theme ..."
 msgstr ""
