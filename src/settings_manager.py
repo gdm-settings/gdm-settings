@@ -260,7 +260,7 @@ class GResourceUtils:
 
         default_gresource =  self.get_default()
         if default_gresource and default_gresource != self.ShellGresourceAutoBackup:
-            print(_("saving default theme ..."))
+            print(_("saving default theme …"))
             self.command_elevator.add(f"cp {default_gresource} {self.ShellGresourceAutoBackup}")
             self._extract_default_pure_theme()
         elif not path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure'):
@@ -585,14 +585,14 @@ class Settings:
         # We need to copy the compiled gresource file instead of moving it because the copy gets correct
         # SELinux context/label where applicable and prevents breakage of GDM in such situations.
         if self.gresource_utils.UbuntuGdmGresourceFile:
-            logging.info("Applying GResource settings for Ubuntu ...")
+            logging.info(C_('Command-line output', "Applying GResource settings for Ubuntu …"))
             self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chown root: {self.gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chmod 644 {self.gresource_utils.CustomGresourceFile}")
             self.command_elevator.add(f'update-alternatives --quiet --install {self.gresource_utils.UbuntuGdmGresourceFile} {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile} 0')
             self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
         else:
-            logging.info("Applying GResource settings for non-Ubuntu systems ...")
+            logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
@@ -715,11 +715,11 @@ class Settings:
         status = False
 
         if self.gresource_utils.UbuntuGdmGresourceFile:
-            logging.info("Resetting GResource settings for Ubuntu ...")
+            logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
             self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
             self.command_elevator.add(f'rm -f {self.gresource_utils.CustomGresourceFile}')
         elif path.exists(self.gresource_utils.ShellGresourceAutoBackup):
-            logging.info("Resetting GResource settings for non-Ubuntu systems ...")
+            logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(f"mv -f {self.gresource_utils.ShellGresourceAutoBackup} {self.gresource_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
