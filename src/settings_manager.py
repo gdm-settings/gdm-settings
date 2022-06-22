@@ -1,4 +1,4 @@
-'''The actual settings manager'''
+'''Contains the actual settings manager'''
 
 import logging
 from os import path
