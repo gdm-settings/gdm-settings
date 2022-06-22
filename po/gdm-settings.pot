@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 09:54+0500\n"
+"POT-Creation-Date: 2022-06-22 10:42+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -771,5 +771,25 @@ msgid "translator-credits"
 msgstr ""
 
 #: src/settings_manager.py:263
-msgid "saving default theme ..."
+msgid "saving default theme …"
+msgstr ""
+
+#: src/settings_manager.py:588
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:595
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr ""
+
+#: src/settings_manager.py:718
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr ""
+
+#: src/settings_manager.py:722
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
