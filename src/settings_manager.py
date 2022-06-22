@@ -1,23 +1,14 @@
 '''The actual settings manager'''
 
 import logging
-
-from glob import glob
-from subprocess import run
-from os import path, listdir, makedirs, remove, chmod
-from shutil import copy, move, copytree, rmtree
-from math import trunc
+from os import path
 from gettext import gettext as _, pgettext as C_
-
-from gi.repository import Gio
-
 from . import env
-from .info import project_name, application_id
-from .utils import getstdout
 
 if env.PACKAGE_TYPE == env.PackageType.Flatpak:
     TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
 else:
+    from .info import project_name
     TEMP_DIR = path.join(env.XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
 
 class Theme:
@@ -52,6 +43,7 @@ def update_theme_list(type:str):
     else:
         raise ValueError(f"invalid type '{type}'")
 
+    from glob import glob
     for data_dir in env.SYSTEM_DATA_DIRS:
         for theme_dir in glob(f"{env.HOST_ROOT}{data_dir}/{dirname}/*"):
             theme_name = path.basename(theme_dir)
@@ -126,6 +118,10 @@ class CommandElevator:
 
     def run_only(self) -> bool:
         """ Run commands but DO NOT clear command list """
+
+        from os import chmod, makedirs, remove
+        from subprocess import run
+
         returncode = 0
         if len(self.__list):
             makedirs(name=TEMP_DIR, exist_ok=True)
@@ -179,6 +175,8 @@ class GResourceUtils:
     def __listdir_recursive(self, dir:str):
         """list files (only) inside a directory recursively"""
 
+        from os import listdir
+
         files=[]
         for file in listdir(dir):
             if path.isdir(path.join(dir, file)):
@@ -190,6 +188,8 @@ class GResourceUtils:
 
     def is_default(self, gresourceFile:str):
         """checks if the provided file is a GResource file of the default theme"""
+
+        from .utils import getstdout
 
         if path.exists(gresourceFile):
             if getstdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
@@ -208,6 +208,9 @@ class GResourceUtils:
         """extracts theme resources from provided GResource file of the theme
 
         Returns: path to a directory inside which resources of the theme were extracted"""
+
+        from os import makedirs
+        from .utils import getstdout
 
         TempExtractedDir = f"{TEMP_DIR}/extracted"
         resource_list = getstdout(["gresource", "list", gresource_file]).decode().splitlines()
@@ -234,6 +237,9 @@ class GResourceUtils:
             with open(source_shell_dir + "/gnome-shell.css", "a") as shell_css:
                 print(additional_css, file=shell_css)
 
+        from os import makedirs
+        from subprocess import run
+        from shutil import copytree, rmtree
         if run(['test', '-w', target_dir]).returncode == 0:
             if path.exists(target_theme_dir):
                 rmtree(target_theme_dir)
@@ -248,6 +254,8 @@ class GResourceUtils:
         return status
 
     def _extract_default_pure_theme(self):
+        from os import makedirs
+
         makedirs(TEMP_DIR, exist_ok=True)
         self.extract_default_theme(target_dir=TEMP_DIR, name='default-pure')
         self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
@@ -268,6 +276,9 @@ class GResourceUtils:
 
     def compile(self, shellDir:str, additional_css:str, background_image:str=None):
         """Compile a theme into a GResource file for its use as the GDM theme"""
+
+        from os import remove
+        from shutil import copy, copytree, rmtree
 
         # Remove temporary directory if already exists
         if path.exists(self.TempShellDir):
@@ -310,6 +321,8 @@ class GResourceUtils:
                   file=GresourceXml)
 
         # Compile Theme
+        from subprocess import run
+        from shutil import move, rmtree
         run(['glib-compile-resources', f'--sourcedir={self.TempShellDir}', f'{self.TempShellDir}/gnome-shell-theme.gresource.xml'])
         move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), TEMP_DIR)
         rmtree(self.TempShellDir)
@@ -392,6 +405,8 @@ class Settings:
         self.gresource_utils  = GResourceUtils()
         self.command_elevator = self.gresource_utils.command_elevator
 
+        from gi.repository import Gio
+        from .info import application_id
         gsettings = lambda x=None: Gio.Settings (schema_id=application_id+('.'+x if x else ''))
 
         self.main_gsettings        = gsettings ()
@@ -417,6 +432,7 @@ class Settings:
             self.load_user_settings()
 
     def _settings(self, schema_id:str):
+        from gi.repository import Gio
         if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
             return Gio.Settings(schema_id=schema_id)
 
@@ -468,6 +484,8 @@ class Settings:
 
             night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
             night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+
+            from math import trunc
 
             self.night_light_start_hour = trunc(night_light_schedule_from)
             self.night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
@@ -567,6 +585,8 @@ class Settings:
 
     def apply_gresource_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
+
+        from os import makedirs
 
         self.gresource_utils.auto_backup()
         makedirs(TEMP_DIR, exist_ok=True)
@@ -739,6 +759,8 @@ class Settings:
         return status
 
     def get_overriding_files(self):
+        from os import listdir
+
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
         overriding_files = []
 
@@ -752,4 +774,5 @@ class Settings:
         return overriding_files
 
     def cleanup(self):
+        from shutil import rmtree
         rmtree(path=TEMP_DIR, ignore_errors=True)

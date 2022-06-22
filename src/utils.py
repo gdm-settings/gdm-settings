@@ -1,14 +1,13 @@
 '''Some random utility functions, classes, objects, etc. used throughout the source code'''
 
-from os import path
-from subprocess import run
-
 def getstdout(args):
+    from subprocess import run
     if isinstance(args, str):
         args = args.split()
     return run(args, capture_output=True).stdout
 
 def find_file(file, locations):
+    from os import path
     found_path = ''
     for location in locations:
         file_path = path.join(location, file.lstrip('/'))

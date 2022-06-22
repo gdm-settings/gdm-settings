@@ -1,22 +1,17 @@
 '''Contains the main Application class'''
 
-import sys
 import logging
-from os import path
-from types import SimpleNamespace
 from gettext import gettext as _, pgettext as C_
 
 import gi
 gi.require_version("Adw", '1')
 from gi.repository import Adw, Gtk, Gio, GLib, Gdk
 
-from gdm_settings import env
-from gdm_settings import info
-from gdm_settings import utils
-from gdm_settings import dialogs
-from gdm_settings import settings_manager
+from . import env
+from . import info
 
 # Namespace to contain widgets
+from types import SimpleNamespace
 widgets = SimpleNamespace()
 
 class Application(Adw.Application):
@@ -26,17 +21,19 @@ class Application(Adw.Application):
 
         # Add command-line options
 
+        from gi.repository.GLib import OptionFlags, OptionArg
+
         self.add_main_option('version', 0,                   # long name, short name (0 means no short name)
-                             GLib.OptionFlags.NONE,          # OptionFlags
-                             GLib.OptionArg.NONE,            # OptionArg (type of argument required by this option)
+                             OptionFlags.NONE,               # OptionFlags
+                             OptionArg.NONE,                 # OptionArg (type of argument required by this option)
                              C_('Description of --version option',
                                 'Show application version'), # description of the option
                              None,                           # name of this option's argument
                              )
 
         self.add_main_option('verbosity', 0,
-                             GLib.OptionFlags.NONE,
-                             GLib.OptionArg.INT,
+                             OptionFlags.NONE,
+                             OptionArg.INT,
                              C_('Description of --verbosity option',
                                 'Set verbosity level manually (from 0 to 5)'),
                              C_('Argument of --verbosity option',
@@ -44,16 +41,16 @@ class Application(Adw.Application):
                              )
 
         self.add_main_option('verbose', 'v'.encode(),
-                             GLib.OptionFlags.NONE,
-                             GLib.OptionArg.NONE,
+                             OptionFlags.NONE,
+                             OptionArg.NONE,
                              C_('Description of --verbose option',
                                 'Enable verbose mode (set verbosity level 5)'),
                              None,
                              )
 
         self.add_main_option('quiet', 'q'.encode(),
-                             GLib.OptionFlags.NONE,
-                             GLib.OptionArg.NONE,
+                             OptionFlags.NONE,
+                             OptionArg.NONE,
                              # Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
                              C_('Description of --quiet option',
                                 'Enable quiet mode   (set verbosity level 0)'),
@@ -144,14 +141,16 @@ class Application(Adw.Application):
         if options.contains("quiet"):
             self.set_logging_level (0)
 
-        if verbosity_gvariant := options.lookup_value("verbosity", GLib.VariantType("i")):
+        from gi.repository.GLib import VariantType
+        if verbosity_gvariant := options.lookup_value("verbosity", VariantType("i")):
             verbosity_level = verbosity_gvariant.get_int32()
 
             if verbosity_level >= 0 and verbosity_level <= 5:
                 self.set_logging_level (verbosity_level)
             else:
-                print (verbosity_level, "is an invalid verbosity level. Accepted values are 0 to 5.", file=sys.stderr)
-                print ("Assuming Verbosity level 4.", file=sys.stderr)
+                from sys import stderr
+                print (verbosity_level, "is an invalid verbosity level. Accepted values are 0 to 5.", file=stderr)
+                print ("Assuming Verbosity level 4.", file=stderr)
                 self.set_logging_level (4)
 
         return -1
@@ -164,11 +163,13 @@ class Application(Adw.Application):
     ### Signal handlers for Widgets ###
 
     def show_about_dialog(self):
-        dialog = dialogs.AboutDialog (widgets.main_window)
+        from .dialogs import AboutDialog
+        dialog = AboutDialog(widgets.main_window)
         dialog.present()
 
     def show_app_preferences(self):
-        file = utils.find_file(f"{info.project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
+        from .utils import find_file
+        file = find_file(f"{info.project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
         builder = Gtk.Builder.new_from_file(file)
         pref_window = builder.get_object('app_preferences_window')
         pref_window.set_transient_for(widgets.main_window)
@@ -257,7 +258,8 @@ class Application(Adw.Application):
         logging.root.setLevel(level)
 
     def initialize_settings(self):
-        self.settings = settings_manager.Settings()
+        from .settings_manager import Settings
+        self.settings = Settings()
         self.window_state = Gio.Settings(schema_id=f'{info.application_id}.window-state')
 
     def get_widgets(self):
@@ -372,8 +374,9 @@ class Application(Adw.Application):
         self.builder.set_translation_domain(info.project_name)
 
         # Load UI files
+        from .utils import find_file
         for ui_file_name in ui_files:
-            file = utils.find_file(f"{info.project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
+            file = find_file(f"{info.project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
             self.builder.add_from_file(file)
 
         # Get Widgets from builder ####
@@ -419,23 +422,30 @@ class Application(Adw.Application):
 
     def load_theme_lists(self):
         # Shell Themes
+        from .settings_manager import shell_themes
         widgets.shell_theme_list = Gtk.StringList()
-        for theme in settings_manager.shell_themes:
+        for theme in shell_themes:
             widgets.shell_theme_list.append(theme.name)
         widgets.shell_theme_comborow.set_model(widgets.shell_theme_list)
+
         # Icon Themes
+        from .settings_manager import icon_themes
         widgets.icon_theme_list = Gtk.StringList()
-        for theme in settings_manager.icon_themes:
+        for theme in icon_themes:
             widgets.icon_theme_list.append(theme.name)
         widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
+
         # Cursor Themes
+        from .settings_manager import cursor_themes
         widgets.cursor_theme_list = Gtk.StringList()
-        for theme in settings_manager.cursor_themes:
+        for theme in cursor_themes:
             widgets.cursor_theme_list.append(theme.name)
         widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
+
         # Sound Themes
+        from .settings_manager import sound_themes
         widgets.sound_theme_list = Gtk.StringList()
-        for theme in settings_manager.sound_themes:
+        for theme in sound_themes:
             widgets.sound_theme_list.append(theme.name)
         widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
@@ -499,6 +509,7 @@ class Application(Adw.Application):
         widgets.background_color_button.set_rgba(background_color_rgba)
 
         # Background Image
+        from os import path
         if self.settings.background_image:
             widgets.background_image_button.set_label(path.basename(self.settings.background_image))
             widgets.background_image_chooser.set_file(Gio.File.new_for_path(self.settings.background_image))
@@ -599,6 +610,7 @@ class Application(Adw.Application):
         widgets.welcome_message_entry.set_text(self.settings.welcome_message)
         widgets.enable_logo_switch.set_active(self.settings.enable_logo)
         if self.settings.logo:
+            from os import path
             widgets.logo_button.set_label(path.basename(self.settings.logo))
             widgets.logo_chooser.set_file(Gio.File.new_for_path(self.settings.logo))
 
