@@ -24,6 +24,8 @@ class Application(Adw.Application):
     def __init__(self):
         Adw.Application.__init__(self, application_id=info.application_id)
 
+        # Add command-line options
+
         self.add_main_option('version', 0,                   # long name, short name (0 means no short name)
                              GLib.OptionFlags.NONE,          # OptionFlags
                              GLib.OptionArg.NONE,            # OptionArg (type of argument required by this option)
@@ -58,6 +60,7 @@ class Application(Adw.Application):
                              None,
                              )
 
+        # Connect signals
         self.connect("activate", self.on_activate)
         self.connect("handle-local-options", self.handle_local_options)
         self.connect("shutdown", self.on_shutdown)
