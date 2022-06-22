@@ -1,6 +1,6 @@
-from . import info
 from gettext import gettext as _, pgettext as C_
 from gi.repository import Gtk
+from gdm_settings import info
 
 class AboutDialog (Gtk.AboutDialog):
     def __init__(self, win):
