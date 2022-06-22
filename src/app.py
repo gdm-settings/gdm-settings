@@ -18,7 +18,8 @@ from gdm_settings import settings_manager
 # Namespace to contain widgets
 widgets = SimpleNamespace()
 
-class GDM_Settings(Adw.Application):
+class Application(Adw.Application):
+    '''The main Application class'''
     def __init__(self):
         Adw.Application.__init__(self, application_id=info.application_id)
 
