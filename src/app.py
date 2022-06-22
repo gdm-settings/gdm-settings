@@ -1,4 +1,4 @@
-'''The graphical user interface of the application'''
+'''Contains the main Application class'''
 
 import sys
 import logging
