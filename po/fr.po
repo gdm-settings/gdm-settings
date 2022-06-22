@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 10:42+0500\n"
-"PO-Revision-Date: 2022-06-18 04:19+0000\n"
+"PO-Revision-Date: 2022-06-23 09:24+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -344,11 +344,9 @@ msgstr "Échec de l'application des paramètres d'affichage actuels"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/app.py:234
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
-"Thème par défaut extrait vers '/usr/share/themes' sous le nom 'default-"
-"extracted'"
+msgstr "Thème par défaut extrait vers '{path}' sous le nom 'default-extracted'"
 
 #: src/app.py:236
 msgid "Failed to extract default theme"
