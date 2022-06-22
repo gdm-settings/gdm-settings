@@ -7,6 +7,7 @@ from subprocess import run
 from os import path, listdir, makedirs, remove, chmod
 from shutil import copy, move, copytree, rmtree
 from math import trunc
+from gettext import gettext as _, pgettext as C_
 
 from gi.repository import Gio
 

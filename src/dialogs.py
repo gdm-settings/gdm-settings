@@ -1,4 +1,5 @@
 from . import info
+from gettext import gettext as _, pgettext as C_
 from gi.repository import Gtk
 
 class AboutDialog (Gtk.AboutDialog):

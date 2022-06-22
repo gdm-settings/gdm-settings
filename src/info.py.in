@@ -1,4 +1,5 @@
 '''Information about the application itself got from the build system'''
+from gettext import gettext as _
 
 application_name = _("Login Manager Settings")
 application_id   = 'io.github.realmazharhussain.GdmSettings'

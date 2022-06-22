@@ -10,7 +10,8 @@ py_modules_dir = APPDIR + '@py_modules_dir@'
 sys.path.insert(1, py_modules_dir)
 
 localedir = APPDIR + '@locale_dir@'
-gettext.install('@project_name@', localedir)
+gettext.bindtextdomain('@project_name@', localedir)
+gettext.textdomain('@project_name@')
 
 # Terminal Text Styles
 style_normal = '\033[0m'

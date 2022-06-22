@@ -4,6 +4,7 @@ import sys
 import logging
 from os import path
 from types import SimpleNamespace
+from gettext import gettext as _, pgettext as C_
 
 import gi
 gi.require_version("Adw", '1')
