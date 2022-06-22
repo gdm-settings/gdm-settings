@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 10:42+0500\n"
-"PO-Revision-Date: 2022-06-22 04:54+0000\n"
+"PO-Revision-Date: 2022-06-23 09:24+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -307,36 +307,26 @@ msgid "Urdu"
 msgstr "Urdu"
 
 #: src/app.py:33
-#, fuzzy
-#| msgid "Show application version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "Toepassingsversie tonen"
 
 #: src/app.py:41
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Foutopsporingsniveau instellen (0-5)"
 
 #: src/app.py:43
-#, fuzzy
-#| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEAU"
 
 #: src/app.py:50
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Uitgebreide modus inschakelen (foutopsporingsniveau 5)"
 
 #: src/app.py:59
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Stille modus inschakelen   (foutopsporingsniveau 0)"
@@ -815,32 +805,28 @@ msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
 #: src/settings_manager.py:263
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "Bezig met opslaan van huidig thema…"
 
 #: src/settings_manager.py:588
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "De knop ‘Toepassen’ pastte slechts enkele voorkeuren toe op Ubuntu"
+msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
 #: src/settings_manager.py:595
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
 #: src/settings_manager.py:718
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
 #: src/settings_manager.py:722
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Nieuw: ondersteuning voor Ubuntu"
