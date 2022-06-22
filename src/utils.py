@@ -17,13 +17,17 @@ def find_file(file, locations):
     return found_path
 
 class PATH:
-    '''stores value of a PATH-like variable and provides easy functionality for it.
+    '''Iterable PATH-like variable.
 
-    For example, with `mypath=PATH('/usr/local/bin:/usr/bin')` OR `mypath=PATH(['/usr/local/bin', '/usr/bin'])`,
-    print(mypath)      # prints PATH['/usr/local/bin', '/usr/bin']
-    print(str(mypath)) # prints '/usr/local/bin:/usr/bin'
-    print(*mypath)     # prints '/usr/local/bin\\n/usr/bin'
-    print(mypath[1])   # prints '/usr/bin'
+    For example, with
+        mypath = PATH('/usr/local/bin:/usr/bin')
+    OR
+        mypath = PATH(['/usr/local/bin', '/usr/bin'])
+    we get,
+        print(mypath)       # prints /usr/local/bin:/usr/bin
+        print(*mypath)      # prints /usr/local/bin /usr/bin
+        print(mypath[0])    # prints /usr/local/bin
+        print(repr(mypath)) # prints PATH('/usr/local/bin:/usr/bin')
     '''
     def __init__(self, val=[], /):
         if isinstance(val, list):
