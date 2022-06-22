@@ -108,8 +108,8 @@ class Application(Adw.Application):
                 self.set_logging_level (verbosity_level)
             else:
                 from sys import stderr
-                print (verbosity_level, "is an invalid verbosity level. Accepted values are 0 to 5.", file=stderr)
-                print ("Assuming Verbosity level 4.", file=stderr)
+                print(_('{level} is an invalid verbosity level. Accepted values are 0 to 5.').format(level=verbosity_level), file=stderr)
+                print(_('Assuming Verbosity level 4.'), file=stderr)
                 self.set_logging_level (4)
 
         return -1
