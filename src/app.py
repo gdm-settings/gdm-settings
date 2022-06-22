@@ -14,6 +14,12 @@ from . import info
 from types import SimpleNamespace
 widgets = SimpleNamespace()
 
+def char(string, /):
+    '''Get 1st character as an int from string'''
+    str_bytes = string.encode()
+    character = str_bytes[0]
+    return character
+
 class Application(Adw.Application):
     '''The main Application class'''
     def __init__(self):
@@ -40,7 +46,7 @@ class Application(Adw.Application):
                                 'LEVEL'),
                              )
 
-        self.add_main_option('verbose', 'v'.encode(),
+        self.add_main_option('verbose', char('v'),
                              OptionFlags.NONE,
                              OptionArg.NONE,
                              C_('Description of --verbose option',
@@ -48,7 +54,7 @@ class Application(Adw.Application):
                              None,
                              )
 
-        self.add_main_option('quiet', 'q'.encode(),
+        self.add_main_option('quiet', char('q'),
                              OptionFlags.NONE,
                              OptionArg.NONE,
                              # Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
