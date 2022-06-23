@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: 2022-06-23 09:24+0000\n"
+"PO-Revision-Date: 2022-06-24 13:14+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -335,10 +335,12 @@ msgstr "Stille modus inschakelen   (foutopsporingsniveau 0)"
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
+"{level} is geen foutopsporingsniveau. Foutopsporingsniveaus liggen tussen 0 "
+"en 5."
 
 #: src/app.py:112
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "Verondersteld: foutopsporingsniveau 4."
 
 #: src/app.py:196
 msgid ""
