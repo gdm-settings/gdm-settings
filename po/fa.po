@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 10:42+0500\n"
+"POT-Creation-Date: 2022-06-22 19:04+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -288,100 +288,109 @@ msgstr "اسپانیایی"
 msgid "Urdu"
 msgstr "اُردو"
 
-#: src/app.py:33
+#: src/app.py:36
 #, fuzzy
 #| msgid "Command-line option --version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "گزینهٔ خط فرمانی ‎--version"
 
-#: src/app.py:41
+#: src/app.py:44
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: src/app.py:43
+#: src/app.py:46
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:50
+#: src/app.py:53
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr ""
 
-#: src/app.py:59
+#: src/app.py:62
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr ""
 
-#: src/app.py:189
+#: src/app.py:111
+#, python-brace-format
+msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+msgstr ""
+
+#: src/app.py:112
+msgid "Assuming Verbosity level 4."
+msgstr ""
+
+#: src/app.py:196
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 
-#: src/app.py:221
+#: src/app.py:228
 msgid "Applied current display settings"
 msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
 
-#: src/app.py:223
+#: src/app.py:230
 msgid "Failed to apply current display settings"
 msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:234
+#: src/app.py:241
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
 
-#: src/app.py:236
+#: src/app.py:243
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/app.py:606
+#: src/app.py:624
 msgid "Appearance"
 msgstr "ظاهر"
 
-#: src/app.py:607 src/blueprints/fonts-page.blp:20
+#: src/app.py:625 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: src/app.py:608
+#: src/app.py:626
 msgid "Top Bar"
 msgstr "نوار بالا"
 
-#: src/app.py:609 src/blueprints/sound-page.blp:20
+#: src/app.py:627 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "صدا"
 
-#: src/app.py:610
+#: src/app.py:628
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
-#: src/app.py:611 src/blueprints/display-page.blp:20
+#: src/app.py:629 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "نمایشگر"
 
-#: src/app.py:612 src/blueprints/misc-page.blp:20
+#: src/app.py:630 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
-#: src/app.py:613
+#: src/app.py:631
 msgid "Tools"
 msgstr "ابزارها"
 
-#: src/app.py:667
+#: src/app.py:685
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/app.py:672
+#: src/app.py:690
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
-#: src/app.py:676
+#: src/app.py:694
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
@@ -788,30 +797,30 @@ msgstr "صفحهٔ خانگی"
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
-#: src/settings_manager.py:263
+#: src/settings_manager.py:271
 #, fuzzy
 #| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "درحال ذخیره کردن زمینهٔ پیش‌گزیده ..."
 
-#: src/settings_manager.py:588
+#: src/settings_manager.py:608
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
 
-#: src/settings_manager.py:595
+#: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings_manager.py:718
+#: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings_manager.py:722
+#: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

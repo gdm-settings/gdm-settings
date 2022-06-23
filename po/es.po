@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 10:42+0500\n"
+"POT-Creation-Date: 2022-06-22 19:04+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -307,42 +307,51 @@ msgstr "Español"
 msgid "Urdu"
 msgstr "Urdu"
 
-#: src/app.py:33
+#: src/app.py:36
 #, fuzzy
 #| msgid "Show application version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "Mostrar la versión de la aplicación"
 
-#: src/app.py:41
+#: src/app.py:44
 #, fuzzy
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
 
-#: src/app.py:43
+#: src/app.py:46
 #, fuzzy
 #| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEL"
 
-#: src/app.py:50
+#: src/app.py:53
 #, fuzzy
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
 
-#: src/app.py:59
+#: src/app.py:62
 #, fuzzy
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
 
-#: src/app.py:189
+#: src/app.py:111
+#, python-brace-format
+msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+msgstr ""
+
+#: src/app.py:112
+msgid "Assuming Verbosity level 4."
+msgstr ""
+
+#: src/app.py:196
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -350,68 +359,68 @@ msgstr ""
 "No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
 "favor, elija de nuevo."
 
-#: src/app.py:221
+#: src/app.py:228
 msgid "Applied current display settings"
 msgstr "Aplicada la configuración actual de la pantalla"
 
-#: src/app.py:223
+#: src/app.py:230
 msgid "Failed to apply current display settings"
 msgstr "No se ha podido aplicar la configuración actual de la pantalla"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:234
+#: src/app.py:241
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "Tema de shell predeterminado extraído a '{path}' como 'default-extracted'"
 
-#: src/app.py:236
+#: src/app.py:243
 msgid "Failed to extract default theme"
 msgstr "Fallo al extraer el tema predeterminado"
 
-#: src/app.py:606
+#: src/app.py:624
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/app.py:607 src/blueprints/fonts-page.blp:20
+#: src/app.py:625 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Tipografías"
 
-#: src/app.py:608
+#: src/app.py:626
 msgid "Top Bar"
 msgstr "Barra superior"
 
-#: src/app.py:609 src/blueprints/sound-page.blp:20
+#: src/app.py:627 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Sonido"
 
-#: src/app.py:610
+#: src/app.py:628
 msgid "Mouse & Touchpad"
 msgstr "Ratón y panel táctil"
 
-#: src/app.py:611 src/blueprints/display-page.blp:20
+#: src/app.py:629 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/app.py:612 src/blueprints/misc-page.blp:20
+#: src/app.py:630 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Miscelánea"
 
-#: src/app.py:613
+#: src/app.py:631
 msgid "Tools"
 msgstr "Herramientas"
 
-#: src/app.py:667
+#: src/app.py:685
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "La importación de la configuración del usuario NO es compatible con la "
 "versión Flatpak"
 
-#: src/app.py:672
+#: src/app.py:690
 msgid "Failed to reset settings"
 msgstr "Fallo en el restablecimiento de la configuración"
 
-#: src/app.py:676
+#: src/app.py:694
 msgid "Reset settings successfully"
 msgstr "Restablecida la configuración correctamente"
 
@@ -816,13 +825,13 @@ msgstr "Página web"
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
-#: src/settings_manager.py:263
+#: src/settings_manager.py:271
 #, fuzzy
 #| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "guardando el tema predeterminado ..."
 
-#: src/settings_manager.py:588
+#: src/settings_manager.py:608
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
@@ -830,17 +839,17 @@ msgid "Applying GResource settings for Ubuntu …"
 msgstr ""
 "Al hacer clic en \"Aplicar\" sólo se aplicaban algunos ajustes en Ubuntu"
 
-#: src/settings_manager.py:595
+#: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings_manager.py:718
+#: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings_manager.py:722
+#: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
