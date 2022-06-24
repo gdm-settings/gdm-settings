@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # J. Lavoie <j.lavoie@net-c.ca>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# rene-coty <irenee.thirion@e.email>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: 2022-06-23 09:24+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-06-28 03:20+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -29,9 +30,8 @@ msgstr "Type d'arrière-plan"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr "Si l'arrière-plan de GDM doit être une image, une couleur ou rien."
+msgstr "Si l’arrière-plan de GDM doit être une image, une couleur ou rien."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -178,7 +178,6 @@ msgstr "Gestionnaire de paramètres de connexion"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 "Une application de paramétrage pour le Gestionnaire de connexion de GNOME "
@@ -201,7 +200,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Mise à jour de la page de l’application dans le magasin d'applications"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -213,54 +212,65 @@ msgstr "Néerlandais"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "Prise en charge du paramétrage manuel du niveau de verbosité"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr ""
+"Options de ligne de commande pour le mode verbeux / tranquille et le niveau "
+"de verbosité manuel"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "Command-line option --version"
-msgstr ""
+msgstr "Option de ligne de commande --version"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "Fenêtre d’application plus large au premier lancement"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed:"
-msgstr ""
+msgstr "Corrections :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "Le message de bienvenue ne pouvait pas contenir de guillemets simples"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"Le gestionnaire de connexion (GDM) ne fonctionnait pas sur les systèmes où "
+"SELinux est activé (principalement Fedora)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"La fenêtre de l’application maximisée ou agrandie ne rendait pas très bien ("
+"le contenu était beaucoup plus petit que la fenêtre)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
 msgstr ""
+"Affichage d’un mauvais répertoire / chemin de dossier de destination lors de "
+"l’extraction du thème shell par défaut"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"Le fait de cliquer sur « Appliquer » n’avait aucun effet si l’image d"
+"’arrière-plan sélectionnée avait été supprimée avant l’application"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgstr ""
+"Cliquer sur « Appliquer » n’appliquait que certains paramètres sur Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "New Translations:"
@@ -268,24 +278,23 @@ msgstr "Nouvelles traductions :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "French"
-msgstr ""
+msgstr "Français"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Hebrew"
-msgstr ""
+msgstr "Hébreu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Persian"
-msgstr ""
+msgstr "Perse"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-#, fuzzy
 msgid "Updated Translations:"
-msgstr "Nouvelles traductions :"
+msgstr "Traductions mises à jour :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
-msgstr ""
+msgstr "Néerlandais"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
@@ -301,47 +310,51 @@ msgstr "Espagnol"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Urdu"
-msgstr ""
+msgstr "Urdu"
 
 #: src/app.py:36
 msgctxt "Description of --version option"
 msgid "Show application version"
-msgstr ""
+msgstr "Affiche la version de l’application"
 
 #: src/app.py:44
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Définition manuelle du niveau de verbosité (de 0 à 5)"
 
 #: src/app.py:46
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "NIVEAU"
 
 #: src/app.py:53
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "Activer le mode verbeux (définir le niveau de verbosité 5)"
 
 #: src/app.py:62
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "Activer le mode tranquille (définir le niveau de verbosité 0)"
 
 #: src/app.py:111
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
+"{level} est un niveau de verbosité invalide. Les valeurs acceptées sont de 0 "
+"à 5."
 
 #: src/app.py:112
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "Niveau de verbosité supposé à 4."
 
 #: src/app.py:196
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
+"N'a pas été appliqué. L'image d’arrière-plan choisie n'a pas été trouvée. "
+"Veuillez choisir à nouveau."
 
 #: src/app.py:228
 msgid "Applied current display settings"
@@ -409,32 +422,31 @@ msgstr "Réinitialisation des paramètres réussie"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "Préférences de l’application"
 
 #: src/blueprints/app-preferences.blp:10
-#, fuzzy
 msgid "Shell Theme"
-msgstr "Thème par défaut du shell"
+msgstr "Thème du shell"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Méthode d’application"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "Le thème doit-il être superposé au thème par défaut ?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Pas de superposition"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Ressources de superposition"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Superposition complète"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
@@ -810,30 +822,29 @@ msgid "translator-credits"
 msgstr "Irénée Thirion <irenee.thirion@outlook.fr>"
 
 #: src/settings_manager.py:271
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "saving default theme …"
-msgstr "enregistrement du thème par défaut ..."
+msgstr "enregistrement du thème par défaut …"
 
 #: src/settings_manager.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Application des paramètres GResource pour Ubuntu …"
 
 #: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
 #: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
 #: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
+"Réinitialisation des paramètres de GResource pour les systèmes non-Ubuntu …"
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Ajout : support pour Ubuntu"
