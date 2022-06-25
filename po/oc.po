@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: 2022-06-23 09:24+0000\n"
+"PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -333,10 +333,12 @@ msgstr "Activar lo mòde silenciós   (definir lo nivèl de verbiositat a 0)"
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
+"{level} es un nivèl de verbiositat invalid. Las valors acceptadas son de 0 a "
+"5."
 
 #: src/app.py:112
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "Nivèl de verbiositat entendut coma 4."
 
 #: src/app.py:196
 msgid ""
@@ -425,19 +427,19 @@ msgstr "Aplicar lo metòde"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "Lo tèma deu se superpausar al tèma per defaut ?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Cap de superposicion"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Ressorsas de superposicion"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Superposicion complèta"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
