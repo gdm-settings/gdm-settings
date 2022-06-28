@@ -21,3 +21,19 @@ if environ.get('FLATPAK_ID'): # Flatpak
     HOST_ROOT    = '/var/run/host'
 elif environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
+
+# OS Release info
+#from packaging.version import Version
+from .utils import read_os_release
+os_release = read_os_release()
+OS_NAME       = os_release.get('NAME',       'Linux')
+OS_ID         = os_release.get('ID',         'linux')
+OS_ID_LIKE    = os_release.get('ID_LIKE',    'linux')
+OS_VERSION_ID = os_release.get('VERSION_ID', '0')
+OS_VERSION    = os_release.get('VERSION', OS_VERSION_ID)
+
+OS_VERSION_CODENAME = os_release.get('VERSION_CODENAME')
+_pretty_name = f'{OS_NAME} {OS_VERSION}'
+if OS_VERSION_CODENAME: _pretty_name += f' ({OS_VERSION_CODENAME})'
+
+OS_PRETTY_NAME = os_release.get('PRETTY_NAME', _pretty_name)
