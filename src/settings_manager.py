@@ -731,8 +731,13 @@ class Settings:
     def apply_current_display_settings(self) -> bool:
         ''' Apply current display settings '''
 
-        self.command_elevator.add("eval install -Dm644 ~{$(logname),GdmUsername}/.config/monitors.xml".replace('GdmUsername', self.gresource_utils.GdmUsername))
-        self.command_elevator.add("chown GdmUsername: ~GdmUsername/.config/monitors.xml".replace('GdmUsername', self.gresource_utils.GdmUsername))
+        self.command_elevator.add(' '.join(['eval', 'install', '-Dm644',
+                                            '~$(logname)/.config/monitors.xml',
+                                            f'~{self.gresource_utils.GdmUsername}/.config/monitors.xml',
+                                           ]))
+        self.command_elevator.add(' '.join(['chown', f'{self.gresource_utils.GdmUsername}:',
+                                            f'~{self.gresource_utils.GdmUsername}/.config/monitors.xml',
+                                           ]))
         return self.command_elevator.run()
 
     def reset_settings(self) -> bool:
@@ -740,11 +745,17 @@ class Settings:
 
         if self.gresource_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
-            self.command_elevator.add(f'update-alternatives --quiet --remove {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
+            self.command_elevator.add(' '.join(['update-alternatives',  '--quiet',  '--remove',
+                                                 path.basename(self.gresource_utils.UbuntuGdmGresourceFile),
+                                                 self.gresource_utils.CustomGresourceFile,
+                                               ]))
             self.command_elevator.add(f'rm -f {self.gresource_utils.CustomGresourceFile}')
         elif path.exists(self.gresource_utils.ShellGresourceAutoBackup):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(f"mv -f {self.gresource_utils.ShellGresourceAutoBackup} {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(' '.join(['mv', '-f',
+                                                self.gresource_utils.ShellGresourceAutoBackup,
+                                                self.gresource_utils.ShellGresourceFile,
+                                               ]))
             self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
 
