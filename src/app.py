@@ -66,6 +66,7 @@ class Application(Adw.Application):
     ## Core App Signal Handlers ##
 
     def on_activate(self, app):
+        logging.info(f"Operating System       = {env.OS_PRETTY_NAME}")
         logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
 
         self.initialize_settings()
