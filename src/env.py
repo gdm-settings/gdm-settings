@@ -18,7 +18,7 @@ HOST_ROOT    = ''
 
 if environ.get('FLATPAK_ID'): # Flatpak
     PACKAGE_TYPE = PackageType.Flatpak
-    HOST_ROOT    = '/var/run/host'
+    HOST_ROOT    = '/run/host'
 elif environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
 
