@@ -132,6 +132,21 @@ class Application(Adw.Application):
         page.set_title(title)
 
 
+    ### Settings getter functions ###
+
+    def load_comborow_setting(self, name):
+        comborow = getattr(widgets, name+'_comborow')
+        setting  = getattr(self.settings, name)
+
+        selection_position = 0;
+        for item in comborow.get_model():
+            if setting == item.get_string():
+                comborow.set_selected(selection_position)
+                break
+            else:
+                selection_position += 1
+
+
     ### Settings setter functions ###
 
     def set_file_chooser_setting(self, name):
@@ -449,32 +464,10 @@ class Application(Adw.Application):
 
     def load_settings_to_widgets(self):
         #### Appearance ####
-        # Shell Theme
-        position = 0;
-        for theme in widgets.shell_theme_list:
-            if self.settings.shell_theme  == theme.get_string():
-                widgets.shell_theme_comborow.set_selected(position)
-                break
-            else:
-                position += 1
-
-        # Icon Theme
-        position = 0;
-        for theme in widgets.icon_theme_list:
-            if self.settings.icon_theme  == theme.get_string():
-                widgets.icon_theme_comborow.set_selected(position)
-                break
-            else:
-                position += 1
-
-        # Cursor Theme
-        position = 0;
-        for theme in widgets.cursor_theme_list:
-            if self.settings.cursor_theme  == theme.get_string():
-                widgets.cursor_theme_comborow.set_selected(position)
-                break
-            else:
-                position += 1
+        # Themes
+        self.load_comborow_setting('shell_theme')
+        self.load_comborow_setting('icon_theme')
+        self.load_comborow_setting('cursor_theme')
 
         # Background Type
         from .enums import BackgroundType
@@ -523,14 +516,7 @@ class Application(Adw.Application):
 
         ##### Sound ####
         # Theme
-        position = 0;
-        for theme in widgets.sound_theme_list:
-            if self.settings.sound_theme  == theme.get_string():
-                widgets.sound_theme_comborow.set_selected(position)
-                break
-            else:
-                position += 1
-
+        self.load_comborow_setting('sound_theme')
         widgets.event_sounds_switch.set_active(self.settings.event_sounds)
         widgets.feedback_sounds_switch.set_active(self.settings.feedback_sounds)
         widgets.over_amplification_switch.set_active(self.settings.over_amplification)
