@@ -156,19 +156,19 @@ class GResourceUtils:
         self.UbuntuGdmGresourceFile   = None
 
         for data_dir in env.SYSTEM_DATA_DIRS:
-            file = path.join (data_dir,  'gnome-shell', '{}-theme.gresource')
-
-            if path.isfile (env.HOST_ROOT + file.format ('gnome-shell')):
-                self.ShellGresourceFile       = file.format ('gnome-shell')
+            file = path.join (data_dir,  'gnome-shell', 'gnome-shell-theme.gresource')
+            if path.isfile (env.HOST_ROOT + file):
+                self.ShellGresourceFile       = file
                 self.ShellGresourceAutoBackup = self.ShellGresourceFile + ".default"
                 self.CustomGresourceFile      = self.ShellGresourceFile + ".gdm_settings"
-
-                if path.islink (env.HOST_ROOT + file.format ('gdm')):
-                    self.UbuntuGdmGresourceFile = file.format ('gdm')
-                elif path.islink (env.HOST_ROOT + file.format ('gdm3')):
-                    self.UbuntuGdmGresourceFile = file.format ('gdm3')
-
                 break
+
+        if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
+            from packaging.version import Version
+            if Version(env.OS_VERSION_ID) >= Version('21.10'):
+                self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
+            else:
+                self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
 
         logging.info(f"ShellGresourceFile     = {self.ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {self.UbuntuGdmGresourceFile}")
