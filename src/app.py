@@ -391,6 +391,10 @@ class Application(Adw.Application):
         # Main Window
         if info.build_type != 'release':
             widgets.main_window.add_css_class('devel')
+
+        # Following properties are ignored when set in .ui files.
+        # So, they need to be changed here.
+
         # Paned
         widgets.paned.set_shrink_start_child(False)
         widgets.paned.set_shrink_end_child(False)
