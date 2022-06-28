@@ -443,7 +443,7 @@ class Settings:
 
 
         if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
-            self.shell_theme = user_theme_settings.get_string('name')
+            self.shell_theme = user_theme_settings.get_string('name') or 'default'
 
         # Appearance
         if interface_settings := self._settings("org.gnome.desktop.interface"):
