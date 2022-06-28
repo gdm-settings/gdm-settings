@@ -150,6 +150,7 @@ class GResourceUtils:
         self.CustomThemeIdentity      = 'custom-theme'
         self.TempShellDir             = f'{TEMP_DIR}/gnome-shell'
         self.ThemesDir                = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
+        self.GdmUsername              = 'gdm'
         self.ShellGresourceFile       = None
         self.ShellGresourceAutoBackup = None
         self.CustomGresourceFile      = None
@@ -169,6 +170,8 @@ class GResourceUtils:
                 self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
             else:
                 self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
+        elif 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
+            self.GdmUsername = 'Debian-gdm'
 
         logging.info(f"ShellGresourceFile     = {self.ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {self.UbuntuGdmGresourceFile}")
@@ -728,8 +731,8 @@ class Settings:
     def apply_current_display_settings(self) -> bool:
         ''' Apply current display settings '''
 
-        self.command_elevator.add("eval install -Dm644 ~{$(logname),gdm}/.config/monitors.xml")
-        self.command_elevator.add("chown gdm: ~gdm/.config/monitors.xml")
+        self.command_elevator.add("eval install -Dm644 ~{$(logname),GdmUsername}/.config/monitors.xml".replace('GdmUsername', self.gresource_utils.GdmUsername))
+        self.command_elevator.add("chown GdmUsername: ~GdmUsername/.config/monitors.xml".replace('GdmUsername', self.gresource_utils.GdmUsername))
         return self.command_elevator.run()
 
     def reset_settings(self) -> bool:
