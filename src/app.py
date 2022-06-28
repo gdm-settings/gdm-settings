@@ -446,10 +446,6 @@ class Application(Adw.Application):
         self.connect_signal("apply_current_display_settings_button", "clicked",
                             self.on_apply_current_display_settings)
         self.connect_signal("extract_shell_theme_button", "clicked", self.on_extract_shell_theme)
-        #self.connect_signal("extract_shell_theme_button", "clicked",
-        #        lambda x: widgets.extracted_theme_destination_chooser.show()
-        #        )
-        #self.connect_signal("extracted_theme_destination_chooser", "response", self.on_extracted_theme_destination_chooser_response)
 
     def load_settings_to_widgets(self):
         #### Appearance ####
