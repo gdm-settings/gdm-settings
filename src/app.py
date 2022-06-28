@@ -437,13 +437,14 @@ class Application(Adw.Application):
         self.connect_signal("apply_button", "clicked", self.on_apply)
         self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
         self.connect_signal("background_image_button", "clicked",
-                lambda x: widgets.background_image_chooser.show()
-                )
+                            lambda x: widgets.background_image_chooser.show(),
+                           )
         self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
         self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.show())
         self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
 
-        self.connect_signal("apply_current_display_settings_button", "clicked", self.on_apply_current_display_settings)
+        self.connect_signal("apply_current_display_settings_button", "clicked",
+                            self.on_apply_current_display_settings)
         self.connect_signal("extract_shell_theme_button", "clicked", self.on_extract_shell_theme)
         #self.connect_signal("extract_shell_theme_button", "clicked",
         #        lambda x: widgets.extracted_theme_destination_chooser.show()
@@ -520,10 +521,7 @@ class Application(Adw.Application):
         ## Time/Clock ##
         widgets.show_weekday_switch.set_active(self.settings.show_weekday)
         widgets.show_seconds_switch.set_active(self.settings.show_seconds)
-        if self.settings.time_format == "12h":
-            widgets.time_format_comborow.set_selected(0)
-        else:
-            widgets.time_format_comborow.set_selected(1)
+        widgets.time_format_comborow.set_selected(0 if self.settings.time_format == "12h" else 1)
         ## Power ##
         widgets.show_battery_percentage_switch.set_active(self.settings.show_battery_percentage)
 
@@ -683,18 +681,16 @@ class Application(Adw.Application):
         self.settings.change_top_bar_background_color = widgets.top_bar_background_color_switch.get_active()
         self.settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
         # Time/Clock
-        self.settings.show_weekday   = widgets.show_weekday_switch.get_active()
-        self.settings.show_seconds   = widgets.show_seconds_switch.get_active()
-        self.settings.time_format    = "24h"
-        if widgets.time_format_comborow.get_selected() == 0:
-            self.settings.time_format = "12h"
+        self.settings.show_weekday = widgets.show_weekday_switch.get_active()
+        self.settings.show_seconds = widgets.show_seconds_switch.get_active()
+        self.settings.time_format  = "12h" if widgets.time_format_comborow.get_selected() == 0 else '24h'
         # Power
         self.settings.show_battery_percentage  = widgets.show_battery_percentage_switch.get_active()
 
         ## Sound ##
-        self.settings.sound_theme    = widgets.sound_theme_comborow.get_selected_item().get_string()
-        self.settings.feedback_sounds   = widgets.feedback_sounds_switch.get_active()
-        self.settings.over_amplification   = widgets.over_amplification_switch.get_active()
+        self.settings.sound_theme = widgets.sound_theme_comborow.get_selected_item().get_string()
+        self.settings.feedback_sounds = widgets.feedback_sounds_switch.get_active()
+        self.settings.over_amplification = widgets.over_amplification_switch.get_active()
 
         ## Pointing ##
         # Mouse
@@ -703,11 +699,11 @@ class Application(Adw.Application):
         self.settings.mouse_speed = widgets.mouse_speed_scale.get_value()
         self.settings.inverse_scrolling   = widgets.mouse_inverse_scrolling_switch.get_active()
         # Touchpad
-        self.settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
-        self.settings.natural_scrolling   = widgets.natural_scrolling_switch.get_active()
-        self.settings.two_finger_scrolling   = widgets.two_finger_scrolling_switch.get_active()
-        self.settings.disable_while_typing   = widgets.disable_while_typing_switch.get_active()
+        self.settings.tap_to_click = widgets.tap_to_click_switch.get_active()
         self.settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
+        self.settings.natural_scrolling = widgets.natural_scrolling_switch.get_active()
+        self.settings.two_finger_scrolling = widgets.two_finger_scrolling_switch.get_active()
+        self.settings.disable_while_typing = widgets.disable_while_typing_switch.get_active()
 
         ## Night Light ##
         self.settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
