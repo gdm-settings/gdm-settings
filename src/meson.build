@@ -20,7 +20,7 @@ source_files = files(
   'dialogs.py',
   'enums.py',
   'env.py',
-  'settings_manager.py',
+  'settings.py',
   'utils.py',
 )
 install_data(source_files, install_dir: py_proj_dir)
