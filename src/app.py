@@ -496,12 +496,8 @@ class Application(Adw.Application):
                 position += 1
 
         # Background Type
-        if self.settings.background_type == 'None':
-            widgets.background_type_comborow.set_selected(0)
-        elif self.settings.background_type == 'Image':
-            widgets.background_type_comborow.set_selected(1)
-        elif self.settings.background_type == 'Color':
-            widgets.background_type_comborow.set_selected(2)
+        from .enums import BackgroundType
+        widgets.background_type_comborow.set_selected(BackgroundType[self.settings.background_type].value)
 
         # Background Color
         background_color_rgba = Gdk.RGBA()
@@ -515,22 +511,11 @@ class Application(Adw.Application):
             widgets.background_image_chooser.set_file(Gio.File.new_for_path(self.settings.background_image))
 
         #### Fonts ####
-        widgets.font_button.set_font(self.settings.font)
-        if self.settings.antialiasing == 'grayscale':
-            widgets.antialiasing_comborow.set_selected(0)
-        elif self.settings.antialiasing == 'rgba':
-            widgets.antialiasing_comborow.set_selected(1)
-        elif self.settings.antialiasing == 'none':
-            widgets.antialiasing_comborow.set_selected(3)
-        if self.settings.hinting == 'full':
-            widgets.hinting_comborow.set_selected(0)
-        elif self.settings.hinting == 'medium':
-            widgets.hinting_comborow.set_selected(1)
-        elif self.settings.hinting == 'slight':
-            widgets.hinting_comborow.set_selected(2)
-        elif self.settings.hinting == 'none':
-            widgets.hinting_comborow.set_selected(3)
+        from .enums import AntiAliasing, FontHinting
+        widgets.antialiasing_comborow.set_selected(AntiAliasing[self.settings.antialiasing].value)
+        widgets.hinting_comborow.set_selected(FontHinting[self.settings.hinting].value)
         widgets.scaling_factor_spinbutton.set_value(self.settings.scaling_factor)
+        widgets.font_button.set_font(self.settings.font)
 
         #### Top Bar ####
         ## Tweaks ##
@@ -574,13 +559,9 @@ class Application(Adw.Application):
 
         #### Pointing ####
         ## Mouse ##
+        from .enums import MouseAcceleration
+        widgets.pointer_acceleration_comborow.set_selected(MouseAcceleration[self.settings.pointer_acceleration].value)
         widgets.mouse_inverse_scrolling_switch.set_active(self.settings.inverse_scrolling)
-        if self.settings.pointer_acceleration == 'default':
-            widgets.pointer_acceleration_comborow.set_selected(0)
-        elif self.settings.pointer_acceleration == 'flat':
-            widgets.pointer_acceleration_comborow.set_selected(1)
-        elif self.settings.pointer_acceleration == 'adaptive':
-            widgets.pointer_acceleration_comborow.set_selected(2)
         widgets.mouse_speed_scale.set_value(self.settings.mouse_speed)
         ## Touchpad ##
         widgets.tap_to_click_switch.set_active(self.settings.tap_to_click)
@@ -670,7 +651,8 @@ class Application(Adw.Application):
         widgets.main_toast_overlay.add_toast(widgets.settings_reloaded_toast)
 
     def import_user_settings(self):
-        if env.PACKAGE_TYPE is not env.PackageType.Flatpak:
+        from .enums import PackageType
+        if env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.settings.load_user_settings()
             self.load_settings_to_widgets()
             widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
@@ -694,38 +676,19 @@ class Application(Adw.Application):
         self.set_comborow_setting("shell_theme")
         self.set_comborow_setting("icon_theme")
         self.set_comborow_setting("cursor_theme")
+        # Background
+        from .enums import BackgroundType
+        self.settings.background_type  = BackgroundType(widgets.background_type_comborow.get_selected()).name
         self.set_file_chooser_setting("background_image")
         self.set_color_setting("background_color")
-
-        background_type = widgets.background_type_comborow.get_selected()
-        if background_type == 0:
-            self.settings.background_type = 'None'
-        elif background_type == 1:
-            self.settings.background_type = 'Image'
-        elif background_type == 2:
-            self.settings.background_type = 'Color'
 
         ## Fonts ##
         self.set_font_setting("font")
         self.set_spinbutton_setting("scaling_factor")
 
-        antialiasing = widgets.antialiasing_comborow.get_selected()
-        if antialiasing == 0:
-            self.settings.antialiasing = 'grayscale'
-        elif antialiasing == 1:
-            self.settings.antialiasing = 'rgba'
-        elif antialiasing == 2:
-            self.settings.antialiasing = 'none'
-
-        hinting = widgets.hinting_comborow.get_selected()
-        if hinting == 0:
-            self.settings.hinting = 'full'
-        elif hinting == 1:
-            self.settings.hinting = 'medium'
-        elif hinting == 2:
-            self.settings.hinting = 'slight'
-        elif hinting == 3:
-            self.settings.hinting = 'none'
+        from .enums import AntiAliasing, FontHinting
+        self.settings.hinting = FontHinting(widgets.hinting_comborow.get_selected()).name
+        self.settings.antialiasing = AntiAliasing(widgets.antialiasing_comborow.get_selected()).name
 
         ## Tob Bar ##
         # Tweaks
@@ -751,15 +714,10 @@ class Application(Adw.Application):
 
         ## Pointing ##
         # Mouse
+        from .enums import MouseAcceleration
+        self.settings.pointer_acceleration = MouseAcceleration(widgets.pointer_acceleration_comborow.get_selected()).name
         self.settings.mouse_speed = widgets.mouse_speed_scale.get_value()
         self.settings.inverse_scrolling   = widgets.mouse_inverse_scrolling_switch.get_active()
-        accel_profile = widgets.pointer_acceleration_comborow.get_selected()
-        if accel_profile == 0:
-            self.settings.pointer_acceleration = 'default'
-        elif accel_profile == 1:
-            self.settings.pointer_acceleration = 'flat'
-        elif accel_profile == 2:
-            self.settings.pointer_acceleration = 'adaptive'
         # Touchpad
         self.settings.tap_to_click   = widgets.tap_to_click_switch.get_active()
         self.settings.natural_scrolling   = widgets.natural_scrolling_switch.get_active()

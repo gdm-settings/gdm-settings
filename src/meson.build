@@ -18,6 +18,7 @@ source_files = files(
   '__init__.py',
   'app.py',
   'dialogs.py',
+  'enums.py',
   'env.py',
   'settings_manager.py',
   'utils.py',

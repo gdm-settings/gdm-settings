@@ -3,9 +3,10 @@
 import logging
 from os import path
 from gettext import gettext as _, pgettext as C_
+from .enums import PackageType
 from . import env
 
-if env.PACKAGE_TYPE == env.PackageType.Flatpak:
+if env.PACKAGE_TYPE == PackageType.Flatpak:
     TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
 else:
     from .info import project_name
@@ -103,7 +104,7 @@ class CommandElevator:
             raise ValueError("elevator is not of type 'str' or 'list'")
 
     def autodetect_elevator(self):
-        if env.PACKAGE_TYPE is env.PackageType.Flatpak:
+        if env.PACKAGE_TYPE is PackageType.Flatpak:
             self.elevator = "flatpak-spawn --host pkexec"
         else:
             self.elevator = "pkexec"
@@ -428,7 +429,7 @@ class Settings:
         self.load_from_gsettings()
 
         if self.main_gsettings.get_boolean("never-applied") \
-        and env.PACKAGE_TYPE is not env.PackageType.Flatpak:
+        and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_user_settings()
 
     def _settings(self, schema_id:str):
@@ -539,12 +540,12 @@ class Settings:
 
         css = "\n/* 'Login Manager Settings' App Provided CSS */\n"
         ### Background ###
-        if self.background_type == "Image" and self.background_image:
+        if self.background_type == "image" and self.background_image:
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
             css += "  background-size: cover;\n"
             css += "}\n"
-        elif self.background_type == "Color":
+        elif self.background_type == "color":
             css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
 
         ### Top Bar ###
@@ -598,7 +599,7 @@ class Settings:
                 break
         shelldir = path.join(theme_path, 'gnome-shell') if theme_path else None
         background_image=None
-        if self.background_type == "Image" and self.background_image:
+        if self.background_type == "image" and self.background_image:
             background_image = self.background_image
         compiled_file = self.gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
 
