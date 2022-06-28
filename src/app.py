@@ -134,30 +134,10 @@ class Application(Adw.Application):
 
     ### Settings setter functions ###
 
-    def set_comborow_setting(self, name):
-        comborow = getattr(widgets, name+'_comborow')
-        setattr(self.settings, name, comborow.get_selected_item().get_string())
-
-    def set_switch_setting(self, name):
-        switch = getattr(widgets, name.removeprefix('change_')+'_switch')
-        setattr(self.settings, name, switch.get_active())
-
-    def set_color_setting(self, name):
-        color_button = getattr(widgets, name+'_button')
-        setattr(self.settings, name, color_button.get_rgba().to_string())
-
     def set_file_chooser_setting(self, name):
         file_chooser = getattr(widgets, name+'_chooser')
         if file := file_chooser.get_file():
             setattr(self.settings, name, file.get_path())
-
-    def set_font_setting(self, name):
-        font_button = getattr(widgets, name.removeprefix('change_')+'_button')
-        setattr(self.settings, name, font_button.get_font())
-
-    def set_spinbutton_setting(self, name):
-        spinbutton = getattr(widgets, name.removeprefix('change_')+'_spinbutton')
-        setattr(self.settings, name, spinbutton.get_value())
 
 
     ### Signal handlers for Widgets ###
@@ -677,31 +657,31 @@ class Application(Adw.Application):
 
     def set_settings(self):
         ## Appearance ##
-        self.set_comborow_setting("shell_theme")
-        self.set_comborow_setting("icon_theme")
-        self.set_comborow_setting("cursor_theme")
+        # Themes
+        self.settings.shell_theme  = widgets.shell_theme_comborow.get_selected_item().get_string()
+        self.settings.icon_theme   = widgets.icon_theme_comborow.get_selected_item().get_string()
+        self.settings.cursor_theme = widgets.cursor_theme_comborow.get_selected_item().get_string()
         # Background
         from .enums import BackgroundType
         self.settings.background_type  = BackgroundType(widgets.background_type_comborow.get_selected()).name
+        self.settings.background_color = widgets.background_color_button.get_rgba().to_string()
         self.set_file_chooser_setting("background_image")
-        self.set_color_setting("background_color")
 
         ## Fonts ##
-        self.set_font_setting("font")
-        self.set_spinbutton_setting("scaling_factor")
-
         from .enums import AntiAliasing, FontHinting
         self.settings.hinting = FontHinting(widgets.hinting_comborow.get_selected()).name
         self.settings.antialiasing = AntiAliasing(widgets.antialiasing_comborow.get_selected()).name
+        self.settings.scaling_factor = widgets.scaling_factor_spinbutton.get_value()
+        self.settings.font = widgets.font_button.get_font()
 
         ## Tob Bar ##
         # Tweaks
-        self.set_switch_setting("disable_top_bar_arrows")
-        self.set_switch_setting("disable_top_bar_rounded_corners")
-        self.set_switch_setting("change_top_bar_text_color")
-        self.set_switch_setting("change_top_bar_background_color")
-        self.set_color_setting("top_bar_text_color")
-        self.set_color_setting("top_bar_background_color")
+        self.settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
+        self.settings.disable_top_bar_arrows    = widgets.disable_top_bar_arrows_switch.get_active()
+        self.settings.top_bar_background_color  = widgets.top_bar_background_color_button.get_rgba().to_string()
+        self.settings.change_top_bar_text_color = widgets.top_bar_text_color_switch.get_active()
+        self.settings.change_top_bar_background_color = widgets.top_bar_background_color_switch.get_active()
+        self.settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
         # Time/Clock
         self.settings.show_weekday   = widgets.show_weekday_switch.get_active()
         self.settings.show_seconds   = widgets.show_seconds_switch.get_active()
@@ -742,9 +722,9 @@ class Application(Adw.Application):
             self.settings.night_light_schedule_automatic = True
 
         #### Misc ####
-        self.set_switch_setting("disable_restart_buttons")
-        self.set_switch_setting("disable_user_list")
-        self.set_switch_setting("enable_logo")
+        self.settings.disable_restart_buttons = widgets.disable_restart_buttons_switch.get_active()
+        self.settings.disable_user_list = widgets.disable_user_list_switch.get_active()
+        self.settings.enable_logo = widgets.enable_logo_switch.get_active()
         self.set_file_chooser_setting("logo")
-        self.set_switch_setting("enable_welcome_message")
+        self.settings.enable_welcome_message = widgets.enable_welcome_message_switch.get_active()
         self.settings.welcome_message = widgets.welcome_message_entry.get_text()
