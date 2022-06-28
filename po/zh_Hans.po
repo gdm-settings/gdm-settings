@@ -2,169 +2,174 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 刘韬 <lyuutau@outlook.com>, 2022.
+# YXT <yxteee@126.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-06-28 03:20+0000\n"
+"Last-Translator: 刘韬 <lyuutau@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gdm-settings/language-names/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "主题名称"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "背景类型"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "GDM 背景应该是图像、颜色还是无。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "背景图像"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "图像文件用于 GDM背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
-msgstr ""
+msgstr "背景颜色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "此颜色用于GDM背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "如果启用了夜灯模式"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
-msgstr ""
+msgstr "当太阳下山或在预设时间时，夜灯模式会改变显示器的色温。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "启用时显示器的温度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
-msgstr ""
+msgstr "启用夜灯模式时，此开尔文温度用于修改屏幕色调。 值越高越蓝，值越低越红。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "使用日出和日落"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "从当前位置自动计算日出和日落时间。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
-msgstr ""
+msgstr "开始时间"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
-msgstr ""
+msgstr "当“夜灯计划自动”被禁用时，以小时为单位使用此开始时间。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "开始时间分钟数"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
-msgstr ""
+msgstr "当“夜灯计划自动”被禁用时，使用这个开始时间分钟。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "结束时间分钟"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "当“夜灯计划自动”被禁用时，使用此结束时间分钟。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "指针速度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
-msgstr ""
+msgstr "触摸板的指针速度。 接受的值在 [-1..1] 范围内（从“未加速”到“快速”）。 0 "
+"是系统默认值。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "是否将顶栏调整应用于提取的主题"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "是否禁用顶栏箭头"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "是否禁用顶栏圆角"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "是否改变顶栏文字颜色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "顶栏文字颜色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "是否改变顶栏背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "顶栏背景颜色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 #: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "登录管理器设置"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr ""
+msgstr "GNOME 登录管理器 GDM 的设置应用程序"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
-msgstr ""
+msgstr "更改 GDM 设置； 应用主题和背景、更改光标主题、图标主题和夜灯设置等。"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 #: src/dialogs.py:19
@@ -173,94 +178,94 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "更新了app的应用商店页面"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
-msgstr ""
+msgstr "添加："
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "支持详细/安静模式"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "支持设置手动详细级别"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr ""
+msgstr "详细/qieet 模式和手动详细级别的命令行选项"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "Command-line option --version"
-msgstr ""
+msgstr "命令行选项 --version"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "首次启动时应用程序窗口更宽"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed:"
-msgstr ""
+msgstr "修复："
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "欢迎信息不能包含单引号"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
+msgstr "登录管理器 (GDM) 在启用 SELinux 的系统（主要是 Fedora）上崩溃"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
-msgstr ""
+msgstr "最大化或大的应用程序窗口看起来很糟糕（内容比窗口小得多）"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
-msgstr ""
+msgstr "提取默认 shell 主题时显示错误的目标目录/文件夹路径"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
-msgstr ""
+msgstr "如果在应用之前删除了选定的背景图像，则单击“应用”不会执行任何操作"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
+msgstr "单击“应用”仅在 Ubuntu 上应用了一些设置"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "New Translations:"
-msgstr ""
+msgstr "新翻译："
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "French"
-msgstr ""
+msgstr "法语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Hebrew"
-msgstr ""
+msgstr "希伯来语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Persian"
-msgstr ""
+msgstr "波斯语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated Translations:"
-msgstr ""
+msgstr "更新的翻译："
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
-msgstr ""
+msgstr "荷兰语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
-msgstr ""
+msgstr "德语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Occitan"
@@ -268,93 +273,93 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Spanish"
-msgstr ""
+msgstr "西班牙语"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Urdu"
-msgstr ""
+msgstr "乌尔都语"
 
 #: src/app.py:36
 msgctxt "Description of --version option"
 msgid "Show application version"
-msgstr ""
+msgstr "显示应用程序版本"
 
 #: src/app.py:44
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "手动设置详细级别（从 0 到 5）"
 
 #: src/app.py:46
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "等级"
 
 #: src/app.py:53
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "启用详细模式（设置详细级别 5）"
 
 #: src/app.py:62
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "启用安静模式（设置详细级别 0）"
 
 #: src/app.py:111
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
-msgstr ""
+msgstr "{level} 是无效的详细级别。 可接受的值为 0 到 5。"
 
 #: src/app.py:112
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "假设详细级别为 4。"
 
 #: src/app.py:196
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
-msgstr ""
+msgstr "应用失败!找不到所选的背景图片,请再次选择!"
 
 #: src/app.py:228
 msgid "Applied current display settings"
-msgstr ""
+msgstr "应用当前显示设置"
 
 #: src/app.py:230
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "无法应用当前显示设置"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/app.py:241
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
+msgstr "默认 shell 主题提取到 '{path}' 作为 'default-extracted'"
 
 #: src/app.py:243
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "提取默认主题失败"
 
 #: src/app.py:624
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #: src/app.py:625 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
-msgstr ""
+msgstr "字体"
 
 #: src/app.py:626
 msgid "Top Bar"
-msgstr ""
+msgstr "顶栏"
 
 #: src/app.py:627 src/blueprints/sound-page.blp:20
 msgid "Sound"
-msgstr ""
+msgstr "声音"
 
 #: src/app.py:628
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "鼠标&触摸板"
 
 #: src/app.py:629 src/blueprints/display-page.blp:20
 msgid "Display"
-msgstr ""
+msgstr "显示"
 
 #: src/app.py:630 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
@@ -362,27 +367,27 @@ msgstr ""
 
 #: src/app.py:631
 msgid "Tools"
-msgstr ""
+msgstr "工具"
 
 #: src/app.py:685
 msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Flatpak 版本不支持导入用户设置"
 
 #: src/app.py:690
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "重置设置失败"
 
 #: src/app.py:694
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "重置设置成功"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "应用设置"
 
 #: src/blueprints/app-preferences.blp:10
 msgid "Shell Theme"
-msgstr ""
+msgstr "Shell主题"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
@@ -390,7 +395,7 @@ msgstr ""
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "主题是否应该覆盖在默认主题之上？"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
@@ -398,126 +403,126 @@ msgstr ""
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "覆盖资源"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "完成覆盖"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
-msgstr ""
+msgstr "主题"
 
 #: src/blueprints/appearance-page.blp:22
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: src/blueprints/appearance-page.blp:23
 msgid "Icons"
-msgstr ""
+msgstr "图标"
 
 #: src/blueprints/appearance-page.blp:24
 msgid "Cursor"
-msgstr ""
+msgstr "光标"
 
 #: src/blueprints/appearance-page.blp:28
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: src/blueprints/appearance-page.blp:31
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
 #: src/blueprints/fonts-page.blp:46
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
 msgid "Image"
-msgstr ""
+msgstr "图像"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
 msgid "Color"
-msgstr ""
+msgstr "颜色"
 
 #: src/blueprints/appearance-page.blp:38
 msgid "The image to use as background"
-msgstr ""
+msgstr "此图像用于背景"
 
 #: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
 msgid "Choose File"
-msgstr ""
+msgstr "选择文件"
 
 #: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
-msgstr ""
+msgstr "此颜色用于背景"
 
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
-msgstr ""
+msgstr "应用当前显示设置"
 
 #: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr ""
+msgstr "分辨率，刷新率，监视器位置等等"
 
 #: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
-msgstr ""
+msgstr "应用"
 
 #: src/blueprints/display-page.blp:32
 msgid "Night Light"
-msgstr ""
+msgstr "夜灯"
 
 #: src/blueprints/display-page.blp:35
 msgid "Enable"
-msgstr ""
+msgstr "开启"
 
 #: src/blueprints/display-page.blp:44
 msgid "Schedule"
-msgstr ""
+msgstr "计划"
 
 #: src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "从日落到日出"
 
 #: src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
-msgstr ""
+msgstr "手动计划"
 
 #: src/blueprints/display-page.blp:49
 msgid "Times"
-msgstr ""
+msgstr "时间"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:52
 msgid "From"
-msgstr ""
+msgstr "从"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:74
 msgid "To"
-msgstr ""
+msgstr "到"
 
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
-msgstr ""
+msgstr "色温"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
-msgstr ""
+msgstr "字体"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Antialiasing"
-msgstr ""
+msgstr "抗锯齿"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Standard"
-msgstr ""
+msgstr "基础"
 
 #: src/blueprints/fonts-page.blp:35
 msgid "Subpixel"
-msgstr ""
+msgstr "亚像素"
 
 #: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
@@ -525,251 +530,252 @@ msgstr ""
 
 #: src/blueprints/fonts-page.blp:43
 msgid "Full"
-msgstr ""
+msgstr "完全"
 
 #: src/blueprints/fonts-page.blp:44
 msgid "Medium"
-msgstr ""
+msgstr "中等"
 
 #: src/blueprints/fonts-page.blp:45
 msgid "Slight"
-msgstr ""
+msgstr "轻微"
 
 #: src/blueprints/fonts-page.blp:51
 msgid "Scaling Factor"
-msgstr ""
+msgstr "比例因子"
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "刷新"
 
 #: src/blueprints/main-window.blp:7
 msgid "Import user settings"
-msgstr ""
+msgstr "导入用户设置"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "重置设置"
 
 #: src/blueprints/main-window.blp:12
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: src/blueprints/main-window.blp:13
 msgid "Quit"
-msgstr ""
+msgstr "关闭"
 
 #: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
-msgstr ""
+msgstr "图像"
 
 #: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "应用设置失败"
 
 #: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "应用设置成功"
 
 #: src/blueprints/main-window.blp:78
 msgid "User settings imported"
-msgstr ""
+msgstr "已导入用户设置"
 
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
-msgstr ""
+msgstr "重新载入设置"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "禁用重启按钮"
 
 #: src/blueprints/misc-page.blp:32
 msgid "Disable User List"
-msgstr ""
+msgstr "禁用用户列表"
 
 #: src/blueprints/misc-page.blp:41
 msgid "Enable Logo"
-msgstr ""
+msgstr "开启Logo"
 
 #: src/blueprints/misc-page.blp:42
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "是否在用户列表下显示Logo"
 
 #: src/blueprints/misc-page.blp:51
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/blueprints/misc-page.blp:52
 msgid "The image to show below user list"
-msgstr ""
+msgstr "显示在用户列表下方的图像"
 
 #: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
-msgstr ""
+msgstr "欢迎留言"
 
 #: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
-msgstr ""
+msgstr "鼠标"
 
 #: src/blueprints/pointing-page.blp:23
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "指针加速"
 
 #: src/blueprints/pointing-page.blp:25
 msgid "Automatic"
-msgstr ""
+msgstr "自动"
 
 #: src/blueprints/pointing-page.blp:26
 msgid "Disabled"
-msgstr ""
+msgstr "禁用"
 
 #: src/blueprints/pointing-page.blp:27
 msgid "Enabled"
-msgstr ""
+msgstr "开启"
 
 #: src/blueprints/pointing-page.blp:32
 msgid "Inverse Scrolling"
-msgstr ""
+msgstr "反向滚动"
 
 #: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "滚动移动内容，而不是视图。"
 
 #: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
 msgid "Pointer Speed"
-msgstr ""
+msgstr "指针速度"
 
 #: src/blueprints/pointing-page.blp:50
 msgid "Touchpad"
-msgstr ""
+msgstr "触摸板"
 
 #: src/blueprints/pointing-page.blp:53
 msgid "Tap to Click"
-msgstr ""
+msgstr "双击"
 
 #: src/blueprints/pointing-page.blp:60
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "自然滚动"
 
 #: src/blueprints/pointing-page.blp:68
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "双指滚动"
 
 #: src/blueprints/pointing-page.blp:69
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "用两根手指滑动滚动。"
 
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
-msgstr ""
+msgstr "键入时禁用"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
-msgstr ""
+msgstr "主题"
 
 #: src/blueprints/sound-page.blp:25
 msgid "Over Amplification"
-msgstr ""
+msgstr "过度放大"
 
 #: src/blueprints/sound-page.blp:26
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "允许将音量提高到 100% 以上"
 
 #: src/blueprints/sound-page.blp:35
 msgid "Event Sounds"
-msgstr ""
+msgstr "事件声音"
 
 #: src/blueprints/sound-page.blp:44
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "输入反馈声音"
 
 #: src/blueprints/tools-page.blp:20
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "默认Shell主题"
 
 #: src/blueprints/tools-page.blp:23
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "包括顶部栏调整"
 
 #: src/blueprints/tools-page.blp:30
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "提取默认 shell 主题"
 
 #: src/blueprints/tools-page.blp:33
 msgid "Extract"
-msgstr ""
+msgstr "提取"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Tweaks"
-msgstr ""
+msgstr "扩展"
 
 #: src/blueprints/top-bar-page.blp:23
 msgid "Change Text Color"
-msgstr ""
+msgstr "改变文字颜色"
 
 #: src/blueprints/top-bar-page.blp:31
 msgid "Text Color"
-msgstr ""
+msgstr "文字颜色"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "顶部栏中文本的颜色"
 
 #: src/blueprints/top-bar-page.blp:43
 msgid "Change Background Color"
-msgstr ""
+msgstr "更改背景颜色"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "The color of top bar background"
-msgstr ""
+msgstr "顶栏背景颜色"
 
 #: src/blueprints/top-bar-page.blp:63
+#, fuzzy
 msgid "Disable Arrows"
-msgstr ""
+msgstr "禁用箭头"
 
 #: src/blueprints/top-bar-page.blp:72
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "禁用圆角"
 
 #: src/blueprints/top-bar-page.blp:82
 msgid "Clock"
-msgstr ""
+msgstr "时钟"
 
 #: src/blueprints/top-bar-page.blp:85
 msgid "Show Weekday"
-msgstr ""
+msgstr "显示工作日"
 
 #: src/blueprints/top-bar-page.blp:94
 msgid "Show Seconds"
-msgstr ""
+msgstr "显示秒"
 
 #: src/blueprints/top-bar-page.blp:103
 msgid "Time Format"
-msgstr ""
+msgstr "时间格式"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "AM/PM"
-msgstr ""
+msgstr "上午/下午"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "24 Hours"
-msgstr ""
+msgstr "24小时"
 
 #: src/blueprints/top-bar-page.blp:109
 msgid "Power"
-msgstr ""
+msgstr "电源"
 
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
-msgstr ""
+msgstr "显示电池百分比"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr ""
+msgstr "Copyright © 2021 Mazhar Hussain"
 
 #: src/dialogs.py:16
 msgid "Homepage"
-msgstr ""
+msgstr "主页"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -779,24 +785,24 @@ msgstr ""
 
 #: src/settings_manager.py:271
 msgid "saving default theme …"
-msgstr ""
+msgstr "保存默认主题…"
 
 #: src/settings_manager.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "为 Ubuntu 应用 GResource 设置…"
 
 #: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "为非 Ubuntu 系统应用 GResource 设置…"
 
 #: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "为 Ubuntu 重置 GResource 设置…"
 
 #: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "为非 Ubuntu 系统重置 GResource 设置…"
