@@ -16,9 +16,9 @@ class AboutDialog (Gtk.AboutDialog):
         self.props.website_label  = _("Homepage");
         self.props.website        = "https://realmazharhussain.github.io/gdm-settings";
 
-        self.props.authors     = [_("Mazhar Hussain") + " <mmazharhussainkgb1145@gmail.com>"]
+        self.props.authors     = [C_("Name of Developer", "Mazhar Hussain") + " <mmazharhussainkgb1145@gmail.com>"]
         self.props.documenters = self.props.authors
-        self.props.artists     = self.props.authors
+        self.props.artists     = self.props.authors + [C_("Name of Designer", "Thales Bindá") + " <thales.i.o.b@gmail.com>"]
 
         # Translators: Do not translate this string. Put your info here in the form
         # 'name <email>' including < and > but not qoutes.
