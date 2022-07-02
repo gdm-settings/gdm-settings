@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: 2022-06-28 03:20+0000\n"
+"PO-Revision-Date: 2022-07-03 17:16+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -826,17 +826,17 @@ msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 #: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
 #: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
 
 #: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Ajustat : presa en carga d’Ubuntu"
