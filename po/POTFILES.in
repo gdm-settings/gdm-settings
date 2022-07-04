@@ -27,4 +27,4 @@ src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
 src/dialogs.py
 src/info.py.in
-src/settings_manager.py
+src/settings.py
