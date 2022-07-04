@@ -5,113 +5,121 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-06-22 19:04+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-04 14:23+0000\n"
+"Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
+"Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "Tên Theme"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "Loại nền"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "Hình nền cho GDM có thể là một hình ảnh, một màu hoặc không có gì."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "Hình nền"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "Hình ảnh sẽ được dùng làm hình nền cho GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
-msgstr ""
+msgstr "Màu nền"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "Màu sẽ được dùng làm nền cho GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Nếu chế độ chế độ Night Light được bật"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Chế độ chống Night Light thay đổi nhiệt độ màu của màn hình của bạn khi mặt "
+"trời lặn hoặc tại thời điểm được cài đặt trước."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Nhiệt độ màu của màn hình khi được bật"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Nhiệt độ màu này trong thang đo Kelvin được sử dụng để thay đổi tông màu của "
+"màn hình khi chế độ Night Light được bật. Nhiệt độ màu càng cao thì tông màu "
+"càng xanh, còn nhiệt độ màu càng thấp thì tông màu càng đỏ."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Dùng thời điểm bình minh và hoàng hôn"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "Tính thời điểm bình minh và hoàng hôn tự động, dựa vào vị trí hiện tại."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
-msgstr ""
+msgstr "Giờ bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
-msgstr ""
+msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Phút bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
-msgstr ""
+msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Phút kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút kết thúc này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "Tốc độ con trỏ chuột/touchpad"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
@@ -119,45 +127,50 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Tốc độ của touchpad. Giá trị hợp lệ nằm trong khoảng từ -1 cho đến 1 (từ "
+"\"không được tăng tốc\" cho đến \"nhanh\"). Giá trị 0 là giá trị mặc định "
+"của hệ thống."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
+"Có nên áp dụng các chỉnh sửa của thanh top bar cho theme được trích xuất hay "
+"không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Có nên tắt các mũi tên của top bar hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Có nên tắt bo tròn các góc của thanh top bar hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Có nên thay đổi màu chữ của thanh top bar hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Màu chữ của thanh top bar"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Có nên thay đổi nền của thanh top bar hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Màu nền của thanh top bar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 #: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr ""
+msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -165,638 +178,652 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Thay đổi các cài đặt của GDM, thay đổi theme và hình nền, thay đổi cursor "
+"theme, icon theme và cài đặt Night Light, và nhiều cài đặt khác."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 #: src/dialogs.py:19
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Trang web app store của app đã được cập nhật"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
-msgstr ""
+msgstr "Đã thêm:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "Hỗ trợ chế độ verbose (hiển thị chi tiết)/quiet (im lặng)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "Hỗ trợ đặt mức độ hiển thị chi tiết một cách thủ công"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
 msgstr ""
+"Command-line options cho chế độ verbose/quiet và đặt mức độ verbose thủ công"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "Command-line option --version"
-msgstr ""
+msgstr "Command-line option \"--version\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "Cửa sổ rộng hơn trong lần chạy đầu tiên"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed:"
-msgstr ""
+msgstr "Đã sửa các lỗi:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Welcome message could not contain single qoutes"
-msgstr ""
+msgstr "Welcome message không thể chứa dấu '"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
+msgstr "GDM bị lỗi trên các hệ thống với SELinux được bật (đa phần là Fedora)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"Cửa số được phóng to nhìn không được đẹp (các thành phần bên trong app nhỏ "
+"hơn so với window)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
-msgstr ""
+msgstr "Hiển thị sai folder/folder path khi trích xuất theme mặc định của shell"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
+"Khi click \"Áp dụng\", ứng dụng sẽ không làm gì khi hình nền được chọn bị "
+"xóa trước khi áp dụng"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
+msgstr "Click \"Áp dụng\" chỉ áp dụng vài cài đặt trên Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "New Translations:"
-msgstr ""
+msgstr "Các bản dịch mới:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "French"
-msgstr ""
+msgstr "Tiếng Pháp"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Hebrew"
-msgstr ""
+msgstr "Tiếng Do Thái"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Persian"
-msgstr ""
+msgstr "Tiếng Ba Tư"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated Translations:"
-msgstr ""
+msgstr "Những bản dịch được cập nhật:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
-msgstr ""
+msgstr "Tiếng Hà Lan"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
-msgstr ""
+msgstr "Tiếng Đức"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Occitan"
-msgstr ""
+msgstr "Tiếng Occitan"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Spanish"
-msgstr ""
+msgstr "Tiếng Tây Ban Nha"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Urdu"
-msgstr ""
+msgstr "Tiếng Urdu"
 
 #: src/app.py:36
 msgctxt "Description of --version option"
 msgid "Show application version"
-msgstr ""
+msgstr "Hiển thị phiên bản của ứng dụng"
 
 #: src/app.py:44
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Set mức độ hiển thị chi tiết một cách thủ công (từ 0 đến 5)"
 
 #: src/app.py:46
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "MỨC ĐỘ"
 
 #: src/app.py:53
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "Bật chế độ hiển thị chi tiết (set mức độ hiển thị chi tiết là 5)"
 
 #: src/app.py:62
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "Bật chế độ quiet (yên lặng, set mức độ hiển thị chi tiết về 0)"
 
 #: src/app.py:111
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
+"{level} là mức độ hiển thị chi tiết không hợp lệ. Giá trị hợp lệ bắt đầu từ "
+"0 đến 5."
 
 #: src/app.py:112
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "Giả sử mức độ hiển thị chi tiết là 4."
 
 #: src/app.py:196
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
+"Không áp dụng được do hình nền được chọn không thể tìm thấy. Làm ơn! Chọn "
+"lại đi mà."
 
 #: src/app.py:228
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Đã áp dụng cài đặt màn hình hiện tại"
 
 #: src/app.py:230
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/app.py:241
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
+"Theme mặc định của shell đã được trích xuất ra '{path}' dưới dạng \"trích "
+"xuất mặc định\""
 
 #: src/app.py:243
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Trích xuất theme mặc định của shell thất bại"
 
 #: src/app.py:624
 msgid "Appearance"
-msgstr ""
+msgstr "Giao diện"
 
 #: src/app.py:625 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
-msgstr ""
+msgstr "Phông chữ"
 
 #: src/app.py:626
 msgid "Top Bar"
-msgstr ""
+msgstr "Top Bar"
 
 #: src/app.py:627 src/blueprints/sound-page.blp:20
 msgid "Sound"
-msgstr ""
+msgstr "Âm thanh"
 
 #: src/app.py:628
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Chuột & Touchpad"
 
 #: src/app.py:629 src/blueprints/display-page.blp:20
 msgid "Display"
-msgstr ""
+msgstr "Màn hình"
 
 #: src/app.py:630 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Các cài đặt khác"
 
 #: src/app.py:631
 msgid "Tools"
-msgstr ""
+msgstr "Các công cụ"
 
 #: src/app.py:685
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
+"Import các cài đặt của người dùng không được hỗ trợ trong phiên bản Flatpak"
 
 #: src/app.py:690
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Khôi phục cài đặt gốc thất bại"
 
 #: src/app.py:694
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Khôi phục cài đặt gốc thành công"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "Cài đặt ứng dụng"
 
 #: src/blueprints/app-preferences.blp:10
 msgid "Shell Theme"
-msgstr ""
+msgstr "Theme của shell"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Hình thức áp dụng"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "Chủ đề có nên được phủ lên trên chủ đề mặc định không?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Không phủ lên"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Phủ lên các tài nguyên"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Phủ hoàn toàn"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
-msgstr ""
+msgstr "Các theme"
 
 #: src/blueprints/appearance-page.blp:22
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: src/blueprints/appearance-page.blp:23
 msgid "Icons"
-msgstr ""
+msgstr "Icons"
 
 #: src/blueprints/appearance-page.blp:24
 msgid "Cursor"
-msgstr ""
+msgstr "Con trỏ"
 
 #: src/blueprints/appearance-page.blp:28
 msgid "Background"
-msgstr ""
+msgstr "Hình nền"
 
 #: src/blueprints/appearance-page.blp:31
 msgid "Type"
-msgstr ""
+msgstr "Loại"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
 #: src/blueprints/fonts-page.blp:46
 msgid "None"
-msgstr ""
+msgstr "Không có gì"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
 msgid "Image"
-msgstr ""
+msgstr "Hình ảnh"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
 msgid "Color"
-msgstr ""
+msgstr "Màu"
 
 #: src/blueprints/appearance-page.blp:38
 msgid "The image to use as background"
-msgstr ""
+msgstr "Hình ảnh sẽ được sử dụng làm nền"
 
 #: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
 msgid "Choose File"
-msgstr ""
+msgstr "Chọn file"
 
 #: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
-msgstr ""
+msgstr "Màu sẽ được dùng làm nền cho GDM"
 
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Áp dụng cài đặt màn hình hiện tại"
 
 #: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr ""
+msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
 
 #: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
-msgstr ""
+msgstr "Áp dụng"
 
 #: src/blueprints/display-page.blp:32
 msgid "Night Light"
-msgstr ""
+msgstr "Night Light"
 
 #: src/blueprints/display-page.blp:35
 msgid "Enable"
-msgstr ""
+msgstr "Bật"
 
 #: src/blueprints/display-page.blp:44
 msgid "Schedule"
-msgstr ""
+msgstr "Lịch trình"
 
 #: src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Từ hoàng hôn đến bình minh"
 
 #: src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Lịch trình thủ công"
 
 #: src/blueprints/display-page.blp:49
 msgid "Times"
-msgstr ""
+msgstr "Các thời điểm"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:52
 msgid "From"
-msgstr ""
+msgstr "Từ"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:74
 msgid "To"
-msgstr ""
+msgstr "Đến"
 
 #: src/blueprints/display-page.blp:96
 msgid "Color Temperature"
-msgstr ""
+msgstr "Nhiệt độ màu"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
-msgstr ""
+msgstr "Phông chữ"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Antialiasing"
-msgstr ""
+msgstr "Khử răng cưa"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Standard"
-msgstr ""
+msgstr "Tiêu chuẩn"
 
 #: src/blueprints/fonts-page.blp:35
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpixel"
 
 #: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
-msgstr ""
+msgstr "Gợi ý"
 
 #: src/blueprints/fonts-page.blp:43
 msgid "Full"
-msgstr ""
+msgstr "Toàn bộ"
 
 #: src/blueprints/fonts-page.blp:44
 msgid "Medium"
-msgstr ""
+msgstr "Trung bình"
 
 #: src/blueprints/fonts-page.blp:45
 msgid "Slight"
-msgstr ""
+msgstr "Nhẹ"
 
 #: src/blueprints/fonts-page.blp:51
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Tỉ lệ"
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Làm mới"
 
 #: src/blueprints/main-window.blp:7
 msgid "Import user settings"
-msgstr ""
+msgstr "Import các cài đặt người dùng"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Khôi phục cài đặt gốc"
 
 #: src/blueprints/main-window.blp:12
 msgid "About"
-msgstr ""
+msgstr "Về ứng dụng này"
 
 #: src/blueprints/main-window.blp:13
 msgid "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
-msgstr ""
+msgstr "Hình ảnh"
 
 #: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Áp dụng cài đặt thất bại"
 
 #: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Áp dụng cài đặt thành công"
 
 #: src/blueprints/main-window.blp:78
 msgid "User settings imported"
-msgstr ""
+msgstr "Cài đặt người dùng đã được import"
 
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Cài đặt đã được tải lại"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Tắt nút khởi động lại"
 
 #: src/blueprints/misc-page.blp:32
 msgid "Disable User List"
-msgstr ""
+msgstr "Tắt danh sách người dùng"
 
 #: src/blueprints/misc-page.blp:41
 msgid "Enable Logo"
-msgstr ""
+msgstr "Bật Logo"
 
 #: src/blueprints/misc-page.blp:42
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
 
 #: src/blueprints/misc-page.blp:51
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/blueprints/misc-page.blp:52
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
 
 #: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
-msgstr ""
+msgstr "Welcome Message"
 
 #: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
-msgstr ""
+msgstr "Chuột"
 
 #: src/blueprints/pointing-page.blp:23
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Tăng tốc con trỏ (Pointer Acceleration)"
 
 #: src/blueprints/pointing-page.blp:25
 msgid "Automatic"
-msgstr ""
+msgstr "Tự động"
 
 #: src/blueprints/pointing-page.blp:26
 msgid "Disabled"
-msgstr ""
+msgstr "Tắt"
 
 #: src/blueprints/pointing-page.blp:27
 msgid "Enabled"
-msgstr ""
+msgstr "Bật"
 
 #: src/blueprints/pointing-page.blp:32
 msgid "Inverse Scrolling"
-msgstr ""
+msgstr "Cuộn ngược"
 
 #: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Cuộn nội dung, không phải hướng nhìn."
 
 #: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Tốc độ con trỏ chuột/touchpad"
 
 #: src/blueprints/pointing-page.blp:50
 msgid "Touchpad"
-msgstr ""
+msgstr "Touchpad"
 
 #: src/blueprints/pointing-page.blp:53
 msgid "Tap to Click"
-msgstr ""
+msgstr "Chạm để click"
 
 #: src/blueprints/pointing-page.blp:60
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Cuộn tự nhiên (Natural Scrolling)"
 
 #: src/blueprints/pointing-page.blp:68
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
 
 #: src/blueprints/pointing-page.blp:69
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
 
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Tắt khi nhập"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
-msgstr ""
+msgstr "Theme"
 
 #: src/blueprints/sound-page.blp:25
 msgid "Over Amplification"
-msgstr ""
+msgstr "Âm lượng quá mức"
 
 #: src/blueprints/sound-page.blp:26
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Cho phép tăng âm lượng lên trên 100%"
 
 #: src/blueprints/sound-page.blp:35
 msgid "Event Sounds"
-msgstr ""
+msgstr "Event Sounds"
 
 #: src/blueprints/sound-page.blp:44
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Âm thanh phản hồi đầu vào (Input Feedback Sounds)"
 
 #: src/blueprints/tools-page.blp:20
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Theme mặc định của shell"
 
 #: src/blueprints/tools-page.blp:23
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Bao gồm các cài đặt của top bar"
 
 #: src/blueprints/tools-page.blp:30
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Trích xuất theme mặc định của shell"
 
 #: src/blueprints/tools-page.blp:33
 msgid "Extract"
-msgstr ""
+msgstr "Trích xuất"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Tweaks"
-msgstr ""
+msgstr "Cài đặt"
 
 #: src/blueprints/top-bar-page.blp:23
 msgid "Change Text Color"
-msgstr ""
+msgstr "Thay đổi màu chữ"
 
 #: src/blueprints/top-bar-page.blp:31
 msgid "Text Color"
-msgstr ""
+msgstr "Màu chữ"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Màu của chữ trên top bar"
 
 #: src/blueprints/top-bar-page.blp:43
 msgid "Change Background Color"
-msgstr ""
+msgstr "Thay đổi màu nền"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Màu nền của thanh top bar"
 
 #: src/blueprints/top-bar-page.blp:63
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Tắt các mũi tên"
 
 #: src/blueprints/top-bar-page.blp:72
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Tắt bo tròn các góc"
 
 #: src/blueprints/top-bar-page.blp:82
 msgid "Clock"
-msgstr ""
+msgstr "Đồng hồ"
 
 #: src/blueprints/top-bar-page.blp:85
 msgid "Show Weekday"
-msgstr ""
+msgstr "Hiển thị các ngày trong tuần"
 
 #: src/blueprints/top-bar-page.blp:94
 msgid "Show Seconds"
-msgstr ""
+msgstr "Hiển thị giây"
 
 #: src/blueprints/top-bar-page.blp:103
 msgid "Time Format"
-msgstr ""
+msgstr "Định dạng thời gian"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "AM/PM"
-msgstr ""
+msgstr "SA / CH"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "24 Hours"
-msgstr ""
+msgstr "24 giờ"
 
 #: src/blueprints/top-bar-page.blp:109
 msgid "Power"
-msgstr ""
+msgstr "Nguồn"
 
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Hiển thị phần trăm pin"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr ""
+msgstr "Bản quyền © 2021 Mazhar Hussain"
 
 #: src/dialogs.py:16
 msgid "Homepage"
-msgstr ""
+msgstr "Trang chủ"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
-msgstr ""
+msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
 #: src/settings_manager.py:271
 msgid "saving default theme …"
-msgstr ""
+msgstr "Đang lưu theme mặc định…"
 
 #: src/settings_manager.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
 #: src/settings_manager.py:615
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
 #: src/settings_manager.py:738
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
 #: src/settings_manager.py:742
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
