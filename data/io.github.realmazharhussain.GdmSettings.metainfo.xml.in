@@ -89,7 +89,7 @@
         </ul>
         <p>Fixed:</p>
         <ul>
-          <li>Welcome message could not contain single qoutes</li>
+          <li>Welcome message could not contain single quotes</li>
           <li>Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)</li>
           <li>Maximized or big application window looked bad (content was much smaller than the window)</li>
           <li>Showed wrong destination directory/folder path while extracting default shell theme</li>
