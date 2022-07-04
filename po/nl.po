@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-04 19:23+0500\n"
-"PO-Revision-Date: 2022-06-24 13:14+0000\n"
+"PO-Revision-Date: 2022-07-06 09:19+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -228,8 +228,6 @@ msgid "Fixed:"
 msgstr "Opgelost:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
 msgid "Welcome message could not contain single quotes"
 msgstr "Het welkomstbericht kon geen enkele aanhalingstekens tonen"
 
@@ -811,8 +809,6 @@ msgid "Homepage"
 msgstr "Website"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -820,7 +816,7 @@ msgstr "Mazhar Hussain"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
