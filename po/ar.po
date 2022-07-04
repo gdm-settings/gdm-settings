@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 19:04+0500\n"
+"POT-Creation-Date: 2022-07-04 19:23+0500\n"
 "PO-Revision-Date: 2022-06-21 03:43+0000\n"
 "Last-Translator: oussaid1 <oussaid.abdellatif@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
@@ -172,7 +172,6 @@ msgid ""
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr ""
 
@@ -209,7 +208,7 @@ msgid "Fixed:"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single qoutes"
+msgid "Welcome message could not contain single quotes"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
@@ -279,105 +278,105 @@ msgstr ""
 msgid "Urdu"
 msgstr ""
 
-#: src/app.py:36
+#: src/app.py:30
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr ""
 
-#: src/app.py:44
+#: src/app.py:38
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: src/app.py:46
+#: src/app.py:40
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:53
+#: src/app.py:47
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr ""
 
-#: src/app.py:62
+#: src/app.py:56
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr ""
 
-#: src/app.py:111
+#: src/app.py:106
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 
-#: src/app.py:112
+#: src/app.py:107
 msgid "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:196
+#: src/app.py:186
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 
-#: src/app.py:228
+#: src/app.py:218
 msgid "Applied current display settings"
 msgstr ""
 
-#: src/app.py:230
+#: src/app.py:220
 msgid "Failed to apply current display settings"
 msgstr ""
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:241
+#: src/app.py:231
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 
-#: src/app.py:243
+#: src/app.py:233
 msgid "Failed to extract default theme"
 msgstr ""
 
-#: src/app.py:624
+#: src/app.py:564
 msgid "Appearance"
 msgstr ""
 
-#: src/app.py:625 src/blueprints/fonts-page.blp:20
+#: src/app.py:565 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr ""
 
-#: src/app.py:626
+#: src/app.py:566
 msgid "Top Bar"
 msgstr ""
 
-#: src/app.py:627 src/blueprints/sound-page.blp:20
+#: src/app.py:567 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr ""
 
-#: src/app.py:628
+#: src/app.py:568
 msgid "Mouse & Touchpad"
 msgstr ""
 
-#: src/app.py:629 src/blueprints/display-page.blp:20
+#: src/app.py:569 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr ""
 
-#: src/app.py:630 src/blueprints/misc-page.blp:20
+#: src/app.py:570 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr ""
 
-#: src/app.py:631
+#: src/app.py:571
 msgid "Tools"
 msgstr ""
 
-#: src/app.py:685
+#: src/app.py:626
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 
-#: src/app.py:690
+#: src/app.py:631
 msgid "Failed to reset settings"
 msgstr ""
 
-#: src/app.py:694
+#: src/app.py:635
 msgid "Reset settings successfully"
 msgstr ""
 
@@ -500,11 +499,11 @@ msgid "From"
 msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:74
+#: src/blueprints/display-page.blp:76
 msgid "To"
 msgstr ""
 
-#: src/blueprints/display-page.blp:96
+#: src/blueprints/display-page.blp:100
 msgid "Color Temperature"
 msgstr ""
 
@@ -776,32 +775,42 @@ msgstr ""
 msgid "Homepage"
 msgstr ""
 
+#: src/dialogs.py:19
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr ""
+
+#: src/dialogs.py:21
+msgctxt "Name of Designer"
+msgid "Thales Bindá"
+msgstr ""
+
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
 msgstr ""
 
-#: src/settings_manager.py:271
+#: src/settings.py:275
 msgid "saving default theme …"
 msgstr ""
 
-#: src/settings_manager.py:608
+#: src/settings.py:612
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings_manager.py:615
+#: src/settings.py:619
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings_manager.py:738
+#: src/settings.py:747
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings_manager.py:742
+#: src/settings.py:754
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-06-22 19:04+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-04 19:23+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -194,7 +194,6 @@ msgstr ""
 "entre autres."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
@@ -233,7 +232,9 @@ msgid "Fixed:"
 msgstr "Corrections :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single qoutes"
+#, fuzzy
+#| msgid "Welcome message could not contain single qoutes"
+msgid "Welcome message could not contain single quotes"
 msgstr "Le message de bienvenue ne pouvait pas contenir de guillemets simples"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
@@ -248,8 +249,8 @@ msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
-"La fenêtre de l’application maximisée ou agrandie ne rendait pas très bien ("
-"le contenu était beaucoup plus petit que la fenêtre)"
+"La fenêtre de l’application maximisée ou agrandie ne rendait pas très bien "
+"(le contenu était beaucoup plus petit que la fenêtre)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
@@ -264,8 +265,8 @@ msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
 msgstr ""
-"Le fait de cliquer sur « Appliquer » n’avait aucun effet si l’image d"
-"’arrière-plan sélectionnée avait été supprimée avant l’application"
+"Le fait de cliquer sur « Appliquer » n’avait aucun effet si l’image "
+"d’arrière-plan sélectionnée avait été supprimée avant l’application"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
@@ -312,43 +313,43 @@ msgstr "Espagnol"
 msgid "Urdu"
 msgstr "Urdu"
 
-#: src/app.py:36
+#: src/app.py:30
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "Affiche la version de l’application"
 
-#: src/app.py:44
+#: src/app.py:38
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Définition manuelle du niveau de verbosité (de 0 à 5)"
 
-#: src/app.py:46
+#: src/app.py:40
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEAU"
 
-#: src/app.py:53
+#: src/app.py:47
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Activer le mode verbeux (définir le niveau de verbosité 5)"
 
-#: src/app.py:62
+#: src/app.py:56
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Activer le mode tranquille (définir le niveau de verbosité 0)"
 
-#: src/app.py:111
+#: src/app.py:106
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 "{level} est un niveau de verbosité invalide. Les valeurs acceptées sont de 0 "
 "à 5."
 
-#: src/app.py:112
+#: src/app.py:107
 msgid "Assuming Verbosity level 4."
 msgstr "Niveau de verbosité supposé à 4."
 
-#: src/app.py:196
+#: src/app.py:186
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -356,67 +357,67 @@ msgstr ""
 "N'a pas été appliqué. L'image d’arrière-plan choisie n'a pas été trouvée. "
 "Veuillez choisir à nouveau."
 
-#: src/app.py:228
+#: src/app.py:218
 msgid "Applied current display settings"
 msgstr "Paramètres d'affichage actuels appliqués"
 
-#: src/app.py:230
+#: src/app.py:220
 msgid "Failed to apply current display settings"
 msgstr "Échec de l'application des paramètres d'affichage actuels"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:241
+#: src/app.py:231
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr "Thème par défaut extrait vers '{path}' sous le nom 'default-extracted'"
 
-#: src/app.py:243
+#: src/app.py:233
 msgid "Failed to extract default theme"
 msgstr "Échec de l'extraction du thème par défaut"
 
-#: src/app.py:624
+#: src/app.py:564
 msgid "Appearance"
 msgstr "Apparence"
 
-#: src/app.py:625 src/blueprints/fonts-page.blp:20
+#: src/app.py:565 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Polices"
 
-#: src/app.py:626
+#: src/app.py:566
 msgid "Top Bar"
 msgstr "Barre supérieure"
 
-#: src/app.py:627 src/blueprints/sound-page.blp:20
+#: src/app.py:567 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Son"
 
-#: src/app.py:628
+#: src/app.py:568
 msgid "Mouse & Touchpad"
 msgstr "Souris et pavé tactile"
 
-#: src/app.py:629 src/blueprints/display-page.blp:20
+#: src/app.py:569 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Affichage"
 
-#: src/app.py:630 src/blueprints/misc-page.blp:20
+#: src/app.py:570 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Divers"
 
-#: src/app.py:631
+#: src/app.py:571
 msgid "Tools"
 msgstr "Outils"
 
-#: src/app.py:685
+#: src/app.py:626
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "L'importation des paramètres utilisateur n'est pas supporté dans la version "
 "Flatpak"
 
-#: src/app.py:690
+#: src/app.py:631
 msgid "Failed to reset settings"
 msgstr "Échec de la réinitialisation des paramètres"
 
-#: src/app.py:694
+#: src/app.py:635
 msgid "Reset settings successfully"
 msgstr "Réinitialisation des paramètres réussie"
 
@@ -539,11 +540,11 @@ msgid "From"
 msgstr "De"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:74
+#: src/blueprints/display-page.blp:76
 msgid "To"
 msgstr "À"
 
-#: src/blueprints/display-page.blp:96
+#: src/blueprints/display-page.blp:100
 msgid "Color Temperature"
 msgstr "Température des couleurs"
 
@@ -815,32 +816,44 @@ msgstr "Copyright © 2021 Mazhar Hussain"
 msgid "Homepage"
 msgstr "Page d'accueil"
 
+#: src/dialogs.py:19
+#, fuzzy
+#| msgid "Mazhar Hussain"
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/dialogs.py:21
+msgctxt "Name of Designer"
+msgid "Thales Bindá"
+msgstr ""
+
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "Irénée Thirion <irenee.thirion@outlook.fr>"
 
-#: src/settings_manager.py:271
+#: src/settings.py:275
 msgid "saving default theme …"
 msgstr "enregistrement du thème par défaut …"
 
-#: src/settings_manager.py:608
+#: src/settings.py:612
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings_manager.py:615
+#: src/settings.py:619
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
-#: src/settings_manager.py:738
+#: src/settings.py:747
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings_manager.py:742
+#: src/settings.py:754
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

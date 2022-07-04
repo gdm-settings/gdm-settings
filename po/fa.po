@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-22 19:04+0500\n"
+"POT-Creation-Date: 2022-07-04 19:23+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -174,7 +174,6 @@ msgstr ""
 "و تنظیمات نور شب، و همینطور چیزهایی دیگر."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
-#: src/dialogs.py:19
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
@@ -211,7 +210,9 @@ msgid "Fixed:"
 msgstr "برطرف شده:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single qoutes"
+#, fuzzy
+#| msgid "Welcome message could not contain single qoutes"
+msgid "Welcome message could not contain single quotes"
 msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
@@ -288,109 +289,109 @@ msgstr "اسپانیایی"
 msgid "Urdu"
 msgstr "اُردو"
 
-#: src/app.py:36
+#: src/app.py:30
 #, fuzzy
 #| msgid "Command-line option --version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "گزینهٔ خط فرمانی ‎--version"
 
-#: src/app.py:44
+#: src/app.py:38
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: src/app.py:46
+#: src/app.py:40
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:53
+#: src/app.py:47
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr ""
 
-#: src/app.py:62
+#: src/app.py:56
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr ""
 
-#: src/app.py:111
+#: src/app.py:106
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 
-#: src/app.py:112
+#: src/app.py:107
 msgid "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:196
+#: src/app.py:186
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 
-#: src/app.py:228
+#: src/app.py:218
 msgid "Applied current display settings"
 msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
 
-#: src/app.py:230
+#: src/app.py:220
 msgid "Failed to apply current display settings"
 msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:241
+#: src/app.py:231
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgstr ""
 "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
 
-#: src/app.py:243
+#: src/app.py:233
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/app.py:624
+#: src/app.py:564
 msgid "Appearance"
 msgstr "ظاهر"
 
-#: src/app.py:625 src/blueprints/fonts-page.blp:20
+#: src/app.py:565 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: src/app.py:626
+#: src/app.py:566
 msgid "Top Bar"
 msgstr "نوار بالا"
 
-#: src/app.py:627 src/blueprints/sound-page.blp:20
+#: src/app.py:567 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "صدا"
 
-#: src/app.py:628
+#: src/app.py:568
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
-#: src/app.py:629 src/blueprints/display-page.blp:20
+#: src/app.py:569 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "نمایشگر"
 
-#: src/app.py:630 src/blueprints/misc-page.blp:20
+#: src/app.py:570 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
-#: src/app.py:631
+#: src/app.py:571
 msgid "Tools"
 msgstr "ابزارها"
 
-#: src/app.py:685
+#: src/app.py:626
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/app.py:690
+#: src/app.py:631
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
-#: src/app.py:694
+#: src/app.py:635
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
@@ -514,11 +515,11 @@ msgid "From"
 msgstr "از"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:74
+#: src/blueprints/display-page.blp:76
 msgid "To"
 msgstr "تا"
 
-#: src/blueprints/display-page.blp:96
+#: src/blueprints/display-page.blp:100
 msgid "Color Temperature"
 msgstr "دمای رنگ"
 
@@ -791,36 +792,48 @@ msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
 msgid "Homepage"
 msgstr "صفحهٔ خانگی"
 
+#: src/dialogs.py:19
+#, fuzzy
+#| msgid "Mazhar Hussain"
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "مظهر حسین"
+
+#: src/dialogs.py:21
+msgctxt "Name of Designer"
+msgid "Thales Bindá"
+msgstr ""
+
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
-#: src/settings_manager.py:271
+#: src/settings.py:275
 #, fuzzy
 #| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "درحال ذخیره کردن زمینهٔ پیش‌گزیده ..."
 
-#: src/settings_manager.py:608
+#: src/settings.py:612
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
 
-#: src/settings_manager.py:615
+#: src/settings.py:619
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings_manager.py:738
+#: src/settings.py:747
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings_manager.py:742
+#: src/settings.py:754
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
