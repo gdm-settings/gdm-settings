@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-04 19:23+0500\n"
-"PO-Revision-Date: 2022-07-04 14:23+0000\n"
+"PO-Revision-Date: 2022-07-06 09:19+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -220,8 +220,6 @@ msgid "Fixed:"
 msgstr "Đã sửa các lỗi:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
 msgid "Welcome message could not contain single quotes"
 msgstr "Welcome message không thể chứa dấu '"
 
@@ -802,8 +800,6 @@ msgid "Homepage"
 msgstr "Trang chủ"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -811,7 +807,7 @@ msgstr "Mazhar Hussain"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
