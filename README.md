@@ -1,5 +1,7 @@
 # Login Manager Settings
 
+[![Translation status](https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg)](https://hosted.weblate.org/projects/gdm-settings/#languages)
+
 A settings app for GNOME's Display/Login Manager, GDM.
 
 ![screenshot](https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png#gh-light-mode-only)
