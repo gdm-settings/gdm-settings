@@ -1,6 +1,9 @@
 # Login Manager Settings
 
-[![Translation status](https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg)](https://hosted.weblate.org/projects/gdm-settings/#languages)
+[![Downloads](https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total)](hhttps://github.com/realmazharhussain/gdm-settings/releases/latest)
+[![Flatpak Installs](https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings)](https://flathub.org/apps/details/io.github.realmazharhussain.GdmSettings)
+[![Translation Status](https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg)](https://hosted.weblate.org/projects/gdm-settings/#languages)
+![Code Size](https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings)
 
 A settings app for GNOME's Display/Login Manager, GDM.
 
