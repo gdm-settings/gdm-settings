@@ -8,13 +8,10 @@ def getstdout(args):
 
 def find_file(file, locations):
     from os import path
-    found_path = ''
     for location in locations:
         file_path = path.join(location, file.lstrip('/'))
         if path.exists(file_path):
-            found_path = file_path
-            break
-    return found_path
+            return file_path
 
 def read_os_release():
     import os
