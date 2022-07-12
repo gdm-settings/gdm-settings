@@ -1,12 +1,16 @@
 '''Some random utility functions, classes, objects, etc. used throughout the source code'''
 
-def getstdout(args):
+def getstdout(command, /):
+    '''get standard output of a command'''
+
     from subprocess import run
-    if isinstance(args, str):
-        args = args.split()
-    return run(args, capture_output=True).stdout
+    if isinstance(command, str):
+        command = command.split()
+    return run(command, capture_output=True).stdout
 
 def find_file(file, locations):
+    '''find a file in possible locations'''
+
     from os import path
     for location in locations:
         file_path = path.join(location, file.lstrip('/'))
@@ -29,11 +33,10 @@ def listdir_recursive(directory):
     return files
 
 def read_os_release():
-    import os
-
     filename = None
+    from os import path
     for fn in '/run/host/os-release', '/etc/os-release', '/usr/lib/os-release':
-        if os.path.isfile(fn):
+        if path.isfile(fn):
             filename = fn
             break
 

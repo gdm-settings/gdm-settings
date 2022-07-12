@@ -264,7 +264,7 @@ class GResourceUtils:
         elif not path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure'):
             self._extract_default_pure_theme()
 
-    def compile(self, shellDir:str, additional_css:str, background_image:str=None):
+    def compile(self, shellDir:str, additional_css:str, background_image:str=''):
         """Compile a theme into a GResource file for its use as the GDM theme"""
 
         from os import remove
@@ -286,7 +286,7 @@ class GResourceUtils:
         open(path.join(self.TempShellDir, self.CustomThemeIdentity), 'w').close()
         # Background Image
         if background_image:
-            copy(src=background_image, dst=path.join(self.TempShellDir, 'background'))
+            copy(background_image, path.join(self.TempShellDir, 'background'))
         # Additional CSS
         with open(f"{self.TempShellDir}/gnome-shell.css", "a") as shell_css:
             print(additional_css, file=shell_css)
