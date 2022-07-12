@@ -176,20 +176,6 @@ class GResourceUtils:
         logging.info(f"ShellGresourceFile     = {self.ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {self.UbuntuGdmGresourceFile}")
 
-    def __listdir_recursive(self, dir:str):
-        """list files (only) inside a directory recursively"""
-
-        from os import listdir
-
-        files=[]
-        for file in listdir(dir):
-            if path.isdir(path.join(dir, file)):
-                for subdir_file in self.__listdir_recursive(path.join(dir, file)):
-                    files += [path.join(file, subdir_file)]
-            else:
-                files += [file]
-        return files
-
     def is_default(self, gresourceFile:str):
         """checks if the provided file is a GResource file of the default theme"""
 
@@ -317,7 +303,9 @@ class GResourceUtils:
                   ' <gresource prefix="/org/gnome/shell/theme">',
                   sep='\n',
                   file=GresourceXml)
-            for file in self.__listdir_recursive(self.TempShellDir):
+
+            from .utils import listdir_recursive
+            for file in listdir_recursive(self.TempShellDir):
                 print('  <file>' + file + '</file>', file=GresourceXml)
             print(' </gresource>',
                   '</gresources>',

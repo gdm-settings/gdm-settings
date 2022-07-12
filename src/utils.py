@@ -13,6 +13,21 @@ def find_file(file, locations):
         if path.exists(file_path):
             return file_path
 
+def listdir_recursive(directory):
+    """list files (only) inside a directory recursively"""
+
+    from os import listdir, path
+
+    files=[]
+    for file in listdir(directory):
+        if path.isdir(path.join(directory, file)):
+            for subdir_file in listdir_recursive(path.join(directory, file)):
+                files += [path.join(file, subdir_file)]
+        else:
+            files += [file]
+
+    return files
+
 def read_os_release():
     import os
 
