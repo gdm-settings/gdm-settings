@@ -48,8 +48,9 @@ def read_os_release():
 
     return dict(os_release)
 
-class PATH:
-    '''Iterable PATH-like variable.
+class PATH (list):
+    '''
+    A list to store values of PATH-like environment variables
 
     For example, with
         mypath = PATH('/usr/local/bin:/usr/bin')
@@ -59,47 +60,21 @@ class PATH:
         print(mypath)       # prints /usr/local/bin:/usr/bin
         print(*mypath)      # prints /usr/local/bin /usr/bin
         print(mypath[0])    # prints /usr/local/bin
-        print(repr(mypath)) # prints PATH('/usr/local/bin:/usr/bin')
+        print(repr(mypath)) # prints PATH(['/usr/local/bin', '/usr/bin'])
     '''
-    def __init__(self, val=[], /):
-        if isinstance(val, list):
-            self.val = val.copy()
-        elif isinstance(val, str):
-            self.val = val.strip(':').split(':')
-        elif val is None:
-            self.val = []
-        else:
-            raise ValueError("provided value is not of type 'str' or 'list'.")
 
-    def __str__(self):
-        return str.join(':', self.val)
+    def __init__ (self, value=None, /):
+        if value is None:
+            return list.__init__(self)
+        elif isinstance(value, str):
+            value = value.strip(':').split(':')
+        return list.__init__(self, value)
 
-    def __repr__(self):
-        return self.__class__.__name__ + '(' + self.__str__().__repr__() + ')'
+    def __str__ (self, /):
+        return ':'.join(self)
 
-    def __iter__(self):
-        for item in self.val:
-            yield item
+    def __repr__ (self, /):
+        return self.__class__.__name__ + '(' + list.__repr__(self) + ')'
 
-    def __getitem__(self, subscript, /):
-        return self.val[subscript]
-
-    def copy(self):
-        return self.__class__(self.val)
-
-    def prefix(self, prefix, /):
-        self.val = [prefix+item for item in self.val]
-        return True
-
-    def postfix(self, postfix, /):
-        self.val = [item+postfix for item in self.val]
-        return True
-
-    def insert(self, position, value):
-        return self.val.insert(position, value)
-
-    def append(self, val, /):
-        return self.val.append(val)
-
-    def prepend(self, val, /):
-        return self.val.insert(0, val)
+    def copy (self, /):
+        return self.__class__(self)
