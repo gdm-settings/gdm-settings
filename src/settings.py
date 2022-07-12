@@ -295,22 +295,23 @@ class GResourceUtils:
         copy(src=f"{self.TempShellDir}/gnome-shell.css", dst=f"{self.TempShellDir}/gdm.css")
         copy(src=f"{self.TempShellDir}/gnome-shell.css", dst=f"{self.TempShellDir}/gdm3.css")
 
-        # Open /tmp/gdm-settings/gnome-shell/gnome-shell-theme.gresource.xml for writing
+        # Get a list of all files in the shell theme
+        # Note: We do this before calling open() so as not to include .gresource.xml file itself in the list
+        from .utils import listdir_recursive
+        file_list = listdir_recursive(self.TempShellDir)
+
+        # Create gnome-shell-theme.gresource.xml file
         with open(path.join(self.TempShellDir, 'gnome-shell-theme.gresource.xml'), 'w') as GresourceXml:
-            # Fill gnome-shell-theme.gresource.xml
             print('<?xml version="1.0" encoding="UTF-8"?>',
                   '<gresources>',
                   ' <gresource prefix="/org/gnome/shell/theme">',
-                  sep='\n',
-                  file=GresourceXml)
-
-            from .utils import listdir_recursive
-            for file in listdir_recursive(self.TempShellDir):
-                print('  <file>' + file + '</file>', file=GresourceXml)
-            print(' </gresource>',
+                *('  <file>'+file+'</file>' for file in file_list),
+                  ' </gresource>',
                   '</gresources>',
+
                   sep='\n',
-                  file=GresourceXml)
+                  file=GresourceXml,
+                 )
 
         # Compile Theme
         from subprocess import run
