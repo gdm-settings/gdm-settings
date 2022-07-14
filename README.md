@@ -7,10 +7,12 @@
 
 A settings app for GNOME's Display/Login Manager, GDM.
 
-<picture>
-  <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
-  <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
-</picture>
+<a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
+  <picture>
+    <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
+    <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
+  </picture>
+</a>
 
 It is written in Python and uses LibAdwaita for its graphical interface.
 
