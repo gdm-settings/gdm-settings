@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-07-04 19:23+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-14 11:06+0500\n"
 "PO-Revision-Date: 2022-07-06 09:19+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -824,26 +824,26 @@ msgstr "Thales Bindá"
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/settings.py:275
+#: src/settings.py:261
 msgid "saving default theme …"
 msgstr "Bezig met opslaan van huidig thema…"
 
-#: src/settings.py:612
+#: src/settings.py:601
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:619
+#: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:747
+#: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:754
+#: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"

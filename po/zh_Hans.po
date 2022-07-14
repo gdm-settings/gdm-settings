@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 19:23+0500\n"
+"POT-Creation-Date: 2022-07-14 11:06+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: 刘韬 <lyuutau@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -798,26 +798,26 @@ msgstr ""
 msgid "translator-credits"
 msgstr ""
 
-#: src/settings.py:275
+#: src/settings.py:261
 msgid "saving default theme …"
 msgstr "保存默认主题…"
 
-#: src/settings.py:612
+#: src/settings.py:601
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 应用 GResource 设置…"
 
-#: src/settings.py:619
+#: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统应用 GResource 设置…"
 
-#: src/settings.py:747
+#: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 重置 GResource 设置…"
 
-#: src/settings.py:754
+#: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统重置 GResource 设置…"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 19:23+0500\n"
+"POT-Creation-Date: 2022-07-14 11:06+0500\n"
 "PO-Revision-Date: 2022-07-03 17:16+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -827,26 +827,26 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Quentin PAGÈS"
 
-#: src/settings.py:275
+#: src/settings.py:261
 msgid "saving default theme …"
 msgstr "enregistrament del tèma per defaut…"
 
-#: src/settings.py:612
+#: src/settings.py:601
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 
-#: src/settings.py:619
+#: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/settings.py:747
+#: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
 
-#: src/settings.py:754
+#: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"

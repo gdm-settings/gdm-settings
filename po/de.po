@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 19:23+0500\n"
+"POT-Creation-Date: 2022-07-14 11:06+0500\n"
 "PO-Revision-Date: 2022-06-21 03:43+0000\n"
 "Last-Translator: jagfwajgf <juri26@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -852,13 +852,13 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Philipp Kiemle <philipp.kiemle@gmail.com>, 2022"
 
-#: src/settings.py:275
+#: src/settings.py:261
 #, fuzzy
 #| msgid "saving default theme ..."
 msgid "saving default theme …"
 msgstr "Vorgabethema wird gespeichert …"
 
-#: src/settings.py:612
+#: src/settings.py:601
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
@@ -867,17 +867,17 @@ msgstr ""
 "Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
 "angewendet"
 
-#: src/settings.py:619
+#: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:747
+#: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:754
+#: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
