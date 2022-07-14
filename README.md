@@ -2,7 +2,7 @@
 
 [![Downloads](https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total)](https://github.com/realmazharhussain/gdm-settings/releases/latest)
 [![Flatpak Installs](https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings)](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
-[![Code Size](https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings)](https://github.com/realmazharhussain/gdm-settings/archive/refs/heads/main.tar.gz)
+[![Code Size](https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings)](#)
 [![Translation Status](https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg)](https://hosted.weblate.org/projects/gdm-settings/#languages)
 
 A settings app for GNOME's Display/Login Manager, GDM.
