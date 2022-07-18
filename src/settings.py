@@ -420,7 +420,7 @@ class Settings:
                 css +=  "}\n"
         return css
 
-    def apply_gresource_settings(self):
+    def apply_shell_theme_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
         # save the default shell theme (if needed)
@@ -564,7 +564,7 @@ class Settings:
     def apply_settings(self) -> bool:
         ''' Apply all settings '''
 
-        self.apply_gresource_settings()
+        self.apply_shell_theme_settings()
         self.apply_dconf_settings()
 
         if self.command_elevator.run():
