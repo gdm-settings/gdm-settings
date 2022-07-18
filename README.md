@@ -1,24 +1,52 @@
-# Login Manager Settings
+<p align="center">
+  <img src="data/icons/io.github.realmazharhussain.GdmSettings.svg" alt="GDM Settings Icon" width="100" height="100">
+</p>
 
-[![Downloads](https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total)](https://github.com/realmazharhussain/gdm-settings/releases/latest)
-[![Flatpak Installs](https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings)](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
-[![Code Size](https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings)](#)
-[![Translation Status](https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg)](https://hosted.weblate.org/projects/gdm-settings/#languages)
+<h1 align="center">Login Manager Settings</h1>
 
-A settings app for GNOME's Display/Login Manager, GDM.
+<div align="center">
+  <p><strong>A settings app for GNOME's Login/Display Manager, GDM.</strong></p>
+  <p>It is written in Python and uses LibAdwaita for graphical interface.</p>
+</div>
 
-<a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
-  <picture>
-    <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
-    <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
-  </picture>
-</a>
+<br>
 
-It is written in Python and uses LibAdwaita for its graphical interface.
+<div align="center">
+  <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total">
+  </a>
+  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation">
+    <img alt="Flatpak Installs" src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings">
+  </a>
+  <a href="#">
+    <img alt="Code Size" src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings">
+  </a>
+  <a href="https://hosted.weblate.org/projects/gdm-settings/#languages">
+    <img alt="Translation Status" src="https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg">
+  </a>
+</div>
 
-- [Install](https://github.com/realmazharhussain/gdm-settings/wiki/Installation)
-- [Screenshots](https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots)
-- [Features](https://github.com/realmazharhussain/gdm-settings/wiki/Features)
-- [Translate](https://hosted.weblate.org/engage/gdm-settings)
-- [Report Bugs](https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml)
-- [Donate](https://www.patreon.com/mazharhussain)
+<div align="center">
+  <h3>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation">Install</a>
+    <span> | </span>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
+    <span> | </span>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Features">Features</a>
+    <span> | </span>
+    <a href="https://hosted.weblate.org/engage/gdm-settings">Translate</a>
+    <span> | </span>
+    <a href="https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
+    <span> | </span>
+    <a href="https://www.patreon.com/mazharhussain">Donate</a>
+  </h3>
+</div>
+
+<div align="center">
+  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
+    <picture>
+      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
+    </picture>
+  </a>
+</div>
