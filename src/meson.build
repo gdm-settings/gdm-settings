@@ -21,6 +21,7 @@ source_files = files(
   'enums.py',
   'env.py',
   'settings.py',
+  'theme_lists.py',
   'utils.py',
 )
 install_data(source_files, install_dir: py_proj_dir)

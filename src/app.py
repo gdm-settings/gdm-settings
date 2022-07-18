@@ -422,28 +422,28 @@ class Application(Adw.Application):
 
     def load_theme_lists(self):
         # Shell Themes
-        from .settings import shell_themes
+        from .theme_lists import shell_themes
         widgets.shell_theme_list = Gtk.StringList()
         for theme in shell_themes:
             widgets.shell_theme_list.append(theme.name)
         widgets.shell_theme_comborow.set_model(widgets.shell_theme_list)
 
         # Icon Themes
-        from .settings import icon_themes
+        from .theme_lists import icon_themes
         widgets.icon_theme_list = Gtk.StringList()
         for theme in icon_themes:
             widgets.icon_theme_list.append(theme.name)
         widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
 
         # Cursor Themes
-        from .settings import cursor_themes
+        from .theme_lists import cursor_themes
         widgets.cursor_theme_list = Gtk.StringList()
         for theme in cursor_themes:
             widgets.cursor_theme_list.append(theme.name)
         widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
 
         # Sound Themes
-        from .settings import sound_themes
+        from .theme_lists import sound_themes
         widgets.sound_theme_list = Gtk.StringList()
         for theme in sound_themes:
             widgets.sound_theme_list.append(theme.name)

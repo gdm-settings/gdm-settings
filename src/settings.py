@@ -7,59 +7,6 @@ from .enums import PackageType
 from .utils import CommandElevator
 from . import env
 
-class Theme:
-    def __init__(self, name:str, path:str):
-        self.name = name
-        self.path = path
-    def __lt__(self, value, /):
-        return self.name.casefold() < value.name.casefold()
-    def __repr__(self):
-        return f"Theme(name='{self.name}', path='{self.path}')"
-
-def update_theme_list(type:str):
-    temp_list = []
-
-    if type == 'shell':
-        dirname = 'themes'
-        decider = 'gnome-shell'
-        temp_list.append(Theme('default', None))
-        theme_list = shell_themes
-    elif type in ['sound', 'sounds']:
-        dirname = 'sounds'
-        decider = 'index.theme'
-        theme_list = sound_themes
-    elif type in ['icon', 'icons']:
-        dirname = 'icons'
-        decider = 'index.theme'
-        theme_list = icon_themes
-    elif type in ['cursor', 'cursors']:
-        dirname = 'icons'
-        decider = 'cursors'
-        theme_list = cursor_themes
-    else:
-        raise ValueError(f"invalid type '{type}'")
-
-    from glob import glob
-    for data_dir in env.SYSTEM_DATA_DIRS:
-        for theme_dir in glob(f"{env.HOST_ROOT}{data_dir}/{dirname}/*"):
-            theme_name = path.basename(theme_dir)
-            if path.exists(path.join(theme_dir, decider)) and theme_name not in [theme.name for theme in temp_list]:
-                temp_list.append(Theme(theme_name, theme_dir))
-
-    theme_list.clear()
-    theme_list += sorted(temp_list)
-
-def update_all_theme_lists():
-    for type in 'shell', 'icons', 'cursors', 'sound':
-        update_theme_list(type)
-
-# Theme Lists
-shell_themes  = []
-icon_themes   = []
-cursor_themes = []
-sound_themes  = []
-update_all_theme_lists()
-
 class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
 
