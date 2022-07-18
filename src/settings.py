@@ -187,73 +187,73 @@ class GResourceUtils:
         return  tempGresourceFile
 
 class Settings:
-    section = "section"
     key = "key"
+    section = "section"
     key_type = "key_type"
 
     __key_list = [
         ## Appearance ##
-        {section:"appearance", key:"shell-theme", key_type:"string"},
-        {section:"appearance", key:'icon-theme', key_type:"string"},
-        {section:"appearance", key:'cursor-theme', key_type:"string"},
-        {section:"appearance", key:"background-type", key_type:"string"},
-        {section:"appearance", key:"background-image", key_type:"string"},
-        {section:"appearance", key:"background-color", key_type:"string"},
+        {section:"appearance", key_type:"string", key:"shell-theme"},
+        {section:"appearance", key_type:"string", key:'icon-theme'},
+        {section:"appearance", key_type:"string", key:'cursor-theme'},
+        {section:"appearance", key_type:"string", key:"background-type"},
+        {section:"appearance", key_type:"string", key:"background-image"},
+        {section:"appearance", key_type:"string", key:"background-color"},
         ## Fonts ##
-        {section:"fonts", key:"font", key_type:"string"},
-        {section:"fonts", key:"antialiasing", key_type:"string"},
-        {section:"fonts", key:"hinting", key_type:"string"},
-        {section:"fonts", key:"scaling-factor", key_type:"double"},
+        {section:"fonts", key_type:"string", key:"font"},
+        {section:"fonts", key_type:"string", key:"antialiasing"},
+        {section:"fonts", key_type:"string", key:"hinting"},
+        {section:"fonts", key_type:"double", key:"scaling-factor"},
 
         ## Top Bar ##
         # Tweaks
-        {section:"top-bar", key:"disable-top-bar-arrows", key_type:"boolean"},
-        {section:"top-bar", key:"disable-top-bar-rounded-corners", key_type:"boolean"},
-        {section:"top-bar", key:"change-top-bar-text-color", key_type:"boolean"},
-        {section:"top-bar", key:"top-bar-text-color", key_type:"string"},
-        {section:"top-bar", key:"change-top-bar-background-color", key_type:"boolean"},
-        {section:"top-bar", key:"top-bar-background-color", key_type:"string"},
+        {section:"top-bar", key_type:"boolean", key:"disable-top-bar-arrows"},
+        {section:"top-bar", key_type:"boolean", key:"disable-top-bar-rounded-corners"},
+        {section:"top-bar", key_type:"boolean", key:"change-top-bar-text-color"},
+        {section:"top-bar", key_type:"string",  key:"top-bar-text-color"},
+        {section:"top-bar", key_type:"boolean", key:"change-top-bar-background-color"},
+        {section:"top-bar", key_type:"string",  key:"top-bar-background-color"},
         # Time/Clock
-        {section:"top-bar", key:'show-weekday', key_type:"boolean"},
-        {section:"top-bar", key:'time-format', key_type:"string"},
-        {section:"top-bar", key:'show-seconds', key_type:"boolean"},
+        {section:"top-bar", key_type:"boolean", key:'show-weekday'},
+        {section:"top-bar", key_type:"string",  key:'time-format'},
+        {section:"top-bar", key_type:"boolean", key:'show-seconds'},
         # Power
-        {section:"top-bar", key:'show-battery-percentage', key_type:"boolean"},
+        {section:"top-bar", key_type:"boolean", key:'show-battery-percentage'},
 
         ## Sound ##
-        {section:"sound", key:'sound-theme', key_type:"string"},
-        {section:"sound", key:'event-sounds', key_type:"boolean"},
-        {section:"sound", key:'feedback-sounds', key_type:"boolean"},
-        {section:"sound", key:'over-amplification', key_type:"boolean"},
+        {section:"sound", key_type:"string",  key:'sound-theme'},
+        {section:"sound", key_type:"boolean", key:'event-sounds'},
+        {section:"sound", key_type:"boolean", key:'feedback-sounds'},
+        {section:"sound", key_type:"boolean", key:'over-amplification'},
 
         ## Pointing ##
         # Mouse
-        {section:"mouse", key:'pointer-acceleration', key_type:"string"},
-        {section:"mouse", key:'inverse-scrolling', key_type:"boolean"},
-        {section:"mouse", key:'mouse-speed', key_type:"double"},
+        {section:"mouse", key_type:"string",  key:'pointer-acceleration'},
+        {section:"mouse", key_type:"boolean", key:'inverse-scrolling'},
+        {section:"mouse", key_type:"double",  key:'mouse-speed'},
         # Touchpad
-        {section:"touchpad", key:'tap-to-click', key_type:"boolean"},
-        {section:"touchpad", key:'natural-scrolling', key_type:"boolean"},
-        {section:"touchpad", key:'two-finger-scrolling', key_type:"boolean"},
-        {section:"touchpad", key:'disable-while-typing', key_type:"boolean"},
-        {section:"touchpad", key:'touchpad-speed', key_type:"double"},
+        {section:"touchpad", key_type:"boolean", key:'tap-to-click'},
+        {section:"touchpad", key_type:"boolean", key:'natural-scrolling'},
+        {section:"touchpad", key_type:"boolean", key:'two-finger-scrolling'},
+        {section:"touchpad", key_type:"boolean", key:'disable-while-typing'},
+        {section:"touchpad", key_type:"double",  key:'touchpad-speed'},
 
         ## Night Light ##
-        {section:"night-light", key:'night-light-enabled', key_type:"boolean"},
-        {section:"night-light", key:'night-light-schedule-automatic', key_type:"boolean"},
-        {section:"night-light", key:'night-light-temperature', key_type:"uint"},
-        {section:"night-light", key:'night-light-start-hour', key_type:"int"},
-        {section:"night-light", key:'night-light-start-minute', key_type:"int"},
-        {section:"night-light", key:'night-light-end-hour', key_type:"int"},
-        {section:"night-light", key:'night-light-end-minute', key_type:"int"},
+        {section:"night-light", key_type:"boolean", key:'night-light-enabled'},
+        {section:"night-light", key_type:"boolean", key:'night-light-schedule-automatic'},
+        {section:"night-light", key_type:"uint",    key:'night-light-temperature'},
+        {section:"night-light", key_type:"int",     key:'night-light-start-hour'},
+        {section:"night-light", key_type:"int",     key:'night-light-start-minute'},
+        {section:"night-light", key_type:"int",     key:'night-light-end-hour'},
+        {section:"night-light", key_type:"int",     key:'night-light-end-minute'},
 
         ## Misc ##
-        {section:"misc", key:"enable-welcome-message", key_type:"boolean"},
-        {section:"misc", key:"welcome-message", key_type:"string"},
-        {section:"misc", key:"enable-logo", key_type:"boolean"},
-        {section:"misc", key:"logo", key_type:"string"},
-        {section:"misc", key:"disable-restart-buttons", key_type:"boolean"},
-        {section:"misc", key:"disable-user-list", key_type:"boolean"},
+        {section:"misc", key_type:"boolean", key:"enable-welcome-message"},
+        {section:"misc", key_type:"string",  key:"welcome-message"},
+        {section:"misc", key_type:"boolean", key:"enable-logo"},
+        {section:"misc", key_type:"string",  key:"logo"},
+        {section:"misc", key_type:"boolean", key:"disable-restart-buttons"},
+        {section:"misc", key_type:"boolean", key:"disable-user-list"},
     ]
 
     def __init__(self):
