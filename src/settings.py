@@ -109,10 +109,9 @@ class GResourceUtils:
         return status
 
     def auto_backup(self):
-        """backup the default theme's GResource file (only if needed)
-        for its use as the 'default' theme"""
+        '''backup/extract the default theme only if needed'''
 
-        if self.get_default():
+        if self.get_default():  # We can only backup/extract the default theme if it exists on the system
             pure_theme_exists = path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure')
 
             if self.is_default(self.ShellGresourceFile) or not pure_theme_exists:
