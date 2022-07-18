@@ -27,18 +27,16 @@
 </div>
 
 <div align="center">
-  <h3>
+  <h2>
     <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation">Install</a>
-    <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
-    <span> | </span>
+  </h2>
+</div>
+
+<div align="center">
+  <h3>
     <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Features">Features</a>
     <span> | </span>
-    <a href="https://hosted.weblate.org/engage/gdm-settings">Translate</a>
-    <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
-    <span> | </span>
-    <a href="https://www.patreon.com/mazharhussain">Donate</a>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
   </h3>
 </div>
 
@@ -49,4 +47,14 @@
       <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
     </picture>
   </a>
+</div>
+
+<div align="center">
+  <h4>
+    <a href="https://hosted.weblate.org/engage/gdm-settings">Translate</a>
+    <span> | </span>
+    <a href="https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
+    <span> | </span>
+    <a href="https://www.patreon.com/mazharhussain">Donate</a>
+  </h4>
 </div>
