@@ -108,27 +108,6 @@ class GResourceUtils:
 
         return status
 
-    def save_default_theme(self):
-        '''save the default theme only if needed'''
-
-        if self.get_default():  # We can only backup/extract the default theme if it exists on the system
-            pure_theme_exists = path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure')
-
-            if self.is_default(self.ShellGresourceFile) or not pure_theme_exists:
-                logging.info(_("Saving default theme …"))
-
-                if self.is_default(self.ShellGresourceFile):
-                    self.command_elevator.add(f"cp {self.ShellGresourceFile} {self.ShellGresourceAutoBackup}")
-
-                from os import makedirs
-                makedirs(env.TEMP_DIR, exist_ok=True)
-
-                self.extract_default_theme(target_dir=env.TEMP_DIR, name='default-pure')
-
-                self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
-                self.command_elevator.add(f"mkdir -p {self.ThemesDir}")
-                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {self.ThemesDir}")
-
     def compile(self, shellDir:str, additional_css:str, background_image:str=''):
         """Compile a theme into a GResource file for its use as the GDM theme"""
 
@@ -444,22 +423,44 @@ class Settings:
     def apply_gresource_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
-        from os import makedirs
+        # save the default shell theme (if needed)
 
-        self.gresource_utils.save_default_theme()
-        makedirs(env.TEMP_DIR, exist_ok=True)
+        if self.gresource_utils.get_default():  # We can only save the default theme if it exists on the system
+            pure_theme_exists = path.exists(env.HOST_ROOT + self.gresource_utils.ThemesDir + '/default-pure')
 
-        from .theme_lists import shell_themes
+            if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile) or not pure_theme_exists:
+                logging.info(_("Saving default theme …"))
+
+                if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile):
+                    self.command_elevator.add(f"cp {self.gresource_utils.ShellGresourceFile} {self.gresource_utils.ShellGresourceAutoBackup}")
+
+                from os import makedirs
+                makedirs(env.TEMP_DIR, exist_ok=True)
+
+                self.gresource_utils.extract_default_theme(target_dir=env.TEMP_DIR, name='default-pure')
+
+                self.command_elevator.add(f"rm -rf {self.gresource_utils.ThemesDir}/default-pure")
+                self.command_elevator.add(f"mkdir -p {self.gresource_utils.ThemesDir}")
+                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {self.gresource_utils.ThemesDir}")
+
+        # Apply shell theme settings
+
         theme_path = None
+        from .theme_lists import shell_themes
         for theme in shell_themes:
             if theme.name == self.shell_theme:
                 theme_path = theme.path
                 break
+
         shelldir = path.join(theme_path, 'gnome-shell') if theme_path else None
         background_image=None
         if self.background_type == "image" and self.background_image:
             background_image = self.background_image
-        compiled_file = self.gresource_utils.compile(shelldir, additional_css=self.get_setting_css(), background_image=background_image)
+
+        compiled_file = self.gresource_utils.compile(shelldir,
+              additional_css=self.get_setting_css(),
+            background_image=background_image
+        )
 
         # We need to copy the compiled gresource file instead of moving it because the copy gets correct
         # SELinux context/label where applicable and prevents breakage of GDM in such situations.
