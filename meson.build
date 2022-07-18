@@ -1,6 +1,6 @@
 project('gdm-settings',
         version: '0.6.1',
-  meson_version: '>= 0.58',
+  meson_version: '>= 0.59',
 )
 
 dependency('glib-2.0')
@@ -31,10 +31,15 @@ conf.set('locale_dir',     locale_dir)
 conf.set('py_modules_dir', py_modules_dir)
 conf.set('py_module_name', py_module_name)
 
-i18n = import('i18n')
+gnome = import('gnome')
+i18n  = import('i18n')
 
 subdir('po')
 subdir('data')
 subdir('src')
 
-meson.add_install_script('build-aux/postinstall.py')
+gnome.post_install(
+     glib_compile_schemas: true,
+    gtk_update_icon_cache: true,
+  update_desktop_database: true,
+)
