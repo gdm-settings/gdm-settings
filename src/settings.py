@@ -4,6 +4,7 @@ import logging
 from os import path
 from gettext import gettext as _, pgettext as C_
 from .enums import PackageType
+from .utils import CommandElevator
 from . import env
 
 class Theme:
@@ -58,83 +59,6 @@ icon_themes   = []
 cursor_themes = []
 sound_themes  = []
 update_all_theme_lists()
-
-class CommandElevator:
-    """ Runs a list of commands with elevated privilages """
-    def __init__(self, elevator:str=None, shebang:str=None) -> None:
-        self.__list = []
-        self.shebang = shebang or "#!/bin/sh"
-        if elevator:
-            self.elevator = elevator
-        else:
-            self.autodetect_elevator()
-
-    @property
-    def shebang(self):
-        """ Shebang to determine shell for running elevated commands """
-        return self.__shebang
-    @shebang.setter
-    def shebang(self, value):
-        if value.startswith('#!/'):
-            self.__shebang = value
-        else:
-            raise ValueError("shebang does not start with '#!/'")
-
-    @property
-    def elevator(self):
-        """
-        Program to use for privilage elevation 
-        
-        Example: "sudo", "doas", "pkexec", etc.
-        """
-        return self.__elevator
-    @elevator.setter
-    def elevator(self, value):
-        if isinstance(value, str):
-            self.__elevator = value.strip(' ').split(' ')
-        elif isinstance(value, list):
-            self.__elevator = value
-        else:
-            raise ValueError("elevator is not of type 'str' or 'list'")
-
-    def autodetect_elevator(self):
-        if env.PACKAGE_TYPE is PackageType.Flatpak:
-            self.elevator = "flatpak-spawn --host pkexec"
-        else:
-            self.elevator = "pkexec"
-
-    def add(self, cmd:str):
-        """ Add a new command to the list """
-        return self.__list.append(cmd)
-
-    def clear(self):
-        """ Clear command list """
-        return self.__list.clear()
-
-    def run_only(self) -> bool:
-        """ Run commands but DO NOT clear command list """
-
-        from os import chmod, makedirs, remove
-        from subprocess import run
-
-        returncode = 0
-        if len(self.__list):
-            makedirs(name=env.TEMP_DIR, exist_ok=True)
-            script_file = f"{env.TEMP_DIR}/run-elevated"
-            with open(script_file, "w") as open_script_file:
-                print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
-            chmod(path=script_file, mode=755)
-            returncode = run(args=[*self.__elevator, script_file]).returncode
-            remove(script_file)
-        # Return Code 0 of subprocess means success, but boolean with value 0 is interpreted as False
-        # So, 'not returncode' boolean will be True when the subprocess succeeds
-        return not returncode
-
-    def run(self) -> bool:
-        """ Run commands and clear command list"""
-        status = self.run_only()
-        self.clear()
-        return status
 
 class GResourceUtils:
     ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
