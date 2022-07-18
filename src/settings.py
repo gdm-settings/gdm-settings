@@ -423,13 +423,13 @@ class Settings:
     def apply_shell_theme_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
-        # save the default shell theme (if needed)
+        # back up the default shell theme (if needed)
 
-        if self.gresource_utils.get_default():  # We can only save the default theme if it exists on the system
+        if self.gresource_utils.get_default():  # We can back up the default theme only if it exists on the system
             pure_theme_exists = path.exists(env.HOST_ROOT + self.gresource_utils.ThemesDir + '/default-pure')
 
             if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile) or not pure_theme_exists:
-                logging.info(_("Saving default theme …"))
+                logging.info(_("Backing up default shell theme …"))
 
                 if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile):
                     self.command_elevator.add(f"cp {self.gresource_utils.ShellGresourceFile} {self.gresource_utils.ShellGresourceAutoBackup}")
