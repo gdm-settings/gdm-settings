@@ -108,8 +108,8 @@ class GResourceUtils:
 
         return status
 
-    def auto_backup(self):
-        '''backup/extract the default theme only if needed'''
+    def save_default_theme(self):
+        '''save the default theme only if needed'''
 
         if self.get_default():  # We can only backup/extract the default theme if it exists on the system
             pure_theme_exists = path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure')
@@ -446,7 +446,7 @@ class Settings:
 
         from os import makedirs
 
-        self.gresource_utils.auto_backup()
+        self.gresource_utils.save_default_theme()
         makedirs(env.TEMP_DIR, exist_ok=True)
 
         from .theme_lists import shell_themes
