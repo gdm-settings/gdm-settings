@@ -3,156 +3,8 @@
 import logging
 from os import path
 from gettext import gettext as _, pgettext as C_
-from .enums import PackageType
-from .utils import CommandElevator
 from . import env
-
-class GResourceUtils:
-    ''' Utilities (functions) for 'gnome-shell-theme.gresource' file '''
-
-    def __init__(self, command_elevator:CommandElevator=None):
-        self.command_elevator         = command_elevator or CommandElevator()
-        self.CustomThemeIdentity      = 'custom-theme'
-        self.ThemesDir                = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
-        self.GdmUsername              = 'gdm'
-        self.ShellGresourceFile       = None
-        self.ShellGresourceAutoBackup = None
-        self.CustomGresourceFile      = None
-        self.UbuntuGdmGresourceFile   = None
-
-        for data_dir in env.SYSTEM_DATA_DIRS:
-            file = path.join (data_dir,  'gnome-shell', 'gnome-shell-theme.gresource')
-            if path.isfile (env.HOST_ROOT + file):
-                self.ShellGresourceFile       = file
-                self.ShellGresourceAutoBackup = self.ShellGresourceFile + ".default"
-                self.CustomGresourceFile      = self.ShellGresourceFile + ".gdm_settings"
-                break
-
-        if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
-            from packaging.version import Version
-            if Version(env.OS_VERSION_ID) >= Version('21.10'):
-                self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
-            else:
-                self.UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
-        elif 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
-            self.GdmUsername = 'Debian-gdm'
-
-        logging.info(f"ShellGresourceFile     = {self.ShellGresourceFile}")
-        logging.info(f"UbuntuGdmGresourceFile = {self.UbuntuGdmGresourceFile}")
-
-    def is_default(self, gresourceFile:str):
-        """checks if the provided file is a GResource file of the default theme"""
-
-        from .utils import getstdout
-
-        if path.exists(gresourceFile):
-            if getstdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
-                if not getstdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{self.CustomThemeIdentity}"):
-                    return True
-        return False
-
-    def get_default(self) -> str:
-        """get full path to the GResource file of the default theme (if the file exists)"""
-
-        for file in self.ShellGresourceFile, self.ShellGresourceAutoBackup:
-           if self.is_default(env.HOST_ROOT + file):
-               return file
-
-    def extract_default_shell_theme(self, destination:str, /):
-        from os import makedirs
-        from .utils import getstdout
-
-        if path.exists(destination):
-            from shutil import rmtree
-            rmtree(destination)
-
-        destination_shell_dir = path.join(destination, 'gnome-shell')
-        gresource_file = self.get_default()
-        resource_list = getstdout(["gresource", "list", gresource_file]).decode().splitlines()
-
-        if not gresource_file:
-            raise FileNotFoundError('No unmodified GResource file of the default shell theme was found')
-
-        for resource in resource_list:
-            filename = resource.removeprefix("/org/gnome/shell/theme/")
-            filepath = path.join(destination_shell_dir, filename)
-            content  = getstdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource])
-
-            makedirs(path.dirname(filepath), exist_ok=True)
-
-            with open(filepath, "wb") as opened_file:
-                opened_file.write(content)
-
-    def compile(self, shellDir:str, additional_css:str, background_image:str=''):
-        """Compile a theme into a GResource file for its use as a GDM theme"""
-
-        from os import remove
-        from shutil import copy, copytree, rmtree
-
-        temp_gresource_file = path.join(env.TEMP_DIR, 'gnome-shell-theme.gresource')
-        temp_theme_dir = path.join(env.TEMP_DIR, 'extracted-theme')
-        temp_shell_dir = path.join(temp_theme_dir, 'gnome-shell')
-
-        # Remove temporary directory if already exists
-        if path.exists(temp_theme_dir):
-            rmtree(temp_theme_dir)
-
-        # Remove temporary file if already exists
-        if path.exists(temp_gresource_file):
-            remove(temp_gresource_file)
-
-        # Copy default resources to temporary directory
-        self.extract_default_shell_theme(temp_theme_dir)
-
-        # Copy gnome-shell dir of theme to temporary directory
-        if shellDir:
-            copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
-
-        # Inject custom-theme identity
-        open(path.join(temp_shell_dir, self.CustomThemeIdentity), 'w').close()
-
-        # Background Image
-        if background_image:
-            copy(background_image, path.join(temp_shell_dir, 'background'))
-
-        # Additional CSS
-        with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
-            print(additional_css, file=shell_css)
-
-        # Copy gnome-shell.css to gdm.css and gdm3.css
-        copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
-        copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
-
-        # Get a list of all files in the shell theme
-        # Note: We do this before calling open() so as not to include .gresource.xml file itself in the list
-        from .utils import listdir_recursive
-        file_list = listdir_recursive(temp_shell_dir)
-
-        gresource_xml_filename = path.join(temp_shell_dir, 'gnome-shell-theme.gresource.xml')
-
-        # Create gnome-shell-theme.gresource.xml file
-        with open(gresource_xml_filename, 'w') as GresourceXml:
-            print('<?xml version="1.0" encoding="UTF-8"?>',
-                  '<gresources>',
-                  ' <gresource prefix="/org/gnome/shell/theme">',
-                *('  <file>'+file+'</file>' for file in file_list),
-                  ' </gresource>',
-                  '</gresources>',
-
-                  sep='\n',
-                  file=GresourceXml,
-                 )
-
-        # Compile Theme
-        from subprocess import run
-        run(['glib-compile-resources',
-             '--sourcedir', temp_shell_dir,
-             '--target', temp_gresource_file,
-             gresource_xml_filename,
-           ])
-
-        # Return path to the generated GResource file
-        return  temp_gresource_file
+from . import gr_utils
 
 class Settings:
     key = "key"
@@ -228,8 +80,8 @@ class Settings:
         logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
         logging.info(f"SYSTEM_DATA_DIRS       = {env.SYSTEM_DATA_DIRS}")
 
-        self.gresource_utils  = GResourceUtils()
-        self.command_elevator = self.gresource_utils.command_elevator
+        from .utils import CommandElevator
+        self.command_elevator = CommandElevator()
 
         from gi.repository import Gio
         from .info import application_id
@@ -253,6 +105,7 @@ class Settings:
 
         self.load_from_gsettings()
 
+        from .enums import PackageType
         if self.main_gsettings.get_boolean("never-applied") \
         and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_user_settings()
@@ -414,23 +267,23 @@ class Settings:
 
         # back up the default shell theme (if needed)
 
-        if self.gresource_utils.get_default():  # We can back up the default theme only if it exists on the system
-            pure_theme_exists = path.exists(env.HOST_ROOT + self.gresource_utils.ThemesDir + '/default-pure')
+        if gr_utils.get_default():  # We can back up the default theme only if it exists on the system
+            pure_theme_exists = path.exists(env.HOST_ROOT + gr_utils.ThemesDir + '/default-pure')
 
-            if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile) or not pure_theme_exists:
+            if gr_utils.is_unmodified(gr_utils.ShellGresourceFile) or not pure_theme_exists:
                 logging.info(_("Backing up default shell theme …"))
 
-                if self.gresource_utils.is_default(self.gresource_utils.ShellGresourceFile):
-                    self.command_elevator.add(f"cp {self.gresource_utils.ShellGresourceFile} {self.gresource_utils.ShellGresourceAutoBackup}")
+                if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
+                    self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
 
                 from os import makedirs
                 makedirs(env.TEMP_DIR, exist_ok=True)
 
-                self.gresource_utils.extract_default_shell_theme(f'{env.TEMP_DIR}/default-pure')
+                gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
 
-                self.command_elevator.add(f"rm -rf {self.gresource_utils.ThemesDir}/default-pure")
-                self.command_elevator.add(f"mkdir -p {self.gresource_utils.ThemesDir}")
-                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {self.gresource_utils.ThemesDir}")
+                self.command_elevator.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
+                self.command_elevator.add(f"mkdir -p {gr_utils.ThemesDir}")
+                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
 
         # Apply shell theme settings
 
@@ -446,25 +299,25 @@ class Settings:
         if self.background_type == "image" and self.background_image:
             background_image = self.background_image
 
-        compiled_file = self.gresource_utils.compile(shelldir,
+        compiled_file = gr_utils.compile(shelldir,
               additional_css=self.get_setting_css(),
             background_image=background_image
         )
 
         # We need to copy the compiled gresource file instead of moving it because the copy gets correct
         # SELinux context/label where applicable and prevents breakage of GDM in such situations.
-        if self.gresource_utils.UbuntuGdmGresourceFile:
+        if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Applying GResource settings for Ubuntu …"))
-            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chown root: {self.gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {self.gresource_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {self.gresource_utils.UbuntuGdmGresourceFile} {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(self.gresource_utils.UbuntuGdmGresourceFile)} {self.gresource_utils.CustomGresourceFile}')
+            self.command_elevator.add(f"cp {compiled_file} {gr_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chown root: {gr_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {gr_utils.CustomGresourceFile}")
+            self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
+            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
         else:
             logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(f"cp {compiled_file} {self.gresource_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"cp {compiled_file} {gr_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -578,31 +431,31 @@ class Settings:
 
         self.command_elevator.add(' '.join(['eval', 'install', '-Dm644',
                                             '~$(logname)/.config/monitors.xml',
-                                            f'~{self.gresource_utils.GdmUsername}/.config/monitors.xml',
+                                            f'~{gr_utilsGdmUsername}/.config/monitors.xml',
                                            ]))
-        self.command_elevator.add(' '.join(['chown', f'{self.gresource_utils.GdmUsername}:',
-                                            f'~{self.gresource_utils.GdmUsername}/.config/monitors.xml',
+        self.command_elevator.add(' '.join(['chown', f'{gr_utils.GdmUsername}:',
+                                            f'~{gr_utils.GdmUsername}/.config/monitors.xml',
                                            ]))
         return self.command_elevator.run()
 
     def reset_settings(self) -> bool:
         status = False
 
-        if self.gresource_utils.UbuntuGdmGresourceFile:
+        if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
             self.command_elevator.add(' '.join(['update-alternatives',  '--quiet',  '--remove',
-                                                 path.basename(self.gresource_utils.UbuntuGdmGresourceFile),
-                                                 self.gresource_utils.CustomGresourceFile,
+                                                 path.basename(gr_utils.UbuntuGdmGresourceFile),
+                                                 gr_utils.CustomGresourceFile,
                                                ]))
-            self.command_elevator.add(f'rm -f {self.gresource_utils.CustomGresourceFile}')
-        elif path.exists(self.gresource_utils.ShellGresourceAutoBackup):
+            self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
+        elif path.exists(gr_utils.ShellGresourceAutoBackup):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(' '.join(['mv', '-f',
-                                                self.gresource_utils.ShellGresourceAutoBackup,
-                                                self.gresource_utils.ShellGresourceFile,
+                                                gr_utils.ShellGresourceAutoBackup,
+                                                gr_utils.ShellGresourceFile,
                                                ]))
-            self.command_elevator.add(f"chown root: {self.gresource_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {self.gresource_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
 
         self.command_elevator.add("rm -f /etc/dconf/profile/gdm")
         self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")

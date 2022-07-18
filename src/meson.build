@@ -19,6 +19,7 @@ source_files = files(
   'dialogs.py',
   'enums.py',
   'env.py',
+  'gr_utils.py',
   'settings.py',
   'theme_lists.py',
   'utils.py',

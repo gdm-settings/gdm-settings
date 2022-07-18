@@ -222,13 +222,14 @@ class Application(Adw.Application):
 
     def on_extract_shell_theme(self, button):
         from os.path import join
-        temp_theme_path = join(env.TEMP_DIR, 'extracted-theme')
-        perm_theme_dir  = env.SYSTEM_DATA_DIRS[0]
+        from .gr_utils import extract_default_theme, ThemesDir
+
         perm_theme_name = 'default-extracted'
-        perm_theme_path = join(perm_theme_dir, perm_theme_name)
+        perm_theme_path = join(ThemesDir, perm_theme_name)
+        temp_theme_path = join(env.TEMP_DIR, 'extracted-theme')
 
         # Extract default shell theme to a temporary path
-        self.settings.gresource_utils.extract_default_shell_theme(temp_theme_path)
+        extract_default_theme(temp_theme_path)
 
         # Appy top bar tweaks (if enabled)
         if widgets.include_top_bar_tweaks_switch.get_active():
@@ -246,7 +247,7 @@ class Application(Adw.Application):
         toast = Adw.Toast(timeout=2, priority="high")
         if status:
             # Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-            toast.set_title(_("Default shell theme extracted to '{folder}' as '{name}'").format(folder=perm_theme_dir, name=perm_theme_name))
+            toast.set_title(_("Default shell theme extracted to '{folder}' as '{name}'").format(folder=ThemesDir, name=perm_theme_name))
         else:
             toast.set_title(_("Failed to extract default theme"))
         widgets.main_toast_overlay.add_toast(toast)
