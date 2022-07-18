@@ -112,16 +112,14 @@ class GResourceUtils:
         """backup the default theme's GResource file (only if needed)
         for its use as the 'default' theme"""
 
-        default_gresource =  self.get_default()
-
-        if default_gresource:
+        if self.get_default():
             pure_theme_exists = path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure')
 
-            if default_gresource != self.ShellGresourceAutoBackup or not pure_theme_exists:
+            if self.is_default(self.ShellGresourceFile) or not pure_theme_exists:
                 logging.info(_("Saving default theme …"))
 
-                if default_gresource != self.ShellGresourceAutoBackup:
-                    self.command_elevator.add(f"cp {default_gresource} {self.ShellGresourceAutoBackup}")
+                if self.is_default(self.ShellGresourceFile):
+                    self.command_elevator.add(f"cp {self.ShellGresourceFile} {self.ShellGresourceAutoBackup}")
 
                 from os import makedirs
                 makedirs(env.TEMP_DIR, exist_ok=True)
