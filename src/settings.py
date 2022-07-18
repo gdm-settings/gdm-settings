@@ -449,6 +449,7 @@ class Settings:
         self.gresource_utils.auto_backup()
         makedirs(env.TEMP_DIR, exist_ok=True)
 
+        from .theme_lists import shell_themes
         theme_path = None
         for theme in shell_themes:
             if theme.name == self.shell_theme:
