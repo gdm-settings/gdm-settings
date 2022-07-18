@@ -6,12 +6,6 @@ from gettext import gettext as _, pgettext as C_
 from .enums import PackageType
 from . import env
 
-if env.PACKAGE_TYPE == PackageType.Flatpak:
-    TEMP_DIR = path.join(env.XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
-else:
-    from .info import project_name
-    TEMP_DIR = path.join(env.XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
-
 class Theme:
     def __init__(self, name:str, path:str):
         self.name = name
@@ -125,8 +119,8 @@ class CommandElevator:
 
         returncode = 0
         if len(self.__list):
-            makedirs(name=TEMP_DIR, exist_ok=True)
-            script_file = f"{TEMP_DIR}/run-elevated"
+            makedirs(name=env.TEMP_DIR, exist_ok=True)
+            script_file = f"{env.TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=755)
@@ -148,7 +142,7 @@ class GResourceUtils:
     def __init__(self, command_elevator:CommandElevator=None):
         self.command_elevator         = command_elevator or CommandElevator()
         self.CustomThemeIdentity      = 'custom-theme'
-        self.TempShellDir             = f'{TEMP_DIR}/gnome-shell'
+        self.TempShellDir             = f'{env.TEMP_DIR}/gnome-shell'
         self.ThemesDir                = path.join(env.SYSTEM_DATA_DIRS[0], 'themes')
         self.GdmUsername              = 'gdm'
         self.ShellGresourceFile       = None
@@ -202,7 +196,7 @@ class GResourceUtils:
         from os import makedirs
         from .utils import getstdout
 
-        TempExtractedDir = f"{TEMP_DIR}/extracted"
+        TempExtractedDir = f"{env.TEMP_DIR}/extracted"
         resource_list = getstdout(["gresource", "list", gresource_file]).decode().splitlines()
         for resource in resource_list:
             filename = resource.removeprefix("/org/gnome/shell/theme/")
@@ -246,11 +240,11 @@ class GResourceUtils:
     def _extract_default_pure_theme(self):
         from os import makedirs
 
-        makedirs(TEMP_DIR, exist_ok=True)
-        self.extract_default_theme(target_dir=TEMP_DIR, name='default-pure')
+        makedirs(env.TEMP_DIR, exist_ok=True)
+        self.extract_default_theme(target_dir=env.TEMP_DIR, name='default-pure')
         self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
         self.command_elevator.add(f"mkdir -p {self.ThemesDir}")
-        self.command_elevator.add(f"cp -rt {self.ThemesDir} {TEMP_DIR}/default-pure")
+        self.command_elevator.add(f"cp -rt {self.ThemesDir} {env.TEMP_DIR}/default-pure")
 
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
@@ -273,7 +267,7 @@ class GResourceUtils:
         # Remove temporary directory if already exists
         if path.exists(self.TempShellDir):
             rmtree(self.TempShellDir)
-        tempGresourceFile = path.join(TEMP_DIR, 'gnome-shell-theme.gresource')
+        tempGresourceFile = path.join(env.TEMP_DIR, 'gnome-shell-theme.gresource')
         # Remove temporary file if already exists
         if path.exists(tempGresourceFile):
             remove(tempGresourceFile)
@@ -317,7 +311,7 @@ class GResourceUtils:
         from subprocess import run
         from shutil import move, rmtree
         run(['glib-compile-resources', f'--sourcedir={self.TempShellDir}', f'{self.TempShellDir}/gnome-shell-theme.gresource.xml'])
-        move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), TEMP_DIR)
+        move(path.join(self.TempShellDir,'gnome-shell-theme.gresource'), env.TEMP_DIR)
         rmtree(self.TempShellDir)
         return  tempGresourceFile
 
@@ -392,7 +386,7 @@ class Settings:
     ]
 
     def __init__(self):
-        logging.info(f"TEMP_DIR               = {TEMP_DIR}")
+        logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
         logging.info(f"SYSTEM_DATA_DIRS       = {env.SYSTEM_DATA_DIRS}")
 
         self.gresource_utils  = GResourceUtils()
@@ -582,7 +576,7 @@ class Settings:
         from os import makedirs
 
         self.gresource_utils.auto_backup()
-        makedirs(TEMP_DIR, exist_ok=True)
+        makedirs(env.TEMP_DIR, exist_ok=True)
 
         theme_path = None
         for theme in shell_themes:
@@ -617,7 +611,7 @@ class Settings:
         gdm_profile_dir = "/etc/dconf/profile"
         gdm_profile_path = f"{gdm_profile_dir}/gdm"
 
-        temp_profile_path = f"{TEMP_DIR}/gdm-profile"
+        temp_profile_path = f"{env.TEMP_DIR}/gdm-profile"
         with open(temp_profile_path, "w+") as temp_profile_file:
             gdm_profile_contents  = "user-db:user\n"
             gdm_profile_contents += "system-db:gdm\n"
@@ -629,7 +623,7 @@ class Settings:
         night_light_schedule_to  = self.night_light_end_hour
         night_light_schedule_to += self.night_light_end_minute / 60 
 
-        temp_conf_path = f"{TEMP_DIR}/95-gdm-settings"
+        temp_conf_path = f"{env.TEMP_DIR}/95-gdm-settings"
         with open(temp_conf_path, "w+") as temp_conf_file:
             gdm_conf_contents  =  "#-------- Interface ---------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
@@ -779,4 +773,4 @@ class Settings:
 
     def cleanup(self):
         from shutil import rmtree
-        rmtree(path=TEMP_DIR, ignore_errors=True)
+        rmtree(path=env.TEMP_DIR, ignore_errors=True)

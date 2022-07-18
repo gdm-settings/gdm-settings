@@ -1,6 +1,6 @@
 '''get information about program's environment'''
 
-from os import environ
+from os import environ, path
 from enum import Enum
 from .utils import PATH
 
@@ -13,11 +13,14 @@ SYSTEM_DATA_DIRS = PATH(environ.get('SYSTEM_DATA_DIRS', '/usr/local/share:/usr/s
 
 # Package Type and related stuff
 from .enums import PackageType
+from .info import project_name
 PACKAGE_TYPE = PackageType.Unknown
+TEMP_DIR     = path.join(XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
 HOST_ROOT    = ''
 
 if environ.get('FLATPAK_ID'): # Flatpak
     PACKAGE_TYPE = PackageType.Flatpak
+    TEMP_DIR     = path.join(XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
     HOST_ROOT    = '/run/host'
 elif environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
