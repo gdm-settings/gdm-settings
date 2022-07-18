@@ -108,26 +108,29 @@ class GResourceUtils:
 
         return status
 
-    def _extract_default_pure_theme(self):
-        from os import makedirs
-
-        makedirs(env.TEMP_DIR, exist_ok=True)
-        self.extract_default_theme(target_dir=env.TEMP_DIR, name='default-pure')
-        self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
-        self.command_elevator.add(f"mkdir -p {self.ThemesDir}")
-        self.command_elevator.add(f"cp -rt {self.ThemesDir} {env.TEMP_DIR}/default-pure")
-
     def auto_backup(self):
         """backup the default theme's GResource file (only if needed)
         for its use as the 'default' theme"""
 
         default_gresource =  self.get_default()
-        if default_gresource and default_gresource != self.ShellGresourceAutoBackup:
-            print(_("saving default theme …"))
-            self.command_elevator.add(f"cp {default_gresource} {self.ShellGresourceAutoBackup}")
-            self._extract_default_pure_theme()
-        elif not path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure'):
-            self._extract_default_pure_theme()
+
+        if default_gresource:
+            pure_theme_exists = path.exists(env.HOST_ROOT + self.ThemesDir + '/default-pure')
+
+            if default_gresource != self.ShellGresourceAutoBackup or not pure_theme_exists:
+                logging.info(_("Saving default theme …"))
+
+                if default_gresource != self.ShellGresourceAutoBackup:
+                    self.command_elevator.add(f"cp {default_gresource} {self.ShellGresourceAutoBackup}")
+
+                from os import makedirs
+                makedirs(env.TEMP_DIR, exist_ok=True)
+
+                self.extract_default_theme(target_dir=env.TEMP_DIR, name='default-pure')
+
+                self.command_elevator.add(f"rm -rf {self.ThemesDir}/default-pure")
+                self.command_elevator.add(f"mkdir -p {self.ThemesDir}")
+                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {self.ThemesDir}")
 
     def compile(self, shellDir:str, additional_css:str, background_image:str=''):
         """Compile a theme into a GResource file for its use as the GDM theme"""
