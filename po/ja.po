@@ -5,124 +5,134 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-14 11:06+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-07-22 17:25+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "テーマ名"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "背景の種類"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "GDM の背景を、画像・単色・背景なしのいずれかから選択します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "背景画像"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "GDM の背景として使う画像ファイル"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:51
 msgid "Background Color"
-msgstr ""
+msgstr "背景色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "GDM の背景として使う色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "夜間モードの状態"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
-msgstr ""
+msgstr "夜間モードは、日没後または指定した時刻に、ディスプレイの色温度を変更します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "夜間モード有効時のディスプレイ色温度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"この色温度は、夜間モード有効時に画面の色調を変更するのに使われます。単位はケ"
+"ルビンです。画面は、この数値が高いほど青っぽくなり、低いほど赤っぽくなります"
+"。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "日の出・日の入り時刻を使う"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "現在の位置情報から、日の出と日の入り時刻を自動的に計算します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
-msgstr ""
+msgstr "開始時刻 (時)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
-msgstr ""
+msgstr "“night-light-schedule-automatic” が無効の場合、"
+"この値を夜間モードの開始時刻の “時” として使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "開始時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time "
 "minutes."
-msgstr ""
+msgstr "“night-light-schedule-automatic” が無効の場合、"
+"この値を夜間モードの開始時刻の “分” として使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "終了時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "“night-light-schedule-automatic” が無効の場合、"
+"この値を夜間モードの終了時刻の “分” として使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "ポインターの速度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
-msgstr ""
+msgstr "タッチパッドのポインター速度です。-1 から 1 の値 (“加速なし” から “高速”) "
+"を指定可能です。システムのデフォルトは 0 です。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "トップバーのカスタマイズを、復元したテーマに適応するかどうかの設定"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
@@ -130,262 +140,274 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "トップバーの角丸設定を無効にするかどうかの設定"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "トップバーのテキストの色を変更するかどうかの設定"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "トップバーのテキストの色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "トップバーの背景を変更するかどうかの設定"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "トップバーの背景色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 #: src/blueprints/main-window.blp:18 src/info.py.in:4
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "ログインマネージャーの設定"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr ""
+msgstr "GNOME のログインマネージャー・GDM の設定アプリ"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
-msgstr ""
+msgstr "GDM の設定を変更できます。例えば、テーマや背景を設定したり、カーソルテーマや"
+"アイコンテーマ、夜間モードなどの設定を変更したりできます。"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "アプリストアでの紹介ページを更新"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
-msgstr ""
+msgstr "追加された機能:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Support for verbose/quiet mode"
-msgstr ""
+msgstr "すべてのログを表示するモード／ログを表示しないモードに対応"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Support for setting manual verbosity level"
-msgstr ""
+msgstr "ログレベルの手動での設定に対応"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr ""
+msgstr "すべてのログを表示するモード／ログを表示しないモードと、ログレベルの手動設定"
+"のためのコマンドラインオプション"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "Command-line option --version"
-msgstr ""
+msgstr "コマンドラインオプション --version"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Wider application window on first launch"
-msgstr ""
+msgstr "起動時、アプリケーションウィンドウをより大きく表示するように修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed:"
-msgstr ""
+msgstr "修正点:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Welcome message could not contain single quotes"
-msgstr ""
+msgstr "ようこそメッセージにシングルクオーテーションマークが使えなかった不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid ""
 "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
 msgstr ""
+"SELinux が有効になっている環境 (主に Fedora) において、ログインマネージャー "
+"(GDM) がシステムを破損していた不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid ""
 "Maximized or big application window looked bad (content was much smaller "
 "than the window)"
 msgstr ""
+"アプリケーションウィンドウを最大化したり大きくしたりすると、"
+"見た目が崩れていた (ウィンドウサイズよりも、コンテンツのサイズが小さかった) "
+"不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid ""
 "Showed wrong destination directory/folder path while extracting default "
 "shell theme"
-msgstr ""
+msgstr "デフォルトテーマの復元中に、復元先のディレクトリ／フォルダーのパスが誤って表"
+"示されていた不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Clicking 'Apply' did nothing if selected background image was deleted before "
 "applying"
-msgstr ""
+msgstr "選択した背景画像を、適用前に削除してしまうと、'適用' "
+"ボタンをクリックしても変化が起こらなかった不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
+msgstr "Ubuntu において、'適用' "
+"ボタンをクリックしても一部の設定しか反映されていなかった不具合を修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "New Translations:"
-msgstr ""
+msgstr "新たに翻訳された言語:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "French"
-msgstr ""
+msgstr "フランス語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Hebrew"
-msgstr ""
+msgstr "ヘブライ語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Persian"
-msgstr ""
+msgstr "ペルシア語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated Translations:"
-msgstr ""
+msgstr "翻訳が更新された言語:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Dutch"
-msgstr ""
+msgstr "オランダ語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "German"
-msgstr ""
+msgstr "ドイツ語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Occitan"
-msgstr ""
+msgstr "オック語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Spanish"
-msgstr ""
+msgstr "スペイン語"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Urdu"
-msgstr ""
+msgstr "ウルドゥー語"
 
 #: src/app.py:30
 msgctxt "Description of --version option"
 msgid "Show application version"
-msgstr ""
+msgstr "アプリケーションのバージョンを表示"
 
 #: src/app.py:38
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "ログレベルを手動で設定 (0 から 5)"
 
 #: src/app.py:40
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "レベル"
 
 #: src/app.py:47
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
-msgstr ""
+msgstr "すべてのログを表示 (ログレベルを 5 に設定)"
 
 #: src/app.py:56
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
-msgstr ""
+msgstr "ログを表示しない (ログレベルを 0 に設定)"
 
 #: src/app.py:106
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
-msgstr ""
+msgstr "{level} は無効なログレベルです。設定可能な値は 0 から 5 です。"
 
 #: src/app.py:107
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "ログレベルを 4 と仮定します。"
 
 #: src/app.py:186
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
-msgstr ""
+msgstr "適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
+"い。"
 
 #: src/app.py:218
 msgid "Applied current display settings"
-msgstr ""
+msgstr "現在のディスプレイ設定を適用しました"
 
 #: src/app.py:220
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "現在のディスプレイ設定を適用できませんでした"
 
 #. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
 #: src/app.py:231
 #, python-brace-format
 msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgstr ""
+msgstr "デフォルトのテーマが、'{path}' に 'default-extracted' "
+"という名前で復元されました"
 
 #: src/app.py:233
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "デフォルトのテーマを復元できませんでした"
 
 #: src/app.py:564
 msgid "Appearance"
-msgstr ""
+msgstr "外観"
 
 #: src/app.py:565 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
-msgstr ""
+msgstr "フォント"
 
 #: src/app.py:566
 msgid "Top Bar"
-msgstr ""
+msgstr "トップバー"
 
 #: src/app.py:567 src/blueprints/sound-page.blp:20
 msgid "Sound"
-msgstr ""
+msgstr "サウンド"
 
 #: src/app.py:568
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "マウスとタッチパッド"
 
 #: src/app.py:569 src/blueprints/display-page.blp:20
 msgid "Display"
-msgstr ""
+msgstr "ディスプレイ"
 
 #: src/app.py:570 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
-msgstr ""
+msgstr "そのほか"
 
 #: src/app.py:571
 msgid "Tools"
-msgstr ""
+msgstr "ツール"
 
 #: src/app.py:626
 msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Flatpak 版は、ユーザー設定のインポートに対応していません"
 
 #: src/app.py:631
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "設定をリセットできませんでした"
 
 #: src/app.py:635
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "設定をリセットしました"
 
 #: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
 msgid "App Preferences"
-msgstr ""
+msgstr "アプリの設定"
 
 #: src/blueprints/app-preferences.blp:10
 msgid "Shell Theme"
-msgstr ""
+msgstr "シェルのテーマ"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "適用方法"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
@@ -405,122 +427,122 @@ msgstr ""
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
-msgstr ""
+msgstr "テーマ"
 
 #: src/blueprints/appearance-page.blp:22
 msgid "Shell"
-msgstr ""
+msgstr "シェル"
 
 #: src/blueprints/appearance-page.blp:23
 msgid "Icons"
-msgstr ""
+msgstr "アイコン"
 
 #: src/blueprints/appearance-page.blp:24
 msgid "Cursor"
-msgstr ""
+msgstr "カーソル"
 
 #: src/blueprints/appearance-page.blp:28
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: src/blueprints/appearance-page.blp:31
 msgid "Type"
-msgstr ""
+msgstr "種類"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
 #: src/blueprints/fonts-page.blp:46
 msgid "None"
-msgstr ""
+msgstr "なし"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
 msgid "Image"
-msgstr ""
+msgstr "画像"
 
 #: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
 msgid "Color"
-msgstr ""
+msgstr "背景色"
 
 #: src/blueprints/appearance-page.blp:38
 msgid "The image to use as background"
-msgstr ""
+msgstr "背景として使う画像"
 
 #: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
 msgid "Choose File"
-msgstr ""
+msgstr "ファイルを選択"
 
 #: src/blueprints/appearance-page.blp:50
 msgid "The color to use as background"
-msgstr ""
+msgstr "背景として使う色"
 
 #: src/blueprints/display-page.blp:23
 msgid "Apply current display settings"
-msgstr ""
+msgstr "現在のディスプレイ設定を適用"
 
 #: src/blueprints/display-page.blp:24
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr ""
+msgstr "解像度、リフレッシュレート、画面配置など"
 
 #: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
 msgid "Apply"
-msgstr ""
+msgstr "適用"
 
 #: src/blueprints/display-page.blp:32
 msgid "Night Light"
-msgstr ""
+msgstr "夜間モード"
 
 #: src/blueprints/display-page.blp:35
 msgid "Enable"
-msgstr ""
+msgstr "有効"
 
 #: src/blueprints/display-page.blp:44
 msgid "Schedule"
-msgstr ""
+msgstr "スケジュール"
 
 #: src/blueprints/display-page.blp:45
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "日没から日の出まで"
 
 #: src/blueprints/display-page.blp:45
 msgid "Manual Schedule"
-msgstr ""
+msgstr "手動"
 
 #: src/blueprints/display-page.blp:49
 msgid "Times"
-msgstr ""
+msgstr "時間"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:52
 msgid "From"
-msgstr ""
+msgstr "開始"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:76
 msgid "To"
-msgstr ""
+msgstr "終了"
 
 #: src/blueprints/display-page.blp:100
 msgid "Color Temperature"
-msgstr ""
+msgstr "色温度"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Font"
-msgstr ""
+msgstr "フォント"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Antialiasing"
-msgstr ""
+msgstr "アンチエイリアス"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Standard"
-msgstr ""
+msgstr "標準"
 
 #: src/blueprints/fonts-page.blp:35
 msgid "Subpixel"
-msgstr ""
+msgstr "サブピクセル"
 
 #: src/blueprints/fonts-page.blp:41
 msgid "Hinting"
-msgstr ""
+msgstr "ヒンティング"
 
 #: src/blueprints/fonts-page.blp:43
 msgid "Full"
@@ -536,191 +558,191 @@ msgstr ""
 
 #: src/blueprints/fonts-page.blp:51
 msgid "Scaling Factor"
-msgstr ""
+msgstr "スケーリングファクター"
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "再読み込み"
 
 #: src/blueprints/main-window.blp:7
 msgid "Import user settings"
-msgstr ""
+msgstr "ユーザー設定をインポート"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "設定をリセット"
 
 #: src/blueprints/main-window.blp:12
 msgid "About"
-msgstr ""
+msgstr "“ログイン画面の設定” について"
 
 #: src/blueprints/main-window.blp:13
 msgid "Quit"
-msgstr ""
+msgstr "終了"
 
 #: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
 msgid "Images"
-msgstr ""
+msgstr "画像"
 
 #: src/blueprints/main-window.blp:66
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "設定を適用できませんでした"
 
 #: src/blueprints/main-window.blp:72
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "設定を正常に適用しました"
 
 #: src/blueprints/main-window.blp:78
 msgid "User settings imported"
-msgstr ""
+msgstr "ユーザー設定をインポートしました"
 
 #: src/blueprints/main-window.blp:84
 msgid "Settings reloaded"
-msgstr ""
+msgstr "設定を再読み込みしました"
 
 #: src/blueprints/misc-page.blp:23
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "再起動ボタンを表示しない"
 
 #: src/blueprints/misc-page.blp:32
 msgid "Disable User List"
-msgstr ""
+msgstr "ユーザーを一覧表示しない"
 
 #: src/blueprints/misc-page.blp:41
 msgid "Enable Logo"
-msgstr ""
+msgstr "ロゴを表示"
 
 #: src/blueprints/misc-page.blp:42
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "ユーザーの一覧の下にロゴを表示するかどうかの設定"
 
 #: src/blueprints/misc-page.blp:51
 msgid "Logo"
-msgstr ""
+msgstr "ロゴ"
 
 #: src/blueprints/misc-page.blp:52
 msgid "The image to show below user list"
-msgstr ""
+msgstr "ユーザーの一覧の下に表示する画像"
 
 #: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
-msgstr ""
+msgstr "ようこそメッセージ"
 
 #: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
-msgstr ""
+msgstr "マウス"
 
 #: src/blueprints/pointing-page.blp:23
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "ポインターの加速"
 
 #: src/blueprints/pointing-page.blp:25
 msgid "Automatic"
-msgstr ""
+msgstr "自動"
 
 #: src/blueprints/pointing-page.blp:26
 msgid "Disabled"
-msgstr ""
+msgstr "無効"
 
 #: src/blueprints/pointing-page.blp:27
 msgid "Enabled"
-msgstr ""
+msgstr "有効"
 
 #: src/blueprints/pointing-page.blp:32
 msgid "Inverse Scrolling"
-msgstr ""
+msgstr "逆スクロール"
 
 #: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "スクロールすると、画面ではなくコンテンツが移動します。"
 
 #: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
 msgid "Pointer Speed"
-msgstr ""
+msgstr "ポインターの速度"
 
 #: src/blueprints/pointing-page.blp:50
 msgid "Touchpad"
-msgstr ""
+msgstr "タッチパッド"
 
 #: src/blueprints/pointing-page.blp:53
 msgid "Tap to Click"
-msgstr ""
+msgstr "タップでクリック"
 
 #: src/blueprints/pointing-page.blp:60
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "ナチュラルスクロール"
 
 #: src/blueprints/pointing-page.blp:68
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "2 本指スクロール"
 
 #: src/blueprints/pointing-page.blp:69
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "2 本指でスワイプすることでスクロールします。"
 
 #: src/blueprints/pointing-page.blp:76
 msgid "Disable while Typing"
-msgstr ""
+msgstr "入力中は無効にする"
 
 #: src/blueprints/sound-page.blp:22
 msgid "Theme"
-msgstr ""
+msgstr "テーマ"
 
 #: src/blueprints/sound-page.blp:25
 msgid "Over Amplification"
-msgstr ""
+msgstr "最大値以上の音量を許可"
 
 #: src/blueprints/sound-page.blp:26
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "100% 以上の音量に設定できるようにします"
 
 #: src/blueprints/sound-page.blp:35
 msgid "Event Sounds"
-msgstr ""
+msgstr "イベント音"
 
 #: src/blueprints/sound-page.blp:44
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "入力のフィードバック音"
 
 #: src/blueprints/tools-page.blp:20
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "デフォルトのシェルテーマ"
 
 #: src/blueprints/tools-page.blp:23
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "トップバーのカスタマイズを含む"
 
 #: src/blueprints/tools-page.blp:30
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "デフォルトのシェルテーマに復元"
 
 #: src/blueprints/tools-page.blp:33
 msgid "Extract"
-msgstr ""
+msgstr "復元"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Tweaks"
-msgstr ""
+msgstr "カスタマイズ"
 
 #: src/blueprints/top-bar-page.blp:23
 msgid "Change Text Color"
-msgstr ""
+msgstr "テキストの色を変更"
 
 #: src/blueprints/top-bar-page.blp:31
 msgid "Text Color"
-msgstr ""
+msgstr "テキストの色"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "トップバーのテキストの色"
 
 #: src/blueprints/top-bar-page.blp:43
 msgid "Change Background Color"
-msgstr ""
+msgstr "背景の色を変更"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "The color of top bar background"
-msgstr ""
+msgstr "トップバーの背景色"
 
 #: src/blueprints/top-bar-page.blp:63
 msgid "Disable Arrows"
@@ -728,84 +750,84 @@ msgstr ""
 
 #: src/blueprints/top-bar-page.blp:72
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "角を丸めない"
 
 #: src/blueprints/top-bar-page.blp:82
 msgid "Clock"
-msgstr ""
+msgstr "時計"
 
 #: src/blueprints/top-bar-page.blp:85
 msgid "Show Weekday"
-msgstr ""
+msgstr "曜日を表示"
 
 #: src/blueprints/top-bar-page.blp:94
 msgid "Show Seconds"
-msgstr ""
+msgstr "秒を表示"
 
 #: src/blueprints/top-bar-page.blp:103
 msgid "Time Format"
-msgstr ""
+msgstr "時刻の書式"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: src/blueprints/top-bar-page.blp:104
 msgid "24 Hours"
-msgstr ""
+msgstr "24 時制"
 
 #: src/blueprints/top-bar-page.blp:109
 msgid "Power"
-msgstr ""
+msgstr "電源"
 
 #: src/blueprints/top-bar-page.blp:112
 msgid "Show battery percentage"
-msgstr ""
+msgstr "バッテリーの割合を表示"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr ""
+msgstr "Copyright © 2021 Mazhar Hussain"
 
 #: src/dialogs.py:16
 msgid "Homepage"
-msgstr ""
+msgstr "ホームページ"
 
 #: src/dialogs.py:19
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
-msgstr ""
+msgstr "Ryo Nakano"
 
 #: src/settings.py:261
 msgid "saving default theme …"
-msgstr ""
+msgstr "デフォルトのテーマを保存しています…"
 
 #: src/settings.py:601
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "GResource 設定を Ubuntu に適用しています…"
 
 #: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
 #: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
 #: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
