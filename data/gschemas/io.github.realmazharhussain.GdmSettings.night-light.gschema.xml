@@ -36,8 +36,8 @@
 
     <key name="night-light-end-hour" type="i">
       <default>6</default>
-      <summary>The start time's hour</summary>
-      <description>When “night-light-schedule-automatic” is disabled, use this start time in hours.</description>
+      <summary>The end time's hour</summary>
+      <description>When “night-light-schedule-automatic” is disabled, use this end time in hours.</description>
       <range min="0" max="23"/>
     </key>
 
