@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-14 11:06+0500\n"
-"PO-Revision-Date: 2022-06-22 04:54+0000\n"
+"PO-Revision-Date: 2022-07-22 17:25+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -193,7 +193,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid "Updated the app store page of app"
-msgstr ""
+msgstr "Uygulamanın uygulama mağazası sayfası güncellendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Added:"
@@ -225,8 +225,6 @@ msgid "Fixed:"
 msgstr "Düzeltildi:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
 msgid "Welcome message could not contain single quotes"
 msgstr "Hoşgeldin mesajı tek tırnak içeremez"
 
@@ -307,36 +305,26 @@ msgid "Urdu"
 msgstr "Urduca"
 
 #: src/app.py:30
-#, fuzzy
-#| msgid "Show application version"
 msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "Uygulama sürümünü göster"
 
 #: src/app.py:38
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgctxt "Description of --verbosity option"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
 
 #: src/app.py:40
-#, fuzzy
-#| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "SEVİYE"
 
 #: src/app.py:47
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (set verbosity level 5)"
 msgstr "Ayrıntılı kipi etkinleştir (ayrıntı düzeyini 5 olarak ayarla)"
 
 #: src/app.py:56
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
@@ -345,10 +333,11 @@ msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
+"Ayrıntı düzeyi {level} geçersiz. Kabul edilen değerler 0 ile 5 arasındadır."
 
 #: src/app.py:107
 msgid "Assuming Verbosity level 4."
-msgstr ""
+msgstr "Ayrıntı düzeyi 4 olarak varsayılıyor."
 
 #: src/app.py:186
 msgid ""
@@ -430,23 +419,23 @@ msgstr "Shell Teması"
 
 #: src/blueprints/app-preferences.blp:13
 msgid "Apply Method"
-msgstr ""
+msgstr "Metodu Uygula"
 
 #: src/blueprints/app-preferences.blp:14
 msgid "Should the theme be overlayed on top of the default theme?"
-msgstr ""
+msgstr "Tema, öntanımlı temanın üzerine bindirilsin mi?"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "No Overlay"
-msgstr ""
+msgstr "Bindirme Yok"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Overlay Resources"
-msgstr ""
+msgstr "Kaynakları Bindir"
 
 #: src/blueprints/app-preferences.blp:15
 msgid "Complete Overlay"
-msgstr ""
+msgstr "Tam Bindirme"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Themes"
@@ -816,8 +805,6 @@ msgid "Homepage"
 msgstr "Ana sayfa"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -825,7 +812,7 @@ msgstr "Mazhar Hussain"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -834,31 +821,25 @@ msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/settings.py:261
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "saving default theme …"
-msgstr "öntanımlı tema kaydediliyor ..."
+msgstr "öntanımlı tema kaydediliyor …"
 
 #: src/settings.py:601
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
-"Ubuntu'da 'Uygula' seçeneğine tıklandığında yalnızca bazı ayarlar "
-"uygulanıyordu"
+msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
 #: src/settings.py:608
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
 #: src/settings.py:736
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
 #: src/settings.py:743
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
