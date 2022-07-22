@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-14 11:06+0500\n"
+"POT-Creation-Date: 2022-07-22 22:25+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -88,12 +88,10 @@ msgid ""
 msgstr "موجودہ لوکیشن کے مطابق سورج کے طلوع اور غروب کے وقت کا طعین کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
 msgstr "شروع ہونے والے وقت کے گھنٹے"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
@@ -112,6 +110,24 @@ msgid ""
 msgstr ""
 "جب \"night-light-schedule-automatic\" بند ہو تو اس کو شروع ہونے والے مِنٹوں "
 "کے طور پر استعمال کریں-"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
+#, fuzzy
+#| msgid "The end time's minute"
+msgid "The end time's hour"
+msgstr "ختم ہونے والے وقت کے منٹ"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this end time in "
+"hours."
+msgstr ""
+"جب \"night-light-schedule-automatic\" بند ہو تو اس کو ختم ہونے والے مِنٹوں کے "
+"طور پر استعمال کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -323,82 +339,109 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 سیٹ کریں)"
 
-#: src/app.py:106
+#: src/app.py:111
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 
-#: src/app.py:107
+#: src/app.py:112
 msgid "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:186
+#: src/app.py:141
+msgid ""
+"Following programs are required to be installed for this app to function "
+"properly but they are not installed on the system."
+msgstr ""
+
+#: src/app.py:146
+msgid ""
+"Following programs are required to be installed on the host system for this "
+"app to function properly but they are not installed on the host system."
+msgstr ""
+
+#: src/app.py:154
+msgctxt "Missing Dependency"
+msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
+msgstr ""
+
+#: src/app.py:159
+msgctxt "Missing Dependency"
+msgid " • <b>Polkit</b>"
+msgstr ""
+
+#: src/app.py:163
+msgid "Missing Dependencies"
+msgstr ""
+
+#: src/app.py:242
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/app.py:218
+#: src/app.py:274
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/app.py:220
+#: src/app.py:276
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:231
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
+#: src/app.py:306
+#, fuzzy, python-brace-format
+#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "ڈیفالٹ شیل تھیم '{path}' میں 'default-extracted' کے نام سے سیو ہو گیا ہے"
 
-#: src/app.py:233
+#: src/app.py:308
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/app.py:564
+#: src/app.py:639
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/app.py:565 src/blueprints/fonts-page.blp:20
+#: src/app.py:640 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "خط"
 
-#: src/app.py:566
+#: src/app.py:641
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/app.py:567 src/blueprints/sound-page.blp:20
+#: src/app.py:642 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "آواز"
 
-#: src/app.py:568
+#: src/app.py:643
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/app.py:569 src/blueprints/display-page.blp:20
+#: src/app.py:644 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/app.py:570 src/blueprints/misc-page.blp:20
+#: src/app.py:645 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
-#: src/app.py:571
+#: src/app.py:646
 msgid "Tools"
 msgstr "آلات"
 
-#: src/app.py:626
+#: src/app.py:701
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
-#: src/app.py:631
+#: src/app.py:706
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: src/app.py:635
+#: src/app.py:710
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
@@ -815,30 +858,30 @@ msgstr ""
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: src/settings.py:261
+#: src/settings.py:274
 #, fuzzy
 #| msgid "saving default theme ..."
-msgid "saving default theme …"
+msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
 
-#: src/settings.py:601
+#: src/settings.py:310
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
 
-#: src/settings.py:608
+#: src/settings.py:317
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:736
+#: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:743
+#: src/settings.py:452
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

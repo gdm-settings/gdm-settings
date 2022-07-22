@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-14 11:06+0500\n"
+"POT-Creation-Date: 2022-07-22 22:25+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -85,12 +85,10 @@ msgid ""
 msgstr "Vypočítat časy východu a západu slunce na základě aktuální pozice."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The start time's hour"
 msgstr "Hodiny počátečního času"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this start time in "
 "hours."
@@ -109,6 +107,24 @@ msgid ""
 msgstr ""
 "Když je povoleno „night-light-schedule-automatic“, použít tento počáteční "
 "čas v minutách."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
+#, fuzzy
+#| msgid "The end time's minute"
+msgid "The end time's hour"
+msgstr "Minuty koncového času"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid ""
+"When “night-light-schedule-automatic” is disabled, use this end time in "
+"hours."
+msgstr ""
+"Když je povoleno „night-light-schedule-automatic“, použít tento koncový čas "
+"v minutách."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -335,82 +351,109 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (set verbosity level 0)"
 msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
 
-#: src/app.py:106
+#: src/app.py:111
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 
-#: src/app.py:107
+#: src/app.py:112
 msgid "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:186
+#: src/app.py:141
+msgid ""
+"Following programs are required to be installed for this app to function "
+"properly but they are not installed on the system."
+msgstr ""
+
+#: src/app.py:146
+msgid ""
+"Following programs are required to be installed on the host system for this "
+"app to function properly but they are not installed on the host system."
+msgstr ""
+
+#: src/app.py:154
+msgctxt "Missing Dependency"
+msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
+msgstr ""
+
+#: src/app.py:159
+msgctxt "Missing Dependency"
+msgid " • <b>Polkit</b>"
+msgstr ""
+
+#: src/app.py:163
+msgid "Missing Dependencies"
+msgstr ""
+
+#: src/app.py:242
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
 
-#: src/app.py:218
+#: src/app.py:274
 msgid "Applied current display settings"
 msgstr "Současná nastavení displeje použita"
 
-#: src/app.py:220
+#: src/app.py:276
 msgid "Failed to apply current display settings"
 msgstr "Nepodařilo se použít současná nastavení displeje"
 
-#. Translators: Do not translate '{path}'. Keep it as it is. It will be replaced by an actual folder path during runtime.
-#: src/app.py:231
-#, python-brace-format
-msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
+#: src/app.py:306
+#, fuzzy, python-brace-format
+#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Výchozí téma shellu extrahováno do „{path}“ jako „default-extracted“"
 
-#: src/app.py:233
+#: src/app.py:308
 msgid "Failed to extract default theme"
 msgstr "Nepodařilo se extrahovat výchozí téma"
 
-#: src/app.py:564
+#: src/app.py:639
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/app.py:565 src/blueprints/fonts-page.blp:20
+#: src/app.py:640 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Písma"
 
-#: src/app.py:566
+#: src/app.py:641
 msgid "Top Bar"
 msgstr "Horní lišta"
 
-#: src/app.py:567 src/blueprints/sound-page.blp:20
+#: src/app.py:642 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/app.py:568
+#: src/app.py:643
 msgid "Mouse & Touchpad"
 msgstr "Myš a touchpad"
 
-#: src/app.py:569 src/blueprints/display-page.blp:20
+#: src/app.py:644 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Displej"
 
-#: src/app.py:570 src/blueprints/misc-page.blp:20
+#: src/app.py:645 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Smíšené"
 
-#: src/app.py:571
+#: src/app.py:646
 msgid "Tools"
 msgstr "Nástroje"
 
-#: src/app.py:626
+#: src/app.py:701
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
 "Flatpak"
 
-#: src/app.py:631
+#: src/app.py:706
 msgid "Failed to reset settings"
 msgstr "Nepodařilo se resetovat nastavení"
 
-#: src/app.py:635
+#: src/app.py:710
 msgid "Reset settings successfully"
 msgstr "Nastavení úspěšně resetována"
 
@@ -827,30 +870,30 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Vojtěch Perník <translations@pervoj.cz>"
 
-#: src/settings.py:261
+#: src/settings.py:274
 #, fuzzy
 #| msgid "saving default theme ..."
-msgid "saving default theme …"
+msgid "Backing up default shell theme …"
 msgstr "Ukládá se výchozí téma…"
 
-#: src/settings.py:601
+#: src/settings.py:310
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
 
-#: src/settings.py:608
+#: src/settings.py:317
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:736
+#: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:743
+#: src/settings.py:452
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
