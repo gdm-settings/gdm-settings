@@ -83,6 +83,11 @@ class Application(Adw.Application):
         self.add_window(widgets.main_window)
         widgets.main_window.present()
 
+        # Some dependencies cannot be packaged along with the app but are
+        # required to be installed on the user's system. So, we need to
+        # check them and report to the user if they are missing.
+        self.check_system_dependencies()
+
     def handle_local_options(self, klass, options):
 
         if options.contains("version"):
@@ -115,6 +120,57 @@ class Application(Adw.Application):
 
 
     ### Some utility functions ###
+
+    def check_system_dependencies(self):
+        '''If some dependencies are missing, show a dialog reporting the situation'''
+
+        from subprocess import run
+        from .enums import PackageType
+
+        which_command = ['which']
+        if env.PACKAGE_TYPE == PackageType.Flatpak:
+            which_command = ['flatpak-spawn', '--host', 'which']
+
+        gdm_is_installed = run([*which_command, 'gdm'], capture_output=True).returncode == 0
+        polkit_is_installed = run([*which_command, 'pkexec'], capture_output=True).returncode == 0
+
+        # Return without doing anything if all dependencies are installed
+        if gdm_is_installed and polkit_is_installed:
+            return
+
+        message = _('Following programs are required to be installed for this app to function properly'
+                    ' but they are not installed on the system.'
+                   )
+
+        if env.PACKAGE_TYPE == PackageType.Flatpak:
+            message = _('Following programs are required to be installed on the host system for this '
+                        'app to function properly but they are not installed on the host system.'
+                       )
+
+        message += '\n\n'
+
+        if not gdm_is_installed:
+            message += C_('Missing Dependency',
+                          ' • <b>GDM</b> (GNOME Display/Login Manager)'
+                         ) + '\n'
+
+        if not polkit_is_installed:
+            message += C_('Missing Dependency',
+                          ' • <b>Polkit</b>'
+                         )
+
+        dialog = Gtk.MessageDialog(
+                         text = _('Missing Dependencies'),
+                        modal = True,
+                      buttons = Gtk.ButtonsType.OK,
+                 message_type = Gtk.MessageType.ERROR,
+                transient_for = widgets.main_window,
+               secondary_text = message.rstrip(),
+         secondary_use_markup = True,
+        )
+
+        dialog.connect('response', lambda *args: self.quit())
+        dialog.present()
 
     def connect_signal(self, widget, signal, function):
         getattr(widgets, widget).connect(signal, function)
