@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-22 22:25+0500\n"
-"PO-Revision-Date: 2022-07-06 09:19+0000\n"
+"PO-Revision-Date: 2022-07-24 09:18+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -110,22 +110,16 @@ msgstr ""
 "להשתמש בערך הזה כדקות זמן ההתחלה."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "דקות זמן הסיום"
+msgstr "שעת זמן הסיום"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time in "
 "hours."
 msgstr ""
 "כאשר „night-light-schedule-automatic” (תזמון תאורת לילה אוטומטית) מושבתת, יש "
-"להשתמש בערך הזה כדקות זמן הסיום."
+"להשתמש בערך הזה כשעת זמן הסיום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
