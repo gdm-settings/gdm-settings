@@ -126,13 +126,20 @@ class Application(Adw.Application):
 
         from subprocess import run
         from .enums import PackageType
+        from .utils import getstdout
 
-        which_command = ['which']
-        if env.PACKAGE_TYPE == PackageType.Flatpak:
-            which_command = ['flatpak-spawn', '--host', 'which']
+        host_command = ['flatpak-spawn', '--host'] if env.PACKAGE_TYPE == PackageType.Flatpak else []
 
-        gdm_is_installed = run([*which_command, 'gdm'], capture_output=True).returncode == 0
-        polkit_is_installed = run([*which_command, 'pkexec'], capture_output=True).returncode == 0
+        def check_dependency(dependency):
+            try:
+                version_info = getstdout([*host_command, dependency, '--version']).decode().strip()
+                logging.info(version_info)
+                return True
+            except FileNotFoundError:
+                return False
+
+        gdm_is_installed    = check_dependency('gdm')
+        polkit_is_installed = check_dependency('pkexec')
 
         # Return without doing anything if all dependencies are installed
         if gdm_is_installed and polkit_is_installed:
