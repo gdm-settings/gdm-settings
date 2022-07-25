@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-22 22:25+0500\n"
-"PO-Revision-Date: 2022-07-24 09:18+0000\n"
+"PO-Revision-Date: 2022-07-26 11:17+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -340,26 +340,30 @@ msgid ""
 "Following programs are required to be installed for this app to function "
 "properly but they are not installed on the system."
 msgstr ""
+"התוכניות הבאות חייבות להיות מותקנות כדי שהיישום הזה יתפקד אך הן אינן מותקנות "
+"במערכת."
 
 #: src/app.py:146
 msgid ""
 "Following programs are required to be installed on the host system for this "
 "app to function properly but they are not installed on the host system."
 msgstr ""
+"התוכניות הבאות חייבות להיות מותקנות על המערכת המארחת כדי שהיישום הזה יתפקד "
+"כראוי אך הן אינן מותקנות במערכת המארחת."
 
 #: src/app.py:154
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
-msgstr ""
+msgstr " • <b>GDM</b> (מנהל תצוגה/כניסה של GNOME)"
 
 #: src/app.py:159
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " ‎ • <b>Polkit</b>"
 
 #: src/app.py:163
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "חסרות תלויות"
 
 #: src/app.py:242
 msgid ""
@@ -377,11 +381,9 @@ msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
 #: src/app.py:306
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎{path}’ בתור ‚default-extracted’"
+msgstr "ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎{folder}’ בתור ‚{name}’"
 
 #: src/app.py:308
 msgid "Failed to extract default theme"
@@ -843,10 +845,8 @@ msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
 #: src/settings.py:274
-#, fuzzy
-#| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
-msgstr "ערכת העיצוב כברירת המחדל נשמרת…"
+msgstr "ערכת העיצוב של המעטפת כברירת המחדל מגובית…"
 
 #: src/settings.py:310
 msgctxt "Command-line output"
