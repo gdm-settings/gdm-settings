@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-07-22 22:25+0500\n"
-"PO-Revision-Date: 2022-07-06 09:19+0000\n"
+"PO-Revision-Date: 2022-07-26 11:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -107,20 +107,14 @@ msgid ""
 msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "Phút kết thúc"
+msgstr "Giờ kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid ""
 "When “night-light-schedule-automatic” is disabled, use this end time in "
 "hours."
-msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút kết thúc này."
+msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ kết thúc này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -350,26 +344,30 @@ msgid ""
 "Following programs are required to be installed for this app to function "
 "properly but they are not installed on the system."
 msgstr ""
+"Những chương trình dưới đây cần có để ứng dụng này có thể hoạt động trơn "
+"tru, nhưng nó chưa được cài đặt."
 
 #: src/app.py:146
 msgid ""
 "Following programs are required to be installed on the host system for this "
 "app to function properly but they are not installed on the host system."
 msgstr ""
+"Những chương trình dưới đây cần có trên máy host để ứng dụng này có thể hoạt "
+"động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
 #: src/app.py:154
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
-msgstr ""
+msgstr " • <b>GDM</b> (GNOME Display/Login Manager)"
 
 #: src/app.py:159
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " • <b>Polkit</b>"
 
 #: src/app.py:163
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Thiếu thư viện"
 
 #: src/app.py:242
 msgid ""
@@ -389,12 +387,10 @@ msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
 #: src/app.py:306
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
-"Theme mặc định của shell đã được trích xuất ra '{path}' dưới dạng \"trích "
-"xuất mặc định\""
+"Theme mặc định của shell đã được trích xuất ra '{folder}' dưới dạng '{name}'"
 
 #: src/app.py:308
 msgid "Failed to extract default theme"
@@ -674,7 +670,7 @@ msgstr "Hình ảnh được dùng để hiển thị dưới danh sách ngườ
 
 #: src/blueprints/misc-page.blp:63
 msgid "Welcome Message"
-msgstr "Welcome Message"
+msgstr "Thông điệp chào mừng (Welcome Message)"
 
 #: src/blueprints/pointing-page.blp:20
 msgid "Mouse"
@@ -857,10 +853,8 @@ msgid "translator-credits"
 msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
 #: src/settings.py:274
-#, fuzzy
-#| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
-msgstr "Đang lưu theme mặc định…"
+msgstr "Đang sao lưu theme mặc định của shell…"
 
 #: src/settings.py:310
 msgctxt "Command-line output"
