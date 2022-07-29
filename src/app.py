@@ -44,7 +44,7 @@ class Application(Adw.Application):
                              OptionFlags.NONE,
                              OptionArg.NONE,
                              C_('Description of --verbose option',
-                                'Enable verbose mode (set verbosity level 5)'),
+                                'Enable verbose mode (alias of --verbosity=5)'),
                              None,
                              )
 
@@ -53,7 +53,7 @@ class Application(Adw.Application):
                              OptionArg.NONE,
                              # Translators: Extra spaces here are to vertically align parentheses here with parentheses in description of option --verbose. Ignore them (or not).
                              C_('Description of --quiet option',
-                                'Enable quiet mode   (set verbosity level 0)'),
+                                'Enable quiet mode   (alias of --verbosity=0)'),
                              None,
                              )
 
