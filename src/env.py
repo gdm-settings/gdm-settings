@@ -26,9 +26,9 @@ elif environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
 
 # OS Release info
-#from packaging.version import Version
 from .utils import read_os_release
 os_release = read_os_release()
+
 OS_NAME       = os_release.get('NAME',       'Linux')
 OS_ID         = os_release.get('ID',         'linux')
 OS_ID_LIKE    = os_release.get('ID_LIKE',    'linux')

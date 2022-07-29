@@ -67,6 +67,11 @@ def read_os_release():
     return dict(os_release)
 
 
+def version(string, /):
+    '''Return a tuple that represents a program version number'''
+
+    return tuple(int(segment) for segment in string.split('.'))
+
 class PATH (list):
     '''
     A list to store values of PATH-like environment variables

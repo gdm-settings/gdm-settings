@@ -21,8 +21,8 @@ for data_dir in env.SYSTEM_DATA_DIRS:
         break
 
 if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
-    from packaging.version import Version
-    if Version(env.OS_VERSION_ID) >= Version('21.10'):
+    from .utils import version
+    if version(env.OS_VERSION_ID) >= version('21.10'):
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
     else:
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
