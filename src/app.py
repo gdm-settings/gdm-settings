@@ -241,19 +241,23 @@ class Application(Adw.Application):
         pref_window.present()
 
     def on_apply(self, widget):
-        try:
-            self.set_settings()
+        self.set_settings()
 
-            # Apply
+        from .gr_utils import BackgroundImageNotFoundError
+        try:
             if self.settings.apply_settings():
                 widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
             else:
                 widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
 
-        except FileNotFoundError as e:
-            toast = Adw.Toast (timeout=4, priority="high")
-            toast.set_title (_("Didn't apply. Chosen background image could not be found. Please! choose again."))
-            widgets.main_toast_overlay.add_toast (toast)
+        except BackgroundImageNotFoundError:
+            widgets.main_toast_overlay.add_toast (
+                Adw.Toast (
+                      title = _("Didn't apply. Chosen background image could not be found. Please! choose again."),
+                    timeout = 4,
+                   priority = "high",
+                )
+            )
 
     def on_background_type_change(self, comborow, selection):
         selected = comborow.get_selected()

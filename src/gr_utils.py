@@ -77,6 +77,8 @@ def extract_default_theme(destination:str, /):
         with open(filepath, "wb") as opened_file:
             opened_file.write(content)
 
+class BackgroundImageNotFoundError (FileNotFoundError): pass
+
 def compile(shellDir:str, additional_css:str, background_image:str=''):
     """Compile a theme into a GResource file for its use as a GDM theme"""
 
@@ -107,7 +109,10 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
 
     # Background Image
     if background_image:
-        copy(background_image, os.path.join(temp_shell_dir, 'background'))
+        if os.path.isfile(background_image):
+            copy(background_image, os.path.join(temp_shell_dir, 'background'))
+        else:
+            raise BackgroundImageNotFoundError(2, 'No such file', background_image)
 
     # Additional CSS
     with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
