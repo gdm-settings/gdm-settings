@@ -124,19 +124,25 @@ class Application(Adw.Application):
     def check_system_dependencies(self):
         '''If some dependencies are missing, show a dialog reporting the situation'''
 
-        from subprocess import run
+        from subprocess import run, PIPE
         from .enums import PackageType
-        from .utils import getstdout
 
-        host_command = ['flatpak-spawn', '--host'] if env.PACKAGE_TYPE == PackageType.Flatpak else []
-
-        def check_dependency(dependency):
+        def check_dependency(prog_name):
+            proc = None
             try:
-                version_info = getstdout([*host_command, dependency, '--version']).decode().strip()
-                logging.info(version_info)
-                return True
+                if env.PACKAGE_TYPE == PackageType.Flatpak:
+                    proc = run(['flatpak-spawn', '--host', prog_name, '--version'], stdout=PIPE)
+                else:
+                    proc = run([prog_name, '--version'], stdout=PIPE)
             except FileNotFoundError:
                 return False
+
+            if proc.returncode == 0:
+                version_info = proc.stdout.decode().strip()
+                logging.info(version_info)
+                return True
+
+            return False
 
         gdm_is_installed    = check_dependency('gdm')
         polkit_is_installed = check_dependency('pkexec')
