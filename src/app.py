@@ -144,7 +144,7 @@ class Application(Adw.Application):
 
             return False
 
-        gdm_is_installed    = check_dependency('gdm')
+        gdm_is_installed    = check_dependency('gdm') or check_dependency('gdm3')
         polkit_is_installed = check_dependency('pkexec')
 
         # Return without doing anything if all dependencies are installed
