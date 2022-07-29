@@ -3,10 +3,10 @@
 def getstdout(command, /):
     '''get standard output of a command'''
 
-    from subprocess import run
+    from subprocess import run, PIPE
     if isinstance(command, str):
         command = command.split()
-    return run(command, capture_output=True).stdout
+    return run(command, stdout=PIPE).stdout
 
 def find_file(file, locations):
     '''find a file in possible locations'''
