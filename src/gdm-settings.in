@@ -21,5 +21,9 @@ logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)
 
 from @py_module_name@.app import Application
 app = Application()
-return_value = app.run(sys.argv)
-exit(return_value)
+
+try:
+    return_value = app.run(sys.argv)
+    exit(return_value)
+except KeyboardInterrupt:
+    exit(130)
