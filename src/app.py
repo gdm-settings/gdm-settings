@@ -128,28 +128,32 @@ class Application(Adw.Application):
         from subprocess import run, PIPE
         from .enums import PackageType
 
-        def check_dependency(prog_name):
+        def check_dependency(exec_name, logging_name=''):
             proc = None
             try:
                 if env.PACKAGE_TYPE == PackageType.Flatpak:
-                    proc = run(['flatpak-spawn', '--host', prog_name, '--version'], stdout=PIPE)
+                    proc = run(['flatpak-spawn', '--host', exec_name, '--version'], stdout=PIPE)
                 else:
-                    proc = run([prog_name, '--version'], stdout=PIPE)
+                    proc = run([exec_name, '--version'], stdout=PIPE)
             except FileNotFoundError:
                 return False
 
             if proc.returncode == 0:
                 version_info = proc.stdout.decode().strip()
-                logging.info(version_info)
+                if logging_name:
+                    logging.info(f'{logging_name} {version_info}')
+                else:
+                    logging.info(version_info)
                 return True
 
             return False
 
-        gdm_is_installed    = check_dependency('gdm') or check_dependency('gdm3')
+        gdm_is_installed = check_dependency('gdm') or check_dependency('gdm3')
         polkit_is_installed = check_dependency('pkexec')
+        glib_dev_is_installed = check_dependency('glib-compile-resources', 'GLib')
 
         # Return without doing anything if all dependencies are installed
-        if gdm_is_installed and polkit_is_installed:
+        if gdm_is_installed and polkit_is_installed and glib_dev_is_installed:
             return
 
         message = _('Following programs are required to be installed for this app to function properly'
@@ -171,7 +175,12 @@ class Application(Adw.Application):
         if not polkit_is_installed:
             message += C_('Missing Dependency',
                           ' • <b>Polkit</b>'
-                         )
+                         ) + '\n'
+
+        if not glib_dev_is_installed:
+            message += C_('Missing Dependency',
+                          ' • <b>GLib</b> (Developer Edition)'
+                         ) + '\n'
 
         dialog = Gtk.MessageDialog(
                          text = _('Missing Dependencies'),
