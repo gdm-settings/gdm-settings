@@ -182,13 +182,22 @@ class Application(Adw.Application):
                           ' • <b>GLib</b> (Developer Edition)'
                          ) + '\n'
 
+        link = 'https://github.com/realmazharhussain/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
+
+        message += '\n'
+        message += C_('Missing Dependencies Dialog', 'Click')
+        message += f' <a href="{link}">' + C_('Missing Dependencies Dialog', 'here') + '</a> '
+        message += C_('Missing Dependencies Dialog',
+                      'for instructions on how to install these dependencies on your system.'
+                     )
+
         dialog = Gtk.MessageDialog(
                          text = _('Missing Dependencies'),
                         modal = True,
                       buttons = Gtk.ButtonsType.OK,
                  message_type = Gtk.MessageType.ERROR,
                 transient_for = widgets.main_window,
-               secondary_text = message.rstrip(),
+               secondary_text = message,
          secondary_use_markup = True,
         )
 
