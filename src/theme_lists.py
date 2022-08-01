@@ -35,8 +35,8 @@ def update_theme_list(theme_type:str, /):
 
     from os import path
     from glob import glob
-    from .env import HOST_ROOT, SYSTEM_DATA_DIRS
-    for data_dir in SYSTEM_DATA_DIRS:
+    from .env import HOST_ROOT, HOST_DATA_DIRS
+    for data_dir in HOST_DATA_DIRS:
         for theme_dir in glob(f"{HOST_ROOT}{data_dir}/{dirname}/*"):
             theme_name = path.basename(theme_dir)
             if path.exists(path.join(theme_dir, decider)) and theme_name not in [theme.name for theme in temp_list]:

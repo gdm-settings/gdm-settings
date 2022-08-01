@@ -4,7 +4,7 @@ import os
 import logging
 from . import env
 
-ThemesDir                = env.SYSTEM_DATA_DIRS[0]
+ThemesDir                = env.HOST_DATA_DIRS[0]
 CustomThemeIdentity      = 'custom-theme'
 GdmUsername              = 'gdm'
 ShellGresourceFile       = None
@@ -12,7 +12,7 @@ ShellGresourceAutoBackup = None
 CustomGresourceFile      = None
 UbuntuGdmGresourceFile   = None
 
-for data_dir in env.SYSTEM_DATA_DIRS:
+for data_dir in env.HOST_DATA_DIRS:
     file = os.path.join (data_dir,  'gnome-shell', 'gnome-shell-theme.gresource')
     if os.path.isfile (env.HOST_ROOT + file):
         ShellGresourceFile       = file

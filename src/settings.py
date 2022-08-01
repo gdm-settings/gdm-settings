@@ -78,7 +78,7 @@ class Settings:
 
     def __init__(self):
         logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
-        logging.info(f"SYSTEM_DATA_DIRS       = {env.SYSTEM_DATA_DIRS}")
+        logging.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
 
         from .utils import CommandElevator
         self.command_elevator = CommandElevator()
