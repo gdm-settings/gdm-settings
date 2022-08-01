@@ -10,4 +10,14 @@ options=(
   --from-code=UTF-8
 )
 
-xgettext "${options[@]}" 2>/dev/null
+output=$(xgettext "${options[@]}" 2>&1)
+status=$?
+
+while read line
+do
+  if [[ "$line" != *"extension 'blp' is unknown; will try C" ]]; then
+    echo "$line" >&2
+  fi
+done <<< "$output"
+
+exit $status
