@@ -125,66 +125,70 @@ class Application(Adw.Application):
     def check_system_dependencies(self):
         '''If some dependencies are missing, show a dialog reporting the situation'''
 
-        from subprocess import run, PIPE
+        from subprocess import run
         from .enums import PackageType
 
-        def check_dependency(exec_name, logging_name=''):
-            proc = None
-            try:
-                if env.PACKAGE_TYPE == PackageType.Flatpak:
-                    proc = run(['flatpak-spawn', '--host', exec_name, '--version'], stdout=PIPE)
-                else:
-                    proc = run([exec_name, '--version'], stdout=PIPE)
-            except FileNotFoundError:
-                return False
+        def check_dependency(exec_name, logging_name=None, *, on_host=True):
+            host_args = []
+            if env.PACKAGE_TYPE is PackageType.Flatpak and on_host is True:
+                host_args = ['flatpak-spawn', '--host']
 
-            if proc.returncode == 0:
-                version_info = proc.stdout.decode().strip()
-                if logging_name:
-                    logging.info(f'{logging_name} {version_info}')
-                else:
-                    logging.info(version_info)
-                return True
+            try:
+                proc = run([*host_args, exec_name, '--version'], capture_output=True)
+                if proc.returncode == 0:
+                    version_info = proc.stdout.decode().strip()
+                    if logging_name:
+                        logging.info(f'{logging_name} {version_info}')
+                    else:
+                        logging.info(version_info)
+                    return True
+            except FileNotFoundError: pass
 
             return False
 
-        gdm_is_installed = check_dependency('gdm') or check_dependency('gdm3')
-        polkit_is_installed = check_dependency('pkexec')
-        glib_dev_is_installed = check_dependency('glib-compile-resources', 'GLib')
+        gdm_installed = check_dependency('gdm') or check_dependency('gdm3')
+        polkit_installed = check_dependency('pkexec')
+        glib_dev_installed = check_dependency('glib-compile-resources', 'GLib', on_host=False)
 
-        # Return without doing anything if all dependencies are installed
-        if gdm_is_installed and polkit_is_installed and glib_dev_is_installed:
+        host_deps_installed = gdm_installed and polkit_installed
+        all_deps_installed = host_deps_installed and glib_dev_installed
+
+        if all_deps_installed:
             return
 
-        message = _('Following programs are required to be installed for this app to function properly'
-                    ' but they are not installed on the system.'
-                   )
+        message = ''
 
-        if env.PACKAGE_TYPE == PackageType.Flatpak:
-            message = _('Following programs are required to be installed on the host system for this '
-                        'app to function properly but they are not installed on the host system.'
-                       )
-
-        message += '\n\n'
-
-        if not gdm_is_installed:
-            message += C_('Missing Dependency',
-                          ' • <b>GDM</b> (GNOME Display/Login Manager)'
-                         ) + '\n'
-
-        if not polkit_is_installed:
-            message += C_('Missing Dependency',
-                          ' • <b>Polkit</b>'
-                         ) + '\n'
-
-        if not glib_dev_is_installed:
+        if not glib_dev_installed:
+            message = _('This app requires the following software to function properly but they are not installed.')
+            message += '\n\n'
             message += C_('Missing Dependency',
                           ' • <b>GLib</b> (Developer Edition)'
-                         ) + '\n'
+                         )
+
+        if not host_deps_installed:
+            if env.PACKAGE_TYPE == PackageType.Flatpak:
+                if not glib_dev_installed:
+                    message += '\n\n'
+
+                message += _('Following programs are required to be installed <b>on the host system</b> for'
+                             ' this app to function properly but they are not installed on the host system.'
+                            ) + '\n'
+
+            if not gdm_installed:
+                message += '\n'
+                message += C_('Missing Dependency',
+                              ' • <b>GDM</b>'
+                             )
+
+            if not polkit_installed:
+                message +='\n'
+                message += C_('Missing Dependency',
+                              ' • <b>Polkit</b>'
+                             )
 
         link = 'https://github.com/realmazharhussain/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
 
-        message += '\n'
+        message += '\n\n'
         message += C_('Missing Dependencies Dialog', 'Click')
         message += f' <a href="{link}">' + C_('Missing Dependencies Dialog', 'here') + '</a> '
         message += C_('Missing Dependencies Dialog',
