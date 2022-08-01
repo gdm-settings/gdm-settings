@@ -3,11 +3,11 @@
 import os
 from .utils import PATH
 
-# Environment variables
-HOME           =      os.environ.get('HOME')
-XDG_CACHE_HOME =      os.environ.get('XDG_CACHE_HOME',  f'{HOME}/.cache')
-XDG_DATA_DIRS  = PATH(os.environ.get('XDG_DATA_DIRS',    '/usr/local/share:/usr/share'))
-HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
+# XDG Base Directories
+from gi.repository import GLib
+XDG_CACHE_HOME  = GLib.get_user_cache_dir()
+XDG_DATA_DIRS   = PATH(GLib.get_system_data_dirs())
+HOST_DATA_DIRS  = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 # Package Type and related stuff
 from .enums import PackageType
