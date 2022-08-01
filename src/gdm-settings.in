@@ -23,7 +23,7 @@ from @py_module_name@.app import Application
 app = Application()
 
 try:
-    return_value = app.run(sys.argv)
-    exit(return_value)
+    status = app.run(sys.argv)
+    exit(status)
 except KeyboardInterrupt:
-    exit(130)
+    pass
