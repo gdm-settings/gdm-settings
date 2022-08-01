@@ -103,6 +103,23 @@ class PATH (list):
     def copy (self, /):
         return self.__class__(self)
 
+class ProcessReturnCode(int):
+    '''
+    An integer that represents return code of a process
+
+    bool(instance) returns True if value of instance is 0
+    '''
+
+    def __bool__ (self):
+        return True if self == 0 else False
+
+    @property
+    def success (self):
+        return bool(self)
+
+    @property
+    def failure (self):
+        return not self.success
 
 class CommandElevator:
     """ Runs a list of commands with elevated privilages """
@@ -174,9 +191,8 @@ class CommandElevator:
             chmod(path=script_file, mode=755)
             returncode = run(args=[*self.__elevator, script_file]).returncode
             remove(script_file)
-        # Return Code 0 of subprocess means success, but boolean with value 0 is interpreted as False
-        # So, 'not returncode' boolean will be True when the subprocess succeeds
-        return not returncode
+
+        return ProcessReturnCode(returncode)
 
     def run(self) -> bool:
         """ Run commands and clear command list"""
