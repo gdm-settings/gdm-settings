@@ -1,27 +1,26 @@
 '''get information about program's environment'''
 
-from os import environ, path
-from enum import Enum
+import os
 from .utils import PATH
 
 # Environment variables
-HOME           =      environ.get('HOME')
-XDG_CACHE_HOME =      environ.get('XDG_CACHE_HOME',  f'{HOME}/.cache')
-XDG_DATA_DIRS  = PATH(environ.get('XDG_DATA_DIRS',    '/usr/local/share:/usr/share'))
+HOME           =      os.environ.get('HOME')
+XDG_CACHE_HOME =      os.environ.get('XDG_CACHE_HOME',  f'{HOME}/.cache')
+XDG_DATA_DIRS  = PATH(os.environ.get('XDG_DATA_DIRS',    '/usr/local/share:/usr/share'))
 HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 # Package Type and related stuff
 from .enums import PackageType
 from .info import project_name
 PACKAGE_TYPE = PackageType.Unknown
-TEMP_DIR     = path.join(XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
+TEMP_DIR     = os.path.join(XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
 HOST_ROOT    = ''
 
-if environ.get('FLATPAK_ID'): # Flatpak
+if os.environ.get('FLATPAK_ID'): # Flatpak
     PACKAGE_TYPE = PackageType.Flatpak
-    TEMP_DIR     = path.join(XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
+    TEMP_DIR     = os.path.join(XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
     HOST_ROOT    = '/run/host'
-elif environ.get('APPDIR'):   # AppImage
+elif os.environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
 
 # OS Release info
