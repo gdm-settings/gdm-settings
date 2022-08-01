@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-01 11:47+0500\n"
-"PO-Revision-Date: 2022-07-26 11:17+0000\n"
+"PO-Revision-Date: 2022-08-02 18:19+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -317,20 +317,14 @@ msgid "LEVEL"
 msgstr "רמה"
 
 #: src/app.py:47
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "הפעלת מצב מפורט (הגדרת רמת הפירוט ל־5)"
+msgstr "הפעלת מצב מפורט (כינוי חלופי ל־‎--verbosity=5)"
 
 #: src/app.py:56
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
-msgstr "הפעלת מצב שקט (הגדרת מצב הפירוט ל־0)"
+msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 
 #: src/app.py:112
 #, python-brace-format
@@ -342,43 +336,30 @@ msgid "Assuming Verbosity level 4."
 msgstr "ההערכה היא שמדובר ברמה 4."
 
 #: src/app.py:162
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed for this app to function "
-#| "properly but they are not installed on the system."
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"התוכניות הבאות חייבות להיות מותקנות כדי שהיישום הזה יתפקד אך הן אינן מותקנות "
-"במערכת."
+"היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
 
 #: src/app.py:165
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (גרסת המפתחים)"
 
 #: src/app.py:173
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed on the host system for "
-#| "this app to function properly but they are not installed on the host "
-#| "system."
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"התוכניות הבאות חייבות להיות מותקנות על המערכת המארחת כדי שהיישום הזה יתפקד "
-"כראוי אך הן אינן מותקנות במערכת המארחת."
+"התוכניות הבאות חייבות להיות מותקנות <b>על המערכת המארחת</b> כדי שהיישום הזה "
+"יתפקד כראוי אך הן אינן מותקנות במערכת המארחת."
 
 #: src/app.py:180
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr " ‎ • <b>Polkit</b>"
+msgstr " ‎ • <b>GDM</b>‎"
 
 #: src/app.py:186
 msgctxt "Missing Dependency"
@@ -388,17 +369,17 @@ msgstr " ‎ • <b>Polkit</b>"
 #: src/app.py:192
 msgctxt "Missing Dependencies Dialog"
 msgid "Click"
-msgstr ""
+msgstr "לחיצה"
 
 #: src/app.py:193
 msgctxt "Missing Dependencies Dialog"
 msgid "here"
-msgstr ""
+msgstr "כאן"
 
 #: src/app.py:195
 msgctxt "Missing Dependencies Dialog"
 msgid "for instructions on how to install these dependencies on your system."
-msgstr ""
+msgstr "תעביר אותך להנחיות איך להתקין את התלויות האלו במערכת שלך."
 
 #: src/app.py:199
 msgid "Missing Dependencies"
@@ -429,10 +410,18 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"הקובץ ‎‚$XDG_CONFIG_HOME/monitors.xml’‎ נחוץ כדי להחיל את הגדרות התצוגה "
+"הנוכחיות אך אינו קיים.\n"
+"\n"
+"כדי ליצור את הקובץ הזה אוטומטית,\n"
+"\n"
+"1. יש לגשת ללוח ‚תצוגה’ בהגדרות המערכת.\n"
+"2. לשנות שם כמה הגדרות.\n"
+"3. להחיל."
 
 #: src/app.py:334
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "הגדרות הצג לא נמצאו"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
 #: src/app.py:373
@@ -901,7 +890,7 @@ msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
 #: src/gdm-settings.py.in:31
 msgid "KeyboardInterrupt received. Exiting …"
-msgstr ""
+msgstr "התקבל KeyboardInterrupt (הפרעה מהמקלדת). יוצא…"
 
 #: src/settings.py:274
 msgid "Backing up default shell theme …"
