@@ -295,7 +295,7 @@ class Settings:
                 break
 
         shelldir = path.join(theme_path, 'gnome-shell') if theme_path else None
-        background_image=None
+        background_image = None
         if self.background_type == "image" and self.background_image:
             background_image = self.background_image
 
@@ -429,13 +429,26 @@ class Settings:
     def apply_current_display_settings(self) -> bool:
         ''' Apply current display settings '''
 
-        self.command_elevator.add(' '.join(['eval', 'install', '-Dm644',
-                                            '~$(logname)/.config/monitors.xml',
-                                            f'~{gr_utilsGdmUsername}/.config/monitors.xml',
+        user_monitors_xml = path.join(env.XDG_CONFIG_HOME, 'monitors.xml')
+
+        if not path.isfile(user_monitors_xml):
+            raise FileNotFoundError(2, 'No such file or directory', user_monitors_xml)
+
+        self.command_elevator.add(' '.join(['machinectl', 'shell', '{gr_utils.GdmUsername}@', '/usr/bin/env',
+                                            'gsettings', 'set', 'experimental-features',
+                                            '"[\'scale-monitor-framebuffer\']"',
+                                            '&>/dev/null',
                                            ]))
+
+        self.command_elevator.add(' '.join(['install', '-Dm644',
+                                            user_monitors_xml,
+                                            f'~{gr_utils.GdmUsername}/.config/monitors.xml',
+                                           ]))
+
         self.command_elevator.add(' '.join(['chown', f'{gr_utils.GdmUsername}:',
                                             f'~{gr_utils.GdmUsername}/.config/monitors.xml',
                                            ]))
+
         return self.command_elevator.run()
 
     def reset_settings(self) -> bool:
