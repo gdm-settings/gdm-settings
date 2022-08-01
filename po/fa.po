@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-22 22:25+0500\n"
+"POT-Creation-Date: 2022-08-01 11:47+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -316,117 +316,154 @@ msgstr ""
 
 #: src/app.py:47
 msgctxt "Description of --verbose option"
-msgid "Enable verbose mode (set verbosity level 5)"
+msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
 #: src/app.py:56
 msgctxt "Description of --quiet option"
-msgid "Enable quiet mode   (set verbosity level 0)"
+msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:111
+#: src/app.py:112
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 
-#: src/app.py:112
+#: src/app.py:113
 msgid "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:141
+#: src/app.py:162
 msgid ""
-"Following programs are required to be installed for this app to function "
-"properly but they are not installed on the system."
+"This app requires the following software to function properly but they are "
+"not installed."
 msgstr ""
 
-#: src/app.py:146
-msgid ""
-"Following programs are required to be installed on the host system for this "
-"app to function properly but they are not installed on the host system."
-msgstr ""
-
-#: src/app.py:154
+#: src/app.py:165
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
+msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:159
+#: src/app.py:173
+msgid ""
+"Following programs are required to be installed <b>on the host system</b> "
+"for this app to function properly but they are not installed on the host "
+"system."
+msgstr ""
+
+#: src/app.py:180
+msgctxt "Missing Dependency"
+msgid " • <b>GDM</b>"
+msgstr ""
+
+#: src/app.py:186
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
-#: src/app.py:163
+#: src/app.py:192
+msgctxt "Missing Dependencies Dialog"
+msgid "Click"
+msgstr ""
+
+#: src/app.py:193
+msgctxt "Missing Dependencies Dialog"
+msgid "here"
+msgstr ""
+
+#: src/app.py:195
+msgctxt "Missing Dependencies Dialog"
+msgid "for instructions on how to install these dependencies on your system."
+msgstr ""
+
+#: src/app.py:199
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:242
+#: src/app.py:279
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr ""
 
-#: src/app.py:274
+#: src/app.py:317
 msgid "Applied current display settings"
 msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
 
-#: src/app.py:276
+#: src/app.py:319
 msgid "Failed to apply current display settings"
 msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 
+#: src/app.py:323
+msgid ""
+"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+"display settings but it does not exist.\n"
+"\n"
+"In order to create that file automatically,\n"
+"\n"
+"1. Go to 'Display' panel of System Settings.\n"
+"2. Change some settings there.\n"
+"3. Apply."
+msgstr ""
+
+#: src/app.py:334
+msgid "Monitor Settings Not Found"
+msgstr ""
+
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:306
+#: src/app.py:373
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
 
-#: src/app.py:308
+#: src/app.py:375
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/app.py:639
+#: src/app.py:706
 msgid "Appearance"
 msgstr "ظاهر"
 
-#: src/app.py:640 src/blueprints/fonts-page.blp:20
+#: src/app.py:707 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: src/app.py:641
+#: src/app.py:708
 msgid "Top Bar"
 msgstr "نوار بالا"
 
-#: src/app.py:642 src/blueprints/sound-page.blp:20
+#: src/app.py:709 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "صدا"
 
-#: src/app.py:643
+#: src/app.py:710
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
-#: src/app.py:644 src/blueprints/display-page.blp:20
+#: src/app.py:711 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "نمایشگر"
 
-#: src/app.py:645 src/blueprints/misc-page.blp:20
+#: src/app.py:712 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
-#: src/app.py:646
+#: src/app.py:713
 msgid "Tools"
 msgstr "ابزارها"
 
-#: src/app.py:701
+#: src/app.py:768
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/app.py:706
+#: src/app.py:773
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
-#: src/app.py:710
+#: src/app.py:777
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
@@ -845,6 +882,10 @@ msgstr ""
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
+#: src/gdm-settings.py.in:31
+msgid "KeyboardInterrupt received. Exiting …"
+msgstr ""
+
 #: src/settings.py:274
 #, fuzzy
 #| msgid "saving default theme ..."
@@ -863,12 +904,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:445
+#: src/settings.py:458
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:452
+#: src/settings.py:465
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
