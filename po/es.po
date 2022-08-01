@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-01 11:47+0500\n"
-"PO-Revision-Date: 2022-07-27 14:15+0000\n"
+"PO-Revision-Date: 2022-08-02 18:19+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
@@ -332,20 +332,14 @@ msgid "LEVEL"
 msgstr "NIVEL"
 
 #: src/app.py:47
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Activar el modo verboso (establecer el nivel de verbosidad 5)"
+msgstr "Activar el modo verboso (alias de --verbosity=5)"
 
 #: src/app.py:56
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
-msgstr "Activar el modo silencioso   (establecer el nivel de verbosidad 0)"
+msgstr "Activar el modo silencioso (alias de --verbosity=0)"
 
 #: src/app.py:112
 #, python-brace-format
@@ -359,44 +353,32 @@ msgid "Assuming Verbosity level 4."
 msgstr "Asumiendo el nivel de verbosidad 4."
 
 #: src/app.py:162
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed for this app to function "
-#| "properly but they are not installed on the system."
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Los siguientes programas deben ser instalados para que esta aplicación "
-"funcione correctamente, pero no están instalados en el sistema."
+"Esta aplicación requiere el siguiente software para funcionar correctamente, "
+"pero no está instalado."
 
 #: src/app.py:165
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (Edición para desarrolladores)"
 
 #: src/app.py:173
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed on the host system for "
-#| "this app to function properly but they are not installed on the host "
-#| "system."
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Los siguientes programas deben estar instalados en el sistema anfitrión para "
-"que esta aplicación funcione correctamente, pero no están instalados en el "
-"sistema anfitrión."
+"Los siguientes programas deben estar instalados <b>en el sistema anfitrión</"
+"b> para que esta aplicación funcione correctamente, pero no están instalados "
+"en el sistema anfitrión."
 
 #: src/app.py:180
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr " • <b>Polkit</b>"
+msgstr " • <b>GDM</b>"
 
 #: src/app.py:186
 msgctxt "Missing Dependency"
@@ -406,17 +388,19 @@ msgstr " • <b>Polkit</b>"
 #: src/app.py:192
 msgctxt "Missing Dependencies Dialog"
 msgid "Click"
-msgstr ""
+msgstr "Haga clic"
 
 #: src/app.py:193
 msgctxt "Missing Dependencies Dialog"
 msgid "here"
-msgstr ""
+msgstr "aquí"
 
 #: src/app.py:195
 msgctxt "Missing Dependencies Dialog"
 msgid "for instructions on how to install these dependencies on your system."
 msgstr ""
+"para obtener instrucciones sobre cómo instalar estas dependencias en su "
+"sistema."
 
 #: src/app.py:199
 msgid "Missing Dependencies"
@@ -449,10 +433,18 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"El archivo '$XDG_CONFIG_HOME/monitors.xml' es necesario para aplicar la "
+"configuración actual de la pantalla, pero no existe.\n"
+"\n"
+"Para crear ese archivo automáticamente,\n"
+"\n"
+"1. Vaya al panel 'Pantalla' de la configuración del sistema.\n"
+"2. Cambie algunos ajustes allí.\n"
+"3. Aplicar."
 
 #: src/app.py:334
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "No se encuentra la configuración del monitor"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
 #: src/app.py:373
@@ -923,7 +915,7 @@ msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
 #: src/gdm-settings.py.in:31
 msgid "KeyboardInterrupt received. Exiting …"
-msgstr ""
+msgstr "Interrupción del teclado recibida. Saliendo …"
 
 #: src/settings.py:274
 msgid "Backing up default shell theme …"
