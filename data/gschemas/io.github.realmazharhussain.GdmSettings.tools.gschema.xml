@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist>
-  <schema id="io.github.realmazharhussain.GdmSettings.tools" path="/io/github/realmazharhussain/GdmSettings/tools/">
+<schemalist gettext-domain="gdm-settings">
+  <schema id="io.github.realmazharhussain.GdmSettings.tools"
+       path="/io/github/realmazharhussain/GdmSettings/tools/">
 
     <key name="top-bar-tweaks" type="b">
       <default>true</default>

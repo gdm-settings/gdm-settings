@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<schemalist>
-  <schema id="io.github.realmazharhussain.GdmSettings" path="/io/github/realmazharhussain/GdmSettings/">
+<schemalist gettext-domain="gdm-settings">
+  <schema id="io.github.realmazharhussain.GdmSettings"
+       path="/io/github/realmazharhussain/GdmSettings/">
 
     <child name="window-state" schema="io.github.realmazharhussain.GdmSettings.window-state"/>
 
