@@ -121,6 +121,8 @@ class ProcessReturnCode(int):
     def failure (self):
         return not self.success
 
+class NoCommandsFoundError(Exception): pass
+
 class CommandElevator:
     """ Runs a list of commands with elevated privilages """
     def __init__(self, elevator:str='', *, shebang:str='') -> None:
@@ -159,6 +161,10 @@ class CommandElevator:
         else:
             raise ValueError("elevator is not of type 'str' or 'list'")
 
+    @property
+    def empty (self):
+        return True if len(self.__list) == 0 else False
+
     def autodetect_elevator(self):
         from .enums import PackageType
         from . import env
@@ -196,6 +202,10 @@ class CommandElevator:
 
     def run(self) -> bool:
         """ Run commands and clear command list"""
+
+        if self.empty:
+            raise NoCommandsFoundError(1, f'{self.__class__.__name__} instance has no commands to run')
+
         status = self.run_only()
         self.clear()
         return status
