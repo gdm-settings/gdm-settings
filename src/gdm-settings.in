@@ -12,6 +12,7 @@ sys.path.insert(1, py_modules_dir)
 localedir = APPDIR + '@locale_dir@'
 gettext.bindtextdomain('@project_name@', localedir)
 gettext.textdomain('@project_name@')
+_ = gettext.gettext
 
 # Terminal Text Styles
 style_normal = '\033[0m'
@@ -26,4 +27,5 @@ try:
     status = app.run(sys.argv)
     exit(status)
 except KeyboardInterrupt:
-    pass
+    # We include '\b\b' in print statement here to delete '^C' printed when KeyboardInterrupt happens
+    print('\b\b' + _('KeyboardInterrupt received. Exiting …'), file=sys.stderr)
