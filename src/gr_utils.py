@@ -62,7 +62,7 @@ def extract_default_theme(destination:str, /):
 
     destination_shell_dir = os.path.join(destination, 'gnome-shell')
     gresource_file = get_default()
-    resource_list = getstdout(["gresource", "list", gresource_file]).decode().splitlines()
+    resource_list = getstdout(["gresource", "list", env.HOST_ROOT + gresource_file]).decode().splitlines()
 
     if not gresource_file:
         raise FileNotFoundError('No unmodified GResource file of the default shell theme was found')
