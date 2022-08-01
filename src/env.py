@@ -5,20 +5,21 @@ from .utils import PATH
 
 # XDG Base Directories
 from gi.repository import GLib
-XDG_CACHE_HOME  = GLib.get_user_cache_dir()
+XDG_RUNTIME_DIR = GLib.get_user_runtime_dir()
 XDG_DATA_DIRS   = PATH(GLib.get_system_data_dirs())
-HOST_DATA_DIRS  = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
+
+# Application-specific Directories
+from .info import application_id
+TEMP_DIR       = os.path.join(XDG_RUNTIME_DIR, 'app', application_id)
+HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 # Package Type and related stuff
 from .enums import PackageType
-from .info import project_name
 PACKAGE_TYPE = PackageType.Unknown
-TEMP_DIR     = os.path.join(XDG_CACHE_HOME, project_name) # ~/.cache/gdm-settings
 HOST_ROOT    = ''
 
 if os.environ.get('FLATPAK_ID'): # Flatpak
     PACKAGE_TYPE = PackageType.Flatpak
-    TEMP_DIR     = os.path.join(XDG_CACHE_HOME, 'tmp') # ~/.var/app/io.github.realmazharhussain.GdmSettings/cache/tmp
     HOST_ROOT    = '/run/host'
 elif os.environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
