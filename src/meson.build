@@ -1,6 +1,6 @@
 configure_file(
-          input: 'gdm-settings.in',
-         output: '@BASENAME@',
+          input: 'gdm-settings.py.in',
+         output: meson.project_name(),
   configuration: conf,
         install: true,
     install_dir: get_option('bindir'),
