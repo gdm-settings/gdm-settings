@@ -26,5 +26,6 @@ src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
 src/dialogs.py
+src/gdm-settings.py.in
 src/info.py.in
 src/settings.py
