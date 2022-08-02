@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-01 11:47+0500\n"
-"PO-Revision-Date: 2022-07-26 11:17+0000\n"
+"PO-Revision-Date: 2022-08-04 09:18+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -330,20 +330,14 @@ msgid "LEVEL"
 msgstr "SEVİYE"
 
 #: src/app.py:47
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgctxt "Description of --verbose option"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Ayrıntılı kipi etkinleştir (ayrıntı düzeyini 5 olarak ayarla)"
+msgstr "Ayrıntılı kipi etkinleştir (--verbosity=5 takma adı)"
 
 #: src/app.py:56
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
-msgstr "Sessiz kipi etkinleştir   (ayrıntı düzeyini 0 olarak ayarla)"
+msgstr "Sessiz kipi etkinleştir   (-verbosity=0 takma adı)"
 
 #: src/app.py:112
 #, python-brace-format
@@ -356,43 +350,31 @@ msgid "Assuming Verbosity level 4."
 msgstr "Ayrıntı düzeyi 4 olarak varsayılıyor."
 
 #: src/app.py:162
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed for this app to function "
-#| "properly but they are not installed on the system."
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Bu uygulamanın düzgün çalışması için aşağıdaki programların yüklü olması "
-"gerekiyor fakat sistemde yüklü değiller."
+"Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
+"fakat yüklü değiller."
 
 #: src/app.py:165
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
 
 #: src/app.py:173
-#, fuzzy
-#| msgid ""
-#| "Following programs are required to be installed on the host system for "
-#| "this app to function properly but they are not installed on the host "
-#| "system."
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Bu uygulamanın düzgün çalışması için ana sistemde aşağıdaki programların "
-"yüklü olması gerekiyor, ancak yüklü değiller."
+"Bu uygulamanın düzgün çalışması için <b>ana sistemde</b> aşağıdaki "
+"programların yüklü olması gerekiyor, ancak yüklü değiller."
 
 #: src/app.py:180
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr " • <b>Polkit</b>"
+msgstr " • <b>GDM</b>"
 
 #: src/app.py:186
 msgctxt "Missing Dependency"
@@ -402,17 +384,18 @@ msgstr " • <b>Polkit</b>"
 #: src/app.py:192
 msgctxt "Missing Dependencies Dialog"
 msgid "Click"
-msgstr ""
+msgstr "Tıkla"
 
 #: src/app.py:193
 msgctxt "Missing Dependencies Dialog"
 msgid "here"
-msgstr ""
+msgstr "buraya"
 
 #: src/app.py:195
 msgctxt "Missing Dependencies Dialog"
 msgid "for instructions on how to install these dependencies on your system."
 msgstr ""
+"bu bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için."
 
 #: src/app.py:199
 msgid "Missing Dependencies"
@@ -443,10 +426,18 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"Mevcut ekran ayarlarını uygulamak için '$XDG_CONFIG_HOME/monitors.xml' "
+"dosyası gerekli fakat dosya yok.\n"
+"\n"
+"Bu dosyayı kendiliğinden oluşturmak için,\n"
+"\n"
+"1. Sistem Ayarlarının 'Ekran' paneline gidin.\n"
+"2. Kimi ayarları değiştirin.\n"
+"3. Uygulayın."
 
 #: src/app.py:334
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Monitör Ayarları Bulunamadı"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
 #: src/app.py:373
@@ -915,7 +906,7 @@ msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/gdm-settings.py.in:31
 msgid "KeyboardInterrupt received. Exiting …"
-msgstr ""
+msgstr "KeyboardInterrupt alındı. Çıkılıyor …"
 
 #: src/settings.py:274
 msgid "Backing up default shell theme …"
