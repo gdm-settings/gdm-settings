@@ -173,9 +173,13 @@ class CommandElevator:
         else:
             self.elevator = "pkexec"
 
-    def add(self, cmd:str, /):
+    def add(self, command : str | list[str], /):
         """ Add a new command to the list """
-        return self.__list.append(cmd)
+
+        if isinstance(command, list):
+            command = ' '.join(command)
+
+        return self.__list.append(command)
 
     def clear(self):
         """ Clear command list """

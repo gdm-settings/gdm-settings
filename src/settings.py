@@ -434,20 +434,20 @@ class Settings:
         if not path.isfile(user_monitors_xml):
             raise FileNotFoundError(2, 'No such file or directory', user_monitors_xml)
 
-        self.command_elevator.add(' '.join(['machinectl', 'shell', '{gr_utils.GdmUsername}@', '/usr/bin/env',
-                                            'gsettings', 'set', 'experimental-features',
-                                            '"[\'scale-monitor-framebuffer\']"',
-                                            '&>/dev/null',
-                                           ]))
+        self.command_elevator.add(['machinectl', 'shell', '{gr_utils.GdmUsername}@', '/usr/bin/env',
+                                   'gsettings', 'set', 'experimental-features',
+                                   '"[\'scale-monitor-framebuffer\']"',
+                                   '&>/dev/null',
+                                 ])
 
-        self.command_elevator.add(' '.join(['install', '-Dm644',
-                                            user_monitors_xml,
-                                            f'~{gr_utils.GdmUsername}/.config/monitors.xml',
-                                           ]))
+        self.command_elevator.add(['install', '-Dm644',
+                                   user_monitors_xml,
+                                   f'~{gr_utils.GdmUsername}/.config/monitors.xml',
+                                 ])
 
-        self.command_elevator.add(' '.join(['chown', f'{gr_utils.GdmUsername}:',
-                                            f'~{gr_utils.GdmUsername}/.config/monitors.xml',
-                                           ]))
+        self.command_elevator.add(['chown', f'{gr_utils.GdmUsername}:',
+                                   f'~{gr_utils.GdmUsername}/.config/monitors.xml',
+                                 ])
 
         return self.command_elevator.run()
 
@@ -456,17 +456,17 @@ class Settings:
 
         if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
-            self.command_elevator.add(' '.join(['update-alternatives',  '--quiet',  '--remove',
-                                                 path.basename(gr_utils.UbuntuGdmGresourceFile),
-                                                 gr_utils.CustomGresourceFile,
-                                               ]))
+            self.command_elevator.add(['update-alternatives',  '--quiet',  '--remove',
+                                        path.basename(gr_utils.UbuntuGdmGresourceFile),
+                                        gr_utils.CustomGresourceFile,
+                                     ])
             self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
         elif path.exists(gr_utils.ShellGresourceAutoBackup):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(' '.join(['mv', '-f',
-                                                gr_utils.ShellGresourceAutoBackup,
-                                                gr_utils.ShellGresourceFile,
-                                               ]))
+            self.command_elevator.add(['mv', '-f',
+                                       gr_utils.ShellGresourceAutoBackup,
+                                       gr_utils.ShellGresourceFile,
+                                     ])
             self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
             self.command_elevator.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
 
