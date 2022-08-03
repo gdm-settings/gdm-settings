@@ -186,14 +186,15 @@ class Application(Adw.Application):
                               ' • <b>Polkit</b>'
                              )
 
-        link = 'https://github.com/realmazharhussain/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
 
         message += '\n\n'
-        message += C_('Missing Dependencies Dialog', 'Click')
-        message += f' <a href="{link}">' + C_('Missing Dependencies Dialog', 'here') + '</a> '
-        message += C_('Missing Dependencies Dialog',
-                      'for instructions on how to install these dependencies on your system.'
-                     )
+
+        link = 'https://github.com/realmazharhussain/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
+        # Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
+        # a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
+        message += _('Click <a href="{url}">here</a> for instructions on how '
+                     'to install these dependencies on your system.'
+                    ).format(url=link)
 
         dialog = Gtk.MessageDialog(
                          text = _('Missing Dependencies'),
