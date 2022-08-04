@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 11:47+0500\n"
+"POT-Creation-Date: 2022-08-04 14:17+0500\n"
 "PO-Revision-Date: 2022-07-22 17:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -387,42 +387,28 @@ msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
-#: src/app.py:192
-msgctxt "Missing Dependencies Dialog"
-msgid "Click"
-msgstr ""
-
-#: src/app.py:193
-msgctxt "Missing Dependencies Dialog"
-msgid "here"
-msgstr ""
-
+#. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
+#. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
 #: src/app.py:195
-msgctxt "Missing Dependencies Dialog"
-msgid "for instructions on how to install these dependencies on your system."
+#, python-brace-format
+msgid ""
+"Click <a href=\"{url}\">here</a> for instructions on how to install these "
+"dependencies on your system."
 msgstr ""
 
-#: src/app.py:199
+#: src/app.py:200
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:279
-msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
-"again."
-msgstr ""
-"適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
-"い。"
-
-#: src/app.py:317
+#: src/app.py:331
 msgid "Applied current display settings"
 msgstr "現在のディスプレイ設定を適用しました"
 
-#: src/app.py:319
+#: src/app.py:333
 msgid "Failed to apply current display settings"
 msgstr "現在のディスプレイ設定を適用できませんでした"
 
-#: src/app.py:323
+#: src/app.py:337
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -434,12 +420,12 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/app.py:334
+#: src/app.py:348
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:373
+#: src/app.py:387
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
@@ -447,51 +433,51 @@ msgstr ""
 "デフォルトのテーマが、'{path}' に 'default-extracted' という名前で復元されま"
 "した"
 
-#: src/app.py:375
+#: src/app.py:389
 msgid "Failed to extract default theme"
 msgstr "デフォルトのテーマを復元できませんでした"
 
-#: src/app.py:706
+#: src/app.py:720
 msgid "Appearance"
 msgstr "外観"
 
-#: src/app.py:707 src/blueprints/fonts-page.blp:20
+#: src/app.py:721 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "フォント"
 
-#: src/app.py:708
+#: src/app.py:722
 msgid "Top Bar"
 msgstr "トップバー"
 
-#: src/app.py:709 src/blueprints/sound-page.blp:20
+#: src/app.py:723 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "サウンド"
 
-#: src/app.py:710
+#: src/app.py:724
 msgid "Mouse & Touchpad"
 msgstr "マウスとタッチパッド"
 
-#: src/app.py:711 src/blueprints/display-page.blp:20
+#: src/app.py:725 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/app.py:712 src/blueprints/misc-page.blp:20
+#: src/app.py:726 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "そのほか"
 
-#: src/app.py:713
+#: src/app.py:727
 msgid "Tools"
 msgstr "ツール"
 
-#: src/app.py:768
+#: src/app.py:782
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版は、ユーザー設定のインポートに対応していません"
 
-#: src/app.py:773
+#: src/app.py:787
 msgid "Failed to reset settings"
 msgstr "設定をリセットできませんでした"
 
-#: src/app.py:777
+#: src/app.py:791
 msgid "Reset settings successfully"
 msgstr "設定をリセットしました"
 
@@ -935,3 +921,10 @@ msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
+
+#~ msgid ""
+#~ "Didn't apply. Chosen background image could not be found. Please! choose "
+#~ "again."
+#~ msgstr ""
+#~ "適用できません。選択された背景画像が見つかりませんでした。再度選択してくだ"
+#~ "さい。"
