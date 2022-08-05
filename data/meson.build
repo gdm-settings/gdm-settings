@@ -33,5 +33,15 @@ if desktop_utils.found()
   )
 endif
 
+configure_file(
+          input: 'io.github.realmazharhussain.GdmSettings.service.in',
+         output: 'io.github.realmazharhussain.GdmSettings.service',
+        install: true,
+    install_dir: get_option('datadir') / 'dbus-1/services',
+  configuration: configuration_data({
+    'bindir': get_option('prefix') / get_option('bindir'),
+  }),
+)
+
 subdir('gschemas')
 subdir('icons')
