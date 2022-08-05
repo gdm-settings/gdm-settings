@@ -8,5 +8,6 @@ TryExec=gdm-settings
 Terminal=false
 StartupNotify=true
 StartupWMClass=io.github.realmazharhussain.GdmSettings
+X-SingleMainWindow=true
 DBusActivatable=true
 Categories=GNOME;GTK;System;Settings;DesktopSettings;

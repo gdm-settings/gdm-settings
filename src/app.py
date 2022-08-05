@@ -66,6 +66,10 @@ class Application(Adw.Application):
     ## Core App Signal Handlers ##
 
     def on_activate(self, app):
+        if win := self.get_active_window():
+            win.present()
+            return
+
         logging.info(f"Application Version    = {info.version}")
         logging.info(f"Operating System       = {env.OS_PRETTY_NAME}")
         logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
