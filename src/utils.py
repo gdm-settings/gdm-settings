@@ -173,7 +173,7 @@ class CommandElevator:
         else:
             self.elevator = "pkexec"
 
-    def add(self, command : str | list[str], /):
+    def add(self, command, /):
         """ Add a new command to the list """
 
         if isinstance(command, list):
