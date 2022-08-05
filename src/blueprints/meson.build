@@ -19,8 +19,8 @@ endif
 
 custom_target('ui_files',
         input: blueprints,
-       output: project_name,
+       output: meson.project_name(),
       command: [blueprint_compiler, 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
       install: true,
-  install_dir: data_dir,
+  install_dir: get_option('datadir'),
 )

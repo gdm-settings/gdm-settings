@@ -1,1 +1,1 @@
-i18n.gettext(project_name)
+i18n.gettext(meson.project_name())

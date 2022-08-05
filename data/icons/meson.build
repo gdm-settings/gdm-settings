@@ -1,4 +1,4 @@
-hicolor_dir = data_dir / 'icons/hicolor'
+hicolor_dir = get_option('datadir') / 'icons/hicolor'
 
 if get_option('buildtype') == 'release'
   install_data('io.github.realmazharhussain.GdmSettings.svg',
