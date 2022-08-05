@@ -268,24 +268,41 @@ class Application(Adw.Application):
         pref_window.set_transient_for(widgets.main_window)
         pref_window.present()
 
-    def on_apply(self, widget):
-        self.set_settings()
+    def on_apply(self, button):
+        button.set_sensitive(False)
+        widgets.spinner.set_visible(True)
+        widgets.spinner.set_spinning(True)
 
-        from .gr_utils import BackgroundImageNotFoundError
-        try:
-            if self.settings.apply_settings():
-                widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
-            else:
-                widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
+        def apply_settings(user_data):
+            self.set_settings()
 
-        except BackgroundImageNotFoundError:
-            widgets.main_toast_overlay.add_toast (
-                Adw.Toast (
-                      title = _("Didn't apply. Chosen background image could not be found. Please! choose again."),
-                    timeout = 4,
-                   priority = "high",
+            add_toast = widgets.main_toast_overlay.add_toast
+            from .gr_utils import BackgroundImageNotFoundError
+            try:
+                toast = None
+
+                if self.settings.apply_settings():
+                    toast = widgets.apply_succeeded_toast
+                else:
+                    toast = widgets.apply_failed_toast
+
+                GLib.idle_add(add_toast, toast)
+
+            except BackgroundImageNotFoundError:
+                GLib.idle_add(add_toast,
+                    Adw.Toast (
+                          title = _("Didn't apply. Chosen background image could not be found."
+                                    " Please! choose again."),
+                        timeout = 4,
+                       priority = "high",
+                    )
                 )
-            )
+
+            GLib.idle_add(button.set_sensitive, True)
+            GLib.idle_add(widgets.spinner.set_visible, False)
+            GLib.idle_add(widgets.spinner.set_spinning, False)
+
+        GLib.Thread('apply_settings', apply_settings, None)
 
     def on_background_type_change(self, comborow, selection):
         selected = comborow.get_selected()
@@ -433,6 +450,7 @@ class Application(Adw.Application):
             "pointing_page_content",
             "misc_page_content",
             "tools_page_content",
+            "spinner",
             "apply_button",
             "main_toast_overlay",
             "apply_failed_toast",

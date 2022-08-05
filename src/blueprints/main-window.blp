@@ -25,6 +25,7 @@ Adw.ApplicationWindow main_window {
       [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
       [end] Separator { margin-start: 10; }
       [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
+      [end] Spinner spinner { spinning: false; visible: false; margin-end: 5; }
     }
 
     Adw.ToastOverlay main_toast_overlay {
