@@ -6,12 +6,12 @@ import logging
 
 APPDIR = os.environ.get('APPDIR', '')             # required for AppImage
 
-py_modules_dir = APPDIR + '@py_modules_dir@'
-sys.path.insert(1, py_modules_dir)
+py_install_dir = APPDIR + '@py_install_dir@'
+sys.path.insert(1, py_install_dir)
 
 localedir = APPDIR + '@locale_dir@'
-gettext.bindtextdomain('@project_name@', localedir)
-gettext.textdomain('@project_name@')
+gettext.bindtextdomain('gdm-settings', localedir)
+gettext.textdomain('gdm-settings')
 _ = gettext.gettext
 
 # Terminal Text Styles
@@ -20,7 +20,7 @@ style_bold   = '\033[1m'
 
 logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)s')
 
-from @py_module_name@.app import Application
+from gdm_settings.app import Application
 app = Application()
 
 try:

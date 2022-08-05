@@ -1,17 +1,23 @@
 configure_file(
           input: 'gdm-settings.py.in',
          output: meson.project_name(),
-  configuration: conf,
         install: true,
     install_dir: get_option('bindir'),
+  configuration: configuration_data({
+        'locale_dir': get_option('prefix') / get_option('localedir'),
+    'py_install_dir': python.get_install_dir(),
+  }),
 )
 
 configure_file(
           input: 'info.py.in',
          output: '@BASENAME@',
-  configuration: conf,
         install: true,
-    install_dir: py_proj_dir,
+    install_dir: python.get_install_dir() / 'gdm_settings',
+  configuration: configuration_data({
+           'version': meson.project_version(),
+        'build_type': get_option('buildtype'),
+  }),
 )
 
 source_files = files(
@@ -24,6 +30,8 @@ source_files = files(
   'theme_lists.py',
   'utils.py',
 )
-install_data(source_files, install_dir: py_proj_dir)
+install_data(source_files,
+  install_dir: python.get_install_dir() / 'gdm_settings'
+)
 
 subdir('blueprints')
