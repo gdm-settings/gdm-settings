@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-04 14:17+0500\n"
-"PO-Revision-Date: 2022-08-02 18:19+0000\n"
+"PO-Revision-Date: 2022-08-10 13:17+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -369,14 +369,13 @@ msgstr " ‎ • <b>Polkit</b>"
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
 #: src/app.py:195
-#, fuzzy, python-brace-format
-#| msgctxt "Missing Dependencies Dialog"
-#| msgid ""
-#| "for instructions on how to install these dependencies on your system."
+#, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr "תעביר אותך להנחיות איך להתקין את התלויות האלו במערכת שלך."
+msgstr ""
+"לחיצה <a href=\"{url}\">כאן</a> תעביר אותך להנחיות איך להתקין את התלויות "
+"האלו במערכת שלך."
 
 #: src/app.py:200
 msgid "Missing Dependencies"
