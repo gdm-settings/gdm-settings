@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-04 14:17+0500\n"
+"POT-Creation-Date: 2022-08-11 22:19+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -94,9 +94,11 @@ msgid "The start time's hour"
 msgstr "L'heure de début"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
 "Lorsque la fonction « mode-nuit-planification-automatique » est désactivée, "
 "utilisez cette heure de début en heures."
@@ -106,9 +108,11 @@ msgid "The start time's minute"
 msgstr "La minute de l'heure de début"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time "
-"minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
 "Lorsque la fonction « mode-nuit-planification-automatique » est désactivée, "
 "utilisez cette heure de début en minutes."
@@ -124,9 +128,7 @@ msgstr "La minute de l'heure de fin"
 #| msgid ""
 #| "When “night-light-schedule-automatic” is disabled, use this end time "
 #| "minutes."
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time in "
-"hours."
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
 "Lorsque la fonction « mode-nuit-planification-automatique » est désactivée, "
 "utilisez cette heure de fin en minutes."
@@ -136,19 +138,22 @@ msgid "The end time's minute"
 msgstr "La minute de l'heure de fin"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "Lorsque la fonction « mode-nuit-planification-automatique » est désactivée, "
 "utilisez cette heure de fin en minutes."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "Vitesse du pointeur"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -360,67 +365,67 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgstr "Activer le mode tranquille (définir le niveau de verbosité 0)"
 
-#: src/app.py:112
+#: src/app.py:119
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 "{level} est un niveau de verbosité invalide. Les valeurs acceptées sont de 0 "
 "à 5."
 
-#: src/app.py:113
+#: src/app.py:120
 msgid "Assuming Verbosity level 4."
 msgstr "Niveau de verbosité supposé à 4."
 
-#: src/app.py:162
+#: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:165
+#: src/app.py:171
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:173
+#: src/app.py:179
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:180
+#: src/app.py:186
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:186
+#: src/app.py:192
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:195
+#: src/app.py:201
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:200
+#: src/app.py:206
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:331
+#: src/app.py:272
 msgid "Applied current display settings"
 msgstr "Paramètres d'affichage actuels appliqués"
 
-#: src/app.py:333
+#: src/app.py:274
 msgid "Failed to apply current display settings"
 msgstr "Échec de l'application des paramètres d'affichage actuels"
 
-#: src/app.py:337
+#: src/app.py:278
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -432,64 +437,64 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/app.py:348
+#: src/app.py:289
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:387
+#: src/app.py:328
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Thème par défaut extrait vers '{path}' sous le nom 'default-extracted'"
 
-#: src/app.py:389
+#: src/app.py:330
 msgid "Failed to extract default theme"
 msgstr "Échec de l'extraction du thème par défaut"
 
-#: src/app.py:720
+#: src/app.py:658
 msgid "Appearance"
 msgstr "Apparence"
 
-#: src/app.py:721 src/blueprints/fonts-page.blp:20
+#: src/app.py:659 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Polices"
 
-#: src/app.py:722
+#: src/app.py:660
 msgid "Top Bar"
 msgstr "Barre supérieure"
 
-#: src/app.py:723 src/blueprints/sound-page.blp:20
+#: src/app.py:661 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Son"
 
-#: src/app.py:724
+#: src/app.py:662
 msgid "Mouse & Touchpad"
 msgstr "Souris et pavé tactile"
 
-#: src/app.py:725 src/blueprints/display-page.blp:20
+#: src/app.py:663 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Affichage"
 
-#: src/app.py:726 src/blueprints/misc-page.blp:20
+#: src/app.py:664 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Divers"
 
-#: src/app.py:727
+#: src/app.py:665
 msgid "Tools"
 msgstr "Outils"
 
-#: src/app.py:782
+#: src/app.py:690
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "L'importation des paramètres utilisateur n'est pas supporté dans la version "
 "Flatpak"
 
-#: src/app.py:787
+#: src/app.py:695
 msgid "Failed to reset settings"
 msgstr "Échec de la réinitialisation des paramètres"
 
-#: src/app.py:791
+#: src/app.py:698
 msgid "Reset settings successfully"
 msgstr "Réinitialisation des paramètres réussie"
 
@@ -554,7 +559,7 @@ msgstr "Aucun"
 msgid "Image"
 msgstr "Image"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:42
 msgid "Color"
 msgstr "Couleur"
 
@@ -562,11 +567,7 @@ msgstr "Couleur"
 msgid "The image to use as background"
 msgstr "L'image à utiliser comme arrière-plan"
 
-#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
-msgid "Choose File"
-msgstr "Choisir un fichier"
-
-#: src/blueprints/appearance-page.blp:50
+#: src/blueprints/appearance-page.blp:43
 msgid "The color to use as background"
 msgstr "La couleur à utiliser comme arrière-plan"
 
@@ -676,23 +677,19 @@ msgstr "À propos"
 msgid "Quit"
 msgstr "Quitter"
 
-#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
-msgid "Images"
-msgstr "Images"
-
-#: src/blueprints/main-window.blp:66
+#: src/blueprints/main-window.blp:67
 msgid "Failed to apply settings"
 msgstr "Échec de l'application des paramètres"
 
-#: src/blueprints/main-window.blp:72
+#: src/blueprints/main-window.blp:73
 msgid "Settings applied successfully"
 msgstr "Paramètres appliqués avec succès"
 
-#: src/blueprints/main-window.blp:78
+#: src/blueprints/main-window.blp:79
 msgid "User settings imported"
 msgstr "Paramètres utilisateur importés"
 
-#: src/blueprints/main-window.blp:84
+#: src/blueprints/main-window.blp:85
 msgid "Settings reloaded"
 msgstr "Paramètres rechargés"
 
@@ -720,7 +717,7 @@ msgstr "Logo"
 msgid "The image to show below user list"
 msgstr "L'image à afficher sous la liste des utilisateurs"
 
-#: src/blueprints/misc-page.blp:63
+#: src/blueprints/misc-page.blp:57
 msgid "Welcome Message"
 msgstr "Message de bienvenue"
 
@@ -880,6 +877,32 @@ msgstr "Énergie"
 msgid "Show battery percentage"
 msgstr "Montrer le pourcentage de batterie"
 
+#: src/common_widgets.py:18
+msgid "Choose File"
+msgstr "Choisir un fichier"
+
+#: src/common_widgets.py:24
+#, fuzzy
+#| msgid "None"
+msgid "(None)"
+msgstr "Aucun"
+
+#: src/common_widgets.py:124
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "Choisir un fichier"
+
+#: src/common_widgets.py:125
+msgid "Cancel"
+msgstr ""
+
+#: src/common_widgets.py:146
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "Choisir un fichier"
+
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
@@ -910,32 +933,35 @@ msgstr "Irénée Thirion <irenee.thirion@outlook.fr>"
 msgid "KeyboardInterrupt received. Exiting …"
 msgstr ""
 
-#: src/settings.py:274
+#: src/settings.py:198
 #, fuzzy
 #| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
 msgstr "enregistrement du thème par défaut …"
 
-#: src/settings.py:310
+#: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings.py:317
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
-#: src/settings.py:458
+#: src/settings.py:462
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings.py:465
+#: src/settings.py:469
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Réinitialisation des paramètres de GResource pour les systèmes non-Ubuntu …"
+
+#~ msgid "Images"
+#~ msgstr "Images"
 
 #~ msgid ""
 #~ "Didn't apply. Chosen background image could not be found. Please! choose "

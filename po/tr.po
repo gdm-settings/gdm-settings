@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-04 14:17+0500\n"
+"POT-Creation-Date: 2022-08-11 22:19+0500\n"
 "PO-Revision-Date: 2022-08-04 09:18+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -91,9 +91,11 @@ msgid "The start time's hour"
 msgstr "Başlangıç saati"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
 "“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
 "saat olarak kullan."
@@ -103,9 +105,11 @@ msgid "The start time's minute"
 msgstr "Başlangıç saati dakikası"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time "
-"minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
 "“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
 "dakika olarak kullan."
@@ -115,9 +119,11 @@ msgid "The end time's hour"
 msgstr "Bitiş saati"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
 "“night-light-schedule-automatic” pasifleştirildiğinde, bu bitiş saatini "
 "kullan."
@@ -127,19 +133,22 @@ msgid "The end time's minute"
 msgstr "Bitiş dakikası"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "“night-light-schedule-automatic” pasifleştirildiğinde, bu bitiş dakikasını "
 "kullan."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "İmleç hızı"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -339,17 +348,17 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgstr "Sessiz kipi etkinleştir   (-verbosity=0 takma adı)"
 
-#: src/app.py:112
+#: src/app.py:119
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 "Ayrıntı düzeyi {level} geçersiz. Kabul edilen değerler 0 ile 5 arasındadır."
 
-#: src/app.py:113
+#: src/app.py:120
 msgid "Assuming Verbosity level 4."
 msgstr "Ayrıntı düzeyi 4 olarak varsayılıyor."
 
-#: src/app.py:162
+#: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -357,12 +366,12 @@ msgstr ""
 "Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
 "fakat yüklü değiller."
 
-#: src/app.py:165
+#: src/app.py:171
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
 
-#: src/app.py:173
+#: src/app.py:179
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -371,19 +380,19 @@ msgstr ""
 "Bu uygulamanın düzgün çalışması için <b>ana sistemde</b> aşağıdaki "
 "programların yüklü olması gerekiyor, ancak yüklü değiller."
 
-#: src/app.py:180
+#: src/app.py:186
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:186
+#: src/app.py:192
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:195
+#: src/app.py:201
 #, fuzzy, python-brace-format
 #| msgctxt "Missing Dependencies Dialog"
 #| msgid ""
@@ -394,19 +403,19 @@ msgid ""
 msgstr ""
 "bu bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için."
 
-#: src/app.py:200
+#: src/app.py:206
 msgid "Missing Dependencies"
 msgstr "Eksik Bağımlılıklar"
 
-#: src/app.py:331
+#: src/app.py:272
 msgid "Applied current display settings"
 msgstr "Uygulanan geçerli ekran ayarları"
 
-#: src/app.py:333
+#: src/app.py:274
 msgid "Failed to apply current display settings"
 msgstr "Geçerli ekran ayarları uygulanamadı"
 
-#: src/app.py:337
+#: src/app.py:278
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -426,61 +435,61 @@ msgstr ""
 "2. Kimi ayarları değiştirin.\n"
 "3. Uygulayın."
 
-#: src/app.py:348
+#: src/app.py:289
 msgid "Monitor Settings Not Found"
 msgstr "Monitör Ayarları Bulunamadı"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:387
+#: src/app.py:328
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Öntanımlı shell teması '{folder}' klasörüne '{name}' adıyla çıkartıldı"
 
-#: src/app.py:389
+#: src/app.py:330
 msgid "Failed to extract default theme"
 msgstr "Öntanımlı shell teması çıkartılamadı"
 
-#: src/app.py:720
+#: src/app.py:658
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/app.py:721 src/blueprints/fonts-page.blp:20
+#: src/app.py:659 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/app.py:722
+#: src/app.py:660
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/app.py:723 src/blueprints/sound-page.blp:20
+#: src/app.py:661 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Ses"
 
-#: src/app.py:724
+#: src/app.py:662
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/app.py:725 src/blueprints/display-page.blp:20
+#: src/app.py:663 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Ekran"
 
-#: src/app.py:726 src/blueprints/misc-page.blp:20
+#: src/app.py:664 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Çeşitli"
 
-#: src/app.py:727
+#: src/app.py:665
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/app.py:782
+#: src/app.py:690
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
 
-#: src/app.py:787
+#: src/app.py:695
 msgid "Failed to reset settings"
 msgstr "Ayarlar sıfırlanamadı"
 
-#: src/app.py:791
+#: src/app.py:698
 msgid "Reset settings successfully"
 msgstr "Ayarlar sıfırlandı"
 
@@ -545,7 +554,7 @@ msgstr "Yok"
 msgid "Image"
 msgstr "Resim"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:42
 msgid "Color"
 msgstr "Renk"
 
@@ -553,11 +562,7 @@ msgstr "Renk"
 msgid "The image to use as background"
 msgstr "Arka plan olarak kullanılacak resim"
 
-#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
-msgid "Choose File"
-msgstr "Dosya Seç"
-
-#: src/blueprints/appearance-page.blp:50
+#: src/blueprints/appearance-page.blp:43
 msgid "The color to use as background"
 msgstr "Arka plan olarak kullanılacak renk"
 
@@ -667,23 +672,19 @@ msgstr "Hakkında"
 msgid "Quit"
 msgstr "Çık"
 
-#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
-msgid "Images"
-msgstr "Resimler"
-
-#: src/blueprints/main-window.blp:66
+#: src/blueprints/main-window.blp:67
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/blueprints/main-window.blp:72
+#: src/blueprints/main-window.blp:73
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/blueprints/main-window.blp:78
+#: src/blueprints/main-window.blp:79
 msgid "User settings imported"
 msgstr "Kullanıcı ayarları içe aktarıldı"
 
-#: src/blueprints/main-window.blp:84
+#: src/blueprints/main-window.blp:85
 msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
 
@@ -711,7 +712,7 @@ msgstr "Logo"
 msgid "The image to show below user list"
 msgstr "Kullanıcı listesinin altında gösterilecek resim"
 
-#: src/blueprints/misc-page.blp:63
+#: src/blueprints/misc-page.blp:57
 msgid "Welcome Message"
 msgstr "Hoşgeldin Mesajı"
 
@@ -871,6 +872,32 @@ msgstr "Güç"
 msgid "Show battery percentage"
 msgstr "Batarya yüzdesini göster"
 
+#: src/common_widgets.py:18
+msgid "Choose File"
+msgstr "Dosya Seç"
+
+#: src/common_widgets.py:24
+#, fuzzy
+#| msgid "None"
+msgid "(None)"
+msgstr "Yok"
+
+#: src/common_widgets.py:124
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "Dosya Seç"
+
+#: src/common_widgets.py:125
+msgid "Cancel"
+msgstr ""
+
+#: src/common_widgets.py:146
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "Dosya Seç"
+
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
@@ -899,29 +926,32 @@ msgstr "Sabri Ünal <libreajans@gmail.com>"
 msgid "KeyboardInterrupt received. Exiting …"
 msgstr "KeyboardInterrupt alındı. Çıkılıyor …"
 
-#: src/settings.py:274
+#: src/settings.py:198
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:310
+#: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:317
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:458
+#: src/settings.py:462
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:465
+#: src/settings.py:469
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
+
+#~ msgid "Images"
+#~ msgstr "Resimler"
 
 #~ msgctxt "Missing Dependencies Dialog"
 #~ msgid "Click"

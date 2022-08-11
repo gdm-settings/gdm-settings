@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-04 14:17+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-11 22:19+0500\n"
 "PO-Revision-Date: 2022-08-09 05:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -91,9 +91,11 @@ msgid "The start time's hour"
 msgstr "Giờ bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
@@ -101,9 +103,11 @@ msgid "The start time's minute"
 msgstr "Phút bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time "
-"minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
@@ -111,9 +115,11 @@ msgid "The end time's hour"
 msgstr "Giờ kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ kết thúc này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
@@ -121,17 +127,20 @@ msgid "The end time's minute"
 msgstr "Phút kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút kết thúc này."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "Tốc độ con trỏ chuột/touchpad"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -328,18 +337,18 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgstr "Bật chế độ quiet (yên lặng, --verbosity=0)"
 
-#: src/app.py:112
+#: src/app.py:119
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 "{level} là mức độ hiển thị chi tiết không hợp lệ. Giá trị hợp lệ bắt đầu từ "
 "0 đến 5."
 
-#: src/app.py:113
+#: src/app.py:120
 msgid "Assuming Verbosity level 4."
 msgstr "Giả sử mức độ hiển thị chi tiết là 4."
 
-#: src/app.py:162
+#: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -347,12 +356,12 @@ msgstr ""
 "Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
 "động trơn tru, nhưng nó chưa được cài đặt."
 
-#: src/app.py:165
+#: src/app.py:171
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (Developer Edition - phiên bản cho nhà phát triển)"
 
-#: src/app.py:173
+#: src/app.py:179
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -361,19 +370,19 @@ msgstr ""
 "Những chương trình dưới đây cần có <b>trên máy host</b> để ứng dụng này có "
 "thể hoạt động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
-#: src/app.py:180
+#: src/app.py:186
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:186
+#: src/app.py:192
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:195
+#: src/app.py:201
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -382,19 +391,19 @@ msgstr ""
 "Click <a href=\"{url}\">ở đây</a> để xem hướng dẫn cách cài những phần mềm/"
 "thư viên này trên máy của bạn."
 
-#: src/app.py:200
+#: src/app.py:206
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:331
+#: src/app.py:272
 msgid "Applied current display settings"
 msgstr "Đã áp dụng cài đặt màn hình hiện tại"
 
-#: src/app.py:333
+#: src/app.py:274
 msgid "Failed to apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
-#: src/app.py:337
+#: src/app.py:278
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -414,63 +423,63 @@ msgstr ""
 "2. Thay đổi một số cài đặt bất kì.\n"
 "3. Áp dụng."
 
-#: src/app.py:348
+#: src/app.py:289
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:387
+#: src/app.py:328
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Theme mặc định của shell đã được trích xuất ra '{folder}' dưới dạng '{name}'"
 
-#: src/app.py:389
+#: src/app.py:330
 msgid "Failed to extract default theme"
 msgstr "Trích xuất theme mặc định của shell thất bại"
 
-#: src/app.py:720
+#: src/app.py:658
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: src/app.py:721 src/blueprints/fonts-page.blp:20
+#: src/app.py:659 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Phông chữ"
 
-#: src/app.py:722
+#: src/app.py:660
 msgid "Top Bar"
 msgstr "Top Bar"
 
-#: src/app.py:723 src/blueprints/sound-page.blp:20
+#: src/app.py:661 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Âm thanh"
 
-#: src/app.py:724
+#: src/app.py:662
 msgid "Mouse & Touchpad"
 msgstr "Chuột & Touchpad"
 
-#: src/app.py:725 src/blueprints/display-page.blp:20
+#: src/app.py:663 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Màn hình"
 
-#: src/app.py:726 src/blueprints/misc-page.blp:20
+#: src/app.py:664 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Các cài đặt khác"
 
-#: src/app.py:727
+#: src/app.py:665
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: src/app.py:782
+#: src/app.py:690
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Import các cài đặt của người dùng không được hỗ trợ trong phiên bản Flatpak"
 
-#: src/app.py:787
+#: src/app.py:695
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
 
-#: src/app.py:791
+#: src/app.py:698
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
@@ -535,7 +544,7 @@ msgstr "Không có gì"
 msgid "Image"
 msgstr "Hình ảnh"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:42
 msgid "Color"
 msgstr "Màu"
 
@@ -543,11 +552,7 @@ msgstr "Màu"
 msgid "The image to use as background"
 msgstr "Hình ảnh sẽ được sử dụng làm nền"
 
-#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
-msgid "Choose File"
-msgstr "Chọn file"
-
-#: src/blueprints/appearance-page.blp:50
+#: src/blueprints/appearance-page.blp:43
 msgid "The color to use as background"
 msgstr "Màu sẽ được dùng làm nền cho GDM"
 
@@ -657,23 +662,19 @@ msgstr "Về ứng dụng này"
 msgid "Quit"
 msgstr "Thoát"
 
-#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
-msgid "Images"
-msgstr "Hình ảnh"
-
-#: src/blueprints/main-window.blp:66
+#: src/blueprints/main-window.blp:67
 msgid "Failed to apply settings"
 msgstr "Áp dụng cài đặt thất bại"
 
-#: src/blueprints/main-window.blp:72
+#: src/blueprints/main-window.blp:73
 msgid "Settings applied successfully"
 msgstr "Áp dụng cài đặt thành công"
 
-#: src/blueprints/main-window.blp:78
+#: src/blueprints/main-window.blp:79
 msgid "User settings imported"
 msgstr "Cài đặt người dùng đã được import"
 
-#: src/blueprints/main-window.blp:84
+#: src/blueprints/main-window.blp:85
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
@@ -701,7 +702,7 @@ msgstr "Logo"
 msgid "The image to show below user list"
 msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
 
-#: src/blueprints/misc-page.blp:63
+#: src/blueprints/misc-page.blp:57
 msgid "Welcome Message"
 msgstr "Thông điệp chào mừng (Welcome Message)"
 
@@ -861,6 +862,32 @@ msgstr "Nguồn"
 msgid "Show battery percentage"
 msgstr "Hiển thị phần trăm pin"
 
+#: src/common_widgets.py:18
+msgid "Choose File"
+msgstr "Chọn file"
+
+#: src/common_widgets.py:24
+#, fuzzy
+#| msgid "None"
+msgid "(None)"
+msgstr "Không có gì"
+
+#: src/common_widgets.py:124
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "Chọn file"
+
+#: src/common_widgets.py:125
+msgid "Cancel"
+msgstr ""
+
+#: src/common_widgets.py:146
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "Chọn file"
+
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Bản quyền © 2021 Mazhar Hussain"
@@ -889,29 +916,32 @@ msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 msgid "KeyboardInterrupt received. Exiting …"
 msgstr "Nhận được tín hiệu KeyboardInterrupt. Đang thoát…"
 
-#: src/settings.py:274
+#: src/settings.py:198
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
-#: src/settings.py:310
+#: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
-#: src/settings.py:317
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:458
+#: src/settings.py:462
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:465
+#: src/settings.py:469
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
+
+#~ msgid "Images"
+#~ msgstr "Hình ảnh"
 
 #~ msgid ""
 #~ "Didn't apply. Chosen background image could not be found. Please! choose "

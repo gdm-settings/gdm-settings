@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-04 14:17+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-11 22:19+0500\n"
 "PO-Revision-Date: 2022-08-05 10:19+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -92,9 +92,11 @@ msgid "The start time's hour"
 msgstr "Inschakelen om (uur)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "starttijd aangehouden."
@@ -104,9 +106,11 @@ msgid "The start time's minute"
 msgstr "Inschakelen om (minuut)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this start time "
-"minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this start time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "starttijd aangehouden."
@@ -116,9 +120,11 @@ msgid "The end time's hour"
 msgstr "Uitschakelen om (uur)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time in "
-"hours."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time in "
+#| "hours."
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "eindtijd aangehouden."
@@ -128,19 +134,22 @@ msgid "The end time's minute"
 msgstr "Uitschakelen om (minuut)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-msgid ""
-"When “night-light-schedule-automatic” is disabled, use this end time minutes."
+#, fuzzy
+#| msgid ""
+#| "When “night-light-schedule-automatic” is disabled, use this end time "
+#| "minutes."
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
 "eindtijd aangehouden."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
 msgstr "Cursorsnelheid"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -340,18 +349,18 @@ msgctxt "Description of --quiet option"
 msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgstr "Stille modus inschakelen   (alias --verbosity=0)"
 
-#: src/app.py:112
+#: src/app.py:119
 #, python-brace-format
 msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgstr ""
 "{level} is geen foutopsporingsniveau. Foutopsporingsniveaus liggen tussen 0 "
 "en 5."
 
-#: src/app.py:113
+#: src/app.py:120
 msgid "Assuming Verbosity level 4."
 msgstr "Verondersteld: foutopsporingsniveau 4."
 
-#: src/app.py:162
+#: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -359,12 +368,12 @@ msgstr ""
 "Deze toepassing vereist de volgende software, welke niet geïnstalleerd is op "
 "uw systeem."
 
-#: src/app.py:165
+#: src/app.py:171
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (ontwikkelaarsuitgave)"
 
-#: src/app.py:173
+#: src/app.py:179
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -373,19 +382,19 @@ msgstr ""
 "De volgende afhankelijkheden zijn vereist voor het functioneren van deze "
 "toepassing, maar niet aanwezig op het hostsysteem."
 
-#: src/app.py:180
+#: src/app.py:186
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:186
+#: src/app.py:192
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:195
+#: src/app.py:201
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -393,19 +402,19 @@ msgid ""
 msgstr ""
 "Klik <a href=\"{url}\">hier</a> om de installatie-instructies te bekijken."
 
-#: src/app.py:200
+#: src/app.py:206
 msgid "Missing Dependencies"
 msgstr "Ontbrekende afhankelijkheden"
 
-#: src/app.py:331
+#: src/app.py:272
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/app.py:333
+#: src/app.py:274
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
-#: src/app.py:337
+#: src/app.py:278
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -425,62 +434,62 @@ msgstr ""
 "2. Pas een voorkeur aan;\n"
 "3. Pas de voorkeuren toe."
 
-#: src/app.py:348
+#: src/app.py:289
 msgid "Monitor Settings Not Found"
 msgstr "Beeldschermvoorkeuren ontbreken"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:387
+#: src/app.py:328
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Het standaard Shell-thema is uitgepakt naar ‘{folder}’ onder de naam ‘{name}’"
 
-#: src/app.py:389
+#: src/app.py:330
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/app.py:720
+#: src/app.py:658
 msgid "Appearance"
 msgstr "Vormgeving"
 
-#: src/app.py:721 src/blueprints/fonts-page.blp:20
+#: src/app.py:659 src/blueprints/fonts-page.blp:20
 msgid "Fonts"
 msgstr "Lettertypen"
 
-#: src/app.py:722
+#: src/app.py:660
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-#: src/app.py:723 src/blueprints/sound-page.blp:20
+#: src/app.py:661 src/blueprints/sound-page.blp:20
 msgid "Sound"
 msgstr "Geluid"
 
-#: src/app.py:724
+#: src/app.py:662
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
 
-#: src/app.py:725 src/blueprints/display-page.blp:20
+#: src/app.py:663 src/blueprints/display-page.blp:20
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: src/app.py:726 src/blueprints/misc-page.blp:20
+#: src/app.py:664 src/blueprints/misc-page.blp:20
 msgid "Miscellaneous"
 msgstr "Overig"
 
-#: src/app.py:727
+#: src/app.py:665
 msgid "Tools"
 msgstr "Hulpmiddelen"
 
-#: src/app.py:782
+#: src/app.py:690
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
 
-#: src/app.py:787
+#: src/app.py:695
 msgid "Failed to reset settings"
 msgstr "De standaardwaarden kunnen niet worden hersteld"
 
-#: src/app.py:791
+#: src/app.py:698
 msgid "Reset settings successfully"
 msgstr "De standaardwaarden zijn hersteld"
 
@@ -545,7 +554,7 @@ msgstr "Geen"
 msgid "Image"
 msgstr "Afbeelding"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:49
+#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:42
 msgid "Color"
 msgstr "Kleur"
 
@@ -553,11 +562,7 @@ msgstr "Kleur"
 msgid "The image to use as background"
 msgstr "De afbeelding die wordt ingesteld als achtergrond"
 
-#: src/blueprints/appearance-page.blp:43 src/blueprints/misc-page.blp:56
-msgid "Choose File"
-msgstr "Kies een bestand"
-
-#: src/blueprints/appearance-page.blp:50
+#: src/blueprints/appearance-page.blp:43
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
@@ -667,23 +672,19 @@ msgstr "Over"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/blueprints/main-window.blp:42 src/blueprints/main-window.blp:48
-msgid "Images"
-msgstr "Afbeeldingen"
-
-#: src/blueprints/main-window.blp:66
+#: src/blueprints/main-window.blp:67
 msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
 
-#: src/blueprints/main-window.blp:72
+#: src/blueprints/main-window.blp:73
 msgid "Settings applied successfully"
 msgstr "De voorkeuren zijn ingesteld"
 
-#: src/blueprints/main-window.blp:78
+#: src/blueprints/main-window.blp:79
 msgid "User settings imported"
 msgstr "De voorkeuren zijn geïmporteerd"
 
-#: src/blueprints/main-window.blp:84
+#: src/blueprints/main-window.blp:85
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
@@ -711,7 +712,7 @@ msgstr "Logo"
 msgid "The image to show below user list"
 msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
 
-#: src/blueprints/misc-page.blp:63
+#: src/blueprints/misc-page.blp:57
 msgid "Welcome Message"
 msgstr "Welkomstbericht"
 
@@ -871,6 +872,32 @@ msgstr "Energie"
 msgid "Show battery percentage"
 msgstr "Accupercentage tonen"
 
+#: src/common_widgets.py:18
+msgid "Choose File"
+msgstr "Kies een bestand"
+
+#: src/common_widgets.py:24
+#, fuzzy
+#| msgid "None"
+msgid "(None)"
+msgstr "Geen"
+
+#: src/common_widgets.py:124
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "Kies een bestand"
+
+#: src/common_widgets.py:125
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/common_widgets.py:146
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "Kies een bestand"
+
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
@@ -899,29 +926,32 @@ msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 msgid "KeyboardInterrupt received. Exiting …"
 msgstr "Toetsenbordonderbreking vastgesteld - bezig met afsluiten…"
 
-#: src/settings.py:274
+#: src/settings.py:198
 msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
-#: src/settings.py:310
+#: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:317
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:458
+#: src/settings.py:462
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:465
+#: src/settings.py:469
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
+
+#~ msgid "Images"
+#~ msgstr "Afbeeldingen"
 
 #~ msgctxt "Missing Dependencies Dialog"
 #~ msgid "Click"
@@ -976,9 +1006,6 @@ msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…
 
 #~ msgid "Directories"
 #~ msgstr "Mappen"
-
-#~ msgid "Cancel"
-#~ msgstr "Annuleren"
 
 #~ msgid "Select"
 #~ msgstr "Kiezen"
