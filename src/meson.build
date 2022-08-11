@@ -22,6 +22,8 @@ configure_file(
 
 source_files = files(
   'app.py',
+  'bind_utils.py',
+  'common_widgets.py',
   'dialogs.py',
   'enums.py',
   'env.py',

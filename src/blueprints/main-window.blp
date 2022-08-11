@@ -3,7 +3,7 @@ using Adw 1;
 
 menu app_menu {
   section {
-    item (_("Refresh"), "app.reload_settings")
+    item (_("Refresh"), "app.refresh")
     item (_("Import user settings"), "app.import_user_settings")
     item (_("Reset settings"), "app.reset_settings")
   }
@@ -37,6 +37,7 @@ Adw.ApplicationWindow main_window {
   };
 }
 
+/*
 FileChooserNative background_image_chooser {
   transient-for: main_window;
   modal: true;
@@ -49,7 +50,6 @@ FileChooserNative logo_chooser {
   filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
 }
 
-/*
 FileChooserNative extracted_theme_destination_chooser {
   transient-for: main_window;
   modal: true;

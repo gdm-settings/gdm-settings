@@ -36,19 +36,11 @@ ScrolledWindow appearance_page_content {
         Adw.ActionRow background_image_actionrow {
           title: _("Image");
           subtitle: _("The image to use as background");
-          visible: false;
-          activatable-widget: background_image_button;
-
-          Button background_image_button {
-            label: _("Choose File");
-            valign: center;
-          }
         }
 
         Adw.ActionRow background_color_actionrow {
           title: _("Color");
           subtitle: _("The color to use as background");
-          visible: false;
           activatable-widget: background_color_button;
 
           ColorButton background_color_button {

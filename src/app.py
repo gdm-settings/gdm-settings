@@ -73,18 +73,21 @@ class Application(Adw.Application):
         logging.info(f"Application Version    = {info.version}")
         logging.info(f"Operating System       = {env.OS_PRETTY_NAME}")
         logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
+        logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
+        logging.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
 
-        self.initialize_settings()
+        from .settings import SettingsManager
+        self.settings_manager = SettingsManager()
+
         self.get_widgets()
-        self.bind_to_gsettings()
+        self.add_image_choosers()
         self.set_widget_properties()
-        self.load_theme_lists()
-        self.connect_signals()
-        self.load_settings_to_widgets()
         self.add_pages_to_page_stack()
+        self.load_theme_lists()
+        self.bind_to_gsettings()
+        self.connect_signals()
         self.create_actions()
         self.keyboard_shortcuts()
-        self.restore_window_state()
         self.add_window(widgets.main_window)
         widgets.main_window.present()
 
@@ -120,8 +123,7 @@ class Application(Adw.Application):
         return -1
 
     def on_shutdown(self, app):
-        self.save_window_state()
-        self.settings.cleanup()
+        self.settings_manager.cleanup()
 
 
     ### Some utility functions ###
@@ -230,29 +232,6 @@ class Application(Adw.Application):
         page.set_title(title)
 
 
-    ### Settings getter functions ###
-
-    def load_comborow_setting(self, name):
-        comborow = getattr(widgets, name+'_comborow')
-        setting  = getattr(self.settings, name)
-
-        selection_position = 0;
-        for item in comborow.get_model():
-            if setting == item.get_string():
-                comborow.set_selected(selection_position)
-                break
-            else:
-                selection_position += 1
-
-
-    ### Settings setter functions ###
-
-    def set_file_chooser_setting(self, name):
-        file_chooser = getattr(widgets, name+'_chooser')
-        if file := file_chooser.get_file():
-            setattr(self.settings, name, file.get_path())
-
-
     ### Signal handlers for Widgets ###
 
     def show_about_dialog(self):
@@ -270,70 +249,24 @@ class Application(Adw.Application):
 
     def on_apply(self, button):
         button.set_sensitive(False)
-        widgets.spinner.set_visible(True)
         widgets.spinner.set_spinning(True)
+        self.settings_manager.apply_settings_async(self.on_apply_finished)
 
-        def apply_settings(user_data):
-            self.set_settings()
+    def on_apply_finished(self, source_object, result, user_data):
+        status = self.settings_manager.apply_settings_finish(result)
 
-            add_toast = widgets.main_toast_overlay.add_toast
-            from .gr_utils import BackgroundImageNotFoundError
-            try:
-                toast = None
-
-                if self.settings.apply_settings():
-                    toast = widgets.apply_succeeded_toast
-                else:
-                    toast = widgets.apply_failed_toast
-
-                GLib.idle_add(add_toast, toast)
-
-            except BackgroundImageNotFoundError:
-                GLib.idle_add(add_toast,
-                    Adw.Toast (
-                          title = _("Didn't apply. Chosen background image could not be found."
-                                    " Please! choose again."),
-                        timeout = 4,
-                       priority = "high",
-                    )
-                )
-
-            GLib.idle_add(button.set_sensitive, True)
-            GLib.idle_add(widgets.spinner.set_visible, False)
-            GLib.idle_add(widgets.spinner.set_spinning, False)
-
-        GLib.Thread('apply_settings', apply_settings, None)
-
-    def on_background_type_change(self, comborow, selection):
-        selected = comborow.get_selected()
-        if selected == 1:
-            widgets.background_image_actionrow.show()
-            widgets.background_color_actionrow.hide()
-        elif selected == 2:
-            widgets.background_color_actionrow.show()
-            widgets.background_image_actionrow.hide()
+        if status.success:
+            widgets.main_toast_overlay.add_toast(widgets.apply_succeeded_toast)
         else:
-            widgets.background_image_actionrow.hide()
-            widgets.background_color_actionrow.hide()
+            widgets.main_toast_overlay.add_toast(widgets.apply_failed_toast)
 
-    def on_background_image_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.ACCEPT:
-          image_file = widgets.background_image_chooser.get_file()
-          image_basename = image_file.get_basename()
-          widgets.background_image_button.set_label(image_basename)
-        widgets.background_image_chooser.hide()
-
-    def on_logo_chooser_response(self, widget, response):
-        if response == Gtk.ResponseType.ACCEPT:
-          image_file = widgets.logo_chooser.get_file()
-          image_basename = image_file.get_basename()
-          widgets.logo_button.set_label(image_basename)
-        widgets.logo_chooser.hide()
+        widgets.apply_button.set_sensitive(True)
+        widgets.spinner.set_spinning(False)
 
     def on_apply_current_display_settings(self, button):
 
         try:
-            status = self.settings.apply_current_display_settings()
+            status = self.settings_manager.apply_current_display_settings()
             toast = Adw.Toast(timeout=2, priority="high")
             if status.success:
                 toast.props.title = _("Applied current display settings")
@@ -378,9 +311,9 @@ class Application(Adw.Application):
 
         # Appy top bar tweaks (if enabled)
         if widgets.include_top_bar_tweaks_switch.get_active():
-            self.set_settings()
+            #self.set_settings()
             with open(join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
-                print(self.settings.get_setting_css(), file=shell_css)
+                print(self.settings_manager.get_setting_css(), file=shell_css)
 
         # Copy extracted theme to its permanent path
         from .utils import CommandElevator
@@ -417,10 +350,6 @@ class Application(Adw.Application):
         level = (6 - verbosity) * 10
         logging.root.setLevel(level)
 
-    def initialize_settings(self):
-        from .settings import Settings
-        self.settings = Settings()
-        self.window_state = Gio.Settings(schema_id=f'{info.application_id}.window-state')
 
     def get_widgets(self):
 
@@ -464,8 +393,8 @@ class Application(Adw.Application):
             "cursor_theme_comborow",
             "background_type_comborow",
             "background_image_actionrow",
-            "background_image_button",
-            "background_image_chooser",
+            #"background_image_button",
+            #"background_image_chooser",
             "background_color_actionrow",
             "background_color_button",
 
@@ -517,18 +446,21 @@ class Application(Adw.Application):
 
             # Widgets from Misc page
             "enable_logo_switch",
-            "logo_button",
+            "logo_actionrow",
+            #"logo_button",
             "enable_welcome_message_switch",
             "welcome_message_entry",
             "disable_restart_buttons_switch",
             "disable_user_list_switch",
-            "logo_chooser",
+            #"logo_chooser",
 
             # Widgets from Tools page
             "include_top_bar_tweaks_switch",
             "extract_shell_theme_button",
             #"extracted_theme_destination_chooser",
         ]
+
+
 
         # Initialize Builder
         self.builder = Gtk.Builder()
@@ -544,9 +476,111 @@ class Application(Adw.Application):
         for widget in widget_list:
             setattr(widgets, widget, self.builder.get_object(widget))
 
+    def add_image_choosers(self):
+        from .common_widgets import ImageChooserButton
+
+        widgets.background_image_button = ImageChooserButton(valign='center', hexpand=False)
+        widgets.background_image_actionrow.add_suffix(widgets.background_image_button)
+        widgets.background_image_actionrow.set_activatable_widget(widgets.background_image_button)
+
+        widgets.logo_button = ImageChooserButton(valign='center', hexpand=False)
+        widgets.logo_actionrow.add_suffix(widgets.logo_button)
+        widgets.logo_actionrow.set_activatable_widget(widgets.logo_button)
+
+
     def bind_to_gsettings(self):
-        tools_gsettings = Gio.Settings(schema_id=f"{info.application_id}.tools")
-        tools_gsettings.bind('top-bar-tweaks', widgets.include_top_bar_tweaks_switch, 'active', Gio.SettingsBindFlags.DEFAULT)
+        from .bind_utils import bind, bind_colorbutton, bind_comborow
+        from .bind_utils import bind_comborow_by_enum, bind_comborow_by_list
+
+        #### Window State ####
+        window_state_settings = Gio.Settings(schema_id=f'{info.application_id}.window-state')
+        bind(window_state_settings, 'width', widgets.main_window, 'default-width')
+        bind(window_state_settings, 'height', widgets.main_window, 'default-height')
+        bind(window_state_settings, 'paned-position', widgets.paned, 'position')
+        bind(window_state_settings, 'last-visited-page', widgets.page_stack, 'visible-child-name')
+
+        #### Tools Page ####
+        tools_settings = Gio.Settings(schema_id=f"{info.application_id}.tools")
+        bind(tools_settings, 'top-bar-tweaks', widgets.include_top_bar_tweaks_switch, 'active')
+
+        #### Appearance ####
+        from .settings import appearance_settings
+        from .enums import BackgroundType
+        bind_comborow(widgets.shell_theme_comborow, appearance_settings, 'shell-theme')
+        bind_comborow(widgets.icon_theme_comborow, appearance_settings, 'icon-theme')
+        bind_comborow(widgets.cursor_theme_comborow, appearance_settings, 'cursor-theme')
+        bind_comborow_by_enum(widgets.background_type_comborow,
+                appearance_settings, 'background-type', BackgroundType)
+        bind(appearance_settings, 'background-image', widgets.background_image_button, 'filename')
+        bind_colorbutton(widgets.background_color_button, appearance_settings, 'background-color')
+
+        #### Fonts ####
+        from .settings import font_settings
+        bind_comborow_by_list(widgets.antialiasing_comborow,
+                font_settings, 'antialiasing', ['grayscale', 'rgba', 'none'])
+        bind_comborow_by_list(widgets.hinting_comborow,
+                font_settings, 'hinting', ['full', 'medium', 'slight', 'none'])
+        bind(font_settings, 'scaling-factor', widgets.scaling_factor_spinbutton, 'value')
+        bind(font_settings, 'font', widgets.font_button, 'font')
+
+        #### Top Bar ####
+        from .settings import top_bar_settings
+        ## Tweaks ##
+        bind(top_bar_settings, 'disable-arrows', widgets.disable_top_bar_arrows_switch, 'active')
+        bind(top_bar_settings, 'disable-rounded-corners', widgets.disable_top_bar_rounded_corners_switch, 'active')
+        bind(top_bar_settings, 'change-text-color', widgets.top_bar_text_color_switch, 'active')
+        bind_colorbutton(widgets.top_bar_text_color_button, top_bar_settings, 'text-color')
+        bind(top_bar_settings, 'change-background-color', widgets.top_bar_background_color_switch, 'active')
+        bind_colorbutton(widgets.top_bar_background_color_button, top_bar_settings, 'background-color')
+        ## Time/Clock ##
+        bind(top_bar_settings, 'show-weekday', widgets.show_weekday_switch, 'active')
+        bind(top_bar_settings, 'show-seconds', widgets.show_seconds_switch, 'active')
+        bind_comborow_by_list(widgets.time_format_comborow, top_bar_settings, 'time-format', ['12h', '24h'])
+        ## Power ##
+        bind(top_bar_settings, 'show-battery-percentage', widgets.show_battery_percentage_switch, 'active')
+
+        ##### Sound ####
+        from .settings import sound_settings
+        bind_comborow(widgets.sound_theme_comborow, sound_settings, 'theme')
+        bind(sound_settings, 'event-sounds', widgets.event_sounds_switch, 'active')
+        bind(sound_settings, 'feedback-sounds', widgets.feedback_sounds_switch, 'active')
+        bind(sound_settings, 'over-amplification', widgets.over_amplification_switch, 'active')
+
+        #### Mouse ####
+        from .settings import mouse_settings
+        bind_comborow_by_list(widgets.pointer_acceleration_comborow,
+                mouse_settings, 'pointer-acceleration', ['default', 'flat', 'adaptive'])
+        bind(mouse_settings, 'natural-scrolling', widgets.mouse_inverse_scrolling_switch, 'active')
+        bind(mouse_settings, 'speed', widgets.mouse_speed_scale.props.adjustment, 'value')
+
+        #### Touchpad ####
+        from .settings import touchpad_settings
+        bind(touchpad_settings, 'tap-to-click', widgets.tap_to_click_switch, 'active')
+        bind(touchpad_settings, 'natural-scrolling', widgets.natural_scrolling_switch, 'active')
+        bind(touchpad_settings, 'two-finger-scrolling', widgets.two_finger_scrolling_switch, 'active')
+        bind(touchpad_settings, 'disable-while-typing', widgets.disable_while_typing_switch, 'active')
+        bind(touchpad_settings, 'speed', widgets.touchpad_speed_scale.props.adjustment, 'value')
+
+        #### Night Light ####
+        from .settings import night_light_settings
+        bind(night_light_settings, 'enabled', widgets.night_light_enable_switch, 'active')
+        bind_comborow_by_list(widgets.night_light_schedule_comborow,
+                night_light_settings, 'schedule-automatic', [True, False])
+        bind(night_light_settings, 'start-hour', widgets.night_light_start_hour_spinbutton, 'value')
+        bind(night_light_settings, 'start-minute', widgets.night_light_start_minute_spinbutton, 'value')
+        bind(night_light_settings, 'end-hour', widgets.night_light_end_hour_spinbutton, 'value')
+        bind(night_light_settings, 'end-minute', widgets.night_light_end_minute_spinbutton, 'value')
+        bind(night_light_settings, 'temperature',
+                widgets.night_light_color_temperature_scale.props.adjustment, 'value')
+
+        #### Misc ####
+        from .settings import misc_settings
+        bind(misc_settings, 'disable-restart-buttons', widgets.disable_restart_buttons_switch, 'active')
+        bind(misc_settings, 'disable-user-list', widgets.disable_user_list_switch, 'active')
+        bind(misc_settings, 'enable-welcome-message', widgets.enable_welcome_message_switch, 'active')
+        bind(misc_settings, 'welcome-message', widgets.welcome_message_entry, 'text')
+        bind(misc_settings, 'enable-logo', widgets.enable_logo_switch, 'active')
+        bind(misc_settings, 'logo', widgets.logo_button, 'filename')
 
     def set_widget_properties(self):
         # Main Window
@@ -589,141 +623,36 @@ class Application(Adw.Application):
         # Shell Themes
         from .theme_lists import shell_themes
         widgets.shell_theme_list = Gtk.StringList()
-        for theme in shell_themes:
-            widgets.shell_theme_list.append(theme.name)
+        for theme_name in shell_themes.names:
+            widgets.shell_theme_list.append(theme_name)
         widgets.shell_theme_comborow.set_model(widgets.shell_theme_list)
 
         # Icon Themes
         from .theme_lists import icon_themes
         widgets.icon_theme_list = Gtk.StringList()
-        for theme in icon_themes:
-            widgets.icon_theme_list.append(theme.name)
+        for theme_name in icon_themes.names:
+            widgets.icon_theme_list.append(theme_name)
         widgets.icon_theme_comborow.set_model(widgets.icon_theme_list)
 
         # Cursor Themes
         from .theme_lists import cursor_themes
         widgets.cursor_theme_list = Gtk.StringList()
-        for theme in cursor_themes:
-            widgets.cursor_theme_list.append(theme.name)
+        for theme_name in cursor_themes.names:
+            widgets.cursor_theme_list.append(theme_name)
         widgets.cursor_theme_comborow.set_model(widgets.cursor_theme_list)
 
         # Sound Themes
         from .theme_lists import sound_themes
         widgets.sound_theme_list = Gtk.StringList()
-        for theme in sound_themes:
-            widgets.sound_theme_list.append(theme.name)
+        for theme_name in sound_themes.names:
+            widgets.sound_theme_list.append(theme_name)
         widgets.sound_theme_comborow.set_model(widgets.sound_theme_list)
 
     def connect_signals(self):
         self.connect_signal("apply_button", "clicked", self.on_apply)
-        self.connect_signal("background_type_comborow", "notify::selected", self.on_background_type_change)
-        self.connect_signal("background_image_button", "clicked",
-                            lambda x: widgets.background_image_chooser.show(),
-                           )
-        self.connect_signal("background_image_chooser", "response", self.on_background_image_chooser_response)
-        self.connect_signal("logo_button", "clicked", lambda x: widgets.logo_chooser.show())
-        self.connect_signal("logo_chooser", "response", self.on_logo_chooser_response)
-
         self.connect_signal("apply_current_display_settings_button", "clicked",
                             self.on_apply_current_display_settings)
         self.connect_signal("extract_shell_theme_button", "clicked", self.on_extract_shell_theme)
-
-    def load_settings_to_widgets(self):
-        #### Appearance ####
-        # Themes
-        self.load_comborow_setting('shell_theme')
-        self.load_comborow_setting('icon_theme')
-        self.load_comborow_setting('cursor_theme')
-
-        # Background Type
-        from .enums import BackgroundType
-        widgets.background_type_comborow.set_selected(BackgroundType[self.settings.background_type].value)
-
-        # Background Color
-        background_color_rgba = Gdk.RGBA()
-        background_color_rgba.parse(self.settings.background_color)
-        widgets.background_color_button.set_rgba(background_color_rgba)
-
-        # Background Image
-        from os import path
-        if self.settings.background_image:
-            widgets.background_image_button.set_label(path.basename(self.settings.background_image))
-            widgets.background_image_chooser.set_file(Gio.File.new_for_path(self.settings.background_image))
-
-        #### Fonts ####
-        from .enums import AntiAliasing, FontHinting
-        widgets.antialiasing_comborow.set_selected(AntiAliasing[self.settings.antialiasing].value)
-        widgets.hinting_comborow.set_selected(FontHinting[self.settings.hinting].value)
-        widgets.scaling_factor_spinbutton.set_value(self.settings.scaling_factor)
-        widgets.font_button.set_font(self.settings.font)
-
-        #### Top Bar ####
-        ## Tweaks ##
-        # Arrows
-        widgets.disable_top_bar_arrows_switch.set_active(self.settings.disable_top_bar_arrows)
-        # Rounded Corners
-        widgets.disable_top_bar_rounded_corners_switch.set_active(self.settings.disable_top_bar_rounded_corners)
-        # Text Color
-        widgets.top_bar_text_color_switch.set_active(self.settings.change_top_bar_text_color)
-        top_bar_text_color_rgba = Gdk.RGBA()
-        top_bar_text_color_rgba.parse(self.settings.top_bar_text_color)
-        widgets.top_bar_text_color_button.set_rgba(top_bar_text_color_rgba)
-        # Background Color
-        widgets.top_bar_background_color_switch.set_active(self.settings.change_top_bar_background_color)
-        top_bar_background_color_rgba = Gdk.RGBA()
-        top_bar_background_color_rgba.parse(self.settings.top_bar_background_color)
-        widgets.top_bar_background_color_button.set_rgba(top_bar_background_color_rgba)
-        ## Time/Clock ##
-        widgets.show_weekday_switch.set_active(self.settings.show_weekday)
-        widgets.show_seconds_switch.set_active(self.settings.show_seconds)
-        widgets.time_format_comborow.set_selected(0 if self.settings.time_format == "12h" else 1)
-        ## Power ##
-        widgets.show_battery_percentage_switch.set_active(self.settings.show_battery_percentage)
-
-        ##### Sound ####
-        # Theme
-        self.load_comborow_setting('sound_theme')
-        widgets.event_sounds_switch.set_active(self.settings.event_sounds)
-        widgets.feedback_sounds_switch.set_active(self.settings.feedback_sounds)
-        widgets.over_amplification_switch.set_active(self.settings.over_amplification)
-
-        #### Pointing ####
-        ## Mouse ##
-        from .enums import MouseAcceleration
-        widgets.pointer_acceleration_comborow.set_selected(MouseAcceleration[self.settings.pointer_acceleration].value)
-        widgets.mouse_inverse_scrolling_switch.set_active(self.settings.inverse_scrolling)
-        widgets.mouse_speed_scale.set_value(self.settings.mouse_speed)
-        ## Touchpad ##
-        widgets.tap_to_click_switch.set_active(self.settings.tap_to_click)
-        widgets.natural_scrolling_switch.set_active(self.settings.natural_scrolling)
-        widgets.two_finger_scrolling_switch.set_active(self.settings.two_finger_scrolling)
-        widgets.disable_while_typing_switch.set_active(self.settings.disable_while_typing)
-        widgets.touchpad_speed_scale.set_value(self.settings.touchpad_speed)
-
-        #### Night Light ####
-        widgets.night_light_enable_switch.set_active(self.settings.night_light_enabled)
-
-        if self.settings.night_light_schedule_automatic:
-            widgets.night_light_schedule_comborow.set_selected(0)
-        else:
-            widgets.night_light_schedule_comborow.set_selected(1)
-
-        widgets.night_light_start_hour_spinbutton.set_value(self.settings.night_light_start_hour)
-        widgets.night_light_start_minute_spinbutton.set_value(self.settings.night_light_start_minute)
-        widgets.night_light_end_hour_spinbutton.set_value(self.settings.night_light_end_hour)
-        widgets.night_light_end_minute_spinbutton.set_value(self.settings.night_light_end_minute)
-        widgets.night_light_color_temperature_scale.set_value(self.settings.night_light_temperature)
-
-        #### Misc ####
-        widgets.disable_restart_buttons_switch.set_active(self.settings.disable_restart_buttons)
-        widgets.disable_user_list_switch.set_active(self.settings.disable_user_list)
-        widgets.enable_welcome_message_switch.set_active(self.settings.enable_welcome_message)
-        widgets.welcome_message_entry.set_text(self.settings.welcome_message)
-        widgets.enable_logo_switch.set_active(self.settings.enable_logo)
-        if self.settings.logo:
-            from os import path
-            widgets.logo_button.set_label(path.basename(self.settings.logo))
-            widgets.logo_chooser.set_file(Gio.File.new_for_path(self.settings.logo))
 
     def add_pages_to_page_stack(self):
         self.add_page_to_page_stack(_("Appearance"), 'appearance')
@@ -740,51 +669,21 @@ class Application(Adw.Application):
         self.create_action("about", lambda x,y: self.show_about_dialog())
         self.create_action("preferences", lambda x,y: self.show_app_preferences())
         self.create_action("import_user_settings", lambda x,y: self.import_user_settings())
-        self.create_action("reload_settings", lambda x,y: self.reload_settings_to_widgets())
+        self.create_action("refresh", lambda x,y: self.drop_changes())
         self.create_action("reset_settings", lambda x,y: self.reset_settings())
 
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.reload_settings", ["<Ctrl>r", "F5"])
 
-    def restore_window_state(self):
-        # Window Size
-        width = self.window_state.get_uint("width")
-        height = self.window_state.get_uint("height")
-        widgets.main_window.set_default_size(width, height)
-
-        # Paned Position
-        paned_position = self.window_state.get_uint("paned-position")
-        widgets.paned.set_position(paned_position)
-
-        # Last visited Page
-        page_name = self.window_state.get_string("last-visited-page")
-        widgets.page_stack.set_visible_child_name(page_name)
-
-    def save_window_state(self):
-        # Window Size
-        width, height = widgets.main_window.get_default_size()
-        self.window_state.set_uint("width", width)
-        self.window_state.set_uint("height", height)
-
-        # Paned Position
-        paned_position = widgets.paned.get_position()
-        self.window_state.set_uint("paned-position", paned_position)
-
-        # Last visited Page
-        page_name = widgets.page_stack.get_visible_child_name()
-        self.window_state.set_string("last-visited-page", page_name)
-
-    def reload_settings_to_widgets(self):
-        self.settings.load_settings()
-        self.load_settings_to_widgets()
+    def drop_changes(self):
+        self.settings_manager.drop_changes()
         widgets.main_toast_overlay.add_toast(widgets.settings_reloaded_toast)
 
     def import_user_settings(self):
         from .enums import PackageType
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
-            self.settings.load_user_settings()
-            self.load_settings_to_widgets()
+            self.settings_manager.load_user_settings()
             widgets.main_toast_overlay.add_toast(widgets.user_settings_imported_toast)
         else:
             toast = Adw.Toast(timeout=2, priority="high")
@@ -795,80 +694,7 @@ class Application(Adw.Application):
         toast = Adw.Toast(timeout=2, priority="high",
                           title=_("Failed to reset settings"))
 
-        if self.settings.reset_settings():
-            self.load_settings_to_widgets()
+        if self.settings_manager.reset_settings():
             toast.set_title(_("Reset settings successfully"))
 
         widgets.main_toast_overlay.add_toast(toast)
-
-    def set_settings(self):
-        ## Appearance ##
-        # Themes
-        self.settings.shell_theme  = widgets.shell_theme_comborow.get_selected_item().get_string()
-        self.settings.icon_theme   = widgets.icon_theme_comborow.get_selected_item().get_string()
-        self.settings.cursor_theme = widgets.cursor_theme_comborow.get_selected_item().get_string()
-        # Background
-        from .enums import BackgroundType
-        self.settings.background_type  = BackgroundType(widgets.background_type_comborow.get_selected()).name
-        self.settings.background_color = widgets.background_color_button.get_rgba().to_string()
-        self.set_file_chooser_setting("background_image")
-
-        ## Fonts ##
-        from .enums import AntiAliasing, FontHinting
-        self.settings.hinting = FontHinting(widgets.hinting_comborow.get_selected()).name
-        self.settings.antialiasing = AntiAliasing(widgets.antialiasing_comborow.get_selected()).name
-        self.settings.scaling_factor = widgets.scaling_factor_spinbutton.get_value()
-        self.settings.font = widgets.font_button.get_font()
-
-        ## Tob Bar ##
-        # Tweaks
-        self.settings.top_bar_text_color = widgets.top_bar_text_color_button.get_rgba().to_string()
-        self.settings.disable_top_bar_arrows    = widgets.disable_top_bar_arrows_switch.get_active()
-        self.settings.top_bar_background_color  = widgets.top_bar_background_color_button.get_rgba().to_string()
-        self.settings.change_top_bar_text_color = widgets.top_bar_text_color_switch.get_active()
-        self.settings.change_top_bar_background_color = widgets.top_bar_background_color_switch.get_active()
-        self.settings.disable_top_bar_rounded_corners = widgets.disable_top_bar_rounded_corners_switch.get_active()
-        # Time/Clock
-        self.settings.show_weekday = widgets.show_weekday_switch.get_active()
-        self.settings.show_seconds = widgets.show_seconds_switch.get_active()
-        self.settings.time_format  = "12h" if widgets.time_format_comborow.get_selected() == 0 else '24h'
-        # Power
-        self.settings.show_battery_percentage  = widgets.show_battery_percentage_switch.get_active()
-
-        ## Sound ##
-        self.settings.sound_theme = widgets.sound_theme_comborow.get_selected_item().get_string()
-        self.settings.feedback_sounds = widgets.feedback_sounds_switch.get_active()
-        self.settings.over_amplification = widgets.over_amplification_switch.get_active()
-
-        ## Pointing ##
-        # Mouse
-        from .enums import MouseAcceleration
-        self.settings.pointer_acceleration = MouseAcceleration(widgets.pointer_acceleration_comborow.get_selected()).name
-        self.settings.mouse_speed = widgets.mouse_speed_scale.get_value()
-        self.settings.inverse_scrolling   = widgets.mouse_inverse_scrolling_switch.get_active()
-        # Touchpad
-        self.settings.tap_to_click = widgets.tap_to_click_switch.get_active()
-        self.settings.touchpad_speed = widgets.touchpad_speed_scale.get_value()
-        self.settings.natural_scrolling = widgets.natural_scrolling_switch.get_active()
-        self.settings.two_finger_scrolling = widgets.two_finger_scrolling_switch.get_active()
-        self.settings.disable_while_typing = widgets.disable_while_typing_switch.get_active()
-
-        ## Night Light ##
-        self.settings.night_light_enabled      = widgets.night_light_enable_switch.get_active()
-        self.settings.night_light_temperature  = widgets.night_light_color_temperature_scale.get_value()
-        self.settings.night_light_start_hour   = widgets.night_light_start_hour_spinbutton.get_value()
-        self.settings.night_light_start_minute = widgets.night_light_start_minute_spinbutton.get_value()
-        self.settings.night_light_end_hour     = widgets.night_light_end_hour_spinbutton.get_value()
-        self.settings.night_light_end_minute   = widgets.night_light_end_minute_spinbutton.get_value()
-
-        self.settings.night_light_schedule_automatic = False
-        if widgets.night_light_schedule_comborow.get_selected() == 0:
-            self.settings.night_light_schedule_automatic = True
-
-        #### Misc ####
-        self.settings.disable_restart_buttons = widgets.disable_restart_buttons_switch.get_active()
-        self.settings.disable_user_list = widgets.disable_user_list_switch.get_active()
-        self.settings.enable_logo = widgets.enable_logo_switch.get_active()
-        self.set_file_chooser_setting("logo")
-        self.settings.enable_welcome_message = widgets.enable_welcome_message_switch.get_active()
-        self.settings.welcome_message = widgets.welcome_message_entry.get_text()

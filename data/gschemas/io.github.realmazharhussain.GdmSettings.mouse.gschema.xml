@@ -1,6 +1,6 @@
 <schemalist gettext-domain="gdm-settings">
-  <schema id="io.github.realmazharhussain.GdmSettings.pointing.mouse"
-       path="/io/github/realmazharhussain/GdmSettings/pointing/mouse/">
+  <schema id="io.github.realmazharhussain.GdmSettings.mouse"
+       path="/io/github/realmazharhussain/GdmSettings/mouse/">
 
     <key name="pointer-acceleration" type="s">
       <default>"default"</default>
@@ -11,11 +11,11 @@
       </choices>
     </key>
 
-    <key name="inverse-scrolling" type="b">
+    <key name="natural-scrolling" type="b">
       <default>false</default>
     </key>
 
-    <key name="mouse-speed" type="d">
+    <key name="speed" type="d">
       <default>0.35</default>
       <summary>Pointer speed</summary>
       <description>Pointer speed for the touchpad. Accepted values are in the [-1..1] range (from “unaccelerated” to “fast”). A value of 0 is the system default.</description>

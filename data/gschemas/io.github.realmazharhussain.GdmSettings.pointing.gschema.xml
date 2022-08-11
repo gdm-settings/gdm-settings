@@ -1,9 +1,0 @@
-<schemalist gettext-domain="gdm-settings">
-  <schema id="io.github.realmazharhussain.GdmSettings.pointing"
-       path="/io/github/realmazharhussain/GdmSettings/pointing/">
-
-    <child name="mouse" schema="io.github.realmazharhussain.GdmSettings.pointing.mouse"/>
-    <child name="touchpad" schema="io.github.realmazharhussain.GdmSettings.pointing.touchpad"/>
-
-  </schema>
-</schemalist>

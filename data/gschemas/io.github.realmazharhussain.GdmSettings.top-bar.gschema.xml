@@ -2,32 +2,32 @@
   <schema id="io.github.realmazharhussain.GdmSettings.top-bar"
        path="/io/github/realmazharhussain/GdmSettings/top-bar/">
 
-    <key name="disable-top-bar-arrows" type="b">
+    <key name="disable-arrows" type="b">
       <default>false</default>
       <summary>Whether to disable top bar arrows</summary>
     </key>
 
-    <key name="disable-top-bar-rounded-corners" type="b">
+    <key name="disable-rounded-corners" type="b">
       <default>false</default>
       <summary>Whether to disable top bar rounded corners</summary>
     </key>
 
-    <key name="change-top-bar-text-color" type="b">
+    <key name="change-text-color" type="b">
       <default>false</default>
       <summary>Whether to change top bar text color</summary>
     </key>
 
-    <key name="top-bar-text-color" type="s">
+    <key name="text-color" type="s">
 	   <default>"rgb(250,250,250)"</default>
       <summary>Top bar text color</summary>
     </key>
 
-    <key name="change-top-bar-background-color" type="b">
+    <key name="change-background-color" type="b">
       <default>false</default>
       <summary>Whether to change top bar background</summary>
     </key>
 
-    <key name="top-bar-background-color" type="s">
+    <key name="background-color" type="s">
 	   <default>"rgb(0,0,0)"</default>
       <summary>Top bar background color</summary>
     </key>

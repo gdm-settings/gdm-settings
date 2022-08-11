@@ -2,7 +2,7 @@
   <schema id="io.github.realmazharhussain.GdmSettings.sound"
        path="/io/github/realmazharhussain/GdmSettings/sound/">
 
-    <key name="sound-theme" type="s">
+    <key name="theme" type="s">
       <default>"freedesktop"</default>
     </key>
 

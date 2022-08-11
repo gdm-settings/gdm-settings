@@ -1,230 +1,153 @@
-'''Contains the actual settings manager'''
-
 import logging
 from os import path
 from gettext import gettext as _, pgettext as C_
+from gi.repository import GObject, Gio
+from .info import application_id
 from . import env
 from . import gr_utils
 
-class Settings:
-    key = "key"
-    section = "section"
-    key_type = "key_type"
+def delayed_settings(schema_id):
+    settings = Gio.Settings.new(schema_id)
+    settings.delay()
+    return settings
 
-    __key_list = [
-        ## Appearance ##
-        {section:"appearance", key_type:"string", key:"shell-theme"},
-        {section:"appearance", key_type:"string", key:'icon-theme'},
-        {section:"appearance", key_type:"string", key:'cursor-theme'},
-        {section:"appearance", key_type:"string", key:"background-type"},
-        {section:"appearance", key_type:"string", key:"background-image"},
-        {section:"appearance", key_type:"string", key:"background-color"},
-        ## Fonts ##
-        {section:"fonts", key_type:"string", key:"font"},
-        {section:"fonts", key_type:"string", key:"antialiasing"},
-        {section:"fonts", key_type:"string", key:"hinting"},
-        {section:"fonts", key_type:"double", key:"scaling-factor"},
+main_settings        = delayed_settings(application_id)
+appearance_settings  = delayed_settings(f'{application_id}.appearance')
+font_settings        = delayed_settings(f'{application_id}.fonts')
+misc_settings        = delayed_settings(f'{application_id}.misc')
+night_light_settings = delayed_settings(f'{application_id}.night-light')
+mouse_settings       = delayed_settings(f'{application_id}.mouse')
+touchpad_settings    = delayed_settings(f'{application_id}.touchpad')
+sound_settings       = delayed_settings(f'{application_id}.sound')
+top_bar_settings     = delayed_settings(f'{application_id}.top-bar')
 
-        ## Top Bar ##
-        # Tweaks
-        {section:"top-bar", key_type:"boolean", key:"disable-top-bar-arrows"},
-        {section:"top-bar", key_type:"boolean", key:"disable-top-bar-rounded-corners"},
-        {section:"top-bar", key_type:"boolean", key:"change-top-bar-text-color"},
-        {section:"top-bar", key_type:"string",  key:"top-bar-text-color"},
-        {section:"top-bar", key_type:"boolean", key:"change-top-bar-background-color"},
-        {section:"top-bar", key_type:"string",  key:"top-bar-background-color"},
-        # Time/Clock
-        {section:"top-bar", key_type:"boolean", key:'show-weekday'},
-        {section:"top-bar", key_type:"string",  key:'time-format'},
-        {section:"top-bar", key_type:"boolean", key:'show-seconds'},
-        # Power
-        {section:"top-bar", key_type:"boolean", key:'show-battery-percentage'},
+all_settings = (
+    main_settings,
+    appearance_settings,
+    font_settings,
+    misc_settings,
+    night_light_settings,
+    mouse_settings,
+    touchpad_settings,
+    sound_settings,
+    top_bar_settings,
+)
 
-        ## Sound ##
-        {section:"sound", key_type:"string",  key:'sound-theme'},
-        {section:"sound", key_type:"boolean", key:'event-sounds'},
-        {section:"sound", key_type:"boolean", key:'feedback-sounds'},
-        {section:"sound", key_type:"boolean", key:'over-amplification'},
+def _Settings(schema_id):
+    if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
+        return Gio.Settings(schema_id=schema_id)
 
-        ## Pointing ##
-        # Mouse
-        {section:"mouse", key_type:"string",  key:'pointer-acceleration'},
-        {section:"mouse", key_type:"boolean", key:'inverse-scrolling'},
-        {section:"mouse", key_type:"double",  key:'mouse-speed'},
-        # Touchpad
-        {section:"touchpad", key_type:"boolean", key:'tap-to-click'},
-        {section:"touchpad", key_type:"boolean", key:'natural-scrolling'},
-        {section:"touchpad", key_type:"boolean", key:'two-finger-scrolling'},
-        {section:"touchpad", key_type:"boolean", key:'disable-while-typing'},
-        {section:"touchpad", key_type:"double",  key:'touchpad-speed'},
-
-        ## Night Light ##
-        {section:"night-light", key_type:"boolean", key:'night-light-enabled'},
-        {section:"night-light", key_type:"boolean", key:'night-light-schedule-automatic'},
-        {section:"night-light", key_type:"uint",    key:'night-light-temperature'},
-        {section:"night-light", key_type:"int",     key:'night-light-start-hour'},
-        {section:"night-light", key_type:"int",     key:'night-light-start-minute'},
-        {section:"night-light", key_type:"int",     key:'night-light-end-hour'},
-        {section:"night-light", key_type:"int",     key:'night-light-end-minute'},
-
-        ## Misc ##
-        {section:"misc", key_type:"boolean", key:"enable-welcome-message"},
-        {section:"misc", key_type:"string",  key:"welcome-message"},
-        {section:"misc", key_type:"boolean", key:"enable-logo"},
-        {section:"misc", key_type:"string",  key:"logo"},
-        {section:"misc", key_type:"boolean", key:"disable-restart-buttons"},
-        {section:"misc", key_type:"boolean", key:"disable-user-list"},
-    ]
+class SettingsManager (GObject.Object):
 
     def __init__(self):
-        logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
-        logging.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
+        super().__init__()
 
         from .utils import CommandElevator
         self.command_elevator = CommandElevator()
 
-        from gi.repository import Gio
-        from .info import application_id
-        gsettings = lambda x=None: Gio.Settings (schema_id=application_id+('.'+x if x else ''))
-
-        self.main_gsettings        = gsettings ()
-        self.appearance_gsettings  = gsettings ('appearance')
-        self.fonts_gsettings       = gsettings ('fonts')
-        self.top_bar_gsettings     = gsettings ('top-bar')
-        self.sound_gsettings       = gsettings ('sound')
-        self.pointing_gsettings    = gsettings ('pointing')
-        self.mouse_gsettings       = gsettings ('pointing.mouse')
-        self.touchpad_gsettings    = gsettings ('pointing.touchpad')
-        self.night_light_gsettings = gsettings ('night-light')
-        self.misc_gsettings        = gsettings ('misc')
-
-        self.load_settings()
-
-    def load_settings(self):
-        ''' Load settings '''
-
-        self.load_from_gsettings()
-
         from .enums import PackageType
-        if self.main_gsettings.get_boolean("never-applied") \
-        and env.PACKAGE_TYPE is not PackageType.Flatpak:
+        if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_user_settings()
 
-    def _settings(self, schema_id:str):
-        from gi.repository import Gio
-        if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
-            return Gio.Settings(schema_id=schema_id)
-
-
     def load_user_settings(self):
-        ''' Load settings from user's session '''
+        '''Load user's Gnome settings into the app'''
 
 
-        if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
-            self.shell_theme = user_theme_settings.get_string('name') or 'default'
+        if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
+            appearance_settings['shell-theme'] = user_settings['name'] or 'default'
 
         # Appearance
-        if interface_settings := self._settings("org.gnome.desktop.interface"):
-            self.icon_theme = interface_settings.get_string("icon-theme")
-            self.cursor_theme = interface_settings.get_string("cursor-theme")
+        if user_settings := _Settings("org.gnome.desktop.interface"):
+            appearance_settings['icon-theme'] = user_settings["icon-theme"]
+            appearance_settings['cursor-theme'] = user_settings["cursor-theme"]
 
-            self.font = interface_settings.get_string("font-name")
-            self.antialiasing = interface_settings.get_string("font-antialiasing")
-            self.hinting = interface_settings.get_string("font-hinting")
-            self.scaling_factor = interface_settings.get_double("text-scaling-factor")
+            font_settings['font'] = user_settings["font-name"]
+            font_settings['antialiasing'] = user_settings["font-antialiasing"]
+            font_settings['hinting'] = user_settings["font-hinting"]
+            font_settings['scaling-factor'] = user_settings["text-scaling-factor"]
 
-            self.show_weekday = interface_settings.get_boolean("clock-show-weekday")
-            self.time_format = interface_settings.get_string("clock-format")
-            self.show_seconds = interface_settings.get_boolean("clock-show-seconds")
-            self.show_battery_percentage = interface_settings.get_boolean("show-battery-percentage")
+            top_bar_settings['show-weekday'] = user_settings["clock-show-weekday"]
+            top_bar_settings['time-format'] = user_settings["clock-format"]
+            top_bar_settings['show-seconds'] = user_settings["clock-show-seconds"]
+            top_bar_settings['show-battery-percentage'] = user_settings["show-battery-percentage"]
 
-        if sound_settings := self._settings("org.gnome.desktop.sound"):
-            self.sound_theme = sound_settings.get_string("theme-name")
-            self.event_sounds = sound_settings.get_boolean("event-sounds")
-            self.feedback_sounds = sound_settings.get_boolean("input-feedback-sounds")
-            self.over_amplification = sound_settings.get_boolean("allow-volume-above-100-percent")
+        if user_settings := _Settings("org.gnome.desktop.sound"):
+            sound_settings['theme'] = user_settings["theme-name"]
+            sound_settings['event-sounds'] = user_settings["event-sounds"]
+            sound_settings['feedback-sounds'] = user_settings["input-feedback-sounds"]
+            sound_settings['over-amplification'] = user_settings["allow-volume-above-100-percent"]
 
-        if mouse_settings := self._settings("org.gnome.desktop.peripherals.mouse"):
-            self.pointer_acceleration = mouse_settings.get_string("accel-profile")
-            self.inverse_scrolling = mouse_settings.get_boolean("natural-scroll")
-            self.mouse_speed = mouse_settings.get_double("speed")
+        if user_settings := _Settings("org.gnome.desktop.peripherals.mouse"):
+            mouse_settings['pointer-acceleration'] = user_settings["accel-profile"]
+            mouse_settings['natural-scrolling'] = user_settings["natural-scroll"]
+            mouse_settings['speed'] = user_settings["speed"]
 
-        if touchpad_settings := self._settings("org.gnome.desktop.peripherals.touchpad"):
-            self.tap_to_click = touchpad_settings.get_boolean("tap-to-click")
-            self.natural_scrolling = touchpad_settings.get_boolean("natural-scroll")
-            self.two_finger_scrolling = touchpad_settings.get_boolean("two-finger-scrolling-enabled")
-            self.disable_while_typing = touchpad_settings.get_boolean("disable-while-typing")
-            self.touchpad_speed = touchpad_settings.get_double("speed")
+        if user_settings := _Settings("org.gnome.desktop.peripherals.touchpad"):
+            touchpad_settings['tap-to-click'] = user_settings["tap-to-click"]
+            touchpad_settings['natural-scrolling'] = user_settings["natural-scroll"]
+            touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
+            touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
+            touchpad_settings['speed'] = user_settings["speed"]
 
-        if night_light_settings := self._settings("org.gnome.settings-daemon.plugins.color"):
-            self.night_light_enabled = night_light_settings.get_boolean("night-light-enabled")
-            self.night_light_schedule_automatic = night_light_settings.get_boolean("night-light-schedule-automatic")
-            self.night_light_temperature = night_light_settings.get_uint("night-light-temperature")
-
-            night_light_schedule_from = night_light_settings.get_double("night-light-schedule-from")
-            night_light_schedule_to = night_light_settings.get_double("night-light-schedule-to")
+        if user_settings := _Settings("org.gnome.settings-daemon.plugins.color"):
+            night_light_settings['enabled'] = user_settings["night-light-enabled"]
+            night_light_settings['schedule-automatic'] = user_settings["night-light-schedule-automatic"]
+            night_light_settings['temperature'] = user_settings["night-light-temperature"]
 
             from math import trunc
+            def hour_minute(decimal_time):
+                hour = trunc(decimal_time)
+                minute = round((decimal_time % 1) * 60)
+                if minute == 60:
+                    hour += 1
+                    minute = 0
+                return hour, minute
 
-            self.night_light_start_hour = trunc(night_light_schedule_from)
-            self.night_light_start_minute = round( (night_light_schedule_from % 1) * 60 )
-            if self.night_light_start_minute == 60:
-                self.night_light_start_hour += 1
-                self.night_light_start_minute = 0
+            start_time = user_settings["night-light-schedule-from"]
+            start_hour, start_minute = hour_minute(start_time)
+            night_light_settings['start-hour'] = start_hour
+            night_light_settings['start-minute'] = start_minute
 
-            self.night_light_end_hour = trunc(night_light_schedule_to)
-            self.night_light_end_minute = round( (night_light_schedule_to % 1) * 60 )
-            if self.night_light_end_minute == 60:
-                self.night_light_end_hour += 1
-                self.night_light_end_minute = 0
+            end_time = user_settings["night-light-schedule-to"]
+            end_hour, end_minute = hour_minute(end_time)
+            night_light_settings['end-hour'] = end_hour
+            night_light_settings['end-minute'] = end_minute
 
-        if login_screen_settings := self._settings("org.gnome.login-screen"):
-            self.enable_welcome_message = login_screen_settings.get_boolean("banner-message-enable")
-            self.welcome_message = login_screen_settings.get_string("banner-message-text")
-            self.logo = login_screen_settings.get_string("logo")
-            self.enable_logo = bool(self.logo)
-            self.disable_restart_buttons = login_screen_settings.get_boolean("disable-restart-buttons")
-            self.disable_user_list = login_screen_settings.get_boolean("disable-user-list")
-
-    def __load_value(self, section, key, key_type):
-        gsettings = getattr(self, section.replace('-','_') + '_gsettings')
-        get_value = getattr(gsettings, 'get_' + key_type)
-        setattr(self, key.replace('-','_'), get_value(key))
-
-    def __save_value(self, section, key, key_type):
-        gsettings = getattr(self, section.replace('-','_') + '_gsettings')
-        set_value = getattr(gsettings, 'set_' + key_type)
-        set_value(key, getattr(self, key.replace('-','_')))
-
-    def __reset_value(self, section, key, key_type):
-        gsettings = getattr(self, section.replace('-','_') + '_gsettings')
-        gsettings.reset(key)
-
-    def load_from_gsettings(self):
-        ''' Load settings from this app's GSettings '''
-        for key_item in self.__key_list:
-            self.__load_value(**key_item)
+        if user_settings := _Settings("org.gnome.login-screen"):
+            misc_settings['enable-welcome-message'] = user_settings["banner-message-enable"]
+            misc_settings['welcome-message'] = user_settings["banner-message-text"]
+            misc_settings['logo'] = user_settings["logo"]
+            misc_settings['enable-logo'] = bool(user_settings["logo"])
+            misc_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
+            misc_settings['disable-user-list'] = user_settings["disable-user-list"]
 
     def save_settings(self):
-        ''' Save settings to GSettings of this app '''
-        for key_item in self.__key_list:
-            self.__save_value(**key_item)
+        '''Save settings to GSettings of this app'''
+        for settings in all_settings:
+            settings.apply()
+
+    def drop_changes(self):
+        '''Save settings to GSettings of this app'''
+        for settings in all_settings:
+            settings.revert()
 
     def get_setting_css(self) -> str:
-        ''' Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)
+        '''Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)'''
 
-            target: either 'login' or 'session'
-        '''
+        css = "\n\n/* 'Login Manager Settings' App Provided CSS */\n"
 
-        css = "\n/* 'Login Manager Settings' App Provided CSS */\n"
         ### Background ###
-        if self.background_type == "image" and self.background_image:
+        from .enums import BackgroundType
+        background_type = BackgroundType[appearance_settings['background-type']]
+        background_image = appearance_settings['background-image']
+        if background_type is BackgroundType.image and background_image:
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
             css += "  background-size: cover;\n"
             css += "}\n"
-        elif self.background_type == "color":
-            css += "#lockDialogGroup { background-color: "+ self.background_color + "; }\n"
+        elif background_type is BackgroundType.color:
+            background_color = appearance_settings['background-color']
+            css += "#lockDialogGroup { background-color: "+ background_color + "; }\n"
 
         ### Top Bar ###
         def select_elem(elem:str='') -> str:
@@ -233,71 +156,84 @@ class Settings:
             else:
                 return f"#panel, #panel.login-screen, #panel.unlock-screen"
 
+        disable_arrows = top_bar_settings['disable-arrows']
+        disable_rounded_corners = top_bar_settings['disable-rounded-corners']
+        change_text_color = top_bar_settings['change-text-color']
+        text_color = top_bar_settings['text-color']
+        change_background_color = top_bar_settings['change-background-color']
+        background_color = top_bar_settings['background-color']
+
         # Arrows
-        if self.disable_top_bar_arrows:
+        if disable_arrows:
             css += select_elem("popup-menu-arrow") + " { width: 0px; }\n"
         # Rounded Corners
-        if self.disable_top_bar_rounded_corners:
+        if disable_rounded_corners:
             css +=  select_elem("panel-corner")
             css +=  " {\n"
             css += f"  -panel-corner-opacity: 0;\n"
             css +=  "}\n"
         # Text Color
-        if self.change_top_bar_text_color:
+        if change_text_color:
             css +=  select_elem('panel-button')
             css +=  " {\n"
-            css += f"  color: {self.top_bar_text_color};\n"
+            css += f"  color: {text_color};\n"
             css +=  "}\n"
         # Background Color
-        if self.change_top_bar_background_color:
+        if change_background_color:
             css +=  select_elem()
             css +=  " {\n"
-            css += f"  background-color: {self.top_bar_background_color};\n"
+            css += f"  background-color: {background_color};\n"
             css +=  "}\n"
-            if not self.disable_top_bar_rounded_corners:
+            if not disable_rounded_corners:
                 css +=  select_elem("panel-corner")
                 css +=  " {\n"
                 css += f"  -panel-corner-opacity: 1;\n"
-                css += f"  -panel-corner-background-color: {self.top_bar_background_color};\n"
+                css += f"  -panel-corner-background-color: {background_color};\n"
                 css +=  "}\n"
         return css
+
+    def backup_default_shell_theme (self):
+        '''back up the default shell theme (if needed)'''
+
+        logging.info(_("Backing up default shell theme …"))
+
+        if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
+            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
+
+        from os import makedirs
+        makedirs(env.TEMP_DIR, exist_ok=True)
+
+        gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
+
+        self.command_elevator.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
+        self.command_elevator.add(f"mkdir -p {gr_utils.ThemesDir}")
+        self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
 
     def apply_shell_theme_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
-        # back up the default shell theme (if needed)
+        from .enums import BackgroundType
+        from .theme_lists import shell_themes
 
-        if gr_utils.get_default():  # We can back up the default theme only if it exists on the system
-            pure_theme_exists = path.exists(env.HOST_ROOT + gr_utils.ThemesDir + '/default-pure')
+        # If needed, back up the default shell theme
 
-            if gr_utils.is_unmodified(gr_utils.ShellGresourceFile) or not pure_theme_exists:
-                logging.info(_("Backing up default shell theme …"))
+        pure_theme_not_exists = 'default-pure' not in shell_themes.names
+        shell_gresource_is_stock = gr_utils.is_unmodified(gr_utils.ShellGresourceFile)
 
-                if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
-                    self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
+        if shell_gresource_is_stock or pure_theme_not_exists:
+            self.backup_default_shell_theme()
 
-                from os import makedirs
-                makedirs(env.TEMP_DIR, exist_ok=True)
-
-                gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
-
-                self.command_elevator.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
-                self.command_elevator.add(f"mkdir -p {gr_utils.ThemesDir}")
-                self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
 
         # Apply shell theme settings
 
-        theme_path = None
-        from .theme_lists import shell_themes
-        for theme in shell_themes:
-            if theme.name == self.shell_theme:
-                theme_path = theme.path
-                break
+        theme_name = appearance_settings['shell-theme']
+        theme_path = shell_themes.get_path(theme_name)
+        shelldir   = path.join(theme_path, 'gnome-shell') if theme_path else None
 
-        shelldir = path.join(theme_path, 'gnome-shell') if theme_path else None
+        background_type = BackgroundType[appearance_settings['background-type']]
         background_image = None
-        if self.background_type == "image" and self.background_image:
-            background_image = self.background_image
+        if background_type is BackgroundType.image:
+            background_image = appearance_settings['background-image']
 
         compiled_file = gr_utils.compile(shelldir,
               additional_css=self.get_setting_css(),
@@ -330,73 +266,115 @@ class Settings:
         with open(temp_profile_path, "w+") as temp_profile_file:
             gdm_profile_contents  = "user-db:user\n"
             gdm_profile_contents += "system-db:gdm\n"
-            gdm_profile_contents += "file-db:/usr/share/gdm/greeter-dconf-defaults"
-            print(gdm_profile_contents, file=temp_profile_file)
-
-        night_light_schedule_from  = self.night_light_start_hour
-        night_light_schedule_from += self.night_light_start_minute / 60
-        night_light_schedule_to  = self.night_light_end_hour
-        night_light_schedule_to += self.night_light_end_minute / 60 
+            gdm_profile_contents += "file-db:/usr/share/gdm/greeter-dconf-defaults\n"
+            temp_profile_file.write(gdm_profile_contents)
 
         temp_conf_path = f"{env.TEMP_DIR}/95-gdm-settings"
         with open(temp_conf_path, "w+") as temp_conf_file:
+
+            font = font_settings['font']
+            hinting = font_settings['hinting']
+            icon_theme = appearance_settings['icon-theme']
+            time_format = top_bar_settings['time-format']
+            cursor_theme = appearance_settings['cursor-theme']
+            show_seconds = str(top_bar_settings['show-seconds']).lower()
+            show_weekday = str(top_bar_settings['show-weekday']).lower()
+            antialiasing = font_settings['antialiasing']
+            scaling_factor = font_settings['scaling-factor']
+            show_battery_percentage = str(top_bar_settings['show-battery-percentage']).lower()
+
             gdm_conf_contents  =  "#-------- Interface ---------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
             gdm_conf_contents +=  "#----------------------------\n"
-            gdm_conf_contents += f"cursor-theme='{self.cursor_theme}'\n"
-            gdm_conf_contents += f"icon-theme='{self.icon_theme}'\n"
-            gdm_conf_contents += f"show-battery-percentage={str(self.show_battery_percentage).lower()}\n"
-            gdm_conf_contents += f"clock-show-seconds={str(self.show_seconds).lower()}\n"
-            gdm_conf_contents += f"clock-show-weekday={str(self.show_weekday).lower()}\n"
-            gdm_conf_contents += f"clock-format='{self.time_format}'\n"
-            gdm_conf_contents += f"font-name='{self.font}'\n"
-            gdm_conf_contents += f"font-antialiasing='{self.antialiasing}'\n"
-            gdm_conf_contents += f"font-hinting='{self.hinting}'\n"
-            gdm_conf_contents += f"text-scaling-factor={self.scaling_factor}\n"
+            gdm_conf_contents += f"cursor-theme='{cursor_theme}'\n"
+            gdm_conf_contents += f"icon-theme='{icon_theme}'\n"
+            gdm_conf_contents += f"show-battery-percentage={show_battery_percentage}\n"
+            gdm_conf_contents += f"clock-show-seconds={show_seconds}\n"
+            gdm_conf_contents += f"clock-show-weekday={show_weekday}\n"
+            gdm_conf_contents += f"clock-format='{time_format}'\n"
+            gdm_conf_contents += f"font-name='{font}'\n"
+            gdm_conf_contents += f"font-antialiasing='{antialiasing}'\n"
+            gdm_conf_contents += f"font-hinting='{hinting}'\n"
+            gdm_conf_contents += f"text-scaling-factor={scaling_factor}\n"
             gdm_conf_contents +=  "\n"
+
+            sound_theme = sound_settings['theme']
+            event_sounds = str(sound_settings['event-sounds']).lower()
+            feedback_sounds = str(sound_settings['feedback-sounds']).lower()
+            over_amplification = str(sound_settings['over-amplification']).lower()
+
             gdm_conf_contents +=  "#-------- Sound ---------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/sound]\n"
             gdm_conf_contents +=  "#------------------------\n"
-            gdm_conf_contents += f"theme-name='{self.sound_theme}'\n"
-            gdm_conf_contents += f"event-sounds={str(self.event_sounds).lower()}\n"
-            gdm_conf_contents += f"input-feedback-sounds={str(self.feedback_sounds).lower()}\n"
-            gdm_conf_contents += f"allow-volume-above-100-percent={str(self.over_amplification).lower()}\n"
+            gdm_conf_contents += f"theme-name='{sound_theme}'\n"
+            gdm_conf_contents += f"event-sounds={event_sounds}\n"
+            gdm_conf_contents += f"input-feedback-sounds={feedback_sounds}\n"
+            gdm_conf_contents += f"allow-volume-above-100-percent={over_amplification}\n"
             gdm_conf_contents +=  "\n"
+
+            pointer_acceleration = mouse_settings['pointer-acceleration']
+            natural_scrolling = str(mouse_settings['natural-scrolling']).lower()
+            mouse_speed = mouse_settings['speed']
+
             gdm_conf_contents +=  "#-------------- Mouse ---------------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/peripherals/mouse]\n"
             gdm_conf_contents +=  "#------------------------------------\n"
-            gdm_conf_contents += f"accel-profile='{self.pointer_acceleration}'\n"
-            gdm_conf_contents += f"natural-scroll={str(self.inverse_scrolling).lower()}\n"
-            gdm_conf_contents += f"speed={self.mouse_speed}\n"
+            gdm_conf_contents += f"accel-profile='{pointer_acceleration}'\n"
+            gdm_conf_contents += f"natural-scroll={natural_scrolling}\n"
+            gdm_conf_contents += f"speed={mouse_speed}\n"
             gdm_conf_contents +=  "\n"
+
+            touchpad_speed = touchpad_settings['speed']
+            tap_to_click = str(touchpad_settings['tap-to-click']).lower()
+            natural_scrolling = str(touchpad_settings['natural-scrolling']).lower()
+            two_finger_scrolling = str(touchpad_settings['two-finger-scrolling']).lower()
+            disable_while_typing = str(touchpad_settings['disable-while-typing']).lower()
+
             gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
             gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
             gdm_conf_contents +=  "#---------------------------------------\n"
-            gdm_conf_contents += f"speed={self.touchpad_speed}\n"
-            gdm_conf_contents += f"tap-to-click={str(self.tap_to_click).lower()}\n"
-            gdm_conf_contents += f"natural-scroll={str(self.natural_scrolling).lower()}\n"
-            gdm_conf_contents += f"two-finger-scrolling-enabled={str(self.two_finger_scrolling).lower()}\n"
-            gdm_conf_contents += f"disable-while-typing={str(self.disable_while_typing).lower()}\n"
+            gdm_conf_contents += f"speed={touchpad_speed}\n"
+            gdm_conf_contents += f"tap-to-click={tap_to_click}\n"
+            gdm_conf_contents += f"natural-scroll={natural_scrolling}\n"
+            gdm_conf_contents += f"two-finger-scrolling-enabled={two_finger_scrolling}\n"
+            gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
             gdm_conf_contents +=  "\n"
+
+            enabled = str(night_light_settings['enabled']).lower()
+            temperature = round(night_light_settings['temperature'])
+            schedule_automatic = str(night_light_settings['schedule-automatic']).lower()
+            schedule_from  = night_light_settings['start-hour']
+            schedule_from += night_light_settings['start-minute'] / 60
+            schedule_to  = night_light_settings['end-hour']
+            schedule_to += night_light_settings['end-minute'] / 60 
+
             gdm_conf_contents +=  "#------------- Night Light --------------\n"
             gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"
             gdm_conf_contents +=  "#----------------------------------------\n"
-            gdm_conf_contents += f"night-light-enabled={str(self.night_light_enabled).lower()}\n"
-            gdm_conf_contents += f"night-light-temperature=uint32 {round(self.night_light_temperature)}\n"
-            gdm_conf_contents += f"night-light-schedule-automatic={str(self.night_light_schedule_automatic).lower()}\n"
-            gdm_conf_contents += f"night-light-schedule-from={night_light_schedule_from}\n"
-            gdm_conf_contents += f"night-light-schedule-to={night_light_schedule_to}\n"
+            gdm_conf_contents += f"night-light-enabled={enabled}\n"
+            gdm_conf_contents += f"night-light-temperature=uint32 {temperature}\n"
+            gdm_conf_contents += f"night-light-schedule-automatic={schedule_automatic}\n"
+            gdm_conf_contents += f"night-light-schedule-from={schedule_from}\n"
+            gdm_conf_contents += f"night-light-schedule-to={schedule_to}\n"
             gdm_conf_contents +=  "\n"
+
+            enable_logo = misc_settings['enable-logo']
+            logo = misc_settings['logo'].removeprefix(env.HOST_ROOT) if enable_logo else ''
+            enable_welcome_message = str(misc_settings['enable-welcome-message']).lower()
+            welcome_message = misc_settings['welcome-message'].replace("'", r"\'")
+            disable_restart_buttons = str(misc_settings['disable-restart-buttons']).lower()
+            disable_user_list = str(misc_settings['disable-user-list']).lower()
+
             gdm_conf_contents +=  "#----- Login Screen ----\n"
             gdm_conf_contents +=  "[org/gnome/login-screen]\n"
             gdm_conf_contents +=  "#-----------------------\n"
-            gdm_conf_contents += f"logo='{self.logo.removeprefix(env.HOST_ROOT) if self.enable_logo else ''}'\n"
-            gdm_conf_contents += f"banner-message-enable={str(self.enable_welcome_message).lower()}\n"
-            gdm_conf_contents +=  "banner-message-text='"+self.welcome_message.replace("'", "\\'")+"'\n"
-            gdm_conf_contents += f"disable-restart-buttons={str(self.disable_restart_buttons).lower()}\n"
-            gdm_conf_contents += f"disable-user-list={str(self.disable_user_list).lower()}\n"
+            gdm_conf_contents += f"logo='{logo}'\n"
+            gdm_conf_contents += f"banner-message-enable={enable_welcome_message}\n"
+            gdm_conf_contents += f"banner-message-text='{welcome_message}'\n"
+            gdm_conf_contents += f"disable-restart-buttons={disable_restart_buttons}\n"
+            gdm_conf_contents += f"disable-user-list={disable_user_list}\n"
 
-            print(gdm_conf_contents, file=temp_conf_file)
+            temp_conf_file.write(gdm_conf_contents)
 
         self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
         self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
@@ -409,22 +387,50 @@ class Settings:
         self.apply_shell_theme_settings()
         self.apply_dconf_settings()
 
-        if self.command_elevator.run():
+        status = self.command_elevator.run()
+
+        if status.success:
             # When we change GDM shell theme it becomes the 'default' theme but for the users
             # who didn't want to change shell theme for their session, we need to set it to a
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
             # 'default' in order to match their GDM theme
-            if user_theme_settings := self._settings('org.gnome.shell.extensions.user-theme'):
-                if user_theme_settings.get_string('name') == '' \
-                and self.main_gsettings.get_boolean("never-applied"):
-                    user_theme_settings.set_string('name', 'default-pure')
+            if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
+                if (user_settings['name'] == ''
+                and main_settings["never-applied"]):
+                    user_settings['name'] = 'default-pure'
 
+            main_settings["never-applied"] = False
             self.save_settings()
-            self.main_gsettings.set_boolean("never-applied", False)
-            return True
 
-        return False
+        return status
+
+    def apply_settings_async(self, callback):
+        '''Run apply_settings asynchronously'''
+
+        task = Gio.Task.new(self, None, callback, None)
+        task.set_return_on_cancel(False)
+
+        task.run_in_thread(self._apply_settings_thread_callback)
+
+    def _apply_settings_thread_callback(self, task, source_object, task_data, cancellable):
+        '''Called by apply_settings_async to run apply_settings in a separate thread'''
+
+        if task.return_error_if_cancelled():
+            return
+
+        value = self.apply_settings()
+
+        task.return_value(value)
+
+    def apply_settings_finish(self, result):
+        '''Returns result(return value) of apply_settings_async'''
+
+        if not Gio.Task.is_valid(result, self):
+            from .utils import ProcessReturnCode
+            return ProcessReturnCode(-1)
+
+        return result.propagate_value().value
 
     def apply_current_display_settings(self) -> bool:
         ''' Apply current display settings '''
@@ -452,8 +458,6 @@ class Settings:
         return self.command_elevator.run()
 
     def reset_settings(self) -> bool:
-        status = False
-
         if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
             self.command_elevator.add(['update-alternatives',  '--quiet',  '--remove',
@@ -475,14 +479,15 @@ class Settings:
         self.command_elevator.add("dconf update")
 
         if self.command_elevator.run():
-            for key_item in self.__key_list:
-                self.__reset_value(**key_item)
-            self.main_gsettings.reset("never-applied")
 
-            self.load_settings()
-            status = True
+            for settings in all_settings:
+                for key in settings.props.settings_schema.list_keys():
+                    settings.reset(key)
+                settings.apply()
 
-        return status
+            return True
+
+        return False
 
     def get_overriding_files(self):
         from os import listdir

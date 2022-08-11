@@ -5,9 +5,8 @@ data/gschemas/io.github.realmazharhussain.GdmSettings.fonts.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.misc.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.mouse.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.touchpad.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.sound.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml
@@ -25,6 +24,7 @@ src/blueprints/pointing-page.blp
 src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
+src/common_widgets.py
 src/dialogs.py
 src/gdm-settings.py.in
 src/info.py.in

@@ -1,6 +1,6 @@
 <schemalist gettext-domain="gdm-settings">
-  <schema id="io.github.realmazharhussain.GdmSettings.pointing.touchpad"
-       path="/io/github/realmazharhussain/GdmSettings/pointing/touchpad/">
+  <schema id="io.github.realmazharhussain.GdmSettings.touchpad"
+       path="/io/github/realmazharhussain/GdmSettings/touchpad/">
 
     <key name="tap-to-click" type="b">
       <default>true</default>
@@ -18,7 +18,7 @@
       <default>true</default>
     </key>
 
-    <key name="touchpad-speed" type="d">
+    <key name="speed" type="d">
       <default>0.35</default>
       <summary>Pointer speed</summary>
       <description>Pointer speed for the touchpad. Accepted values are in the [-1..1] range (from “unaccelerated” to “fast”). A value of 0 is the system default.</description>

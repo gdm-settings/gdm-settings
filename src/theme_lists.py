@@ -1,62 +1,78 @@
-'''Contains lists of themes'''
+'''Contains info about themes'''
 
-shell_themes  = []
-sound_themes  = []
-icon_themes   = []
-cursor_themes = []
+from os import path
+from glob import glob
+from .env import HOST_ROOT, HOST_DATA_DIRS
 
-class Theme:
-    def __init__(self, name:str, path:str):
-        self.name = name
-        self.path = path
-    def __lt__(self, value, /):
-        return self.name.casefold() < value.name.casefold()
-    def __repr__(self):
-        return f"Theme(name='{self.name}', path='{self.path}')"
+class ThemeListBase():
+    '''base class for theme lists'''
 
-def update_theme_list(theme_type:str, /):
-    temp_list = []
+    def __init__ (self, *args, **kwargs):
+        self._dict = dict(*args, **kwargs)
+        self.update()
 
-    if theme_type == 'shell':
-        dirname = 'themes'
-        decider = 'gnome-shell'
-        temp_list.append(Theme('default', None))
-    elif theme_type == 'sound':
-        dirname = 'sounds'
-        decider = 'index.theme'
-    elif theme_type == 'icon':
-        dirname = 'icons'
-        decider = 'index.theme'
-    elif theme_type == 'cursor':
-        dirname = 'icons'
-        decider = 'cursors'
-    else:
-        raise ValueError(f"invalid theme_type '{theme_type}'")
+    def __getitem__ (self, name):
+        return self._dict[name]
 
-    from os import path
-    from glob import glob
-    from .env import HOST_ROOT, HOST_DATA_DIRS
-    for data_dir in HOST_DATA_DIRS:
-        for theme_dir in glob(f"{HOST_ROOT}{data_dir}/{dirname}/*"):
-            theme_name = path.basename(theme_dir)
-            if path.exists(path.join(theme_dir, decider)) and theme_name not in [theme.name for theme in temp_list]:
-                temp_list.append(Theme(theme_name, theme_dir))
+    def __iter__ (self):
+        for name in self.names:
+            path = self._dict[name]
+            yield name, path
 
-    if theme_type == 'shell':
-        global shell_themes
-        shell_themes = sorted(temp_list)
-    elif theme_type == 'sound':
-        global sound_themes
-        sound_themes = sorted(temp_list)
-    elif theme_type == 'icon':
-        global icon_themes
-        icon_themes = sorted(temp_list)
-    elif theme_type == 'cursor':
-        global cursor_themes
-        cursor_themes = sorted(temp_list)
+    @property
+    def names (self):
+        return sorted(self._dict, key=str.lower)
 
-def update_all_theme_lists():
-    for theme_type in 'shell', 'icon', 'cursor', 'sound':
-        update_theme_list(theme_type)
+    def clear (self):
+        self._dict.clear()
 
-update_all_theme_lists()
+    def add (self, name, path):
+        self._dict[name] = path
+
+    def remove (self, name):
+        self._dict.remove(name)
+
+    def get_path (self, name):
+        return self._dict.get(name, None)
+
+    def update (self):
+        self.clear()
+
+        for data_dir in HOST_DATA_DIRS:
+            for theme_dir in glob(f"{HOST_ROOT}{data_dir}/{self.dirname}/*"):
+                theme_name = path.basename(theme_dir)
+                if path.exists(path.join(theme_dir, self.decider)) and theme_name not in self.names:
+                    self.add(theme_name, theme_dir)
+
+class ShellThemes (ThemeListBase):
+    def __init__ (self, *args, **kwargs):
+        self.dirname = 'themes'
+        self.decider = 'gnome-shell'
+        super().__init__(*args, **kwargs)
+
+    def update (self):
+        super().update()
+        self.add('default', None)
+
+class SoundThemes (ThemeListBase):
+    def __init__ (self, *args, **kwargs):
+        self.dirname = 'sounds'
+        self.decider = 'index.theme'
+        super().__init__(*args, **kwargs)
+
+class IconThemes (ThemeListBase):
+    def __init__ (self, *args, **kwargs):
+        self.dirname = 'icons'
+        self.decider = 'index.theme'
+        super().__init__(*args, **kwargs)
+
+class CursorThemes (ThemeListBase):
+    def __init__ (self, *args, **kwargs):
+        self.dirname = 'icons'
+        self.decider = 'cursors'
+        super().__init__(*args, **kwargs)
+
+shell_themes  = ShellThemes()
+sound_themes  = SoundThemes()
+icon_themes   = IconThemes()
+cursor_themes = CursorThemes()
