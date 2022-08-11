@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-11 22:19+0500\n"
-"PO-Revision-Date: 2022-08-05 10:19+0000\n"
+"PO-Revision-Date: 2022-08-12 18:15+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -92,56 +92,40 @@ msgid "The start time's hour"
 msgstr "Inschakelen om (uur)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
-"starttijd aangehouden."
+"Als “schedule-automatic” uitgeschakeld is, dan wordt deze starttijd "
+"aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Inschakelen om (minuut)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
-"starttijd aangehouden."
+"Als “schedule-automatic” uitgeschakeld is, dan wordt deze starttijd "
+"aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
 msgstr "Uitschakelen om (uur)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
-"eindtijd aangehouden."
+"Als “schedule-automatic” uitgeschakeld is, dan wordt deze eindtijd "
+"aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Uitschakelen om (minuut)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Als “night-light-schedule-automatic” uitgeschakeld is, dan wordt deze "
-"eindtijd aangehouden."
+"Als “schedule-automatic” uitgeschakeld is, dan wordt deze eindtijd "
+"aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -877,26 +861,20 @@ msgid "Choose File"
 msgstr "Kies een bestand"
 
 #: src/common_widgets.py:24
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "Geen"
+msgstr "(Geen)"
 
 #: src/common_widgets.py:124
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Kies een bestand"
+msgstr "Kiezen"
 
 #: src/common_widgets.py:125
 msgid "Cancel"
 msgstr "Annuleren"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Kies een bestand"
+msgstr "Afbeelding kiezen"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
