@@ -11,11 +11,7 @@ blueprints = files(
   'tools-page.blp',
 )
 
-blueprint_compiler = find_program('blueprint-compiler', required: false)
-if not blueprint_compiler.found()
-  subproject('blueprint-compiler')
-  blueprint_compiler = find_program('blueprint-compiler')
-endif
+blueprint_compiler = find_program('blueprint-compiler')
 
 custom_target('ui_files',
         input: blueprints,
