@@ -5,7 +5,6 @@ AppDir="$buildDir"/AppDir
 export ARCH=x86_64
 export DESTDIR=${AppDir#"$PWD/"}
 export PREFIX=/usr
-export USE_RELATIVE_SYMLINKS=true
 
 ProjectName=gdm-settings
 ApplicationId=io.github.realmazharhussain.GdmSettings
