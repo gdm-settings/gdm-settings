@@ -24,8 +24,6 @@ fi
 meson compile -C "$buildDir"
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
-#eval $("$progDir"/load_info.py "$buildDir"/src/info.py)
-
 AppRun='#!/usr/bin/bash
 #progDir=$(dirname "$(realpath "$0")")
 progDir=$APPDIR
