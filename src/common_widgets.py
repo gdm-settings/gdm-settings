@@ -8,6 +8,8 @@ readwrite = GObject.ParamFlags.READWRITE
 construct = GObject.ParamFlags.CONSTRUCT
 
 class FileChooserButton (Gtk.Button):
+    __gtype_name__ = 'FileChooserButton'
+
     _freeze_prop_file = False
     _freeze_prop_filename = False
     _default_filter = Gtk.FileFilter(name='All Files')
@@ -143,6 +145,8 @@ class FileChooserButton (Gtk.Button):
 
 
 class ImageChooserButton (FileChooserButton):
+    __gtype_name__ = 'ImageChooserButton'
+
     def __init__ (self, title=_('Choose Image'), filename='', **kwargs):
         super().__init__(title=title, filename=filename, **kwargs)
 
