@@ -35,7 +35,6 @@ gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
-rm -rf "$AppDir"/usr/share/metainfo
 ln -sfr "$AppDir"/usr/share/applications/$ApplicationId.desktop "$AppDir"/
 if which magick &>/dev/null; then
   magick -background none "$AppDir"/usr/share/icons/hicolor/scalable/apps/$ApplicationId.svg "$AppDir"/$ApplicationId.png
