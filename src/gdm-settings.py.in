@@ -20,7 +20,7 @@ style_bold   = '\033[1m'
 
 logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)s')
 
-from gdm_settings.app import Application
+from gdm_settings import Application
 app = Application()
 
 try:

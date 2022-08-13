@@ -21,6 +21,7 @@ configure_file(
 )
 
 source_files = files(
+  '__init__.py',
   'app.py',
   'bind_utils.py',
   'common_widgets.py',
