@@ -8,7 +8,8 @@
     <child name="fonts" schema="io.github.realmazharhussain.GdmSettings.fonts"/>
     <child name="top-bar" schema="io.github.realmazharhussain.GdmSettings.top-bar"/>
     <child name="sound" schema="io.github.realmazharhussain.GdmSettings.sound"/>
-    <child name="pointing" schema="io.github.realmazharhussain.GdmSettings.pointing"/>
+    <child name="mouse" schema="io.github.realmazharhussain.GdmSettings.mouse"/>
+    <child name="touchpad" schema="io.github.realmazharhussain.GdmSettings.touchpad"/>
     <child name="night-light" schema="io.github.realmazharhussain.GdmSettings.night-light"/>
     <child name="misc" schema="io.github.realmazharhussain.GdmSettings.misc"/>
 
