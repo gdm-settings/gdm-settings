@@ -6,3 +6,6 @@ application_id   = 'io.github.realmazharhussain.GdmSettings'
 project_name     = 'gdm-settings'
 version          = '@version@'
 build_type       = '@build_type@'
+
+AppDir = __file__.split('@prefix@')[0]  # Directory which contains this app (detected during runtime)
+data_dir = AppDir + '@data_dir@'        # Application-specific data directory

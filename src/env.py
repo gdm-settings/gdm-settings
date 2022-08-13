@@ -7,7 +7,6 @@ from .utils import PATH
 from gi.repository import GLib
 XDG_CONFIG_HOME = GLib.get_user_config_dir()
 XDG_RUNTIME_DIR = GLib.get_user_runtime_dir()
-XDG_DATA_DIRS   = PATH(GLib.get_system_data_dirs())
 
 # Application-specific Directories
 from .info import application_id

@@ -4,12 +4,12 @@ import sys
 import gettext
 import logging
 
-APPDIR = os.environ.get('APPDIR', '')             # required for AppImage
+AppDir = __file__.split('@prefix@')[0]  # Directory which contains this app (detected during runtime)
 
-py_install_dir = APPDIR + '@py_install_dir@'
+py_install_dir = AppDir + '@py_install_dir@'
 sys.path.insert(1, py_install_dir)
 
-localedir = APPDIR + '@locale_dir@'
+localedir = AppDir + '@locale_dir@'
 gettext.bindtextdomain('gdm-settings', localedir)
 gettext.textdomain('gdm-settings')
 _ = gettext.gettext

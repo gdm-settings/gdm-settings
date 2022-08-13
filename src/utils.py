@@ -8,15 +8,6 @@ def getstdout(command, /):
         command = command.split()
     return run(command, stdout=PIPE).stdout
 
-def find_file(file, locations):
-    '''find a file in possible locations'''
-
-    from os import path
-    for location in locations:
-        file_path = path.join(location, file.lstrip('/'))
-        if path.exists(file_path):
-            return file_path
-
 def listdir_recursive(directory):
     """list files (only) inside a directory recursively"""
 

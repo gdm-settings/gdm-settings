@@ -25,12 +25,11 @@ meson compile -C "$buildDir"
 meson install -C "$buildDir" --destdir="$(realpath "$DESTDIR")"
 
 AppRun='#!/usr/bin/bash
-#progDir=$(dirname "$(realpath "$0")")
-progDir=$APPDIR
-export XDG_DATA_DIRS="${progDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
-export PATH="${progDir}/usr/bin:${PATH}"
-export TEXTDOMAINDIR="${progDir}"/usr/share/locale:"$TEXTDOMAINDIR"
-export LD_LIBRARY_PATH="${progDir}"/usr/lib:${LD_LIBRARY_PATH:-/usr/local/lib:/usr/lib}
+AppDir=$(dirname "$(realpath "$0")")
+export XDG_DATA_DIRS="${AppDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+export PATH="${AppDir}/usr/bin:${PATH}"
+export TEXTDOMAINDIR="${AppDir}"/usr/share/locale:"$TEXTDOMAINDIR"
+export LD_LIBRARY_PATH="${AppDir}"/usr/lib:${LD_LIBRARY_PATH:-/usr/local/lib:/usr/lib}
 gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"

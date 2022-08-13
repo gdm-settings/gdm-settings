@@ -240,8 +240,9 @@ class Application(Adw.Application):
         dialog.present()
 
     def show_app_preferences(self):
-        from .utils import find_file
-        file = find_file(f"{info.project_name}/app-preferences.ui", locations=env.XDG_DATA_DIRS)
+        import os
+
+        file = os.path.join(info.data_dir, 'app-preferences.ui')
         builder = Gtk.Builder.new_from_file(file)
         pref_window = builder.get_object('app_preferences_window')
         pref_window.set_transient_for(widgets.main_window)
@@ -467,9 +468,9 @@ class Application(Adw.Application):
         self.builder.set_translation_domain(info.project_name)
 
         # Load UI files
-        from .utils import find_file
+        import os
         for ui_file_name in ui_files:
-            file = find_file(f"{info.project_name}/{ui_file_name}", locations=env.XDG_DATA_DIRS)
+            file = os.path.join(info.data_dir, ui_file_name)
             self.builder.add_from_file(file)
 
         # Get Widgets from builder ####
