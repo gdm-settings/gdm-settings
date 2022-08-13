@@ -27,5 +27,4 @@ try:
     status = app.run(sys.argv)
     sys.exit(status)
 except KeyboardInterrupt:
-    # We include '\b\b' in print statement here to delete '^C' printed when KeyboardInterrupt happens
-    print('\b\b' + _('KeyboardInterrupt received. Exiting …'), file=sys.stderr)
+    pass
