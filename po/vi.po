@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-11 22:19+0500\n"
-"PO-Revision-Date: 2022-08-09 05:17+0000\n"
+"PO-Revision-Date: 2022-08-15 05:58+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -91,48 +91,32 @@ msgid "The start time's hour"
 msgstr "Giờ bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ bắt đầu này."
+msgstr "Khi lịch trình tự động được tắt, dùng giờ bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Phút bắt đầu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút bắt đầu này."
+msgstr "Khi lịch trình tự động được tắt, dùng phút bắt đầu này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
 msgstr "Giờ kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng giờ kết thúc này."
+msgstr "Khi lịch trình tự động được tắt, dùng giờ kết thúc này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Phút kết thúc"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr "Khi \"chế độ Night Light tự động\" được tắt, dùng phút kết thúc này."
+msgstr "Khi lịch trình tự động được tắt, dùng phút kết thúc này."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -867,26 +851,20 @@ msgid "Choose File"
 msgstr "Chọn file"
 
 #: src/common_widgets.py:24
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "Không có gì"
+msgstr "(Không có gì)"
 
 #: src/common_widgets.py:124
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Chọn file"
+msgstr "Chọn"
 
 #: src/common_widgets.py:125
 msgid "Cancel"
-msgstr ""
+msgstr "Hủy bỏ"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Chọn file"
+msgstr "Chọn hình ảnh"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
