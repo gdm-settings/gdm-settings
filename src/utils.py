@@ -140,7 +140,7 @@ class CommandElevator:
             with open(script_file, "w") as open_script_file:
                 print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=755)
-            returncode = run(args=[*self.__elevator, script_file]).returncode
+            returncode = run_on_host(['pkexec', script_file]).returncode
             remove(script_file)
 
         return ProcessReturnCode(returncode)
