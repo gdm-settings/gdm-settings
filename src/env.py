@@ -2,6 +2,38 @@
 
 import os
 
+def read_os_release():
+    filename = None
+    for fn in '/run/host/os-release', '/etc/os-release', '/usr/lib/os-release':
+        if os.path.isfile(fn):
+            filename = fn
+            break
+
+    if filename is None:
+        return
+
+    os_release = []
+    with open(filename, 'r') as file:
+        for line_number, line in enumerate(file, start=1):
+            line = line.split('#')[0]   # Discard comments
+            line = line.strip()         # Strip whitespace
+
+            if not line:
+                continue
+
+            import re
+            if m := re.match(r'([A-Z][A-Z_0-9]+)=(.*)', line):
+                name, val = m.groups()
+                if val and val[0] in '"\'':
+                    import ast
+                    val = ast.literal_eval(val)
+                os_release.append((name, val))
+            else:
+                import sys
+                print(f'{filename}:{line_number}: bad line {line!r}',
+                      file=sys.stderr)
+
+    return dict(os_release)
 
 class PATH (list):
     '''
@@ -60,7 +92,6 @@ elif os.environ.get('APPDIR'):   # AppImage
 
 
 # OS Release info
-from .utils import read_os_release
 os_release = read_os_release()
 
 OS_NAME       = os_release.get('NAME',       'Linux')

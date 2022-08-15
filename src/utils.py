@@ -23,40 +23,6 @@ def listdir_recursive(directory):
 
     return files
 
-def read_os_release():
-    filename = None
-    from os import path
-    for fn in '/run/host/os-release', '/etc/os-release', '/usr/lib/os-release':
-        if path.isfile(fn):
-            filename = fn
-            break
-
-    if filename is None:
-        return
-
-    os_release = []
-    with open(filename, 'r') as file:
-        for line_number, line in enumerate(file, start=1):
-            line = line.split('#')[0]   # Discard comments
-            line = line.strip()         # Strip whitespace
-
-            if not line:
-                continue
-
-            import re
-            if m := re.match(r'([A-Z][A-Z_0-9]+)=(.*)', line):
-                name, val = m.groups()
-                if val and val[0] in '"\'':
-                    import ast
-                    val = ast.literal_eval(val)
-                os_release.append((name, val))
-            else:
-                import sys
-                print(f'{filename}:{line_number}: bad line {line!r}',
-                      file=sys.stderr)
-
-    return dict(os_release)
-
 
 def version(string, /):
     '''Return a tuple that represents a program version number'''
