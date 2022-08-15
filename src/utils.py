@@ -66,53 +66,13 @@ class NoCommandsFoundError(Exception): pass
 
 class CommandElevator:
     """ Runs a list of commands with elevated privilages """
-    def __init__(self, elevator:str='', *, shebang:str='') -> None:
-        self.__list = []
-        self.shebang = shebang or "#!/bin/sh"
-        if elevator:
-            self.elevator = elevator
-        else:
-            self.autodetect_elevator()
-
-    @property
-    def shebang(self):
-        """ Shebang to determine shell for running elevated commands """
-        return self.__shebang
-    @shebang.setter
-    def shebang(self, value):
-        if value.startswith('#!/'):
-            self.__shebang = value
-        else:
-            raise ValueError("shebang does not start with '#!/'")
-
-    @property
-    def elevator(self):
-        """
-        Program to use for privilage elevation
-
-        Example: "sudo", "doas", "pkexec", etc.
-        """
-        return self.__elevator
-    @elevator.setter
-    def elevator(self, value):
-        if isinstance(value, str):
-            self.__elevator = value.strip(' ').split(' ')
-        elif isinstance(value, list):
-            self.__elevator = value
-        else:
-            raise ValueError("elevator is not of type 'str' or 'list'")
+    def __init__(self, *, shebang='#!/bin/sh') -> None:
+        self._list = []
+        self.shebang = shebang
 
     @property
     def empty (self):
-        return True if len(self.__list) == 0 else False
-
-    def autodetect_elevator(self):
-        from .enums import PackageType
-        from . import env
-        if env.PACKAGE_TYPE is PackageType.Flatpak:
-            self.elevator = "flatpak-spawn --host pkexec"
-        else:
-            self.elevator = "pkexec"
+        return True if len(self._list) == 0 else False
 
     def add(self, command, /):
         """ Add a new command to the list """
@@ -120,25 +80,24 @@ class CommandElevator:
         if isinstance(command, list):
             command = ' '.join(command)
 
-        return self.__list.append(command)
+        return self._list.append(command)
 
     def clear(self):
         """ Clear command list """
-        return self.__list.clear()
+        return self._list.clear()
 
     def run_only(self) -> bool:
         """ Run commands but DO NOT clear command list """
 
         from os import chmod, makedirs, remove
         from subprocess import run
-        from . import env
 
         returncode = 0
-        if len(self.__list):
+        if len(self._list):
             makedirs(name=env.TEMP_DIR, exist_ok=True)
             script_file = f"{env.TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
-                print(self.__shebang, *self.__list, sep="\n", file=open_script_file)
+                print(self.shebang, *self._list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=755)
             returncode = run_on_host(['pkexec', script_file]).returncode
             remove(script_file)
