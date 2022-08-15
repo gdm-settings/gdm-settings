@@ -135,7 +135,7 @@ class Application(Adw.Application):
 
             return False
 
-        gdm_installed = check_dependency('gdm') or check_dependency('gdm3')
+        gdm_installed = bool(ShellGresourceFile)
         polkit_installed = check_dependency('pkexec')
         glib_dev_installed = check_dependency('glib-compile-resources', 'GLib', on_host=False)
 
