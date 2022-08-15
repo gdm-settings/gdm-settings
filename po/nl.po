@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-15 13:44+0500\n"
-"PO-Revision-Date: 2022-08-12 18:15+0000\n"
+"PO-Revision-Date: 2022-08-16 09:59+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -309,16 +309,10 @@ msgid "Urdu"
 msgstr "Urdu"
 
 #: src/app.py:48
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "Toepassingsversie tonen"
 
 #: src/app.py:49
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Foutopsporingsniveau instellen (0-5)"
 
@@ -328,28 +322,22 @@ msgid "LEVEL"
 msgstr "NIVEAU"
 
 #: src/app.py:51
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (alias of --verbosity=5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Foutopsporingsmodus inschakelen (alias --verbosity=5)"
 
 #: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Stille modus inschakelen   (alias --verbosity=0)"
+msgstr "Stille modus inschakelen (alias --verbosity=0)"
 
 #: src/app.py:74
-#, fuzzy, python-brace-format
-#| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+#, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
-"{level} is geen foutopsporingsniveau. Foutopsporingsniveaus liggen tussen 0 "
-"en 5."
+"{level} is geen geldig foutopsporingsniveau. Foutopsporingsniveaus liggen "
+"tussen 0 en 5.\n"
+"Niveau 4 wordt ingesteld."
 
 #: src/app.py:151
 msgid ""
@@ -935,14 +923,16 @@ msgstr "De voorkeuren kunnen niet worden ingesteld"
 #: src/window.py:89
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
+"computer herstart."
 
 #: src/window.py:92
 msgid "Log Out?"
-msgstr ""
+msgstr "Afmelden?"
 
 #: src/window.py:101
 msgid "Log Out"
-msgstr ""
+msgstr "Afmelden"
 
 #~ msgid "Assuming Verbosity level 4."
 #~ msgstr "Verondersteld: foutopsporingsniveau 4."
