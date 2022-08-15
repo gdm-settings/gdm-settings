@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-11 22:19+0500\n"
+"POT-Creation-Date: 2022-08-15 10:57+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -42,7 +42,7 @@ msgid "The image file to use as GDM background"
 msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/blueprints/top-bar-page.blp:51
+#: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "رنگ پس‌زمینه"
 
@@ -154,8 +154,8 @@ msgid "Top bar background color"
 msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#: src/blueprints/main-window.blp:18 src/info.py.in:4
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
+#: src/window.py:17
 msgid "Login Manager Settings"
 msgstr "تنظیمات مدیر ورود"
 
@@ -290,161 +290,94 @@ msgstr "اسپانیایی"
 msgid "Urdu"
 msgstr "اُردو"
 
-#: src/app.py:30
+#: src/app.py:48
 #, fuzzy
 #| msgid "Command-line option --version"
-msgctxt "Description of --version option"
 msgid "Show application version"
 msgstr "گزینهٔ خط فرمانی ‎--version"
 
-#: src/app.py:38
-msgctxt "Description of --verbosity option"
+#: src/app.py:49
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: src/app.py:40
+#: src/app.py:50
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:47
-msgctxt "Description of --verbose option"
+#: src/app.py:51
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: src/app.py:56
-msgctxt "Description of --quiet option"
-msgid "Enable quiet mode   (alias of --verbosity=0)"
+#: src/app.py:52
+msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:119
+#: src/app.py:74
 #, python-brace-format
-msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+msgid ""
+"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+"Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:120
-msgid "Assuming Verbosity level 4."
-msgstr ""
-
-#: src/app.py:168
+#: src/app.py:151
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:171
+#: src/app.py:154
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:179
+#: src/app.py:162
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:186
+#: src/app.py:169
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:192
+#: src/app.py:175
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:201
+#: src/app.py:183
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:206
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:272
-msgid "Applied current display settings"
-msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
+#: src/app.py:224
+msgid "Settings reloaded"
+msgstr "تنظیمات مجدداً بارگزاری شد"
 
-#: src/app.py:274
-msgid "Failed to apply current display settings"
-msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
+#: src/app.py:232
+msgid "User settings imported"
+msgstr "تنظیمات کاربر درون‌ریزی شد"
 
-#: src/app.py:278
-msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
-"\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
-msgstr ""
-
-#: src/app.py:289
-msgid "Monitor Settings Not Found"
-msgstr ""
-
-# در این رشته از نویسهٔ LRM استفاده شده است
-#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are. They will be replaced by an actual folder path and theme name during runtime.
-#: src/app.py:328
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
-msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
-
-#: src/app.py:330
-msgid "Failed to extract default theme"
-msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
-
-#: src/app.py:658
-msgid "Appearance"
-msgstr "ظاهر"
-
-#: src/app.py:659 src/blueprints/fonts-page.blp:20
-msgid "Fonts"
-msgstr "قلم‌ها"
-
-#: src/app.py:660
-msgid "Top Bar"
-msgstr "نوار بالا"
-
-#: src/app.py:661 src/blueprints/sound-page.blp:20
-msgid "Sound"
-msgstr "صدا"
-
-#: src/app.py:662
-msgid "Mouse & Touchpad"
-msgstr "موشی و صفحه‌لمسی"
-
-#: src/app.py:663 src/blueprints/display-page.blp:20
-msgid "Display"
-msgstr "نمایشگر"
-
-#: src/app.py:664 src/blueprints/misc-page.blp:20
-msgid "Miscellaneous"
-msgstr "متفرقه"
-
-#: src/app.py:665
-msgid "Tools"
-msgstr "ابزارها"
-
-#: src/app.py:690
+#: src/app.py:236
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/app.py:695
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
-#: src/app.py:698
+#: src/app.py:245
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
@@ -477,134 +410,142 @@ msgstr ""
 msgid "Complete Overlay"
 msgstr ""
 
-#: src/blueprints/appearance-page.blp:20
+#: src/blueprints/appearance-page.blp:9
 msgid "Themes"
 msgstr "زمینه‌ها"
 
-#: src/blueprints/appearance-page.blp:22
+#: src/blueprints/appearance-page.blp:11
 msgid "Shell"
 msgstr "پوسته"
 
-#: src/blueprints/appearance-page.blp:23
+#: src/blueprints/appearance-page.blp:12
 msgid "Icons"
 msgstr "نقشک‌ها"
 
-#: src/blueprints/appearance-page.blp:24
+#: src/blueprints/appearance-page.blp:13
 msgid "Cursor"
 msgstr "مکان‌نما"
 
-#: src/blueprints/appearance-page.blp:28
+#: src/blueprints/appearance-page.blp:17
 msgid "Background"
 msgstr "پس‌زمینه"
 
-#: src/blueprints/appearance-page.blp:31
+#: src/blueprints/appearance-page.blp:20
 msgid "Type"
 msgstr "نوع"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/fonts-page.blp:36
-#: src/blueprints/fonts-page.blp:46
+#: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
+#: src/blueprints/fonts-page.blp:35
 msgid "None"
 msgstr "هیچ‌کدام"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:37
+#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
 msgid "Image"
 msgstr "تصویر"
 
-#: src/blueprints/appearance-page.blp:32 src/blueprints/appearance-page.blp:42
+#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
 msgid "Color"
 msgstr "رنگ"
 
-#: src/blueprints/appearance-page.blp:38
+#: src/blueprints/appearance-page.blp:27
 msgid "The image to use as background"
 msgstr "تصویری که به عنوان پس‌زمینه استفاده می‌شود"
 
-#: src/blueprints/appearance-page.blp:43
+#: src/blueprints/appearance-page.blp:32
 msgid "The color to use as background"
 msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
 
-#: src/blueprints/display-page.blp:23
+#: src/blueprints/display-page.blp:9 src/window.py:53
+msgid "Display"
+msgstr "نمایشگر"
+
+#: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "اِعمال تنظیمات نمایشگر کنونی"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
 
-#: src/blueprints/display-page.blp:27 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:24
 msgid "Apply"
 msgstr "اِعمال"
 
-#: src/blueprints/display-page.blp:32
+#: src/blueprints/display-page.blp:21
 msgid "Night Light"
 msgstr "نور شب"
 
-#: src/blueprints/display-page.blp:35
+#: src/blueprints/display-page.blp:24
 msgid "Enable"
 msgstr "به کار انداختن"
 
-#: src/blueprints/display-page.blp:44
+#: src/blueprints/display-page.blp:33
 msgid "Schedule"
 msgstr "زمان‌بندی"
 
-#: src/blueprints/display-page.blp:45
+#: src/blueprints/display-page.blp:34
 msgid "Sunset to Sunrise"
 msgstr "غروب تا طلوع"
 
-#: src/blueprints/display-page.blp:45
+#: src/blueprints/display-page.blp:34
 msgid "Manual Schedule"
 msgstr "زمان‌بندی دستی"
 
-#: src/blueprints/display-page.blp:49
+#: src/blueprints/display-page.blp:38
 msgid "Times"
 msgstr "زمان‌ها"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:52
+#: src/blueprints/display-page.blp:41
 msgid "From"
 msgstr "از"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:76
+#: src/blueprints/display-page.blp:65
 msgid "To"
 msgstr "تا"
 
-#: src/blueprints/display-page.blp:100
+#: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "دمای رنگ"
 
-#: src/blueprints/fonts-page.blp:23
+#: src/blueprints/fonts-page.blp:9 src/window.py:49
+msgid "Fonts"
+msgstr "قلم‌ها"
+
+#: src/blueprints/fonts-page.blp:12
 msgid "Font"
 msgstr "قلم"
 
-#: src/blueprints/fonts-page.blp:32
+#: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
 msgstr "حذف لبه‌های ناصاف"
 
-#: src/blueprints/fonts-page.blp:34
+#: src/blueprints/fonts-page.blp:23
 msgid "Standard"
 msgstr "استاندارد"
 
-#: src/blueprints/fonts-page.blp:35
+#: src/blueprints/fonts-page.blp:24
 msgid "Subpixel"
 msgstr "زیرپیکسل"
 
-#: src/blueprints/fonts-page.blp:41
+#: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
 msgstr "راهنمایی"
 
-#: src/blueprints/fonts-page.blp:43
+#: src/blueprints/fonts-page.blp:32
 msgid "Full"
 msgstr "کامل"
 
-#: src/blueprints/fonts-page.blp:44
+#: src/blueprints/fonts-page.blp:33
 msgid "Medium"
 msgstr "متوسّط"
 
-#: src/blueprints/fonts-page.blp:45
+#: src/blueprints/fonts-page.blp:34
 msgid "Slight"
 msgstr "خفیف"
 
-#: src/blueprints/fonts-page.blp:51
+#: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
 msgstr "ضریب مقیاس"
 
@@ -628,228 +569,220 @@ msgstr "درباره"
 msgid "Quit"
 msgstr "خروج"
 
-#: src/blueprints/main-window.blp:67
-msgid "Failed to apply settings"
-msgstr "اِعمال تنظیمات شکست خورد"
+#: src/blueprints/misc-page.blp:9 src/window.py:54
+msgid "Miscellaneous"
+msgstr "متفرقه"
 
-#: src/blueprints/main-window.blp:73
-msgid "Settings applied successfully"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
-
-#: src/blueprints/main-window.blp:79
-msgid "User settings imported"
-msgstr "تنظیمات کاربر درون‌ریزی شد"
-
-#: src/blueprints/main-window.blp:85
-msgid "Settings reloaded"
-msgstr "تنظیمات مجدداً بارگزاری شد"
-
-#: src/blueprints/misc-page.blp:23
+#: src/blueprints/misc-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "از کار انداختن دکمه‌های شروع مجدد"
 
-#: src/blueprints/misc-page.blp:32
+#: src/blueprints/misc-page.blp:21
 msgid "Disable User List"
 msgstr "از کار انداختن فهرست کاربران"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/misc-page.blp:30
 msgid "Enable Logo"
 msgstr "به کار انداختن لوگو"
 
-#: src/blueprints/misc-page.blp:42
+#: src/blueprints/misc-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "اینکه یک لوگو در پایین فهرست کاربران نمایش داده شود"
 
-#: src/blueprints/misc-page.blp:51
+#: src/blueprints/misc-page.blp:40
 msgid "Logo"
 msgstr "لوگو"
 
-#: src/blueprints/misc-page.blp:52
+#: src/blueprints/misc-page.blp:41
 msgid "The image to show below user list"
 msgstr "تصویری که در پایین فهرست کاربران نمایش داده می‌شود"
 
-#: src/blueprints/misc-page.blp:57
+#: src/blueprints/misc-page.blp:46
 msgid "Welcome Message"
 msgstr "پیام خوشامدگویی"
 
-#: src/blueprints/pointing-page.blp:20
+#: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
 msgstr "موشی"
 
-#: src/blueprints/pointing-page.blp:23
+#: src/blueprints/pointing-page.blp:12
 msgid "Pointer Acceleration"
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:25
+#: src/blueprints/pointing-page.blp:14
 msgid "Automatic"
 msgstr "خودکار"
 
-#: src/blueprints/pointing-page.blp:26
+#: src/blueprints/pointing-page.blp:15
 msgid "Disabled"
 msgstr "از کار افتاده"
 
-#: src/blueprints/pointing-page.blp:27
+#: src/blueprints/pointing-page.blp:16
 msgid "Enabled"
 msgstr "به کار افتاده"
 
-#: src/blueprints/pointing-page.blp:32
+#: src/blueprints/pointing-page.blp:21
 msgid "Inverse Scrolling"
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:33 src/blueprints/pointing-page.blp:61
+#: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:40 src/blueprints/pointing-page.blp:83
+#: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
 msgid "Pointer Speed"
 msgstr "سرعت نشانگر"
 
-#: src/blueprints/pointing-page.blp:50
+#: src/blueprints/pointing-page.blp:39
 msgid "Touchpad"
 msgstr "صفحهٔ لمسی"
 
-#: src/blueprints/pointing-page.blp:53
+#: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "ضربه برای کلیک"
 
-#: src/blueprints/pointing-page.blp:60
+#: src/blueprints/pointing-page.blp:49
 msgid "Natural Scrolling"
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:68
+#: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:69
+#: src/blueprints/pointing-page.blp:58
 msgid "Scroll by swiping with two fingers."
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:76
+#: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr ""
 
-#: src/blueprints/sound-page.blp:22
+#: src/blueprints/sound-page.blp:9 src/window.py:51
+msgid "Sound"
+msgstr "صدا"
+
+#: src/blueprints/sound-page.blp:11
 msgid "Theme"
 msgstr "زمینه"
 
-#: src/blueprints/sound-page.blp:25
+#: src/blueprints/sound-page.blp:14
 msgid "Over Amplification"
 msgstr "بیش‌تقویت"
 
 # در این ترجمه از نویسهٔ LRM استفاده شده است
-#: src/blueprints/sound-page.blp:26
+#: src/blueprints/sound-page.blp:15
 msgid "Allow raising volume above 100%"
 msgstr "اجازه به افزایش صدا بیش‌تر از ‎۱۰۰٪"
 
-#: src/blueprints/sound-page.blp:35
+#: src/blueprints/sound-page.blp:24
 msgid "Event Sounds"
 msgstr "صدای رویدادها"
 
-#: src/blueprints/sound-page.blp:44
+#: src/blueprints/sound-page.blp:33
 msgid "Input Feedback Sounds"
 msgstr ""
 
-#: src/blueprints/tools-page.blp:20
+#: src/blueprints/tools-page.blp:9
 msgid "Default Shell Theme"
 msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
 
-#: src/blueprints/tools-page.blp:23
+#: src/blueprints/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
 msgstr "شامل سیخونک‌های نوار بالا"
 
-#: src/blueprints/tools-page.blp:30
+#: src/blueprints/tools-page.blp:19
 msgid "Extract default shell theme"
 msgstr "استخراج زمینهٔ پیش‌گزیدهٔ پوسته"
 
-#: src/blueprints/tools-page.blp:33
+#: src/blueprints/tools-page.blp:22
 msgid "Extract"
 msgstr "استخراج"
 
-#: src/blueprints/top-bar-page.blp:20
+#: src/blueprints/top-bar-page.blp:9
 msgid "Tweaks"
 msgstr "سیخونک‌ها"
 
-#: src/blueprints/top-bar-page.blp:23
+#: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
 msgstr "تغییر رنگ متن"
 
-#: src/blueprints/top-bar-page.blp:31
+#: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
 msgstr "رنگ متن"
 
-#: src/blueprints/top-bar-page.blp:32
+#: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
 msgstr "رنگ متن درون نوار بالا"
 
-#: src/blueprints/top-bar-page.blp:43
+#: src/blueprints/top-bar-page.blp:32
 msgid "Change Background Color"
 msgstr "تغییر رنگ پس‌زمینه"
 
-#: src/blueprints/top-bar-page.blp:52
+#: src/blueprints/top-bar-page.blp:41
 msgid "The color of top bar background"
 msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
-#: src/blueprints/top-bar-page.blp:63
+#: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
 msgstr "از کار انداختن پیکان‌ها"
 
-#: src/blueprints/top-bar-page.blp:72
+#: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
 msgstr "از کار انداختن گوشه‌های گرد"
 
-#: src/blueprints/top-bar-page.blp:82
+#: src/blueprints/top-bar-page.blp:71
 msgid "Clock"
 msgstr "ساعت"
 
-#: src/blueprints/top-bar-page.blp:85
+#: src/blueprints/top-bar-page.blp:74
 msgid "Show Weekday"
 msgstr "نمایش روز هفته"
 
-#: src/blueprints/top-bar-page.blp:94
+#: src/blueprints/top-bar-page.blp:83
 msgid "Show Seconds"
 msgstr "نمایش ثانیه"
 
-#: src/blueprints/top-bar-page.blp:103
+#: src/blueprints/top-bar-page.blp:92
 msgid "Time Format"
 msgstr "قالب زمان"
 
-#: src/blueprints/top-bar-page.blp:104
+#: src/blueprints/top-bar-page.blp:93
 msgid "AM/PM"
 msgstr "صبح/عصر"
 
-#: src/blueprints/top-bar-page.blp:104
+#: src/blueprints/top-bar-page.blp:93
 msgid "24 Hours"
 msgstr "۲۴ ساعتی"
 
-#: src/blueprints/top-bar-page.blp:109
+#: src/blueprints/top-bar-page.blp:98
 msgid "Power"
 msgstr "انرژی"
 
-#: src/blueprints/top-bar-page.blp:112
+#: src/blueprints/top-bar-page.blp:101
 msgid "Show battery percentage"
 msgstr "نمایش درصد باتری"
 
-#: src/common_widgets.py:18
+#: src/common_widgets.py:20
 msgid "Choose File"
 msgstr "انتخاب پرونده"
 
-#: src/common_widgets.py:24
+#: src/common_widgets.py:26
 #, fuzzy
 #| msgid "None"
 msgid "(None)"
 msgstr "هیچ‌کدام"
 
-#: src/common_widgets.py:124
+#: src/common_widgets.py:126
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose"
 msgstr "انتخاب پرونده"
 
-#: src/common_widgets.py:125
+#: src/common_widgets.py:127
 msgid "Cancel"
 msgstr ""
 
-#: src/common_widgets.py:146
+#: src/common_widgets.py:150
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose Image"
@@ -881,9 +814,43 @@ msgstr ""
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
-#: src/gdm-settings.py.in:31
-msgid "KeyboardInterrupt received. Exiting …"
+#: src/pages/display.py:63
+msgid "Applied current display settings"
+msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
+
+#: src/pages/display.py:65
+msgid "Failed to apply current display settings"
+msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
+
+#: src/pages/display.py:70
+msgid ""
+"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+"display settings but it does not exist.\n"
+"\n"
+"In order to create that file automatically,\n"
+"\n"
+"1. Go to 'Display' panel of System Settings.\n"
+"2. Change some settings there.\n"
+"3. Apply."
 msgstr ""
+
+#: src/pages/display.py:81
+msgid "Monitor Settings Not Found"
+msgstr ""
+
+# در این رشته از نویسهٔ LRM استفاده شده است
+#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
+#. They will be replaced by an actual folder path and theme name during runtime.
+#: src/pages/tools.py:54
+#, fuzzy, python-brace-format
+#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+msgid "Default shell theme extracted to '{folder}' as '{name}'"
+msgstr ""
+"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
+
+#: src/pages/tools.py:57
+msgid "Failed to extract default theme"
+msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
 #: src/settings.py:198
 #, fuzzy
@@ -912,6 +879,30 @@ msgstr ""
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
+
+#: src/window.py:48
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: src/window.py:50
+msgid "Top Bar"
+msgstr "نوار بالا"
+
+#: src/window.py:52
+msgid "Mouse & Touchpad"
+msgstr "موشی و صفحه‌لمسی"
+
+#: src/window.py:55
+msgid "Tools"
+msgstr "ابزارها"
+
+#: src/window.py:74
+msgid "Settings applied successfully"
+msgstr "تنظیمات با موفّقیت اِعمال شد"
+
+#: src/window.py:76
+msgid "Failed to apply settings"
+msgstr "اِعمال تنظیمات شکست خورد"
 
 #~ msgid "Images"
 #~ msgstr "تصاویر"
