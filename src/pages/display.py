@@ -1,5 +1,6 @@
 import os
-from gi.repository import Gtk
+from gi.repository import Adw, Gtk
+from gettext import gettext as _, pgettext as C_
 from ..info import data_dir
 from ..settings import night_light_settings as nl_settings
 from ..bind_utils import *
