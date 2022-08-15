@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-15 13:44+0500\n"
-"PO-Revision-Date: 2022-07-03 17:16+0000\n"
+"PO-Revision-Date: 2022-08-16 09:59+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -89,54 +89,35 @@ msgid "The start time's hour"
 msgstr "Ora de debuta"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Quand « night-light-schedule-automatic » es desactivat, utilizar aquesta ora "
-"de debuta."
+"Quand « schedule-automatic » es desactivat, utilizar aquesta ora de debuta."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Minuta de l’ora de debuta"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
 "Quand la foncion de lum nocturn automatica es activada, utilizar aquesta ora "
 "de debuta en minutas."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "Minuta de l’ora de fin"
+msgstr "L’ora de fin"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
 "Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
-"ora de fin en minutas."
+"ora de fin en oras."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Minuta de l’ora de fin"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
@@ -246,8 +227,6 @@ msgid "Fixed:"
 msgstr "Reglats :"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
 msgid "Welcome message could not contain single quotes"
 msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
 
@@ -327,16 +306,10 @@ msgid "Urdu"
 msgstr "Ordo"
 
 #: src/app.py:48
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "Afichar la version de l’aplicacion"
 
 #: src/app.py:49
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Definir manualament lo nivèl de verbiositat (de 0 a 5)"
 
@@ -346,28 +319,22 @@ msgid "LEVEL"
 msgstr "NIVÈL"
 
 #: src/app.py:51
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Activar lo mòde verbiós (definir lo nivèl a 5)"
+msgstr "Activar lo mòde verbiós (alias de --verbosity=5)"
 
 #: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Activar lo mòde silenciós   (definir lo nivèl de verbiositat a 0)"
+msgstr "Activar lo mòde silenciós (alias of --verbosity=0)"
 
 #: src/app.py:74
-#, fuzzy, python-brace-format
-#| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+#, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
 "{level} es un nivèl de verbiositat invalid. Las valors acceptadas son de 0 a "
-"5."
+"5.\n"
+"Consideram que lo nivèl es a 4."
 
 #: src/app.py:151
 msgid ""
@@ -408,7 +375,7 @@ msgstr ""
 
 #: src/app.py:188
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Dependéncias absentas"
 
 #: src/app.py:224
 msgid "Settings reloaded"
@@ -816,26 +783,20 @@ msgid "Choose File"
 msgstr "Causir un fichièr"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "Pas cap"
+msgstr "(Pas cap)"
 
 #: src/common_widgets.py:126
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Causir un fichièr"
+msgstr "Causir"
 
 #: src/common_widgets.py:127 src/window.py:103
 msgid "Cancel"
 msgstr "Anullar"
 
 #: src/common_widgets.py:150
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Causir un fichièr"
+msgstr "Causir un imatge"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -846,8 +807,6 @@ msgid "Homepage"
 msgstr "Pagina d’acuèlh"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -901,10 +860,8 @@ msgid "Failed to extract default theme"
 msgstr "Fracàs en ensajar de traire lo tèma shell per defaut"
 
 #: src/settings.py:198
-#, fuzzy
-#| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
-msgstr "enregistrament del tèma per defaut…"
+msgstr "Salvagarda del tèma per defaut…"
 
 #: src/settings.py:246
 msgctxt "Command-line output"
@@ -956,11 +913,11 @@ msgstr ""
 
 #: src/window.py:92
 msgid "Log Out?"
-msgstr ""
+msgstr "Se desconnectar ?"
 
 #: src/window.py:101
 msgid "Log Out"
-msgstr ""
+msgstr "Desconnexion"
 
 #~ msgid "Assuming Verbosity level 4."
 #~ msgstr "Nivèl de verbiositat entendut coma 4."
