@@ -2,6 +2,8 @@ import os
 from gi.repository import Adw, Gtk, Gio
 from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
+from .gr_utils import UbuntuGdmGresourceFile
+from .utils import run_on_host
 from .bind_utils import bind
 from . import pages
 
@@ -67,8 +69,8 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.spinner.set_spinning(True)
         self.application.settings_manager.apply_settings_async(self.on_apply_finished)
 
-    def on_apply_finished(self, source_object, result, user_data):
-        status = self.application.settings_manager.apply_settings_finish(result)
+    def on_apply_finished(self, settings_manager, result, user_data):
+        status = settings_manager.apply_settings_finish(result)
 
         if status.success:
             message = _('Settings applied successfully')
@@ -80,3 +82,31 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.apply_button.set_sensitive(True)
         self.spinner.set_spinning(False)
+
+        if UbuntuGdmGresourceFile or os.environ.get('XDG_CURRENT_DESKTOP') != 'GNOME':
+            return
+
+        message = _('The system may start to look weird/buggy untill you re-login or reboot.')
+
+        dialog = Gtk.MessageDialog(
+                         text = _('Log Out?'),
+                        modal = True,
+                      buttons = Gtk.ButtonsType.NONE,
+                 message_type = Gtk.MessageType.QUESTION,
+                transient_for = self,
+               secondary_text = message,
+         secondary_use_markup = True,
+        )
+
+        logout_button = Gtk.Button(label=_('Log Out'), css_classes=['destructive-action'])
+
+        dialog.add_button(_('Cancel'), Gtk.ResponseType.CLOSE)
+        dialog.add_action_widget(logout_button, Gtk.ResponseType.YES)
+        dialog.connect('response', self.on_logout_dialog_response)
+        dialog.present()
+
+    def on_logout_dialog_response (self, dialog, response):
+        if response == Gtk.ResponseType.YES:
+            run_on_host(['gnome-session-quit', '--no-prompt'])
+        else:
+            dialog.close()
