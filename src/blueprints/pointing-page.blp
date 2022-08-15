@@ -1,92 +1,79 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow pointing_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Mouse");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ComboRow m_acceleration_comborow {
+      title: _("Pointer Acceleration");
+      model: StringList { strings [
+        _("Automatic"),
+        _("Disabled"),
+        _("Enabled"),
+      ]};
+    }
 
-      Adw.PreferencesGroup {
-        title: _("Mouse");
+    Adw.ActionRow {
+      title: _("Inverse Scrolling");
+      subtitle: _("Scrolling moves the content, not the view.");
+      activatable-widget: m_natural_scrolling_switch;
 
-        Adw.ComboRow pointer_acceleration_comborow {
-          title: _("Pointer Acceleration");
-          model: StringList { strings [
-            _("Automatic"),
-            _("Disabled"),
-            _("Enabled"),
-          ]};
-        }
+      Switch m_natural_scrolling_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Inverse Scrolling");
-          subtitle: _("Scrolling moves the content, not the view.");
-          activatable-widget: mouse_inverse_scrolling_switch;
+    Adw.ActionRow {
+      title: _("Pointer Speed");
 
-          Switch mouse_inverse_scrolling_switch { valign: center; }
-        }
-
-        Adw.ActionRow {
-          title: _("Pointer Speed");
-
-          Scale mouse_speed_scale {
-            orientation: horizontal;
-            hexpand: true;
-          }
-        }
+      Scale m_speed_scale {
+        orientation: horizontal;
+        hexpand: true;
       }
+    }
+  }
 
-      Adw.PreferencesGroup {
-        title: _("Touchpad");
+  Adw.PreferencesGroup {
+    title: _("Touchpad");
 
-        Adw.ActionRow {
-          title: _("Tap to Click");
-          activatable-widget: tap_to_click_switch;
+    Adw.ActionRow {
+      title: _("Tap to Click");
+      activatable-widget: t_tap_to_click_switch;
 
-          Switch tap_to_click_switch { valign: center; }
-        }
+      Switch t_tap_to_click_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Natural Scrolling");
-          subtitle: _("Scrolling moves the content, not the view.");
-          activatable-widget: natural_scrolling_switch;
+    Adw.ActionRow {
+      title: _("Natural Scrolling");
+      subtitle: _("Scrolling moves the content, not the view.");
+      activatable-widget: t_natural_scrolling_switch;
 
-          Switch natural_scrolling_switch { valign: center; }
-        }
+      Switch t_natural_scrolling_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Two-finger Scrolling");
-          subtitle: _("Scroll by swiping with two fingers.");
-          activatable-widget: two_finger_scrolling_switch;
+    Adw.ActionRow {
+      title: _("Two-finger Scrolling");
+      subtitle: _("Scroll by swiping with two fingers.");
+      activatable-widget: t_two_finger_scrolling_switch;
 
-          Switch two_finger_scrolling_switch { valign: center; }
-        }
+      Switch t_two_finger_scrolling_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Disable while Typing");
-          activatable-widget: disable_while_typing_switch;
+    Adw.ActionRow {
+      title: _("Disable while Typing");
+      activatable-widget: t_disable_while_typing_switch;
 
-          Switch disable_while_typing_switch { valign: center; }
-        }
+      Switch t_disable_while_typing_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Pointer Speed");
+    Adw.ActionRow {
+      title: _("Pointer Speed");
 
-          Scale touchpad_speed_scale {
-            orientation: horizontal;
-            hexpand: true;
-          }
-        }
+      Scale t_speed_scale {
+        orientation: horizontal;
+        hexpand: true;
       }
     }
   }

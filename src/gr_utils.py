@@ -29,8 +29,6 @@ if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
 elif 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
     GdmUsername = 'Debian-gdm'
 
-logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
-logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
 def is_unmodified(gresourceFile:str):
     """checks if the provided file is a GResource file of the default theme"""

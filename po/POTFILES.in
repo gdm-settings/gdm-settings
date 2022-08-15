@@ -28,4 +28,14 @@ src/common_widgets.py
 src/dialogs.py
 src/gdm-settings.py.in
 src/info.py.in
+src/pages/appearance.py
+src/pages/common.py
+src/pages/display.py
+src/pages/fonts.py
+src/pages/misc.py
+src/pages/pointing.py
+src/pages/sound.py
+src/pages/tools.py
+src/pages/top_bar.py
 src/settings.py
+src/window.py

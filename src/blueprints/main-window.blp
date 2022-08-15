@@ -14,75 +14,21 @@ menu app_menu {
   }
 }
 
-Adw.ApplicationWindow main_window {
-  title: _("Login Manager Settings");
 
-  content: Box {
-    orientation: vertical;
+Box content_box {
+  orientation: vertical;
 
-    Adw.HeaderBar {
-      title-widget: Adw.WindowTitle { title: bind main_window.title; };
-      [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
-      [end] Separator { margin-start: 10; }
-      [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
-      [end] Spinner spinner { spinning: false; margin-end: 5; }
+  Adw.HeaderBar {
+    [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
+    [end] Separator { margin-start: 10; }
+    [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
+    [end] Spinner spinner { spinning: false; margin-end: 5; }
+  }
+
+  Adw.ToastOverlay toast_overlay {
+    Paned paned {
+      [start] StackSidebar { stack: stack; }
+      [end]   Stack stack { hexpand: true; width-request: 300; }
     }
-
-    Adw.ToastOverlay main_toast_overlay {
-      Paned paned {
-        [start] StackSidebar { stack: page_stack; }
-        [end]   Stack page_stack { hexpand: true; width-request: 300; }
-      }
-    }
-  };
-}
-
-/*
-FileChooserNative background_image_chooser {
-  transient-for: main_window;
-  modal: true;
-  filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
-}
-
-FileChooserNative logo_chooser {
-  transient-for: main_window;
-  modal: true;
-  filter: FileFilter { name: _("Images"); mime-types ["image/*"] };
-}
-
-FileChooserNative extracted_theme_destination_chooser {
-  transient-for: main_window;
-  modal: true;
-  filter: FileFilter { name: _("Directories"); mime-types ["inode/directory"] };
-
-  [action response=cancel]
-  Button extracted_theme_destination_chooser_button_cancel { label: _("Cancel"); }
-
-  [action response=ok default]
-  Button extracted_theme_destination_chooser_button_select { label: _("Select"); }
-}
-*/
-
-Adw.Toast apply_failed_toast {
-  title: _("Failed to apply settings");
-  timeout: 2;
-  priority: high;
-}
-
-Adw.Toast apply_succeeded_toast {
-  title: _("Settings applied successfully");
-  timeout: 2;
-  priority: high;
-}
-
-Adw.Toast user_settings_imported_toast {
-  title: _("User settings imported");
-  timeout: 1;
-  priority: high;
-}
-
-Adw.Toast settings_reloaded_toast {
-  title: _("Settings reloaded");
-  timeout: 1;
-  priority: high;
+  }
 }

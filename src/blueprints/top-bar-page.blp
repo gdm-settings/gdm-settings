@@ -1,121 +1,108 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow top_bar_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Tweaks");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ExpanderRow text_color_expanderrow {
+      title: _("Change Text Color");
 
-      Adw.PreferencesGroup {
-        title: _("Tweaks");
-
-        Adw.ExpanderRow top_bar_text_color_expanderrow {
-          title: _("Change Text Color");
-
-          [action] Switch top_bar_text_color_switch {
-            valign: center;
-            active: bind top_bar_text_color_expanderrow.expanded bidirectional;
-          }
-
-          Adw.ActionRow top_bar_text_color_actionrow {
-            title: _("Text Color");
-            subtitle: _("The color of text in top bar");
-            activatable-widget: top_bar_text_color_button;
-
-            ColorButton top_bar_text_color_button {
-              valign: center;
-              use-alpha: true;
-            }
-          }
-        }
-
-        Adw.ExpanderRow {
-          title: _("Change Background Color");
-          expanded: bind top_bar_background_color_switch.active bidirectional;
-
-          [action] Switch top_bar_background_color_switch {
-            valign: center;
-          }
-
-          Adw.ActionRow top_bar_background_color_actionrow {
-            title: _("Background Color");
-            subtitle: _("The color of top bar background");
-            activatable-widget: top_bar_background_color_button;
-
-            ColorButton top_bar_background_color_button {
-              valign: center;
-              use-alpha: true;
-            }
-          }
-        }
-
-        Adw.ActionRow disable_top_bar_arrows_actionrow {
-          title: _("Disable Arrows");
-          activatable-widget: disable_top_bar_arrows_switch;
-
-          Switch disable_top_bar_arrows_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ActionRow disable_top_bar_rounded_corners_actionrow {
-          title: _("Disable Rounded Corners");
-          activatable-widget: disable_top_bar_rounded_corners_switch;
-
-          Switch disable_top_bar_rounded_corners_switch {
-            valign: center;
-          }
-        }
+      [action] Switch text_color_switch {
+        valign: center;
+        active: bind text_color_expanderrow.expanded bidirectional;
       }
 
-      Adw.PreferencesGroup {
-        title: _("Clock");
+      Adw.ActionRow {
+        title: _("Text Color");
+        subtitle: _("The color of text in top bar");
+        activatable-widget: text_color_button;
 
-        Adw.ActionRow {
-          title: _("Show Weekday");
-          activatable-widget: show_weekday_switch;
-
-          Switch show_weekday_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ActionRow {
-          title: _("Show Seconds");
-          activatable-widget: show_seconds_switch;
-
-          Switch show_seconds_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ComboRow time_format_comborow {
-          title: _("Time Format");
-          model: StringList { strings [_("AM/PM"), _("24 Hours")] };
+        ColorButton text_color_button {
+          valign: center;
+          use-alpha: true;
         }
       }
+    }
 
-      Adw.PreferencesGroup {
-        title: _("Power");
+    Adw.ExpanderRow {
+      title: _("Change Background Color");
+      expanded: bind background_color_switch.active bidirectional;
 
-        Adw.ActionRow {
-          title: _("Show battery percentage");
-          activatable-widget: show_battery_percentage_switch;
+      [action] Switch background_color_switch {
+        valign: center;
+      }
 
-          Switch show_battery_percentage_switch {
-            valign: center;
-          }
+      Adw.ActionRow {
+        title: _("Background Color");
+        subtitle: _("The color of top bar background");
+        activatable-widget: background_color_button;
+
+        ColorButton background_color_button {
+          valign: center;
+          use-alpha: true;
         }
+      }
+    }
+
+    Adw.ActionRow {
+      title: _("Disable Arrows");
+      activatable-widget: disable_arrows_switch;
+
+      Switch disable_arrows_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ActionRow {
+      title: _("Disable Rounded Corners");
+      activatable-widget: disable_rounded_corners_switch;
+
+      Switch disable_rounded_corners_switch {
+        valign: center;
+      }
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Clock");
+
+    Adw.ActionRow {
+      title: _("Show Weekday");
+      activatable-widget: show_weekday_switch;
+
+      Switch show_weekday_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ActionRow {
+      title: _("Show Seconds");
+      activatable-widget: show_seconds_switch;
+
+      Switch show_seconds_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ComboRow time_format_comborow {
+      title: _("Time Format");
+      model: StringList { strings [_("AM/PM"), _("24 Hours")] };
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Power");
+
+    Adw.ActionRow {
+      title: _("Show battery percentage");
+      activatable-widget: show_battery_percentage_switch;
+
+      Switch show_battery_percentage_switch {
+        valign: center;
       }
     }
   }

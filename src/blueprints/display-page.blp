@@ -1,110 +1,97 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow display_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Display");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ActionRow {
+      title: _("Apply current display settings");
+      subtitle: _("Resolution, refresh rate, monitor positions, etc");
+      activatable-widget: apply_display_settings_button;
 
-      Adw.PreferencesGroup {
-        title: _("Display");
+      Button apply_display_settings_button { label: _("Apply"); valign: center; }
+    }
+  }
 
-        Adw.ActionRow {
-          title: _("Apply current display settings");
-          subtitle: _("Resolution, refresh rate, monitor positions, etc");
-          activatable-widget: apply_current_display_settings_button;
+  Adw.PreferencesGroup {
+    title: _("Night Light");
 
-          Button apply_current_display_settings_button { label: _("Apply"); valign: center; }
+    Adw.ActionRow {
+      title: _("Enable");
+      activatable-widget: nl_enable_switch;
+
+      Switch nl_enable_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ComboRow nl_schedule_comborow {
+      title: _("Schedule");
+      model: StringList { strings [_("Sunset to Sunrise"), _("Manual Schedule")] };
+    }
+
+    Adw.ActionRow {
+      title: _("Times");
+
+      // Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+      Label { label: _("From"); styles ["dim-label"] }
+
+      Box nl_start_box {
+        spacing: 5;
+        margin-top: 5;
+        margin-bottom: 5;
+
+        SpinButton nl_start_hour_spinbutton {
+          orientation: vertical;
+          width-chars: 2;
+          valign: center;
+        }
+
+        Label { label: ":"; }
+
+        SpinButton nl_start_minute_spinbutton {
+          orientation: vertical;
+          width-chars: 2;
+          valign: center;
         }
       }
 
-      Adw.PreferencesGroup {
-        title: _("Night Light");
+      Separator { styles ["spacer"] }
+      // Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+      Label { label: _("To"); styles ["dim-label"] }
 
-        Adw.ActionRow {
-          title: _("Enable");
-          activatable-widget: night_light_enable_switch;
+      Box nl_end_box {
+        spacing: 5;
+        margin-top: 5;
+        margin-bottom: 5;
 
-          Switch night_light_enable_switch {
-            valign: center;
-          }
+        SpinButton nl_end_hour_spinbutton {
+          orientation: vertical;
+          width-chars: 2;
+          valign: center;
         }
 
-        Adw.ComboRow night_light_schedule_comborow {
-          title: _("Schedule");
-          model: StringList { strings [_("Sunset to Sunrise"), _("Manual Schedule")] };
+        Label { label: ":"; }
+
+        SpinButton nl_end_minute_spinbutton {
+          orientation: vertical;
+          width-chars: 2;
+          valign: center;
         }
+      }
+    }
 
-        Adw.ActionRow {
-          title: _("Times");
+    Adw.ActionRow {
+      title: _("Color Temperature");
 
-          // Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-          Label { label: _("From"); styles ["dim-label"] }
-
-          Box night_light_start_box {
-            spacing: 5;
-            margin-top: 5;
-            margin-bottom: 5;
-
-            SpinButton night_light_start_hour_spinbutton {
-              orientation: vertical;
-              width-chars: 2;
-              valign: center;
-            }
-
-            Label { label: ":"; }
-
-            SpinButton night_light_start_minute_spinbutton {
-              orientation: vertical;
-              width-chars: 2;
-              valign: center;
-            }
-          }
-
-          Separator { styles ["spacer"] }
-          // Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-          Label { label: _("To"); styles ["dim-label"] }
-
-          Box night_light_end_box{
-            spacing: 5;
-            margin-top: 5;
-            margin-bottom: 5;
-
-            SpinButton night_light_end_hour_spinbutton {
-              orientation: vertical;
-              width-chars: 2;
-              valign: center;
-            }
-
-            Label { label: ":"; }
-
-            SpinButton night_light_end_minute_spinbutton {
-              orientation: vertical;
-              width-chars: 2;
-              valign: center;
-            }
-          }
-        }
-
-        Adw.ActionRow {
-          title: _("Color Temperature");
-
-          Scale night_light_color_temperature_scale {
-            orientation: horizontal;
-            hexpand: true;
-            inverted: true;
-          }
-        }
+      Scale nl_temperature_scale {
+        orientation: horizontal;
+        hexpand: true;
+        inverted: true;
       }
     }
   }

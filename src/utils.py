@@ -63,6 +63,7 @@ def version(string, /):
 
     return tuple(int(segment) for segment in string.split('.'))
 
+
 class PATH (list):
     '''
     A list to store values of PATH-like environment variables

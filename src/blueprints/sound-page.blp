@@ -1,53 +1,40 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow sound_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Sound");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ComboRow theme_comborow { title: _("Theme"); }
 
-      Adw.PreferencesGroup {
-        title: _("Sound");
+    Adw.ActionRow {
+      title: _("Over Amplification");
+      subtitle: _("Allow raising volume above 100%");
+      activatable-widget: over_amplification_switch;
 
-        Adw.ComboRow sound_theme_comborow { title: _("Theme"); }
+      Switch over_amplification_switch {
+        valign: center;
+      }
+    }
 
-        Adw.ActionRow {
-          title: _("Over Amplification");
-          subtitle: _("Allow raising volume above 100%");
-          activatable-widget: over_amplification_switch;
+    Adw.ActionRow {
+      title: _("Event Sounds");
+      activatable-widget: event_sounds_switch;
 
-          Switch over_amplification_switch {
-            valign: center;
-          }
-        }
+      Switch event_sounds_switch {
+        valign: center;
+      }
+    }
 
-        Adw.ActionRow {
-          title: _("Event Sounds");
-          activatable-widget: event_sounds_switch;
+    Adw.ActionRow {
+      title: _("Input Feedback Sounds");
+      activatable-widget: feedback_sounds_switch;
 
-          Switch event_sounds_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ActionRow {
-          title: _("Input Feedback Sounds");
-          activatable-widget: feedback_sounds_switch;
-
-          Switch feedback_sounds_switch {
-            valign: center;
-          }
-        }
+      Switch feedback_sounds_switch {
+        valign: center;
       }
     }
   }

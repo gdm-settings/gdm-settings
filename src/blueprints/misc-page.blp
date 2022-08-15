@@ -1,70 +1,57 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow misc_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Miscellaneous");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ActionRow {
+      title: _("Disable Restart Buttons");
+      activatable-widget: disable_restart_buttons_switch;
 
-      Adw.PreferencesGroup {
-        title: _("Miscellaneous");
-
-        Adw.ActionRow {
-          title: _("Disable Restart Buttons");
-          activatable-widget: disable_restart_buttons_switch;
-
-          Switch disable_restart_buttons_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ActionRow {
-          title: _("Disable User List");
-          activatable-widget: disable_user_list_switch;
-
-          Switch disable_user_list_switch {
-            valign: center;
-          }
-        }
-
-        Adw.ExpanderRow logo_expanderrow {
-          title: _("Enable Logo");
-          subtitle: _("Whether to show a logo below user list");
-          expanded: bind enable_logo_switch.active bidirectional;
-
-          [action]
-          Switch enable_logo_switch {
-            valign: center;
-          }
-
-          Adw.ActionRow logo_actionrow{
-            title: _("Logo");
-            subtitle: _("The image to show below user list");
-          }
-        }
-
-        Adw.ExpanderRow welcome_message_expanderrow {
-          title: _("Welcome Message");
-          expanded: bind enable_welcome_message_switch.active bidirectional;
-
-          [action]
-          Switch enable_welcome_message_switch {
-            valign: center;
-          }
-
-          Entry welcome_message_entry { }
-        }
+      Switch disable_restart_buttons_switch {
+        valign: center;
       }
+    }
+
+    Adw.ActionRow {
+      title: _("Disable User List");
+      activatable-widget: disable_user_list_switch;
+
+      Switch disable_user_list_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ExpanderRow logo_expanderrow {
+      title: _("Enable Logo");
+      subtitle: _("Whether to show a logo below user list");
+      expanded: bind logo_switch.active bidirectional;
+
+      [action]
+      Switch logo_switch {
+        valign: center;
+      }
+
+      Adw.ActionRow logo_actionrow{
+        title: _("Logo");
+        subtitle: _("The image to show below user list");
+      }
+    }
+
+    Adw.ExpanderRow {
+      title: _("Welcome Message");
+      expanded: bind welcome_message_switch.active bidirectional;
+
+      [action]
+      Switch welcome_message_switch {
+        valign: center;
+      }
+
+      Entry welcome_message_entry { }
     }
   }
 }

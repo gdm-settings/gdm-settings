@@ -1,52 +1,39 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow appearance_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Themes");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ComboRow shell_theme_comborow { title: _("Shell"); }
+    Adw.ComboRow icon_theme_comborow { title: _("Icons"); }
+    Adw.ComboRow cursor_theme_comborow { title: _("Cursor"); }
+  }
 
-      Adw.PreferencesGroup {
-        title: _("Themes");
+  Adw.PreferencesGroup {
+    title: _("Background");
 
-        Adw.ComboRow shell_theme_comborow { title: _("Shell"); }
-        Adw.ComboRow icon_theme_comborow { title: _("Icons"); }
-        Adw.ComboRow cursor_theme_comborow { title: _("Cursor"); }
-      }
+    Adw.ComboRow background_type_comborow {
+      title: _("Type");
+      model: StringList { strings [_("None"), _("Image"), _("Color")] };
 
-      Adw.PreferencesGroup {
-        title: _("Background");
+    }
 
-        Adw.ComboRow background_type_comborow {
-          title: _("Type");
-          model: StringList { strings [_("None"), _("Image"), _("Color")] };
+    Adw.ActionRow background_image_actionrow {
+      title: _("Image");
+      subtitle: _("The image to use as background");
+    }
 
-        }
+    Adw.ActionRow background_color_actionrow {
+      title: _("Color");
+      subtitle: _("The color to use as background");
+      activatable-widget: background_color_button;
 
-        Adw.ActionRow background_image_actionrow {
-          title: _("Image");
-          subtitle: _("The image to use as background");
-        }
-
-        Adw.ActionRow background_color_actionrow {
-          title: _("Color");
-          subtitle: _("The color to use as background");
-          activatable-widget: background_color_button;
-
-          ColorButton background_color_button {
-            valign: center;
-          }
-        }
+      ColorButton background_color_button {
+        valign: center;
       }
     }
   }

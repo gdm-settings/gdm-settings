@@ -1,60 +1,47 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow fonts_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Fonts");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ActionRow {
+      title: _("Font");
+      activatable-widget: font_button;
 
-      Adw.PreferencesGroup {
-        title: _("Fonts");
+      FontButton font_button {
+        valign: center;
+      }
+    }
 
-        Adw.ActionRow {
-          title: _("Font");
-          activatable-widget: font_button;
+    Adw.ComboRow antialiasing_comborow {
+      title: _("Antialiasing");
+      model: StringList { strings [
+        _("Standard"),
+        _("Subpixel"),
+        _("None"),
+      ]};
+    }
 
-          FontButton font_button {
-            valign: center;
-          }
-        }
+    Adw.ComboRow hinting_comborow {
+      title: _("Hinting");
+      model: StringList { strings [
+        _("Full"),
+        _("Medium"),
+        _("Slight"),
+        _("None"),
+      ]};
+    }
 
-        Adw.ComboRow antialiasing_comborow {
-          title: _("Antialiasing");
-          model: StringList { strings [
-            _("Standard"),
-            _("Subpixel"),
-            _("None"),
-          ]};
-        }
+    Adw.ActionRow {
+      title: _("Scaling Factor");
 
-        Adw.ComboRow hinting_comborow {
-          title: _("Hinting");
-          model: StringList { strings [
-            _("Full"),
-            _("Medium"),
-            _("Slight"),
-            _("None"),
-          ]};
-        }
-
-        Adw.ActionRow scaling_factor_actionrow {
-          title: _("Scaling Factor");
-
-          SpinButton scaling_factor_spinbutton {
-            digits: 2;
-            valign: center;
-          }
-        }
+      SpinButton scaling_factor_spinbutton {
+        digits: 2;
+        valign: center;
       }
     }
   }

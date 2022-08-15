@@ -1,38 +1,25 @@
 using Gtk 4.0;
 using Adw 1;
 
-ScrolledWindow tools_page_content {
-  propagate-natural-height: true;
+Box content_box {
+  orientation: vertical;
+  spacing: 20;
 
-  Adw.Clamp {
-    maximum-size: 2000;
-    tightening-threshold: 300;
-    margin-top: 20;
-    margin-bottom: 20;
-    margin-start: 20;
-    margin-end: 20;
+  Adw.PreferencesGroup {
+    title: _("Default Shell Theme");
 
-    Box {
-      orientation: vertical;
-      spacing: 20;
+    Adw.ActionRow {
+      title: _("Include Top Bar Tweaks");
+      activatable-widget: top_bar_tweaks_switch;
 
-      Adw.PreferencesGroup {
-        title: _("Default Shell Theme");
+      Switch top_bar_tweaks_switch { valign: center; }
+    }
 
-        Adw.ActionRow {
-          title: _("Include Top Bar Tweaks");
-          activatable-widget: include_top_bar_tweaks_switch;
+    Adw.ActionRow {
+      title: _("Extract default shell theme");
+      activatable-widget: extract_shell_theme_button;
 
-          Switch include_top_bar_tweaks_switch { valign: center; }
-        }
-
-        Adw.ActionRow {
-          title: _("Extract default shell theme");
-          activatable-widget: extract_shell_theme_button;
-
-          Button extract_shell_theme_button { label: _("Extract"); valign: center; }
-        }
-      }
+      Button extract_shell_theme_button { label: _("Extract"); valign: center; }
     }
   }
 }

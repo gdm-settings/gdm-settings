@@ -35,8 +35,12 @@ source_files = files(
   'settings.py',
   'theme_lists.py',
   'utils.py',
+  'window.py',
 )
 install_data(source_files,
+  install_dir: python.get_install_dir() / 'gdm_settings'
+)
+install_subdir('pages',
   install_dir: python.get_install_dir() / 'gdm_settings'
 )
 

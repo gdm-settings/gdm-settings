@@ -432,8 +432,8 @@ class SettingsManager (GObject.Object):
 
         return result.propagate_value().value
 
-    def apply_current_display_settings(self) -> bool:
-        ''' Apply current display settings '''
+    def apply_user_display_settings(self) -> bool:
+        ''' Apply user's current display settings '''
 
         user_monitors_xml = path.join(env.XDG_CONFIG_HOME, 'monitors.xml')
 
