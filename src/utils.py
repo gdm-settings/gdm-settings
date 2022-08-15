@@ -1,5 +1,8 @@
 '''Some random utility functions, classes, objects, etc. used throughout the source code'''
 
+from .enums import PackageType
+from . import env
+
 def getstdout(command, /):
     '''get standard output of a command'''
 
@@ -28,6 +31,17 @@ def version(string, /):
     '''Return a tuple that represents a program version number'''
 
     return tuple(int(segment) for segment in string.split('.'))
+
+
+def run_on_host(command, *args, **kwargs):
+    from subprocess import run
+
+    if isinstance(command, str):
+        command = [command]
+    if env.PACKAGE_TYPE is PackageType.Flatpak:
+        command = ['flatpak-spawn', '--host'] + command
+
+    return run(command, *args, **kwargs)
 
 
 class ProcessReturnCode(int):
