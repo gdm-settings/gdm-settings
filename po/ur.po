@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 10:57+0500\n"
+"POT-Creation-Date: 2022-08-15 13:44+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -190,7 +190,7 @@ msgstr "بیک گرائونڈ کا رنگ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:17
+#: src/window.py:19
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
@@ -493,7 +493,7 @@ msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصوی�
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: src/blueprints/display-page.blp:9 src/window.py:53
+#: src/blueprints/display-page.blp:9 src/window.py:55
 msgid "Display"
 msgstr "ڈسپلے"
 
@@ -547,7 +547,7 @@ msgstr "ختم"
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:49
+#: src/blueprints/fonts-page.blp:9 src/window.py:51
 msgid "Fonts"
 msgstr "خط"
 
@@ -607,7 +607,7 @@ msgstr "تفصیلات"
 msgid "Quit"
 msgstr "بند کریں"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:54
+#: src/blueprints/misc-page.blp:9 src/window.py:56
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
@@ -695,7 +695,7 @@ msgstr "دو انگلیوں کے ساتھ سوائیپ کریں۔"
 msgid "Disable while Typing"
 msgstr "ٹائپ کرتے وقت بند کریں"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:51
+#: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
 msgstr "آواز"
 
@@ -815,7 +815,7 @@ msgstr "کچھ نہیں"
 msgid "Choose"
 msgstr "فائل چُنیں"
 
-#: src/common_widgets.py:127
+#: src/common_widgets.py:127 src/window.py:103
 msgid "Cancel"
 msgstr "کینسل"
 
@@ -851,15 +851,15 @@ msgstr ""
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: src/pages/display.py:63
+#: src/pages/display.py:64
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/pages/display.py:65
+#: src/pages/display.py:66
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/pages/display.py:70
+#: src/pages/display.py:71
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -871,20 +871,20 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:54
+#: src/pages/tools.py:56
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "ڈیفالٹ شیل تھیم '{path}' میں 'default-extracted' کے نام سے سیو ہو گیا ہے"
 
-#: src/pages/tools.py:57
+#: src/pages/tools.py:59
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
@@ -916,29 +916,41 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/window.py:52
+#: src/window.py:54
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/window.py:55
+#: src/window.py:57
 msgid "Tools"
 msgstr "آلات"
 
-#: src/window.py:74
+#: src/window.py:76
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/window.py:76
+#: src/window.py:78
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
+
+#: src/window.py:89
+msgid "The system may start to look weird/buggy untill you re-login or reboot."
+msgstr ""
+
+#: src/window.py:92
+msgid "Log Out?"
+msgstr ""
+
+#: src/window.py:101
+msgid "Log Out"
+msgstr ""
 
 #~ msgid "Images"
 #~ msgstr "تصویریں"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 10:57+0500\n"
+"POT-Creation-Date: 2022-08-15 13:44+0500\n"
 "PO-Revision-Date: 2022-08-12 18:15+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -173,7 +173,7 @@ msgstr "Achtergrondkleur van bovenbalk"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:17
+#: src/window.py:19
 msgid "Login Manager Settings"
 msgstr "Aanmeldvenstervoorkeuren"
 
@@ -490,7 +490,7 @@ msgstr "De afbeelding die wordt ingesteld als achtergrond"
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: src/blueprints/display-page.blp:9 src/window.py:53
+#: src/blueprints/display-page.blp:9 src/window.py:55
 msgid "Display"
 msgstr "Beeldscherm"
 
@@ -544,7 +544,7 @@ msgstr "Tot"
 msgid "Color Temperature"
 msgstr "Kleurtemperatuur"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:49
+#: src/blueprints/fonts-page.blp:9 src/window.py:51
 msgid "Fonts"
 msgstr "Lettertypen"
 
@@ -604,7 +604,7 @@ msgstr "Over"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:54
+#: src/blueprints/misc-page.blp:9 src/window.py:56
 msgid "Miscellaneous"
 msgstr "Overig"
 
@@ -692,7 +692,7 @@ msgstr "Scroll door met twee vingers te vegen."
 msgid "Disable while Typing"
 msgstr "Uitschakelen tijdens typen"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:51
+#: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
 msgstr "Geluid"
 
@@ -808,7 +808,7 @@ msgstr "(Geen)"
 msgid "Choose"
 msgstr "Kiezen"
 
-#: src/common_widgets.py:127
+#: src/common_widgets.py:127 src/window.py:103
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -840,15 +840,15 @@ msgstr "Thales Bindá"
 msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
-#: src/pages/display.py:63
+#: src/pages/display.py:64
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/pages/display.py:65
+#: src/pages/display.py:66
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
-#: src/pages/display.py:70
+#: src/pages/display.py:71
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -868,19 +868,19 @@ msgstr ""
 "2. Pas een voorkeur aan;\n"
 "3. Pas de voorkeuren toe."
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Monitor Settings Not Found"
 msgstr "Beeldschermvoorkeuren ontbreken"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:54
+#: src/pages/tools.py:56
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Het standaard Shell-thema is uitgepakt naar ‘{folder}’ onder de naam ‘{name}’"
 
-#: src/pages/tools.py:57
+#: src/pages/tools.py:59
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
@@ -908,29 +908,41 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Appearance"
 msgstr "Vormgeving"
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-#: src/window.py:52
+#: src/window.py:54
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
 
-#: src/window.py:55
+#: src/window.py:57
 msgid "Tools"
 msgstr "Hulpmiddelen"
 
-#: src/window.py:74
+#: src/window.py:76
 msgid "Settings applied successfully"
 msgstr "De voorkeuren zijn ingesteld"
 
-#: src/window.py:76
+#: src/window.py:78
 msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
+
+#: src/window.py:89
+msgid "The system may start to look weird/buggy untill you re-login or reboot."
+msgstr ""
+
+#: src/window.py:92
+msgid "Log Out?"
+msgstr ""
+
+#: src/window.py:101
+msgid "Log Out"
+msgstr ""
 
 #~ msgid "Assuming Verbosity level 4."
 #~ msgstr "Verondersteld: foutopsporingsniveau 4."

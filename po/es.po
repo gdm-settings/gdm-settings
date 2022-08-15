@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 10:57+0500\n"
+"POT-Creation-Date: 2022-08-15 13:44+0500\n"
 "PO-Revision-Date: 2022-08-02 18:19+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -186,7 +186,7 @@ msgstr "Color de fondo de la barra superior"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:17
+#: src/window.py:19
 msgid "Login Manager Settings"
 msgstr "Configuración del gestor de inicio de sesión"
 
@@ -514,7 +514,7 @@ msgstr "La imagen a usar como fondo"
 msgid "The color to use as background"
 msgstr "El color a usar como fondo"
 
-#: src/blueprints/display-page.blp:9 src/window.py:53
+#: src/blueprints/display-page.blp:9 src/window.py:55
 msgid "Display"
 msgstr "Pantalla"
 
@@ -568,7 +568,7 @@ msgstr "Hasta"
 msgid "Color Temperature"
 msgstr "Temperatura del color"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:49
+#: src/blueprints/fonts-page.blp:9 src/window.py:51
 msgid "Fonts"
 msgstr "Tipografías"
 
@@ -628,7 +628,7 @@ msgstr "Acerca de"
 msgid "Quit"
 msgstr "Salir"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:54
+#: src/blueprints/misc-page.blp:9 src/window.py:56
 msgid "Miscellaneous"
 msgstr "Miscelánea"
 
@@ -716,7 +716,7 @@ msgstr "Desplazar deslizando dos dedos."
 msgid "Disable while Typing"
 msgstr "Desactivar mientras se teclea"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:51
+#: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
 msgstr "Sonido"
 
@@ -836,7 +836,7 @@ msgstr "Ninguno"
 msgid "Choose"
 msgstr "Elegir archivo"
 
-#: src/common_widgets.py:127
+#: src/common_widgets.py:127 src/window.py:103
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -870,15 +870,15 @@ msgstr "Thales Bindá"
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
-#: src/pages/display.py:63
+#: src/pages/display.py:64
 msgid "Applied current display settings"
 msgstr "Aplicada la configuración actual de la pantalla"
 
-#: src/pages/display.py:65
+#: src/pages/display.py:66
 msgid "Failed to apply current display settings"
 msgstr "No se ha podido aplicar la configuración actual de la pantalla"
 
-#: src/pages/display.py:70
+#: src/pages/display.py:71
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -898,18 +898,18 @@ msgstr ""
 "2. Cambie algunos ajustes allí.\n"
 "3. Aplicar."
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Monitor Settings Not Found"
 msgstr "No se encuentra la configuración del monitor"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:54
+#: src/pages/tools.py:56
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Tema de shell predeterminado extraído en ''{folder}'' como ''{name}''"
 
-#: src/pages/tools.py:57
+#: src/pages/tools.py:59
 msgid "Failed to extract default theme"
 msgstr "Fallo al extraer el tema predeterminado"
 
@@ -940,29 +940,41 @@ msgstr ""
 "Restableciendo la configuración de GResource para sistemas que no son de "
 "Ubuntu …"
 
-#: src/window.py:48
+#: src/window.py:50
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/window.py:50
+#: src/window.py:52
 msgid "Top Bar"
 msgstr "Barra superior"
 
-#: src/window.py:52
+#: src/window.py:54
 msgid "Mouse & Touchpad"
 msgstr "Ratón y panel táctil"
 
-#: src/window.py:55
+#: src/window.py:57
 msgid "Tools"
 msgstr "Herramientas"
 
-#: src/window.py:74
+#: src/window.py:76
 msgid "Settings applied successfully"
 msgstr "Configuración aplicada con éxito"
 
-#: src/window.py:76
+#: src/window.py:78
 msgid "Failed to apply settings"
 msgstr "No se ha podido aplicar la configuración"
+
+#: src/window.py:89
+msgid "The system may start to look weird/buggy untill you re-login or reboot."
+msgstr ""
+
+#: src/window.py:92
+msgid "Log Out?"
+msgstr ""
+
+#: src/window.py:101
+msgid "Log Out"
+msgstr ""
 
 #~ msgid "Assuming Verbosity level 4."
 #~ msgstr "Asumiendo el nivel de verbosidad 4."
