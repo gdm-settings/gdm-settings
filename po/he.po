@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-15 10:57+0500\n"
-"PO-Revision-Date: 2022-08-10 13:17+0000\n"
+"PO-Revision-Date: 2022-08-15 08:45+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -90,56 +90,38 @@ msgid "The start time's hour"
 msgstr "שעת זמן ההתחלה"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"כאשר „night-light-schedule-automatic” (תזמון תאורת לילה אוטומטית) מושבתת, יש "
-"להשתמש בערך הזה כשעת זמן ההתחלה."
+"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, הערך הזה ישמש כשעת זמן "
+"ההתחלה."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "דקות זמן ההתחלה"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"כאשר „night-light-schedule-automatic” (תזמון תאורת לילה אוטומטית) מושבתת, יש "
-"להשתמש בערך הזה כדקות זמן ההתחלה."
+"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כדקות זמן "
+"ההתחלה."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
 msgstr "שעת זמן הסיום"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"כאשר „night-light-schedule-automatic” (תזמון תאורת לילה אוטומטית) מושבתת, יש "
-"להשתמש בערך הזה כשעת זמן הסיום."
+"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כשעת זמן הסיום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "דקות זמן הסיום"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"כאשר „night-light-schedule-automatic” (תזמון תאורת לילה אוטומטית) מושבתת, יש "
-"להשתמש בערך הזה כדקות זמן הסיום."
+"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כדקות זמן הסיום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -311,18 +293,12 @@ msgid "Urdu"
 msgstr "אורדו"
 
 #: src/app.py:48
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "הצגת גרסת היישום"
 
 #: src/app.py:49
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "הגדרת רמת פירוט (מ־0 עד 5)"
+msgstr "הגדרת רמת פירוט ידנית (מ־0 עד 5)"
 
 #: src/app.py:50
 msgctxt "Argument of --verbosity option"
@@ -330,26 +306,21 @@ msgid "LEVEL"
 msgstr "רמה"
 
 #: src/app.py:51
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (alias of --verbosity=5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "הפעלת מצב מפורט (כינוי חלופי ל־‎--verbosity=5)"
 
 #: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 
 #: src/app.py:74
-#, fuzzy, python-brace-format
-#| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+#, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
-msgstr "{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5."
+msgstr ""
+"{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5.\n"
+"כנראה שהתכוונת לרמת פירוט 4."
 
 #: src/app.py:151
 msgid ""
@@ -801,26 +772,20 @@ msgid "Choose File"
 msgstr "בחירת קובץ"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "ללא"
+msgstr "(ללא)"
 
 #: src/common_widgets.py:126
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "בחירת קובץ"
+msgstr "בחירה"
 
 #: src/common_widgets.py:127
 msgid "Cancel"
-msgstr ""
+msgstr "ביטול"
 
 #: src/common_widgets.py:150
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "בחירת קובץ"
+msgstr "בחירת תמונה"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
