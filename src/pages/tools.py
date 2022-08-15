@@ -1,5 +1,7 @@
 import os
-from gi.repository import Gtk
+from gi.repository import Adw, Gtk
+from gettext import gettext as _, pgettext as C_
+from ..env import TEMP_DIR
 from ..utils import CommandElevator
 from ..info import data_dir, application_id
 from ..gr_utils import extract_default_theme, ThemesDir
@@ -31,15 +33,15 @@ class ToolsPageContent (PageContent):
     def on_extract_shell_theme(self, button):
 
         perm_theme_name = 'default-extracted'
-        perm_theme_path = join(ThemesDir, perm_theme_name)
-        temp_theme_path = join(env.TEMP_DIR, 'extracted-theme')
+        perm_theme_path = os.path.join(ThemesDir, perm_theme_name)
+        temp_theme_path = os.path.join(TEMP_DIR, 'extracted-theme')
 
         # Extract default shell theme to a temporary path
         extract_default_theme(temp_theme_path)
 
         # If enabled, apply top bar tweaks
         if self.gsettings['top-bar-tweaks']:
-            with open(join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
+            with open(os.path.join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
                 shell_css.write(self.window.application.settings_manager.get_setting_css())
 
         # Copy extracted theme to its permanent path
