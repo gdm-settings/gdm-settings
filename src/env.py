@@ -1,17 +1,51 @@
 '''get information about program's environment'''
 
 import os
-from .utils import PATH
+
+
+class PATH (list):
+    '''
+    A list to store values of PATH-like environment variables
+
+    For example, with
+        mypath = PATH('/usr/local/bin:/usr/bin')
+    OR
+        mypath = PATH(['/usr/local/bin', '/usr/bin'])
+    we get,
+        print(mypath)       # prints /usr/local/bin:/usr/bin
+        print(*mypath)      # prints /usr/local/bin /usr/bin
+        print(mypath[0])    # prints /usr/local/bin
+        print(repr(mypath)) # prints PATH(['/usr/local/bin', '/usr/bin'])
+    '''
+
+    def __init__ (self, value=None, /):
+        if value is None:
+            return list.__init__(self)
+        elif isinstance(value, str):
+            value = value.strip(':').split(':')
+        return list.__init__(self, value)
+
+    def __str__ (self, /):
+        return ':'.join(self)
+
+    def __repr__ (self, /):
+        return self.__class__.__name__ + '(' + list.__repr__(self) + ')'
+
+    def copy (self, /):
+        return self.__class__(self)
+
 
 # XDG Base Directories
 from gi.repository import GLib
 XDG_CONFIG_HOME = GLib.get_user_config_dir()
 XDG_RUNTIME_DIR = GLib.get_user_runtime_dir()
 
+
 # Application-specific Directories
 from .info import application_id
 TEMP_DIR       = os.path.join(XDG_RUNTIME_DIR, 'app', application_id)
 HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
+
 
 # Package Type and related stuff
 from .enums import PackageType
@@ -23,6 +57,7 @@ if os.environ.get('FLATPAK_ID'): # Flatpak
     HOST_ROOT    = '/run/host'
 elif os.environ.get('APPDIR'):   # AppImage
     PACKAGE_TYPE = PackageType.AppImage
+
 
 # OS Release info
 from .utils import read_os_release

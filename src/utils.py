@@ -64,37 +64,6 @@ def version(string, /):
     return tuple(int(segment) for segment in string.split('.'))
 
 
-class PATH (list):
-    '''
-    A list to store values of PATH-like environment variables
-
-    For example, with
-        mypath = PATH('/usr/local/bin:/usr/bin')
-    OR
-        mypath = PATH(['/usr/local/bin', '/usr/bin'])
-    we get,
-        print(mypath)       # prints /usr/local/bin:/usr/bin
-        print(*mypath)      # prints /usr/local/bin /usr/bin
-        print(mypath[0])    # prints /usr/local/bin
-        print(repr(mypath)) # prints PATH(['/usr/local/bin', '/usr/bin'])
-    '''
-
-    def __init__ (self, value=None, /):
-        if value is None:
-            return list.__init__(self)
-        elif isinstance(value, str):
-            value = value.strip(':').split(':')
-        return list.__init__(self, value)
-
-    def __str__ (self, /):
-        return ':'.join(self)
-
-    def __repr__ (self, /):
-        return self.__class__.__name__ + '(' + list.__repr__(self) + ')'
-
-    def copy (self, /):
-        return self.__class__(self)
-
 class ProcessReturnCode(int):
     '''
     An integer that represents return code of a process
