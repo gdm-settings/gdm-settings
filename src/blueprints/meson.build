@@ -1,12 +1,12 @@
 blueprints = files(
   'main-window.blp',
-  'app-preferences.blp',
   'appearance-page.blp',
   'fonts-page.blp',
   'display-page.blp',
   'sound-page.blp',
   'top-bar-page.blp',
   'pointing-page.blp',
+  'prefs.blp',
   'misc-page.blp',
   'tools-page.blp',
 )

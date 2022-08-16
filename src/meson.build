@@ -32,6 +32,7 @@ source_files = files(
   'enums.py',
   'env.py',
   'gr_utils.py',
+  'prefs.py',
   'settings.py',
   'theme_lists.py',
   'utils.py',

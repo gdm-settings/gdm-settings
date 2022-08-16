@@ -10,6 +10,7 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk
 
 from .settings import SettingsManager
+from .prefs import PreferencesWindow
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 from . import env
@@ -201,6 +202,7 @@ class Application(Adw.Application):
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.refresh", ["<Ctrl>r", "F5"])
+        self.set_accels_for_action("app.preferences", ["<Ctrl>comma"])
 
 
     def create_actions(self):
@@ -248,13 +250,9 @@ class Application(Adw.Application):
 
 
     def preferences_cb(self, action, user_data):
-        import os
-
-        file = os.path.join(info.data_dir, 'app-preferences.ui')
-        builder = Gtk.Builder.new_from_file(file)
-        pref_window = builder.get_object('app_preferences_window')
-        pref_window.set_transient_for(self.window)
-        pref_window.present()
+        prefs_window = PreferencesWindow()
+        prefs_window.set_transient_for(self.window)
+        prefs_window.present()
 
 
     def about_cb(self, action, user_data):
