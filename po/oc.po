@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-16 14:58+0500\n"
-"PO-Revision-Date: 2022-08-16 09:59+0000\n"
+"PO-Revision-Date: 2022-08-17 17:21+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -48,12 +48,10 @@ msgid "The Color to use as GDM background"
 msgstr "La color d’emplegar coma fons de GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
 msgid ""
 "Whether the chosen Shell theme should be overlayed on top of the default "
 "shell theme."
-msgstr "Lo tèma deu se superpausar al tèma per defaut ?"
+msgstr "Indica se lo tèma deu se superpausar al tèma shell per defaut"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
 msgid ""
@@ -358,11 +356,13 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Aquesta aplicacion requerís los logicials seguent per foncionar "
+"corrèctament, mas son pas installats."
 
 #: src/app.py:155
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (Edicion pel desvelopament)"
 
 #: src/app.py:163
 msgid ""
@@ -678,10 +678,8 @@ msgid "Shell Theme"
 msgstr "Tèma Shell per defaut"
 
 #: src/blueprints/prefs.blp:20
-#, fuzzy
-#| msgid "No Overlay"
 msgid "Overlay"
-msgstr "Cap de superposicion"
+msgstr "Superposicion"
 
 #: src/blueprints/prefs.blp:21
 #, fuzzy
@@ -691,15 +689,15 @@ msgstr "Lo tèma deu se superpausar al tèma per defaut ?"
 
 #: src/blueprints/prefs.blp:22
 msgid "Nothing"
-msgstr ""
+msgstr "Res"
 
 #: src/blueprints/prefs.blp:22
 msgid "Resources Only"
-msgstr ""
+msgstr "Ressorsas sonque"
 
 #: src/blueprints/prefs.blp:22
 msgid "Everything"
-msgstr ""
+msgstr "Tot"
 
 #: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
@@ -871,7 +869,7 @@ msgstr ""
 
 #: src/pages/display.py:82
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Paramètres del monitor pas trobats"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
