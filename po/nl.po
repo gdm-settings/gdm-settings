@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-16 14:58+0500\n"
-"PO-Revision-Date: 2022-08-16 09:59+0000\n"
+"PO-Revision-Date: 2022-08-17 17:21+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -52,12 +52,10 @@ msgid "The Color to use as GDM background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
 msgid ""
 "Whether the chosen Shell theme should be overlayed on top of the default "
 "shell theme."
-msgstr "Moet het thema worden ingesteld bovenop het standaardthema?"
+msgstr "Of het thema moet worden ingesteld bovenop het standaardthema."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
 msgid ""
