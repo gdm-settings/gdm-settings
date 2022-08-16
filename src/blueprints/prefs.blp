@@ -9,6 +9,7 @@ Adw.PreferencesPage page1 {
         label: _("<b>Do not change anything</b> here unless you know exactly what you are doing. Click <a href=\"{url}\">here</a> for more information.");
         use-markup: true;
         wrap: true;
+        hexpand: true;
       }
     }
   }
@@ -24,6 +25,7 @@ Adw.PreferencesPage page1 {
   }
 
   /*
+  /* DConf DB */
   Adw.PreferencesGroup {
     title: _("Ignore (Do Not Delete) Files");
     description: _("Filenames should be relative to /etc/dconf/db/gdm.d/");
