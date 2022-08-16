@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 13:44+0500\n"
+"POT-Creation-Date: 2022-08-16 14:58+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -49,6 +49,23 @@ msgstr "Barva na pozadí"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "Barva, která má být použita jako pozadí GDM"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
+#, fuzzy
+#| msgid "Should the theme be overlayed on top of the default theme?"
+msgid ""
+"Whether the chosen Shell theme should be overlayed on top of the default "
+"shell theme."
+msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
+msgid ""
+"Probably never a good idea to choose option \"nothing\". The most sane "
+"option is \"resources\". If \"resources\" is selected, the app will copy "
+"over the resources that are missing in chosen Shell theme from the default "
+"theme. Choose option \"everything\" if CSS of chosen Shell theme is "
+"incomplete."
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -321,134 +338,106 @@ msgstr "Španělský"
 msgid "Urdu"
 msgstr "Urdský"
 
-#: src/app.py:48
+#: src/app.py:49
 #, fuzzy
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "Zobrazit verzi aplikace"
 
-#: src/app.py:49
+#: src/app.py:50
 #, fuzzy
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Nastavit ručně úroveň „upovídanosti“ (od 0 do 5)"
 
-#: src/app.py:50
+#: src/app.py:51
 #, fuzzy
 #| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "ÚROVEŇ"
 
-#: src/app.py:51
+#: src/app.py:52
 #, fuzzy
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Povolit „upovídaný“ režim (na hodnotě „upovídanosti“ 5)"
 
-#: src/app.py:52
+#: src/app.py:53
 #, fuzzy
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:151
+#: src/app.py:152
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:162
+#: src/app.py:163
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:169
+#: src/app.py:170
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:175
+#: src/app.py:176
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:184
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:188
+#: src/app.py:189
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:224
+#: src/app.py:226
 msgid "Settings reloaded"
 msgstr "Nastavení obnovena"
 
-#: src/app.py:232
+#: src/app.py:234
 msgid "User settings imported"
 msgstr "Uživatelská nastavení naimportována"
 
-#: src/app.py:236
+#: src/app.py:238
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
 "Flatpak"
 
-#: src/app.py:242
+#: src/app.py:244
 msgid "Failed to reset settings"
 msgstr "Nepodařilo se resetovat nastavení"
 
-#: src/app.py:245
+#: src/app.py:247
 msgid "Reset settings successfully"
 msgstr "Nastavení úspěšně resetována"
-
-#: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
-msgid "App Preferences"
-msgstr "Předvolby aplikace"
-
-#: src/blueprints/app-preferences.blp:10
-msgid "Shell Theme"
-msgstr "Téma shellu"
-
-#: src/blueprints/app-preferences.blp:13
-msgid "Apply Method"
-msgstr "Metoda použití"
-
-#: src/blueprints/app-preferences.blp:14
-msgid "Should the theme be overlayed on top of the default theme?"
-msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "No Overlay"
-msgstr "Žádné nahrazování"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "Overlay Resources"
-msgstr "Nahradit prostředky (ikony, fonty, atd.)"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "Complete Overlay"
-msgstr "Kompletní nahrazování"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -601,6 +590,10 @@ msgstr "Naimportovat uživatelská nastavení"
 msgid "Reset settings"
 msgstr "Resetovat nastavení"
 
+#: src/blueprints/main-window.blp:11 src/prefs.py:9
+msgid "App Preferences"
+msgstr "Předvolby aplikace"
+
 #: src/blueprints/main-window.blp:12
 msgid "About"
 msgstr "O aplikaci"
@@ -696,6 +689,40 @@ msgstr "Posouvání přejetím dvěma prsty."
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "Zablokovat během psaní"
+
+#: src/blueprints/prefs.blp:9
+msgid ""
+"<b>Do not change anything</b> here unless you know exactly what you are "
+"doing. Click <a href=\"{url}\">here</a> for more information."
+msgstr ""
+
+#: src/blueprints/prefs.blp:17
+msgid "Shell Theme"
+msgstr "Téma shellu"
+
+#: src/blueprints/prefs.blp:20
+#, fuzzy
+#| msgid "No Overlay"
+msgid "Overlay"
+msgstr "Žádné nahrazování"
+
+#: src/blueprints/prefs.blp:21
+#, fuzzy
+#| msgid "Should the theme be overlayed on top of the default theme?"
+msgid "What to overlay on top of the default theme?"
+msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
+
+#: src/blueprints/prefs.blp:22
+msgid "Nothing"
+msgstr ""
+
+#: src/blueprints/prefs.blp:22
+msgid "Resources Only"
+msgstr ""
+
+#: src/blueprints/prefs.blp:22
+msgid "Everything"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
@@ -895,24 +922,24 @@ msgstr "Nepodařilo se extrahovat výchozí téma"
 msgid "Backing up default shell theme …"
 msgstr "Ukládá se výchozí téma…"
 
-#: src/settings.py:246
+#: src/settings.py:248
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
 
-#: src/settings.py:253
+#: src/settings.py:255
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:462
+#: src/settings.py:464
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:469
+#: src/settings.py:471
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -952,6 +979,15 @@ msgstr ""
 #: src/window.py:101
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Apply Method"
+#~ msgstr "Metoda použití"
+
+#~ msgid "Overlay Resources"
+#~ msgstr "Nahradit prostředky (ikony, fonty, atd.)"
+
+#~ msgid "Complete Overlay"
+#~ msgstr "Kompletní nahrazování"
 
 #~ msgid "Images"
 #~ msgstr "Obrázky"

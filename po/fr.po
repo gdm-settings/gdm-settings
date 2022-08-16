@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 13:44+0500\n"
+"POT-Creation-Date: 2022-08-16 14:58+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -51,6 +51,23 @@ msgstr "Couleur d'arrière-plan"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "La couleur à utiliser comme arrière-plan GDM"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
+#, fuzzy
+#| msgid "Should the theme be overlayed on top of the default theme?"
+msgid ""
+"Whether the chosen Shell theme should be overlayed on top of the default "
+"shell theme."
+msgstr "Le thème doit-il être superposé au thème par défaut ?"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
+msgid ""
+"Probably never a good idea to choose option \"nothing\". The most sane "
+"option is \"resources\". If \"resources\" is selected, the app will copy "
+"over the resources that are missing in chosen Shell theme from the default "
+"theme. Choose option \"everything\" if CSS of chosen Shell theme is "
+"incomplete."
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -334,40 +351,40 @@ msgstr "Espagnol"
 msgid "Urdu"
 msgstr "Urdu"
 
-#: src/app.py:48
+#: src/app.py:49
 #, fuzzy
 #| msgctxt "Description of --version option"
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "Affiche la version de l’application"
 
-#: src/app.py:49
+#: src/app.py:50
 #, fuzzy
 #| msgctxt "Description of --verbosity option"
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Définition manuelle du niveau de verbosité (de 0 à 5)"
 
-#: src/app.py:50
+#: src/app.py:51
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEAU"
 
-#: src/app.py:51
+#: src/app.py:52
 #, fuzzy
 #| msgctxt "Description of --verbose option"
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Activer le mode verbeux (définir le niveau de verbosité 5)"
 
-#: src/app.py:52
+#: src/app.py:53
 #, fuzzy
 #| msgctxt "Description of --quiet option"
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Activer le mode tranquille (définir le niveau de verbosité 0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, fuzzy, python-brace-format
 #| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgid ""
@@ -377,96 +394,68 @@ msgstr ""
 "{level} est un niveau de verbosité invalide. Les valeurs acceptées sont de 0 "
 "à 5."
 
-#: src/app.py:151
+#: src/app.py:152
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:162
+#: src/app.py:163
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:169
+#: src/app.py:170
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:175
+#: src/app.py:176
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:184
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:188
+#: src/app.py:189
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:224
+#: src/app.py:226
 msgid "Settings reloaded"
 msgstr "Paramètres rechargés"
 
-#: src/app.py:232
+#: src/app.py:234
 msgid "User settings imported"
 msgstr "Paramètres utilisateur importés"
 
-#: src/app.py:236
+#: src/app.py:238
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "L'importation des paramètres utilisateur n'est pas supporté dans la version "
 "Flatpak"
 
-#: src/app.py:242
+#: src/app.py:244
 msgid "Failed to reset settings"
 msgstr "Échec de la réinitialisation des paramètres"
 
-#: src/app.py:245
+#: src/app.py:247
 msgid "Reset settings successfully"
 msgstr "Réinitialisation des paramètres réussie"
-
-#: src/blueprints/app-preferences.blp:5 src/blueprints/main-window.blp:11
-msgid "App Preferences"
-msgstr "Préférences de l’application"
-
-#: src/blueprints/app-preferences.blp:10
-msgid "Shell Theme"
-msgstr "Thème du shell"
-
-#: src/blueprints/app-preferences.blp:13
-msgid "Apply Method"
-msgstr "Méthode d’application"
-
-#: src/blueprints/app-preferences.blp:14
-msgid "Should the theme be overlayed on top of the default theme?"
-msgstr "Le thème doit-il être superposé au thème par défaut ?"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "No Overlay"
-msgstr "Pas de superposition"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "Overlay Resources"
-msgstr "Ressources de superposition"
-
-#: src/blueprints/app-preferences.blp:15
-msgid "Complete Overlay"
-msgstr "Superposition complète"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -619,6 +608,10 @@ msgstr "Importer les paramètres utilisateur"
 msgid "Reset settings"
 msgstr "Réinitialiser les paramètres"
 
+#: src/blueprints/main-window.blp:11 src/prefs.py:9
+msgid "App Preferences"
+msgstr "Préférences de l’application"
+
 #: src/blueprints/main-window.blp:12
 msgid "About"
 msgstr "À propos"
@@ -714,6 +707,40 @@ msgstr "Faire défiler en glissant deux doigts."
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "Désactiver pendant la saisie"
+
+#: src/blueprints/prefs.blp:9
+msgid ""
+"<b>Do not change anything</b> here unless you know exactly what you are "
+"doing. Click <a href=\"{url}\">here</a> for more information."
+msgstr ""
+
+#: src/blueprints/prefs.blp:17
+msgid "Shell Theme"
+msgstr "Thème du shell"
+
+#: src/blueprints/prefs.blp:20
+#, fuzzy
+#| msgid "No Overlay"
+msgid "Overlay"
+msgstr "Pas de superposition"
+
+#: src/blueprints/prefs.blp:21
+#, fuzzy
+#| msgid "Should the theme be overlayed on top of the default theme?"
+msgid "What to overlay on top of the default theme?"
+msgstr "Le thème doit-il être superposé au thème par défaut ?"
+
+#: src/blueprints/prefs.blp:22
+msgid "Nothing"
+msgstr ""
+
+#: src/blueprints/prefs.blp:22
+msgid "Resources Only"
+msgstr ""
+
+#: src/blueprints/prefs.blp:22
+msgid "Everything"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
@@ -913,22 +940,22 @@ msgstr "Échec de l'extraction du thème par défaut"
 msgid "Backing up default shell theme …"
 msgstr "enregistrement du thème par défaut …"
 
-#: src/settings.py:246
+#: src/settings.py:248
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings.py:253
+#: src/settings.py:255
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
-#: src/settings.py:462
+#: src/settings.py:464
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings.py:469
+#: src/settings.py:471
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -969,6 +996,15 @@ msgstr ""
 #: src/window.py:101
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Apply Method"
+#~ msgstr "Méthode d’application"
+
+#~ msgid "Overlay Resources"
+#~ msgstr "Ressources de superposition"
+
+#~ msgid "Complete Overlay"
+#~ msgstr "Superposition complète"
 
 #~ msgid "Assuming Verbosity level 4."
 #~ msgstr "Niveau de verbosité supposé à 4."
