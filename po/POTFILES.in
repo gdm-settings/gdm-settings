@@ -14,13 +14,13 @@ data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
 data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
 data/io.github.realmazharhussain.GdmSettings.desktop.in
 src/app.py
-src/blueprints/app-preferences.blp
 src/blueprints/appearance-page.blp
 src/blueprints/display-page.blp
 src/blueprints/fonts-page.blp
 src/blueprints/main-window.blp
 src/blueprints/misc-page.blp
 src/blueprints/pointing-page.blp
+src/blueprints/prefs.blp
 src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
@@ -37,5 +37,6 @@ src/pages/pointing.py
 src/pages/sound.py
 src/pages/tools.py
 src/pages/top_bar.py
+src/prefs.py
 src/settings.py
 src/window.py
