@@ -34,12 +34,14 @@ gdm-settings "$@"'
 
 echo "${bold}${italic}Installing to a temporary AppDir ...${normal}"
 glib-compile-schemas "$AppDir"/usr/share/glib-2.0/schemas
+gtk4-update-icon-cache -q -t -f "$AppDir"/usr/share/icons/hicolor
 ln -sfr "$AppDir"/usr/share/applications/$ApplicationId.desktop "$AppDir"/
 if which magick &>/dev/null; then
   magick -background none "$AppDir"/usr/share/icons/hicolor/scalable/apps/$ApplicationId.svg "$AppDir"/$ApplicationId.png
 else
   ln -sfr "$AppDir"/usr/share/icons/hicolor/scalable/apps/$ApplicationId.svg "$AppDir"/
 fi
+
 echo "$AppRun" > "${AppDir}/AppRun"
 chmod +x "${AppDir}/AppRun"
 echo '  Done.'
