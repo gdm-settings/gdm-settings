@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-08-15 05:58+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -187,114 +187,27 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "Trang web app store của app đã được cập nhật"
 
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "Đã thêm:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "Hỗ trợ chế độ verbose (hiển thị chi tiết)/quiet (im lặng)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "Hỗ trợ đặt mức độ hiển thị chi tiết một cách thủ công"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"Command-line options cho chế độ verbose/quiet và đặt mức độ verbose thủ công"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "Command-line option \"--version\""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "Cửa sổ rộng hơn trong lần chạy đầu tiên"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "Đã sửa các lỗi:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single quotes"
-msgstr "Welcome message không thể chứa dấu '"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr "GDM bị lỗi trên các hệ thống với SELinux được bật (đa phần là Fedora)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"Cửa số được phóng to nhìn không được đẹp (các thành phần bên trong app nhỏ "
-"hơn so với window)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Hiển thị sai folder/folder path khi trích xuất theme mặc định của shell"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"Khi click \"Áp dụng\", ứng dụng sẽ không làm gì khi hình nền được chọn bị "
-"xóa trước khi áp dụng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "Click \"Áp dụng\" chỉ áp dụng vài cài đặt trên Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "Các bản dịch mới:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "Tiếng Pháp"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "Tiếng Do Thái"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "Tiếng Ba Tư"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "Những bản dịch được cập nhật:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "Tiếng Hà Lan"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "Tiếng Đức"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "Tiếng Occitan"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "Tiếng Tây Ban Nha"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "Tiếng Urdu"
 
 #: src/app.py:48
 #, fuzzy
@@ -913,6 +826,91 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "Đã thêm:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "Hỗ trợ chế độ verbose (hiển thị chi tiết)/quiet (im lặng)"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "Hỗ trợ đặt mức độ hiển thị chi tiết một cách thủ công"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr ""
+#~ "Command-line options cho chế độ verbose/quiet và đặt mức độ verbose thủ "
+#~ "công"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "Command-line option \"--version\""
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "Cửa sổ rộng hơn trong lần chạy đầu tiên"
+
+#~ msgid "Fixed:"
+#~ msgstr "Đã sửa các lỗi:"
+
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "Welcome message không thể chứa dấu '"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr ""
+#~ "GDM bị lỗi trên các hệ thống với SELinux được bật (đa phần là Fedora)"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "Cửa số được phóng to nhìn không được đẹp (các thành phần bên trong app "
+#~ "nhỏ hơn so với window)"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "Hiển thị sai folder/folder path khi trích xuất theme mặc định của shell"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "Khi click \"Áp dụng\", ứng dụng sẽ không làm gì khi hình nền được chọn bị "
+#~ "xóa trước khi áp dụng"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "Click \"Áp dụng\" chỉ áp dụng vài cài đặt trên Ubuntu"
+
+#~ msgid "New Translations:"
+#~ msgstr "Các bản dịch mới:"
+
+#~ msgid "French"
+#~ msgstr "Tiếng Pháp"
+
+#~ msgid "Hebrew"
+#~ msgstr "Tiếng Do Thái"
+
+#~ msgid "Persian"
+#~ msgstr "Tiếng Ba Tư"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "Những bản dịch được cập nhật:"
+
+#~ msgid "Dutch"
+#~ msgstr "Tiếng Hà Lan"
+
+#~ msgid "German"
+#~ msgstr "Tiếng Đức"
+
+#~ msgid "Occitan"
+#~ msgstr "Tiếng Occitan"
+
+#~ msgid "Spanish"
+#~ msgstr "Tiếng Tây Ban Nha"
+
+#~ msgid "Urdu"
+#~ msgstr "Tiếng Urdu"
 
 #, fuzzy
 #~| msgid "Should the theme be overlayed on top of the default theme?"

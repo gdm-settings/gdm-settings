@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -212,112 +212,27 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "ایپلیکیشن کا ایپ سٹور والا صفحہ اپڈیٹ کیا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "اضافہ کیا:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "وربوس/قوائیٹ موڈ کی سپورٹ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "مینول وربوسِٹی سیٹ کرنے کی سپورٹ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr "وربوس/قوائیٹ موڈ اور مینول وربوسِٹی لیول کے لئے کمانڈ لائن آپشنز"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "کمانڈ لائن آپشن version--"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "پہلی بار ایپلیکیشن چلانے پر مزید چوڑی ونڈو"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "ٹھیک کیا:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
-msgid "Welcome message could not contain single quotes"
-msgstr "ویلکم میسیج میں سنگل قوٹس نہیں ہو سکتی تھیں"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr "لاگن مینیجر (جی-ڈی-ایم)، ایس ای لینکس والے سسٹمز پر ٹوٹ جاتا تھا"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr "بڑی ونڈوز بری لگتی تھیں"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr "ڈیفالٹ شیل تھیم کو ایکسٹریکٹ کرتے وقت غلط فولڈر شو ہوتا ہے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
 msgstr ""
-"اگر سلیکٹ کیا ہوا بیکگرائونڈ امیج اپلائی کرنے سے پہلے ڈیلیٹ ہو جائے تو "
-"'اپلائی' پر کلک کرنے سے کچھ نہیں ہوتا تھا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "نئے ترجمے:"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "فرانسیسی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "عبرانی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "فارسی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "نئے ترجمے:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "ڈَچ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "جرمن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "آکسِیٹَن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "سپَینِش"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "اردو"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgstr ""
 
 #: src/app.py:48
 #, fuzzy
@@ -930,6 +845,87 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "اضافہ کیا:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "وربوس/قوائیٹ موڈ کی سپورٹ"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "مینول وربوسِٹی سیٹ کرنے کی سپورٹ"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr "وربوس/قوائیٹ موڈ اور مینول وربوسِٹی لیول کے لئے کمانڈ لائن آپشنز"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "کمانڈ لائن آپشن version--"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "پہلی بار ایپلیکیشن چلانے پر مزید چوڑی ونڈو"
+
+#~ msgid "Fixed:"
+#~ msgstr "ٹھیک کیا:"
+
+#, fuzzy
+#~| msgid "Welcome message could not contain single qoutes"
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "ویلکم میسیج میں سنگل قوٹس نہیں ہو سکتی تھیں"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr "لاگن مینیجر (جی-ڈی-ایم)، ایس ای لینکس والے سسٹمز پر ٹوٹ جاتا تھا"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr "بڑی ونڈوز بری لگتی تھیں"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr "ڈیفالٹ شیل تھیم کو ایکسٹریکٹ کرتے وقت غلط فولڈر شو ہوتا ہے"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "اگر سلیکٹ کیا ہوا بیکگرائونڈ امیج اپلائی کرنے سے پہلے ڈیلیٹ ہو جائے تو "
+#~ "'اپلائی' پر کلک کرنے سے کچھ نہیں ہوتا تھا"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
+
+#~ msgid "New Translations:"
+#~ msgstr "نئے ترجمے:"
+
+#~ msgid "French"
+#~ msgstr "فرانسیسی"
+
+#~ msgid "Hebrew"
+#~ msgstr "عبرانی"
+
+#~ msgid "Persian"
+#~ msgstr "فارسی"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "نئے ترجمے:"
+
+#~ msgid "Dutch"
+#~ msgstr "ڈَچ"
+
+#~ msgid "German"
+#~ msgstr "جرمن"
+
+#~ msgid "Occitan"
+#~ msgstr "آکسِیٹَن"
+
+#~ msgid "Spanish"
+#~ msgstr "سپَینِش"
+
+#~ msgid "Urdu"
+#~ msgstr "اردو"
 
 #, fuzzy
 #~| msgid "Should the theme be overlayed on top of the default theme?"

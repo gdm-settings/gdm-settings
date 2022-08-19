@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-07-22 17:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -208,121 +208,27 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "アプリストアでの紹介ページを更新"
 
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "追加された機能:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "すべてのログを表示するモード／ログを表示しないモードに対応"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "ログレベルの手動での設定に対応"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"すべてのログを表示するモード／ログを表示しないモードと、ログレベルの手動設定"
-"のためのコマンドラインオプション"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "コマンドラインオプション --version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "起動時、アプリケーションウィンドウをより大きく表示するように修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "修正点:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single quotes"
-msgstr ""
-"ようこそメッセージにシングルクオーテーションマークが使えなかった不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
-"SELinux が有効になっている環境 (主に Fedora) において、ログインマネージャー "
-"(GDM) がシステムを破損していた不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"アプリケーションウィンドウを最大化したり大きくしたりすると、見た目が崩れてい"
-"た (ウィンドウサイズよりも、コンテンツのサイズが小さかった) 不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"デフォルトテーマの復元中に、復元先のディレクトリ／フォルダーのパスが誤って表"
-"示されていた不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"選択した背景画像を、適用前に削除してしまうと、'適用' ボタンをクリックしても変"
-"化が起こらなかった不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
-"Ubuntu において、'適用' ボタンをクリックしても一部の設定しか反映されていな"
-"かった不具合を修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "新たに翻訳された言語:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "フランス語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "ヘブライ語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "ペルシア語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "翻訳が更新された言語:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "オランダ語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "ドイツ語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "オック語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "スペイン語"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "ウルドゥー語"
 
 #: src/app.py:48
 #, fuzzy
@@ -934,6 +840,97 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "追加された機能:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "すべてのログを表示するモード／ログを表示しないモードに対応"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "ログレベルの手動での設定に対応"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr ""
+#~ "すべてのログを表示するモード／ログを表示しないモードと、ログレベルの手動設"
+#~ "定のためのコマンドラインオプション"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "コマンドラインオプション --version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "起動時、アプリケーションウィンドウをより大きく表示するように修正"
+
+#~ msgid "Fixed:"
+#~ msgstr "修正点:"
+
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr ""
+#~ "ようこそメッセージにシングルクオーテーションマークが使えなかった不具合を修"
+#~ "正"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr ""
+#~ "SELinux が有効になっている環境 (主に Fedora) において、ログインマネー"
+#~ "ジャー (GDM) がシステムを破損していた不具合を修正"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "アプリケーションウィンドウを最大化したり大きくしたりすると、見た目が崩れて"
+#~ "いた (ウィンドウサイズよりも、コンテンツのサイズが小さかった) 不具合を修正"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "デフォルトテーマの復元中に、復元先のディレクトリ／フォルダーのパスが誤って"
+#~ "表示されていた不具合を修正"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "選択した背景画像を、適用前に削除してしまうと、'適用' ボタンをクリックして"
+#~ "も変化が起こらなかった不具合を修正"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr ""
+#~ "Ubuntu において、'適用' ボタンをクリックしても一部の設定しか反映されていな"
+#~ "かった不具合を修正"
+
+#~ msgid "New Translations:"
+#~ msgstr "新たに翻訳された言語:"
+
+#~ msgid "French"
+#~ msgstr "フランス語"
+
+#~ msgid "Hebrew"
+#~ msgstr "ヘブライ語"
+
+#~ msgid "Persian"
+#~ msgstr "ペルシア語"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "翻訳が更新された言語:"
+
+#~ msgid "Dutch"
+#~ msgstr "オランダ語"
+
+#~ msgid "German"
+#~ msgstr "ドイツ語"
+
+#~ msgid "Occitan"
+#~ msgstr "オック語"
+
+#~ msgid "Spanish"
+#~ msgstr "スペイン語"
+
+#~ msgid "Urdu"
+#~ msgstr "ウルドゥー語"
 
 #~ msgid "App Preferences"
 #~ msgstr "アプリの設定"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -208,118 +208,27 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "Aktualizována stránka aplikace v obchodě s aplikacemi"
 
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "Přidáno:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "Podpora „upovídaného“/„tichého“ režimu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "Podpora ručního nastavení úrovně „upovídanosti“"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"Možnosti příkazové řádky pro „upovídaný“/„tichý“ režim a ruční nastavení "
-"úrovně „upovídanosti“"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "Možnost příkazové řádky --version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "Širší okno aplikace po prvním spuštění"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "Opraveno:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
-msgid "Welcome message could not contain single quotes"
-msgstr "Uvítací zpráva nemůže obsahovat jednoduché uvozovky"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr "Rozbití GDM na systémech s povoleným SELinuxem (hlavně Fedora)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"Maximalizované nebo velké okno aplikace vypadalo špatně (obsah byl mnohem "
-"menší než okno)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Při extrahování výchozího tématu shellu se zobrazovala nesprávná cesta k "
-"cílovému adresáři/složce"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"Klinutí na „Použít“ nedělalo nic, když vybraný obrázek pozadí byl odebrán "
-"před použitím"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "Nové překlady:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "Francouzský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "Hebrejský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "Perský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "Aktualizované překlady:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "Nizozemský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "Německý"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "Okcitánský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "Španělský"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "Urdský"
 
 #: src/app.py:48
 #, fuzzy
@@ -930,6 +839,93 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "Přidáno:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "Podpora „upovídaného“/„tichého“ režimu"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "Podpora ručního nastavení úrovně „upovídanosti“"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr ""
+#~ "Možnosti příkazové řádky pro „upovídaný“/„tichý“ režim a ruční nastavení "
+#~ "úrovně „upovídanosti“"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "Možnost příkazové řádky --version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "Širší okno aplikace po prvním spuštění"
+
+#~ msgid "Fixed:"
+#~ msgstr "Opraveno:"
+
+#, fuzzy
+#~| msgid "Welcome message could not contain single qoutes"
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "Uvítací zpráva nemůže obsahovat jednoduché uvozovky"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr "Rozbití GDM na systémech s povoleným SELinuxem (hlavně Fedora)"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "Maximalizované nebo velké okno aplikace vypadalo špatně (obsah byl mnohem "
+#~ "menší než okno)"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "Při extrahování výchozího tématu shellu se zobrazovala nesprávná cesta k "
+#~ "cílovému adresáři/složce"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "Klinutí na „Použít“ nedělalo nic, když vybraný obrázek pozadí byl odebrán "
+#~ "před použitím"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
+
+#~ msgid "New Translations:"
+#~ msgstr "Nové překlady:"
+
+#~ msgid "French"
+#~ msgstr "Francouzský"
+
+#~ msgid "Hebrew"
+#~ msgstr "Hebrejský"
+
+#~ msgid "Persian"
+#~ msgstr "Perský"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "Aktualizované překlady:"
+
+#~ msgid "Dutch"
+#~ msgstr "Nizozemský"
+
+#~ msgid "German"
+#~ msgstr "Německý"
+
+#~ msgid "Occitan"
+#~ msgstr "Okcitánský"
+
+#~ msgid "Spanish"
+#~ msgstr "Španělský"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdský"
 
 #, fuzzy
 #~| msgid "Should the theme be overlayed on top of the default theme?"

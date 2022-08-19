@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: 刘韬 <lyuutau@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -196,110 +196,27 @@ msgstr "更改 GDM 设置； 应用主题和背景、更改光标主题、图标
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "更新了app的应用商店页面"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "添加："
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "支持详细/安静模式"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "支持设置手动详细级别"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr "详细/qieet 模式和手动详细级别的命令行选项"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "命令行选项 --version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "首次启动时应用程序窗口更宽"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "修复："
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
-msgid "Welcome message could not contain single quotes"
-msgstr "欢迎信息不能包含单引号"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr "登录管理器 (GDM) 在启用 SELinux 的系统（主要是 Fedora）上崩溃"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr "最大化或大的应用程序窗口看起来很糟糕（内容比窗口小得多）"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr "提取默认 shell 主题时显示错误的目标目录/文件夹路径"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr "如果在应用之前删除了选定的背景图像，则单击“应用”不会执行任何操作"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "单击“应用”仅在 Ubuntu 上应用了一些设置"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "新翻译："
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "法语"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "希伯来语"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "波斯语"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "更新的翻译："
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "荷兰语"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "德语"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "西班牙语"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "乌尔都语"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgstr ""
 
 #: src/app.py:48
 #, fuzzy
@@ -910,6 +827,82 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "添加："
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "支持详细/安静模式"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "支持设置手动详细级别"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr "详细/qieet 模式和手动详细级别的命令行选项"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "命令行选项 --version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "首次启动时应用程序窗口更宽"
+
+#~ msgid "Fixed:"
+#~ msgstr "修复："
+
+#, fuzzy
+#~| msgid "Welcome message could not contain single qoutes"
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "欢迎信息不能包含单引号"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr "登录管理器 (GDM) 在启用 SELinux 的系统（主要是 Fedora）上崩溃"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr "最大化或大的应用程序窗口看起来很糟糕（内容比窗口小得多）"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr "提取默认 shell 主题时显示错误的目标目录/文件夹路径"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr "如果在应用之前删除了选定的背景图像，则单击“应用”不会执行任何操作"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "单击“应用”仅在 Ubuntu 上应用了一些设置"
+
+#~ msgid "New Translations:"
+#~ msgstr "新翻译："
+
+#~ msgid "French"
+#~ msgstr "法语"
+
+#~ msgid "Hebrew"
+#~ msgstr "希伯来语"
+
+#~ msgid "Persian"
+#~ msgstr "波斯语"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "更新的翻译："
+
+#~ msgid "Dutch"
+#~ msgstr "荷兰语"
+
+#~ msgid "German"
+#~ msgstr "德语"
+
+#~ msgid "Spanish"
+#~ msgstr "西班牙语"
+
+#~ msgid "Urdu"
+#~ msgstr "乌尔都语"
 
 #, fuzzy
 #~| msgid "Should the theme be overlayed on top of the default theme?"

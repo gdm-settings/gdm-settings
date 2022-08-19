@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-06-21 03:43+0000\n"
 "Last-Translator: jagfwajgf <juri26@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -225,122 +225,25 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Updated the info shown on app's software-store page"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "Hinzugefügt:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "Unterstützung für einen detaillierten/stillen Modus"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "Unterstützung für das manuelle Setzen eines Detaillevels"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"Kommandozeilenoptionen für einen detaillierten, stillen und normalen Modus"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "Kommandozeilenoption --version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "Breiteres Anwendungsfenster beim ersten Start"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "Behoben:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
-msgid "Welcome message could not contain single quotes"
-msgstr ""
-"Willkommensnachricht konnte keine einzelnen Anführungszeichen enthalten"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
-"Login Manager (GDM) funktionierte nicht auf Systemen, die SELinux aktiviert "
-"haben (hauptsächlich Fedora)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"Maximiertes oder großes Anwendungsfenster sah nicht gut aus (der Inhalt war "
-"viel kleiner als das Fenster)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Beim Extrahieren des Vorgabe-Shellthemas wurde ein falsches Zielverzeichnis "
-"angezeigt"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"Beim Drücken auf »Anwenden« ist nichts geschehen, wenn das ausgewählte "
-"Hintergrundbild vor dem Anwenden gelöscht wurde"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr ""
-"Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
-"angewendet"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "Neue Übersetzungen:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "Französisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "Hebräisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "Persisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "Aktualisierte Übersetzungen:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "Niederländisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "Deutsch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "Okzitanisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "Spanisch"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "Urdu"
 
 #: src/app.py:48
 #, fuzzy
@@ -956,6 +859,97 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "Hinzugefügt:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "Unterstützung für einen detaillierten/stillen Modus"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "Unterstützung für das manuelle Setzen eines Detaillevels"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr ""
+#~ "Kommandozeilenoptionen für einen detaillierten, stillen und normalen Modus"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "Kommandozeilenoption --version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "Breiteres Anwendungsfenster beim ersten Start"
+
+#~ msgid "Fixed:"
+#~ msgstr "Behoben:"
+
+#, fuzzy
+#~| msgid "Welcome message could not contain single qoutes"
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr ""
+#~ "Willkommensnachricht konnte keine einzelnen Anführungszeichen enthalten"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr ""
+#~ "Login Manager (GDM) funktionierte nicht auf Systemen, die SELinux "
+#~ "aktiviert haben (hauptsächlich Fedora)"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "Maximiertes oder großes Anwendungsfenster sah nicht gut aus (der Inhalt "
+#~ "war viel kleiner als das Fenster)"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "Beim Extrahieren des Vorgabe-Shellthemas wurde ein falsches "
+#~ "Zielverzeichnis angezeigt"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "Beim Drücken auf »Anwenden« ist nichts geschehen, wenn das ausgewählte "
+#~ "Hintergrundbild vor dem Anwenden gelöscht wurde"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr ""
+#~ "Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
+#~ "angewendet"
+
+#~ msgid "New Translations:"
+#~ msgstr "Neue Übersetzungen:"
+
+#~ msgid "French"
+#~ msgstr "Französisch"
+
+#~ msgid "Hebrew"
+#~ msgstr "Hebräisch"
+
+#~ msgid "Persian"
+#~ msgstr "Persisch"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "Aktualisierte Übersetzungen:"
+
+#~ msgid "Dutch"
+#~ msgstr "Niederländisch"
+
+#~ msgid "German"
+#~ msgstr "Deutsch"
+
+#~ msgid "Occitan"
+#~ msgstr "Okzitanisch"
+
+#~ msgid "Spanish"
+#~ msgstr "Spanisch"
+
+#~ msgid "Urdu"
+#~ msgstr "Urdu"
 
 #, fuzzy
 #~ msgid "Shell Theme"

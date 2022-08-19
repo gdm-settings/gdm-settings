@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-08-17 17:21+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -192,118 +192,27 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+#, fuzzy
+#| msgid "Updated the app store page of app"
+msgid "Updated the info shown on app's software-store page"
 msgstr "Pagina de la botiga d’aplicacions actualizada"
 
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "Ajustat :"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "Presa en carga mòde verbiós/silenciós"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "Presa en carga del nivèl manual de verbiositat"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
-"verbiositat"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "Opcion de linha de comanda --version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "Reglats :"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Welcome message could not contain single quotes"
-msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-msgstr ""
-"Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
-"activat (principalament Fedora)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a la "
-"fenèstra)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
-"tèma shell per defaut"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
-"abans aplicacion"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "Traduccions novèlas :"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "Francés"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "Ebrèu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "Persian"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "Traduccions actualizadas :"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr "Neerlandés"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "Alemand"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "Occitan"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "Espanhòl"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "Ordo"
 
 #: src/app.py:48
 msgid "Show application version"
@@ -900,6 +809,93 @@ msgstr "Se desconnectar ?"
 #: src/window.py:146
 msgid "Log Out"
 msgstr "Desconnexion"
+
+#~ msgid "Added:"
+#~ msgstr "Ajustat :"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "Presa en carga mòde verbiós/silenciós"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "Presa en carga del nivèl manual de verbiositat"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr ""
+#~ "Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
+#~ "verbiositat"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "Opcion de linha de comanda --version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
+
+#~ msgid "Fixed:"
+#~ msgstr "Reglats :"
+
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr ""
+#~ "Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
+#~ "activat (principalament Fedora)"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a "
+#~ "la fenèstra)"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
+#~ "tèma shell per defaut"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
+#~ "abans aplicacion"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
+
+#~ msgid "New Translations:"
+#~ msgstr "Traduccions novèlas :"
+
+#~ msgid "French"
+#~ msgstr "Francés"
+
+#~ msgid "Hebrew"
+#~ msgstr "Ebrèu"
+
+#~ msgid "Persian"
+#~ msgstr "Persian"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "Traduccions actualizadas :"
+
+#~ msgid "Dutch"
+#~ msgstr "Neerlandés"
+
+#~ msgid "German"
+#~ msgstr "Alemand"
+
+#~ msgid "Occitan"
+#~ msgstr "Occitan"
+
+#~ msgid "Spanish"
+#~ msgstr "Espanhòl"
+
+#~ msgid "Urdu"
+#~ msgstr "Ordo"
 
 #~ msgid ""
 #~ "Whether the chosen Shell theme should be overlayed on top of the default "

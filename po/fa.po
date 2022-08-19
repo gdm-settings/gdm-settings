@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 17:40+0500\n"
+"POT-Creation-Date: 2022-08-20 00:14+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -178,117 +178,25 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Updated the info shown on app's software-store page"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Added:"
-msgstr "اضافه شده:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Support for verbose/quiet mode"
-msgstr "پشتیبانی از حالت پُر حرف و ساکت"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "Support for setting manual verbosity level"
-msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Command-line options for verbose/qeiet mode and manual verbosity level"
-msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "Command-line option --version"
-msgstr "گزینهٔ خط فرمانی ‎--version"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Wider application window on first launch"
-msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed:"
-msgstr "برطرف شده:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid "Welcome message could not contain single qoutes"
-msgid "Welcome message could not contain single quotes"
-msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid ""
-"Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
-"مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
-"فدورا)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid ""
-"Maximized or big application window looked bad (content was much smaller "
-"than the window)"
-msgstr ""
-"پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از پنجره "
-"بود)"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid ""
-"Showed wrong destination directory/folder path while extracting default "
-"shell theme"
-msgstr ""
-"هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان می‌داد"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid ""
-"Clicking 'Apply' did nothing if selected background image was deleted before "
-"applying"
-msgstr ""
-"اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» کاری "
-"انجام نمی‌داد"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "New Translations:"
-msgstr "ترجمه‌های جدید:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "French"
-msgstr "فرانسوی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Hebrew"
-msgstr "عبری"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Persian"
-msgstr "فارسی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Updated Translations:"
-msgstr "ترجمه‌های به‌روز رسانی شده:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
-msgid "Dutch"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
-msgid "German"
-msgstr "آلمانی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
-msgid "Occitan"
-msgstr "اکسیتانی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
-msgid "Spanish"
-msgstr "اسپانیایی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
-msgid "Urdu"
-msgstr "اُردو"
 
 #: src/app.py:48
 #, fuzzy
@@ -892,6 +800,90 @@ msgstr ""
 #: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Added:"
+#~ msgstr "اضافه شده:"
+
+#~ msgid "Support for verbose/quiet mode"
+#~ msgstr "پشتیبانی از حالت پُر حرف و ساکت"
+
+#~ msgid "Support for setting manual verbosity level"
+#~ msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
+
+#~ msgid ""
+#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
+#~ msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
+
+#~ msgid "Command-line option --version"
+#~ msgstr "گزینهٔ خط فرمانی ‎--version"
+
+#~ msgid "Wider application window on first launch"
+#~ msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
+
+#~ msgid "Fixed:"
+#~ msgstr "برطرف شده:"
+
+#, fuzzy
+#~| msgid "Welcome message could not contain single qoutes"
+#~ msgid "Welcome message could not contain single quotes"
+#~ msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
+
+#~ msgid ""
+#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
+#~ msgstr ""
+#~ "مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
+#~ "فدورا)"
+
+#~ msgid ""
+#~ "Maximized or big application window looked bad (content was much smaller "
+#~ "than the window)"
+#~ msgstr ""
+#~ "پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از "
+#~ "پنجره بود)"
+
+#~ msgid ""
+#~ "Showed wrong destination directory/folder path while extracting default "
+#~ "shell theme"
+#~ msgstr ""
+#~ "هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان "
+#~ "می‌داد"
+
+#~ msgid ""
+#~ "Clicking 'Apply' did nothing if selected background image was deleted "
+#~ "before applying"
+#~ msgstr ""
+#~ "اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» "
+#~ "کاری انجام نمی‌داد"
+
+#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
+#~ msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
+
+#~ msgid "New Translations:"
+#~ msgstr "ترجمه‌های جدید:"
+
+#~ msgid "French"
+#~ msgstr "فرانسوی"
+
+#~ msgid "Hebrew"
+#~ msgstr "عبری"
+
+#~ msgid "Persian"
+#~ msgstr "فارسی"
+
+#~ msgid "Updated Translations:"
+#~ msgstr "ترجمه‌های به‌روز رسانی شده:"
+
+#~ msgid "German"
+#~ msgstr "آلمانی"
+
+#~ msgid "Occitan"
+#~ msgstr "اکسیتانی"
+
+#~ msgid "Spanish"
+#~ msgstr "اسپانیایی"
+
+#~ msgid "Urdu"
+#~ msgstr "اُردو"
 
 #, fuzzy
 #~ msgid "Shell Theme"
