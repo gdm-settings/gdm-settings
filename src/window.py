@@ -1,11 +1,53 @@
 import os
-from gi.repository import Adw, Gtk, Gio
+from gi.repository import Adw, Gtk
+from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile
 from .utils import run_on_host
 from .bind_utils import bind
 from . import pages
+
+
+construct = GObject.ParamFlags.CONSTRUCT
+readwrite = GObject.ParamFlags.READWRITE
+
+class TaskCounter(GObject.Object):
+    '''A GObject that keeps a count of background tasks and updates widgets accordingly'''
+
+    __gtype_name__ = 'TaskCounter'
+
+    count = GObject.Property(type=int, default=0, flags=construct|readwrite)
+    spinner = GObject.Property(type=Gtk.Spinner)
+
+    def __init__ (self, **kwargs):
+        super().__init__(**kwargs)
+
+        self.widgets = []
+
+        self.connect('notify::count', self.on_count_change)
+
+
+    @staticmethod
+    def on_count_change (self, prop):
+        if self.count > 0:
+            for widget in self.widgets:
+                widget.set_sensitive(False)
+            self.spinner.start()
+        else:
+            for widget in self.widgets:
+                widget.set_sensitive(True)
+            self.spinner.stop()
+
+    def register (self, widget):
+        self.widgets.append(widget)
+
+    def inc (self):
+        self.count += 1
+
+    def dec (self):
+        self.count -= 1
+
 
 class GdmSettingsWindow (Adw.ApplicationWindow):
     __gtype_name__ = 'GdmSettingsWindow'
@@ -28,6 +70,9 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.apply_button = self.builder.get_object('apply_button')
         self.toast_overlay = self.builder.get_object('toast_overlay')
 
+        self.task_counter = TaskCounter(spinner=self.spinner)
+
+        self.task_counter.register(self.apply_button)
         self.apply_button.connect('clicked', self.on_apply)
 
         self.add_pages()
@@ -65,12 +110,12 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         bind(self.gsettings, 'last-visited-page', self.stack, 'visible-child-name')
 
     def on_apply (self, button):
-        button.set_sensitive(False)
-        self.spinner.set_spinning(True)
+        self.task_counter.inc()
         self.application.settings_manager.apply_settings_async(self.on_apply_finished)
 
     def on_apply_finished(self, settings_manager, result, user_data):
         status = settings_manager.apply_settings_finish(result)
+        self.task_counter.dec()
 
         if status.success:
             message = _('Settings applied successfully')
@@ -79,9 +124,6 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         toast = Adw.Toast(timeout=2, priority='high', title=message)
         self.toast_overlay.add_toast(toast)
-
-        self.apply_button.set_sensitive(True)
-        self.spinner.set_spinning(False)
 
         if UbuntuGdmGresourceFile or os.environ.get('XDG_CURRENT_DESKTOP') != 'GNOME':
             return
