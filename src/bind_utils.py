@@ -115,23 +115,15 @@ def bind_with_mapping(settings, key, widget, prop, flags=None, key_to_prop=None,
         raise ValueError('Gio.Settings.bind_with_mapping does not support'
                          ' flag Gio.SettingsBindFlags.INVERT_BOOLEAN')
 
-    # We use '==' sign to check for Gio.SettingsBindFlags.DEFAULT because its value is 0 and
-    # using bitwise-and ('&' sign) would always return 0 which would make the condition False
+    if not flags & (flags & Gio.SettingsBindFlags.GET | flags & Gio.SettingsBindFlags.SET):
+        flags |= Gio.SettingsBindFlags.GET | flags & Gio.SettingsBindFlags.SET
 
-    if flags == Gio.SettingsBindFlags.DEFAULT or flags & Gio.SettingsBindFlags.GET:
-        if flags & Gio.SettingsBindFlags.GET and not key_to_prop:
-            raise ValueError('key_to_prop should not be None when Gio.SettingsBindFlags.GET'
-                             ' is explicitly provided')
-
+    if flags & Gio.SettingsBindFlags.GET and key_to_prop:
         key_changed(settings, key)
         if not (flags & Gio.SettingsBindFlags.GET_NO_CHANGES):
             settings.connect('changed::' + key, key_changed)
 
-    if flags == Gio.SettingsBindFlags.DEFAULT or flags & Gio.SettingsBindFlags.SET:
-        if flags & Gio.SettingsBindFlags.GET and not key_to_prop:
-            raise ValueError('prop_to_key should not be None when Gio.SettingsBindFlags.SET'
-                             ' is explicitly provided')
-
+    if flags & Gio.SettingsBindFlags.SET and prop_to_key:
         widget.connect('notify::' + prop, prop_changed)
 
     if not (flags & Gio.SettingsBindFlags.NO_SENSITIVITY):
