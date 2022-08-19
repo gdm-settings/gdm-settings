@@ -376,7 +376,9 @@ class SettingsManager (GObject.Object):
 
             temp_conf_file.write(gdm_conf_contents)
 
-        self.command_elevator.add(['rm', *self.get_overriding_files()])
+        overriding_files = self.get_overriding_files()
+        if overriding_files:
+            self.command_elevator.add(['rm', *overriding_files])
         self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
         self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
         self.command_elevator.add(f"cp -fT '{temp_profile_path}' '{gdm_profile_path}'")
