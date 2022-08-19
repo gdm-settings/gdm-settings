@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-16 14:58+0500\n"
-"PO-Revision-Date: 2022-08-16 09:59+0000\n"
+"PO-Revision-Date: 2022-08-19 12:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -53,12 +53,12 @@ msgid "The Color to use as GDM background"
 msgstr "הצבע שישמש כרקע ב־GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
 msgid ""
 "Whether the chosen Shell theme should be overlayed on top of the default "
 "shell theme."
-msgstr "האם ערכת העיצוב אמורה להיות מעל לערכת העיצוב כברירת מחדל?"
+msgstr ""
+"האם ערכת עיצוב המעטפת הנבחרת צריכה להיות שכבה מעל לערכת עיצוב המעטפת כברירת "
+"מחדל."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
 msgid ""
@@ -68,6 +68,10 @@ msgid ""
 "theme. Choose option \"everything\" if CSS of chosen Shell theme is "
 "incomplete."
 msgstr ""
+"זה כנראה אף פעם לא רעיון טוב לבחור באפשרות „שום דבר”. האפשרות השפויה ביותר "
+"היא „משאבים”. אם בחרת ב„משאבים”, היישום יעתיק את המשאבים שחסרים בערכת עיצוב "
+"המערכת הנבחרה מערכת עיצוב ברירת המחדל. יש לבחור באפשרות „הכול” אם ה־CSS של "
+"ערכת עיצוב המעטפת הנבחרת הוא חלקי."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -661,34 +665,32 @@ msgid ""
 "<b>Do not change anything</b> here unless you know exactly what you are "
 "doing. Click <a href=\"{url}\">here</a> for more information."
 msgstr ""
+"<b>לא לשנות כאן שום דבר</b> אלא אם כן ברור לך לגמרי מה זה עושה. לחיצה <a "
+"href=\"{url}\">כאן</a> תציג מידע נוסף."
 
 #: src/blueprints/prefs.blp:17
 msgid "Shell Theme"
 msgstr "ערכת עיצוב המעטפת"
 
 #: src/blueprints/prefs.blp:20
-#, fuzzy
-#| msgid "No Overlay"
 msgid "Overlay"
-msgstr "לא מעל"
+msgstr "שכבת על"
 
 #: src/blueprints/prefs.blp:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
 msgid "What to overlay on top of the default theme?"
-msgstr "האם ערכת העיצוב אמורה להיות מעל לערכת העיצוב כברירת מחדל?"
+msgstr "מה לשים בשכבה מעל ערכת העיצוב כברירת המחדל?"
 
 #: src/blueprints/prefs.blp:22
 msgid "Nothing"
-msgstr ""
+msgstr "שום דבר"
 
 #: src/blueprints/prefs.blp:22
 msgid "Resources Only"
-msgstr ""
+msgstr "משאבים בלבד"
 
 #: src/blueprints/prefs.blp:22
 msgid "Everything"
-msgstr ""
+msgstr "הכול"
 
 #: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
