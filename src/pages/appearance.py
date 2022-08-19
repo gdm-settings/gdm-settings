@@ -35,8 +35,24 @@ class AppearancePageContent (PageContent):
         self.background_image_actionrow.add_suffix(self.background_image_button)
         self.background_image_actionrow.set_activatable_widget(self.background_image_button)
 
+        self.background_type_comborow.connect('notify::selected', self.on_background_type_changed)
+
         self.load_theme_lists()
         self.bind_to_gsettings()
+
+
+    def on_background_type_changed (self, comborow, prop):
+        background_type = BackgroundType(comborow.get_selected())
+        if background_type is BackgroundType.image:
+            self.background_image_actionrow.set_visible(True)
+            self.background_color_actionrow.set_visible(False)
+        elif background_type is BackgroundType.color:
+            self.background_image_actionrow.set_visible(False)
+            self.background_color_actionrow.set_visible(True)
+        else:
+            self.background_image_actionrow.set_visible(False)
+            self.background_color_actionrow.set_visible(False)
+
 
     def load_theme_lists(self):
         # Shell Themes
