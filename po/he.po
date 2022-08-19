@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-20 00:14+0500\n"
-"PO-Revision-Date: 2022-08-19 12:30+0000\n"
+"PO-Revision-Date: 2022-08-19 21:22+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -190,26 +190,24 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
-msgstr "עמוד חנות היישומים של היישום התעדכן"
+msgstr "המידע שמופיע בעמוד חנות התוכנות על היישום עודכן"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "סמל יישום חדש שעומד בהנחיות מנשק המשתמש של GNOME"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "מותר לפתוח רק עותק אחד של היישום בו־זמנית"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "בעת החלת הגדרות, היישום לא קופא יותר"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
+msgstr "היישום מציג חלונית „יציאה” מיד לאחר החלת ההגדרות"
 
 #: src/app.py:48
 msgid "Show application version"
