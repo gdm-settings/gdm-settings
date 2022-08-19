@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-16 14:58+0500\n"
+"POT-Creation-Date: 2022-08-19 17:40+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -49,23 +49,6 @@ msgstr "Barva na pozadí"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "Barva, která má být použita jako pozadí GDM"
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
-msgid ""
-"Whether the chosen Shell theme should be overlayed on top of the default "
-"shell theme."
-msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
-msgid ""
-"Probably never a good idea to choose option \"nothing\". The most sane "
-"option is \"resources\". If \"resources\" is selected, the app will copy "
-"over the resources that are missing in chosen Shell theme from the default "
-"theme. Choose option \"everything\" if CSS of chosen Shell theme is "
-"incomplete."
-msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -203,7 +186,7 @@ msgstr "Barva pozadí horní lišty"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:19
+#: src/window.py:61
 msgid "Login Manager Settings"
 msgstr "Nastavení přihlašovací obrazovky"
 
@@ -338,106 +321,106 @@ msgstr "Španělský"
 msgid "Urdu"
 msgstr "Urdský"
 
-#: src/app.py:49
+#: src/app.py:48
 #, fuzzy
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "Zobrazit verzi aplikace"
 
-#: src/app.py:50
+#: src/app.py:49
 #, fuzzy
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Nastavit ručně úroveň „upovídanosti“ (od 0 do 5)"
 
-#: src/app.py:51
+#: src/app.py:50
 #, fuzzy
 #| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "ÚROVEŇ"
 
-#: src/app.py:52
+#: src/app.py:51
 #, fuzzy
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Povolit „upovídaný“ režim (na hodnotě „upovídanosti“ 5)"
 
-#: src/app.py:53
+#: src/app.py:52
 #, fuzzy
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:152
+#: src/app.py:151
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:155
+#: src/app.py:154
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:163
+#: src/app.py:162
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:170
+#: src/app.py:169
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:176
+#: src/app.py:175
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:184
+#: src/app.py:183
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:189
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:226
+#: src/app.py:223
 msgid "Settings reloaded"
 msgstr "Nastavení obnovena"
 
-#: src/app.py:234
+#: src/app.py:231
 msgid "User settings imported"
 msgstr "Uživatelská nastavení naimportována"
 
-#: src/app.py:238
+#: src/app.py:235
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
 "Flatpak"
 
-#: src/app.py:244
-msgid "Failed to reset settings"
-msgstr "Nepodařilo se resetovat nastavení"
-
-#: src/app.py:247
+#: src/app.py:248
 msgid "Reset settings successfully"
 msgstr "Nastavení úspěšně resetována"
+
+#: src/app.py:250
+msgid "Failed to reset settings"
+msgstr "Nepodařilo se resetovat nastavení"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -484,7 +467,7 @@ msgstr "Obrázek pro použití na pozadí"
 msgid "The color to use as background"
 msgstr "Barva pro použití na pozadí"
 
-#: src/blueprints/display-page.blp:9 src/window.py:55
+#: src/blueprints/display-page.blp:9 src/window.py:100
 msgid "Display"
 msgstr "Displej"
 
@@ -496,7 +479,7 @@ msgstr "Použít současná nastavení displeje"
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "Rozlišení, obnovovací frekvence, pozice monitorů, atd."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:24
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
 msgstr "Použít"
 
@@ -538,7 +521,7 @@ msgstr "do"
 msgid "Color Temperature"
 msgstr "Teplota barvy"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:51
+#: src/blueprints/fonts-page.blp:9 src/window.py:96
 msgid "Fonts"
 msgstr "Písma"
 
@@ -590,19 +573,15 @@ msgstr "Naimportovat uživatelská nastavení"
 msgid "Reset settings"
 msgstr "Resetovat nastavení"
 
-#: src/blueprints/main-window.blp:11 src/prefs.py:9
-msgid "App Preferences"
-msgstr "Předvolby aplikace"
-
-#: src/blueprints/main-window.blp:12
+#: src/blueprints/main-window.blp:11
 msgid "About"
 msgstr "O aplikaci"
 
-#: src/blueprints/main-window.blp:13
+#: src/blueprints/main-window.blp:12
 msgid "Quit"
 msgstr "Ukončit"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:56
+#: src/blueprints/misc-page.blp:9 src/window.py:101
 msgid "Miscellaneous"
 msgstr "Smíšené"
 
@@ -690,41 +669,7 @@ msgstr "Posouvání přejetím dvěma prsty."
 msgid "Disable while Typing"
 msgstr "Zablokovat během psaní"
 
-#: src/blueprints/prefs.blp:9
-msgid ""
-"<b>Do not change anything</b> here unless you know exactly what you are "
-"doing. Click <a href=\"{url}\">here</a> for more information."
-msgstr ""
-
-#: src/blueprints/prefs.blp:17
-msgid "Shell Theme"
-msgstr "Téma shellu"
-
-#: src/blueprints/prefs.blp:20
-#, fuzzy
-#| msgid "No Overlay"
-msgid "Overlay"
-msgstr "Žádné nahrazování"
-
-#: src/blueprints/prefs.blp:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
-msgid "What to overlay on top of the default theme?"
-msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
-
-#: src/blueprints/prefs.blp:22
-msgid "Nothing"
-msgstr ""
-
-#: src/blueprints/prefs.blp:22
-msgid "Resources Only"
-msgstr ""
-
-#: src/blueprints/prefs.blp:22
-msgid "Everything"
-msgstr ""
-
-#: src/blueprints/sound-page.blp:9 src/window.py:53
+#: src/blueprints/sound-page.blp:9 src/window.py:98
 msgid "Sound"
 msgstr "Zvuk"
 
@@ -838,17 +783,17 @@ msgstr "Vybrat soubor"
 msgid "(None)"
 msgstr "Žádné"
 
-#: src/common_widgets.py:126
+#: src/common_widgets.py:127
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose"
 msgstr "Vybrat soubor"
 
-#: src/common_widgets.py:127 src/window.py:103
+#: src/common_widgets.py:128 src/window.py:148
 msgid "Cancel"
 msgstr ""
 
-#: src/common_widgets.py:150
+#: src/common_widgets.py:146
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose Image"
@@ -880,15 +825,15 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Vojtěch Perník <translations@pervoj.cz>"
 
-#: src/pages/display.py:64
+#: src/pages/display.py:77
 msgid "Applied current display settings"
 msgstr "Současná nastavení displeje použita"
 
-#: src/pages/display.py:66
+#: src/pages/display.py:79
 msgid "Failed to apply current display settings"
 msgstr "Nepodařilo se použít současná nastavení displeje"
 
-#: src/pages/display.py:71
+#: src/pages/display.py:84
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -900,19 +845,19 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/pages/display.py:82
+#: src/pages/display.py:95
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:56
+#: src/pages/tools.py:46
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Výchozí téma shellu extrahováno do „{path}“ jako „default-extracted“"
 
-#: src/pages/tools.py:59
+#: src/pages/tools.py:49
 msgid "Failed to extract default theme"
 msgstr "Nepodařilo se extrahovat výchozí téma"
 
@@ -922,63 +867,92 @@ msgstr "Nepodařilo se extrahovat výchozí téma"
 msgid "Backing up default shell theme …"
 msgstr "Ukládá se výchozí téma…"
 
-#: src/settings.py:248
+#: src/settings.py:246
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
 
-#: src/settings.py:255
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:464
+#: src/settings.py:506
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:471
+#: src/settings.py:513
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:50
+#: src/window.py:95
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/window.py:52
+#: src/window.py:97
 msgid "Top Bar"
 msgstr "Horní lišta"
 
-#: src/window.py:54
+#: src/window.py:99
 msgid "Mouse & Touchpad"
 msgstr "Myš a touchpad"
 
-#: src/window.py:57
+#: src/window.py:102
 msgid "Tools"
 msgstr "Nástroje"
 
-#: src/window.py:76
+#: src/window.py:121
 msgid "Settings applied successfully"
 msgstr "Nastavení úspěšně použita"
 
-#: src/window.py:78
+#: src/window.py:125
 msgid "Failed to apply settings"
 msgstr "Nepodařilo se použít nastavení"
 
-#: src/window.py:89
+#: src/window.py:128
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
+
+#: src/window.py:134
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:92
+#: src/window.py:137
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:101
+#: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Should the theme be overlayed on top of the default theme?"
+#~ msgid ""
+#~ "Whether the chosen Shell theme should be overlayed on top of the default "
+#~ "shell theme."
+#~ msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
+
+#~ msgid "App Preferences"
+#~ msgstr "Předvolby aplikace"
+
+#~ msgid "Shell Theme"
+#~ msgstr "Téma shellu"
+
+#, fuzzy
+#~| msgid "No Overlay"
+#~ msgid "Overlay"
+#~ msgstr "Žádné nahrazování"
+
+#, fuzzy
+#~| msgid "Should the theme be overlayed on top of the default theme?"
+#~ msgid "What to overlay on top of the default theme?"
+#~ msgstr "Mají být chybějící části tématu nahrazeny těmi z výchozího tématu?"
 
 #~ msgid "Apply Method"
 #~ msgstr "Metoda použití"
@@ -991,9 +965,3 @@ msgstr ""
 
 #~ msgid "Images"
 #~ msgstr "Obrázky"
-
-#~ msgid ""
-#~ "Didn't apply. Chosen background image could not be found. Please! choose "
-#~ "again."
-#~ msgstr ""
-#~ "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."

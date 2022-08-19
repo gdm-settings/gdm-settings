@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-16 14:58+0500\n"
+"POT-Creation-Date: 2022-08-19 17:40+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -51,23 +51,6 @@ msgstr "بیک گرائونڈ کا رنگ"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
-msgid ""
-"Whether the chosen Shell theme should be overlayed on top of the default "
-"shell theme."
-msgstr "کیا تھیم کو ڈیفالٹ تھیم پر اوورلے کرنا چاہئے؟"
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml:24
-msgid ""
-"Probably never a good idea to choose option \"nothing\". The most sane "
-"option is \"resources\". If \"resources\" is selected, the app will copy "
-"over the resources that are missing in chosen Shell theme from the default "
-"theme. Choose option \"everything\" if CSS of chosen Shell theme is "
-"incomplete."
-msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -207,7 +190,7 @@ msgstr "بیک گرائونڈ کا رنگ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:19
+#: src/window.py:61
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
@@ -336,106 +319,106 @@ msgstr "سپَینِش"
 msgid "Urdu"
 msgstr "اردو"
 
-#: src/app.py:49
+#: src/app.py:48
 #, fuzzy
 #| msgctxt "Description of --version option"
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "اَیپلی کیشن کا ورژن دکھائیں"
 
-#: src/app.py:50
+#: src/app.py:49
 #, fuzzy
 #| msgctxt "Description of --verbosity option"
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "وربوسِٹی کا لیوَل سیٹ کریں (0 سے 5 تک)"
 
-#: src/app.py:51
+#: src/app.py:50
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "لیوَل"
 
-#: src/app.py:52
+#: src/app.py:51
 #, fuzzy
 #| msgctxt "Description of --verbose option"
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 سیٹ کریں)"
 
-#: src/app.py:53
+#: src/app.py:52
 #, fuzzy
 #| msgctxt "Description of --quiet option"
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 سیٹ کریں)"
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:152
+#: src/app.py:151
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:155
+#: src/app.py:154
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:163
+#: src/app.py:162
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:170
+#: src/app.py:169
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:176
+#: src/app.py:175
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:184
+#: src/app.py:183
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:189
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:226
+#: src/app.py:223
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: src/app.py:234
+#: src/app.py:231
 msgid "User settings imported"
 msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 
-#: src/app.py:238
+#: src/app.py:235
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
-#: src/app.py:244
-msgid "Failed to reset settings"
-msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
-
-#: src/app.py:247
+#: src/app.py:248
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
+
+#: src/app.py:250
+msgid "Failed to reset settings"
+msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -482,7 +465,7 @@ msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصوی�
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: src/blueprints/display-page.blp:9 src/window.py:55
+#: src/blueprints/display-page.blp:9 src/window.py:100
 msgid "Display"
 msgstr "ڈسپلے"
 
@@ -494,7 +477,7 @@ msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 msgid "Resolution, refresh rate, monitor positions, etc"
 msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:24
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
 msgstr "اپلائی"
 
@@ -536,7 +519,7 @@ msgstr "ختم"
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:51
+#: src/blueprints/fonts-page.blp:9 src/window.py:96
 msgid "Fonts"
 msgstr "خط"
 
@@ -588,19 +571,15 @@ msgstr "یوزر کی سیٹنگز امپورٹ کریں"
 msgid "Reset settings"
 msgstr "سیٹنگز کو ریسیٹ کریں"
 
-#: src/blueprints/main-window.blp:11 src/prefs.py:9
-msgid "App Preferences"
-msgstr "ایپلیکیشن کی سیٹنگز"
-
-#: src/blueprints/main-window.blp:12
+#: src/blueprints/main-window.blp:11
 msgid "About"
 msgstr "تفصیلات"
 
-#: src/blueprints/main-window.blp:13
+#: src/blueprints/main-window.blp:12
 msgid "Quit"
 msgstr "بند کریں"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:56
+#: src/blueprints/misc-page.blp:9 src/window.py:101
 msgid "Miscellaneous"
 msgstr "دوسری چیزیں"
 
@@ -688,41 +667,7 @@ msgstr "دو انگلیوں کے ساتھ سوائیپ کریں۔"
 msgid "Disable while Typing"
 msgstr "ٹائپ کرتے وقت بند کریں"
 
-#: src/blueprints/prefs.blp:9
-msgid ""
-"<b>Do not change anything</b> here unless you know exactly what you are "
-"doing. Click <a href=\"{url}\">here</a> for more information."
-msgstr ""
-
-#: src/blueprints/prefs.blp:17
-msgid "Shell Theme"
-msgstr "شیل کا تھیم"
-
-#: src/blueprints/prefs.blp:20
-#, fuzzy
-#| msgid "No Overlay"
-msgid "Overlay"
-msgstr "کوئی اوورلے نہیں"
-
-#: src/blueprints/prefs.blp:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
-msgid "What to overlay on top of the default theme?"
-msgstr "کیا تھیم کو ڈیفالٹ تھیم پر اوورلے کرنا چاہئے؟"
-
-#: src/blueprints/prefs.blp:22
-msgid "Nothing"
-msgstr ""
-
-#: src/blueprints/prefs.blp:22
-msgid "Resources Only"
-msgstr ""
-
-#: src/blueprints/prefs.blp:22
-msgid "Everything"
-msgstr ""
-
-#: src/blueprints/sound-page.blp:9 src/window.py:53
+#: src/blueprints/sound-page.blp:9 src/window.py:98
 msgid "Sound"
 msgstr "آواز"
 
@@ -836,17 +781,17 @@ msgstr "فائل چُنیں"
 msgid "(None)"
 msgstr "کچھ نہیں"
 
-#: src/common_widgets.py:126
+#: src/common_widgets.py:127
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose"
 msgstr "فائل چُنیں"
 
-#: src/common_widgets.py:127 src/window.py:103
+#: src/common_widgets.py:128 src/window.py:148
 msgid "Cancel"
 msgstr "کینسل"
 
-#: src/common_widgets.py:150
+#: src/common_widgets.py:146
 #, fuzzy
 #| msgid "Choose File"
 msgid "Choose Image"
@@ -878,15 +823,15 @@ msgstr ""
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: src/pages/display.py:64
+#: src/pages/display.py:77
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/pages/display.py:66
+#: src/pages/display.py:79
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/pages/display.py:71
+#: src/pages/display.py:84
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -898,20 +843,20 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/pages/display.py:82
+#: src/pages/display.py:95
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:56
+#: src/pages/tools.py:46
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "ڈیفالٹ شیل تھیم '{path}' میں 'default-extracted' کے نام سے سیو ہو گیا ہے"
 
-#: src/pages/tools.py:59
+#: src/pages/tools.py:49
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
@@ -921,63 +866,93 @@ msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
 
-#: src/settings.py:248
+#: src/settings.py:246
 #, fuzzy
 #| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
 
-#: src/settings.py:255
+#: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:464
+#: src/settings.py:506
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:471
+#: src/settings.py:513
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:50
+#: src/window.py:95
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/window.py:52
+#: src/window.py:97
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/window.py:54
+#: src/window.py:99
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/window.py:57
+#: src/window.py:102
 msgid "Tools"
 msgstr "آلات"
 
-#: src/window.py:76
+#: src/window.py:121
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/window.py:78
+#: src/window.py:125
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/window.py:89
+#: src/window.py:128
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+"اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+
+#: src/window.py:134
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:92
+#: src/window.py:137
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:101
+#: src/window.py:146
 msgid "Log Out"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Should the theme be overlayed on top of the default theme?"
+#~ msgid ""
+#~ "Whether the chosen Shell theme should be overlayed on top of the default "
+#~ "shell theme."
+#~ msgstr "کیا تھیم کو ڈیفالٹ تھیم پر اوورلے کرنا چاہئے؟"
+
+#~ msgid "App Preferences"
+#~ msgstr "ایپلیکیشن کی سیٹنگز"
+
+#~ msgid "Shell Theme"
+#~ msgstr "شیل کا تھیم"
+
+#, fuzzy
+#~| msgid "No Overlay"
+#~ msgid "Overlay"
+#~ msgstr "کوئی اوورلے نہیں"
+
+#, fuzzy
+#~| msgid "Should the theme be overlayed on top of the default theme?"
+#~ msgid "What to overlay on top of the default theme?"
+#~ msgstr "کیا تھیم کو ڈیفالٹ تھیم پر اوورلے کرنا چاہئے؟"
 
 #~ msgid "Apply Method"
 #~ msgstr "اپلائی کرنے کا طریقہ"
@@ -990,13 +965,6 @@ msgstr ""
 
 #~ msgid "Images"
 #~ msgstr "تصویریں"
-
-#~ msgid ""
-#~ "Didn't apply. Chosen background image could not be found. Please! choose "
-#~ "again."
-#~ msgstr ""
-#~ "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب "
-#~ "کریں۔"
 
 #~ msgid "Added: Support for Ubuntu"
 #~ msgstr "Ubuntu کے لیے سپورٹ شامل کی"
