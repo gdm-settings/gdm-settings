@@ -1,5 +1,5 @@
+import os
 import logging
-from os import path
 from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 from .info import application_id
@@ -228,7 +228,7 @@ class SettingsManager (GObject.Object):
 
         theme_name = appearance_settings['shell-theme']
         theme_path = shell_themes.get_path(theme_name)
-        shelldir   = path.join(theme_path, 'gnome-shell') if theme_path else None
+        shelldir   = os.path.join(theme_path, 'gnome-shell') if theme_path else None
 
         background_type = BackgroundType[appearance_settings['background-type']]
         background_image = None
@@ -247,8 +247,8 @@ class SettingsManager (GObject.Object):
             self.command_elevator.add(f"cp {compiled_file} {gr_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chown root: {gr_utils.CustomGresourceFile}")
             self.command_elevator.add(f"chmod 644 {gr_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
+            self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
+            self.command_elevator.add(f'update-alternatives --quiet --set {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
         else:
             logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(f"cp {compiled_file} {gr_utils.ShellGresourceFile}")
@@ -376,6 +376,7 @@ class SettingsManager (GObject.Object):
 
             temp_conf_file.write(gdm_conf_contents)
 
+        self.command_elevator.add(['rm', *self.get_overriding_files()])
         self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
         self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
         self.command_elevator.add(f"cp -fT '{temp_profile_path}' '{gdm_profile_path}'")
@@ -435,9 +436,9 @@ class SettingsManager (GObject.Object):
     def apply_user_display_settings(self) -> bool:
         ''' Apply user's current display settings '''
 
-        user_monitors_xml = path.join(env.XDG_CONFIG_HOME, 'monitors.xml')
+        user_monitors_xml = os.path.join(env.XDG_CONFIG_HOME, 'monitors.xml')
 
-        if not path.isfile(user_monitors_xml):
+        if not os.path.isfile(user_monitors_xml):
             raise FileNotFoundError(2, 'No such file or directory', user_monitors_xml)
 
         self.command_elevator.add(['machinectl', 'shell', '{gr_utils.GdmUsername}@', '/usr/bin/env',
@@ -461,11 +462,11 @@ class SettingsManager (GObject.Object):
         if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
             self.command_elevator.add(['update-alternatives',  '--quiet',  '--remove',
-                                        path.basename(gr_utils.UbuntuGdmGresourceFile),
+                                        os.path.basename(gr_utils.UbuntuGdmGresourceFile),
                                         gr_utils.CustomGresourceFile,
                                      ])
             self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
-        elif path.exists(gr_utils.ShellGresourceAutoBackup):
+        elif os.path.exists(gr_utils.ShellGresourceAutoBackup):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(['mv', '-f',
                                        gr_utils.ShellGresourceAutoBackup,
@@ -490,17 +491,20 @@ class SettingsManager (GObject.Object):
         return False
 
     def get_overriding_files(self):
-        from os import listdir
-
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
+        our_config = os.path.join(gdm_conf_dir, '95-gdm-settings')
         overriding_files = []
 
-        if path.isdir (env.HOST_ROOT + gdm_conf_dir):
-            files = set (listdir (env.HOST_ROOT + gdm_conf_dir))
-            files.add ('95-gdm-settings')
-            files = sorted (files)
-            index_of_next_file = files.index('95-gdm-settings') + 1
-            overriding_files = files[index_of_next_file:]
+        if os.path.isdir (env.HOST_ROOT + gdm_conf_dir):
+            files = set()
+            for dirpath, dirnames, filenames in os.walk(env.HOST_ROOT + gdm_conf_dir):
+                for filename in filenames:
+                    files.add(os.path.join(dirpath.removeprefix(env.HOST_ROOT), filename))
+            files.add(our_config)
+
+            sorted_files = sorted (files)
+            index_of_next_file = sorted_files.index(our_config) + 1
+            overriding_files = sorted_files[index_of_next_file:]
 
         return overriding_files
 
