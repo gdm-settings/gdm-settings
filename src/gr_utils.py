@@ -3,6 +3,7 @@
 import os
 import logging
 from . import env
+from . import utils
 
 ThemesDir                = env.HOST_DATA_DIRS[0]
 CustomThemeIdentity      = 'custom-theme'
@@ -84,6 +85,7 @@ def compile(shellDir:str, overlay_mode:str, additional_css:str, background_image
     from shutil import move, copy, copytree, rmtree
 
     temp_gresource_file = os.path.join(env.TEMP_DIR, 'gnome-shell-theme.gresource')
+    temp_gresource_xml = f'{temp_gresource_file}.xml'
     temp_theme_dir = os.path.join(env.TEMP_DIR, 'temp-theme')
     temp_shell_dir = os.path.join(temp_theme_dir, 'gnome-shell')
 
@@ -136,19 +138,11 @@ def compile(shellDir:str, overlay_mode:str, additional_css:str, background_image
     copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
     copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
 
-    # Get a list of all files in the shell theme
-    # Note: We do this before calling open() so as not to include .gresource.xml file itself in the list
-    from .utils import listdir_recursive
-    file_list = listdir_recursive(temp_shell_dir)
-
-    gresource_xml_filename = os.path.join(temp_shell_dir, 'gnome-shell-theme.gresource.xml')
-
-    # Create gnome-shell-theme.gresource.xml file
-    with open(gresource_xml_filename, 'w') as GresourceXml:
+    with open(temp_gresource_xml, 'w') as GresourceXml:
         print('<?xml version="1.0" encoding="UTF-8"?>',
               '<gresources>',
               ' <gresource prefix="/org/gnome/shell/theme">',
-            *('  <file>'+file+'</file>' for file in file_list),
+            *('  <file>'+file+'</file>' for file in utils.listdir_recursive(temp_shell_dir)),
               ' </gresource>',
               '</gresources>',
 
@@ -161,7 +155,7 @@ def compile(shellDir:str, overlay_mode:str, additional_css:str, background_image
     run(['glib-compile-resources',
          '--sourcedir', temp_shell_dir,
          '--target', temp_gresource_file,
-         gresource_xml_filename,
+         temp_gresource_xml,
        ])
 
     # Return path to the generated GResource file
