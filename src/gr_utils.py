@@ -78,7 +78,7 @@ def extract_default_theme(destination:str, /):
 
 class BackgroundImageNotFoundError (FileNotFoundError): pass
 
-def compile(shellDir:str, overlay_mode:str, additional_css:str, background_image:str=''):
+def compile(shellDir:str, additional_css:str, background_image:str=''):
     """Compile a theme into a GResource file for its use as a GDM theme"""
 
     from os import remove
@@ -89,52 +89,29 @@ def compile(shellDir:str, overlay_mode:str, additional_css:str, background_image
     temp_theme_dir = os.path.join(env.TEMP_DIR, 'temp-theme')
     temp_shell_dir = os.path.join(temp_theme_dir, 'gnome-shell')
 
-    # Remove temporary directory if already exists
     if os.path.exists(temp_theme_dir):
         rmtree(temp_theme_dir)
 
-    # Remove temporary file if already exists
     if os.path.exists(temp_gresource_file):
         remove(temp_gresource_file)
 
-    if not shellDir:
-        extract_default_theme(temp_theme_dir)
-    else:
-        if overlay_mode == 'nothing':
-            copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
-        elif overlay_mode == 'resources':
-            extract_default_theme(temp_theme_dir)
-            copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
-        elif overlay_mode == 'everything':
-            extract_default_theme(temp_theme_dir)
-            shell_css_file = os.path.join(temp_shell_dir, 'gnome-shell.css')
-            shell_css_file_bak = shell_css_file+'.bak'
-            move(shell_css_file, shell_css_file_bak)
-            copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
-            with open(shell_css_file_bak, 'a') as default_css:
-                with open(shell_css_file, 'r') as theme_css:
-                    default_css.write('\n')
-                    default_css.write(theme_css.read())
-            move(shell_css_file_bak, shell_css_file)
-        else:
-            raise ValueError("value of 'shell-theme-overlay' key is not one of"
-                             " ['nothing', 'resources', 'everything']")
+    extract_default_theme(temp_theme_dir)
+
+    if shellDir:
+        copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
 
     # Inject custom-theme identity
     open(os.path.join(temp_shell_dir, CustomThemeIdentity), 'w').close()
 
-    # Background Image
     if background_image:
         if os.path.isfile(background_image):
             copy(background_image, os.path.join(temp_shell_dir, 'background'))
         else:
             raise BackgroundImageNotFoundError(2, 'No such file', background_image)
 
-    # Additional CSS
     with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
-        print(additional_css, file=shell_css)
+        shell_css.write(additional_css)
 
-    # Copy gnome-shell.css to gdm.css and gdm3.css
     copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
     copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
 

@@ -16,24 +16,6 @@
     <key name="never-applied" type="b">
       <default>true</default>
     </key>
-
-    <key name="shell-theme-overlay" type="s">
-      <summary>
-        Whether the chosen Shell theme should be overlayed on top of the default shell theme.
-      </summary>
-      <description>
-        Probably never a good idea to choose option "nothing".
-        The most sane option is "resources". If "resources" is selected, the app will copy over
-        the resources that are missing in chosen Shell theme from the default theme.
-        Choose option "everything" if CSS of chosen Shell theme is incomplete.
-      </description>
-      <choices>
-        <choice value="nothing"/>
-        <choice value="resources"/>
-        <choice value="everything"/>
-      </choices>
-      <default>"resources"</default>
-    </key>
     
   </schema>
 </schemalist>

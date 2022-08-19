@@ -10,7 +10,6 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk
 
 from .settings import SettingsManager
-from .prefs import PreferencesWindow
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 from . import env
@@ -202,7 +201,6 @@ class Application(Adw.Application):
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.refresh", ["<Ctrl>r", "F5"])
-        self.set_accels_for_action("app.preferences", ["<Ctrl>comma"])
 
 
     def create_actions(self):
@@ -215,7 +213,6 @@ class Application(Adw.Application):
         create_action("refresh", self.refresh_cb)
         create_action("import_user_settings", self.import_user_settings_cb)
         create_action("reset_settings", self.reset_settings_cb)
-        create_action("preferences", self.preferences_cb)
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
 
@@ -247,12 +244,6 @@ class Application(Adw.Application):
             toast.set_title(_("Reset settings successfully"))
 
         self.window.toast_overlay.add_toast(toast)
-
-
-    def preferences_cb(self, action, user_data):
-        prefs_window = PreferencesWindow()
-        prefs_window.set_transient_for(self.window)
-        prefs_window.present()
 
 
     def about_cb(self, action, user_data):

@@ -229,7 +229,6 @@ class SettingsManager (GObject.Object):
         theme_name = appearance_settings['shell-theme']
         theme_path = shell_themes.get_path(theme_name)
         shelldir   = path.join(theme_path, 'gnome-shell') if theme_path else None
-        overlay    = main_settings['shell-theme-overlay']
 
         background_type = BackgroundType[appearance_settings['background-type']]
         background_image = None
@@ -237,7 +236,6 @@ class SettingsManager (GObject.Object):
             background_image = appearance_settings['background-image']
 
         compiled_file = gr_utils.compile(shelldir,
-                overlay_mode=overlay,
               additional_css=self.get_setting_css(),
             background_image=background_image
         )

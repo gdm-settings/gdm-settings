@@ -6,7 +6,6 @@ blueprints = files(
   'sound-page.blp',
   'top-bar-page.blp',
   'pointing-page.blp',
-  'prefs.blp',
   'misc-page.blp',
   'tools-page.blp',
 )
