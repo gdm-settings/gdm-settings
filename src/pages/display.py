@@ -65,8 +65,14 @@ class DisplayPageContent (PageContent):
         bind(nl_settings, 'temperature', self.nl_temperature_scale.props.adjustment, 'value')
 
     def on_apply_display_settings (self, button):
+        self.window.task_counter.inc()
+        settings_manager = self.window.application.settings_manager
+        settings_manager.apply_user_display_settings_async(self.on_apply_display_settings_finished)
+
+    def on_apply_display_settings_finished(self, settings_manager, result, user_data):
+        self.window.task_counter.dec()
         try:
-            status = self.window.application.settings_manager.apply_user_display_settings()
+            status = settings_manager.apply_user_display_settings_finish(result)
             if status.success:
                 message = _("Applied current display settings")
             else:
