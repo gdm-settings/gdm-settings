@@ -123,17 +123,13 @@ class FileChooserButton (Gtk.Button):
                                      filter = self.filter,
                                       title = self.title,
                                      action = Gtk.FileChooserAction.OPEN,
+                              transient_for = self.get_root(),
                                accept_label = _('Choose'),
                                cancel_label = _('Cancel'),
                 )
 
         for filter in self.filters:
             self._file_chooser.add_filter(filter)
-
-        widget = self
-        while widget := widget.get_parent():
-            if isinstance(widget, Gtk.Window):
-                self._file_chooser.set_transient_for(widget)
 
         self._file_chooser.connect('response', self._on_file_chooser_response)
         self._file_chooser.show()
