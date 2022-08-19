@@ -46,7 +46,14 @@ class DisplayPageContent (PageContent):
         self.nl_end_minute_spinbutton.set_increments(1,5)
         self.nl_temperature_scale.set_range(1700, 4700)
 
+        self.nl_schedule_comborow.connect('notify::selected', self.update_time_row_sensitivity)
+
         self.bind_to_gsettings()
+
+    def update_time_row_sensitivity (self, comborow, prop):
+        selected = comborow.get_selected()
+        self.nl_start_box.set_sensitive(bool(selected))
+        self.nl_end_box.set_sensitive(bool(selected))
 
     def bind_to_gsettings (self):
         bind(nl_settings, 'enabled', self.nl_enable_switch, 'active')
