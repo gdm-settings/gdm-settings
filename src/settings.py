@@ -422,9 +422,11 @@ class SettingsManager (GObject.Object):
         if task.return_error_if_cancelled():
             return
 
-        value = self.apply_settings()
-
-        task.return_value(value)
+        try:
+            value = self.apply_settings()
+            task.return_value(value)
+        except Exception as e:
+            task.return_value(e)
 
     def apply_settings_finish(self, result):
         '''Returns result(return value) of apply_settings_async'''
@@ -433,7 +435,12 @@ class SettingsManager (GObject.Object):
             from .utils import ProcessReturnCode
             return ProcessReturnCode(-1)
 
-        return result.propagate_value().value
+        value = result.propagate_value().value
+
+        if isinstance(value, Exception):
+            raise value
+
+        return value
 
     def apply_user_display_settings(self) -> bool:
         ''' Apply user's current display settings '''

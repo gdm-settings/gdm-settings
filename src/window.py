@@ -3,7 +3,7 @@ from gi.repository import Adw, Gtk
 from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
-from .gr_utils import UbuntuGdmGresourceFile
+from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .utils import run_on_host
 from .bind_utils import bind
 from . import pages
@@ -114,20 +114,23 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.application.settings_manager.apply_settings_async(self.on_apply_finished)
 
     def on_apply_finished(self, settings_manager, result, user_data):
-        status = settings_manager.apply_settings_finish(result)
         self.task_counter.dec()
 
-        if status.success:
-            message = _('Settings applied successfully')
-        else:
-            message = _('Failed to apply settings')
+        try:
+            if settings_manager.apply_settings_finish(result):
+                message = _('Settings applied successfully')
+                if os.environ.get('XDG_CURRENT_DESKTOP') == 'GNOME' and not UbuntuGdmGresourceFile:
+                    self.show_logout_dialog()
+            else:
+                message = _('Failed to apply settings')
+            toast = Adw.Toast(timeout=2, priority='high', title=message)
+        except BackgroundImageNotFoundError:
+            message = _("Didn't apply. Chosen background image could not be found. Please! choose again.")
+            toast = Adw.Toast(timeout=4, priority='high', title=message)
 
-        toast = Adw.Toast(timeout=2, priority='high', title=message)
         self.toast_overlay.add_toast(toast)
 
-        if UbuntuGdmGresourceFile or os.environ.get('XDG_CURRENT_DESKTOP') != 'GNOME':
-            return
-
+    def show_logout_dialog (self):
         message = _('The system may start to look weird/buggy untill you re-login or reboot.')
 
         dialog = Gtk.MessageDialog(
