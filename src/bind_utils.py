@@ -115,7 +115,7 @@ def bind_with_mapping(settings, key, widget, prop, flags=None, key_to_prop=None,
         raise ValueError('Gio.Settings.bind_with_mapping does not support'
                          ' flag Gio.SettingsBindFlags.INVERT_BOOLEAN')
 
-    if not flags & (flags & Gio.SettingsBindFlags.GET | flags & Gio.SettingsBindFlags.SET):
+    if not (flags & Gio.SettingsBindFlags.GET) | (flags & Gio.SettingsBindFlags.SET):
         flags |= Gio.SettingsBindFlags.GET | flags & Gio.SettingsBindFlags.SET
 
     if flags & Gio.SettingsBindFlags.GET and key_to_prop:
