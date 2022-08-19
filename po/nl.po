@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-16 14:58+0500\n"
-"PO-Revision-Date: 2022-08-17 17:21+0000\n"
+"PO-Revision-Date: 2022-08-19 12:30+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -65,6 +65,10 @@ msgid ""
 "theme. Choose option \"everything\" if CSS of chosen Shell theme is "
 "incomplete."
 msgstr ""
+"Het is wellicht geen goed idee om de optie ‘Nooit’ te kiezen. De veiligste "
+"optie is ‘Inhoud’. Met die optie wordt de ontbrekende inhoud gekopieerd van "
+"het standaard Shell-thema naar het gekozen Shell-thema. De optie ‘Alles’ is "
+"nuttig indien het gekozen Shell-tema onvolledig is."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -676,34 +680,32 @@ msgid ""
 "<b>Do not change anything</b> here unless you know exactly what you are "
 "doing. Click <a href=\"{url}\">here</a> for more information."
 msgstr ""
+"<b>Pas niets aan</b>, tenzij u weet wat u doet! Klik <a href=\"{url}\">hier</"
+"a> voor meer informatie."
 
 #: src/blueprints/prefs.blp:17
 msgid "Shell Theme"
 msgstr "Shell-thema"
 
 #: src/blueprints/prefs.blp:20
-#, fuzzy
-#| msgid "No Overlay"
 msgid "Overlay"
-msgstr "Niet bovenop"
+msgstr "Bovenop"
 
 #: src/blueprints/prefs.blp:21
-#, fuzzy
-#| msgid "Should the theme be overlayed on top of the default theme?"
 msgid "What to overlay on top of the default theme?"
-msgstr "Moet het thema worden ingesteld bovenop het standaardthema?"
+msgstr "Wat moet er worden ingesteld bovenop het standaardthema?"
 
 #: src/blueprints/prefs.blp:22
 msgid "Nothing"
-msgstr ""
+msgstr "Niets"
 
 #: src/blueprints/prefs.blp:22
 msgid "Resources Only"
-msgstr ""
+msgstr "Inhoud"
 
 #: src/blueprints/prefs.blp:22
 msgid "Everything"
-msgstr ""
+msgstr "Alles"
 
 #: src/blueprints/sound-page.blp:9 src/window.py:53
 msgid "Sound"
