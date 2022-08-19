@@ -526,6 +526,40 @@ class SettingsManager (GObject.Object):
 
         return False
 
+    def reset_settings_async(self, callback):
+        '''Run apply_settings asynchronously'''
+
+        task = Gio.Task.new(self, None, callback, None)
+        task.set_return_on_cancel(False)
+
+        task.run_in_thread(self._reset_settings_thread_callback)
+
+    def _reset_settings_thread_callback(self, task, source_object, task_data, cancellable):
+        '''Called by apply_settings_async to run apply_settings in a separate thread'''
+
+        if task.return_error_if_cancelled():
+            return
+
+        try:
+            value = self.reset_settings()
+            task.return_value(value)
+        except Exception as e:
+            task.return_value(e)
+
+    def reset_settings_finish(self, result):
+        '''Returns result(return value) of apply_settings_async'''
+
+        if not Gio.Task.is_valid(result, self):
+            from .utils import ProcessReturnCode
+            return ProcessReturnCode(-1)
+
+        value = result.propagate_value().value
+
+        if isinstance(value, Exception):
+            raise value
+
+        return value
+
     def get_overriding_files(self):
         gdm_conf_dir = "/etc/dconf/db/gdm.d"
         our_config = os.path.join(gdm_conf_dir, '95-gdm-settings')

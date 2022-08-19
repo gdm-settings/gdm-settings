@@ -237,12 +237,19 @@ class Application(Adw.Application):
 
 
     def reset_settings_cb(self, action, user_data):
-        toast = Adw.Toast(timeout=2, priority="high",
-                          title=_("Failed to reset settings"))
+        self.window.task_counter.inc()
+        self.settings_manager.reset_settings_async(self.on_reset_settings_finish)
 
-        if self.settings_manager.reset_settings():
-            toast.set_title(_("Reset settings successfully"))
+    def on_reset_settings_finish(self, settings_manager, result, nothing):
+        success = settings_manager.reset_settings_finish(result)
+        self.window.task_counter.dec()
 
+        if success:
+            message = _("Reset settings successfully")
+        else:
+            message = _("Failed to reset settings")
+
+        toast = Adw.Toast(timeout=2, priority="high", title=message)
         self.window.toast_overlay.add_toast(toast)
 
 
