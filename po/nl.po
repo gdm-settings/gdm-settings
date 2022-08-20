@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-20 00:14+0500\n"
-"PO-Revision-Date: 2022-08-19 12:30+0000\n"
+"PO-Revision-Date: 2022-08-21 07:40+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -197,26 +197,28 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
 msgstr "Bijgewerkt: de bijbehorende winkelpagina"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "Nieuw: toepassingspictogram op basis van de GNOME-ontwerprichtlijnen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "Nieuw: er kan slechts één venster tegelijk worden geopend"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
+"Verbeterd: de toepassing bevriest niet meer na het toepassen van de "
+"voorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
+"Nieuw: er wordt voortaan een afmeldvenster getoond na het toepassen van de "
+"voorkeuren"
 
 #: src/app.py:48
 msgid "Show application version"
