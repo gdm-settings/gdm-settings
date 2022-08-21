@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-20 00:14+0500\n"
+"POT-Creation-Date: 2022-08-21 12:50+0500\n"
 "PO-Revision-Date: 2022-08-15 05:58+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -188,61 +188,65 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Warning:"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 #, fuzzy
 #| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
 msgstr "Trang web app store của app đã được cập nhật"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "New App Icon that follows GNOME HIG"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid "Only one instance of the app can be open at a time"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: src/app.py:48
+#: src/app.py:49
 #, fuzzy
 #| msgctxt "Description of --version option"
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "Hiển thị phiên bản của ứng dụng"
 
-#: src/app.py:49
+#: src/app.py:50
 #, fuzzy
 #| msgctxt "Description of --verbosity option"
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Set mức độ hiển thị chi tiết một cách thủ công (từ 0 đến 5)"
 
-#: src/app.py:50
+#: src/app.py:51
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "MỨC ĐỘ"
 
-#: src/app.py:51
+#: src/app.py:52
 #, fuzzy
 #| msgctxt "Description of --verbose option"
 #| msgid "Enable verbose mode (alias of --verbosity=5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Bật chế độ hiển thị chi tiết (--verbosity=5)"
 
-#: src/app.py:52
+#: src/app.py:53
 #, fuzzy
 #| msgctxt "Description of --quiet option"
 #| msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Bật chế độ quiet (yên lặng, --verbosity=0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, fuzzy, python-brace-format
 #| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
 msgid ""
@@ -252,7 +256,7 @@ msgstr ""
 "{level} là mức độ hiển thị chi tiết không hợp lệ. Giá trị hợp lệ bắt đầu từ "
 "0 đến 5."
 
-#: src/app.py:151
+#: src/app.py:154
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -260,12 +264,12 @@ msgstr ""
 "Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
 "động trơn tru, nhưng nó chưa được cài đặt."
 
-#: src/app.py:154
+#: src/app.py:157
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (Developer Edition - phiên bản cho nhà phát triển)"
 
-#: src/app.py:162
+#: src/app.py:165
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -274,19 +278,19 @@ msgstr ""
 "Những chương trình dưới đây cần có <b>trên máy host</b> để ứng dụng này có "
 "thể hoạt động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
-#: src/app.py:169
+#: src/app.py:172
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:175
+#: src/app.py:178
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:186
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -295,28 +299,28 @@ msgstr ""
 "Click <a href=\"{url}\">ở đây</a> để xem hướng dẫn cách cài những phần mềm/"
 "thư viên này trên máy của bạn."
 
-#: src/app.py:188
+#: src/app.py:191
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:223
+#: src/app.py:226
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
-#: src/app.py:231
+#: src/app.py:234
 msgid "User settings imported"
 msgstr "Cài đặt người dùng đã được import"
 
-#: src/app.py:235
+#: src/app.py:238
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Import các cài đặt của người dùng không được hỗ trợ trong phiên bản Flatpak"
 
-#: src/app.py:248
+#: src/app.py:251
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
-#: src/app.py:250
+#: src/app.py:253
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
 
@@ -365,7 +369,7 @@ msgstr "Hình ảnh sẽ được sử dụng làm nền"
 msgid "The color to use as background"
 msgstr "Màu sẽ được dùng làm nền cho GDM"
 
-#: src/blueprints/display-page.blp:9 src/window.py:100
+#: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
 msgstr "Màn hình"
 
@@ -419,7 +423,7 @@ msgstr "Đến"
 msgid "Color Temperature"
 msgstr "Nhiệt độ màu"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:96
+#: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
 msgstr "Phông chữ"
 
@@ -479,7 +483,7 @@ msgstr "Về ứng dụng này"
 msgid "Quit"
 msgstr "Thoát"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:101
+#: src/blueprints/misc-page.blp:9 src/window.py:102
 msgid "Miscellaneous"
 msgstr "Các cài đặt khác"
 
@@ -567,7 +571,7 @@ msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
 msgid "Disable while Typing"
 msgstr "Tắt khi nhập"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:98
+#: src/blueprints/sound-page.blp:9 src/window.py:99
 msgid "Sound"
 msgstr "Âm thanh"
 
@@ -683,7 +687,7 @@ msgstr "(Không có gì)"
 msgid "Choose"
 msgstr "Chọn"
 
-#: src/common_widgets.py:128 src/window.py:148
+#: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
@@ -715,15 +719,15 @@ msgstr "Thales Bindá"
 msgid "translator-credits"
 msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
-#: src/pages/display.py:77
+#: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "Đã áp dụng cài đặt màn hình hiện tại"
 
-#: src/pages/display.py:79
+#: src/pages/display.py:83
 msgid "Failed to apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
-#: src/pages/display.py:84
+#: src/pages/display.py:88
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -743,7 +747,7 @@ msgstr ""
 "2. Thay đổi một số cài đặt bất kì.\n"
 "3. Áp dụng."
 
-#: src/pages/display.py:95
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
@@ -773,41 +777,41 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:506
+#: src/settings.py:438
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:513
+#: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
 
-#: src/window.py:95
+#: src/window.py:96
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: src/window.py:97
+#: src/window.py:98
 msgid "Top Bar"
 msgstr "Top Bar"
 
-#: src/window.py:99
+#: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "Chuột & Touchpad"
 
-#: src/window.py:102
+#: src/window.py:103
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: src/window.py:121
+#: src/window.py:122
 msgid "Settings applied successfully"
 msgstr "Áp dụng cài đặt thành công"
 
-#: src/window.py:125
+#: src/window.py:126
 msgid "Failed to apply settings"
 msgstr "Áp dụng cài đặt thất bại"
 
-#: src/window.py:128
+#: src/window.py:129
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -815,15 +819,15 @@ msgstr ""
 "Không áp dụng được do hình nền được chọn không thể tìm thấy. Làm ơn! Chọn "
 "lại đi mà."
 
-#: src/window.py:134
+#: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:137
+#: src/window.py:138
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:146
+#: src/window.py:147
 msgid "Log Out"
 msgstr ""
 

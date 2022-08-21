@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-20 00:14+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-21 12:50+0500\n"
 "PO-Revision-Date: 2022-08-19 21:22+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -190,47 +190,51 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Warning:"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 msgid "Updated the info shown on app's software-store page"
 msgstr "המידע שמופיע בעמוד חנות התוכנות על היישום עודכן"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "New App Icon that follows GNOME HIG"
 msgstr "סמל יישום חדש שעומד בהנחיות מנשק המשתמש של GNOME"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid "Only one instance of the app can be open at a time"
 msgstr "מותר לפתוח רק עותק אחד של היישום בו־זמנית"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "בעת החלת הגדרות, היישום לא קופא יותר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "היישום מציג חלונית „יציאה” מיד לאחר החלת ההגדרות"
 
-#: src/app.py:48
+#: src/app.py:49
 msgid "Show application version"
 msgstr "הצגת גרסת היישום"
 
-#: src/app.py:49
+#: src/app.py:50
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "הגדרת רמת פירוט ידנית (מ־0 עד 5)"
 
-#: src/app.py:50
+#: src/app.py:51
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "רמה"
 
-#: src/app.py:51
+#: src/app.py:52
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "הפעלת מצב מפורט (כינוי חלופי ל־‎--verbosity=5)"
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
@@ -239,19 +243,19 @@ msgstr ""
 "{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5.\n"
 "כנראה שהתכוונת לרמת פירוט 4."
 
-#: src/app.py:151
+#: src/app.py:154
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 "היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
 
-#: src/app.py:154
+#: src/app.py:157
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (גרסת המפתחים)"
 
-#: src/app.py:162
+#: src/app.py:165
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -260,19 +264,19 @@ msgstr ""
 "התוכניות הבאות חייבות להיות מותקנות <b>על המערכת המארחת</b> כדי שהיישום הזה "
 "יתפקד כראוי אך הן אינן מותקנות במערכת המארחת."
 
-#: src/app.py:169
+#: src/app.py:172
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " ‎ • <b>GDM</b>‎"
 
-#: src/app.py:175
+#: src/app.py:178
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " ‎ • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:186
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -281,27 +285,27 @@ msgstr ""
 "לחיצה <a href=\"{url}\">כאן</a> תעביר אותך להנחיות איך להתקין את התלויות "
 "האלו במערכת שלך."
 
-#: src/app.py:188
+#: src/app.py:191
 msgid "Missing Dependencies"
 msgstr "חסרות תלויות"
 
-#: src/app.py:223
+#: src/app.py:226
 msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
 
-#: src/app.py:231
+#: src/app.py:234
 msgid "User settings imported"
 msgstr "הגדרות המשתמש ייובאו"
 
-#: src/app.py:235
+#: src/app.py:238
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
 
-#: src/app.py:248
+#: src/app.py:251
 msgid "Reset settings successfully"
 msgstr "ההגדרות אופסו בהצלחה"
 
-#: src/app.py:250
+#: src/app.py:253
 msgid "Failed to reset settings"
 msgstr "איפוס ההגדרות נכשל"
 
@@ -350,7 +354,7 @@ msgstr "התמונה שתשמש כרקע"
 msgid "The color to use as background"
 msgstr "הצבע שישמש כרקע"
 
-#: src/blueprints/display-page.blp:9 src/window.py:100
+#: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
 msgstr "תצוגה"
 
@@ -404,7 +408,7 @@ msgstr "סיום"
 msgid "Color Temperature"
 msgstr "טמפרטורת הצבע"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:96
+#: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
 msgstr "גופנים"
 
@@ -464,7 +468,7 @@ msgstr "על אודות"
 msgid "Quit"
 msgstr "יציאה"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:101
+#: src/blueprints/misc-page.blp:9 src/window.py:102
 msgid "Miscellaneous"
 msgstr "שונות"
 
@@ -552,7 +556,7 @@ msgstr "גלילה בהחלקה עם שתי אצבעות."
 msgid "Disable while Typing"
 msgstr "השבתה בעת הקלדה"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:98
+#: src/blueprints/sound-page.blp:9 src/window.py:99
 msgid "Sound"
 msgstr "שמע"
 
@@ -668,7 +672,7 @@ msgstr "(ללא)"
 msgid "Choose"
 msgstr "בחירה"
 
-#: src/common_widgets.py:128 src/window.py:148
+#: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -700,15 +704,15 @@ msgstr "תאלס בינדה"
 msgid "translator-credits"
 msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
-#: src/pages/display.py:77
+#: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "הגדרות התצוגה הנוכחיות הוחלו"
 
-#: src/pages/display.py:79
+#: src/pages/display.py:83
 msgid "Failed to apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
 
-#: src/pages/display.py:84
+#: src/pages/display.py:88
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -728,7 +732,7 @@ msgstr ""
 "2. לשנות שם כמה הגדרות.\n"
 "3. להחיל."
 
-#: src/pages/display.py:95
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "הגדרות הצג לא נמצאו"
 
@@ -757,55 +761,55 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
 
-#: src/settings.py:506
+#: src/settings.py:438
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
 
-#: src/settings.py:513
+#: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"
 
-#: src/window.py:95
+#: src/window.py:96
 msgid "Appearance"
 msgstr "מראה"
 
-#: src/window.py:97
+#: src/window.py:98
 msgid "Top Bar"
 msgstr "סרגל עליון"
 
-#: src/window.py:99
+#: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "עכבר ומשטח מגע"
 
-#: src/window.py:102
+#: src/window.py:103
 msgid "Tools"
 msgstr "כלים"
 
-#: src/window.py:121
+#: src/window.py:122
 msgid "Settings applied successfully"
 msgstr "ההגדרות הוחלו בהצלחה"
 
-#: src/window.py:125
+#: src/window.py:126
 msgid "Failed to apply settings"
 msgstr "החלת ההגדרות נכשלה"
 
-#: src/window.py:128
+#: src/window.py:129
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
 msgstr "לא חל. לא ניתן למצוא את תמונת הרקע הנבחרת. נא לבחור שוב."
 
-#: src/window.py:134
+#: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr "המערכת עלולה להיראות מוזר/שברירית עד לכניסה או הפעלה מחדש."
 
-#: src/window.py:137
+#: src/window.py:138
 msgid "Log Out?"
 msgstr "לצאת?"
 
-#: src/window.py:146
+#: src/window.py:147
 msgid "Log Out"
 msgstr "יציאה"
 
