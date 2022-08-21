@@ -2,8 +2,8 @@ import os
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..env import TEMP_DIR
-from ..utils import CommandElevator
 from ..info import data_dir, application_id
+from ..utils import CommandElevator, BackgroundTask
 from ..gr_utils import extract_default_theme, ThemesDir
 from ..bind_utils import *
 from .common import PageContent
@@ -24,6 +24,7 @@ class ToolsPageContent (PageContent):
         self.top_bar_tweaks_switch = self.builder.get_object('top_bar_tweaks_switch')
         self.extract_shell_theme_button = self.builder.get_object('extract_shell_theme_button')
 
+        self.extract_theme_task = BackgroundTask(self.extract_shell_theme, self.on_extract_shell_theme_finish)
         self.window.task_counter.register(self.extract_shell_theme_button)
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
@@ -33,11 +34,10 @@ class ToolsPageContent (PageContent):
 
     def on_extract_shell_theme(self, button):
         self.window.task_counter.inc()
-        self.extract_shell_theme_async(self.on_extract_shell_theme_finish)
+        self.extract_theme_task.start()
 
-    @staticmethod
-    def on_extract_shell_theme_finish(self, result, user_data):
-        status, theme_name = self.extract_shell_theme_finish(result)
+    def on_extract_shell_theme_finish(self):
+        status, theme_name = self.extract_theme_task.finish()
         self.window.task_counter.dec()
 
         if status.success:
@@ -69,37 +69,3 @@ class ToolsPageContent (PageContent):
         status = command_elevator.run()
 
         return status, perm_theme_name
-
-    def extract_shell_theme_async(self, callback):
-        '''Run apply_settings asynchronously'''
-
-        task = Gio.Task.new(self, None, callback, None)
-        task.set_return_on_cancel(False)
-
-        task.run_in_thread(self._extract_shell_theme_thread_callback)
-
-    def _extract_shell_theme_thread_callback(self, task, source_object, task_data, cancellable):
-        '''Called by apply_settings_async to run apply_settings in a separate thread'''
-
-        if task.return_error_if_cancelled():
-            return
-
-        try:
-            value = self.extract_shell_theme()
-            task.return_value(value)
-        except Exception as e:
-            task.return_value(e)
-
-    def extract_shell_theme_finish(self, result):
-        '''Returns result(return value) of apply_settings_async'''
-
-        if not Gio.Task.is_valid(result, self):
-            from .utils import ProcessReturnCode
-            return ProcessReturnCode(-1)
-
-        value = result.propagate_value().value
-
-        if isinstance(value, Exception):
-            raise value
-
-        return value

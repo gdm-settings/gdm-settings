@@ -4,7 +4,7 @@ from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
-from .utils import run_on_host
+from .utils import run_on_host, BackgroundTask
 from .bind_utils import bind
 from . import pages
 
@@ -74,6 +74,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.task_counter.register(self.apply_button)
         self.apply_button.connect('clicked', self.on_apply)
+        self.apply_task = BackgroundTask(self.application.settings_manager.apply_settings, self.on_apply_finished)
 
         self.add_pages()
         self.bind_to_gsettings()
@@ -111,13 +112,13 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
     def on_apply (self, button):
         self.task_counter.inc()
-        self.application.settings_manager.apply_settings_async(self.on_apply_finished)
+        self.apply_task.start()
 
-    def on_apply_finished(self, settings_manager, result, user_data):
+    def on_apply_finished(self):
         self.task_counter.dec()
 
         try:
-            if settings_manager.apply_settings_finish(result):
+            if self.apply_task.finish():
                 message = _('Settings applied successfully')
                 if os.environ.get('XDG_CURRENT_DESKTOP') == 'GNOME' and not UbuntuGdmGresourceFile:
                     self.show_logout_dialog()

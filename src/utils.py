@@ -113,3 +113,50 @@ class CommandElevator:
         status = self.run_only()
         self.clear()
         return status
+
+
+class InvalidGioTaskError (Exception): pass
+class AlreadyRunningError (Exception): pass
+
+from gi.repository import Gio, GObject
+
+class BackgroundTask (GObject.Object):
+    __gtype_name__ = 'BackgroundTask'
+
+    def __init__ (self, function, finish_callback, **kwargs):
+        super().__init__(**kwargs)
+
+        self._function = function
+        self._finish_callback = lambda self, task, nothing: finish_callback()
+        self._current = None
+
+    def start(self):
+        if self._current:
+            AlreadyRunningError('Task is already running')
+
+        task = Gio.Task.new(self, None, self._finish_callback, None)
+        task.run_in_thread(self._thread_cb)
+
+        self._current = task
+
+    @staticmethod
+    def _thread_cb (task, self, task_data, cancellable):
+        try:
+            retval = self._function()
+            task.return_value(retval)
+        except Exception as e:
+            task.return_value(e)
+
+    def finish (self):
+        task = self._current
+        self._current = None
+
+        if not Gio.Task.is_valid(task, self):
+            raise InvalidGioTaskError()
+
+        value = task.propagate_value().value
+
+        if isinstance(value, Exception):
+            raise value
+
+        return value
