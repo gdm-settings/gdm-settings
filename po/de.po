@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-20 00:14+0500\n"
+"POT-Creation-Date: 2022-08-21 12:50+0500\n"
 "PO-Revision-Date: 2022-06-21 03:43+0000\n"
 "Last-Translator: jagfwajgf <juri26@outlook.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -226,123 +226,127 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "New App Icon that follows GNOME HIG"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
-msgid "Only one instance of the app can be open at a time"
+msgid "Warning:"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "When applying settings, the app does not freeze anymore"
+msgid "Updated the info shown on app's software-store page"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "When applying settings, the app does not freeze anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: src/app.py:48
+#: src/app.py:49
 #, fuzzy
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "Version der Anwendung anzeigen"
 
-#: src/app.py:49
+#: src/app.py:50
 #, fuzzy
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Detaillevel manuell setzen (von 0 bis 5)"
 
-#: src/app.py:50
+#: src/app.py:51
 #, fuzzy
 #| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "LEVEL"
 
-#: src/app.py:51
+#: src/app.py:52
 #, fuzzy
 #| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Hohes Detaillevel aktivieren (Level 5)"
 
-#: src/app.py:52
+#: src/app.py:53
 #, fuzzy
 #| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Stillen Modus aktivieren (Level 0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
 
-#: src/app.py:151
+#: src/app.py:154
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:157
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:162
+#: src/app.py:165
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:169
+#: src/app.py:172
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:175
+#: src/app.py:178
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:186
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:188
+#: src/app.py:191
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:223
+#: src/app.py:226
 msgid "Settings reloaded"
 msgstr "Einstellungen wurden neu geladen"
 
-#: src/app.py:231
+#: src/app.py:234
 msgid "User settings imported"
 msgstr "Benutzereinstellungen wurden importiert"
 
-#: src/app.py:235
+#: src/app.py:238
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Das Importieren von Benutzereinstellungen wird in der Flatpak-Version NICHT "
 "unterstützt"
 
-#: src/app.py:248
+#: src/app.py:251
 msgid "Reset settings successfully"
 msgstr "Einstellungen wurden erfolgreich zurückgesetzt"
 
-#: src/app.py:250
+#: src/app.py:253
 msgid "Failed to reset settings"
 msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
 
@@ -391,7 +395,7 @@ msgstr "Das Bild, welches als Hintergrund verwendet werden soll"
 msgid "The color to use as background"
 msgstr "Die Hintergrundfarbe"
 
-#: src/blueprints/display-page.blp:9 src/window.py:100
+#: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
 msgstr "Anzeige"
 
@@ -445,7 +449,7 @@ msgstr "bis"
 msgid "Color Temperature"
 msgstr "Farbtemperatur"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:96
+#: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
 msgstr "Schriftarten"
 
@@ -505,7 +509,7 @@ msgstr "Info"
 msgid "Quit"
 msgstr "Beenden"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:101
+#: src/blueprints/misc-page.blp:9 src/window.py:102
 msgid "Miscellaneous"
 msgstr "Verschiedenes"
 
@@ -593,7 +597,7 @@ msgstr "Aktivieren Sie den Bildlauf durch Wischen mit zwei Fingern."
 msgid "Disable while Typing"
 msgstr "Beim Tippen deaktivieren"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:98
+#: src/blueprints/sound-page.blp:9 src/window.py:99
 msgid "Sound"
 msgstr "Klang"
 
@@ -713,7 +717,7 @@ msgstr "Keine"
 msgid "Choose"
 msgstr "Datei wählen"
 
-#: src/common_widgets.py:128 src/window.py:148
+#: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -749,15 +753,15 @@ msgstr ""
 msgid "translator-credits"
 msgstr "Philipp Kiemle <philipp.kiemle@gmail.com>, 2022"
 
-#: src/pages/display.py:77
+#: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "Aktuelle Bildschirmeinstellungen wurden angewendet"
 
-#: src/pages/display.py:79
+#: src/pages/display.py:83
 msgid "Failed to apply current display settings"
 msgstr "Anwenden der aktuellen Displayeinstellungen fehlgeschlagen"
 
-#: src/pages/display.py:84
+#: src/pages/display.py:88
 msgid ""
 "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
 "display settings but it does not exist.\n"
@@ -769,7 +773,7 @@ msgid ""
 "3. Apply."
 msgstr ""
 
-#: src/pages/display.py:95
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr ""
 
@@ -806,41 +810,41 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:506
+#: src/settings.py:438
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:513
+#: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:95
+#: src/window.py:96
 msgid "Appearance"
 msgstr "Erscheinungsbild"
 
-#: src/window.py:97
+#: src/window.py:98
 msgid "Top Bar"
 msgstr "Obere Leiste"
 
-#: src/window.py:99
+#: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "Maus und Tastfeld"
 
-#: src/window.py:102
+#: src/window.py:103
 msgid "Tools"
 msgstr "Werkzeuge"
 
-#: src/window.py:121
+#: src/window.py:122
 msgid "Settings applied successfully"
 msgstr "Einstellungen erfolgreich angewendet"
 
-#: src/window.py:125
+#: src/window.py:126
 msgid "Failed to apply settings"
 msgstr "Anwenden der Einstellungen fehlgeschlagen"
 
-#: src/window.py:128
+#: src/window.py:129
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
@@ -848,15 +852,15 @@ msgstr ""
 "Nicht angewendet. Das ausgewählte Hintergrundbild konnte nicht gefunden "
 "werden. Bitte versuchen Sie es erneut."
 
-#: src/window.py:134
+#: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:137
+#: src/window.py:138
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:146
+#: src/window.py:147
 msgid "Log Out"
 msgstr ""
 
