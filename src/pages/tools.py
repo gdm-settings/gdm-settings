@@ -2,8 +2,8 @@ import os
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..env import TEMP_DIR
-from ..utils import CommandElevator
 from ..info import data_dir, application_id
+from ..utils import CommandElevator, BackgroundTask
 from ..gr_utils import extract_default_theme, ThemesDir
 from ..bind_utils import *
 from .common import PageContent
@@ -24,6 +24,7 @@ class ToolsPageContent (PageContent):
         self.top_bar_tweaks_switch = self.builder.get_object('top_bar_tweaks_switch')
         self.extract_shell_theme_button = self.builder.get_object('extract_shell_theme_button')
 
+        self.extract_theme_task = BackgroundTask(self.extract_shell_theme, self.on_extract_shell_theme_finish)
         self.window.task_counter.register(self.extract_shell_theme_button)
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
@@ -33,11 +34,10 @@ class ToolsPageContent (PageContent):
 
     def on_extract_shell_theme(self, button):
         self.window.task_counter.inc()
-        self.extract_shell_theme_async(self.on_extract_shell_theme_finish)
+        self.extract_theme_task.start()
 
-    @staticmethod
-    def on_extract_shell_theme_finish(self, result, user_data):
-        status, theme_name = self.extract_shell_theme_finish(result)
+    def on_extract_shell_theme_finish(self):
+        status, theme_name = self.extract_theme_task.finish()
         self.window.task_counter.dec()
 
         if status.success:

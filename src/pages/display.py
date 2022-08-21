@@ -3,6 +3,7 @@ from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..info import data_dir
 from ..settings import night_light_settings as nl_settings
+from ..utils import BackgroundTask
 from ..bind_utils import *
 from .common import PageContent
 
@@ -31,6 +32,10 @@ class DisplayPageContent (PageContent):
         self.nl_end_hour_spinbutton = self.builder.get_object('nl_end_hour_spinbutton')
         self.nl_end_minute_spinbutton = self.builder.get_object('nl_end_minute_spinbutton')
         self.nl_temperature_scale = self.builder.get_object('nl_temperature_scale')
+
+        settings_manager = self.window.application.settings_manager
+        self.apply_display_settings_task = BackgroundTask(settings_manager.apply_user_display_settings,
+                                                          self.on_apply_display_settings_finish)
 
         # Following properties are ignored when set in .ui files.
         # So, they need to be changed here.
@@ -66,13 +71,12 @@ class DisplayPageContent (PageContent):
 
     def on_apply_display_settings (self, button):
         self.window.task_counter.inc()
-        settings_manager = self.window.application.settings_manager
-        settings_manager.apply_user_display_settings_async(self.on_apply_display_settings_finished)
+        self.apply_display_settings_task.start()
 
-    def on_apply_display_settings_finished(self, settings_manager, result, user_data):
+    def on_apply_display_settings_finish(self):
         self.window.task_counter.dec()
         try:
-            status = settings_manager.apply_user_display_settings_finish(result)
+            status = self.apply_display_settings_task.finish()
             if status.success:
                 message = _("Applied current display settings")
             else:

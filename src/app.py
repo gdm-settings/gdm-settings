@@ -9,6 +9,7 @@ gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk
 
+from .utils import BackgroundTask
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
@@ -93,6 +94,8 @@ class Application(Adw.Application):
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
         self.settings_manager = SettingsManager()
+        self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
+                                                  self.on_reset_settings_finish)
 
         self.create_actions()
         self.keyboard_shortcuts()
@@ -238,10 +241,10 @@ class Application(Adw.Application):
 
     def reset_settings_cb(self, action, user_data):
         self.window.task_counter.inc()
-        self.settings_manager.reset_settings_async(self.on_reset_settings_finish)
+        self.reset_settings_task.start()
 
-    def on_reset_settings_finish(self, settings_manager, result, nothing):
-        success = settings_manager.reset_settings_finish(result)
+    def on_reset_settings_finish(self):
+        success = self.reset_settings_task.finish()
         self.window.task_counter.dec()
 
         if success:
