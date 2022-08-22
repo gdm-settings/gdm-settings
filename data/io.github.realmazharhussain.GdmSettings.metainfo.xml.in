@@ -75,7 +75,7 @@
     <release version="1.0" date="2022-06-20">
       <description>
         <p>
-          <b>Warning:</b> You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
+          Warning: You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
         </p>
         <ul>
           <li>Updated the info shown on app's software-store page</li>
