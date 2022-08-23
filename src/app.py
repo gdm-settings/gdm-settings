@@ -1,20 +1,19 @@
 '''Contains the main Application class'''
 
+from . import info
+from . import env
+from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
+from .window import GdmSettingsWindow
+from .settings import SettingsManager
+from .utils import BackgroundTask
+from gi.repository import Adw, Gtk
+from gi.repository import Gio, GLib
 import sys
 import logging
 from gettext import gettext as _, pgettext as C_
 
 import gi
 gi.require_version("Adw", '1')
-from gi.repository import Gio, GLib
-from gi.repository import Adw, Gtk
-
-from .utils import BackgroundTask
-from .settings import SettingsManager
-from .window import GdmSettingsWindow
-from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
-from . import env
-from . import info
 
 
 def set_logging_level(verbosity):
@@ -37,6 +36,7 @@ def set_logging_level(verbosity):
 
 class Application(Adw.Application):
     '''The main Application class'''
+
     def __init__(self):
         super().__init__(application_id=info.application_id)
 
@@ -49,36 +49,37 @@ class Application(Adw.Application):
         add_option('version',   '\0', _('Show application version'))
         add_option('verbosity', '\0', _('Set verbosity level manually (from 0 to 5)'),
                    C_('Argument of --verbosity option', 'LEVEL'))
-        add_option('verbose',   'v',  _('Enable verbose mode (alias of --verbosity=5)'))
-        add_option('quiet',     'q',  _('Enable quiet mode (alias of --verbosity=0)'))
+        add_option('verbose',   'v',  _(
+            'Enable verbose mode (alias of --verbosity=5)'))
+        add_option('quiet',     'q',  _(
+            'Enable quiet mode (alias of --verbosity=0)'))
 
         self.connect('shutdown', self.on_shutdown)
 
-
     def do_handle_local_options(self, options):
         if options.contains("version"):
-            print (info.application_name, f"({info.project_name})", f"v{info.version}")
+            print(info.application_name,
+                  f"({info.project_name})", f"v{info.version}")
             return 0
 
         if options.contains("verbose"):
-            set_logging_level (5)
+            set_logging_level(5)
 
         if options.contains("quiet"):
-            set_logging_level (0)
+            set_logging_level(0)
 
         if verbosity_gvariant := options.lookup_value("verbosity", GLib.VariantType("i")):
             verbosity_level = verbosity_gvariant.get_int32()
 
             if verbosity_level >= 0 and verbosity_level <= 5:
-                set_logging_level (verbosity_level)
+                set_logging_level(verbosity_level)
             else:
                 print(_('{level} is an invalid verbosity level. Accepted values are 0 to 5.\n'
                         'Assuming Verbosity level 4.').format(level=verbosity_level),
                       file=sys.stderr)
-                set_logging_level (4)
+                set_logging_level(4)
 
         return -1
-
 
     def do_activate(self):
         if win := self.get_active_window():
@@ -108,11 +109,9 @@ class Application(Adw.Application):
         # check them and report to the user if they are missing.
         self.check_system_dependencies()
 
-
     @staticmethod
     def on_shutdown(self):
         self.settings_manager.cleanup()
-
 
     def check_system_dependencies(self):
         '''If some dependencies are missing, show a dialog reporting the situation'''
@@ -126,7 +125,8 @@ class Application(Adw.Application):
                 host_args = ['flatpak-spawn', '--host']
 
             try:
-                proc = run([*host_args, exec_name, '--version'], capture_output=True)
+                proc = run([*host_args, exec_name, '--version'],
+                           capture_output=True)
                 if proc.returncode == 0:
                     version_info = proc.stdout.decode().strip()
                     if logging_name:
@@ -134,13 +134,15 @@ class Application(Adw.Application):
                     else:
                         logging.info(version_info)
                     return True
-            except FileNotFoundError: pass
+            except FileNotFoundError:
+                pass
 
             return False
 
         gdm_installed = bool(ShellGresourceFile)
         polkit_installed = check_dependency('pkexec')
-        glib_dev_installed = check_dependency('glib-compile-resources', 'GLib', on_host=False)
+        glib_dev_installed = check_dependency(
+            'glib-compile-resources', 'GLib', on_host=False)
 
         host_deps_installed = gdm_installed and polkit_installed
         all_deps_installed = host_deps_installed and glib_dev_installed
@@ -151,11 +153,12 @@ class Application(Adw.Application):
         message = ''
 
         if not glib_dev_installed:
-            message = _('This app requires the following software to function properly but they are not installed.')
+            message = _(
+                'This app requires the following software to function properly but they are not installed.')
             message += '\n\n'
             message += C_('Missing Dependency',
                           ' • <b>GLib</b> (Developer Edition)'
-                         )
+                          )
 
         if not host_deps_installed:
             if env.PACKAGE_TYPE == PackageType.Flatpak:
@@ -164,19 +167,19 @@ class Application(Adw.Application):
 
                 message += _('Following programs are required to be installed <b>on the host system</b> for'
                              ' this app to function properly but they are not installed on the host system.'
-                            ) + '\n'
+                             ) + '\n'
 
             if not gdm_installed:
                 message += '\n'
                 message += C_('Missing Dependency',
                               ' • <b>GDM</b>'
-                             )
+                              )
 
             if not polkit_installed:
-                message +='\n'
+                message += '\n'
                 message += C_('Missing Dependency',
                               ' • <b>Polkit</b>'
-                             )
+                              )
 
         message += '\n\n'
 
@@ -185,26 +188,24 @@ class Application(Adw.Application):
         # a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
         message += _('Click <a href="{url}">here</a> for instructions on how '
                      'to install these dependencies on your system.'
-                    ).format(url=link)
+                     ).format(url=link)
 
         dialog = Gtk.MessageDialog(
-                         text = _('Missing Dependencies'),
-                        modal = True,
-                      buttons = Gtk.ButtonsType.OK,
-                 message_type = Gtk.MessageType.ERROR,
-                transient_for = self.window,
-               secondary_text = message,
-         secondary_use_markup = True,
+            text=_('Missing Dependencies'),
+            modal=True,
+            buttons=Gtk.ButtonsType.OK,
+            message_type=Gtk.MessageType.ERROR,
+            transient_for=self.window,
+            secondary_text=message,
+            secondary_use_markup=True,
         )
 
         dialog.connect('response', lambda *args: self.quit())
         dialog.present()
 
-
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.refresh", ["<Ctrl>r", "F5"])
-
 
     def create_actions(self):
 
@@ -219,25 +220,25 @@ class Application(Adw.Application):
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
 
-
     def refresh_cb(self, action, user_data):
         self.settings_manager.drop_changes()
 
-        toast = Adw.Toast(timeout=1, priority='high', title=_('Settings reloaded'))
+        toast = Adw.Toast(timeout=1, priority='high',
+                          title=_('Settings reloaded'))
         self.window.toast_overlay.add_toast(toast)
-
 
     def import_user_settings_cb(self, action, user_data):
         from .enums import PackageType
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.settings_manager.load_user_settings()
-            toast = Adw.Toast(timeout=1, priority='high', title=_('User settings imported'))
+            toast = Adw.Toast(timeout=1, priority='high',
+                              title=_('User settings imported'))
             self.window.toast_overlay.add_toast(toast)
         else:
             toast = Adw.Toast(timeout=2, priority="high")
-            toast.set_title(_("Importing user settings is NOT supported in Flatpak version"))
+            toast.set_title(
+                _("Importing user settings is NOT supported in Flatpak version"))
             self.window.toast_overlay.add_toast(toast)
-
 
     def reset_settings_cb(self, action, user_data):
         self.window.task_counter.inc()
@@ -255,12 +256,35 @@ class Application(Adw.Application):
         toast = Adw.Toast(timeout=2, priority="high", title=message)
         self.window.toast_overlay.add_toast(toast)
 
-
     def about_cb(self, action, user_data):
-        from .dialogs import AboutDialog
-        dialog = AboutDialog(self.window)
+        dialog = Adw.AboutWindow(
+            transient_for=self.props.active_window,
+            application_name=info.application_name,
+            application_icon=info.application_id,
+            developer_name=_("Mazhar Hussain"),
+            website="https://realmazharhussain.github.io/gdm-settings",
+            support_url="https://github.com/realmazharhussain/gdm-settings/issues",
+            issue_url="https://github.com/realmazharhussain/gdm-settings/issues",
+            developers=[
+                "Mazhar Hussain <mmazharhussainkgb1145@gmail.com>",
+                "0xMRTT https://github.com/0xMRTT",
+            ],
+            artists=[
+                "Mazhar Hussain <mmazharhussainkgb1145@gmail.com>",
+                'Thales Bindá <thales.i.o.b@gmail.com>'
+            ],
+            designers=[
+                'Thales Bindá <thales.i.o.b@gmail.com>'],
+            # Translators: This is a place to put your credits (formats: "Name
+            # https://example.com" or "Name <email@example.com>", no quotes)
+            # and is not meant to be translated literally.
+            translator_credits=_("translator-credits"),
+            copyright=_("Copyright © 2021 Mazhar Hussain"),
+            license_type=Gtk.License.AGPL_3_0,
+            comments=_("A settings app for GNOME's Login Manager, GDM"),
+            version=f"{info.project_name} v{info.version}",
+        )
         dialog.present()
-
 
     def quit_cb(self, action, user_data):
         self.quit()
