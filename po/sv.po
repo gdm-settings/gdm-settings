@@ -1,0 +1,842 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Luna Jernberg <lunajernberg@gnome.org>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.6\n"
+"Report-Msgid-Bugs-To: lunajernberg@gnome.org\n"
+"POT-Creation-Date: 2022-08-21 12:50+0500\n"
+"PO-Revision-Date: 2022-08-24 12:03+0200\n"
+"Last-Translator: una Jernberg <lunajernberg@gnome.org>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-"
+"settings/language-names/sv_SE/>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.1\n"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+msgid "Theme Name"
+msgstr "Temanamn"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+msgid "Type of Background"
+msgstr "Bakgrundstyp"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+msgid "Whether GDM background should be an Image, Color or None."
+msgstr "Hurvida GDM-bakgrunden ska vara en bild, färg eller inget."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+msgid "Background Image"
+msgstr "Bakgrundsbild"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+msgid "The image file to use as GDM background"
+msgstr "Bildfilen som ska användas som GDM-bakgrund"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: src/blueprints/top-bar-page.blp:40
+msgid "Background Color"
+msgstr "Bakgrundsfärg"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+msgid "The Color to use as GDM background"
+msgstr "Färgen som ska användas som GDM-bakgrund"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
+msgid "If the night light mode is enabled"
+msgstr "Om nattljusläget är aktiverat"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
+msgid ""
+"Night light mode changes the color temperature of your display when the sun "
+"has gone down or at preset times."
+msgstr ""
+"Nattljusläget ändrar färgtemperaturen på din skärm när solen har gått ner "
+"eller vid förinställda tider."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
+msgid "Temperature of the display when enabled"
+msgstr "Temperatur på skärmen när den är aktiverad"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
+msgid ""
+"This temperature in Kelvin is used to modify the screen tones when night "
+"light mode is enabled. Higher values are bluer, lower redder."
+msgstr ""
+"Denna temperatur i Kelvin används för att ändra skärmtonerna när "
+"nattljusläget är aktiverat. Högre värden är blåare, lägre rödare."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
+msgid "Use the sunrise and sunset"
+msgstr "Använd soluppgång och solnedgång"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
+msgid ""
+"Calculate the sunrise and sunset times automatically, from the current "
+"location."
+msgstr ""
+"Beräkna tiderna för soluppgång och solnedgång automatiskt från den aktuella "
+"platsen."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+msgid "The start time's hour"
+msgstr "Starttidens timme"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
+msgstr ""
+"När \"schemalägg-automatiskt\" är inaktiverat, använd denna starttid i "
+"timmar."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
+msgid "The start time's minute"
+msgstr "Starttidens minut"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
+msgstr ""
+"När \"schemalägg-automatiskt\" är inaktiverat, använd denna starttid i "
+"minuter."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
+msgid "The end time's hour"
+msgstr "Sluttidens timme"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
+msgstr ""
+"När \"schemalägg-automatiskt\" är inaktiverat, använd denna sluttid i timmar."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
+msgid "The end time's minute"
+msgstr "Sluttidens minut"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
+msgstr ""
+"När \"schemalägg-automatiskt\" är inaktiverat, använd denna sluttid i "
+"minuter."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+msgid "Pointer speed"
+msgstr "Pekarhastighet"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+"Pekarhastighet för pekplatta. Godkända värden ligger i området [-1..1] (från "
+"\"oaccelererad\" till \"snabb\"). Ett värde på 0 är systemets standardvärde."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
+msgid "Whether to apply top bar tweaks to extracted theme"
+msgstr "Huruvida man ska applicera toppstångsjusteringar till extraherat tema"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
+msgid "Whether to disable top bar arrows"
+msgstr "Huruvida pilarna i övre fältet ska inaktiveras"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
+msgid "Whether to disable top bar rounded corners"
+msgstr "Huruvida man ska inaktivera rundade hörn i topplisten"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
+msgid "Whether to change top bar text color"
+msgstr "Huruvida man ska ändra färg på den övre radens text"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
+msgid "Top bar text color"
+msgstr "Översta fältets textfärg"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
+msgid "Whether to change top bar background"
+msgstr "Huruvida man ska ändra bakgrund i toppfältet"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
+msgid "Top bar background color"
+msgstr "Översta fältets bakgrundsfärg"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
+#: src/window.py:61
+msgid "Login Manager Settings"
+msgstr "Inloggningshanteraren Inställningar"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+msgid "A settings app for GNOME's Login Manager, GDM"
+msgstr "Et inställningsprogram för GNOMEs Login hanterare, GDM"
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+"Ändra GDM-inställningar; Tillämpa tema och bakgrund, ändra markörtema, "
+"ikontema och nattljusinställningar bland annat."
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Warning:"
+msgstr "Varning:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Updated the info shown on app's software-store page"
+msgstr "Uppdaterade informationen som visas på programmets mjukvarubutiksida"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "New App Icon that follows GNOME HIG"
+msgstr "Ny appikon som följer GNOME HIG"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid "Only one instance of the app can be open at a time"
+msgstr "Endast en instans av programmet kan vara öppen åt gången"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "When applying settings, the app does not freeze anymore"
+msgstr "När du verkställer inställningar fryser programmet inte längre"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgstr ""
+"Programmet visar en \"Logga ut\"-dialogruta direkt efter att inställningarna "
+"har verkställts"
+
+#: src/app.py:49
+msgid "Show application version"
+msgstr "Visa program version"
+
+#: src/app.py:50
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr "Ställ in detaljnivå manuellt (från 0 till 5)"
+
+#: src/app.py:51
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr "NIVÅ"
+
+#: src/app.py:52
+msgid "Enable verbose mode (alias of --verbosity=5)"
+msgstr "Aktivera pratigt läge (alias för --verbosity=5)"
+
+#: src/app.py:53
+msgid "Enable quiet mode (alias of --verbosity=0)"
+msgstr "Aktivera tyst läge (alias av -verbosity=0)"
+
+#: src/app.py:75
+#, python-brace-format
+msgid ""
+"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+"Assuming Verbosity level 4."
+msgstr ""
+"{level} är en ogiltig detaljnivå. Godkända värden är 0 till 5.\n"
+"Utgår från Pratighet nivå 4."
+
+#: src/app.py:154
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Detta program kräver följande programvara för att fungera korrekt men de är "
+"inte installerade."
+
+#: src/app.py:157
+msgctxt "Missing Dependency"
+msgid " • <b>GLib</b> (Developer Edition)"
+msgstr " • <b>GLib</b> (Utvecklarversion)"
+
+#: src/app.py:165
+msgid ""
+"Following programs are required to be installed <b>on the host system</b> "
+"for this app to function properly but they are not installed on the host "
+"system."
+msgstr ""
+"Följande program måste vara installerade <b>på värdsystemet</b> för att det "
+"här programmet ska fungera korrekt, men de är inte installerade på "
+"värdsystemet."
+
+#: src/app.py:172
+msgctxt "Missing Dependency"
+msgid " • <b>GDM</b>"
+msgstr " • <b>GDM</b>"
+
+#: src/app.py:178
+msgctxt "Missing Dependency"
+msgid " • <b>Polkit</b>"
+msgstr " • <b>Polkit</b>"
+
+#. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
+#. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
+#: src/app.py:186
+#, python-brace-format
+msgid ""
+"Click <a href=\"{url}\">here</a> for instructions on how to install these "
+"dependencies on your system."
+msgstr ""
+"Klicka <a href=\"{url}\">här</a> för instruktioner om hur du installerar "
+"dessa beroenden på ditt system."
+
+#: src/app.py:191
+msgid "Missing Dependencies"
+msgstr "Saknar beroenden"
+
+#: src/app.py:226
+msgid "Settings reloaded"
+msgstr "Inställningarna har laddats om"
+
+#: src/app.py:234
+msgid "User settings imported"
+msgstr "Användarinställningar importerade"
+
+#: src/app.py:238
+msgid "Importing user settings is NOT supported in Flatpak version"
+msgstr "Import av användarinställningar stöds INTE i Flatpak-versionen"
+
+#: src/app.py:251
+msgid "Reset settings successfully"
+msgstr "Återställde inställningar framgångsrikt"
+
+#: src/app.py:253
+msgid "Failed to reset settings"
+msgstr "Misslyckades att återställa inställningar"
+
+#: src/blueprints/appearance-page.blp:9
+msgid "Themes"
+msgstr "Teman"
+
+#: src/blueprints/appearance-page.blp:11
+msgid "Shell"
+msgstr "Skal"
+
+#: src/blueprints/appearance-page.blp:12
+msgid "Icons"
+msgstr "Ikoner"
+
+#: src/blueprints/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Pekare"
+
+#: src/blueprints/appearance-page.blp:17
+msgid "Background"
+msgstr "Bakgrund"
+
+#: src/blueprints/appearance-page.blp:20
+msgid "Type"
+msgstr "Typ"
+
+#: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
+#: src/blueprints/fonts-page.blp:35
+msgid "None"
+msgstr "Ingen"
+
+#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
+msgid "Image"
+msgstr "Bild"
+
+#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
+msgid "Color"
+msgstr "Färg"
+
+#: src/blueprints/appearance-page.blp:27
+msgid "The image to use as background"
+msgstr "Bild som ska användas som bakgrund"
+
+#: src/blueprints/appearance-page.blp:32
+msgid "The color to use as background"
+msgstr "Färg som ska användas som bakgrund"
+
+#: src/blueprints/display-page.blp:9 src/window.py:101
+msgid "Display"
+msgstr "Skärm"
+
+#: src/blueprints/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Verkställ aktuella skärminställningar"
+
+#: src/blueprints/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc"
+msgstr "Upplösning, uppdateringsfrekvens, skärm positioner, etc"
+
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
+msgid "Apply"
+msgstr "Verkställ"
+
+#: src/blueprints/display-page.blp:21
+msgid "Night Light"
+msgstr "Nattlampa"
+
+#: src/blueprints/display-page.blp:24
+msgid "Enable"
+msgstr "Aktivera"
+
+#: src/blueprints/display-page.blp:33
+msgid "Schedule"
+msgstr "Schemalägg"
+
+#: src/blueprints/display-page.blp:34
+msgid "Sunset to Sunrise"
+msgstr "Solnedgång till soluppgång"
+
+#: src/blueprints/display-page.blp:34
+msgid "Manual Schedule"
+msgstr "Manuellt schema"
+
+#: src/blueprints/display-page.blp:38
+msgid "Times"
+msgstr "Tider"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:41
+msgid "From"
+msgstr "Från"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/blueprints/display-page.blp:65
+msgid "To"
+msgstr "Till"
+
+#: src/blueprints/display-page.blp:89
+msgid "Color Temperature"
+msgstr "Färgtemperatur"
+
+#: src/blueprints/fonts-page.blp:9 src/window.py:97
+msgid "Fonts"
+msgstr "Teckensnitt"
+
+#: src/blueprints/fonts-page.blp:12
+msgid "Font"
+msgstr "Teckensnitt"
+
+#: src/blueprints/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Kantutjämning"
+
+#: src/blueprints/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standard"
+
+#: src/blueprints/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: src/blueprints/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Hinting"
+
+#: src/blueprints/fonts-page.blp:32
+msgid "Full"
+msgstr "Full"
+
+#: src/blueprints/fonts-page.blp:33
+msgid "Medium"
+msgstr "Medium"
+
+#: src/blueprints/fonts-page.blp:34
+msgid "Slight"
+msgstr "Lätt"
+
+#: src/blueprints/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Skalningsfaktor"
+
+#: src/blueprints/main-window.blp:6
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: src/blueprints/main-window.blp:7
+msgid "Import user settings"
+msgstr "Importera användarinställningar"
+
+#: src/blueprints/main-window.blp:8
+msgid "Reset settings"
+msgstr "Återställ inställningar"
+
+#: src/blueprints/main-window.blp:11
+msgid "About"
+msgstr "Om"
+
+#: src/blueprints/main-window.blp:12
+msgid "Quit"
+msgstr "Avsluta"
+
+#: src/blueprints/misc-page.blp:9 src/window.py:102
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+#: src/blueprints/misc-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Inaktivera omstartsknappar"
+
+#: src/blueprints/misc-page.blp:21
+msgid "Disable User List"
+msgstr "Inaktivera användarlista"
+
+#: src/blueprints/misc-page.blp:30
+msgid "Enable Logo"
+msgstr "Aktivera logotyp"
+
+#: src/blueprints/misc-page.blp:31
+msgid "Whether to show a logo below user list"
+msgstr "Om en logotyp ska visas under användarlistan"
+
+#: src/blueprints/misc-page.blp:40
+msgid "Logo"
+msgstr "Logotyp"
+
+#: src/blueprints/misc-page.blp:41
+msgid "The image to show below user list"
+msgstr "Bilden som ska visas nedanför användarlistan"
+
+#: src/blueprints/misc-page.blp:46
+msgid "Welcome Message"
+msgstr "Välkomstmeddelande"
+
+#: src/blueprints/pointing-page.blp:9
+msgid "Mouse"
+msgstr "Mus"
+
+#: src/blueprints/pointing-page.blp:12
+msgid "Pointer Acceleration"
+msgstr "Pekaracceleration"
+
+#: src/blueprints/pointing-page.blp:14
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: src/blueprints/pointing-page.blp:15
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: src/blueprints/pointing-page.blp:16
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: src/blueprints/pointing-page.blp:21
+msgid "Inverse Scrolling"
+msgstr "Omvänd rullning"
+
+#: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
+msgid "Scrolling moves the content, not the view."
+msgstr "Genom att rulla flyttas innehållet, inte vyn."
+
+#: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
+msgid "Pointer Speed"
+msgstr "Pekarhastighet"
+
+#: src/blueprints/pointing-page.blp:39
+msgid "Touchpad"
+msgstr "Pekplatta"
+
+#: src/blueprints/pointing-page.blp:42
+msgid "Tap to Click"
+msgstr "Tryck för att klicka"
+
+#: src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Naturlig rullning"
+
+#: src/blueprints/pointing-page.blp:57
+msgid "Two-finger Scrolling"
+msgstr "Två-fingers rullning"
+
+#: src/blueprints/pointing-page.blp:58
+msgid "Scroll by swiping with two fingers."
+msgstr "Rulla genom att svepa med två fingrar."
+
+#: src/blueprints/pointing-page.blp:65
+msgid "Disable while Typing"
+msgstr "Inaktivera medan du skriver"
+
+#: src/blueprints/sound-page.blp:9 src/window.py:99
+msgid "Sound"
+msgstr "Ljud"
+
+#: src/blueprints/sound-page.blp:11
+msgid "Theme"
+msgstr "Tema"
+
+#: src/blueprints/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Överförstärkning"
+
+#: src/blueprints/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Tillåt att höja volymen över 100 %"
+
+#: src/blueprints/sound-page.blp:24
+msgid "Event Sounds"
+msgstr "Händelseljud"
+
+#: src/blueprints/sound-page.blp:33
+msgid "Input Feedback Sounds"
+msgstr "Ingångsfeedback ljud"
+
+#: src/blueprints/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Standard skaltema"
+
+#: src/blueprints/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Inkludera Översta fältet tweaks"
+
+#: src/blueprints/tools-page.blp:19
+msgid "Extract default shell theme"
+msgstr "Packa upp standard skaltema"
+
+#: src/blueprints/tools-page.blp:22
+msgid "Extract"
+msgstr "Packa upp"
+
+#: src/blueprints/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Tweaks"
+
+#: src/blueprints/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Ändra textfärg"
+
+#: src/blueprints/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Textfärg"
+
+#: src/blueprints/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Färgen på texten i övre fältet"
+
+#: src/blueprints/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Ändra bakgrundsfärg"
+
+#: src/blueprints/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Färgen på det övre fältets bakgrund"
+
+#: src/blueprints/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Inaktivera pilar"
+
+#: src/blueprints/top-bar-page.blp:61
+msgid "Disable Rounded Corners"
+msgstr "Inaktivera rundade hörn"
+
+#: src/blueprints/top-bar-page.blp:71
+msgid "Clock"
+msgstr "Klocka"
+
+#: src/blueprints/top-bar-page.blp:74
+msgid "Show Weekday"
+msgstr "Visa veckodagar"
+
+#: src/blueprints/top-bar-page.blp:83
+msgid "Show Seconds"
+msgstr "Visa sekunder"
+
+#: src/blueprints/top-bar-page.blp:92
+msgid "Time Format"
+msgstr "Tidsformat"
+
+#: src/blueprints/top-bar-page.blp:93
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: src/blueprints/top-bar-page.blp:93
+msgid "24 Hours"
+msgstr "24 timmar"
+
+#: src/blueprints/top-bar-page.blp:98
+msgid "Power"
+msgstr "Ström"
+
+#: src/blueprints/top-bar-page.blp:101
+msgid "Show battery percentage"
+msgstr "Visa batteri procent"
+
+#: src/common_widgets.py:20
+msgid "Choose File"
+msgstr "Välj fil"
+
+#: src/common_widgets.py:26
+msgid "(None)"
+msgstr "(Ingen)"
+
+#: src/common_widgets.py:127
+msgid "Choose"
+msgstr "Välj"
+
+#: src/common_widgets.py:128 src/window.py:149
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/common_widgets.py:146
+msgid "Choose Image"
+msgstr "Välj bild"
+
+#: src/dialogs.py:15
+msgid "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#: src/dialogs.py:16
+msgid "Homepage"
+msgstr "Hemsida"
+
+#: src/dialogs.py:19
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/dialogs.py:21
+msgctxt "Name of Designer"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/dialogs.py:25
+msgid "translator-credits"
+msgstr "Luna Jernberg<lunajernberg@gnome.org>"
+
+#: src/pages/display.py:81
+msgid "Applied current display settings"
+msgstr "Verkställde aktuella visningsinställningar"
+
+#: src/pages/display.py:83
+msgid "Failed to apply current display settings"
+msgstr "Det gick inte att verkställa aktuella visningsinställningar"
+
+#: src/pages/display.py:88
+msgid ""
+"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+"display settings but it does not exist.\n"
+"\n"
+"In order to create that file automatically,\n"
+"\n"
+"1. Go to 'Display' panel of System Settings.\n"
+"2. Change some settings there.\n"
+"3. Apply."
+msgstr ""
+"Filen '$XDG_CONFIG_HOME/monitors.xml' krävs för att tillämpa aktuella "
+"visningsinställningar men den finns inte.\n"
+"\n"
+"För att skapa den filen automatiskt,\n"
+"\n"
+"1. Gå till panelen \"Skärmar\" i Systeminställningar.\n"
+"2. Ändra några inställningar där.\n"
+"3. Verkställ."
+
+#: src/pages/display.py:99
+msgid "Monitor Settings Not Found"
+msgstr "Skärminställningar hittades inte"
+
+#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
+#. They will be replaced by an actual folder path and theme name during runtime.
+#: src/pages/tools.py:46
+#, python-brace-format
+msgid "Default shell theme extracted to '{folder}' as '{name}'"
+msgstr "Standardtema uppackad till '{folder}' som '{name}'"
+
+#: src/pages/tools.py:49
+msgid "Failed to extract default theme"
+msgstr "Misslyckades att packa upp standardtema"
+
+#: src/settings.py:198
+msgid "Backing up default shell theme …"
+msgstr "Säkerhetskopierar standardskaltema ..."
+
+#: src/settings.py:246
+msgctxt "Command-line output"
+msgid "Applying GResource settings for Ubuntu …"
+msgstr "Verkställer GResource-inställningar för Ubuntu ..."
+
+#: src/settings.py:253
+msgctxt "Command-line output"
+msgid "Applying GResource settings for non-Ubuntu systems …"
+msgstr "Verkställer GResource-inställningar för icke-Ubuntu system ..."
+
+#: src/settings.py:438
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for Ubuntu …"
+msgstr "Återställer GResource-inställningar för Ubuntu …"
+
+#: src/settings.py:445
+msgctxt "Command-line output"
+msgid "Resetting GResource settings for non-Ubuntu systems …"
+msgstr "Återställer GResource-inställningar för icke-Ubuntu system …"
+
+#: src/window.py:96
+msgid "Appearance"
+msgstr "Utseende"
+
+#: src/window.py:98
+msgid "Top Bar"
+msgstr "Övre fält"
+
+#: src/window.py:100
+msgid "Mouse & Touchpad"
+msgstr "Mus & Pekplatta"
+
+#: src/window.py:103
+msgid "Tools"
+msgstr "Verktyg"
+
+#: src/window.py:122
+msgid "Settings applied successfully"
+msgstr "Inställningarna har verkställts"
+
+#: src/window.py:126
+msgid "Failed to apply settings"
+msgstr "Misslyckades att verkställa inställningar"
+
+#: src/window.py:129
+msgid ""
+"Didn't apply. Chosen background image could not be found. Please! choose "
+"again."
+msgstr ""
+"Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden. Snälla! "
+"välj igen."
+
+#: src/window.py:135
+msgid "The system may start to look weird/buggy untill you re-login or reboot."
+msgstr ""
+"Systemet kan börja se konstigt/buggigt ut tills du loggar in igen eller "
+"startar om."
+
+#: src/window.py:138
+msgid "Log Out?"
+msgstr "Logga ut?"
+
+#: src/window.py:147
+msgid "Log Out"
+msgstr "Logga ut"
+
+#~ msgid "Added:"
+#~ msgstr "Tillagt:"
+
+#~ msgid "Fixed:"
+#~ msgstr "Fikset:"
+
+#~ msgid "French"
+#~ msgstr "Fransk"
+
+#~ msgid "German"
+#~ msgstr "Tysk"
+
+#~ msgid "Spanish"
+#~ msgstr "Spansk"
+
+#~ msgid "Improved:"
+#~ msgstr "Forbedret:"
