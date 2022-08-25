@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-22 09:23+0500\n"
-"PO-Revision-Date: 2022-08-04 09:18+0000\n"
+"PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -91,55 +91,39 @@ msgid "The start time's hour"
 msgstr "Başlangıç saati"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
-"saat olarak kullan."
+"\"schedule-automatic\" devre dışı bırakıldığında, bu başlangıç zamanını saat "
+"cinsinden kullan."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Başlangıç saati dakikası"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"“night-light-schedule-automatic” pasifleştirildiğinde, bu başlangıç saatini "
-"dakika olarak kullan."
+"\"schedule-automatic\" devre dışı bırakıldığında, bu başlangıç zamanı "
+"dakikalarını kullan."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
 msgstr "Bitiş saati"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"“night-light-schedule-automatic” pasifleştirildiğinde, bu bitiş saatini "
-"kullan."
+"\"schedule-automatic\" devre dışı bırakıldığında, saat cinsinden bu bitiş "
+"zamanını kullan."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Bitiş dakikası"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"“night-light-schedule-automatic” pasifleştirildiğinde, bu bitiş dakikasını "
+"\"schedule-automatic\" devre dışı bırakıldığında, bu bitiş zamanı dakikasını "
 "kullan."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
@@ -215,40 +199,37 @@ msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
+"Uyarı: v0.6 veya önceki herhangi bir sürümden bu veya sonraki herhangi bir "
+"sürüme güncelleme yaptıktan sonra bazı ayarları kaybedeceksiniz."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
-msgstr "Uygulamanın uygulama mağazası sayfası güncellendi"
+msgstr ""
+"Uygulamanın uygulama mağazası sayfasında gösterilen bilgileri güncellendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "GNOME HIG'i takip eden yeni uygulama simgesi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "Aynı anda uygulamanın yalnızca bir örneği açılabilir"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "Ayarları uygularken uygulama artık donmuyor"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
+"Uygulama, ayarlar uygulandıktan hemen sonra \"Oturumu Kapat\" iletişim "
+"kutusunu gösteriyor"
 
 #: src/app.py:49
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "Uygulama sürümünü göster"
 
 #: src/app.py:50
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
 
@@ -258,27 +239,21 @@ msgid "LEVEL"
 msgstr "SEVİYE"
 
 #: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (alias of --verbosity=5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Ayrıntılı kipi etkinleştir (--verbosity=5 takma adı)"
 
 #: src/app.py:53
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (alias of --verbosity=0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Sessiz kipi etkinleştir   (-verbosity=0 takma adı)"
+msgstr "Sessiz kipi etkinleştir (--verbosity=0 takma adı)"
 
 #: src/app.py:75
-#, fuzzy, python-brace-format
-#| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
+#, python-brace-format
 msgid ""
 "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
 "Assuming Verbosity level 4."
 msgstr ""
-"Ayrıntı düzeyi {level} geçersiz. Kabul edilen değerler 0 ile 5 arasındadır."
+"Ayrıntı düzeyi {level} geçersiz. Kabul edilen değerler 0 ile 5 arasındadır.\n"
+"Ayrıntı düzeyi 4 varsayılıyor."
 
 #: src/app.py:154
 msgid ""
@@ -315,15 +290,13 @@ msgstr " • <b>Polkit</b>"
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
 #: src/app.py:186
-#, fuzzy, python-brace-format
-#| msgctxt "Missing Dependencies Dialog"
-#| msgid ""
-#| "for instructions on how to install these dependencies on your system."
+#, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"bu bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için."
+"Bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için <a "
+"href=\"{url}\">buraya</a> tıklayın."
 
 #: src/app.py:191
 msgid "Missing Dependencies"
@@ -705,26 +678,20 @@ msgid "Choose File"
 msgstr "Dosya Seç"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
 msgstr "Yok"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Dosya Seç"
+msgstr "Seç"
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
-msgstr ""
+msgstr "İptal Et"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Dosya Seç"
+msgstr "Resim Seç"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -850,14 +817,16 @@ msgstr "Uygulanamadı! Seçilen arka plan resmi bulunamadı. Lütfen tekrar seç
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
+"görünmeye başlayabilir."
 
 #: src/window.py:138
 msgid "Log Out?"
-msgstr ""
+msgstr "Oturum Kapatılsın Mı?"
 
 #: src/window.py:147
 msgid "Log Out"
-msgstr ""
+msgstr "Oturumu Kapat"
 
 #~ msgid "Added:"
 #~ msgstr "Eklendi:"
