@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-22 09:23+0500\n"
-"PO-Revision-Date: 2022-08-17 17:21+0000\n"
+"PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -197,28 +197,30 @@ msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
+"Avertiment : perdretz d’unes paramètres aprèp la mesa a jorn a partir de la "
+"v0.6 o mai anciana o superiora."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
-msgstr "Pagina de la botiga d’aplicacions actualizada"
+msgstr "Pagina de la botiga amb info de l’aplicacion actualizada"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "Icònas novèlas d’aplicacion per seguir GNOME HIG"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "Se pot sonque dobrir una instància de l’aplicacion al còp"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "En aplicant los paramètres, l’aplicacion s’immobiliza pas pus"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
+"L’aplicacion aficha una fenèstra amb « Se desconnectar » aprèp l’aplicacion "
+"dels paramètres"
 
 #: src/app.py:49
 msgid "Show application version"
@@ -738,11 +740,9 @@ msgstr "Paramètres del monitor pas trobats"
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"Tèma shell predeterminat extrach dins « {path} » coma « defautl-extracted »"
+msgstr "Tèma shell predeterminat extrach dins « {folder} » coma « {name}  »"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
@@ -807,6 +807,8 @@ msgstr ""
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
+"connectar o reavietz."
 
 #: src/window.py:138
 msgid "Log Out?"
