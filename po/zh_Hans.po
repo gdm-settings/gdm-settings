@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-22 09:23+0500\n"
+"POT-Creation-Date: 2022-08-27 14:01+0500\n"
 "PO-Revision-Date: 2022-06-28 03:20+0000\n"
 "Last-Translator: 刘韬 <lyuutau@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -222,6 +222,12 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
 msgstr ""
 
 #: src/app.py:49

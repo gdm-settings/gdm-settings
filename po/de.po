@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-22 09:23+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-27 14:01+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -236,6 +236,12 @@ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Die Anwendung öffnet den \"Abmelden\"-Dialog direkt nachdem die "
 "Einstellungen angewendet wurden"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
 
 #: src/app.py:49
 msgid "Show application version"
@@ -790,7 +796,8 @@ msgstr "GResource-Einstellungen für Ubuntu werden zurückgesetzt …"
 #: src/settings.py:445
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "GSettings-Einstellungen für Nicht-Ubuntu-Systeme werden zurückgesetzt …"
+msgstr ""
+"GSettings-Einstellungen für Nicht-Ubuntu-Systeme werden zurückgesetzt …"
 
 #: src/window.py:96
 msgid "Appearance"

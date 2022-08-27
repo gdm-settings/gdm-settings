@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-22 09:23+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-27 14:01+0500\n"
 "PO-Revision-Date: 2022-08-24 18:14+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -227,6 +227,12 @@ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Nieuw: er wordt voortaan een afmeldvenster getoond na het toepassen van de "
 "voorkeuren"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
 
 #: src/app.py:49
 msgid "Show application version"

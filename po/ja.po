@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-22 09:23+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-27 14:01+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -90,8 +90,9 @@ msgstr "開始時刻 (時)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr "“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “時” "
-"として使います。"
+msgstr ""
+"“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “時” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -99,8 +100,9 @@ msgstr "開始時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr "“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “分” "
-"として使います。"
+msgstr ""
+"“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “分” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -108,8 +110,9 @@ msgstr "終了時刻 (時)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr "“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “時” "
-"として使います。"
+msgstr ""
+"“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “時” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -117,8 +120,9 @@ msgstr "終了時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr "“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “分” "
-"として使います。"
+msgstr ""
+"“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “分” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -190,8 +194,9 @@ msgstr "Mazhar Hussain"
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
-msgstr "警告: バージョン 0.6 "
-"以前からこれ以降のバージョンにアップデートすると、一部の設定を失います。"
+msgstr ""
+"警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一部の"
+"設定を失います。"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 msgid "Updated the info shown on app's software-store page"
@@ -212,6 +217,12 @@ msgstr "設定適用中にアプリがフリーズしないように修正"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
 
 #: src/app.py:49
 msgid "Show application version"
@@ -247,7 +258,8 @@ msgstr ""
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
-msgstr "このアプリが動作するには、インストールされていない以下のソフトウェアが必要で"
+msgstr ""
+"このアプリが動作するには、インストールされていない以下のソフトウェアが必要で"
 "す。"
 
 #: src/app.py:157
@@ -260,7 +272,8 @@ msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
-msgstr "このアプリが適切に動作するには、インストールされていない以下のプログラムが "
+msgstr ""
+"このアプリが適切に動作するには、インストールされていない以下のプログラムが "
 "<b>ホストシステム上に</b> 必要です。"
 
 #: src/app.py:172
@@ -280,8 +293,9 @@ msgstr " • <b>Polkit</b>"
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr "これらの依存関係をシステムにインストールする方法を参照するには、<a href=\""
-"{url}\">こちら</a> をクリックしてください。"
+msgstr ""
+"これらの依存関係をシステムにインストールする方法を参照するには、<a href="
+"\"{url}\">こちら</a> をクリックしてください。"
 
 #: src/app.py:191
 msgid "Missing Dependencies"
@@ -721,8 +735,8 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
-"現在のディスプレイ設定を適用するには、現在存在しないファイル '$"
-"XDG_CONFIG_HOME/monitors.xml' が必要です。\n"
+"現在のディスプレイ設定を適用するには、現在存在しないファイル "
+"'$XDG_CONFIG_HOME/monitors.xml' が必要です。\n"
 "\n"
 "このファイルを自動で作成するには、以下の操作を行ってください。\n"
 "\n"
@@ -739,7 +753,8 @@ msgstr "画面設定が見つかりませんでした"
 #: src/pages/tools.py:46
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "シェルのデフォルトテーマが、'{folder}' に '{name}' という名前で復元されました"
+msgstr ""
+"シェルのデフォルトテーマが、'{folder}' に '{name}' という名前で復元されました"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
@@ -803,7 +818,8 @@ msgstr ""
 
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
-msgstr "再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
+msgstr ""
+"再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
 
 #: src/window.py:138
 msgid "Log Out?"
