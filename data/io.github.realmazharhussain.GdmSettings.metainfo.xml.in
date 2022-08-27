@@ -83,6 +83,7 @@
           <li>Only one instance of the app can be open at a time</li>
           <li>When applying settings, the app does not freeze anymore</li>
           <li>The app shows a "Log Out" dialog right after settings are applied</li>
+          <li>When applying current display settings, scaling is also applied (may not work on all systems)</li>
         </ul>
       </description>
     </release>
