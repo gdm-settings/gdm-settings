@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-27 14:05+0500\n"
-"PO-Revision-Date: 2022-08-27 09:02+0000\n"
+"PO-Revision-Date: 2022-08-28 17:32+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -227,6 +227,8 @@ msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
+"En aplicant la configuracion d’afichatge actuala, la mesa a l’escala se "
+"realiza tanben (pòt arribar que foncione pas sus totes los sistèmas)"
 
 #: src/app.py:49
 msgid "Show application version"
@@ -278,16 +280,19 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Los programas seguents devon èsser installats <b>sul sistèma òste</b> per qu’"
+"aquesta aplicacion foncione corrèctament mas son pas installats sul sistèma "
+"òste."
 
 #: src/app.py:172
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr ""
+msgstr " • <b>GDM</b>"
 
 #: src/app.py:178
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -297,6 +302,8 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Clicatz <a href=\"{url}\">aicí</a> per obténer las instruccions d’"
+"installacion d’aquestas dependéncias sul sistèma."
 
 #: src/app.py:191
 msgid "Missing Dependencies"
@@ -711,7 +718,7 @@ msgstr "Mazhar Hussain"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -738,6 +745,14 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"Lo fichièr « $XDG_CONFIG_HOME/monitors.xml » es requerit per aplicar los "
+"paramètres d’afichatge actuals mas existisson pas.\n"
+"\n"
+"Per crear automaticament aqueste fichièr,\n"
+"\n"
+"1. Anatz al panèl « Afichatge » dels paramètres sistèma.\n"
+"2. Modificatz d’unes reglatges enlà.\n"
+"3. Aplicatz las modificacions."
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
