@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # oussaid1 <oussaid.abdellatif@gmail.com>, 2022.
+# Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-27 14:05+0500\n"
-"PO-Revision-Date: 2022-06-21 03:43+0000\n"
-"Last-Translator: oussaid1 <oussaid.abdellatif@gmail.com>\n"
+"PO-Revision-Date: 2022-08-30 18:22+0000\n"
+"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
 "Language: ar\n"
@@ -17,106 +18,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "اسم السمة"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "نوع الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "أيجب أن تكون خلفية شاشة الدخول صورة أم لون أم لا شيء."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "صورة الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "ملف الصورة المستخدمة كخلفية لشاشة الدخول"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "لون الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "اللون المستخدم كخلفية شاشة الدخول"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "إذا ما كانت الإضاءة الليلية مفعلة"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"وضع الإضاءة الليلية يغير حرارة ألوان الشاشة بعد غروب الشمس أو في أوقات محددة."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "حرارة الشاشة عند التفعيل"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"يتم استخدام هذه الدرجة بالكلفن لتعديل لون الشاشة عند تفعيل وضع الإضاءة "
+"الليلية. القيم الأعلى أكثر زرقة، والأقل أكثر احمرارا."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "استخدام الشروق والغروب"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "حساب أوقات الشروق والغروب تلقائيا باستخدام الموقع الحالي."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "ساعة البدء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
+msgstr "استخدام هذا الوقت كساعة البدء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "دقيقة البدء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "استخدام هذا الوقت كدقيقة البدء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "ساعة الانتهاء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr ""
+msgstr "استخدام هذا الوقت كساعة الانتهاء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "دقيقة الانتهاء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "استخدام هذا الوقت كدقيقة الانتهاء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "سرعة المؤشر"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -124,6 +128,8 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"سرعة مؤشر لوحة اللمس. تترواح القيم المقبولة بين -1 و 1 (من \"دون تسريع\" إلى "
+"\"سريع\"). قيمة 0 هي القيمة الافتراضية للنظام."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
