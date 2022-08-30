@@ -70,13 +70,13 @@ class Application(Adw.Application):
         if verbosity_gvariant := options.lookup_value("verbosity", GLib.VariantType("i")):
             verbosity_level = verbosity_gvariant.get_int32()
 
-            if verbosity_level >= 0 and verbosity_level <= 5:
-                set_logging_level (verbosity_level)
-            else:
-                print(_('{level} is an invalid verbosity level. Accepted values are 0 to 5.\n'
-                        'Assuming Verbosity level 4.').format(level=verbosity_level),
+            if verbosity_level < 0 or verbosity_level > 5:
+                print(_('Invalid verbosity level {level}. Must be 0, 5, or in-between.'
+                       ).format(level=verbosity_level),
                       file=sys.stderr)
-                set_logging_level (4)
+                return 1
+
+            set_logging_level(verbosity_level)
 
         return -1
 
