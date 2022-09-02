@@ -45,8 +45,8 @@
 <div align="center">
   <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
+      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-1.png">
     </picture>
   </a>
 </div>
