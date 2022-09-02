@@ -40,15 +40,16 @@ class Application(Adw.Application):
     def __init__(self):
         super().__init__(application_id=info.application_id)
 
-        def add_option(long_name, short_name, description, argument_name=None):
+        def add_option(long_name, short_name, description, argument_name=None, argument_type='NONE'):
             self.add_main_option(long_name, ord(short_name),
-                                 GLib.OptionFlags.NONE, GLib.OptionArg.NONE,
+                                 GLib.OptionFlags.NONE,
+                                 getattr(GLib.OptionArg, argument_type),
                                  description, argument_name,
                                  )
 
         add_option('version',   '\0', _('Show application version'))
         add_option('verbosity', '\0', _('Set verbosity level manually (from 0 to 5)'),
-                   C_('Argument of --verbosity option', 'LEVEL'))
+                   C_('Argument of --verbosity option', 'LEVEL'), 'INT')
         add_option('verbose',   'v',  _('Enable verbose mode (alias of --verbosity=5)'))
         add_option('quiet',     'q',  _('Enable quiet mode (alias of --verbosity=0)'))
 

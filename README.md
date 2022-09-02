@@ -12,18 +12,14 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest">
-    <img alt="Downloads" src="https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total">
-  </a>
-  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation">
-    <img alt="Flatpak Installs" src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings">
-  </a>
-  <a href="#">
-    <img alt="Code Size" src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings">
-  </a>
-  <a href="https://hosted.weblate.org/projects/gdm-settings/#languages">
-    <img alt="Translation Status" src="https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg">
-  </a>
+  <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest"><img alt="Downloads"
+      src="https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total"></a>
+  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation"><img alt="Flatpak Installs"
+      src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings"></a>
+  <a href="#"><img alt="Code Size"
+      src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings"></a>
+  <a href="https://hosted.weblate.org/projects/gdm-settings/#languages"><img alt="Translation Status"
+      src="https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg"></a>
 </div>
 
 <div align="center">
@@ -45,8 +41,8 @@
 <div align="center">
   <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png">
+      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-1-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-1.png">
     </picture>
   </a>
 </div>

@@ -119,6 +119,7 @@ def bind_with_mapping(settings, key, widget, prop, flags=None, key_to_prop=None,
         flags |= Gio.SettingsBindFlags.GET |  Gio.SettingsBindFlags.SET
 
     if flags & Gio.SettingsBindFlags.GET and key_to_prop:
+        widget.notify(prop)
         key_changed(settings, key)
         if not (flags & Gio.SettingsBindFlags.GET_NO_CHANGES):
             settings.connect('changed::' + key, key_changed)
