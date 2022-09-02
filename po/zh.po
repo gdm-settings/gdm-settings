@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 刘韬 <lyuutau@outlook.com>, 2022.
 # YXT <yxteee@126.com>, 2022.
+# Jason Clermont <lunme1008@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-27 14:05+0500\n"
-"PO-Revision-Date: 2022-06-28 03:20+0000\n"
-"Last-Translator: 刘韬 <lyuutau@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
-"settings/language-names/zh_Hans/>\n"
-"Language: zh_Hans\n"
+"PO-Revision-Date: 2022-09-03 23:16+0000\n"
+"Last-Translator: Jason Clermont <lunme1008@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gdm-settings/language-names/zh_Hans/>\n"
+"Language: zh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -87,50 +88,32 @@ msgid "The start time's hour"
 msgstr "开始时间"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr "当“夜灯计划自动”被禁用时，以小时为单位使用此开始时间。"
+msgstr "当“计划自动”被禁用时，以小时为单位使用此开始时间。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "开始时间分钟数"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr "当“夜灯计划自动”被禁用时，使用这个开始时间分钟。"
+msgstr "当“计划自动”被禁用时，使用这个开始时间分钟。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "结束时间分钟"
+msgstr "结束时间小时"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr "当“夜灯计划自动”被禁用时，使用此结束时间分钟。"
+msgstr "当 \"计划-自动 \"被禁用时，使用这个结束时间（小时）。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "结束时间分钟"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr "当“夜灯计划自动”被禁用时，使用此结束时间分钟。"
+msgstr "当“计划自动”被禁用时，使用此结束时间分钟。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -194,41 +177,39 @@ msgstr "更改 GDM 设置； 应用主题和背景、更改光标主题、图标
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "马扎尔·侯赛因"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
-msgstr ""
+msgstr "警告：从0.6版或其他早期版本更新到这个版本或后期版本后，你将失去一些设置。"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
-msgstr "更新了app的应用商店页面"
+msgstr "更新了应用的应用商店页面中的信息"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "遵循GNOME人机界面指引的新应用图标"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "每次只能同时打开一个应用实例"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "在应用设置时，应用程序不再会冻结"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
+msgstr "应用会在设置被应用后显示\"注销 \"对话框"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
-msgstr ""
+msgstr "当应用当前的显示设置时，也会应用缩放比例（可能不适用于某些系统）"
 
 #: src/app.py:49
 #, fuzzy
@@ -250,18 +231,12 @@ msgid "LEVEL"
 msgstr "等级"
 
 #: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "启用详细模式（设置详细级别 5）"
+msgstr "启用详细模式（类似于--verbosity=5）"
 
 #: src/app.py:53
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "启用安静模式（设置详细级别 0）"
+msgstr "启用安静模式（等同于 --verbosity=0）"
 
 #: src/app.py:75
 #, fuzzy, python-brace-format
@@ -275,7 +250,7 @@ msgstr "{level} 是无效的详细级别。 可接受的值为 0 到 5。"
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
-msgstr ""
+msgstr "这个应用需要以下软件才能正常运行，但它们没有被安装。"
 
 #: src/app.py:157
 msgctxt "Missing Dependency"
@@ -287,7 +262,8 @@ msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
-msgstr ""
+msgstr "以下程序需要安装<b>在主机系统上</b>，以便该应用程序正常运行，但它们没有安装在"
+"主机系统上。"
 
 #: src/app.py:172
 msgctxt "Missing Dependency"
@@ -306,11 +282,12 @@ msgstr ""
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr ""
+msgstr "点击<a href=\"{url}\""
+">这里</a>，获取关于如何在你的系统上安装这些依赖项的说明。"
 
 #: src/app.py:191
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "缺失的依赖项"
 
 #: src/app.py:226
 msgid "Settings reloaded"
