@@ -3,13 +3,14 @@
 #
 # Heimen Stoffels <vistausss@fastmail.com>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# Philip Goto <philip.goto@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-08-27 14:05+0500\n"
-"PO-Revision-Date: 2022-08-24 18:14+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2022-09-06 10:55+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -233,6 +234,8 @@ msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
+"Wanneer de huidige weergave-instellingen worden toegepast wordt ook schaling "
+"toegepast (werkt mogelijk niet op alle systemen)"
 
 #: src/app.py:49
 msgid "Show application version"
