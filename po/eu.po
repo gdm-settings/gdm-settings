@@ -1,132 +1,121 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2022.
-# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# Sergio Varela <sergitroll9@gmail.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-08-24 18:14+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
-"language-names/he/>\n"
-"Language: he\n"
+"PO-Revision-Date: 2022-08-30 18:22+0000\n"
+"Last-Translator: Sergio Varela <sergitroll9@gmail.com>\n"
+"Language-Team: Basque <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/eu/>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.14-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr "שם ערכת העיצוב"
+msgstr "Gaiaren izena"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr "סוג רקע"
+msgstr "Fondo mota"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr "האם הרקע של GDM אמור להיות תמונה, צבע או ריק."
+msgstr "GDMren hondoak irudi bat, kolore bat edo bat ere ez izan behar du."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr "תמונת רקע"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr "קובץ התמונה שישמש כרקע ב־GDM"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr "צבע הרקע"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr "הצבע שישמש כרקע ב־GDM"
+msgstr "GDMren hondo bezala erabili beharreko kolorea"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "אם מצב תאורת לילה פעיל"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"מצב תאורת לילה משנה את טמפרטורת התצוגה שלך עם רדת השמש או בשעות מסוימות."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr "טמפרטורת התצוגה מופעלת"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
-"הטמפרטורה הזאת לפי סולם קלווין משמשת לשינוי גווני המסך כאשר מצב תאורת לילה "
-"פעיל. ערכים גבוהיום יותר נוטים יותר לכחול, נמוכים לאדום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr "להשתמש בזריחה ובשקיעה"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr "לחשב את זמני הזריחה והשקיעה אוטומטית בהתאם למיקום הנוכחי."
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr "שעת זמן ההתחלה"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, הערך הזה ישמש כשעת זמן "
-"ההתחלה."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr "דקות זמן ההתחלה"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כדקות זמן "
-"ההתחלה."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr "שעת זמן הסיום"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כשעת זמן הסיום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr "דקות זמן הסיום"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"כאשר „schedule-automatic” (תזמון אוטומטי) מושבת, ערך זה ישמש כדקות זמן הסיום."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr "מהירות הסמן"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -134,47 +123,45 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"מהירות הסמן במשטח המגע. הערכים המותרים הם בטווח [‎-1‏..1] (מ„ללא האצה” עד "
-"„מהר”). 0 זאת ברירת המחדל של המערכת."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr "האם להציג שיפורי סרגל עליון לערכת עיצוב מחולצת"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr "האם להשבית חצי סרגל עליון"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr "האם להשבית פינות מעוגלות בסרגל העליון"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr "האם לשנות את צבע הכתב בסרגל העליון"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr "צבע כתב הסרגל העליון"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr "האם לשנות את רקע הסרגל העליון"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr "צבע רקע הסרגל העליון"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:61
 msgid "Login Manager Settings"
-msgstr "הגדרות מנהל הכניסה"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏- GDM"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -182,12 +169,10 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"ניתן לערוך את ההגדרות של GDM, להחיל ערכות עיצוב ותמונות רקע, להחליף את ערכת "
-"המצביעים ואת הגדרות תאורת הלילה לרבות דברים נוספים."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
-msgstr "מזהר חוסיין"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Added support for incomplete shell themes"
@@ -198,38 +183,34 @@ msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "תרגומים עדכניים:"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
-"אזהרה: חלק מההגדרות יאבדו לאחר עדכון מגרסה 0.6 והגרסאות שלפניה לגרסה הזאת או "
-"לכל גרסה עדכנית מעבר לה."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated the info shown on app's software-store page"
-msgstr "המידע שמופיע בעמוד חנות התוכנות על היישום עודכן"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "New App Icon that follows GNOME HIG"
-msgstr "סמל יישום חדש שעומד בהנחיות מנשק המשתמש של GNOME"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Only one instance of the app can be open at a time"
-msgstr "מותר לפתוח רק עותק אחד של היישום בו־זמנית"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
-msgstr "בעת החלת הגדרות, היישום לא קופא יותר"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr "היישום מציג חלונית „יציאה” מיד לאחר החלת ההגדרות"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid ""
@@ -249,24 +230,24 @@ msgstr ""
 
 #: src/app.py:50
 msgid "Show application version"
-msgstr "הצגת גרסת היישום"
+msgstr ""
 
 #: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "הגדרת רמת פירוט ידנית (מ־0 עד 5)"
+msgstr ""
 
 #: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr "רמה"
+msgstr ""
 
 #: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "הפעלת מצב מפורט (כינוי חלופי ל־‎--verbosity=5)"
+msgstr ""
 
 #: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
+msgstr ""
 
 #: src/app.py:74
 #, python-brace-format
@@ -278,12 +259,11 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
 
 #: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (גרסת המפתחים)"
+msgstr ""
 
 #: src/app.py:166
 msgid ""
@@ -291,18 +271,16 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"התוכניות הבאות חייבות להיות מותקנות <b>על המערכת המארחת</b> כדי שהיישום הזה "
-"יתפקד כראוי אך הן אינן מותקנות במערכת המארחת."
 
 #: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr " ‎ • <b>GDM</b>‎"
+msgstr ""
 
 #: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr " ‎ • <b>Polkit</b>"
+msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -312,435 +290,433 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"לחיצה <a href=\"{url}\">כאן</a> תעביר אותך להנחיות איך להתקין את התלויות "
-"האלו במערכת שלך."
 
 #: src/app.py:192
 msgid "Missing Dependencies"
-msgstr "חסרות תלויות"
+msgstr ""
 
 #: src/app.py:227
 msgid "Settings reloaded"
-msgstr "ההגדרות נטענו מחדש"
+msgstr ""
 
 #: src/app.py:235
 msgid "User settings imported"
-msgstr "הגדרות המשתמש ייובאו"
+msgstr ""
 
 #: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
+msgstr ""
 
 #: src/app.py:252
 msgid "Reset settings successfully"
-msgstr "ההגדרות אופסו בהצלחה"
+msgstr ""
 
 #: src/app.py:254
 msgid "Failed to reset settings"
-msgstr "איפוס ההגדרות נכשל"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
-msgstr "ערכות עיצוב"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:11
 msgid "Shell"
-msgstr "מעטפת"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:12
 msgid "Icons"
-msgstr "סמלים"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:13
 msgid "Cursor"
-msgstr "סמן"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:17
 msgid "Background"
-msgstr "רקע"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Type"
-msgstr "סוג"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
 #: src/blueprints/fonts-page.blp:35
 msgid "None"
-msgstr "ללא"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
 msgid "Image"
-msgstr "תמונה"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
 msgid "Color"
-msgstr "צבע"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:27
 msgid "The image to use as background"
-msgstr "התמונה שתשמש כרקע"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:32
 msgid "The color to use as background"
-msgstr "הצבע שישמש כרקע"
+msgstr ""
 
 #: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
-msgstr "תצוגה"
+msgstr ""
 
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
-msgstr "החלת הגדרות התצוגה הנוכחיות"
+msgstr ""
 
 #: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr "רזולוציה, קצב רענון, מיקומי צגים וכו׳"
+msgstr ""
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
-msgstr "החלה"
+msgstr ""
 
 #: src/blueprints/display-page.blp:21
 msgid "Night Light"
-msgstr "תאורת לילה"
+msgstr ""
 
 #: src/blueprints/display-page.blp:24
 msgid "Enable"
-msgstr "הפעלה"
+msgstr ""
 
 #: src/blueprints/display-page.blp:33
 msgid "Schedule"
-msgstr "תזמון"
+msgstr ""
 
 #: src/blueprints/display-page.blp:34
 msgid "Sunset to Sunrise"
-msgstr "שקיעה עד זריחה"
+msgstr ""
 
 #: src/blueprints/display-page.blp:34
 msgid "Manual Schedule"
-msgstr "תזמון ידני"
+msgstr ""
 
 #: src/blueprints/display-page.blp:38
 msgid "Times"
-msgstr "זמנים"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr "התחלה"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
 msgid "To"
-msgstr "סיום"
+msgstr ""
 
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
-msgstr "טמפרטורת הצבע"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
-msgstr "גופנים"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
-msgstr "גופן"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr "החלקת קצוות"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Standard"
-msgstr "רגילה"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:24
 msgid "Subpixel"
-msgstr "תת־פיקסל"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
-msgstr "רימוז"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Full"
-msgstr "מלאה"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:33
 msgid "Medium"
-msgstr "בינונית"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Slight"
-msgstr "קלה"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr "מקדם קנה מידה"
+msgstr ""
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr "רענון"
+msgstr ""
 
 #: src/blueprints/main-window.blp:7
 msgid "Import user settings"
-msgstr "ייבוא הגדרות משתמש"
+msgstr ""
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr "איפוס הגדרות"
+msgstr ""
 
 #: src/blueprints/main-window.blp:11
 msgid "About"
-msgstr "על אודות"
+msgstr ""
 
 #: src/blueprints/main-window.blp:12
 msgid "Quit"
-msgstr "יציאה"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:9 src/window.py:102
 msgid "Miscellaneous"
-msgstr "שונות"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "השבתת כפתורי ההפעלה מחדש"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:21
 msgid "Disable User List"
-msgstr "השבתת רשימת המשתמשים"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:30
 msgid "Enable Logo"
-msgstr "הפעלת לוגו"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:31
 msgid "Whether to show a logo below user list"
-msgstr "האם להציג את הלוגו מתחת לרשימת המשתמשים"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:40
 msgid "Logo"
-msgstr "לוגו"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:41
 msgid "The image to show below user list"
-msgstr "התמונה שתופיע מתחת לרשימת המשתמשים"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:46
 msgid "Welcome Message"
-msgstr "הודעת קבלת פנים"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
-msgstr "עכבר"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:12
 msgid "Pointer Acceleration"
-msgstr "האצת סמן"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:14
 msgid "Automatic"
-msgstr "אוטומטית"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:15
 msgid "Disabled"
-msgstr "מושבתת"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:16
 msgid "Enabled"
-msgstr "מופעלת"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:21
 msgid "Inverse Scrolling"
-msgstr "היפוך הגלילה"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
-msgstr "הגלילה מזיזה את התוכן, לא את התצוגה."
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
 msgid "Pointer Speed"
-msgstr "מהירות סמן"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:39
 msgid "Touchpad"
-msgstr "משטח מגע"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
-msgstr "לגעת כדי ללחוץ"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:49
 msgid "Natural Scrolling"
-msgstr "גלילה טבעית"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
-msgstr "גלילה בשתי אצבעות"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:58
 msgid "Scroll by swiping with two fingers."
-msgstr "גלילה בהחלקה עם שתי אצבעות."
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
-msgstr "השבתה בעת הקלדה"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:9 src/window.py:99
 msgid "Sound"
-msgstr "שמע"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
-msgstr "ערכת עיצוב"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "הגברה עודפת"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "לאפשר להגביר את עצמת השמע מעבר ל־100%"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:24
 msgid "Event Sounds"
-msgstr "צלילי אירועים"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:33
 msgid "Input Feedback Sounds"
-msgstr "צלילי משוב קלט"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr "ערכת העיצוב של המעטפת כברירת מחדל"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "לכלול שיפורי סרגל עליון"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:19
 msgid "Extract default shell theme"
-msgstr "חילוץ ערכת העיצוב של המעטפת כברירת מחדל"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:22
 msgid "Extract"
-msgstr "חילוץ"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr "שפצורים"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr "החלפת צבע הכתב"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr "צבע הכתב"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "צבע הכתב בסרגל העליון"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr "החלפת צבע הרקע"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "צבע רקע הסרגל העליון"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr "השבתת חצים"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
-msgstr "השבתת פינות מעוגלות"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:71
 msgid "Clock"
-msgstr "שעון"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:74
 msgid "Show Weekday"
-msgstr "להציג את היום בשבוע"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:83
 msgid "Show Seconds"
-msgstr "להציג שניות"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:92
 msgid "Time Format"
-msgstr "תבנית זמן"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "AM/PM"
-msgstr "AM/PM"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "24 Hours"
-msgstr "24 שעות"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:98
 msgid "Power"
-msgstr "חשמל"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:101
 msgid "Show battery percentage"
-msgstr "הצגת אחוז סוללה"
+msgstr ""
 
 #: src/common_widgets.py:20
 msgid "Choose File"
-msgstr "בחירת קובץ"
+msgstr ""
 
 #: src/common_widgets.py:26
 msgid "(None)"
-msgstr "(ללא)"
+msgstr ""
 
 #: src/common_widgets.py:127
 msgid "Choose"
-msgstr "בחירה"
+msgstr ""
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
-msgstr "ביטול"
+msgstr ""
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
-msgstr "בחירת תמונה"
+msgstr ""
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "כל הזכויות שמורות © 2021 מזהר חוסיין"
+msgstr ""
 
 #: src/dialogs.py:16
 msgid "Homepage"
-msgstr "עמוד הבית"
+msgstr ""
 
 #: src/dialogs.py:19
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "מזהר חוסיין"
+msgstr ""
 
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr "תאלס בינדה"
+msgstr ""
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
-msgstr "ירון שהרבני <sh.yaron@gmail.com>"
+msgstr ""
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
-msgstr "הגדרות התצוגה הנוכחיות הוחלו"
+msgstr ""
 
 #: src/pages/display.py:83
 msgid "Failed to apply current display settings"
-msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
+msgstr ""
 
 #: src/pages/display.py:88
 msgid ""
@@ -753,291 +729,84 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
-"הקובץ ‎‚$XDG_CONFIG_HOME/monitors.xml’‎ נחוץ כדי להחיל את הגדרות התצוגה "
-"הנוכחיות אך אינו קיים.\n"
-"\n"
-"כדי ליצור את הקובץ הזה אוטומטית,\n"
-"\n"
-"1. יש לגשת ללוח ‚תצוגה’ בהגדרות המערכת.\n"
-"2. לשנות שם כמה הגדרות.\n"
-"3. להחיל."
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
-msgstr "הגדרות הצג לא נמצאו"
+msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎{folder}’ בתור ‚{name}’"
+msgstr ""
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
-msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
+msgstr ""
 
 #: src/settings.py:198
 msgid "Backing up default shell theme …"
-msgstr "ערכת העיצוב של המעטפת כברירת המחדל מגובית…"
+msgstr ""
 
 #: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "הגדרות ה־GResource חלות על אובונטו…"
+msgstr ""
 
 #: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
+msgstr ""
 
 #: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
+msgstr ""
 
 #: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"
+msgstr ""
 
 #: src/window.py:96
 msgid "Appearance"
-msgstr "מראה"
+msgstr ""
 
 #: src/window.py:98
 msgid "Top Bar"
-msgstr "סרגל עליון"
+msgstr ""
 
 #: src/window.py:100
 msgid "Mouse & Touchpad"
-msgstr "עכבר ומשטח מגע"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
-msgstr "כלים"
+msgstr ""
 
 #: src/window.py:122
 msgid "Settings applied successfully"
-msgstr "ההגדרות הוחלו בהצלחה"
+msgstr ""
 
 #: src/window.py:126
 msgid "Failed to apply settings"
-msgstr "החלת ההגדרות נכשלה"
+msgstr ""
 
 #: src/window.py:129
 msgid ""
 "Didn't apply. Chosen background image could not be found. Please! choose "
 "again."
-msgstr "לא חל. לא ניתן למצוא את תמונת הרקע הנבחרת. נא לבחור שוב."
+msgstr ""
 
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
-msgstr "המערכת עלולה להיראות מוזר/שברירית עד לכניסה או הפעלה מחדש."
+msgstr ""
 
 #: src/window.py:138
 msgid "Log Out?"
-msgstr "לצאת?"
+msgstr ""
 
 #: src/window.py:147
 msgid "Log Out"
-msgstr "יציאה"
-
-#, python-brace-format
-#~ msgid ""
-#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-#~ "Assuming Verbosity level 4."
-#~ msgstr ""
-#~ "{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5.\n"
-#~ "כנראה שהתכוונת לרמת פירוט 4."
-
-#~ msgid "Warning:"
-#~ msgstr "אזהרה:"
-
-#~ msgid "Added:"
-#~ msgstr "נוסף:"
-
-#~ msgid "Support for verbose/quiet mode"
-#~ msgstr "תמיכה במצב מפורט/שקט"
-
-#~ msgid "Support for setting manual verbosity level"
-#~ msgstr "תמיכה בהגדרת רמת פירוט ידנית"
-
-#~ msgid ""
-#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
-#~ msgstr "אפשרויות שורת פקודה למצב פירוט/שקט ורמת פירוט ידנית"
-
-#~ msgid "Command-line option --version"
-#~ msgstr "אפשרות שורת פקודה ‎--version"
-
-#~ msgid "Wider application window on first launch"
-#~ msgstr "חלון יישום רחב יותר עם ההפעלה"
-
-#~ msgid "Fixed:"
-#~ msgstr "תוקן:"
-
-#~ msgid "Welcome message could not contain single quotes"
-#~ msgstr "הודעת קבלת הפנים לא יכלה להכיל מירכאות בודדות"
-
-#~ msgid ""
-#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-#~ msgstr "מנהל הכניסה (GDM) נפגם במערכות בהן SELinux פעיל (בעיקר Fedora)"
-
-#~ msgid ""
-#~ "Maximized or big application window looked bad (content was much smaller "
-#~ "than the window)"
-#~ msgstr ""
-#~ "החלון במצב מוגדל לגמרי או גדול נראה רע (התוכן היה קטן משמעותית מהחלון)"
-
-#~ msgid ""
-#~ "Showed wrong destination directory/folder path while extracting default "
-#~ "shell theme"
-#~ msgstr "הופיע נתיב תיקייה שגוי בעת חילוץ ערכת הנושא של המעטפת כברירת מחדל"
-
-#~ msgid ""
-#~ "Clicking 'Apply' did nothing if selected background image was deleted "
-#~ "before applying"
-#~ msgstr "לחיצה על ‚החלה’ לא עשתה כלום אם תמונת הרקע הנבחרת נמחקה לפני שהוחלה"
-
-#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-#~ msgstr "לחיצה על ‚החלה’ החילה רק חלק מההגדרות באובונטו"
-
-#~ msgid "New Translations:"
-#~ msgstr "תרגומים חדשים:"
-
-#~ msgid "French"
-#~ msgstr "צרפתית"
-
-#~ msgid "Hebrew"
-#~ msgstr "עברית"
-
-#~ msgid "Persian"
-#~ msgstr "פרסית"
-
-#~ msgid "Dutch"
-#~ msgstr "הולנדית"
-
-#~ msgid "German"
-#~ msgstr "גרמנית"
-
-#~ msgid "Occitan"
-#~ msgstr "אוקסיטנית"
-
-#~ msgid "Spanish"
-#~ msgstr "ספרדית"
-
-#~ msgid "Urdu"
-#~ msgstr "אורדו"
-
-#~ msgid ""
-#~ "Whether the chosen Shell theme should be overlayed on top of the default "
-#~ "shell theme."
-#~ msgstr ""
-#~ "האם ערכת עיצוב המעטפת הנבחרת צריכה להיות שכבה מעל לערכת עיצוב המעטפת "
-#~ "כברירת מחדל."
-
-#~ msgid ""
-#~ "Probably never a good idea to choose option \"nothing\". The most sane "
-#~ "option is \"resources\". If \"resources\" is selected, the app will copy "
-#~ "over the resources that are missing in chosen Shell theme from the "
-#~ "default theme. Choose option \"everything\" if CSS of chosen Shell theme "
-#~ "is incomplete."
-#~ msgstr ""
-#~ "זה כנראה אף פעם לא רעיון טוב לבחור באפשרות „שום דבר”. האפשרות השפויה "
-#~ "ביותר היא „משאבים”. אם בחרת ב„משאבים”, היישום יעתיק את המשאבים שחסרים "
-#~ "בערכת עיצוב המערכת הנבחרה מערכת עיצוב ברירת המחדל. יש לבחור באפשרות "
-#~ "„הכול” אם ה־CSS של ערכת עיצוב המעטפת הנבחרת הוא חלקי."
-
-#~ msgid "App Preferences"
-#~ msgstr "העדפות היישום"
-
-#~ msgid ""
-#~ "<b>Do not change anything</b> here unless you know exactly what you are "
-#~ "doing. Click <a href=\"{url}\">here</a> for more information."
-#~ msgstr ""
-#~ "<b>לא לשנות כאן שום דבר</b> אלא אם כן ברור לך לגמרי מה זה עושה. לחיצה <a "
-#~ "href=\"{url}\">כאן</a> תציג מידע נוסף."
-
-#~ msgid "Shell Theme"
-#~ msgstr "ערכת עיצוב המעטפת"
-
-#~ msgid "Overlay"
-#~ msgstr "שכבת על"
-
-#~ msgid "What to overlay on top of the default theme?"
-#~ msgstr "מה לשים בשכבה מעל ערכת העיצוב כברירת המחדל?"
-
-#~ msgid "Nothing"
-#~ msgstr "שום דבר"
-
-#~ msgid "Resources Only"
-#~ msgstr "משאבים בלבד"
-
-#~ msgid "Everything"
-#~ msgstr "הכול"
-
-#~ msgid "Apply Method"
-#~ msgstr "החלת שיטה"
-
-#~ msgid "Overlay Resources"
-#~ msgstr "משאבי על"
-
-#~ msgid "Complete Overlay"
-#~ msgstr "לגמרי מעל"
-
-#~ msgid "Assuming Verbosity level 4."
-#~ msgstr "ההערכה היא שמדובר ברמה 4."
-
-#~ msgid "KeyboardInterrupt received. Exiting …"
-#~ msgstr "התקבל KeyboardInterrupt (הפרעה מהמקלדת). יוצא…"
-
-#~ msgid "Images"
-#~ msgstr "תמונות"
-
-#~ msgctxt "Missing Dependencies Dialog"
-#~ msgid "Click"
-#~ msgstr "לחיצה"
-
-#~ msgctxt "Missing Dependencies Dialog"
-#~ msgid "here"
-#~ msgstr "כאן"
-
-#~ msgctxt "Missing Dependency"
-#~ msgid " • <b>GDM</b> (GNOME Display/Login Manager)"
-#~ msgstr " • <b>GDM</b> (מנהל תצוגה/כניסה של GNOME)"
-
-#~ msgid "Added: Support for Ubuntu"
-#~ msgstr "נוספה: תמיכה באובונטו"
-
-#~ msgid "Fixed: Could not apply settings on some systems"
-#~ msgstr "תיקון: לא ניתן להחיל הגדרות בחלק מהמערכות"
-
-#~ msgid ""
-#~ "Fixed: Could not change background-image/wallpaper if language is not "
-#~ "English"
-#~ msgstr "תיקון: אי אפשר להחליף תמונת רקע אם השפה אינה אנגלית"
-
-#~ msgid "Fixed: A fatal bug"
-#~ msgstr "תיקון: תקלה משמעותית"
-
-#~ msgid "Mouse Settings"
-#~ msgstr "הגדרות עכבר"
-
-#~ msgid "Flatpak Support"
-#~ msgstr "תמיכה ב־Flatpak"
-
-#~ msgid "Improved:"
-#~ msgstr "השתפר:"
-
-#~ msgid "Support for Right-to-Left Languages"
-#~ msgstr "תמיכה בשפות מימין לשמאל"
-
-#~ msgid "More Text got Translated"
-#~ msgstr "טקסט נוסף תורגם"
-
-#~ msgid ""
-#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
-#~ "extracted'"
-#~ msgstr ""
-#~ "ערכת העיצוב של המעטפת כברירת מחדל חולצה אל ‚‎/usr/share/themes’ בתור "
-#~ "‚default-extracted’."
+msgstr ""

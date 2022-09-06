@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # oussaid1 <oussaid.abdellatif@gmail.com>, 2022.
+# Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 12:50+0500\n"
-"PO-Revision-Date: 2022-06-21 03:43+0000\n"
-"Last-Translator: oussaid1 <oussaid.abdellatif@gmail.com>\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"PO-Revision-Date: 2022-08-30 18:22+0000\n"
+"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
 "Language: ar\n"
@@ -17,106 +18,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "اسم السمة"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "نوع الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "أيجب أن تكون خلفية شاشة الدخول صورة أم لون أم لا شيء."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "صورة الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "ملف الصورة المستخدمة كخلفية لشاشة الدخول"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "لون الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "اللون المستخدم كخلفية شاشة الدخول"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "إذا ما كانت الإضاءة الليلية مفعلة"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"وضع الإضاءة الليلية يغير حرارة ألوان الشاشة بعد غروب الشمس أو في أوقات محددة."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "حرارة الشاشة عند التفعيل"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"يتم استخدام هذه الدرجة بالكلفن لتعديل لون الشاشة عند تفعيل وضع الإضاءة "
+"الليلية. القيم الأعلى أكثر زرقة، والأقل أكثر احمرارا."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "استخدام الشروق والغروب"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "حساب أوقات الشروق والغروب تلقائيا باستخدام الموقع الحالي."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "ساعة البدء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
+msgstr "استخدام هذا الوقت كساعة البدء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "دقيقة البدء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "استخدام هذا الوقت كدقيقة البدء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "ساعة الانتهاء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr ""
+msgstr "استخدام هذا الوقت كساعة الانتهاء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "دقيقة الانتهاء"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "استخدام هذا الوقت كدقيقة الانتهاء عند تعطيل الجدولة التلقائية."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "سرعة المؤشر"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -124,6 +128,8 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"سرعة مؤشر لوحة اللمس. تترواح القيم المقبولة بين -1 و 1 (من \"دون تسريع\" إلى "
+"\"سريع\"). قيمة 0 هي القيمة الافتراضية للنظام."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -177,115 +183,143 @@ msgid "Mazhar Hussain"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Warning:"
+msgid "Added support for incomplete shell themes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "New App Icon that follows GNOME HIG"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid "Only one instance of the app can be open at a time"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "Updated screenshots"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Warning: You will lose some settings after updating from v0.6 or any earlier "
+"version to this or any later version."
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Updated the info shown on app's software-store page"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "New App Icon that follows GNOME HIG"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Only one instance of the app can be open at a time"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: src/app.py:49
-msgid "Show application version"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
 msgstr ""
 
 #: src/app.py:50
-msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show application version"
 msgstr ""
 
 #: src/app.py:51
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr ""
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr ""
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr ""
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr ""
 
@@ -733,12 +767,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

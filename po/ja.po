@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 12:50+0500\n"
-"PO-Revision-Date: 2022-07-22 17:25+0000\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -89,58 +89,40 @@ msgid "The start time's hour"
 msgstr "開始時刻 (時)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"“night-light-schedule-automatic” が無効の場合、この値を夜間モードの開始時刻"
-"の “時” として使います。"
+"“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “時” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "開始時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"“night-light-schedule-automatic” が無効の場合、この値を夜間モードの開始時刻"
-"の “分” として使います。"
+"“schedule-automatic” が無効の場合、この値を夜間モードの開始時刻の “分” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "終了時刻 (分)"
+msgstr "終了時刻 (時)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"“night-light-schedule-automatic” が無効の場合、この値を夜間モードの終了時刻"
-"の “分” として使います。"
+"“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “時” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "終了時刻 (分)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"“night-light-schedule-automatic” が無効の場合、この値を夜間モードの終了時刻"
-"の “分” として使います。"
+"“schedule-automatic” が無効の場合、この値を夜間モードの終了時刻の “分” として"
+"使います。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -162,7 +144,7 @@ msgstr "トップバーのカスタマイズを、復元したテーマに適応
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "トップバーの矢印を無効にするかどうかの設定"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
@@ -209,130 +191,153 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Warning:"
+msgid "Added support for incomplete shell themes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-#, fuzzy
-#| msgid "Updated the app store page of app"
-msgid "Updated the info shown on app's software-store page"
-msgstr "アプリストアでの紹介ページを更新"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "New App Icon that follows GNOME HIG"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid "Only one instance of the app can be open at a time"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-
-#: src/app.py:49
 #, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
+#| msgid "Updated Translations:"
+msgid "Updated screenshots"
+msgstr "翻訳が更新された言語:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Warning: You will lose some settings after updating from v0.6 or any earlier "
+"version to this or any later version."
+msgstr ""
+"警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一部の"
+"設定を失います。"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Updated the info shown on app's software-store page"
+msgstr "ソフトウェアストア内のアプリの紹介ページで表示される情報を更新"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "New App Icon that follows GNOME HIG"
+msgstr "GNOME HIG に準拠した新しいアプリアイコン"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Only one instance of the app can be open at a time"
+msgstr "アプリのインスタンスは同時に1つしか開けないように修正"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "When applying settings, the app does not freeze anymore"
+msgstr "設定適用中にアプリがフリーズしないように修正"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
+msgstr ""
+
+#: src/app.py:50
 msgid "Show application version"
 msgstr "アプリケーションのバージョンを表示"
 
-#: src/app.py:50
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
+#: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "ログレベルを手動で設定 (0 から 5)"
 
-#: src/app.py:51
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "レベル"
 
-#: src/app.py:52
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
-msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "すべてのログを表示 (ログレベルを 5 に設定)"
-
 #: src/app.py:53
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
+msgid "Enable verbose mode (alias of --verbosity=5)"
+msgstr "すべてのログを表示 (--verbosity=5 のエイリアス)"
+
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "ログを表示しない (ログレベルを 0 に設定)"
+msgstr "ログを表示しない (--verbosity=0 のエイリアス)"
 
-#: src/app.py:75
-#, fuzzy, python-brace-format
-#| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
-msgstr "{level} は無効なログレベルです。設定可能な値は 0 から 5 です。"
+#: src/app.py:74
+#, python-brace-format
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
+msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"このアプリが動作するには、インストールされていない以下のソフトウェアが必要で"
+"す。"
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (開発版)"
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"このアプリが適切に動作するには、インストールされていない以下のプログラムが "
+"<b>ホストシステム上に</b> 必要です。"
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr ""
+msgstr " • <b>GDM</b>"
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"これらの依存関係をシステムにインストールする方法を参照するには、<a href="
+"\"{url}\">こちら</a> をクリックしてください。"
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "依存関係が不足しています"
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr "設定を再読み込みしました"
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr "ユーザー設定をインポートしました"
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版は、ユーザー設定のインポートに対応していません"
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr "設定をリセットしました"
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "設定をリセットできませんでした"
 
@@ -461,15 +466,15 @@ msgstr "ヒンティング"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "強"
 
 #: src/blueprints/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "弱"
 
 #: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
@@ -649,7 +654,7 @@ msgstr "トップバーの背景色"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "矢印を無効化"
 
 #: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
@@ -692,26 +697,20 @@ msgid "Choose File"
 msgstr "ファイルを選択"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "なし"
+msgstr "(なし)"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "ファイルを選択"
+msgstr "選択"
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "ファイルを選択"
+msgstr "画像を選択"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -756,30 +755,34 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"現在のディスプレイ設定を適用するには、現在存在しないファイル "
+"'$XDG_CONFIG_HOME/monitors.xml' が必要です。\n"
+"\n"
+"このファイルを自動で作成するには、以下の操作を行ってください。\n"
+"\n"
+"1. システム設定の 'ディスプレイ' パネルに移動します。\n"
+"2. どれでもよいので、何か設定を変更します。\n"
+"3. 適用します。"
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "画面設定が見つかりませんでした"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
-"デフォルトのテーマが、'{path}' に 'default-extracted' という名前で復元されま"
-"した"
+"シェルのデフォルトテーマが、'{folder}' に '{name}' という名前で復元されました"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
-msgstr "デフォルトのテーマを復元できませんでした"
+msgstr "デフォルトテーマを復元できませんでした"
 
 #: src/settings.py:198
-#, fuzzy
-#| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
-msgstr "デフォルトのテーマを保存しています…"
+msgstr "シェルのデフォルトテーマをバックアップしています…"
 
 #: src/settings.py:246
 msgctxt "Command-line output"
@@ -791,12 +794,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
@@ -836,14 +839,23 @@ msgstr ""
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
 
 #: src/window.py:138
 msgid "Log Out?"
-msgstr ""
+msgstr "ログアウトしますか？"
 
 #: src/window.py:147
 msgid "Log Out"
-msgstr ""
+msgstr "ログアウト"
+
+#, python-brace-format
+#~ msgid ""
+#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+#~ "Assuming Verbosity level 4."
+#~ msgstr ""
+#~ "{level} は無効なログレベルです。設定可能な値は 0 から 5 です。\n"
+#~ "ログレベルを4と仮定します。"
 
 #~ msgid "Added:"
 #~ msgstr "追加された機能:"
@@ -917,9 +929,6 @@ msgstr ""
 
 #~ msgid "Persian"
 #~ msgstr "ペルシア語"
-
-#~ msgid "Updated Translations:"
-#~ msgstr "翻訳が更新された言語:"
 
 #~ msgid "Dutch"
 #~ msgstr "オランダ語"

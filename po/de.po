@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 12:50+0500\n"
-"PO-Revision-Date: 2022-06-21 03:43+0000\n"
-"Last-Translator: jagfwajgf <juri26@outlook.de>\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"PO-Revision-Date: 2022-08-27 09:02+0000\n"
+"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -32,7 +32,6 @@ msgstr "Art des Hintergrunds"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr ""
 "Gibt an, ob der GDM-Hintergrund ein Bild, eine Farbe oder Nichts sein soll."
@@ -98,58 +97,40 @@ msgid "The start time's hour"
 msgstr "Die Stunden der Startzeit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Wenn »night-light-schedule-automatic« deaktiviert ist, wird das als Stunden "
-"der Endzeit verwendet."
+"Wenn »schedule-automatic« deaktiviert ist, wird das als Stunden der "
+"Startzeit verwendet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Die Minuten der Startzeit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Wenn »night-light-schedule-automatic« deaktiviert ist, wird das als Minuten "
-"der Startzeit verwendet."
+"Wenn »schedule-automatic« deaktiviert ist, wird das als Minuten der "
+"Startzeit verwendet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "Die Minuten der Endzeit"
+msgstr "Die Stunden der Endzeit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Wenn »night-light-schedule-automatic« deaktiviert ist, wird das als Minuten "
-"der Endzeit verwendet."
+"Wenn »schedule-automatic« deaktiviert ist, wird das als Stunden der Endzeit "
+"verwendet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Die Minuten der Endzeit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Wenn »night-light-schedule-automatic« deaktiviert ist, wird das als Minuten "
-"der Endzeit verwendet."
+"Wenn »schedule-automatic« deaktiviert ist, wird das als Minuten der Endzeit "
+"verwendet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -206,7 +187,6 @@ msgstr "Login-Manager-Einstellungen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 "Eine Anwendung, die Einstellungen für den GNOME Login-Manager (GDM) "
@@ -226,127 +206,160 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Warning:"
+msgid "Added support for incomplete shell themes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "New App Icon that follows GNOME HIG"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid "Only one instance of the app can be open at a time"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#, fuzzy
+#| msgid "Updated Translations:"
+msgid "Updated screenshots"
+msgstr "Aktualisierte Übersetzungen:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Warning: You will lose some settings after updating from v0.6 or any earlier "
+"version to this or any later version."
+msgstr ""
+"Warnung: Wenn Sie von Version 0.6 oder früher auf diese oder eine neuere "
+"Version aktualisieren, werden einige Einstellungen verloren gehen."
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Updated the info shown on app's software-store page"
+msgstr ""
+"In Software-Stores angezeigte Informationen über die App wurden aktualisiert"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "New App Icon that follows GNOME HIG"
+msgstr "Neues Icon, das die GNOME HIG berücksichtigt"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Only one instance of the app can be open at a time"
+msgstr "Nur eine Instanz der App kann gleichzeitig geöffnet sein"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
+"Wenn Einstellungen angewendet werden, friert die Anwendung nicht mehr ein"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
+"Die Anwendung öffnet den \"Abmelden\"-Dialog direkt nachdem die "
+"Einstellungen angewendet wurden"
 
-#: src/app.py:49
-#, fuzzy
-#| msgid "Show application version"
-msgid "Show application version"
-msgstr "Version der Anwendung anzeigen"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"When applying current display settings, scaling is also applied (may not "
+"work on all systems)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
+msgstr ""
 
 #: src/app.py:50
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show application version"
+msgstr "Anwendungsversion anzeigen"
+
+#: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Detaillevel manuell setzen (von 0 bis 5)"
 
-#: src/app.py:51
-#, fuzzy
-#| msgid "LEVEL"
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "LEVEL"
 
-#: src/app.py:52
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
-msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Hohes Detaillevel aktivieren (Level 5)"
-
 #: src/app.py:53
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
-msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Stillen Modus aktivieren (Level 0)"
+msgid "Enable verbose mode (alias of --verbosity=5)"
+msgstr "Hohes Detaillevel aktivieren (Alias von --verbosity=5)"
 
-#: src/app.py:75
+#: src/app.py:54
+msgid "Enable quiet mode (alias of --verbosity=0)"
+msgstr "Stillen Modus aktivieren (Alias von --verbosity=0)"
+
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Diese Anwendung benötigt die folgende nicht installierte Software, um "
+"korrekt zu funktionieren."
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (Entwicklerversion)"
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Die folgenden Programme müssen <b>auf dem Host-System</b> installiert sein, "
+"damit diese Anwendung korrekt funktioniert. Sie sind aktuell nicht auf dem "
+"Host-System installiert."
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr ""
+msgstr " • <b>GDM</b>"
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Klicken Sie <a href=\"{url}\">hier</a> um zu erfahren, wie Sie diese "
+"Abhängigkeiten auf Ihrem System installieren können."
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Fehlende Abhängigkeiten"
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr "Einstellungen wurden neu geladen"
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr "Benutzereinstellungen wurden importiert"
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 "Das Importieren von Benutzereinstellungen wird in der Flatpak-Version NICHT "
 "unterstützt"
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr "Einstellungen wurden erfolgreich zurückgesetzt"
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
 
@@ -706,26 +719,20 @@ msgid "Choose File"
 msgstr "Datei wählen"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "Keine"
+msgstr "(Keine)"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Datei wählen"
+msgstr "Auswählen"
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Datei wählen"
+msgstr "Bild wählen"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -736,8 +743,6 @@ msgid "Homepage"
 msgstr "Startseite"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -745,7 +750,7 @@ msgstr "Mazhar Hussain"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -780,45 +785,38 @@ msgstr ""
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"Shell-Vorgabethema wurde nach »{path}« als »default-extracted« entpackt"
+msgstr "Shell-Vorgabethema wurde nach »{folder}« als »{name}« entpackt"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
 msgstr "Entpacken des Shell-Vorgabethemas fehlgeschlagen"
 
 #: src/settings.py:198
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "Backing up default shell theme …"
-msgstr "Vorgabethema wird gespeichert …"
+msgstr "Vorgabethema wird gesichert …"
 
 #: src/settings.py:246
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
-"Beim Klick auf »Anwenden« wurden in Ubuntu nur einige Einstellungen "
-"angewendet"
+msgstr "GResource-Einstellungen für Ubuntu werden angewendet …"
 
 #: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "GResource-Einstellungen für Nicht-Ubuntu-Systeme werden angewendet …"
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "GResource-Einstellungen für Ubuntu werden zurückgesetzt …"
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
+"GSettings-Einstellungen für Nicht-Ubuntu-Systeme werden zurückgesetzt …"
 
 #: src/window.py:96
 msgid "Appearance"
@@ -855,14 +853,25 @@ msgstr ""
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"Der Rechner könnte merkwürdig oder fehlerhaft aussehen, bis Sie sich neu "
+"anmelden oder neu starten."
 
 #: src/window.py:138
 msgid "Log Out?"
-msgstr ""
+msgstr "Abmelden?"
 
 #: src/window.py:147
 msgid "Log Out"
-msgstr ""
+msgstr "Abmelden"
+
+#, python-brace-format
+#~ msgid ""
+#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+#~ "Assuming Verbosity level 4."
+#~ msgstr ""
+#~ "{level} ist ein ungültiges Detaillevel. Akzeptierte Werte sind Zahlen von "
+#~ "0 bis 5.\n"
+#~ "Detaillevel 4 wird angenommen."
 
 #~ msgid "Added:"
 #~ msgstr "Hinzugefügt:"
@@ -936,9 +945,6 @@ msgstr ""
 
 #~ msgid "Persian"
 #~ msgstr "Persisch"
-
-#~ msgid "Updated Translations:"
-#~ msgstr "Aktualisierte Übersetzungen:"
 
 #~ msgid "Dutch"
 #~ msgstr "Niederländisch"
