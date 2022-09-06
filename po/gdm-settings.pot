@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-27 14:05+0500\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,124 +173,144 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "Updated screenshots"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated the info shown on app's software-store page"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "New App Icon that follows GNOME HIG"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Only one instance of the app can be open at a time"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: src/app.py:49
-msgid "Show application version"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
 msgstr ""
 
 #: src/app.py:50
-msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show application version"
 msgstr ""
 
 #: src/app.py:51
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr ""
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr ""
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr ""
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr ""
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr ""
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr ""
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr ""
 
@@ -738,12 +758,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
