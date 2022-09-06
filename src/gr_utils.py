@@ -98,7 +98,23 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
     extract_default_theme(temp_theme_dir)
 
     if shellDir:
+        css_files = {}
+        for filename in os.listdir(temp_shell_dir):
+            if not filename.endswith('.css'):
+                continue
+            with open(os.path.join(temp_shell_dir, filename)) as file_io:
+                css_files[filename] = file_io.read()
+
         copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
+
+        for filename, contents_default in css_files.items():
+            if not os.path.isfile(os.path.join(shellDir, filename)):
+                continue
+            with open(os.path.join(shellDir, filename)) as file_io:
+                contents_theme = file_io.read()
+            with open(os.path.join(temp_shell_dir, filename), 'w') as file_io:
+                contents = contents_default + '\n\n' + contents_theme
+                file_io.write(contents)
 
     # Inject custom-theme identity
     open(os.path.join(temp_shell_dir, CustomThemeIdentity), 'w').close()
