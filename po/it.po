@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"POT-Creation-Date: 2022-09-06 16:26+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -179,49 +179,54 @@ msgstr ""
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Updated screenshots"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Updated the info shown on app's software-store page"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "New App Icon that follows GNOME HIG"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Only one instance of the app can be open at a time"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
 msgstr ""
 

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-06 16:26+0500\n"
 "PO-Revision-Date: 2022-09-06 11:26+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -207,11 +207,16 @@ msgstr ""
 "Opgelost: het logo op het aanmeldscherm kon niet worden gewijzigd vanuit de "
 "flatpakversie"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Updated screenshots"
 msgstr "Bijgewerkt: schermfoto's"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -219,38 +224,38 @@ msgstr ""
 "Waarschuwing: als u de versie bijwerkt van 0.6 of ouder naar deze of een "
 "nieuwere versie, dan dient u enkele voorkeuren opnieuw in te stellen."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Updated the info shown on app's software-store page"
 msgstr "Bijgewerkt: de bijbehorende winkelpagina"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Nieuw: toepassingspictogram op basis van de GNOME-ontwerprichtlijnen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Only one instance of the app can be open at a time"
 msgstr "Nieuw: er kan slechts één venster tegelijk worden geopend"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 "Verbeterd: de toepassing bevriest niet meer na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Nieuw: er wordt voortaan een afmeldvenster getoond na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 "Nieuw: dialoogvensters met foutmeldingen in plaats van terminalmeldingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -258,7 +263,7 @@ msgstr ""
 "Wanneer de huidige weergave-instellingen worden toegepast wordt ook schaling "
 "toegepast (werkt mogelijk niet op alle systemen)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
 msgstr "Nieuw: de toepassing voortaan aan te roepen met behulp van DBus"
 

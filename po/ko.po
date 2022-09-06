@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"POT-Creation-Date: 2022-09-06 16:26+0500\n"
 "PO-Revision-Date: 2022-08-28 17:32+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -189,11 +189,16 @@ msgstr ""
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Updated screenshots"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -201,33 +206,33 @@ msgstr ""
 "경고: v0.6 또는 이전 버전에서 이 버전 또는 이후 버전으로 업데이트하면 일부 설"
 "정이 손실됩니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Updated the info shown on app's software-store page"
 msgstr "앱의 소프트웨어 스토어 페이지에 표시된 정보 업데이트"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG을 따르는 새로운 앱 아이콘"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Only one instance of the app can be open at a time"
 msgstr "한 번에 하나의 앱 인스턴스만 열 수 있습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "설정을 적용할 때 앱이 더 이상 정지되지 않습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "설정이 적용된 직후 \"로그아웃\" 상자를 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -235,7 +240,7 @@ msgstr ""
 "현재 디스플레이 설정을 적용할 때 배율도 적용됩니다(일부 시스템에서는 작동하"
 "지 않을 수 있음)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
 msgstr ""
 

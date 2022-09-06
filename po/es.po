@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"POT-Creation-Date: 2022-09-06 16:26+0500\n"
 "PO-Revision-Date: 2022-08-27 09:15+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -203,13 +203,18 @@ msgstr ""
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 #, fuzzy
 #| msgid "Updated Translations:"
 msgid "Updated screenshots"
 msgstr "Traducciones actualizadas:"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -217,37 +222,37 @@ msgstr ""
 "Advertencia: Perderá algunos ajustes después de actualizar desde la v0.6 o "
 "cualquier versión anterior a esta o cualquier otra versión posterior."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Updated the info shown on app's software-store page"
 msgstr ""
 "Se ha actualizado la información que aparece en la página de la tienda de "
 "software de la aplicación"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Nuevo icono de aplicación que sigue el HIG de GNOME"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Only one instance of the app can be open at a time"
 msgstr "Sólo se puede abrir una instancia de la aplicación a la vez"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "Al aplicar los ajustes, la aplicación ya no se congela"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "La aplicación muestra un diálogo de \" Cerrar sesión\" justo después de "
 "aplicar los ajustes"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -255,7 +260,7 @@ msgstr ""
 "Cuando se aplica la configuración actual de la pantalla, también se aplica "
 "la escala (puede no funcionar en todos los sistemas)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
 msgstr ""
 
