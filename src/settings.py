@@ -359,7 +359,8 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents +=  "\n"
 
             enable_logo = misc_settings['enable-logo']
-            logo = misc_settings['logo'].removeprefix(env.HOST_ROOT) if enable_logo else ''
+            logo = '/etc/gdm-logo' if enable_logo else ''
+            logo_file = misc_settings['logo'].removeprefix(env.HOST_ROOT)
             enable_welcome_message = str(misc_settings['enable-welcome-message']).lower()
             welcome_message = misc_settings['welcome-message'].replace("'", r"\'")
             disable_restart_buttons = str(misc_settings['disable-restart-buttons']).lower()
@@ -376,9 +377,16 @@ class SettingsManager (GObject.Object):
 
             temp_conf_file.write(gdm_conf_contents)
 
+        if enable_logo and logo_file:
+            from shutil import copy
+            logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
+            copy(logo_file, logo_temp)
+            self.command_elevator.add(f"cp -fT '{logo_temp}' '{logo}'")
+
         overriding_files = self.get_overriding_files()
         if overriding_files:
             self.command_elevator.add(['rm', *overriding_files])
+
         self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
         self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
         self.command_elevator.add(f"cp -fT '{temp_profile_path}' '{gdm_profile_path}'")
