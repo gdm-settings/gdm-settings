@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-09-06 10:55+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
+"PO-Revision-Date: 2022-09-06 11:26+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -199,17 +199,17 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Added support for incomplete shell themes"
-msgstr ""
+msgstr "Nieuw: ondersteuning voor onvolledige Shell-thema's"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
+"Opgelost: het logo op het aanmeldscherm kon niet worden gewijzigd vanuit de "
+"flatpakversie"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "Bijgewerkte vertalingen:"
+msgstr "Bijgewerkt: schermfoto's"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
@@ -248,6 +248,7 @@ msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"Nieuw: dialoogvensters met foutmeldingen in plaats van terminalmeldingen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
@@ -259,7 +260,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "Nieuw: de toepassing voortaan aan te roepen met behulp van DBus"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -286,6 +287,8 @@ msgstr "Stille modus inschakelen (alias --verbosity=0)"
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Ongeldig foutopsporingsniveau: {level}. Het niveau dient 0, 5 of "
+"daartussenin te liggen."
 
 #: src/app.py:155
 msgid ""
