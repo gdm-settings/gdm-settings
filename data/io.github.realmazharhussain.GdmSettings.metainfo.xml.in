@@ -46,33 +46,46 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-1.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-2.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-3.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-4.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-4.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-5.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-5.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-6.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-6.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-7.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-7.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/screenshot-8.png</image>
+      <image>https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/beta/screenshot-8.png</image>
     </screenshot>
   </screenshots>
 
   <releases>
-    <release version="1.0" date="2022-06-20">
+    <release version="1.0-beta.3" date="2022-09-06">
+      <description>
+        <ul>
+          <li>Added support for incomplete shell themes</li>
+          <li>Fixed: Cannot change login screen logo from Flatpak version of the app</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0-beta.2" date="2022-09-02">
+      <description>
+        Updated screenshots
+      </description>
+    </release>
+    <release version="1.0-beta.1" date="2022-09-01">
       <description>
         <p>
           Warning: You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
@@ -83,7 +96,9 @@
           <li>Only one instance of the app can be open at a time</li>
           <li>When applying settings, the app does not freeze anymore</li>
           <li>The app shows a "Log Out" dialog right after settings are applied</li>
+          <li>Added new dialogs to show errors to the user instead of panicking on the terminal</li>
           <li>When applying current display settings, scaling is also applied (may not work on all systems)</li>
+          <li>The app is now DBusActivatable</li>
         </ul>
       </description>
     </release>
