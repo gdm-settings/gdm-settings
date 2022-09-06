@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-08-27 14:05+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
 "PO-Revision-Date: 2022-08-28 17:32+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -181,7 +181,19 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "Updated screenshots"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -189,76 +201,83 @@ msgstr ""
 "경고: v0.6 또는 이전 버전에서 이 버전 또는 이후 버전으로 업데이트하면 일부 설"
 "정이 손실됩니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated the info shown on app's software-store page"
 msgstr "앱의 소프트웨어 스토어 페이지에 표시된 정보 업데이트"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG을 따르는 새로운 앱 아이콘"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Only one instance of the app can be open at a time"
 msgstr "한 번에 하나의 앱 인스턴스만 열 수 있습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "설정을 적용할 때 앱이 더 이상 정지되지 않습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "설정이 적용된 직후 \"로그아웃\" 상자를 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
-msgstr "현재 디스플레이 설정을 적용할 때 배율도 적용됩니다(일부 시스템에서는 "
-"작동하지 않을 수 있음)"
+msgstr ""
+"현재 디스플레이 설정을 적용할 때 배율도 적용됩니다(일부 시스템에서는 작동하"
+"지 않을 수 있음)"
 
-#: src/app.py:49
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
+msgstr ""
+
+#: src/app.py:50
 msgid "Show application version"
 msgstr "앱 버전 보기"
 
-#: src/app.py:50
+#: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "상세 정보 표시 레벨을 수동으로 설정(0~5)"
 
-#: src/app.py:51
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "레벨"
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "상세 모드 활성화(별칭 --verbosity=5)"
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
-"{level}은(는) 잘못된 상세 정보 표시 레벨입니다. 허용되는 값은 0~5입니다.\n"
-"상세 정보 표시 레벨 4를 가정합니다."
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 "이 앱이 제대로 작동하려면 다음 소프트웨어가 필요하지만 설치되지 않았습니다."
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (개발자 에디션)"
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -267,19 +286,19 @@ msgstr ""
 "이 앱이 제대로 작동하려면 다음 프로그램을 <b>호스트 시스템</b>에 설치해야 하"
 "지만 호스트 시스템에는 설치되어 있지 않습니다."
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>폴킷</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -288,27 +307,27 @@ msgstr ""
 "시스템에 이러한 종속성을 설치하는 방법에 대한 지침을 보려면 <a href="
 "\"{url}\">여기</a>를 클릭하세요."
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
 msgstr "누락된 종속성"
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr "사용자 설정을 가져왔습니다"
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "Flatpak 버전에서는 사용자 설정 가져오기가 지원되지 않습니다"
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr "설정 리셋 성공"
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "설정 리셋 실패"
 
@@ -766,12 +785,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -821,3 +840,11 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "로그아웃"
+
+#, python-brace-format
+#~ msgid ""
+#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+#~ "Assuming Verbosity level 4."
+#~ msgstr ""
+#~ "{level}은(는) 잘못된 상세 정보 표시 레벨입니다. 허용되는 값은 0~5입니다.\n"
+#~ "상세 정보 표시 레벨 4를 가정합니다."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-27 14:05+0500\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -190,7 +190,21 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#, fuzzy
+#| msgid "Updated Translations:"
+msgid "Updated screenshots"
+msgstr "翻訳が更新された言語:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -198,63 +212,69 @@ msgstr ""
 "警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一部の"
 "設定を失います。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated the info shown on app's software-store page"
 msgstr "ソフトウェアストア内のアプリの紹介ページで表示される情報を更新"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG に準拠した新しいアプリアイコン"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Only one instance of the app can be open at a time"
 msgstr "アプリのインスタンスは同時に1つしか開けないように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "設定適用中にアプリがフリーズしないように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: src/app.py:49
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
+msgstr ""
+
+#: src/app.py:50
 msgid "Show application version"
 msgstr "アプリケーションのバージョンを表示"
 
-#: src/app.py:50
+#: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "ログレベルを手動で設定 (0 から 5)"
 
-#: src/app.py:51
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "レベル"
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "すべてのログを表示 (--verbosity=5 のエイリアス)"
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "ログを表示しない (--verbosity=0 のエイリアス)"
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
-"{level} は無効なログレベルです。設定可能な値は 0 から 5 です。\n"
-"ログレベルを4と仮定します。"
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -262,12 +282,12 @@ msgstr ""
 "このアプリが動作するには、インストールされていない以下のソフトウェアが必要で"
 "す。"
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (開発版)"
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -276,19 +296,19 @@ msgstr ""
 "このアプリが適切に動作するには、インストールされていない以下のプログラムが "
 "<b>ホストシステム上に</b> 必要です。"
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -297,27 +317,27 @@ msgstr ""
 "これらの依存関係をシステムにインストールする方法を参照するには、<a href="
 "\"{url}\">こちら</a> をクリックしてください。"
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
 msgstr "依存関係が不足しています"
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr "設定を再読み込みしました"
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr "ユーザー設定をインポートしました"
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版は、ユーザー設定のインポートに対応していません"
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr "設定をリセットしました"
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "設定をリセットできませんでした"
 
@@ -774,12 +794,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
@@ -828,6 +848,14 @@ msgstr "ログアウトしますか？"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "ログアウト"
+
+#, python-brace-format
+#~ msgid ""
+#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+#~ "Assuming Verbosity level 4."
+#~ msgstr ""
+#~ "{level} は無効なログレベルです。設定可能な値は 0 から 5 です。\n"
+#~ "ログレベルを4と仮定します。"
 
 #~ msgid "Added:"
 #~ msgstr "追加された機能:"
@@ -901,9 +929,6 @@ msgstr "ログアウト"
 
 #~ msgid "Persian"
 #~ msgstr "ペルシア語"
-
-#~ msgid "Updated Translations:"
-#~ msgstr "翻訳が更新された言語:"
 
 #~ msgid "Dutch"
 #~ msgstr "オランダ語"

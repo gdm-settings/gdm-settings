@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-27 14:05+0500\n"
+"POT-Creation-Date: 2022-09-06 15:54+0500\n"
 "PO-Revision-Date: 2022-08-24 18:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -189,7 +189,21 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#, fuzzy
+#| msgid "Updated Translations:"
+msgid "Updated screenshots"
+msgstr "תרגומים עדכניים:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -197,75 +211,81 @@ msgstr ""
 "אזהרה: חלק מההגדרות יאבדו לאחר עדכון מגרסה 0.6 והגרסאות שלפניה לגרסה הזאת או "
 "לכל גרסה עדכנית מעבר לה."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated the info shown on app's software-store page"
 msgstr "המידע שמופיע בעמוד חנות התוכנות על היישום עודכן"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "New App Icon that follows GNOME HIG"
 msgstr "סמל יישום חדש שעומד בהנחיות מנשק המשתמש של GNOME"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Only one instance of the app can be open at a time"
 msgstr "מותר לפתוח רק עותק אחד של היישום בו־זמנית"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "בעת החלת הגדרות, היישום לא קופא יותר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "היישום מציג חלונית „יציאה” מיד לאחר החלת ההגדרות"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid ""
+"Added new dialogs to show errors to the user instead of panicking on the "
+"terminal"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: src/app.py:49
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "The app is now DBusActivatable"
+msgstr ""
+
+#: src/app.py:50
 msgid "Show application version"
 msgstr "הצגת גרסת היישום"
 
-#: src/app.py:50
+#: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "הגדרת רמת פירוט ידנית (מ־0 עד 5)"
 
-#: src/app.py:51
+#: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "רמה"
 
-#: src/app.py:52
+#: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "הפעלת מצב מפורט (כינוי חלופי ל־‎--verbosity=5)"
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 
-#: src/app.py:75
+#: src/app.py:74
 #, python-brace-format
-msgid ""
-"{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-"Assuming Verbosity level 4."
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
-"{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5.\n"
-"כנראה שהתכוונת לרמת פירוט 4."
 
-#: src/app.py:154
+#: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 "היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
 
-#: src/app.py:157
+#: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
 msgstr " • <b>GLib</b> (גרסת המפתחים)"
 
-#: src/app.py:165
+#: src/app.py:166
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -274,19 +294,19 @@ msgstr ""
 "התוכניות הבאות חייבות להיות מותקנות <b>על המערכת המארחת</b> כדי שהיישום הזה "
 "יתפקד כראוי אך הן אינן מותקנות במערכת המארחת."
 
-#: src/app.py:172
+#: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
 msgstr " ‎ • <b>GDM</b>‎"
 
-#: src/app.py:178
+#: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
 msgstr " ‎ • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:186
+#: src/app.py:187
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -295,27 +315,27 @@ msgstr ""
 "לחיצה <a href=\"{url}\">כאן</a> תעביר אותך להנחיות איך להתקין את התלויות "
 "האלו במערכת שלך."
 
-#: src/app.py:191
+#: src/app.py:192
 msgid "Missing Dependencies"
 msgstr "חסרות תלויות"
 
-#: src/app.py:226
+#: src/app.py:227
 msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
 
-#: src/app.py:234
+#: src/app.py:235
 msgid "User settings imported"
 msgstr "הגדרות המשתמש ייובאו"
 
-#: src/app.py:238
+#: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
 msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
 
-#: src/app.py:251
+#: src/app.py:252
 msgid "Reset settings successfully"
 msgstr "ההגדרות אופסו בהצלחה"
 
-#: src/app.py:253
+#: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "איפוס ההגדרות נכשל"
 
@@ -771,12 +791,12 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
 
-#: src/settings.py:438
+#: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
 
-#: src/settings.py:445
+#: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"
@@ -822,6 +842,14 @@ msgstr "לצאת?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "יציאה"
+
+#, python-brace-format
+#~ msgid ""
+#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
+#~ "Assuming Verbosity level 4."
+#~ msgstr ""
+#~ "{level} היא רמת פירוט שגויה. הערכים המורשים הם 0 עד 5.\n"
+#~ "כנראה שהתכוונת לרמת פירוט 4."
 
 #~ msgid "Warning:"
 #~ msgstr "אזהרה:"
@@ -885,9 +913,6 @@ msgstr "יציאה"
 
 #~ msgid "Persian"
 #~ msgstr "פרסית"
-
-#~ msgid "Updated Translations:"
-#~ msgstr "תרגומים עדכניים:"
 
 #~ msgid "Dutch"
 #~ msgstr "הולנדית"
