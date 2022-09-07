@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-06 16:26+0500\n"
 "PO-Revision-Date: 2022-09-09 21:21+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -176,12 +176,12 @@ msgstr "Achtergrondkleur van bovenbalk"
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:61
 msgid "Login Manager Settings"
-msgstr "Aanmeldvenstervoorkeuren"
+msgstr "Inlogschermvoorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
+msgstr "Een toepassing om GNOME's inlogscherm (GDM) mee in te stellen"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -189,9 +189,9 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere "
-"achtergrond, een ander cursor- of pictogramthema, pas de "
-"nachtlichtvoorkeuren aan en nog veel meer."
+"Pas de voorkeuren van GDM aan: Kies een ander thema of andere achtergrond, "
+"een ander cursor- of pictogramthema, pas de nachtlichtvoorkeuren aan en nog "
+"veel meer."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
