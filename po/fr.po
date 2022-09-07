@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-06 16:26+0500\n"
-"PO-Revision-Date: 2022-08-28 17:32+0000\n"
+"PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
@@ -202,22 +202,24 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Added support for incomplete shell themes"
-msgstr ""
+msgstr "Ajout du support pour les thèmes de shell incomplets"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
+"Correction : impossible de changer le logo de l’écran de verrouillage avec "
+"la version Flatpak de l’application"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
 msgstr ""
+"Empêche le lancement de l’application lorsque l’argument fourni à l’option "
+"`--verbosité` est invalide"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "Traductions mises à jour :"
+msgstr "Captures d’écran mises à jour"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
@@ -257,6 +259,8 @@ msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"Ajout de nouvelles fenêtres de dialogue pour afficher les erreurs à l’"
+"utilisateur au lieu de paniquer sur le terminal"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
@@ -269,7 +273,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "L’application est désormais DBusActivatable"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -296,6 +300,7 @@ msgstr "Activer le mode tranquille (alias de --verbosité = 0)"
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Niveau de verbosité {level} invalide. Il doit être 0, 5, ou entre les deux."
 
 #: src/app.py:155
 msgid ""
