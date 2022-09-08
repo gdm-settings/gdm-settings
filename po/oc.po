@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-06 16:26+0500\n"
-"PO-Revision-Date: 2022-08-28 17:32+0000\n"
+"PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -194,7 +194,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Added support for incomplete shell themes"
-msgstr ""
+msgstr "Apondon de la presa en carga dels tèma de shell incomplets"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
@@ -206,10 +206,8 @@ msgid ""
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "Traduccions actualizadas :"
+msgstr "Capturas d’ecran actualizadas"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
@@ -257,7 +255,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "L’aplicacion es ara DBusActivatable"
 
 #: src/app.py:50
 msgid "Show application version"
