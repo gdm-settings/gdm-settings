@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-06 16:26+0500\n"
-"PO-Revision-Date: 2022-08-28 17:32+0000\n"
+"PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr "추출된 테마에 상단바 조정 적용 여부"
+msgstr "추출된 테마에 상단바 트윅 적용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
@@ -183,20 +183,20 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Added support for incomplete shell themes"
-msgstr ""
+msgstr "미완성된 쉘 테마 지원 추가"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
+msgstr "수정: Flatpak 버전에서의 로그인 화면 로고를 변경할 수 없었던 문제 수정"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
+msgstr "`--verbosity` 옵션에 제공된 인수가 유효하지 않은 경우 앱 실행 방지"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "Updated screenshots"
-msgstr ""
+msgstr "스크린샷 업데이트"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
@@ -230,7 +230,7 @@ msgstr "설정이 적용된 직후 \"로그아웃\" 상자를 표시합니다"
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
-msgstr ""
+msgstr "터미널에서 오류를 출력하는 대신 사용자에게 오류를 표시하는 새 대화 상자 추가"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
@@ -242,7 +242,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "이 앱은 이제 DBusActivatable 이 적용됩니다"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -268,7 +268,7 @@ msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 #: src/app.py:74
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "{level} 은(는) 잘못된 상세 모드입니다.. 0 부터 5 사이여야 합니다."
 
 #: src/app.py:155
 msgid ""
