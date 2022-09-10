@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-09-10 16:20-0300\n"
+"PO-Revision-Date: 2022-09-10 16:28-0300\n"
 "Last-Translator: YgorJ <ygor-skat@hotmail.com>\n"
 "Language-Team: Brazilian Portuguese <ygor-skat@hotmail.com>\n"
 "Language: pt_BR\n"
@@ -609,11 +609,11 @@ msgstr ""
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Mudar cor do texto"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Cor do texto"
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
