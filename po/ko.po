@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-06 16:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-10 14:39+0500\n"
 "PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -182,23 +182,33 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
+msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid ""
+"Fixed: Extracting default shell theme saved it directly to /usr/local/share "
+"directory instead of /usr/local/share/themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added support for incomplete shell themes"
 msgstr "미완성된 쉘 테마 지원 추가"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr "수정: Flatpak 버전에서의 로그인 화면 로고를 변경할 수 없었던 문제 수정"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
 msgstr "`--verbosity` 옵션에 제공된 인수가 유효하지 않은 경우 앱 실행 방지"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated screenshots"
 msgstr "스크린샷 업데이트"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -206,33 +216,34 @@ msgstr ""
 "경고: v0.6 또는 이전 버전에서 이 버전 또는 이후 버전으로 업데이트하면 일부 설"
 "정이 손실됩니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Updated the info shown on app's software-store page"
 msgstr "앱의 소프트웨어 스토어 페이지에 표시된 정보 업데이트"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG을 따르는 새로운 앱 아이콘"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "Only one instance of the app can be open at a time"
 msgstr "한 번에 하나의 앱 인스턴스만 열 수 있습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "설정을 적용할 때 앱이 더 이상 정지되지 않습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "설정이 적용된 직후 \"로그아웃\" 상자를 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
-msgstr "터미널에서 오류를 출력하는 대신 사용자에게 오류를 표시하는 새 대화 상자 추가"
+msgstr ""
+"터미널에서 오류를 출력하는 대신 사용자에게 오류를 표시하는 새 대화 상자 추가"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -240,7 +251,7 @@ msgstr ""
 "현재 디스플레이 설정을 적용할 때 배율도 적용됩니다(일부 시스템에서는 작동하"
 "지 않을 수 있음)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "The app is now DBusActivatable"
 msgstr "이 앱은 이제 DBusActivatable 이 적용됩니다"
 

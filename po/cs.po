@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 16:26+0500\n"
+"POT-Creation-Date: 2022-09-10 14:39+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -209,65 +209,75 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
+msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
+msgid ""
+"Fixed: Extracting default shell theme saved it directly to /usr/local/share "
+"directory instead of /usr/local/share/themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:80
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 #, fuzzy
 #| msgid "Updated Translations:"
 msgid "Updated screenshots"
 msgstr "Aktualizované překlady:"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 #, fuzzy
 #| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
 msgstr "Aktualizována stránka aplikace v obchodě s aplikacemi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "New App Icon that follows GNOME HIG"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid "Only one instance of the app can be open at a time"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "The app is now DBusActivatable"
 msgstr ""
 
