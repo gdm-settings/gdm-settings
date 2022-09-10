@@ -1,0 +1,4 @@
+export AppDir=$(dirname "$(realpath "$0")")
+export PATH="${AppDir}/usr/bin:${PATH}"
+export XDG_DATA_DIRS="${AppDir}/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+export TEXTDOMAINDIR="${AppDir}"/usr/share/locale:"${TEXTDOMAINDIR:-/usr/share/locale}"

@@ -1,5 +1,5 @@
 project('gdm-settings',
-        version: '1.0-beta.3',
+        version: '1.0-beta.4',
   meson_version: '>= 0.59',
 )
 

@@ -5,7 +5,7 @@ import logging
 from . import env
 from . import utils
 
-ThemesDir                = env.HOST_DATA_DIRS[0]
+ThemesDir                = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
 CustomThemeIdentity      = 'custom-theme'
 GdmUsername              = 'gdm'
 ShellGresourceFile       = None

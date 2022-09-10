@@ -4,7 +4,8 @@ import sys
 import gettext
 import logging
 
-AppDir = __file__.split('@prefix@')[0]  # Directory which contains this app (detected during runtime)
+# AppDir is the directory which contains this app (detected during runtime)
+AppDir = os.path.realpath(__file__).split('@prefix@')[0]
 
 py_install_dir = AppDir + '@py_install_dir@'
 sys.path.insert(1, py_install_dir)

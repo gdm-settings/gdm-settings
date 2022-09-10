@@ -72,6 +72,17 @@
   </screenshots>
 
   <releases>
+    <release version="1.0-beta.4" date="2022-09-10">
+      <description>
+        <ul>
+          <li>Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software</li>
+          <li>
+            Fixed: Extracting default shell theme saved it directly to /usr/local/share
+            directory instead of /usr/local/share/themes
+          </li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0-beta.3" date="2022-09-06">
       <description>
         <ul>
@@ -83,7 +94,7 @@
     </release>
     <release version="1.0-beta.2" date="2022-09-02">
       <description>
-        Updated screenshots
+        <p>Updated screenshots</p>
       </description>
     </release>
     <release version="1.0-beta.1" date="2022-09-01">
