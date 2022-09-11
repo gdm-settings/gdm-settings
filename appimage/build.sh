@@ -54,8 +54,8 @@ if test -f "${BuildDir}/build.ninja"; then
   reconfigure="--reconfigure"
 fi
 
-meson "${BuildDir}" --prefix=/usr ${reconfigure}
-meson install -C "${BuildDir}" --destdir=AppDir
+meson setup --prefix=/usr ${reconfigure} "${BuildDir}"
+meson install --destdir=AppDir -C "${BuildDir}"
 
 
 glib-compile-schemas "${AppDir}"/usr/share/glib-2.0/schemas
