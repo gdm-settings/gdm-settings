@@ -30,8 +30,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.2.0/blueprint-compiler-v0.2.0.tar.bz2
-        sha256: 74bb99161ba30abfc7302d2b3cbc400f05bcbda21ccb01c4b2e6f8f3f9874ca2
+        url: https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.4.0/blueprint-compiler-v0.4.0.tar.bz2
+        sha256: 316309c1527fbc7670aa3c41a7227452d129eedcad944c468ccce76bce70da3f
     cleanup:
       - "*"
 
