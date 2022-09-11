@@ -71,4 +71,6 @@ fi
 echo
 
 
+VERSION_STRING=$("${AppDir}"/usr/bin/gdm-settings --version)
+export VERSION=${VERSION_STRING##* }
 appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
