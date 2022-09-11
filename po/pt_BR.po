@@ -1,55 +1,59 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# Thales Ruan de Souza Silva <thales.i.o.b@gmail.com>, 2022.
 # YgorJ <ygor-skat@hotmail.com>, 2022.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-10 14:39+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-09-10 16:28-0300\n"
+"Last-Translator: YgorJ <ygor-skat@hotmail.com>\n"
+"Language-Team: Brazilian Portuguese <ygor-skat@hotmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 41.0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "Nome do Tema"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "Tipo de Fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "Escolha se o fundo do GDM deve ser uma imagem, cor ou nada."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "Imagem de Fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "O arquivo de imagem para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Cor de fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "A cor para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Se o modo luz noturna está ativado"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -196,7 +200,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated screenshots"
-msgstr ""
+msgstr "Capturas de Tela atualizadas"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid ""
@@ -242,7 +246,7 @@ msgstr ""
 
 #: src/app.py:50
 msgid "Show application version"
-msgstr ""
+msgstr "Mostra versão do aplicativo"
 
 #: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -251,7 +255,7 @@ msgstr ""
 #: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "NÍVEL"
 
 #: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -309,11 +313,11 @@ msgstr ""
 
 #: src/app.py:227
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Configurações recarregadas"
 
 #: src/app.py:235
 msgid "User settings imported"
-msgstr ""
+msgstr "Configurações do usuário importadas"
 
 #: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
@@ -329,7 +333,7 @@ msgstr ""
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Temas"
 
 #: src/blueprints/appearance-page.blp:11
 msgid "Shell"
@@ -337,40 +341,40 @@ msgstr ""
 
 #: src/blueprints/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Ícones"
 
 #: src/blueprints/appearance-page.blp:13
 msgid "Cursor"
-msgstr ""
+msgstr "Cursor"
 
 #: src/blueprints/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Fundo"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
 #: src/blueprints/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
 msgid "Image"
-msgstr ""
+msgstr "Imagem"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 #: src/blueprints/appearance-page.blp:27
 msgid "The image to use as background"
-msgstr ""
+msgstr "Imagem para usar como fundo"
 
 #: src/blueprints/appearance-page.blp:32
 msgid "The color to use as background"
-msgstr ""
+msgstr "Cor para usar como fundo"
 
 #: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
@@ -378,7 +382,7 @@ msgstr ""
 
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Aplicar configurações atuais do display"
 
 #: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc"
@@ -386,15 +390,15 @@ msgstr ""
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: src/blueprints/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Luz Noturna"
 
 #: src/blueprints/display-page.blp:24
 msgid "Enable"
-msgstr ""
+msgstr "Habilitar"
 
 #: src/blueprints/display-page.blp:33
 msgid "Schedule"
@@ -428,11 +432,11 @@ msgstr ""
 
 #: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
-msgstr ""
+msgstr "Fontes"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Fonte"
 
 #: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
@@ -480,7 +484,7 @@ msgstr ""
 
 #: src/blueprints/main-window.blp:11
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: src/blueprints/main-window.blp:12
 msgid "Quit"
@@ -500,7 +504,7 @@ msgstr ""
 
 #: src/blueprints/misc-page.blp:30
 msgid "Enable Logo"
-msgstr ""
+msgstr "Habilitar Logo"
 
 #: src/blueprints/misc-page.blp:31
 msgid "Whether to show a logo below user list"
@@ -620,11 +624,11 @@ msgstr ""
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Mudar cor do texto"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Cor do texto"
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
