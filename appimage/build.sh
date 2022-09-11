@@ -71,4 +71,4 @@ fi
 echo
 
 
-ARCH=x86_64 appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
+appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
