@@ -55,7 +55,6 @@ if test -f "${BuildDir}/build.ninja"; then
 fi
 
 meson "${BuildDir}" --prefix=/usr ${reconfigure}
-meson compile -C "${BuildDir}"
 meson install -C "${BuildDir}" --destdir=AppDir
 
 
