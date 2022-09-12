@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-08-24 12:03+0200\n"
 "Last-Translator: una Jernberg <lunajernberg@gnome.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -567,9 +567,9 @@ msgstr "Inaktiverad"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Omvänd rullning"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Naturlig rullning"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -586,10 +586,6 @@ msgstr "Pekplatta"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tryck för att klicka"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Naturlig rullning"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -863,6 +859,9 @@ msgstr "Logga ut?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Logga ut"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Omvänd rullning"
 
 #~ msgid "Warning:"
 #~ msgstr "Varning:"

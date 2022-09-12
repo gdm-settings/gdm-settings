@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -585,9 +585,9 @@ msgstr "Desactivado"
 msgid "Enabled"
 msgstr "Activado"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Desplazamiento inverso"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Desplazamiento natural"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -604,10 +604,6 @@ msgstr "Panel táctil"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tocar para pulsar"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Desplazamiento natural"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -884,6 +880,9 @@ msgstr "¿Cerrar sesión?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Cerrar sesión"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Desplazamiento inverso"
 
 #, python-brace-format
 #~ msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -567,9 +567,9 @@ msgstr "無効"
 msgid "Enabled"
 msgstr "有効"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "逆スクロール"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "ナチュラルスクロール"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -586,10 +586,6 @@ msgstr "タッチパッド"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "タップでクリック"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "ナチュラルスクロール"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -863,6 +859,9 @@ msgstr "ログアウトしますか？"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "ログアウト"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "逆スクロール"
 
 #, python-brace-format
 #~ msgid ""

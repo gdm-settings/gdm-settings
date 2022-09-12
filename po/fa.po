@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-06-17 02:59+0000\n"
 "Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -549,8 +549,8 @@ msgstr "از کار افتاده"
 msgid "Enabled"
 msgstr "به کار افتاده"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
 msgstr ""
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
@@ -568,10 +568,6 @@ msgstr "صفحهٔ لمسی"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "ضربه برای کلیک"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr ""
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"

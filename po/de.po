@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -589,9 +589,9 @@ msgstr "Deaktiviert"
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Invertierter Bildlauf"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Natürlicher Bildlauf"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -608,10 +608,6 @@ msgstr "Tastfeld"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Antippen zum Klicken"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Natürlicher Bildlauf"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -878,6 +874,9 @@ msgstr "Abmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Abmelden"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Invertierter Bildlauf"
 
 #, python-brace-format
 #~ msgid ""

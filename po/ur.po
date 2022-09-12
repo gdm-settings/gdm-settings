@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-06-22 05:43+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -595,9 +595,9 @@ msgstr "بند"
 msgid "Enabled"
 msgstr "چالو"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "الٹی سکرولِنگ"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "قدرتی سکرولِنگ"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -614,10 +614,6 @@ msgstr "ٹچ پیڈ"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "کلک کیلئے ٹَیپ کریں"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "قدرتی سکرولِنگ"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -894,6 +890,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "الٹی سکرولِنگ"
 
 #~ msgid "Added:"
 #~ msgstr "اضافہ کیا:"

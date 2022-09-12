@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-08-15 05:58+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -577,9 +577,9 @@ msgstr "Tắt"
 msgid "Enabled"
 msgstr "Bật"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Cuộn ngược"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Cuộn tự nhiên (Natural Scrolling)"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -596,10 +596,6 @@ msgstr "Touchpad"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Chạm để click"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Cuộn tự nhiên (Natural Scrolling)"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -872,6 +868,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Cuộn ngược"
 
 #, fuzzy, python-brace-format
 #~| msgid "{level} is an invalid verbosity level. Accepted values are 0 to 5."

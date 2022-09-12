@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -558,9 +558,9 @@ msgstr "끄기"
 msgid "Enabled"
 msgstr "켜기"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "스크롤 방향 뒤바꾸기"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "자연스러운 스크롤"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -577,10 +577,6 @@ msgstr "터치패드"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "터치패드 두드리면 단추 누름으로 취급"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "자연스러운 스크롤"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -856,6 +852,9 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "스크롤 방향 뒤바꾸기"
 
 #, python-brace-format
 #~ msgid ""

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-09-09 21:21+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -574,9 +574,9 @@ msgstr "Desactivat"
 msgid "Enabled"
 msgstr "Activat"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Desfilament inversat"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Desfilament natural"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -593,10 +593,6 @@ msgstr "Pavat tactil"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tocar per clicar"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Desfilament natural"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -870,6 +866,9 @@ msgstr "Se desconnectar ?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Desconnexion"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Desfilament inversat"
 
 #, python-brace-format
 #~ msgid ""

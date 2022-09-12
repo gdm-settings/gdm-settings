@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-09-11 04:16+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -588,8 +588,8 @@ msgstr "Uitgeschakeld"
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
 msgstr "Natuurlijk scrollen"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
@@ -607,10 +607,6 @@ msgstr "Touchpad"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tik om te klikken"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Natuurlijk scrollen"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -885,6 +881,9 @@ msgstr "Afmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Natuurlijk scrollen"
 
 #, python-brace-format
 #~ msgid ""

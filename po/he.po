@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: 2022-09-12 13:21+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -198,8 +198,8 @@ msgid ""
 "Fixed: Extracting default shell theme saved it directly to /usr/local/share "
 "directory instead of /usr/local/share/themes"
 msgstr ""
-"תוקן: חילוץ ערכת עיצוב כברירת מחדל למעטפת שמרה אותו לתיקייה ‎/usr/local/"
-"share במקום לתיקייה ‎/usr/local/share/themes"
+"תוקן: חילוץ ערכת עיצוב כברירת מחדל למעטפת שמרה אותו לתיקייה ‎/usr/local/share "
+"במקום לתיקייה ‎/usr/local/share/themes"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added support for incomplete shell themes"
@@ -567,9 +567,9 @@ msgstr "מושבתת"
 msgid "Enabled"
 msgstr "מופעלת"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "היפוך הגלילה"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "גלילה טבעית"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -586,10 +586,6 @@ msgstr "משטח מגע"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "לגעת כדי ללחוץ"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "גלילה טבעית"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -859,6 +855,9 @@ msgstr "לצאת?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "היפוך הגלילה"
 
 #, python-brace-format
 #~ msgid ""
