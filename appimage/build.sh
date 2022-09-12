@@ -54,9 +54,8 @@ if test -f "${BuildDir}/build.ninja"; then
   reconfigure="--reconfigure"
 fi
 
-meson "${BuildDir}" --prefix=/usr ${reconfigure}
-meson compile -C "${BuildDir}"
-meson install -C "${BuildDir}" --destdir=AppDir
+meson setup --prefix=/usr ${reconfigure} "${BuildDir}"
+meson install --destdir=AppDir -C "${BuildDir}"
 
 
 glib-compile-schemas "${AppDir}"/usr/share/glib-2.0/schemas
@@ -71,4 +70,6 @@ fi
 echo
 
 
-ARCH=x86_64 appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
+VERSION_STRING=$("${AppDir}"/usr/bin/gdm-settings --version)
+export VERSION=${VERSION_STRING##* }
+appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
