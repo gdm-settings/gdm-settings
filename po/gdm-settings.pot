@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-10 14:39+0500\n"
+"POT-Creation-Date: 2022-09-12 23:34+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -540,8 +540,8 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
 msgstr ""
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
@@ -558,10 +558,6 @@ msgstr ""
 
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
-msgstr ""
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
 msgstr ""
 
 #: src/blueprints/pointing-page.blp:57
