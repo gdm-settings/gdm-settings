@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-12 23:34+0500\n"
-"PO-Revision-Date: 2022-09-09 21:21+0000\n"
+"PO-Revision-Date: 2022-09-13 23:48+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -183,13 +183,15 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
-msgstr ""
+msgstr "수정됨: GNOME Software 에 표시되지 않은 버전 1.0-beta.2 의 릴리스 정보"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid ""
 "Fixed: Extracting default shell theme saved it directly to /usr/local/share "
 "directory instead of /usr/local/share/themes"
 msgstr ""
+"수정됨: 기본 셸 테마를 추출하면 /usr/local/share/themes 대신 /usr/local/"
+"share 폴더에 직접 저장되도록 수정됨"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added support for incomplete shell themes"
