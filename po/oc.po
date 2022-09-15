@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-12 23:34+0500\n"
-"PO-Revision-Date: 2022-09-09 21:21+0000\n"
+"PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -195,12 +195,16 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
 msgstr ""
+"Corregit : donadas de version per 1.0-beta.2 s’afichan pas dins GNOME "
+"Software"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid ""
 "Fixed: Extracting default shell theme saved it directly to /usr/local/share "
 "directory instead of /usr/local/share/themes"
 msgstr ""
+"Corregit : extraccion del tèma shell per defaut salvat dirèctament dins usr/"
+"local/share directory instead a la plaça de /usr/local/share/themes"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added support for incomplete shell themes"
@@ -209,11 +213,15 @@ msgstr "Apondon de la presa en carga dels tèma de shell incomplets"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
+"Corregit : cambiament impossibla de logotipe de l’ecran de verrolhatge amb "
+"la version Flatpak de l’aplicacion"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
 msgstr ""
+"Evitar lo lançament de l’aplicacion quand l’argument donat a l’opcion "
+"`--verbosity` es invalid"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated screenshots"
@@ -254,6 +262,8 @@ msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"Apondon de fenèstras novèlas per afichar las errors a l’utilizaire a la "
+"plaça de crear d’error al terminal"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid ""
@@ -291,7 +301,7 @@ msgstr "Activar lo mòde silenciós (alias of --verbosity=0)"
 #: src/app.py:74
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Nivèl de verbositat invalid {level}. Deu èsser 0 o 5, o entre los dos."
 
 #: src/app.py:155
 msgid ""
