@@ -14,7 +14,7 @@
 <div align="center">
   <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest"><img alt="Downloads"
       src="https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total"></a>
-  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation"><img alt="Flatpak Installs"
+  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Install"><img alt="Flatpak Installs"
       src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings"></a>
   <a href="#"><img alt="Code Size"
       src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings"></a>
@@ -24,7 +24,7 @@
 
 <div align="center">
   <h2>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Installation">Install</a>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Install">Install</a>
   </h2>
 </div>
 
