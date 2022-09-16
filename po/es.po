@@ -3,9 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-12 23:34+0500\n"
-"PO-Revision-Date: 2022-09-09 21:21+0000\n"
+"PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
@@ -198,12 +198,17 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
 msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
 msgstr ""
+"Corregido: La información de la versión 1.0-beta.2 no se muestra en GNOME "
+"Software"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
 msgid ""
 "Fixed: Extracting default shell theme saved it directly to /usr/local/share "
 "directory instead of /usr/local/share/themes"
 msgstr ""
+"Corregido: Al extraer el tema predeterminado del shell se guardaba "
+"directamente en el directorio /usr/local/share en lugar de en /usr/local/"
+"share/themes"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added support for incomplete shell themes"
