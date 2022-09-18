@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Eshagh Shahedany <eshagh094@gmail.com>, 2022.
+# Eshagh shahidani <eshagh094@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-12 23:34+0500\n"
-"PO-Revision-Date: 2022-06-17 02:59+0000\n"
-"Last-Translator: Eshagh Shahedany <eshagh094@gmail.com>\n"
+"PO-Revision-Date: 2022-09-19 18:16+0000\n"
+"Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
 "Language: fa\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -28,9 +29,8 @@ msgstr "نوع پس‌زمینه"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr "پس‌زمینه GDM باید یک تصویر، رنگ یا هیچ‌کدام باشد."
+msgstr "پس‌زمینهٔ مدیر ورود گنوم باید یک تصویر، رنگ یا هیچ‌کدام باشد."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -161,9 +161,8 @@ msgstr "تنظیمات مدیر ورود"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-#, fuzzy
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم (GDM)"
+msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم، GDM"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -202,10 +201,8 @@ msgid ""
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "ترجمه‌های به‌روز رسانی شده:"
+msgstr "نماگرفت‌های به‌روز رسانی شده"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid ""
@@ -250,10 +247,8 @@ msgid "The app is now DBusActivatable"
 msgstr ""
 
 #: src/app.py:50
-#, fuzzy
-#| msgid "Command-line option --version"
 msgid "Show application version"
-msgstr "گزینهٔ خط فرمانی ‎--version"
+msgstr "نمایش نگارش برنامه"
 
 #: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -691,26 +686,20 @@ msgid "Choose File"
 msgstr "انتخاب پرونده"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "هیچ‌کدام"
+msgstr "(هیچ‌کدام)"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "انتخاب پرونده"
+msgstr "گزینش"
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
-msgstr ""
+msgstr "لغو"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "انتخاب پرونده"
+msgstr "گزینش تصویر"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -721,8 +710,6 @@ msgid "Homepage"
 msgstr "صفحهٔ خانگی"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
@@ -766,28 +753,22 @@ msgstr ""
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «{path}» استخراج شد"
+msgstr "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «⁨{name}⁩» در «⁨{folder}⁩» استخراج شد"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
 #: src/settings.py:198
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "Backing up default shell theme …"
-msgstr "درحال ذخیره کردن زمینهٔ پیش‌گزیده ..."
+msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
 
 #: src/settings.py:246
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
+msgstr "در حال اعمال تنظیمات GResource برای اوبونتو …"
 
 #: src/settings.py:253
 msgctxt "Command-line output"
