@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-12 23:34+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -190,36 +190,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
-msgstr "修正済み: バージョン 1.0-beta.2 のリリース情報が“GNOME "
-"ソフトウェア”に表示されない不具合"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid ""
-"Fixed: Extracting default shell theme saved it directly to /usr/local/share "
-"directory instead of /usr/local/share/themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added support for incomplete shell themes"
-msgstr "不完全なシェルテーマにも対応"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr "修正済み: Flatpak 版アプリからログイン画面のロゴを変更できない不具合"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr "`--verbosity` "
-"オプションに指定された引数が無効な場合、アプリを起動しないように修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Updated screenshots"
-msgstr "スクリーンショットを更新"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -227,41 +198,58 @@ msgstr ""
 "警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一部の"
 "設定を失います。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "不完全なシェルテーマにも対応"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr "修正済み: Flatpak 版アプリからログイン画面のロゴを変更できない不具合"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+"`--verbosity` オプションに指定された引数が無効な場合、アプリを起動しないよう"
+"に修正"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "ソフトウェアストア内のアプリの紹介ページで表示される情報を更新"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG に準拠した新しいアプリアイコン"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "アプリのインスタンスは同時に1つしか開けないように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "設定適用中にアプリがフリーズしないように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
-msgstr "エラー時にターミナル上で警告を出すのではなく、ダイアログでユーザーに表示する"
+msgstr ""
+"エラー時にターミナル上で警告を出すのではなく、ダイアログでユーザーに表示する"
 "ように修正"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
-msgstr "現在のディスプレイ設定を適応する際に、スケールも適用されるように修正 "
-"(環境によっては動作しない可能性があります)"
+msgstr ""
+"現在のディスプレイ設定を適応する際に、スケールも適用されるように修正 (環境に"
+"よっては動作しない可能性があります)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
 msgstr ""
 
@@ -861,6 +849,15 @@ msgstr "ログアウトしますか？"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "ログアウト"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "修正済み: バージョン 1.0-beta.2 のリリース情報が“GNOME ソフトウェア”に表示"
+#~ "されない不具合"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "スクリーンショットを更新"
 
 #~ msgid "Inverse Scrolling"
 #~ msgstr "逆スクロール"

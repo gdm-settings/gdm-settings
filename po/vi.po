@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-12 23:34+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -187,42 +187,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
-msgstr ""
-"Đã sửa lỗi: Thông tin phát hành cho phiên bản 1.0-beta.2 không được hiển thị "
-"trong GNOME Software"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid ""
-"Fixed: Extracting default shell theme saved it directly to /usr/local/share "
-"directory instead of /usr/local/share/themes"
-msgstr ""
-"Đã sửa lỗi: Shell theme mặc định được xuất thẳng vào thư mục /usr/local/"
-"share thay vì /usr/local/share/themes"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added support for incomplete shell themes"
-msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
-"Flatpak"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Ngăn không cho app khởi động khi tham số cung cấp cho argument `--verbosity` "
-"không hợp lệ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Updated screenshots"
-msgstr "Những hình nền được cập nhật"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -230,29 +195,46 @@ msgstr ""
 "Cảnh báo: Bạn sẽ mất một vài cài đặp sau khi cập nhật từ phiên bản v0.6 hoặc "
 "cũ hơn lên phiên bản này hoặc mới hơn."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+"Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
+"Flatpak"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+"Ngăn không cho app khởi động khi tham số cung cấp cho argument `--verbosity` "
+"không hợp lệ"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr ""
 "Đã cập nhật thông tin trên trang của app trên cửa hàng phần mềm ứng dụng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Icon mới của app theo chuẩn GNOME HIG"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "Mỗi lần chỉ có một phiên của ứng dụng được phép mở"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "Khi áp dụng cài đặt, app không còn bị đơ nữa"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "App hiện một hộp thoại \"Đăng xuất\" ngay sau khi những cài đặt được áp dụng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
@@ -260,7 +242,7 @@ msgstr ""
 "Thêm nhiều hộp thoại mới để hiển thị lỗi cho người dùng thay vì đơ và hiện "
 "lỗi trong terminal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -268,7 +250,7 @@ msgstr ""
 "Khi áp dụng cài đặt màn hình hiện tại, tỷ lệ cũng được áp dụng (có thể không "
 "hoạt động trên một vài hệ thống)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
 msgstr "App hiện có DBusActivatable"
 
@@ -872,6 +854,22 @@ msgstr "Đăng xuất?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "Đã sửa lỗi: Thông tin phát hành cho phiên bản 1.0-beta.2 không được hiển "
+#~ "thị trong GNOME Software"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "Đã sửa lỗi: Shell theme mặc định được xuất thẳng vào thư mục /usr/local/"
+#~ "share thay vì /usr/local/share/themes"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Những hình nền được cập nhật"
 
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Cuộn ngược"

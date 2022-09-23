@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-12 23:34+0500\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
 "PO-Revision-Date: 2022-09-11 04:16+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -197,42 +197,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
-msgstr ""
-"Opgelost: uitgave-informatie van versie 1.0-bèta.2 werd niet getoond in "
-"GNOME Software"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid ""
-"Fixed: Extracting default shell theme saved it directly to /usr/local/share "
-"directory instead of /usr/local/share/themes"
-msgstr ""
-"Opgelost: het standaard Shell-thema werd uitgepakt naar /usr/local/share in "
-"plaats van /usr/local/share/themes"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added support for incomplete shell themes"
-msgstr "Nieuw: ondersteuning voor onvolledige Shell-thema's"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Opgelost: het logo op het aanmeldscherm kon niet worden gewijzigd vanuit de "
-"flatpakversie"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Verbeterd: de toepassing wordt voortaan niet gestart als de "
-"opdrachtregeloptie van ‘--verbosity’ ongeldig is"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Updated screenshots"
-msgstr "Bijgewerkt: schermfoto's"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -240,38 +205,55 @@ msgstr ""
 "Waarschuwing: als u de versie bijwerkt van 0.6 of ouder naar deze of een "
 "nieuwere versie, dan dient u enkele voorkeuren opnieuw in te stellen."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "Nieuw: ondersteuning voor onvolledige Shell-thema's"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+"Opgelost: het logo op het aanmeldscherm kon niet worden gewijzigd vanuit de "
+"flatpakversie"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+"Verbeterd: de toepassing wordt voortaan niet gestart als de "
+"opdrachtregeloptie van ‘--verbosity’ ongeldig is"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "Bijgewerkt: de bijbehorende winkelpagina"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Nieuw: toepassingspictogram op basis van de GNOME-ontwerprichtlijnen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "Nieuw: er kan slechts één venster tegelijk worden geopend"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 "Verbeterd: de toepassing bevriest niet meer na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Nieuw: er wordt voortaan een afmeldvenster getoond na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 "Nieuw: dialoogvensters met foutmeldingen in plaats van terminalmeldingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -279,7 +261,7 @@ msgstr ""
 "Wanneer de huidige weergave-instellingen worden toegepast wordt ook schaling "
 "toegepast (werkt mogelijk niet op alle systemen)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
 msgstr "Nieuw: de toepassing voortaan aan te roepen met behulp van DBus"
 
@@ -881,6 +863,22 @@ msgstr "Afmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "Opgelost: uitgave-informatie van versie 1.0-bèta.2 werd niet getoond in "
+#~ "GNOME Software"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "Opgelost: het standaard Shell-thema werd uitgepakt naar /usr/local/share "
+#~ "in plaats van /usr/local/share/themes"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Bijgewerkt: schermfoto's"
 
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Natuurlijk scrollen"
