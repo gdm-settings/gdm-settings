@@ -72,37 +72,15 @@
   </screenshots>
 
   <releases>
-    <release version="1.0-beta.4" date="2022-09-10">
-      <description>
-        <ul>
-          <li>Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software</li>
-          <li>
-            Fixed: Extracting default shell theme saved it directly to /usr/local/share
-            directory instead of /usr/local/share/themes
-          </li>
-        </ul>
-      </description>
-    </release>
-    <release version="1.0-beta.3" date="2022-09-06">
-      <description>
-        <ul>
-          <li>Added support for incomplete shell themes</li>
-          <li>Fixed: Cannot change login screen logo from Flatpak version of the app</li>
-          <li>Prevent app launch when argument provided to `--verbosity` option is invalid</li>
-        </ul>
-      </description>
-    </release>
-    <release version="1.0-beta.2" date="2022-09-02">
-      <description>
-        <p>Updated screenshots</p>
-      </description>
-    </release>
-    <release version="1.0-beta.1" date="2022-09-01">
+    <release version="1.0" date="2022-09-23">
       <description>
         <p>
           Warning: You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
         </p>
         <ul>
+          <li>Added support for incomplete shell themes</li>
+          <li>Fixed: Cannot change login screen logo from Flatpak version of the app</li>
+          <li>Prevent app launch when argument provided to `--verbosity` option is invalid</li>
           <li>Updated the info shown on app's software-store page</li>
           <li>New App Icon that follows GNOME HIG</li>
           <li>Only one instance of the app can be open at a time</li>
