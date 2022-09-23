@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-09-06 10:55+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"PO-Revision-Date: 2022-09-11 04:16+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -176,12 +176,12 @@ msgstr "Achtergrondkleur van bovenbalk"
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:61
 msgid "Login Manager Settings"
-msgstr "Aanmeldvenstervoorkeuren"
+msgstr "Inlogschermvoorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Een toepassing om GNOME's aanmeldvenster (GDM) mee in te stellen"
+msgstr "Een toepassing om GNOME's inlogscherm (GDM) mee in te stellen"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -189,29 +189,15 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Pas GDM's voorkeuren aan: kies een ander globaal thema of andere "
-"achtergrond, een ander cursor- of pictogramthema, pas de "
-"nachtlichtvoorkeuren aan en nog veel meer."
+"Pas de voorkeuren van GDM aan: Kies een ander thema of andere achtergrond, "
+"een ander cursor- of pictogramthema, pas de nachtlichtvoorkeuren aan en nog "
+"veel meer."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated Translations:"
-msgid "Updated screenshots"
-msgstr "Bijgewerkte vertalingen:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -219,37 +205,55 @@ msgstr ""
 "Waarschuwing: als u de versie bijwerkt van 0.6 of ouder naar deze of een "
 "nieuwere versie, dan dient u enkele voorkeuren opnieuw in te stellen."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "Nieuw: ondersteuning voor onvolledige Shell-thema's"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+"Opgelost: het logo op het aanmeldscherm kon niet worden gewijzigd vanuit de "
+"flatpakversie"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+"Verbeterd: de toepassing wordt voortaan niet gestart als de "
+"opdrachtregeloptie van ‘--verbosity’ ongeldig is"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "Bijgewerkt: de bijbehorende winkelpagina"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Nieuw: toepassingspictogram op basis van de GNOME-ontwerprichtlijnen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "Nieuw: er kan slechts één venster tegelijk worden geopend"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr ""
 "Verbeterd: de toepassing bevriest niet meer na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Nieuw: er wordt voortaan een afmeldvenster getoond na het toepassen van de "
 "voorkeuren"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"Nieuw: dialoogvensters met foutmeldingen in plaats van terminalmeldingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -257,9 +261,9 @@ msgstr ""
 "Wanneer de huidige weergave-instellingen worden toegepast wordt ook schaling "
 "toegepast (werkt mogelijk niet op alle systemen)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "Nieuw: de toepassing voortaan aan te roepen met behulp van DBus"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -286,6 +290,8 @@ msgstr "Stille modus inschakelen (alias --verbosity=0)"
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Ongeldig foutopsporingsniveau: {level}. Het niveau dient 0, 5 of "
+"daartussenin te liggen."
 
 #: src/app.py:155
 msgid ""
@@ -564,8 +570,8 @@ msgstr "Uitgeschakeld"
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
 msgstr "Natuurlijk scrollen"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
@@ -583,10 +589,6 @@ msgstr "Touchpad"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tik om te klikken"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Natuurlijk scrollen"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -861,6 +863,25 @@ msgstr "Afmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "Opgelost: uitgave-informatie van versie 1.0-bèta.2 werd niet getoond in "
+#~ "GNOME Software"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "Opgelost: het standaard Shell-thema werd uitgepakt naar /usr/local/share "
+#~ "in plaats van /usr/local/share/themes"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Bijgewerkt: schermfoto's"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Natuurlijk scrollen"
 
 #, python-brace-format
 #~ msgid ""

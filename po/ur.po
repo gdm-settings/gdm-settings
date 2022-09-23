@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-06-22 05:43+0000\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -92,58 +92,40 @@ msgid "The start time's hour"
 msgstr "شروع ہونے والے وقت کے گھنٹے"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"جب \"night-light-schedule-automatic\" بند ہو تو اس کو شروع ہونے والے گھنٹوں "
-"کے طور پر استعمال کریں-"
+"جب \"schedule-automatic\" بند ہو تو اس کو شروع ہونے والے گھنٹوں کے طور پر "
+"استعمال کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "شروع ہونے والے وقت کے منٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"جب \"night-light-schedule-automatic\" بند ہو تو اس کو شروع ہونے والے مِنٹوں "
-"کے طور پر استعمال کریں-"
+"جب \"schedule-automatic\" بند ہو تو اس کو شروع ہونے والے مِنٹوں کے طور پر "
+"استعمال کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "ختم ہونے والے وقت کے منٹ"
+msgstr "ختم ہونے والے وقت کے گھنٹے"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"جب \"night-light-schedule-automatic\" بند ہو تو اس کو ختم ہونے والے مِنٹوں کے "
-"طور پر استعمال کریں-"
+"جب \"schedule-automatic\" بند ہو تو اس کو ختم ہونے والے گھنٹوں کے طور پر "
+"استعمال کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "ختم ہونے والے وقت کے منٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"جب \"night-light-schedule-automatic\" بند ہو تو اس کو ختم ہونے والے مِنٹوں کے "
-"طور پر استعمال کریں-"
+"جب \"schedule-automatic\" بند ہو تو اس کو ختم ہونے والے مِنٹوں کے طور پر "
+"استعمال کریں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -212,75 +194,74 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated Translations:"
-msgid "Updated screenshots"
-msgstr "نئے ترجمے:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
+"وارننگ: v0.6 یا اس سے پہلے والے کسی ورژن سے اس یا اس سے نئے ورژن پر اپڈیٹ "
+"کرنے کے بعد آپ کی کچھ سیٹنگز ضائع ہو جائیں گی۔"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-#, fuzzy
-#| msgid "Updated the app store page of app"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "نامکمل شیل تھیمز کی سپورٹ شامل کی"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+"ٹھیک کیا: ایپ کے فلَیٹپَیک ورژن میں لاگن سکرین کا لوگو تبدیل نہیں کیا جا سکتا "
+"تھا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+"اب جب `--verbosity` آپشن کا آرگیومنٹ ٹھیک نہ ہو تو ایپلیکیشن اوپن نہیں ہو گی"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "ایپلیکیشن کا ایپ سٹور والا صفحہ اپڈیٹ کیا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "نیا ایپ آئیکن جو GNOME کی HIG کو فالو کرتا ہے"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "بیک وقت ایپلیکیشن کی صرف ایک انسٹانس اوپن ہو سکتی ہے"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "سیٹنگز اپلائی کرتے وقت اب ایپلیکیشن فریز نہیں ہوتی"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
+msgstr "ایپلیکیشن اب سیٹنگز اپلائی کرنے کے بعد \"لاگ آئوٹ\" ڈائیلاگ دکھاتی ہے"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"ٹرمینل پر پینک کرنے کی بجائے ایرر شو کرنے کیلئے نئے ڈائیلاگ ایڈ کیے ہیں"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
+"ڈسپلے کی موجودہ سیٹنگز اپلائی کرتے وقت اب سکیلنگ بھی اپلائی ہوتی ہے (کچھ "
+"سسٹمز پر کام نہیں کرے گی)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "ایپلیکیشن اب ڈی بس ایکٹیویٹیبل ہے"
 
 #: src/app.py:50
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "اَیپلی کیشن کا ورژن دکھائیں"
 
 #: src/app.py:51
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "وربوسِٹی کا لیوَل سیٹ کریں (0 سے 5 تک)"
 
@@ -290,34 +271,30 @@ msgid "LEVEL"
 msgstr "لیوَل"
 
 #: src/app.py:53
-#, fuzzy
-#| msgctxt "Description of --verbose option"
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 سیٹ کریں)"
+msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 کا ایلیئس ہے)"
 
 #: src/app.py:54
-#, fuzzy
-#| msgctxt "Description of --quiet option"
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 سیٹ کریں)"
+msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 کا ایلیئس ہے)"
 
 #: src/app.py:74
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"وربوسٹی لیول {level} قابل قبول نہیں ہے۔ 0، 5 یا پھر اس کے درمیان ہونا چاہیئے۔"
 
 #: src/app.py:155
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"اس ایپلیکیشن کو صحیح طرح سے کام کرنے کیلئے مندرجہ ذیل سوفٹ ویئر کی ضرورت ہے۔"
 
 #: src/app.py:158
 msgctxt "Missing Dependency"
 msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
+msgstr " • <b>GLib</b> (ڈیویلپر ایڈیشن)"
 
 #: src/app.py:166
 msgid ""
@@ -325,16 +302,18 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"اس ایپلیکیشن کو صحیح کام کرنے کیلئے <b>ہوسٹ سسٹم پر</b> مندرجہ ذیل سوفٹ ویئر "
+"انسٹال ہونے کی ضرورت ہے لیکن وہ ہوسٹ سسٹم پر انسٹال نہیں ہے۔"
 
 #: src/app.py:173
 msgctxt "Missing Dependency"
 msgid " • <b>GDM</b>"
-msgstr ""
+msgstr " • <b>GDM</b>"
 
 #: src/app.py:179
 msgctxt "Missing Dependency"
 msgid " • <b>Polkit</b>"
-msgstr ""
+msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -344,10 +323,12 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a href="
+"\"{url}\">یہاں</a> کلک کریں۔"
 
 #: src/app.py:192
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "غیر حاضر ڈیپینڈنسیز"
 
 #: src/app.py:227
 msgid "Settings reloaded"
@@ -580,9 +561,9 @@ msgstr "بند"
 msgid "Enabled"
 msgstr "چالو"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "الٹی سکرولِنگ"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "قدرتی سکرولِنگ"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -599,10 +580,6 @@ msgstr "ٹچ پیڈ"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "کلک کیلئے ٹَیپ کریں"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "قدرتی سکرولِنگ"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -725,26 +702,20 @@ msgid "Choose File"
 msgstr "فائل چُنیں"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "کچھ نہیں"
+msgstr "(کچھ نہیں)"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "فائل چُنیں"
+msgstr "انتخاب کریں"
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
 msgstr "کینسل"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "فائل چُنیں"
+msgstr "تصویر کا انتخاب کریں"
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
@@ -755,8 +726,6 @@ msgid "Homepage"
 msgstr "ہوم پیج"
 
 #: src/dialogs.py:19
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
@@ -764,7 +733,7 @@ msgstr "مظہر حسین"
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "تھیلس بِنڈا"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -791,51 +760,53 @@ msgid ""
 "2. Change some settings there.\n"
 "3. Apply."
 msgstr ""
+"موجودہ ڈسپلے سیٹنگز کو اپلائی کرنے کے لئے فائیل '$XDG_CONFIG_HOME/monitors."
+"xml' کی ضرورت ہے لیکن وہ موجود نہیں ہے۔\n"
+"\n"
+"اس فائیل کو آٹومیٹیکلی کریئیٹ کرنے لئے،\n"
+"\n"
+"1۔ سسٹم سیٹنگز کے 'ڈسپلے' پینل میں جائیں۔\n"
+"2۔ وہاں کچھ سیٹنگز تبدیل کریں۔\n"
+"3۔ اپلائی کریں۔"
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "مانیٹر کی سیٹنگز نہیں ملیں"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
-"ڈیفالٹ شیل تھیم '{path}' میں 'default-extracted' کے نام سے سیو ہو گیا ہے"
+msgstr "ڈیفالٹ شیل تھیم '{folder}' میں '{name}' کے نام سے سیو ہو گیا ہے"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
 #: src/settings.py:198
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "Backing up default shell theme …"
-msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے ۔۔۔"
+msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
 #: src/settings.py:246
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
+msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
 #: src/settings.py:253
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
 #: src/settings.py:446
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
 #: src/settings.py:453
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
 #: src/window.py:96
 msgid "Appearance"
@@ -871,14 +842,34 @@ msgstr ""
 #: src/window.py:135
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
 
 #: src/window.py:138
 msgid "Log Out?"
-msgstr ""
+msgstr "لاگ آؤٹ کریں؟"
 
 #: src/window.py:147
 msgid "Log Out"
-msgstr ""
+msgstr "لاگ آؤٹ"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "درست کیا: ورژن 1.0-beta.2 کی ریلیز اِنفارمیشن GNOME Software میں ظاہر نہیں "
+#~ "تھی"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "درست کیا: ڈیفالٹ شیل تھیم کو ایکسٹریکٹ کرنے پر وہ /usr/local/share/themes "
+#~ "کی بجائے ڈائریکٹ /usr/local/share میں سیو ہوتا تھا"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "نئے سکرین شاٹ"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "الٹی سکرولِنگ"
 
 #~ msgid "Added:"
 #~ msgstr "اضافہ کیا:"

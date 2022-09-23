@@ -1,59 +1,59 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Eshagh Shahedany <eshagh094@gmail.com>, 2022.
-# Eshagh shahidani <eshagh094@gmail.com>, 2022.
+# Thales Ruan de Souza Silva <thales.i.o.b@gmail.com>, 2022.
+# YgorJ <ygor-skat@hotmail.com>, 2022.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-23 16:24+0500\n"
-"PO-Revision-Date: 2022-09-19 18:16+0000\n"
-"Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
-"Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
-"language-names/fa/>\n"
-"Language: fa\n"
+"PO-Revision-Date: 2022-09-10 16:28-0300\n"
+"Last-Translator: YgorJ <ygor-skat@hotmail.com>\n"
+"Language-Team: Brazilian Portuguese <ygor-skat@hotmail.com>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 4.14.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 41.0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr "نام زمینه"
+msgstr "Nome do Tema"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr "نوع پس‌زمینه"
+msgstr "Tipo de Fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr "پس‌زمینهٔ مدیر ورود گنوم باید یک تصویر، رنگ یا هیچ‌کدام باشد."
+msgstr "Escolha se o fundo do GDM deve ser uma imagem, cor ou nada."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr "تصویر پس‌زمینه"
+msgstr "Imagem de Fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
+msgstr "O arquivo de imagem para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr "رنگ پس‌زمینه"
+msgstr "Cor de fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr "رنگی که به عنوان پس‌زمینه GDM استفاده می‌شود"
+msgstr "A cor para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "اگر حالت نور شب به کار افتاده باشد"
+msgstr "Se o modo luz noturna está ativado"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -116,7 +116,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr "سرعت نشانگر"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -143,7 +143,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr "رنگ متن نوار بالا"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
@@ -151,18 +151,18 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr "رنگ پس‌زمینهٔ نوار بالا"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:61
 msgid "Login Manager Settings"
-msgstr "تنظیمات مدیر ورود"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم، GDM"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -170,12 +170,10 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"تغییرات تنظیمات GDM؛ اِعمال زمینه و پس‌زمینه، تغییر زمینهٔ اشاره‌گر، زمینه نقشک "
-"و تنظیمات نور شب، و همینطور چیزهایی دیگر."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
-msgstr "مظهر حسین"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
@@ -234,7 +232,7 @@ msgstr ""
 
 #: src/app.py:50
 msgid "Show application version"
-msgstr "نمایش نگارش برنامه"
+msgstr "Mostra versão do aplicativo"
 
 #: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -243,7 +241,7 @@ msgstr ""
 #: src/app.py:52
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "NÍVEL"
 
 #: src/app.py:53
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -301,218 +299,218 @@ msgstr ""
 
 #: src/app.py:227
 msgid "Settings reloaded"
-msgstr "تنظیمات مجدداً بارگزاری شد"
+msgstr "Configurações recarregadas"
 
 #: src/app.py:235
 msgid "User settings imported"
-msgstr "تنظیمات کاربر درون‌ریزی شد"
+msgstr "Configurações do usuário importadas"
 
 #: src/app.py:239
 msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
+msgstr ""
 
 #: src/app.py:252
 msgid "Reset settings successfully"
-msgstr "تنظیمات با موفّقیت بازنشانی شدند"
+msgstr ""
 
 #: src/app.py:254
 msgid "Failed to reset settings"
-msgstr "بازنشانی تنظیمات شکست خورد"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
-msgstr "زمینه‌ها"
+msgstr "Temas"
 
 #: src/blueprints/appearance-page.blp:11
 msgid "Shell"
-msgstr "پوسته"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:12
 msgid "Icons"
-msgstr "نقشک‌ها"
+msgstr "Ícones"
 
 #: src/blueprints/appearance-page.blp:13
 msgid "Cursor"
-msgstr "مکان‌نما"
+msgstr "Cursor"
 
 #: src/blueprints/appearance-page.blp:17
 msgid "Background"
-msgstr "پس‌زمینه"
+msgstr "Fundo"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Type"
-msgstr "نوع"
+msgstr "Tipo"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
 #: src/blueprints/fonts-page.blp:35
 msgid "None"
-msgstr "هیچ‌کدام"
+msgstr "None"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
 msgid "Image"
-msgstr "تصویر"
+msgstr "Imagem"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
 msgid "Color"
-msgstr "رنگ"
+msgstr "Cor"
 
 #: src/blueprints/appearance-page.blp:27
 msgid "The image to use as background"
-msgstr "تصویری که به عنوان پس‌زمینه استفاده می‌شود"
+msgstr "Imagem para usar como fundo"
 
 #: src/blueprints/appearance-page.blp:32
 msgid "The color to use as background"
-msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
+msgstr "Cor para usar como fundo"
 
 #: src/blueprints/display-page.blp:9 src/window.py:101
 msgid "Display"
-msgstr "نمایشگر"
+msgstr ""
 
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
-msgstr "اِعمال تنظیمات نمایشگر کنونی"
+msgstr "Aplicar configurações atuais do display"
 
 #: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
+msgstr ""
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
-msgstr "اِعمال"
+msgstr "Aplicar"
 
 #: src/blueprints/display-page.blp:21
 msgid "Night Light"
-msgstr "نور شب"
+msgstr "Luz Noturna"
 
 #: src/blueprints/display-page.blp:24
 msgid "Enable"
-msgstr "به کار انداختن"
+msgstr "Habilitar"
 
 #: src/blueprints/display-page.blp:33
 msgid "Schedule"
-msgstr "زمان‌بندی"
+msgstr ""
 
 #: src/blueprints/display-page.blp:34
 msgid "Sunset to Sunrise"
-msgstr "غروب تا طلوع"
+msgstr ""
 
 #: src/blueprints/display-page.blp:34
 msgid "Manual Schedule"
-msgstr "زمان‌بندی دستی"
+msgstr ""
 
 #: src/blueprints/display-page.blp:38
 msgid "Times"
-msgstr "زمان‌ها"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr "از"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
 msgid "To"
-msgstr "تا"
+msgstr ""
 
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
-msgstr "دمای رنگ"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:9 src/window.py:97
 msgid "Fonts"
-msgstr "قلم‌ها"
+msgstr "Fontes"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
-msgstr "قلم"
+msgstr "Fonte"
 
 #: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr "حذف لبه‌های ناصاف"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Standard"
-msgstr "استاندارد"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:24
 msgid "Subpixel"
-msgstr "زیرپیکسل"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
-msgstr "راهنمایی"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Full"
-msgstr "کامل"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:33
 msgid "Medium"
-msgstr "متوسّط"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Slight"
-msgstr "خفیف"
+msgstr ""
 
 #: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr "ضریب مقیاس"
+msgstr ""
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr "نوسازی"
+msgstr ""
 
 #: src/blueprints/main-window.blp:7
 msgid "Import user settings"
-msgstr "درون‌ریزی تنظیمات کاربر"
+msgstr ""
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr "بازنشانی تنظیمات"
+msgstr ""
 
 #: src/blueprints/main-window.blp:11
 msgid "About"
-msgstr "درباره"
+msgstr "Sobre"
 
 #: src/blueprints/main-window.blp:12
 msgid "Quit"
-msgstr "خروج"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:9 src/window.py:102
 msgid "Miscellaneous"
-msgstr "متفرقه"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "از کار انداختن دکمه‌های شروع مجدد"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:21
 msgid "Disable User List"
-msgstr "از کار انداختن فهرست کاربران"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:30
 msgid "Enable Logo"
-msgstr "به کار انداختن لوگو"
+msgstr "Habilitar Logo"
 
 #: src/blueprints/misc-page.blp:31
 msgid "Whether to show a logo below user list"
-msgstr "اینکه یک لوگو در پایین فهرست کاربران نمایش داده شود"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:40
 msgid "Logo"
-msgstr "لوگو"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:41
 msgid "The image to show below user list"
-msgstr "تصویری که در پایین فهرست کاربران نمایش داده می‌شود"
+msgstr ""
 
 #: src/blueprints/misc-page.blp:46
 msgid "Welcome Message"
-msgstr "پیام خوشامدگویی"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
-msgstr "موشی"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:12
 msgid "Pointer Acceleration"
@@ -520,15 +518,15 @@ msgstr ""
 
 #: src/blueprints/pointing-page.blp:14
 msgid "Automatic"
-msgstr "خودکار"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:15
 msgid "Disabled"
-msgstr "از کار افتاده"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:16
 msgid "Enabled"
-msgstr "به کار افتاده"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
 msgid "Natural Scrolling"
@@ -540,15 +538,15 @@ msgstr ""
 
 #: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
 msgid "Pointer Speed"
-msgstr "سرعت نشانگر"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:39
 msgid "Touchpad"
-msgstr "صفحهٔ لمسی"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
-msgstr "ضربه برای کلیک"
+msgstr ""
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -564,24 +562,23 @@ msgstr ""
 
 #: src/blueprints/sound-page.blp:9 src/window.py:99
 msgid "Sound"
-msgstr "صدا"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
-msgstr "زمینه"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "بیش‌تقویت"
+msgstr ""
 
-# در این ترجمه از نویسهٔ LRM استفاده شده است
 #: src/blueprints/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "اجازه به افزایش صدا بیش‌تر از ‎۱۰۰٪"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:24
 msgid "Event Sounds"
-msgstr "صدای رویدادها"
+msgstr ""
 
 #: src/blueprints/sound-page.blp:33
 msgid "Input Feedback Sounds"
@@ -589,116 +586,116 @@ msgstr ""
 
 #: src/blueprints/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "شامل سیخونک‌های نوار بالا"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:19
 msgid "Extract default shell theme"
-msgstr "استخراج زمینهٔ پیش‌گزیدهٔ پوسته"
+msgstr ""
 
 #: src/blueprints/tools-page.blp:22
 msgid "Extract"
-msgstr "استخراج"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr "سیخونک‌ها"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr "تغییر رنگ متن"
+msgstr "Mudar cor do texto"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr "رنگ متن"
+msgstr "Cor do texto"
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "رنگ متن درون نوار بالا"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr "تغییر رنگ پس‌زمینه"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "رنگ پس‌زمینهٔ نوار بالا"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr "از کار انداختن پیکان‌ها"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
-msgstr "از کار انداختن گوشه‌های گرد"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:71
 msgid "Clock"
-msgstr "ساعت"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:74
 msgid "Show Weekday"
-msgstr "نمایش روز هفته"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:83
 msgid "Show Seconds"
-msgstr "نمایش ثانیه"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:92
 msgid "Time Format"
-msgstr "قالب زمان"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "AM/PM"
-msgstr "صبح/عصر"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "24 Hours"
-msgstr "۲۴ ساعتی"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:98
 msgid "Power"
-msgstr "انرژی"
+msgstr ""
 
 #: src/blueprints/top-bar-page.blp:101
 msgid "Show battery percentage"
-msgstr "نمایش درصد باتری"
+msgstr ""
 
 #: src/common_widgets.py:20
 msgid "Choose File"
-msgstr "انتخاب پرونده"
+msgstr ""
 
 #: src/common_widgets.py:26
 msgid "(None)"
-msgstr "(هیچ‌کدام)"
+msgstr ""
 
 #: src/common_widgets.py:127
 msgid "Choose"
-msgstr "گزینش"
+msgstr ""
 
 #: src/common_widgets.py:128 src/window.py:149
 msgid "Cancel"
-msgstr "لغو"
+msgstr ""
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
-msgstr "گزینش تصویر"
+msgstr ""
 
 #: src/dialogs.py:15
 msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
+msgstr ""
 
 #: src/dialogs.py:16
 msgid "Homepage"
-msgstr "صفحهٔ خانگی"
+msgstr ""
 
 #: src/dialogs.py:19
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "مظهر حسین"
+msgstr ""
 
 #: src/dialogs.py:21
 msgctxt "Name of Designer"
@@ -709,15 +706,15 @@ msgstr ""
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
-msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
+msgstr ""
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
-msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
+msgstr ""
 
 #: src/pages/display.py:83
 msgid "Failed to apply current display settings"
-msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
+msgstr ""
 
 #: src/pages/display.py:88
 msgid ""
@@ -735,26 +732,25 @@ msgstr ""
 msgid "Monitor Settings Not Found"
 msgstr ""
 
-# در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «⁨{name}⁩» در «⁨{folder}⁩» استخراج شد"
+msgstr ""
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
-msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
+msgstr ""
 
 #: src/settings.py:198
 msgid "Backing up default shell theme …"
-msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
+msgstr ""
 
 #: src/settings.py:246
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "در حال اعمال تنظیمات GResource برای اوبونتو …"
+msgstr ""
 
 #: src/settings.py:253
 msgctxt "Command-line output"
@@ -773,27 +769,27 @@ msgstr ""
 
 #: src/window.py:96
 msgid "Appearance"
-msgstr "ظاهر"
+msgstr ""
 
 #: src/window.py:98
 msgid "Top Bar"
-msgstr "نوار بالا"
+msgstr ""
 
 #: src/window.py:100
 msgid "Mouse & Touchpad"
-msgstr "موشی و صفحه‌لمسی"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
-msgstr "ابزارها"
+msgstr ""
 
 #: src/window.py:122
 msgid "Settings applied successfully"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr ""
 
 #: src/window.py:126
 msgid "Failed to apply settings"
-msgstr "اِعمال تنظیمات شکست خورد"
+msgstr ""
 
 #: src/window.py:129
 msgid ""
@@ -814,135 +810,4 @@ msgid "Log Out"
 msgstr ""
 
 #~ msgid "Updated screenshots"
-#~ msgstr "نماگرفت‌های به‌روز رسانی شده"
-
-#~ msgid "Added:"
-#~ msgstr "اضافه شده:"
-
-#~ msgid "Support for verbose/quiet mode"
-#~ msgstr "پشتیبانی از حالت پُر حرف و ساکت"
-
-#~ msgid "Support for setting manual verbosity level"
-#~ msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
-
-#~ msgid ""
-#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
-#~ msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
-
-#~ msgid "Command-line option --version"
-#~ msgstr "گزینهٔ خط فرمانی ‎--version"
-
-#~ msgid "Wider application window on first launch"
-#~ msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
-
-#~ msgid "Fixed:"
-#~ msgstr "برطرف شده:"
-
-#, fuzzy
-#~| msgid "Welcome message could not contain single qoutes"
-#~ msgid "Welcome message could not contain single quotes"
-#~ msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
-
-#~ msgid ""
-#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-#~ msgstr ""
-#~ "مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
-#~ "فدورا)"
-
-#~ msgid ""
-#~ "Maximized or big application window looked bad (content was much smaller "
-#~ "than the window)"
-#~ msgstr ""
-#~ "پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از "
-#~ "پنجره بود)"
-
-#~ msgid ""
-#~ "Showed wrong destination directory/folder path while extracting default "
-#~ "shell theme"
-#~ msgstr ""
-#~ "هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان "
-#~ "می‌داد"
-
-#~ msgid ""
-#~ "Clicking 'Apply' did nothing if selected background image was deleted "
-#~ "before applying"
-#~ msgstr ""
-#~ "اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» "
-#~ "کاری انجام نمی‌داد"
-
-#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-#~ msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
-
-#~ msgid "New Translations:"
-#~ msgstr "ترجمه‌های جدید:"
-
-#~ msgid "French"
-#~ msgstr "فرانسوی"
-
-#~ msgid "Hebrew"
-#~ msgstr "عبری"
-
-#~ msgid "Persian"
-#~ msgstr "فارسی"
-
-#~ msgid "German"
-#~ msgstr "آلمانی"
-
-#~ msgid "Occitan"
-#~ msgstr "اکسیتانی"
-
-#~ msgid "Spanish"
-#~ msgstr "اسپانیایی"
-
-#~ msgid "Urdu"
-#~ msgstr "اُردو"
-
-#, fuzzy
-#~ msgid "Shell Theme"
-#~ msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
-
-#, fuzzy
-#~| msgid "Failed to extract default theme"
-#~ msgid "What to overlay on top of the default theme?"
-#~ msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
-
-#~ msgid "Images"
-#~ msgstr "تصاویر"
-
-#~ msgid "Added: Support for Ubuntu"
-#~ msgstr "اضافه شده: پشتیبانی از اوبونتو"
-
-#~ msgid "Fixed: Could not apply settings on some systems"
-#~ msgstr "برطرف شده: اِعمال نشدن تنظیمات در بعضی سامانه‌ها"
-
-#~ msgid ""
-#~ "Fixed: Could not change background-image/wallpaper if language is not "
-#~ "English"
-#~ msgstr ""
-#~ "برطرف شده: تغییر نکردن تصویر پس‌زمینه/کاغذ دیواری اگر زبان انگلیسی نباشد"
-
-#~ msgid "Fixed: A fatal bug"
-#~ msgstr "برطرف شده: یک مشکل مهلک"
-
-#~ msgid "Mouse Settings"
-#~ msgstr "تنظیمات موشی"
-
-#~ msgid "Flatpak Support"
-#~ msgstr "پشتیبانی فلت‌پک"
-
-#~ msgid "Improved:"
-#~ msgstr "بهبود یافته:"
-
-#~ msgid "Support for Right-to-Left Languages"
-#~ msgstr "پشتیبانی از زبان‌های راست‌به‌چپ"
-
-#~ msgid "More Text got Translated"
-#~ msgstr "متن‌های بیشتری ترجمه شدند"
-
-# در این رشته از نویسهٔ LRM استفاده شده است
-#~ msgid ""
-#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
-#~ "extracted'"
-#~ msgstr ""
-#~ "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «‎/usr/share/themes» "
-#~ "استخراج شد"
+#~ msgstr "Capturas de Tela atualizadas"

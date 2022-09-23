@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-08-28 17:32+0000\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"PO-Revision-Date: 2022-09-13 23:48+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr "추출된 테마에 상단바 조정 적용 여부"
+msgstr "추출된 테마에 상단바 트윅 적용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
@@ -181,19 +181,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated screenshots"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -201,33 +189,47 @@ msgstr ""
 "경고: v0.6 또는 이전 버전에서 이 버전 또는 이후 버전으로 업데이트하면 일부 설"
 "정이 손실됩니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "미완성된 쉘 테마 지원 추가"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr "수정: Flatpak 버전에서의 로그인 화면 로고를 변경할 수 없었던 문제 수정"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr "`--verbosity` 옵션에 제공된 인수가 유효하지 않은 경우 앱 실행 방지"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "앱의 소프트웨어 스토어 페이지에 표시된 정보 업데이트"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "GNOME HIG을 따르는 새로운 앱 아이콘"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "한 번에 하나의 앱 인스턴스만 열 수 있습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "설정을 적용할 때 앱이 더 이상 정지되지 않습니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "설정이 적용된 직후 \"로그아웃\" 상자를 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"터미널에서 오류를 출력하는 대신 사용자에게 오류를 표시하는 새 대화 상자 추가"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
@@ -235,9 +237,9 @@ msgstr ""
 "현재 디스플레이 설정을 적용할 때 배율도 적용됩니다(일부 시스템에서는 작동하"
 "지 않을 수 있음)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "이 앱은 이제 DBusActivatable 이 적용됩니다"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -263,7 +265,7 @@ msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 #: src/app.py:74
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "{level} 은(는) 잘못된 상세 모드입니다.. 0 부터 5 사이여야 합니다."
 
 #: src/app.py:155
 msgid ""
@@ -542,9 +544,9 @@ msgstr "끄기"
 msgid "Enabled"
 msgstr "켜기"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "스크롤 방향 뒤바꾸기"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "자연스러운 스크롤"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -561,10 +563,6 @@ msgstr "터치패드"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "터치패드 두드리면 단추 누름으로 취급"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "자연스러운 스크롤"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -840,6 +838,24 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr ""
+#~ "수정됨: GNOME Software 에 표시되지 않은 버전 1.0-beta.2 의 릴리스 정보"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "수정됨: 기본 셸 테마를 추출하면 /usr/local/share/themes 대신 /usr/local/"
+#~ "share 폴더에 직접 저장되도록 수정됨"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "스크린샷 업데이트"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "스크롤 방향 뒤바꾸기"
 
 #, python-brace-format
 #~ msgid ""

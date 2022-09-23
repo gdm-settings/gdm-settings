@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
-"PO-Revision-Date: 2022-08-24 18:14+0000\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"PO-Revision-Date: 2022-09-12 13:21+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -189,21 +189,7 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated Translations:"
-msgid "Updated screenshots"
-msgstr "תרגומים עדכניים:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
@@ -211,41 +197,56 @@ msgstr ""
 "אזהרה: חלק מההגדרות יאבדו לאחר עדכון מגרסה 0.6 והגרסאות שלפניה לגרסה הזאת או "
 "לכל גרסה עדכנית מעבר לה."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr "נוספה תמיכה בערכות עיצוב חלקיות למעטפת"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr "תוקן: אי אפשר לשנות את לוגו מסך הכניסה מגרסת ה־Flatpak של היישום"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr "הפעלת היישום נמנעת אם הארגומנט שסופק לאפשרות `‎--verbosity` שגויה"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "המידע שמופיע בעמוד חנות התוכנות על היישום עודכן"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "סמל יישום חדש שעומד בהנחיות מנשק המשתמש של GNOME"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "מותר לפתוח רק עותק אחד של היישום בו־זמנית"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "בעת החלת הגדרות, היישום לא קופא יותר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr "היישום מציג חלונית „יציאה” מיד לאחר החלת ההגדרות"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
-msgstr ""
+msgstr "נוספו חלוניות חדשות להציג שגיאות למשתמש במקום ליצור בהלה במסוף"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
+"בעת החלת הגדרות התצוגה הנוכחיות, חל גם שינוי גודל (אולי לא יעבוד על כל "
+"המערכות)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "אפשר לתפעל את היישום דרך DBus"
 
 #: src/app.py:50
 msgid "Show application version"
@@ -271,7 +272,7 @@ msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 #: src/app.py:74
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "רמת הפירוט {level} שגויה. חייבת להיות 0, 5, או כל מה שביניהן."
 
 #: src/app.py:155
 msgid ""
@@ -550,9 +551,9 @@ msgstr "מושבתת"
 msgid "Enabled"
 msgstr "מופעלת"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "היפוך הגלילה"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "גלילה טבעית"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -569,10 +570,6 @@ msgstr "משטח מגע"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "לגעת כדי ללחוץ"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "גלילה טבעית"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -842,6 +839,23 @@ msgstr "לצאת?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgid ""
+#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
+#~ msgstr "תוקן: פרטי הפצת גרסה 1.0-beta.2 לא מופיעים בחנות התוכנה של GNOME"
+
+#~ msgid ""
+#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
+#~ "share directory instead of /usr/local/share/themes"
+#~ msgstr ""
+#~ "תוקן: חילוץ ערכת עיצוב כברירת מחדל למעטפת שמרה אותו לתיקייה ‎/usr/local/"
+#~ "share במקום לתיקייה ‎/usr/local/share/themes"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "צילומי המסך עודכנו"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "היפוך הגלילה"
 
 #, python-brace-format
 #~ msgid ""

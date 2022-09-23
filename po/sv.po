@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-06 15:54+0500\n"
+"POT-Creation-Date: 2022-09-23 16:24+0500\n"
 "PO-Revision-Date: 2022-08-24 12:03+0200\n"
 "Last-Translator: una Jernberg <lunajernberg@gnome.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -191,59 +191,60 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:78
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:79
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated screenshots"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
+msgid "Added support for incomplete shell themes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
+msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
+msgid ""
+"Prevent app launch when argument provided to `--verbosity` option is invalid"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "Updated the info shown on app's software-store page"
 msgstr "Uppdaterade informationen som visas på programmets mjukvarubutiksida"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
 msgstr "Ny appikon som följer GNOME HIG"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
 msgstr "Endast en instans av programmet kan vara öppen åt gången"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
 msgstr "När du verkställer inställningar fryser programmet inte längre"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
 "Programmet visar en \"Logga ut\"-dialogruta direkt efter att inställningarna "
 "har verkställts"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
 msgstr ""
 
@@ -552,9 +553,9 @@ msgstr "Inaktiverad"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: src/blueprints/pointing-page.blp:21
-msgid "Inverse Scrolling"
-msgstr "Omvänd rullning"
+#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
+msgid "Natural Scrolling"
+msgstr "Naturlig rullning"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
@@ -571,10 +572,6 @@ msgstr "Pekplatta"
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
 msgstr "Tryck för att klicka"
-
-#: src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Naturlig rullning"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
@@ -848,6 +845,9 @@ msgstr "Logga ut?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Logga ut"
+
+#~ msgid "Inverse Scrolling"
+#~ msgstr "Omvänd rullning"
 
 #~ msgid "Warning:"
 #~ msgstr "Varning:"
