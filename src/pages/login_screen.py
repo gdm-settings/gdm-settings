@@ -1,21 +1,21 @@
 import os
 from gi.repository import Gtk
 from ..info import data_dir
-from ..settings import misc_settings
+from ..settings import login_screen_settings
 from ..common_widgets import ImageChooserButton
 from ..bind_utils import *
 from .common import PageContent
 
 
-class MiscPageContent (PageContent):
-    __gtype_name__ = 'MiscPageContent'
+class LoginScreenPageContent (PageContent):
+    __gtype_name__ = 'LoginScreenPageContent'
 
     def __init__ (self, window, **kwargs):
         super().__init__(**kwargs)
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'misc-page.ui'))
+        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'login-screen-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 
@@ -34,9 +34,9 @@ class MiscPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind(misc_settings, 'disable-restart-buttons', self.disable_restart_buttons_switch, 'active')
-        bind(misc_settings, 'disable-user-list', self.disable_user_list_switch, 'active')
-        bind(misc_settings, 'enable-welcome-message', self.welcome_message_switch, 'active')
-        bind(misc_settings, 'welcome-message', self.welcome_message_entry, 'text')
-        bind(misc_settings, 'enable-logo', self.logo_switch, 'active')
-        bind(misc_settings, 'logo', self.logo_button, 'filename')
+        bind(login_screen_settings, 'disable-restart-buttons', self.disable_restart_buttons_switch, 'active')
+        bind(login_screen_settings, 'disable-user-list', self.disable_user_list_switch, 'active')
+        bind(login_screen_settings, 'enable-welcome-message', self.welcome_message_switch, 'active')
+        bind(login_screen_settings, 'welcome-message', self.welcome_message_entry, 'text')
+        bind(login_screen_settings, 'enable-logo', self.logo_switch, 'active')
+        bind(login_screen_settings, 'logo', self.logo_button, 'filename')

@@ -11,21 +11,21 @@ def delayed_settings(schema_id):
     settings.delay()
     return settings
 
-main_settings        = delayed_settings(application_id)
-appearance_settings  = delayed_settings(f'{application_id}.appearance')
-font_settings        = delayed_settings(f'{application_id}.fonts')
-misc_settings        = delayed_settings(f'{application_id}.misc')
-night_light_settings = delayed_settings(f'{application_id}.night-light')
-mouse_settings       = delayed_settings(f'{application_id}.mouse')
-touchpad_settings    = delayed_settings(f'{application_id}.touchpad')
-sound_settings       = delayed_settings(f'{application_id}.sound')
-top_bar_settings     = delayed_settings(f'{application_id}.top-bar')
+main_settings         = delayed_settings(application_id)
+appearance_settings   = delayed_settings(f'{application_id}.appearance')
+font_settings         = delayed_settings(f'{application_id}.fonts')
+login_screen_settings = delayed_settings(f'{application_id}.misc')
+night_light_settings  = delayed_settings(f'{application_id}.night-light')
+mouse_settings        = delayed_settings(f'{application_id}.mouse')
+touchpad_settings     = delayed_settings(f'{application_id}.touchpad')
+sound_settings        = delayed_settings(f'{application_id}.sound')
+top_bar_settings      = delayed_settings(f'{application_id}.top-bar')
 
 all_settings = (
     main_settings,
     appearance_settings,
     font_settings,
-    misc_settings,
+    login_screen_settings,
     night_light_settings,
     mouse_settings,
     touchpad_settings,
@@ -114,12 +114,12 @@ class SettingsManager (GObject.Object):
             night_light_settings['end-minute'] = end_minute
 
         if user_settings := _Settings("org.gnome.login-screen"):
-            misc_settings['enable-welcome-message'] = user_settings["banner-message-enable"]
-            misc_settings['welcome-message'] = user_settings["banner-message-text"]
-            misc_settings['logo'] = user_settings["logo"]
-            misc_settings['enable-logo'] = bool(user_settings["logo"])
-            misc_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
-            misc_settings['disable-user-list'] = user_settings["disable-user-list"]
+            login_screen_settings['enable-welcome-message'] = user_settings["banner-message-enable"]
+            login_screen_settings['welcome-message'] = user_settings["banner-message-text"]
+            login_screen_settings['logo'] = user_settings["logo"]
+            login_screen_settings['enable-logo'] = bool(user_settings["logo"])
+            login_screen_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
+            login_screen_settings['disable-user-list'] = user_settings["disable-user-list"]
 
     def save_settings(self):
         '''Save settings to GSettings of this app'''
@@ -358,13 +358,13 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents += f"night-light-schedule-to={schedule_to}\n"
             gdm_conf_contents +=  "\n"
 
-            enable_logo = misc_settings['enable-logo']
+            enable_logo = login_screen_settings['enable-logo']
             logo = '/etc/gdm-logo' if enable_logo else ''
-            logo_file = misc_settings['logo'].removeprefix(env.HOST_ROOT)
-            enable_welcome_message = str(misc_settings['enable-welcome-message']).lower()
-            welcome_message = misc_settings['welcome-message'].replace("'", r"\'")
-            disable_restart_buttons = str(misc_settings['disable-restart-buttons']).lower()
-            disable_user_list = str(misc_settings['disable-user-list']).lower()
+            logo_file = login_screen_settings['logo'].removeprefix(env.HOST_ROOT)
+            enable_welcome_message = str(login_screen_settings['enable-welcome-message']).lower()
+            welcome_message = login_screen_settings['welcome-message'].replace("'", r"\'")
+            disable_restart_buttons = str(login_screen_settings['disable-restart-buttons']).lower()
+            disable_user_list = str(login_screen_settings['disable-user-list']).lower()
 
             gdm_conf_contents +=  "#----- Login Screen ----\n"
             gdm_conf_contents +=  "[org/gnome/login-screen]\n"

@@ -99,7 +99,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         add_page('sound',      _('Sound'),            pages.SoundPageContent(self))
         add_page('pointing',   _('Mouse & Touchpad'), pages.PointingPageContent(self))
         add_page('display',    _('Display'),          pages.DisplayPageContent(self))
-        add_page('misc',       _('Miscellaneous'),    pages.MiscPageContent(self))
+        add_page('misc',       _('Login Screen'),     pages.LoginScreenPageContent(self))
         add_page('tools',      _('Tools'),            pages.ToolsPageContent(self))
 
     def bind_to_gsettings (self):
