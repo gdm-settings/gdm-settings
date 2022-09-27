@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -345,11 +345,15 @@ msgid "Settings reloaded"
 msgstr "Einstellungen wurden neu geladen"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Benutzereinstellungen wurden importiert"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "Einstellungen erfolgreich angewendet"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "Das Importieren von Benutzereinstellungen wird in der Flatpak-Version NICHT "
 "unterstützt"
@@ -412,7 +416,9 @@ msgid "Apply current display settings"
 msgstr "Aktuelle Bildschirmeinstellungen anwenden"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Auflösung, Aktulisierungsrate, Bildschirmpositionen, etc"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -498,7 +504,9 @@ msgid "Refresh"
 msgstr "Aktualisieren"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Benutzereinstellungen importieren"
 
 #: src/blueprints/main-window.blp:8
@@ -868,6 +876,9 @@ msgstr "Abmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Abmelden"
+
+#~ msgid "User settings imported"
+#~ msgstr "Benutzereinstellungen wurden importiert"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Verschiedenes"

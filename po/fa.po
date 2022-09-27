@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -304,11 +304,15 @@ msgid "Settings reloaded"
 msgstr "تنظیمات مجدداً بارگزاری شد"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "تنظیمات کاربر درون‌ریزی شد"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "تنظیمات با موفّقیت اِعمال شد"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
 #: src/app.py:252
@@ -369,7 +373,9 @@ msgid "Apply current display settings"
 msgstr "اِعمال تنظیمات نمایشگر کنونی"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -455,7 +461,9 @@ msgid "Refresh"
 msgstr "نوسازی"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "درون‌ریزی تنظیمات کاربر"
 
 #: src/blueprints/main-window.blp:8
@@ -822,6 +830,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "User settings imported"
+#~ msgstr "تنظیمات کاربر درون‌ریزی شد"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "متفرقه"

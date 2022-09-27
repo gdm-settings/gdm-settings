@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-27 16:52+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -344,11 +344,15 @@ msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "De voorkeuren zijn geïmporteerd"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "De voorkeuren zijn ingesteld"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
 
 #: src/app.py:252
@@ -409,7 +413,9 @@ msgid "Apply current display settings"
 msgstr "Huidige beeldscherminstellingen toepassen"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolutie, ververssnelheid, schermposities, etc."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -495,7 +501,9 @@ msgid "Refresh"
 msgstr "Herladen"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Eigen voorkeuren importeren"
 
 #: src/blueprints/main-window.blp:8
@@ -871,6 +879,9 @@ msgstr "Afmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid "User settings imported"
+#~ msgstr "De voorkeuren zijn geïmporteerd"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Overig"

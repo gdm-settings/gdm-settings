@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-07-29 06:17+0000\n"
 "Last-Translator: Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>\n"
 "Language-Team: Bengali <https://hosted.weblate.org/projects/gdm-settings/"
@@ -333,11 +333,11 @@ msgid "Settings reloaded"
 msgstr ""
 
 #: src/app.py:235
-msgid "User settings imported"
+msgid "Session settings loaded successfully"
 msgstr ""
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 
 #: src/app.py:252
@@ -398,7 +398,7 @@ msgid "Apply current display settings"
 msgstr ""
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr ""
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -484,7 +484,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+msgid "Load session settings"
 msgstr ""
 
 #: src/blueprints/main-window.blp:8

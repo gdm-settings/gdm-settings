@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -338,11 +338,15 @@ msgid "Settings reloaded"
 msgstr "Paramètres recargats"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Paramètres de l’utilizaire importats"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "Paramètres aplicats corrèctament"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "L’importacion dels paramètres utilizaire es pas suportada dins la version "
 "Flatpak"
@@ -405,7 +409,9 @@ msgid "Apply current display settings"
 msgstr "Aplicar los paramètres d’afichatge actuals"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -491,7 +497,9 @@ msgid "Refresh"
 msgstr "Refrescar"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Importar paramètres de l’utilizaire"
 
 #: src/blueprints/main-window.blp:8
@@ -868,6 +876,9 @@ msgstr "Se desconnectar ?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Desconnexion"
+
+#~ msgid "User settings imported"
+#~ msgstr "Paramètres de l’utilizaire importats"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Divèrs"

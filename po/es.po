@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -343,11 +343,15 @@ msgid "Settings reloaded"
 msgstr "Configuración recargada"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Configuración del usuario importada"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "Configuración aplicada con éxito"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "La importación de la configuración del usuario NO es compatible con la "
 "versión Flatpak"
@@ -410,7 +414,9 @@ msgid "Apply current display settings"
 msgstr "Aplicar la configuración actual de la pantalla"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -496,7 +502,9 @@ msgid "Refresh"
 msgstr "Actualizar"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Importar la configuración del usuario"
 
 #: src/blueprints/main-window.blp:8
@@ -876,6 +884,9 @@ msgstr "¿Cerrar sesión?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Cerrar sesión"
+
+#~ msgid "User settings imported"
+#~ msgstr "Configuración del usuario importada"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Miscelánea"

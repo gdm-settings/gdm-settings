@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-12 13:21+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -325,11 +325,15 @@ msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "הגדרות המשתמש ייובאו"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "ההגדרות הוחלו בהצלחה"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
 
 #: src/app.py:252
@@ -390,7 +394,9 @@ msgid "Apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "רזולוציה, קצב רענון, מיקומי צגים וכו׳"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -476,7 +482,9 @@ msgid "Refresh"
 msgstr "רענון"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "ייבוא הגדרות משתמש"
 
 #: src/blueprints/main-window.blp:8
@@ -849,6 +857,9 @@ msgstr "לצאת?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgid "User settings imported"
+#~ msgstr "הגדרות המשתמש ייובאו"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "שונות"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-26 16:15+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -318,11 +318,15 @@ msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "사용자 설정을 가져왔습니다"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "설정이 성공적으로 적용되었습니다"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak 버전에서는 사용자 설정 가져오기가 지원되지 않습니다"
 
 #: src/app.py:252
@@ -383,7 +387,9 @@ msgid "Apply current display settings"
 msgstr "현재 디스플레이 설정 적용"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "해상도, 주사율, 모니터 위치 등"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -469,7 +475,9 @@ msgid "Refresh"
 msgstr "새로고침"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "사용자 설정 가져오기"
 
 #: src/blueprints/main-window.blp:8
@@ -846,6 +854,9 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid "User settings imported"
+#~ msgstr "사용자 설정을 가져왔습니다"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "기타"

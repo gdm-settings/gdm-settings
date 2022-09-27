@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-10 16:28-0300\n"
 "Last-Translator: YgorJ <ygor-skat@hotmail.com>\n"
 "Language-Team: Brazilian Portuguese <ygor-skat@hotmail.com>\n"
@@ -302,11 +302,11 @@ msgid "Settings reloaded"
 msgstr "Configurações recarregadas"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Configurações do usuário importadas"
+msgid "Session settings loaded successfully"
+msgstr ""
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 
 #: src/app.py:252
@@ -367,7 +367,7 @@ msgid "Apply current display settings"
 msgstr "Aplicar configurações atuais do display"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr ""
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -453,7 +453,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+msgid "Load session settings"
 msgstr ""
 
 #: src/blueprints/main-window.blp:8
@@ -816,6 +816,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "User settings imported"
+#~ msgstr "Configurações do usuário importadas"
 
 #~ msgid "Updated screenshots"
 #~ msgstr "Capturas de Tela atualizadas"

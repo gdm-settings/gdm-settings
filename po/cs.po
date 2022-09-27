@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-06-22 04:54+0000\n"
 "Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -347,11 +347,15 @@ msgid "Settings reloaded"
 msgstr "Nastavení obnovena"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Uživatelská nastavení naimportována"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "Nastavení úspěšně použita"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
 "Flatpak"
@@ -414,7 +418,9 @@ msgid "Apply current display settings"
 msgstr "Použít současná nastavení displeje"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Rozlišení, obnovovací frekvence, pozice monitorů, atd."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -500,7 +506,9 @@ msgid "Refresh"
 msgstr "Obnovit"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Naimportovat uživatelská nastavení"
 
 #: src/blueprints/main-window.blp:8
@@ -878,6 +886,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "User settings imported"
+#~ msgstr "Uživatelská nastavení naimportována"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Smíšené"

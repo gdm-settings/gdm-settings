@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -335,11 +335,15 @@ msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
 #: src/app.py:252
@@ -400,7 +404,9 @@ msgid "Apply current display settings"
 msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -486,7 +492,9 @@ msgid "Refresh"
 msgstr "ریفریش"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "یوزر کی سیٹنگز امپورٹ کریں"
 
 #: src/blueprints/main-window.blp:8
@@ -861,6 +869,9 @@ msgstr "لاگ آؤٹ کریں؟"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgid "User settings imported"
+#~ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "دوسری چیزیں"

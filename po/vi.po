@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -334,11 +334,15 @@ msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "Cài đặt người dùng đã được import"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "Áp dụng cài đặt thành công"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "Import các cài đặt của người dùng không được hỗ trợ trong phiên bản Flatpak"
 
@@ -400,7 +404,9 @@ msgid "Apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiện tại"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -486,7 +492,9 @@ msgid "Refresh"
 msgstr "Làm mới"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "Import các cài đặt người dùng"
 
 #: src/blueprints/main-window.blp:8
@@ -864,6 +872,9 @@ msgstr "Đăng xuất?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "User settings imported"
+#~ msgstr "Cài đặt người dùng đã được import"
 
 #~ msgid "Miscellaneous"
 #~ msgstr "Các cài đặt khác"

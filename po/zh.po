@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 17:13+0500\n"
+"POT-Creation-Date: 2022-09-27 21:52+0500\n"
 "PO-Revision-Date: 2022-09-03 23:16+0000\n"
 "Last-Translator: Jason Clermont <lunme1008@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -317,11 +317,15 @@ msgid "Settings reloaded"
 msgstr "重新载入设置"
 
 #: src/app.py:235
-msgid "User settings imported"
-msgstr "已导入用户设置"
+#, fuzzy
+#| msgid "Settings applied successfully"
+msgid "Session settings loaded successfully"
+msgstr "应用设置成功"
 
 #: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#, fuzzy
+#| msgid "Importing user settings is NOT supported in Flatpak version"
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版本不支持导入用户设置"
 
 #: src/app.py:252
@@ -382,7 +386,9 @@ msgid "Apply current display settings"
 msgstr "应用当前显示设置"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "分辨率，刷新率，监视器位置等等"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
@@ -468,7 +474,9 @@ msgid "Refresh"
 msgstr "刷新"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
 msgstr "导入用户设置"
 
 #: src/blueprints/main-window.blp:8
@@ -845,6 +853,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "User settings imported"
+#~ msgstr "已导入用户设置"
 
 #, fuzzy
 #~| msgid "Updated Translations:"
