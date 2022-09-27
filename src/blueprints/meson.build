@@ -7,6 +7,7 @@ blueprints = files(
   'top-bar-page.blp',
   'pointing-page.blp',
   'login-screen-page.blp',
+  'power-page.blp',
   'tools-page.blp',
 )
 

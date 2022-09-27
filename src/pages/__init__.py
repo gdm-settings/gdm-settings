@@ -6,3 +6,4 @@ from .pointing     import PointingPageContent
 from .display      import DisplayPageContent
 from .login_screen import LoginScreenPageContent
 from .tools        import ToolsPageContent
+from .power        import PowerPageContent

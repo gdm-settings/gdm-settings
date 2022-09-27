@@ -24,6 +24,7 @@
 	     <choice value="top_bar"/>
 	     <choice value="pointing"/>
 	     <choice value="misc"/>
+	     <choice value="power"/>
 	     <choice value="tools"/>
 	   </choices>
 	 </key>
