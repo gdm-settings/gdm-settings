@@ -47,9 +47,9 @@ class SettingsManager (GObject.Object):
 
         from .enums import PackageType
         if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
-            self.load_user_settings()
+            self.load_session_settings()
 
-    def load_user_settings(self):
+    def load_session_settings(self):
         '''Load user's Gnome settings into the app'''
 
 

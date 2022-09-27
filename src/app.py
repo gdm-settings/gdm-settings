@@ -215,7 +215,7 @@ class Application(Adw.Application):
             self.add_action(action)
 
         create_action("refresh", self.refresh_cb)
-        create_action("import_user_settings", self.import_user_settings_cb)
+        create_action("load_session_settings", self.load_session_settings_cb)
         create_action("reset_settings", self.reset_settings_cb)
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
@@ -228,15 +228,15 @@ class Application(Adw.Application):
         self.window.toast_overlay.add_toast(toast)
 
 
-    def import_user_settings_cb(self, action, user_data):
+    def load_session_settings_cb(self, action, user_data):
         from .enums import PackageType
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
-            self.settings_manager.load_user_settings()
-            toast = Adw.Toast(timeout=1, priority='high', title=_('User settings imported'))
+            self.settings_manager.load_session_settings()
+            toast = Adw.Toast(timeout=1, priority='high', title=_('Session settings loaded successfully'))
             self.window.toast_overlay.add_toast(toast)
         else:
             toast = Adw.Toast(timeout=2, priority="high")
-            toast.set_title(_("Importing user settings is NOT supported in Flatpak version"))
+            toast.set_title(_("Load session settings is NOT supported in Flatpak version"))
             self.window.toast_overlay.add_toast(toast)
 
 
