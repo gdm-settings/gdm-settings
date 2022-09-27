@@ -190,6 +190,14 @@ class SettingsManager (GObject.Object):
                 css += f"  -panel-corner-opacity: 1;\n"
                 css += f"  -panel-corner-background-color: {background_color};\n"
                 css +=  "}\n"
+
+        # Large Welcome Message
+        if login_screen_settings['enlarge-welcome-message']:
+            css += ".login-dialog-banner {\n"
+            css += "  font-size: 1.5em;\n"
+            css += "  font-weight: bold;\n"
+            css += "}\n"
+
         return css
 
     def backup_default_shell_theme (self):
