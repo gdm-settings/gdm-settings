@@ -6,7 +6,7 @@ Box content_box {
   spacing: 20;
 
   Adw.PreferencesGroup {
-    title: _("Miscellaneous");
+    margin-top: 12;
 
     Adw.ActionRow {
       title: _("Disable Restart Buttons");
@@ -41,17 +41,38 @@ Box content_box {
         subtitle: _("The image to show below user list");
       }
     }
+  }
 
-    Adw.ExpanderRow {
-      title: _("Welcome Message");
-      expanded: bind welcome_message_switch.active bidirectional;
+  Adw.PreferencesGroup {
+    title: _("Welcome Message");
 
-      [action]
+    Adw.ActionRow {
+      title: _("Enable");
+      activatable-widget: welcome_message_switch;
+
       Switch welcome_message_switch {
         valign: center;
       }
+    }
 
-      Entry welcome_message_entry { }
+    Adw.ActionRow {
+      title: _("Enlarge");
+      sensitive: bind welcome_message_switch.active;
+      activatable-widget: enlarge_welcome_message_switch;
+
+      Switch enlarge_welcome_message_switch {
+        valign: center;
+      }
+    }
+
+    Adw.ActionRow {
+      title: _("Message");
+      sensitive: bind welcome_message_switch.active;
+
+      Entry welcome_message_entry {
+        valign: center;
+        hexpand: true;
+      }
     }
   }
 }

@@ -18,7 +18,7 @@ src/blueprints/appearance-page.blp
 src/blueprints/display-page.blp
 src/blueprints/fonts-page.blp
 src/blueprints/main-window.blp
-src/blueprints/misc-page.blp
+src/blueprints/login-screen-page.blp
 src/blueprints/pointing-page.blp
 src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
@@ -31,7 +31,7 @@ src/pages/appearance.py
 src/pages/common.py
 src/pages/display.py
 src/pages/fonts.py
-src/pages/misc.py
+src/pages/login_screen.py
 src/pages/pointing.py
 src/pages/sound.py
 src/pages/tools.py

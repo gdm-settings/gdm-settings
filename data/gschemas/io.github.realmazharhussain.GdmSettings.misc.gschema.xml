@@ -10,6 +10,10 @@
       <default>"Welcome!"</default>
     </key>
 
+    <key name="enlarge-welcome-message" type="b">
+      <default>true</default>
+    </key>
+
     <key name="enable-logo" type="b">
       <default>false</default>
     </key>
