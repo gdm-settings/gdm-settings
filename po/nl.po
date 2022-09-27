@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 21:52+0500\n"
-"PO-Revision-Date: 2022-09-27 16:52+0000\n"
+"PO-Revision-Date: 2022-09-29 13:17+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -344,16 +344,13 @@ msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
 #: src/app.py:235
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "De voorkeuren zijn ingesteld"
+msgstr "De sessievoorkeuren zijn geladen"
 
 #: src/app.py:239
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "In de Flatpak-versie is het niet mogelijk om voorkeuren te importeren"
+msgstr ""
+"In de Flatpak-versie is het niet mogelijk om sessievoorkeuren te importeren"
 
 #: src/app.py:252
 msgid "Reset settings successfully"
@@ -413,8 +410,6 @@ msgid "Apply current display settings"
 msgstr "Huidige beeldscherminstellingen toepassen"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolutie, ververssnelheid, schermposities, etc."
 
@@ -501,10 +496,8 @@ msgid "Refresh"
 msgstr "Herladen"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Eigen voorkeuren importeren"
+msgstr "Sessievoorkeuren laden"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
