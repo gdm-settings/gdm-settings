@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 17:13+0500\n"
-"PO-Revision-Date: 2022-09-11 04:16+0000\n"
+"PO-Revision-Date: 2022-09-27 16:52+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -540,13 +540,11 @@ msgstr "Welkomstbericht"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Vergroten"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Welkomstbericht"
+msgstr "Bericht"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -838,7 +836,7 @@ msgstr "Beeldscherm"
 
 #: src/window.py:102
 msgid "Login Screen"
-msgstr ""
+msgstr "Aanmeldscherm"
 
 #: src/window.py:103
 msgid "Tools"
