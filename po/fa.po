@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -364,10 +364,6 @@ msgstr "تصویری که به عنوان پس‌زمینه استفاده می�
 msgid "The color to use as background"
 msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "نمایشگر"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "اِعمال تنظیمات نمایشگر کنونی"
@@ -384,7 +380,7 @@ msgstr "اِعمال"
 msgid "Night Light"
 msgstr "نور شب"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "به کار انداختن"
 
@@ -417,10 +413,6 @@ msgstr "تا"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "دمای رنگ"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "قلم‌ها"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -478,36 +470,42 @@ msgstr "درباره"
 msgid "Quit"
 msgstr "خروج"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "متفرقه"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "از کار انداختن دکمه‌های شروع مجدد"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "از کار انداختن فهرست کاربران"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "به کار انداختن لوگو"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "اینکه یک لوگو در پایین فهرست کاربران نمایش داده شود"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "لوگو"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "تصویری که در پایین فهرست کاربران نمایش داده می‌شود"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "پیام خوشامدگویی"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "پیام خوشامدگویی"
 
 #: src/blueprints/pointing-page.blp:9
@@ -561,10 +559,6 @@ msgstr ""
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr ""
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "صدا"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -747,26 +741,26 @@ msgstr "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «⁨{name
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "در حال اعمال تنظیمات GResource برای اوبونتو …"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -775,13 +769,29 @@ msgstr ""
 msgid "Appearance"
 msgstr "ظاهر"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "قلم‌ها"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "نوار بالا"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "صدا"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "نمایشگر"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -812,6 +822,9 @@ msgstr ""
 #: src/window.py:147
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Miscellaneous"
+#~ msgstr "متفرقه"
 
 #~ msgid "Updated screenshots"
 #~ msgstr "نماگرفت‌های به‌روز رسانی شده"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-03 23:16+0000\n"
 "Last-Translator: Jason Clermont <lunme1008@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -377,10 +377,6 @@ msgstr "此图像用于背景"
 msgid "The color to use as background"
 msgstr "此颜色用于背景"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "显示"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "应用当前显示设置"
@@ -397,7 +393,7 @@ msgstr "应用"
 msgid "Night Light"
 msgstr "夜灯"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "开启"
 
@@ -430,10 +426,6 @@ msgstr "到"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "色温"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "字体"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -491,36 +483,42 @@ msgstr "关于"
 msgid "Quit"
 msgstr "关闭"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr ""
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "禁用重启按钮"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "禁用用户列表"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "开启Logo"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "是否在用户列表下显示Logo"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "Logo"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "显示在用户列表下方的图像"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "欢迎留言"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "欢迎留言"
 
 #: src/blueprints/pointing-page.blp:9
@@ -574,10 +572,6 @@ msgstr "用两根手指滑动滚动。"
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "键入时禁用"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "声音"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -768,28 +762,28 @@ msgstr "默认 shell 主题提取到 '{path}' 作为 'default-extracted'"
 msgid "Failed to extract default theme"
 msgstr "提取默认主题失败"
 
-#: src/settings.py:198
+#: src/settings.py:206
 #, fuzzy
 #| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
 msgstr "保存默认主题…"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 应用 GResource 设置…"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统应用 GResource 设置…"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 重置 GResource 设置…"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统重置 GResource 设置…"
@@ -798,13 +792,29 @@ msgstr "为非 Ubuntu 系统重置 GResource 设置…"
 msgid "Appearance"
 msgstr "外观"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "字体"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "顶栏"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "声音"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "鼠标&触摸板"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "显示"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"

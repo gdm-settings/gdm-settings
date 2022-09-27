@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -405,10 +405,6 @@ msgstr "La imagen a usar como fondo"
 msgid "The color to use as background"
 msgstr "El color a usar como fondo"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "Pantalla"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "Aplicar la configuración actual de la pantalla"
@@ -425,7 +421,7 @@ msgstr "Aplicar"
 msgid "Night Light"
 msgstr "Luz nocturna"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "Activar"
 
@@ -458,10 +454,6 @@ msgstr "Hasta"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "Temperatura del color"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "Tipografías"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -519,36 +511,42 @@ msgstr "Acerca de"
 msgid "Quit"
 msgstr "Salir"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "Miscelánea"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "Desactivar los botones de reinicio"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "Desactivar la lista de usuarios"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "Activar logotipo"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "Mostrar o no un logotipo debajo de la lista de usuarios"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "Logotipo"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "La imagen para mostrar debajo de la lista de usuarios"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "Mensaje de bienvenida"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "Mensaje de bienvenida"
 
 #: src/blueprints/pointing-page.blp:9
@@ -602,10 +600,6 @@ msgstr "Desplazar deslizando dos dedos."
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "Desactivar mientras se teclea"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "Sonido"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -794,27 +788,27 @@ msgstr "Tema de shell predeterminado extraído en ''{folder}'' como ''{name}''"
 msgid "Failed to extract default theme"
 msgstr "Fallo al extraer el tema predeterminado"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "Copia de seguridad del tema del shell predeterminado…"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicar la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Aplicando la configuración de GResource para sistemas que no son de Ubuntu …"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Restableciendo la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -825,13 +819,29 @@ msgstr ""
 msgid "Appearance"
 msgstr "Apariencia"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "Tipografías"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "Barra superior"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "Sonido"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "Ratón y panel táctil"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "Pantalla"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -866,6 +876,9 @@ msgstr "¿Cerrar sesión?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Cerrar sesión"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Miscelánea"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"

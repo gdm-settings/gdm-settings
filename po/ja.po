@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -391,10 +391,6 @@ msgstr "背景として使う画像"
 msgid "The color to use as background"
 msgstr "背景として使う色"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "ディスプレイ"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "現在のディスプレイ設定を適用"
@@ -411,7 +407,7 @@ msgstr "適用"
 msgid "Night Light"
 msgstr "夜間モード"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "有効"
 
@@ -444,10 +440,6 @@ msgstr "終了"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "色温度"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "フォント"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -505,36 +497,42 @@ msgstr "“ログイン画面の設定” について"
 msgid "Quit"
 msgstr "終了"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "そのほか"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "再起動ボタンを表示しない"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "ユーザーを一覧表示しない"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "ロゴを表示"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "ユーザーの一覧の下にロゴを表示するかどうかの設定"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "ロゴ"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "ユーザーの一覧の下に表示する画像"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "ようこそメッセージ"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "ようこそメッセージ"
 
 #: src/blueprints/pointing-page.blp:9
@@ -588,10 +586,6 @@ msgstr "2 本指でスワイプすることでスクロールします。"
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "入力中は無効にする"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "サウンド"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -781,26 +775,26 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "デフォルトテーマを復元できませんでした"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "シェルのデフォルトテーマをバックアップしています…"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu に適用しています…"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
@@ -809,13 +803,29 @@ msgstr "GResource 設定を非 Ubuntu システム用にリセットしていま
 msgid "Appearance"
 msgstr "外観"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "フォント"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "トップバー"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "サウンド"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "マウスとタッチパッド"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "ディスプレイ"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -849,6 +859,9 @@ msgstr "ログアウトしますか？"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "ログアウト"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "そのほか"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"

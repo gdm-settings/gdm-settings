@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-26 16:15+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -378,10 +378,6 @@ msgstr "배경으로 사용할 이미지"
 msgid "The color to use as background"
 msgstr "배경으로 사용할 색깔"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "디스플레이"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "현재 디스플레이 설정 적용"
@@ -398,7 +394,7 @@ msgstr "적용"
 msgid "Night Light"
 msgstr "야간 모드"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "활성화"
 
@@ -431,10 +427,6 @@ msgstr "끝"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "색 온도"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "글꼴"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -492,36 +484,42 @@ msgstr "정보"
 msgid "Quit"
 msgstr "종료"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "기타"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "다시 시작 버튼 비활성화"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "유저 목록 비활성화"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "로고 활성화"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "사용자 목록 아래에 로고를 표시할지 결정합니다"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "로고"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "사용자 목록 아래에 표시할 이미지"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "환영 메시지"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "환영 메시지"
 
 #: src/blueprints/pointing-page.blp:9
@@ -575,10 +573,6 @@ msgstr "두 손가락으로 스와이프하여 스크롤합니다."
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "입력 도중 비활성화"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "소리"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -767,26 +761,26 @@ msgstr "'{folder}'에 '{name}'(으)로 추출된 기본 쉘 테마"
 msgid "Failed to extract default theme"
 msgstr "기본 테마를 추출하지 못했습니다"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -795,13 +789,29 @@ msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
 msgid "Appearance"
 msgstr "모양새"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "글꼴"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "상단바"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "소리"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "마우스 & 터치패드"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "디스플레이"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -836,6 +846,9 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "기타"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"

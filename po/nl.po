@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-11 04:16+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -404,10 +404,6 @@ msgstr "De afbeelding die wordt ingesteld als achtergrond"
 msgid "The color to use as background"
 msgstr "De kleur die wordt ingesteld als achtergrond"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "Beeldscherm"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "Huidige beeldscherminstellingen toepassen"
@@ -424,7 +420,7 @@ msgstr "Toepassen"
 msgid "Night Light"
 msgstr "Nachtlicht"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "Inschakelen"
 
@@ -457,10 +453,6 @@ msgstr "Tot"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "Kleurtemperatuur"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "Lettertypen"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -518,36 +510,42 @@ msgstr "Over"
 msgid "Quit"
 msgstr "Afsluiten"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "Overig"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "Herstartknoppen verbergen"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "Gebruikerslijst verbergen"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "Logo tonen"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "Of er een logo dient te worden getoond onder de gebruikerslijst"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "Logo"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "Welkomstbericht"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "Welkomstbericht"
 
 #: src/blueprints/pointing-page.blp:9
@@ -601,10 +599,6 @@ msgstr "Scroll door met twee vingers te vegen."
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "Uitschakelen tijdens typen"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "Geluid"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -794,26 +788,26 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
@@ -822,13 +816,29 @@ msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…
 msgid "Appearance"
 msgstr "Vormgeving"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "Lettertypen"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "Geluid"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "Beeldscherm"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -863,6 +873,9 @@ msgstr "Afmelden?"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Overig"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"

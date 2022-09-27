@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-09-27 17:13+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -395,10 +395,6 @@ msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصوی�
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "ڈسپلے"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
@@ -415,7 +411,7 @@ msgstr "اپلائی"
 msgid "Night Light"
 msgstr "رات کی روشنی"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "دکھائیں"
 
@@ -448,10 +444,6 @@ msgstr "ختم"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "رنگ کا ٹمپریچر"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "خط"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -509,36 +501,42 @@ msgstr "تفصیلات"
 msgid "Quit"
 msgstr "بند کریں"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "دوسری چیزیں"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "ریسٹارٹ بٹن ختم کریں"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "یوزر کی لسٹ ختم کریں"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "لوگو دکھائیں"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "یوزر کی لسٹ کے نیچے لوگو دکھائیں یا نہیں"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "لوگو"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr "خوش آمدید کا پیغام"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
 msgstr "خوش آمدید کا پیغام"
 
 #: src/blueprints/pointing-page.blp:9
@@ -592,10 +590,6 @@ msgstr "دو انگلیوں کے ساتھ سوائیپ کریں۔"
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
 msgstr "ٹائپ کرتے وقت بند کریں"
-
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "آواز"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -784,26 +778,26 @@ msgstr "ڈیفالٹ شیل تھیم '{folder}' میں '{name}' کے نام سے
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/settings.py:198
+#: src/settings.py:206
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:246
+#: src/settings.py:254
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:253
+#: src/settings.py:261
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:446
+#: src/settings.py:454
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/settings.py:453
+#: src/settings.py:461
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
@@ -812,13 +806,29 @@ msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز �
 msgid "Appearance"
 msgstr "شکل"
 
+#: src/window.py:97
+msgid "Fonts"
+msgstr "خط"
+
 #: src/window.py:98
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
+#: src/window.py:99
+msgid "Sound"
+msgstr "آواز"
+
 #: src/window.py:100
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
+
+#: src/window.py:101
+msgid "Display"
+msgstr "ڈسپلے"
+
+#: src/window.py:102
+msgid "Login Screen"
+msgstr ""
 
 #: src/window.py:103
 msgid "Tools"
@@ -851,6 +861,9 @@ msgstr "لاگ آؤٹ کریں؟"
 #: src/window.py:147
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "دوسری چیزیں"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
