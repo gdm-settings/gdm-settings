@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 21:52+0500\n"
-"PO-Revision-Date: 2022-09-12 13:21+0000\n"
+"PO-Revision-Date: 2022-09-29 13:17+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -325,16 +325,12 @@ msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
 
 #: src/app.py:235
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "ההגדרות הוחלו בהצלחה"
+msgstr "ההגדרות ההפעלה נטענו בהצלחה"
 
 #: src/app.py:239
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "אין תמיכה בייבוא הגדרות משתמש בגרסת ה־Flatpak"
+msgstr "אין תמיכה בטעינת הגדרות הפעלה בגרסת ה־Flatpak"
 
 #: src/app.py:252
 msgid "Reset settings successfully"
@@ -394,8 +390,6 @@ msgid "Apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "רזולוציה, קצב רענון, מיקומי צגים וכו׳"
 
@@ -482,10 +476,8 @@ msgid "Refresh"
 msgstr "רענון"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "ייבוא הגדרות משתמש"
+msgstr "טעינת הגדרות הפעלה"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -529,13 +521,11 @@ msgstr "הודעת קבלת פנים"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "הגדלה"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "הודעת קבלת פנים"
+msgstr "הודעה"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -826,7 +816,7 @@ msgstr "תצוגה"
 
 #: src/window.py:102
 msgid "Login Screen"
-msgstr ""
+msgstr "מסך כניסה"
 
 #: src/window.py:103
 msgid "Tools"
