@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 안재범 <ajb8533296@gmail.com>, 2022.
+# 이정희 <daemul72@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 21:52+0500\n"
-"PO-Revision-Date: 2022-09-26 16:15+0000\n"
-"Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
+"PO-Revision-Date: 2022-10-01 03:17+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
 "Language: ko\n"
@@ -318,16 +319,12 @@ msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
 #: src/app.py:235
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "설정이 성공적으로 적용되었습니다"
+msgstr "세션 설정이 성공적으로 불러오기되었습니다"
 
 #: src/app.py:239
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Flatpak 버전에서는 사용자 설정 가져오기가 지원되지 않습니다"
+msgstr "세션 설정 불러오기는 Flatpak 버전에서 지원되지 않습니다"
 
 #: src/app.py:252
 msgid "Reset settings successfully"
@@ -387,10 +384,8 @@ msgid "Apply current display settings"
 msgstr "현재 디스플레이 설정 적용"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "해상도, 주사율, 모니터 위치 등"
+msgstr "해상도, 주사율, 모니터 위치 등."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
@@ -475,10 +470,8 @@ msgid "Refresh"
 msgstr "새로고침"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "사용자 설정 가져오기"
+msgstr "세션 설정 불러오기"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -522,13 +515,11 @@ msgstr "환영 메시지"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "확대하기"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "환영 메시지"
+msgstr "메시지"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -724,7 +715,9 @@ msgstr "Thales Bindá"
 #. 'name <email>' including < and > but not qoutes.
 #: src/dialogs.py:25
 msgid "translator-credits"
-msgstr "안재범 <ajb8533296@gmail.com>"
+msgstr ""
+"안재범 <ajb8533296@gmail.com>\n"
+"이정희 <daemul72@gmail.com>"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
@@ -819,7 +812,7 @@ msgstr "디스플레이"
 
 #: src/window.py:102
 msgid "Login Screen"
-msgstr ""
+msgstr "로그인 화면"
 
 #: src/window.py:103
 msgid "Tools"
