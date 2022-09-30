@@ -1,12 +1,13 @@
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# Eduardo Malaspina <vaio0@swismail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 21:52+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"PO-Revision-Date: 2022-10-01 03:17+0000\n"
+"Last-Translator: Eduardo Malaspina <vaio0@swismail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -14,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -549,7 +550,7 @@ msgstr "Mensaje de bienvenida"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Ampliar"
 
 #: src/blueprints/login-screen-page.blp:69
 #, fuzzy
@@ -849,7 +850,7 @@ msgstr "Pantalla"
 
 #: src/window.py:102
 msgid "Login Screen"
-msgstr ""
+msgstr "Pantalla de inicio de sesión"
 
 #: src/window.py:103
 msgid "Tools"
