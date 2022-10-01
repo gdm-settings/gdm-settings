@@ -1,0 +1,64 @@
+<schemalist gettext-domain="gdm-settings">
+  <schema id="io.github.realmazharhussain.GdmSettings.power"
+       path="/io/github/realmazharhussain/GdmSettings/power/">
+
+    <key name="power-button-action" type="s">
+      <default>'suspend'</default>
+      <choices>
+        <choice value="nothing"/>
+        <choice value="suspend"/>
+        <choice value="hibernate"/>
+        <choice value="interactive"/>
+      </choices>
+      <summary>Power button action</summary>
+      <description>The action to take when the system power button is pressed. This action is hard-coded (and the setting ignored) on virtual machines (power off) and tablets (suspend).</description>
+    </key>
+
+    <key name="auto-power-saver" type="b">
+      <default>true</default>
+      <summary>Enable power-saver profile when battery is low</summary>
+      <description>Automatically enable the "power-saver" profile using power-profiles-daemon if the battery is low.</description>
+    </key>
+
+    <key name="dim-screen" type="b">
+      <default>true</default>
+      <summary>Dim the screen after a period of inactivity</summary>
+      <description>If the screen should be dimmed to save power when the computer is idle.</description>
+    </key>
+
+    <key name="blank-screen" type="b">
+      <default>true</default>
+      <summary>Whether to blank screen when session is idle</summary>
+      <description>If the screen should be blanked to save power when the computer is idle.</description>
+    </key>
+
+    <key name="idle-delay" type="d">
+      <default>10</default>
+      <summary>Time before session is considered idle</summary>
+      <description>The number of minutes of inactivity before the session is considered idle.</description>
+    </key>
+
+    <key name="suspend-on-battery" type="b">
+      <default>true</default>
+      <summary>Whether to suspend when inactive and using battery</summary>
+    </key>
+
+    <key name="suspend-on-battery-delay" type="d">
+      <default>20</default>
+      <summary>Sleep timeout computer when on battery</summary>
+      <description>The amount of time in minutes the computer on battery power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
+    </key>
+
+    <key name="suspend-on-ac" type="b">
+      <default>false</default>
+      <summary>Whether to suspend when inactive and plugged in</summary>
+    </key>
+
+    <key name="suspend-on-ac-delay" type="d">
+      <default>60</default>
+      <summary>Sleep timeout for computer when plugged in</summary>
+      <description>The amount of time in minutes the computer on AC power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
+    </key>
+
+  </schema>
+</schemalist>
