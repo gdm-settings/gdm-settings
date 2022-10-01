@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-09-27 21:52+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
+"PO-Revision-Date: 2022-10-02 04:08+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -340,16 +340,12 @@ msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
 
 #: src/app.py:235
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Ayarlar uygulandı"
+msgstr "Oturum ayarları başarıyla yüklendi"
 
 #: src/app.py:239
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
+msgstr "Flatpak sürümünde oturum ayarlarını yükleme desteklenmez"
 
 #: src/app.py:252
 msgid "Reset settings successfully"
@@ -409,10 +405,8 @@ msgid "Apply current display settings"
 msgstr "Geçerli ekran ayarlarını uygula"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Çözünürlük, tazeleme hızı, ekran konumları vb"
+msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
@@ -497,10 +491,8 @@ msgid "Refresh"
 msgstr "Tazeleme"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Kullanıcı ayarlarını içe aktar"
+msgstr "Oturum ayarlarını yükle"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -544,13 +536,11 @@ msgstr "Hoşgeldin Mesajı"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Büyüt"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Hoşgeldin Mesajı"
+msgstr "Mesaj"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -841,7 +831,7 @@ msgstr "Ekran"
 
 #: src/window.py:102
 msgid "Login Screen"
-msgstr ""
+msgstr "Giriş Ekranı"
 
 #: src/window.py:103
 msgid "Tools"
