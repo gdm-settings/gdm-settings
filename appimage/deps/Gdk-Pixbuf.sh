@@ -2,6 +2,10 @@
 
 echo 'Installing Gdk Pixbuf'
 
+# Dependencies
+copy /usr/lib/libjpeg.so*
+copy /usr/lib/libturbojpeg.so*
+
 # Files
 copy /usr/lib/girepository-1.0/GdkPix*-2.0.typelib
 copy /usr/lib/libgdk_pixbuf-2.0.so*
