@@ -35,6 +35,8 @@ all_settings = (
     top_bar_settings,
 )
 
+class LogoImageNotFoundError (FileNotFoundError): pass
+
 def _Settings(schema_id):
     if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
         return Gio.Settings(schema_id=schema_id)
@@ -429,6 +431,9 @@ class SettingsManager (GObject.Object):
             temp_conf_file.write(gdm_conf_contents)
 
         if enable_logo and logo_file:
+            if not os.path.exists(logo_file):
+                raise LogoImageNotFoundError(2, 'No such file', logo_file)
+
             from shutil import copy
             logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
             copy(logo_file, logo_temp)

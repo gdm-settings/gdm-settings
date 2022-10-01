@@ -4,6 +4,7 @@ from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
+from .settings import LogoImageNotFoundError
 from .utils import run_on_host, BackgroundTask
 from .bind_utils import bind
 from . import pages
@@ -126,8 +127,13 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
             else:
                 message = _('Failed to apply settings')
             toast = Adw.Toast(timeout=2, priority='high', title=message)
+
         except BackgroundImageNotFoundError:
-            message = _("Didn't apply. Chosen background image could not be found. Please! choose again.")
+            message = _("Didn't apply. Chosen background image does not exist anymore. Please! choose again.")
+            toast = Adw.Toast(timeout=4, priority='high', title=message)
+
+        except LogoImageNotFoundError:
+            message = _("Didn't apply. Chosen logo image does not exist anymore. Please! choose again.")
             toast = Adw.Toast(timeout=4, priority='high', title=message)
 
         self.toast_overlay.add_toast(toast)
