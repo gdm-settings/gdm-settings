@@ -58,7 +58,6 @@ class SettingsManager (GObject.Object):
         if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
             appearance_settings['shell-theme'] = user_settings['name'] or 'default'
 
-        # Appearance
         if user_settings := _Settings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
             appearance_settings['cursor-theme'] = user_settings["cursor-theme"]
