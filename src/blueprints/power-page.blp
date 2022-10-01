@@ -15,16 +15,6 @@ Box content_box {
     }
 
     Adw.ActionRow {
-      title: _("Dim Screen");
-      subtitle: _("Reduces the screen brightness when the computer is inactive.");
-      activatable-widget: dim_screen_switch;
-
-      Switch dim_screen_switch {
-        valign: center;
-      }
-    }
-
-    Adw.ActionRow {
       title: _("Automatic Power Saver");
       subtitle: _("Enables power saver mode when battery is low.");
       activatable-widget: auto_power_saver_switch;
@@ -34,8 +24,18 @@ Box content_box {
       }
     }
 
+    Adw.ActionRow {
+      title: _("Dim Screen");
+      subtitle: _("Reduces the screen brightness when the computer is inactive.");
+      activatable-widget: dim_screen_switch;
+
+      Switch dim_screen_switch {
+        valign: center;
+      }
+    }
+
     Adw.ExpanderRow {
-      title: _("Screen Blank");
+      title: _("Turn Screen Off");
       subtitle: _("Whether to turn the screen off after a period of inactivity.");
       expanded: bind screen_blank_switch.active bidirectional;
 
@@ -48,7 +48,7 @@ Box content_box {
         title: _("Delay");
         subtitle: _("Time in minutes after which screen will turn off.");
 
-        SpinButton screen_blank_delay_spinbutton {
+        SpinButton screen_blank_spinbutton {
           width-chars: 2;
           valign: center;
 
@@ -69,10 +69,10 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("On Battery Power");
-      expanded: bind auto_suspend_battery_switch.active bidirectional;
+      expanded: bind suspend_on_battery_switch.active bidirectional;
 
       [action]
-      Switch auto_suspend_battery_switch {
+      Switch suspend_on_battery_switch {
         valign: center;
       }
 
@@ -80,7 +80,7 @@ Box content_box {
         title: _("Delay");
         subtitle: _("Time in minutes after which the computer will suspend.");
 
-        SpinButton suspend_battery_delay_spinbutton {
+        SpinButton suspend_on_battery_spinbutton {
           width-chars: 2;
           valign: center;
 
@@ -96,10 +96,10 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("When Plugged In");
-      expanded: bind auto_suspend_ac_switch.active bidirectional;
+      expanded: bind suspend_on_ac_switch.active bidirectional;
 
       [action]
-      Switch auto_suspend_ac_switch {
+      Switch suspend_on_ac_switch {
         valign: center;
       }
 
@@ -107,7 +107,7 @@ Box content_box {
         title: _("Delay");
         subtitle: _("Time in minutes after which the computer will suspend.");
 
-        SpinButton suspend_ac_delay_spinbutton {
+        SpinButton suspend_on_ac_spinbutton {
           width-chars: 2;
           valign: center;
 
