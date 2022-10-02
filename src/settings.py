@@ -17,6 +17,7 @@ font_settings         = delayed_settings(f'{application_id}.fonts')
 login_screen_settings = delayed_settings(f'{application_id}.misc')
 night_light_settings  = delayed_settings(f'{application_id}.night-light')
 mouse_settings        = delayed_settings(f'{application_id}.mouse')
+power_settings        = delayed_settings(f'{application_id}.power')
 touchpad_settings     = delayed_settings(f'{application_id}.touchpad')
 sound_settings        = delayed_settings(f'{application_id}.sound')
 top_bar_settings      = delayed_settings(f'{application_id}.top-bar')
@@ -28,10 +29,13 @@ all_settings = (
     login_screen_settings,
     night_light_settings,
     mouse_settings,
+    power_settings,
     touchpad_settings,
     sound_settings,
     top_bar_settings,
 )
+
+class LogoImageNotFoundError (FileNotFoundError): pass
 
 def _Settings(schema_id):
     if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
@@ -56,7 +60,6 @@ class SettingsManager (GObject.Object):
         if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
             appearance_settings['shell-theme'] = user_settings['name'] or 'default'
 
-        # Appearance
         if user_settings := _Settings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
             appearance_settings['cursor-theme'] = user_settings["cursor-theme"]
@@ -88,6 +91,22 @@ class SettingsManager (GObject.Object):
             touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
             touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
             touchpad_settings['speed'] = user_settings["speed"]
+
+        if user_settings := _Settings("org.gnome.settings-daemon.plugins.power"):
+            power_settings['power-button-action'] = user_settings['power-button-action']
+            power_settings['auto-power-saver'] = user_settings['power-saver-profile-on-low-battery']
+            power_settings['dim-screen'] = user_settings['idle-dim']
+            power_settings['suspend-on-ac'] = user_settings['sleep-inactive-ac-type'] == 'suspend'
+            power_settings['suspend-on-ac-delay'] = user_settings['sleep-inactive-ac-timeout'] / 60
+            power_settings['suspend-on-battery'] = user_settings['sleep-inactive-battery-type'] == 'suspend'
+            power_settings['suspend-on-battery-delay'] = user_settings['sleep-inactive-battery-timeout'] / 60
+
+        if user_settings := _Settings("org.gnome.desktop.session"):
+            if user_settings['idle-delay']:
+                power_settings['blank-screen'] = True
+                power_settings['idle-delay'] = user_settings['idle-delay'] / 60
+            else:
+                power_settings['blank-screen'] = False
 
         if user_settings := _Settings("org.gnome.settings-daemon.plugins.color"):
             night_light_settings['enabled'] = user_settings["night-light-enabled"]
@@ -348,6 +367,32 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
             gdm_conf_contents +=  "\n"
 
+            power_button_action = power_settings['power-button-action']
+            auto_power_saver = str(power_settings['auto-power-saver']).lower()
+            dim_screen = str(power_settings['dim-screen']).lower()
+            idle_delay = int(power_settings['idle-delay'] * 60) if power_settings['blank-screen'] else 0
+            sleep_type_on_ac = 'suspend' if power_settings['suspend-on-ac'] else 'nothing'
+            suspend_on_ac_delay = int(power_settings['suspend-on-ac-delay'] * 60)
+            sleep_type_on_battery = 'suspend' if power_settings['suspend-on-battery'] else 'nothing'
+            suspend_on_battery_delay = int(power_settings['suspend-on-battery-delay'] * 60)
+
+            gdm_conf_contents +=  "#---------------- Power -----------------\n"
+            gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/power]\n"
+            gdm_conf_contents +=  "#----------------------------------------\n"
+            gdm_conf_contents += f"power-button-action='{power_button_action}'\n"
+            gdm_conf_contents += f"power-saver-profile-on-low-battery={auto_power_saver}\n"
+            gdm_conf_contents += f"dim-screen={dim_screen}\n"
+            gdm_conf_contents += f"sleep-inactive-ac-type='{sleep_type_on_ac}'\n"
+            gdm_conf_contents += f"sleep-inactive-ac-timeout={suspend_on_ac_delay}\n"
+            gdm_conf_contents += f"sleep-inactive-battery-type='{sleep_type_on_battery}'\n"
+            gdm_conf_contents += f"sleep-inactive-battery-timeout={suspend_on_battery_delay}\n"
+            gdm_conf_contents +=  "\n"
+            gdm_conf_contents +=  "#--------------- Session ----------------\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/session]\n"
+            gdm_conf_contents +=  "#----------------------------------------\n"
+            gdm_conf_contents += f"idle-delay={idle_delay}\n"
+            gdm_conf_contents +=  "\n"
+
             enabled = str(night_light_settings['enabled']).lower()
             temperature = round(night_light_settings['temperature'])
             schedule_automatic = str(night_light_settings['schedule-automatic']).lower()
@@ -386,6 +431,9 @@ class SettingsManager (GObject.Object):
             temp_conf_file.write(gdm_conf_contents)
 
         if enable_logo and logo_file:
+            if not os.path.exists(logo_file):
+                raise LogoImageNotFoundError(2, 'No such file', logo_file)
+
             from shutil import copy
             logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
             copy(logo_file, logo_temp)

@@ -36,6 +36,9 @@ def is_unmodified(gresourceFile:str):
 
     from .utils import getstdout
 
+    if env.HOST_ROOT and not gresourceFile.startswith(env.HOST_ROOT):
+        gresourceFile = env.HOST_ROOT + gresourceFile
+
     if os.path.exists(gresourceFile):
         if getstdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
             if not getstdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
@@ -46,7 +49,7 @@ def get_default() -> str:
     """get full path to the unmodified GResource file of the default theme (if the file exists)"""
 
     for file in ShellGresourceFile, ShellGresourceAutoBackup:
-       if is_unmodified(env.HOST_ROOT + file):
+       if is_unmodified(file):
            return file
 
 def extract_default_theme(destination:str, /):

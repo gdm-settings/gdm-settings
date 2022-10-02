@@ -12,6 +12,8 @@
     <child name="touchpad" schema="io.github.realmazharhussain.GdmSettings.touchpad"/>
     <child name="night-light" schema="io.github.realmazharhussain.GdmSettings.night-light"/>
     <child name="misc" schema="io.github.realmazharhussain.GdmSettings.misc"/>
+    <child name="power" schema="io.github.realmazharhussain.GdmSettings.power"/>
+    <child name="tools" schema="io.github.realmazharhussain.GdmSettings.tools"/>
 
     <key name="never-applied" type="b">
       <default>true</default>
