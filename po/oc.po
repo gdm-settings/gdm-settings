@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 21:52+0500\n"
+"POT-Creation-Date: 2022-10-02 09:06+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -138,6 +138,81 @@ msgstr ""
 "plaja [-1..1] (a partir de « cap d’accelaracion » fins a « rapid »). La "
 "valor 0 es la valor per defaut del sistèma."
 
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
+msgid "Power button action"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+msgid ""
+"The action to take when the system power button is pressed. This action is "
+"hard-coded (and the setting ignored) on virtual machines (power off) and "
+"tablets (suspend)."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
+msgid "Enable power-saver profile when battery is low"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
+msgid ""
+"Automatically enable the \"power-saver\" profile using power-profiles-daemon "
+"if the battery is low."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
+msgid "Dim the screen after a period of inactivity"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
+msgid "If the screen should be dimmed to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+msgid "Whether to blank screen when session is idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+msgid ""
+"If the screen should be blanked to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+msgid "Time before session is considered idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+msgid ""
+"The number of minutes of inactivity before the session is considered idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+msgid "Whether to suspend when inactive and using battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
+msgid "Sleep timeout computer when on battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+msgid ""
+"The amount of time in minutes the computer on battery power needs to be "
+"inactive before it goes to sleep. A value of 0 means never."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+msgid "Whether to suspend when inactive and plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+msgid "Sleep timeout for computer when plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+msgid ""
+"The amount of time in minutes the computer on AC power needs to be inactive "
+"before it goes to sleep. A value of 0 means never."
+msgstr ""
+
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
@@ -169,7 +244,7 @@ msgstr "Color de fons barra superiora"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:61
+#: src/window.py:62
 msgid "Login Manager Settings"
 msgstr "Paramètres del gestionari de fenèstra de connexion"
 
@@ -604,6 +679,85 @@ msgstr "Desfilar en bolegant dos dets."
 msgid "Disable while Typing"
 msgstr "Desactivar en picant"
 
+#: src/blueprints/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+#, fuzzy
+#| msgid "Nothing"
+msgid "Do Nothing"
+msgstr "Res"
+
+#: src/blueprints/power-page.blp:13
+msgid "Suspend"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Hibernate"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Ask"
+msgstr ""
+
+#: src/blueprints/power-page.blp:18
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Power Saver"
+msgstr "Automatic"
+
+#: src/blueprints/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr ""
+
+#: src/blueprints/power-page.blp:28
+msgid "Dim Screen"
+msgstr ""
+
+#: src/blueprints/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr ""
+
+#: src/blueprints/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr ""
+
+#: src/blueprints/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr ""
+
+#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
+#: src/blueprints/power-page.blp:107
+msgid "Delay"
+msgstr ""
+
+#: src/blueprints/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr ""
+
+#: src/blueprints/power-page.blp:67
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Suspend"
+msgstr "Automatic"
+
+#: src/blueprints/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr ""
+
+#: src/blueprints/power-page.blp:71
+msgid "On Battery Power"
+msgstr ""
+
+#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr ""
+
+#: src/blueprints/power-page.blp:98
+msgid "When Plugged In"
+msgstr ""
+
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
 msgstr "Tèma"
@@ -696,7 +850,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 oras"
 
-#: src/blueprints/top-bar-page.blp:98
+#: src/blueprints/top-bar-page.blp:98 src/window.py:104
 msgid "Power"
 msgstr "Energia"
 
@@ -716,7 +870,7 @@ msgstr "(Pas cap)"
 msgid "Choose"
 msgstr "Causir"
 
-#: src/common_widgets.py:128 src/window.py:149
+#: src/common_widgets.py:128 src/window.py:156
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -791,89 +945,104 @@ msgstr "Tèma shell predeterminat extrach dins « {folder} » coma « {nam
 msgid "Failed to extract default theme"
 msgstr "Fracàs en ensajar de traire lo tèma shell per defaut"
 
-#: src/settings.py:206
+#: src/settings.py:225
 msgid "Backing up default shell theme …"
 msgstr "Salvagarda del tèma per defaut…"
 
-#: src/settings.py:254
+#: src/settings.py:273
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 
-#: src/settings.py:261
+#: src/settings.py:280
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/settings.py:454
+#: src/settings.py:502
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
 
-#: src/settings.py:461
+#: src/settings.py:509
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/window.py:96
+#: src/window.py:97
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: src/window.py:97
+#: src/window.py:98
 msgid "Fonts"
 msgstr "Poliças"
 
-#: src/window.py:98
+#: src/window.py:99
 msgid "Top Bar"
 msgstr "Barra superiora"
 
-#: src/window.py:99
+#: src/window.py:100
 msgid "Sound"
 msgstr "Son"
 
-#: src/window.py:100
+#: src/window.py:101
 msgid "Mouse & Touchpad"
 msgstr "Mirga & pavat tac­til"
 
-#: src/window.py:101
+#: src/window.py:102
 msgid "Display"
 msgstr "Afichatge"
 
-#: src/window.py:102
+#: src/window.py:103
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:103
+#: src/window.py:105
 msgid "Tools"
 msgstr "Aisinas"
 
-#: src/window.py:122
+#: src/window.py:124
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/window.py:126
+#: src/window.py:128
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/window.py:129
+#: src/window.py:132
+#, fuzzy
+#| msgid ""
+#| "Didn't apply. Chosen background image could not be found. Please! choose "
+#| "again."
 msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/window.py:135
+#: src/window.py:136
+#, fuzzy
+#| msgid ""
+#| "Didn't apply. Chosen background image could not be found. Please! choose "
+#| "again."
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
+"un autre."
+
+#: src/window.py:142
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 "Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
 "connectar o reavietz."
 
-#: src/window.py:138
+#: src/window.py:145
 msgid "Log Out?"
 msgstr "Se desconnectar ?"
 
-#: src/window.py:147
+#: src/window.py:154
 msgid "Log Out"
 msgstr "Desconnexion"
 
@@ -1013,9 +1182,6 @@ msgstr "Desconnexion"
 #~| msgid "Should the theme be overlayed on top of the default theme?"
 #~ msgid "What to overlay on top of the default theme?"
 #~ msgstr "Lo tèma deu se superpausar al tèma per defaut ?"
-
-#~ msgid "Nothing"
-#~ msgstr "Res"
 
 #~ msgid "Resources Only"
 #~ msgstr "Ressorsas sonque"
