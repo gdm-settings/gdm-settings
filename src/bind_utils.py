@@ -31,10 +31,7 @@ def bind_comborow(comborow, settings, key, flags=default_flag):
 
 
 def enum_name_to_value(name, enum):
-    try:
-        return enum[name].value
-    except KeyError:
-        return 0
+    return enum[name].value
 
 def enum_value_to_name(value, enum):
     return enum(value).name
