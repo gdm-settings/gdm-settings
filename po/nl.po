@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-02 09:06+0500\n"
-"PO-Revision-Date: 2022-09-29 13:17+0000\n"
+"PO-Revision-Date: 2022-10-04 18:17+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Aan-/Uitknopactie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -153,70 +153,81 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"De actie die dient te worden uitgevoerd na het indrukken van de aan-/"
+"uitknop. Let op: deze optie werkt niet in virtuele machines en op tablets."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Energiebesparing inschakelen bij laag accuniveau"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
-msgstr ""
+msgstr "Schakel de energiebesparing automatisch in als het accuniveau laag is."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Scherm verduisteren na inactiviteit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Verduister het scherm om energie te besparen als er geen activiteit wordt "
+"waargenomen."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Scherm uitschakelen als sessie inactief is"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "Of het scherm dient te worden uitgeschakeld bij inactiviteit."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Inactiviteit"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Het aantal minuten voordat een sessie als inactief beschouwd wordt."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
 msgstr ""
+"Of het systeem in de slaapstand dient te gaan bij inactiviteit en accugebruik"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Slaaptime-out bij gebruik van accu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Na hoeveel minuten de computer bij accugebruik inactief dient te zijn "
+"alvorens de slaapstand wordt ingeschakeld. 0 = nooit."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
 msgstr ""
+"Of het systeem in de slaapstand dient te gaan bij inactiviteit en "
+"netstromgebruik"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Slaaptime-out bij netstroomgebruik"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Na hoeveel minuten de computer bij netstroomgebruik inactief dient te zijn "
+"alvorens de slaapstand wordt ingeschakeld. 0 = nooit."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -676,84 +687,76 @@ msgstr "Uitschakelen tijdens typen"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Na indrukken van aan-/uitknop"
 
 #: src/blueprints/power-page.blp:13
-#, fuzzy
-#| msgid "Nothing"
 msgid "Do Nothing"
-msgstr "Niets"
+msgstr "Niets doen"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Pauzestand inschakelen"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Slaapstand inschakelen"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Om actie vragen"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automatisch"
+msgstr "Automatische energiebesparing"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Schakel energiebesparing in als het accuniveau laag is."
 
 #: src/blueprints/power-page.blp:28
-#, fuzzy
-#| msgid "Login Screen"
 msgid "Dim Screen"
-msgstr "Aanmeldscherm"
+msgstr "Scherm verduisteren"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Vermindert de helderheid als de computer inactief is."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Scherm uitschakelen"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Schakelt het scherm uit na een periode van inactiviteit."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Vertraging"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Na hoeveel minuten het scherm wordt uitgeschakeld."
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automatisch"
+msgstr "Automatisch onderbreken"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Zet de computer in de pauzestand na een periode van inactiviteit."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Bij gebruik van accu"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Na hoeveel minuten de computer in de pauzestand wordt gezet."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Bij gebruik van netstroom"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -1008,27 +1011,19 @@ msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
 
 #: src/window.py:132
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"De afbeelding is niet ingesteld omdat het bestand niet is aangetroffen. Kies "
+"De afbeelding is niet ingesteld omdat het bestand niet meer bestaat. Kies "
 "een andere afbeelding."
 
 #: src/window.py:136
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"De afbeelding is niet ingesteld omdat het bestand niet is aangetroffen. Kies "
-"een andere afbeelding."
+"Het logo is niet ingesteld omdat het bestand niet meer bestaat. Kies een "
+"andere afbeelding."
 
 #: src/window.py:142
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
