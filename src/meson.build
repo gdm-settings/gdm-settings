@@ -5,6 +5,7 @@ configure_file(
     install_dir: get_option('bindir'),
   configuration: configuration_data({
             'prefix': get_option('prefix'),
+          'data_dir': get_option('prefix') / get_option('datadir'),
         'locale_dir': get_option('prefix') / get_option('localedir'),
     'py_install_dir': python.get_install_dir(),
   }),
