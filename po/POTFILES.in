@@ -15,6 +15,7 @@ data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
 data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
 data/io.github.realmazharhussain.GdmSettings.desktop.in
 src/app.py
+src/about.py
 src/blueprints/appearance-page.blp
 src/blueprints/display-page.blp
 src/blueprints/fonts-page.blp
@@ -26,7 +27,6 @@ src/blueprints/sound-page.blp
 src/blueprints/tools-page.blp
 src/blueprints/top-bar-page.blp
 src/common_widgets.py
-src/dialogs.py
 src/gdm-settings.py.in
 src/info.py.in
 src/pages/appearance.py
