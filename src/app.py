@@ -188,16 +188,15 @@ class Application(Adw.Application):
                      'to install these dependencies on your system.'
                     ).format(url=link)
 
-        dialog = Gtk.MessageDialog(
-                         text = _('Missing Dependencies'),
-                        modal = True,
-                      buttons = Gtk.ButtonsType.OK,
-                 message_type = Gtk.MessageType.ERROR,
-                transient_for = self.window,
-               secondary_text = message,
-         secondary_use_markup = True,
+        dialog = Adw.MessageDialog(
+                    body = message,
+                   modal = True,
+                 heading = _('Missing Dependencies'),
+           transient_for = self.window,
+         body_use_markup = True,
         )
 
+        dialog.add_response('ok', _('OK'))
         dialog.connect('response', lambda *args: self.quit())
         dialog.present()
 
