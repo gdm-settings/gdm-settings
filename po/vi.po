@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -245,7 +245,7 @@ msgid "Login Manager Settings"
 msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
 
@@ -428,6 +428,31 @@ msgstr "Khôi phục cài đặt gốc thành công"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/about.py:6
+#, fuzzy
+#| msgctxt "Name of Designer"
+#| msgid "Thales Bindá"
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Bản quyền © 2021 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -871,30 +896,6 @@ msgstr "Hủy bỏ"
 msgid "Choose Image"
 msgstr "Chọn hình ảnh"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Bản quyền © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "Trang chủ"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "Đã áp dụng cài đặt màn hình hiện tại"
@@ -1039,6 +1040,9 @@ msgstr "Đăng xuất?"
 #: src/window.py:154
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "Homepage"
+#~ msgstr "Trang chủ"
 
 #~ msgid "User settings imported"
 #~ msgstr "Cài đặt người dùng đã được import"

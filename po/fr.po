@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -255,7 +255,7 @@ msgid "Login Manager Settings"
 msgstr "Gestionnaire de paramètres de connexion"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr ""
 "Une application de paramétrage pour le Gestionnaire de connexion de GNOME "
@@ -446,6 +446,31 @@ msgstr "Réinitialisation des paramètres réussie"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "Échec de la réinitialisation des paramètres"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/about.py:6
+#, fuzzy
+#| msgctxt "Name of Designer"
+#| msgid "Thales Bindá"
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "Irénée Thirion <irenee.thirion@outlook.fr>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -889,30 +914,6 @@ msgstr "Annuler"
 msgid "Choose Image"
 msgstr "Choisir une image"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "Page d'accueil"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "Irénée Thirion <irenee.thirion@outlook.fr>"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "Paramètres d'affichage actuels appliqués"
@@ -1057,6 +1058,9 @@ msgstr "Se déconnecter ?"
 #: src/window.py:154
 msgid "Log Out"
 msgstr "Déconnexion"
+
+#~ msgid "Homepage"
+#~ msgstr "Page d'accueil"
 
 #~ msgid "User settings imported"
 #~ msgstr "Paramètres utilisateur importés"

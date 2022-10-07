@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -235,7 +235,7 @@ msgid "Login Manager Settings"
 msgstr "تنظیمات مدیر ورود"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم، GDM"
 
@@ -397,6 +397,28 @@ msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "مظهر حسین"
+
+#: src/about.py:6
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr ""
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -841,30 +863,6 @@ msgstr "لغو"
 msgid "Choose Image"
 msgstr "گزینش تصویر"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "صفحهٔ خانگی"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "مظهر حسین"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr ""
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
@@ -987,6 +985,9 @@ msgstr ""
 #: src/window.py:154
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Homepage"
+#~ msgstr "صفحهٔ خانگی"
 
 #~ msgid "User settings imported"
 #~ msgstr "تنظیمات کاربر درون‌ریزی شد"

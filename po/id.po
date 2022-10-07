@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Bima <abimanyusrisetyo@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -249,7 +249,7 @@ msgid "Login Manager Settings"
 msgstr "Pengaturan Manajer Login"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "Aplikasi pengaturan untuk Manajer Login GNOME, GDM"
 
@@ -428,6 +428,31 @@ msgstr "Berhasil mengatur ulang pengaturan"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "Gagal mengatur ulang pengaturan"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/about.py:6
+#, fuzzy
+#| msgctxt "Name of Designer"
+#| msgid "Thales Bindá"
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Hak Cipta © 2021 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "Abimanyu Sri Setyo"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -871,30 +896,6 @@ msgstr "Membatalkan"
 msgid "Choose Image"
 msgstr "Pilih Gambar"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Hak Cipta © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "Beranda"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "Abimanyu Sri Setyo"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "Pengaturan tampilan saat ini yang diterapkan"
@@ -1038,6 +1039,9 @@ msgstr "Keluar?"
 #: src/window.py:154
 msgid "Log Out"
 msgstr "Keluar"
+
+#~ msgid "Homepage"
+#~ msgstr "Beranda"
 
 #~ msgid "User settings imported"
 #~ msgstr "Pengaturan pengguna diimpor"

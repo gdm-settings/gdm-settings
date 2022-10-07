@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-03 23:16+0000\n"
 "Last-Translator: Jason Clermont <lunme1008@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -239,7 +239,7 @@ msgid "Login Manager Settings"
 msgstr "登录管理器设置"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "GNOME 登录管理器 GDM 的设置应用程序"
 
@@ -410,6 +410,30 @@ msgstr "重置设置成功"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "重置设置失败"
+
+#: src/about.py:5
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#: src/about.py:6
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr ""
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr ""
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -860,32 +884,6 @@ msgstr ""
 msgid "Choose Image"
 msgstr "选择文件"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "主页"
-
-#: src/dialogs.py:19
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr ""
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr ""
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "应用当前显示设置"
@@ -1018,6 +1016,9 @@ msgstr ""
 #: src/window.py:154
 msgid "Log Out"
 msgstr ""
+
+#~ msgid "Homepage"
+#~ msgstr "主页"
 
 #~ msgid "User settings imported"
 #~ msgstr "已导入用户设置"

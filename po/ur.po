@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -252,7 +252,7 @@ msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
 
@@ -428,6 +428,31 @@ msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "مظہر حسین"
+
+#: src/about.py:6
+#, fuzzy
+#| msgctxt "Name of Designer"
+#| msgid "Thales Bindá"
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "تھیلس بِنڈا"
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "کاپی رائیٹ © 2021 مظہر حسین"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -871,30 +896,6 @@ msgstr "کینسل"
 msgid "Choose Image"
 msgstr "تصویر کا انتخاب کریں"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "کاپی رائیٹ © 2021 مظہر حسین"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "ہوم پیج"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "مظہر حسین"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "تھیلس بِنڈا"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
@@ -1035,6 +1036,9 @@ msgstr "لاگ آؤٹ کریں؟"
 #: src/window.py:154
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgid "Homepage"
+#~ msgstr "ہوم پیج"
 
 #~ msgid "User settings imported"
 #~ msgstr "یوزر کی سیٹنگز امپورٹ ہو گئی ہیں"

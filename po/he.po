@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-02 09:06+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-07 18:28+0500\n"
 "PO-Revision-Date: 2022-10-06 13:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -251,7 +251,7 @@ msgid "Login Manager Settings"
 msgstr "הגדרות מנהל הכניסה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
 msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏- GDM"
 
@@ -418,6 +418,31 @@ msgstr "ההגדרות אופסו בהצלחה"
 #: src/app.py:254
 msgid "Failed to reset settings"
 msgstr "איפוס ההגדרות נכשל"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "מזהר חוסיין"
+
+#: src/about.py:6
+#, fuzzy
+#| msgctxt "Name of Designer"
+#| msgid "Thales Bindá"
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "תאלס בינדה"
+
+#: src/about.py:17
+#, fuzzy
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "כל הזכויות שמורות © 2021 מזהר חוסיין"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not qoutes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "ירון שהרבני <sh.yaron@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -859,30 +884,6 @@ msgstr "ביטול"
 msgid "Choose Image"
 msgstr "בחירת תמונה"
 
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "כל הזכויות שמורות © 2021 מזהר חוסיין"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "עמוד הבית"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "מזהר חוסיין"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "תאלס בינדה"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "ירון שהרבני <sh.yaron@gmail.com>"
-
 #: src/pages/display.py:81
 msgid "Applied current display settings"
 msgstr "הגדרות התצוגה הנוכחיות הוחלו"
@@ -1020,6 +1021,9 @@ msgstr "לצאת?"
 #: src/window.py:154
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgid "Homepage"
+#~ msgstr "עמוד הבית"
 
 #~ msgid "User settings imported"
 #~ msgstr "הגדרות המשתמש ייובאו"
