@@ -2,7 +2,7 @@
 
 set -e
 
-export ProjectName=gdm-settings
+export AppName='Login Manager Settings'
 export ApplicationId=io.github.realmazharhussain.GdmSettings
 
 
@@ -72,4 +72,4 @@ echo
 
 VERSION_STRING=$("${AppRun}" --version)
 export VERSION=${VERSION_STRING##* }
-appimagetool "${AppDir}" "${BuildDir}"/${ProjectName}.AppImage
+appimagetool "${AppDir}" "${BuildDir}/${AppName// /_}".AppImage
