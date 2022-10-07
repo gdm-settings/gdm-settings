@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-08-27 09:02+0000\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
@@ -367,20 +367,7 @@ msgstr "Stillen Modus aktivieren (Alias von --verbosity=0)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Diese Anwendung benötigt die folgende nicht installierte Software, um "
-"korrekt zu funktionieren."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Entwicklerversion)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -390,19 +377,33 @@ msgstr ""
 "damit diese Anwendung korrekt funktioniert. Sie sind aktuell nicht auf dem "
 "Host-System installiert."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Diese Anwendung benötigt die folgende nicht installierte Software, um "
+"korrekt zu funktionieren."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -411,21 +412,25 @@ msgstr ""
 "Klicken Sie <a href=\"{url}\">hier</a> um zu erfahren, wie Sie diese "
 "Abhängigkeiten auf Ihrem System installieren können."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "Fehlende Abhängigkeiten"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "Einstellungen wurden neu geladen"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "Einstellungen erfolgreich angewendet"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -433,11 +438,11 @@ msgstr ""
 "Das Importieren von Benutzereinstellungen wird in der Flatpak-Version NICHT "
 "unterstützt"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "Einstellungen wurden erfolgreich zurückgesetzt"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
 
@@ -900,7 +905,7 @@ msgstr "(Keine)"
 msgid "Choose"
 msgstr "Auswählen"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -918,17 +923,14 @@ msgstr "Anwenden der aktuellen Displayeinstellungen fehlgeschlagen"
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr ""
 
@@ -943,26 +945,26 @@ msgstr "Shell-Vorgabethema wurde nach »{folder}« als »{name}« entpackt"
 msgid "Failed to extract default theme"
 msgstr "Entpacken des Shell-Vorgabethemas fehlgeschlagen"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "Vorgabethema wird gesichert …"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource-Einstellungen für Ubuntu werden angewendet …"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource-Einstellungen für Nicht-Ubuntu-Systeme werden angewendet …"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource-Einstellungen für Ubuntu werden zurückgesetzt …"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -1037,13 +1039,17 @@ msgstr ""
 "Der Rechner könnte merkwürdig oder fehlerhaft aussehen, bis Sie sich neu "
 "anmelden oder neu starten."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "Abmelden?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "Abmelden"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Entwicklerversion)"
 
 #~ msgid "Homepage"
 #~ msgstr "Startseite"

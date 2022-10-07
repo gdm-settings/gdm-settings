@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-10-07 17:04+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -379,20 +379,7 @@ msgstr ""
 "Ongeldig foutopsporingsniveau: {level}. Het niveau dient 0, 5 of "
 "daartussenin te liggen."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Deze toepassing vereist de volgende software, welke niet geïnstalleerd is op "
-"uw systeem."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (ontwikkelaarsuitgave)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -401,19 +388,33 @@ msgstr ""
 "De volgende afhankelijkheden zijn vereist voor het functioneren van deze "
 "toepassing, maar niet aanwezig op het hostsysteem."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Deze toepassing vereist de volgende software, welke niet geïnstalleerd is op "
+"uw systeem."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -421,28 +422,32 @@ msgid ""
 msgstr ""
 "Klik <a href=\"{url}\">hier</a> om de installatie-instructies te bekijken."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "Ontbrekende afhankelijkheden"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
-#: src/app.py:235
+#: src/app.py:223
 msgid "Session settings loaded successfully"
 msgstr "De sessievoorkeuren zijn geladen"
 
-#: src/app.py:239
+#: src/app.py:227
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "In de Flatpak-versie is het niet mogelijk om sessievoorkeuren te importeren"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "De standaardwaarden zijn hersteld"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "De standaardwaarden kunnen niet worden hersteld"
 
@@ -890,7 +895,7 @@ msgstr "(Geen)"
 msgid "Choose"
 msgstr "Kiezen"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -907,15 +912,22 @@ msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "Het bestand ‘$XDG_CONFIG_HOME/monitors.xml’ is vereist om de huidige "
 "beeldschermvoorkeuren toe te passen, maar bestaat niet.\n"
@@ -926,7 +938,7 @@ msgstr ""
 "2. Pas een voorkeur aan;\n"
 "3. Pas de voorkeuren toe."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "Beeldschermvoorkeuren ontbreken"
 
@@ -942,26 +954,26 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
@@ -1027,13 +1039,17 @@ msgstr ""
 "Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
 "computer herstart."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "Afmelden?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (ontwikkelaarsuitgave)"
 
 #~ msgid "Homepage"
 #~ msgstr "Website"

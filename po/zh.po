@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-09-03 23:16+0000\n"
 "Last-Translator: Jason Clermont <lunme1008@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -342,18 +342,7 @@ msgstr "启用安静模式（等同于 --verbosity=0）"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr "这个应用需要以下软件才能正常运行，但它们没有被安装。"
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -362,19 +351,25 @@ msgstr ""
 "以下程序需要安装<b>在主机系统上</b>，以便该应用程序正常运行，但它们没有安装在"
 "主机系统上。"
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr "这个应用需要以下软件才能正常运行，但它们没有被安装。"
+
+#: src/app.py:162
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr ""
 
-#: src/app.py:179
+#: src/app.py:168
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -383,31 +378,35 @@ msgstr ""
 "点击<a href=\"{url}\">这里</a>，获取关于如何在你的系统上安装这些依赖项的说"
 "明。"
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "缺失的依赖项"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "重新载入设置"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "应用设置成功"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版本不支持导入用户设置"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "重置设置成功"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "重置设置失败"
 
@@ -874,7 +873,7 @@ msgstr "无"
 msgid "Choose"
 msgstr "选择文件"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr ""
 
@@ -894,17 +893,14 @@ msgstr "无法应用当前显示设置"
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr ""
 
@@ -920,28 +916,28 @@ msgstr "默认 shell 主题提取到 '{path}' 作为 'default-extracted'"
 msgid "Failed to extract default theme"
 msgstr "提取默认主题失败"
 
-#: src/settings.py:225
+#: src/settings.py:234
 #, fuzzy
 #| msgid "saving default theme …"
 msgid "Backing up default shell theme …"
 msgstr "保存默认主题…"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 应用 GResource 设置…"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统应用 GResource 设置…"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "为 Ubuntu 重置 GResource 设置…"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "为非 Ubuntu 系统重置 GResource 设置…"
@@ -1009,11 +1005,11 @@ msgstr "应用失败!找不到所选的背景图片,请再次选择!"
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr ""
 

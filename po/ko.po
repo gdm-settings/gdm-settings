@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-10-06 13:16+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -345,19 +345,7 @@ msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "{level} 은(는) 잘못된 상세 모드입니다.. 0 부터 5 사이여야 합니다."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"이 앱이 제대로 작동하려면 다음 소프트웨어가 필요하지만 설치되지 않았습니다."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (개발자 에디션)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -366,19 +354,32 @@ msgstr ""
 "이 앱이 제대로 작동하려면 다음 프로그램을 <b>호스트 시스템</b>에 설치해야 하"
 "지만 호스트 시스템에는 설치되어 있지 않습니다."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"이 앱이 제대로 작동하려면 다음 소프트웨어가 필요하지만 설치되지 않았습니다."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>폴킷</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -387,27 +388,31 @@ msgstr ""
 "시스템에 이러한 종속성을 설치하는 방법에 대한 지침을 보려면 <a href="
 "\"{url}\">여기</a>를 클릭하세요."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "누락된 종속성"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
-#: src/app.py:235
+#: src/app.py:223
 msgid "Session settings loaded successfully"
 msgstr "세션 설정이 성공적으로 불러오기되었습니다"
 
-#: src/app.py:239
+#: src/app.py:227
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "세션 설정 불러오기는 Flatpak 버전에서 지원되지 않습니다"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "설정 리셋 성공"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "설정 리셋 실패"
 
@@ -868,7 +873,7 @@ msgstr "(없음)"
 msgid "Choose"
 msgstr "선택"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "취소"
 
@@ -885,15 +890,22 @@ msgid "Failed to apply current display settings"
 msgstr "현재 디스플레이 설정 적용에 실패했습니다"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "현재 디스플레이 설정을 적용하려면 '$XDG_CONFIG_HOME/monitors.xml' 파일이 필요"
 "하지만 존재하지 않습니다.\n"
@@ -904,7 +916,7 @@ msgstr ""
 "2. 일부 설정을 변경합니다.\n"
 "3. 적용합니다."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "모니터 설정을 찾을 수 없습니다"
 
@@ -919,26 +931,26 @@ msgstr "'{folder}'에 '{name}'(으)로 추출된 기본 쉘 테마"
 msgid "Failed to extract default theme"
 msgstr "기본 테마를 추출하지 못했습니다"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -1012,13 +1024,17 @@ msgstr ""
 "다시 로그인하거나 재부팅할 때까지 시스템이 이상하거나 버그가 있는 것처럼 보"
 "일 수 있습니다."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "로그아웃 할까요?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (개발자 에디션)"
 
 #~ msgid "Homepage"
 #~ msgstr "홈페이지"

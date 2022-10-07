@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-10-01 03:17+0000\n"
 "Last-Translator: Eduardo Malaspina <vaio0@swismail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -366,20 +366,7 @@ msgstr "Activar el modo silencioso (alias de --verbosity=0)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Nivel de verbosidad {level} no válido. Debe ser 0, 5, o intermedio."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Esta aplicación requiere el siguiente software para funcionar correctamente, "
-"pero no está instalado."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Edición para desarrolladores)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -389,19 +376,33 @@ msgstr ""
 "b> para que esta aplicación funcione correctamente, pero no están instalados "
 "en el sistema anfitrión."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Esta aplicación requiere el siguiente software para funcionar correctamente, "
+"pero no está instalado."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -410,21 +411,25 @@ msgstr ""
 "Haga clic <a href=\"{url}\">aquí</a> para obtener instrucciones sobre cómo "
 "instalar estas dependencias en su sistema."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "Dependencias ausentes"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "Configuración recargada"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "Configuración aplicada con éxito"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -432,11 +437,11 @@ msgstr ""
 "La importación de la configuración del usuario NO es compatible con la "
 "versión Flatpak"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "Restablecida la configuración correctamente"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "Fallo en el restablecimiento de la configuración"
 
@@ -901,7 +906,7 @@ msgstr "(Ninguno)"
 msgid "Choose"
 msgstr "Elegir"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -918,15 +923,22 @@ msgid "Failed to apply current display settings"
 msgstr "No se ha podido aplicar la configuración actual de la pantalla"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "El archivo '$XDG_CONFIG_HOME/monitors.xml' es necesario para aplicar la "
 "configuración actual de la pantalla, pero no existe.\n"
@@ -937,7 +949,7 @@ msgstr ""
 "2. Cambie algunos ajustes allí.\n"
 "3. Aplicar."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "No se encuentra la configuración del monitor"
 
@@ -952,27 +964,27 @@ msgstr "Tema de shell predeterminado extraído en ''{folder}'' como ''{name}''"
 msgid "Failed to extract default theme"
 msgstr "Fallo al extraer el tema predeterminado"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "Copia de seguridad del tema del shell predeterminado…"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicar la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Aplicando la configuración de GResource para sistemas que no son de Ubuntu …"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Restableciendo la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -1048,13 +1060,17 @@ msgstr ""
 "El sistema puede empezar a verse raro/con problemas hasta que vuelva a "
 "iniciar sesión o reinicie."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "¿Cerrar sesión?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "Cerrar sesión"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Edición para desarrolladores)"
 
 #~ msgid "Homepage"
 #~ msgstr "Página web"

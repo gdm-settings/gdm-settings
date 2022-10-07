@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-08-24 12:03+0200\n"
 "Last-Translator: una Jernberg <lunajernberg@gnome.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -349,20 +349,7 @@ msgstr "Aktivera tyst läge (alias av -verbosity=0)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Detta program kräver följande programvara för att fungera korrekt men de är "
-"inte installerade."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Utvecklarversion)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -372,19 +359,33 @@ msgstr ""
 "här programmet ska fungera korrekt, men de är inte installerade på "
 "värdsystemet."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Detta program kräver följande programvara för att fungera korrekt men de är "
+"inte installerade."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -393,31 +394,35 @@ msgstr ""
 "Klicka <a href=\"{url}\">här</a> för instruktioner om hur du installerar "
 "dessa beroenden på ditt system."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "Saknar beroenden"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "Inställningarna har laddats om"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "Inställningarna har verkställts"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Import av användarinställningar stöds INTE i Flatpak-versionen"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "Återställde inställningar framgångsrikt"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "Misslyckades att återställa inställningar"
 
@@ -880,7 +885,7 @@ msgstr "(Ingen)"
 msgid "Choose"
 msgstr "Välj"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -897,15 +902,22 @@ msgid "Failed to apply current display settings"
 msgstr "Det gick inte att verkställa aktuella visningsinställningar"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "Filen '$XDG_CONFIG_HOME/monitors.xml' krävs för att tillämpa aktuella "
 "visningsinställningar men den finns inte.\n"
@@ -916,7 +928,7 @@ msgstr ""
 "2. Ändra några inställningar där.\n"
 "3. Verkställ."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "Skärminställningar hittades inte"
 
@@ -931,26 +943,26 @@ msgstr "Standardtema uppackad till '{folder}' som '{name}'"
 msgid "Failed to extract default theme"
 msgstr "Misslyckades att packa upp standardtema"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "Säkerhetskopierar standardskaltema ..."
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Verkställer GResource-inställningar för Ubuntu ..."
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Verkställer GResource-inställningar för icke-Ubuntu system ..."
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Återställer GResource-inställningar för Ubuntu …"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Återställer GResource-inställningar för icke-Ubuntu system …"
@@ -1024,13 +1036,17 @@ msgstr ""
 "Systemet kan börja se konstigt/buggigt ut tills du loggar in igen eller "
 "startar om."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "Logga ut?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "Logga ut"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Utvecklarversion)"
 
 #~ msgid "Homepage"
 #~ msgstr "Hemsida"

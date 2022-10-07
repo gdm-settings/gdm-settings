@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-10-02 04:08+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -363,20 +363,7 @@ msgstr "Sessiz kipi etkinleştir (--verbosity=0 takma adı)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Geçersiz ayrıntı düzeyi {level}. 0 ile 5 arasında olmalıdır."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
-"fakat yüklü değiller."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -385,19 +372,33 @@ msgstr ""
 "Bu uygulamanın düzgün çalışması için <b>ana sistemde</b> aşağıdaki "
 "programların yüklü olması gerekiyor, ancak yüklü değiller."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
+"fakat yüklü değiller."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -406,27 +407,31 @@ msgstr ""
 "Bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için <a "
 "href=\"{url}\">buraya</a> tıklayın."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "Eksik Bağımlılıklar"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
 
-#: src/app.py:235
+#: src/app.py:223
 msgid "Session settings loaded successfully"
 msgstr "Oturum ayarları başarıyla yüklendi"
 
-#: src/app.py:239
+#: src/app.py:227
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak sürümünde oturum ayarlarını yükleme desteklenmez"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "Ayarlar sıfırlandı"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "Ayarlar sıfırlanamadı"
 
@@ -885,7 +890,7 @@ msgstr "Yok"
 msgid "Choose"
 msgstr "Seç"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "İptal Et"
 
@@ -902,15 +907,22 @@ msgid "Failed to apply current display settings"
 msgstr "Geçerli ekran ayarları uygulanamadı"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "Mevcut ekran ayarlarını uygulamak için '$XDG_CONFIG_HOME/monitors.xml' "
 "dosyası gerekli fakat dosya yok.\n"
@@ -921,7 +933,7 @@ msgstr ""
 "2. Kimi ayarları değiştirin.\n"
 "3. Uygulayın."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "Monitör Ayarları Bulunamadı"
 
@@ -936,26 +948,26 @@ msgstr "Öntanımlı shell teması '{folder}' klasörüne '{name}' adıyla çık
 msgid "Failed to extract default theme"
 msgstr "Öntanımlı shell teması çıkartılamadı"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
@@ -1025,13 +1037,17 @@ msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
 
 #~ msgid "Homepage"
 #~ msgstr "Ana sayfa"

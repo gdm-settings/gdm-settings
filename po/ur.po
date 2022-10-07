@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -359,19 +359,7 @@ msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "وربوسٹی لیول {level} قابل قبول نہیں ہے۔ 0، 5 یا پھر اس کے درمیان ہونا چاہیئے۔"
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"اس ایپلیکیشن کو صحیح طرح سے کام کرنے کیلئے مندرجہ ذیل سوفٹ ویئر کی ضرورت ہے۔"
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (ڈیویلپر ایڈیشن)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -380,19 +368,32 @@ msgstr ""
 "اس ایپلیکیشن کو صحیح کام کرنے کیلئے <b>ہوسٹ سسٹم پر</b> مندرجہ ذیل سوفٹ ویئر "
 "انسٹال ہونے کی ضرورت ہے لیکن وہ ہوسٹ سسٹم پر انسٹال نہیں ہے۔"
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"اس ایپلیکیشن کو صحیح طرح سے کام کرنے کیلئے مندرجہ ذیل سوفٹ ویئر کی ضرورت ہے۔"
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -401,31 +402,35 @@ msgstr ""
 "ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a href="
 "\"{url}\">یہاں</a> کلک کریں۔"
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "غیر حاضر ڈیپینڈنسیز"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
@@ -888,7 +893,7 @@ msgstr "(کچھ نہیں)"
 msgid "Choose"
 msgstr "انتخاب کریں"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "کینسل"
 
@@ -905,15 +910,22 @@ msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "موجودہ ڈسپلے سیٹنگز کو اپلائی کرنے کے لئے فائیل '$XDG_CONFIG_HOME/monitors."
 "xml' کی ضرورت ہے لیکن وہ موجود نہیں ہے۔\n"
@@ -924,7 +936,7 @@ msgstr ""
 "2۔ وہاں کچھ سیٹنگز تبدیل کریں۔\n"
 "3۔ اپلائی کریں۔"
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "مانیٹر کی سیٹنگز نہیں ملیں"
 
@@ -939,26 +951,26 @@ msgstr "ڈیفالٹ شیل تھیم '{folder}' میں '{name}' کے نام سے
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
@@ -1029,13 +1041,17 @@ msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 "اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "لاگ آؤٹ کریں؟"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (ڈیویلپر ایڈیشن)"
 
 #~ msgid "Homepage"
 #~ msgstr "ہوم پیج"

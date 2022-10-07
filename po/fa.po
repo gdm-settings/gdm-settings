@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -333,68 +333,67 @@ msgstr ""
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:173
-msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
 msgstr ""
 
-#: src/app.py:179
+#: src/app.py:162
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>GDM</b>"
+msgstr ""
+
+#: src/app.py:168
+msgctxt "Missing Dependency"
+msgid "<b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "تنظیمات مجدداً بارگزاری شد"
 
-#: src/app.py:235
+#: src/app.py:223
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "تنظیمات با موفّقیت اِعمال شد"
 
-#: src/app.py:239
+#: src/app.py:227
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "تنظیمات با موفّقیت بازنشانی شدند"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "بازنشانی تنظیمات شکست خورد"
 
@@ -855,7 +854,7 @@ msgstr "(هیچ‌کدام)"
 msgid "Choose"
 msgstr "گزینش"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "لغو"
 
@@ -873,17 +872,14 @@ msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr ""
 
@@ -899,26 +895,26 @@ msgstr "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «⁨{name
 msgid "Failed to extract default theme"
 msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "در حال اعمال تنظیمات GResource برای اوبونتو …"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -978,11 +974,11 @@ msgstr ""
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr ""
 

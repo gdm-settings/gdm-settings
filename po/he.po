@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 18:28+0500\n"
+"POT-Creation-Date: 2022-10-07 22:03+0500\n"
 "PO-Revision-Date: 2022-10-06 13:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -353,19 +353,7 @@ msgstr "הפעלת מצב שקט (כינוי חלופי ל־‎--verbosity=0)"
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "רמת הפירוט {level} שגויה. חייבת להיות 0, 5, או כל מה שביניהן."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (גרסת המפתחים)"
-
-#: src/app.py:166
+#: src/app.py:149
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -374,19 +362,32 @@ msgstr ""
 "התוכניות הבאות חייבות להיות מותקנות <b>על המערכת המארחת</b> כדי שהיישום הזה "
 "יתפקד כראוי אך הן אינן מותקנות במערכת המארחת."
 
-#: src/app.py:173
+#: src/app.py:153
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"היישום הזה דורש את התקנת התוכנות הבאות כדי שיעבוד כראוי אך הן אינן מותקנות."
+
+#: src/app.py:162
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+msgid "<b>GDM</b>"
 msgstr " ‎ • <b>GDM</b>‎"
 
-#: src/app.py:179
+#: src/app.py:168
+#, fuzzy
+#| msgctxt "Missing Dependency"
+#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
 msgstr " ‎ • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:176
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -395,27 +396,31 @@ msgstr ""
 "לחיצה <a href=\"{url}\">כאן</a> תעביר אותך להנחיות איך להתקין את התלויות "
 "האלו במערכת שלך."
 
-#: src/app.py:192
+#: src/app.py:183
 msgid "Missing Dependencies"
 msgstr "חסרות תלויות"
 
-#: src/app.py:227
+#: src/app.py:188 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:215
 msgid "Settings reloaded"
 msgstr "ההגדרות נטענו מחדש"
 
-#: src/app.py:235
+#: src/app.py:223
 msgid "Session settings loaded successfully"
 msgstr "ההגדרות ההפעלה נטענו בהצלחה"
 
-#: src/app.py:239
+#: src/app.py:227
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "אין תמיכה בטעינת הגדרות הפעלה בגרסת ה־Flatpak"
 
-#: src/app.py:252
+#: src/app.py:240
 msgid "Reset settings successfully"
 msgstr "ההגדרות אופסו בהצלחה"
 
-#: src/app.py:254
+#: src/app.py:242
 msgid "Failed to reset settings"
 msgstr "איפוס ההגדרות נכשל"
 
@@ -876,7 +881,7 @@ msgstr "(ללא)"
 msgid "Choose"
 msgstr "בחירה"
 
-#: src/common_widgets.py:128 src/window.py:156
+#: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -893,15 +898,22 @@ msgid "Failed to apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
 
 #: src/pages/display.py:88
+#, fuzzy
+#| msgid ""
+#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
+#| "display settings but it does not exist.\n"
+#| "\n"
+#| "In order to create that file automatically,\n"
+#| "\n"
+#| "1. Go to 'Display' panel of System Settings.\n"
+#| "2. Change some settings there.\n"
+#| "3. Apply."
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 "הקובץ ‎‚$XDG_CONFIG_HOME/monitors.xml’‎ נחוץ כדי להחיל את הגדרות התצוגה "
 "הנוכחיות אך אינו קיים.\n"
@@ -912,7 +924,7 @@ msgstr ""
 "2. לשנות שם כמה הגדרות.\n"
 "3. להחיל."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "הגדרות הצג לא נמצאו"
 
@@ -927,26 +939,26 @@ msgstr "ערכת העיצוב של המעטפת כברירת מחדל חולצה
 msgid "Failed to extract default theme"
 msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
 
-#: src/settings.py:225
+#: src/settings.py:234
 msgid "Backing up default shell theme …"
 msgstr "ערכת העיצוב של המעטפת כברירת המחדל מגובית…"
 
-#: src/settings.py:273
+#: src/settings.py:282
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource חלות על אובונטו…"
 
-#: src/settings.py:280
+#: src/settings.py:289
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
 
-#: src/settings.py:502
+#: src/settings.py:511
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
 
-#: src/settings.py:509
+#: src/settings.py:518
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"
@@ -1014,13 +1026,17 @@ msgstr "לא חל. לא ניתן למצוא את תמונת הרקע הנבחר�
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr "המערכת עלולה להיראות מוזר/שברירית עד לכניסה או הפעלה מחדש."
 
-#: src/window.py:145
+#: src/window.py:147
 msgid "Log Out?"
 msgstr "לצאת?"
 
-#: src/window.py:154
+#: src/window.py:153
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (גרסת המפתחים)"
 
 #~ msgid "Homepage"
 #~ msgstr "עמוד הבית"
