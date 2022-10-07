@@ -26,10 +26,10 @@ configure_file(
 
 source_files = files(
   '__init__.py',
+  'about.py',
   'app.py',
   'bind_utils.py',
   'common_widgets.py',
-  'dialogs.py',
   'enums.py',
   'env.py',
   'gr_utils.py',

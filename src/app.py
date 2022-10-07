@@ -258,9 +258,9 @@ class Application(Adw.Application):
 
 
     def about_cb(self, action, user_data):
-        from .dialogs import AboutDialog
-        dialog = AboutDialog(self.window)
-        dialog.present()
+        from .about import about_window
+        win = about_window(self.window)
+        win.present()
 
 
     def quit_cb(self, action, user_data):
