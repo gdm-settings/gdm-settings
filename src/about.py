@@ -14,7 +14,6 @@ def about_window(win):
         license_type     = Gtk.License.AGPL_3_0,
         version          = info.version,
         developer_name   = "Mazhar Hussain",
-        comments  = _("A settings app for GNOME's Login Manager, GDM"),
         copyright = _("Copyright © 2021 Mazhar Hussain"),
         website   = "https://realmazharhussain.github.io/gdm-settings",
         developers  = [mazhar_hussain],
