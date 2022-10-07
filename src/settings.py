@@ -211,7 +211,8 @@ class SettingsManager (GObject.Object):
                 css +=  "}\n"
 
         # Large Welcome Message
-        if login_screen_settings['enlarge-welcome-message']:
+        if (login_screen_settings['enable-welcome-message']
+        and login_screen_settings['enlarge-welcome-message']):
             css += ".login-dialog-banner {\n"
             css += "  font-size: 1.5em;\n"
             css += "  font-weight: bold;\n"
