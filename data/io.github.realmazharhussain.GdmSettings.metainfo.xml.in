@@ -72,6 +72,16 @@
   </screenshots>
 
   <releases>
+    <release version="1.1" date="2022-10-7">
+      <description>
+        <ul>
+          <li>Fixed: Cannot apply settings anymore</li>
+        </ul>
+        <p>
+          Note: You may need to reinstall GNOME Shell in order for 'Apply' button to start working again.
+        </p>
+      </description>
+    </release>
     <release version="1.0" date="2022-09-23">
       <description>
         <p>
