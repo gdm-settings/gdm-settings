@@ -65,14 +65,9 @@ Box content_box {
       }
     }
 
-    Adw.ActionRow {
+    Adw.EntryRow welcome_message_entryrow {
       title: _("Message");
       sensitive: bind welcome_message_switch.active;
-
-      Entry welcome_message_entry {
-        valign: center;
-        hexpand: true;
-      }
     }
   }
 }
