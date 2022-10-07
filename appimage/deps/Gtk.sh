@@ -32,4 +32,3 @@ copy /usr/lib/girepository-1.0/Gtk-4.0.typelib
 copy /usr/share/gtk-4.0
 copy /usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.*.gschema.xml
 copy /usr/share/locale/*/LC_MESSAGES/gtk40.mo
-copy /usr/share/locale/*/LC_MESSAGES/gtk40-properties.mo
