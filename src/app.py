@@ -141,43 +141,32 @@ class Application(Adw.Application):
 
         gdm_installed = bool(ShellGresourceFile)
         polkit_installed = check_dependency('pkexec')
-        glib_dev_installed = check_dependency('glib-compile-resources', 'GLib', on_host=False)
 
-        host_deps_installed = gdm_installed and polkit_installed
-        all_deps_installed = host_deps_installed and glib_dev_installed
-
-        if all_deps_installed:
+        if gdm_installed and polkit_installed:
             return
 
-        message = ''
+        if env.PACKAGE_TYPE is PackageType.Flatpak:
+            message = _('Following programs are required to be installed <b>on the host system</b> for'
+                        ' this app to function properly but they are not installed on the host system.'
+                       )
+        else:
+            message = _('This app requires the following software to function properly but'
+                        ' they are not installed.'
+                       )
 
-        if not glib_dev_installed:
-            message = _('This app requires the following software to function properly but they are not installed.')
-            message += '\n\n'
+        message += '\n'
+
+        if not gdm_installed:
+            message += '\n'
             message += C_('Missing Dependency',
-                          ' • <b>GLib</b> (Developer Edition)'
+                          '<b>GDM</b>'
                          )
 
-        if not host_deps_installed:
-            if env.PACKAGE_TYPE == PackageType.Flatpak:
-                if not glib_dev_installed:
-                    message += '\n\n'
-
-                message += _('Following programs are required to be installed <b>on the host system</b> for'
-                             ' this app to function properly but they are not installed on the host system.'
-                            ) + '\n'
-
-            if not gdm_installed:
-                message += '\n'
-                message += C_('Missing Dependency',
-                              ' • <b>GDM</b>'
-                             )
-
-            if not polkit_installed:
-                message +='\n'
-                message += C_('Missing Dependency',
-                              ' • <b>Polkit</b>'
-                             )
+        if not polkit_installed:
+            message +='\n'
+            message += C_('Missing Dependency',
+                          '<b>Polkit</b>'
+                         )
 
         message += '\n\n'
 
