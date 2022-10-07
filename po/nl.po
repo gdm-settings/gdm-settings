@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-07 22:03+0500\n"
-"PO-Revision-Date: 2022-10-07 17:04+0000\n"
+"PO-Revision-Date: 2022-10-08 16:43+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -397,20 +397,14 @@ msgstr ""
 "uw systeem."
 
 #: src/app.py:162
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "• <b>GDM</b>"
 
 #: src/app.py:168
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -428,7 +422,7 @@ msgstr "Ontbrekende afhankelijkheden"
 
 #: src/app.py:188 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "Oké"
 
 #: src/app.py:215
 msgid "Settings reloaded"
@@ -912,16 +906,6 @@ msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
 #: src/pages/display.py:88
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -932,11 +916,8 @@ msgstr ""
 "Het bestand ‘$XDG_CONFIG_HOME/monitors.xml’ is vereist om de huidige "
 "beeldschermvoorkeuren toe te passen, maar bestaat niet.\n"
 "\n"
-"Instructies om het bestand automatisch aan te maken:\n"
-"\n"
-"1. Open de systeemvoorkeuren en ga naar het tabblad ‘Schermen’;\n"
-"2. Pas een voorkeur aan;\n"
-"3. Pas de voorkeuren toe."
+"Open de systeemvoorkeuren, ga naar het tabblad ‘Schermen’ en pas een "
+"voorkeur aan om het bestand automatisch aan te maken."
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
