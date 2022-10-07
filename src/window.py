@@ -141,25 +141,20 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
     def show_logout_dialog (self):
         message = _('The system may start to look weird/buggy untill you re-login or reboot.')
 
-        dialog = Gtk.MessageDialog(
-                         text = _('Log Out?'),
-                        modal = True,
-                      buttons = Gtk.ButtonsType.NONE,
-                 message_type = Gtk.MessageType.QUESTION,
-                transient_for = self,
-               secondary_text = message,
-         secondary_use_markup = True,
+        dialog = Adw.MessageDialog(
+                    body = message,
+                   modal = True,
+                 heading = _('Log Out?'),
+           transient_for = self,
+         body_use_markup = True,
         )
 
-        logout_button = Gtk.Button(label=_('Log Out'), css_classes=['destructive-action'])
-
-        dialog.add_button(_('Cancel'), Gtk.ResponseType.CLOSE)
-        dialog.add_action_widget(logout_button, Gtk.ResponseType.YES)
+        dialog.add_response('cancel', _('Cancel'))
+        dialog.add_response('log-out', _('Log Out'))
+        dialog.set_response_appearance('log-out', Adw.ResponseAppearance.DESTRUCTIVE)
         dialog.connect('response', self.on_logout_dialog_response)
         dialog.present()
 
     def on_logout_dialog_response (self, dialog, response):
-        if response == Gtk.ResponseType.YES:
+        if response == 'log-out':
             run_on_host(['gnome-session-quit', '--no-prompt'])
-        else:
-            dialog.close()

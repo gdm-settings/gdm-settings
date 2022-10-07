@@ -160,12 +160,14 @@ class SettingsManager (GObject.Object):
         background_type = BackgroundType[appearance_settings['background-type']]
         background_image = appearance_settings['background-image']
         if background_type is BackgroundType.image and background_image:
+            css += "\n"
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
             css += "  background-size: cover;\n"
             css += "}\n"
         elif background_type is BackgroundType.color:
             background_color = appearance_settings['background-color']
+            css += "\n"
             css += "#lockDialogGroup { background-color: "+ background_color + "; }\n"
 
         ### Top Bar ###
@@ -184,26 +186,31 @@ class SettingsManager (GObject.Object):
 
         # Arrows
         if disable_arrows:
+            css += "\n"
             css += select_elem("popup-menu-arrow") + " { width: 0px; }\n"
         # Rounded Corners
         if disable_rounded_corners:
+            css += "\n"
             css +=  select_elem("panel-corner")
             css +=  " {\n"
             css += f"  -panel-corner-opacity: 0;\n"
             css +=  "}\n"
         # Text Color
         if change_text_color:
+            css += "\n"
             css +=  select_elem('panel-button')
             css +=  " {\n"
             css += f"  color: {text_color};\n"
             css +=  "}\n"
         # Background Color
         if change_background_color:
+            css += "\n"
             css +=  select_elem()
             css +=  " {\n"
             css += f"  background-color: {background_color};\n"
             css +=  "}\n"
             if not disable_rounded_corners:
+                css += "\n"
                 css +=  select_elem("panel-corner")
                 css +=  " {\n"
                 css += f"  -panel-corner-opacity: 1;\n"
@@ -211,7 +218,9 @@ class SettingsManager (GObject.Object):
                 css +=  "}\n"
 
         # Large Welcome Message
-        if login_screen_settings['enlarge-welcome-message']:
+        if (login_screen_settings['enable-welcome-message']
+        and login_screen_settings['enlarge-welcome-message']):
+            css += "\n"
             css += ".login-dialog-banner {\n"
             css += "  font-size: 1.5em;\n"
             css += "  font-weight: bold;\n"

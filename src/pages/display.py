@@ -85,25 +85,20 @@ class DisplayPageContent (PageContent):
             self.window.toast_overlay.add_toast(toast)
         except FileNotFoundError:
             message = _(
-                        "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current"
+                        "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current"
                         " display settings but it does not exist.\n"
                         "\n"
-                        "In order to create that file automatically,\n"
-                        "\n"
-                        "1. Go to 'Display' panel of System Settings.\n"
-                        "2. Change some settings there.\n"
-                        "3. Apply."
+                        "In order to create that file automatically, open system 'Settings'"
+                        " and change some display options there."
                        )
 
-            dialog = Gtk.MessageDialog(
-                             text = _('Monitor Settings Not Found'),
-                            modal = True,
-                          buttons = Gtk.ButtonsType.OK,
-                     message_type = Gtk.MessageType.ERROR,
-                    transient_for = self.window,
-                   secondary_text = message,
-             secondary_use_markup = True,
+            dialog = Adw.MessageDialog(
+                        body = message,
+                       modal = True,
+                     heading = _('Monitor Settings Not Found'),
+               transient_for = self.window,
+             body_use_markup = True,
             )
 
-            dialog.connect('response', lambda *args: dialog.close())
+            dialog.add_response('ok', _('OK'))
             dialog.present()
