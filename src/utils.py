@@ -126,7 +126,7 @@ class BackgroundTask (GObject.Object):
     def __init__ (self, function, finish_callback, **kwargs):
         super().__init__(**kwargs)
 
-        self._function = function
+        self.function = function
         self._finish_callback = lambda self, task, nothing: finish_callback()
         self._current = None
 
@@ -142,7 +142,7 @@ class BackgroundTask (GObject.Object):
     @staticmethod
     def _thread_cb (task, self, task_data, cancellable):
         try:
-            retval = self._function()
+            retval = self.function()
             task.return_value(retval)
         except Exception as e:
             task.return_value(e)
