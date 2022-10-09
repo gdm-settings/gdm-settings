@@ -95,8 +95,12 @@ class Application(Adw.Application):
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
         self.settings_manager = SettingsManager()
+
         self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
                                                   self.on_reset_settings_finish)
+
+        self.import_task = BackgroundTask(None, self.on_import_finished)
+        self.export_task = BackgroundTask(None, self.on_export_finished)
 
         self.create_actions()
         self.keyboard_shortcuts()
@@ -251,8 +255,10 @@ class Application(Adw.Application):
 
         def on_file_chooser_response(file_chooser, response):
             if response == Gtk.ResponseType.ACCEPT:
+                self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.settings_manager.load(filepath)
+                self.import_task.function = lambda: self.settings_manager.load(filepath)
+                self.import_task.start()
             file_chooser.destroy()
 
         self._file_chooser = Gtk.FileChooserNative(
@@ -274,13 +280,19 @@ class Application(Adw.Application):
         self._file_chooser.connect('response', on_file_chooser_response)
         self._file_chooser.show()
 
+    def on_import_finished(self):
+        self.window.task_counter.dec()
+        self.import_task.finish()
+
 
     def export_to_file_cb(self, action, user_data):
 
         def on_file_chooser_response(file_chooser, response):
             if response == Gtk.ResponseType.ACCEPT:
+                self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.settings_manager.export(filepath)
+                self.export_task.function = lambda: self.settings_manager.export(filepath)
+                self.export_task.start()
             file_chooser.destroy()
 
         self._file_chooser = Gtk.FileChooserNative(
@@ -292,6 +304,10 @@ class Application(Adw.Application):
         self._file_chooser.set_current_name('gdm-settings.ini')
         self._file_chooser.connect('response', on_file_chooser_response)
         self._file_chooser.show()
+
+    def on_export_finished(self):
+        self.window.task_counter.dec()
+        self.export_task.finish()
 
 
     def about_cb(self, action, user_data):
