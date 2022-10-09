@@ -127,14 +127,16 @@ class BackgroundTask (GObject.Object):
         super().__init__(**kwargs)
 
         self.function = function
-        self._finish_callback = lambda self, task, nothing: finish_callback()
+        self.finish_callback = finish_callback
         self._current = None
 
     def start(self):
         if self._current:
             AlreadyRunningError('Task is already running')
 
-        task = Gio.Task.new(self, None, self._finish_callback, None)
+        finish_callback = lambda self, task, nothing: self.finish_callback()
+
+        task = Gio.Task.new(self, None, finish_callback, None)
         task.run_in_thread(self._thread_cb)
 
         self._current = task
