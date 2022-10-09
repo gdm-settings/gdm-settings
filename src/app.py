@@ -15,6 +15,7 @@ from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 from . import env
 from . import info
+from . import log
 
 
 def set_logging_level(verbosity):
@@ -32,7 +33,7 @@ def set_logging_level(verbosity):
     #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
     #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
     level = (6 - verbosity) * 10
-    logging.root.setLevel(level)
+    log.stderr_handler.setLevel(level)
 
 
 class Application(Adw.Application):
