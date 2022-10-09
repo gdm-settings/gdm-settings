@@ -205,6 +205,8 @@ class Application(Adw.Application):
         create_action("refresh", self.refresh_cb)
         create_action("load_session_settings", self.load_session_settings_cb)
         create_action("reset_settings", self.reset_settings_cb)
+        create_action("import_from_file", self.import_from_file_cb)
+        create_action("export_to_file", self.export_to_file_cb)
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
 
@@ -243,6 +245,53 @@ class Application(Adw.Application):
 
         toast = Adw.Toast(timeout=2, priority="high", title=message)
         self.window.toast_overlay.add_toast(toast)
+
+
+    def import_from_file_cb(self, action, user_data):
+
+        def on_file_chooser_response(file_chooser, response):
+            if response == Gtk.ResponseType.ACCEPT:
+                filepath = file_chooser.get_file().get_path()
+                self.settings_manager.load(filepath)
+            file_chooser.destroy()
+
+        self._file_chooser = Gtk.FileChooserNative(
+                                      modal = True,
+                                     action = Gtk.FileChooserAction.OPEN,
+                               accept_label = _('Import'),
+                              transient_for = self.window,
+                             )
+
+        ini_filter = Gtk.FileFilter(name='INI Files')
+        ini_filter.add_suffix('ini')
+        self._file_chooser.add_filter(ini_filter)
+        self._file_chooser.set_filter(ini_filter)
+
+        all_filter = Gtk.FileFilter(name='All Files')
+        all_filter.add_pattern('*')
+        self._file_chooser.add_filter(all_filter)
+
+        self._file_chooser.connect('response', on_file_chooser_response)
+        self._file_chooser.show()
+
+
+    def export_to_file_cb(self, action, user_data):
+
+        def on_file_chooser_response(file_chooser, response):
+            if response == Gtk.ResponseType.ACCEPT:
+                filepath = file_chooser.get_file().get_path()
+                self.settings_manager.export(filepath)
+            file_chooser.destroy()
+
+        self._file_chooser = Gtk.FileChooserNative(
+                                      modal = True,
+                                     action = Gtk.FileChooserAction.SAVE,
+                              transient_for = self.window,
+                             )
+
+        self._file_chooser.set_current_name('gdm-settings.ini')
+        self._file_chooser.connect('response', on_file_chooser_response)
+        self._file_chooser.show()
 
 
     def about_cb(self, action, user_data):
