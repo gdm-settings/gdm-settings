@@ -71,10 +71,12 @@ class SettingsManager (GObject.Object):
             except PermissionError:
                 logging.error(_("Cannot write to file '{filename}'. Permission denied"
                                ).format(filename=filename))
+                raise
             except IsADirectoryError:
                 logging.error(_("Cannot write to file '{filename}'. A directory with "
                                 "the same name already exists"
                                ).format(filename=filename))
+                raise
         else:
             import sys
             logging.info(_('Exporting to standard output'))
@@ -94,10 +96,10 @@ class SettingsManager (GObject.Object):
                 config_parser.read_file(sys.stdin)
         except ParsingError:
             logging.error(_('Failed to parse import file'))
-            return
+            raise
         except UnicodeDecodeError:
             logging.error(_('Failed to read import file. Not encoded in UTF-8'))
-            return
+            raise
 
         for settings in all_settings:
             section_name = settings.props.schema_id

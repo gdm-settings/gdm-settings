@@ -281,8 +281,17 @@ class Application(Adw.Application):
         self._file_chooser.show()
 
     def on_import_finished(self):
+        from configparser import ParsingError
         self.window.task_counter.dec()
-        self.import_task.finish()
+        try:
+            self.import_task.finish()
+
+            message = _('Settings were successfully imported from file')
+        except (ParsingError, UnicodeDecodeError):
+            message = _('Failed to import. File is invalid')
+
+        toast = Adw.Toast(timeout=2, priority="high", title=message)
+        self.window.toast_overlay.add_toast(toast)
 
 
     def export_to_file_cb(self, action, user_data):
@@ -307,7 +316,17 @@ class Application(Adw.Application):
 
     def on_export_finished(self):
         self.window.task_counter.dec()
-        self.export_task.finish()
+        try:
+            self.export_task.finish()
+
+            message = _('Settings were successfully exported')
+        except PermissionError:
+            message = _('Failed to export. Permssion denied')
+        except IsADirectoryError:
+            message = _('Failed to export. A directory with that name already exists')
+
+        toast = Adw.Toast(timeout=2, priority="high", title=message)
+        self.window.toast_overlay.add_toast(toast)
 
 
     def about_cb(self, action, user_data):
