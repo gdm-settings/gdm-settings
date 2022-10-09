@@ -5,23 +5,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-07 22:03+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-10 13:57+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "Teeman nimi"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "Taustakuvan tyyppi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
@@ -30,22 +33,22 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "Taustakuva"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "GDM:n taustakuvana käytettävä kuvatiedosto"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Taustaväri"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "GDM:n taustana käytettävä väri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -112,7 +115,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "Osoittimen nopeus"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -214,26 +217,26 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Yläpalkin tekstin väri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Muutetaanko yläpalkin tausta"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Yläpalkin taustaväri"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:62
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Kirjautumisnäkymän asetukset"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr ""
+msgstr "Asetussovellus Gnomen kirjautumisnäkymä GDM:lle"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -241,10 +244,12 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Muuta GDM:n asetuksia; aseta teema ja tausta, vaihda kursori- ja "
+"kuvaketeema, määritä yövalon asetukset ja paljon muuta."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
 msgid ""
@@ -303,7 +308,7 @@ msgstr ""
 
 #: src/app.py:50
 msgid "Show application version"
-msgstr ""
+msgstr "Näytä sovelluksen versio"
 
 #: src/app.py:51
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -343,12 +348,12 @@ msgstr ""
 #: src/app.py:162
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: src/app.py:168
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -358,22 +363,24 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Napsauta <a href=\"{url}\">tästä</a> avataksesi ohjeet, kuinka asentaa nämä "
+"riippuvuudet järjestelmään."
 
 #: src/app.py:183
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Puuttuvia riipuuvuuksia"
 
 #: src/app.py:188 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:215
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Asetukset ladattu uudelleen"
 
 #: src/app.py:223
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Istunnon asetukset ladattu uudelleen"
 
 #: src/app.py:227
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -390,454 +397,455 @@ msgstr ""
 #: src/about.py:5
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: src/about.py:6
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr ""
+msgstr "Tekijänoikeus 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
 #: src/about.py:29
 msgid "translator-credits"
-msgstr ""
+msgstr "Jiri Grönroos"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Teemat"
 
 #: src/blueprints/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Käyttöliittymä"
 
 #: src/blueprints/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Kuvakkeet"
 
 #: src/blueprints/appearance-page.blp:13
 msgid "Cursor"
-msgstr ""
+msgstr "Kursori"
 
 #: src/blueprints/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Taustakuva"
 
 #: src/blueprints/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Tyyppi"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
 #: src/blueprints/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
 msgid "Image"
-msgstr ""
+msgstr "Kuva"
 
 #: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
 msgid "Color"
-msgstr ""
+msgstr "Väri"
 
 #: src/blueprints/appearance-page.blp:27
 msgid "The image to use as background"
-msgstr ""
+msgstr "Taustakuvana käytettävä kuva"
 
 #: src/blueprints/appearance-page.blp:32
 msgid "The color to use as background"
-msgstr ""
+msgstr "Taustana käytettävä väri"
 
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Toteuta nykyiset näyttöasetukset"
 
 #: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Resoluutio, virkistystaajuus, näytön sijainti jne."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
 msgid "Apply"
-msgstr ""
+msgstr "Toteuta"
 
 #: src/blueprints/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Yövalo"
 
 #: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
-msgstr ""
+msgstr "Käytä"
 
 #: src/blueprints/display-page.blp:33
 msgid "Schedule"
-msgstr ""
+msgstr "Aikataulu"
 
 #: src/blueprints/display-page.blp:34
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Auringonlaskusta auringonnousuun"
 
 #: src/blueprints/display-page.blp:34
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Mukautettu aikataulu"
 
 #: src/blueprints/display-page.blp:38
 msgid "Times"
-msgstr ""
+msgstr "Ajat"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr ""
+msgstr "Alkaa"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
 msgid "To"
-msgstr ""
+msgstr "Päättyy"
 
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
-msgstr ""
+msgstr "Värilämpötila"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Fontti"
 
 #: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Reunanpehmennys"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Standardi"
 
 #: src/blueprints/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "Alipikseli"
 
 #: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Vihjeistys"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Täysi"
 
 #: src/blueprints/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Keskitaso"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Hieman"
 
 #: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Skaalauskerroin"
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Päivitä"
 
 #: src/blueprints/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Lataa istuntoasetukset"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Palauta oletusarvot"
 
 #: src/blueprints/main-window.blp:11
 msgid "About"
-msgstr ""
+msgstr "Tietoja"
 
 #: src/blueprints/main-window.blp:12
 msgid "Quit"
-msgstr ""
+msgstr "Lopeta"
 
 #: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Poista uudelleenkäynnistyspainikkeet käytöstä"
 
 #: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
-msgstr ""
+msgstr "Poista käyttäjäluettelo käytöstä"
 
 #: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
-msgstr ""
+msgstr "Käytä logoa"
 
 #: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Näytetäänkö logo käyttäjäluettelon alapuolella"
 
 #: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Käyttäjäluettelon alapuolella näytettävä kuva"
 
 #: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
-msgstr ""
+msgstr "Tervetuloviesti"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Suurenna"
 
 #: src/blueprints/login-screen-page.blp:69
 msgid "Message"
-msgstr ""
+msgstr "Viesti"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
-msgstr ""
+msgstr "Hiiri"
 
 #: src/blueprints/pointing-page.blp:12
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Osoittimen kiihdytys"
 
 #: src/blueprints/pointing-page.blp:14
 msgid "Automatic"
-msgstr ""
+msgstr "Automaattinen"
 
 #: src/blueprints/pointing-page.blp:15
 msgid "Disabled"
-msgstr ""
+msgstr "Pois käytöstä"
 
 #: src/blueprints/pointing-page.blp:16
 msgid "Enabled"
-msgstr ""
+msgstr "Käytössä"
 
 #: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Luonnollinen vieritys"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Vieritys liikuttaa sisältöä, ei näkymää."
 
 #: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Osoittimen nopeus"
 
 #: src/blueprints/pointing-page.blp:39
 msgid "Touchpad"
-msgstr ""
+msgstr "Kosketuslevy"
 
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
-msgstr ""
+msgstr "Napsauta napauttamalla"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Kahden sormen vieritys"
 
 #: src/blueprints/pointing-page.blp:58
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Vieritä vetämällä kahdella sormella."
 
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Poista käytöstä kirjoittaessa"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Virtapainikkeen toiminta"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Älä tee mitään"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Valmiustila"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Lepotila"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Kysy"
 
 #: src/blueprints/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Automaattinen virransäästö"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Ottaa automaattisen virransäästön käyttöön, kun akun varaus on vähissä."
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Himmennä näyttö"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Vähentää näytön kirkkautta, kun tietokone on käyttämättä."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Sammuta näyttö"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Sammutetaanko näyttö tietyn ajan jälkeen, kun tietokone on käyttämättä."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Viive"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Aika minuuteissa, jolloin näyttö sammutetaan."
 
 #: src/blueprints/power-page.blp:67
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Automaattinen valmiustila"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
 msgstr ""
+"Keskeyttää tietokoneen tietyn ajan jälkeen, kun tietokone on käyttämättä."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Akkuvirralla"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Aika minuuteissa, jonka jälkeen tietokone siirretään valmiustilaan."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Verkkovirralla"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Teema"
 
 #: src/blueprints/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "Ylivahvistus"
 
 #: src/blueprints/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Salli äänenvoimakkuuden nostaminen yli 100 prosentin"
 
 #: src/blueprints/sound-page.blp:24
 msgid "Event Sounds"
-msgstr ""
+msgstr "Tapahtumaäänet"
 
 #: src/blueprints/sound-page.blp:33
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Syötepalautteen äänet"
 
 #: src/blueprints/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Shell-käyttöliittymän oletusteema"
 
 #: src/blueprints/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Sisällytä yläpalkin säädöt"
 
 #: src/blueprints/tools-page.blp:19
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Pura oletusarvoinen shell-teema"
 
 #: src/blueprints/tools-page.blp:22
 msgid "Extract"
-msgstr ""
+msgstr "Pura"
 
 #: src/blueprints/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Säädöt"
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Muuta tekstin väriä"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Tekstin väri"
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Yläpalkin tekstin väri"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "Muuta taustaväriä"
 
 #: src/blueprints/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Yläpalkin taustaväri"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Poista nuolet käytöstä"
 
 #: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Poista pyöristetyt reunukset käytöstä"
 
 #: src/blueprints/top-bar-page.blp:71
 msgid "Clock"
-msgstr ""
+msgstr "Kello"
 
 #: src/blueprints/top-bar-page.blp:74
 msgid "Show Weekday"
-msgstr ""
+msgstr "Näytä viikonpäivä"
 
 #: src/blueprints/top-bar-page.blp:83
 msgid "Show Seconds"
-msgstr ""
+msgstr "Näytä sekunnit"
 
 #: src/blueprints/top-bar-page.blp:92
 msgid "Time Format"
-msgstr ""
+msgstr "Aikamuoto"
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "24 Hours"
-msgstr ""
+msgstr "24 tuntia"
 
 #: src/blueprints/top-bar-page.blp:98 src/window.py:104
 msgid "Power"
-msgstr ""
+msgstr "Virta"
 
 #: src/blueprints/top-bar-page.blp:101
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Näytä akun prosentti"
 
 #: src/common_widgets.py:20
 msgid "Choose File"
-msgstr ""
+msgstr "Valitse tiedosto"
 
 #: src/common_widgets.py:26
 msgid "(None)"
-msgstr ""
+msgstr "(Ei mitään)"
 
 #: src/common_widgets.py:127
 msgid "Choose"
-msgstr ""
+msgstr "Valitse"
 
 #: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
-msgstr ""
+msgstr "Peru"
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
-msgstr ""
+msgstr "Valitse kuva"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
@@ -897,43 +905,43 @@ msgstr ""
 
 #: src/window.py:97
 msgid "Appearance"
-msgstr ""
+msgstr "Ulkoasu"
 
 #: src/window.py:98
 msgid "Fonts"
-msgstr ""
+msgstr "Fontit"
 
 #: src/window.py:99
 msgid "Top Bar"
-msgstr ""
+msgstr "Yläpalkki"
 
 #: src/window.py:100
 msgid "Sound"
-msgstr ""
+msgstr "Ääni"
 
 #: src/window.py:101
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Hiiri ja kosketuslevy"
 
 #: src/window.py:102
 msgid "Display"
-msgstr ""
+msgstr "Näyttö"
 
 #: src/window.py:103
 msgid "Login Screen"
-msgstr ""
+msgstr "Kirjautumisnäkymä"
 
 #: src/window.py:105
 msgid "Tools"
-msgstr ""
+msgstr "Työkalut"
 
 #: src/window.py:124
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Asetukset toteutettu onnistuneesti"
 
 #: src/window.py:128
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Asetusten toteuttaminen epäonnistui"
 
 #: src/window.py:132
 msgid ""
@@ -952,8 +960,8 @@ msgstr ""
 
 #: src/window.py:147
 msgid "Log Out?"
-msgstr ""
+msgstr "Kirjaudutaanko ulos?"
 
 #: src/window.py:153
 msgid "Log Out"
-msgstr ""
+msgstr "Kirjaudu ulos"
