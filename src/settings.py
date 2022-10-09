@@ -53,6 +53,66 @@ class SettingsManager (GObject.Object):
         if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_session_settings()
 
+    def export(self, filename=None):
+        from configparser import ConfigParser
+        config_parser = ConfigParser()
+
+        for settings in all_settings:
+            section_name = settings.props.schema_id
+            config_parser[section_name] = {}
+            for key in settings:
+                config_parser[section_name][key] = str(settings[key])
+
+        if filename:
+            logging.info(_("Exporting to file '{filename}'").format(filename=filename))
+            try:
+                with open(filename, 'w') as outfile:
+                    config_parser.write(outfile)
+            except PermissionError:
+                logging.error(_("Cannot write to file '{filename}'. Permission denied"
+                               ).format(filename=filename))
+            except IsADirectoryError:
+                logging.error(_("Cannot write to file '{filename}'. A directory with "
+                                "the same name already exists"
+                               ).format(filename=filename))
+        else:
+            import sys
+            logging.info(_('Exporting to standard output'))
+            config_parser.write(sys.stdout)
+
+    def load(self, filename=None):
+        from configparser import ConfigParser, ParsingError
+        config_parser = ConfigParser()
+
+        try:
+            if filename:
+                logging.info(_("Importing from file '{filename}'").format(filename=filename))
+                config_parser.read(filename)
+            else:
+                import sys
+                logging.info(_('Importing from standard input'))
+                config_parser.read_file(sys.stdin)
+        except ParsingError:
+            logging.error(_('Failed to parse import file'))
+            return
+        except UnicodeDecodeError:
+            logging.error(_('Failed to read import file. Not encoded in UTF-8'))
+            return
+
+        for settings in all_settings:
+            section_name = settings.props.schema_id
+            if section_name not in config_parser:
+                logging.warn(_("Imported file does not have section '{section_name}'"
+                              ).format(section_name=section_name))
+                continue
+            for key in settings:
+                if key not in config_parser[section_name]:
+                    logging.warn(_("Imported file does not have key '{key_name}' in section '{section_name}'"
+                                  ).format(key_name=key, section_name=section_name))
+                    continue
+                key_type = type(settings[key])
+                settings[key] = key_type(config_parser[section_name][key])
+
     def load_session_settings(self):
         '''Load user's Gnome settings into the app'''
 
