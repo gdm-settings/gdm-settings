@@ -2,7 +2,6 @@
 import os
 import sys
 import gettext
-import logging
 
 # AppDir is the directory which contains this app (detected during runtime)
 AppDir = os.path.realpath(__file__).split('@prefix@')[0]
@@ -21,12 +20,6 @@ localedir = AppDir + '@locale_dir@'
 gettext.bindtextdomain('gdm-settings', localedir)
 gettext.textdomain('gdm-settings')
 _ = gettext.gettext
-
-# Terminal Text Styles
-style_normal = '\033[0m'
-style_bold   = '\033[1m'
-
-logging.basicConfig(format=f'{style_bold}%(levelname)s:{style_normal} %(message)s')
 
 from gdm_settings import Application
 app = Application()

@@ -18,7 +18,7 @@
       src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings"></a>
   <a href="#"><img alt="Code Size"
       src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings"></a>
-  <a href="https://hosted.weblate.org/projects/gdm-settings/#languages"><img alt="Translation Status"
+  <a href="https://hosted.weblate.org/projects/gdm-settings/language-names"><img alt="Translation Status"
       src="https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg"></a>
 </div>
 

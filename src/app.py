@@ -15,6 +15,7 @@ from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 from . import env
 from . import info
+from . import log
 
 
 def set_logging_level(verbosity):
@@ -32,7 +33,7 @@ def set_logging_level(verbosity):
     #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
     #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
     level = (6 - verbosity) * 10
-    logging.root.setLevel(level)
+    log.stderr_handler.setLevel(level)
 
 
 class Application(Adw.Application):
@@ -95,8 +96,12 @@ class Application(Adw.Application):
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
         self.settings_manager = SettingsManager()
+
         self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
                                                   self.on_reset_settings_finish)
+
+        self.import_task = BackgroundTask(None, self.on_import_finished)
+        self.export_task = BackgroundTask(None, self.on_export_finished)
 
         self.create_actions()
         self.keyboard_shortcuts()
@@ -205,6 +210,8 @@ class Application(Adw.Application):
         create_action("refresh", self.refresh_cb)
         create_action("load_session_settings", self.load_session_settings_cb)
         create_action("reset_settings", self.reset_settings_cb)
+        create_action("import_from_file", self.import_from_file_cb)
+        create_action("export_to_file", self.export_to_file_cb)
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
 
@@ -240,6 +247,84 @@ class Application(Adw.Application):
             message = _("Reset settings successfully")
         else:
             message = _("Failed to reset settings")
+
+        toast = Adw.Toast(timeout=2, priority="high", title=message)
+        self.window.toast_overlay.add_toast(toast)
+
+
+    def import_from_file_cb(self, action, user_data):
+
+        def on_file_chooser_response(file_chooser, response):
+            if response == Gtk.ResponseType.ACCEPT:
+                self.window.task_counter.inc()
+                filepath = file_chooser.get_file().get_path()
+                self.import_task.function = lambda: self.settings_manager.load(filepath)
+                self.import_task.start()
+            file_chooser.destroy()
+
+        self._file_chooser = Gtk.FileChooserNative(
+                                      modal = True,
+                                     action = Gtk.FileChooserAction.OPEN,
+                               accept_label = _('Import'),
+                              transient_for = self.window,
+                             )
+
+        ini_filter = Gtk.FileFilter(name='INI Files')
+        ini_filter.add_suffix('ini')
+        self._file_chooser.add_filter(ini_filter)
+        self._file_chooser.set_filter(ini_filter)
+
+        all_filter = Gtk.FileFilter(name='All Files')
+        all_filter.add_pattern('*')
+        self._file_chooser.add_filter(all_filter)
+
+        self._file_chooser.connect('response', on_file_chooser_response)
+        self._file_chooser.show()
+
+    def on_import_finished(self):
+        from configparser import ParsingError
+        self.window.task_counter.dec()
+        try:
+            self.import_task.finish()
+
+            message = _('Settings were successfully imported from file')
+        except (ParsingError, UnicodeDecodeError):
+            message = _('Failed to import. File is invalid')
+
+        toast = Adw.Toast(timeout=2, priority="high", title=message)
+        self.window.toast_overlay.add_toast(toast)
+
+
+    def export_to_file_cb(self, action, user_data):
+
+        def on_file_chooser_response(file_chooser, response):
+            if response == Gtk.ResponseType.ACCEPT:
+                self.window.task_counter.inc()
+                filepath = file_chooser.get_file().get_path()
+                self.export_task.function = lambda: self.settings_manager.export(filepath)
+                self.export_task.start()
+            file_chooser.destroy()
+
+        self._file_chooser = Gtk.FileChooserNative(
+                                      modal = True,
+                                     action = Gtk.FileChooserAction.SAVE,
+                              transient_for = self.window,
+                             )
+
+        self._file_chooser.set_current_name('gdm-settings.ini')
+        self._file_chooser.connect('response', on_file_chooser_response)
+        self._file_chooser.show()
+
+    def on_export_finished(self):
+        self.window.task_counter.dec()
+        try:
+            self.export_task.finish()
+
+            message = _('Settings were successfully exported')
+        except PermissionError:
+            message = _('Failed to export. Permssion denied')
+        except IsADirectoryError:
+            message = _('Failed to export. A directory with that name already exists')
 
         toast = Adw.Toast(timeout=2, priority="high", title=message)
         self.window.toast_overlay.add_toast(toast)
