@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-10 08:13+0500\n"
-"PO-Revision-Date: 2022-10-10 13:56+0000\n"
+"PO-Revision-Date: 2022-10-17 13:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -424,31 +424,27 @@ msgstr "איפוס ההגדרות נכשל"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "ייבוא"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "ההגדרות הוחלו בהצלחה"
+msgstr "ההגדרות יובאו בהצלחה מקובץ"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "הייבוא נכשל. הקובץ שגוי"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "ההגדרות הוחלו בהצלחה"
+msgstr "ההגדרות יוצאו בהצלחה"
 
 #: src/app.py:325
 msgid "Failed to export. Permssion denied"
-msgstr ""
+msgstr "הייצוא נכשל. שגיאת הרשאות"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "הייצוא נכשל. כבר קיימת תיקייה בשם הזה"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -615,11 +611,11 @@ msgstr "איפוס הגדרות"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "ייבוא מקובץ"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "ייצוא לקובץ"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -950,53 +946,51 @@ msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "מתבצע ייצוא לקובץ ‚{filename}’"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "לא ניתן לכתוב לקובץ ‚{filename}’. ההרשאה נדחתה"
 
 #: src/settings.py:76
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "לא ניתן לכתוב לקובץ ‚{filename}’. כבר קיימת תיקייה באותו השם"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "מתבצע ייצוא לפלט המסוף"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "מתבצע ייבוא מהקובץ ‚{filename}’"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "מתבצע ייבוא מקלט המסוף"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "איפוס ההגדרות נכשל"
+msgstr "פענוח הקובץ המיובט נכשל"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "קריאת הקובץ המיובא נכשלה. אינו מוצפן ב־UTF-8"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "בקובץ המיובא חסר הסעיף ‚{section_name}’"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "בקובץ המיובא אין את המפתח ‚{key_name}’ בסעיף ‚{section_name}’"
 
 #: src/settings.py:296
 msgid "Backing up default shell theme …"
