@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-10 08:13+0500\n"
-"PO-Revision-Date: 2022-10-08 16:43+0000\n"
+"PO-Revision-Date: 2022-10-17 13:00+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -447,31 +447,27 @@ msgstr "De standaardwaarden kunnen niet worden hersteld"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importeren"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "De voorkeuren zijn ingesteld"
+msgstr "De voorkeuren zijn geïmporteerd"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Het importeren is mislukt omdat het bestand ongeldig is"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "De voorkeuren zijn ingesteld"
+msgstr "De voorkeuren zijn geëxporteerd"
 
 #: src/app.py:325
 msgid "Failed to export. Permssion denied"
-msgstr ""
+msgstr "Het exporteren is mislukt omdat de juiste rechten ontbreken"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Het exporteren is mislukt omdat er al een map is met die naam"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -638,11 +634,11 @@ msgstr "Standaardwaarden herstellen"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importeren uit bestand"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exporteren naar bestand"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -974,12 +970,14 @@ msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Bezig met exporteren naar ‘{filename}’…"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
+"Het wegschrijven naar ‘{filename}’ is mislukt omdat de juiste rechten "
+"ontbreken"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -987,40 +985,44 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Het wegschrijven naar ‘{filename}’ is mislukt omdat er al een map is met die "
+"naam"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Bezig met exporteren naar standaarduitvoer…"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Bezig met importeren uit ‘{filename}’…"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Bezig met importeren uit standaardinvoer…"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "De standaardwaarden kunnen niet worden hersteld"
+msgstr "Het geïmporteerde bestand kan niet worden verwerkt"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
+"Het geïmporteerde bestand kan niet worden uitgelezen omdat de tekenset niet "
+"utf-8 is"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Het geïmporteerde bestand bevat geen sectie genaamd ‘{section_name}’"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Het geïmporteerde bestand heeft geen sleutel genaamd ‘{key_name}’ in de "
+"sectie ‘{section_name}’"
 
 #: src/settings.py:296
 msgid "Backing up default shell theme …"
