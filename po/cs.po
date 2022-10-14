@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Vojtěch Perník <translations@pervoj.cz>, 2022.
+# vikdevelop <super-vik1@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-10 08:13+0500\n"
-"PO-Revision-Date: 2022-06-22 04:54+0000\n"
-"Last-Translator: Vojtěch Perník <translations@pervoj.cz>\n"
+"PO-Revision-Date: 2022-10-17 13:00+0000\n"
+"Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
 "Language: cs\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -89,58 +90,40 @@ msgid "The start time's hour"
 msgstr "Hodiny počátečního času"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time in "
-#| "hours."
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Když je povoleno „night-light-schedule-automatic“, použít tento počáteční "
-"čas v hodinách."
+"Pokud je funkce \"automatické plánování\" vypnutá, použijte tento čas "
+"spuštění v hodinách."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "Minuty počátečního času"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this start time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Když je povoleno „night-light-schedule-automatic“, použít tento počáteční "
-"čas v minutách."
+"Pokud je funkce \"automatický plán\" vypnutá, použijte tento čas spuštění v "
+"minutách."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
-#, fuzzy
-#| msgid "The end time's minute"
 msgid "The end time's hour"
-msgstr "Minuty koncového času"
+msgstr "Hodina konce"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Když je povoleno „night-light-schedule-automatic“, použít tento koncový čas "
-"v minutách."
+"Pokud je funkce \"automatické plánování\" vypnutá, použijte tento čas "
+"ukončení v hodinách."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
 msgstr "Minuty koncového času"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
-#, fuzzy
-#| msgid ""
-#| "When “night-light-schedule-automatic” is disabled, use this end time "
-#| "minutes."
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Když je povoleno „night-light-schedule-automatic“, použít tento koncový čas "
-"v minutách."
+"Pokud je funkce \"plánování-automatické\" vypnutá, použijte tento čas "
+"ukončení v minutách."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -158,7 +141,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Akce tlačítka napájení"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -166,70 +149,83 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Akce, která se provede po stisknutí tlačítka napájení systému. Tato akce je "
+"pevně zakódována (a nastavení je ignorováno) u virtuálních počítačů (vypnutí)"
+" a tabletů (pozastavení)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Povolit profil spořiče energie při vybité baterii"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Automaticky povolit profil „úspora energie“ pomocí power-profiles-daemon, "
+"pokud je baterie vybitá."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Stmívání obrazovky po určité době nečinnosti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Pokud má být obrazovka ztlumena, aby se šetřila energie, když je počítač v "
+"nečinnosti."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Zda má být obrazovka prázdná, když je relace nečinná"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Pokud má být obrazovka v době nečinnosti počítače vypnutá, aby se šetřila "
+"energie."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Doba, než je relace považována za nečinnou"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Počet minut nečinnosti, po kterých je relace považována za nečinnou."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Zda se má pozastavit, když je zařízení neaktivní a používá baterii"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Časový limit spánku počítače při napájení z baterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Doba v minutách, po kterou musí být počítač napájený z baterie neaktivní, "
+"než přejde do režimu spánku. Hodnota 0 znamená nikdy."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Zda se má pozastavit, když je zařízení neaktivní a připojené k síti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Časový limit spánku pro počítač, když je připojen k síti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Doba v minutách, po kterou musí být počítač při napájení ze sítě neaktivní, "
+"než přejde do režimu spánku. Hodnota 0 znamená nikdy."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -288,93 +284,92 @@ msgid ""
 "Warning: You will lose some settings after updating from v0.6 or any earlier "
 "version to this or any later version."
 msgstr ""
+"Varování: Po aktualizaci z verze v0.6 nebo jakékoli starší verze na tuto "
+"nebo jakoukoli novější verzi dojde ke ztrátě některých nastavení."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
 msgid "Added support for incomplete shell themes"
-msgstr ""
+msgstr "Přidána podpora pro neúplné motivy shellu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
 msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
 msgstr ""
+"Opraveno: Nelze změnit logo přihlašovací obrazovky z verze Flatpak aplikace"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
 msgid ""
 "Prevent app launch when argument provided to `--verbosity` option is invalid"
 msgstr ""
+"Zabránění spuštění aplikace, pokud je argument zadaný do volby `--verbosity` "
+"neplatný"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-#, fuzzy
-#| msgid "Updated the app store page of app"
 msgid "Updated the info shown on app's software-store page"
-msgstr "Aktualizována stránka aplikace v obchodě s aplikacemi"
+msgstr ""
+"Aktualizace informací zobrazených na stránce obchodu se softwarem aplikace"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
 msgid "New App Icon that follows GNOME HIG"
-msgstr ""
+msgstr "Nová ikona aplikace, která následuje GNOME HIG"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "Only one instance of the app can be open at a time"
-msgstr ""
+msgstr "V jednom okamžiku může být otevřena pouze jedna instance aplikace"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
+msgstr "Při použití nastavení již aplikace nezamrzá"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "The app shows a \"Log Out\" dialog right after settings are applied"
 msgstr ""
+"Aplikace zobrazí dialogové okno \"Odhlásit se\" ihned po použití nastavení"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid ""
 "Added new dialogs to show errors to the user instead of panicking on the "
 "terminal"
 msgstr ""
+"Přidány nové dialogy, které uživateli zobrazují chyby namísto paniky na "
+"terminálu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid ""
 "When applying current display settings, scaling is also applied (may not "
 "work on all systems)"
 msgstr ""
+"Při použití aktuálního nastavení zobrazení se použije také škálování (nemusí "
+"fungovat na všech systémech)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "The app is now DBusActivatable"
-msgstr ""
+msgstr "Aplikace je nyní DBusActivatable"
 
 #: src/app.py:51
-#, fuzzy
-#| msgid "Show application version"
 msgid "Show application version"
 msgstr "Zobrazit verzi aplikace"
 
 #: src/app.py:52
-#, fuzzy
-#| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Nastavit ručně úroveň „upovídanosti“ (od 0 do 5)"
+msgstr "Ruční nastavení úrovně hovorovosti (od 0 do 5)"
 
 #: src/app.py:53
-#, fuzzy
-#| msgid "LEVEL"
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "ÚROVEŇ"
 
 #: src/app.py:54
-#, fuzzy
-#| msgid "Enable verbose mode (set verbosity level 5)"
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Povolit „upovídaný“ režim (na hodnotě „upovídanosti“ 5)"
+msgstr "Povolit hovorový režim (alias --verbosity=5)"
 
 #: src/app.py:55
-#, fuzzy
-#| msgid "Enable quiet mode   (set verbosity level 0)"
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Povolit „tichý“ režim     (na hodnotě „upovídanosti“ 0)"
+msgstr "Povolit tichý režim (alias --verbosity=0)"
 
 #: src/app.py:75
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Nesprávná úroveň hovorovosti {level}. Musí být 0, 5 nebo něco mezi tím."
 
 #: src/app.py:154
 msgid ""
@@ -382,22 +377,27 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Pro správnou funkci této aplikace je nutné nainstalovat následující programy "
+"<b>v hostitelském systému</b>, které však v hostitelském systému "
+"nainstalovány nejsou."
 
 #: src/app.py:158
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Tato aplikace vyžaduje ke správné funkci následující software, který však "
+"není nainstalován."
 
 #: src/app.py:167
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b> Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -407,32 +407,28 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Pokyny k instalaci těchto závislostí do systému naleznete na adrese <a href="
+"\"{url}\">zde</a>."
 
 #: src/app.py:188
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Chybějící závislosti"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:222
 msgid "Settings reloaded"
 msgstr "Nastavení obnovena"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Nastavení úspěšně použita"
+msgstr "Nastavení sezení se načetla úspěšně"
 
 #: src/app.py:234
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
-"Importovaní uživatelských nastavení NENÍ podporováno při spouštění jako "
-"Flatpak"
+msgstr "Ve verzi Flatpak NENÍ podporováno načítání nastavení relace"
 
 #: src/app.py:247
 msgid "Reset settings successfully"
@@ -444,35 +440,29 @@ msgstr "Nepodařilo se resetovat nastavení"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importovat"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Nastavení úspěšně použita"
+msgstr "Nastavení byla úspěšně importována ze souboru"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Nepodařilo se importovat. Soubor je neplatný"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Nastavení úspěšně použita"
+msgstr "Nastavení byla úspěšně exportována"
 
 #: src/app.py:325
 msgid "Failed to export. Permssion denied"
-msgstr ""
+msgstr "Nepodařilo se exportovat. Povolení odepřeno"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Nepodařilo se exportovat. Adresář s tímto názvem již existuje"
 
 #: src/about.py:5
-#, fuzzy
-#| msgid "Mazhar Hussain"
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -480,13 +470,11 @@ msgstr "Mazhar Hussain"
 #: src/about.py:6
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -544,10 +532,8 @@ msgid "Apply current display settings"
 msgstr "Použít současná nastavení displeje"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Rozlišení, obnovovací frekvence, pozice monitorů, atd."
+msgstr "Rozlišení, obnovovací frekvence, pozice monitoru atd."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
 msgid "Apply"
@@ -632,8 +618,6 @@ msgid "Refresh"
 msgstr "Obnovit"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
 msgstr "Naimportovat uživatelská nastavení"
 
@@ -643,11 +627,11 @@ msgstr "Resetovat nastavení"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Import ze souboru"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportovat do souboru"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -687,13 +671,11 @@ msgstr "Uvítací zpráva"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Zvětšit"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Uvítací zpráva"
+msgstr "Zpráva"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -749,80 +731,76 @@ msgstr "Zablokovat během psaní"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Chování tlačítka napájení"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Nedělat nic"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Přerušit"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernace"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Zeptejte se"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automatické"
+msgstr "Automatický spořič energie"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Povolí úsporný režim, když je baterie vybitá."
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Ztlumit obrazovku"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Snižuje jas obrazovky, když je počítač neaktivní."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Vypnout obrazovku"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Zda se má obrazovka po určité době nečinnosti vypnout."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Zpoždění"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Doba v minutách, po které se obrazovka vypne."
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automatické"
+msgstr "Automatické pozastavení"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Po určité době nečinnosti pozastaví počítač."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Při napájení z baterie"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Doba v minutách, po které se počítač pozastaví."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Po zapojení do sítě"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -929,26 +907,20 @@ msgid "Choose File"
 msgstr "Vybrat soubor"
 
 #: src/common_widgets.py:26
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "Žádné"
+msgstr "(Žádné)"
 
 #: src/common_widgets.py:127
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "Vybrat soubor"
+msgstr "Vybrat"
 
 #: src/common_widgets.py:128 src/window.py:152
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: src/common_widgets.py:146
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "Vybrat soubor"
+msgstr "Vybrat obrázek"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
@@ -966,18 +938,22 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Pro použití aktuálního nastavení zobrazení je vyžadován soubor '$"
+"XDG_CONFIG_HOME/monitors.xml', který však neexistuje.\n"
+"\n"
+"Aby se tento soubor vytvořil automaticky, otevřete systémové 'Nastavení' a "
+"změňte v něm některé možnosti zobrazení."
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Nastavení monitoru nenalezeno"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "Výchozí téma shellu extrahováno do „{path}“ jako „default-extracted“"
+msgstr "Výchozí téma shellu extrahované do '{folder}' jako '{name}'"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
@@ -986,12 +962,12 @@ msgstr "Nepodařilo se extrahovat výchozí téma"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Export do souboru '{filename}'"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Nelze zapisovat do souboru '{filename}'. Oprávnění odepřeno"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -999,68 +975,64 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Nelze zapisovat do souboru '{filename}'. Adresář se stejným názvem již "
+"existuje"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Export do standardního výstupu"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Import ze souboru '{filename}'"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Import ze standardního vstupu"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Nepodařilo se resetovat nastavení"
+msgstr "Nepodařilo se analyzovat importní soubor"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Nepodařilo se načíst soubor importu. Není zakódováno v UTF-8"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Importovaný soubor neobsahuje sekci '{section_name}'"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "Importovaný soubor nemá klíč '{key_name}' v sekci '{section_name}'"
 
 #: src/settings.py:296
-#, fuzzy
-#| msgid "saving default theme ..."
 msgid "Backing up default shell theme …"
-msgstr "Ukládá se výchozí téma…"
+msgstr "Zálohování výchozího tématu shellu …"
 
 #: src/settings.py:344
-#, fuzzy
-#| msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr "Kliknutí na „Použít“ na Ubuntu použilo jen některá nastavení"
+msgstr "Použití nastavení GResource pro Ubuntu …"
 
 #: src/settings.py:351
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Použití nastavení GResource pro systémy jiné než Ubuntu …"
 
 #: src/settings.py:573
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Obnovení nastavení GResource pro Ubuntu …"
 
 #: src/settings.py:580
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Obnovení nastavení GResource pro systémy jiné než Ubuntu …"
 
 #: src/window.py:97
 msgid "Appearance"
@@ -1088,7 +1060,7 @@ msgstr "Displej"
 
 #: src/window.py:103
 msgid "Login Screen"
-msgstr ""
+msgstr "Přihlašovací obrazovka"
 
 #: src/window.py:105
 msgid "Tools"
@@ -1103,35 +1075,31 @@ msgid "Failed to apply settings"
 msgstr "Nepodařilo se použít nastavení"
 
 #: src/window.py:132
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
+msgstr ""
+"Neplatí. Vybraný obrázek na pozadí již neexistuje. Prosím! zvolte znovu."
 
 #: src/window.py:136
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "Vybraný obrázek na pozadí se nepodařilo najít. Prosím! vyberte znovu."
+msgstr ""
+"Nepoužije se. Vybraný obrázek loga již neexistuje. Prosím! vybrat znovu."
 
 #: src/window.py:142
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
 msgstr ""
+"Systém může začít vypadat divně/chybově, dokud se znovu nepřihlásíte nebo "
+"nerestartujete."
 
 #: src/window.py:147
 msgid "Log Out?"
-msgstr ""
+msgstr "Odhlásit se?"
 
 #: src/window.py:153
 msgid "Log Out"
-msgstr ""
+msgstr "Odhlásit se"
 
 #~ msgid "Homepage"
 #~ msgstr "Webová stránka"
