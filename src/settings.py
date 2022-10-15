@@ -113,7 +113,10 @@ class SettingsManager (GObject.Object):
                                   ).format(key_name=key, section_name=section_name))
                     continue
                 key_type = type(settings[key])
-                settings[key] = key_type(config_parser[section_name][key])
+                if key_type == bool:
+                    settings[key] = config_parser.getboolean(section_name, key)
+                else:
+                    settings[key] = key_type(config_parser[section_name][key])
 
     def load_session_settings(self):
         '''Load user's Gnome settings into the app'''
