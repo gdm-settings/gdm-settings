@@ -554,7 +554,7 @@ class SettingsManager (GObject.Object):
         if not os.path.isfile(user_monitors_xml):
             raise FileNotFoundError(2, 'No such file or directory', user_monitors_xml)
 
-        self.command_elevator.add(['machinectl', 'shell', '{gr_utils.GdmUsername}@', '/usr/bin/env',
+        self.command_elevator.add(['machinectl', 'shell', f'{gr_utils.GdmUsername}@', '/usr/bin/env',
                                    'gsettings', 'set', 'experimental-features',
                                    '"[\'scale-monitor-framebuffer\']"',
                                    '&>/dev/null',
