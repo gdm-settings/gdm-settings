@@ -4,10 +4,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-10 08:13+0500\n"
-"PO-Revision-Date: 2022-10-01 03:17+0000\n"
-"Last-Translator: Eduardo Malaspina <vaio0@swismail.com>\n"
+"PO-Revision-Date: 2022-10-22 12:06+0000\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Acción del botón de encendido"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -151,70 +151,87 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"La acción a realizar cuando se pulsa el botón de encendido del sistema. Esta "
+"acción está codificada (y la configuración se ignora) en las máquinas "
+"virtuales (apagado) y en las tabletas (suspensión)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Activar el perfil de ahorro de energía cuando la batería está baja"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Activar automáticamente el perfil de \"ahorro de energía\" mediante power-"
+"profiles-daemon si la batería está baja."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Atenuar la pantalla tras un periodo de inactividad"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Si la pantalla debe atenuarse para ahorrar energía cuando el ordenador está "
+"inactivo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Si se pone la pantalla en blanco cuando la sesión está inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Si la pantalla debe estar en blanco para ahorrar energía cuando el ordenador "
+"está inactivo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Tiempo antes de que la sesión se considere inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"El número de minutos de inactividad antes de que la sesión se considere "
+"inactiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Si se suspende cuando está inactivo y usa la batería"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Tiempo de espera del ordenador cuando está en batería"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La cantidad de tiempo en minutos que el ordenador alimentado por la batería "
+"debe estar inactivo antes de entrar en reposo. Un valor de 0 significa que "
+"nunca."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Si se suspende cuando está inactivo y enchufado"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Tiempo de espera del ordenador cuando está enchufado"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La cantidad de tiempo en minutos que el ordenador con alimentación de CA "
+"debe estar inactivo antes de pasar a la fase de reposo. Un valor de 0 "
+"significa que nunca."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -385,20 +402,14 @@ msgstr ""
 "pero no está instalado."
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -417,25 +428,20 @@ msgstr "Dependencias ausentes"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "Vale"
 
 #: src/app.py:222
 msgid "Settings reloaded"
 msgstr "Configuración recargada"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Configuración aplicada con éxito"
+msgstr "La configuración de la sesión se ha cargado correctamente"
 
 #: src/app.py:234
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
-"La importación de la configuración del usuario NO es compatible con la "
-"versión Flatpak"
+"Cargar la configuración de la sesión NO es compatible con la versión Flatpak"
 
 #: src/app.py:247
 msgid "Reset settings successfully"
@@ -447,31 +453,27 @@ msgstr "Fallo en el restablecimiento de la configuración"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Configuración aplicada con éxito"
+msgstr "La configuración se ha importado correctamente desde el archivo"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Fallo en la importación. El archivo no es válido"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Configuración aplicada con éxito"
+msgstr "La configuración se ha exportado correctamente"
 
 #: src/app.py:325
 msgid "Failed to export. Permssion denied"
-msgstr ""
+msgstr "No se ha podido exportar. Permiso denegado"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Fallo en la exportación. Ya existe un directorio con ese nombre"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -479,18 +481,13 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not qoutes.
@@ -548,10 +545,8 @@ msgid "Apply current display settings"
 msgstr "Aplicar la configuración actual de la pantalla"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc"
+msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
 msgid "Apply"
@@ -636,10 +631,8 @@ msgid "Refresh"
 msgstr "Actualizar"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Importar la configuración del usuario"
+msgstr "Cargar la configuración de la sesión"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -647,11 +640,11 @@ msgstr "Restablecer la configuración"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importar desde archivo"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportar a archivo"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -694,10 +687,8 @@ msgid "Enlarge"
 msgstr "Ampliar"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Mensaje de bienvenida"
+msgstr "Mensaje"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -753,82 +744,76 @@ msgstr "Desactivar mientras se teclea"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Comportamiento del botón de encendido"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "No hacer nada"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Suspender"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernar"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Preguntar"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automático"
+msgstr "Ahorro de energía automático"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Activa el modo de ahorro de energía cuando la batería está baja."
 
 #: src/blueprints/power-page.blp:28
-#, fuzzy
-#| msgid "Login Screen"
 msgid "Dim Screen"
-msgstr "Pantalla de inicio de sesión"
+msgstr "Atenuar pantalla"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Reduce el brillo de la pantalla cuando el ordenador está inactivo."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Apagar la pantalla"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Si se apaga la pantalla después de un período de inactividad."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Retardo"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Tiempo en minutos después del cual la pantalla se apagará."
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automático"
+msgstr "Suspensión automática"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Pone en pausa el ordenador tras un periodo de inactividad."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Con alimentación por batería"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Tiempo en minutos después del cual el ordenador se suspenderá."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Cuando está enchufado"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -959,16 +944,6 @@ msgid "Failed to apply current display settings"
 msgstr "No se ha podido aplicar la configuración actual de la pantalla"
 
 #: src/pages/display.py:88
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -979,11 +954,8 @@ msgstr ""
 "El archivo '$XDG_CONFIG_HOME/monitors.xml' es necesario para aplicar la "
 "configuración actual de la pantalla, pero no existe.\n"
 "\n"
-"Para crear ese archivo automáticamente,\n"
-"\n"
-"1. Vaya al panel 'Pantalla' de la configuración del sistema.\n"
-"2. Cambie algunos ajustes allí.\n"
-"3. Aplicar."
+"Para crear ese archivo automáticamente, abra la \"Configuración\" del "
+"sistema y cambie algunas opciones de visualización allí."
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
@@ -1003,12 +975,12 @@ msgstr "Fallo al extraer el tema predeterminado"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Exportando a un archivo '{filename}'"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "No se puede escribir en el archivo '{filename}'. Permiso denegado"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -1016,40 +988,42 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"No se puede escribir en el archivo '{filename}'. Ya existe un directorio con "
+"el mismo nombre"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exportando a la salida estándar"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importando desde el archivo '{filename}'"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importando desde la entrada estándar"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Fallo en el restablecimiento de la configuración"
+msgstr "Fallo al analizar el archivo de importación"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Fallo al leer el archivo de importación. No está codificado en UTF-8"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "El archivo importado no tiene la sección '{section_name}'"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"El archivo importado no tiene la clave '{key_name}' en la sección "
+"'{section_name}'"
 
 #: src/settings.py:296
 msgid "Backing up default shell theme …"
@@ -1119,27 +1093,19 @@ msgid "Failed to apply settings"
 msgstr "No se ha podido aplicar la configuración"
 
 #: src/window.py:132
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
-"favor, elija de nuevo."
+"No se ha aplicado. La imagen de fondo elegida ya no existe. Por favor, elija "
+"de nuevo."
 
 #: src/window.py:136
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"No se ha aplicado. No se pudo encontrar la imagen de fondo elegida. Por "
-"favor, elija de nuevo."
+"No se ha aplicado. La imagen del logo elegida ya no existe. Por favor, elija "
+"de nuevo."
 
 #: src/window.py:142
 msgid "The system may start to look weird/buggy untill you re-login or reboot."
