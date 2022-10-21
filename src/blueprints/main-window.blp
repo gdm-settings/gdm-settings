@@ -22,6 +22,12 @@ Box content_box {
   orientation: vertical;
 
   Adw.HeaderBar {
+    [start] ToggleButton toggle_pane_button {
+      icon-name: "sidebar-show";
+      active: true;
+      visible: bind flap.folded;
+    }
+
     [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
     [end] Separator { margin-start: 10; }
     [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
@@ -29,9 +35,13 @@ Box content_box {
   }
 
   Adw.ToastOverlay toast_overlay {
-    Paned paned {
-      [start] StackSidebar { stack: stack; }
-      [end]   Stack stack { hexpand: true; width-request: 300; }
+    Adw.Flap flap {
+      reveal-flap: bind toggle_pane_button.active bidirectional;
+      swipe-to-open: bind flap.folded;
+      swipe-to-close: bind flap.folded;
+
+      [flap] StackSidebar sidebar { stack: stack; styles ["background"] }
+      [content] Stack stack { hexpand: true; width-request: 300; }
     }
   }
 }

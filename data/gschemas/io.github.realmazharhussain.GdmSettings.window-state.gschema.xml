@@ -10,10 +10,6 @@
 	   <default>500</default>
 	 </key>
 
-	 <key name="paned-position" type="u">
-	   <default>170</default>
-	 </key>
-
 	 <key name="last-visited-page" type="s">
 	   <default>"appearance"</default>
 	   <choices>
