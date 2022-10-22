@@ -28,9 +28,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: explaination
+    id: explanation
     attributes:
-      label: Detailed Explaination (Optional)
+      label: Detailed Explanation (Optional)
       description: Explain the problem in detail
     validations:
       required: false

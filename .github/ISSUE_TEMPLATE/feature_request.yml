@@ -14,7 +14,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Explaination
-      description: Detailed Explaination (if required any)
+      label: Explanation
+      description: Detailed Explanation (if required any)
     validations:
       required: false
