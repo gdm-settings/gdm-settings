@@ -65,7 +65,7 @@ class ProcessReturnCode(int):
 class NoCommandsFoundError(Exception): pass
 
 class CommandElevator:
-    """ Runs a list of commands with elevated privilages """
+    """ Runs a list of commands with elevated privileges """
     def __init__(self, *, shebang='#!/bin/sh') -> None:
         self._list = []
         self.shebang = shebang
@@ -98,7 +98,7 @@ class CommandElevator:
             script_file = f"{env.TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.shebang, *self._list, sep="\n", file=open_script_file)
-            chmod(path=script_file, mode=755)
+            chmod(path=script_file, mode=0o755)
             returncode = run_on_host(['pkexec', script_file]).returncode
             remove(script_file)
 

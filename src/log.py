@@ -14,18 +14,17 @@ bright_red = '\033[91m'
 
 class ColoredFormatter (logging.Formatter):
     def format (self, record):
-        if record.levelname == 'CRITICAL':
-            color = bright_red
-        elif record.levelname == 'ERROR':
-            color = red
-        elif record.levelname == 'WARNING':
-            color = yellow
-        elif record.levelname == 'INFO':
-            color = green
-        else:
-            color = blue
+        match record.levelname:
+            case 'CRITICAL': level_color = bright_red
+            case 'ERROR':    level_color = red
+            case 'WARNING':  level_color = yellow
+            case 'INFO':     level_color = green
+            case default:    level_color = blue
 
-        return bold + color + record.levelname + magenta + '::' + normal + record.getMessage()
+        return (bold + level_color + record.levelname + normal
+                + ' ' + magenta + '::' + normal
+                + ' ' + record.getMessage()
+               )
 
 
 logging.root.setLevel(logging.DEBUG)

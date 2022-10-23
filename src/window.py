@@ -56,6 +56,9 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
     def __init__ (self, application, **kwargs):
         super().__init__(**kwargs)
 
+        if build_type != 'release':
+            self.add_css_class('devel')
+
         self.application = application
         self.set_application(application)
 
@@ -65,11 +68,15 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.set_content(self.builder.get_object('content_box'))
 
-        self.paned = self.builder.get_object('paned')
+        self.flap = self.builder.get_object('flap')
+        self.title = self.builder.get_object('title')
         self.stack = self.builder.get_object('stack')
+        self.sidebar = self.builder.get_object('sidebar')
         self.spinner = self.builder.get_object('spinner')
         self.apply_button = self.builder.get_object('apply_button')
         self.toast_overlay = self.builder.get_object('toast_overlay')
+
+        self.bind_property('title', self.title, 'label', GObject.BindingFlags.SYNC_CREATE)
 
         self.task_counter = TaskCounter(spinner=self.spinner)
 
@@ -77,16 +84,16 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.apply_button.connect('clicked', self.on_apply)
         self.apply_task = BackgroundTask(self.application.settings_manager.apply_settings, self.on_apply_finished)
 
+        click = Gtk.GestureClick()
+        click.connect('released', self.on_sidebar_clicked, self.flap)
+        self.sidebar.add_controller(click)
+
         self.add_pages()
         self.bind_to_gsettings()
 
-        if build_type != 'release':
-            self.add_css_class('devel')
-
-        # Following properties are ignored when set in .ui files.
-        # So, they need to be changed here.
-        self.paned.set_shrink_start_child(False)
-        self.paned.set_shrink_end_child(False)
+    def on_sidebar_clicked (self, click, n_press, x, y, flap):
+        if flap.get_folded():
+            flap.set_reveal_flap(False)
 
     def add_pages (self):
 
@@ -109,7 +116,6 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         bind(self.gsettings, 'width', self, 'default-width')
         bind(self.gsettings, 'height', self, 'default-height')
-        bind(self.gsettings, 'paned-position', self.paned, 'position')
         bind(self.gsettings, 'last-visited-page', self.stack, 'visible-child-name')
 
     def on_apply (self, button):
@@ -139,7 +145,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.toast_overlay.add_toast(toast)
 
     def show_logout_dialog (self):
-        message = _('The system may start to look weird/buggy untill you re-login or reboot.')
+        message = _('The system may start to look weird/buggy until you re-login or reboot.')
 
         dialog = Adw.MessageDialog(
                     body = message,

@@ -9,7 +9,7 @@
   <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
 
   <name>Login Manager Settings</name>
-  <summary>A settings app for GNOME's Login Manager, GDM</summary>
+  <summary>Customize your login screen</summary>
 
   <description>
      <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
@@ -36,6 +36,16 @@
     <control>keyboard</control>
     <control>touch</control>
   </supports>
+
+  <!-- Minimum display length required -->
+  <requires>
+    <display_length>300</display_length>
+  </requires>
+
+  <!-- Minimum display length recommended -->
+  <recommends>
+    <display_length>360</display_length>
+  </recommends>
 
   <provides>
     <binary>gdm-settings</binary>
@@ -72,23 +82,27 @@
   </screenshots>
 
   <releases>
-    <release version="1.0" date="2022-09-23">
+    <release version="2.alpha" date="2022-10-23">
       <description>
-        <p>
-          Warning: You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
-        </p>
         <ul>
-          <li>Added support for incomplete shell themes</li>
-          <li>Fixed: Cannot change login screen logo from Flatpak version of the app</li>
-          <li>Prevent app launch when argument provided to `--verbosity` option is invalid</li>
-          <li>Updated the info shown on app's software-store page</li>
-          <li>New App Icon that follows GNOME HIG</li>
-          <li>Only one instance of the app can be open at a time</li>
-          <li>When applying settings, the app does not freeze anymore</li>
-          <li>The app shows a "Log Out" dialog right after settings are applied</li>
-          <li>Added new dialogs to show errors to the user instead of panicking on the terminal</li>
-          <li>When applying current display settings, scaling is also applied (may not work on all systems)</li>
-          <li>The app is now DBusActivatable</li>
+          <li>Added power settings</li>
+          <li>Added options to import/export settings in the global menu</li>
+          <li>Added an option to enlarge welcome message</li>
+          <li>Turned main window adaptive</li>
+          <li>Turned pop-up dialogs adaptive</li>
+          <li>Updated "about" window to the new style</li>
+          <li>Improved style of welcome message input field</li>
+          <li>Renamed sidebar section "Miscellaneous" to "Login Screen"</li>
+          <li>Renamed global menu option "Import user settings" to "Load session settings"</li>
+          <li>The app, now, shows an error notification when trying to apply settings if logo
+              is enabled and the chosen logo image does not exist on the system anymore</li>
+          <li>Colored commandline output</li>
+          <li>Fixed "Apply Current Display Settings" feature not working on Ubuntu and Ubuntu-like systems</li>
+          <li>Fixed some text showing up untranslated even if translation existed</li>
+          <li>Fixed some typos</li>
+          <!--
+          <li>Improved support for multiple installations of the app on the same system</li>
+          -->
         </ul>
       </description>
     </release>

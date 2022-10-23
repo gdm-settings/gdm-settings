@@ -27,7 +27,7 @@ if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
     else:
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
-elif 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
+if 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
     GdmUsername = 'Debian-gdm'
 
 

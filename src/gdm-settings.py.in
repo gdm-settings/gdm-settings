@@ -2,6 +2,7 @@
 import os
 import sys
 import gettext
+import locale
 
 # AppDir is the directory which contains this app (detected during runtime)
 AppDir = os.path.realpath(__file__).split('@prefix@')[0]
@@ -17,6 +18,8 @@ if my_data_dir in data_dirs:
 os.environ['XDG_DATA_DIRS'] = ':'.join([my_data_dir, *data_dirs])
 
 localedir = AppDir + '@locale_dir@'
+locale.bindtextdomain("gdm-settings", localedir)
+locale.textdomain("gdm-settings")
 gettext.bindtextdomain('gdm-settings', localedir)
 gettext.textdomain('gdm-settings')
 _ = gettext.gettext
