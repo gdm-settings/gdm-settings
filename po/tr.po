@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-10-08 16:43+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -259,14 +259,14 @@ msgstr "Tepe çubuğu arka plan rengi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Giriş Yöneticisi Ayarları"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -278,77 +278,74 @@ msgstr ""
 "uygulayın, imleç temasını, simge temasını ve gece ışığı ayarlarını "
 "değiştirin."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Uyarı: v0.6 veya önceki herhangi bir sürümden bu veya sonraki herhangi bir "
-"sürüme güncelleme yaptıktan sonra bazı ayarları kaybedeceksiniz."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Eksik kabuk temaları için destek eklendi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Düzeltildi: Uygulamanın Flatpak sürümünden giriş ekranı logosu "
-"değiştirilemiyor"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"`--verbosity` seçeneğine sağlanan argüman geçersiz olduğunda uygulamanın "
-"başlatılmasını önle"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-"Uygulamanın uygulama mağazası sayfasında gösterilen bilgileri güncellendi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "GNOME HIG'i takip eden yeni uygulama simgesi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "Aynı anda uygulamanın yalnızca bir örneği açılabilir"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "Ayarları uygularken uygulama artık donmuyor"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"Uygulama, ayarlar uygulandıktan hemen sonra \"Oturumu Kapat\" iletişim "
-"kutusunu gösteriyor"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "Ayarları sıfırla"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"Uçbirimde ölümcül hata verip kapanmak yerine kullanıcıya hataları göstermek "
-"için yeni iletişim kutuları eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"Geçerli ekran ayarları uygulanırken ölçeklendirme de uygulanır (tüm "
-"sistemlerde çalışmayabilir)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "Uygulama artık DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr ""
 
 #: src/app.py:51
 msgid "Show application version"
@@ -463,7 +460,7 @@ msgid "Settings were successfully exported"
 msgstr "Ayarlar uygulandı"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr ""
 
 #: src/app.py:327
@@ -485,7 +482,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "Telif Hakkı 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
@@ -543,7 +540,7 @@ msgstr "Geçerli ekran ayarlarını uygula"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Uygula"
 
@@ -902,7 +899,7 @@ msgstr "ÖÖ/ÖS"
 msgid "24 Hours"
 msgstr "24 Saat"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Güç"
 
@@ -922,7 +919,7 @@ msgstr "Yok"
 msgid "Choose"
 msgstr "Seç"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "İptal Et"
 
@@ -1018,95 +1015,159 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "Ses"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "Ekran"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr "Giriş Ekranı"
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/window.py:132
+#: src/window.py:138
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Uygulanmadı. Seçilen arka plan resmi artık mevcut değil. Lütfen tekrar seçin."
 
-#: src/window.py:136
+#: src/window.py:142
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Uyarı: v0.6 veya önceki herhangi bir sürümden bu veya sonraki herhangi "
+#~ "bir sürüme güncelleme yaptıktan sonra bazı ayarları kaybedeceksiniz."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Eksik kabuk temaları için destek eklendi"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Düzeltildi: Uygulamanın Flatpak sürümünden giriş ekranı logosu "
+#~ "değiştirilemiyor"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "`--verbosity` seçeneğine sağlanan argüman geçersiz olduğunda uygulamanın "
+#~ "başlatılmasını önle"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr ""
+#~ "Uygulamanın uygulama mağazası sayfasında gösterilen bilgileri güncellendi"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "GNOME HIG'i takip eden yeni uygulama simgesi"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "Aynı anda uygulamanın yalnızca bir örneği açılabilir"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "Ayarları uygularken uygulama artık donmuyor"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "Uygulama, ayarlar uygulandıktan hemen sonra \"Oturumu Kapat\" iletişim "
+#~ "kutusunu gösteriyor"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Uçbirimde ölümcül hata verip kapanmak yerine kullanıcıya hataları "
+#~ "göstermek için yeni iletişim kutuları eklendi"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "Geçerli ekran ayarları uygulanırken ölçeklendirme de uygulanır (tüm "
+#~ "sistemlerde çalışmayabilir)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "Uygulama artık DBusActivatable"
 
 #~ msgctxt "Missing Dependency"
 #~ msgid " • <b>GLib</b> (Developer Edition)"

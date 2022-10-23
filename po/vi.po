@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -240,14 +240,14 @@ msgstr "Màu nền của thanh top bar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -258,76 +258,74 @@ msgstr ""
 "Thay đổi các cài đặt của GDM, thay đổi theme và hình nền, thay đổi cursor "
 "theme, icon theme và cài đặt Night Light, và nhiều cài đặt khác."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Cảnh báo: Bạn sẽ mất một vài cài đặp sau khi cập nhật từ phiên bản v0.6 hoặc "
-"cũ hơn lên phiên bản này hoặc mới hơn."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
-"Flatpak"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Ngăn không cho app khởi động khi tham số cung cấp cho argument `--verbosity` "
-"không hợp lệ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-"Đã cập nhật thông tin trên trang của app trên cửa hàng phần mềm ứng dụng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "Icon mới của app theo chuẩn GNOME HIG"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "Mỗi lần chỉ có một phiên của ứng dụng được phép mở"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "Khi áp dụng cài đặt, app không còn bị đơ nữa"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"App hiện một hộp thoại \"Đăng xuất\" ngay sau khi những cài đặt được áp dụng"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "Khôi phục cài đặt gốc"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"Thêm nhiều hộp thoại mới để hiển thị lỗi cho người dùng thay vì đơ và hiện "
-"lỗi trong terminal"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"Khi áp dụng cài đặt màn hình hiện tại, tỷ lệ cũng được áp dụng (có thể không "
-"hoạt động trên một vài hệ thống)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "App hiện có DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr ""
 
 #: src/app.py:51
 msgid "Show application version"
@@ -455,7 +453,7 @@ msgid "Settings were successfully exported"
 msgstr "Áp dụng cài đặt thành công"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr ""
 
 #: src/app.py:327
@@ -482,7 +480,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "Bản quyền © 2021 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
@@ -542,7 +540,7 @@ msgstr "Áp dụng cài đặt màn hình hiện tại"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Áp dụng"
 
@@ -909,7 +907,7 @@ msgstr "SA / CH"
 msgid "24 Hours"
 msgstr "24 giờ"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Nguồn"
 
@@ -929,7 +927,7 @@ msgstr "(Không có gì)"
 msgid "Choose"
 msgstr "Chọn"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
@@ -1039,71 +1037,71 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "Phông chữ"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Top Bar"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "Âm thanh"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Chuột & Touchpad"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "Màn hình"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Áp dụng cài đặt thành công"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Áp dụng cài đặt thất bại"
 
-#: src/window.py:132
+#: src/window.py:138
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1115,7 +1113,7 @@ msgstr ""
 "Không áp dụng được do hình nền được chọn không thể tìm thấy. Làm ơn! Chọn "
 "lại đi mà."
 
-#: src/window.py:136
+#: src/window.py:142
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1126,19 +1124,83 @@ msgstr ""
 "Không áp dụng được do hình nền được chọn không thể tìm thấy. Làm ơn! Chọn "
 "lại đi mà."
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Hệ thống có thể bắt đầu trông khá kỳ lạ/lỗi cho đến khi bạn đăng nhập lại "
 "hoặc khởi động lại."
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Đăng xuất?"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Cảnh báo: Bạn sẽ mất một vài cài đặp sau khi cập nhật từ phiên bản v0.6 "
+#~ "hoặc cũ hơn lên phiên bản này hoặc mới hơn."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
+#~ "Flatpak"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "Ngăn không cho app khởi động khi tham số cung cấp cho argument `--"
+#~ "verbosity` không hợp lệ"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr ""
+#~ "Đã cập nhật thông tin trên trang của app trên cửa hàng phần mềm ứng dụng"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "Icon mới của app theo chuẩn GNOME HIG"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "Mỗi lần chỉ có một phiên của ứng dụng được phép mở"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "Khi áp dụng cài đặt, app không còn bị đơ nữa"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "App hiện một hộp thoại \"Đăng xuất\" ngay sau khi những cài đặt được áp "
+#~ "dụng"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Thêm nhiều hộp thoại mới để hiển thị lỗi cho người dùng thay vì đơ và "
+#~ "hiện lỗi trong terminal"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "Khi áp dụng cài đặt màn hình hiện tại, tỷ lệ cũng được áp dụng (có thể "
+#~ "không hoạt động trên một vài hệ thống)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "App hiện có DBusActivatable"
 
 #~ msgctxt "Missing Dependency"
 #~ msgid " • <b>GLib</b> (Developer Edition)"

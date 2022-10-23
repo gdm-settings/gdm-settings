@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -244,14 +244,14 @@ msgstr "Color de fons barra superiora"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Paramètres del gestionari de fenèstra de connexion"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME, GDM"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -263,76 +263,74 @@ msgstr ""
 "cursors, de las icònas e los paramètres de lum nocturna, demest autras "
 "causas."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Avertiment : perdretz d’unes paramètres aprèp la mesa a jorn a partir de la "
-"v0.6 o mai anciana o superiora."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Apondon de la presa en carga dels tèma de shell incomplets"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Corregit : cambiament impossibla de logotipe de l’ecran de verrolhatge amb "
-"la version Flatpak de l’aplicacion"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Evitar lo lançament de l’aplicacion quand l’argument donat a l’opcion `--"
-"verbosity` es invalid"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr "Pagina de la botiga amb info de l’aplicacion actualizada"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "Icònas novèlas d’aplicacion per seguir GNOME HIG"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "Se pot sonque dobrir una instància de l’aplicacion al còp"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "En aplicant los paramètres, l’aplicacion s’immobiliza pas pus"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"L’aplicacion aficha una fenèstra amb « Se desconnectar » aprèp l’aplicacion "
-"dels paramètres"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "Reïnicializar los paramètres"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"Apondon de fenèstras novèlas per afichar las errors a l’utilizaire a la "
-"plaça de crear d’error al terminal"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"En aplicant la configuracion d’afichatge actuala, la mesa a l’escala se "
-"realiza tanben (pòt arribar que foncione pas sus totes los sistèmas)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "L’aplicacion es ara DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr ""
 
 #: src/app.py:51
 msgid "Show application version"
@@ -460,7 +458,7 @@ msgid "Settings were successfully exported"
 msgstr "Paramètres aplicats corrèctament"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr ""
 
 #: src/app.py:327
@@ -487,7 +485,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Quentin PAGÈS"
@@ -547,7 +545,7 @@ msgstr "Aplicar los paramètres d’afichatge actuals"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -916,7 +914,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 oras"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Energia"
 
@@ -936,7 +934,7 @@ msgstr "(Pas cap)"
 msgid "Choose"
 msgstr "Causir"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -1045,71 +1043,71 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Salvagarda del tèma per defaut…"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "Poliças"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Barra superiora"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "Son"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Mirga & pavat tac­til"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "Afichatge"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "Aisinas"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/window.py:132
+#: src/window.py:138
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1121,7 +1119,7 @@ msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/window.py:136
+#: src/window.py:142
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1132,19 +1130,82 @@ msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
 "connectar o reavietz."
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Se desconnectar ?"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Desconnexion"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME, GDM"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Avertiment : perdretz d’unes paramètres aprèp la mesa a jorn a partir de "
+#~ "la v0.6 o mai anciana o superiora."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Apondon de la presa en carga dels tèma de shell incomplets"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Corregit : cambiament impossibla de logotipe de l’ecran de verrolhatge "
+#~ "amb la version Flatpak de l’aplicacion"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "Evitar lo lançament de l’aplicacion quand l’argument donat a l’opcion `--"
+#~ "verbosity` es invalid"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr "Pagina de la botiga amb info de l’aplicacion actualizada"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "Icònas novèlas d’aplicacion per seguir GNOME HIG"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "Se pot sonque dobrir una instància de l’aplicacion al còp"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "En aplicant los paramètres, l’aplicacion s’immobiliza pas pus"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "L’aplicacion aficha una fenèstra amb « Se desconnectar » aprèp "
+#~ "l’aplicacion dels paramètres"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Apondon de fenèstras novèlas per afichar las errors a l’utilizaire a la "
+#~ "plaça de crear d’error al terminal"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "En aplicant la configuracion d’afichatge actuala, la mesa a l’escala se "
+#~ "realiza tanben (pòt arribar que foncione pas sus totes los sistèmas)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "L’aplicacion es ara DBusActivatable"
 
 #~ msgctxt "Missing Dependency"
 #~ msgid " • <b>GLib</b> (Developer Edition)"

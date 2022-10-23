@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -243,14 +243,14 @@ msgstr "トップバーの背景色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "ログインマネージャーの設定"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "GNOME のログインマネージャー・GDM の設定アプリ"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -261,71 +261,73 @@ msgstr ""
 "GDM の設定を変更できます。例えば、テーマや背景を設定したり、カーソルテーマや"
 "アイコンテーマ、夜間モードなどの設定を変更したりできます。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一部の"
-"設定を失います。"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "不完全なシェルテーマにも対応"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr "修正済み: Flatpak 版アプリからログイン画面のロゴを変更できない不具合"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"`--verbosity` オプションに指定された引数が無効な場合、アプリを起動しないよう"
-"に修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr "ソフトウェアストア内のアプリの紹介ページで表示される情報を更新"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "GNOME HIG に準拠した新しいアプリアイコン"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "アプリのインスタンスは同時に1つしか開けないように修正"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "設定適用中にアプリがフリーズしないように修正"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "設定をリセット"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"エラー時にターミナル上で警告を出すのではなく、ダイアログでユーザーに表示する"
-"ように修正"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"現在のディスプレイ設定を適応する際に、スケールも適用されるように修正 (環境に"
-"よっては動作しない可能性があります)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
 msgstr ""
 
 #: src/app.py:51
@@ -451,7 +453,7 @@ msgid "Settings were successfully exported"
 msgstr "設定を正常に適用しました"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr ""
 
 #: src/app.py:327
@@ -478,7 +480,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "Copyright © 2021 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Ryo Nakano"
@@ -538,7 +540,7 @@ msgstr "現在のディスプレイ設定を適用"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "解像度、リフレッシュレート、画面配置など"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "適用"
 
@@ -905,7 +907,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 時制"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "電源"
 
@@ -925,7 +927,7 @@ msgstr "(なし)"
 msgid "Choose"
 msgstr "選択"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -1035,71 +1037,71 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "シェルのデフォルトテーマをバックアップしています…"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu に適用しています…"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "外観"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "フォント"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "トップバー"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "サウンド"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "マウスとタッチパッド"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "ツール"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "設定を正常に適用しました"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "設定を適用できませんでした"
 
-#: src/window.py:132
+#: src/window.py:138
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1111,7 +1113,7 @@ msgstr ""
 "適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
 "い。"
 
-#: src/window.py:136
+#: src/window.py:142
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1122,18 +1124,75 @@ msgstr ""
 "適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
 "い。"
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "ログアウトしますか？"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "ログアウト"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "GNOME のログインマネージャー・GDM の設定アプリ"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "警告: バージョン 0.6 以前からこれ以降のバージョンにアップデートすると、一"
+#~ "部の設定を失います。"
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "不完全なシェルテーマにも対応"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "修正済み: Flatpak 版アプリからログイン画面のロゴを変更できない不具合"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "`--verbosity` オプションに指定された引数が無効な場合、アプリを起動しないよ"
+#~ "うに修正"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr "ソフトウェアストア内のアプリの紹介ページで表示される情報を更新"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "GNOME HIG に準拠した新しいアプリアイコン"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "アプリのインスタンスは同時に1つしか開けないように修正"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "設定適用中にアプリがフリーズしないように修正"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr "設定適応直後に \"ログアウト\" ダイアログを表示するように修正"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "エラー時にターミナル上で警告を出すのではなく、ダイアログでユーザーに表示す"
+#~ "るように修正"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "現在のディスプレイ設定を適応する際に、スケールも適用されるように修正 (環境"
+#~ "によっては動作しない可能性があります)"
 
 #~ msgctxt "Missing Dependency"
 #~ msgid " • <b>GLib</b> (Developer Edition)"

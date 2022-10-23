@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -247,14 +247,14 @@ msgstr "بیک گرائونڈ کا رنگ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -265,72 +265,74 @@ msgstr ""
 "جی۔ڈی۔ایم کی سیٹنگز بدلیں؛ تھیم اور بیکگرائونڈ اپلائی کریں، تیر کا تھیم، "
 "آئیکن تھیم اور رات کی روشنی کی سیٹنگز، وغیرہ بدلیں۔"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"وارننگ: v0.6 یا اس سے پہلے والے کسی ورژن سے اس یا اس سے نئے ورژن پر اپڈیٹ "
-"کرنے کے بعد آپ کی کچھ سیٹنگز ضائع ہو جائیں گی۔"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "نامکمل شیل تھیمز کی سپورٹ شامل کی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"ٹھیک کیا: ایپ کے فلَیٹپَیک ورژن میں لاگن سکرین کا لوگو تبدیل نہیں کیا جا سکتا "
-"تھا"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"اب جب `--verbosity` آپشن کا آرگیومنٹ ٹھیک نہ ہو تو ایپلیکیشن اوپن نہیں ہو گی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr "ایپلیکیشن کا ایپ سٹور والا صفحہ اپڈیٹ کیا"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "نیا ایپ آئیکن جو GNOME کی HIG کو فالو کرتا ہے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "بیک وقت ایپلیکیشن کی صرف ایک انسٹانس اوپن ہو سکتی ہے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "سیٹنگز اپلائی کرتے وقت اب ایپلیکیشن فریز نہیں ہوتی"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr "ایپلیکیشن اب سیٹنگز اپلائی کرنے کے بعد \"لاگ آئوٹ\" ڈائیلاگ دکھاتی ہے"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "سیٹنگز کو ریسیٹ کریں"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"ٹرمینل پر پینک کرنے کی بجائے ایرر شو کرنے کیلئے نئے ڈائیلاگ ایڈ کیے ہیں"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"ڈسپلے کی موجودہ سیٹنگز اپلائی کرتے وقت اب سکیلنگ بھی اپلائی ہوتی ہے (کچھ "
-"سسٹمز پر کام نہیں کرے گی)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "ایپلیکیشن اب ڈی بس ایکٹیویٹیبل ہے"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr ""
 
 #: src/app.py:51
 msgid "Show application version"
@@ -455,7 +457,7 @@ msgid "Settings were successfully exported"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr ""
 
 #: src/app.py:327
@@ -482,7 +484,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "کاپی رائیٹ © 2021 مظہر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
@@ -542,7 +544,7 @@ msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "اپلائی"
 
@@ -909,7 +911,7 @@ msgstr "ش/م"
 msgid "24 Hours"
 msgstr "24 گھنٹے"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "پاوَر"
 
@@ -929,7 +931,7 @@ msgstr "(کچھ نہیں)"
 msgid "Choose"
 msgstr "انتخاب کریں"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "کینسل"
 
@@ -1038,71 +1040,71 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "خط"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "آواز"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "آلات"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/window.py:132
+#: src/window.py:138
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1113,7 +1115,7 @@ msgid ""
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:136
+#: src/window.py:142
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1123,18 +1125,79 @@ msgid ""
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "لاگ آؤٹ کریں؟"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "وارننگ: v0.6 یا اس سے پہلے والے کسی ورژن سے اس یا اس سے نئے ورژن پر اپڈیٹ "
+#~ "کرنے کے بعد آپ کی کچھ سیٹنگز ضائع ہو جائیں گی۔"
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "نامکمل شیل تھیمز کی سپورٹ شامل کی"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "ٹھیک کیا: ایپ کے فلَیٹپَیک ورژن میں لاگن سکرین کا لوگو تبدیل نہیں کیا جا "
+#~ "سکتا تھا"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "اب جب `--verbosity` آپشن کا آرگیومنٹ ٹھیک نہ ہو تو ایپلیکیشن اوپن نہیں ہو "
+#~ "گی"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr "ایپلیکیشن کا ایپ سٹور والا صفحہ اپڈیٹ کیا"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "نیا ایپ آئیکن جو GNOME کی HIG کو فالو کرتا ہے"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "بیک وقت ایپلیکیشن کی صرف ایک انسٹانس اوپن ہو سکتی ہے"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "سیٹنگز اپلائی کرتے وقت اب ایپلیکیشن فریز نہیں ہوتی"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "ایپلیکیشن اب سیٹنگز اپلائی کرنے کے بعد \"لاگ آئوٹ\" ڈائیلاگ دکھاتی ہے"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "ٹرمینل پر پینک کرنے کی بجائے ایرر شو کرنے کیلئے نئے ڈائیلاگ ایڈ کیے ہیں"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "ڈسپلے کی موجودہ سیٹنگز اپلائی کرتے وقت اب سکیلنگ بھی اپلائی ہوتی ہے (کچھ "
+#~ "سسٹمز پر کام نہیں کرے گی)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "ایپلیکیشن اب ڈی بس ایکٹیویٹیبل ہے"
 
 #~ msgctxt "Missing Dependency"
 #~ msgid " • <b>GLib</b> (Developer Edition)"

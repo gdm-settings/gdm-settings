@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-10 08:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: 2022-10-17 13:00+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -150,8 +150,8 @@ msgid ""
 "tablets (suspend)."
 msgstr ""
 "Akce, která se provede po stisknutí tlačítka napájení systému. Tato akce je "
-"pevně zakódována (a nastavení je ignorováno) u virtuálních počítačů (vypnutí)"
-" a tabletů (pozastavení)."
+"pevně zakódována (a nastavení je ignorováno) u virtuálních počítačů "
+"(vypnutí) a tabletů (pozastavení)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -257,14 +257,14 @@ msgstr "Barva pozadí horní lišty"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:62
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Nastavení přihlašovací obrazovky"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Nastavení pro správce přihlášení GNOME, GDM"
+msgid "Customize your login screen"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -275,75 +275,74 @@ msgstr ""
 "Změnit nastavení GDM; Aplikovat téma a pozadí, změnit téma kurzoru, téma "
 "ikon, nastavení nočního světla a další možnosti."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Varování: Po aktualizaci z verze v0.6 nebo jakékoli starší verze na tuto "
-"nebo jakoukoli novější verzi dojde ke ztrátě některých nastavení."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Přidána podpora pro neúplné motivy shellu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Opraveno: Nelze změnit logo přihlašovací obrazovky z verze Flatpak aplikace"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Zabránění spuštění aplikace, pokud je argument zadaný do volby `--verbosity` "
-"neplatný"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-"Aktualizace informací zobrazených na stránce obchodu se softwarem aplikace"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "Nová ikona aplikace, která následuje GNOME HIG"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "V jednom okamžiku může být otevřena pouze jedna instance aplikace"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "Při použití nastavení již aplikace nezamrzá"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"Aplikace zobrazí dialogové okno \"Odhlásit se\" ihned po použití nastavení"
+#, fuzzy
+#| msgid "Reset settings"
+msgid "Added power settings"
+msgstr "Resetovat nastavení"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
-"Přidány nové dialogy, které uživateli zobrazují chyby namísto paniky na "
-"terminálu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
-"Při použití aktuálního nastavení zobrazení se použije také škálování (nemusí "
-"fungovat na všech systémech)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "Aplikace je nyní DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr ""
 
 #: src/app.py:51
 msgid "Show application version"
@@ -369,7 +368,8 @@ msgstr "Povolit tichý režim (alias --verbosity=0)"
 #: src/app.py:75
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr "Nesprávná úroveň hovorovosti {level}. Musí být 0, 5 nebo něco mezi tím."
+msgstr ""
+"Nesprávná úroveň hovorovosti {level}. Musí být 0, 5 nebo něco mezi tím."
 
 #: src/app.py:154
 msgid ""
@@ -455,7 +455,9 @@ msgid "Settings were successfully exported"
 msgstr "Nastavení byla úspěšně exportována"
 
 #: src/app.py:325
-msgid "Failed to export. Permssion denied"
+#, fuzzy
+#| msgid "Failed to export. Permssion denied"
+msgid "Failed to export. Permission denied"
 msgstr "Nepodařilo se exportovat. Povolení odepřeno"
 
 #: src/app.py:327
@@ -477,7 +479,7 @@ msgid "Copyright 2021-2022 Mazhar Hussain"
 msgstr "Copyright 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
+#. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Vojtěch Perník <translations@pervoj.cz>"
@@ -535,7 +537,7 @@ msgstr "Použít současná nastavení displeje"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Rozlišení, obnovovací frekvence, pozice monitoru atd."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:27
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Použít"
 
@@ -894,7 +896,7 @@ msgstr "12 hodinový"
 msgid "24 Hours"
 msgstr "24 hodinový"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:104
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Napájení"
 
@@ -914,7 +916,7 @@ msgstr "(Žádné)"
 msgid "Choose"
 msgstr "Vybrat"
 
-#: src/common_widgets.py:128 src/window.py:152
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "Zrušit"
 
@@ -938,8 +940,8 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"Pro použití aktuálního nastavení zobrazení je vyžadován soubor '$"
-"XDG_CONFIG_HOME/monitors.xml', který však neexistuje.\n"
+"Pro použití aktuálního nastavení zobrazení je vyžadován soubor "
+"'$XDG_CONFIG_HOME/monitors.xml', který však neexistuje.\n"
 "\n"
 "Aby se tento soubor vytvořil automaticky, otevřete systémové 'Nastavení' a "
 "změňte v něm některé možnosti zobrazení."
@@ -1010,96 +1012,159 @@ msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Importovaný soubor nemá klíč '{key_name}' v sekci '{section_name}'"
 
-#: src/settings.py:296
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Zálohování výchozího tématu shellu …"
 
-#: src/settings.py:344
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Použití nastavení GResource pro Ubuntu …"
 
-#: src/settings.py:351
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Použití nastavení GResource pro systémy jiné než Ubuntu …"
 
-#: src/settings.py:573
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Obnovení nastavení GResource pro Ubuntu …"
 
-#: src/settings.py:580
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Obnovení nastavení GResource pro systémy jiné než Ubuntu …"
 
-#: src/window.py:97
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/window.py:98
+#: src/window.py:105
 msgid "Fonts"
 msgstr "Písma"
 
-#: src/window.py:99
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Horní lišta"
 
-#: src/window.py:100
+#: src/window.py:107
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/window.py:101
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Myš a touchpad"
 
-#: src/window.py:102
+#: src/window.py:109
 msgid "Display"
 msgstr "Displej"
 
-#: src/window.py:103
+#: src/window.py:110
 msgid "Login Screen"
 msgstr "Přihlašovací obrazovka"
 
-#: src/window.py:105
+#: src/window.py:112
 msgid "Tools"
 msgstr "Nástroje"
 
-#: src/window.py:124
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Nastavení úspěšně použita"
 
-#: src/window.py:128
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Nepodařilo se použít nastavení"
 
-#: src/window.py:132
+#: src/window.py:138
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Neplatí. Vybraný obrázek na pozadí již neexistuje. Prosím! zvolte znovu."
 
-#: src/window.py:136
+#: src/window.py:142
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Nepoužije se. Vybraný obrázek loga již neexistuje. Prosím! vybrat znovu."
 
-#: src/window.py:142
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:148
+#, fuzzy
+#| msgid ""
+#| "The system may start to look weird/buggy untill you re-login or reboot."
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Systém může začít vypadat divně/chybově, dokud se znovu nepřihlásíte nebo "
 "nerestartujete."
 
-#: src/window.py:147
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Odhlásit se?"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Odhlásit se"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "Nastavení pro správce přihlášení GNOME, GDM"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Varování: Po aktualizaci z verze v0.6 nebo jakékoli starší verze na tuto "
+#~ "nebo jakoukoli novější verzi dojde ke ztrátě některých nastavení."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Přidána podpora pro neúplné motivy shellu"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Opraveno: Nelze změnit logo přihlašovací obrazovky z verze Flatpak "
+#~ "aplikace"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "Zabránění spuštění aplikace, pokud je argument zadaný do volby `--"
+#~ "verbosity` neplatný"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr ""
+#~ "Aktualizace informací zobrazených na stránce obchodu se softwarem aplikace"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "Nová ikona aplikace, která následuje GNOME HIG"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "V jednom okamžiku může být otevřena pouze jedna instance aplikace"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "Při použití nastavení již aplikace nezamrzá"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "Aplikace zobrazí dialogové okno \"Odhlásit se\" ihned po použití nastavení"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Přidány nové dialogy, které uživateli zobrazují chyby namísto paniky na "
+#~ "terminálu"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "Při použití aktuálního nastavení zobrazení se použije také škálování "
+#~ "(nemusí fungovat na všech systémech)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "Aplikace je nyní DBusActivatable"
 
 #~ msgid "Homepage"
 #~ msgstr "Webová stránka"
