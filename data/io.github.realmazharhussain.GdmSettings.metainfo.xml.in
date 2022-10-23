@@ -37,6 +37,16 @@
     <control>touch</control>
   </supports>
 
+  <!-- Minimum display length required -->
+  <requires>
+    <display_length>300</display_length>
+  </requires>
+
+  <!-- Minimum display length recommended -->
+  <recommends>
+    <display_length>360</display_length>
+  </recommends>
+
   <provides>
     <binary>gdm-settings</binary>
   </provides>
