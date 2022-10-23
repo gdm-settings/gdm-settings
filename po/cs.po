@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-17 13:00+0000\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -264,7 +264,7 @@ msgstr "Nastavení přihlašovací obrazovky"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Přizpůsobit přihlašovací obrazovku"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -280,44 +280,45 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Resetovat nastavení"
+msgstr "Přidáno nastavení výkonu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
-msgstr ""
+msgstr "Přidány možnosti pro import/export nastavení v globální nabídce"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Přidána možnost zvětšit uvítací zprávu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Přepnuto na adaptivní hlavní okno"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Vyskakovací dialogová okna jsou adaptivní"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Aktualizace okna \"O aplikaci\" na nový styl"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Vylepšený styl vstupního pole uvítací zprávy"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
+"Přejmenování sekce postranního panelu \"Různé\" na \"Přihlašovací obrazovka\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Přejmenování možnosti globální nabídky \"Importovat uživatelská nastavení\" "
+"na \"Načíst nastavení relace\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
@@ -325,24 +326,29 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"Aplikace nyní při pokusu o použití nastavení zobrazuje chybové hlášení, "
+"pokud je povoleno logo a zvolený obrázek loga již v systému neexistuje"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Colored commandline output"
-msgstr ""
+msgstr "Barevný výstup příkazového řádku"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"Opravena nefunkčnost funkce \"Použít aktuální nastavení displeje\" v "
+"systémech Ubuntu a Ubuntu podobných systémech"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
+"Opraveno zobrazování některých textů bez překladu, i když překlad existoval"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Opraveno několik překlepů"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -455,10 +461,8 @@ msgid "Settings were successfully exported"
 msgstr "Nastavení byla úspěšně exportována"
 
 #: src/app.py:325
-#, fuzzy
-#| msgid "Failed to export. Permssion denied"
 msgid "Failed to export. Permission denied"
-msgstr "Nepodařilo se exportovat. Povolení odepřeno"
+msgstr "Nepodařilo se exportovat. Oprávnění odepřeno"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
@@ -1090,9 +1094,6 @@ msgstr ""
 "Nepoužije se. Vybraný obrázek loga již neexistuje. Prosím! vybrat znovu."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Systém může začít vypadat divně/chybově, dokud se znovu nepřihlásíte nebo "
