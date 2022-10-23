@@ -24,6 +24,8 @@
 
 <div align="center">
   <h2>
+    <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest/download/Login_Manager_Settings.AppImage">Download</a>
+    <span> | </span>
     <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Install">Install</a>
   </h2>
 </div>
