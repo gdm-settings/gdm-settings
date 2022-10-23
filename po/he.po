@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-17 13:00+0000\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -257,7 +257,7 @@ msgstr "הגדרות מנהל הכניסה"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "התאמת מסך הכניסה שלך"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -273,44 +273,43 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "איפוס הגדרות"
+msgstr "הוספת הגדרות צריכת חשמל"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
-msgstr ""
+msgstr "נוספה אפשרות לייבא/לייצא הגדרות בתפריט הכללי"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "נוספה אפשרות להגדיל את הודעת קבלת הפנים"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "החלון הראשי מסתגל מעתה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "החלוניות הקופצות מסתגלות מעתה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "חלון „על אודות” עודכן לסגנון החדש"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "סגנון שדה הקלט בהודעת קבלת הפנים השתפר"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "שם הסעיף „שונות” בסרגל הצד הוחלף לשם „מסך כניסה”"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"שם האפשרות „ייבוא הגדרות משתמש” בתפריט הכללי התחלף לשם „טעינת הגדרות הפעלה”"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
@@ -318,24 +317,28 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"היישום מציג מעתה התראת שגיאה כעת ניסיון להחלת הגדרות עם לוגו מופעל ותמונת "
+"הלוגו שנבחרה לא קיימת עוד במערכת"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Colored commandline output"
-msgstr ""
+msgstr "פלט שורת הפקודה יופיע בצבעים"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו ומערכות "
+"דמויות אובונטו"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+msgstr "תוקן מצב שטקסט מופיע לא מתורגם אפילו אם יש תרגום"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "תוקנות תקלדות"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -445,8 +448,6 @@ msgid "Settings were successfully exported"
 msgstr "ההגדרות יוצאו בהצלחה"
 
 #: src/app.py:325
-#, fuzzy
-#| msgid "Failed to export. Permssion denied"
 msgid "Failed to export. Permission denied"
 msgstr "הייצוא נכשל. שגיאת הרשאות"
 
@@ -1076,9 +1077,6 @@ msgid ""
 msgstr "לא חל. תמונת הלוגו הנבחרת לא קיימת עוד. נא לבחור שוב."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr "המערכת עלולה להיראות מוזר/שברירית עד לכניסה או הפעלה מחדש."
 
