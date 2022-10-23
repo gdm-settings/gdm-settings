@@ -96,36 +96,6 @@
         </ul>
       </description>
     </release>
-    <release version="1.1" date="2022-10-8">
-      <description>
-        <ul>
-          <li>Fixed: Cannot apply settings anymore</li>
-        </ul>
-        <p>
-          Note: You may need to reinstall GNOME Shell in order for 'Apply' button to start working again.
-        </p>
-      </description>
-    </release>
-    <release version="1.0" date="2022-09-23">
-      <description>
-        <p>
-          Warning: You will lose some settings after updating from v0.6 or any earlier version to this or any later version.
-        </p>
-        <ul>
-          <li>Added support for incomplete shell themes</li>
-          <li>Fixed: Cannot change login screen logo from Flatpak version of the app</li>
-          <li>Prevent app launch when argument provided to `--verbosity` option is invalid</li>
-          <li>Updated the info shown on app's software-store page</li>
-          <li>New App Icon that follows GNOME HIG</li>
-          <li>Only one instance of the app can be open at a time</li>
-          <li>When applying settings, the app does not freeze anymore</li>
-          <li>The app shows a "Log Out" dialog right after settings are applied</li>
-          <li>Added new dialogs to show errors to the user instead of panicking on the terminal</li>
-          <li>When applying current display settings, scaling is also applied (may not work on all systems)</li>
-          <li>The app is now DBusActivatable</li>
-        </ul>
-      </description>
-    </release>
   </releases>
 
   <url type="homepage">https://realmazharhussain.github.io/gdm-settings</url>
