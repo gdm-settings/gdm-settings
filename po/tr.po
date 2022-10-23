@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-08 16:43+0000\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -266,7 +266,7 @@ msgstr "Giriş Yöneticisi Ayarları"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Giriş ekranınızı özelleştirin"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -283,44 +283,45 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Ayarları sıfırla"
+msgstr "Güç ayarları eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
-msgstr ""
+msgstr "Genel menüye içe/dışa aktarma ayarları için seçenekler eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Hoş geldiniz mesajını büyütmek için bir seçenek eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Ana pencere uyarlanabilir hale getirildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Açılır iletişim kutuları uyarlanabilir hale getirildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "\"Hakkında\" penceresi yeni stile güncellendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Hoşgeldiniz mesajı girdi alanının stili iyileştirildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
+"\"Çeşitli\" kenar çubuğu bölümünün adı \"Giriş Ekranı\" olarak değiştirildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"\"Kullanıcı ayarlarını içe aktar\" genel menü seçeneğinin adı \"Oturum "
+"ayarlarını yükle\" olarak değiştirildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
@@ -328,24 +329,29 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"Uygulama artık, logo etkinleştirilmişse ve seçilen logo resmi artık sistemde "
+"mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Colored commandline output"
-msgstr ""
+msgstr "Renkli komut satırı çıktısı"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
+"sistemlerde çalışmaması düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
+"Çevirisi mevcut olsa bile bazı metinlerin çevrilmemiş görünmesi düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Bazı yazım hataları düzeltildi"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -441,31 +447,27 @@ msgstr "Ayarlar sıfırlanamadı"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "İçe aktar"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Ayarlar uygulandı"
+msgstr "Ayarlar dosyadan başarıyla içe aktarıldı"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "İçe aktarılamadı. Dosya geçersiz"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Ayarlar uygulandı"
+msgstr "Ayarlar dışa aktarıldı"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Dışa aktarılamadı. İzin reddedildi"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Dışa aktarılamadı. Bu ada sahip bir dizin zaten var"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -632,11 +634,11 @@ msgstr "Ayarları sıfırla"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Dosyadan içe aktar"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Dosyaya dışa aktar"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -967,53 +969,52 @@ msgstr "Öntanımlı shell teması çıkartılamadı"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "'{filename}' dosyasına dışa aktarılıyor"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "'{filename}' dosyasına yazılamıyor. İzin reddedildi"
 
 #: src/settings.py:76
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "'{filename}' dosyasına yazılamıyor. Aynı ada sahip bir dizin zaten var"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Standart çıktıya dışa aktarma"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "'{filename}' dosyasından içe aktarılıyor"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Standart girdiden içe aktarma"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Ayarlar sıfırlanamadı"
+msgstr "İçe aktarma dosyası ayrıştırılamadı"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "İçe aktarma dosyası okunamadı. UTF-8 olarak kodlanmamış"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "İçe aktarılan dosyada '{section_name}' bölümü yok"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"İçe aktarılan dosyanın '{section_name}' bölümünde '{key_name}' anahtarı yok"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
@@ -1092,9 +1093,6 @@ msgid ""
 msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
