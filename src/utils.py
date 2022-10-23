@@ -65,7 +65,7 @@ class ProcessReturnCode(int):
 class NoCommandsFoundError(Exception): pass
 
 class CommandElevator:
-    """ Runs a list of commands with elevated privilages """
+    """ Runs a list of commands with elevated privileges """
     def __init__(self, *, shebang='#!/bin/sh') -> None:
         self._list = []
         self.shebang = shebang

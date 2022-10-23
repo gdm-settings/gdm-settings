@@ -322,7 +322,7 @@ class Application(Adw.Application):
 
             message = _('Settings were successfully exported')
         except PermissionError:
-            message = _('Failed to export. Permssion denied')
+            message = _('Failed to export. Permission denied')
         except IsADirectoryError:
             message = _('Failed to export. A directory with that name already exists')
 

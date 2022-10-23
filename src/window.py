@@ -145,7 +145,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.toast_overlay.add_toast(toast)
 
     def show_logout_dialog (self):
-        message = _('The system may start to look weird/buggy untill you re-login or reboot.')
+        message = _('The system may start to look weird/buggy until you re-login or reboot.')
 
         dialog = Adw.MessageDialog(
                     body = message,

@@ -25,6 +25,6 @@ def about_window(win):
         issue_url   = "https://github.com/realmazharhussain/gdm-settings/issues/new/choose",
 
         # Translators: Do not translate this string. Put your info here in the form
-        # 'name <email>' including < and > but not qoutes.
+        # 'name <email>' including < and > but not quotes.
         translator_credits = _("translator-credits"),
         )
