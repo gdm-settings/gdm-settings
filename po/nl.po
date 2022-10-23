@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-17 13:00+0000\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -267,7 +267,7 @@ msgstr "Inlogschermvoorkeuren"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Zet uw aanmeldscherm naar eigen hand"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -284,44 +284,49 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Standaardwaarden herstellen"
+msgstr "Nieuw: energie-instellingen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
+"Nieuw: opties voor het im- en exporteren van voorkeuren in het hoofdmenu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Nieuw: optie om het welkomstbericht te vergroten"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Turned main window adaptive"
 msgstr ""
+"Nieuw: de inhoud van het hoofdvenster wordt aangepast aan de beschikbare "
+"schermruimte"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
+"Nieuw: de inhoud van meldingsvensters wordt aangepast aan de beschikbare "
+"schermruimte"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Bijgewerkt: het venster ‘Over’ heeft een nieuwe vormgeving"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Bijgewerkt: het invoerveld bij het welkomstbericht"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "Verbeterd: de zijbalksectie ‘Overig’ heet voortaan ‘Aanmeldscherm’"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Verbeterd: de hoofdmenu-optie ‘Gebruikersvoorkeuren importeren’ heet "
+"voortaan ‘Sessievoorkeuren laden’"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
@@ -329,24 +334,30 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"Verbeterd: er wordt voortaan een foutmelding getoond bij het toepassen van "
+"voorkeuren met een logo terwijl het logo niet meer beschikbaar is"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Colored commandline output"
-msgstr ""
+msgstr "Verbeterd: kleuren in opdrachtregeluitvoer"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
+"afgeleiden"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
+"Opgelost: sommige tekst werd in het Engels getoond terwijl er wel een "
+"vertaling beschikbaar was"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Opgelost: enkele typfouten"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -459,8 +470,6 @@ msgid "Settings were successfully exported"
 msgstr "De voorkeuren zijn geëxporteerd"
 
 #: src/app.py:325
-#, fuzzy
-#| msgid "Failed to export. Permssion denied"
 msgid "Failed to export. Permission denied"
 msgstr "Het exporteren is mislukt omdat de juiste rechten ontbreken"
 
@@ -1103,9 +1112,6 @@ msgstr ""
 "andere afbeelding."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
