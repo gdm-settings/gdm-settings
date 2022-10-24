@@ -22,9 +22,11 @@ Box content_box {
   orientation: vertical;
 
   Adw.HeaderBar {
-    title-widget: Label title {
-      visible: bind flap.folded inverted;
+    title-widget: Box {
       styles ["title"]
+
+      Label title_label { visible: bind section_label.visible inverted bidirectional; }
+      Label section_label { visible: bind flap.folded; ellipsize: end; }
     };
 
     [start] ToggleButton toggle_pane_button {

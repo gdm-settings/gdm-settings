@@ -69,14 +69,15 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.set_content(self.builder.get_object('content_box'))
 
         self.flap = self.builder.get_object('flap')
-        self.title = self.builder.get_object('title')
         self.stack = self.builder.get_object('stack')
         self.sidebar = self.builder.get_object('sidebar')
         self.spinner = self.builder.get_object('spinner')
+        self.title_label = self.builder.get_object('title_label')
         self.apply_button = self.builder.get_object('apply_button')
+        self.section_label = self.builder.get_object('section_label')
         self.toast_overlay = self.builder.get_object('toast_overlay')
 
-        self.bind_property('title', self.title, 'label', GObject.BindingFlags.SYNC_CREATE)
+        self.bind_property('title', self.title_label, 'label', GObject.BindingFlags.SYNC_CREATE)
 
         self.task_counter = TaskCounter(spinner=self.spinner)
 
@@ -88,6 +89,8 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         click.connect('released', self.on_sidebar_clicked, self.flap)
         self.sidebar.add_controller(click)
 
+        self.stack.connect('notify::visible-child', self.on_section_changed)
+
         self.add_pages()
         self.bind_to_gsettings()
 
@@ -95,11 +98,14 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         if flap.get_folded():
             flap.set_reveal_flap(False)
 
+    def on_section_changed (self, stack, prop):
+        current_page = stack.get_page(stack.props.visible_child)
+        self.section_label.set_label(current_page.get_title())
+
     def add_pages (self):
 
         def add_page(name, title, content):
-            page = self.stack.add_named(content, name)
-            page.set_title(title)
+            page = self.stack.add_titled(content, name, title)
 
         add_page('appearance', _('Appearance'),       pages.AppearancePageContent(self))
         add_page('fonts',      _('Fonts'),            pages.FontsPageContent(self))
