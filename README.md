@@ -31,22 +31,20 @@
 </div>
 
 <div align="center">
-  <h3>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Features">Features</a>
-    <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
-    <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki">Wiki</a>
-  </h3>
-</div>
-
-<div align="center">
   <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
     <picture>
       <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/bleeding-edge-dark.png" media="(prefers-color-scheme: dark)">
       <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/bleeding-edge.png">
     </picture>
   </a>
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
+    <span> | </span>
+    <a href="https://github.com/realmazharhussain/gdm-settings/wiki">Wiki</a>
+  </h3>
 </div>
 
 <div align="center">
