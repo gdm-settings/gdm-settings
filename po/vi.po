@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -133,6 +133,92 @@ msgstr ""
 "\"không được tăng tốc\" cho đến \"nhanh\"). Giá trị 0 là giá trị mặc định "
 "của hệ thống."
 
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
+msgid "Power button action"
+msgstr "Hành động nút nguồn"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+msgid ""
+"The action to take when the system power button is pressed. This action is "
+"hard-coded (and the setting ignored) on virtual machines (power off) and "
+"tablets (suspend)."
+msgstr ""
+"Hành động sẽ làm khi nút nguồn được bấm vào. Hành động này bị hard-code (và "
+"cài đặt sẽ bị bỏ qua) trong máy ảo (tắt nguồn) hoặc tablet (suspend)."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
+msgid "Enable power-saver profile when battery is low"
+msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
+msgid ""
+"Automatically enable the \"power-saver\" profile using power-profiles-daemon "
+"if the battery is low."
+msgstr ""
+"Tự động bật chế độ nguồn điện thấp bằng power-profile-daemon khi pin yếu."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
+msgid "Dim the screen after a period of inactivity"
+msgstr "Giảm độ sáng màn hình sau một thời gian không hoạt động"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
+msgid "If the screen should be dimmed to save power when the computer is idle."
+msgstr ""
+"Màn hình có nên được giảm độ sáng để tiết kiệm pin khi máy tính đang nghỉ "
+"hay không."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+msgid "Whether to blank screen when session is idle"
+msgstr "Có nên để màn hình trống khi phiên không hoạt động hay không"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+msgid ""
+"If the screen should be blanked to save power when the computer is idle."
+msgstr ""
+"Màn hình có nên để trống (không bật sáng) để tiết kiệm pin khi máy đang nghỉ "
+"hay không."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+msgid "Time before session is considered idle"
+msgstr "Thời gian trước phiên được coi là không hoạt động"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+msgid ""
+"The number of minutes of inactivity before the session is considered idle."
+msgstr "Số phút không hoạt động trước phiên được coi là không hoạt động."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+msgid "Whether to suspend when inactive and using battery"
+msgstr "Có suspend khi không hoạt động và sử dụng pin hay không"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
+msgid "Sleep timeout computer when on battery"
+msgstr "Máy tính hết thời gian chờ ở chế độ ngủ khi sử dụng pin"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+msgid ""
+"The amount of time in minutes the computer on battery power needs to be "
+"inactive before it goes to sleep. A value of 0 means never."
+msgstr ""
+"Khoảng thời gian tính bằng phút mà máy tính sử dụng pin cần không hoạt động "
+"trước khi chuyển sang chế độ ngủ. Giá trị 0 có nghĩa là không bao giờ."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+msgid "Whether to suspend when inactive and plugged in"
+msgstr "Có nên suspend khi không hoạt động và cắm điện hay không"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+msgid "Sleep timeout for computer when plugged in"
+msgstr "Thời gian chờ ở chế độ ngủ cho máy tính khi được cắm vào"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+msgid ""
+"The amount of time in minutes the computer on AC power needs to be inactive "
+"before it goes to sleep. A value of 0 means never."
+msgstr ""
+"Lượng thời gian tính bằng phút máy tính sử dụng nguồn AC cần phải không hoạt "
+"động trước khi đi ngủ. Giá trị bằng 0 có nghĩa là không bao giờ."
+
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
@@ -165,14 +251,14 @@ msgstr "Màu nền của thanh top bar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:61
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+msgid "Customize your login screen"
+msgstr "Tùy chỉnh màn hình đăng nhập của bạn"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -183,119 +269,109 @@ msgstr ""
 "Thay đổi các cài đặt của GDM, thay đổi theme và hình nền, thay đổi cursor "
 "theme, icon theme và cài đặt Night Light, và nhiều cài đặt khác."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Cảnh báo: Bạn sẽ mất một vài cài đặp sau khi cập nhật từ phiên bản v0.6 hoặc "
-"cũ hơn lên phiên bản này hoặc mới hơn."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
-"Flatpak"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"Ngăn không cho app khởi động khi tham số cung cấp cho argument `--verbosity` "
-"không hợp lệ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-"Đã cập nhật thông tin trên trang của app trên cửa hàng phần mềm ứng dụng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "Icon mới của app theo chuẩn GNOME HIG"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "Mỗi lần chỉ có một phiên của ứng dụng được phép mở"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "Khi áp dụng cài đặt, app không còn bị đơ nữa"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"App hiện một hộp thoại \"Đăng xuất\" ngay sau khi những cài đặt được áp dụng"
+msgid "Added power settings"
+msgstr "Thêm cài đặt nguồn điện"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
-msgstr ""
-"Thêm nhiều hộp thoại mới để hiển thị lỗi cho người dùng thay vì đơ và hiện "
-"lỗi trong terminal"
+msgid "Added options to import/export settings in the global menu"
+msgstr "Đã thêm tùy chọn để nhập / xuất cài đặt trong menu chung"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
-msgstr ""
-"Khi áp dụng cài đặt màn hình hiện tại, tỷ lệ cũng được áp dụng (có thể không "
-"hoạt động trên một vài hệ thống)"
+msgid "Added an option to enlarge welcome message"
+msgstr "Đã thêm một tùy chọn để phóng to tin nhắn chào mừng"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "App hiện có DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr "Cửa số chính đã adaptive"
 
-#: src/app.py:50
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr "Hộp thoại pop-up đã adaptive"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr "Đã cập nhật cửa sổ \"giới thiệu\" theo kiểu mới"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr "Cải tiến kiểu trường nhập tin nhắn chào mừng"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr "Đã đổi tên phần thanh bên \"Khác\" thành \"Màn hình đăng nhập\""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+"Đã đổi tên tùy chọn menu chung \"Nhập cài đặt người dùng\" thành \"Tải cài "
+"đặt phiên\""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+"Bây giờ ứng dụng hiện thông báo lỗi khi cố áp dụng cài đặt nếu logo đang "
+"được kích hoạt và logo được chọn không còn trên hệ thông nữa"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr "Đầu ra dòng lệnh có màu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
+"trên Ubuntu và các hệ thống giống Ubuntu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+"Đã sửa một số văn bản hiển thị chưa được dịch ngay cả khi đã có bản dịch"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr "Đã sửa một số lỗi chính tả"
+
+#: src/app.py:51
 msgid "Show application version"
 msgstr "Hiển thị phiên bản của ứng dụng"
 
-#: src/app.py:51
+#: src/app.py:52
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Set mức độ hiển thị chi tiết một cách thủ công (từ 0 đến 5)"
 
-#: src/app.py:52
+#: src/app.py:53
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "MỨC ĐỘ"
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Bật chế độ hiển thị chi tiết (--verbosity=5)"
 
-#: src/app.py:54
+#: src/app.py:55
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Bật chế độ quiet (yên lặng, --verbosity=0)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "Mức độ hiển thị chi tiết {level} không hợp lệ. Nó phải nằm trong khoảng từ 0 "
 "đến 5."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
-"động trơn tru, nhưng nó chưa được cài đặt."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Developer Edition - phiên bản cho nhà phát triển)"
-
-#: src/app.py:166
+#: src/app.py:154
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -304,19 +380,27 @@ msgstr ""
 "Những chương trình dưới đây cần có <b>trên máy host</b> để ứng dụng này có "
 "thể hoạt động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
+#: src/app.py:158
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
+"động trơn tru, nhưng nó chưa được cài đặt."
+
+#: src/app.py:167
+msgctxt "Missing Dependency"
+msgid "<b>GDM</b>"
+msgstr "• <b>GDM</b>"
+
 #: src/app.py:173
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
-msgstr " • <b>GDM</b>"
-
-#: src/app.py:179
-msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
+msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:181
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -325,30 +409,77 @@ msgstr ""
 "Click <a href=\"{url}\">ở đây</a> để xem hướng dẫn cách cài những phần mềm/"
 "thư viên này trên máy của bạn."
 
-#: src/app.py:192
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:227
+#: src/app.py:193 src/pages/display.py:103
+msgid "OK"
+msgstr "OK"
+
+#: src/app.py:222
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
-#: src/app.py:235
-msgid "User settings imported"
-msgstr "Cài đặt người dùng đã được import"
+#: src/app.py:230
+msgid "Session settings loaded successfully"
+msgstr "Tải cài đặt phiên thành công"
 
-#: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr ""
-"Import các cài đặt của người dùng không được hỗ trợ trong phiên bản Flatpak"
+#: src/app.py:234
+msgid "Load session settings is NOT supported in Flatpak version"
+msgstr "Tải cài đặt phiên KHÔNG ĐƯỢC hỗ trợ trong phiên bản Flatpak"
 
-#: src/app.py:252
+#: src/app.py:247
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
-#: src/app.py:254
+#: src/app.py:249
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
+
+#: src/app.py:268
+msgid "Import"
+msgstr "Nhập"
+
+#: src/app.py:290
+msgid "Settings were successfully imported from file"
+msgstr "Nhập cài đặt từ file thành công"
+
+#: src/app.py:292
+msgid "Failed to import. File is invalid"
+msgstr "Không nhập được. Tệp không hợp lệ"
+
+#: src/app.py:323
+msgid "Settings were successfully exported"
+msgstr "Cài đặt đã được xuất thành công"
+
+#: src/app.py:325
+msgid "Failed to export. Permission denied"
+msgstr "Không xuất được. Quyền bị từ chối"
+
+#: src/app.py:327
+msgid "Failed to export. A directory with that name already exists"
+msgstr "Không xuất được. Thư mục có tên đó đã tồn tại"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/about.py:6
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#: src/about.py:17
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Bản quyền 2021-2022 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -395,19 +526,15 @@ msgstr "Hình ảnh sẽ được sử dụng làm nền"
 msgid "The color to use as background"
 msgstr "Màu sẽ được dùng làm nền cho GDM"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "Màn hình"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiện tại"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Áp dụng"
 
@@ -415,7 +542,7 @@ msgstr "Áp dụng"
 msgid "Night Light"
 msgstr "Night Light"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "Bật"
 
@@ -448,10 +575,6 @@ msgstr "Đến"
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
 msgstr "Nhiệt độ màu"
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "Phông chữ"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
@@ -494,52 +617,64 @@ msgid "Refresh"
 msgstr "Làm mới"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
-msgstr "Import các cài đặt người dùng"
+msgid "Load session settings"
+msgstr "Nhập cài đặt phiên"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
 msgstr "Khôi phục cài đặt gốc"
 
 #: src/blueprints/main-window.blp:11
+msgid "Import from file"
+msgstr "Nhập từ tệp"
+
+#: src/blueprints/main-window.blp:12
+msgid "Export to file"
+msgstr "Xuất sang tệp"
+
+#: src/blueprints/main-window.blp:15
 msgid "About"
 msgstr "Về ứng dụng này"
 
-#: src/blueprints/main-window.blp:12
+#: src/blueprints/main-window.blp:16
 msgid "Quit"
 msgstr "Thoát"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "Các cài đặt khác"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "Tắt nút khởi động lại"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "Tắt danh sách người dùng"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "Bật Logo"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "Logo"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
 msgstr "Thông điệp chào mừng (Welcome Message)"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr "Phóng to"
+
+#: src/blueprints/login-screen-page.blp:69
+msgid "Message"
+msgstr "Thông điệp"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -593,9 +728,78 @@ msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
 msgid "Disable while Typing"
 msgstr "Tắt khi nhập"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "Âm thanh"
+#: src/blueprints/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Hành vi của nút nguồn"
+
+#: src/blueprints/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Không làm gì cả"
+
+#: src/blueprints/power-page.blp:13
+msgid "Suspend"
+msgstr "Suspend"
+
+#: src/blueprints/power-page.blp:13
+msgid "Hibernate"
+msgstr "Ngủ đông"
+
+#: src/blueprints/power-page.blp:13
+msgid "Ask"
+msgstr "Hỏi"
+
+#: src/blueprints/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Tiết kiệm năng lượng tự động"
+
+#: src/blueprints/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu."
+
+#: src/blueprints/power-page.blp:28
+msgid "Dim Screen"
+msgstr "Giảm độ sáng màn hình"
+
+#: src/blueprints/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Giảm độ sáng màn hình khi máy tính không hoạt động."
+
+#: src/blueprints/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr "Tắt màn hình"
+
+#: src/blueprints/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Có nên tắt màn hình sau một thời gian không hoạt động hay không."
+
+#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
+#: src/blueprints/power-page.blp:107
+msgid "Delay"
+msgstr "Delay"
+
+#: src/blueprints/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr "Thời gian tính bằng phút sau đó màn hình sẽ tắt."
+
+#: src/blueprints/power-page.blp:67
+msgid "Automatic Suspend"
+msgstr "Tự động suspend"
+
+#: src/blueprints/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Tạm dừng máy tính sau một thời gian không hoạt động."
+
+#: src/blueprints/power-page.blp:71
+msgid "On Battery Power"
+msgstr "Nguồn là pin"
+
+#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Thời gian tính bằng phút sau đó máy tính sẽ suspend."
+
+#: src/blueprints/power-page.blp:98
+msgid "When Plugged In"
+msgstr "Khi được cắm điện"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -689,7 +893,7 @@ msgstr "SA / CH"
 msgid "24 Hours"
 msgstr "24 giờ"
 
-#: src/blueprints/top-bar-page.blp:98
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Nguồn"
 
@@ -709,37 +913,13 @@ msgstr "(Không có gì)"
 msgid "Choose"
 msgstr "Chọn"
 
-#: src/common_widgets.py:128 src/window.py:149
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
 msgstr "Chọn hình ảnh"
-
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Bản quyền © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "Trang chủ"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
@@ -751,25 +931,19 @@ msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
-"File '$XDG_CONFIG_HOME/monitors.xml' cần để áp dụng những cài đặt màn hình "
-"hiện tại nhưng nó không tồn tại\n"
+"Tệp '$XDG_CONFIG_HOME/monitors.xml' được yêu cầu để áp dụng cài đặt hiển thị "
+"hiện tại nhưng nó không tồn tại.\n"
 "\n"
-"Để tự động tạo file này,\n"
-"\n"
-"1. Đến bản 'Màn hình' (Display) trong cài đặt hệ thống.\n"
-"2. Thay đổi một số cài đặt bất kì.\n"
-"3. Áp dụng."
+"Để tạo tệp đó tự động, hãy mở hệ thống 'Cài đặt' và thay đổi một số tùy chọn "
+"hiển thị ở đó."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
@@ -785,75 +959,220 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Trích xuất theme mặc định của shell thất bại"
 
-#: src/settings.py:198
+#: src/settings.py:67
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "Xuất sang tệp '{filename}'"
+
+#: src/settings.py:72
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
+
+#: src/settings.py:76
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
+
+#: src/settings.py:82
+msgid "Exporting to standard output"
+msgstr "Xuất ra đầu ra tiêu chuẩn"
+
+#: src/settings.py:91
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Đang nhập từ tệp '{filename}'"
+
+#: src/settings.py:95
+msgid "Importing from standard input"
+msgstr "Nhập từ đầu vào chuẩn"
+
+#: src/settings.py:98
+msgid "Failed to parse import file"
+msgstr "Không thể phân tích cú pháp tệp nhập"
+
+#: src/settings.py:101
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
+
+#: src/settings.py:107
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Tệp đã nhập không có phần '{section_name}'"
+
+#: src/settings.py:112
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
+
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
-#: src/settings.py:246
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
-#: src/settings.py:253
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:446
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:453
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
 
-#: src/window.py:96
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: src/window.py:98
+#: src/window.py:105
+msgid "Fonts"
+msgstr "Phông chữ"
+
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Top Bar"
 
-#: src/window.py:100
+#: src/window.py:107
+msgid "Sound"
+msgstr "Âm thanh"
+
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Chuột & Touchpad"
 
-#: src/window.py:103
+#: src/window.py:109
+msgid "Display"
+msgstr "Màn hình"
+
+#: src/window.py:110
+msgid "Login Screen"
+msgstr "Màn hình đăng nhập"
+
+#: src/window.py:112
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: src/window.py:122
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Áp dụng cài đặt thành công"
 
-#: src/window.py:126
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Áp dụng cài đặt thất bại"
 
-#: src/window.py:129
+#: src/window.py:138
 msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Không áp dụng được do hình nền được chọn không thể tìm thấy. Làm ơn! Chọn "
-"lại đi mà."
+"Không áp dụng. Hình nền đã chọn không tồn tại nữa. Xin vui lòng chọn lại."
 
-#: src/window.py:135
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:142
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+"Không áp dụng được do logo được chọn không còn tồn tại nữa. Làm ơn! Chọn lại "
+"đi mà."
+
+#: src/window.py:148
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Hệ thống có thể bắt đầu trông khá kỳ lạ/lỗi cho đến khi bạn đăng nhập lại "
 "hoặc khởi động lại."
 
-#: src/window.py:138
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Đăng xuất?"
 
-#: src/window.py:147
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Cảnh báo: Bạn sẽ mất một vài cài đặp sau khi cập nhật từ phiên bản v0.6 "
+#~ "hoặc cũ hơn lên phiên bản này hoặc mới hơn."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Đã thêm hỗ trợ cho những shell theme chưa hoàn chỉnh"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Đã sửa lỗi: Không thể thay đổi logo màn hình đăng nhập trong phiên bản "
+#~ "Flatpak"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "Ngăn không cho app khởi động khi tham số cung cấp cho argument `--"
+#~ "verbosity` không hợp lệ"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr ""
+#~ "Đã cập nhật thông tin trên trang của app trên cửa hàng phần mềm ứng dụng"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "Icon mới của app theo chuẩn GNOME HIG"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "Mỗi lần chỉ có một phiên của ứng dụng được phép mở"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "Khi áp dụng cài đặt, app không còn bị đơ nữa"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "App hiện một hộp thoại \"Đăng xuất\" ngay sau khi những cài đặt được áp "
+#~ "dụng"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Thêm nhiều hộp thoại mới để hiển thị lỗi cho người dùng thay vì đơ và "
+#~ "hiện lỗi trong terminal"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "Khi áp dụng cài đặt màn hình hiện tại, tỷ lệ cũng được áp dụng (có thể "
+#~ "không hoạt động trên một vài hệ thống)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "App hiện có DBusActivatable"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Developer Edition - phiên bản cho nhà phát triển)"
+
+#~ msgid "Homepage"
+#~ msgstr "Trang chủ"
+
+#~ msgid "User settings imported"
+#~ msgstr "Cài đặt người dùng đã được import"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Các cài đặt khác"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"

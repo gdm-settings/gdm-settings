@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -121,6 +121,81 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
+msgid "Power button action"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+msgid ""
+"The action to take when the system power button is pressed. This action is "
+"hard-coded (and the setting ignored) on virtual machines (power off) and "
+"tablets (suspend)."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
+msgid "Enable power-saver profile when battery is low"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
+msgid ""
+"Automatically enable the \"power-saver\" profile using power-profiles-daemon "
+"if the battery is low."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
+msgid "Dim the screen after a period of inactivity"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
+msgid "If the screen should be dimmed to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+msgid "Whether to blank screen when session is idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+msgid ""
+"If the screen should be blanked to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+msgid "Time before session is considered idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+msgid ""
+"The number of minutes of inactivity before the session is considered idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+msgid "Whether to suspend when inactive and using battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
+msgid "Sleep timeout computer when on battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+msgid ""
+"The amount of time in minutes the computer on battery power needs to be "
+"inactive before it goes to sleep. A value of 0 means never."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+msgid "Whether to suspend when inactive and plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+msgid "Sleep timeout for computer when plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+msgid ""
+"The amount of time in minutes the computer on AC power needs to be inactive "
+"before it goes to sleep. A value of 0 means never."
+msgstr ""
+
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
@@ -151,13 +226,13 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:61
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-msgid "A settings app for GNOME's Login Manager, GDM"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+msgid "Customize your login screen"
 msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
@@ -167,150 +242,201 @@ msgid ""
 "theme and night light settings, among other things."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr ""
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+msgid "Added power settings"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
+msgid "Added options to import/export settings in the global menu"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
+msgid "Added an option to enlarge welcome message"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
+msgid "Turned main window adaptive"
 msgstr ""
 
-#: src/app.py:50
-msgid "Show application version"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
 msgstr ""
 
 #: src/app.py:51
-msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show application version"
 msgstr ""
 
 #: src/app.py:52
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: src/app.py:53
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: src/app.py:54
+#: src/app.py:55
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr ""
-
-#: src/app.py:166
+#: src/app.py:154
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:173
-msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
+#: src/app.py:158
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
 msgstr ""
 
-#: src/app.py:179
+#: src/app.py:167
 msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
+msgid "<b>GDM</b>"
+msgstr ""
+
+#: src/app.py:173
+msgctxt "Missing Dependency"
+msgid "<b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:181
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
 
-#: src/app.py:192
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr ""
 
-#: src/app.py:227
+#: src/app.py:193 src/pages/display.py:103
+msgid "OK"
+msgstr ""
+
+#: src/app.py:222
 msgid "Settings reloaded"
 msgstr ""
 
-#: src/app.py:235
-msgid "User settings imported"
+#: src/app.py:230
+msgid "Session settings loaded successfully"
 msgstr ""
 
-#: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
+#: src/app.py:234
+msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 
-#: src/app.py:252
+#: src/app.py:247
 msgid "Reset settings successfully"
 msgstr ""
 
-#: src/app.py:254
+#: src/app.py:249
 msgid "Failed to reset settings"
+msgstr ""
+
+#: src/app.py:268
+msgid "Import"
+msgstr ""
+
+#: src/app.py:290
+msgid "Settings were successfully imported from file"
+msgstr ""
+
+#: src/app.py:292
+msgid "Failed to import. File is invalid"
+msgstr ""
+
+#: src/app.py:323
+msgid "Settings were successfully exported"
+msgstr ""
+
+#: src/app.py:325
+msgid "Failed to export. Permission denied"
+msgstr ""
+
+#: src/app.py:327
+msgid "Failed to export. A directory with that name already exists"
+msgstr ""
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr ""
+
+#: src/about.py:6
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr ""
+
+#: src/about.py:17
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr ""
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: src/about.py:29
+msgid "translator-credits"
 msgstr ""
 
 #: src/blueprints/appearance-page.blp:9
@@ -358,19 +484,15 @@ msgstr ""
 msgid "The color to use as background"
 msgstr ""
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr ""
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr ""
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr ""
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr ""
 
@@ -378,7 +500,7 @@ msgstr ""
 msgid "Night Light"
 msgstr ""
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr ""
 
@@ -410,10 +532,6 @@ msgstr ""
 
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
-msgstr ""
-
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
 msgstr ""
 
 #: src/blueprints/fonts-page.blp:12
@@ -457,7 +575,7 @@ msgid "Refresh"
 msgstr ""
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
+msgid "Load session settings"
 msgstr ""
 
 #: src/blueprints/main-window.blp:8
@@ -465,43 +583,55 @@ msgid "Reset settings"
 msgstr ""
 
 #: src/blueprints/main-window.blp:11
-msgid "About"
+msgid "Import from file"
 msgstr ""
 
 #: src/blueprints/main-window.blp:12
+msgid "Export to file"
+msgstr ""
+
+#: src/blueprints/main-window.blp:15
+msgid "About"
+msgstr ""
+
+#: src/blueprints/main-window.blp:16
 msgid "Quit"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr ""
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr ""
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/blueprints/login-screen-page.blp:69
+msgid "Message"
 msgstr ""
 
 #: src/blueprints/pointing-page.blp:9
@@ -556,8 +686,77 @@ msgstr ""
 msgid "Disable while Typing"
 msgstr ""
 
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
+#: src/blueprints/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Do Nothing"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Suspend"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Hibernate"
+msgstr ""
+
+#: src/blueprints/power-page.blp:13
+msgid "Ask"
+msgstr ""
+
+#: src/blueprints/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr ""
+
+#: src/blueprints/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr ""
+
+#: src/blueprints/power-page.blp:28
+msgid "Dim Screen"
+msgstr ""
+
+#: src/blueprints/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr ""
+
+#: src/blueprints/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr ""
+
+#: src/blueprints/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr ""
+
+#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
+#: src/blueprints/power-page.blp:107
+msgid "Delay"
+msgstr ""
+
+#: src/blueprints/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr ""
+
+#: src/blueprints/power-page.blp:67
+msgid "Automatic Suspend"
+msgstr ""
+
+#: src/blueprints/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr ""
+
+#: src/blueprints/power-page.blp:71
+msgid "On Battery Power"
+msgstr ""
+
+#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr ""
+
+#: src/blueprints/power-page.blp:98
+msgid "When Plugged In"
 msgstr ""
 
 #: src/blueprints/sound-page.blp:11
@@ -652,7 +851,7 @@ msgstr ""
 msgid "24 Hours"
 msgstr ""
 
-#: src/blueprints/top-bar-page.blp:98
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr ""
 
@@ -672,36 +871,12 @@ msgstr ""
 msgid "Choose"
 msgstr ""
 
-#: src/common_widgets.py:128 src/window.py:149
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr ""
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
-msgstr ""
-
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr ""
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr ""
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr ""
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr ""
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
 msgstr ""
 
 #: src/pages/display.py:81
@@ -714,17 +889,14 @@ msgstr ""
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr ""
 
@@ -739,68 +911,138 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr ""
 
-#: src/settings.py:198
+#: src/settings.py:67
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr ""
+
+#: src/settings.py:72
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr ""
+
+#: src/settings.py:76
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+
+#: src/settings.py:82
+msgid "Exporting to standard output"
+msgstr ""
+
+#: src/settings.py:91
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr ""
+
+#: src/settings.py:95
+msgid "Importing from standard input"
+msgstr ""
+
+#: src/settings.py:98
+msgid "Failed to parse import file"
+msgstr ""
+
+#: src/settings.py:101
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr ""
+
+#: src/settings.py:107
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr ""
+
+#: src/settings.py:112
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr ""
 
-#: src/settings.py:246
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:253
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/settings.py:446
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr ""
 
-#: src/settings.py:453
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:96
+#: src/window.py:104
 msgid "Appearance"
 msgstr ""
 
-#: src/window.py:98
+#: src/window.py:105
+msgid "Fonts"
+msgstr ""
+
+#: src/window.py:106
 msgid "Top Bar"
 msgstr ""
 
-#: src/window.py:100
+#: src/window.py:107
+msgid "Sound"
+msgstr ""
+
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr ""
 
-#: src/window.py:103
+#: src/window.py:109
+msgid "Display"
+msgstr ""
+
+#: src/window.py:110
+msgid "Login Screen"
+msgstr ""
+
+#: src/window.py:112
 msgid "Tools"
 msgstr ""
 
-#: src/window.py:122
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr ""
 
-#: src/window.py:126
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr ""
 
-#: src/window.py:129
+#: src/window.py:138
 msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 
-#: src/window.py:135
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:142
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 
-#: src/window.py:138
+#: src/window.py:148
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+
+#: src/window.py:153
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:147
+#: src/window.py:159
 msgid "Log Out"
 msgstr ""

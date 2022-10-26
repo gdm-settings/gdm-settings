@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-23 16:24+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-10-23 12:41+0500\n"
+"PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -141,6 +141,94 @@ msgstr ""
 "aralığındadır (\"hızlandırılmamış\" ile \"hızlı\" arasında). 0 değeri sistem "
 "varsayılanıdır."
 
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
+msgid "Power button action"
+msgstr "Güç düğmesi eylemi"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+msgid ""
+"The action to take when the system power button is pressed. This action is "
+"hard-coded (and the setting ignored) on virtual machines (power off) and "
+"tablets (suspend)."
+msgstr ""
+"Sistem güç düğmesine basıldığında gerçekleştirilecek eylem. Bu eylem sanal "
+"makinelerde (kapatma) ve tabletlerde (askıya alma) sabit kodludur (ve ayar "
+"yok sayılır)."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
+msgid "Enable power-saver profile when battery is low"
+msgstr "Pil azaldığında güç tasarrufu profilini etkinleştir"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
+msgid ""
+"Automatically enable the \"power-saver\" profile using power-profiles-daemon "
+"if the battery is low."
+msgstr ""
+"Pil düşükse power-profiles-daemon'u kullanarak \"güç tasarrufu\" profilini "
+"kendiliğinden etkinleştir."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
+msgid "Dim the screen after a period of inactivity"
+msgstr "Bir süre işlem yapılmadığında ekranı karart"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
+msgid "If the screen should be dimmed to save power when the computer is idle."
+msgstr ""
+"Bilgisayar boştayken güç tasarrufu için ekranın karartılması gerekiyorsa."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+msgid "Whether to blank screen when session is idle"
+msgstr "Oturum boştayken ekranın boş bırakılıp bırakılmayacağı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+msgid ""
+"If the screen should be blanked to save power when the computer is idle."
+msgstr ""
+"Bilgisayar boştayken güç tasarrufu için ekranın karartılması gerekiyorsa."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+msgid "Time before session is considered idle"
+msgstr "Oturum boşta kabul edilmeden önceki süre"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+msgid ""
+"The number of minutes of inactivity before the session is considered idle."
+msgstr ""
+"Oturumun boşta olarak kabul edilmesinden önceki hareketsizlik dakikası "
+"sayısı."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+msgid "Whether to suspend when inactive and using battery"
+msgstr "Etkin olmadığında ve pil kullanıldığında askıya alınıp alınmayacağı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
+msgid "Sleep timeout computer when on battery"
+msgstr "Pille çalışırken bilgisayar uyku zaman aşımına uğradı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+msgid ""
+"The amount of time in minutes the computer on battery power needs to be "
+"inactive before it goes to sleep. A value of 0 means never."
+msgstr ""
+"Pil gücüyle çalışan bilgisayarın uyku moduna geçmeden önce etkin olmaması "
+"gereken dakika cinsinden süre. 0 değeri hiçbir zaman anlamına gelir."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+msgid "Whether to suspend when inactive and plugged in"
+msgstr "Etkin değilken ve fişe takılıyken askıya alınıp alınmayacağı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+msgid "Sleep timeout for computer when plugged in"
+msgstr "Fişe takılıyken bilgisayar için uyku zaman aşımı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+msgid ""
+"The amount of time in minutes the computer on AC power needs to be inactive "
+"before it goes to sleep. A value of 0 means never."
+msgstr ""
+"Fişe takılıyken bilgisayarın uyku moduna geçmeden önce etkin olmaması "
+"gereken dakika cinsinden süre. 0 değeri hiçbir zaman anlamına gelir."
+
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr "Tepe çubuğu ince ayarlarının çıkartılan temaya uygulanma durumu"
@@ -171,14 +259,14 @@ msgstr "Tepe çubuğu arka plan rengi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:61
+#: src/window.py:65
 msgid "Login Manager Settings"
 msgstr "Giriş Yöneticisi Ayarları"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5 src/dialogs.py:14
-msgid "A settings app for GNOME's Login Manager, GDM"
-msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+msgid "Customize your login screen"
+msgstr "Giriş ekranınızı özelleştirin"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -190,118 +278,108 @@ msgstr ""
 "uygulayın, imleç temasını, simge temasını ve gece ışığı ayarlarını "
 "değiştirin."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:44
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:77
-msgid ""
-"Warning: You will lose some settings after updating from v0.6 or any earlier "
-"version to this or any later version."
-msgstr ""
-"Uyarı: v0.6 veya önceki herhangi bir sürümden bu veya sonraki herhangi bir "
-"sürüme güncelleme yaptıktan sonra bazı ayarları kaybedeceksiniz."
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:81
-msgid "Added support for incomplete shell themes"
-msgstr "Eksik kabuk temaları için destek eklendi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:82
-msgid "Fixed: Cannot change login screen logo from Flatpak version of the app"
-msgstr ""
-"Düzeltildi: Uygulamanın Flatpak sürümünden giriş ekranı logosu "
-"değiştirilemiyor"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:83
-msgid ""
-"Prevent app launch when argument provided to `--verbosity` option is invalid"
-msgstr ""
-"`--verbosity` seçeneğine sağlanan argüman geçersiz olduğunda uygulamanın "
-"başlatılmasını önle"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "Updated the info shown on app's software-store page"
-msgstr ""
-"Uygulamanın uygulama mağazası sayfasında gösterilen bilgileri güncellendi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:85
-msgid "New App Icon that follows GNOME HIG"
-msgstr "GNOME HIG'i takip eden yeni uygulama simgesi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "Only one instance of the app can be open at a time"
-msgstr "Aynı anda uygulamanın yalnızca bir örneği açılabilir"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid "When applying settings, the app does not freeze anymore"
-msgstr "Ayarları uygularken uygulama artık donmuyor"
-
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-msgstr ""
-"Uygulama, ayarlar uygulandıktan hemen sonra \"Oturumu Kapat\" iletişim "
-"kutusunu gösteriyor"
+msgid "Added power settings"
+msgstr "Güç ayarları eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid ""
-"Added new dialogs to show errors to the user instead of panicking on the "
-"terminal"
-msgstr ""
-"Uçbirimde ölümcül hata verip kapanmak yerine kullanıcıya hataları göstermek "
-"için yeni iletişim kutuları eklendi"
+msgid "Added options to import/export settings in the global menu"
+msgstr "Genel menüye içe/dışa aktarma ayarları için seçenekler eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"When applying current display settings, scaling is also applied (may not "
-"work on all systems)"
-msgstr ""
-"Geçerli ekran ayarları uygulanırken ölçeklendirme de uygulanır (tüm "
-"sistemlerde çalışmayabilir)"
+msgid "Added an option to enlarge welcome message"
+msgstr "Hoş geldiniz mesajını büyütmek için bir seçenek eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "The app is now DBusActivatable"
-msgstr "Uygulama artık DBusActivatable"
+msgid "Turned main window adaptive"
+msgstr "Ana pencere uyarlanabilir hale getirildi"
 
-#: src/app.py:50
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned pop-up dialogs adaptive"
+msgstr "Açılır iletişim kutuları uyarlanabilir hale getirildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Updated \"about\" window to the new style"
+msgstr "\"Hakkında\" penceresi yeni stile güncellendi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Improved style of welcome message input field"
+msgstr "Hoşgeldiniz mesajı girdi alanının stili iyileştirildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+"\"Çeşitli\" kenar çubuğu bölümünün adı \"Giriş Ekranı\" olarak değiştirildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid ""
+"Renamed global menu option \"Import user settings\" to \"Load session "
+"settings\""
+msgstr ""
+"\"Kullanıcı ayarlarını içe aktar\" genel menü seçeneğinin adı \"Oturum "
+"ayarlarını yükle\" olarak değiştirildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid ""
+"The app, now, shows an error notification when trying to apply settings if "
+"logo is enabled and the chosen logo image does not exist on the system "
+"anymore"
+msgstr ""
+"Uygulama artık, logo etkinleştirilmişse ve seçilen logo resmi artık sistemde "
+"mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Colored commandline output"
+msgstr "Renkli komut satırı çıktısı"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid ""
+"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
+"Ubuntu-like systems"
+msgstr ""
+"\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
+"sistemlerde çalışmaması düzeltildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+msgid "Fixed some text showing up untranslated even if translation existed"
+msgstr ""
+"Çevirisi mevcut olsa bile bazı metinlerin çevrilmemiş görünmesi düzeltildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed some typos"
+msgstr "Bazı yazım hataları düzeltildi"
+
+#: src/app.py:51
 msgid "Show application version"
 msgstr "Uygulama sürümünü göster"
 
-#: src/app.py:51
+#: src/app.py:52
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
 
-#: src/app.py:52
+#: src/app.py:53
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "DÜZEY"
 
-#: src/app.py:53
+#: src/app.py:54
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Ayrıntılı kipi etkinleştir (--verbosity=5 takma adı)"
 
-#: src/app.py:54
+#: src/app.py:55
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Sessiz kipi etkinleştir (--verbosity=0 takma adı)"
 
-#: src/app.py:74
+#: src/app.py:75
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Geçersiz ayrıntı düzeyi {level}. 0 ile 5 arasında olmalıdır."
 
-#: src/app.py:155
-msgid ""
-"This app requires the following software to function properly but they are "
-"not installed."
-msgstr ""
-"Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
-"fakat yüklü değiller."
-
-#: src/app.py:158
-msgctxt "Missing Dependency"
-msgid " • <b>GLib</b> (Developer Edition)"
-msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
-
-#: src/app.py:166
+#: src/app.py:154
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -310,19 +388,27 @@ msgstr ""
 "Bu uygulamanın düzgün çalışması için <b>ana sistemde</b> aşağıdaki "
 "programların yüklü olması gerekiyor, ancak yüklü değiller."
 
+#: src/app.py:158
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+"Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
+"fakat yüklü değiller."
+
+#: src/app.py:167
+msgctxt "Missing Dependency"
+msgid "<b>GDM</b>"
+msgstr "<b>GDM</b>"
+
 #: src/app.py:173
 msgctxt "Missing Dependency"
-msgid " • <b>GDM</b>"
-msgstr " • <b>GDM</b>"
-
-#: src/app.py:179
-msgctxt "Missing Dependency"
-msgid " • <b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgid "<b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:187
+#: src/app.py:181
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -331,29 +417,77 @@ msgstr ""
 "Bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için <a "
 "href=\"{url}\">buraya</a> tıklayın."
 
-#: src/app.py:192
+#: src/app.py:188
 msgid "Missing Dependencies"
 msgstr "Eksik Bağımlılıklar"
 
-#: src/app.py:227
+#: src/app.py:193 src/pages/display.py:103
+msgid "OK"
+msgstr "Tamam"
+
+#: src/app.py:222
 msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
 
-#: src/app.py:235
-msgid "User settings imported"
-msgstr "Kullanıcı ayarları içe aktarıldı"
+#: src/app.py:230
+msgid "Session settings loaded successfully"
+msgstr "Oturum ayarları başarıyla yüklendi"
 
-#: src/app.py:239
-msgid "Importing user settings is NOT supported in Flatpak version"
-msgstr "Flatpak sürümünde kullanıcı ayarlarının içe aktarılması desteklenmiyor"
+#: src/app.py:234
+msgid "Load session settings is NOT supported in Flatpak version"
+msgstr "Flatpak sürümünde oturum ayarlarını yükleme desteklenmez"
 
-#: src/app.py:252
+#: src/app.py:247
 msgid "Reset settings successfully"
 msgstr "Ayarlar sıfırlandı"
 
-#: src/app.py:254
+#: src/app.py:249
 msgid "Failed to reset settings"
 msgstr "Ayarlar sıfırlanamadı"
+
+#: src/app.py:268
+msgid "Import"
+msgstr "İçe aktar"
+
+#: src/app.py:290
+msgid "Settings were successfully imported from file"
+msgstr "Ayarlar dosyadan başarıyla içe aktarıldı"
+
+#: src/app.py:292
+msgid "Failed to import. File is invalid"
+msgstr "İçe aktarılamadı. Dosya geçersiz"
+
+#: src/app.py:323
+msgid "Settings were successfully exported"
+msgstr "Ayarlar dışa aktarıldı"
+
+#: src/app.py:325
+msgid "Failed to export. Permission denied"
+msgstr "Dışa aktarılamadı. İzin reddedildi"
+
+#: src/app.py:327
+msgid "Failed to export. A directory with that name already exists"
+msgstr "Dışa aktarılamadı. Bu ada sahip bir dizin zaten var"
+
+#: src/about.py:5
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
+
+#: src/about.py:6
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
+
+#: src/about.py:17
+msgid "Copyright 2021-2022 Mazhar Hussain"
+msgstr "Telif Hakkı 2021-2022 Mazhar Hussain"
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: src/about.py:29
+msgid "translator-credits"
+msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -400,19 +534,15 @@ msgstr "Arka plan olarak kullanılacak resim"
 msgid "The color to use as background"
 msgstr "Arka plan olarak kullanılacak renk"
 
-#: src/blueprints/display-page.blp:9 src/window.py:101
-msgid "Display"
-msgstr "Ekran"
-
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
 msgstr "Geçerli ekran ayarlarını uygula"
 
 #: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc"
-msgstr "Çözünürlük, tazeleme hızı, ekran konumları vb"
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:23
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
 msgid "Apply"
 msgstr "Uygula"
 
@@ -420,7 +550,7 @@ msgstr "Uygula"
 msgid "Night Light"
 msgstr "Gece Işığı"
 
-#: src/blueprints/display-page.blp:24
+#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
 msgstr "Etkinleştir"
 
@@ -454,10 +584,6 @@ msgstr "Bitiş Saati"
 msgid "Color Temperature"
 msgstr "Renk Sıcaklığı"
 
-#: src/blueprints/fonts-page.blp:9 src/window.py:97
-msgid "Fonts"
-msgstr "Yazı Tipleri"
-
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
 msgstr "Yazı tipi"
@@ -472,7 +598,7 @@ msgstr "Standart"
 
 #: src/blueprints/fonts-page.blp:24
 msgid "Subpixel"
-msgstr "Subpixel"
+msgstr "Alt piksel"
 
 #: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
@@ -499,52 +625,64 @@ msgid "Refresh"
 msgstr "Tazeleme"
 
 #: src/blueprints/main-window.blp:7
-msgid "Import user settings"
-msgstr "Kullanıcı ayarlarını içe aktar"
+msgid "Load session settings"
+msgstr "Oturum ayarlarını yükle"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
 msgstr "Ayarları sıfırla"
 
 #: src/blueprints/main-window.blp:11
+msgid "Import from file"
+msgstr "Dosyadan içe aktar"
+
+#: src/blueprints/main-window.blp:12
+msgid "Export to file"
+msgstr "Dosyaya dışa aktar"
+
+#: src/blueprints/main-window.blp:15
 msgid "About"
 msgstr "Hakkında"
 
-#: src/blueprints/main-window.blp:12
+#: src/blueprints/main-window.blp:16
 msgid "Quit"
 msgstr "Çık"
 
-#: src/blueprints/misc-page.blp:9 src/window.py:102
-msgid "Miscellaneous"
-msgstr "Çeşitli"
-
-#: src/blueprints/misc-page.blp:12
+#: src/blueprints/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr "Yeniden Başlatma Düğmelerini Pasifleştir"
 
-#: src/blueprints/misc-page.blp:21
+#: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
 msgstr "Kullanıcı Listesini Pasifleştir"
 
-#: src/blueprints/misc-page.blp:30
+#: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
 msgstr "Logo'yu Etkinleştir"
 
-#: src/blueprints/misc-page.blp:31
+#: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
 msgstr "Kullanıcı listesinin altında logo gösterilme durumu"
 
-#: src/blueprints/misc-page.blp:40
+#: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
 msgstr "Logo"
 
-#: src/blueprints/misc-page.blp:41
+#: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
 msgstr "Kullanıcı listesinin altında gösterilecek resim"
 
-#: src/blueprints/misc-page.blp:46
+#: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
 msgstr "Hoşgeldin Mesajı"
+
+#: src/blueprints/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr "Büyüt"
+
+#: src/blueprints/login-screen-page.blp:69
+msgid "Message"
+msgstr "Mesaj"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -598,9 +736,78 @@ msgstr "İki parmağınızla kaydırın."
 msgid "Disable while Typing"
 msgstr "Yazarken Devre Dışı Bırak"
 
-#: src/blueprints/sound-page.blp:9 src/window.py:99
-msgid "Sound"
-msgstr "Ses"
+#: src/blueprints/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Güç Düğmesi Davranışı"
+
+#: src/blueprints/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Hiçbir Şey Yapma"
+
+#: src/blueprints/power-page.blp:13
+msgid "Suspend"
+msgstr "Askıya al"
+
+#: src/blueprints/power-page.blp:13
+msgid "Hibernate"
+msgstr "Derin uyku"
+
+#: src/blueprints/power-page.blp:13
+msgid "Ask"
+msgstr "Sor"
+
+#: src/blueprints/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Kendiliğinden Güç Tasarrufu"
+
+#: src/blueprints/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Pil zayıfladığında güç tasarrufu modunu etkinleştirir."
+
+#: src/blueprints/power-page.blp:28
+msgid "Dim Screen"
+msgstr "Ekranı Karart"
+
+#: src/blueprints/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Bilgisayar etkin olmadığında ekran parlaklığını azaltır."
+
+#: src/blueprints/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr "Ekranı Kapat"
+
+#: src/blueprints/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Belirli bir süre kullanılmadığında ekranın kapatılıp kapatılmayacağı."
+
+#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
+#: src/blueprints/power-page.blp:107
+msgid "Delay"
+msgstr "Gecikme"
+
+#: src/blueprints/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr "Ekranın kapanacağı dakika cinsinden süre."
+
+#: src/blueprints/power-page.blp:67
+msgid "Automatic Suspend"
+msgstr "Kendiliğinden Askıya Al"
+
+#: src/blueprints/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Bir süre işlem yapılmadığında bilgisayarı duraklatır."
+
+#: src/blueprints/power-page.blp:71
+msgid "On Battery Power"
+msgstr "Pil Gücünde"
+
+#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Bilgisayarın askıya alınacağı dakika cinsinden süre."
+
+#: src/blueprints/power-page.blp:98
+msgid "When Plugged In"
+msgstr "Fişe Takılı Olduğunda"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -694,7 +901,7 @@ msgstr "ÖÖ/ÖS"
 msgid "24 Hours"
 msgstr "24 Saat"
 
-#: src/blueprints/top-bar-page.blp:98
+#: src/blueprints/top-bar-page.blp:98 src/window.py:111
 msgid "Power"
 msgstr "Güç"
 
@@ -714,37 +921,13 @@ msgstr "Yok"
 msgid "Choose"
 msgstr "Seç"
 
-#: src/common_widgets.py:128 src/window.py:149
+#: src/common_widgets.py:128 src/window.py:158
 msgid "Cancel"
 msgstr "İptal Et"
 
 #: src/common_widgets.py:146
 msgid "Choose Image"
 msgstr "Resim Seç"
-
-#: src/dialogs.py:15
-msgid "Copyright © 2021 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/dialogs.py:16
-msgid "Homepage"
-msgstr "Ana sayfa"
-
-#: src/dialogs.py:19
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/dialogs.py:21
-msgctxt "Name of Designer"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not qoutes.
-#: src/dialogs.py:25
-msgid "translator-credits"
-msgstr "Sabri Ünal <libreajans@gmail.com>"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
@@ -756,25 +939,19 @@ msgstr "Geçerli ekran ayarları uygulanamadı"
 
 #: src/pages/display.py:88
 msgid ""
-"The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-"display settings but it does not exist.\n"
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically,\n"
-"\n"
-"1. Go to 'Display' panel of System Settings.\n"
-"2. Change some settings there.\n"
-"3. Apply."
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
 msgstr ""
-"Mevcut ekran ayarlarını uygulamak için '$XDG_CONFIG_HOME/monitors.xml' "
-"dosyası gerekli fakat dosya yok.\n"
+"Geçerli ekran ayarlarını uygulamak için '$XDG_CONFIG_HOME/monitors.xml' "
+"dosyası gerekli ancak dosya yok.\n"
 "\n"
-"Bu dosyayı kendiliğinden oluşturmak için,\n"
-"\n"
-"1. Sistem Ayarlarının 'Ekran' paneline gidin.\n"
-"2. Kimi ayarları değiştirin.\n"
-"3. Uygulayın."
+"Bu dosyayı kendiliğinden oluşturmak için, sistem 'Ayarlar'ını açın ve orada "
+"bazı görüntüleme seçeneklerini değiştirin."
 
-#: src/pages/display.py:99
+#: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
 msgstr "Monitör Ayarları Bulunamadı"
 
@@ -789,73 +966,219 @@ msgstr "Öntanımlı shell teması '{folder}' klasörüne '{name}' adıyla çık
 msgid "Failed to extract default theme"
 msgstr "Öntanımlı shell teması çıkartılamadı"
 
-#: src/settings.py:198
+#: src/settings.py:67
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "'{filename}' dosyasına dışa aktarılıyor"
+
+#: src/settings.py:72
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "'{filename}' dosyasına yazılamıyor. İzin reddedildi"
+
+#: src/settings.py:76
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr "'{filename}' dosyasına yazılamıyor. Aynı ada sahip bir dizin zaten var"
+
+#: src/settings.py:82
+msgid "Exporting to standard output"
+msgstr "Standart çıktıya dışa aktarma"
+
+#: src/settings.py:91
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "'{filename}' dosyasından içe aktarılıyor"
+
+#: src/settings.py:95
+msgid "Importing from standard input"
+msgstr "Standart girdiden içe aktarma"
+
+#: src/settings.py:98
+msgid "Failed to parse import file"
+msgstr "İçe aktarma dosyası ayrıştırılamadı"
+
+#: src/settings.py:101
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "İçe aktarma dosyası okunamadı. UTF-8 olarak kodlanmamış"
+
+#: src/settings.py:107
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "İçe aktarılan dosyada '{section_name}' bölümü yok"
+
+#: src/settings.py:112
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"İçe aktarılan dosyanın '{section_name}' bölümünde '{key_name}' anahtarı yok"
+
+#: src/settings.py:299
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:246
+#: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:253
+#: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:446
+#: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:453
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
 
-#: src/window.py:96
+#: src/window.py:104
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/window.py:98
+#: src/window.py:105
+msgid "Fonts"
+msgstr "Yazı Tipleri"
+
+#: src/window.py:106
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/window.py:100
+#: src/window.py:107
+msgid "Sound"
+msgstr "Ses"
+
+#: src/window.py:108
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/window.py:103
+#: src/window.py:109
+msgid "Display"
+msgstr "Ekran"
+
+#: src/window.py:110
+msgid "Login Screen"
+msgstr "Giriş Ekranı"
+
+#: src/window.py:112
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/window.py:122
+#: src/window.py:130
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/window.py:126
+#: src/window.py:134
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/window.py:129
+#: src/window.py:138
 msgid ""
-"Didn't apply. Chosen background image could not be found. Please! choose "
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "Uygulanamadı! Seçilen arka plan resmi bulunamadı. Lütfen tekrar seçin."
+msgstr ""
+"Uygulanmadı. Seçilen arka plan resmi artık mevcut değil. Lütfen tekrar seçin."
 
-#: src/window.py:135
-msgid "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:142
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
+
+#: src/window.py:148
+msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:138
+#: src/window.py:153
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:147
+#: src/window.py:159
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#~ msgid "A settings app for GNOME's Login Manager, GDM"
+#~ msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"
+
+#~ msgid ""
+#~ "Warning: You will lose some settings after updating from v0.6 or any "
+#~ "earlier version to this or any later version."
+#~ msgstr ""
+#~ "Uyarı: v0.6 veya önceki herhangi bir sürümden bu veya sonraki herhangi "
+#~ "bir sürüme güncelleme yaptıktan sonra bazı ayarları kaybedeceksiniz."
+
+#~ msgid "Added support for incomplete shell themes"
+#~ msgstr "Eksik kabuk temaları için destek eklendi"
+
+#~ msgid ""
+#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
+#~ msgstr ""
+#~ "Düzeltildi: Uygulamanın Flatpak sürümünden giriş ekranı logosu "
+#~ "değiştirilemiyor"
+
+#~ msgid ""
+#~ "Prevent app launch when argument provided to `--verbosity` option is "
+#~ "invalid"
+#~ msgstr ""
+#~ "`--verbosity` seçeneğine sağlanan argüman geçersiz olduğunda uygulamanın "
+#~ "başlatılmasını önle"
+
+#~ msgid "Updated the info shown on app's software-store page"
+#~ msgstr ""
+#~ "Uygulamanın uygulama mağazası sayfasında gösterilen bilgileri güncellendi"
+
+#~ msgid "New App Icon that follows GNOME HIG"
+#~ msgstr "GNOME HIG'i takip eden yeni uygulama simgesi"
+
+#~ msgid "Only one instance of the app can be open at a time"
+#~ msgstr "Aynı anda uygulamanın yalnızca bir örneği açılabilir"
+
+#~ msgid "When applying settings, the app does not freeze anymore"
+#~ msgstr "Ayarları uygularken uygulama artık donmuyor"
+
+#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
+#~ msgstr ""
+#~ "Uygulama, ayarlar uygulandıktan hemen sonra \"Oturumu Kapat\" iletişim "
+#~ "kutusunu gösteriyor"
+
+#~ msgid ""
+#~ "Added new dialogs to show errors to the user instead of panicking on the "
+#~ "terminal"
+#~ msgstr ""
+#~ "Uçbirimde ölümcül hata verip kapanmak yerine kullanıcıya hataları "
+#~ "göstermek için yeni iletişim kutuları eklendi"
+
+#~ msgid ""
+#~ "When applying current display settings, scaling is also applied (may not "
+#~ "work on all systems)"
+#~ msgstr ""
+#~ "Geçerli ekran ayarları uygulanırken ölçeklendirme de uygulanır (tüm "
+#~ "sistemlerde çalışmayabilir)"
+
+#~ msgid "The app is now DBusActivatable"
+#~ msgstr "Uygulama artık DBusActivatable"
+
+#~ msgctxt "Missing Dependency"
+#~ msgid " • <b>GLib</b> (Developer Edition)"
+#~ msgstr " • <b>GLib</b> (Geliştirici Sürümü)"
+
+#~ msgid "Homepage"
+#~ msgstr "Ana sayfa"
+
+#~ msgid "User settings imported"
+#~ msgstr "Kullanıcı ayarları içe aktarıldı"
+
+#~ msgid "Miscellaneous"
+#~ msgstr "Çeşitli"
 
 #~ msgid ""
 #~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
