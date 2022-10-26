@@ -32,8 +32,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Features">Features</a>
-    <span> | </span>
     <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
     <span> | </span>
     <a href="https://github.com/realmazharhussain/gdm-settings/wiki">Wiki</a>
