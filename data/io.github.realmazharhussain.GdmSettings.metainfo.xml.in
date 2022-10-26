@@ -100,9 +100,6 @@
           <li>Fixed "Apply Current Display Settings" feature not working on Ubuntu and Ubuntu-like systems</li>
           <li>Fixed some text showing up untranslated even if translation existed</li>
           <li>Fixed some typos</li>
-          <!--
-          <li>Improved support for multiple installations of the app on the same system</li>
-          -->
         </ul>
       </description>
     </release>
