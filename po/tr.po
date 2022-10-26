@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-26 12:26+0500\n"
 "PO-Revision-Date: 2022-10-25 14:06+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -295,27 +295,33 @@ msgid "Added an option to enlarge welcome message"
 msgstr "Hoş geldiniz mesajını büyütmek için bir seçenek eklendi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#, fuzzy
+#| msgid "Colored commandline output"
+msgid "Added color to command-line output"
+msgstr "Renkli komut satırı çıktısı"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Ana pencere uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Açılır iletişim kutuları uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "\"Hakkında\" penceresi yeni stile güncellendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Hoşgeldiniz mesajı girdi alanının stili iyileştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "\"Çeşitli\" kenar çubuğu bölümünün adı \"Giriş Ekranı\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -323,7 +329,7 @@ msgstr ""
 "\"Kullanıcı ayarlarını içe aktar\" genel menü seçeneğinin adı \"Oturum "
 "ayarlarını yükle\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -331,10 +337,6 @@ msgid ""
 msgstr ""
 "Uygulama artık, logo etkinleştirilmişse ve seçilen logo resmi artık sistemde "
 "mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr "Renkli komut satırı çıktısı"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
@@ -542,7 +544,7 @@ msgstr "Geçerli ekran ayarlarını uygula"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Uygula"
 
@@ -901,7 +903,7 @@ msgstr "ÖÖ/ÖS"
 msgid "24 Hours"
 msgstr "24 Saat"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Güç"
 
@@ -921,7 +923,7 @@ msgstr "Yok"
 msgid "Choose"
 msgstr "Seç"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "İptal Et"
 
@@ -1040,69 +1042,69 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Ses"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Ekran"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr "Giriş Ekranı"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/window.py:138
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Uygulanmadı. Seçilen arka plan resmi artık mevcut değil. Lütfen tekrar seçin."
 
-#: src/window.py:142
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
 
-#: src/window.py:148
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Oturumu Kapat"
 

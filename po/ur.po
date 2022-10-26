@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
+"POT-Creation-Date: 2022-10-26 12:26+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -284,40 +284,40 @@ msgid "Added an option to enlarge welcome message"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Turned main window adaptive"
+msgid "Added color to command-line output"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Turned pop-up dialogs adaptive"
+msgid "Turned main window adaptive"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid "Updated \"about\" window to the new style"
+msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid "Improved style of welcome message input field"
+msgid "Updated \"about\" window to the new style"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgid "Improved style of welcome message input field"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
@@ -544,7 +544,7 @@ msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "اپلائی"
 
@@ -911,7 +911,7 @@ msgstr "ش/م"
 msgid "24 Hours"
 msgstr "24 گھنٹے"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "پاوَر"
 
@@ -931,7 +931,7 @@ msgstr "(کچھ نہیں)"
 msgid "Choose"
 msgstr "انتخاب کریں"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "کینسل"
 
@@ -1064,47 +1064,47 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "خط"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "آواز"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "آلات"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/window.py:138
+#: src/window.py:144
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1115,7 +1115,7 @@ msgid ""
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:142
+#: src/window.py:148
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1125,7 +1125,7 @@ msgid ""
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:148
+#: src/window.py:154
 #, fuzzy
 #| msgid ""
 #| "The system may start to look weird/buggy untill you re-login or reboot."
@@ -1133,11 +1133,11 @@ msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "لاگ آؤٹ کریں؟"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
 

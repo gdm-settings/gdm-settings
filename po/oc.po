@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
+"POT-Creation-Date: 2022-10-26 12:26+0500\n"
 "PO-Revision-Date: 2022-09-17 14:17+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
@@ -282,40 +282,40 @@ msgid "Added an option to enlarge welcome message"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Turned main window adaptive"
+msgid "Added color to command-line output"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Turned pop-up dialogs adaptive"
+msgid "Turned main window adaptive"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid "Updated \"about\" window to the new style"
+msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid "Improved style of welcome message input field"
+msgid "Updated \"about\" window to the new style"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgid "Improved style of welcome message input field"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
@@ -545,7 +545,7 @@ msgstr "Aplicar los paramètres d’afichatge actuals"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -914,7 +914,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 oras"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Energia"
 
@@ -934,7 +934,7 @@ msgstr "(Pas cap)"
 msgid "Choose"
 msgstr "Causir"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -1067,47 +1067,47 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Poliças"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Barra superiora"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Son"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Mirga & pavat tac­til"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Afichatge"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Aisinas"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/window.py:138
+#: src/window.py:144
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1119,7 +1119,7 @@ msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/window.py:142
+#: src/window.py:148
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1130,7 +1130,7 @@ msgstr ""
 "S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
 "un autre."
 
-#: src/window.py:148
+#: src/window.py:154
 #, fuzzy
 #| msgid ""
 #| "The system may start to look weird/buggy untill you re-login or reboot."
@@ -1139,11 +1139,11 @@ msgstr ""
 "Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
 "connectar o reavietz."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "Se desconnectar ?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Desconnexion"
 
