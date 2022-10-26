@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-25 14:06+0000\n"
+"PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -297,10 +297,8 @@ msgid "Added an option to enlarge welcome message"
 msgstr "Nieuw: optie om het welkomstbericht te vergroten"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-#, fuzzy
-#| msgid "Colored commandline output"
 msgid "Added color to command-line output"
-msgstr "Verbeterd: kleuren in opdrachtregeluitvoer"
+msgstr "Nieuw: kleuren in opdrachtregeluitvoer"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
