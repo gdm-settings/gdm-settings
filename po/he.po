@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-25 14:06+0000\n"
+"PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -285,10 +285,8 @@ msgid "Added an option to enlarge welcome message"
 msgstr "נוספה אפשרות להגדיל את הודעת קבלת הפנים"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-#, fuzzy
-#| msgid "Colored commandline output"
 msgid "Added color to command-line output"
-msgstr "פלט שורת הפקודה יופיע בצבעים"
+msgstr "נוסף צבע לפלט שורת הפקודה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
