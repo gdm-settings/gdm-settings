@@ -88,6 +88,7 @@
           <li>Added power settings</li>
           <li>Added options to import/export settings in the global menu</li>
           <li>Added an option to enlarge welcome message</li>
+          <li>Added color to command-line output</li>
           <li>Turned main window adaptive</li>
           <li>Turned pop-up dialogs adaptive</li>
           <li>Updated "about" window to the new style</li>
@@ -96,7 +97,6 @@
           <li>Renamed global menu option "Import user settings" to "Load session settings"</li>
           <li>The app, now, shows an error notification when trying to apply settings if logo
               is enabled and the chosen logo image does not exist on the system anymore</li>
-          <li>Colored commandline output</li>
           <li>Fixed "Apply Current Display Settings" feature not working on Ubuntu and Ubuntu-like systems</li>
           <li>Fixed some text showing up untranslated even if translation existed</li>
           <li>Fixed some typos</li>
