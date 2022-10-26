@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
+"PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -140,7 +140,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Accion del boton d’alimentacion"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -268,10 +268,8 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Reïnicializar los paramètres"
+msgstr "Paramètres d’alimentacion aponduts"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
@@ -330,7 +328,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Correccions d’unas decas"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -377,20 +375,14 @@ msgstr ""
 "corrèctament, mas son pas installats."
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "• <b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -409,7 +401,7 @@ msgstr "Dependéncias absentas"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "D’acòrdi"
 
 #: src/app.py:222
 msgid "Settings reloaded"
@@ -439,7 +431,7 @@ msgstr "Fracàs en reïnicializant los paramètres"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: src/app.py:290
 #, fuzzy
@@ -452,10 +444,8 @@ msgid "Failed to import. File is invalid"
 msgstr ""
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres importats corrèctament"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
@@ -471,18 +461,13 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -628,10 +613,8 @@ msgid "Refresh"
 msgstr "Refrescar"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Importar paramètres de l’utilizaire"
+msgstr "Cargar paramètres de l’utilizaire"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -639,11 +622,11 @@ msgstr "Reïnicializar los paramètres"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importar d’un fichièr"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportar dins un fichièr"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -686,10 +669,8 @@ msgid "Enlarge"
 msgstr ""
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Messatge de benvenguda"
+msgstr "Messatge"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -748,10 +729,8 @@ msgid "Power Button Behavior"
 msgstr ""
 
 #: src/blueprints/power-page.blp:13
-#, fuzzy
-#| msgid "Nothing"
 msgid "Do Nothing"
-msgstr "Res"
+msgstr "Far pas res"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
@@ -763,7 +742,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Demandar"
 
 #: src/blueprints/power-page.blp:18
 #, fuzzy
@@ -1093,7 +1072,7 @@ msgstr "Afichatge"
 
 #: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "Ecran de connexion"
 
 #: src/window.py:118
 msgid "Tools"
