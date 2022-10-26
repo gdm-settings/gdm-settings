@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -141,7 +141,7 @@ msgid ""
 "tablets (suspend)."
 msgstr ""
 "시스템 전원 버튼을 눌렀을 때 수행할 작업입니다. 이 작업은 가상 머신(전원 "
-"끄기) 및 태블릿(유휴 상태)에서 하드 코딩되고 설정은 무시됩니다."
+"끄기) 및 태블릿(절전 모드)에서 하드 코딩되고 설정은 무시됩니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -183,7 +183,7 @@ msgstr "세션이 유휴 상태로 간주되기 전의 비활성 시간(분)입�
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr "비활성 상태 및 배터리 사용 시 일시 중단 여부"
+msgstr "비활성 상태 및 배터리 사용 시 절전모드 사용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
@@ -199,7 +199,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr "비활성 상태이고 전원이 연결되어 있을 때 일시 중단 여부"
+msgstr "비활성 상태이고 전원이 연결되어 있을 때 절전모드 사용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
