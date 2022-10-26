@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-25 14:06+0000\n"
+"PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -292,10 +292,8 @@ msgid "Added an option to enlarge welcome message"
 msgstr "Přidána možnost zvětšit uvítací zprávu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-#, fuzzy
-#| msgid "Colored commandline output"
 msgid "Added color to command-line output"
-msgstr "Barevný výstup příkazového řádku"
+msgstr "Přidána barva do výstupu příkazového řádku"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
