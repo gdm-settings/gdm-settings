@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-10 13:57+0000\n"
+"PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -30,6 +30,7 @@ msgstr "Taustakuvan tyyppi"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
 msgstr ""
+"Käytetäänkö GDM:n taustana kuvaa (Image), väriä (Color) vai ei mitään (None)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -52,7 +53,7 @@ msgstr "GDM:n taustana käytettävä väri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Onko yövalo käytössä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -62,7 +63,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Yötilan lämpötila kun käytössä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
@@ -72,7 +73,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Käytän auringonnousua ja -laskua"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
@@ -126,7 +127,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Virtapainikkeen toiminto"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -137,7 +138,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Ota virransäästöprofiili käyttöön kun akku on vähissä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
@@ -205,15 +206,15 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Poistetaanko yläpalkin nuolet käytöstä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Poistetaanko yläpalkin pyöristetyt reunat käytöstä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Muutetaanko yläpalkin tekstin väriä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
@@ -236,7 +237,7 @@ msgstr "Kirjautumisnäkymän asetukset"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Mukauta kirjautumisnäkymää"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -354,6 +355,8 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Tämä sovellus vaatii seuraavat ohjelmistot toimiakseen, mutta ne eivät "
+"vaikuta olevan asennettuna."
 
 #: src/app.py:167
 msgctxt "Missing Dependency"
@@ -394,43 +397,39 @@ msgstr "Istunnon asetukset ladattu uudelleen"
 
 #: src/app.py:234
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Istunnon asetusten lataaminen EI OLE tuettu Flatpak-versiossa"
 
 #: src/app.py:247
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Asetukset on palautettu oletusarvoihin"
 
 #: src/app.py:249
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Asetusten palauttaminen oletusarvoihin epäonnistui"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Tuo"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Asetukset toteutettu onnistuneesti"
+msgstr "Asetukset tuotu tiedostosta"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Tuonti epäonnistui. Tiedosto on virheellinen"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Asetukset toteutettu onnistuneesti"
+msgstr "Asetukset vietiin onnistuneesti"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Vienti epäonnistui. Riittämättömät käyttöoikeudet"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Vienti epäonnistui. Kansio samalla nimellä on jo olemassa"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -597,11 +596,11 @@ msgstr "Palauta oletusarvot"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Tuo tiedostosta"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Vie tiedostoon"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -922,20 +921,21 @@ msgstr ""
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
+"Oletusarvoinen shell-teema on purettu kansioon '{folder}' nimellä '{name}'"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Oletusteeman purkaminen epäonnistui"
 
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Viedään tiedostoon '{filename}'"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Tiedostoon '{filename}' ei voi kirjoittaa. Pääsy evätty"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -943,6 +943,8 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Tiedostoon '{filename}' ei voi kirjoittaa. Kansio samalla nimellä on jo "
+"olemassa"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
@@ -951,7 +953,7 @@ msgstr ""
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Tuodaan tiedostosta '{filename}'"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
@@ -959,7 +961,7 @@ msgstr ""
 
 #: src/settings.py:98
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Tuontitiedoston jäsennys epäonnistui"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -968,7 +970,7 @@ msgstr ""
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Tuodussa tiedostossa ei ole osiota '{section_name}'"
 
 #: src/settings.py:112
 #, python-brace-format
@@ -978,27 +980,29 @@ msgstr ""
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Varmuuskopioidaan shell-teeman oletusta…"
 
 #: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Toteutetaan GResource-asetukset Ubuntulle…"
 
 #: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Toteutetaan GResource-asetukset muille kuin Ubuntu-järjestelmille…"
 
 #: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Palautetaan oletusarvot GResource-asetuksista Ubuntulle…"
 
 #: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
+"Palautetaan oletusarvot GResource-asetuksista muille kuin Ubuntu-"
+"järjestelmille…"
 
 #: src/window.py:110
 msgid "Appearance"
