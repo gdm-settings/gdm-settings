@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing GLib'
+echo 'Copying GLib'
 
 # Dependencies
 copy /usr/lib/libpcre.so*

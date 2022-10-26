@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Python'
+echo 'Copying Python'
 
 # Dependencies
 copy /usr/lib/libffi.so*
@@ -18,6 +18,6 @@ for file in /usr/lib/python3.10/*; do
 done
 
 
-echo 'Installing PyGObject'
+echo 'Copying PyGObject'
 copy /usr/lib/python3.10/site-packages/gi
 copy /usr/lib/python3.10/site-packages/pygtkcompat

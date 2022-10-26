@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Pango'
+echo 'Copying Pango'
 
 # Dependencies
 copy /usr/lib/libbz2.so*

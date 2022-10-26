@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing CloudProviders'
+echo 'Copying CloudProviders'
 
 # Files
 copy /usr/lib/girepository-1.0/CloudProviders-0.3.typelib

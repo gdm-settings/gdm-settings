@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Gdk Pixbuf'
+echo 'Copying Gdk Pixbuf'
 
 # Dependencies
 copy /usr/lib/libjpeg.so*
@@ -12,7 +12,7 @@ copy /usr/lib/libgdk_pixbuf-2.0.so*
 copy /usr/share/locale/*/LC_MESSAGES/gdk-pixbuf.mo
 
 
-echo 'Installing Gdk Pixbuf Loaders'
+echo 'Copying Gdk Pixbuf Loaders'
 
 moduledir=$(pkgconf --variable gdk_pixbuf_moduledir gdk-pixbuf-2.0)
 cache_file=$(pkgconf --variable gdk_pixbuf_cache_file gdk-pixbuf-2.0)

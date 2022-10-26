@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing LibRsvg'
+echo 'Copying LibRsvg'
 
 # Files
 copy /usr/lib/girepository-1.0/Rsvg-2.0.typelib

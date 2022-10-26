@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Graphene'
+echo 'Copying Graphene'
 
 # Files
 copy /usr/lib/girepository-1.0/Graphene-1.0.typelib
