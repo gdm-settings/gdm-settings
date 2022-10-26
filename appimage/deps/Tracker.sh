@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Tracker'
+echo 'Copying Tracker'
 
 # Files
 copy /usr/lib/girepository-1.0/Tracker-3.0.typelib

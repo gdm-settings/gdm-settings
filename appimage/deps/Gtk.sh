@@ -11,7 +11,7 @@ source "${ScriptDir}"/deps/HarfBuzz.sh
 source "${ScriptDir}"/deps/Gdk-Pixbuf.sh
 source "${ScriptDir}"/deps/CloudProviders.sh
 
-echo 'Installing GTK'
+echo 'Copying GTK'
 
 # Dependencies
 copy /usr/lib/libfreetype.so*

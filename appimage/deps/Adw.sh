@@ -3,7 +3,7 @@
 # Dependencies
 source "${ScriptDir}"/deps/Gtk.sh
 
-echo 'Installing LibAdwaita'
+echo 'Copying LibAdwaita'
 
 # Files
 copy /usr/lib/girepository-1.0/Adw-1.typelib

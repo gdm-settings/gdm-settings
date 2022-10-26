@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing GObject Introspection Runtime'
+echo 'Copying GObject Introspection Runtime'
 
 # AppRun Variables
 echo 'export GI_TYPELIB_PATH="${AppDir}"/usr/lib/girepository-1.0' >> "${AppRun}"

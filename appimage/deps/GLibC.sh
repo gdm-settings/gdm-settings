@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing GLibC'
+echo 'Copying GLibC'
 
 # Files
 copy /usr/bin/ld.so

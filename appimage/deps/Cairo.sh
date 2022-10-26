@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-echo 'Installing Cairo'
+echo 'Copying Cairo'
 
 # Files
 copy /usr/lib/cairo
