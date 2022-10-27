@@ -5,18 +5,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-06-22 04:54+0000\n"
+"PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/gdm-"
-"settings/language-names/nb_NO/>\n"
-"Language: nb_NO\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"gdm-settings/language-names/nb_NO/>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -28,8 +28,9 @@ msgstr "Bakgrunnstype"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#, fuzzy
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr ""
+msgstr "Hvorvidt GDM-bakgrunnen skal være et bilde, helfarge, eller ingenting."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -38,84 +39,97 @@ msgstr "Bakgrunnsbilde"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "Bildefil å bruke som GDM-bakgrunn"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/blueprints/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Bakgrunnsfarge"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#, fuzzy
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "Helfarge å bruke som GDM-bakgrunn"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Hvis nattlysmodus er påslått"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Nattlysmodus endrer din skjerms fargetemperatur når solen har gått ned, "
+"eller til forhåndsinnstilte tider."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
+#, fuzzy
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Skjermens fargetemperatur når påslått"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Denne temperaturen i Kelvin brukes til å endre skjermtonene når nattlys er "
+"påslått. Høyere verdier er blåere, lavere rødere."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Bruk soloppgang og solnedgang"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Regn ut soloppgangs- og solnedgangstider automatisk, fra nåværende posisjon."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+#, fuzzy
 msgid "The start time's hour"
-msgstr ""
+msgstr "Valgt time for oppstart"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
+msgstr "Når «planlegg automatisk» er av, utføres oppstart denne timen."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
+#, fuzzy
 msgid "The start time's minute"
-msgstr ""
+msgstr "Valgt minutt i time for oppstart"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
+#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "Når «planlegg automatisk» er avslått, utføres oppstart dette minuttet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "Valgt time for sluttføring"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr ""
+msgstr "Når «planlegg automatisk» er av, utføres sluttføring denne timen."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
+#, fuzzy
 msgid "The end time's minute"
-msgstr ""
+msgstr "Valgt minutt i time for sluttføring"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
+#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "Når «planlegg automatisk» er av, utføres oppstart dette minuttet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "Pekerhastighet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -123,120 +137,148 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Pekerhastighet for pekeflaten. Godkjente verdier er i området [-1..1] (fra "
+"«uakselerert» til «rask»). «0» er systemforvalg."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Handling for av/på-knapp"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+#, fuzzy
 msgid ""
 "The action to take when the system power button is pressed. This action is "
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Handling å utføre når av/på-knappen trykkes. Handlingen er hardkodet (og "
+"innstillingen blir ignorert) på virtuelle maskiner (slå av) og nettbrett "
+"(hvilemodus)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Skru på batterisparingsprofil ved lite gjenværende batterinivå"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Skru på «effektsparing»-profil automatisk ved bruk av "
+"effektstyringsprofilnissen hvis gjenværende batterinivå er lavt."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Demp skjermens lysstyrke etter en tids inaktivitet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Hvorvidt skjermen skal ha mindre lysstyrke når datamaskinen er inaktiv for å "
+"spare strøm."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+#, fuzzy
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Hvorvidt skjermen skal blankes ut ved øktlediggang"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+#, fuzzy
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "Hvorvidt skjermen skal blankes ut for å spare strøm ved lediggang."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+#, fuzzy
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Tid før økten går inn i lediggang"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+#, fuzzy
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Antall minutters inaktivitet før økten antas å være inaktiv."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+#, fuzzy
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Hvorvidt hvilemodus skal brukes ved inaktivitet på batteridrift"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Dvalgangstidsavbrudd når datamaskinen går på batteri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+#, fuzzy
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Antall minutter datamaskinen må være inaktiv på batteridrift før dvalemodus "
+"igangsettes. «0» betyr aldri."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+#, fuzzy
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Hvorvidt hvilemodus skal brukes ved inaktivitet når innplugget"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+#, fuzzy
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Dvalemodustidsavbrudd for datamaskinen når innplugget"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+#, fuzzy
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Antall minutter datamaskinen må være inaktiv innplugget før dvalemodus "
+"igangsettes. «0» betyr aldri."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
+#, fuzzy
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Hvorvidt justeringer av toppfelt skal brukes i utpakket drakt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Hvorvidt piler skal skrus av i toppfeltet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
+#, fuzzy
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Hvorvidt avrundede hjørner skal skrus av i toppfeltet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
+#, fuzzy
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Hvorvidt tekstfargen skal endres i toppfeltet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Tekstfarge for toppfelt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
+#, fuzzy
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Hvorvidt bakgrunnen skal endres i toppfeltet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
+#, fuzzy
 msgid "Top bar background color"
-msgstr ""
+msgstr "Bakgrunnsfarge for toppfelt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:65
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Innstillinger for innloggingsbehandler"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Tilpass innloggingsskjermen din"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -244,211 +286,239 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Endre GDM-innstillinger; Bruk drakt og bakgrunn, endre pekerdrakt, "
+"ikondrakt, og nattlysinnstillinger, med mer."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Added power settings"
-msgstr ""
+msgstr "La til effektstyringsinnstillinger"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
+"La til alternativer for import/eksport av innstillinger i den globale menyen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "La til alternativ for å gjøre velkomstmeldingen større"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
-msgstr ""
+msgstr "La til farge for kommandolinjeutdata"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Gjorde hovedvinduet tilpasningsdyktig"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Gjorde oppsprettsdialoger tilpasningsdyktige"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#, fuzzy
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Oppdatert «Om»-vindu til ny stil"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Forbedret stil for velkomstmeldingens inndatafelt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "Endret sidenavnsdelen «Ymse» til «Innloggingsskjerm»"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Endret globalt menyvalg «Importer brukerinnstillinger» til «Last inn "
+"øktinnstillinger»"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#, fuzzy
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"Programmet viser nå en merknad om feil ved forsøk på å bruke innstillinger "
+"hvis logo er påslått og valgt logobildet ikke finnes på systemet."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+msgstr "Fikset noe tekst som ble vist uoversatt selv om de var oversatt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Fikset noen skrivefeil"
 
 #: src/app.py:51
 msgid "Show application version"
-msgstr ""
+msgstr "Vis programversjon"
 
 #: src/app.py:52
+#, fuzzy
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Sett detaljnivå manuelt (fra 0 til 5)"
 
 #: src/app.py:53
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "Nivå"
 
 #: src/app.py:54
+#, fuzzy
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Skru på ordrikt modus (alias for «--verbosity=5»)"
 
 #: src/app.py:55
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Skru på stille modus (alias for «--verbosity=0»)"
 
 #: src/app.py:75
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Ugyldig detaljnivå «{level}», må være fra 1-5."
 
 #: src/app.py:154
+#, fuzzy
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Følgende programmer må være installert <b>på vertssystemet</b> for at "
+"programmet skal fungerer rett, men de er ikke installert på vertssystemet."
 
 #: src/app.py:158
+#, fuzzy
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Dette programmet krever følgende programvare for å fungere, men de er ikke "
+"installert."
 
 #: src/app.py:167
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
 #: src/app.py:181
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Klikk <a href=\"{url}\">her</a> for instruks om hvordan du installerer disse "
+"avhengighetene på systemet ditt."
 
 #: src/app.py:188
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Manglende avhengigheter"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:222
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Innstillinger ble gjeninnlastet"
 
 #: src/app.py:230
+#, fuzzy
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Øktinnstillinger ble innlastet"
 
 #: src/app.py:234
+#, fuzzy
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Innlasting av øktinnstillinger støttes ikke i Flatpak-versjonen"
 
 #: src/app.py:247
+#, fuzzy
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Innstillinger tilbakestilt"
 
 #: src/app.py:249
+#, fuzzy
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Klarte ikke å tilbakestille innstillingene"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 #: src/app.py:290
+#, fuzzy
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Innstillinger importert fra fil"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Kunne ikke importere. Filen er ugyldig."
 
 #: src/app.py:323
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Innstillingene ble importert"
 
 #: src/app.py:325
+#, fuzzy
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Klarte ikke å eksportere. Mangler tilgang."
 
 #: src/app.py:327
+#, fuzzy
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Klarte ikke å eksportere. En mappe med det navnet finnes allerede."
 
 #: src/about.py:5
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: src/about.py:6
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr ""
+msgstr "Opphavsrett 2021–2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
-msgstr ""
+msgstr "Allan Nordhøy <epost@anotheragency.no>"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Drakter"
 
 #: src/blueprints/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Skall"
 
 #: src/blueprints/appearance-page.blp:12
 msgid "Icons"
@@ -489,378 +559,384 @@ msgstr "Farge å bruke som bakgrunn"
 
 #: src/blueprints/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Bruk nåværende skjerminnstillinger"
 
 #: src/blueprints/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Oppløsning, oppdateringsfrekvens, skjermposisjoner, osv."
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
-msgstr ""
+msgstr "Bruk"
 
 #: src/blueprints/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Nattlys"
 
 #: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
 msgid "Enable"
-msgstr ""
+msgstr "Skru på"
 
 #: src/blueprints/display-page.blp:33
 msgid "Schedule"
-msgstr ""
+msgstr "Tidsplan"
 
 #: src/blueprints/display-page.blp:34
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Solnedgang til soloppgang"
 
 #: src/blueprints/display-page.blp:34
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Manuell plan"
 
 #: src/blueprints/display-page.blp:38
 msgid "Times"
-msgstr ""
+msgstr "Tider"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr ""
+msgstr "Fra"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
 msgid "To"
-msgstr ""
+msgstr "Til"
 
 #: src/blueprints/display-page.blp:89
 msgid "Color Temperature"
-msgstr ""
+msgstr "Fargetemperatur"
 
 #: src/blueprints/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Skrift"
 
 #: src/blueprints/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Kantutjevning"
 
 #: src/blueprints/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Forvalg"
 
 #: src/blueprints/fonts-page.blp:24
+#, fuzzy
 msgid "Subpixel"
-msgstr ""
+msgstr "Underpiksel"
 
 #: src/blueprints/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Hinting"
 
 #: src/blueprints/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Full"
 
 #: src/blueprints/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Middels"
 
 #: src/blueprints/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Lett"
 
 #: src/blueprints/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Skaleringsfaktor"
 
 #: src/blueprints/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Gjenoppfrisk"
 
 #: src/blueprints/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Last inn øktinnstillinger"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Tilbakestill innstillinger"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importer fra fil"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Eksporter til fil"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: src/blueprints/main-window.blp:16
 msgid "Quit"
-msgstr ""
+msgstr "Avslutt"
 
 #: src/blueprints/login-screen-page.blp:12
+#, fuzzy
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Skru av omstartsknapper"
 
 #: src/blueprints/login-screen-page.blp:21
 msgid "Disable User List"
-msgstr ""
+msgstr "Skru av brukerliste"
 
 #: src/blueprints/login-screen-page.blp:30
 msgid "Enable Logo"
-msgstr ""
+msgstr "Skru på logo"
 
 #: src/blueprints/login-screen-page.blp:31
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Hvorvidt en logo skal vises under brukerlisten"
 
 #: src/blueprints/login-screen-page.blp:40
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/blueprints/login-screen-page.blp:41
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Bilde å vise under brukerlisten"
 
 #: src/blueprints/login-screen-page.blp:47
 msgid "Welcome Message"
-msgstr ""
+msgstr "Velkomstmelding"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Forstørr"
 
 #: src/blueprints/login-screen-page.blp:69
 msgid "Message"
-msgstr ""
+msgstr "Melding"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
-msgstr ""
+msgstr "Mus"
 
 #: src/blueprints/pointing-page.blp:12
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Pekerakselerasjon"
 
 #: src/blueprints/pointing-page.blp:14
 msgid "Automatic"
-msgstr ""
+msgstr "Automatisk"
 
 #: src/blueprints/pointing-page.blp:15
 msgid "Disabled"
-msgstr ""
+msgstr "Avskrudd"
 
 #: src/blueprints/pointing-page.blp:16
 msgid "Enabled"
-msgstr ""
+msgstr "Påskrudd"
 
 #: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Naturlig rulling"
 
 #: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Rulling flytter innholdet, ikke visningen."
 
 #: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Pekerhastighet"
 
 #: src/blueprints/pointing-page.blp:39
 msgid "Touchpad"
-msgstr ""
+msgstr "Pekeflate"
 
 #: src/blueprints/pointing-page.blp:42
 msgid "Tap to Click"
-msgstr ""
+msgstr "Trykk for å klikke"
 
 #: src/blueprints/pointing-page.blp:57
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Tofingerrulling"
 
 #: src/blueprints/pointing-page.blp:58
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Rull ved å dra med to fingre."
 
 #: src/blueprints/pointing-page.blp:65
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Skru av under skriving"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Oppførsel for av/på-knapp"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Ikke gjør noe"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Hvilemodus"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Dvalemodus"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Spør"
 
 #: src/blueprints/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Automatisk strømsparing"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Skru på strømsparingsmodus når batterinivået er lavt"
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Senk skjermens lysstyrke"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Reduserer skjermlysstyrken når datamaskinen er inaktiv."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Skru av skjerm"
 
 #: src/blueprints/power-page.blp:39
+#, fuzzy
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Hvorvidt skjermen skal skrus av etter en stunds inaktivitet."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Forsinkelse"
 
 #: src/blueprints/power-page.blp:49
+#, fuzzy
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Antall minutter til skjermen skrur seg av."
 
 #: src/blueprints/power-page.blp:67
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Automatisk hvilemodus"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Setter datamaskinen på pause etter en tids inaktivitet."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "På batteridrift"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
+#, fuzzy
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Antall minutter etterpå datamaskinen går i hvilemodus."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Når innplugget"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Drakt"
 
 #: src/blueprints/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "Overforsterkning"
 
 #: src/blueprints/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Tillat økning av lydstyrken til over 100%"
 
 #: src/blueprints/sound-page.blp:24
 msgid "Event Sounds"
-msgstr ""
+msgstr "Begivenhetslyder"
 
 #: src/blueprints/sound-page.blp:33
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Inndatatilbakemeldingslyder"
 
 #: src/blueprints/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Forvalgt skalldrakt"
 
 #: src/blueprints/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Inkluder toppfeltsjusteringer"
 
 #: src/blueprints/tools-page.blp:19
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Pakk ut forvalgt skalldrakt"
 
 #: src/blueprints/tools-page.blp:22
 msgid "Extract"
-msgstr ""
+msgstr "Pakk ut"
 
 #: src/blueprints/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Justeringer"
 
 #: src/blueprints/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Endre tekstfarge"
 
 #: src/blueprints/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Tekstfarge"
 
 #: src/blueprints/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Tekstfargen i toppfeltet"
 
 #: src/blueprints/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "Endre bakgrunnsfarge"
 
 #: src/blueprints/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Farge for toppfeltets bakgrunn"
 
 #: src/blueprints/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Skru av piler"
 
 #: src/blueprints/top-bar-page.blp:61
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Skru av avrundede hjørner"
 
 #: src/blueprints/top-bar-page.blp:71
 msgid "Clock"
-msgstr ""
+msgstr "Klokke"
 
 #: src/blueprints/top-bar-page.blp:74
 msgid "Show Weekday"
-msgstr ""
+msgstr "Vis ukedag"
 
 #: src/blueprints/top-bar-page.blp:83
 msgid "Show Seconds"
-msgstr ""
+msgstr "Vis sekunder"
 
 #: src/blueprints/top-bar-page.blp:92
 msgid "Time Format"
-msgstr ""
+msgstr "Tidsformat"
 
 #: src/blueprints/top-bar-page.blp:93
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: src/blueprints/top-bar-page.blp:93
+#, fuzzy
 msgid "24 Hours"
-msgstr ""
+msgstr "24-timersklokke"
 
 #: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
-msgstr ""
+msgstr "Effekt"
 
 #: src/blueprints/top-bar-page.blp:101
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Vis batteriprosent"
 
 #: src/common_widgets.py:20
 msgid "Choose File"
@@ -880,7 +956,7 @@ msgstr "Velg fil"
 
 #: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: src/common_widgets.py:146
 #, fuzzy
@@ -890,13 +966,14 @@ msgstr "Velg fil"
 
 #: src/pages/display.py:81
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Brukte nåværende skjerminnstillinger"
 
 #: src/pages/display.py:83
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Klarte ikke å bruke nåværende skjerminnstillinger"
 
 #: src/pages/display.py:88
+#, fuzzy
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -904,31 +981,37 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"«$XDG_CONFIG_HOME/monitors.xml»-filen kreves for å bruke nåværende "
+"skjerminnstillinger, men den finnes ikke.\n"
+"\n"
+"For å opprette den filen automatisk kan du åpne «Innstillinger» og endre "
+"noen av skjermalternativene der."
 
 #: src/pages/display.py:98
+#, fuzzy
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Fant ikke skjerminnstillinger"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "Forvalgt skalldrakt pakket ut til «{folder}» som «{name}»"
 
 #: src/pages/tools.py:49
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Klarte ikke å pakke ut forvalgt drakt"
 
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Eksporterer til filen «{filename}»"
 
 #: src/settings.py:72
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Kan ikke skrive til filen «{filename}». Mangler tilgang."
 
 #: src/settings.py:76
 #, python-brace-format
@@ -936,125 +1019,134 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Kan ikke skrive til filen «{filename}». En mappe med samme navn finnes "
+"allerede."
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Eksporterer til forvalgt utdata"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importerer fra filen «{filename}»."
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importerer fra forvalgt inndata"
 
 #: src/settings.py:98
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Kunne ikke tolke importfil"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Kunne ikke lese importfil. Ikke i UTF-8-koding"
 
 #: src/settings.py:107
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Importert fil mangler delen «{section_name}»"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "Importert fil har ikke nøkkelen «{key_name}» i «{section_name}»-delen"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Sikkerhetskopierer forvalgt skalldrakt …"
 
 #: src/settings.py:347
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Bruker GResource-innstilling for Ubuntu …"
 
 #: src/settings.py:354
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Bruker GResource-innstillinger for systemer som ikke er Ubuntu …"
 
 #: src/settings.py:576
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
 
 #: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
+"Tilbakestiller GResource-innstillinger for systemer som ikke er Ubuntu …"
 
 #: src/window.py:110
 msgid "Appearance"
-msgstr ""
+msgstr "Utseende"
 
 #: src/window.py:111
 msgid "Fonts"
-msgstr ""
+msgstr "Skrifter"
 
 #: src/window.py:112
 msgid "Top Bar"
-msgstr ""
+msgstr "Toppfelt"
 
 #: src/window.py:113
 msgid "Sound"
-msgstr ""
+msgstr "Lyd"
 
 #: src/window.py:114
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Mus og pekeflate"
 
 #: src/window.py:115
 msgid "Display"
-msgstr ""
+msgstr "Skjerm"
 
 #: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "Innloggingsskjerm"
 
 #: src/window.py:118
 msgid "Tools"
-msgstr ""
+msgstr "Verktøy"
 
 #: src/window.py:136
+#, fuzzy
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Innstillinger iverksatt"
 
 #: src/window.py:140
+#, fuzzy
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Klarte ikke å bruke innstillinger"
 
 #: src/window.py:144
+#, fuzzy
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr ""
+msgstr "Hadde ingen innvirkning fordi bakgrunnsbildet ikke finnes. Velg en ny."
 
 #: src/window.py:148
+#, fuzzy
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "Hadde ingen innvirkning fordi valgt logo ikke finnes. Velg en ny."
 
 #: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Systemet kan begynne å se rart/feilaktig ut til du logger inn igjen eller "
+"utfører omstart."
 
 #: src/window.py:159
 msgid "Log Out?"
-msgstr ""
+msgstr "Logg ut?"
 
 #: src/window.py:165
 msgid "Log Out"
-msgstr ""
+msgstr "Logg ut"
 
 #~ msgid "Added:"
 #~ msgstr "Tillagt:"
