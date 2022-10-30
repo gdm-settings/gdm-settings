@@ -1,13 +1,14 @@
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # Eduardo Malaspina <vaio0@swismail.com>, 2022.
+# Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-22 12:06+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"PO-Revision-Date: 2022-10-31 17:02+0000\n"
+"Last-Translator: Miguel Angel Alonso <miguelalonso2@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -270,7 +271,7 @@ msgstr "Configuración del gestor de inicio de sesión"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalice su pantalla de inicio de sesión"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -287,48 +288,50 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Restablecer la configuración"
+msgstr "Agregar opciones de energía"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
-msgstr ""
+msgstr "Agregar opciones para Importar/Exportar configuración en el menú global"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Agregar opción para ampliar el mensaje de bienvenida"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
-msgstr ""
+msgstr "Agregar color a la salida de linea de comandos"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Adaptar a la ventana principal"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Diálogos emergentes adaptativos"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Se actualizó la ventana \"acerca de\" al nuevo estilo"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Estilo mejorado del campo de entrada del mensaje de bienvenida"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
+"Cambió el nombre de la sección de la barra lateral \"Varios\" a \"Pantalla "
+"de inicio de sesión\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Se cambió el nombre de la opción de menú global \"Importar configuración de "
+"usuario\" a \"Cargar configuración de sesión\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
@@ -336,20 +339,27 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"La aplicación, ahora muestra una notificación de error al intentar aplicar "
+"la configuración si el logotipo está habilitado y la imagen del logotipo "
+"elegido ya no existe en el sistema"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"Se corrigió la función \"Aplicar configuración de pantalla actual\" que no "
+"funciona en Ubuntu y sistemas similares a Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
+"Se corrigió un texto que aparecía sin traducir incluso si existía una "
+"traducción"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Se corrigieron algunos errores tipográficos"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -462,14 +472,12 @@ msgid "Settings were successfully exported"
 msgstr "La configuración se ha exportado correctamente"
 
 #: src/app.py:325
-#, fuzzy
-#| msgid "Failed to export. Permssion denied"
 msgid "Failed to export. Permission denied"
-msgstr "No se ha podido exportar. Permiso denegado"
+msgstr "Error al exportar. Permiso denegado"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr "Fallo en la exportación. Ya existe un directorio con ese nombre"
+msgstr "Error al exportar. Ya existe un directorio con ese nombre"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -575,7 +583,7 @@ msgstr "Horas"
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr "De"
+msgstr "Desde"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
@@ -1104,9 +1112,6 @@ msgstr ""
 "de nuevo."
 
 #: src/window.py:154
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "El sistema puede empezar a verse raro/con problemas hasta que vuelva a "
