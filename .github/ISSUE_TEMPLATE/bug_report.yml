@@ -41,12 +41,12 @@ body:
       required: true
   - type: input
     attributes:
-      label: Source
+      label: Format/Source
       description: |
-        How did you get the application?
+        In which format and/or from where did you get the application?
 
         Examples:
-        - AUR
+        - AUR (gdm-settings-git)
         - Flatpak
         - AppImage
         - Source Code
