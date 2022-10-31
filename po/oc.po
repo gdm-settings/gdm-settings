@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"PO-Revision-Date: 2022-11-01 19:32+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -148,24 +148,31 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"L’accion a menar quand lo boton d’alimentacion del sistèma es quichat. L’"
+"accion es codada en dur (e lo paramètre ignorat) sus las maquinas virtualas "
+"(atudar) e las tauletas (mesa en velha)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Activar lo perfil d’estalvi d’energia quand la batariá es febla"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Activar automaticament lo perfil d’estalvi d’energia en utilizant lo paquet "
+"gnome-settings-daemon quand la batariá es febla."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Escuresir l’ecran aprèp un periòde d’inactivitat"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Indica se l’ecran deu s’escuresir per estalviar d’energia quand l’ordenador "
+"es inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -178,12 +185,14 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Durada abans que se considèra la session coma inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"Lo nombre de minutas d’inactivitat abans de considerar una session coma "
+"inactiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -191,7 +200,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Temps abans la mesa en velha de l'ordenador sus batariá"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -251,7 +260,7 @@ msgstr "Paramètres del gestionari de fenèstra de connexion"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalizatz l’ecran de connexion"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -408,10 +417,8 @@ msgid "Settings reloaded"
 msgstr "Paramètres recargats"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres de session corrèctament cargats"
 
 #: src/app.py:234
 #, fuzzy
@@ -434,10 +441,8 @@ msgid "Import"
 msgstr "Importar"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres importats corrèctament del fichièr"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
@@ -666,7 +671,7 @@ msgstr "Messatge de benvenguda"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Agrandir"
 
 #: src/blueprints/login-screen-page.blp:69
 msgid "Message"
@@ -734,29 +739,27 @@ msgstr "Far pas res"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Metre en velha"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Ibernar"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
 msgstr "Demandar"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automatic"
+msgstr "Estalviador d’energia automatic"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Activar l’estalviador d’energia quand la batariá es febla."
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Escuresir l’ecran"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -764,7 +767,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Atudar l’ecran"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -773,17 +776,15 @@ msgstr ""
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Relambi"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
 msgstr ""
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automatic"
+msgstr "Velha automatica"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
@@ -791,7 +792,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Sus batariá"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
@@ -799,7 +800,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Sul sector"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -1002,10 +1003,8 @@ msgid "Importing from standard input"
 msgstr ""
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Fracàs en reïnicializant los paramètres"
+msgstr "Fracàs de l'analisi del fichièr d’import"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -1087,27 +1086,19 @@ msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
 #: src/window.py:144
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
-"un autre."
+"S’es pas aplicat. L’imatge de fons causit existís pas pus. Mercés de ne "
+"causir un autre."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
-"un autre."
+"S’es pas aplicat. Lo logotipe causit existís pas pus. Mercés de ne causir un "
+"autre."
 
 #: src/window.py:154
 #, fuzzy
