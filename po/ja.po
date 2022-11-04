@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-10-26 12:26+0500\n"
-"PO-Revision-Date: 2022-11-04 10:06+0000\n"
+"PO-Revision-Date: 2022-11-05 11:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -274,15 +274,15 @@ msgstr "電源の設定を追加"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
-msgstr ""
+msgstr "グローバルメニューに設定をインポート／エクスポートできるオプションを追加"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "ようこそメッセージを拡大表示できるオプションを追加"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
-msgstr ""
+msgstr "コマンドライン出力を色付きで表示するように変更"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
@@ -294,21 +294,22 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "\"\"ログイン画面の設定\" について\" ウィンドウを新しいスタイルに更新"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "ようこそメッセージの入力欄のスタイルを改善"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "サイドバーの \"そのほか\" セクションを \"ログイン画面\" に名称変更"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
-msgstr ""
+msgstr "グローバルメニューのオプション \"ユーザー設定をインポート\" を "
+"\"セッション設定を読み込み\" に名称変更"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
@@ -401,7 +402,7 @@ msgstr "依存関係が不足しています"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:222
 msgid "Settings reloaded"
@@ -433,7 +434,7 @@ msgstr "設定を正常にファイルからインポートしました"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "インポートできませんでした。ファイルが無効です"
 
 #: src/app.py:323
 msgid "Settings were successfully exported"
@@ -441,11 +442,11 @@ msgstr "設定を正常にエクスポートしました"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "エクスポートできませんでした。許可がありません"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "エクスポートできませんでした。同名のディレクトリがすでに存在します"
 
 #: src/about.py:5
 msgctxt "Name of Developer"
@@ -612,11 +613,11 @@ msgstr "設定をリセット"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "ファイルからインポート"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "ファイルにエクスポート"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -656,7 +657,7 @@ msgstr "ようこそメッセージ"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "拡大表示"
 
 #: src/blueprints/login-screen-page.blp:69
 msgid "Message"
@@ -716,23 +717,23 @@ msgstr "入力中は無効にする"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "電源ボタンの挙動"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "何もしない"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "サスペンド"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "ハイバーネート"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "確認する"
 
 #: src/blueprints/power-page.blp:18
 msgid "Automatic Power Saver"
@@ -740,32 +741,32 @@ msgstr "自動省電力機能"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "バッテリー残量低下時に省電力機能を有効にします。"
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "画面を暗くする"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "コンピューターが無操作状態になったら、画面輝度を下げます。"
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "画面をオフにする"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に、画面をオフにします。"
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "時間"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "画面がオフになるまでの時間 (分単位)。"
 
 #: src/blueprints/power-page.blp:67
 msgid "Automatic Suspend"
@@ -773,19 +774,19 @@ msgstr "自動サスペンド"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に、コンピューターを一時停止します。"
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "バッテリー電源時"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "コンピューターがサスペンドするまでの時間 (分単位)。"
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "電源接続時"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -948,32 +949,32 @@ msgstr "デフォルトテーマを復元できませんでした"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "ファイル '{filename}' にエクスポートしています"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "ファイル '{filename}' に書き込めません。許可がありません"
 
 #: src/settings.py:76
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "標準出力にエクスポートしています"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "ファイル '{filename}' からインポートしています"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "標準入力からインポートしています"
 
 #: src/settings.py:98
 msgid "Failed to parse import file"
@@ -981,18 +982,20 @@ msgstr "インポートされたファイルを解析できませんでした"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "インポートされたファイルを読み込めませんでした。UTF-8 "
+"でエンコードされていません"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "インポートされたファイルには、セクション '{section_name}' がありません"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "インポートされたファイルには、セクション '{section_name}' にキー '{key_name}"
+"' がありません"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
