@@ -13,7 +13,7 @@ def about_window(win):
         application_icon = info.application_id,
         license_type     = Gtk.License.AGPL_3_0,
         version          = info.version,
-        developer_name   = "Mazhar Hussain",
+        developer_name   = C_("Name of Developer", "Mazhar Hussain"),
         copyright = _("Copyright 2021-2022 Mazhar Hussain"),
         website   = "https://realmazharhussain.github.io/gdm-settings",
         developers  = [mazhar_hussain],
