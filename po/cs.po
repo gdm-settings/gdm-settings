@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-10 17:06+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"PO-Revision-Date: 2022-11-11 18:47+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -281,23 +281,19 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Fixed developer name in about window not being translated"
-msgstr ""
+msgstr "Opraveno nepřeložené jméno vývojáře v okně o aplikaci"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgstr "Opraveno, že někdy nelze změnit obrázek loga"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
 msgstr ""
-"Opravena nefunkčnost funkce \"Použít aktuální nastavení displeje\" v "
-"systémech Ubuntu a Ubuntu podobných systémech"
+"Správně opravená funkce \"Použít aktuální nastavení displeje\" nefungující "
+"na některých systémech s Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
