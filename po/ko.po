@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-26 12:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
 "PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -140,8 +140,8 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
-"시스템 전원 버튼을 눌렀을 때 수행할 작업입니다. 이 작업은 가상 머신(전원 "
-"끄기) 및 태블릿(절전 모드)에서 하드 코딩되고 설정은 무시됩니다."
+"시스템 전원 버튼을 눌렀을 때 수행할 작업입니다. 이 작업은 가상 머신(전원 끄"
+"기) 및 태블릿(절전 모드)에서 하드 코딩되고 설정은 무시됩니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -194,8 +194,8 @@ msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
-"배터리 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 "
-"하는 시간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
+"배터리 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 하"
+"는 시간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
@@ -210,8 +210,8 @@ msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
-"AC 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 하는 "
-"시간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
+"AC 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 하는 시"
+"간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -266,69 +266,91 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
+"용\"기능 수정됨"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "추가된 전원 설정"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr "전역 메뉴에서 설정의 가져오기/내보내기 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "환영 메시지를 확대하는 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added color to command-line output"
 msgstr "명령줄 출력에 색상 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr "기본 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr "팝업 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "\"정보\" 창이 새 스타일로 업데이트되됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "환영 메시지 입력 필드의 스타일 개선됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "사이드바 섹션 이름이 \"기타\"에서 \"로그인 화면\"으로 변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
-msgstr "전역 메뉴 옵션 이름을 \"사용자 설정 가져오기\"에서 \"세션 설정 불러오기\"로 "
+msgstr ""
+"전역 메뉴 옵션 이름을 \"사용자 설정 가져오기\"에서 \"세션 설정 불러오기\"로 "
 "변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
-"앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 "
-"존재하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
+"앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 존재"
+"하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
-msgstr "우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 "
-"적용\"기능 수정됨"
+msgstr ""
+"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
+"용\"기능 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "번역이 존재하더라도 번역되지 않은 일부 텍스트가 표시되는 문제 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "일부 오타 수정됨"
 
@@ -447,7 +469,7 @@ msgstr "내보내지 못했습니다. 권한이 거부되었습니다"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "내보내지 못했습니다. 해당 이름의 디렉터리가 이미 있습니다"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -925,11 +947,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"현재 디스플레이 설정을 적용하기 위해서는 '$XDG_CONFIG_HOME/monitors.xml' "
-"파일이 필요하지만 존재하지 않습니다.\n"
+"현재 디스플레이 설정을 적용하기 위해서는 '$XDG_CONFIG_HOME/monitors.xml' 파일"
+"이 필요하지만 존재하지 않습니다.\n"
 "\n"
-"해당 파일을 자동으로 생성하려면 시스템의 '설정'을 열고 거기에서 몇몇의 "
-"디스플레이 옵션을 변경하십시오."
+"해당 파일을 자동으로 생성하려면 시스템의 '설정'을 열고 거기에서 몇몇의 디스플"
+"레이 옵션을 변경하십시오."
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
@@ -961,7 +983,8 @@ msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습�
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr "'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
+msgstr ""
+"'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
@@ -1004,17 +1027,17 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -1063,19 +1086,22 @@ msgstr "설정을 적용하지 못했습니다"
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 "
-"주십시오."
+msgstr ""
+"적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 주십"
+"시오."
 
 #: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "적용되지 않았습니다. 선택한 로고 이미지를 찾을 수 없습니다. 다시 선택해 "
-"주십시오."
+msgstr ""
+"적용되지 않았습니다. 선택한 로고 이미지를 찾을 수 없습니다. 다시 선택해 주십"
+"시오."
 
 #: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr "다시 로그인하거나 재부팅할 때까지 시스템이 이상하거나 버그가 있는 것처럼 "
-"보일 수 있습니다."
+msgstr ""
+"다시 로그인하거나 재부팅할 때까지 시스템이 이상하거나 버그가 있는 것처럼 보"
+"일 수 있습니다."
 
 #: src/window.py:159
 msgid "Log Out?"

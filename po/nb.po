@@ -5,12 +5,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-26 12:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
 "PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
-"gdm-settings/language-names/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/gdm-"
+"settings/language-names/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -294,44 +294,60 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "La til effektstyringsinnstillinger"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "La til alternativer for import/eksport av innstillinger i den globale menyen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "La til alternativ for å gjøre velkomstmeldingen større"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added color to command-line output"
 msgstr "La til farge for kommandolinjeutdata"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr "Gjorde hovedvinduet tilpasningsdyktig"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Gjorde oppsprettsdialoger tilpasningsdyktige"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 #, fuzzy
 msgid "Updated \"about\" window to the new style"
 msgstr "Oppdatert «Om»-vindu til ny stil"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "Forbedret stil for velkomstmeldingens inndatafelt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Endret sidenavnsdelen «Ymse» til «Innloggingsskjerm»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -339,7 +355,7 @@ msgstr ""
 "Endret globalt menyvalg «Importer brukerinnstillinger» til «Last inn "
 "øktinnstillinger»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 #, fuzzy
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
@@ -349,7 +365,7 @@ msgstr ""
 "Programmet viser nå en merknad om feil ved forsøk på å bruke innstillinger "
 "hvis logo er påslått og valgt logobildet ikke finnes på systemet."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 #, fuzzy
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
@@ -357,11 +373,11 @@ msgid ""
 msgstr ""
 "Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "Fikset noe tekst som ble vist uoversatt selv om de var oversatt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "Fikset noen skrivefeil"
 
@@ -492,7 +508,7 @@ msgstr "Klarte ikke å eksportere. Mangler tilgang."
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Klarte ikke å eksportere. En mappe med det navnet finnes allerede."
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -1063,17 +1079,17 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bruker GResource-innstilling for Ubuntu …"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bruker GResource-innstillinger for systemer som ikke er Ubuntu …"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

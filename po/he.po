@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-26 12:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
 "PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -273,49 +273,69 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו ומערכות "
+"דמויות אובונטו"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "הוספת הגדרות צריכת חשמל"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr "נוספה אפשרות לייבא/לייצא הגדרות בתפריט הכללי"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "נוספה אפשרות להגדיל את הודעת קבלת הפנים"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added color to command-line output"
 msgstr "נוסף צבע לפלט שורת הפקודה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr "החלון הראשי מסתגל מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr "החלוניות הקופצות מסתגלות מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "חלון „על אודות” עודכן לסגנון החדש"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "סגנון שדה הקלט בהודעת קבלת הפנים השתפר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "שם הסעיף „שונות” בסרגל הצד הוחלף לשם „מסך כניסה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 "שם האפשרות „ייבוא הגדרות משתמש” בתפריט הכללי התחלף לשם „טעינת הגדרות הפעלה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -324,7 +344,7 @@ msgstr ""
 "היישום מציג מעתה התראת שגיאה כעת ניסיון להחלת הגדרות עם לוגו מופעל ותמונת "
 "הלוגו שנבחרה לא קיימת עוד במערכת"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -332,11 +352,11 @@ msgstr ""
 "תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו ומערכות "
 "דמויות אובונטו"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "תוקן מצב שטקסט מופיע לא מתורגם אפילו אם יש תרגום"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "תוקנות תקלדות"
 
@@ -455,7 +475,7 @@ msgstr "הייצוא נכשל. שגיאת הרשאות"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "הייצוא נכשל. כבר קיימת תיקייה בשם הזה"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
@@ -1010,17 +1030,17 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource חלות על אובונטו…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"

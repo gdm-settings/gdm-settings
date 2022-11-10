@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-26 12:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
 "PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -189,8 +189,8 @@ msgstr "Indique si l’écran doit être vide lorsque la session est inactive"
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Indique si l’écran doit être éteint pour économiser de l’énergie lorsque l’"
-"ordinateur est inactif."
+"Indique si l’écran doit être éteint pour économiser de l’énergie lorsque "
+"l’ordinateur est inactif."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
@@ -295,45 +295,65 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
+"actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "Ajout de paramètres d’énergie"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Ajout d’options pour importer / exporter les paramètres dans le menu "
 "principal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "Ajout d’une option pour agrandir le message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added color to command-line output"
 msgstr "Ajout d’une couleur pour le résultat en ligne de commande"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr "Fenêtre principale rendue adaptative"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Boîtes de dialogues contextuels rendues adaptatives"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "Mise à jour de la fenêtre « À propos » vers le nouveau style"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "Amélioration du style du champ de saisie du message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Section de la barre latérale « Divers » renommée en « Écran de connexion »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -341,17 +361,17 @@ msgstr ""
 "L’option du menu global « Importer les paramètres de l’utilisateur » a été "
 "renommée « Charger les paramètres de la session »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 "Affichage d’une notification d’erreur pour toute tentative d’appliquer les "
-"paramètres avec le logo activé, lorsque l’image du logo sélectionnée n’"
-"existe plus sur le système"
+"paramètres avec le logo activé, lorsque l’image du logo sélectionnée "
+"n’existe plus sur le système"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -359,13 +379,13 @@ msgstr ""
 "Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
 "actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Correction de textes qui étaient affichés non traduits alors qu’une "
 "traduction existait"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "Correction de fautes de frappe"
 
@@ -489,7 +509,7 @@ msgstr "Échec de l’exportation. Permission refusée"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Échec de l’exportation. Un répertoire avec ce nom existe déjà"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -1036,8 +1056,8 @@ msgstr "Le fichier importé n’a pas de section « {section_name} »"
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
-"Le fichier importé n’a pas la clé « {key_name} » dans la section « "
-"{section_name} »"
+"Le fichier importé n’a pas la clé « {key_name} » dans la section "
+"« {section_name} »"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
@@ -1048,17 +1068,17 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

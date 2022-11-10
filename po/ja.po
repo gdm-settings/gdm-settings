@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-26 12:26+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
 "PO-Revision-Date: 2022-11-05 11:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -159,7 +159,8 @@ msgstr "バッテリー残量低下時に省電力プロファイルを有効に
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
-msgstr "power-profiles-daemon を使用して、バッテリー残量低下時に自動的に \"省電力\" "
+msgstr ""
+"power-profiles-daemon を使用して、バッテリー残量低下時に自動的に \"省電力\" "
 "プロファイルを有効にします。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
@@ -168,7 +169,8 @@ msgstr "無操作状態が一定時間続いた場合に画面を暗くする"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
-msgstr "コンピューターが操作されていない場合に、画面を暗くして電力を節約します。"
+msgstr ""
+"コンピューターが操作されていない場合に、画面を暗くして電力を節約します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -177,7 +179,8 @@ msgstr "無操作状態が一定時間続いた場合に画面をオフにする
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr "コンピューターが操作されていない場合に、画面をオフにして電力を節約します。"
+msgstr ""
+"コンピューターが操作されていない場合に、画面をオフにして電力を節約します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
@@ -269,66 +272,82 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "電源の設定を追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
-msgstr "グローバルメニューに設定をインポート／エクスポートできるオプションを追加"
+msgstr ""
+"グローバルメニューに設定をインポート／エクスポートできるオプションを追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "ようこそメッセージを拡大表示できるオプションを追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added color to command-line output"
 msgstr "コマンドライン出力を色付きで表示するように変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "\"\"ログイン画面の設定\" について\" ウィンドウを新しいスタイルに更新"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "ようこそメッセージの入力欄のスタイルを改善"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "サイドバーの \"そのほか\" セクションを \"ログイン画面\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
-msgstr "グローバルメニューのオプション \"ユーザー設定をインポート\" を "
-"\"セッション設定を読み込み\" に名称変更"
+msgstr ""
+"グローバルメニューのオプション \"ユーザー設定をインポート\" を \"セッション設"
+"定を読み込み\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr ""
 
@@ -448,7 +467,7 @@ msgstr "エクスポートできませんでした。許可がありません"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "エクスポートできませんでした。同名のディレクトリがすでに存在します"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -927,8 +946,8 @@ msgstr ""
 "現在のディスプレイ設定を適用するには、現在存在しない '$XDG_CONFIG_HOME/"
 "monitors.xml' ファイルが必要です。\n"
 "\n"
-"このファイルを自動的に作成するには、システムの '設定' "
-"アプリを開き、どれでもよいので何か設定を変更してください。"
+"このファイルを自動的に作成するには、システムの '設定' アプリを開き、どれでも"
+"よいので何か設定を変更してください。"
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
@@ -961,7 +980,8 @@ msgstr "ファイル '{filename}' に書き込めません。許可がありま�
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr "ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
+msgstr ""
+"ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
@@ -982,8 +1002,9 @@ msgstr "インポートされたファイルを解析できませんでした"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "インポートされたファイルを読み込めませんでした。UTF-8 "
-"でエンコードされていません"
+msgstr ""
+"インポートされたファイルを読み込めませんでした。UTF-8 でエンコードされていま"
+"せん"
 
 #: src/settings.py:107
 #, python-brace-format
@@ -994,8 +1015,9 @@ msgstr "インポートされたファイルには、セクション '{section_n
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr "インポートされたファイルには、セクション '{section_name}' にキー '{key_name}"
-"' がありません"
+msgstr ""
+"インポートされたファイルには、セクション '{section_name}' にキー "
+"'{key_name}' がありません"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
@@ -1006,17 +1028,17 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu に適用しています…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
@@ -1065,16 +1087,19 @@ msgstr "設定を適用できませんでした"
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "適用できません。選択された背景画像が存在しません。再度選択してください。"
+msgstr ""
+"適用できません。選択された背景画像が存在しません。再度選択してください。"
 
 #: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "適用できません。選択されたロゴ画像が存在しません。再度選択してください。"
+msgstr ""
+"適用できません。選択されたロゴ画像が存在しません。再度選択してください。"
 
 #: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr "再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
+msgstr ""
+"再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
 
 #: src/window.py:159
 msgid "Log Out?"
