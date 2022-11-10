@@ -1,4 +1,5 @@
 import os
+import logging
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..info import data_dir
@@ -83,7 +84,9 @@ class DisplayPageContent (PageContent):
                 message = _("Failed to apply current display settings")
             toast = Adw.Toast(timeout=2, priority="high", title=message)
             self.window.toast_overlay.add_toast(toast)
-        except FileNotFoundError:
+        except FileNotFoundError as err:
+            logging.debug(f"{err.strerror}: '{err.filename}'")
+
             message = _(
                         "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current"
                         " display settings but it does not exist.\n"
