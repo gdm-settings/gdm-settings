@@ -22,13 +22,16 @@ for data_dir in env.HOST_DATA_DIRS:
         break
 
 if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
-    from .utils import version
-    if version(env.OS_VERSION_ID) >= version('21.10'):
+    if os.path.exists(env.HOST_ROOT+'/usr/share/gnome-shell/gdm-theme.gresource'):
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
     else:
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm3-theme.gresource'
-if 'debian' in [env.OS_ID] + env.OS_ID_LIKE.split():
-    GdmUsername = 'Debian-gdm'
+
+with open(env.HOST_ROOT+'/etc/passwd') as passwd_db:
+    for line in passwd_db:
+        if line.startswith('Debian-gdm'):
+            GdmUsername = 'Debian-gdm'
+            break
 
 
 def is_unmodified(gresourceFile:str):

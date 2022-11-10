@@ -82,6 +82,15 @@
   </screenshots>
 
   <releases>
+    <release version="2.beta.1" date="2022-11-10">
+      <description>
+        <ul>
+          <li>Fixed developer name in about window not being translated</li>
+          <li>Fixed not being able to change logo image sometimes</li>
+          <li>Properly fixed "Apply Current Display Settings" feature not working on some Ubuntu-based systems</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.beta.0" date="2022-10-26">
       <description>
         <ul>

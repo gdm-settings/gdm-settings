@@ -345,16 +345,12 @@ class SettingsManager (GObject.Object):
         # SELinux context/label where applicable and prevents breakage of GDM in such situations.
         if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Applying GResource settings for Ubuntu …"))
-            self.command_elevator.add(f"cp {compiled_file} {gr_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chown root: {gr_utils.CustomGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {gr_utils.CustomGresourceFile}")
+            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}")
             self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
             self.command_elevator.add(f'update-alternatives --quiet --set {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
         else:
             logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(f"cp {compiled_file} {gr_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
+            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.ShellGresourceFile}")
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -511,15 +507,14 @@ class SettingsManager (GObject.Object):
             from shutil import copy
             logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
             copy(logo_file, logo_temp)
-            self.command_elevator.add(f"cp -fT '{logo_temp}' '{logo}'")
+            self.command_elevator.add(f"install -m644 '{logo_temp}' -T '{logo}'")
 
         overriding_files = self.get_overriding_files()
         if overriding_files:
             self.command_elevator.add(['rm', *overriding_files])
 
-        self.command_elevator.add(f"mkdir -p '{gdm_conf_dir}' '{gdm_profile_dir}'")
-        self.command_elevator.add(f"cp -f '{temp_conf_path}' -t '{gdm_conf_dir}'")
-        self.command_elevator.add(f"cp -fT '{temp_profile_path}' '{gdm_profile_path}'")
+        self.command_elevator.add(f"install -Dm644 '{temp_conf_path}' -t '{gdm_conf_dir}'")
+        self.command_elevator.add(f"install -Dm644 '{temp_profile_path}' -T '{gdm_profile_path}'")
         self.command_elevator.add("dconf update")
 
     def apply_settings(self) -> bool:
