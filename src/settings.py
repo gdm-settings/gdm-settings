@@ -565,11 +565,8 @@ class SettingsManager (GObject.Object):
                                  ])
 
         self.command_elevator.add(['install', '-Dm644',
+                                   '-o', gr_utils.GdmUsername,
                                    temp_monitors_xml,
-                                   f'~{gr_utils.GdmUsername}/.config/monitors.xml',
-                                 ])
-
-        self.command_elevator.add(['chown', f'{gr_utils.GdmUsername}:',
                                    f'~{gr_utils.GdmUsername}/.config/monitors.xml',
                                  ])
 
