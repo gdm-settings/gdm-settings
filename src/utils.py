@@ -27,12 +27,6 @@ def listdir_recursive(directory):
     return files
 
 
-def version(string, /):
-    '''Return a tuple that represents a program version number'''
-
-    return tuple(int(segment) for segment in string.split('.'))
-
-
 def run_on_host(command, *args, **kwargs):
     from subprocess import run
 
