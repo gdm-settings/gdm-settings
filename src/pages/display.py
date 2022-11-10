@@ -87,13 +87,11 @@ class DisplayPageContent (PageContent):
         except FileNotFoundError as err:
             logging.debug(f"{err.strerror}: '{err.filename}'")
 
-            message = _(
-                        "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current"
+            message = _("'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current"
                         " display settings but it does not exist.\n"
                         "\n"
                         "In order to create that file automatically, open system 'Settings'"
-                        " and change some display options there."
-                       )
+                        " and change some display options there.")
 
             dialog = Adw.MessageDialog(
                         body = message,
