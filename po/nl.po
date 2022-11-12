@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-12 13:13+0500\n"
-"PO-Revision-Date: 2022-11-11 18:47+0000\n"
+"PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -288,10 +288,8 @@ msgid "Updated screenshots"
 msgstr "Bijgewerkt: schermfoto's"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "New Translations:"
 msgid "Updated translations"
-msgstr "Nieuwe vertalingen:"
+msgstr "De vertalingen zijn bijgewerkt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
