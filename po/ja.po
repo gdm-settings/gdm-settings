@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-09-19 18:16+0000\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-11-05 11:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -140,7 +140,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "電源ボタンの挙動"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -148,37 +148,43 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"システムの電源ボタンが押されたときの挙動です。この挙動は仮想マシンでは電源オ"
+"フ、タブレットではサスペンドに固定されているため、設定は無視されます。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "バッテリー残量低下時に省電力プロファイルを有効にする"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"power-profiles-daemon を使用して、バッテリー残量低下時に自動的に \"省電力\" "
+"プロファイルを有効にします。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に画面を暗くする"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"コンピューターが操作されていない場合に、画面を暗くして電力を節約します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に画面をオフにする"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"コンピューターが操作されていない場合に、画面をオフにして電力を節約します。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "無操作状態と判断するまでの時間"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -250,7 +256,7 @@ msgstr "ログインマネージャーの設定"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "ログイン画面をカスタマイズします"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -266,67 +272,82 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "設定をリセット"
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added options to import/export settings in the global menu"
+msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Added an option to enlarge welcome message"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Added power settings"
+msgstr "電源の設定を追加"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+msgid "Added options to import/export settings in the global menu"
+msgstr ""
+"グローバルメニューに設定をインポート／エクスポートできるオプションを追加"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+msgid "Added an option to enlarge welcome message"
+msgstr "ようこそメッセージを拡大表示できるオプションを追加"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr "コマンドライン出力を色付きで表示するように変更"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "\"\"ログイン画面の設定\" について\" ウィンドウを新しいスタイルに更新"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "ようこそメッセージの入力欄のスタイルを改善"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "サイドバーの \"そのほか\" セクションを \"ログイン画面\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"グローバルメニューのオプション \"ユーザー設定をインポート\" を \"セッション設"
+"定を読み込み\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr ""
 
@@ -374,20 +395,14 @@ msgstr ""
 "す。"
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -406,23 +421,19 @@ msgstr "依存関係が不足しています"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:222
 msgid "Settings reloaded"
 msgstr "設定を再読み込みしました"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "設定を正常に適用しました"
+msgstr "セッションの設定を正常に読み込みました"
 
 #: src/app.py:234
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Flatpak 版は、ユーザー設定のインポートに対応していません"
+msgstr "Flatpak 版では、セッションの設定の読み込みには対応していません"
 
 #: src/app.py:247
 msgid "Reset settings successfully"
@@ -434,50 +445,41 @@ msgstr "設定をリセットできませんでした"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "インポート"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "設定を正常に適用しました"
+msgstr "設定を正常にファイルからインポートしました"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "インポートできませんでした。ファイルが無効です"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "設定を正常に適用しました"
+msgstr "設定を正常にエクスポートしました"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "エクスポートできませんでした。許可がありません"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "エクスポートできませんでした。同名のディレクトリがすでに存在します"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -535,12 +537,10 @@ msgid "Apply current display settings"
 msgstr "現在のディスプレイ設定を適用"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "解像度、リフレッシュレート、画面配置など"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "適用"
 
@@ -623,10 +623,8 @@ msgid "Refresh"
 msgstr "再読み込み"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "ユーザー設定をインポート"
+msgstr "セッションの設定を読み込み"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -634,11 +632,11 @@ msgstr "設定をリセット"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "ファイルからインポート"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "ファイルにエクスポート"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -678,13 +676,11 @@ msgstr "ようこそメッセージ"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "拡大表示"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "ようこそメッセージ"
+msgstr "メッセージ"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -740,80 +736,76 @@ msgstr "入力中は無効にする"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "電源ボタンの挙動"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "何もしない"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "サスペンド"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "ハイバーネート"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "確認する"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "自動"
+msgstr "自動省電力機能"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "バッテリー残量低下時に省電力機能を有効にします。"
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "画面を暗くする"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "コンピューターが無操作状態になったら、画面輝度を下げます。"
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "画面をオフにする"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に、画面をオフにします。"
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "時間"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "画面がオフになるまでの時間 (分単位)。"
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "自動"
+msgstr "自動サスペンド"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "無操作状態が一定時間続いた場合に、コンピューターを一時停止します。"
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "バッテリー電源時"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "コンピューターがサスペンドするまでの時間 (分単位)。"
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "電源接続時"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -907,7 +899,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 時制"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "電源"
 
@@ -927,7 +919,7 @@ msgstr "(なし)"
 msgid "Choose"
 msgstr "選択"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -944,16 +936,6 @@ msgid "Failed to apply current display settings"
 msgstr "現在のディスプレイ設定を適用できませんでした"
 
 #: src/pages/display.py:88
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -961,14 +943,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"現在のディスプレイ設定を適用するには、現在存在しないファイル "
-"'$XDG_CONFIG_HOME/monitors.xml' が必要です。\n"
+"現在のディスプレイ設定を適用するには、現在存在しない '$XDG_CONFIG_HOME/"
+"monitors.xml' ファイルが必要です。\n"
 "\n"
-"このファイルを自動で作成するには、以下の操作を行ってください。\n"
-"\n"
-"1. システム設定の 'ディスプレイ' パネルに移動します。\n"
-"2. どれでもよいので、何か設定を変更します。\n"
-"3. 適用します。"
+"このファイルを自動的に作成するには、システムの '設定' アプリを開き、どれでも"
+"よいので何か設定を変更してください。"
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
@@ -989,12 +968,12 @@ msgstr "デフォルトテーマを復元できませんでした"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "ファイル '{filename}' にエクスポートしています"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "ファイル '{filename}' に書き込めません。許可がありません"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -1002,40 +981,43 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "標準出力にエクスポートしています"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "ファイル '{filename}' からインポートしています"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "標準入力からインポートしています"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "設定をリセットできませんでした"
+msgstr "インポートされたファイルを解析できませんでした"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
+"インポートされたファイルを読み込めませんでした。UTF-8 でエンコードされていま"
+"せん"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "インポートされたファイルには、セクション '{section_name}' がありません"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"インポートされたファイルには、セクション '{section_name}' にキー "
+"'{key_name}' がありません"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
@@ -1046,97 +1028,84 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu に適用しています…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "外観"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "フォント"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "トップバー"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "サウンド"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "マウスとタッチパッド"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "ログイン画面"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "ツール"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "設定を正常に適用しました"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "設定を適用できませんでした"
 
-#: src/window.py:138
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
-"い。"
+"適用できません。選択された背景画像が存在しません。再度選択してください。"
 
-#: src/window.py:142
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"適用できません。選択された背景画像が見つかりませんでした。再度選択してくださ"
-"い。"
+"適用できません。選択されたロゴ画像が存在しません。再度選択してください。"
 
-#: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "ログアウトしますか？"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "ログアウト"
 

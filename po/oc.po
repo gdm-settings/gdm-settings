@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-09-17 14:17+0000\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-11-01 19:32+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -140,7 +140,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Accion del boton d’alimentacion"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -148,24 +148,31 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"L’accion a menar quand lo boton d’alimentacion del sistèma es quichat. "
+"L’accion es codada en dur (e lo paramètre ignorat) sus las maquinas "
+"virtualas (atudar) e las tauletas (mesa en velha)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Activar lo perfil d’estalvi d’energia quand la batariá es febla"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Activar automaticament lo perfil d’estalvi d’energia en utilizant lo paquet "
+"gnome-settings-daemon quand la batariá es febla."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Escuresir l’ecran aprèp un periòde d’inactivitat"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Indica se l’ecran deu s’escuresir per estalviar d’energia quand l’ordenador "
+"es inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -178,12 +185,14 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Durada abans que se considèra la session coma inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"Lo nombre de minutas d’inactivitat abans de considerar una session coma "
+"inactiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -191,7 +200,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "Temps abans la mesa en velha de l'ordenador sus batariá"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -251,7 +260,7 @@ msgstr "Paramètres del gestionari de fenèstra de connexion"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalizatz l’ecran de connexion"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -268,69 +277,81 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "Reïnicializar los paramètres"
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added options to import/export settings in the global menu"
+msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Added power settings"
+msgstr "Paramètres d’alimentacion aponduts"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+msgid "Added options to import/export settings in the global menu"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Correccions d’unas decas"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -377,20 +398,14 @@ msgstr ""
 "corrèctament, mas son pas installats."
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "• <b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -409,17 +424,15 @@ msgstr "Dependéncias absentas"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "D’acòrdi"
 
 #: src/app.py:222
 msgid "Settings reloaded"
 msgstr "Paramètres recargats"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres de session corrèctament cargats"
 
 #: src/app.py:234
 #, fuzzy
@@ -439,23 +452,19 @@ msgstr "Fracàs en reïnicializant los paramètres"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres importats corrèctament del fichièr"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
 msgstr ""
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Paramètres aplicats corrèctament"
+msgstr "Paramètres importats corrèctament"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
@@ -465,24 +474,19 @@ msgstr ""
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -545,7 +549,7 @@ msgstr "Aplicar los paramètres d’afichatge actuals"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc"
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -628,10 +632,8 @@ msgid "Refresh"
 msgstr "Refrescar"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Importar paramètres de l’utilizaire"
+msgstr "Cargar paramètres de l’utilizaire"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -639,11 +641,11 @@ msgstr "Reïnicializar los paramètres"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importar d’un fichièr"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportar dins un fichièr"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -683,13 +685,11 @@ msgstr "Messatge de benvenguda"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Agrandir"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Messatge de benvenguda"
+msgstr "Messatge"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -748,36 +748,32 @@ msgid "Power Button Behavior"
 msgstr ""
 
 #: src/blueprints/power-page.blp:13
-#, fuzzy
-#| msgid "Nothing"
 msgid "Do Nothing"
-msgstr "Res"
+msgstr "Far pas res"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Metre en velha"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Ibernar"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Demandar"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automatic"
+msgstr "Estalviador d’energia automatic"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Activar l’estalviador d’energia quand la batariá es febla."
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Escuresir l’ecran"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -785,7 +781,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Atudar l’ecran"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -794,17 +790,15 @@ msgstr ""
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Relambi"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
 msgstr ""
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automatic"
+msgstr "Velha automatica"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
@@ -812,7 +806,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "Sus batariá"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
@@ -820,7 +814,7 @@ msgstr ""
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "Sul sector"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -914,7 +908,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 oras"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Energia"
 
@@ -934,7 +928,7 @@ msgstr "(Pas cap)"
 msgid "Choose"
 msgstr "Causir"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "Anullar"
 
@@ -1023,10 +1017,8 @@ msgid "Importing from standard input"
 msgstr ""
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Fracàs en reïnicializant los paramètres"
+msgstr "Fracàs de l'analisi del fichièr d’import"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -1052,85 +1044,77 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicacions des paramètres GResource per Ubuntu…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Aparéncia"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Poliças"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Barra superiora"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Son"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Mirga & pavat tac­til"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Afichatge"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "Ecran de connexion"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Aisinas"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "Paramètres aplicats corrèctament"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "Fracàs de l’aplicacion dels paramètres"
 
-#: src/window.py:138
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
-"un autre."
+"S’es pas aplicat. L’imatge de fons causit existís pas pus. Mercés de ne "
+"causir un autre."
 
-#: src/window.py:142
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"S’es pas aplicat. Impossible de trobar l’imatge de fons. Mercés de ne causir "
-"un autre."
+"S’es pas aplicat. Lo logotipe causit existís pas pus. Mercés de ne causir un "
+"autre."
 
-#: src/window.py:148
+#: src/window.py:154
 #, fuzzy
 #| msgid ""
 #| "The system may start to look weird/buggy untill you re-login or reboot."
@@ -1139,11 +1123,11 @@ msgstr ""
 "Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
 "connectar o reavietz."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "Se desconnectar ?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Desconnexion"
 

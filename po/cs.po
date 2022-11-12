@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-25 14:06+0000\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-11-11 18:47+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -280,39 +280,59 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr "Opraveno nepřeložené jméno vývojáře v okně o aplikaci"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Opraveno, že někdy nelze změnit obrázek loga"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"Správně opravená funkce \"Použít aktuální nastavení displeje\" nefungující "
+"na některých systémech s Ubuntu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "Přidáno nastavení výkonu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr "Přidány možnosti pro import/export nastavení v globální nabídce"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "Přidána možnost zvětšit uvítací zprávu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr "Přidána barva do výstupu příkazového řádku"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr "Přepnuto na adaptivní hlavní okno"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Vyskakovací dialogová okna jsou adaptivní"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "Aktualizace okna \"O aplikaci\" na nový styl"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "Vylepšený styl vstupního pole uvítací zprávy"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Přejmenování sekce postranního panelu \"Různé\" na \"Přihlašovací obrazovka\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -320,7 +340,7 @@ msgstr ""
 "Přejmenování možnosti globální nabídky \"Importovat uživatelská nastavení\" "
 "na \"Načíst nastavení relace\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -329,11 +349,7 @@ msgstr ""
 "Aplikace nyní při pokusu o použití nastavení zobrazuje chybové hlášení, "
 "pokud je povoleno logo a zvolený obrázek loga již v systému neexistuje"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr "Barevný výstup příkazového řádku"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -341,12 +357,12 @@ msgstr ""
 "Opravena nefunkčnost funkce \"Použít aktuální nastavení displeje\" v "
 "systémech Ubuntu a Ubuntu podobných systémech"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Opraveno zobrazování některých textů bez překladu, i když překlad existoval"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "Opraveno několik překlepů"
 
@@ -468,7 +484,7 @@ msgstr "Nepodařilo se exportovat. Oprávnění odepřeno"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Nepodařilo se exportovat. Adresář s tímto názvem již existuje"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -541,7 +557,7 @@ msgstr "Použít současná nastavení displeje"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Rozlišení, obnovovací frekvence, pozice monitoru atd."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Použít"
 
@@ -900,7 +916,7 @@ msgstr "12 hodinový"
 msgid "24 Hours"
 msgstr "24 hodinový"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Napájení"
 
@@ -920,7 +936,7 @@ msgstr "(Žádné)"
 msgid "Choose"
 msgstr "Vybrat"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "Zrušit"
 
@@ -1025,85 +1041,85 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Použití nastavení GResource pro Ubuntu …"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Použití nastavení GResource pro systémy jiné než Ubuntu …"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Obnovení nastavení GResource pro Ubuntu …"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Obnovení nastavení GResource pro systémy jiné než Ubuntu …"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Písma"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Horní lišta"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Zvuk"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Myš a touchpad"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Displej"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr "Přihlašovací obrazovka"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Nástroje"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "Nastavení úspěšně použita"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "Nepodařilo se použít nastavení"
 
-#: src/window.py:138
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Neplatí. Vybraný obrázek na pozadí již neexistuje. Prosím! zvolte znovu."
 
-#: src/window.py:142
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Nepoužije se. Vybraný obrázek loga již neexistuje. Prosím! vybrat znovu."
 
-#: src/window.py:148
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Systém může začít vypadat divně/chybově, dokud se znovu nepřihlásíte nebo "
 "nerestartujete."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "Odhlásit se?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Odhlásit se"
 

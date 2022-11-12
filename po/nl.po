@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-25 14:06+0000\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-11-11 18:47+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -284,43 +284,65 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+"Opgelost: de naam van de ontwikkelaar werd niet vertaald in het venster "
+"‘Over’"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Opgelost: het logo kon soms niet worden gewijzigd"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
+"afgeleiden"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "Nieuw: energie-instellingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Nieuw: opties voor het im- en exporteren van voorkeuren in het hoofdmenu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
 msgstr "Nieuw: optie om het welkomstbericht te vergroten"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr "Nieuw: kleuren in opdrachtregeluitvoer"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
 msgstr ""
 "Nieuw: de inhoud van het hoofdvenster wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 "Nieuw: de inhoud van meldingsvensters wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
 msgstr "Bijgewerkt: het venster ‘Over’ heeft een nieuwe vormgeving"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
 msgstr "Bijgewerkt: het invoerveld bij het welkomstbericht"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Verbeterd: de zijbalksectie ‘Overig’ heet voortaan ‘Aanmeldscherm’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -328,7 +350,7 @@ msgstr ""
 "Verbeterd: de hoofdmenu-optie ‘Gebruikersvoorkeuren importeren’ heet "
 "voortaan ‘Sessievoorkeuren laden’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -337,11 +359,7 @@ msgstr ""
 "Verbeterd: er wordt voortaan een foutmelding getoond bij het toepassen van "
 "voorkeuren met een logo terwijl het logo niet meer beschikbaar is"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr "Verbeterd: kleuren in opdrachtregeluitvoer"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -349,13 +367,13 @@ msgstr ""
 "Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
 "afgeleiden"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Opgelost: sommige tekst werd in het Engels getoond terwijl er wel een "
 "vertaling beschikbaar was"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
 msgstr "Opgelost: enkele typfouten"
 
@@ -477,7 +495,7 @@ msgstr "Het exporteren is mislukt omdat de juiste rechten ontbreken"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Het exporteren is mislukt omdat er al een map is met die naam"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -550,7 +568,7 @@ msgstr "Huidige beeldscherminstellingen toepassen"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolutie, ververssnelheid, schermposities, etc."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Toepassen"
 
@@ -909,7 +927,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 uur"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Energie"
 
@@ -929,7 +947,7 @@ msgstr "(Geen)"
 msgid "Choose"
 msgstr "Kiezen"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -1041,62 +1059,62 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Vormgeving"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Lettertypen"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Bovenbalk"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Geluid"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Muis en touchpad"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr "Aanmeldscherm"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Hulpmiddelen"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "De voorkeuren zijn ingesteld"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "De voorkeuren kunnen niet worden ingesteld"
 
-#: src/window.py:138
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1104,24 +1122,24 @@ msgstr ""
 "De afbeelding is niet ingesteld omdat het bestand niet meer bestaat. Kies "
 "een andere afbeelding."
 
-#: src/window.py:142
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Het logo is niet ingesteld omdat het bestand niet meer bestaat. Kies een "
 "andere afbeelding."
 
-#: src/window.py:148
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
 "computer herstart."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "Afmelden?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Afmelden"
 

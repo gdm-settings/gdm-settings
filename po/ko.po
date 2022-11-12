@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-06 13:16+0000\n"
-"Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-10-27 05:45+0000\n"
+"Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
 "Language: ko\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -140,6 +140,8 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"시스템 전원 버튼을 눌렀을 때 수행할 작업입니다. 이 작업은 가상 머신(전원 끄"
+"기) 및 태블릿(절전 모드)에서 하드 코딩되고 설정은 무시됩니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -159,53 +161,57 @@ msgstr "일정 시간 사용하지 않으면 화면 밝기 줄이기"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
-msgstr ""
+msgstr "컴퓨터가 유휴 상태일 때 절전을 위해 화면을 어둡게 해야 하는 경우."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "세션이 유휴 상태일 때 화면을 비울지 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "컴퓨터가 유휴 상태일 때 전원을 절약하기 위해 화면을 비워야 하는 경우."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "세션이 유휴 상태가 되기까지의 시간"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "세션이 유휴 상태로 간주되기 전의 비활성 시간(분)입니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "비활성 상태 및 배터리 사용 시 절전모드 사용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "배터리 사용 시 컴퓨터 절전 시간 제한"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"배터리 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 하"
+"는 시간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "비활성 상태이고 전원이 연결되어 있을 때 절전모드 사용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "플러그인이 연결되어 있을 때 컴퓨터의 절전 시간 제한"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"AC 전원을 사용하는 컴퓨터가 절전 모드로 전환되기 전에 비활성화되어야 하는 시"
+"간(분)입니다. 값이 0이면 절전 모드로 전환되지 않습니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -244,7 +250,7 @@ msgstr "로그인 관리자 설정"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "로그인 화면 사용자 정의"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -260,69 +266,93 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "설정 리셋"
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added options to import/export settings in the global menu"
+msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
+"용\"기능 수정됨"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Added power settings"
+msgstr "추가된 전원 설정"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+msgid "Added options to import/export settings in the global menu"
+msgstr "전역 메뉴에서 설정의 가져오기/내보내기 옵션 추가됨"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "환영 메시지를 확대하는 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr "명령줄 출력에 색상 추가됨"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "기본 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "팝업 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "\"정보\" 창이 새 스타일로 업데이트되됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "환영 메시지 입력 필드의 스타일 개선됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "사이드바 섹션 이름이 \"기타\"에서 \"로그인 화면\"으로 변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"전역 메뉴 옵션 이름을 \"사용자 설정 가져오기\"에서 \"세션 설정 불러오기\"로 "
+"변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 존재"
+"하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
+"용\"기능 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+msgstr "번역이 존재하더라도 번역되지 않은 일부 텍스트가 표시되는 문제 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
-msgstr ""
+msgstr "일부 오타 수정됨"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -367,20 +397,14 @@ msgstr ""
 "이 앱이 제대로 작동하려면 다음 소프트웨어가 필요하지만 설치되지 않았습니다."
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>폴킷</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -399,7 +423,7 @@ msgstr "누락된 종속성"
 
 #: src/app.py:193 src/pages/display.py:103
 msgid "OK"
-msgstr ""
+msgstr "확인"
 
 #: src/app.py:222
 msgid "Settings reloaded"
@@ -423,50 +447,41 @@ msgstr "설정 리셋 실패"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "가져오기"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "설정이 성공적으로 적용되었습니다"
+msgstr "파일에서 설정을 성공적으로 가져왔습니다"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "가져오지 못했습니다. 파일이 잘못되었습니다"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "설정이 성공적으로 적용되었습니다"
+msgstr "설정을 성공적으로 내보냈습니다"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "내보내지 못했습니다. 권한이 거부되었습니다"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "내보내지 못했습니다. 해당 이름의 디렉터리가 이미 있습니다"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Copyright 2021-2022 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -529,7 +544,7 @@ msgstr "현재 디스플레이 설정 적용"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "해상도, 주사율, 모니터 위치 등."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "적용"
 
@@ -621,11 +636,11 @@ msgstr "설정 리셋"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "파일에서 가져오기"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "파일로 내보내기"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -725,82 +740,76 @@ msgstr "입력 도중 비활성화"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "전원 버튼 동작"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "아무것도 안함"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "절전"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "최대 절전"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "묻기"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "자동"
+msgstr "자동 절전 기능"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "배터리가 부족할 때 절전 모드를 활성화합니다."
 
 #: src/blueprints/power-page.blp:28
-#, fuzzy
-#| msgid "Login Screen"
 msgid "Dim Screen"
-msgstr "로그인 화면"
+msgstr "흐릿한 화면"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "컴퓨터가 비활성 상태일 때 화면 밝기를 줄입니다."
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "화면 끄기"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "일정 시간 사용하지 않으면 화면을 끌지 여부입니다."
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "지연시간"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "화면이 꺼지는 시간(분)입니다."
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "자동"
+msgstr "자동 절전모드"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "일정 기간 동안 사용하지 않으면 컴퓨터를 일시 중지합니다."
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "배터리 전원 켜기"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "컴퓨터가 절전모드로 되는 시간(분)입니다."
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "전원이 연결되었을 때"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -894,7 +903,7 @@ msgstr "오전/오후"
 msgid "24 Hours"
 msgstr "24시간"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "전원"
 
@@ -914,7 +923,7 @@ msgstr "(없음)"
 msgid "Choose"
 msgstr "선택"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "취소"
 
@@ -931,16 +940,6 @@ msgid "Failed to apply current display settings"
 msgstr "현재 디스플레이 설정 적용에 실패했습니다"
 
 #: src/pages/display.py:88
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -948,14 +947,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"현재 디스플레이 설정을 적용하려면 '$XDG_CONFIG_HOME/monitors.xml' 파일이 필요"
-"하지만 존재하지 않습니다.\n"
+"현재 디스플레이 설정을 적용하기 위해서는 '$XDG_CONFIG_HOME/monitors.xml' 파일"
+"이 필요하지만 존재하지 않습니다.\n"
 "\n"
-"해당 파일을 자동으로 생성하려면,\n"
-"\n"
-"1. 시스템 설정의 '디스플레이' 패널로 이동합니다.\n"
-"2. 일부 설정을 변경합니다.\n"
-"3. 적용합니다."
+"해당 파일을 자동으로 생성하려면 시스템의 '설정'을 열고 거기에서 몇몇의 디스플"
+"레이 옵션을 변경하십시오."
 
 #: src/pages/display.py:98
 msgid "Monitor Settings Not Found"
@@ -975,12 +971,12 @@ msgstr "기본 테마를 추출하지 못했습니다"
 #: src/settings.py:67
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "'{filename}' 파일로 내보내기"
 
 #: src/settings.py:72
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습니다"
 
 #: src/settings.py:76
 #, python-brace-format
@@ -988,40 +984,39 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
 
 #: src/settings.py:82
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "표준 출력으로 내보내는 중"
 
 #: src/settings.py:91
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "'{filename}' 파일에서 가져오는 중"
 
 #: src/settings.py:95
 msgid "Importing from standard input"
-msgstr ""
+msgstr "표준 입력에서 가져오는 중"
 
 #: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "설정 리셋 실패"
+msgstr "가져오기 파일을 구문 분석하지 못했습니다"
 
 #: src/settings.py:101
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "가져오기 파일을 읽지 못했습니다. UTF-8로 인코딩되지 않음"
 
 #: src/settings.py:107
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "가져온 파일에 '{section_name}' 섹션이 없습니다"
 
 #: src/settings.py:112
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없습니다"
 
 #: src/settings.py:299
 msgid "Backing up default shell theme …"
@@ -1032,98 +1027,87 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "모양새"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "글꼴"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "상단바"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "소리"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "마우스 & 터치패드"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "디스플레이"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr "로그인 화면"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "도구"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "설정이 성공적으로 적용되었습니다"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "설정을 적용하지 못했습니다"
 
-#: src/window.py:138
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 주세"
-"요."
+"적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 주십"
+"시오."
 
-#: src/window.py:142
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 주세"
-"요."
+"적용되지 않았습니다. 선택한 로고 이미지를 찾을 수 없습니다. 다시 선택해 주십"
+"시오."
 
-#: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "다시 로그인하거나 재부팅할 때까지 시스템이 이상하거나 버그가 있는 것처럼 보"
 "일 수 있습니다."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "로그아웃 할까요?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "로그아웃"
 

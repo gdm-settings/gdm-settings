@@ -1,13 +1,14 @@
 # Óscar Fernández Díaz <oscfdezdz@tuta.io>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # Eduardo Malaspina <vaio0@swismail.com>, 2022.
+# Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 12:41+0500\n"
-"PO-Revision-Date: 2022-10-22 12:06+0000\n"
-"Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
+"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"PO-Revision-Date: 2022-10-31 17:02+0000\n"
+"Last-Translator: Miguel Angel Alonso <miguelalonso2@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -270,7 +271,7 @@ msgstr "Configuración del gestor de inicio de sesión"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalice su pantalla de inicio de sesión"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -287,69 +288,99 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "Restablecer la configuración"
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Added options to import/export settings in the global menu"
+msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
+msgid ""
+"Properly fixed \"Apply Current Display Settings\" feature not working on "
+"some Ubuntu-based systems"
+msgstr ""
+"Se corrigió la función \"Aplicar configuración de pantalla actual\" que no "
+"funciona en Ubuntu y sistemas similares a Ubuntu"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+msgid "Added power settings"
+msgstr "Agregar opciones de energía"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+msgid "Added options to import/export settings in the global menu"
+msgstr ""
+"Agregar opciones para Importar/Exportar configuración en el menú global"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Agregar opción para ampliar el mensaje de bienvenida"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Added color to command-line output"
+msgstr "Agregar color a la salida de linea de comandos"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Adaptar a la ventana principal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Diálogos emergentes adaptativos"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Se actualizó la ventana \"acerca de\" al nuevo estilo"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Estilo mejorado del campo de entrada del mensaje de bienvenida"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
+"Cambió el nombre de la sección de la barra lateral \"Varios\" a \"Pantalla "
+"de inicio de sesión\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Se cambió el nombre de la opción de menú global \"Importar configuración de "
+"usuario\" a \"Cargar configuración de sesión\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"La aplicación, ahora muestra una notificación de error al intentar aplicar "
+"la configuración si el logotipo está habilitado y la imagen del logotipo "
+"elegido ya no existe en el sistema"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Colored commandline output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
+"Se corrigió la función \"Aplicar configuración de pantalla actual\" que no "
+"funciona en Ubuntu y sistemas similares a Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
+"Se corrigió un texto que aparecía sin traducir incluso si existía una "
+"traducción"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Se corrigieron algunos errores tipográficos"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -462,16 +493,14 @@ msgid "Settings were successfully exported"
 msgstr "La configuración se ha exportado correctamente"
 
 #: src/app.py:325
-#, fuzzy
-#| msgid "Failed to export. Permssion denied"
 msgid "Failed to export. Permission denied"
-msgstr "No se ha podido exportar. Permiso denegado"
+msgstr "Error al exportar. Permiso denegado"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr "Fallo en la exportación. Ya existe un directorio con ese nombre"
+msgstr "Error al exportar. Ya existe un directorio con ese nombre"
 
-#: src/about.py:5
+#: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
@@ -544,7 +573,7 @@ msgstr "Aplicar la configuración actual de la pantalla"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc."
 
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:38
+#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -575,7 +604,7 @@ msgstr "Horas"
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:41
 msgid "From"
-msgstr "De"
+msgstr "Desde"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/blueprints/display-page.blp:65
@@ -903,7 +932,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 horas"
 
-#: src/blueprints/top-bar-page.blp:98 src/window.py:111
+#: src/blueprints/top-bar-page.blp:98 src/window.py:117
 msgid "Power"
 msgstr "Energía"
 
@@ -923,7 +952,7 @@ msgstr "(Ninguno)"
 msgid "Choose"
 msgstr "Elegir"
 
-#: src/common_widgets.py:128 src/window.py:158
+#: src/common_widgets.py:128 src/window.py:164
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -1030,65 +1059,65 @@ msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Aplicar la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:354
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Aplicando la configuración de GResource para sistemas que no son de Ubuntu …"
 
-#: src/settings.py:576
+#: src/settings.py:571
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Restableciendo la configuración de GResource para Ubuntu …"
 
-#: src/settings.py:583
+#: src/settings.py:578
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Restableciendo la configuración de GResource para sistemas que no son de "
 "Ubuntu …"
 
-#: src/window.py:104
+#: src/window.py:110
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/window.py:105
+#: src/window.py:111
 msgid "Fonts"
 msgstr "Tipografías"
 
-#: src/window.py:106
+#: src/window.py:112
 msgid "Top Bar"
 msgstr "Barra superior"
 
-#: src/window.py:107
+#: src/window.py:113
 msgid "Sound"
 msgstr "Sonido"
 
-#: src/window.py:108
+#: src/window.py:114
 msgid "Mouse & Touchpad"
 msgstr "Ratón y panel táctil"
 
-#: src/window.py:109
+#: src/window.py:115
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/window.py:110
+#: src/window.py:116
 msgid "Login Screen"
 msgstr "Pantalla de inicio de sesión"
 
-#: src/window.py:112
+#: src/window.py:118
 msgid "Tools"
 msgstr "Herramientas"
 
-#: src/window.py:130
+#: src/window.py:136
 msgid "Settings applied successfully"
 msgstr "Configuración aplicada con éxito"
 
-#: src/window.py:134
+#: src/window.py:140
 msgid "Failed to apply settings"
 msgstr "No se ha podido aplicar la configuración"
 
-#: src/window.py:138
+#: src/window.py:144
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1096,27 +1125,24 @@ msgstr ""
 "No se ha aplicado. La imagen de fondo elegida ya no existe. Por favor, elija "
 "de nuevo."
 
-#: src/window.py:142
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "No se ha aplicado. La imagen del logo elegida ya no existe. Por favor, elija "
 "de nuevo."
 
-#: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
+#: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "El sistema puede empezar a verse raro/con problemas hasta que vuelva a "
 "iniciar sesión o reinicie."
 
-#: src/window.py:153
+#: src/window.py:159
 msgid "Log Out?"
 msgstr "¿Cerrar sesión?"
 
-#: src/window.py:159
+#: src/window.py:165
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
