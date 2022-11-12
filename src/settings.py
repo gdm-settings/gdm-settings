@@ -1,4 +1,5 @@
 import os
+import shutil
 import logging
 from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
@@ -549,6 +550,14 @@ class SettingsManager (GObject.Object):
         if not os.path.isfile(user_monitors_xml):
             raise FileNotFoundError(2, 'No such file or directory', user_monitors_xml)
 
+        with open(user_monitors_xml) as monitors_xml:
+            if monitors_xml.read() == '':
+                raise FileNotFoundError(2, 'File is empty', user_monitors_xml)
+
+        temp_monitors_xml = os.path.join(env.TEMP_DIR, 'monitors.xml')
+        shutil.copyfile(user_monitors_xml, temp_monitors_xml)
+        os.chmod(temp_monitors_xml, 0o644)
+
         self.command_elevator.add(['machinectl', 'shell', f'{gr_utils.GdmUsername}@', '/usr/bin/env',
                                    'gsettings', 'set', 'experimental-features',
                                    '"[\'scale-monitor-framebuffer\']"',
@@ -556,11 +565,8 @@ class SettingsManager (GObject.Object):
                                  ])
 
         self.command_elevator.add(['install', '-Dm644',
-                                   user_monitors_xml,
-                                   f'~{gr_utils.GdmUsername}/.config/monitors.xml',
-                                 ])
-
-        self.command_elevator.add(['chown', f'{gr_utils.GdmUsername}:',
+                                   '-o', gr_utils.GdmUsername,
+                                   temp_monitors_xml,
                                    f'~{gr_utils.GdmUsername}/.config/monitors.xml',
                                  ])
 
