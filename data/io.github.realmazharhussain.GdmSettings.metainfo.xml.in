@@ -82,9 +82,11 @@
   </screenshots>
 
   <releases>
-    <release version="2.beta.1" date="2022-11-10">
+    <release version="2.beta.1" date="2022-11-12">
       <description>
         <ul>
+          <li>Updated screenshots</li>
+          <li>Updated translations</li>
           <li>Fixed developer name in about window not being translated</li>
           <li>Fixed not being able to change logo image sometimes</li>
           <li>Properly fixed "Apply Current Display Settings" feature not working on some Ubuntu-based systems</li>
