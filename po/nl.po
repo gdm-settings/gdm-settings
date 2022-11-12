@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 13:13+0500\n"
 "PO-Revision-Date: 2022-11-11 18:47+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -284,16 +284,26 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Updated screenshots"
+msgstr "Bijgewerkt: schermfoto's"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#, fuzzy
+#| msgid "New Translations:"
+msgid "Updated translations"
+msgstr "Nieuwe vertalingen:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
 msgstr ""
 "Opgelost: de naam van de ontwikkelaar werd niet vertaald in het venster "
 "‘Over’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
 msgstr "Opgelost: het logo kon soms niet worden gewijzigd"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
@@ -301,48 +311,48 @@ msgstr ""
 "Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
 "afgeleiden"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Nieuw: energie-instellingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Nieuw: opties voor het im- en exporteren van voorkeuren in het hoofdmenu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Added an option to enlarge welcome message"
 msgstr "Nieuw: optie om het welkomstbericht te vergroten"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Added color to command-line output"
 msgstr "Nieuw: kleuren in opdrachtregeluitvoer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Turned main window adaptive"
 msgstr ""
 "Nieuw: de inhoud van het hoofdvenster wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 "Nieuw: de inhoud van meldingsvensters wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated \"about\" window to the new style"
 msgstr "Bijgewerkt: het venster ‘Over’ heeft een nieuwe vormgeving"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Improved style of welcome message input field"
 msgstr "Bijgewerkt: het invoerveld bij het welkomstbericht"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Verbeterd: de zijbalksectie ‘Overig’ heet voortaan ‘Aanmeldscherm’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -350,7 +360,7 @@ msgstr ""
 "Verbeterd: de hoofdmenu-optie ‘Gebruikersvoorkeuren importeren’ heet "
 "voortaan ‘Sessievoorkeuren laden’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -359,7 +369,7 @@ msgstr ""
 "Verbeterd: er wordt voortaan een foutmelding getoond bij het toepassen van "
 "voorkeuren met een logo terwijl het logo niet meer beschikbaar is"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -367,13 +377,13 @@ msgstr ""
 "Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
 "afgeleiden"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Opgelost: sommige tekst werd in het Engels getoond terwijl er wel een "
 "vertaling beschikbaar was"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "Fixed some typos"
 msgstr "Opgelost: enkele typfouten"
 
@@ -446,7 +456,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "Ontbrekende afhankelijkheden"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "Oké"
 
@@ -955,15 +965,15 @@ msgstr "Annuleren"
 msgid "Choose Image"
 msgstr "Afbeelding kiezen"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -977,7 +987,7 @@ msgstr ""
 "Open de systeemvoorkeuren, ga naar het tabblad ‘Schermen’ en pas een "
 "voorkeur aan om het bestand automatisch aan te maken."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "Beeldschermvoorkeuren ontbreken"
 
@@ -993,19 +1003,19 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Bezig met exporteren naar ‘{filename}’…"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
 "Het wegschrijven naar ‘{filename}’ is mislukt omdat de juiste rechten "
 "ontbreken"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1014,35 +1024,35 @@ msgstr ""
 "Het wegschrijven naar ‘{filename}’ is mislukt omdat er al een map is met die "
 "naam"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "Bezig met exporteren naar standaarduitvoer…"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Bezig met importeren uit ‘{filename}’…"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "Bezig met importeren uit standaardinvoer…"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "Het geïmporteerde bestand kan niet worden verwerkt"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 "Het geïmporteerde bestand kan niet worden uitgelezen omdat de tekenset niet "
 "utf-8 is"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Het geïmporteerde bestand bevat geen sectie genaamd ‘{section_name}’"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -1050,26 +1060,26 @@ msgstr ""
 "Het geïmporteerde bestand heeft geen sleutel genaamd ‘{key_name}’ in de "
 "sectie ‘{section_name}’"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met toepassen van GResource-voorkeuren voor andere distributies…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
@@ -1231,9 +1241,6 @@ msgstr "Afmelden"
 #~ "Opgelost: het standaard Shell-thema werd uitgepakt naar /usr/local/share "
 #~ "in plaats van /usr/local/share/themes"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "Bijgewerkt: schermfoto's"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Natuurlijk scrollen"
 
@@ -1304,9 +1311,6 @@ msgstr "Afmelden"
 
 #~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 #~ msgstr "De knop ‘Toepassen’ pastte slechts enkele voorkeuren toe op Ubuntu"
-
-#~ msgid "New Translations:"
-#~ msgstr "Nieuwe vertalingen:"
 
 #~ msgid "French"
 #~ msgstr "Frans"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-12 13:13+0500\n"
 "PO-Revision-Date: 2022-11-11 18:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -273,14 +273,24 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Updated screenshots"
+msgstr "צילומי המסך עודכנו"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#, fuzzy
+#| msgid "New Translations:"
+msgid "Updated translations"
+msgstr "תרגומים חדשים:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
 msgstr "שם המפתח בחלונית על אודות תוקן כדי שלא יתורגם"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
 msgstr "תוקנה התנהגות שלא הייתה אפשרות להחליף תמונת לוגו מדי פעם"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
@@ -288,50 +298,50 @@ msgstr ""
 "תוקנה כראוי היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבדה במערכות מבוססות "
 "אובונטו"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "הוספת הגדרות צריכת חשמל"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added options to import/export settings in the global menu"
 msgstr "נוספה אפשרות לייבא/לייצא הגדרות בתפריט הכללי"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Added an option to enlarge welcome message"
 msgstr "נוספה אפשרות להגדיל את הודעת קבלת הפנים"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Added color to command-line output"
 msgstr "נוסף צבע לפלט שורת הפקודה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Turned main window adaptive"
 msgstr "החלון הראשי מסתגל מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Turned pop-up dialogs adaptive"
 msgstr "החלוניות הקופצות מסתגלות מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated \"about\" window to the new style"
 msgstr "חלון „על אודות” עודכן לסגנון החדש"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Improved style of welcome message input field"
 msgstr "סגנון שדה הקלט בהודעת קבלת הפנים השתפר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "שם הסעיף „שונות” בסרגל הצד הוחלף לשם „מסך כניסה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 "שם האפשרות „ייבוא הגדרות משתמש” בתפריט הכללי התחלף לשם „טעינת הגדרות הפעלה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -340,7 +350,7 @@ msgstr ""
 "היישום מציג מעתה התראת שגיאה כעת ניסיון להחלת הגדרות עם לוגו מופעל ותמונת "
 "הלוגו שנבחרה לא קיימת עוד במערכת"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -348,11 +358,11 @@ msgstr ""
 "תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו ומערכות "
 "דמויות אובונטו"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "תוקן מצב שטקסט מופיע לא מתורגם אפילו אם יש תרגום"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "Fixed some typos"
 msgstr "תוקנות תקלדות"
 
@@ -423,7 +433,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "חסרות תלויות"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "אישור"
 
@@ -931,15 +941,15 @@ msgstr "ביטול"
 msgid "Choose Image"
 msgstr "בחירת תמונה"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "הגדרות התצוגה הנוכחיות הוחלו"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "החלת הגדרות התצוגה הנוכחיות נכשלה"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -953,7 +963,7 @@ msgstr ""
 "כדי ליצור את הקובץ הזה אוטומטית, יש לגשת ללוח ‚תצוגה’ בהגדרות המערכת ולשנות "
 "שם כמה הגדרות."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "הגדרות הצג לא נמצאו"
 
@@ -968,75 +978,75 @@ msgstr "ערכת העיצוב של המעטפת כברירת מחדל חולצה
 msgid "Failed to extract default theme"
 msgstr "חילוץ ערכת העיצוב כברירת מחדל נכשלה"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "מתבצע ייצוא לקובץ ‚{filename}’"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "לא ניתן לכתוב לקובץ ‚{filename}’. ההרשאה נדחתה"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr "לא ניתן לכתוב לקובץ ‚{filename}’. כבר קיימת תיקייה באותו השם"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "מתבצע ייצוא לפלט המסוף"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "מתבצע ייבוא מהקובץ ‚{filename}’"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "מתבצע ייבוא מקלט המסוף"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "פענוח הקובץ המיובט נכשל"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "קריאת הקובץ המיובא נכשלה. אינו מוצפן ב־UTF-8"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "בקובץ המיובא חסר הסעיף ‚{section_name}’"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "בקובץ המיובא אין את המפתח ‚{key_name}’ בסעיף ‚{section_name}’"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "ערכת העיצוב של המעטפת כברירת המחדל מגובית…"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource חלות על אובונטו…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource חלות על מערכות שאינן אובונטו…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "הגדרות ה־GResource מתאפסות לאובונטו…"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "הגדרות ה־GResource מתאפסות על מערכות שאינן אובונטו…"
@@ -1180,9 +1190,6 @@ msgstr "יציאה"
 #~ "תוקן: חילוץ ערכת עיצוב כברירת מחדל למעטפת שמרה אותו לתיקייה ‎/usr/local/"
 #~ "share במקום לתיקייה ‎/usr/local/share/themes"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "צילומי המסך עודכנו"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "היפוך הגלילה"
 
@@ -1244,9 +1251,6 @@ msgstr "יציאה"
 
 #~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 #~ msgstr "לחיצה על ‚החלה’ החילה רק חלק מההגדרות באובונטו"
-
-#~ msgid "New Translations:"
-#~ msgstr "תרגומים חדשים:"
 
 #~ msgid "French"
 #~ msgstr "צרפתית"

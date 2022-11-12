@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"POT-Creation-Date: 2022-11-12 13:13+0500\n"
 "PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/gdm-"
@@ -294,14 +294,22 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Fixed developer name in about window not being translated"
+msgid "Updated screenshots"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Fixed not being able to change logo image sometimes"
+msgid "Updated translations"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+msgid "Fixed developer name in about window not being translated"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #, fuzzy
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
@@ -309,45 +317,45 @@ msgid ""
 msgstr ""
 "Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "La til effektstyringsinnstillinger"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "La til alternativer for import/eksport av innstillinger i den globale menyen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Added an option to enlarge welcome message"
 msgstr "La til alternativ for å gjøre velkomstmeldingen større"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Added color to command-line output"
 msgstr "La til farge for kommandolinjeutdata"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Turned main window adaptive"
 msgstr "Gjorde hovedvinduet tilpasningsdyktig"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Gjorde oppsprettsdialoger tilpasningsdyktige"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 #, fuzzy
 msgid "Updated \"about\" window to the new style"
 msgstr "Oppdatert «Om»-vindu til ny stil"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Improved style of welcome message input field"
 msgstr "Forbedret stil for velkomstmeldingens inndatafelt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Endret sidenavnsdelen «Ymse» til «Innloggingsskjerm»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -355,7 +363,7 @@ msgstr ""
 "Endret globalt menyvalg «Importer brukerinnstillinger» til «Last inn "
 "øktinnstillinger»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 #, fuzzy
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
@@ -365,7 +373,7 @@ msgstr ""
 "Programmet viser nå en merknad om feil ved forsøk på å bruke innstillinger "
 "hvis logo er påslått og valgt logobildet ikke finnes på systemet."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 #, fuzzy
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
@@ -373,11 +381,11 @@ msgid ""
 msgstr ""
 "Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "Fikset noe tekst som ble vist uoversatt selv om de var oversatt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "Fixed some typos"
 msgstr "Fikset noen skrivefeil"
 
@@ -453,7 +461,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "Manglende avhengigheter"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
@@ -980,15 +988,15 @@ msgstr "Avbryt"
 msgid "Choose Image"
 msgstr "Velg fil"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "Brukte nåværende skjerminnstillinger"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "Klarte ikke å bruke nåværende skjerminnstillinger"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 #, fuzzy
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
@@ -1003,7 +1011,7 @@ msgstr ""
 "For å opprette den filen automatisk kan du åpne «Innstillinger» og endre "
 "noen av skjermalternativene der."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 #, fuzzy
 msgid "Monitor Settings Not Found"
 msgstr "Fant ikke skjerminnstillinger"
@@ -1019,17 +1027,17 @@ msgstr "Forvalgt skalldrakt pakket ut til «{folder}» som «{name}»"
 msgid "Failed to extract default theme"
 msgstr "Klarte ikke å pakke ut forvalgt drakt"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Eksporterer til filen «{filename}»"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, fuzzy, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Kan ikke skrive til filen «{filename}». Mangler tilgang."
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1038,58 +1046,58 @@ msgstr ""
 "Kan ikke skrive til filen «{filename}». En mappe med samme navn finnes "
 "allerede."
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "Eksporterer til forvalgt utdata"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Importerer fra filen «{filename}»."
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "Importerer fra forvalgt inndata"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "Kunne ikke tolke importfil"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Kunne ikke lese importfil. Ikke i UTF-8-koding"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, fuzzy, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Importert fil mangler delen «{section_name}»"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Importert fil har ikke nøkkelen «{key_name}» i «{section_name}»-delen"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "Sikkerhetskopierer forvalgt skalldrakt …"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bruker GResource-innstilling for Ubuntu …"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bruker GResource-innstillinger for systemer som ikke er Ubuntu …"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"POT-Creation-Date: 2022-11-12 13:13+0500\n"
 "PO-Revision-Date: 2022-11-05 11:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -272,57 +272,67 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Updated screenshots"
+msgstr "スクリーンショットを更新"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#, fuzzy
+#| msgid "New Translations:"
+msgid "Updated translations"
+msgstr "新たに翻訳された言語:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "電源の設定を追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "グローバルメニューに設定をインポート／エクスポートできるオプションを追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Added an option to enlarge welcome message"
 msgstr "ようこそメッセージを拡大表示できるオプションを追加"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Added color to command-line output"
 msgstr "コマンドライン出力を色付きで表示するように変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Turned main window adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated \"about\" window to the new style"
 msgstr "\"\"ログイン画面の設定\" について\" ウィンドウを新しいスタイルに更新"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Improved style of welcome message input field"
 msgstr "ようこそメッセージの入力欄のスタイルを改善"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "サイドバーの \"そのほか\" セクションを \"ログイン画面\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -330,24 +340,24 @@ msgstr ""
 "グローバルメニューのオプション \"ユーザー設定をインポート\" を \"セッション設"
 "定を読み込み\" に名称変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "Fixed some typos"
 msgstr ""
 
@@ -419,7 +429,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "依存関係が不足しています"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
@@ -927,15 +937,15 @@ msgstr "キャンセル"
 msgid "Choose Image"
 msgstr "画像を選択"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "現在のディスプレイ設定を適用しました"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "現在のディスプレイ設定を適用できませんでした"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -949,7 +959,7 @@ msgstr ""
 "このファイルを自動的に作成するには、システムの '設定' アプリを開き、どれでも"
 "よいので何か設定を変更してください。"
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "画面設定が見つかりませんでした"
 
@@ -965,17 +975,17 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "デフォルトテーマを復元できませんでした"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "ファイル '{filename}' にエクスポートしています"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "ファイル '{filename}' に書き込めません。許可がありません"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -983,35 +993,35 @@ msgid ""
 msgstr ""
 "ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "標準出力にエクスポートしています"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "ファイル '{filename}' からインポートしています"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "標準入力からインポートしています"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "インポートされたファイルを解析できませんでした"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 "インポートされたファイルを読み込めませんでした。UTF-8 でエンコードされていま"
 "せん"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "インポートされたファイルには、セクション '{section_name}' がありません"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -1019,26 +1029,26 @@ msgstr ""
 "インポートされたファイルには、セクション '{section_name}' にキー "
 "'{key_name}' がありません"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "シェルのデフォルトテーマをバックアップしています…"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu に適用しています…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システムに適用しています…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "GResource 設定を Ubuntu 用にリセットしています…"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
@@ -1182,9 +1192,6 @@ msgstr "ログアウト"
 #~ "修正済み: バージョン 1.0-beta.2 のリリース情報が“GNOME ソフトウェア”に表示"
 #~ "されない不具合"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "スクリーンショットを更新"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "逆スクロール"
 
@@ -1256,9 +1263,6 @@ msgstr "ログアウト"
 #~ msgstr ""
 #~ "Ubuntu において、'適用' ボタンをクリックしても一部の設定しか反映されていな"
 #~ "かった不具合を修正"
-
-#~ msgid "New Translations:"
-#~ msgstr "新たに翻訳された言語:"
 
 #~ msgid "French"
 #~ msgstr "フランス語"

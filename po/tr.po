@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
+"POT-Creation-Date: 2022-11-12 13:13+0500\n"
 "PO-Revision-Date: 2022-10-26 13:35+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -283,14 +283,24 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Updated screenshots"
+msgstr "Güncellenmiş ekran görüntüleri"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#, fuzzy
+#| msgid "New Translations:"
+msgid "Updated translations"
+msgstr "Yeni Çeviriler:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #, fuzzy
 #| msgid ""
 #| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
@@ -302,44 +312,44 @@ msgstr ""
 "\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
 "sistemlerde çalışmaması düzeltildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Güç ayarları eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Added options to import/export settings in the global menu"
 msgstr "Genel menüye içe/dışa aktarma ayarları için seçenekler eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Added an option to enlarge welcome message"
 msgstr "Hoş geldiniz mesajını büyütmek için bir seçenek eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Added color to command-line output"
 msgstr "Komut satırı çıktısına renk eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Turned main window adaptive"
 msgstr "Ana pencere uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Açılır iletişim kutuları uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Updated \"about\" window to the new style"
 msgstr "\"Hakkında\" penceresi yeni stile güncellendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Improved style of welcome message input field"
 msgstr "Hoşgeldiniz mesajı girdi alanının stili iyileştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "\"Çeşitli\" kenar çubuğu bölümünün adı \"Giriş Ekranı\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -347,7 +357,7 @@ msgstr ""
 "\"Kullanıcı ayarlarını içe aktar\" genel menü seçeneğinin adı \"Oturum "
 "ayarlarını yükle\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -356,7 +366,7 @@ msgstr ""
 "Uygulama artık, logo etkinleştirilmişse ve seçilen logo resmi artık sistemde "
 "mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
 "Ubuntu-like systems"
@@ -364,12 +374,12 @@ msgstr ""
 "\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
 "sistemlerde çalışmaması düzeltildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Çevirisi mevcut olsa bile bazı metinlerin çevrilmemiş görünmesi düzeltildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
 msgid "Fixed some typos"
 msgstr "Bazı yazım hataları düzeltildi"
 
@@ -441,7 +451,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "Eksik Bağımlılıklar"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "Tamam"
 
@@ -949,15 +959,15 @@ msgstr "İptal Et"
 msgid "Choose Image"
 msgstr "Resim Seç"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "Uygulanan geçerli ekran ayarları"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "Geçerli ekran ayarları uygulanamadı"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -971,7 +981,7 @@ msgstr ""
 "Bu dosyayı kendiliğinden oluşturmak için, sistem 'Ayarlar'ını açın ve orada "
 "bazı görüntüleme seçeneklerini değiştirin."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "Monitör Ayarları Bulunamadı"
 
@@ -986,76 +996,76 @@ msgstr "Öntanımlı shell teması '{folder}' klasörüne '{name}' adıyla çık
 msgid "Failed to extract default theme"
 msgstr "Öntanımlı shell teması çıkartılamadı"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "'{filename}' dosyasına dışa aktarılıyor"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "'{filename}' dosyasına yazılamıyor. İzin reddedildi"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr "'{filename}' dosyasına yazılamıyor. Aynı ada sahip bir dizin zaten var"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "Standart çıktıya dışa aktarma"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "'{filename}' dosyasından içe aktarılıyor"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "Standart girdiden içe aktarma"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "İçe aktarma dosyası ayrıştırılamadı"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "İçe aktarma dosyası okunamadı. UTF-8 olarak kodlanmamış"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "İçe aktarılan dosyada '{section_name}' bölümü yok"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 "İçe aktarılan dosyanın '{section_name}' bölümünde '{key_name}' anahtarı yok"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
@@ -1213,9 +1223,6 @@ msgstr "Oturumu Kapat"
 #~ "Düzeltildi: Varsayılan kabuk teması çıkarıldığında /usr/local/share/"
 #~ "themes yerine doğrudan /usr/local/share dizinine kaydediliyordu"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "Güncellenmiş ekran görüntüleri"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Ters Kaydırma"
 
@@ -1286,9 +1293,6 @@ msgstr "Oturumu Kapat"
 #~ msgstr ""
 #~ "Ubuntu'da 'Uygula' seçeneğine tıklandığında yalnızca bazı ayarlar "
 #~ "uygulanıyordu"
-
-#~ msgid "New Translations:"
-#~ msgstr "Yeni Çeviriler:"
 
 #~ msgid "French"
 #~ msgstr "Fransızca"
