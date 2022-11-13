@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-12 13:13+0500\n"
-"PO-Revision-Date: 2022-11-11 18:47+0000\n"
+"PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -280,16 +280,12 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-#, fuzzy
-#| msgid "Updated Translations:"
 msgid "Updated screenshots"
-msgstr "Aktualizované překlady:"
+msgstr "Aktualizované snímky obrazovky"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "New Translations:"
 msgid "Updated translations"
-msgstr "Nové překlady:"
+msgstr "Aktualizované překlady"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
