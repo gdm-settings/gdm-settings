@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-12 13:13+0500\n"
-"PO-Revision-Date: 2022-10-27 05:45+0000\n"
-"Last-Translator: 이정희 <daemul72@gmail.com>\n"
+"PO-Revision-Date: 2022-11-14 13:47+0000\n"
+"Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
 "Language: ko\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -270,30 +270,23 @@ msgid "Updated screenshots"
 msgstr "스크린샷 업데이트"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "Updated screenshots"
 msgid "Updated translations"
-msgstr "스크린샷 업데이트"
+msgstr "번역 업데이트"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
-msgstr ""
+msgstr "번역되지 않는 창에 대한 개발자 이름 수정"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgstr "때때로 로고 이미지를 변경할 수 없는 문제 수정"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
-msgstr ""
-"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
-"용\"기능 수정됨"
+msgstr "일부 Ubuntu 기반 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적용\" 기능 "
+"수정됨"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
