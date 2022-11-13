@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-12 13:13+0500\n"
-"PO-Revision-Date: 2022-10-29 01:06+0000\n"
+"PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -278,30 +278,24 @@ msgid "Updated screenshots"
 msgstr "Những hình nền được cập nhật"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "New Translations:"
 msgid "Updated translations"
-msgstr "Các bản dịch mới:"
+msgstr "Các bản dịch được cập nhật"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
-msgstr ""
+msgstr "Đã sửa tên của lập trình viên không được dịch trong cửa sổ about"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgstr "Đã sửa lỗi đôi khi không thay đổi được ảnh logo"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
 msgstr ""
-"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
-"trên Ubuntu và các hệ thống giống Ubuntu"
+"Đã thực sự sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không "
+"hoạt động trên các hệ thống giống Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
