@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-12 13:13+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"PO-Revision-Date: 2022-11-20 17:47+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -287,30 +287,24 @@ msgid "Updated screenshots"
 msgstr "Güncellenmiş ekran görüntüleri"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "New Translations:"
 msgid "Updated translations"
-msgstr "Yeni Çeviriler:"
+msgstr "Güncellenmiş çeviriler"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Fixed developer name in about window not being translated"
-msgstr ""
+msgstr "Hakkında penceresindeki geliştirici adının çevrilmemesi düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgstr "Logo resminin bazen değiştirilememesi düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
 msgid ""
 "Properly fixed \"Apply Current Display Settings\" feature not working on "
 "some Ubuntu-based systems"
 msgstr ""
-"\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
-"sistemlerde çalışmaması düzeltildi"
+"Bazı Ubuntu tabanlı sistemlerde çalışmayan \"Mevcut Ekran Ayarlarını Uygula\""
+" özelliğini düzgün şekilde düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
