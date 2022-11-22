@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -981,6 +981,7 @@ msgstr "Tuodussa tiedostossa ei ole osiota '{section_name}'"
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Tuodussa tiedostossa ei ole avainta '{key_name}' osiossa '{section_name}'"
 
 #: src/settings.py:300
 msgid "Backing up default shell theme …"
@@ -1062,6 +1063,8 @@ msgstr ""
 #: src/window.py:154
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Järjestelmä saattaa näyttää oudolta tai virheelliseltä kunnes kirjaudut "
+"sisään uudelleen tai käynnistät tietokoneen uudelleen."
 
 #: src/window.py:159
 msgid "Log Out?"
