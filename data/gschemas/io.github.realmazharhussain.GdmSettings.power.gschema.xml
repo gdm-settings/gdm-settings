@@ -45,7 +45,7 @@
 
     <key name="suspend-on-battery-delay" type="d">
       <default>20</default>
-      <summary>Sleep timeout computer when on battery</summary>
+      <summary>Sleep timeout for computer when on battery</summary>
       <description>The amount of time in minutes the computer on battery power needs to be inactive before it goes to sleep. A value of 0 means never.</description>
     </key>
 
