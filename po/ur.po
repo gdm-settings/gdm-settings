@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:47+0500\n"
-"PO-Revision-Date: 2022-11-22 05:41+0000\n"
+"PO-Revision-Date: 2022-11-22 06:03+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -192,29 +192,31 @@ msgstr "ٹائم جس کے بعد سیشن کو آئیڈل مانا جائے گ�
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "ایکٹیویٹی کے بغیر منٹس کی تعداد جس کے بعد سیشن کو آئیڈل مانا جائے گا۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "بیٹری پر ایکٹیویٹی کے بغیر سسپینڈ کریں یا نہ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgstr "بیٹری پر کمپیوٹر کے لیئے سلیپ ٹائم آؤٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"سلیپ میں جانے سے پہلے منٹس میں ٹائم جس میں کمپیوٹر نہ چل رہا ہو۔ ویلیو 0 "
+"ہونے کا مطلب کبھی نہیں ہے۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "جب ان ایکٹو ہو اور چارجر لگا ہو تو سسپینڈ کریں یا نہیں"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "چارجر لگا ہونے پر کمپیوٹر کی سلیپ کا ٹائم آؤٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
