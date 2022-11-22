@@ -82,18 +82,7 @@
   </screenshots>
 
   <releases>
-    <release version="2.beta.1" date="2022-11-12">
-      <description>
-        <ul>
-          <li>Updated screenshots</li>
-          <li>Updated translations</li>
-          <li>Fixed developer name in about window not being translated</li>
-          <li>Fixed not being able to change logo image sometimes</li>
-          <li>Properly fixed "Apply Current Display Settings" feature not working on some Ubuntu-based systems</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.beta.0" date="2022-10-26">
+    <release version="2.0" date="2022-11-22">
       <description>
         <ul>
           <li>Added power settings</li>
@@ -108,8 +97,9 @@
           <li>Renamed global menu option "Import user settings" to "Load session settings"</li>
           <li>The app, now, shows an error notification when trying to apply settings if logo
               is enabled and the chosen logo image does not exist on the system anymore</li>
-          <li>Fixed "Apply Current Display Settings" feature not working on Ubuntu and Ubuntu-like systems</li>
+          <li>Fixed "Apply Current Display Settings" feature not working on some Ubuntu-based systems</li>
           <li>Fixed some text showing up untranslated even if translation existed</li>
+          <li>Fixed not being able to change logo image sometimes</li>
           <li>Fixed some typos</li>
         </ul>
       </description>
