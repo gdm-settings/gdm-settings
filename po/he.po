@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-14 13:47+0000\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -193,8 +193,6 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "האם להשהות בעת חוסר פעילות ושימוש בסוללה"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-#, fuzzy
-#| msgid "Sleep timeout computer when on battery"
 msgid "Sleep timeout for computer when on battery"
 msgstr "הזמן שלאחריו המחשב ייכנס למצב שינה בעת שימוש בסוללה"
 
@@ -327,16 +325,11 @@ msgstr ""
 "הלוגו שנבחרה לא קיימת עוד במערכת"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-#, fuzzy
-#| msgid ""
-#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
-#| "some Ubuntu-based systems"
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
-"תוקנה כראוי היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבדה במערכות מבוססות "
-"אובונטו"
+"תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבדה במערכות מבוססות אובונטו"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
