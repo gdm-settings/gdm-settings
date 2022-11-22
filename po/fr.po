@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -295,72 +295,45 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Captures d’écran mises à jour"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "Traductions mises à jour"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-"Correction du nom du développeur qui n’était pas traduit dans la fenêtre À "
-"propos"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-"Correction d’une erreur empêchant parfois le changement de l’image du logo"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
-"actuels » ne fonctionnant pas sur certains systèmes dérivés de Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Ajout de paramètres d’énergie"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Ajout d’options pour importer / exporter les paramètres dans le menu "
 "principal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Ajout d’une option pour agrandir le message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Ajout d’une couleur pour le résultat en ligne de commande"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Fenêtre principale rendue adaptative"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Boîtes de dialogues contextuels rendues adaptatives"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Mise à jour de la fenêtre « À propos » vers le nouveau style"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Amélioration du style du champ de saisie du message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Section de la barre latérale « Divers » renommée en « Écran de connexion »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -368,7 +341,7 @@ msgstr ""
 "L’option du menu global « Importer les paramètres de l’utilisateur » a été "
 "renommée « Charger les paramètres de la session »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -378,21 +351,30 @@ msgstr ""
 "paramètres avec le logo activé, lorsque l’image du logo sélectionnée "
 "n’existe plus sur le système"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
 "Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
-"actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
+"actuels » ne fonctionnant pas sur certains systèmes dérivés de Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Correction de textes qui étaient affichés non traduits alors qu’une "
 "traduction existait"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+"Correction d’une erreur empêchant parfois le changement de l’image du logo"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Correction de fautes de frappe"
 
@@ -1159,6 +1141,24 @@ msgstr "Se déconnecter ?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Déconnexion"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Captures d’écran mises à jour"
+
+#~ msgid "Updated translations"
+#~ msgstr "Traductions mises à jour"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr ""
+#~ "Correction du nom du développeur qui n’était pas traduit dans la fenêtre "
+#~ "À propos"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
+#~ "actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr ""

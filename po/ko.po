@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -266,65 +266,42 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "스크린샷 업데이트"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "번역 업데이트"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "번역되지 않는 창에 대한 개발자 이름 수정"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "때때로 로고 이미지를 변경할 수 없는 문제 수정"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr "일부 Ubuntu 기반 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적용\" 기능 "
-"수정됨"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "추가된 전원 설정"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "전역 메뉴에서 설정의 가져오기/내보내기 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "환영 메시지를 확대하는 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "명령줄 출력에 색상 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "기본 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "팝업 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "\"정보\" 창이 새 스타일로 업데이트되됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "환영 메시지 입력 필드의 스타일 개선됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "사이드바 섹션 이름이 \"기타\"에서 \"로그인 화면\"으로 변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -332,7 +309,7 @@ msgstr ""
 "전역 메뉴 옵션 이름을 \"사용자 설정 가져오기\"에서 \"세션 설정 불러오기\"로 "
 "변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -341,19 +318,27 @@ msgstr ""
 "앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 존재"
 "하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
-"용\"기능 수정됨"
+"일부 Ubuntu 기반 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적용\" 기능 "
+"수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "번역이 존재하더라도 번역되지 않은 일부 텍스트가 표시되는 문제 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "때때로 로고 이미지를 변경할 수 없는 문제 수정"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "일부 오타 수정됨"
 
@@ -1113,6 +1098,22 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "스크린샷 업데이트"
+
+#~ msgid "Updated translations"
+#~ msgstr "번역 업데이트"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "번역되지 않는 창에 대한 개발자 이름 수정"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 "
+#~ "적용\"기능 수정됨"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "GNOME의 로그인 관리자인 GDM을 위한 설정 앱"

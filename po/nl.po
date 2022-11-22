@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -284,73 +284,47 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Bijgewerkt: schermfoto's"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "De vertalingen zijn bijgewerkt"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-"Opgelost: de naam van de ontwikkelaar werd niet vertaald in het venster "
-"‘Over’"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "Opgelost: het logo kon soms niet worden gewijzigd"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
-"afgeleiden"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Nieuw: energie-instellingen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Nieuw: opties voor het im- en exporteren van voorkeuren in het hoofdmenu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Nieuw: optie om het welkomstbericht te vergroten"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Nieuw: kleuren in opdrachtregeluitvoer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr ""
 "Nieuw: de inhoud van het hoofdvenster wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 "Nieuw: de inhoud van meldingsvensters wordt aangepast aan de beschikbare "
 "schermruimte"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Bijgewerkt: het venster ‘Over’ heeft een nieuwe vormgeving"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Bijgewerkt: het invoerveld bij het welkomstbericht"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Verbeterd: de zijbalksectie ‘Overig’ heet voortaan ‘Aanmeldscherm’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -358,7 +332,7 @@ msgstr ""
 "Verbeterd: de hoofdmenu-optie ‘Gebruikersvoorkeuren importeren’ heet "
 "voortaan ‘Sessievoorkeuren laden’"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -367,21 +341,29 @@ msgstr ""
 "Verbeterd: er wordt voortaan een foutmelding getoond bij het toepassen van "
 "voorkeuren met een logo terwijl het logo niet meer beschikbaar is"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
 "Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
 "afgeleiden"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Opgelost: sommige tekst werd in het Engels getoond terwijl er wel een "
 "vertaling beschikbaar was"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Opgelost: het logo kon soms niet worden gewijzigd"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Opgelost: enkele typfouten"
 
@@ -1150,6 +1132,24 @@ msgstr "Afmelden?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Afmelden"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Bijgewerkt: schermfoto's"
+
+#~ msgid "Updated translations"
+#~ msgstr "De vertalingen zijn bijgewerkt"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr ""
+#~ "Opgelost: de naam van de ontwikkelaar werd niet vertaald in het venster "
+#~ "‘Over’"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Opgelost: ‘Huidige schermvoorkeuren toepassen’ werkte niet op Ubuntu en "
+#~ "afgeleiden"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "Een toepassing om GNOME's inlogscherm (GDM) mee in te stellen"

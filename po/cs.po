@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
@@ -280,67 +280,43 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Aktualizované snímky obrazovky"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "Aktualizované překlady"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "Opraveno nepřeložené jméno vývojáře v okně o aplikaci"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "Opraveno, že někdy nelze změnit obrázek loga"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Správně opravená funkce \"Použít aktuální nastavení displeje\" nefungující "
-"na některých systémech s Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Přidáno nastavení výkonu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "Přidány možnosti pro import/export nastavení v globální nabídce"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Přidána možnost zvětšit uvítací zprávu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Přidána barva do výstupu příkazového řádku"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Přepnuto na adaptivní hlavní okno"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Vyskakovací dialogová okna jsou adaptivní"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Aktualizace okna \"O aplikaci\" na nový styl"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Vylepšený styl vstupního pole uvítací zprávy"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Přejmenování sekce postranního panelu \"Různé\" na \"Přihlašovací obrazovka\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -348,7 +324,7 @@ msgstr ""
 "Přejmenování možnosti globální nabídky \"Importovat uživatelská nastavení\" "
 "na \"Načíst nastavení relace\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -357,20 +333,28 @@ msgstr ""
 "Aplikace nyní při pokusu o použití nastavení zobrazuje chybové hlášení, "
 "pokud je povoleno logo a zvolený obrázek loga již v systému neexistuje"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"Opravena nefunkčnost funkce \"Použít aktuální nastavení displeje\" v "
-"systémech Ubuntu a Ubuntu podobných systémech"
+"Správně opravená funkce \"Použít aktuální nastavení displeje\" nefungující "
+"na některých systémech s Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Opraveno zobrazování některých textů bez překladu, i když překlad existoval"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Opraveno, že někdy nelze změnit obrázek loga"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Opraveno několik překlepů"
 
@@ -1130,6 +1114,22 @@ msgstr "Odhlásit se?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Odhlásit se"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Aktualizované snímky obrazovky"
+
+#~ msgid "Updated translations"
+#~ msgstr "Aktualizované překlady"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "Opraveno nepřeložené jméno vývojáře v okně o aplikaci"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Opravena nefunkčnost funkce \"Použít aktuální nastavení displeje\" v "
+#~ "systémech Ubuntu a Ubuntu podobných systémech"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "Nastavení pro správce přihlášení GNOME, GDM"

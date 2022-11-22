@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-10-31 17:02+0000\n"
 "Last-Translator: Miguel Angel Alonso <miguelalonso2@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -288,75 +288,45 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Capturas de pantalla actualizadas"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-#, fuzzy
-#| msgid "New Translations:"
-msgid "Updated translations"
-msgstr "Traducciones nuevas:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Se corrigió la función \"Aplicar configuración de pantalla actual\" que no "
-"funciona en Ubuntu y sistemas similares a Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Agregar opciones de energía"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Agregar opciones para Importar/Exportar configuración en el menú global"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Agregar opción para ampliar el mensaje de bienvenida"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Agregar color a la salida de linea de comandos"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Adaptar a la ventana principal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Diálogos emergentes adaptativos"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Se actualizó la ventana \"acerca de\" al nuevo estilo"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Estilo mejorado del campo de entrada del mensaje de bienvenida"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Cambió el nombre de la sección de la barra lateral \"Varios\" a \"Pantalla "
 "de inicio de sesión\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -364,7 +334,7 @@ msgstr ""
 "Se cambió el nombre de la opción de menú global \"Importar configuración de "
 "usuario\" a \"Cargar configuración de sesión\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -374,21 +344,29 @@ msgstr ""
 "la configuración si el logotipo está habilitado y la imagen del logotipo "
 "elegido ya no existe en el sistema"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#| "and Ubuntu-like systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
 "Se corrigió la función \"Aplicar configuración de pantalla actual\" que no "
 "funciona en Ubuntu y sistemas similares a Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Se corrigió un texto que aparecía sin traducir incluso si existía una "
 "traducción"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Se corrigieron algunos errores tipográficos"
 
@@ -1155,6 +1133,21 @@ msgstr "¿Cerrar sesión?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Cerrar sesión"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Capturas de pantalla actualizadas"
+
+#, fuzzy
+#~| msgid "New Translations:"
+#~ msgid "Updated translations"
+#~ msgstr "Traducciones nuevas:"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Se corrigió la función \"Aplicar configuración de pantalla actual\" que "
+#~ "no funciona en Ubuntu y sistemas similares a Ubuntu"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr ""

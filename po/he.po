@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -273,73 +273,49 @@ msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "צילומי המסך עודכנו"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "תרגומים עדכניים"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "שם המפתח בחלונית על אודות תוקן כדי שלא יתורגם"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "תוקנה התנהגות שלא הייתה אפשרות להחליף תמונת לוגו מדי פעם"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"תוקנה כראוי היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבדה במערכות מבוססות "
-"אובונטו"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "הוספת הגדרות צריכת חשמל"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "נוספה אפשרות לייבא/לייצא הגדרות בתפריט הכללי"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "נוספה אפשרות להגדיל את הודעת קבלת הפנים"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "נוסף צבע לפלט שורת הפקודה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "החלון הראשי מסתגל מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "החלוניות הקופצות מסתגלות מעתה"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "חלון „על אודות” עודכן לסגנון החדש"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "סגנון שדה הקלט בהודעת קבלת הפנים השתפר"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "שם הסעיף „שונות” בסרגל הצד הוחלף לשם „מסך כניסה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 "שם האפשרות „ייבוא הגדרות משתמש” בתפריט הכללי התחלף לשם „טעינת הגדרות הפעלה”"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -348,19 +324,27 @@ msgstr ""
 "היישום מציג מעתה התראת שגיאה כעת ניסיון להחלת הגדרות עם לוגו מופעל ותמונת "
 "הלוגו שנבחרה לא קיימת עוד במערכת"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו ומערכות "
-"דמויות אובונטו"
+"תוקנה כראוי היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבדה במערכות מבוססות "
+"אובונטו"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "תוקן מצב שטקסט מופיע לא מתורגם אפילו אם יש תרגום"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "תוקנה התנהגות שלא הייתה אפשרות להחליף תמונת לוגו מדי פעם"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "תוקנות תקלדות"
 
@@ -1111,6 +1095,22 @@ msgstr "לצאת?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "יציאה"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "צילומי המסך עודכנו"
+
+#~ msgid "Updated translations"
+#~ msgstr "תרגומים עדכניים"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "שם המפתח בחלונית על אודות תוקן כדי שלא יתורגם"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "תוקנה היכולת „החלת הגדרות התצוגה הנוכחיות” שלא עבודה במערכת אובונטו "
+#~ "ומערכות דמויות אובונטו"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "יישום הגדרות למנהל הכניסה של GNOME ‏- GDM"

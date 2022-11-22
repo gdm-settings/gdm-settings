@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-20 17:47+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -283,67 +283,43 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Güncellenmiş ekran görüntüleri"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "Güncellenmiş çeviriler"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "Hakkında penceresindeki geliştirici adının çevrilmemesi düzeltildi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "Logo resminin bazen değiştirilememesi düzeltildi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Bazı Ubuntu tabanlı sistemlerde çalışmayan \"Mevcut Ekran Ayarlarını Uygula\""
-" özelliğini düzgün şekilde düzeltildi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Güç ayarları eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "Genel menüye içe/dışa aktarma ayarları için seçenekler eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Hoş geldiniz mesajını büyütmek için bir seçenek eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Komut satırı çıktısına renk eklendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Ana pencere uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Açılır iletişim kutuları uyarlanabilir hale getirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "\"Hakkında\" penceresi yeni stile güncellendi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Hoşgeldiniz mesajı girdi alanının stili iyileştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "\"Çeşitli\" kenar çubuğu bölümünün adı \"Giriş Ekranı\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -351,7 +327,7 @@ msgstr ""
 "\"Kullanıcı ayarlarını içe aktar\" genel menü seçeneğinin adı \"Oturum "
 "ayarlarını yükle\" olarak değiştirildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -360,20 +336,28 @@ msgstr ""
 "Uygulama artık, logo etkinleştirilmişse ve seçilen logo resmi artık sistemde "
 "mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
-"sistemlerde çalışmaması düzeltildi"
+"Bazı Ubuntu tabanlı sistemlerde çalışmayan \"Mevcut Ekran Ayarlarını Uygula"
+"\" özelliğini düzgün şekilde düzeltildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Çevirisi mevcut olsa bile bazı metinlerin çevrilmemiş görünmesi düzeltildi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Logo resminin bazen değiştirilememesi düzeltildi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Bazı yazım hataları düzeltildi"
 
@@ -1129,6 +1113,22 @@ msgstr "Oturum Kapatılsın Mı?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Güncellenmiş ekran görüntüleri"
+
+#~ msgid "Updated translations"
+#~ msgstr "Güncellenmiş çeviriler"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "Hakkında penceresindeki geliştirici adının çevrilmemesi düzeltildi"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "\"Mevcut Ekran Ayarlarını Uygula\" özelliğinin Ubuntu ve Ubuntu benzeri "
+#~ "sistemlerde çalışmaması düzeltildi"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "GNOME Giriş Yöneticisi (GDM) için ayar uygulaması"

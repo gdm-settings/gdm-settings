@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -274,66 +274,42 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Những hình nền được cập nhật"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "Các bản dịch được cập nhật"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "Đã sửa tên của lập trình viên không được dịch trong cửa sổ about"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr "Đã sửa lỗi đôi khi không thay đổi được ảnh logo"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Đã thực sự sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không "
-"hoạt động trên các hệ thống giống Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Thêm cài đặt nguồn điện"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "Đã thêm tùy chọn để nhập / xuất cài đặt trong menu chung"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Đã thêm một tùy chọn để phóng to tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Đã thêm màu vào đầu ra dòng lệnh"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Cửa số chính đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Hộp thoại pop-up đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Đã cập nhật cửa sổ \"giới thiệu\" theo kiểu mới"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Cải tiến kiểu trường nhập tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Đã đổi tên phần thanh bên \"Khác\" thành \"Màn hình đăng nhập\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -341,7 +317,7 @@ msgstr ""
 "Đã đổi tên tùy chọn menu chung \"Nhập cài đặt người dùng\" thành \"Tải cài "
 "đặt phiên\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -350,20 +326,28 @@ msgstr ""
 "Bây giờ ứng dụng hiện thông báo lỗi khi cố áp dụng cài đặt nếu logo đang "
 "được kích hoạt và logo được chọn không còn trên hệ thông nữa"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
-"trên Ubuntu và các hệ thống giống Ubuntu"
+"Đã thực sự sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không "
+"hoạt động trên các hệ thống giống Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Đã sửa một số văn bản hiển thị chưa được dịch ngay cả khi đã có bản dịch"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Đã sửa lỗi đôi khi không thay đổi được ảnh logo"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Đã sửa một số lỗi chính tả"
 
@@ -1123,6 +1107,22 @@ msgstr "Đăng xuất?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Những hình nền được cập nhật"
+
+#~ msgid "Updated translations"
+#~ msgstr "Các bản dịch được cập nhật"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "Đã sửa tên của lập trình viên không được dịch trong cửa sổ about"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt "
+#~ "động trên Ubuntu và các hệ thống giống Ubuntu"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"

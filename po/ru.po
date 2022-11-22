@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-12 13:13+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:47+0500\n"
 "PO-Revision-Date: 2022-11-19 12:47+0000\n"
 "Last-Translator: Войнов Артем Романович <voynovar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -73,8 +73,8 @@ msgid ""
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
 "Температура в Кельвинах используется для изменения оттенка экрана при "
-"включенном ночного режима. Более высокие значения более синие, более низкие -"
-" более красные."
+"включенном ночного режима. Более высокие значения более синие, более низкие "
+"- более красные."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
@@ -201,7 +201,8 @@ msgstr "Количество минут бездействия перед сеа
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr "Следует ли приостанавливать работу при неактивном использовании батареи"
+msgstr ""
+"Следует ли приостанавливать работу при неактивном использовании батареи"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout computer when on battery"
@@ -287,69 +288,43 @@ msgid "Mazhar Hussain"
 msgstr "Мазхар Хусейн"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Updated screenshots"
-msgstr "Обновленные скриншоты"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Updated translations"
-msgstr "Обновленные переводы"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid "Fixed developer name in about window not being translated"
-msgstr "Исправлено, что имя разработчика в окне \"О программе\" не переводилось"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-"Исправлена ошибка, из-за которой иногда не удавалось изменить изображение "
-"логотипа"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Правильно исправлена функция \"Применить текущие настройки отображения\", не "
-"работающая в некоторых системах на базе Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Added power settings"
 msgstr "Добавлены настройки питания"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "Добавлены опции для импорта / экспорта настроек в глобальном меню"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Добавлена возможность увеличения приветственного сообщения"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Добавлен цвет для вывода из командной строки"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Главное окно теперь адаптивное"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Всплывающие диалоги теперь адаптивные"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Обновлено окно \"О программе\" в новом стиле"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Улучшен стиль поля ввода приветственного сообщения"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Переименован раздел боковой панели \"Разное\" в \"Экран входа в систему\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:108
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -357,7 +332,7 @@ msgstr ""
 "Переименован пункт глобального меню \"Импорт пользовательских настроек\" в "
 "\"Загрузить настройки сеанса\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -367,21 +342,31 @@ msgstr ""
 "настройки, если логотип включен, а выбранное изображение логотипа больше не "
 "существует в системе"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"Исправлена ошибка, из-за которой функция \"Применить текущие настройки "
-"отображения\" не работала в Ubuntu и системах, подобных Ubuntu"
+"Правильно исправлена функция \"Применить текущие настройки отображения\", не "
+"работающая в некоторых системах на базе Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Исправлено, что некоторые тексты отображались непереведенными, даже если "
 "перевод существовал"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:113
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+"Исправлена ошибка, из-за которой иногда не удавалось изменить изображение "
+"логотипа"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Исправлены некоторые опечатки"
 
@@ -1145,3 +1130,20 @@ msgstr "Выйти из системы?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Выйти"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Обновленные скриншоты"
+
+#~ msgid "Updated translations"
+#~ msgstr "Обновленные переводы"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr ""
+#~ "Исправлено, что имя разработчика в окне \"О программе\" не переводилось"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Исправлена ошибка, из-за которой функция \"Применить текущие настройки "
+#~ "отображения\" не работала в Ubuntu и системах, подобных Ubuntu"
