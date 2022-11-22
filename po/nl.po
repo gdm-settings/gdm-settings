@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-14 13:47+0000\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -200,8 +200,6 @@ msgstr ""
 "Of het systeem in de slaapstand dient te gaan bij inactiviteit en accugebruik"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-#, fuzzy
-#| msgid "Sleep timeout computer when on battery"
 msgid "Sleep timeout for computer when on battery"
 msgstr "Slaaptime-out bij gebruik van accu"
 
@@ -344,10 +342,6 @@ msgstr ""
 "voorkeuren met een logo terwijl het logo niet meer beschikbaar is"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-#, fuzzy
-#| msgid ""
-#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
-#| "some Ubuntu-based systems"
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
@@ -505,7 +499,7 @@ msgstr "Copyright 2021-2022 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
-msgstr "Heimen Stoffels <vistausss@fastmail.com>"
+msgstr "Heimen Stoffels &lt;vistausss@fastmail.com&gt;"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
