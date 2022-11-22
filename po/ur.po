@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 0.4\n"
-"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-22 10:47+0500\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
 "PO-Revision-Date: 2022-11-22 06:03+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -199,7 +199,9 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "بیٹری پر ایکٹیویٹی کے بغیر سسپینڈ کریں یا نہ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
+#, fuzzy
+#| msgid "Sleep timeout computer when on battery"
+msgid "Sleep timeout for computer when on battery"
 msgstr "بیٹری پر کمپیوٹر کے لیئے سلیپ ٹائم آؤٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49

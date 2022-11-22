@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 10:47+0500\n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
 "PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -210,7 +210,9 @@ msgstr ""
 "fonctionnement sur batterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
+#, fuzzy
+#| msgid "Sleep timeout computer when on battery"
+msgid "Sleep timeout for computer when on battery"
 msgstr "Délai avant la mise en veille lors d’un fonctionnement sur batterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
