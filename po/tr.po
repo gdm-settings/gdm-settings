@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-20 17:47+0000\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -202,10 +202,8 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "Etkin olmadığında ve pil kullanıldığında askıya alınıp alınmayacağı"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-#, fuzzy
-#| msgid "Sleep timeout computer when on battery"
 msgid "Sleep timeout for computer when on battery"
-msgstr "Pille çalışırken bilgisayar uyku zaman aşımına uğradı"
+msgstr "Pille çalışırken bilgisayar uyku zaman aşımı"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -339,16 +337,12 @@ msgstr ""
 "mevcut değilse ayarları uygulamaya çalışırken bir hata bildirimi gösteriyor"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-#, fuzzy
-#| msgid ""
-#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
-#| "some Ubuntu-based systems"
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
-"Bazı Ubuntu tabanlı sistemlerde çalışmayan \"Mevcut Ekran Ayarlarını Uygula"
-"\" özelliğini düzgün şekilde düzeltildi"
+"Bazı Ubuntu tabanlı sistemlerde çalışmayan \"Mevcut Ekran Ayarlarını Uygula\""
+" özelliği düzeltildi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
@@ -497,7 +491,7 @@ msgstr "Telif Hakkı 2021-2022 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
-msgstr "Sabri Ünal <libreajans@gmail.com>"
+msgstr "Sabri Ünal &lt;libreajans@gmail.com&gt;"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
