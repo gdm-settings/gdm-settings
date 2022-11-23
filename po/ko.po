@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-14 13:47+0000\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: 안재범 <ajb8533296@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -317,8 +317,8 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
-"앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 존재"
-"하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
+"이제 앱은 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 "
+"존재하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 #, fuzzy
