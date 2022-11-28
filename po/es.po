@@ -3,13 +3,14 @@
 # Eduardo Malaspina <vaio0@swismail.com>, 2022.
 # Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
 # gallegonovato <fran-carro@hotmail.es>, 2022.
+# Allan Nordhøy <epost@anotheragency.no>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-28 07:47+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2022-11-30 06:48+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -497,7 +498,7 @@ msgstr "Thales Bindá"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Derechos de autor 2021-2022 por Mazhar Hussain"
+msgstr "Derechos de autor 2021–2022 por Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
