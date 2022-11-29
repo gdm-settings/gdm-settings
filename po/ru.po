@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-19 12:47+0000\n"
+"PO-Revision-Date: 2022-11-30 06:48+0000\n"
 "Last-Translator: Войнов Артем Романович <voynovar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
@@ -205,10 +205,8 @@ msgstr ""
 "Следует ли приостанавливать работу при неактивном использовании батареи"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-#, fuzzy
-#| msgid "Sleep timeout computer when on battery"
 msgid "Sleep timeout for computer when on battery"
-msgstr "Время ожидания компьютера в режиме ожидания при работе от батареи"
+msgstr "Тайм-аут ожидания для компьютера при работе от батареи"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -345,16 +343,12 @@ msgstr ""
 "существует в системе"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-#, fuzzy
-#| msgid ""
-#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
-#| "some Ubuntu-based systems"
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
-"Правильно исправлена функция \"Применить текущие настройки отображения\", не "
-"работающая в некоторых системах на базе Ubuntu"
+"Исправлена ошибка, из-за которой функция \"Применить текущие настройки "
+"отображения\" не работала в некоторых системах на базе Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
