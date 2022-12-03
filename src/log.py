@@ -21,10 +21,8 @@ class ColoredFormatter (logging.Formatter):
             case 'INFO':     level_color = green
             case default:    level_color = blue
 
-        return (bold + level_color + record.levelname + normal
-                + ' ' + magenta + '::' + normal
-                + ' ' + record.getMessage()
-               )
+        return (bold + level_color + record.levelname + ':' + normal
+                + ' ' + record.getMessage())
 
 
 logging.root.setLevel(logging.DEBUG)
