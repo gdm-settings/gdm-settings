@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
-"PO-Revision-Date: 2022-10-29 01:06+0000\n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"PO-Revision-Date: 2022-11-14 13:47+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -192,7 +192,9 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "Có suspend khi không hoạt động và sử dụng pin hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
+#, fuzzy
+#| msgid "Sleep timeout computer when on battery"
+msgid "Sleep timeout for computer when on battery"
 msgstr "Máy tính hết thời gian chờ ở chế độ ngủ khi sử dụng pin"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
@@ -274,62 +276,42 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
-"trên Ubuntu và các hệ thống giống Ubuntu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "Thêm cài đặt nguồn điện"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "Đã thêm tùy chọn để nhập / xuất cài đặt trong menu chung"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Đã thêm một tùy chọn để phóng to tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Đã thêm màu vào đầu ra dòng lệnh"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Cửa số chính đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Hộp thoại pop-up đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Đã cập nhật cửa sổ \"giới thiệu\" theo kiểu mới"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Cải tiến kiểu trường nhập tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Đã đổi tên phần thanh bên \"Khác\" thành \"Màn hình đăng nhập\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -337,7 +319,7 @@ msgstr ""
 "Đã đổi tên tùy chọn menu chung \"Nhập cài đặt người dùng\" thành \"Tải cài "
 "đặt phiên\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -346,20 +328,28 @@ msgstr ""
 "Bây giờ ứng dụng hiện thông báo lỗi khi cố áp dụng cài đặt nếu logo đang "
 "được kích hoạt và logo được chọn không còn trên hệ thông nữa"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#, fuzzy
+#| msgid ""
+#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
+#| "some Ubuntu-based systems"
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
-"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
-"trên Ubuntu và các hệ thống giống Ubuntu"
+"Đã thực sự sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không "
+"hoạt động trên các hệ thống giống Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Đã sửa một số văn bản hiển thị chưa được dịch ngay cả khi đã có bản dịch"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "Đã sửa lỗi đôi khi không thay đổi được ảnh logo"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Đã sửa một số lỗi chính tả"
 
@@ -433,7 +423,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
@@ -941,15 +931,15 @@ msgstr "Hủy bỏ"
 msgid "Choose Image"
 msgstr "Chọn hình ảnh"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "Đã áp dụng cài đặt màn hình hiện tại"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -963,7 +953,7 @@ msgstr ""
 "Để tạo tệp đó tự động, hãy mở hệ thống 'Cài đặt' và thay đổi một số tùy chọn "
 "hiển thị ở đó."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
@@ -979,75 +969,75 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Trích xuất theme mặc định của shell thất bại"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Xuất sang tệp '{filename}'"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "Xuất ra đầu ra tiêu chuẩn"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Đang nhập từ tệp '{filename}'"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "Nhập từ đầu vào chuẩn"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "Không thể phân tích cú pháp tệp nhập"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Tệp đã nhập không có phần '{section_name}'"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
@@ -1119,6 +1109,22 @@ msgstr "Đăng xuất?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Những hình nền được cập nhật"
+
+#~ msgid "Updated translations"
+#~ msgstr "Các bản dịch được cập nhật"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "Đã sửa tên của lập trình viên không được dịch trong cửa sổ about"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt "
+#~ "động trên Ubuntu và các hệ thống giống Ubuntu"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "Một ứng dụng cài đặt cho trình quản lý đăng nhập của GNOME, GDM"
@@ -1207,9 +1213,6 @@ msgstr "Đăng xuất"
 #~ "Đã sửa lỗi: Shell theme mặc định được xuất thẳng vào thư mục /usr/local/"
 #~ "share thay vì /usr/local/share/themes"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "Những hình nền được cập nhật"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Cuộn ngược"
 
@@ -1276,9 +1279,6 @@ msgstr "Đăng xuất"
 
 #~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 #~ msgstr "Click \"Áp dụng\" chỉ áp dụng vài cài đặt trên Ubuntu"
-
-#~ msgid "New Translations:"
-#~ msgstr "Các bản dịch mới:"
 
 #~ msgid "French"
 #~ msgstr "Tiếng Pháp"

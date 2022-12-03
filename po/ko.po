@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
-"PO-Revision-Date: 2022-10-27 05:45+0000\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: 이정희 <daemul72@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -186,7 +186,7 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "비활성 상태 및 배터리 사용 시 절전모드 사용 여부"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
+msgid "Sleep timeout for computer when on battery"
 msgstr "배터리 사용 시 컴퓨터 절전 시간 제한"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
@@ -266,62 +266,42 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
-"용\"기능 수정됨"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "추가된 전원 설정"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr "전역 메뉴에서 설정의 가져오기/내보내기 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "환영 메시지를 확대하는 옵션 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "명령줄 출력에 색상 추가됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "기본 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "팝업 창을 조종할 수 있게 변함"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "\"정보\" 창이 새 스타일로 업데이트되됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "환영 메시지 입력 필드의 스타일 개선됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "사이드바 섹션 이름이 \"기타\"에서 \"로그인 화면\"으로 변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -329,28 +309,31 @@ msgstr ""
 "전역 메뉴 옵션 이름을 \"사용자 설정 가져오기\"에서 \"세션 설정 불러오기\"로 "
 "변경됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
-"앱은, 이제, 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 존재"
-"하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
+"이제 앱은 로고가 활성화되어 있고 선택한 로고 이미지가 시스템에 더 이상 "
+"존재하지 않는 경우 설정을 적용하려고 할 때 오류 알림을 표시합니다"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
-msgstr ""
-"우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적"
-"용\"기능 수정됨"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
+msgstr "일부 Ubuntu 기반 시스템에서 작동하지 않는 \"현재 디스플레이 설정 적용\" 기능 "
+"수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "번역이 존재하더라도 번역되지 않은 일부 텍스트가 표시되는 문제 수정됨"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "때때로 로고 이미지를 변경할 수 없는 문제 수정"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "일부 오타 수정됨"
 
@@ -421,7 +404,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "누락된 종속성"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "확인"
 
@@ -488,8 +471,8 @@ msgstr "Copyright 2021-2022 Mazhar Hussain"
 #: src/about.py:29
 msgid "translator-credits"
 msgstr ""
-"안재범 <ajb8533296@gmail.com>\n"
-"이정희 <daemul72@gmail.com>"
+"안재범 &lt;ajb8533296@gmail.com&gt;\n"
+"이정희 &lt;daemul72@gmail.com&gt;"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -931,15 +914,15 @@ msgstr "취소"
 msgid "Choose Image"
 msgstr "이미지 선택"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "적용된 현재 디스플레이 설정"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "현재 디스플레이 설정 적용에 실패했습니다"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -953,7 +936,7 @@ msgstr ""
 "해당 파일을 자동으로 생성하려면 시스템의 '설정'을 열고 거기에서 몇몇의 디스플"
 "레이 옵션을 변경하십시오."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "모니터 설정을 찾을 수 없습니다"
 
@@ -968,17 +951,17 @@ msgstr "'{folder}'에 '{name}'(으)로 추출된 기본 쉘 테마"
 msgid "Failed to extract default theme"
 msgstr "기본 테마를 추출하지 못했습니다"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "'{filename}' 파일로 내보내기"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습니다"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -986,58 +969,58 @@ msgid ""
 msgstr ""
 "'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "표준 출력으로 내보내는 중"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "'{filename}' 파일에서 가져오는 중"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "표준 입력에서 가져오는 중"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "가져오기 파일을 구문 분석하지 못했습니다"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "가져오기 파일을 읽지 못했습니다. UTF-8로 인코딩되지 않음"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "가져온 파일에 '{section_name}' 섹션이 없습니다"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없습니다"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -1060,7 +1043,7 @@ msgstr "소리"
 
 #: src/window.py:114
 msgid "Mouse & Touchpad"
-msgstr "마우스 & 터치패드"
+msgstr "마우스 &amp; 터치패드"
 
 #: src/window.py:115
 msgid "Display"
@@ -1110,6 +1093,22 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "스크린샷 업데이트"
+
+#~ msgid "Updated translations"
+#~ msgstr "번역 업데이트"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr "번역되지 않는 창에 대한 개발자 이름 수정"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "우분투 및 우분투와 유사한 시스템에서 작동하지 않는 \"현재 디스플레이 설정 "
+#~ "적용\"기능 수정됨"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "GNOME의 로그인 관리자인 GDM을 위한 설정 앱"
@@ -1190,9 +1189,6 @@ msgstr "로그아웃"
 #~ msgstr ""
 #~ "수정됨: 기본 셸 테마를 추출하면 /usr/local/share/themes 대신 /usr/local/"
 #~ "share 폴더에 직접 저장되도록 수정됨"
-
-#~ msgid "Updated screenshots"
-#~ msgstr "스크린샷 업데이트"
 
 #~ msgid "Inverse Scrolling"
 #~ msgstr "스크롤 방향 뒤바꾸기"

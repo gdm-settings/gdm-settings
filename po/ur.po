@@ -5,10 +5,10 @@
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: gdm-settings 0.4\n"
+"Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
-"PO-Revision-Date: 2022-09-23 00:19+0000\n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"PO-Revision-Date: 2022-11-22 12:15+0500\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Poedit 3.2.1\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -31,7 +31,7 @@ msgstr "بیک گرائونڈ کی قصم"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or None."
-msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا کچھ نہیں-"
+msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا کچھ نہیں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -61,8 +61,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"رات کی روشنی والا موڈ آپ کی ڈِسپلے کا رنگ بدلتا ہے، یا تو سورج کے طلوع ہونے "
-"کے وقت یا پھر آپکے طے کیے ہوئے وقت-"
+"رات کی روشنی والا موڈ آپ کی ڈِسپلے کا رنگ بدلتا ہے، یا تو سورج کے طلوع ہونے کے "
+"وقت یا پھر آپکے طے کیے ہوئے وقت۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
@@ -85,7 +85,7 @@ msgstr "سورج کے طلوع اور غروب ہونے کے اوقات استع
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr "موجودہ لوکیشن کے مطابق سورج کے طلوع اور غروب کے وقت کا طعین کریں-"
+msgstr "موجودہ لوکیشن کے مطابق سورج کے طلوع اور غروب کے وقت کا طعین کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
@@ -95,7 +95,7 @@ msgstr "شروع ہونے والے وقت کے گھنٹے"
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
 "جب \"schedule-automatic\" بند ہو تو اس کو شروع ہونے والے گھنٹوں کے طور پر "
-"استعمال کریں-"
+"استعمال کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -105,7 +105,7 @@ msgstr "شروع ہونے والے وقت کے منٹ"
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
 "جب \"schedule-automatic\" بند ہو تو اس کو شروع ہونے والے مِنٹوں کے طور پر "
-"استعمال کریں-"
+"استعمال کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -115,7 +115,7 @@ msgstr "ختم ہونے والے وقت کے گھنٹے"
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
 "جب \"schedule-automatic\" بند ہو تو اس کو ختم ہونے والے گھنٹوں کے طور پر "
-"استعمال کریں-"
+"استعمال کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -125,7 +125,7 @@ msgstr "ختم ہونے والے وقت کے منٹ"
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
 "جب \"schedule-automatic\" بند ہو تو اس کو ختم ہونے والے مِنٹوں کے طور پر "
-"استعمال کریں-"
+"استعمال کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -143,7 +143,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "پاور بٹن کا ایکشن"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -151,70 +151,79 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"پاور نٹن پریس ہونے پر ہونے والا ایکشن۔ ورچوئل مشینز پر یہ ایکشن ہارڈ کوڈڈ "
+"ہے(جو کہ پاور آف ہوتے ہیں) (اور یہ سیٹنگ اگنور ہوتی ہے) اور ٹیبلٹس پر بھی (جو "
+"کہ سسپینڈ ہوتے ہیں)۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "بیٹری کم ہونے پر پاور سیور آن کریں"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"جب بیٹری کم ہو تو 'پاور پروفائلز ڈیمن' کے ذریعے \"پاور سیور\" کو آٹومیٹیکلی "
+"آن کریں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "کچھ دیر فراغت کے بعد سکرین کی روشنی مدھم کر دیں-"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"جب کمپیوٹر کام میں نہ ہو تو پاور سیو کرنے کے لئے سکرین کو مدھم کریں یا نہیں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "آئیڈل پر سکرین کو بلینک کریں یا نہیں"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
-msgid ""
-"If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgid "If the screen should be blanked to save power when the computer is idle."
+msgstr "جب کمپیوٹر آئیڈل ہو تو پاور کو بچانے کے لئے سکرین بجھائی جائے یا نہیں۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "ٹائم جس کے بعد سیشن کو آئیڈل مانا جائے گا"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "ایکٹیویٹی کے بغیر منٹس کی تعداد جس کے بعد سیشن کو آئیڈل مانا جائے گا۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "بیٹری پر ایکٹیویٹی کے بغیر سسپینڈ کریں یا نہ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
-msgstr ""
+msgid "Sleep timeout for computer when on battery"
+msgstr "بیٹری پر کمپیوٹر کے لیئے سلیپ ٹائم آؤٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"سلیپ میں جانے سے پہلے منٹس میں ٹائم جس میں کمپیوٹر نہ چل رہا ہو۔ ویلیو 0 ہونے "
+"کا مطلب کبھی نہیں ہے۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "جب ان ایکٹو ہو اور چارجر لگا ہو تو سسپینڈ کریں یا نہیں"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "چارجر لگا ہونے پر کمپیوٹر کی سلیپ کا ٹائم آؤٹ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"جب چارجر لگا ہو تو سلیپ میں جانے سے پہلے منٹس میں ٹائم جس میں کمپیوٹر نہ چل "
+"رہا ہو۔ ویلیو 0 ہونے کا مطلب کبھی نہیں ہے۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -254,7 +263,7 @@ msgstr "لاگن مینیجر کی سیٹنگز"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "لاگن والی سکرین کو کسٹومائز کریں"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -270,83 +279,75 @@ msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
+msgid "Added power settings"
+msgstr "پاور سیٹنگز کا اضافہ کیا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgid "Added options to import/export settings in the global menu"
+msgstr "گلوبل مینیو میں سیٹنگز امپورٹ/ایکسپورٹ کرنے کے آپشن شامل کیا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
+msgid "Added an option to enlarge welcome message"
+msgstr "ویلکم میسیج کو بڑا کرنے کا آپشن شامل کیا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+msgid "Added color to command-line output"
+msgstr "کمانڈ لائن آؤٹ پٹ میں رنگ شامل کیے"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+msgid "Turned main window adaptive"
+msgstr "مین ونڈو کو اڈاپٹو بنایا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+msgid "Turned pop-up dialogs adaptive"
+msgstr "پاپ اپ ڈائلاگز کو اڈاپٹو بنایا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+msgid "Updated \"about\" window to the new style"
+msgstr "\"تفصیلات\" والی ونڈو کو نئے سٹائل میں اپڈیٹ کیا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+msgid "Improved style of welcome message input field"
+msgstr "ویلکم میسیج والی انپٹ فیلڈ کا سٹائل امپروو کیا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+msgstr "سائڈ بار سیکشن \"دوسری چیزیں\" کا نام \"لاگن سکرین\" کر دیا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "سیٹنگز کو ریسیٹ کریں"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-msgid "Added options to import/export settings in the global menu"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Added an option to enlarge welcome message"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Added color to command-line output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid "Turned main window adaptive"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
-msgid "Turned pop-up dialogs adaptive"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Updated \"about\" window to the new style"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
-msgid "Improved style of welcome message input field"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"گلوبل مینیو آپشن \"یوزر کی سیٹنگز کو امپورٹ کریں\" کا نام تبدیل کر کے \"سیسن "
+"کی سیٹنگز کو لوڈ کریں\" رکھ دیا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
-"logo is enabled and the chosen logo image does not exist on the system "
-"anymore"
+"logo is enabled and the chosen logo image does not exist on the system anymore"
 msgstr ""
+"اب یہ ایپلیکیشن ایرر نوٹیفیکیشن شو کرتی ہے اگر اپلائی کرتے وقت لوگو آن کیا "
+"ہوا ہو اور انتخاب شدہ لوگو کی امیج فائل سسٹم پر اب موجود نہیں ہے۔"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
+"\"موجودہ ڈسپلے سیٹنگز کو اپلائی کریں\" فیچر کام نہ کرنے والا مسئلہ حل کیا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+msgstr "کچھ مواد ترجمہ ہونے کے باوجود انگریزی میں شو ہونے کا مسئلہ حل کیا"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr "کبھی کبھی لوگو تبدیل نہ کر سکنے والا مسئلہ حل کیا"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
-msgstr ""
+msgstr "کچھ املا کی غلطیاں درست کیں"
 
 #: src/app.py:51
 msgid "Show application version"
@@ -377,9 +378,8 @@ msgstr ""
 
 #: src/app.py:154
 msgid ""
-"Following programs are required to be installed <b>on the host system</b> "
-"for this app to function properly but they are not installed on the host "
-"system."
+"Following programs are required to be installed <b>on the host system</b> for "
+"this app to function properly but they are not installed on the host system."
 msgstr ""
 "اس ایپلیکیشن کو صحیح کام کرنے کیلئے <b>ہوسٹ سسٹم پر</b> مندرجہ ذیل سوفٹ ویئر "
 "انسٹال ہونے کی ضرورت ہے لیکن وہ ہوسٹ سسٹم پر انسٹال نہیں ہے۔"
@@ -392,20 +392,14 @@ msgstr ""
 "اس ایپلیکیشن کو صحیح طرح سے کام کرنے کیلئے مندرجہ ذیل سوفٹ ویئر کی ضرورت ہے۔"
 
 #: src/app.py:167
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: src/app.py:173
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -415,32 +409,28 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a href="
-"\"{url}\">یہاں</a> کلک کریں۔"
+"ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a "
+"href=\"{url}\">یہاں</a> کلک کریں۔"
 
 #: src/app.py:188
 msgid "Missing Dependencies"
 msgstr "غیر حاضر ڈیپینڈنسیز"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
-msgstr ""
+msgstr "ٹھیک ہے"
 
 #: src/app.py:222
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
 #: src/app.py:230
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+msgstr "سیشن کی سیٹنگز لوڈ ہو گئی ہیں"
 
 #: src/app.py:234
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "یوزر کی سیٹنگز اِمپورٹ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
+msgstr "سیشن کی سیٹنگز لوڈ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
 #: src/app.py:247
 msgid "Reset settings successfully"
@@ -452,31 +442,27 @@ msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
 #: src/app.py:268
 msgid "Import"
-msgstr ""
+msgstr "امپورٹ کریں"
 
 #: src/app.py:290
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+msgstr "سیٹنگز فائل سے کامیابی سے امپورٹ ہو گئی ہیں"
 
 #: src/app.py:292
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "امپورٹ نہیں ہو سکی۔ فائل انویلڈ ہے"
 
 #: src/app.py:323
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+msgstr "سیٹنگز کامیابی سے ایکسپورٹ ہو گئی ہیں"
 
 #: src/app.py:325
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "ایکسپورٹ نہیں ہو سکی۔ اجازت نہیں ملی"
 
 #: src/app.py:327
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "ایکسپورٹ نہیں ہو سکی۔ اس نام کا ایک فولڈر پہلے سے موجود ہے"
 
 #: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
@@ -484,18 +470,13 @@ msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "تھیلس بِنڈا"
 
 #: src/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "کاپی رائیٹ © 2021 مظہر حسین"
+msgstr "کاپی رائیٹ 2022-2021 © مظہر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -553,10 +534,8 @@ msgid "Apply current display settings"
 msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
 
 #: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ"
+msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ۔"
 
 #: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
 msgid "Apply"
@@ -641,10 +620,8 @@ msgid "Refresh"
 msgstr "ریفریش"
 
 #: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "یوزر کی سیٹنگز امپورٹ کریں"
+msgstr "سیشن کی سیٹنگز لوڈ کریں"
 
 #: src/blueprints/main-window.blp:8
 msgid "Reset settings"
@@ -652,11 +629,11 @@ msgstr "سیٹنگز کو ریسیٹ کریں"
 
 #: src/blueprints/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "فائل سے امپورٹ کریں"
 
 #: src/blueprints/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "فائل کو ایکسپورٹ کریں"
 
 #: src/blueprints/main-window.blp:15
 msgid "About"
@@ -696,13 +673,11 @@ msgstr "خوش آمدید کا پیغام"
 
 #: src/blueprints/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "بڑا کریں"
 
 #: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "خوش آمدید کا پیغام"
+msgstr "پیغام"
 
 #: src/blueprints/pointing-page.blp:9
 msgid "Mouse"
@@ -758,80 +733,76 @@ msgstr "ٹائپ کرتے وقت بند کریں"
 
 #: src/blueprints/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "پاور بٹن کا بیحیویر"
 
 #: src/blueprints/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "کچھ نہ کریں"
 
 #: src/blueprints/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "سسپینڈ کریں"
 
 #: src/blueprints/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "ہائبرنیٹ کریں"
 
 #: src/blueprints/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "پوچھیں"
 
 #: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "آٹومیٹک"
+msgstr "آٹومیٹک پاور سیور"
 
 #: src/blueprints/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "بیٹری کم ہونے پر پاور سیور آن کرتا ہے۔"
 
 #: src/blueprints/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "سکرین کی روشنی مدھم کریں"
 
 #: src/blueprints/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "کمپیوٹر ان ایکٹو ہونے کی صورت میں سکرین کی روشنی مدھم کرتا ہے۔"
 
 #: src/blueprints/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "سکرین کو بند کریں"
 
 #: src/blueprints/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد سکرین کو بند کریں۔"
 
 #: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
 #: src/blueprints/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "وقفہ"
 
 #: src/blueprints/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "منٹس میں ٹائم جس کے بعد سکرین بند ہو جائے گی۔"
 
 #: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "آٹومیٹک"
+msgstr "آٹومیٹک سسپینڈ"
 
 #: src/blueprints/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد کمپیوٹر کو روکتا ہے۔"
 
 #: src/blueprints/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "بیٹری کی پاور پر"
 
 #: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "منٹس میں ٹائم جس کے بعد کمپیوٹر  سسپینڈ ہو جائے گا۔"
 
 #: src/blueprints/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "جب چارجر لگا ہو"
 
 #: src/blueprints/sound-page.blp:11
 msgid "Theme"
@@ -953,42 +924,29 @@ msgstr "کینسل"
 msgid "Choose Image"
 msgstr "تصویر کا انتخاب کریں"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/pages/display.py:88
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
 "\n"
-"In order to create that file automatically, open system 'Settings' and "
-"change some display options there."
+"In order to create that file automatically, open system 'Settings' and change "
+"some display options there."
 msgstr ""
-"موجودہ ڈسپلے سیٹنگز کو اپلائی کرنے کے لئے فائیل '$XDG_CONFIG_HOME/monitors."
-"xml' کی ضرورت ہے لیکن وہ موجود نہیں ہے۔\n"
+"موجودہ ڈسپلے سیٹنگز کو اپلائی کرنے کے لئے 'XDG_CONFIG_HOME/monitors.xml$' "
+"فائیل کی ضرورت ہے لیکن وہ موجود نہیں ہے۔\n"
 "\n"
-"اس فائیل کو آٹومیٹیکلی کریئیٹ کرنے لئے،\n"
-"\n"
-"1۔ سسٹم سیٹنگز کے 'ڈسپلے' پینل میں جائیں۔\n"
-"2۔ وہاں کچھ سیٹنگز تبدیل کریں۔\n"
-"3۔ اپلائی کریں۔"
+"اس فائیل کو آٹومیٹیکلی کریئیٹ کرنے لئے سسٹم کی سیٹنگز کو اوپن کریں اور وہاں "
+"'ڈسپلے' کی کچھ سیٹنگز تبدیل کریں۔"
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "مانیٹر کی سیٹنگز نہیں ملیں"
 
@@ -1003,77 +961,76 @@ msgstr "ڈیفالٹ شیل تھیم '{folder}' میں '{name}' کے نام سے
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "فائل '{filename}' میں ایکسپورٹ کر رہے ہیں"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "فائل '{filename}' میں سیو نہیں کر سکتے۔ اجازت نہیں ملی"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"فائل '{filename}' میں سیو نہیں کر سکتے۔ اس نام کا فولڈر پہلے سے موجود ہے"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "سٹینڈرڈ آؤٹ پٹ میں ایکسپورٹ کر رہے ہیں"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "فائل '{filename}' سے امپورٹ کر رہے ہیں"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
-msgstr ""
+msgstr "سٹینڈرڈ ان پٹ سے امپورٹ کر رہے ہیں"
 
-#: src/settings.py:98
-#, fuzzy
-#| msgid "Failed to reset settings"
+#: src/settings.py:99
 msgid "Failed to parse import file"
-msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
+msgstr "امپورٹ فائل پارس نہیں ہو سکی"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "امپورٹ فائل کو ریڈ نہیں کر سکے۔ UTF-8 میں انکوڈڈ نہیں ہے"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے۔"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgid "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے۔"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
@@ -1104,7 +1061,7 @@ msgstr "ڈسپلے"
 
 #: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "لاگن سکرین"
 
 #: src/window.py:118
 msgid "Tools"
@@ -1119,10 +1076,6 @@ msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
 #: src/window.py:144
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1130,19 +1083,11 @@ msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
-"اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+msgstr "اپلائی نہیں کیا- لوگو والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
 #: src/window.py:154
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
@@ -1154,6 +1099,14 @@ msgstr "لاگ آؤٹ کریں؟"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "نئے سکرین شاٹ"
+
+#, fuzzy
+#~| msgid "New Translations:"
+#~ msgid "Updated translations"
+#~ msgstr "نئے ترجمے:"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "GNOME کے لاگن مینیجر کیلئے ایک سیٹنگز ایپلیکیشن"
@@ -1239,9 +1192,6 @@ msgstr "لاگ آؤٹ"
 #~ "درست کیا: ڈیفالٹ شیل تھیم کو ایکسٹریکٹ کرنے پر وہ /usr/local/share/themes "
 #~ "کی بجائے ڈائریکٹ /usr/local/share میں سیو ہوتا تھا"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "نئے سکرین شاٹ"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "الٹی سکرولِنگ"
 
@@ -1295,9 +1245,6 @@ msgstr "لاگ آؤٹ"
 
 #~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 #~ msgstr "ابنٹو پر 'اپلائی' پر کلک کرنے سے صرف کچھ سیٹنگز اپلائی ہوتی تھیں"
-
-#~ msgid "New Translations:"
-#~ msgstr "نئے ترجمے:"
 
 #~ msgid "French"
 #~ msgstr "فرانسیسی"

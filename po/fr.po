@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 17:06+0500\n"
-"PO-Revision-Date: 2022-10-26 13:35+0000\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"PO-Revision-Date: 2022-11-24 17:48+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -210,8 +210,10 @@ msgstr ""
 "fonctionnement sur batterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-msgid "Sleep timeout computer when on battery"
-msgstr "Délai avant la mise en veille lors d’un fonctionnement sur batterie"
+msgid "Sleep timeout for computer when on battery"
+msgstr ""
+"Délai avant la mise en veille pour un ordinateur lors d’un fonctionnement "
+"sur batterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -295,65 +297,45 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Fixed developer name in about window not being translated"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#, fuzzy
-#| msgid ""
-#| "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#| "and Ubuntu-like systems"
-msgid ""
-"Properly fixed \"Apply Current Display Settings\" feature not working on "
-"some Ubuntu-based systems"
-msgstr ""
-"Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
-"actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Added power settings"
 msgstr "Ajout de paramètres d’énergie"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "Ajout d’options pour importer / exporter les paramètres dans le menu "
 "principal"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 msgid "Added an option to enlarge welcome message"
 msgstr "Ajout d’une option pour agrandir le message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added color to command-line output"
 msgstr "Ajout d’une couleur pour le résultat en ligne de commande"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Turned main window adaptive"
 msgstr "Fenêtre principale rendue adaptative"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Boîtes de dialogues contextuels rendues adaptatives"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Updated \"about\" window to the new style"
 msgstr "Mise à jour de la fenêtre « À propos » vers le nouveau style"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Improved style of welcome message input field"
 msgstr "Amélioration du style du champ de saisie du message de bienvenue"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 "Section de la barre latérale « Divers » renommée en « Écran de connexion »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -361,7 +343,7 @@ msgstr ""
 "L’option du menu global « Importer les paramètres de l’utilisateur » a été "
 "renommée « Charger les paramètres de la session »"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -371,21 +353,26 @@ msgstr ""
 "paramètres avec le logo activé, lorsque l’image du logo sélectionnée "
 "n’existe plus sur le système"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on Ubuntu and "
-"Ubuntu-like systems"
+"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
+"based systems"
 msgstr ""
 "Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
-"actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
+"actuels » ne fonctionnant pas sur certains systèmes dérivés de Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Correction de textes qui étaient affichés non traduits alors qu’une "
 "traduction existait"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:111
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+msgid "Fixed not being able to change logo image sometimes"
+msgstr ""
+"Correction d’une erreur empêchant parfois le changement de l’image du logo"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed some typos"
 msgstr "Correction de fautes de frappe"
 
@@ -459,7 +446,7 @@ msgstr ""
 msgid "Missing Dependencies"
 msgstr "Dépendances manquantes"
 
-#: src/app.py:193 src/pages/display.py:103
+#: src/app.py:193 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
@@ -527,7 +514,7 @@ msgstr "Copyright 2021-2022 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:29
 msgid "translator-credits"
-msgstr "Irénée Thirion <irenee.thirion@e.email>"
+msgstr "Irénée Thirion &lt;irenee.thirion@e.email&gt;"
 
 #: src/blueprints/appearance-page.blp:9
 msgid "Themes"
@@ -969,15 +956,15 @@ msgstr "Annuler"
 msgid "Choose Image"
 msgstr "Choisir une image"
 
-#: src/pages/display.py:81
+#: src/pages/display.py:82
 msgid "Applied current display settings"
 msgstr "Paramètres d'affichage actuels appliqués"
 
-#: src/pages/display.py:83
+#: src/pages/display.py:84
 msgid "Failed to apply current display settings"
 msgstr "Échec de l'application des paramètres d'affichage actuels"
 
-#: src/pages/display.py:88
+#: src/pages/display.py:90
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -991,7 +978,7 @@ msgstr ""
 "Pour créer ce fichier automatiquement, ouvrez les paramètres 'Système' et "
 "modifiez-y certains paramètres d’affichage."
 
-#: src/pages/display.py:98
+#: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
 msgstr "Paramètres d’écrans non trouvés"
 
@@ -1006,17 +993,17 @@ msgstr "Thème par défaut extrait vers '{folder}' sous le nom '{name}'"
 msgid "Failed to extract default theme"
 msgstr "Échec de l'extraction du thème par défaut"
 
-#: src/settings.py:67
+#: src/settings.py:68
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Exportation dans le fichier « {filename} »"
 
-#: src/settings.py:72
+#: src/settings.py:73
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Impossible de modifier le fichier « {filename} ». Permission refusée"
 
-#: src/settings.py:76
+#: src/settings.py:77
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1025,33 +1012,33 @@ msgstr ""
 "Impossible de modifier le fichier « {filename} ». Un répertoire avec le même "
 "nom existe déjà"
 
-#: src/settings.py:82
+#: src/settings.py:83
 msgid "Exporting to standard output"
 msgstr "Exportation vers la sortie standard"
 
-#: src/settings.py:91
+#: src/settings.py:92
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Importation depuis le fichier « {filename} »"
 
-#: src/settings.py:95
+#: src/settings.py:96
 msgid "Importing from standard input"
 msgstr "Importation depuis l’entrée standard"
 
-#: src/settings.py:98
+#: src/settings.py:99
 msgid "Failed to parse import file"
 msgstr "Échec de l’analyse du fichier d’importation"
 
-#: src/settings.py:101
+#: src/settings.py:102
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Échec de la lecture du fichier d’importation. Non encodé en UTF-8"
 
-#: src/settings.py:107
+#: src/settings.py:108
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Le fichier importé n’a pas de section « {section_name} »"
 
-#: src/settings.py:112
+#: src/settings.py:113
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -1059,26 +1046,26 @@ msgstr ""
 "Le fichier importé n’a pas la clé « {key_name} » dans la section "
 "« {section_name} »"
 
-#: src/settings.py:299
+#: src/settings.py:300
 msgid "Backing up default shell theme …"
 msgstr "Sauvegarde du thème par défaut du shell …"
 
-#: src/settings.py:347
+#: src/settings.py:348
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings.py:352
+#: src/settings.py:353
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
-#: src/settings.py:571
+#: src/settings.py:577
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings.py:578
+#: src/settings.py:584
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -1152,6 +1139,24 @@ msgstr "Se déconnecter ?"
 #: src/window.py:165
 msgid "Log Out"
 msgstr "Déconnexion"
+
+#~ msgid "Updated screenshots"
+#~ msgstr "Captures d’écran mises à jour"
+
+#~ msgid "Updated translations"
+#~ msgstr "Traductions mises à jour"
+
+#~ msgid "Fixed developer name in about window not being translated"
+#~ msgstr ""
+#~ "Correction du nom du développeur qui n’était pas traduit dans la fenêtre "
+#~ "À propos"
+
+#~ msgid ""
+#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
+#~ "and Ubuntu-like systems"
+#~ msgstr ""
+#~ "Correction de la fonctionnalité « Appliquer les paramètres d’affichage "
+#~ "actuels » ne fonctionnant pas sur Ubuntu et systèmes dérivés"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr ""
@@ -1248,9 +1253,6 @@ msgstr "Déconnexion"
 #~ "directement dans le répertoire /usr/local/share au lieu de /usr/local/"
 #~ "share/themes"
 
-#~ msgid "Updated screenshots"
-#~ msgstr "Captures d’écran mises à jour"
-
 #~ msgid "Inverse Scrolling"
 #~ msgstr "Inverser le défilement"
 
@@ -1323,9 +1325,6 @@ msgstr "Déconnexion"
 #~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
 #~ msgstr ""
 #~ "Cliquer sur « Appliquer » n’appliquait que certains paramètres sur Ubuntu"
-
-#~ msgid "New Translations:"
-#~ msgstr "Nouvelles traductions :"
 
 #~ msgid "French"
 #~ msgstr "Français"
