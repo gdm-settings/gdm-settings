@@ -2,26 +2,30 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Andrea Brandi <git@andreabrandi.com>, 2022.
+# albanobattistella <albano_battistella@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-12-05 06:47+0000\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "Nome Tema"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "Tipo di sfondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
@@ -30,7 +34,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "Immagine di sfondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
@@ -49,41 +53,50 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Se la modalità luce notturna è abilitata"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"La modalità luce notturna cambia la temperatura del colore del display "
+"quando il sole è tramontato o a orari prestabiliti."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Temperatura del display quando abilitato"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Questa temperatura in Kelvin viene utilizzata per modificare i toni dello "
+"schermo quando è abilitata la modalità luce notturna. I valori più alti sono "
+"più blu, quelli più bassi più rossi."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Utilizza l'alba e il tramonto"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Calcola automaticamente gli orari di alba e tramonto, dalla posizione "
+"corrente."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "L'ora di inizio"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"Quando la \"pianificazione automatica\" è disattivata, utilizza questo "
+"inizio in ore."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
