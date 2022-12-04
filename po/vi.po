@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-11-22 10:55+0500\n"
-"PO-Revision-Date: 2022-11-14 13:47+0000\n"
+"PO-Revision-Date: 2022-12-05 06:47+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
@@ -192,10 +192,8 @@ msgid "Whether to suspend when inactive and using battery"
 msgstr "Có suspend khi không hoạt động và sử dụng pin hay không"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
-#, fuzzy
-#| msgid "Sleep timeout computer when on battery"
 msgid "Sleep timeout for computer when on battery"
-msgstr "Máy tính hết thời gian chờ ở chế độ ngủ khi sử dụng pin"
+msgstr "Thời gian chờ cho máy tính trước khi vào chế độ ngủ khi sử dụng pin"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -329,16 +327,12 @@ msgstr ""
 "được kích hoạt và logo được chọn không còn trên hệ thông nữa"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-#, fuzzy
-#| msgid ""
-#| "Properly fixed \"Apply Current Display Settings\" feature not working on "
-#| "some Ubuntu-based systems"
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
-"Đã thực sự sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không "
-"hoạt động trên các hệ thống giống Ubuntu"
+"Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
+"trên các hệ thống giống Ubuntu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid "Fixed some text showing up untranslated even if translation existed"
@@ -1060,7 +1054,7 @@ msgstr "Âm thanh"
 
 #: src/window.py:114
 msgid "Mouse & Touchpad"
-msgstr "Chuột & Touchpad"
+msgstr "Chuột &amp; Touchpad"
 
 #: src/window.py:115
 msgid "Display"
