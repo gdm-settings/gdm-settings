@@ -33,8 +33,8 @@
 <div align="center">
   <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/bleeding-edge-dark.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/realmazharhussain/gdm-settings/wiki/screenshots/bleeding-edge.png">
+      <source srcset="https://github.com/realmazharhussain/gdm-settings/raw/screenshots/dark/bleeding-edge.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/realmazharhussain/gdm-settings/raw/screenshots/light/bleeding-edge.png">
     </picture>
   </a>
 </div>
