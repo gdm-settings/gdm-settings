@@ -6,9 +6,7 @@ echo 'Copying Python'
 copy /usr/lib/libffi.so*
 
 # Files
-copy_bin python3.10
-copy /usr/bin/python
-copy /usr/bin/python3
+copy /usr/bin/python3*
 copy /usr/lib/libpython3*.so*
 
 for file in /usr/lib/python3.10/*; do
