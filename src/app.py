@@ -212,6 +212,7 @@ class Application(Adw.Application):
         create_action("reset_settings", self.reset_settings_cb)
         create_action("import_from_file", self.import_from_file_cb)
         create_action("export_to_file", self.export_to_file_cb)
+        create_action("donate", self.donate_cb)
         create_action("about", self.about_cb)
         create_action("quit", self.quit_cb)
 
@@ -328,6 +329,12 @@ class Application(Adw.Application):
 
         toast = Adw.Toast(timeout=2, priority="high", title=message)
         self.window.toast_overlay.add_toast(toast)
+
+
+    def donate_cb(self, action, user_data):
+        xdg_open = GLib.find_program_in_path('xdg-open')
+        pid, *io = GLib.spawn_async([xdg_open, 'https://patreon.com/mazharhussain'])
+        GLib.spawn_close_pid(pid)
 
 
     def about_cb(self, action, user_data):
