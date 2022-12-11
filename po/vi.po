@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"POT-Creation-Date: 2022-12-12 00:37+0500\n"
 "PO-Revision-Date: 2022-12-05 06:47+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -41,7 +41,7 @@ msgid "The image file to use as GDM background"
 msgstr "Hình ảnh sẽ được dùng làm hình nền cho GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/blueprints/top-bar-page.blp:40
+#: src/resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Màu nền"
 
@@ -273,43 +273,43 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added power settings"
 msgstr "Thêm cài đặt nguồn điện"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Added options to import/export settings in the global menu"
 msgstr "Đã thêm tùy chọn để nhập / xuất cài đặt trong menu chung"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Added an option to enlarge welcome message"
 msgstr "Đã thêm một tùy chọn để phóng to tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Added color to command-line output"
 msgstr "Đã thêm màu vào đầu ra dòng lệnh"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Turned main window adaptive"
 msgstr "Cửa số chính đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Hộp thoại pop-up đã adaptive"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated \"about\" window to the new style"
 msgstr "Đã cập nhật cửa sổ \"giới thiệu\" theo kiểu mới"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Improved style of welcome message input field"
 msgstr "Cải tiến kiểu trường nhập tin nhắn chào mừng"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Đã đổi tên phần thanh bên \"Khác\" thành \"Màn hình đăng nhập\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -317,7 +317,7 @@ msgstr ""
 "Đã đổi tên tùy chọn menu chung \"Nhập cài đặt người dùng\" thành \"Tải cài "
 "đặt phiên\""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
@@ -326,7 +326,7 @@ msgstr ""
 "Bây giờ ứng dụng hiện thông báo lỗi khi cố áp dụng cài đặt nếu logo đang "
 "được kích hoạt và logo được chọn không còn trên hệ thông nữa"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
@@ -334,48 +334,48 @@ msgstr ""
 "Đã sửa lỗi tính năng \"Áp dụng cài đặt hiển thị hiện tại\" không hoạt động "
 "trên các hệ thống giống Ubuntu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 "Đã sửa một số văn bản hiển thị chưa được dịch ngay cả khi đã có bản dịch"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Fixed not being able to change logo image sometimes"
 msgstr "Đã sửa lỗi đôi khi không thay đổi được ảnh logo"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Fixed some typos"
 msgstr "Đã sửa một số lỗi chính tả"
 
-#: src/app.py:51
+#: src/app.py:53
 msgid "Show application version"
 msgstr "Hiển thị phiên bản của ứng dụng"
 
-#: src/app.py:52
+#: src/app.py:54
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Set mức độ hiển thị chi tiết một cách thủ công (từ 0 đến 5)"
 
-#: src/app.py:53
+#: src/app.py:55
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "MỨC ĐỘ"
 
-#: src/app.py:54
+#: src/app.py:56
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Bật chế độ hiển thị chi tiết (--verbosity=5)"
 
-#: src/app.py:55
+#: src/app.py:57
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Bật chế độ quiet (yên lặng, --verbosity=0)"
 
-#: src/app.py:75
+#: src/app.py:77
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "Mức độ hiển thị chi tiết {level} không hợp lệ. Nó phải nằm trong khoảng từ 0 "
 "đến 5."
 
-#: src/app.py:154
+#: src/app.py:156
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -384,7 +384,7 @@ msgstr ""
 "Những chương trình dưới đây cần có <b>trên máy host</b> để ứng dụng này có "
 "thể hoạt động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
-#: src/app.py:158
+#: src/app.py:160
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -392,19 +392,19 @@ msgstr ""
 "Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
 "động trơn tru, nhưng nó chưa được cài đặt."
 
-#: src/app.py:167
+#: src/app.py:169
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "• <b>GDM</b>"
 
-#: src/app.py:173
+#: src/app.py:175
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:181
+#: src/app.py:183
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -413,55 +413,55 @@ msgstr ""
 "Click <a href=\"{url}\">ở đây</a> để xem hướng dẫn cách cài những phần mềm/"
 "thư viên này trên máy của bạn."
 
-#: src/app.py:188
+#: src/app.py:190
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:193 src/pages/display.py:104
+#: src/app.py:195 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:222
+#: src/app.py:225
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
-#: src/app.py:230
+#: src/app.py:233
 msgid "Session settings loaded successfully"
 msgstr "Tải cài đặt phiên thành công"
 
-#: src/app.py:234
+#: src/app.py:237
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Tải cài đặt phiên KHÔNG ĐƯỢC hỗ trợ trong phiên bản Flatpak"
 
-#: src/app.py:247
+#: src/app.py:250
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
-#: src/app.py:249
+#: src/app.py:252
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
 
-#: src/app.py:268
+#: src/app.py:271
 msgid "Import"
 msgstr "Nhập"
 
-#: src/app.py:290
+#: src/app.py:293
 msgid "Settings were successfully imported from file"
 msgstr "Nhập cài đặt từ file thành công"
 
-#: src/app.py:292
+#: src/app.py:295
 msgid "Failed to import. File is invalid"
 msgstr "Không nhập được. Tệp không hợp lệ"
 
-#: src/app.py:323
+#: src/app.py:326
 msgid "Settings were successfully exported"
 msgstr "Cài đặt đã được xuất thành công"
 
-#: src/app.py:325
+#: src/app.py:328
 msgid "Failed to export. Permission denied"
 msgstr "Không xuất được. Quyền bị từ chối"
 
-#: src/app.py:327
+#: src/app.py:330
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Không xuất được. Thư mục có tên đó đã tồn tại"
 
@@ -484,426 +484,6 @@ msgstr "Bản quyền 2021-2022 Mazhar Hussain"
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
-
-#: src/blueprints/appearance-page.blp:9
-msgid "Themes"
-msgstr "Các theme"
-
-#: src/blueprints/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
-
-#: src/blueprints/appearance-page.blp:12
-msgid "Icons"
-msgstr "Icons"
-
-#: src/blueprints/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Con trỏ"
-
-#: src/blueprints/appearance-page.blp:17
-msgid "Background"
-msgstr "Hình nền"
-
-#: src/blueprints/appearance-page.blp:20
-msgid "Type"
-msgstr "Loại"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
-#: src/blueprints/fonts-page.blp:35
-msgid "None"
-msgstr "Không có gì"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
-msgid "Image"
-msgstr "Hình ảnh"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
-msgid "Color"
-msgstr "Màu"
-
-#: src/blueprints/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Hình ảnh sẽ được sử dụng làm nền"
-
-#: src/blueprints/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Màu sẽ được dùng làm nền cho GDM"
-
-#: src/blueprints/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Áp dụng cài đặt màn hình hiện tại"
-
-#: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
-
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
-msgid "Apply"
-msgstr "Áp dụng"
-
-#: src/blueprints/display-page.blp:21
-msgid "Night Light"
-msgstr "Night Light"
-
-#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
-msgid "Enable"
-msgstr "Bật"
-
-#: src/blueprints/display-page.blp:33
-msgid "Schedule"
-msgstr "Lịch trình"
-
-#: src/blueprints/display-page.blp:34
-msgid "Sunset to Sunrise"
-msgstr "Từ hoàng hôn đến bình minh"
-
-#: src/blueprints/display-page.blp:34
-msgid "Manual Schedule"
-msgstr "Lịch trình thủ công"
-
-#: src/blueprints/display-page.blp:38
-msgid "Times"
-msgstr "Các thời điểm"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:41
-msgid "From"
-msgstr "Từ"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:65
-msgid "To"
-msgstr "Đến"
-
-#: src/blueprints/display-page.blp:89
-msgid "Color Temperature"
-msgstr "Nhiệt độ màu"
-
-#: src/blueprints/fonts-page.blp:12
-msgid "Font"
-msgstr "Phông chữ"
-
-#: src/blueprints/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Khử răng cưa"
-
-#: src/blueprints/fonts-page.blp:23
-msgid "Standard"
-msgstr "Tiêu chuẩn"
-
-#: src/blueprints/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Subpixel"
-
-#: src/blueprints/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Gợi ý"
-
-#: src/blueprints/fonts-page.blp:32
-msgid "Full"
-msgstr "Toàn bộ"
-
-#: src/blueprints/fonts-page.blp:33
-msgid "Medium"
-msgstr "Trung bình"
-
-#: src/blueprints/fonts-page.blp:34
-msgid "Slight"
-msgstr "Nhẹ"
-
-#: src/blueprints/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Tỉ lệ"
-
-#: src/blueprints/main-window.blp:6
-msgid "Refresh"
-msgstr "Làm mới"
-
-#: src/blueprints/main-window.blp:7
-msgid "Load session settings"
-msgstr "Nhập cài đặt phiên"
-
-#: src/blueprints/main-window.blp:8
-msgid "Reset settings"
-msgstr "Khôi phục cài đặt gốc"
-
-#: src/blueprints/main-window.blp:11
-msgid "Import from file"
-msgstr "Nhập từ tệp"
-
-#: src/blueprints/main-window.blp:12
-msgid "Export to file"
-msgstr "Xuất sang tệp"
-
-#: src/blueprints/main-window.blp:15
-msgid "About"
-msgstr "Về ứng dụng này"
-
-#: src/blueprints/main-window.blp:16
-msgid "Quit"
-msgstr "Thoát"
-
-#: src/blueprints/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Tắt nút khởi động lại"
-
-#: src/blueprints/login-screen-page.blp:21
-msgid "Disable User List"
-msgstr "Tắt danh sách người dùng"
-
-#: src/blueprints/login-screen-page.blp:30
-msgid "Enable Logo"
-msgstr "Bật Logo"
-
-#: src/blueprints/login-screen-page.blp:31
-msgid "Whether to show a logo below user list"
-msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
-
-#: src/blueprints/login-screen-page.blp:40
-msgid "Logo"
-msgstr "Logo"
-
-#: src/blueprints/login-screen-page.blp:41
-msgid "The image to show below user list"
-msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
-
-#: src/blueprints/login-screen-page.blp:47
-msgid "Welcome Message"
-msgstr "Thông điệp chào mừng (Welcome Message)"
-
-#: src/blueprints/login-screen-page.blp:59
-msgid "Enlarge"
-msgstr "Phóng to"
-
-#: src/blueprints/login-screen-page.blp:69
-msgid "Message"
-msgstr "Thông điệp"
-
-#: src/blueprints/pointing-page.blp:9
-msgid "Mouse"
-msgstr "Chuột"
-
-#: src/blueprints/pointing-page.blp:12
-msgid "Pointer Acceleration"
-msgstr "Tăng tốc con trỏ (Pointer Acceleration)"
-
-#: src/blueprints/pointing-page.blp:14
-msgid "Automatic"
-msgstr "Tự động"
-
-#: src/blueprints/pointing-page.blp:15
-msgid "Disabled"
-msgstr "Tắt"
-
-#: src/blueprints/pointing-page.blp:16
-msgid "Enabled"
-msgstr "Bật"
-
-#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Cuộn tự nhiên (Natural Scrolling)"
-
-#: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
-msgid "Scrolling moves the content, not the view."
-msgstr "Cuộn nội dung, không phải hướng nhìn."
-
-#: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
-msgid "Pointer Speed"
-msgstr "Tốc độ con trỏ chuột/touchpad"
-
-#: src/blueprints/pointing-page.blp:39
-msgid "Touchpad"
-msgstr "Bàn di chuột (Touchpad)"
-
-#: src/blueprints/pointing-page.blp:42
-msgid "Tap to Click"
-msgstr "Chạm để click"
-
-#: src/blueprints/pointing-page.blp:57
-msgid "Two-finger Scrolling"
-msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
-
-#: src/blueprints/pointing-page.blp:58
-msgid "Scroll by swiping with two fingers."
-msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
-
-#: src/blueprints/pointing-page.blp:65
-msgid "Disable while Typing"
-msgstr "Tắt khi nhập"
-
-#: src/blueprints/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Hành vi của nút nguồn"
-
-#: src/blueprints/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Không làm gì cả"
-
-#: src/blueprints/power-page.blp:13
-msgid "Suspend"
-msgstr "Suspend"
-
-#: src/blueprints/power-page.blp:13
-msgid "Hibernate"
-msgstr "Ngủ đông"
-
-#: src/blueprints/power-page.blp:13
-msgid "Ask"
-msgstr "Hỏi"
-
-#: src/blueprints/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Tiết kiệm năng lượng tự động"
-
-#: src/blueprints/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu."
-
-#: src/blueprints/power-page.blp:28
-msgid "Dim Screen"
-msgstr "Giảm độ sáng màn hình"
-
-#: src/blueprints/power-page.blp:29
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Giảm độ sáng màn hình khi máy tính không hoạt động."
-
-#: src/blueprints/power-page.blp:38
-msgid "Turn Screen Off"
-msgstr "Tắt màn hình"
-
-#: src/blueprints/power-page.blp:39
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Có nên tắt màn hình sau một thời gian không hoạt động hay không."
-
-#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
-#: src/blueprints/power-page.blp:107
-msgid "Delay"
-msgstr "Delay"
-
-#: src/blueprints/power-page.blp:49
-msgid "Time in minutes after which screen will turn off."
-msgstr "Thời gian tính bằng phút sau đó màn hình sẽ tắt."
-
-#: src/blueprints/power-page.blp:67
-msgid "Automatic Suspend"
-msgstr "Tự động suspend"
-
-#: src/blueprints/power-page.blp:68
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Tạm dừng máy tính sau một thời gian không hoạt động."
-
-#: src/blueprints/power-page.blp:71
-msgid "On Battery Power"
-msgstr "Nguồn là pin"
-
-#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Thời gian tính bằng phút sau đó máy tính sẽ suspend."
-
-#: src/blueprints/power-page.blp:98
-msgid "When Plugged In"
-msgstr "Khi được cắm điện"
-
-#: src/blueprints/sound-page.blp:11
-msgid "Theme"
-msgstr "Theme"
-
-#: src/blueprints/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Âm lượng quá mức"
-
-#: src/blueprints/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Cho phép tăng âm lượng lên trên 100%"
-
-#: src/blueprints/sound-page.blp:24
-msgid "Event Sounds"
-msgstr "Event Sounds"
-
-#: src/blueprints/sound-page.blp:33
-msgid "Input Feedback Sounds"
-msgstr "Âm thanh phản hồi đầu vào (Input Feedback Sounds)"
-
-#: src/blueprints/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Theme mặc định của shell"
-
-#: src/blueprints/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Bao gồm các cài đặt của top bar"
-
-#: src/blueprints/tools-page.blp:19
-msgid "Extract default shell theme"
-msgstr "Trích xuất theme mặc định của shell"
-
-#: src/blueprints/tools-page.blp:22
-msgid "Extract"
-msgstr "Trích xuất"
-
-#: src/blueprints/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Cài đặt"
-
-#: src/blueprints/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Thay đổi màu chữ"
-
-#: src/blueprints/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Màu chữ"
-
-#: src/blueprints/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Màu của chữ trên top bar"
-
-#: src/blueprints/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Thay đổi màu nền"
-
-#: src/blueprints/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Màu nền của thanh top bar"
-
-#: src/blueprints/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Tắt các mũi tên"
-
-#: src/blueprints/top-bar-page.blp:61
-msgid "Disable Rounded Corners"
-msgstr "Tắt bo tròn các góc"
-
-#: src/blueprints/top-bar-page.blp:71
-msgid "Clock"
-msgstr "Đồng hồ"
-
-#: src/blueprints/top-bar-page.blp:74
-msgid "Show Weekday"
-msgstr "Hiển thị các ngày trong tuần"
-
-#: src/blueprints/top-bar-page.blp:83
-msgid "Show Seconds"
-msgstr "Hiển thị giây"
-
-#: src/blueprints/top-bar-page.blp:92
-msgid "Time Format"
-msgstr "Định dạng thời gian"
-
-#: src/blueprints/top-bar-page.blp:93
-msgid "AM/PM"
-msgstr "SA / CH"
-
-#: src/blueprints/top-bar-page.blp:93
-msgid "24 Hours"
-msgstr "24 giờ"
-
-#: src/blueprints/top-bar-page.blp:98 src/window.py:117
-msgid "Power"
-msgstr "Nguồn"
-
-#: src/blueprints/top-bar-page.blp:101
-msgid "Show battery percentage"
-msgstr "Hiển thị phần trăm pin"
 
 #: src/common_widgets.py:20
 msgid "Choose File"
@@ -951,6 +531,44 @@ msgstr ""
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
+#: src/pages/pointing_utils/cursor.py:60
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:61
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Trung bình"
+
+#: src/pages/pointing_utils/cursor.py:62
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Phóng to"
+
+#: src/pages/pointing_utils/cursor.py:63
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Phóng to"
+
+#: src/pages/pointing_utils/cursor.py:64
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:65
+#, fuzzy
+#| msgid "Standard"
+msgctxt "Cursor Size"
+msgid "Non-Standard"
+msgstr "Tiêu chuẩn"
+
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
@@ -963,75 +581,508 @@ msgstr ""
 msgid "Failed to extract default theme"
 msgstr "Trích xuất theme mặc định của shell thất bại"
 
-#: src/settings.py:68
+#: src/resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Các theme"
+
+#: src/resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: src/resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Icons"
+
+#: src/resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Con trỏ"
+
+#: src/resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Hình nền"
+
+#: src/resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Loại"
+
+#: src/resources/ui/appearance-page.blp:21 src/resources/ui/fonts-page.blp:25
+#: src/resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Không có gì"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:26
+msgid "Image"
+msgstr "Hình ảnh"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:31
+msgid "Color"
+msgstr "Màu"
+
+#: src/resources/ui/appearance-page.blp:27
+msgid "The image to use as background"
+msgstr "Hình ảnh sẽ được sử dụng làm nền"
+
+#: src/resources/ui/appearance-page.blp:32
+msgid "The color to use as background"
+msgstr "Màu sẽ được dùng làm nền cho GDM"
+
+#: src/resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Áp dụng cài đặt màn hình hiện tại"
+
+#: src/resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
+
+#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
+msgid "Apply"
+msgstr "Áp dụng"
+
+#: src/resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Night Light"
+
+#: src/resources/ui/display-page.blp:24
+#: src/resources/ui/login-screen-page.blp:50
+msgid "Enable"
+msgstr "Bật"
+
+#: src/resources/ui/display-page.blp:33
+msgid "Schedule"
+msgstr "Lịch trình"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Sunset to Sunrise"
+msgstr "Từ hoàng hôn đến bình minh"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Manual Schedule"
+msgstr "Lịch trình thủ công"
+
+#: src/resources/ui/display-page.blp:38
+msgid "Times"
+msgstr "Các thời điểm"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:41
+msgid "From"
+msgstr "Từ"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:65
+msgid "To"
+msgstr "Đến"
+
+#: src/resources/ui/display-page.blp:89
+msgid "Color Temperature"
+msgstr "Nhiệt độ màu"
+
+#: src/resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Phông chữ"
+
+#: src/resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Khử răng cưa"
+
+#: src/resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Tiêu chuẩn"
+
+#: src/resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: src/resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Gợi ý"
+
+#: src/resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Toàn bộ"
+
+#: src/resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Trung bình"
+
+#: src/resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Nhẹ"
+
+#: src/resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Tỉ lệ"
+
+#: src/resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Làm mới"
+
+#: src/resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Nhập cài đặt phiên"
+
+#: src/resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Khôi phục cài đặt gốc"
+
+#: src/resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Nhập từ tệp"
+
+#: src/resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Xuất sang tệp"
+
+#: src/resources/ui/main-window.blp:15
+msgid "Donate"
+msgstr ""
+
+#: src/resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Về ứng dụng này"
+
+#: src/resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Thoát"
+
+#: src/resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Tắt nút khởi động lại"
+
+#: src/resources/ui/login-screen-page.blp:21
+msgid "Disable User List"
+msgstr "Tắt danh sách người dùng"
+
+#: src/resources/ui/login-screen-page.blp:30
+msgid "Enable Logo"
+msgstr "Bật Logo"
+
+#: src/resources/ui/login-screen-page.blp:31
+msgid "Whether to show a logo below user list"
+msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
+
+#: src/resources/ui/login-screen-page.blp:40
+msgid "Logo"
+msgstr "Logo"
+
+#: src/resources/ui/login-screen-page.blp:41
+msgid "The image to show below user list"
+msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
+
+#: src/resources/ui/login-screen-page.blp:47
+msgid "Welcome Message"
+msgstr "Thông điệp chào mừng (Welcome Message)"
+
+#: src/resources/ui/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr "Phóng to"
+
+#: src/resources/ui/login-screen-page.blp:69
+msgid "Message"
+msgstr "Thông điệp"
+
+#: src/resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "Con trỏ"
+
+#: src/resources/ui/pointing-page.blp:19
+msgid "Mouse"
+msgstr "Chuột"
+
+#: src/resources/ui/pointing-page.blp:22
+msgid "Pointer Acceleration"
+msgstr "Tăng tốc con trỏ (Pointer Acceleration)"
+
+#: src/resources/ui/pointing-page.blp:24
+msgid "Automatic"
+msgstr "Tự động"
+
+#: src/resources/ui/pointing-page.blp:25
+msgid "Disabled"
+msgstr "Tắt"
+
+#: src/resources/ui/pointing-page.blp:26
+msgid "Enabled"
+msgstr "Bật"
+
+#: src/resources/ui/pointing-page.blp:31 src/resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Cuộn tự nhiên (Natural Scrolling)"
+
+#: src/resources/ui/pointing-page.blp:32 src/resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Cuộn nội dung, không phải hướng nhìn."
+
+#: src/resources/ui/pointing-page.blp:39 src/resources/ui/pointing-page.blp:82
+msgid "Pointer Speed"
+msgstr "Tốc độ con trỏ chuột/touchpad"
+
+#: src/resources/ui/pointing-page.blp:49
+msgid "Touchpad"
+msgstr "Bàn di chuột (Touchpad)"
+
+#: src/resources/ui/pointing-page.blp:52
+msgid "Tap to Click"
+msgstr "Chạm để click"
+
+#: src/resources/ui/pointing-page.blp:67
+msgid "Two-finger Scrolling"
+msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
+
+#: src/resources/ui/pointing-page.blp:68
+msgid "Scroll by swiping with two fingers."
+msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
+
+#: src/resources/ui/pointing-page.blp:75
+msgid "Disable while Typing"
+msgstr "Tắt khi nhập"
+
+#: src/resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Hành vi của nút nguồn"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Không làm gì cả"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Suspend"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Ngủ đông"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Hỏi"
+
+#: src/resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Tiết kiệm năng lượng tự động"
+
+#: src/resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu."
+
+#: src/resources/ui/power-page.blp:28
+msgid "Dim Screen"
+msgstr "Giảm độ sáng màn hình"
+
+#: src/resources/ui/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Giảm độ sáng màn hình khi máy tính không hoạt động."
+
+#: src/resources/ui/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr "Tắt màn hình"
+
+#: src/resources/ui/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Có nên tắt màn hình sau một thời gian không hoạt động hay không."
+
+#: src/resources/ui/power-page.blp:48 src/resources/ui/power-page.blp:80
+#: src/resources/ui/power-page.blp:107
+msgid "Delay"
+msgstr "Delay"
+
+#: src/resources/ui/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr "Thời gian tính bằng phút sau đó màn hình sẽ tắt."
+
+#: src/resources/ui/power-page.blp:67
+msgid "Automatic Suspend"
+msgstr "Tự động suspend"
+
+#: src/resources/ui/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Tạm dừng máy tính sau một thời gian không hoạt động."
+
+#: src/resources/ui/power-page.blp:71
+msgid "On Battery Power"
+msgstr "Nguồn là pin"
+
+#: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Thời gian tính bằng phút sau đó máy tính sẽ suspend."
+
+#: src/resources/ui/power-page.blp:98
+msgid "When Plugged In"
+msgstr "Khi được cắm điện"
+
+#: src/resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Theme"
+
+#: src/resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Âm lượng quá mức"
+
+#: src/resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Cho phép tăng âm lượng lên trên 100%"
+
+#: src/resources/ui/sound-page.blp:24
+msgid "Event Sounds"
+msgstr "Event Sounds"
+
+#: src/resources/ui/sound-page.blp:33
+msgid "Input Feedback Sounds"
+msgstr "Âm thanh phản hồi đầu vào (Input Feedback Sounds)"
+
+#: src/resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Theme mặc định của shell"
+
+#: src/resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Bao gồm các cài đặt của top bar"
+
+#: src/resources/ui/tools-page.blp:19
+msgid "Extract default shell theme"
+msgstr "Trích xuất theme mặc định của shell"
+
+#: src/resources/ui/tools-page.blp:22
+msgid "Extract"
+msgstr "Trích xuất"
+
+#: src/resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Cài đặt"
+
+#: src/resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Thay đổi màu chữ"
+
+#: src/resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Màu chữ"
+
+#: src/resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Màu của chữ trên top bar"
+
+#: src/resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Thay đổi màu nền"
+
+#: src/resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Màu nền của thanh top bar"
+
+#: src/resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Tắt các mũi tên"
+
+#: src/resources/ui/top-bar-page.blp:61
+msgid "Disable Rounded Corners"
+msgstr "Tắt bo tròn các góc"
+
+#: src/resources/ui/top-bar-page.blp:71
+msgid "Clock"
+msgstr "Đồng hồ"
+
+#: src/resources/ui/top-bar-page.blp:74
+msgid "Show Weekday"
+msgstr "Hiển thị các ngày trong tuần"
+
+#: src/resources/ui/top-bar-page.blp:83
+msgid "Show Seconds"
+msgstr "Hiển thị giây"
+
+#: src/resources/ui/top-bar-page.blp:92
+msgid "Time Format"
+msgstr "Định dạng thời gian"
+
+#: src/resources/ui/top-bar-page.blp:93
+msgid "AM/PM"
+msgstr "SA / CH"
+
+#: src/resources/ui/top-bar-page.blp:93
+msgid "24 Hours"
+msgstr "24 giờ"
+
+#: src/resources/ui/top-bar-page.blp:98 src/window.py:117
+msgid "Power"
+msgstr "Nguồn"
+
+#: src/resources/ui/top-bar-page.blp:101
+msgid "Show battery percentage"
+msgstr "Hiển thị phần trăm pin"
+
+#: src/settings.py:70
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Xuất sang tệp '{filename}'"
 
-#: src/settings.py:73
+#: src/settings.py:75
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
 
-#: src/settings.py:77
+#: src/settings.py:79
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
 
-#: src/settings.py:83
+#: src/settings.py:85
 msgid "Exporting to standard output"
 msgstr "Xuất ra đầu ra tiêu chuẩn"
 
-#: src/settings.py:92
+#: src/settings.py:94
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Đang nhập từ tệp '{filename}'"
 
-#: src/settings.py:96
+#: src/settings.py:98
 msgid "Importing from standard input"
 msgstr "Nhập từ đầu vào chuẩn"
 
-#: src/settings.py:99
+#: src/settings.py:101
 msgid "Failed to parse import file"
 msgstr "Không thể phân tích cú pháp tệp nhập"
 
-#: src/settings.py:102
+#: src/settings.py:104
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
 
-#: src/settings.py:108
+#: src/settings.py:110
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Tệp đã nhập không có phần '{section_name}'"
 
-#: src/settings.py:113
+#: src/settings.py:115
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
 
-#: src/settings.py:300
+#: src/settings.py:304
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
-#: src/settings.py:348
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
 
-#: src/settings.py:353
+#: src/settings.py:357
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Đang áp dụng các cài đặt GResource cho hệ thống không phải là Ubuntu…"
 
-#: src/settings.py:577
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
 
-#: src/settings.py:584
+#: src/settings.py:590
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-12-12 00:37+0500\n"
 "PO-Revision-Date: 2022-09-23 00:19+0000\n"
 "Last-Translator: Bima <abimanyusrisetyo@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -41,7 +41,7 @@ msgid "The image file to use as GDM background"
 msgstr "File gambar untuk digunakan sebagai latar belakang GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/blueprints/top-bar-page.blp:40
+#: src/resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Warna Latar Belakang"
 
@@ -266,102 +266,102 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 #, fuzzy
 #| msgid "Reset settings"
 msgid "Added power settings"
 msgstr "Setel ulang pengaturan"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Added an option to enlarge welcome message"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Added color to command-line output"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Turned main window adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Turned pop-up dialogs adaptive"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated \"about\" window to the new style"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Improved style of welcome message input field"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Fixed some typos"
 msgstr ""
 
-#: src/app.py:51
+#: src/app.py:53
 msgid "Show application version"
 msgstr "Tampilkan versi aplikasi"
 
-#: src/app.py:52
+#: src/app.py:54
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Atur level verbositas secara manual (dari 0 hingga 5)"
 
-#: src/app.py:53
+#: src/app.py:55
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "TINGKAT"
 
-#: src/app.py:54
+#: src/app.py:56
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Aktifkan mode verbose (alias --verbosity=5)"
 
-#: src/app.py:55
+#: src/app.py:57
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Aktifkan mode senyap (alias --verbosity=0)"
 
-#: src/app.py:75
+#: src/app.py:77
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Tingkat verbositas {level} tidak valid. Harus 0, 5, atau di antaranya."
 
-#: src/app.py:154
+#: src/app.py:156
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -370,7 +370,7 @@ msgstr ""
 "Program berikut harus diinstal <b> pada sistem host</b> agar aplikasi ini "
 "berfungsi dengan baik tetapi tidak diinstal pada sistem host."
 
-#: src/app.py:158
+#: src/app.py:160
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -378,7 +378,7 @@ msgstr ""
 "Aplikasi ini membutuhkan perangkat lunak berikut agar berfungsi dengan baik "
 "tetapi tidak diinstal."
 
-#: src/app.py:167
+#: src/app.py:169
 #, fuzzy
 #| msgctxt "Missing Dependency"
 #| msgid " • <b>GDM</b>"
@@ -386,7 +386,7 @@ msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr " • <b>GDM</b>"
 
-#: src/app.py:173
+#: src/app.py:175
 #, fuzzy
 #| msgctxt "Missing Dependency"
 #| msgid " • <b>Polkit</b>"
@@ -396,7 +396,7 @@ msgstr " • <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:181
+#: src/app.py:183
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -405,63 +405,63 @@ msgstr ""
 "Klik <a href=\"{url}\">di sini</a> untuk instruksi tentang cara menginstal "
 "dependensi ini pada sistem Anda."
 
-#: src/app.py:188
+#: src/app.py:190
 msgid "Missing Dependencies"
 msgstr "Dependensi yang Hilang"
 
-#: src/app.py:193 src/pages/display.py:104
+#: src/app.py:195 src/pages/display.py:104
 msgid "OK"
 msgstr ""
 
-#: src/app.py:222
+#: src/app.py:225
 msgid "Settings reloaded"
 msgstr "Pengaturan dimuat ulang"
 
-#: src/app.py:230
+#: src/app.py:233
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "Pengaturan berhasil diterapkan"
 
-#: src/app.py:234
+#: src/app.py:237
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Mengimpor pengaturan pengguna TIDAK didukung dalam versi Flatpak"
 
-#: src/app.py:247
+#: src/app.py:250
 msgid "Reset settings successfully"
 msgstr "Berhasil mengatur ulang pengaturan"
 
-#: src/app.py:249
+#: src/app.py:252
 msgid "Failed to reset settings"
 msgstr "Gagal mengatur ulang pengaturan"
 
-#: src/app.py:268
+#: src/app.py:271
 msgid "Import"
 msgstr ""
 
-#: src/app.py:290
+#: src/app.py:293
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
 msgstr "Pengaturan berhasil diterapkan"
 
-#: src/app.py:292
+#: src/app.py:295
 msgid "Failed to import. File is invalid"
 msgstr ""
 
-#: src/app.py:323
+#: src/app.py:326
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
 msgstr "Pengaturan berhasil diterapkan"
 
-#: src/app.py:325
+#: src/app.py:328
 msgid "Failed to export. Permission denied"
 msgstr ""
 
-#: src/app.py:327
+#: src/app.py:330
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
@@ -489,436 +489,6 @@ msgstr "Hak Cipta © 2021 Mazhar Hussain"
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Abimanyu Sri Setyo"
-
-#: src/blueprints/appearance-page.blp:9
-msgid "Themes"
-msgstr "Tema"
-
-#: src/blueprints/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
-
-#: src/blueprints/appearance-page.blp:12
-msgid "Icons"
-msgstr "Ikon"
-
-#: src/blueprints/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Kursor"
-
-#: src/blueprints/appearance-page.blp:17
-msgid "Background"
-msgstr "Latar belakang"
-
-#: src/blueprints/appearance-page.blp:20
-msgid "Type"
-msgstr "Jenis"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
-#: src/blueprints/fonts-page.blp:35
-msgid "None"
-msgstr "Tidak ada"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
-msgid "Image"
-msgstr "Gambar"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
-msgid "Color"
-msgstr "Warna"
-
-#: src/blueprints/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Gambar yang akan digunakan sebagai latar belakang"
-
-#: src/blueprints/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Warna yang akan digunakan sebagai latar belakang"
-
-#: src/blueprints/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Terapkan pengaturan tampilan saat ini"
-
-#: src/blueprints/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Resolusi, kecepatan refresh, posisi monitor, dll"
-
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
-msgid "Apply"
-msgstr "Terapkan"
-
-#: src/blueprints/display-page.blp:21
-msgid "Night Light"
-msgstr "Cahaya malam"
-
-#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
-msgid "Enable"
-msgstr "Mengaktifkan"
-
-#: src/blueprints/display-page.blp:33
-msgid "Schedule"
-msgstr "Jadwal"
-
-#: src/blueprints/display-page.blp:34
-msgid "Sunset to Sunrise"
-msgstr "Matahari terbenam ke Matahari terbit"
-
-#: src/blueprints/display-page.blp:34
-msgid "Manual Schedule"
-msgstr "Jadwal Manual"
-
-#: src/blueprints/display-page.blp:38
-msgid "Times"
-msgstr "Waktu"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:41
-msgid "From"
-msgstr "Dari"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:65
-msgid "To"
-msgstr "Ke"
-
-#: src/blueprints/display-page.blp:89
-msgid "Color Temperature"
-msgstr "Suhu Warna"
-
-#: src/blueprints/fonts-page.blp:12
-msgid "Font"
-msgstr "Font"
-
-#: src/blueprints/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Antialiasing"
-
-#: src/blueprints/fonts-page.blp:23
-msgid "Standard"
-msgstr "Standar"
-
-#: src/blueprints/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Subpiksel"
-
-#: src/blueprints/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Petunjuk"
-
-#: src/blueprints/fonts-page.blp:32
-msgid "Full"
-msgstr "Penuh"
-
-#: src/blueprints/fonts-page.blp:33
-msgid "Medium"
-msgstr "Sedang"
-
-#: src/blueprints/fonts-page.blp:34
-msgid "Slight"
-msgstr "Sedikit"
-
-#: src/blueprints/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Faktor Penskalaan"
-
-#: src/blueprints/main-window.blp:6
-msgid "Refresh"
-msgstr "Menyegarkan"
-
-#: src/blueprints/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
-msgid "Load session settings"
-msgstr "Impor pengaturan pengguna"
-
-#: src/blueprints/main-window.blp:8
-msgid "Reset settings"
-msgstr "Setel ulang pengaturan"
-
-#: src/blueprints/main-window.blp:11
-msgid "Import from file"
-msgstr ""
-
-#: src/blueprints/main-window.blp:12
-msgid "Export to file"
-msgstr ""
-
-#: src/blueprints/main-window.blp:15
-msgid "About"
-msgstr "Tentang"
-
-#: src/blueprints/main-window.blp:16
-msgid "Quit"
-msgstr "Keluar"
-
-#: src/blueprints/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Nonaktifkan Tombol Mulai Ulang"
-
-#: src/blueprints/login-screen-page.blp:21
-msgid "Disable User List"
-msgstr "Nonaktifkan Daftar Pengguna"
-
-#: src/blueprints/login-screen-page.blp:30
-msgid "Enable Logo"
-msgstr "Aktifkan Logo"
-
-#: src/blueprints/login-screen-page.blp:31
-msgid "Whether to show a logo below user list"
-msgstr "Apakah akan menampilkan logo di bawah daftar pengguna"
-
-#: src/blueprints/login-screen-page.blp:40
-msgid "Logo"
-msgstr "Logo"
-
-#: src/blueprints/login-screen-page.blp:41
-msgid "The image to show below user list"
-msgstr "Gambar untuk ditampilkan di bawah daftar pengguna"
-
-#: src/blueprints/login-screen-page.blp:47
-msgid "Welcome Message"
-msgstr "Pesan Selamat Datang"
-
-#: src/blueprints/login-screen-page.blp:59
-msgid "Enlarge"
-msgstr ""
-
-#: src/blueprints/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
-msgid "Message"
-msgstr "Pesan Selamat Datang"
-
-#: src/blueprints/pointing-page.blp:9
-msgid "Mouse"
-msgstr "Mouse"
-
-#: src/blueprints/pointing-page.blp:12
-msgid "Pointer Acceleration"
-msgstr "Percepatan Penunjuk"
-
-#: src/blueprints/pointing-page.blp:14
-msgid "Automatic"
-msgstr "Otomatis"
-
-#: src/blueprints/pointing-page.blp:15
-msgid "Disabled"
-msgstr "Dinonaktifkan"
-
-#: src/blueprints/pointing-page.blp:16
-msgid "Enabled"
-msgstr "Diaktifkan"
-
-#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Pengguliran Alami"
-
-#: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
-msgid "Scrolling moves the content, not the view."
-msgstr "Menggulir memindahkan konten, bukan tampilan."
-
-#: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
-msgid "Pointer Speed"
-msgstr "Kecepatan Penunjuk"
-
-#: src/blueprints/pointing-page.blp:39
-msgid "Touchpad"
-msgstr "Panel sentuh"
-
-#: src/blueprints/pointing-page.blp:42
-msgid "Tap to Click"
-msgstr "Ketuk untuk Mengklik"
-
-#: src/blueprints/pointing-page.blp:57
-msgid "Two-finger Scrolling"
-msgstr "Menggulir dengan dua jari"
-
-#: src/blueprints/pointing-page.blp:58
-msgid "Scroll by swiping with two fingers."
-msgstr "Gulir dengan menggesek dengan dua jari."
-
-#: src/blueprints/pointing-page.blp:65
-msgid "Disable while Typing"
-msgstr "Nonaktifkan saat Mengetik"
-
-#: src/blueprints/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr ""
-
-#: src/blueprints/power-page.blp:13
-msgid "Do Nothing"
-msgstr ""
-
-#: src/blueprints/power-page.blp:13
-msgid "Suspend"
-msgstr ""
-
-#: src/blueprints/power-page.blp:13
-msgid "Hibernate"
-msgstr ""
-
-#: src/blueprints/power-page.blp:13
-msgid "Ask"
-msgstr ""
-
-#: src/blueprints/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
-msgid "Automatic Power Saver"
-msgstr "Otomatis"
-
-#: src/blueprints/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr ""
-
-#: src/blueprints/power-page.blp:28
-msgid "Dim Screen"
-msgstr ""
-
-#: src/blueprints/power-page.blp:29
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
-
-#: src/blueprints/power-page.blp:38
-msgid "Turn Screen Off"
-msgstr ""
-
-#: src/blueprints/power-page.blp:39
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
-
-#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
-#: src/blueprints/power-page.blp:107
-msgid "Delay"
-msgstr ""
-
-#: src/blueprints/power-page.blp:49
-msgid "Time in minutes after which screen will turn off."
-msgstr ""
-
-#: src/blueprints/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
-msgid "Automatic Suspend"
-msgstr "Otomatis"
-
-#: src/blueprints/power-page.blp:68
-msgid "Pauses the computer after a period of inactivity."
-msgstr ""
-
-#: src/blueprints/power-page.blp:71
-msgid "On Battery Power"
-msgstr ""
-
-#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
-msgid "Time in minutes after which the computer will suspend."
-msgstr ""
-
-#: src/blueprints/power-page.blp:98
-msgid "When Plugged In"
-msgstr ""
-
-#: src/blueprints/sound-page.blp:11
-msgid "Theme"
-msgstr "Tema"
-
-#: src/blueprints/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Amplifikasi Berlebihan"
-
-#: src/blueprints/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Izinkan peningkatan volume di atas 100%"
-
-#: src/blueprints/sound-page.blp:24
-msgid "Event Sounds"
-msgstr "Suara Event"
-
-#: src/blueprints/sound-page.blp:33
-msgid "Input Feedback Sounds"
-msgstr "Masukan Umpan Balik Suara"
-
-#: src/blueprints/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Tema Shell Default"
-
-#: src/blueprints/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Sertakan Tweak Bilah Atas"
-
-#: src/blueprints/tools-page.blp:19
-msgid "Extract default shell theme"
-msgstr "Ekstrak tema shell default"
-
-#: src/blueprints/tools-page.blp:22
-msgid "Extract"
-msgstr "Ekstrak"
-
-#: src/blueprints/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Tweak"
-
-#: src/blueprints/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Ubah Warna Teks"
-
-#: src/blueprints/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Warna Teks"
-
-#: src/blueprints/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Warna teks di bilah atas"
-
-#: src/blueprints/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Ubah Warna Latar Belakang"
-
-#: src/blueprints/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Warna latar belakang bilah atas"
-
-#: src/blueprints/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Nonaktifkan Panah"
-
-#: src/blueprints/top-bar-page.blp:61
-msgid "Disable Rounded Corners"
-msgstr "Nonaktifkan Sudut Bulat"
-
-#: src/blueprints/top-bar-page.blp:71
-msgid "Clock"
-msgstr "Jam"
-
-#: src/blueprints/top-bar-page.blp:74
-msgid "Show Weekday"
-msgstr "Tampilkan Hari Kerja"
-
-#: src/blueprints/top-bar-page.blp:83
-msgid "Show Seconds"
-msgstr "Tampilkan Detik"
-
-#: src/blueprints/top-bar-page.blp:92
-msgid "Time Format"
-msgstr "Format Waktu"
-
-#: src/blueprints/top-bar-page.blp:93
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/blueprints/top-bar-page.blp:93
-msgid "24 Hours"
-msgstr "24 Jam"
-
-#: src/blueprints/top-bar-page.blp:98 src/window.py:117
-msgid "Power"
-msgstr "Power"
-
-#: src/blueprints/top-bar-page.blp:101
-msgid "Show battery percentage"
-msgstr "Tampilkan persentase baterai"
 
 #: src/common_widgets.py:20
 msgid "Choose File"
@@ -979,6 +549,40 @@ msgstr ""
 msgid "Monitor Settings Not Found"
 msgstr "Pengaturan Monitor Tidak Ditemukan"
 
+#: src/pages/pointing_utils/cursor.py:60
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:61
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Sedang"
+
+#: src/pages/pointing_utils/cursor.py:62
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:63
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:64
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:65
+#, fuzzy
+#| msgid "Standard"
+msgctxt "Cursor Size"
+msgid "Non-Standard"
+msgstr "Standar"
+
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
@@ -990,77 +594,520 @@ msgstr "Tema shell default diekstraksi ke '{folder}' sebagai '{name}'"
 msgid "Failed to extract default theme"
 msgstr "Gagal mengekstrak tema default"
 
-#: src/settings.py:68
+#: src/resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Tema"
+
+#: src/resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: src/resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Ikon"
+
+#: src/resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Kursor"
+
+#: src/resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Latar belakang"
+
+#: src/resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Jenis"
+
+#: src/resources/ui/appearance-page.blp:21 src/resources/ui/fonts-page.blp:25
+#: src/resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Tidak ada"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:26
+msgid "Image"
+msgstr "Gambar"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:31
+msgid "Color"
+msgstr "Warna"
+
+#: src/resources/ui/appearance-page.blp:27
+msgid "The image to use as background"
+msgstr "Gambar yang akan digunakan sebagai latar belakang"
+
+#: src/resources/ui/appearance-page.blp:32
+msgid "The color to use as background"
+msgstr "Warna yang akan digunakan sebagai latar belakang"
+
+#: src/resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Terapkan pengaturan tampilan saat ini"
+
+#: src/resources/ui/display-page.blp:13
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Resolusi, kecepatan refresh, posisi monitor, dll"
+
+#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
+msgid "Apply"
+msgstr "Terapkan"
+
+#: src/resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Cahaya malam"
+
+#: src/resources/ui/display-page.blp:24
+#: src/resources/ui/login-screen-page.blp:50
+msgid "Enable"
+msgstr "Mengaktifkan"
+
+#: src/resources/ui/display-page.blp:33
+msgid "Schedule"
+msgstr "Jadwal"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Sunset to Sunrise"
+msgstr "Matahari terbenam ke Matahari terbit"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Manual Schedule"
+msgstr "Jadwal Manual"
+
+#: src/resources/ui/display-page.blp:38
+msgid "Times"
+msgstr "Waktu"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:41
+msgid "From"
+msgstr "Dari"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:65
+msgid "To"
+msgstr "Ke"
+
+#: src/resources/ui/display-page.blp:89
+msgid "Color Temperature"
+msgstr "Suhu Warna"
+
+#: src/resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Font"
+
+#: src/resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Antialiasing"
+
+#: src/resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standar"
+
+#: src/resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpiksel"
+
+#: src/resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Petunjuk"
+
+#: src/resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Penuh"
+
+#: src/resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Sedang"
+
+#: src/resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Sedikit"
+
+#: src/resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Faktor Penskalaan"
+
+#: src/resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Menyegarkan"
+
+#: src/resources/ui/main-window.blp:7
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
+msgstr "Impor pengaturan pengguna"
+
+#: src/resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Setel ulang pengaturan"
+
+#: src/resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr ""
+
+#: src/resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr ""
+
+#: src/resources/ui/main-window.blp:15
+msgid "Donate"
+msgstr ""
+
+#: src/resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Tentang"
+
+#: src/resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Keluar"
+
+#: src/resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Nonaktifkan Tombol Mulai Ulang"
+
+#: src/resources/ui/login-screen-page.blp:21
+msgid "Disable User List"
+msgstr "Nonaktifkan Daftar Pengguna"
+
+#: src/resources/ui/login-screen-page.blp:30
+msgid "Enable Logo"
+msgstr "Aktifkan Logo"
+
+#: src/resources/ui/login-screen-page.blp:31
+msgid "Whether to show a logo below user list"
+msgstr "Apakah akan menampilkan logo di bawah daftar pengguna"
+
+#: src/resources/ui/login-screen-page.blp:40
+msgid "Logo"
+msgstr "Logo"
+
+#: src/resources/ui/login-screen-page.blp:41
+msgid "The image to show below user list"
+msgstr "Gambar untuk ditampilkan di bawah daftar pengguna"
+
+#: src/resources/ui/login-screen-page.blp:47
+msgid "Welcome Message"
+msgstr "Pesan Selamat Datang"
+
+#: src/resources/ui/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr ""
+
+#: src/resources/ui/login-screen-page.blp:69
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
+msgstr "Pesan Selamat Datang"
+
+#: src/resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "Kursor"
+
+#: src/resources/ui/pointing-page.blp:19
+msgid "Mouse"
+msgstr "Mouse"
+
+#: src/resources/ui/pointing-page.blp:22
+msgid "Pointer Acceleration"
+msgstr "Percepatan Penunjuk"
+
+#: src/resources/ui/pointing-page.blp:24
+msgid "Automatic"
+msgstr "Otomatis"
+
+#: src/resources/ui/pointing-page.blp:25
+msgid "Disabled"
+msgstr "Dinonaktifkan"
+
+#: src/resources/ui/pointing-page.blp:26
+msgid "Enabled"
+msgstr "Diaktifkan"
+
+#: src/resources/ui/pointing-page.blp:31 src/resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Pengguliran Alami"
+
+#: src/resources/ui/pointing-page.blp:32 src/resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Menggulir memindahkan konten, bukan tampilan."
+
+#: src/resources/ui/pointing-page.blp:39 src/resources/ui/pointing-page.blp:82
+msgid "Pointer Speed"
+msgstr "Kecepatan Penunjuk"
+
+#: src/resources/ui/pointing-page.blp:49
+msgid "Touchpad"
+msgstr "Panel sentuh"
+
+#: src/resources/ui/pointing-page.blp:52
+msgid "Tap to Click"
+msgstr "Ketuk untuk Mengklik"
+
+#: src/resources/ui/pointing-page.blp:67
+msgid "Two-finger Scrolling"
+msgstr "Menggulir dengan dua jari"
+
+#: src/resources/ui/pointing-page.blp:68
+msgid "Scroll by swiping with two fingers."
+msgstr "Gulir dengan menggesek dengan dua jari."
+
+#: src/resources/ui/pointing-page.blp:75
+msgid "Disable while Typing"
+msgstr "Nonaktifkan saat Mengetik"
+
+#: src/resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:18
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Power Saver"
+msgstr "Otomatis"
+
+#: src/resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:28
+msgid "Dim Screen"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:39
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:48 src/resources/ui/power-page.blp:80
+#: src/resources/ui/power-page.blp:107
+msgid "Delay"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:49
+msgid "Time in minutes after which screen will turn off."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:67
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Suspend"
+msgstr "Otomatis"
+
+#: src/resources/ui/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:71
+msgid "On Battery Power"
+msgstr ""
+
+#: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
+msgid "Time in minutes after which the computer will suspend."
+msgstr ""
+
+#: src/resources/ui/power-page.blp:98
+msgid "When Plugged In"
+msgstr ""
+
+#: src/resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Tema"
+
+#: src/resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Amplifikasi Berlebihan"
+
+#: src/resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Izinkan peningkatan volume di atas 100%"
+
+#: src/resources/ui/sound-page.blp:24
+msgid "Event Sounds"
+msgstr "Suara Event"
+
+#: src/resources/ui/sound-page.blp:33
+msgid "Input Feedback Sounds"
+msgstr "Masukan Umpan Balik Suara"
+
+#: src/resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Tema Shell Default"
+
+#: src/resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Sertakan Tweak Bilah Atas"
+
+#: src/resources/ui/tools-page.blp:19
+msgid "Extract default shell theme"
+msgstr "Ekstrak tema shell default"
+
+#: src/resources/ui/tools-page.blp:22
+msgid "Extract"
+msgstr "Ekstrak"
+
+#: src/resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Tweak"
+
+#: src/resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Ubah Warna Teks"
+
+#: src/resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Warna Teks"
+
+#: src/resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Warna teks di bilah atas"
+
+#: src/resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Ubah Warna Latar Belakang"
+
+#: src/resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Warna latar belakang bilah atas"
+
+#: src/resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Nonaktifkan Panah"
+
+#: src/resources/ui/top-bar-page.blp:61
+msgid "Disable Rounded Corners"
+msgstr "Nonaktifkan Sudut Bulat"
+
+#: src/resources/ui/top-bar-page.blp:71
+msgid "Clock"
+msgstr "Jam"
+
+#: src/resources/ui/top-bar-page.blp:74
+msgid "Show Weekday"
+msgstr "Tampilkan Hari Kerja"
+
+#: src/resources/ui/top-bar-page.blp:83
+msgid "Show Seconds"
+msgstr "Tampilkan Detik"
+
+#: src/resources/ui/top-bar-page.blp:92
+msgid "Time Format"
+msgstr "Format Waktu"
+
+#: src/resources/ui/top-bar-page.blp:93
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: src/resources/ui/top-bar-page.blp:93
+msgid "24 Hours"
+msgstr "24 Jam"
+
+#: src/resources/ui/top-bar-page.blp:98 src/window.py:117
+msgid "Power"
+msgstr "Power"
+
+#: src/resources/ui/top-bar-page.blp:101
+msgid "Show battery percentage"
+msgstr "Tampilkan persentase baterai"
+
+#: src/settings.py:70
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr ""
 
-#: src/settings.py:73
+#: src/settings.py:75
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
 
-#: src/settings.py:77
+#: src/settings.py:79
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
 
-#: src/settings.py:83
+#: src/settings.py:85
 msgid "Exporting to standard output"
 msgstr ""
 
-#: src/settings.py:92
+#: src/settings.py:94
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr ""
 
-#: src/settings.py:96
+#: src/settings.py:98
 msgid "Importing from standard input"
 msgstr ""
 
-#: src/settings.py:99
+#: src/settings.py:101
 #, fuzzy
 #| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
 msgstr "Gagal mengatur ulang pengaturan"
 
-#: src/settings.py:102
+#: src/settings.py:104
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 
-#: src/settings.py:108
+#: src/settings.py:110
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:113
+#: src/settings.py:115
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: src/settings.py:300
+#: src/settings.py:304
 msgid "Backing up default shell theme …"
 msgstr "Mencadangkan tema shell default …"
 
-#: src/settings.py:348
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Menerapkan pengaturan GResource untuk Ubuntu …"
 
-#: src/settings.py:353
+#: src/settings.py:357
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Menerapkan pengaturan GResource untuk sistem non-Ubuntu …"
 
-#: src/settings.py:577
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Mengatur ulang pengaturan GResource untuk Ubuntu …"
 
-#: src/settings.py:584
+#: src/settings.py:590
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Mengatur ulang pengaturan GResource untuk sistem non-Ubuntu …"

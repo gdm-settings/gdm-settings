@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-22 10:55+0500\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2022-12-12 00:37+0500\n"
 "PO-Revision-Date: 2022-10-27 05:45+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/gdm-"
@@ -42,7 +42,7 @@ msgid "The image file to use as GDM background"
 msgstr "Bildefil å bruke som GDM-bakgrunn"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/blueprints/top-bar-page.blp:40
+#: src/resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Bakgrunnsfarge"
 
@@ -295,45 +295,45 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
 msgid "Added power settings"
 msgstr "La til effektstyringsinnstillinger"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:89
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
 "La til alternativer for import/eksport av innstillinger i den globale menyen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Added an option to enlarge welcome message"
 msgstr "La til alternativ for å gjøre velkomstmeldingen større"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Added color to command-line output"
 msgstr "La til farge for kommandolinjeutdata"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Turned main window adaptive"
 msgstr "Gjorde hovedvinduet tilpasningsdyktig"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Turned pop-up dialogs adaptive"
 msgstr "Gjorde oppsprettsdialoger tilpasningsdyktige"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 #, fuzzy
 msgid "Updated \"about\" window to the new style"
 msgstr "Oppdatert «Om»-vindu til ny stil"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Improved style of welcome message input field"
 msgstr "Forbedret stil for velkomstmeldingens inndatafelt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
 msgstr "Endret sidenavnsdelen «Ymse» til «Innloggingsskjerm»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
@@ -341,7 +341,7 @@ msgstr ""
 "Endret globalt menyvalg «Importer brukerinnstillinger» til «Last inn "
 "øktinnstillinger»"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 #, fuzzy
 msgid ""
 "The app, now, shows an error notification when trying to apply settings if "
@@ -351,7 +351,7 @@ msgstr ""
 "Programmet viser nå en merknad om feil ved forsøk på å bruke innstillinger "
 "hvis logo er påslått og valgt logobildet ikke finnes på systemet."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 #, fuzzy
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
@@ -359,47 +359,47 @@ msgid ""
 msgstr ""
 "Fikset «Bruk nåværende skjerminnstillinger» på Ubuntu og lignende systemer"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Fixed some text showing up untranslated even if translation existed"
 msgstr "Fikset noe tekst som ble vist uoversatt selv om de var oversatt"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Fixed not being able to change logo image sometimes"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Fixed some typos"
 msgstr "Fikset noen skrivefeil"
 
-#: src/app.py:51
+#: src/app.py:53
 msgid "Show application version"
 msgstr "Vis programversjon"
 
-#: src/app.py:52
+#: src/app.py:54
 #, fuzzy
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Sett detaljnivå manuelt (fra 0 til 5)"
 
-#: src/app.py:53
+#: src/app.py:55
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "Nivå"
 
-#: src/app.py:54
+#: src/app.py:56
 #, fuzzy
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Skru på ordrikt modus (alias for «--verbosity=5»)"
 
-#: src/app.py:55
+#: src/app.py:57
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Skru på stille modus (alias for «--verbosity=0»)"
 
-#: src/app.py:75
+#: src/app.py:77
 #, fuzzy, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Ugyldig detaljnivå «{level}», må være fra 1-5."
 
-#: src/app.py:154
+#: src/app.py:156
 #, fuzzy
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
@@ -409,7 +409,7 @@ msgstr ""
 "Følgende programmer må være installert <b>på vertssystemet</b> for at "
 "programmet skal fungerer rett, men de er ikke installert på vertssystemet."
 
-#: src/app.py:158
+#: src/app.py:160
 #, fuzzy
 msgid ""
 "This app requires the following software to function properly but they are "
@@ -418,19 +418,19 @@ msgstr ""
 "Dette programmet krever følgende programvare for å fungere, men de er ikke "
 "installert."
 
-#: src/app.py:167
+#: src/app.py:169
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:173
+#: src/app.py:175
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:181
+#: src/app.py:183
 #, fuzzy, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -439,61 +439,61 @@ msgstr ""
 "Klikk <a href=\"{url}\">her</a> for instruks om hvordan du installerer disse "
 "avhengighetene på systemet ditt."
 
-#: src/app.py:188
+#: src/app.py:190
 msgid "Missing Dependencies"
 msgstr "Manglende avhengigheter"
 
-#: src/app.py:193 src/pages/display.py:104
+#: src/app.py:195 src/pages/display.py:104
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:222
+#: src/app.py:225
 msgid "Settings reloaded"
 msgstr "Innstillinger ble gjeninnlastet"
 
-#: src/app.py:230
+#: src/app.py:233
 #, fuzzy
 msgid "Session settings loaded successfully"
 msgstr "Øktinnstillinger ble innlastet"
 
-#: src/app.py:234
+#: src/app.py:237
 #, fuzzy
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Innlasting av øktinnstillinger støttes ikke i Flatpak-versjonen"
 
-#: src/app.py:247
+#: src/app.py:250
 #, fuzzy
 msgid "Reset settings successfully"
 msgstr "Innstillinger tilbakestilt"
 
-#: src/app.py:249
+#: src/app.py:252
 #, fuzzy
 msgid "Failed to reset settings"
 msgstr "Klarte ikke å tilbakestille innstillingene"
 
-#: src/app.py:268
+#: src/app.py:271
 msgid "Import"
 msgstr "Importer"
 
-#: src/app.py:290
+#: src/app.py:293
 #, fuzzy
 msgid "Settings were successfully imported from file"
 msgstr "Innstillinger importert fra fil"
 
-#: src/app.py:292
+#: src/app.py:295
 msgid "Failed to import. File is invalid"
 msgstr "Kunne ikke importere. Filen er ugyldig."
 
-#: src/app.py:323
+#: src/app.py:326
 msgid "Settings were successfully exported"
 msgstr "Innstillingene ble importert"
 
-#: src/app.py:325
+#: src/app.py:328
 #, fuzzy
 msgid "Failed to export. Permission denied"
 msgstr "Klarte ikke å eksportere. Mangler tilgang."
 
-#: src/app.py:327
+#: src/app.py:330
 #, fuzzy
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Klarte ikke å eksportere. En mappe med det navnet finnes allerede."
@@ -517,432 +517,6 @@ msgstr "Opphavsrett 2021–2022 Mazhar Hussain"
 #: src/about.py:29
 msgid "translator-credits"
 msgstr "Allan Nordhøy <epost@anotheragency.no>"
-
-#: src/blueprints/appearance-page.blp:9
-msgid "Themes"
-msgstr "Drakter"
-
-#: src/blueprints/appearance-page.blp:11
-msgid "Shell"
-msgstr "Skall"
-
-#: src/blueprints/appearance-page.blp:12
-msgid "Icons"
-msgstr "Ikoner"
-
-#: src/blueprints/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Peker"
-
-#: src/blueprints/appearance-page.blp:17
-msgid "Background"
-msgstr "Bakgrunn"
-
-#: src/blueprints/appearance-page.blp:20
-msgid "Type"
-msgstr "Type"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/fonts-page.blp:25
-#: src/blueprints/fonts-page.blp:35
-msgid "None"
-msgstr "Ingen"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:26
-msgid "Image"
-msgstr "Bilde"
-
-#: src/blueprints/appearance-page.blp:21 src/blueprints/appearance-page.blp:31
-msgid "Color"
-msgstr "Farge"
-
-#: src/blueprints/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Bilde å bruke som bakgrunn"
-
-#: src/blueprints/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Farge å bruke som bakgrunn"
-
-#: src/blueprints/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Bruk nåværende skjerminnstillinger"
-
-#: src/blueprints/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Oppløsning, oppdateringsfrekvens, skjermposisjoner, osv."
-
-#: src/blueprints/display-page.blp:16 src/blueprints/main-window.blp:40
-msgid "Apply"
-msgstr "Bruk"
-
-#: src/blueprints/display-page.blp:21
-msgid "Night Light"
-msgstr "Nattlys"
-
-#: src/blueprints/display-page.blp:24 src/blueprints/login-screen-page.blp:50
-msgid "Enable"
-msgstr "Skru på"
-
-#: src/blueprints/display-page.blp:33
-msgid "Schedule"
-msgstr "Tidsplan"
-
-#: src/blueprints/display-page.blp:34
-msgid "Sunset to Sunrise"
-msgstr "Solnedgang til soloppgang"
-
-#: src/blueprints/display-page.blp:34
-msgid "Manual Schedule"
-msgstr "Manuell plan"
-
-#: src/blueprints/display-page.blp:38
-msgid "Times"
-msgstr "Tider"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:41
-msgid "From"
-msgstr "Fra"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/blueprints/display-page.blp:65
-msgid "To"
-msgstr "Til"
-
-#: src/blueprints/display-page.blp:89
-msgid "Color Temperature"
-msgstr "Fargetemperatur"
-
-#: src/blueprints/fonts-page.blp:12
-msgid "Font"
-msgstr "Skrift"
-
-#: src/blueprints/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Kantutjevning"
-
-#: src/blueprints/fonts-page.blp:23
-msgid "Standard"
-msgstr "Forvalg"
-
-#: src/blueprints/fonts-page.blp:24
-#, fuzzy
-msgid "Subpixel"
-msgstr "Underpiksel"
-
-#: src/blueprints/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Hinting"
-
-#: src/blueprints/fonts-page.blp:32
-msgid "Full"
-msgstr "Full"
-
-#: src/blueprints/fonts-page.blp:33
-msgid "Medium"
-msgstr "Middels"
-
-#: src/blueprints/fonts-page.blp:34
-msgid "Slight"
-msgstr "Lett"
-
-#: src/blueprints/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Skaleringsfaktor"
-
-#: src/blueprints/main-window.blp:6
-msgid "Refresh"
-msgstr "Gjenoppfrisk"
-
-#: src/blueprints/main-window.blp:7
-msgid "Load session settings"
-msgstr "Last inn øktinnstillinger"
-
-#: src/blueprints/main-window.blp:8
-msgid "Reset settings"
-msgstr "Tilbakestill innstillinger"
-
-#: src/blueprints/main-window.blp:11
-msgid "Import from file"
-msgstr "Importer fra fil"
-
-#: src/blueprints/main-window.blp:12
-msgid "Export to file"
-msgstr "Eksporter til fil"
-
-#: src/blueprints/main-window.blp:15
-msgid "About"
-msgstr "Om"
-
-#: src/blueprints/main-window.blp:16
-msgid "Quit"
-msgstr "Avslutt"
-
-#: src/blueprints/login-screen-page.blp:12
-#, fuzzy
-msgid "Disable Restart Buttons"
-msgstr "Skru av omstartsknapper"
-
-#: src/blueprints/login-screen-page.blp:21
-msgid "Disable User List"
-msgstr "Skru av brukerliste"
-
-#: src/blueprints/login-screen-page.blp:30
-msgid "Enable Logo"
-msgstr "Skru på logo"
-
-#: src/blueprints/login-screen-page.blp:31
-msgid "Whether to show a logo below user list"
-msgstr "Hvorvidt en logo skal vises under brukerlisten"
-
-#: src/blueprints/login-screen-page.blp:40
-msgid "Logo"
-msgstr "Logo"
-
-#: src/blueprints/login-screen-page.blp:41
-msgid "The image to show below user list"
-msgstr "Bilde å vise under brukerlisten"
-
-#: src/blueprints/login-screen-page.blp:47
-msgid "Welcome Message"
-msgstr "Velkomstmelding"
-
-#: src/blueprints/login-screen-page.blp:59
-msgid "Enlarge"
-msgstr "Forstørr"
-
-#: src/blueprints/login-screen-page.blp:69
-msgid "Message"
-msgstr "Melding"
-
-#: src/blueprints/pointing-page.blp:9
-msgid "Mouse"
-msgstr "Mus"
-
-#: src/blueprints/pointing-page.blp:12
-msgid "Pointer Acceleration"
-msgstr "Pekerakselerasjon"
-
-#: src/blueprints/pointing-page.blp:14
-msgid "Automatic"
-msgstr "Automatisk"
-
-#: src/blueprints/pointing-page.blp:15
-msgid "Disabled"
-msgstr "Avskrudd"
-
-#: src/blueprints/pointing-page.blp:16
-msgid "Enabled"
-msgstr "Påskrudd"
-
-#: src/blueprints/pointing-page.blp:21 src/blueprints/pointing-page.blp:49
-msgid "Natural Scrolling"
-msgstr "Naturlig rulling"
-
-#: src/blueprints/pointing-page.blp:22 src/blueprints/pointing-page.blp:50
-msgid "Scrolling moves the content, not the view."
-msgstr "Rulling flytter innholdet, ikke visningen."
-
-#: src/blueprints/pointing-page.blp:29 src/blueprints/pointing-page.blp:72
-msgid "Pointer Speed"
-msgstr "Pekerhastighet"
-
-#: src/blueprints/pointing-page.blp:39
-msgid "Touchpad"
-msgstr "Pekeflate"
-
-#: src/blueprints/pointing-page.blp:42
-msgid "Tap to Click"
-msgstr "Trykk for å klikke"
-
-#: src/blueprints/pointing-page.blp:57
-msgid "Two-finger Scrolling"
-msgstr "Tofingerrulling"
-
-#: src/blueprints/pointing-page.blp:58
-msgid "Scroll by swiping with two fingers."
-msgstr "Rull ved å dra med to fingre."
-
-#: src/blueprints/pointing-page.blp:65
-msgid "Disable while Typing"
-msgstr "Skru av under skriving"
-
-#: src/blueprints/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Oppførsel for av/på-knapp"
-
-#: src/blueprints/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Ikke gjør noe"
-
-#: src/blueprints/power-page.blp:13
-msgid "Suspend"
-msgstr "Hvilemodus"
-
-#: src/blueprints/power-page.blp:13
-msgid "Hibernate"
-msgstr "Dvalemodus"
-
-#: src/blueprints/power-page.blp:13
-msgid "Ask"
-msgstr "Spør"
-
-#: src/blueprints/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Automatisk strømsparing"
-
-#: src/blueprints/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Skru på strømsparingsmodus når batterinivået er lavt"
-
-#: src/blueprints/power-page.blp:28
-msgid "Dim Screen"
-msgstr "Senk skjermens lysstyrke"
-
-#: src/blueprints/power-page.blp:29
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Reduserer skjermlysstyrken når datamaskinen er inaktiv."
-
-#: src/blueprints/power-page.blp:38
-msgid "Turn Screen Off"
-msgstr "Skru av skjerm"
-
-#: src/blueprints/power-page.blp:39
-#, fuzzy
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Hvorvidt skjermen skal skrus av etter en stunds inaktivitet."
-
-#: src/blueprints/power-page.blp:48 src/blueprints/power-page.blp:80
-#: src/blueprints/power-page.blp:107
-msgid "Delay"
-msgstr "Forsinkelse"
-
-#: src/blueprints/power-page.blp:49
-#, fuzzy
-msgid "Time in minutes after which screen will turn off."
-msgstr "Antall minutter til skjermen skrur seg av."
-
-#: src/blueprints/power-page.blp:67
-msgid "Automatic Suspend"
-msgstr "Automatisk hvilemodus"
-
-#: src/blueprints/power-page.blp:68
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Setter datamaskinen på pause etter en tids inaktivitet."
-
-#: src/blueprints/power-page.blp:71
-msgid "On Battery Power"
-msgstr "På batteridrift"
-
-#: src/blueprints/power-page.blp:81 src/blueprints/power-page.blp:108
-#, fuzzy
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Antall minutter etterpå datamaskinen går i hvilemodus."
-
-#: src/blueprints/power-page.blp:98
-msgid "When Plugged In"
-msgstr "Når innplugget"
-
-#: src/blueprints/sound-page.blp:11
-msgid "Theme"
-msgstr "Drakt"
-
-#: src/blueprints/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Overforsterkning"
-
-#: src/blueprints/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Tillat økning av lydstyrken til over 100%"
-
-#: src/blueprints/sound-page.blp:24
-msgid "Event Sounds"
-msgstr "Begivenhetslyder"
-
-#: src/blueprints/sound-page.blp:33
-msgid "Input Feedback Sounds"
-msgstr "Inndatatilbakemeldingslyder"
-
-#: src/blueprints/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Forvalgt skalldrakt"
-
-#: src/blueprints/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Inkluder toppfeltsjusteringer"
-
-#: src/blueprints/tools-page.blp:19
-msgid "Extract default shell theme"
-msgstr "Pakk ut forvalgt skalldrakt"
-
-#: src/blueprints/tools-page.blp:22
-msgid "Extract"
-msgstr "Pakk ut"
-
-#: src/blueprints/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Justeringer"
-
-#: src/blueprints/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Endre tekstfarge"
-
-#: src/blueprints/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Tekstfarge"
-
-#: src/blueprints/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Tekstfargen i toppfeltet"
-
-#: src/blueprints/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Endre bakgrunnsfarge"
-
-#: src/blueprints/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Farge for toppfeltets bakgrunn"
-
-#: src/blueprints/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Skru av piler"
-
-#: src/blueprints/top-bar-page.blp:61
-msgid "Disable Rounded Corners"
-msgstr "Skru av avrundede hjørner"
-
-#: src/blueprints/top-bar-page.blp:71
-msgid "Clock"
-msgstr "Klokke"
-
-#: src/blueprints/top-bar-page.blp:74
-msgid "Show Weekday"
-msgstr "Vis ukedag"
-
-#: src/blueprints/top-bar-page.blp:83
-msgid "Show Seconds"
-msgstr "Vis sekunder"
-
-#: src/blueprints/top-bar-page.blp:92
-msgid "Time Format"
-msgstr "Tidsformat"
-
-#: src/blueprints/top-bar-page.blp:93
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/blueprints/top-bar-page.blp:93
-#, fuzzy
-msgid "24 Hours"
-msgstr "24-timersklokke"
-
-#: src/blueprints/top-bar-page.blp:98 src/window.py:117
-msgid "Power"
-msgstr "Effekt"
-
-#: src/blueprints/top-bar-page.blp:101
-msgid "Show battery percentage"
-msgstr "Vis batteriprosent"
 
 #: src/common_widgets.py:20
 msgid "Choose File"
@@ -998,6 +572,44 @@ msgstr ""
 msgid "Monitor Settings Not Found"
 msgstr "Fant ikke skjerminnstillinger"
 
+#: src/pages/pointing_utils/cursor.py:60
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:61
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Middels"
+
+#: src/pages/pointing_utils/cursor.py:62
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Forstørr"
+
+#: src/pages/pointing_utils/cursor.py:63
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Forstørr"
+
+#: src/pages/pointing_utils/cursor.py:64
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:65
+#, fuzzy
+#| msgid "Standard"
+msgctxt "Cursor Size"
+msgid "Non-Standard"
+msgstr "Forvalg"
+
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:46
@@ -1009,17 +621,456 @@ msgstr "Forvalgt skalldrakt pakket ut til «{folder}» som «{name}»"
 msgid "Failed to extract default theme"
 msgstr "Klarte ikke å pakke ut forvalgt drakt"
 
-#: src/settings.py:68
+#: src/resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Drakter"
+
+#: src/resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Skall"
+
+#: src/resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Ikoner"
+
+#: src/resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Peker"
+
+#: src/resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Bakgrunn"
+
+#: src/resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Type"
+
+#: src/resources/ui/appearance-page.blp:21 src/resources/ui/fonts-page.blp:25
+#: src/resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Ingen"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:26
+msgid "Image"
+msgstr "Bilde"
+
+#: src/resources/ui/appearance-page.blp:21
+#: src/resources/ui/appearance-page.blp:31
+msgid "Color"
+msgstr "Farge"
+
+#: src/resources/ui/appearance-page.blp:27
+msgid "The image to use as background"
+msgstr "Bilde å bruke som bakgrunn"
+
+#: src/resources/ui/appearance-page.blp:32
+msgid "The color to use as background"
+msgstr "Farge å bruke som bakgrunn"
+
+#: src/resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Bruk nåværende skjerminnstillinger"
+
+#: src/resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Oppløsning, oppdateringsfrekvens, skjermposisjoner, osv."
+
+#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
+msgid "Apply"
+msgstr "Bruk"
+
+#: src/resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Nattlys"
+
+#: src/resources/ui/display-page.blp:24
+#: src/resources/ui/login-screen-page.blp:50
+msgid "Enable"
+msgstr "Skru på"
+
+#: src/resources/ui/display-page.blp:33
+msgid "Schedule"
+msgstr "Tidsplan"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Sunset to Sunrise"
+msgstr "Solnedgang til soloppgang"
+
+#: src/resources/ui/display-page.blp:34
+msgid "Manual Schedule"
+msgstr "Manuell plan"
+
+#: src/resources/ui/display-page.blp:38
+msgid "Times"
+msgstr "Tider"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:41
+msgid "From"
+msgstr "Fra"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: src/resources/ui/display-page.blp:65
+msgid "To"
+msgstr "Til"
+
+#: src/resources/ui/display-page.blp:89
+msgid "Color Temperature"
+msgstr "Fargetemperatur"
+
+#: src/resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Skrift"
+
+#: src/resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Kantutjevning"
+
+#: src/resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Forvalg"
+
+#: src/resources/ui/fonts-page.blp:24
+#, fuzzy
+msgid "Subpixel"
+msgstr "Underpiksel"
+
+#: src/resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Hinting"
+
+#: src/resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Full"
+
+#: src/resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Middels"
+
+#: src/resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Lett"
+
+#: src/resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Skaleringsfaktor"
+
+#: src/resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Gjenoppfrisk"
+
+#: src/resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Last inn øktinnstillinger"
+
+#: src/resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Tilbakestill innstillinger"
+
+#: src/resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Importer fra fil"
+
+#: src/resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Eksporter til fil"
+
+#: src/resources/ui/main-window.blp:15
+msgid "Donate"
+msgstr ""
+
+#: src/resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Om"
+
+#: src/resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Avslutt"
+
+#: src/resources/ui/login-screen-page.blp:12
+#, fuzzy
+msgid "Disable Restart Buttons"
+msgstr "Skru av omstartsknapper"
+
+#: src/resources/ui/login-screen-page.blp:21
+msgid "Disable User List"
+msgstr "Skru av brukerliste"
+
+#: src/resources/ui/login-screen-page.blp:30
+msgid "Enable Logo"
+msgstr "Skru på logo"
+
+#: src/resources/ui/login-screen-page.blp:31
+msgid "Whether to show a logo below user list"
+msgstr "Hvorvidt en logo skal vises under brukerlisten"
+
+#: src/resources/ui/login-screen-page.blp:40
+msgid "Logo"
+msgstr "Logo"
+
+#: src/resources/ui/login-screen-page.blp:41
+msgid "The image to show below user list"
+msgstr "Bilde å vise under brukerlisten"
+
+#: src/resources/ui/login-screen-page.blp:47
+msgid "Welcome Message"
+msgstr "Velkomstmelding"
+
+#: src/resources/ui/login-screen-page.blp:59
+msgid "Enlarge"
+msgstr "Forstørr"
+
+#: src/resources/ui/login-screen-page.blp:69
+msgid "Message"
+msgstr "Melding"
+
+#: src/resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "Peker"
+
+#: src/resources/ui/pointing-page.blp:19
+msgid "Mouse"
+msgstr "Mus"
+
+#: src/resources/ui/pointing-page.blp:22
+msgid "Pointer Acceleration"
+msgstr "Pekerakselerasjon"
+
+#: src/resources/ui/pointing-page.blp:24
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: src/resources/ui/pointing-page.blp:25
+msgid "Disabled"
+msgstr "Avskrudd"
+
+#: src/resources/ui/pointing-page.blp:26
+msgid "Enabled"
+msgstr "Påskrudd"
+
+#: src/resources/ui/pointing-page.blp:31 src/resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Naturlig rulling"
+
+#: src/resources/ui/pointing-page.blp:32 src/resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Rulling flytter innholdet, ikke visningen."
+
+#: src/resources/ui/pointing-page.blp:39 src/resources/ui/pointing-page.blp:82
+msgid "Pointer Speed"
+msgstr "Pekerhastighet"
+
+#: src/resources/ui/pointing-page.blp:49
+msgid "Touchpad"
+msgstr "Pekeflate"
+
+#: src/resources/ui/pointing-page.blp:52
+msgid "Tap to Click"
+msgstr "Trykk for å klikke"
+
+#: src/resources/ui/pointing-page.blp:67
+msgid "Two-finger Scrolling"
+msgstr "Tofingerrulling"
+
+#: src/resources/ui/pointing-page.blp:68
+msgid "Scroll by swiping with two fingers."
+msgstr "Rull ved å dra med to fingre."
+
+#: src/resources/ui/pointing-page.blp:75
+msgid "Disable while Typing"
+msgstr "Skru av under skriving"
+
+#: src/resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Oppførsel for av/på-knapp"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Ikke gjør noe"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Hvilemodus"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Dvalemodus"
+
+#: src/resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Spør"
+
+#: src/resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Automatisk strømsparing"
+
+#: src/resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Skru på strømsparingsmodus når batterinivået er lavt"
+
+#: src/resources/ui/power-page.blp:28
+msgid "Dim Screen"
+msgstr "Senk skjermens lysstyrke"
+
+#: src/resources/ui/power-page.blp:29
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Reduserer skjermlysstyrken når datamaskinen er inaktiv."
+
+#: src/resources/ui/power-page.blp:38
+msgid "Turn Screen Off"
+msgstr "Skru av skjerm"
+
+#: src/resources/ui/power-page.blp:39
+#, fuzzy
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Hvorvidt skjermen skal skrus av etter en stunds inaktivitet."
+
+#: src/resources/ui/power-page.blp:48 src/resources/ui/power-page.blp:80
+#: src/resources/ui/power-page.blp:107
+msgid "Delay"
+msgstr "Forsinkelse"
+
+#: src/resources/ui/power-page.blp:49
+#, fuzzy
+msgid "Time in minutes after which screen will turn off."
+msgstr "Antall minutter til skjermen skrur seg av."
+
+#: src/resources/ui/power-page.blp:67
+msgid "Automatic Suspend"
+msgstr "Automatisk hvilemodus"
+
+#: src/resources/ui/power-page.blp:68
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Setter datamaskinen på pause etter en tids inaktivitet."
+
+#: src/resources/ui/power-page.blp:71
+msgid "On Battery Power"
+msgstr "På batteridrift"
+
+#: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
+#, fuzzy
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Antall minutter etterpå datamaskinen går i hvilemodus."
+
+#: src/resources/ui/power-page.blp:98
+msgid "When Plugged In"
+msgstr "Når innplugget"
+
+#: src/resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Drakt"
+
+#: src/resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Overforsterkning"
+
+#: src/resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Tillat økning av lydstyrken til over 100%"
+
+#: src/resources/ui/sound-page.blp:24
+msgid "Event Sounds"
+msgstr "Begivenhetslyder"
+
+#: src/resources/ui/sound-page.blp:33
+msgid "Input Feedback Sounds"
+msgstr "Inndatatilbakemeldingslyder"
+
+#: src/resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Forvalgt skalldrakt"
+
+#: src/resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Inkluder toppfeltsjusteringer"
+
+#: src/resources/ui/tools-page.blp:19
+msgid "Extract default shell theme"
+msgstr "Pakk ut forvalgt skalldrakt"
+
+#: src/resources/ui/tools-page.blp:22
+msgid "Extract"
+msgstr "Pakk ut"
+
+#: src/resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Justeringer"
+
+#: src/resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Endre tekstfarge"
+
+#: src/resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Tekstfarge"
+
+#: src/resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Tekstfargen i toppfeltet"
+
+#: src/resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Endre bakgrunnsfarge"
+
+#: src/resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Farge for toppfeltets bakgrunn"
+
+#: src/resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Skru av piler"
+
+#: src/resources/ui/top-bar-page.blp:61
+msgid "Disable Rounded Corners"
+msgstr "Skru av avrundede hjørner"
+
+#: src/resources/ui/top-bar-page.blp:71
+msgid "Clock"
+msgstr "Klokke"
+
+#: src/resources/ui/top-bar-page.blp:74
+msgid "Show Weekday"
+msgstr "Vis ukedag"
+
+#: src/resources/ui/top-bar-page.blp:83
+msgid "Show Seconds"
+msgstr "Vis sekunder"
+
+#: src/resources/ui/top-bar-page.blp:92
+msgid "Time Format"
+msgstr "Tidsformat"
+
+#: src/resources/ui/top-bar-page.blp:93
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: src/resources/ui/top-bar-page.blp:93
+#, fuzzy
+msgid "24 Hours"
+msgstr "24-timersklokke"
+
+#: src/resources/ui/top-bar-page.blp:98 src/window.py:117
+msgid "Power"
+msgstr "Effekt"
+
+#: src/resources/ui/top-bar-page.blp:101
+msgid "Show battery percentage"
+msgstr "Vis batteriprosent"
+
+#: src/settings.py:70
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Eksporterer til filen «{filename}»"
 
-#: src/settings.py:73
+#: src/settings.py:75
 #, fuzzy, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Kan ikke skrive til filen «{filename}». Mangler tilgang."
 
-#: src/settings.py:77
+#: src/settings.py:79
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1028,58 +1079,58 @@ msgstr ""
 "Kan ikke skrive til filen «{filename}». En mappe med samme navn finnes "
 "allerede."
 
-#: src/settings.py:83
+#: src/settings.py:85
 msgid "Exporting to standard output"
 msgstr "Eksporterer til forvalgt utdata"
 
-#: src/settings.py:92
+#: src/settings.py:94
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Importerer fra filen «{filename}»."
 
-#: src/settings.py:96
+#: src/settings.py:98
 msgid "Importing from standard input"
 msgstr "Importerer fra forvalgt inndata"
 
-#: src/settings.py:99
+#: src/settings.py:101
 msgid "Failed to parse import file"
 msgstr "Kunne ikke tolke importfil"
 
-#: src/settings.py:102
+#: src/settings.py:104
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Kunne ikke lese importfil. Ikke i UTF-8-koding"
 
-#: src/settings.py:108
+#: src/settings.py:110
 #, fuzzy, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Importert fil mangler delen «{section_name}»"
 
-#: src/settings.py:113
+#: src/settings.py:115
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Importert fil har ikke nøkkelen «{key_name}» i «{section_name}»-delen"
 
-#: src/settings.py:300
+#: src/settings.py:304
 msgid "Backing up default shell theme …"
 msgstr "Sikkerhetskopierer forvalgt skalldrakt …"
 
-#: src/settings.py:348
+#: src/settings.py:352
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Bruker GResource-innstilling for Ubuntu …"
 
-#: src/settings.py:353
+#: src/settings.py:357
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Bruker GResource-innstillinger for systemer som ikke er Ubuntu …"
 
-#: src/settings.py:577
+#: src/settings.py:583
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
 
-#: src/settings.py:584
+#: src/settings.py:590
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
