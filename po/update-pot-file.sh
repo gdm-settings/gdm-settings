@@ -8,6 +8,10 @@ options=(
   --keyword=_
   --keyword=C_:1c,2
   --from-code=UTF-8
+
+  --package-name="gdm-settings"
+  --package-version="3.alpha"
+  --msgid-bugs-address="realmazharhussain@gmail.com"
 )
 
 output=$(xgettext "${options[@]}" 2>&1)
