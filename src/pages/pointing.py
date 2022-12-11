@@ -1,6 +1,6 @@
 import os
 from gi.repository import Gtk
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import mouse_settings, touchpad_settings
 from ..bind_utils import *
 from .common import PageContent
@@ -14,7 +14,7 @@ class PointingPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'pointing-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/pointing-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 

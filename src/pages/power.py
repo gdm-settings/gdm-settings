@@ -1,6 +1,6 @@
 import os
 from gi.repository import Gtk
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import power_settings
 from ..bind_utils import *
 from .common import PageContent
@@ -14,7 +14,7 @@ class PowerPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'power-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/power-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 

@@ -5,7 +5,7 @@ from gettext import gettext as _, pgettext as C_
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .utils import run_on_host, BackgroundTask
+from .utils import run_on_host, BackgroundTask, resource_path
 from .bind_utils import bind
 from . import pages
 
@@ -64,7 +64,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.props.title = _('Login Manager Settings')
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'main-window.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/main-window.ui'))
 
         self.set_content(self.builder.get_object('content_box'))
 

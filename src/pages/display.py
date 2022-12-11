@@ -2,7 +2,7 @@ import os
 import logging
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import night_light_settings as nl_settings
 from ..utils import BackgroundTask
 from ..bind_utils import *
@@ -17,7 +17,7 @@ class DisplayPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'display-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/display-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 

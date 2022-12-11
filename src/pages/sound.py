@@ -1,6 +1,6 @@
 import os
 from gi.repository import Gtk
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import sound_settings
 from ..theme_lists import sound_themes
 from ..bind_utils import *
@@ -15,7 +15,7 @@ class SoundPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'sound-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/sound-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 
