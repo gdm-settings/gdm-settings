@@ -6,6 +6,16 @@ Box content_box {
   spacing: 25;
 
   Adw.PreferencesGroup {
+    Adw.ExpanderRow {
+      title: _("Cursor Size");
+
+      [action] Label { label: bind cursor_size_selector.label-string; }
+
+      .CursorSizeSelector cursor_size_selector {}
+    }
+  }
+
+  Adw.PreferencesGroup {
     title: _("Mouse");
 
     Adw.ComboRow m_acceleration_comborow {

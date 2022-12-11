@@ -5,6 +5,7 @@ gschema_files = [
   'io.github.realmazharhussain.GdmSettings.misc.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.mouse.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.night-light.gschema.xml',
+  'io.github.realmazharhussain.GdmSettings.pointing.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.power.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.sound.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.tools.gschema.xml',

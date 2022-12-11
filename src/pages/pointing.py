@@ -1,9 +1,9 @@
-import os
 from gi.repository import Gtk
 from ..utils import resource_path
 from ..settings import mouse_settings, touchpad_settings
 from ..bind_utils import *
 from .common import PageContent
+from .pointing_utils.cursor import CursorSizeSelector
 
 
 class PointingPageContent (PageContent):

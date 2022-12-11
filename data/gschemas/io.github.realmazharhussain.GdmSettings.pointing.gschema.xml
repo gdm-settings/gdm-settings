@@ -1,0 +1,10 @@
+<schemalist gettext-domain="gdm-settings">
+  <schema id="io.github.realmazharhussain.GdmSettings.pointing"
+       path="/io/github/realmazharhussain/GdmSettings/pointing/">
+
+    <key name="cursor-size" type="i">
+      <default>24</default>
+    </key>
+
+  </schema>
+</schemalist>
