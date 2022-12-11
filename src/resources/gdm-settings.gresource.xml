@@ -8,8 +8,16 @@
     <file>ui/sound-page.ui</file>
     <file>ui/top-bar-page.ui</file>
     <file>ui/pointing-page.ui</file>
+    <file>ui/pointing-page/cursor-image.ui</file>
+    <file>ui/pointing-page/cursor-size-button.ui</file>
+    <file>ui/pointing-page/cursor-size-selector.ui</file>
     <file>ui/login-screen-page.ui</file>
     <file>ui/power-page.ui</file>
     <file>ui/tools-page.ui</file>
+    <file>icons/24x24/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/32x32/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/48x48/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/64x64/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/96x96/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
   </gresource>
 </gresources>
