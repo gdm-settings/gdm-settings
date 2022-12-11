@@ -18,6 +18,7 @@ font_settings         = delayed_settings(f'{application_id}.fonts')
 login_screen_settings = delayed_settings(f'{application_id}.misc')
 night_light_settings  = delayed_settings(f'{application_id}.night-light')
 mouse_settings        = delayed_settings(f'{application_id}.mouse')
+pointing_settings     = delayed_settings(f'{application_id}.pointing')
 power_settings        = delayed_settings(f'{application_id}.power')
 touchpad_settings     = delayed_settings(f'{application_id}.touchpad')
 sound_settings        = delayed_settings(f'{application_id}.sound')
@@ -30,6 +31,7 @@ all_settings = (
     login_screen_settings,
     night_light_settings,
     mouse_settings,
+    pointing_settings,
     power_settings,
     touchpad_settings,
     sound_settings,
@@ -134,6 +136,8 @@ class SettingsManager (GObject.Object):
             font_settings['antialiasing'] = user_settings["font-antialiasing"]
             font_settings['hinting'] = user_settings["font-hinting"]
             font_settings['scaling-factor'] = user_settings["text-scaling-factor"]
+
+            pointing_settings['cursor-size'] = user_settings["cursor-size"]
 
             top_bar_settings['show-weekday'] = user_settings["clock-show-weekday"]
             top_bar_settings['time-format'] = user_settings["clock-format"]
@@ -374,6 +378,7 @@ class SettingsManager (GObject.Object):
             hinting = font_settings['hinting']
             icon_theme = appearance_settings['icon-theme']
             time_format = top_bar_settings['time-format']
+            cursor_size = pointing_settings['cursor-size']
             cursor_theme = appearance_settings['cursor-theme']
             show_seconds = str(top_bar_settings['show-seconds']).lower()
             show_weekday = str(top_bar_settings['show-weekday']).lower()
@@ -385,6 +390,7 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
             gdm_conf_contents +=  "#----------------------------\n"
             gdm_conf_contents += f"cursor-theme='{cursor_theme}'\n"
+            gdm_conf_contents += f"cursor-size={cursor_size}\n"
             gdm_conf_contents += f"icon-theme='{icon_theme}'\n"
             gdm_conf_contents += f"show-battery-percentage={show_battery_percentage}\n"
             gdm_conf_contents += f"clock-show-seconds={show_seconds}\n"

@@ -1,7 +1,11 @@
 '''Some random utility functions, classes, objects, etc. used throughout the source code'''
 
+from .info import resource_base_path
 from .enums import PackageType
 from . import env
+
+def resource_path (resource_name):
+    return resource_base_path + resource_name
 
 def getstdout(command, /):
     '''get standard output of a command'''

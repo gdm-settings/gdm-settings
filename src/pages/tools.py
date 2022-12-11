@@ -2,8 +2,8 @@ import os
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..env import TEMP_DIR
-from ..info import data_dir, application_id
-from ..utils import CommandElevator, BackgroundTask
+from ..info import application_id
+from ..utils import CommandElevator, BackgroundTask, resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
 from ..bind_utils import *
 from .common import PageContent
@@ -17,7 +17,7 @@ class ToolsPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'tools-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/tools-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 

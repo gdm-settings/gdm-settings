@@ -1,0 +1,13 @@
+using Gtk 4.0;
+using Adw 1;
+
+template CursorImage : Adw.Bin {
+    accessible-role: img;
+
+    Image {
+        icon-name: "io.github.realmazharhussain.GdmSettings-cursor";
+        halign: center;
+        valign: center;
+        pixel-size: bind CursorImage.cursor-size;
+    }
+}

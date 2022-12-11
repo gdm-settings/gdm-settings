@@ -1,6 +1,6 @@
 import os
 from gi.repository import Gtk
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import login_screen_settings
 from ..common_widgets import ImageChooserButton
 from ..bind_utils import *
@@ -15,7 +15,7 @@ class LoginScreenPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'login-screen-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/login-screen-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 

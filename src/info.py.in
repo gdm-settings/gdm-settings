@@ -9,3 +9,5 @@ build_type       = '@build_type@'
 
 AppDir = __file__.split('@prefix@')[0]  # Directory which contains this app (detected during runtime)
 data_dir = AppDir + '@data_dir@'        # Application-specific data directory
+
+resource_base_path = '/io/github/realmazharhussain/GdmSettings/'

@@ -1,6 +1,6 @@
 import os
 from gi.repository import Gtk
-from ..info import data_dir
+from ..utils import resource_path
 from ..settings import top_bar_settings
 from ..bind_utils import *
 from .common import PageContent
@@ -14,7 +14,7 @@ class TopBarPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_file(os.path.join(data_dir, 'top-bar-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/top-bar-page.ui'))
 
         self.set_child(self.builder.get_object('content_box'))
 
