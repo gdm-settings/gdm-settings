@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-12 00:11+0500\n"
+"POT-Creation-Date: 2022-12-12 00:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -484,6 +484,36 @@ msgstr ""
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:60
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:61
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:62
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:63
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:64
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: src/pages/pointing_utils/cursor.py:65
+msgctxt "Cursor Size"
+msgid "Non-Standard"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
