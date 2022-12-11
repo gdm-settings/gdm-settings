@@ -26,6 +26,7 @@ src/pages/display.py
 src/pages/fonts.py
 src/pages/login_screen.py
 src/pages/pointing.py
+src/pages/pointing_utils/cursor.py
 src/pages/power.py
 src/pages/sound.py
 src/pages/tools.py
