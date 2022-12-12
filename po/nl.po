@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-11-24 17:48+0000\n"
+"PO-Revision-Date: 2022-12-13 09:31+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -550,40 +550,32 @@ msgstr "Beeldschermvoorkeuren ontbreken"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Gemiddeld"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Vergroten"
+msgstr "Groot"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Vergroten"
+msgstr "Groter"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Grootst"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "Standaard"
+msgstr "Niet-standaard"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -753,7 +745,7 @@ msgstr "Exporteren naar bestand"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Doneren"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -800,10 +792,8 @@ msgid "Message"
 msgstr "Bericht"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Cursor"
+msgstr "Cursorgrootte"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
