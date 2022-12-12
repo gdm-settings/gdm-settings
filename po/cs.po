@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-11-24 17:48+0000\n"
+"PO-Revision-Date: 2022-12-13 09:31+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -541,40 +541,32 @@ msgstr "Nastavení monitoru nenalezeno"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Výchozí"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Střední"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Zvětšit"
+msgstr "Velké"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Zvětšit"
+msgstr "Větší"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Největší"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "Standardní"
+msgstr "Nestandardní"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -743,7 +735,7 @@ msgstr "Exportovat do souboru"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Podpořit"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -790,10 +782,8 @@ msgid "Message"
 msgstr "Zpráva"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Kurzor"
+msgstr "Velikost kursoru"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
