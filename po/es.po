@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-11-30 06:48+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2022-12-13 09:31+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -555,40 +555,32 @@ msgstr "No se encuentra la configuración del monitor"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Medio"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Ampliar"
+msgstr "Grande"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Ampliar"
+msgstr "Más grande"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "El mas grande"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "Estándar"
+msgstr "Especial"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -717,7 +709,7 @@ msgstr "Subpíxel"
 
 #: src/resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr "Hinting"
+msgstr "Sugerencia"
 
 #: src/resources/ui/fonts-page.blp:32
 msgid "Full"
@@ -757,7 +749,7 @@ msgstr "Exportar a archivo"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Donar"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -804,10 +796,8 @@ msgid "Message"
 msgstr "Mensaje"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Puntero"
+msgstr "Tamaño del cursor"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
