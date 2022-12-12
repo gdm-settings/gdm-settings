@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-11-24 17:48+0000\n"
+"PO-Revision-Date: 2022-12-13 09:31+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -527,40 +527,32 @@ msgstr "הגדרות הצג לא נמצאו"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "ברירת מחדל"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "בינונית"
+msgstr "בינוני"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "הגדלה"
+msgstr "גדול"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "הגדלה"
+msgstr "יותר גדול"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "הכי גדול"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "רגילה"
+msgstr "מיוחד"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -626,7 +618,7 @@ msgstr "החלת הגדרות התצוגה הנוכחיות"
 
 #: src/resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "רזולוציה, קצב רענון, מיקומי צגים וכו׳"
+msgstr "רזולוציה, קצב רענון, מיקומי צגים וכו׳."
 
 #: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
 msgid "Apply"
@@ -729,7 +721,7 @@ msgstr "ייצוא לקובץ"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "תרומה"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -776,10 +768,8 @@ msgid "Message"
 msgstr "הודעה"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "סמן"
+msgstr "גודל סמן"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
