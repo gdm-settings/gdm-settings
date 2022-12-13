@@ -1,9 +1,9 @@
-import os
 from gi.repository import Gtk
 from ..utils import resource_path
-from ..settings import mouse_settings, touchpad_settings
+from ..settings import pointing_settings, mouse_settings, touchpad_settings
 from ..bind_utils import *
 from .common import PageContent
+from .pointing_utils.cursor import CursorSizeSelector
 
 
 class PointingPageContent (PageContent):
@@ -18,6 +18,8 @@ class PointingPageContent (PageContent):
 
         self.set_child(self.builder.get_object('content_box'))
 
+        # General
+        self.cursor_size_selector = self.builder.get_object('cursor_size_selector')
         # Mouse
         self.m_acceleration_comborow = self.builder.get_object('m_acceleration_comborow')
         self.m_natural_scrolling_switch = self.builder.get_object('m_natural_scrolling_switch')
@@ -37,6 +39,8 @@ class PointingPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
+        # General
+        bind(pointing_settings, 'cursor-size', self.cursor_size_selector, 'selected-size')
         # Mouse
         bind_comborow_by_list(self.m_acceleration_comborow,
                 mouse_settings, 'pointer-acceleration', ['default', 'flat', 'adaptive'])

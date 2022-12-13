@@ -6,6 +6,22 @@ Box content_box {
   spacing: 25;
 
   Adw.PreferencesGroup {
+    Adw.ExpanderRow {
+      title: _("Cursor Size");
+
+      [action] Label { label: bind cursor_size_selector.selected-name; }
+
+      .CursorSizeSelector cursor_size_selector {
+        .CursorSizeButton { cursor_size: 24; size_name: C_("Cursor Size", "Default"); }
+        .CursorSizeButton { cursor_size: 32; size_name: C_("Cursor Size", "Medium"); }
+        .CursorSizeButton { cursor_size: 48; size_name: C_("Cursor Size", "Large"); }
+        .CursorSizeButton { cursor_size: 64; size_name: C_("Cursor Size", "Larger"); }
+        .CursorSizeButton { cursor_size: 96; size_name: C_("Cursor Size", "Largest"); }
+      }
+    }
+  }
+
+  Adw.PreferencesGroup {
     title: _("Mouse");
 
     Adw.ComboRow m_acceleration_comborow {

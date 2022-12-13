@@ -1,0 +1,11 @@
+using Gtk 4.0;
+
+template CursorSizeSelector : ListBoxRow {
+  activatable: false;
+
+  child: Box box {
+    orientation: horizontal;
+    homogeneous: true;
+    styles ["linked"]
+  };
+}
