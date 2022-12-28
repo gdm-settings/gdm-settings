@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-12-13 09:31+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2022-12-29 16:48+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -365,7 +365,7 @@ msgstr "Opgelost: enkele typfouten"
 
 #: src/app.py:53
 msgid "Show application version"
-msgstr "Toepassingsversie tonen"
+msgstr "App-versie tonen"
 
 #: src/app.py:54
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -398,15 +398,15 @@ msgid ""
 "system."
 msgstr ""
 "De volgende afhankelijkheden zijn vereist voor het functioneren van deze "
-"toepassing, maar niet aanwezig op het hostsysteem."
+"app, maar zijn niet aanwezig op het host-systeem."
 
 #: src/app.py:160
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Deze toepassing vereist de volgende software, welke niet geïnstalleerd is op "
-"uw systeem."
+"Deze app vereist de volgende software om goed te functioneren, maar deze "
+"zijn niet geïnstalleerd op uw systeem."
 
 #: src/app.py:169
 msgctxt "Missing Dependency"
