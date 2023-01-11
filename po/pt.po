@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2023-01-10 18:48+0000\n"
+"PO-Revision-Date: 2023-01-12 14:49+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pt/>\n"
@@ -39,7 +39,7 @@ msgstr "Imagem de Fundo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr "O arquivo de imagem para usar como fundo do GDM"
+msgstr "O ficheiro de imagem para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/resources/ui/top-bar-page.blp:40
