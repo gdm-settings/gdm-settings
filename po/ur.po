@@ -2,13 +2,13 @@
 # Copyright (C) 2022 Mazhar Hussain
 # This file is distributed under the same license as the gdm-settings package.
 # Mazhar Hussain <mmazharhussainkgb1145@gmail.com>, 2022.
-# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-11-22 12:15+0500\n"
+"PO-Revision-Date: 2023-01-14 17:47+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.2.1\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -330,7 +330,7 @@ msgid ""
 "anymore"
 msgstr ""
 "اب یہ ایپلیکیشن ایرر نوٹیفیکیشن شو کرتی ہے اگر اپلائی کرتے وقت لوگو آن کیا "
-"ہوا ہو اور انتخاب شدہ لوگو کی امیج فائل سسٹم پر اب موجود نہیں ہے۔"
+"ہوا ہو اور انتخاب شدہ لوگو کی امیج فائل سسٹم پر اب موجود نہیں ہے"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid ""
@@ -536,40 +536,32 @@ msgstr "مانیٹر کی سیٹنگز نہیں ملیں"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "ڈیفالٹ"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "مِیڈِیّم"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "بڑا کریں"
+msgstr "بڑا"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "بڑا کریں"
+msgstr "زیادہ بڑا"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "سب سے بڑا"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "سٹینڈرڈ"
+msgstr "نان سٹینڈرڈ"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -738,7 +730,7 @@ msgstr "فائل کو ایکسپورٹ کریں"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "ڈونیٹ کریں"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -785,10 +777,8 @@ msgid "Message"
 msgstr "پیغام"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "تیر"
+msgstr "تیر کا سائیز"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
@@ -909,7 +899,7 @@ msgstr "بیٹری کی پاور پر"
 
 #: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr "منٹس میں ٹائم جس کے بعد کمپیوٹر  سسپینڈ ہو جائے گا۔"
+msgstr "منٹس میں ٹائم جس کے بعد کمپیوٹر سسپینڈ ہو جائے گا۔"
 
 #: src/resources/ui/power-page.blp:98
 msgid "When Plugged In"
@@ -1057,14 +1047,14 @@ msgstr "امپورٹ فائل کو ریڈ نہیں کر سکے۔ UTF-8 میں ا
 #: src/settings.py:110
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے۔"
+msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے"
 
 #: src/settings.py:115
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
-"امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے۔"
+"امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے"
 
 #: src/settings.py:304
 msgid "Backing up default shell theme …"
