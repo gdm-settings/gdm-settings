@@ -7,7 +7,7 @@ from gettext import gettext as _, pgettext as C_
 import gi
 gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
-from gi.repository import Adw, Gtk
+from gi.repository import Adw, Gtk, Gdk
 
 from . import info
 Gio.Resource.load(info.data_dir+'/resources.gresource')._register()
@@ -334,9 +334,7 @@ class Application(Adw.Application):
 
 
     def donate_cb(self, action, user_data):
-        xdg_open = GLib.find_program_in_path('xdg-open')
-        pid, *io = GLib.spawn_async([xdg_open, 'https://patreon.com/mazharhussain'])
-        GLib.spawn_close_pid(pid)
+        Gtk.show_uri(self.window, 'https://patreon.com/mazharhussain', Gdk.CURRENT_TIME)
 
 
     def about_cb(self, action, user_data):
