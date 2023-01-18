@@ -3,12 +3,6 @@ from gi.repository import Adw, Gtk, GObject
 from ...utils import resource_path
 
 
-@Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-image.ui'))
-class CursorImage (Adw.Bin):
-    __gtype_name__ = 'CursorImage'
-    cursor_size = GObject.Property(type=int, default=24)
-
-
 @Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-size-button.ui'))
 class CursorSizeButton (Gtk.ToggleButton):
     __gtype_name__ = 'CursorSizeButton'
