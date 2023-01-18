@@ -2,8 +2,6 @@ using Gtk 4.0;
 using Adw 1;
 
 template CursorSizeButton : ToggleButton {
-    hexpand: true;
-    vexpand: true;
     styles ["flat"]
 
     .CursorImage { cursor-size: bind CursorSizeButton.cursor-size; }
