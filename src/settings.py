@@ -323,7 +323,7 @@ class SettingsManager (GObject.Object):
 
         # If needed, back up the default shell theme
 
-        pure_theme_not_exists = 'default-pure' not in shell_themes.names
+        pure_theme_not_exists = 'default-pure' not in shell_themes.theme_ids
         shell_gresource_is_stock = gr_utils.is_unmodified(gr_utils.ShellGresourceFile)
 
         if shell_gresource_is_stock or pure_theme_not_exists:
@@ -332,8 +332,8 @@ class SettingsManager (GObject.Object):
 
         # Apply shell theme settings
 
-        theme_name = appearance_settings['shell-theme']
-        theme_path = shell_themes.get_path(theme_name)
+        theme_id = appearance_settings['shell-theme']
+        theme_path = shell_themes.get_path(theme_id)
         shelldir   = os.path.join(theme_path, 'gnome-shell') if theme_path else None
 
         background_type = BackgroundType[appearance_settings['background-type']]

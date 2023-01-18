@@ -74,9 +74,12 @@ class AppearancePageContent (PageContent):
         self.cursor_theme_comborow.set_model(cursor_theme_list)
 
     def bind_to_gsettings (self):
-        bind_comborow(self.shell_theme_comborow, appearance_settings, 'shell-theme')
-        bind_comborow(self.icon_theme_comborow, appearance_settings, 'icon-theme')
-        bind_comborow(self.cursor_theme_comborow, appearance_settings, 'cursor-theme')
+        bind_comborow_by_list(self.shell_theme_comborow,
+                              appearance_settings, 'shell-theme', shell_themes.theme_ids)
+        bind_comborow_by_list(self.icon_theme_comborow,
+                              appearance_settings, 'icon-theme', icon_themes.theme_ids)
+        bind_comborow_by_list(self.cursor_theme_comborow,
+                              appearance_settings, 'cursor-theme', cursor_themes.theme_ids)
         bind_comborow_by_enum(self.background_type_comborow,
                 appearance_settings, 'background-type', BackgroundType)
         bind(appearance_settings, 'background-image', self.background_image_button, 'filename')
