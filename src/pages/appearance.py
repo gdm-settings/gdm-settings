@@ -55,31 +55,21 @@ class AppearancePageContent (PageContent):
 
 
     def load_theme_lists(self):
-        # Shell Themes
-        shell_theme_list = Gtk.StringList()
-        for theme_name in shell_themes.names:
-            shell_theme_list.append(theme_name)
-        self.shell_theme_comborow.set_model(shell_theme_list)
+        def load_list(comborow, lyst):
+            comborow.set_model(Gtk.StringList.new(lyst.names))
 
-        # Icon Themes
-        icon_theme_list = Gtk.StringList()
-        for theme_name in icon_themes.names:
-            icon_theme_list.append(theme_name)
-        self.icon_theme_comborow.set_model(icon_theme_list)
+        load_list(self.shell_theme_comborow, shell_themes)
+        load_list(self.icon_theme_comborow, icon_themes)
+        load_list(self.cursor_theme_comborow, cursor_themes)
 
-        # Cursor Themes
-        cursor_theme_list = Gtk.StringList()
-        for theme_name in cursor_themes.names:
-            cursor_theme_list.append(theme_name)
-        self.cursor_theme_comborow.set_model(cursor_theme_list)
 
     def bind_to_gsettings (self):
-        bind_comborow_by_list(self.shell_theme_comborow,
-                              appearance_settings, 'shell-theme', shell_themes.theme_ids)
-        bind_comborow_by_list(self.icon_theme_comborow,
-                              appearance_settings, 'icon-theme', icon_themes.theme_ids)
-        bind_comborow_by_list(self.cursor_theme_comborow,
-                              appearance_settings, 'cursor-theme', cursor_themes.theme_ids)
+        bind_comborow_by_list_alt(self.shell_theme_comborow,
+                                  appearance_settings, 'shell-theme', shell_themes.theme_ids)
+        bind_comborow_by_list_alt(self.icon_theme_comborow,
+                                  appearance_settings, 'icon-theme', icon_themes.theme_ids)
+        bind_comborow_by_list_alt(self.cursor_theme_comborow,
+                                  appearance_settings, 'cursor-theme', cursor_themes.theme_ids)
         bind_comborow_by_enum(self.background_type_comborow,
                 appearance_settings, 'background-type', BackgroundType)
         bind(appearance_settings, 'background-image', self.background_image_button, 'filename')

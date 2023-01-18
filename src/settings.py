@@ -126,7 +126,7 @@ class SettingsManager (GObject.Object):
 
 
         if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
-            appearance_settings['shell-theme'] = user_settings['name'] or 'default'
+            appearance_settings['shell-theme'] = user_settings['name']
 
         if user_settings := _Settings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
@@ -334,6 +334,7 @@ class SettingsManager (GObject.Object):
 
         theme_id = appearance_settings['shell-theme']
         theme_path = shell_themes.get_path(theme_id)
+        theme_path = shell_themes(theme_id).path
         shelldir   = os.path.join(theme_path, 'gnome-shell') if theme_path else None
 
         background_type = BackgroundType[appearance_settings['background-type']]
@@ -533,11 +534,11 @@ class SettingsManager (GObject.Object):
         status = self.command_elevator.run()
 
         if status.success:
-            # When we change GDM shell theme it becomes the 'default' theme but for the users
+            # When we change GDM shell theme it becomes the default theme but for the users
             # who didn't want to change shell theme for their session, we need to set it to a
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
-            # 'default' in order to match their GDM theme
+            # default in order to match their GDM theme
             if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
                 if (user_settings['name'] == ''
                 and main_settings["never-applied"]):

@@ -61,6 +61,20 @@ def bind_comborow_by_list(comborow, settings, key, lyst, flags=default_flag):
                       )
 
 
+def list_value_to_index_alt(value, lyst):
+    try:
+        return lyst.index(value)
+    except ValueError:
+        return 0
+
+def bind_comborow_by_list_alt(comborow, settings, key, lyst, flags=default_flag):
+    bind_with_mapping(settings, key, comborow, 'selected', flags,
+                      list_value_to_index_alt,
+                      list_index_to_value,
+                      lyst,
+                      )
+
+
 def string_to_rgba(string, colorbutton):
     rgba = Gdk.RGBA()
     rgba.parse(string)
