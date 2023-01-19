@@ -8,7 +8,6 @@
     <file>ui/sound-page.ui</file>
     <file>ui/top-bar-page.ui</file>
     <file>ui/pointing-page.ui</file>
-    <file>ui/pointing-page/cursor-image.ui</file>
     <file>ui/pointing-page/cursor-size-button.ui</file>
     <file>ui/pointing-page/cursor-size-selector.ui</file>
     <file>ui/login-screen-page.ui</file>
