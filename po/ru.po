@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Войнов Артем Романович <voynovar@gmail.com>, 2022.
+# Войнов Артем Романович <voynovar@gmail.com>, 2022, 2023.
 # Axus Wizix <axus.wizix@mail.ru>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-12-18 03:50+0000\n"
-"Last-Translator: Axus Wizix <axus.wizix@mail.ru>\n"
+"PO-Revision-Date: 2023-01-25 12:47+0000\n"
+"Last-Translator: Войнов Артем Романович <voynovar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -557,37 +557,29 @@ msgid "Default"
 msgstr "По умолчанию"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Средний"
 
 #: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Увеличивать"
+msgstr "Большой"
 
 #: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Увеличивать"
+msgstr "Очень большой"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Огромный"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "Стандарт"
+msgstr "Нестандартный"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -756,7 +748,7 @@ msgstr "Экспорт в файл"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвование"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -803,10 +795,8 @@ msgid "Message"
 msgstr "Сообщение"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Курсор"
+msgstr "Размер курсора"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
