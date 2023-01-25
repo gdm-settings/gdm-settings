@@ -15,6 +15,10 @@
     <child name="power" schema="io.github.realmazharhussain.GdmSettings.power"/>
     <child name="tools" schema="io.github.realmazharhussain.GdmSettings.tools"/>
 
+    <key name="donation-dialog-shown" type="b">
+      <default>false</default>
+    </key>
+
     <key name="never-applied" type="b">
       <default>true</default>
     </key>

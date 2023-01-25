@@ -97,6 +97,8 @@ class Application(Adw.Application):
         logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
+        self.settings = Gio.Settings.new(info.application_id)
+
         self.settings_manager = SettingsManager()
 
         self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
@@ -115,6 +117,10 @@ class Application(Adw.Application):
         # required to be installed on the user's system. So, we need to
         # check them and report to the user if they are missing.
         self.check_system_dependencies()
+
+        if (not self.settings['donation-dialog-shown']
+        and not self.settings['never-applied']):
+            self.show_donation_dialog()
 
 
     @staticmethod
@@ -195,6 +201,30 @@ class Application(Adw.Application):
         dialog.add_response('ok', _('OK'))
         dialog.connect('response', lambda *args: self.quit())
         dialog.present()
+
+
+    def show_donation_dialog (self):
+        heading = _("Donation Request")
+        body = _(
+            "This app is and will always remain Open Source/Libre and free of cost. "
+            "However, You can show some love by donating to the developer.\n"
+            "❤️\n"
+            "I would really appreciate it."
+        )
+
+        dialog = Adw.MessageDialog.new(self.window, heading, body)
+
+        dialog.add_response('close', _("Not Interested"))
+        dialog.add_response('donate', _("Donate"))
+
+        dialog.set_response_appearance('donate', Adw.ResponseAppearance.SUGGESTED)
+        dialog.set_default_response('donate')
+
+        dialog.connect('response::donate', lambda *args: self.activate_action('donate'))
+
+        dialog.present()
+
+        self.settings['donation-dialog-shown'] = True
 
 
     def keyboard_shortcuts(self):
