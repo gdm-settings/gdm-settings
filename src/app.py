@@ -364,7 +364,7 @@ class Application(Adw.Application):
 
 
     def donate_cb(self, action, user_data):
-        Gtk.show_uri(self.window, 'https://patreon.com/mazharhussain', Gdk.CURRENT_TIME)
+        Gtk.show_uri(self.window, 'https://realmazharhussain.github.io/donate', Gdk.CURRENT_TIME)
 
 
     def about_cb(self, action, user_data):
