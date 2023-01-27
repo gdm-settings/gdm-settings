@@ -1,7 +1,7 @@
 import os
 from gi.repository import Gtk
 from ..utils import resource_path
-from ..settings import top_bar_settings
+from ..settings import accessibility_settings, top_bar_settings
 from ..bind_utils import *
 from .common import PageContent
 
@@ -24,6 +24,7 @@ class TopBarPageContent (PageContent):
         self.background_color_button = self.builder.get_object('background_color_button')
         self.disable_arrows_switch = self.builder.get_object('disable_arrows_switch')
         self.disable_rounded_corners_switch = self.builder.get_object('disable_rounded_corners_switch')
+        self.accessibilty_menu_switch = self.builder.get_object('accessibilty_menu_switch')
         self.show_weekday_switch = self.builder.get_object('show_weekday_switch')
         self.show_seconds_switch = self.builder.get_object('show_seconds_switch')
         self.time_format_comborow = self.builder.get_object('time_format_comborow')
@@ -38,6 +39,8 @@ class TopBarPageContent (PageContent):
         bind_colorbutton(self.text_color_button, top_bar_settings, 'text-color')
         bind(top_bar_settings, 'change-background-color', self.background_color_switch, 'active')
         bind_colorbutton(self.background_color_button, top_bar_settings, 'background-color')
+        bind(accessibility_settings, 'always-show-accessibility-menu',
+            self.accessibilty_menu_switch, 'active')
         bind(top_bar_settings, 'show-weekday', self.show_weekday_switch, 'active')
         bind(top_bar_settings, 'show-seconds', self.show_seconds_switch, 'active')
         bind_comborow_by_list(self.time_format_comborow, top_bar_settings, 'time-format', ['12h', '24h'])

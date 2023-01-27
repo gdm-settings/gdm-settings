@@ -12,20 +12,22 @@ def delayed_settings(schema_id):
     settings.delay()
     return settings
 
-main_settings         = delayed_settings(application_id)
-appearance_settings   = delayed_settings(f'{application_id}.appearance')
-font_settings         = delayed_settings(f'{application_id}.fonts')
-login_screen_settings = delayed_settings(f'{application_id}.misc')
-night_light_settings  = delayed_settings(f'{application_id}.night-light')
-mouse_settings        = delayed_settings(f'{application_id}.mouse')
-pointing_settings     = delayed_settings(f'{application_id}.pointing')
-power_settings        = delayed_settings(f'{application_id}.power')
-touchpad_settings     = delayed_settings(f'{application_id}.touchpad')
-sound_settings        = delayed_settings(f'{application_id}.sound')
-top_bar_settings      = delayed_settings(f'{application_id}.top-bar')
+main_settings          = delayed_settings(application_id)
+accessibility_settings = delayed_settings(f'{application_id}.accessibility')
+appearance_settings    = delayed_settings(f'{application_id}.appearance')
+font_settings          = delayed_settings(f'{application_id}.fonts')
+login_screen_settings  = delayed_settings(f'{application_id}.misc')
+night_light_settings   = delayed_settings(f'{application_id}.night-light')
+mouse_settings         = delayed_settings(f'{application_id}.mouse')
+pointing_settings      = delayed_settings(f'{application_id}.pointing')
+power_settings         = delayed_settings(f'{application_id}.power')
+touchpad_settings      = delayed_settings(f'{application_id}.touchpad')
+sound_settings         = delayed_settings(f'{application_id}.sound')
+top_bar_settings       = delayed_settings(f'{application_id}.top-bar')
 
 all_settings = (
     main_settings,
+    accessibility_settings,
     appearance_settings,
     font_settings,
     login_screen_settings,
@@ -127,6 +129,11 @@ class SettingsManager (GObject.Object):
 
         if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
             appearance_settings['shell-theme'] = user_settings['name']
+
+        if user_settings := _Settings("org.gnome.desktop.a11y"):
+            source_key = "always-show-universal-access-status"
+            target_key = "always-show-accessibility-menu"
+            accessibility_settings[target_key] = user_settings[source_key]
 
         if user_settings := _Settings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
@@ -401,6 +408,14 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents += f"font-antialiasing='{antialiasing}'\n"
             gdm_conf_contents += f"font-hinting='{hinting}'\n"
             gdm_conf_contents += f"text-scaling-factor={scaling_factor}\n"
+            gdm_conf_contents +=  "\n"
+
+            accessibility_menu = str(accessibility_settings['always-show-accessibility-menu']).lower()
+
+            gdm_conf_contents +=  "#---- Accessibility ----\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/a11y]\n"
+            gdm_conf_contents +=  "#------------------------\n"
+            gdm_conf_contents += f"always-show-universal-access-status={accessibility_menu}\n"
             gdm_conf_contents +=  "\n"
 
             sound_theme = sound_settings['theme']

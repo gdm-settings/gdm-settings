@@ -68,6 +68,19 @@ Box content_box {
   }
 
   Adw.PreferencesGroup {
+    title: _("Accessibility");
+
+    Adw.ActionRow {
+      title: _("Always Show Accessibility Menu");
+      activatable-widget: accessibilty_menu_switch;
+
+      Switch accessibilty_menu_switch {
+        valign: center;
+      }
+    }
+  }
+
+  Adw.PreferencesGroup {
     title: _("Clock");
 
     Adw.ActionRow {
