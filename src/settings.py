@@ -47,6 +47,8 @@ class SettingsManager (GObject.Object):
     def __init__(self):
         super().__init__()
 
+        os.makedirs(env.TEMP_DIR, exist_ok=True)
+
         from .utils import CommandElevator
         self.command_elevator = CommandElevator()
 
