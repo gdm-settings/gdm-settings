@@ -1,6 +1,9 @@
 project('gdm-settings',
         version: '2.0',
   meson_version: '>= 0.59',
+  default_options: [
+    'buildtype=release',
+  ]
 )
 
 dependency('glib-2.0')
