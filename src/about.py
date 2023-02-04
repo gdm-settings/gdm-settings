@@ -14,7 +14,7 @@ def about_window(win):
         license_type     = Gtk.License.AGPL_3_0,
         version          = info.version,
         developer_name   = C_("Name of Developer", "Mazhar Hussain"),
-        copyright = _("Copyright 2021-2022 Mazhar Hussain"),
+        copyright = _("Copyright 2021-2023 Mazhar Hussain"),
         website   = "https://realmazharhussain.github.io/gdm-settings",
         developers  = [mazhar_hussain],
         designers   = [mazhar_hussain],
