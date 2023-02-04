@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 # Mazhar Hussain <mmazharhussainkgb1145@gmail.com>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022, 2023.
+# Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2023-01-14 17:47+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2023-02-05 05:38+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
 "Language: ur\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -479,7 +480,7 @@ msgstr "تھیلس بِنڈا"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "کاپی رائیٹ 2022-2021 © مظہر حسین"
+msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
