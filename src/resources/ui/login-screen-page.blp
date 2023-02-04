@@ -8,22 +8,12 @@ Box content_box {
   Adw.PreferencesGroup {
     margin-top: 12;
 
-    Adw.ActionRow {
+    .SwitchRow disable_restart_buttons_row {
       title: _("Disable Restart Buttons");
-      activatable-widget: disable_restart_buttons_switch;
-
-      Switch disable_restart_buttons_switch {
-        valign: center;
-      }
     }
 
-    Adw.ActionRow {
+    .SwitchRow disable_user_list_row {
       title: _("Disable User List");
-      activatable-widget: disable_user_list_switch;
-
-      Switch disable_user_list_switch {
-        valign: center;
-      }
     }
 
     Adw.ExpanderRow logo_expanderrow {
@@ -46,28 +36,18 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Welcome Message");
 
-    Adw.ActionRow {
+    .SwitchRow welcome_message_row {
       title: _("Enable");
-      activatable-widget: welcome_message_switch;
-
-      Switch welcome_message_switch {
-        valign: center;
-      }
     }
 
-    Adw.ActionRow {
+    .SwitchRow enlarge_welcome_message_row {
       title: _("Enlarge");
-      sensitive: bind welcome_message_switch.active;
-      activatable-widget: enlarge_welcome_message_switch;
-
-      Switch enlarge_welcome_message_switch {
-        valign: center;
-      }
+      sensitive: bind welcome_message_row.enabled;
     }
 
     Adw.EntryRow welcome_message_entryrow {
       title: _("Message");
-      sensitive: bind welcome_message_switch.active;
+      sensitive: bind welcome_message_row.enabled;
     }
   }
 }

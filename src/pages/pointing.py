@@ -1,5 +1,6 @@
 from gi.repository import Gtk
 from ..utils import resource_path
+from ..common_widgets import SwitchRow
 from ..settings import pointing_settings, mouse_settings, touchpad_settings
 from ..bind_utils import *
 from .common import PageContent
@@ -22,13 +23,13 @@ class PointingPageContent (PageContent):
         self.cursor_size_selector = self.builder.get_object('cursor_size_selector')
         # Mouse
         self.m_acceleration_comborow = self.builder.get_object('m_acceleration_comborow')
-        self.m_natural_scrolling_switch = self.builder.get_object('m_natural_scrolling_switch')
+        self.m_natural_scrolling_row = self.builder.get_object('m_natural_scrolling_row')
         self.m_speed_scale = self.builder.get_object('m_speed_scale')
         # Touchpad
-        self.t_tap_to_click_switch = self.builder.get_object('t_tap_to_click_switch')
-        self.t_natural_scrolling_switch = self.builder.get_object('t_natural_scrolling_switch')
-        self.t_two_finger_scrolling_switch = self.builder.get_object('t_two_finger_scrolling_switch')
-        self.t_disable_while_typing_switch = self.builder.get_object('t_disable_while_typing_switch')
+        self.t_tap_to_click_row = self.builder.get_object('t_tap_to_click_row')
+        self.t_natural_scrolling_row = self.builder.get_object('t_natural_scrolling_row')
+        self.t_two_finger_scrolling_row = self.builder.get_object('t_two_finger_scrolling_row')
+        self.t_disable_while_typing_row = self.builder.get_object('t_disable_while_typing_row')
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
 
         # Following properties are ignored when set in .ui files.
@@ -44,11 +45,11 @@ class PointingPageContent (PageContent):
         # Mouse
         bind_comborow_by_list(self.m_acceleration_comborow,
                 mouse_settings, 'pointer-acceleration', ['default', 'flat', 'adaptive'])
-        bind(mouse_settings, 'natural-scrolling', self.m_natural_scrolling_switch, 'active')
+        bind(mouse_settings, 'natural-scrolling', self.m_natural_scrolling_row, 'enabled')
         bind(mouse_settings, 'speed', self.m_speed_scale.props.adjustment, 'value')
         # Touchpad
-        bind(touchpad_settings, 'tap-to-click', self.t_tap_to_click_switch, 'active')
-        bind(touchpad_settings, 'natural-scrolling', self.t_natural_scrolling_switch, 'active')
-        bind(touchpad_settings, 'two-finger-scrolling', self.t_two_finger_scrolling_switch, 'active')
-        bind(touchpad_settings, 'disable-while-typing', self.t_disable_while_typing_switch, 'active')
+        bind(touchpad_settings, 'tap-to-click', self.t_tap_to_click_row, 'enabled')
+        bind(touchpad_settings, 'natural-scrolling', self.t_natural_scrolling_row, 'enabled')
+        bind(touchpad_settings, 'two-finger-scrolling', self.t_two_finger_scrolling_row, 'enabled')
+        bind(touchpad_settings, 'disable-while-typing', self.t_disable_while_typing_row, 'enabled')
         bind(touchpad_settings, 'speed', self.t_speed_scale.props.adjustment, 'value')

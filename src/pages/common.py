@@ -1,5 +1,6 @@
 from gi.repository import Adw, Gtk
 
+
 class PageContent (Gtk.ScrolledWindow):
     '''Base class for content of a page from Gtk.Stack'''
     def __init__ (self, **kwargs):

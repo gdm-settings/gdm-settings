@@ -3,6 +3,7 @@ import logging
 from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..utils import resource_path
+from ..common_widgets import SwitchRow
 from ..settings import night_light_settings as nl_settings
 from ..utils import BackgroundTask
 from ..bind_utils import *
@@ -24,7 +25,7 @@ class DisplayPageContent (PageContent):
         self.apply_display_settings_button = self.builder.get_object('apply_display_settings_button')
         self.apply_display_settings_button.connect('clicked', self.on_apply_display_settings)
 
-        self.nl_enable_switch = self.builder.get_object('nl_enable_switch')
+        self.nl_enable_row = self.builder.get_object('nl_enable_row')
         self.nl_schedule_comborow = self.builder.get_object('nl_schedule_comborow')
         self.nl_start_box = self.builder.get_object('nl_start_box')
         self.nl_start_hour_spinbutton = self.builder.get_object('nl_start_hour_spinbutton')
@@ -62,7 +63,7 @@ class DisplayPageContent (PageContent):
         self.nl_end_box.set_sensitive(bool(selected))
 
     def bind_to_gsettings (self):
-        bind(nl_settings, 'enabled', self.nl_enable_switch, 'active')
+        bind(nl_settings, 'enabled', self.nl_enable_row, 'enabled')
         bind_comborow_by_list(self.nl_schedule_comborow, nl_settings, 'schedule-automatic', [True, False])
         bind(nl_settings, 'start-hour', self.nl_start_hour_spinbutton, 'value')
         bind(nl_settings, 'start-minute', self.nl_start_minute_spinbutton, 'value')

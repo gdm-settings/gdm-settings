@@ -3,6 +3,7 @@ from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..env import TEMP_DIR
 from ..info import application_id
+from ..common_widgets import SwitchRow
 from ..utils import CommandElevator, BackgroundTask, resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
 from ..bind_utils import *
@@ -21,7 +22,7 @@ class ToolsPageContent (PageContent):
 
         self.set_child(self.builder.get_object('content_box'))
 
-        self.top_bar_tweaks_switch = self.builder.get_object('top_bar_tweaks_switch')
+        self.top_bar_tweaks_row = self.builder.get_object('top_bar_tweaks_row')
         self.extract_shell_theme_button = self.builder.get_object('extract_shell_theme_button')
 
         self.extract_theme_task = BackgroundTask(self.extract_shell_theme, self.on_extract_shell_theme_finish)
@@ -30,7 +31,7 @@ class ToolsPageContent (PageContent):
 
         # Bind to GSettings
         self.gsettings = Gio.Settings.new(f"{application_id}.tools")
-        bind(self.gsettings, 'top-bar-tweaks', self.top_bar_tweaks_switch, 'active')
+        bind(self.gsettings, 'top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
 
     def on_extract_shell_theme(self, button):
         self.window.task_counter.inc()
