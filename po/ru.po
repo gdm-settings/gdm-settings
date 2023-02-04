@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Войнов Артем Романович <voynovar@gmail.com>, 2022, 2023.
 # Axus Wizix <axus.wizix@mail.ru>, 2022.
+# Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2023-01-25 12:47+0000\n"
-"Last-Translator: Войнов Артем Романович <voynovar@gmail.com>\n"
+"PO-Revision-Date: 2023-02-05 05:38+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
 "Language: ru\n"
@@ -497,7 +498,7 @@ msgstr "Фалес Бинда"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Все права защищены. 2021-2022 Мазхар Хусейн"
+msgstr "Все права защищены. 2021–2023 Мазхар Хусейн"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
