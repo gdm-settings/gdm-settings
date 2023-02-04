@@ -3,14 +3,14 @@
 # Eduardo Malaspina <vaio0@swismail.com>, 2022.
 # Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
 # gallegonovato <fran-carro@hotmail.es>, 2022.
-# Allan Nordhøy <epost@anotheragency.no>, 2022.
+# Allan Nordhøy <epost@anotheragency.no>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-12-13 09:31+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2023-02-05 05:38+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -498,7 +498,7 @@ msgstr "Thales Bindá"
 
 #: src/about.py:17
 msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Derechos de autor 2021–2022 por Mazhar Hussain"
+msgstr "Derechos de autor 2021–2023 por Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
