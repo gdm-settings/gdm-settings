@@ -4,7 +4,8 @@ import logging
 from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 from .info import application_id
-from .lib import Settings, CommandElevator
+from .lib import Settings
+from .privilege_escalation import CommandElevator
 from . import env
 from . import gr_utils
 

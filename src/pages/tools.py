@@ -3,7 +3,8 @@ from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
 from ..env import TEMP_DIR
 from ..info import application_id
-from ..lib import SwitchRow, CommandElevator, BackgroundTask, Settings
+from ..lib import SwitchRow, BackgroundTask, Settings
+from ..privilege_escalation import CommandElevator
 from ..utils import resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
 from .common import PageContent

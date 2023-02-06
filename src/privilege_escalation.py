@@ -1,4 +1,5 @@
-__all__ = ['NoCommandsFoundError', 'CommandElevator']
+from .utils import run_on_host
+from .env import TEMP_DIR
 
 
 class NoCommandsFoundError(Exception): pass
@@ -53,8 +54,8 @@ class CommandElevator:
 
         returncode = 0
         if len(self._list):
-            makedirs(name=env.TEMP_DIR, exist_ok=True)
-            script_file = f"{env.TEMP_DIR}/run-elevated"
+            makedirs(TEMP_DIR, exist_ok=True)
+            script_file = f"{TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.shebang, *self._list, sep="\n", file=open_script_file)
             chmod(path=script_file, mode=0o755)

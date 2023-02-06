@@ -31,6 +31,7 @@ source_files = files(
   'env.py',
   'gr_utils.py',
   'log.py',
+  'privilege_escalation.py',
   'settings.py',
   'theme_lists.py',
   'utils.py',
