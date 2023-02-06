@@ -1,26 +1,15 @@
 from gettext import gettext as _, pgettext as C_
 
-from gi.repository import GObject, Gio
-from gi.repository import Pango, Gtk
-from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import Pango
+from gi.repository import Gio
+from gi.repository import GObject
 
 readwrite = GObject.ParamFlags.READWRITE
 construct = GObject.ParamFlags.CONSTRUCT
 
 
-class SwitchRow (Adw.ActionRow):
-    __gtype_name__ = 'SwitchRow'
-
-    enabled = GObject.Property(type=bool, default=False)
-
-    def __init__ (self, **props):
-        super().__init__(**props)
-
-        switch = Gtk.Switch(valign=Gtk.Align.CENTER)
-        switch.bind_property('active', self, 'enabled',
-                             GObject.BindingFlags.SYNC_CREATE|GObject.BindingFlags.BIDIRECTIONAL)
-        self.add_suffix(switch)
-        self.set_activatable_widget(switch)
+__all__ = ['FileChooserButton', 'ImageChooserButton']
 
 
 class FileChooserButton (Gtk.Button):
@@ -28,7 +17,7 @@ class FileChooserButton (Gtk.Button):
 
     _freeze_prop_file = False
     _freeze_prop_filename = False
-    _default_filter = Gtk.FileFilter(name='All Files')
+    _default_filter = Gtk.FileFilter(name=_('All Files'))
     _default_filter.add_pattern('*')
 
 
@@ -164,11 +153,11 @@ class ImageChooserButton (FileChooserButton):
 
         self.filters = Gio.ListStore()
 
-        image_filter = Gtk.FileFilter(name='Images')
+        image_filter = Gtk.FileFilter(name=_('Images'))
         image_filter.add_mime_type('image/*')
         self.filters.append(image_filter)
 
-        all_filter = Gtk.FileFilter(name='All Files')
+        all_filter = Gtk.FileFilter(name=_('All Files'))
         all_filter.add_pattern('*')
         self.filters.append(all_filter)
 

@@ -1,10 +1,9 @@
 import os
 from gi.repository import Gtk
+from ..lib import SwitchRow
 from ..utils import resource_path
 from ..settings import sound_settings
-from ..common_widgets import SwitchRow
 from ..theme_lists import sound_themes
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -29,7 +28,8 @@ class SoundPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind_comborow_by_list_alt(self.theme_comborow, sound_settings, 'theme', sound_themes.theme_ids)
-        bind(sound_settings, 'event-sounds', self.event_sounds_row, 'enabled')
-        bind(sound_settings, 'feedback-sounds', self.feedback_sounds_row, 'enabled')
-        bind(sound_settings, 'over-amplification', self.over_amplification_row, 'enabled')
+        sound_settings.bind_via_list('theme', self.theme_comborow, 'selected',
+                                     sound_themes.theme_ids, strict=False)
+        sound_settings.bind('event-sounds', self.event_sounds_row, 'enabled')
+        sound_settings.bind('feedback-sounds', self.feedback_sounds_row, 'enabled')
+        sound_settings.bind('over-amplification', self.over_amplification_row, 'enabled')

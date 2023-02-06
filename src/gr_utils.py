@@ -3,7 +3,7 @@
 import os
 import logging
 from . import env
-from . import utils
+from . import lib
 
 ThemesDir                = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
 CustomThemeIdentity      = 'custom-theme'
@@ -37,14 +37,12 @@ with open(env.HOST_ROOT+'/etc/passwd') as passwd_db:
 def is_unmodified(gresourceFile:str):
     """checks if the provided file is a GResource file of the default theme"""
 
-    from .utils import getstdout
-
     if env.HOST_ROOT and not gresourceFile.startswith(env.HOST_ROOT):
         gresourceFile = env.HOST_ROOT + gresourceFile
 
     if os.path.exists(gresourceFile):
-        if getstdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
-            if not getstdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
+        if lib.get_stdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
+            if not lib.get_stdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
                 return True
     return False
 
@@ -59,7 +57,6 @@ def extract_default_theme(destination:str, /):
     '''Extract default GNOME Shell theme'''
 
     from os import makedirs
-    from .utils import getstdout
 
     if os.path.exists(destination):
         from shutil import rmtree
@@ -67,7 +64,7 @@ def extract_default_theme(destination:str, /):
 
     destination_shell_dir = os.path.join(destination, 'gnome-shell')
     gresource_file = get_default()
-    resource_list = getstdout(["gresource", "list", env.HOST_ROOT + gresource_file]).decode().splitlines()
+    resource_list = lib.get_stdout(["gresource", "list", env.HOST_ROOT + gresource_file]).splitlines()
 
     if not gresource_file:
         raise FileNotFoundError('No unmodified GResource file of the default shell theme was found')
@@ -75,7 +72,8 @@ def extract_default_theme(destination:str, /):
     for resource in resource_list:
         filename = resource.removeprefix("/org/gnome/shell/theme/")
         filepath = os.path.join(destination_shell_dir, filename)
-        content  = getstdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource])
+        content  = lib.get_stdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource],
+                                  decode=False)
 
         makedirs(os.path.dirname(filepath), exist_ok=True)
 
@@ -141,7 +139,7 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
         print('<?xml version="1.0" encoding="UTF-8"?>',
               '<gresources>',
               ' <gresource prefix="/org/gnome/shell/theme">',
-            *('  <file>'+file+'</file>' for file in utils.listdir_recursive(temp_shell_dir)),
+            *('  <file>'+file+'</file>' for file in lib.list_files(temp_shell_dir)),
               ' </gresource>',
               '</gresources>',
 

@@ -2,7 +2,6 @@ import os
 from gi.repository import Gtk
 from ..utils import resource_path
 from ..settings import font_settings
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -31,9 +30,9 @@ class FontsPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind(font_settings, 'font', self.font_button, 'font')
-        bind_comborow_by_list(self.antialiasing_comborow,
-                font_settings, 'antialiasing', ['grayscale', 'rgba', 'none'])
-        bind_comborow_by_list(self.hinting_comborow,
-                font_settings, 'hinting', ['full', 'medium', 'slight', 'none'])
-        bind(font_settings, 'scaling-factor', self.scaling_factor_spinbutton, 'value')
+        font_settings.bind('font', self.font_button, 'font')
+        font_settings.bind_via_list('antialiasing', self.antialiasing_comborow, 'selected',
+                                    ['grayscale', 'rgba', 'none'])
+        font_settings.bind_via_list('hinting', self.hinting_comborow, 'selected',
+                                    ['full', 'medium', 'slight', 'none'])
+        font_settings.bind('scaling-factor', self.scaling_factor_spinbutton, 'value')

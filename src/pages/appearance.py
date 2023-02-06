@@ -1,11 +1,10 @@
 import os
 from gi.repository import Gtk
+from ..lib import ImageChooserButton
 from ..utils import resource_path
 from ..enums import BackgroundType
 from ..settings import appearance_settings
-from ..common_widgets import ImageChooserButton
 from ..theme_lists import shell_themes, icon_themes, cursor_themes
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -64,13 +63,13 @@ class AppearancePageContent (PageContent):
 
 
     def bind_to_gsettings (self):
-        bind_comborow_by_list_alt(self.shell_theme_comborow,
-                                  appearance_settings, 'shell-theme', shell_themes.theme_ids)
-        bind_comborow_by_list_alt(self.icon_theme_comborow,
-                                  appearance_settings, 'icon-theme', icon_themes.theme_ids)
-        bind_comborow_by_list_alt(self.cursor_theme_comborow,
-                                  appearance_settings, 'cursor-theme', cursor_themes.theme_ids)
-        bind_comborow_by_enum(self.background_type_comborow,
-                appearance_settings, 'background-type', BackgroundType)
-        bind(appearance_settings, 'background-image', self.background_image_button, 'filename')
-        bind_colorbutton(self.background_color_button, appearance_settings, 'background-color')
+        appearance_settings.bind_via_list('shell-theme', self.shell_theme_comborow, 'selected',
+                                          shell_themes.theme_ids, strict=False)
+        appearance_settings.bind_via_list('icon-theme', self.icon_theme_comborow, 'selected',
+                                          icon_themes.theme_ids, strict=False)
+        appearance_settings.bind_via_list('cursor-theme', self.cursor_theme_comborow, 'selected',
+                                          cursor_themes.theme_ids, strict=False)
+        appearance_settings.bind_via_enum('background-type', self.background_type_comborow,
+                                          'selected', BackgroundType)
+        appearance_settings.bind('background-image', self.background_image_button, 'filename')
+        appearance_settings.bind_to_colorbutton('background-color', self.background_color_button)

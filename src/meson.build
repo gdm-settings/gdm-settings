@@ -28,8 +28,6 @@ source_files = files(
   '__init__.py',
   'about.py',
   'app.py',
-  'bind_utils.py',
-  'common_widgets.py',
   'enums.py',
   'env.py',
   'gr_utils.py',
@@ -40,6 +38,9 @@ source_files = files(
   'window.py',
 )
 install_data(source_files,
+  install_dir: python.get_install_dir() / 'gdm_settings'
+)
+install_subdir('lib',
   install_dir: python.get_install_dir() / 'gdm_settings'
 )
 install_subdir('pages',

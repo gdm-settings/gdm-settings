@@ -1,9 +1,8 @@
 import os
 from gi.repository import Gtk
+from ..lib import ImageChooserButton, SwitchRow
 from ..utils import resource_path
 from ..settings import login_screen_settings
-from ..common_widgets import ImageChooserButton, SwitchRow
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -35,10 +34,10 @@ class LoginScreenPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind(login_screen_settings, 'disable-restart-buttons', self.disable_restart_buttons_row, 'enabled')
-        bind(login_screen_settings, 'disable-user-list', self.disable_user_list_row, 'enabled')
-        bind(login_screen_settings, 'enable-welcome-message', self.welcome_message_row, 'enabled')
-        bind(login_screen_settings, 'enlarge-welcome-message', self.enlarge_welcome_message_row, 'enabled')
-        bind(login_screen_settings, 'welcome-message', self.welcome_message_entryrow, 'text')
-        bind(login_screen_settings, 'enable-logo', self.logo_switch, 'active')
-        bind(login_screen_settings, 'logo', self.logo_button, 'filename')
+        login_screen_settings.bind('disable-restart-buttons', self.disable_restart_buttons_row, 'enabled')
+        login_screen_settings.bind('disable-user-list', self.disable_user_list_row, 'enabled')
+        login_screen_settings.bind('enable-welcome-message', self.welcome_message_row, 'enabled')
+        login_screen_settings.bind('enlarge-welcome-message', self.enlarge_welcome_message_row, 'enabled')
+        login_screen_settings.bind('welcome-message', self.welcome_message_entryrow, 'text')
+        login_screen_settings.bind('enable-logo', self.logo_switch, 'active')
+        login_screen_settings.bind('logo', self.logo_button, 'filename')

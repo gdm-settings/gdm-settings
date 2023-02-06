@@ -12,7 +12,7 @@ from gi.repository import Adw, Gtk, Gdk
 from . import info
 Gio.Resource.load(info.data_dir+'/resources.gresource')._register()
 
-from .utils import BackgroundTask
+from .lib import BackgroundTask, Settings
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
@@ -97,7 +97,7 @@ class Application(Adw.Application):
         logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
-        self.settings = Gio.Settings.new(info.application_id)
+        self.settings = Settings(info.application_id)
 
         self.settings_manager = SettingsManager()
 

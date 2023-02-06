@@ -1,8 +1,7 @@
 from gi.repository import Gtk
+from ..lib import SwitchRow
 from ..utils import resource_path
-from ..common_widgets import SwitchRow
 from ..settings import pointing_settings, mouse_settings, touchpad_settings
-from ..bind_utils import *
 from .common import PageContent
 from .pointing_utils.cursor import CursorSizeSelector
 
@@ -41,15 +40,15 @@ class PointingPageContent (PageContent):
 
     def bind_to_gsettings (self):
         # General
-        bind(pointing_settings, 'cursor-size', self.cursor_size_selector, 'selected-size')
+        pointing_settings.bind('cursor-size', self.cursor_size_selector, 'selected-size')
         # Mouse
-        bind_comborow_by_list(self.m_acceleration_comborow,
-                mouse_settings, 'pointer-acceleration', ['default', 'flat', 'adaptive'])
-        bind(mouse_settings, 'natural-scrolling', self.m_natural_scrolling_row, 'enabled')
-        bind(mouse_settings, 'speed', self.m_speed_scale.props.adjustment, 'value')
+        mouse_settings.bind_via_list('pointer-acceleration', self.m_acceleration_comborow, 'selected',
+                                     ['default', 'flat', 'adaptive'])
+        mouse_settings.bind('natural-scrolling', self.m_natural_scrolling_row, 'enabled')
+        mouse_settings.bind('speed', self.m_speed_scale.props.adjustment, 'value')
         # Touchpad
-        bind(touchpad_settings, 'tap-to-click', self.t_tap_to_click_row, 'enabled')
-        bind(touchpad_settings, 'natural-scrolling', self.t_natural_scrolling_row, 'enabled')
-        bind(touchpad_settings, 'two-finger-scrolling', self.t_two_finger_scrolling_row, 'enabled')
-        bind(touchpad_settings, 'disable-while-typing', self.t_disable_while_typing_row, 'enabled')
-        bind(touchpad_settings, 'speed', self.t_speed_scale.props.adjustment, 'value')
+        touchpad_settings.bind('tap-to-click', self.t_tap_to_click_row, 'enabled')
+        touchpad_settings.bind('natural-scrolling', self.t_natural_scrolling_row, 'enabled')
+        touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'enabled')
+        touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'enabled')
+        touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')

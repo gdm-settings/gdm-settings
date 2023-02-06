@@ -1,9 +1,8 @@
 import os
 from gi.repository import Gtk
+from ..lib import SwitchRow
 from ..utils import resource_path
-from ..common_widgets import SwitchRow
 from ..settings import accessibility_settings, top_bar_settings
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -34,15 +33,15 @@ class TopBarPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind(top_bar_settings, 'disable-arrows', self.disable_arrows_row, 'enabled')
-        bind(top_bar_settings, 'disable-rounded-corners', self.disable_rounded_corners_row, 'enabled')
-        bind(top_bar_settings, 'change-text-color', self.text_color_switch, 'active')
-        bind_colorbutton(self.text_color_button, top_bar_settings, 'text-color')
-        bind(top_bar_settings, 'change-background-color', self.background_color_switch, 'active')
-        bind_colorbutton(self.background_color_button, top_bar_settings, 'background-color')
-        bind(accessibility_settings, 'always-show-accessibility-menu',
-            self.accessibilty_menu_row, 'enabled')
-        bind(top_bar_settings, 'show-weekday', self.show_weekday_row, 'enabled')
-        bind(top_bar_settings, 'show-seconds', self.show_seconds_row, 'enabled')
-        bind_comborow_by_list(self.time_format_comborow, top_bar_settings, 'time-format', ['12h', '24h'])
-        bind(top_bar_settings, 'show-battery-percentage', self.show_battery_percentage_row, 'enabled')
+        top_bar_settings.bind('disable-arrows', self.disable_arrows_row, 'enabled')
+        top_bar_settings.bind('disable-rounded-corners', self.disable_rounded_corners_row, 'enabled')
+        top_bar_settings.bind('change-text-color', self.text_color_switch, 'active')
+        top_bar_settings.bind_to_colorbutton('text-color', self.text_color_button)
+        top_bar_settings.bind('change-background-color', self.background_color_switch, 'active')
+        top_bar_settings.bind_to_colorbutton('background-color', self.background_color_button)
+        accessibility_settings.bind('always-show-accessibility-menu',
+                                    self.accessibilty_menu_row, 'enabled')
+        top_bar_settings.bind('show-weekday', self.show_weekday_row, 'enabled')
+        top_bar_settings.bind('show-seconds', self.show_seconds_row, 'enabled')
+        top_bar_settings.bind_via_list('time-format', self.time_format_comborow, 'selected', ['12h', '24h'])
+        top_bar_settings.bind('show-battery-percentage', self.show_battery_percentage_row, 'enabled')

@@ -4,26 +4,24 @@ import logging
 from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 from .info import application_id
+from .lib import Settings, CommandElevator
 from . import env
 from . import gr_utils
 
-def delayed_settings(schema_id):
-    settings = Gio.Settings.new(schema_id)
-    settings.delay()
-    return settings
 
-main_settings          = delayed_settings(application_id)
-accessibility_settings = delayed_settings(f'{application_id}.accessibility')
-appearance_settings    = delayed_settings(f'{application_id}.appearance')
-font_settings          = delayed_settings(f'{application_id}.fonts')
-login_screen_settings  = delayed_settings(f'{application_id}.misc')
-night_light_settings   = delayed_settings(f'{application_id}.night-light')
-mouse_settings         = delayed_settings(f'{application_id}.mouse')
-pointing_settings      = delayed_settings(f'{application_id}.pointing')
-power_settings         = delayed_settings(f'{application_id}.power')
-touchpad_settings      = delayed_settings(f'{application_id}.touchpad')
-sound_settings         = delayed_settings(f'{application_id}.sound')
-top_bar_settings       = delayed_settings(f'{application_id}.top-bar')
+main_settings          = Settings.new_delayed(application_id)
+accessibility_settings = Settings.new_delayed(f'{application_id}.accessibility')
+appearance_settings    = Settings.new_delayed(f'{application_id}.appearance')
+font_settings          = Settings.new_delayed(f'{application_id}.fonts')
+login_screen_settings  = Settings.new_delayed(f'{application_id}.misc')
+night_light_settings   = Settings.new_delayed(f'{application_id}.night-light')
+mouse_settings         = Settings.new_delayed(f'{application_id}.mouse')
+pointing_settings      = Settings.new_delayed(f'{application_id}.pointing')
+power_settings         = Settings.new_delayed(f'{application_id}.power')
+touchpad_settings      = Settings.new_delayed(f'{application_id}.touchpad')
+sound_settings         = Settings.new_delayed(f'{application_id}.sound')
+top_bar_settings       = Settings.new_delayed(f'{application_id}.top-bar')
+
 
 all_settings = (
     main_settings,
@@ -40,11 +38,14 @@ all_settings = (
     top_bar_settings,
 )
 
+
 class LogoImageNotFoundError (FileNotFoundError): pass
+
 
 def _Settings(schema_id):
     if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
-        return Gio.Settings(schema_id=schema_id)
+        return Settings(schema_id)
+
 
 class SettingsManager (GObject.Object):
 
@@ -53,7 +54,6 @@ class SettingsManager (GObject.Object):
 
         os.makedirs(env.TEMP_DIR, exist_ok=True)
 
-        from .utils import CommandElevator
         self.command_elevator = CommandElevator()
 
         from .enums import PackageType

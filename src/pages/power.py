@@ -1,9 +1,8 @@
 import os
 from gi.repository import Gtk
+from ..lib import SwitchRow
 from ..utils import resource_path
 from ..settings import power_settings
-from ..common_widgets import SwitchRow
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -32,13 +31,13 @@ class PowerPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        bind_comborow_by_list(self.power_button_comborow,
-                power_settings, 'power-button-action', ['nothing', 'suspend', 'hibernate', 'interactive'])
-        bind(power_settings, 'auto-power-saver', self.auto_power_saver_row, 'enabled')
-        bind(power_settings, 'dim-screen', self.dim_screen_row, 'enabled')
-        bind(power_settings, 'blank-screen', self.screen_blank_switch, 'active')
-        bind(power_settings, 'idle-delay', self.screen_blank_spinbutton, 'value')
-        bind(power_settings, 'suspend-on-battery', self.suspend_on_battery_switch, 'active')
-        bind(power_settings, 'suspend-on-battery-delay', self.suspend_on_battery_spinbutton, 'value')
-        bind(power_settings, 'suspend-on-ac', self.suspend_on_ac_switch, 'active')
-        bind(power_settings, 'suspend-on-ac-delay', self.suspend_on_ac_spinbutton, 'value')
+        power_settings.bind_via_list('power-button-action', self.power_button_comborow, 'selected',
+                                     ['nothing', 'suspend', 'hibernate', 'interactive'])
+        power_settings.bind('auto-power-saver', self.auto_power_saver_row, 'enabled')
+        power_settings.bind('dim-screen', self.dim_screen_row, 'enabled')
+        power_settings.bind('blank-screen', self.screen_blank_switch, 'active')
+        power_settings.bind('idle-delay', self.screen_blank_spinbutton, 'value')
+        power_settings.bind('suspend-on-battery', self.suspend_on_battery_switch, 'active')
+        power_settings.bind('suspend-on-battery-delay', self.suspend_on_battery_spinbutton, 'value')
+        power_settings.bind('suspend-on-ac', self.suspend_on_ac_switch, 'active')
+        power_settings.bind('suspend-on-ac-delay', self.suspend_on_ac_spinbutton, 'value')
