@@ -1,5 +1,7 @@
 import os
+
 from gi.repository import Gtk
+
 from ..utils import resource_path
 from ..settings import font_settings
 from .common import PageContent

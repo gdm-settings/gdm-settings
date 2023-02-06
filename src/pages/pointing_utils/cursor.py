@@ -1,5 +1,9 @@
 from gettext import pgettext as C_
-from gi.repository import Adw, Gtk, GObject
+
+from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import GObject
+
 from ...utils import resource_path
 
 

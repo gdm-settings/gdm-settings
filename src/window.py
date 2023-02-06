@@ -1,7 +1,11 @@
 import os
-from gi.repository import Adw, Gtk
-from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import Gio
+from gi.repository import GObject
+
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError

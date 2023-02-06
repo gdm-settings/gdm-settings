@@ -1,7 +1,10 @@
 import os
 import logging
-from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw
+from gi.repository import Gtk
+
 from ..lib import SwitchRow, BackgroundTask
 from ..utils import resource_path
 from ..settings import night_light_settings as nl_settings

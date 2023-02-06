@@ -1,6 +1,8 @@
 import os
-from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw, Gtk
+
 from ..env import TEMP_DIR
 from ..info import application_id
 from ..lib import SwitchRow, BackgroundTask, Settings

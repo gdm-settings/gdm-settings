@@ -1,3 +1,5 @@
+import os
+
 from .utils import run_on_host
 from .env import TEMP_DIR
 
@@ -49,18 +51,15 @@ class CommandElevator:
     def run_only(self) -> bool:
         """ Run commands but DO NOT clear command list """
 
-        from os import chmod, makedirs, remove
-        from subprocess import run
-
         returncode = 0
         if len(self._list):
-            makedirs(TEMP_DIR, exist_ok=True)
+            os.makedirs(TEMP_DIR, exist_ok=True)
             script_file = f"{TEMP_DIR}/run-elevated"
             with open(script_file, "w") as open_script_file:
                 print(self.shebang, *self._list, sep="\n", file=open_script_file)
-            chmod(path=script_file, mode=0o755)
+            os.chmod(path=script_file, mode=0o755)
             returncode = run_on_host(['pkexec', script_file]).returncode
-            remove(script_file)
+            os.remove(script_file)
 
         return ProcessReturnCode(returncode)
 

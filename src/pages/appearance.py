@@ -1,5 +1,7 @@
 import os
+
 from gi.repository import Gtk
+
 from ..lib import ImageChooserButton
 from ..utils import resource_path
 from ..enums import BackgroundType

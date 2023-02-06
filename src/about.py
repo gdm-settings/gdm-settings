@@ -1,5 +1,7 @@
 from gettext import gettext as _, pgettext as C_
+
 from gi.repository import Adw, Gtk
+
 from . import info
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"

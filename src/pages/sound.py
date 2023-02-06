@@ -1,5 +1,7 @@
 import os
+
 from gi.repository import Gtk
+
 from ..lib import SwitchRow
 from ..utils import resource_path
 from ..settings import sound_settings

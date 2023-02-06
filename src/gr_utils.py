@@ -1,7 +1,10 @@
 ''' Utilities (functions) for GResource files of GNOME Shell themes'''
 
 import os
+import shutil
 import logging
+import subprocess
+
 from . import env
 from . import lib
 
@@ -56,11 +59,8 @@ def get_default() -> str:
 def extract_default_theme(destination:str, /):
     '''Extract default GNOME Shell theme'''
 
-    from os import makedirs
-
     if os.path.exists(destination):
-        from shutil import rmtree
-        rmtree(destination)
+        shutil.rmtree(destination)
 
     destination_shell_dir = os.path.join(destination, 'gnome-shell')
     gresource_file = get_default()
@@ -75,7 +75,7 @@ def extract_default_theme(destination:str, /):
         content  = lib.get_stdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource],
                                   decode=False)
 
-        makedirs(os.path.dirname(filepath), exist_ok=True)
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
         with open(filepath, "wb") as opened_file:
             opened_file.write(content)
@@ -85,19 +85,16 @@ class BackgroundImageNotFoundError (FileNotFoundError): pass
 def compile(shellDir:str, additional_css:str, background_image:str=''):
     """Compile a theme into a GResource file for its use as a GDM theme"""
 
-    from os import remove
-    from shutil import move, copy, copytree, rmtree
-
     temp_gresource_file = os.path.join(env.TEMP_DIR, 'gnome-shell-theme.gresource')
     temp_gresource_xml = f'{temp_gresource_file}.xml'
     temp_theme_dir = os.path.join(env.TEMP_DIR, 'temp-theme')
     temp_shell_dir = os.path.join(temp_theme_dir, 'gnome-shell')
 
     if os.path.exists(temp_theme_dir):
-        rmtree(temp_theme_dir)
+        shutil.rmtree(temp_theme_dir)
 
     if os.path.exists(temp_gresource_file):
-        remove(temp_gresource_file)
+        os.remove(temp_gresource_file)
 
     extract_default_theme(temp_theme_dir)
 
@@ -109,7 +106,7 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
             with open(os.path.join(temp_shell_dir, filename)) as file_io:
                 css_files[filename] = file_io.read()
 
-        copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
+        shutil.copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
 
         for filename, contents_default in css_files.items():
             if not os.path.isfile(os.path.join(shellDir, filename)):
@@ -125,15 +122,15 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
 
     if background_image:
         if os.path.isfile(background_image):
-            copy(background_image, os.path.join(temp_shell_dir, 'background'))
+            shutil.copy(background_image, os.path.join(temp_shell_dir, 'background'))
         else:
             raise BackgroundImageNotFoundError(2, 'No such file', background_image)
 
     with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
         shell_css.write(additional_css)
 
-    copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
-    copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
+    shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
+    shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
 
     with open(temp_gresource_xml, 'w') as GresourceXml:
         print('<?xml version="1.0" encoding="UTF-8"?>',
@@ -148,8 +145,7 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
              )
 
     # Compile Theme
-    from subprocess import run
-    run(['glib-compile-resources',
+    subprocess.run(['glib-compile-resources',
          '--sourcedir', temp_shell_dir,
          '--target', temp_gresource_file,
          temp_gresource_xml,
