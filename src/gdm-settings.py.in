@@ -24,8 +24,8 @@ gettext.bindtextdomain('gdm-settings', localedir)
 gettext.textdomain('gdm-settings')
 _ = gettext.gettext
 
-from gdm_settings import Application
-app = Application()
+from gdm_settings.app import GdmSettingsApp
+app = GdmSettingsApp()
 
 try:
     status = app.run(sys.argv)

@@ -25,7 +25,6 @@ configure_file(
 )
 
 source_files = files(
-  '__init__.py',
   'about.py',
   'app.py',
   'enums.py',

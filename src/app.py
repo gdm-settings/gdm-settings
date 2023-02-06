@@ -38,7 +38,7 @@ def set_logging_level(verbosity):
     log.stderr_handler.setLevel(level)
 
 
-class Application(Adw.Application):
+class GdmSettingsApp(Adw.Application):
     '''The main Application class'''
     def __init__(self):
         super().__init__(application_id=info.application_id)
