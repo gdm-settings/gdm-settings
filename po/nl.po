@@ -3,15 +3,15 @@
 #
 # Heimen Stoffels <vistausss@fastmail.com>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
-# Philip Goto <philip.goto@gmail.com>, 2022.
+# Philip Goto <philip.goto@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-02-18 10:39+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -263,7 +263,7 @@ msgstr "Achtergrondkleur van bovenbalk"
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:65
 msgid "Login Manager Settings"
-msgstr "Inlogschermvoorkeuren"
+msgstr "Inlogscherm­voorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
