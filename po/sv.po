@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Luna Jernberg <lunajernberg@gnome.org>, 2022.
-# Luna Jernberg <droidbittin@gmail.com>, 2022.
+# Luna Jernberg <droidbittin@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-02-20 12:35+0000\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
 "Language: sv\n"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Strömknappsåtgärd"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -151,6 +151,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Åtgärden som ska vidtas när systemets strömknapp trycks ned. Den här "
+"åtgärden är hårdkodad (och inställningen ignoreras) på virtuella maskiner "
+"(avstängning) och surfplattor (avstängd)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -161,6 +164,8 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Aktivera automatiskt \"ström-sparar\"-profilen med power-profiles-daemon om "
+"batteriet är lågt."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
@@ -168,53 +173,57 @@ msgstr "Dimma skärmen efter en period av inaktivitet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
-msgstr ""
+msgstr "Om skärmen ska vara nedtonad för att spara ström när datorn är inaktiv."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Om skärmen ska tömmas när sessionen är inaktiv"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "Om skärmen ska vara tom för att spara ström när datorn är inaktiv."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Tid före sessionen ska anses vara inaktiv"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Antalet minuter av inaktivitet före sessionen ska anses vara inaktiv."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Om du ska suspendera när du är inaktiv och använder batteri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Timeout för viloläge för dator när den är på batteri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Den tid i minuter som datorn på batteri behöver vara inaktiv innan den går "
+"ned i viloläge. Ett värde på 0 betyder aldrig."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Om den ska suspenderas när den är inaktiv och ansluten"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Timeout för viloläge för dator när den är inkopplad"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Den tid i minuter som datorn på nätström behöver vara inaktiv innan den går "
+"i viloläge. Ett värde på 0 betyder aldrig."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -253,7 +262,7 @@ msgstr "Inloggningshanteraren Inställningar"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Anpassa din inloggningsskärm"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
@@ -269,48 +278,50 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-#, fuzzy
-#| msgid "Reset settings"
 msgid "Added power settings"
-msgstr "Återställ inställningar"
+msgstr "La till ströminställningar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 msgid "Added options to import/export settings in the global menu"
 msgstr ""
+"Lade till alternativ för att importera/exportera inställningar i den globala "
+"menyn"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 msgid "Added an option to enlarge welcome message"
-msgstr ""
+msgstr "Lade till ett alternativ för att förstora välkomstmeddelandet"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 msgid "Added color to command-line output"
-msgstr ""
+msgstr "Lade till färg till kommandoradsutdata"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
 msgid "Turned main window adaptive"
-msgstr ""
+msgstr "Gjorde huvudfönster adaptivt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 msgid "Turned pop-up dialogs adaptive"
-msgstr ""
+msgstr "Gjorde popup-dialoger adaptiva"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
 msgid "Updated \"about\" window to the new style"
-msgstr ""
+msgstr "Uppdaterade \"om\"-fönstret till den nya stilen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 msgid "Improved style of welcome message input field"
-msgstr ""
+msgstr "Förbättrad stil på inmatningsfältet för välkomstmeddelandet"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-msgstr ""
+msgstr "Döpte om sidofältssektionen \"Övrigt\" till \"Inloggningsskärm\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid ""
 "Renamed global menu option \"Import user settings\" to \"Load session "
 "settings\""
 msgstr ""
+"Döpte om globalt menyalternativ \"Importera användarinställningar\" till "
+"\"Ladda sessionsinställningar\""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
 msgid ""
@@ -318,24 +329,29 @@ msgid ""
 "logo is enabled and the chosen logo image does not exist on the system "
 "anymore"
 msgstr ""
+"Detta program visar nu ett felmeddelande när man försöker tillämpa "
+"inställningar om logotypen är aktiverad och den valda logotypen inte finns "
+"på systemet längre"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid ""
 "Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
 "based systems"
 msgstr ""
+"Fixade \"Verkställ nuvarande skärm-inställningar\"-funktionen som inte "
+"fungerade på vissa Ubuntu-baserade system"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
 msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+msgstr "Fixade en del text som visades oöversatt även om översättning fanns"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
+msgstr "Fixade att inte kunna byta logotyp bild ibland"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Fixed some typos"
-msgstr ""
+msgstr "Fixade några stavfel"
 
 #: src/app.py:53
 msgid "Show application version"
@@ -361,7 +377,7 @@ msgstr "Aktivera tyst läge (alias av -verbosity=0)"
 #: src/app.py:77
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Ogiltig detaljnivå {level}. Måste vara 0, 5 eller däremellan."
 
 #: src/app.py:156
 msgid ""
@@ -382,20 +398,14 @@ msgstr ""
 "inte installerade."
 
 #: src/app.py:169
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: src/app.py:175
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -414,23 +424,19 @@ msgstr "Saknar beroenden"
 
 #: src/app.py:195 src/pages/display.py:104
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:225
 msgid "Settings reloaded"
 msgstr "Inställningarna har laddats om"
 
 #: src/app.py:233
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Inställningarna har verkställts"
+msgstr "Sessionsinställningarna har lästs in framgångsrikt"
 
 #: src/app.py:237
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Import av användarinställningar stöds INTE i Flatpak-versionen"
+msgstr "Ladda sessionsinställningar stöds INTE i Flatpak-versionen"
 
 #: src/app.py:250
 msgid "Reset settings successfully"
@@ -442,31 +448,27 @@ msgstr "Misslyckades att återställa inställningar"
 
 #: src/app.py:271
 msgid "Import"
-msgstr ""
+msgstr "Importera"
 
 #: src/app.py:293
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Inställningarna har verkställts"
+msgstr "Inställningarna har importerats framgångsrikt från fil"
 
 #: src/app.py:295
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Misslyckades att importera. Fil är ogiltig"
 
 #: src/app.py:326
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Inställningarna har verkställts"
+msgstr "Inställningarna har exporterats framgångsrikt"
 
 #: src/app.py:328
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Misslyckades att exportera. Åtkomst nekad"
 
 #: src/app.py:330
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Misslyckades att exportera. En katalog med det namnet finns redan"
 
 #: src/about.py:5 src/about.py:16
 msgctxt "Name of Developer"
@@ -474,9 +476,6 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: src/about.py:6
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
@@ -520,16 +519,6 @@ msgid "Failed to apply current display settings"
 msgstr "Det gick inte att verkställa aktuella visningsinställningar"
 
 #: src/pages/display.py:90
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -537,14 +526,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"Filen '$XDG_CONFIG_HOME/monitors.xml' krävs för att tillämpa aktuella "
-"visningsinställningar men den finns inte.\n"
+"Filen '$XDG_CONFIG_HOME/monitors.xml' krävs för att tillämpa nuvarande "
+"visningsinställningar, men den finns inte.\n"
 "\n"
-"För att skapa den filen automatiskt,\n"
-"\n"
-"1. Gå till panelen \"Skärmar\" i Systeminställningar.\n"
-"2. Ändra några inställningar där.\n"
-"3. Verkställ."
+"För att skapa den filen automatiskt, öppna systemets \"Inställningar\" och "
+"ändra några visningsalternativ där."
 
 #: src/pages/display.py:99
 msgid "Monitor Settings Not Found"
@@ -553,11 +539,9 @@ msgstr "Skärminställningar hittades inte"
 #: src/pages/pointing_utils/cursor.py:60
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Medium"
@@ -565,24 +549,22 @@ msgstr "Medium"
 #: src/pages/pointing_utils/cursor.py:62
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Stor"
 
 #: src/pages/pointing_utils/cursor.py:63
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Större"
 
 #: src/pages/pointing_utils/cursor.py:64
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Störst"
 
 #: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
 msgctxt "Cursor Size"
 msgid "Non-Standard"
-msgstr "Standard"
+msgstr "Icke-standard"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -647,10 +629,8 @@ msgid "Apply current display settings"
 msgstr "Verkställ aktuella skärminställningar"
 
 #: src/resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Upplösning, uppdateringsfrekvens, skärm positioner, etc"
+msgstr "Upplösning, uppdateringsfrekvens, skärm positioner, etc."
 
 #: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
 msgid "Apply"
@@ -736,10 +716,8 @@ msgid "Refresh"
 msgstr "Uppdatera"
 
 #: src/resources/ui/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Importera användarinställningar"
+msgstr "Ladda sessionsinställningar"
 
 #: src/resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -747,15 +725,15 @@ msgstr "Återställ inställningar"
 
 #: src/resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importera från fil"
 
 #: src/resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportera till fil"
 
 #: src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Donera"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -795,19 +773,15 @@ msgstr "Välkomstmeddelande"
 
 #: src/resources/ui/login-screen-page.blp:59
 msgid "Enlarge"
-msgstr ""
+msgstr "Förstora"
 
 #: src/resources/ui/login-screen-page.blp:69
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Välkomstmeddelande"
+msgstr "Meddelande"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Pekare"
+msgstr "Pekarstorlek"
 
 #: src/resources/ui/pointing-page.blp:19
 msgid "Mouse"
@@ -863,80 +837,76 @@ msgstr "Inaktivera medan du skriver"
 
 #: src/resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Strömknappens beteende"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Gör ingenting"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Suspendera"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernera"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Fråga"
 
 #: src/resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Automatisk"
+msgstr "Automatisk strömsparare"
 
 #: src/resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Aktiverar energisparläge när batterinivån är låg."
 
 #: src/resources/ui/power-page.blp:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "Dimma skärm"
 
 #: src/resources/ui/power-page.blp:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Minskar skärmens ljusstyrka när datorn är inaktiv."
 
 #: src/resources/ui/power-page.blp:38
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Slå av skärmen"
 
 #: src/resources/ui/power-page.blp:39
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Om skärmen ska stängas av efter en period av inaktivitet."
 
 #: src/resources/ui/power-page.blp:48 src/resources/ui/power-page.blp:80
 #: src/resources/ui/power-page.blp:107
 msgid "Delay"
-msgstr ""
+msgstr "Fördröjning"
 
 #: src/resources/ui/power-page.blp:49
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Tid i minuter efter vilken skärmen stängs av."
 
 #: src/resources/ui/power-page.blp:67
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Automatisk"
+msgstr "Automatisk suspendering"
 
 #: src/resources/ui/power-page.blp:68
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Pausar datorn efter en period av inaktivitet."
 
 #: src/resources/ui/power-page.blp:71
 msgid "On Battery Power"
-msgstr ""
+msgstr "På batteriström"
 
 #: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Tid i minuter efter vilken datorn suspenderas."
 
 #: src/resources/ui/power-page.blp:98
 msgid "When Plugged In"
-msgstr ""
+msgstr "När inkopplad"
 
 #: src/resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1041,12 +1011,12 @@ msgstr "Visa batteri procent"
 #: src/settings.py:70
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Exporterar till fil '{filename}'"
 
 #: src/settings.py:75
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Kan inte skriva till fil '{filename}'. Åtkomst nekad"
 
 #: src/settings.py:79
 #, python-brace-format
@@ -1054,40 +1024,40 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Kan inte skriva till fil '{filename}'. En katalog med samma namn finns redan"
 
 #: src/settings.py:85
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exporterar till standardutdata"
 
 #: src/settings.py:94
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importerar från fil '{filename}'"
 
 #: src/settings.py:98
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importerar från standardinmatning"
 
 #: src/settings.py:101
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Misslyckades att återställa inställningar"
+msgstr "Misslyckades med att analysera importfil"
 
 #: src/settings.py:104
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Misslyckades med att läsa importfilen. Inte kodad i UTF-8"
 
 #: src/settings.py:110
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Importerad fil har inte sektionen \"{section_name}\""
 
 #: src/settings.py:115
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Importerad fil har inte nyckel '{key_name}' i sektionen '{section_name}'"
 
 #: src/settings.py:304
 msgid "Backing up default shell theme …"
@@ -1139,7 +1109,7 @@ msgstr "Skärm"
 
 #: src/window.py:116
 msgid "Login Screen"
-msgstr ""
+msgstr "Inloggningsskärm"
 
 #: src/window.py:118
 msgid "Tools"
@@ -1154,35 +1124,24 @@ msgid "Failed to apply settings"
 msgstr "Misslyckades att verkställa inställningar"
 
 #: src/window.py:144
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden. Snälla! "
-"välj igen."
+"Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden "
+"existerar inte längre. Snälla! välj igen."
 
 #: src/window.py:148
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden. Snälla! "
-"välj igen."
+"Verkställde inte. Det gick inte att hitta den valda logotypbilden då den "
+"inte existerar längre. Snälla! välj igen."
 
 #: src/window.py:154
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
-"Systemet kan börja se konstigt/buggigt ut tills du loggar in igen eller "
+"Systemet kan börja se konstigt/buggigt ut till du loggar in igen eller "
 "startar om."
 
 #: src/window.py:159
