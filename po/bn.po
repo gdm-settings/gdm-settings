@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>, 2022.
+# Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2022-12-12 00:37+0500\n"
-"PO-Revision-Date: 2022-07-29 06:17+0000\n"
+"PO-Revision-Date: 2023-02-21 14:39+0000\n"
 "Last-Translator: Manjur Muammar Rashidi <mhasanmuammar2@gmail.com>\n"
 "Language-Team: Bengali <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/bn/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 4.16-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -359,7 +359,7 @@ msgstr ""
 #: src/app.py:55
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "স্তর"
 
 #: src/app.py:56
 msgid "Enable verbose mode (alias of --verbosity=5)"
