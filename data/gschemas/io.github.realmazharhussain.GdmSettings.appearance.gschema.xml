@@ -16,14 +16,14 @@
     </key>
 
 	 <key name="background-type" type="s">
-	   <default>"none"</default>
+	   <default>"default"</default>
 	   <summary>Type of Background</summary>
       <!-- Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager). -->
 	   <description>
-	     Whether GDM background should be an Image, Color or None.
+	     Whether GDM background should be an Image, Color or Default.
 	   </description>
 	   <choices>
-	     <choice value="none"/>
+	     <choice value="default"/>
 	     <choice value="image"/>
 	     <choice value="color"/>
 	   </choices>

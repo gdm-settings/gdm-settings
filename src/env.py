@@ -1,6 +1,15 @@
 '''get information about program's environment'''
 
+import ast
 import os
+import re
+import sys
+
+from gi.repository import GLib
+
+from .enums import PackageType
+from .info import application_id
+
 
 def read_os_release():
     filename = None
@@ -21,15 +30,12 @@ def read_os_release():
             if not line:
                 continue
 
-            import re
             if m := re.match(r'([A-Z][A-Z_0-9]+)=(.*)', line):
                 name, val = m.groups()
                 if val and val[0] in '"\'':
-                    import ast
                     val = ast.literal_eval(val)
                 os_release.append((name, val))
             else:
-                import sys
                 print(f'{filename}:{line_number}: bad line {line!r}',
                       file=sys.stderr)
 
@@ -68,19 +74,16 @@ class PATH (list):
 
 
 # XDG Base Directories
-from gi.repository import GLib
 XDG_CONFIG_HOME = GLib.get_user_config_dir()
 XDG_RUNTIME_DIR = GLib.get_user_runtime_dir()
 
 
 # Application-specific Directories
-from .info import application_id
 TEMP_DIR       = os.path.join(XDG_RUNTIME_DIR, 'app', application_id)
 HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 
 # Package Type and related stuff
-from .enums import PackageType
 PACKAGE_TYPE = PackageType.Unknown
 HOST_ROOT    = ''
 

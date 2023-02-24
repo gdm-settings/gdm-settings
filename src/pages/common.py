@@ -1,4 +1,6 @@
-from gi.repository import Adw, Gtk
+from gi.repository import Adw
+from gi.repository import Gtk
+
 
 class PageContent (Gtk.ScrolledWindow):
     '''Base class for content of a page from Gtk.Stack'''

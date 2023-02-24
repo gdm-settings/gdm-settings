@@ -1,0 +1,9 @@
+<schemalist gettext-domain="gdm-settings">
+  <schema id="io.github.realmazharhussain.GdmSettings.accessibility"
+       path="/io/github/realmazharhussain/GdmSettings/accessibility/">
+
+	 <key name="always-show-accessibility-menu" type="b">
+	   <default>true</default>
+	 </key>
+  </schema>
+</schemalist>

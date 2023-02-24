@@ -48,44 +48,32 @@ Box content_box {
       }
     }
 
-    Adw.ActionRow {
+    .SwitchRow disable_arrows_row {
       title: _("Disable Arrows");
-      activatable-widget: disable_arrows_switch;
-
-      Switch disable_arrows_switch {
-        valign: center;
-      }
     }
 
-    Adw.ActionRow {
+    .SwitchRow disable_rounded_corners_row {
       title: _("Disable Rounded Corners");
-      activatable-widget: disable_rounded_corners_switch;
+    }
+  }
 
-      Switch disable_rounded_corners_switch {
-        valign: center;
-      }
+  Adw.PreferencesGroup {
+    title: _("Accessibility");
+
+    .SwitchRow accessibilty_menu_row {
+      title: _("Always Show Accessibility Menu");
     }
   }
 
   Adw.PreferencesGroup {
     title: _("Clock");
 
-    Adw.ActionRow {
+    .SwitchRow show_weekday_row {
       title: _("Show Weekday");
-      activatable-widget: show_weekday_switch;
-
-      Switch show_weekday_switch {
-        valign: center;
-      }
     }
 
-    Adw.ActionRow {
+    .SwitchRow show_seconds_row {
       title: _("Show Seconds");
-      activatable-widget: show_seconds_switch;
-
-      Switch show_seconds_switch {
-        valign: center;
-      }
     }
 
     Adw.ComboRow time_format_comborow {
@@ -97,13 +85,8 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Power");
 
-    Adw.ActionRow {
+    .SwitchRow show_battery_percentage_row {
       title: _("Show battery percentage");
-      activatable-widget: show_battery_percentage_switch;
-
-      Switch show_battery_percentage_switch {
-        valign: center;
-      }
     }
   }
 }

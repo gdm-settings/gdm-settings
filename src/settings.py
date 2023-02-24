@@ -1,31 +1,39 @@
 import os
 import shutil
 import logging
+import sys
+from math import trunc
+from configparser import ConfigParser, ParsingError
 from gettext import gettext as _, pgettext as C_
+
 from gi.repository import GObject, Gio
+
+from .enums import PackageType, BackgroundType
 from .info import application_id
+from .lib import Settings
+from .privilege_escalation import CommandElevator
+from .theme_lists import shell_themes
 from . import env
 from . import gr_utils
 
-def delayed_settings(schema_id):
-    settings = Gio.Settings.new(schema_id)
-    settings.delay()
-    return settings
 
-main_settings         = delayed_settings(application_id)
-appearance_settings   = delayed_settings(f'{application_id}.appearance')
-font_settings         = delayed_settings(f'{application_id}.fonts')
-login_screen_settings = delayed_settings(f'{application_id}.misc')
-night_light_settings  = delayed_settings(f'{application_id}.night-light')
-mouse_settings        = delayed_settings(f'{application_id}.mouse')
-pointing_settings     = delayed_settings(f'{application_id}.pointing')
-power_settings        = delayed_settings(f'{application_id}.power')
-touchpad_settings     = delayed_settings(f'{application_id}.touchpad')
-sound_settings        = delayed_settings(f'{application_id}.sound')
-top_bar_settings      = delayed_settings(f'{application_id}.top-bar')
+main_settings          = Settings.new_delayed(application_id)
+accessibility_settings = Settings.new_delayed(f'{application_id}.accessibility')
+appearance_settings    = Settings.new_delayed(f'{application_id}.appearance')
+font_settings          = Settings.new_delayed(f'{application_id}.fonts')
+login_screen_settings  = Settings.new_delayed(f'{application_id}.misc')
+night_light_settings   = Settings.new_delayed(f'{application_id}.night-light')
+mouse_settings         = Settings.new_delayed(f'{application_id}.mouse')
+pointing_settings      = Settings.new_delayed(f'{application_id}.pointing')
+power_settings         = Settings.new_delayed(f'{application_id}.power')
+touchpad_settings      = Settings.new_delayed(f'{application_id}.touchpad')
+sound_settings         = Settings.new_delayed(f'{application_id}.sound')
+top_bar_settings       = Settings.new_delayed(f'{application_id}.top-bar')
+
 
 all_settings = (
     main_settings,
+    accessibility_settings,
     appearance_settings,
     font_settings,
     login_screen_settings,
@@ -38,26 +46,28 @@ all_settings = (
     top_bar_settings,
 )
 
+
 class LogoImageNotFoundError (FileNotFoundError): pass
+
 
 def _Settings(schema_id):
     if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
-        return Gio.Settings(schema_id=schema_id)
+        return Settings(schema_id)
+
 
 class SettingsManager (GObject.Object):
 
     def __init__(self):
         super().__init__()
 
-        from .utils import CommandElevator
+        os.makedirs(env.TEMP_DIR, exist_ok=True)
+
         self.command_elevator = CommandElevator()
 
-        from .enums import PackageType
         if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_session_settings()
 
     def export(self, filename=None):
-        from configparser import ConfigParser
         config_parser = ConfigParser()
 
         for settings in all_settings:
@@ -81,12 +91,10 @@ class SettingsManager (GObject.Object):
                                ).format(filename=filename))
                 raise
         else:
-            import sys
             logging.info(_('Exporting to standard output'))
             config_parser.write(sys.stdout)
 
     def load(self, filename=None):
-        from configparser import ConfigParser, ParsingError
         config_parser = ConfigParser()
 
         try:
@@ -94,7 +102,6 @@ class SettingsManager (GObject.Object):
                 logging.info(_("Importing from file '{filename}'").format(filename=filename))
                 config_parser.read(filename)
             else:
-                import sys
                 logging.info(_('Importing from standard input'))
                 config_parser.read_file(sys.stdin)
         except ParsingError:
@@ -124,9 +131,13 @@ class SettingsManager (GObject.Object):
     def load_session_settings(self):
         '''Load user's Gnome settings into the app'''
 
-
         if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
-            appearance_settings['shell-theme'] = user_settings['name'] or 'default'
+            appearance_settings['shell-theme'] = user_settings['name']
+
+        if user_settings := _Settings("org.gnome.desktop.a11y"):
+            source_key = "always-show-universal-access-status"
+            target_key = "always-show-accessibility-menu"
+            accessibility_settings[target_key] = user_settings[source_key]
 
         if user_settings := _Settings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
@@ -183,7 +194,6 @@ class SettingsManager (GObject.Object):
             night_light_settings['schedule-automatic'] = user_settings["night-light-schedule-automatic"]
             night_light_settings['temperature'] = user_settings["night-light-temperature"]
 
-            from math import trunc
             def hour_minute(decimal_time):
                 hour = trunc(decimal_time)
                 minute = round((decimal_time % 1) * 60)
@@ -226,7 +236,6 @@ class SettingsManager (GObject.Object):
         css = "\n\n/* 'Login Manager Settings' App Provided CSS */\n"
 
         ### Background ###
-        from .enums import BackgroundType
         background_type = BackgroundType[appearance_settings['background-type']]
         background_image = appearance_settings['background-image']
         if background_type is BackgroundType.image and background_image:
@@ -306,8 +315,7 @@ class SettingsManager (GObject.Object):
         if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
             self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
 
-        from os import makedirs
-        makedirs(env.TEMP_DIR, exist_ok=True)
+        os.makedirs(env.TEMP_DIR, exist_ok=True)
 
         gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
 
@@ -318,12 +326,10 @@ class SettingsManager (GObject.Object):
     def apply_shell_theme_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
-        from .enums import BackgroundType
-        from .theme_lists import shell_themes
 
         # If needed, back up the default shell theme
 
-        pure_theme_not_exists = 'default-pure' not in shell_themes.names
+        pure_theme_not_exists = 'default-pure' not in shell_themes.theme_ids
         shell_gresource_is_stock = gr_utils.is_unmodified(gr_utils.ShellGresourceFile)
 
         if shell_gresource_is_stock or pure_theme_not_exists:
@@ -332,8 +338,9 @@ class SettingsManager (GObject.Object):
 
         # Apply shell theme settings
 
-        theme_name = appearance_settings['shell-theme']
-        theme_path = shell_themes.get_path(theme_name)
+        theme_id = appearance_settings['shell-theme']
+        theme_path = shell_themes.get_path(theme_id)
+        theme_path = shell_themes(theme_id).path
         shelldir   = os.path.join(theme_path, 'gnome-shell') if theme_path else None
 
         background_type = BackgroundType[appearance_settings['background-type']]
@@ -400,6 +407,14 @@ class SettingsManager (GObject.Object):
             gdm_conf_contents += f"font-antialiasing='{antialiasing}'\n"
             gdm_conf_contents += f"font-hinting='{hinting}'\n"
             gdm_conf_contents += f"text-scaling-factor={scaling_factor}\n"
+            gdm_conf_contents +=  "\n"
+
+            accessibility_menu = str(accessibility_settings['always-show-accessibility-menu']).lower()
+
+            gdm_conf_contents +=  "#---- Accessibility ----\n"
+            gdm_conf_contents +=  "[org/gnome/desktop/a11y]\n"
+            gdm_conf_contents +=  "#------------------------\n"
+            gdm_conf_contents += f"always-show-universal-access-status={accessibility_menu}\n"
             gdm_conf_contents +=  "\n"
 
             sound_theme = sound_settings['theme']
@@ -511,9 +526,8 @@ class SettingsManager (GObject.Object):
             if not os.path.exists(logo_file):
                 raise LogoImageNotFoundError(2, 'No such file', logo_file)
 
-            from shutil import copy
             logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
-            copy(logo_file, logo_temp)
+            shutil.copy(logo_file, logo_temp)
             self.command_elevator.add(f"install -m644 '{logo_temp}' -T '{logo}'")
 
         overriding_files = self.get_overriding_files()
@@ -533,11 +547,11 @@ class SettingsManager (GObject.Object):
         status = self.command_elevator.run()
 
         if status.success:
-            # When we change GDM shell theme it becomes the 'default' theme but for the users
+            # When we change GDM shell theme it becomes the default theme but for the users
             # who didn't want to change shell theme for their session, we need to set it to a
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
-            # 'default' in order to match their GDM theme
+            # default in order to match their GDM theme
             if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
                 if (user_settings['name'] == ''
                 and main_settings["never-applied"]):
@@ -629,5 +643,4 @@ class SettingsManager (GObject.Object):
         return overriding_files
 
     def cleanup(self):
-        from shutil import rmtree
-        rmtree(path=env.TEMP_DIR, ignore_errors=True)
+        shutil.rmtree(path=env.TEMP_DIR, ignore_errors=True)

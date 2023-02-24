@@ -1,12 +1,16 @@
 import os
-from gi.repository import Adw, Gtk
-from gi.repository import Gio, GObject
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import Gio
+from gi.repository import GObject
+
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .utils import run_on_host, BackgroundTask, resource_path
-from .bind_utils import bind
+from .lib import BackgroundTask, Settings
+from .utils import run_on_host, resource_path
 from . import pages
 
 
@@ -118,11 +122,11 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         add_page('tools',      _('Tools'),            pages.ToolsPageContent(self))
 
     def bind_to_gsettings (self):
-        self.gsettings = Gio.Settings.new(f'{application_id}.window-state')
+        self.settings = Settings(f'{application_id}.window-state')
 
-        bind(self.gsettings, 'width', self, 'default-width')
-        bind(self.gsettings, 'height', self, 'default-height')
-        bind(self.gsettings, 'last-visited-page', self.stack, 'visible-child-name')
+        self.settings.bind('width', self, 'default-width')
+        self.settings.bind('height', self, 'default-height')
+        self.settings.bind('last-visited-page', self.stack, 'visible-child-name')
 
     def on_apply (self, button):
         self.task_counter.inc()

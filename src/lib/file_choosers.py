@@ -1,18 +1,23 @@
-
 from gettext import gettext as _, pgettext as C_
 
-from gi.repository import GObject, Gio
-from gi.repository import Pango, Gtk
+from gi.repository import Gtk
+from gi.repository import Pango
+from gi.repository import Gio
+from gi.repository import GObject
 
 readwrite = GObject.ParamFlags.READWRITE
 construct = GObject.ParamFlags.CONSTRUCT
+
+
+__all__ = ['FileChooserButton', 'ImageChooserButton']
+
 
 class FileChooserButton (Gtk.Button):
     __gtype_name__ = 'FileChooserButton'
 
     _freeze_prop_file = False
     _freeze_prop_filename = False
-    _default_filter = Gtk.FileFilter(name='All Files')
+    _default_filter = Gtk.FileFilter(name=_('All Files'))
     _default_filter.add_pattern('*')
 
 
@@ -148,11 +153,11 @@ class ImageChooserButton (FileChooserButton):
 
         self.filters = Gio.ListStore()
 
-        image_filter = Gtk.FileFilter(name='Images')
+        image_filter = Gtk.FileFilter(name=_('Images'))
         image_filter.add_mime_type('image/*')
         self.filters.append(image_filter)
 
-        all_filter = Gtk.FileFilter(name='All Files')
+        all_filter = Gtk.FileFilter(name=_('All Files'))
         all_filter.add_pattern('*')
         self.filters.append(all_filter)
 

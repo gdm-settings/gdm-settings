@@ -14,24 +14,14 @@ Box content_box {
 
     }
 
-    Adw.ActionRow {
+    .SwitchRow auto_power_saver_row {
       title: _("Automatic Power Saver");
       subtitle: _("Enables power saver mode when battery is low.");
-      activatable-widget: auto_power_saver_switch;
-
-      Switch auto_power_saver_switch {
-        valign: center;
-      }
     }
 
-    Adw.ActionRow {
+    .SwitchRow dim_screen_row {
       title: _("Dim Screen");
       subtitle: _("Reduces the screen brightness when the computer is inactive.");
-      activatable-widget: dim_screen_switch;
-
-      Switch dim_screen_switch {
-        valign: center;
-      }
     }
 
     Adw.ExpanderRow {

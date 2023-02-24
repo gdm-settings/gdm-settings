@@ -1,24 +1,23 @@
 from gettext import pgettext as C_
-from gi.repository import Adw, Gtk, GObject
+
+from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import GObject
+
 from ...utils import resource_path
-from ...settings import pointing_settings
-from ...bind_utils import bind
-
-
-@Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-image.ui'))
-class CursorImage (Adw.Bin):
-    __gtype_name__ = 'CursorImage'
-    cursor_size = GObject.Property(type=int, default=24)
 
 
 @Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-size-button.ui'))
 class CursorSizeButton (Gtk.ToggleButton):
     __gtype_name__ = 'CursorSizeButton'
-    cursor_size = GObject.Property(type=int, default=24, flags=GObject.ParamFlags.READWRITE|GObject.ParamFlags.CONSTRUCT_ONLY)
+    cursor_size = GObject.Property(type=int,
+                                   flags=GObject.ParamFlags.READWRITE|GObject.ParamFlags.CONSTRUCT_ONLY)
+    size_name = GObject.Property(type=str,
+                                 flags=GObject.ParamFlags.READWRITE|GObject.ParamFlags.CONSTRUCT)
 
 
 @Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-size-selector.ui'))
-class CursorSizeSelector (Gtk.ListBoxRow):
+class CursorSizeSelector (Gtk.ListBoxRow, Gtk.Buildable):
     __gtype_name__ = 'CursorSizeSelector'
     box = Gtk.Template.Child()
 
@@ -28,14 +27,7 @@ class CursorSizeSelector (Gtk.ListBoxRow):
         self._item_dict = {}
         self._first_item = None
         self._selected_size = 0
-
-        self.add_size(24)
-        self.add_size(32)
-        self.add_size(48)
-        self.add_size(64)
-        self.add_size(96)
-
-        bind(pointing_settings, 'cursor-size', self, 'selected-size')
+        self._selected_name = ''
 
     @GObject.Property(type=int)
     def selected_size(self):
@@ -50,28 +42,28 @@ class CursorSizeSelector (Gtk.ListBoxRow):
             return
 
         self._selected_size = value
-        self.notify('label-string')
         btn = self._item_dict[value]
         btn.set_active(True)
 
+        self._selected_name = btn.size_name
+        self.notify('selected-name')
+
     @GObject.Property(type=str, flags=GObject.ParamFlags.READABLE)
-    def label_string(self):
-        match self.selected_size:
-            case 24: return C_('Cursor Size', 'Default')
-            case 32: return C_('Cursor Size', 'Medium')
-            case 48: return C_('Cursor Size', 'Large')
-            case 64: return C_('Cursor Size', 'Larger')
-            case 96: return C_('Cursor Size', 'Largest')
-            case __: return C_('Cursor Size', 'Non-Standard')
+    def selected_name(self):
+        return self._selected_name
 
-    def add_size(self, size):
-        if size in self._item_dict:
-            return
+    def do_add_child(self, builder, child, _type):
+        if not isinstance(child, CursorSizeButton):
+            raise TypeError('Child is a ' + type(child) + '. Should be a CursorSizeButton instead')
 
-        child = CursorSizeButton(cursor_size=size)
-        child.connect('toggled', self.selection_changed_cb)
-        self._item_dict[size] = child
+        cursor_size = child.cursor_size
+        if cursor_size in self._item_dict:
+            raise ValueError('A CursorSizeButton with cursor-size of ' + cursor_size
+                             + ' has already been added')
+
         self.box.append(child)
+        child.connect('toggled', self.selection_changed_cb)
+        self._item_dict[cursor_size] = child
 
         if self._first_item:
             child.set_group(self._first_item)

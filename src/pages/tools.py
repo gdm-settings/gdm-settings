@@ -1,11 +1,14 @@
 import os
-from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw, Gtk
+
 from ..env import TEMP_DIR
 from ..info import application_id
-from ..utils import CommandElevator, BackgroundTask, resource_path
+from ..lib import SwitchRow, BackgroundTask, Settings
+from ..privilege_escalation import CommandElevator
+from ..utils import resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -21,16 +24,16 @@ class ToolsPageContent (PageContent):
 
         self.set_child(self.builder.get_object('content_box'))
 
-        self.top_bar_tweaks_switch = self.builder.get_object('top_bar_tweaks_switch')
+        self.top_bar_tweaks_row = self.builder.get_object('top_bar_tweaks_row')
         self.extract_shell_theme_button = self.builder.get_object('extract_shell_theme_button')
 
         self.extract_theme_task = BackgroundTask(self.extract_shell_theme, self.on_extract_shell_theme_finish)
         self.window.task_counter.register(self.extract_shell_theme_button)
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
-        # Bind to GSettings
-        self.gsettings = Gio.Settings.new(f"{application_id}.tools")
-        bind(self.gsettings, 'top-bar-tweaks', self.top_bar_tweaks_switch, 'active')
+        # Bind to Settings
+        self.settings = Settings(f"{application_id}.tools")
+        self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
 
     def on_extract_shell_theme(self, button):
         self.window.task_counter.inc()
@@ -59,7 +62,7 @@ class ToolsPageContent (PageContent):
         extract_default_theme(temp_theme_path)
 
         # If enabled, apply top bar tweaks
-        if self.gsettings['top-bar-tweaks']:
+        if self.settings['top-bar-tweaks']:
             with open(os.path.join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
                 shell_css.write(self.window.application.settings_manager.get_setting_css())
 

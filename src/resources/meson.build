@@ -8,7 +8,6 @@ blueprint_sources = files(
   'ui/sound-page.blp',
   'ui/top-bar-page.blp',
   'ui/pointing-page.blp',
-  'ui/pointing-page/cursor-image.blp',
   'ui/pointing-page/cursor-size-button.blp',
   'ui/pointing-page/cursor-size-selector.blp',
   'ui/login-screen-page.blp',

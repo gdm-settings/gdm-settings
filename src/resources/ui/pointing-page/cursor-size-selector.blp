@@ -3,9 +3,10 @@ using Gtk 4.0;
 template CursorSizeSelector : ListBoxRow {
   activatable: false;
 
-  Box box {
+  child: FlowBox box {
     orientation: horizontal;
     homogeneous: true;
-    styles ["linked"]
-  }
+    selection-mode: none;
+    max-children-per-line: 5;
+  };
 }

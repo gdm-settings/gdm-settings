@@ -1,10 +1,11 @@
 using Gtk 4.0;
 using Adw 1;
 
-template CursorSizeButton : ToggleButton {
-    hexpand: true;
-    vexpand: true;
-    styles ["flat"]
-
-    .CursorImage { cursor-size: bind CursorSizeButton.cursor-size; }
+template CursorSizeButton : ToggleButton { styles ["flat"]
+    Image {
+        icon-name: "io.github.realmazharhussain.GdmSettings-cursor";
+        halign: center;
+        valign: center;
+        pixel-size: bind CursorSizeButton.cursor-size;
+    }
 }

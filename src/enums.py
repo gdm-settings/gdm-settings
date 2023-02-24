@@ -10,6 +10,6 @@ class PackageType (Enum):
 
 
 class BackgroundType (Enum):
-    none  = 0
-    image = 1
-    color = 2
+    default = 0
+    image   = 1
+    color   = 2

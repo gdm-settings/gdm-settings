@@ -2,17 +2,22 @@
 
 import sys
 import logging
+import subprocess
+from configparser import ParsingError
 from gettext import gettext as _, pgettext as C_
 
 import gi
 gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
-from gi.repository import Adw, Gtk
+from gi.repository import Adw, Gtk, Gdk
+
 
 from . import info
 Gio.Resource.load(info.data_dir+'/resources.gresource')._register()
 
-from .utils import BackgroundTask
+from .about import about_window
+from .enums import PackageType
+from .lib import BackgroundTask, Settings
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
@@ -38,7 +43,7 @@ def set_logging_level(verbosity):
     log.stderr_handler.setLevel(level)
 
 
-class Application(Adw.Application):
+class GdmSettingsApp(Adw.Application):
     '''The main Application class'''
     def __init__(self):
         super().__init__(application_id=info.application_id)
@@ -97,6 +102,8 @@ class Application(Adw.Application):
         logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
+        self.settings = Settings(info.application_id)
+
         self.settings_manager = SettingsManager()
 
         self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
@@ -116,6 +123,10 @@ class Application(Adw.Application):
         # check them and report to the user if they are missing.
         self.check_system_dependencies()
 
+        if (not self.settings['donation-dialog-shown']
+        and not self.settings['never-applied']):
+            self.show_donation_dialog()
+
 
     @staticmethod
     def on_shutdown(self):
@@ -125,16 +136,13 @@ class Application(Adw.Application):
     def check_system_dependencies(self):
         '''If some dependencies are missing, show a dialog reporting the situation'''
 
-        from subprocess import run
-        from .enums import PackageType
-
         def check_dependency(exec_name, logging_name=None, *, on_host=True):
             host_args = []
             if env.PACKAGE_TYPE is PackageType.Flatpak and on_host is True:
                 host_args = ['flatpak-spawn', '--host']
 
             try:
-                proc = run([*host_args, exec_name, '--version'], capture_output=True)
+                proc = subprocess.run([*host_args, exec_name, '--version'], capture_output=True)
                 if proc.returncode == 0:
                     version_info = proc.stdout.decode().strip()
                     if logging_name:
@@ -197,6 +205,30 @@ class Application(Adw.Application):
         dialog.present()
 
 
+    def show_donation_dialog (self):
+        heading = _("Donation Request")
+        body = _(
+            "This app is and will always remain Open Source/Libre and free of cost. "
+            "However, You can show some love by donating to the developer.\n"
+            "❤️\n"
+            "I would really appreciate it."
+        )
+
+        dialog = Adw.MessageDialog.new(self.window, heading, body)
+
+        dialog.add_response('close', _("Not Interested"))
+        dialog.add_response('donate', _("Donate"))
+
+        dialog.set_response_appearance('donate', Adw.ResponseAppearance.SUGGESTED)
+        dialog.set_default_response('donate')
+
+        dialog.connect('response::donate', lambda *args: self.activate_action('donate'))
+
+        dialog.present()
+
+        self.settings['donation-dialog-shown'] = True
+
+
     def keyboard_shortcuts(self):
         self.set_accels_for_action("app.quit", ["<Ctrl>q"])
         self.set_accels_for_action("app.refresh", ["<Ctrl>r", "F5"])
@@ -227,7 +259,6 @@ class Application(Adw.Application):
 
 
     def load_session_settings_cb(self, action, user_data):
-        from .enums import PackageType
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.settings_manager.load_session_settings()
             toast = Adw.Toast(timeout=1, priority='high', title=_('Session settings loaded successfully'))
@@ -285,7 +316,6 @@ class Application(Adw.Application):
         self._file_chooser.show()
 
     def on_import_finished(self):
-        from configparser import ParsingError
         self.window.task_counter.dec()
         try:
             self.import_task.finish()
@@ -334,13 +364,10 @@ class Application(Adw.Application):
 
 
     def donate_cb(self, action, user_data):
-        xdg_open = GLib.find_program_in_path('xdg-open')
-        pid, *io = GLib.spawn_async([xdg_open, 'https://patreon.com/mazharhussain'])
-        GLib.spawn_close_pid(pid)
+        Gtk.show_uri(self.window, 'https://realmazharhussain.github.io/donate', Gdk.CURRENT_TIME)
 
 
     def about_cb(self, action, user_data):
-        from .about import about_window
         win = about_window(self.window)
         win.present()
 

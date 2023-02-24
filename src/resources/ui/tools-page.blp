@@ -8,11 +8,8 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Default Shell Theme");
 
-    Adw.ActionRow {
+    .SwitchRow top_bar_tweaks_row {
       title: _("Include Top Bar Tweaks");
-      activatable-widget: top_bar_tweaks_switch;
-
-      Switch top_bar_tweaks_switch { valign: center; }
     }
 
     Adw.ActionRow {

@@ -20,13 +20,8 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Night Light");
 
-    Adw.ActionRow {
+    .SwitchRow nl_enable_row {
       title: _("Enable");
-      activatable-widget: nl_enable_switch;
-
-      Switch nl_enable_switch {
-        valign: center;
-      }
     }
 
     Adw.ComboRow nl_schedule_comborow {

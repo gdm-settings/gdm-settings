@@ -1,5 +1,6 @@
 gschema_files = [
   'io.github.realmazharhussain.GdmSettings.gschema.xml',
+  'io.github.realmazharhussain.GdmSettings.accessibility.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.appearance.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.fonts.gschema.xml',
   'io.github.realmazharhussain.GdmSettings.misc.gschema.xml',

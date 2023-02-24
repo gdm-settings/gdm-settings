@@ -53,6 +53,6 @@
     <span> | </span>
     <a href="https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
     <span> | </span>
-    <a href="https://www.patreon.com/mazharhussain">Donate</a>
+    <a href="https://realmazharhussain.github.io/donate">Donate</a>
   </h4>
 </div>

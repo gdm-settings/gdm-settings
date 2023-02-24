@@ -1,11 +1,13 @@
 import os
 import logging
-from gi.repository import Adw, Gtk
 from gettext import gettext as _, pgettext as C_
+
+from gi.repository import Adw
+from gi.repository import Gtk
+
+from ..lib import SwitchRow, BackgroundTask
 from ..utils import resource_path
 from ..settings import night_light_settings as nl_settings
-from ..utils import BackgroundTask
-from ..bind_utils import *
 from .common import PageContent
 
 
@@ -24,7 +26,7 @@ class DisplayPageContent (PageContent):
         self.apply_display_settings_button = self.builder.get_object('apply_display_settings_button')
         self.apply_display_settings_button.connect('clicked', self.on_apply_display_settings)
 
-        self.nl_enable_switch = self.builder.get_object('nl_enable_switch')
+        self.nl_enable_row = self.builder.get_object('nl_enable_row')
         self.nl_schedule_comborow = self.builder.get_object('nl_schedule_comborow')
         self.nl_start_box = self.builder.get_object('nl_start_box')
         self.nl_start_hour_spinbutton = self.builder.get_object('nl_start_hour_spinbutton')
@@ -62,13 +64,14 @@ class DisplayPageContent (PageContent):
         self.nl_end_box.set_sensitive(bool(selected))
 
     def bind_to_gsettings (self):
-        bind(nl_settings, 'enabled', self.nl_enable_switch, 'active')
-        bind_comborow_by_list(self.nl_schedule_comborow, nl_settings, 'schedule-automatic', [True, False])
-        bind(nl_settings, 'start-hour', self.nl_start_hour_spinbutton, 'value')
-        bind(nl_settings, 'start-minute', self.nl_start_minute_spinbutton, 'value')
-        bind(nl_settings, 'end-hour', self.nl_end_hour_spinbutton, 'value')
-        bind(nl_settings, 'end-minute', self.nl_end_minute_spinbutton, 'value')
-        bind(nl_settings, 'temperature', self.nl_temperature_scale.props.adjustment, 'value')
+        nl_settings.bind('enabled', self.nl_enable_row, 'enabled')
+        nl_settings.bind_via_list('schedule-automatic', self.nl_schedule_comborow, 'selected',
+                                  [True, False])
+        nl_settings.bind('start-hour', self.nl_start_hour_spinbutton, 'value')
+        nl_settings.bind('start-minute', self.nl_start_minute_spinbutton, 'value')
+        nl_settings.bind('end-hour', self.nl_end_hour_spinbutton, 'value')
+        nl_settings.bind('end-minute', self.nl_end_minute_spinbutton, 'value')
+        nl_settings.bind('temperature', self.nl_temperature_scale.props.adjustment, 'value')
 
     def on_apply_display_settings (self, button):
         self.window.task_counter.inc()
