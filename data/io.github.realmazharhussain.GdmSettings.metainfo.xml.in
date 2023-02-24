@@ -91,6 +91,7 @@
         <ul>
           <li>Option to disable accessiblitly menu when not being used</li>
           <li>Option to change cursor size</li>
+          <li>A one-time donation request</li>
           <li>Donate option in hamburger menu</li>
         </ul>
         <p><em>Behavior Changes</em></p>

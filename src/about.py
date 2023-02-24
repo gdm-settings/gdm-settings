@@ -15,6 +15,7 @@ release_notes=(
     '<ul>\n'
     '  <li>' + _('Option to disable accessiblitly menu when not being used') + '</li>\n'
     '  <li>' + _('Option to change cursor size') + '</li>\n'
+    '  <li>' + _('A one-time donation request') + '</li>\n'
     '  <li>' + _('Donate option in hamburger menu') + '</li>\n'
     '</ul>\n'
     '<p>' + _('<em>Behavior Changes</em>') + '</p>\n'
