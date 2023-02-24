@@ -7,18 +7,21 @@ from . import info
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
 thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gmail.com>"
 
-release_notes=_('''
-<p><em>New Options</em></p>
-<ul>
-  <li>Option to change cursor size</li>
-  <li>Donate option in hamburger menu</li>
-</ul>
-<p><em>Behavior Changes</em></p>
-<ul>
-  <li>Proper names are shown for themes instead of name of their directory</li>
-  <li>Cursor themes are not presented when choosing icon theme</li>
-</ul>
-''')
+# FIXME: xgettext extracts each list item or paragraph from the release description in the
+# metainfo file separately. So, if we don't want to be translating the same content twice,
+# we need to separate translatable parts.
+release_notes=(
+    '<p>' + _('<em>New Options</em>') + '</p>\n'
+    '<ul>\n'
+    '  <li>' + _('Option to change cursor size') + '</li>\n'
+    '  <li>' + _('Donate option in hamburger menu') + '</li>\n'
+    '</ul>\n'
+    '<p>' + _('<em>Behavior Changes</em>') + '</p>\n'
+    '<ul>\n'
+    '  <li>' + _('Proper names are shown for themes instead of name of their directory') + '</li>\n'
+    '  <li>' + _('Cursor themes are not presented when choosing icon theme') + '</li>\n'
+    '</ul>'
+)
 
 def about_window(win):
     return Adw.AboutWindow(
