@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-18 10:39+0000\n"
+"PO-Revision-Date: 2023-02-25 21:36+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -427,10 +427,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Deze app is en zal altijd open-source/vrij en gratis blijven. Echter, u kunt "
+"uw waardering tonen door een donatie te doen aan de ontwikkelaar.\n"
+"❤️\n"
+"Ik zou het heel erg op prijs stellen."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Niet geïnteresseerd"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -483,7 +487,7 @@ msgstr "Het exporteren is mislukt omdat er al een map is met die naam"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Alle bestanden"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -572,9 +576,6 @@ msgid "Type"
 msgstr "Soort"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Standaard"
 
@@ -975,11 +976,11 @@ msgstr "Geen afgeronde hoeken tonen"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Toegankelijkheid"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Toegankelijkheidsmenu altijd tonen"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
