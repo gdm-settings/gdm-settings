@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # J. Lavoie <j.lavoie@net-c.ca>, 2022.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
-# rene-coty <irenee.thirion@e.email>, 2022.
+# rene-coty <irenee.thirion@e.email>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -31,10 +31,10 @@ msgstr "Type d'arrière-plan"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Si l’arrière-plan de GDM doit être une image, une couleur ou rien."
+msgstr ""
+"Indique si l’arrière-plan de GDM doit être une image, une couleur ou l’"
+"affichage par défaut."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -67,8 +67,8 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 "Vitesse du pointeur pour le pavé tactile. Les valeurs acceptées se situent "
-"dans la plage [-1..1] (de « non-accéléré » à « rapide »). La valeur 0 est la "
-"valeur par défaut du système."
+"dans la plage [-1..1] (de «&nbsp;non-accéléré&nbsp;» à «&nbsp;rapide&nbsp;»)"
+". La valeur 0 est la valeur par défaut du système."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -114,8 +114,8 @@ msgstr "L'heure de début"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Lorsque la fonction « planification-automatique » est désactivée, utilisez "
-"cette heure de début en heures."
+"Lorsque la fonction «&nbsp;planification-automatique&nbsp;» est désactivée, "
+"utilisez cette heure de début en heures."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -124,8 +124,8 @@ msgstr "La minute de l'heure de début"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Lorsque la fonction « planification-automatique » est désactivée, utilisez "
-"cette heure de début en minutes."
+"Lorsque la fonction «&nbsp;planification-automatique&nbsp;» est désactivée, "
+"utilisez cette heure de début en minutes."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -134,8 +134,8 @@ msgstr "L’heure de fin"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Lorsque la fonction « planification-automatique » est désactivée, utilisez "
-"cette heure de fin en heures."
+"Lorsque la fonction «&nbsp;planification-automatique&nbsp;» est désactivée, "
+"utilisez cette heure de fin en heures."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -144,8 +144,8 @@ msgstr "La minute de l'heure de fin"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Lorsque la fonction « planification-automatique » est désactivée, utilisez "
-"cette heure de fin en minutes."
+"Lorsque la fonction «&nbsp;planification-automatique&nbsp;» est désactivée, "
+"utilisez cette heure de fin en minutes."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
@@ -158,7 +158,7 @@ msgid ""
 "tablets (suspend)."
 msgstr ""
 "Action à exécuter lorsque le bouton d’alimentation est pressé. Cette action "
-"est « codée en dur » (et le paramètre est ignoré) sur les machines "
+"est «&nbsp;codée en dur&nbsp;» (et le paramètre est ignoré) sur les machines "
 "virtuelles (mise hors tension) et les tablettes (suspension)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
@@ -171,8 +171,8 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
-"Activer automatiquement le profil « économie d’énergie » en utilisant power-"
-"profiles-daemon si le niveau de batterie est faible."
+"Activer automatiquement le profil «&nbsp;économie d’énergie&nbsp;» en "
+"utilisant power-profiles-daemon si le niveau de batterie est faible."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
@@ -302,37 +302,39 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Nouvelles options</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Option pour désactiver le menu d’accessibilité quand non utilisé"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Option pour changer la taille du curseur"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Possibilité de faire un don via le menu hamburger"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Changements dans l’interaction</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Les noms des thèmes sont affichés au lieu du nom de leur répertoire"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
+"Les thèmes du curseur uniquement ne sont plus proposés lors du choix d’un "
+"thème d’icônes"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -345,10 +347,8 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021–2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -432,7 +432,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Demande de don"
 
 #: src/app.py:211
 msgid ""
@@ -441,10 +441,15 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Cette application est et restera toujours open-source / libre et gratuite. "
+"Cependant, vous pouvez montrer votre soutien en faisant un don au "
+"développeur.\n"
+"\n"
+"Je vous en serais très reconnaissant."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Non intéressé"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -498,7 +503,7 @@ msgstr "Échec de l’exportation. Un répertoire avec ce nom existe déjà"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Tous les fichiers"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -586,9 +591,6 @@ msgid "Type"
 msgstr "Type"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Par défaut"
 
@@ -989,11 +991,11 @@ msgstr "Désactiver les angles arrondis"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibilité"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Toujours afficher le menu d’accessibilité"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
@@ -1030,12 +1032,12 @@ msgstr "Montrer le pourcentage de batterie"
 #: src/settings.py:80
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr "Exportation dans le fichier « {filename} »"
+msgstr "Export vers le fichier '{filename}'"
 
 #: src/settings.py:85
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "Impossible de modifier le fichier « {filename} ». Permission refusée"
+msgstr "Impossible de modifier le fichier '{filename}'. Permission refusée"
 
 #: src/settings.py:89
 #, python-brace-format
@@ -1043,7 +1045,7 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
-"Impossible de modifier le fichier « {filename} ». Un répertoire avec le même "
+"Impossible de modifier le fichier '{filename}'. Un répertoire avec le même "
 "nom existe déjà"
 
 #: src/settings.py:94
@@ -1053,7 +1055,7 @@ msgstr "Exportation vers la sortie standard"
 #: src/settings.py:102
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr "Importation depuis le fichier « {filename} »"
+msgstr "Importation depuis le fichier '{filename}'"
 
 #: src/settings.py:105
 msgid "Importing from standard input"
@@ -1070,15 +1072,15 @@ msgstr "Échec de la lecture du fichier d’importation. Non encodé en UTF-8"
 #: src/settings.py:117
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr "Le fichier importé n’a pas de section « {section_name} »"
+msgstr "Le fichier importé n’a pas de section '{section_name}'"
 
 #: src/settings.py:122
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
-"Le fichier importé n’a pas la clé « {key_name} » dans la section "
-"« {section_name} »"
+"Le fichier importé n’a pas la clé '{key_name}' dans la section "
+"'{section_name}'"
 
 #: src/settings.py:313
 msgid "Backing up default shell theme …"
@@ -1168,7 +1170,7 @@ msgstr ""
 
 #: src/window.py:163
 msgid "Log Out?"
-msgstr "Se déconnecter ?"
+msgstr "Se déconnecter&nbsp;?"
 
 #: src/window.py:169
 msgid "Log Out"
