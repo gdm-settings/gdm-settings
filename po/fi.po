@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2022-12-12 00:37+0500\n"
+"POT-Creation-Date: 2023-02-24 10:46+0500\n"
 "PO-Revision-Date: 2023-02-05 05:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -29,7 +29,9 @@ msgstr "Taustakuvan tyyppi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-msgid "Whether GDM background should be an Image, Color or None."
+#, fuzzy
+#| msgid "Whether GDM background should be an Image, Color or None."
+msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
 "Käytetäänkö GDM:n taustana kuvaa (Image), väriä (Color) vai ei mitään (None)."
 
@@ -51,6 +53,18 @@ msgstr "Taustaväri"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
 msgstr "GDM:n taustana käytettävä väri"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+msgid "Pointer speed"
+msgstr "Osoittimen nopeus"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -112,18 +126,6 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
-msgid "Pointer speed"
-msgstr "Osoittimen nopeus"
-
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
-msgid ""
-"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
-"(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
@@ -231,7 +233,7 @@ msgstr "Yläpalkin taustaväri"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:65
+#: src/window.py:69
 msgid "Login Manager Settings"
 msgstr "Kirjautumisnäkymän asetukset"
 
@@ -253,109 +255,97 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:91
-#, fuzzy
-#| msgid "Reset settings"
-msgid "Added power settings"
-msgstr "Palauta oletusarvot"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
+#: src/about.py:14
+msgid "<em>New Options</em>"
+msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-msgid "Added options to import/export settings in the global menu"
+#: src/about.py:16
+msgid "Option to disable accessiblitly menu when not being used"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-msgid "Added an option to enlarge welcome message"
+#: src/about.py:17
+msgid "Option to change cursor size"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-msgid "Added color to command-line output"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:95
-msgid "Turned main window adaptive"
+#: src/about.py:18
+msgid "Donate option in hamburger menu"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-msgid "Turned pop-up dialogs adaptive"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:97
-msgid "Updated \"about\" window to the new style"
+#: src/about.py:20
+msgid "<em>Behavior Changes</em>"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-msgid "Improved style of welcome message input field"
+#: src/about.py:22
+msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
+#: src/about.py:23
+msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid ""
-"Renamed global menu option \"Import user settings\" to \"Load session "
-"settings\""
-msgstr ""
+#: src/about.py:7 src/about.py:35
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:101
-msgid ""
-"The app, now, shows an error notification when trying to apply settings if "
-"logo is enabled and the chosen logo image does not exist on the system "
-"anymore"
-msgstr ""
+#: src/about.py:8
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid ""
-"Fixed \"Apply Current Display Settings\" feature not working on some Ubuntu-"
-"based systems"
-msgstr ""
+#: src/about.py:36
+#, fuzzy
+#| msgid "Copyright 2021-2022 Mazhar Hussain"
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Tekijänoikeus 2021–2023 Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
-msgid "Fixed some text showing up untranslated even if translation existed"
-msgstr ""
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: src/about.py:51
+msgid "translator-credits"
+msgstr "Jiri Grönroos"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Fixed not being able to change logo image sometimes"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Fixed some typos"
-msgstr ""
-
-#: src/app.py:53
+#: src/app.py:58
 msgid "Show application version"
 msgstr "Näytä sovelluksen versio"
 
-#: src/app.py:54
+#: src/app.py:59
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: src/app.py:55
+#: src/app.py:60
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: src/app.py:56
+#: src/app.py:61
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: src/app.py:57
+#: src/app.py:62
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: src/app.py:77
+#: src/app.py:82
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:156
+#: src/app.py:164
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
 
-#: src/app.py:160
+#: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -363,19 +353,19 @@ msgstr ""
 "Tämä sovellus vaatii seuraavat ohjelmistot toimiakseen, mutta ne eivät "
 "vaikuta olevan asennettuna."
 
-#: src/app.py:169
+#: src/app.py:177
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:175
+#: src/app.py:183
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:183
+#: src/app.py:191
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -384,107 +374,117 @@ msgstr ""
 "Napsauta <a href=\"{url}\">tästä</a> avataksesi ohjeet, kuinka asentaa nämä "
 "riippuvuudet järjestelmään."
 
-#: src/app.py:190
+#: src/app.py:198
 msgid "Missing Dependencies"
 msgstr "Puuttuvia riipuuvuuksia"
 
-#: src/app.py:195 src/pages/display.py:104
+#: src/app.py:203 src/pages/display.py:107
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:225
+#: src/app.py:209
+msgid "Donation Request"
+msgstr ""
+
+#: src/app.py:211
+msgid ""
+"This app is and will always remain Open Source/Libre and free of cost. "
+"However, You can show some love by donating to the developer.\n"
+"❤️\n"
+"I would really appreciate it."
+msgstr ""
+
+#: src/app.py:219
+msgid "Not Interested"
+msgstr ""
+
+#: src/app.py:220 src/resources/ui/main-window.blp:15
+msgid "Donate"
+msgstr ""
+
+#: src/app.py:257
 msgid "Settings reloaded"
 msgstr "Asetukset ladattu uudelleen"
 
-#: src/app.py:233
+#: src/app.py:264
 msgid "Session settings loaded successfully"
 msgstr "Istunnon asetukset ladattu uudelleen"
 
-#: src/app.py:237
+#: src/app.py:268
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Istunnon asetusten lataaminen EI OLE tuettu Flatpak-versiossa"
 
-#: src/app.py:250
+#: src/app.py:281
 msgid "Reset settings successfully"
 msgstr "Asetukset on palautettu oletusarvoihin"
 
-#: src/app.py:252
+#: src/app.py:283
 msgid "Failed to reset settings"
 msgstr "Asetusten palauttaminen oletusarvoihin epäonnistui"
 
-#: src/app.py:271
+#: src/app.py:302
 msgid "Import"
 msgstr "Tuo"
 
-#: src/app.py:293
+#: src/app.py:323
 msgid "Settings were successfully imported from file"
 msgstr "Asetukset tuotu tiedostosta"
 
-#: src/app.py:295
+#: src/app.py:325
 msgid "Failed to import. File is invalid"
 msgstr "Tuonti epäonnistui. Tiedosto on virheellinen"
 
-#: src/app.py:326
+#: src/app.py:356
 msgid "Settings were successfully exported"
 msgstr "Asetukset vietiin onnistuneesti"
 
-#: src/app.py:328
+#: src/app.py:358
 msgid "Failed to export. Permission denied"
 msgstr "Vienti epäonnistui. Riittämättömät käyttöoikeudet"
 
-#: src/app.py:330
+#: src/app.py:360
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Vienti epäonnistui. Kansio samalla nimellä on jo olemassa"
 
-#: src/about.py:5 src/about.py:16
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
+msgid "All Files"
+msgstr ""
 
-#: src/about.py:6
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:17
-msgid "Copyright 2021-2022 Mazhar Hussain"
-msgstr "Tekijänoikeus 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:29
-msgid "translator-credits"
-msgstr "Jiri Grönroos"
-
-#: src/common_widgets.py:20
+#: src/lib/file_choosers.py:25
 msgid "Choose File"
 msgstr "Valitse tiedosto"
 
-#: src/common_widgets.py:26
+#: src/lib/file_choosers.py:31
 msgid "(None)"
 msgstr "(Ei mitään)"
 
-#: src/common_widgets.py:127
+#: src/lib/file_choosers.py:132
 msgid "Choose"
 msgstr "Valitse"
 
-#: src/common_widgets.py:128 src/window.py:164
+#: src/lib/file_choosers.py:133 src/window.py:168
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/common_widgets.py:146
+#: src/lib/file_choosers.py:151
 msgid "Choose Image"
 msgstr "Valitse kuva"
 
-#: src/pages/display.py:82
+#: src/lib/file_choosers.py:156
+#, fuzzy
+#| msgid "Image"
+msgid "Images"
+msgstr "Kuva"
+
+#: src/pages/display.py:85
 msgid "Applied current display settings"
 msgstr ""
 
-#: src/pages/display.py:84
+#: src/pages/display.py:87
 msgid "Failed to apply current display settings"
 msgstr ""
 
-#: src/pages/display.py:90
+#: src/pages/display.py:93
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -493,57 +493,19 @@ msgid ""
 "change some display options there."
 msgstr ""
 
-#: src/pages/display.py:99
+#: src/pages/display.py:102
 msgid "Monitor Settings Not Found"
 msgstr ""
 
-#: src/pages/pointing_utils/cursor.py:60
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr ""
-
-#: src/pages/pointing_utils/cursor.py:61
-#, fuzzy
-#| msgid "Medium"
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Keskitaso"
-
-#: src/pages/pointing_utils/cursor.py:62
-#, fuzzy
-#| msgid "Enlarge"
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Suurenna"
-
-#: src/pages/pointing_utils/cursor.py:63
-#, fuzzy
-#| msgid "Enlarge"
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Suurenna"
-
-#: src/pages/pointing_utils/cursor.py:64
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr ""
-
-#: src/pages/pointing_utils/cursor.py:65
-#, fuzzy
-#| msgid "Standard"
-msgctxt "Cursor Size"
-msgid "Non-Standard"
-msgstr "Standardi"
-
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:46
+#: src/pages/tools.py:49
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Oletusarvoinen shell-teema on purettu kansioon '{folder}' nimellä '{name}'"
 
-#: src/pages/tools.py:49
+#: src/pages/tools.py:52
 msgid "Failed to extract default theme"
 msgstr "Oletusteeman purkaminen epäonnistui"
 
@@ -571,10 +533,9 @@ msgstr "Taustakuva"
 msgid "Type"
 msgstr "Tyyppi"
 
-#: src/resources/ui/appearance-page.blp:21 src/resources/ui/fonts-page.blp:25
-#: src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Ei mitään"
+#: src/resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr ""
 
 #: src/resources/ui/appearance-page.blp:21
 #: src/resources/ui/appearance-page.blp:26
@@ -611,37 +572,37 @@ msgid "Night Light"
 msgstr "Yövalo"
 
 #: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:50
+#: src/resources/ui/login-screen-page.blp:40
 msgid "Enable"
 msgstr "Käytä"
 
-#: src/resources/ui/display-page.blp:33
+#: src/resources/ui/display-page.blp:28
 msgid "Schedule"
 msgstr "Aikataulu"
 
-#: src/resources/ui/display-page.blp:34
+#: src/resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
 msgstr "Auringonlaskusta auringonnousuun"
 
-#: src/resources/ui/display-page.blp:34
+#: src/resources/ui/display-page.blp:29
 msgid "Manual Schedule"
 msgstr "Mukautettu aikataulu"
 
-#: src/resources/ui/display-page.blp:38
+#: src/resources/ui/display-page.blp:33
 msgid "Times"
 msgstr "Ajat"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:41
+#: src/resources/ui/display-page.blp:36
 msgid "From"
 msgstr "Alkaa"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:65
+#: src/resources/ui/display-page.blp:60
 msgid "To"
 msgstr "Päättyy"
 
-#: src/resources/ui/display-page.blp:89
+#: src/resources/ui/display-page.blp:84
 msgid "Color Temperature"
 msgstr "Värilämpötila"
 
@@ -660,6 +621,10 @@ msgstr "Standardi"
 #: src/resources/ui/fonts-page.blp:24
 msgid "Subpixel"
 msgstr "Alipikseli"
+
+#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Ei mitään"
 
 #: src/resources/ui/fonts-page.blp:30
 msgid "Hinting"
@@ -701,10 +666,6 @@ msgstr "Tuo tiedostosta"
 msgid "Export to file"
 msgstr "Vie tiedostoon"
 
-#: src/resources/ui/main-window.blp:15
-msgid "Donate"
-msgstr ""
-
 #: src/resources/ui/main-window.blp:18
 msgid "About"
 msgstr "Tietoja"
@@ -717,35 +678,35 @@ msgstr "Lopeta"
 msgid "Disable Restart Buttons"
 msgstr "Poista uudelleenkäynnistyspainikkeet käytöstä"
 
-#: src/resources/ui/login-screen-page.blp:21
+#: src/resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
 msgstr "Poista käyttäjäluettelo käytöstä"
 
-#: src/resources/ui/login-screen-page.blp:30
+#: src/resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
 msgstr "Käytä logoa"
 
-#: src/resources/ui/login-screen-page.blp:31
+#: src/resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
 msgstr "Näytetäänkö logo käyttäjäluettelon alapuolella"
 
-#: src/resources/ui/login-screen-page.blp:40
+#: src/resources/ui/login-screen-page.blp:30
 msgid "Logo"
 msgstr "Logo"
 
-#: src/resources/ui/login-screen-page.blp:41
+#: src/resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
 msgstr "Käyttäjäluettelon alapuolella näytettävä kuva"
 
-#: src/resources/ui/login-screen-page.blp:47
+#: src/resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
 msgstr "Tervetuloviesti"
 
-#: src/resources/ui/login-screen-page.blp:59
+#: src/resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
 msgstr "Suurenna"
 
-#: src/resources/ui/login-screen-page.blp:69
+#: src/resources/ui/login-screen-page.blp:49
 msgid "Message"
 msgstr "Viesti"
 
@@ -755,55 +716,86 @@ msgstr "Viesti"
 msgid "Cursor Size"
 msgstr "Kursori"
 
+#: src/resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: src/resources/ui/pointing-page.blp:16
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Keskitaso"
+
+#: src/resources/ui/pointing-page.blp:17
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Suurenna"
+
+#: src/resources/ui/pointing-page.blp:18
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Suurenna"
+
 #: src/resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: src/resources/ui/pointing-page.blp:25
 msgid "Mouse"
 msgstr "Hiiri"
 
-#: src/resources/ui/pointing-page.blp:22
+#: src/resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
 msgstr "Osoittimen kiihdytys"
 
-#: src/resources/ui/pointing-page.blp:24
+#: src/resources/ui/pointing-page.blp:30
 msgid "Automatic"
 msgstr "Automaattinen"
 
-#: src/resources/ui/pointing-page.blp:25
+#: src/resources/ui/pointing-page.blp:31
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
-#: src/resources/ui/pointing-page.blp:26
+#: src/resources/ui/pointing-page.blp:32
 msgid "Enabled"
 msgstr "Käytössä"
 
-#: src/resources/ui/pointing-page.blp:31 src/resources/ui/pointing-page.blp:59
+#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
 msgstr "Luonnollinen vieritys"
 
-#: src/resources/ui/pointing-page.blp:32 src/resources/ui/pointing-page.blp:60
+#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
 msgstr "Vieritys liikuttaa sisältöä, ei näkymää."
 
-#: src/resources/ui/pointing-page.blp:39 src/resources/ui/pointing-page.blp:82
+#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
 msgstr "Osoittimen nopeus"
 
-#: src/resources/ui/pointing-page.blp:49
+#: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
 msgstr "Kosketuslevy"
 
-#: src/resources/ui/pointing-page.blp:52
+#: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
 msgstr "Napsauta napauttamalla"
 
-#: src/resources/ui/pointing-page.blp:67
+#: src/resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
 msgstr "Kahden sormen vieritys"
 
-#: src/resources/ui/pointing-page.blp:68
+#: src/resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
 msgstr "Vieritä vetämällä kahdella sormella."
 
-#: src/resources/ui/pointing-page.blp:75
+#: src/resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
 msgstr "Poista käytöstä kirjoittaessa"
 
@@ -836,50 +828,50 @@ msgid "Enables power saver mode when battery is low."
 msgstr ""
 "Ottaa automaattisen virransäästön käyttöön, kun akun varaus on vähissä."
 
-#: src/resources/ui/power-page.blp:28
+#: src/resources/ui/power-page.blp:23
 msgid "Dim Screen"
 msgstr "Himmennä näyttö"
 
-#: src/resources/ui/power-page.blp:29
+#: src/resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
 msgstr "Vähentää näytön kirkkautta, kun tietokone on käyttämättä."
 
-#: src/resources/ui/power-page.blp:38
+#: src/resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
 msgstr "Sammuta näyttö"
 
-#: src/resources/ui/power-page.blp:39
+#: src/resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
 msgstr ""
 "Sammutetaanko näyttö tietyn ajan jälkeen, kun tietokone on käyttämättä."
 
-#: src/resources/ui/power-page.blp:48 src/resources/ui/power-page.blp:80
-#: src/resources/ui/power-page.blp:107
+#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
+#: src/resources/ui/power-page.blp:97
 msgid "Delay"
 msgstr "Viive"
 
-#: src/resources/ui/power-page.blp:49
+#: src/resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
 msgstr "Aika minuuteissa, jolloin näyttö sammutetaan."
 
-#: src/resources/ui/power-page.blp:67
+#: src/resources/ui/power-page.blp:57
 msgid "Automatic Suspend"
 msgstr "Automaattinen valmiustila"
 
-#: src/resources/ui/power-page.blp:68
+#: src/resources/ui/power-page.blp:58
 msgid "Pauses the computer after a period of inactivity."
 msgstr ""
 "Keskeyttää tietokoneen tietyn ajan jälkeen, kun tietokone on käyttämättä."
 
-#: src/resources/ui/power-page.blp:71
+#: src/resources/ui/power-page.blp:61
 msgid "On Battery Power"
 msgstr "Akkuvirralla"
 
-#: src/resources/ui/power-page.blp:81 src/resources/ui/power-page.blp:108
+#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
 msgid "Time in minutes after which the computer will suspend."
 msgstr "Aika minuuteissa, jonka jälkeen tietokone siirretään valmiustilaan."
 
-#: src/resources/ui/power-page.blp:98
+#: src/resources/ui/power-page.blp:88
 msgid "When Plugged In"
 msgstr "Verkkovirralla"
 
@@ -895,11 +887,11 @@ msgstr "Ylivahvistus"
 msgid "Allow raising volume above 100%"
 msgstr "Salli äänenvoimakkuuden nostaminen yli 100 prosentin"
 
-#: src/resources/ui/sound-page.blp:24
+#: src/resources/ui/sound-page.blp:19
 msgid "Event Sounds"
 msgstr "Tapahtumaäänet"
 
-#: src/resources/ui/sound-page.blp:33
+#: src/resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
 msgstr "Syötepalautteen äänet"
 
@@ -911,11 +903,11 @@ msgstr "Shell-käyttöliittymän oletusteema"
 msgid "Include Top Bar Tweaks"
 msgstr "Sisällytä yläpalkin säädöt"
 
-#: src/resources/ui/tools-page.blp:19
+#: src/resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
 msgstr "Pura oletusarvoinen shell-teema"
 
-#: src/resources/ui/tools-page.blp:22
+#: src/resources/ui/tools-page.blp:19
 msgid "Extract"
 msgstr "Pura"
 
@@ -947,53 +939,61 @@ msgstr "Yläpalkin taustaväri"
 msgid "Disable Arrows"
 msgstr "Poista nuolet käytöstä"
 
-#: src/resources/ui/top-bar-page.blp:61
+#: src/resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
 msgstr "Poista pyöristetyt reunukset käytöstä"
 
-#: src/resources/ui/top-bar-page.blp:71
+#: src/resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr ""
+
+#: src/resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr ""
+
+#: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
 msgstr "Kello"
 
-#: src/resources/ui/top-bar-page.blp:74
+#: src/resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
 msgstr "Näytä viikonpäivä"
 
-#: src/resources/ui/top-bar-page.blp:83
+#: src/resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
 msgstr "Näytä sekunnit"
 
-#: src/resources/ui/top-bar-page.blp:92
+#: src/resources/ui/top-bar-page.blp:80
 msgid "Time Format"
 msgstr "Aikamuoto"
 
-#: src/resources/ui/top-bar-page.blp:93
+#: src/resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
 msgstr "AM/PM"
 
-#: src/resources/ui/top-bar-page.blp:93
+#: src/resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
 msgstr "24 tuntia"
 
-#: src/resources/ui/top-bar-page.blp:98 src/window.py:117
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
 msgid "Power"
 msgstr "Virta"
 
-#: src/resources/ui/top-bar-page.blp:101
+#: src/resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "Näytä akun prosentti"
 
-#: src/settings.py:70
+#: src/settings.py:80
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Viedään tiedostoon '{filename}'"
 
-#: src/settings.py:75
+#: src/settings.py:85
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Tiedostoon '{filename}' ei voi kirjoittaa. Pääsy evätty"
 
-#: src/settings.py:79
+#: src/settings.py:89
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1002,129 +1002,140 @@ msgstr ""
 "Tiedostoon '{filename}' ei voi kirjoittaa. Kansio samalla nimellä on jo "
 "olemassa"
 
-#: src/settings.py:85
+#: src/settings.py:94
 msgid "Exporting to standard output"
 msgstr ""
 
-#: src/settings.py:94
+#: src/settings.py:102
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Tuodaan tiedostosta '{filename}'"
 
-#: src/settings.py:98
+#: src/settings.py:105
 msgid "Importing from standard input"
 msgstr ""
 
-#: src/settings.py:101
+#: src/settings.py:108
 msgid "Failed to parse import file"
 msgstr "Tuontitiedoston jäsennys epäonnistui"
 
-#: src/settings.py:104
+#: src/settings.py:111
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 
-#: src/settings.py:110
+#: src/settings.py:117
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Tuodussa tiedostossa ei ole osiota '{section_name}'"
 
-#: src/settings.py:115
+#: src/settings.py:122
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 "Tuodussa tiedostossa ei ole avainta '{key_name}' osiossa '{section_name}'"
 
-#: src/settings.py:304
+#: src/settings.py:313
 msgid "Backing up default shell theme …"
 msgstr "Varmuuskopioidaan shell-teeman oletusta…"
 
-#: src/settings.py:352
+#: src/settings.py:359
 msgctxt "Command-line output"
 msgid "Applying GResource settings for Ubuntu …"
 msgstr "Toteutetaan GResource-asetukset Ubuntulle…"
 
-#: src/settings.py:357
+#: src/settings.py:364
 msgctxt "Command-line output"
 msgid "Applying GResource settings for non-Ubuntu systems …"
 msgstr "Toteutetaan GResource-asetukset muille kuin Ubuntu-järjestelmille…"
 
-#: src/settings.py:583
+#: src/settings.py:597
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Palautetaan oletusarvot GResource-asetuksista Ubuntulle…"
 
-#: src/settings.py:590
+#: src/settings.py:604
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 "Palautetaan oletusarvot GResource-asetuksista muille kuin Ubuntu-"
 "järjestelmille…"
 
-#: src/window.py:110
+#: src/window.py:114
 msgid "Appearance"
 msgstr "Ulkoasu"
 
-#: src/window.py:111
+#: src/window.py:115
 msgid "Fonts"
 msgstr "Fontit"
 
-#: src/window.py:112
+#: src/window.py:116
 msgid "Top Bar"
 msgstr "Yläpalkki"
 
-#: src/window.py:113
+#: src/window.py:117
 msgid "Sound"
 msgstr "Ääni"
 
-#: src/window.py:114
+#: src/window.py:118
 msgid "Mouse & Touchpad"
 msgstr "Hiiri ja kosketuslevy"
 
-#: src/window.py:115
+#: src/window.py:119
 msgid "Display"
 msgstr "Näyttö"
 
-#: src/window.py:116
+#: src/window.py:120
 msgid "Login Screen"
 msgstr "Kirjautumisnäkymä"
 
-#: src/window.py:118
+#: src/window.py:122
 msgid "Tools"
 msgstr "Työkalut"
 
-#: src/window.py:136
+#: src/window.py:140
 msgid "Settings applied successfully"
 msgstr "Asetukset toteutettu onnistuneesti"
 
-#: src/window.py:140
+#: src/window.py:144
 msgid "Failed to apply settings"
 msgstr "Asetusten toteuttaminen epäonnistui"
 
-#: src/window.py:144
+#: src/window.py:148
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 
-#: src/window.py:148
+#: src/window.py:152
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 
-#: src/window.py:154
+#: src/window.py:158
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Järjestelmä saattaa näyttää oudolta tai virheelliseltä kunnes kirjaudut "
 "sisään uudelleen tai käynnistät tietokoneen uudelleen."
 
-#: src/window.py:159
+#: src/window.py:163
 msgid "Log Out?"
 msgstr "Kirjaudutaanko ulos?"
 
-#: src/window.py:165
+#: src/window.py:169
 msgid "Log Out"
 msgstr "Kirjaudu ulos"
+
+#, fuzzy
+#~| msgid "Reset settings"
+#~ msgid "Added power settings"
+#~ msgstr "Palauta oletusarvot"
+
+#, fuzzy
+#~| msgid "Standard"
+#~ msgctxt "Cursor Size"
+#~ msgid "Non-Standard"
+#~ msgstr "Standardi"
 
 #~ msgid "A settings app for GNOME's Login Manager, GDM"
 #~ msgstr "Asetussovellus Gnomen kirjautumisnäkymä GDM:lle"
