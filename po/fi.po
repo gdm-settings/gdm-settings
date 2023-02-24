@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2022.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fi/>\n"
 "Language: fi\n"
@@ -258,7 +258,7 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Uudet asetukset</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
@@ -278,7 +278,7 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Toiminnalliset muutokset</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
@@ -301,8 +301,6 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Tekijänoikeus 2021–2023 Mazhar Hussain"
 
@@ -384,7 +382,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Lahjoituspyyntö"
 
 #: src/app.py:211
 msgid ""
@@ -396,11 +394,11 @@ msgstr ""
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Ei kiitos"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Lahjoita"
 
 #: src/app.py:257
 msgid "Settings reloaded"
@@ -448,7 +446,7 @@ msgstr "Vienti epäonnistui. Kansio samalla nimellä on jo olemassa"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Kaikki tiedostot"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -471,18 +469,16 @@ msgid "Choose Image"
 msgstr "Valitse kuva"
 
 #: src/lib/file_choosers.py:156
-#, fuzzy
-#| msgid "Image"
 msgid "Images"
-msgstr "Kuva"
+msgstr "Kuvat"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Toteutettu nykyiset näyttöasetukset"
 
 #: src/pages/display.py:87
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Nykyisten näyttöasetusten toteuttaminen epäonnistui"
 
 #: src/pages/display.py:93
 msgid ""
@@ -535,7 +531,7 @@ msgstr "Tyyppi"
 
 #: src/resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Oletus"
 
 #: src/resources/ui/appearance-page.blp:21
 #: src/resources/ui/appearance-page.blp:26
@@ -711,41 +707,33 @@ msgid "Message"
 msgstr "Viesti"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Kursori"
+msgstr "Kursorin koko"
 
 #: src/resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Oletus"
 
 #: src/resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "Keskitaso"
+msgstr "Tavallinen"
 
 #: src/resources/ui/pointing-page.blp:17
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Suurenna"
+msgstr "Suuri"
 
 #: src/resources/ui/pointing-page.blp:18
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Suurenna"
+msgstr "Suurempi"
 
 #: src/resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Suurin"
 
 #: src/resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -945,11 +933,11 @@ msgstr "Poista pyöristetyt reunukset käytöstä"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Esteettömyys"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Näytä aina esteettömyysvalikko"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
