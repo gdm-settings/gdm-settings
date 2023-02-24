@@ -1,25 +1,26 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
+data/gschemas/io.github.realmazharhussain.GdmSettings.accessibility.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.fonts.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.misc.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.pointing.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml
-data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.sound.gschema.xml
+data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
 data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
 data/io.github.realmazharhussain.GdmSettings.desktop.in
-src/app.py
 src/about.py
-src/common_widgets.py
+src/app.py
 src/gdm-settings.py.in
 src/info.py.in
+src/lib/file_choosers.py
 src/pages/appearance.py
 src/pages/common.py
 src/pages/display.py
@@ -37,7 +38,6 @@ src/resources/ui/fonts-page.blp
 src/resources/ui/main-window.blp
 src/resources/ui/login-screen-page.blp
 src/resources/ui/pointing-page.blp
-src/resources/ui/pointing-page/cursor-image.blp
 src/resources/ui/pointing-page/cursor-size-button.blp
 src/resources/ui/pointing-page/cursor-size-selector.blp
 src/resources/ui/power-page.blp
