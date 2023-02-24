@@ -89,6 +89,7 @@
       <description>
         <p><em>New Options</em></p>
         <ul>
+          <li>Option to disable accessiblitly menu when not being used</li>
           <li>Option to change cursor size</li>
           <li>Donate option in hamburger menu</li>
         </ul>
