@@ -19,7 +19,7 @@ release_notes=(
     '<p>' + _('<em>Behavior Changes</em>') + '</p>\n'
     '<ul>\n'
     '  <li>' + _('Proper names are shown for themes instead of name of their directory') + '</li>\n'
-    '  <li>' + _('Cursor themes are not presented when choosing icon theme') + '</li>\n'
+    '  <li>' + _('Cursor only themes are not presented when choosing icon theme') + '</li>\n'
     '</ul>'
 )
 
