@@ -13,6 +13,7 @@ thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gm
 release_notes=(
     '<p>' + _('<em>New Options</em>') + '</p>\n'
     '<ul>\n'
+    '  <li>' + _('Option to disable accessiblitly menu when not being used') + '</li>\n'
     '  <li>' + _('Option to change cursor size') + '</li>\n'
     '  <li>' + _('Donate option in hamburger menu') + '</li>\n'
     '</ul>\n'
