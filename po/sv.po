@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-20 12:35+0000\n"
+"PO-Revision-Date: 2023-02-27 18:38+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
@@ -30,10 +30,8 @@ msgstr "Bakgrundstyp"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Hurvida GDM-bakgrunden ska vara en bild, färg eller inget."
+msgstr "Hurvida GDM-bakgrunden ska vara en bild, färg eller standard."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -283,37 +281,37 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Nya alternativ</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Alternativ för att ändra pekarstorlek"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Donera alternativ i Hamburgermenyn"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Beteendeförändringar</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -326,10 +324,8 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright © 2021–2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -412,7 +408,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Donationsförfrågan"
 
 #: src/app.py:211
 msgid ""
@@ -421,10 +417,15 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Detta program är och kommer alltid att förbli öppen källkod/libre och "
+"kostnadsfritt. Du kan dock visa lite kärlek genom att donera till "
+"utvecklaren.\n"
+"❤️\n"
+"Jag skulle verkligen uppskatta det."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Inte intresserad"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -476,7 +477,7 @@ msgstr "Misslyckades att exportera. En katalog med det namnet finns redan"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Alla filer"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -499,10 +500,8 @@ msgid "Choose Image"
 msgstr "Välj bild"
 
 #: src/lib/file_choosers.py:156
-#, fuzzy
-#| msgid "Image"
 msgid "Images"
-msgstr "Bild"
+msgstr "Bilder"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -566,9 +565,6 @@ msgid "Type"
 msgstr "Typ"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Standard"
 
@@ -969,11 +965,11 @@ msgstr "Inaktivera rundade hörn"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Hjälpmedel"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Visa alltid Hjälpmedelsmenyn"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
