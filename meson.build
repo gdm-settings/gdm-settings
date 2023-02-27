@@ -4,6 +4,14 @@ project('gdm-settings',
   default_options: [
     #'buildtype=release',
 
+    'gtk:media-gstreamer=disabled',
+    'gtk:print-cups=disabled',
+    'gtk:introspection=enabled',
+    'gtk:demos=false',
+    'gtk:build-testsuite=false',
+    'gtk:build-examples=false',
+    'gtk:build-tests=false',
+
     'libadwaita:introspection=enabled',
     'libadwaita:vapi=false',
     'libadwaita:tests=false',
