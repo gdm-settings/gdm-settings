@@ -3,6 +3,11 @@ project('gdm-settings',
     meson_version: '>= 0.59',
   default_options: [
     #'buildtype=release',
+
+    'libadwaita:introspection=enabled',
+    'libadwaita:vapi=false',
+    'libadwaita:tests=false',
+    'libadwaita:examples=false',
   ]
 )
 
