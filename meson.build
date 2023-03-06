@@ -3,12 +3,25 @@ project('gdm-settings',
     meson_version: '>= 0.59',
   default_options: [
     #'buildtype=release',
+
+    'gtk:media-gstreamer=disabled',
+    'gtk:print-cups=disabled',
+    'gtk:introspection=enabled',
+    'gtk:demos=false',
+    'gtk:build-testsuite=false',
+    'gtk:build-examples=false',
+    'gtk:build-tests=false',
+
+    'libadwaita:introspection=enabled',
+    'libadwaita:vapi=false',
+    'libadwaita:tests=false',
+    'libadwaita:examples=false',
   ]
 )
 
 dependency('glib-2.0')
 dependency('pygobject-3.0')
-dependency('libadwaita-1')
+dependency('libadwaita-1', version: '>=1.2')
 
 i18n = import('i18n')
 gnome = import('gnome')

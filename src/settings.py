@@ -340,7 +340,6 @@ class SettingsManager (GObject.Object):
 
         theme_id = appearance_settings['shell-theme']
         theme_path = shell_themes.get_path(theme_id)
-        theme_path = shell_themes(theme_id).path
         shelldir   = os.path.join(theme_path, 'gnome-shell') if theme_path else None
 
         background_type = BackgroundType[appearance_settings['background-type']]

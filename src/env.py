@@ -24,10 +24,9 @@ def read_os_release():
     os_release = []
     with open(filename, 'r') as file:
         for line_number, line in enumerate(file, start=1):
-            line = line.split('#')[0]   # Discard comments
             line = line.strip()         # Strip whitespace
 
-            if not line:
+            if not line or line.startswith('#'):
                 continue
 
             if m := re.match(r'([A-Z][A-Z_0-9]+)=(.*)', line):

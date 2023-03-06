@@ -1,0 +1,8 @@
+[wrap-file]
+source_url = https://download.gnome.org/sources/gtk/4.9/gtk-4.9.4.tar.xz
+source_filename = gtk-4.9.4.tar.xz
+source_hash = 91a3afd58401d4e5d81e30b08ee3f113a4768ff10140336a72a326c77272be30
+directory = gtk-4.9.4
+
+[provide]
+dependency_names = gtk4
