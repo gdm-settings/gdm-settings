@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-03-08 09:41+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
 "Language: ur\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -31,10 +31,8 @@ msgstr "بیک گرائونڈ کی قصم"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا کچھ نہیں۔"
+msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا ڈیفالٹ۔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -285,37 +283,37 @@ msgstr "مظہر حسین"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>نئے آپشن</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "تیر کا سائز بدلنے کا آپشن"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>رویہ کی تبدیلیاں</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -328,8 +326,6 @@ msgid "Thales Bindá"
 msgstr "تھیلس بِنڈا"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 
@@ -413,7 +409,7 @@ msgstr "ٹھیک ہے"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "عطیہ کی درخواست"
 
 #: src/app.py:211
 msgid ""
@@ -422,10 +418,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"یہ ایپلیکیشن اوپن سورس اور مفت ہے اور ہمیشہ ایسے ہی رہے گی۔ تاہم آپ عطیہ کے "
+"ذریعے اس کے ڈیویلپر کے ساتھ محبت کا اظہار کر سکتے ہیں۔\n"
+"❤️\n"
+"بڑی مہربانی ہوگی۔"
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "دفع کرو"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -477,7 +477,7 @@ msgstr "ایکسپورٹ نہیں ہو سکی۔ اس نام کا ایک فولڈ
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "ساری فائیلیں"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -565,9 +565,6 @@ msgid "Type"
 msgstr "قِسم"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "ڈیفالٹ"
 
@@ -968,11 +965,11 @@ msgstr "مڑے ہوئے کونے ختم کریں"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "ایکسیسیبلیٹی"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "ایکسیسیبیلیٹی مینیو ہمیشہ شو ہو"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
