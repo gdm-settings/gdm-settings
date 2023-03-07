@@ -106,6 +106,7 @@
 
   <url type="homepage">https://realmazharhussain.github.io/gdm-settings</url>
   <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
+  <url type="help">https://github.com/realmazharhussain/gdm-settings/wiki</url>
   <url type="translate">https://hosted.weblate.org/engage/gdm-settings</url>
   <url type="donation">https://realmazharhussain.github.io/donate</url>
 </component>
