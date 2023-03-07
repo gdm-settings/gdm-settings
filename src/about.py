@@ -1,32 +1,77 @@
 from gettext import gettext as _, pgettext as C_
 
-from gi.repository import Adw, Gtk
+from gi.repository import Adw
+from gi.repository import Gtk
+from gi.repository import GObject
 
 from . import info
+
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
 thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gmail.com>"
 
-# FIXME: xgettext extracts each list item or paragraph from the release description in the
-# metainfo file separately. So, if we don't want to be translating the same content twice,
-# we need to separate translatable parts.
-release_notes=(
-    '<p>' + _('<em>New Options</em>') + '</p>\n'
-    '<ul>\n'
-    '  <li>' + _('Option to disable accessiblitly menu when not being used') + '</li>\n'
-    '  <li>' + _('Option to change cursor size') + '</li>\n'
-    '  <li>' + _('A one-time donation request') + '</li>\n'
-    '  <li>' + _('Donate option in hamburger menu') + '</li>\n'
-    '</ul>\n'
-    '<p>' + _('<em>Behavior Changes</em>') + '</p>\n'
-    '<ul>\n'
-    '  <li>' + _('Proper names are shown for themes instead of name of their directory') + '</li>\n'
-    '  <li>' + _('Cursor only themes are not presented when choosing icon theme') + '</li>\n'
-    '</ul>'
-)
+
+class ReleaseNotesFetcher(GObject.Object):
+    __gtype_name__ = 'ReleaseNotesFetcher'
+    _instance = None
+
+    notes = GObject.Property(type=str, default="")
+    version = GObject.Property(type=str, default="")
+
+    def __new__(cls):
+        if not cls._instance:
+            return super().__new__(cls)
+        return cls._instance
+
+    def __init__(self):
+        if type(self)._instance:
+            # Already initialized
+            return
+
+        super().__init__()
+        type(self)._instance = self
+
+        try:
+            import gi
+            gi.require_version('AppStreamGlib', '1.0')
+            from gi.repository import AppStreamGlib as ASG
+        except (ValueError, ImportError):
+            return
+
+        store = ASG.Store()
+        store.load_async(flags=ASG.StoreLoadFlags.APPDATA, callback=self.on_store_load)
+
+    def on_store_load(self, store, result, user_data=None):
+        if not store.load_finish(result):
+            return
+
+        app_info = store.get_app_by_id(info.application_id)
+        if not app_info:
+            return
+
+        releases = app_info.get_releases()
+        if not releases:
+            return
+
+        latest = releases[0]
+        latest_major = latest.get_version().split('.')[0]
+        relevant_releases = [r for r in releases if r.get_version().startswith(latest_major)]
+
+        notes = ""
+        if len(relevant_releases) == 1:
+            self.version = latest.get_version()
+            notes = latest.get_description()
+        else:
+            self.version = latest_major
+            for release in relevant_releases:
+                notes += "<p>##### %s #####</p>" % release.get_version()
+                notes += release.get_description()
+
+        self.notes = notes.replace('&gt;', '>').replace('&lt;', '<')
+
 
 def about_window(win):
-    return Adw.AboutWindow(
+    abt = Adw.AboutWindow(
         transient_for = win,
         modal         = True,
         application_name = info.application_name,
@@ -44,10 +89,14 @@ def about_window(win):
         support_url = "https://github.com/realmazharhussain/gdm-settings/discussions/categories/q-a",
         issue_url   = "https://github.com/realmazharhussain/gdm-settings/issues/new/choose",
 
-        release_notes    = release_notes,
-        release_notes_version = info.version,
-
         # Translators: Do not translate this string. Put your info here in the form
         # 'name <email>' including < and > but not quotes.
         translator_credits = _("translator-credits"),
         )
+
+    fetcher = ReleaseNotesFetcher()
+    flags = GObject.BindingFlags.SYNC_CREATE;
+    fetcher.bind_property("notes", abt, "release-notes", flags)
+    fetcher.bind_property("version", abt, "release-notes-version", flags)
+
+    return abt
