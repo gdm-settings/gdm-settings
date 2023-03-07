@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2022 Mazhar Hussain -->
+<!-- Copyright 2022-2023 Mazhar Hussain -->
 <component type="desktop-application">
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
@@ -7,6 +7,7 @@
 
   <id>io.github.realmazharhussain.GdmSettings</id>
   <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
+  <translation type="gettext">gdm-settings</translation>
 
   <name>Login Manager Settings</name>
   <summary>Customize your login screen</summary>
@@ -52,7 +53,7 @@
   </provides>
 
   <developer_name>Mazhar Hussain</developer_name>
-  <update_contact>mmazharhussainkgb1145_at_gmail.com</update_contact>
+  <update_contact>realmazharhussain_at_gmail.com</update_contact>
 
   <screenshots>
     <screenshot type="default">
@@ -84,8 +85,17 @@
     </screenshot>
   </screenshots>
 
+  <url type="homepage">https://realmazharhussain.github.io/gdm-settings</url>
+  <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
+  <url type="help">https://github.com/realmazharhussain/gdm-settings/wiki</url>
+  <url type="translate">https://hosted.weblate.org/engage/gdm-settings</url>
+  <url type="donation">https://realmazharhussain.github.io/donate</url>
+
+  <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
-    <release version="3.alpha.0" date="2023-02-24">
+    <release version="3.alpha.0" urgency="medium" type="development" date="2023-02-24">
+      <url>https://github.com/realmazharhussain/gdm-settings/releases/tag/v3.alpha.0</url>
+
       <description>
         <p><em>New Options</em></p>
         <ul>
@@ -100,11 +110,37 @@
           <li>Cursor only themes are not presented when choosing icon theme</li>
         </ul>
       </description>
+
+      <issues>
+        <issue url="https://github.com/realmazharhussain/gdm-settings/issues/138">#138</issue>
+        <issue url="https://github.com/realmazharhussain/gdm-settings/issues/145">#145</issue>
+      </issues>
+
+      <artifacts>
+        <artifact type="source">
+          <filename>gdm-settings-3.alpha.0.zip</filename>
+          <location>https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v3.alpha.0.zip</location>
+          <checksum type="sha256">9067641e7f69347430bc7371003736be159d7715a0547ccde488c9191547e7a4</checksum>
+          <size type="download">373222</size>
+        </artifact>
+        <artifact type="source">
+          <filename>gdm-settings-3.alpha.0.tar.gz</filename>
+          <location>https://github.com/realmazharhussain/gdm-settings/archive/refs/tags/v3.alpha.0.tar.gz</location>
+          <checksum type="sha256">3f3ac754e271b289e68ad69e30e968c120f9d50c2cc535e608addbb1e057f52c</checksum>
+          <size type="download">303974</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu" bundle="flatpak">
+          <location>https://github.com/realmazharhussain/gdm-settings/releases/download/v3.alpha.0/io.github.realmazharhussain.GdmSettings.flatpak</location>
+          <checksum type="blake2b">740ec8e9e37e9a576afa618a92e0f601827f6150a8e25e802d0e732e2c9942c32122fd34bfa6d35e506efd8e8c7d7a12d38f7ec9539cdd4c8f73e7f8031077b4</checksum>
+          <size type="download">157296</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu" bundle="flatpak">
+          <location>https://github.com/realmazharhussain/gdm-settings/releases/download/v3.alpha.0/io.github.realmazharhussain.GdmSettings.Locale.flatpak</location>
+          <checksum type="blake2b">374e9a20ca1fa30ecbba8309065d698471b7fc409aadbfaeb77ff9bd2c7bd1e070d04dd61096be4dcef08db3648a531f541d5ab0841e11919b5323c329a731b9</checksum>
+          <size type="download">78144</size>
+        </artifact>
+      </artifacts>
     </release>
   </releases>
-
-  <url type="homepage">https://realmazharhussain.github.io/gdm-settings</url>
-  <url type="bugtracker">https://github.com/realmazharhussain/gdm-settings/issues</url>
-  <url type="translate">https://hosted.weblate.org/engage/gdm-settings</url>
-  <url type="donation">https://realmazharhussain.github.io/donate</url>
+  <!-- Note: AppStream docs recommend keeping notes of old versions -->
 </component>
