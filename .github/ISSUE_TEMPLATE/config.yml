@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Support Questions
+    url: https://github.com/realmazharhussain/gdm-settings/discussions/categories/q-a
+    about: If you have any questions, you can ask them here instead of filing an issue.
