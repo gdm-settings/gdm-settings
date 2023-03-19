@@ -358,6 +358,10 @@ class SettingsManager (GObject.Object):
         # of GDM in such situations.
         common_commands = [f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}"]
 
+        fallback_commands = [
+            f'install -m644 {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
+        ]
+
         raw_message = _("Applying GResource settings for {distro_name} …")
 
         def add_commands(distro_name, special_commands):
@@ -367,7 +371,7 @@ class SettingsManager (GObject.Object):
 
         if gr_utils.UbuntuGdmGresourceFile:
             name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
-            commands = [
+            ubuntu_commands = [
                 ('update-alternatives --quiet --install'
                  f' {gr_utils.UbuntuGdmGresourceFile}'
                  f' {name_of_alternative}'
@@ -379,13 +383,9 @@ class SettingsManager (GObject.Object):
                  f' {gr_utils.CustomGresourceFile}'),
             ]
 
-            add_commands(_('Ubuntu'), commands)
+            add_commands(_('Ubuntu'), ubuntu_commands)
         else:
-            commands = [
-                f'install -m644 {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
-            ]
-
-            add_commands(_('generic system'), commands)
+            add_commands(_('generic system'), fallback_commands)
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
