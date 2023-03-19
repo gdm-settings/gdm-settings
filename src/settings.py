@@ -313,7 +313,7 @@ class SettingsManager (GObject.Object):
         logging.info(_("Backing up default shell theme …"))
 
         if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
-            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
+            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
 
         os.makedirs(env.TEMP_DIR, exist_ok=True)
 
@@ -599,10 +599,10 @@ class SettingsManager (GObject.Object):
                                         gr_utils.CustomGresourceFile,
                                      ])
             self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
-        elif os.path.exists(gr_utils.ShellGresourceAutoBackup):
+        elif os.path.exists(gr_utils.DefaultGresourceFile):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(['mv', '-f',
-                                       gr_utils.ShellGresourceAutoBackup,
+                                       gr_utils.DefaultGresourceFile,
                                        gr_utils.ShellGresourceFile,
                                      ])
             self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
