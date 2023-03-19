@@ -107,3 +107,5 @@ _pretty_name = f'{OS_NAME} {OS_VERSION}'
 if OS_VERSION_CODENAME: _pretty_name += f' ({OS_VERSION_CODENAME})'
 
 OS_PRETTY_NAME = os_release.get('PRETTY_NAME', _pretty_name)
+
+OS_IDs = [OS_ID] + OS_ID_LIKE.split()
