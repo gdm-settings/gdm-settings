@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Sabri Ünal <libreajans@gmail.com>, 2022.
+# Sabri Ünal <libreajans@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
 "Language: tr\n"
@@ -29,10 +29,8 @@ msgstr "Arka Plan Türü"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "GDM arka planının Resim, Renk veya Hiçbiri olup olmayacağı."
+msgstr "GDM arka planının Resim, Renk veya Öntanımlı olma durumu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -288,37 +286,37 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Yeni Seçenekler</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Kullanılmadığında erişilebilir menüyü devre dışı bırakma seçeneği"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "İmleç boyutunu değiştirme seçeneği"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Ana menüde bağış seçeneği"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Davranış Değişiklikleri</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Temalar için dizin adı yerine uygun adlar gösterilir"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "Simge teması seçerken imleç temaları gösterilmez"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -331,8 +329,6 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Telif Hakkı 2021–2023 Mazhar Hussain"
 
@@ -416,7 +412,7 @@ msgstr "Tamam"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Bağış Talebi"
 
 #: src/app.py:211
 msgid ""
@@ -425,10 +421,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Bu uygulama her zaman Açık Kaynak/Özgür ve ücretsizdir ve öyle kalacaktır. "
+"Ancak, geliştiriciye bağış yaparak sevginizi gösterebilirsiniz.\n"
+"❤️\n"
+"Gerçekten minnettar olurum."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "İlgilenmiyorum"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -480,7 +480,7 @@ msgstr "Dışa aktarılamadı. Bu ada sahip bir dizin zaten var"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Tüm Dosyalar"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -568,9 +568,6 @@ msgid "Type"
 msgstr "Tür"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Öntanımlı"
 
@@ -971,11 +968,11 @@ msgstr "Yuvarlatılmış Köşeleri Pasifleştir"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Erişilebilirlik"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Erişilebilirlik Menüsünü Her Zaman Göster"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"

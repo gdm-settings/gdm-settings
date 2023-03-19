@@ -1,7 +1,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+# Heimen Stoffels <vistausss@fastmail.com>, 2022, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # Philip Goto <philip.goto@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-18 10:39+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
+"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -31,10 +31,8 @@ msgstr "Soort achtergrond"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Of de GDM-achtergrond een afbeelding, kleur of blanco dient te zijn."
+msgstr "Of de GDM-achtergrond een afbeelding, kleur of standaard dient te zijn."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -289,37 +287,42 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Nieuwe voorkeuren</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr ""
+"Voorkeur om het toegankelijkheidsmenu uit te schakelen indien niet in gebruik"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Voorkeur om de aanwijzergrootte aan te passen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Doneermogelijkheid in menu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Gedragswijzigingen</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
+"Voortaan worden de daadwerkelijke themanamen in plaats van de mapnamen "
+"getoond"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
+"Aanwijzerthema's worden niet meer getoond bij het kiezen van een "
+"pictogramthema"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -332,8 +335,6 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Copyright 2021–2023 Mazhar Hussain"
 
@@ -418,7 +419,7 @@ msgstr "Oké"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Donatieverzoek"
 
 #: src/app.py:211
 msgid ""
@@ -427,10 +428,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Deze app is en zal altijd open-source/vrij en gratis blijven. Echter, u kunt "
+"uw waardering tonen door een donatie te doen aan de ontwikkelaar.\n"
+"❤️\n"
+"Ik zou het heel erg op prijs stellen."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Niet geïnteresseerd"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -483,7 +488,7 @@ msgstr "Het exporteren is mislukt omdat er al een map is met die naam"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Alle bestanden"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -572,9 +577,6 @@ msgid "Type"
 msgstr "Soort"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Standaard"
 
@@ -975,11 +977,11 @@ msgstr "Geen afgeronde hoeken tonen"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Toegankelijkheid"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Toegankelijkheidsmenu altijd tonen"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"

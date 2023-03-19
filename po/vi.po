@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>, 2022.
+# Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-03-09 13:37+0000\n"
+"Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/vi/>\n"
 "Language: vi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -29,10 +29,8 @@ msgstr "Loại nền"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Hình nền cho GDM có thể là một hình ảnh, một màu hoặc không có gì."
+msgstr "Hình nền cho GDM có thể là một hình ảnh, một màu hoặc mặc định."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -279,37 +277,37 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Lựa chọn mới</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Tùy chọn để tắt menu trợ năng khi không sử dụng"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Tùy chọn để điều chỉnh kích cỡ con trỏ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Tùy chọn đóng góp trong hamburger menu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Những thay đổi hành vi</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Tên riêng được hiển thị cho các theme thay vì tên thư mục của chúng"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "Những theme chỉ có con trỏ sẽ không hiển thị khi chọn icon theme"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -322,8 +320,6 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Bản quyền 2021–2023 Mazhar Hussain"
 
@@ -409,7 +405,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Yêu cầu đóng góp"
 
 #: src/app.py:211
 msgid ""
@@ -418,10 +414,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Ứng dụng này đang và sẽ luôn là ứng dụng mã nguồn mở và miễn phí. Tuy nhiên, "
+"bạn có thể đóng góp để thể hiện tình yêu của bạn.\n"
+"❤️\n"
+"Tôi sẽ rất cảm kích điều đó."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Không quan tâm"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -473,7 +473,7 @@ msgstr "Không xuất được. Thư mục có tên đó đã tồn tại"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Tất cả các tệp"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -562,9 +562,6 @@ msgid "Type"
 msgstr "Loại"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Mặc định"
 
@@ -965,11 +962,11 @@ msgstr "Tắt bo tròn các góc"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Trợ năng"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Luôn hiển thị menu trợ năng"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
