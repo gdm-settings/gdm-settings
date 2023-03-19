@@ -353,22 +353,21 @@ class SettingsManager (GObject.Object):
         )
 
 
-        raw_message = _("Applying GResource settings for {distro_name} …")
-
-        def add_commands(distro_name, commands):
-            message = raw_message.format(distro_name = distro_name)
-            logging.info(message)
-            self.command_elevator.add('\n'.join(commands))
-
-
         # We need to copy the compiled gresource file instead of moving it because the
         # copy gets correct SELinux context/label where applicable and prevents breakage
         # of GDM in such situations.
+        common_commands = [f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}"]
+
+        raw_message = _("Applying GResource settings for {distro_name} …")
+
+        def add_commands(distro_name, special_commands):
+            message = raw_message.format(distro_name = distro_name)
+            logging.info(message)
+            self.command_elevator.add('\n'.join(common_commands + special_commands))
+
         if gr_utils.UbuntuGdmGresourceFile:
             name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
             commands = [
-                f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}",
-
                 ('update-alternatives --quiet --install'
                  f' {gr_utils.UbuntuGdmGresourceFile}'
                  f' {name_of_alternative}'
