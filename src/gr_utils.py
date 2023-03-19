@@ -24,7 +24,7 @@ for data_dir in env.HOST_DATA_DIRS:
         CustomGresourceFile  = ShellGresourceFile + ".gdm_settings"
         break
 
-if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
+if 'ubuntu' in env.OS_IDs:
     if os.path.exists(env.HOST_ROOT+'/usr/share/gnome-shell/gdm-theme.gresource'):
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
     else:
