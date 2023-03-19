@@ -352,16 +352,41 @@ class SettingsManager (GObject.Object):
             background_image=background_image
         )
 
-        # We need to copy the compiled gresource file instead of moving it because the copy gets correct
-        # SELinux context/label where applicable and prevents breakage of GDM in such situations.
+
+        raw_message = _("Applying GResource settings for {distro_name} …")
+
+        def add_commands(distro_name, commands):
+            message = raw_message.format(distro_name = distro_name)
+            logging.info(message)
+            self.command_elevator.add('\n'.join(commands))
+
+
+        # We need to copy the compiled gresource file instead of moving it because the
+        # copy gets correct SELinux context/label where applicable and prevents breakage
+        # of GDM in such situations.
         if gr_utils.UbuntuGdmGresourceFile:
-            logging.info(C_('Command-line output', "Applying GResource settings for Ubuntu …"))
-            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
+            name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
+            commands = [
+                f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}",
+
+                ('update-alternatives --quiet --install'
+                 f' {gr_utils.UbuntuGdmGresourceFile}'
+                 f' {name_of_alternative}'
+                 f' {gr_utils.CustomGresourceFile}'
+                 ' 0'),
+
+                ('update-alternatives --quiet --set'
+                 f' {name_of_alternative}'
+                 f' {gr_utils.CustomGresourceFile}'),
+            ]
+
+            add_commands(_('Ubuntu'), commands)
         else:
-            logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.ShellGresourceFile}")
+            commands = [
+                f'install -m644 {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
+            ]
+
+            add_commands(_('generic system'), commands)
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
