@@ -359,7 +359,7 @@ class SettingsManager (GObject.Object):
         common_commands = [f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}"]
 
         fallback_commands = [
-            f'install -m644 {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
+            f'ln -sfr {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
         ]
 
         raw_message = _("Applying GResource settings for {distro_name} …")
