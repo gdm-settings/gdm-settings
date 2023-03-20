@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Vojtěch Perník <translations@pervoj.cz>, 2022.
-# vikdevelop <super-vik1@protonmail.com>, 2022.
+# vikdevelop <super-vik1@protonmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-02-24 10:46+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-03-21 11:46+0000\n"
+"Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -30,10 +30,8 @@ msgstr "Typ pozadí"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Jestli má být pozadí GDM obrázek, barva, nebo žádné."
+msgstr "Jestli má být pozadí GDM obrázek, barva, nebo výchozí."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -285,37 +283,37 @@ msgstr "Mazhar Hussain"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
 #: src/about.py:14
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Nové položky</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
 #: src/about.py:16
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Možnost vypnout nabídku zpřístupnění když není využívána"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
 #: src/about.py:17
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Možnost nastavit velikost kurzoru"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
 #: src/about.py:18
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Možnost Podpořit v hamburgerovém menu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
 #: src/about.py:20
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Změny chování</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
 #: src/about.py:22
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Správné názvy témat se zobrazují místo názvu jejich adresáře"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
 #: src/about.py:23
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "Při výběru motivu ikony se nezobrazují motivy pouze kurzoru"
 
 #: src/about.py:7 src/about.py:35
 msgctxt "Name of Developer"
@@ -328,8 +326,6 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: src/about.py:36
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Copyright 2021–2023 Mazhar Hussain"
 
@@ -415,7 +411,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Žádost o podpoření"
 
 #: src/app.py:211
 msgid ""
@@ -424,10 +420,14 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Tato aplikace je a vždy zůstane svobodnou/open-source a zdarma. Můžete však "
+"projevit trochu lásky tím, že přispějete vývojáři.\n"
+"❤️\n"
+"Opravdu bych to ocenil."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Nemám zájem"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -479,7 +479,7 @@ msgstr "Nepodařilo se exportovat. Adresář s tímto názvem již existuje"
 
 #: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
 msgid "All Files"
-msgstr ""
+msgstr "Všechny soubory"
 
 #: src/lib/file_choosers.py:25
 msgid "Choose File"
@@ -567,9 +567,6 @@ msgid "Type"
 msgstr "Typ"
 
 #: src/resources/ui/appearance-page.blp:21
-#, fuzzy
-#| msgctxt "Cursor Size"
-#| msgid "Default"
 msgid "Default"
 msgstr "Výchozí"
 
@@ -970,11 +967,11 @@ msgstr "Zakázat zaoblené rohy"
 
 #: src/resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Zpřístupnění"
 
 #: src/resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Vždy zobrazovat nabídku zpřístupnění"
 
 #: src/resources/ui/top-bar-page.blp:69
 msgid "Clock"
