@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-03-21 16:45+0500\n"
 "PO-Revision-Date: 2023-03-22 14:41+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -1075,19 +1075,17 @@ msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "Bezig met toepassen van GResource-voorkeuren voor Ubuntu…"
+msgstr "Bezig met toepassen van GResource-voorkeuren voor {distro_name}…"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "algemeen systeem"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
