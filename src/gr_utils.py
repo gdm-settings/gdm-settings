@@ -8,23 +8,23 @@ import subprocess
 from . import env
 from . import lib
 
-ThemesDir                = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
-CustomThemeIdentity      = 'custom-theme'
-GdmUsername              = 'gdm'
-ShellGresourceFile       = None
-ShellGresourceAutoBackup = None
-CustomGresourceFile      = None
-UbuntuGdmGresourceFile   = None
+ThemesDir              = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
+CustomThemeIdentity    = 'custom-theme'
+GdmUsername            = 'gdm'
+ShellGresourceFile     = None
+DefaultGresourceFile   = None
+CustomGresourceFile    = None
+UbuntuGdmGresourceFile = None
 
 for data_dir in env.HOST_DATA_DIRS:
     file = os.path.join (data_dir,  'gnome-shell', 'gnome-shell-theme.gresource')
     if os.path.isfile (env.HOST_ROOT + file):
-        ShellGresourceFile       = file
-        ShellGresourceAutoBackup = ShellGresourceFile + ".default"
-        CustomGresourceFile      = ShellGresourceFile + ".gdm_settings"
+        ShellGresourceFile   = file
+        DefaultGresourceFile = ShellGresourceFile + ".default"
+        CustomGresourceFile  = ShellGresourceFile + ".gdm_settings"
         break
 
-if 'ubuntu' in [env.OS_ID] + env.OS_ID_LIKE.split():
+if 'ubuntu' in env.OS_IDs:
     if os.path.exists(env.HOST_ROOT+'/usr/share/gnome-shell/gdm-theme.gresource'):
         UbuntuGdmGresourceFile = '/usr/share/gnome-shell/gdm-theme.gresource'
     else:
@@ -52,7 +52,7 @@ def is_unmodified(gresourceFile:str):
 def get_default() -> str:
     """get full path to the unmodified GResource file of the default theme (if the file exists)"""
 
-    for file in ShellGresourceFile, ShellGresourceAutoBackup:
+    for file in ShellGresourceFile, DefaultGresourceFile:
        if is_unmodified(file):
            return file
 

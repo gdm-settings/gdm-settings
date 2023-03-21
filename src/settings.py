@@ -313,7 +313,7 @@ class SettingsManager (GObject.Object):
         logging.info(_("Backing up default shell theme …"))
 
         if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
-            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.ShellGresourceAutoBackup}")
+            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
 
         os.makedirs(env.TEMP_DIR, exist_ok=True)
 
@@ -352,16 +352,40 @@ class SettingsManager (GObject.Object):
             background_image=background_image
         )
 
-        # We need to copy the compiled gresource file instead of moving it because the copy gets correct
-        # SELinux context/label where applicable and prevents breakage of GDM in such situations.
+
+        # We need to copy the compiled gresource file instead of moving it because the
+        # copy gets correct SELinux context/label where applicable and prevents breakage
+        # of GDM in such situations.
+        common_commands = [f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}"]
+
+        fallback_commands = [
+            f'ln -sfr {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
+        ]
+
+        raw_message = _("Applying GResource settings for {distro_name} …")
+
+        def add_commands(distro_name, special_commands):
+            message = raw_message.format(distro_name = distro_name)
+            logging.info(message)
+            self.command_elevator.add('\n'.join(common_commands + special_commands))
+
         if gr_utils.UbuntuGdmGresourceFile:
-            logging.info(C_('Command-line output', "Applying GResource settings for Ubuntu …"))
-            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}")
-            self.command_elevator.add(f'update-alternatives --quiet --install {gr_utils.UbuntuGdmGresourceFile} {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile} 0')
-            self.command_elevator.add(f'update-alternatives --quiet --set {os.path.basename(gr_utils.UbuntuGdmGresourceFile)} {gr_utils.CustomGresourceFile}')
+            name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
+            ubuntu_commands = [
+                ('update-alternatives --quiet --install'
+                 f' {gr_utils.UbuntuGdmGresourceFile}'
+                 f' {name_of_alternative}'
+                 f' {gr_utils.CustomGresourceFile}'
+                 ' 0'),
+
+                ('update-alternatives --quiet --set'
+                 f' {name_of_alternative}'
+                 f' {gr_utils.CustomGresourceFile}'),
+            ]
+
+            add_commands(_('Ubuntu'), ubuntu_commands)
         else:
-            logging.info(C_('Command-line output', "Applying GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(f"install -m644 {compiled_file} {gr_utils.ShellGresourceFile}")
+            add_commands(_('generic system'), fallback_commands)
 
     def apply_dconf_settings(self):
         ''' Apply settings that are applied through 'dconf' '''
@@ -599,10 +623,10 @@ class SettingsManager (GObject.Object):
                                         gr_utils.CustomGresourceFile,
                                      ])
             self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
-        elif os.path.exists(gr_utils.ShellGresourceAutoBackup):
+        elif os.path.exists(gr_utils.DefaultGresourceFile):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.command_elevator.add(['mv', '-f',
-                                       gr_utils.ShellGresourceAutoBackup,
+                                       gr_utils.DefaultGresourceFile,
                                        gr_utils.ShellGresourceFile,
                                      ])
             self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
