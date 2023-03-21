@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-02-24 10:46+0500\n"
+"POT-Creation-Date: 2023-03-21 16:45+0500\n"
 "PO-Revision-Date: 2023-02-25 21:36+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -33,8 +33,8 @@ msgstr "Type d'arrière-plan"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
-"Indique si l’arrière-plan de GDM doit être une image, une couleur ou l’"
-"affichage par défaut."
+"Indique si l’arrière-plan de GDM doit être une image, une couleur ou "
+"l’affichage par défaut."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -67,8 +67,8 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 "Vitesse du pointeur pour le pavé tactile. Les valeurs acceptées se situent "
-"dans la plage [-1..1] (de «&nbsp;non-accéléré&nbsp;» à «&nbsp;rapide&nbsp;»)"
-". La valeur 0 est la valeur par défaut du système."
+"dans la plage [-1..1] (de «&nbsp;non-accéléré&nbsp;» à «&nbsp;"
+"rapide&nbsp;»). La valeur 0 est la valeur par défaut du système."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -274,19 +274,19 @@ msgstr "Changer ou nom l'arrière-plan de la barre supérieure"
 msgid "Top bar background color"
 msgstr "Couleur d'arrière-plan de la barre supérieure"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:69
 msgid "Login Manager Settings"
 msgstr "Gestionnaire de paramètres de connexion"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
 msgstr "Personnalisez votre écran de connexion"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -295,64 +295,63 @@ msgstr ""
 "le thème du curseur, le thème des icônes et les paramètres du mode nuit, "
 "entre autres."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#: src/about.py:14
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "<em>New Options</em>"
 msgstr "<em>Nouvelles options</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#: src/about.py:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "Option pour désactiver le menu d’accessibilité quand non utilisé"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-#: src/about.py:17
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Option to change cursor size"
 msgstr "Option pour changer la taille du curseur"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-#: src/about.py:18
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#, fuzzy
+#| msgid "Donation Request"
+msgid "A one-time donation request"
+msgstr "Demande de don"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Donate option in hamburger menu"
 msgstr "Possibilité de faire un don via le menu hamburger"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-#: src/about.py:20
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Changements dans l’interaction</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-#: src/about.py:22
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "Les noms des thèmes sont affichés au lieu du nom de leur répertoire"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-#: src/about.py:23
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 "Les thèmes du curseur uniquement ne sont plus proposés lors du choix d’un "
 "thème d’icônes"
 
-#: src/about.py:7 src/about.py:35
+#: src/about.py:10 src/about.py:81
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:8
+#: src/about.py:11
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:36
+#: src/about.py:82
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:51
+#: src/about.py:94
 msgid "translator-credits"
 msgstr "Irénée Thirion &lt;irenee.thirion@e.email&gt;"
 
@@ -1086,22 +1085,27 @@ msgstr ""
 msgid "Backing up default shell theme …"
 msgstr "Sauvegarde du thème par défaut du shell …"
 
-#: src/settings.py:359
-msgctxt "Command-line output"
-msgid "Applying GResource settings for Ubuntu …"
+#: src/settings.py:365
+#, fuzzy, python-brace-format
+#| msgctxt "Command-line output"
+#| msgid "Applying GResource settings for Ubuntu …"
+msgid "Applying GResource settings for {distro_name} …"
 msgstr "Application des paramètres GResource pour Ubuntu …"
 
-#: src/settings.py:364
-msgctxt "Command-line output"
-msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
+#: src/settings.py:386
+msgid "Ubuntu"
+msgstr ""
 
-#: src/settings.py:597
+#: src/settings.py:388
+msgid "generic system"
+msgstr ""
+
+#: src/settings.py:620
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
 
-#: src/settings.py:604
+#: src/settings.py:627
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
@@ -1175,6 +1179,10 @@ msgstr "Se déconnecter&nbsp;?"
 #: src/window.py:169
 msgid "Log Out"
 msgstr "Déconnexion"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Applying GResource settings for non-Ubuntu systems …"
+#~ msgstr "Application des paramètres GResource pour les systèmes non-Ubuntu …"
 
 #~ msgid "Added power settings"
 #~ msgstr "Ajout de paramètres d’énergie"

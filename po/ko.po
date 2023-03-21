@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-02-24 10:46+0500\n"
+"POT-Creation-Date: 2023-03-21 16:45+0500\n"
 "PO-Revision-Date: 2023-02-05 05:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -244,19 +244,19 @@ msgstr "상단바 배경 변경 여부"
 msgid "Top bar background color"
 msgstr "상단바 배경색"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:69
 msgid "Login Manager Settings"
 msgstr "로그인 관리자 설정"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
 msgstr "로그인 화면 사용자 정의"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -264,56 +264,53 @@ msgstr ""
 "GDM 설정 변경; 테마와 배경을 적용하고 커서 테마, 아이콘 테마, 야간 모드 설정 "
 "등을 변경합니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#: src/about.py:14
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "<em>New Options</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#: src/about.py:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-#: src/about.py:17
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Option to change cursor size"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-#: src/about.py:18
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+msgid "A one-time donation request"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Donate option in hamburger menu"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-#: src/about.py:20
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "<em>Behavior Changes</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-#: src/about.py:22
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-#: src/about.py:23
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
-#: src/about.py:7 src/about.py:35
+#: src/about.py:10 src/about.py:81
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:8
+#: src/about.py:11
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:36
+#: src/about.py:82
 #, fuzzy
 #| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -321,7 +318,7 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:51
+#: src/about.py:94
 msgid "translator-credits"
 msgstr ""
 "안재범 &lt;ajb8533296@gmail.com&gt;\n"
@@ -1054,22 +1051,27 @@ msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없�
 msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
-#: src/settings.py:359
-msgctxt "Command-line output"
-msgid "Applying GResource settings for Ubuntu …"
+#: src/settings.py:365
+#, fuzzy, python-brace-format
+#| msgctxt "Command-line output"
+#| msgid "Applying GResource settings for Ubuntu …"
+msgid "Applying GResource settings for {distro_name} …"
 msgstr "Ubuntu에 GResource 설정 적용 중…"
 
-#: src/settings.py:364
-msgctxt "Command-line output"
-msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
+#: src/settings.py:386
+msgid "Ubuntu"
+msgstr ""
 
-#: src/settings.py:597
+#: src/settings.py:388
+msgid "generic system"
+msgstr ""
+
+#: src/settings.py:620
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
 
-#: src/settings.py:604
+#: src/settings.py:627
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
@@ -1142,6 +1144,10 @@ msgstr "로그아웃 할까요?"
 #: src/window.py:169
 msgid "Log Out"
 msgstr "로그아웃"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Applying GResource settings for non-Ubuntu systems …"
+#~ msgstr "비 Ubuntu 시스템에 GResource 설정 적용 중…"
 
 #~ msgid "Added power settings"
 #~ msgstr "추가된 전원 설정"
