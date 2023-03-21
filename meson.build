@@ -21,6 +21,7 @@ project('gdm-settings',
 
 dependency('glib-2.0')
 dependency('pygobject-3.0')
+dependency('gtk4', version: '>=4.10')
 dependency('libadwaita-1', version: '>=1.2')
 
 i18n = import('i18n')
