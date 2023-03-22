@@ -19,7 +19,7 @@ class FileChooserButton (Gtk.Button):
     default_filter = Property(Gtk.FileFilter)
 
 
-    def __init__ (self, **kwargs):
+    def __init__ (self, **props):
 
         none_label = Gtk.Label(label=_('(None)'))
 
@@ -40,7 +40,7 @@ class FileChooserButton (Gtk.Button):
         main_box.append(Gtk.Separator(css_classes=['spacer'], halign=Gtk.Align.END, hexpand=True))
         main_box.append(Gtk.Image(icon_name='document-open-symbolic', halign=Gtk.Align.END))
 
-        super().__init__(child=main_box, **kwargs)
+        super().__init__(child=main_box, **props)
 
 
     @Property(str, default='')
@@ -105,7 +105,7 @@ class FileChooserButton (Gtk.Button):
 class ImageChooserButton (FileChooserButton):
     __gtype_name__ = 'ImageChooserButton'
 
-    def __init__ (self, **kwargs):
+    def __init__ (self, **props):
         all_filters = Gio.ListStore()
 
         image_filter = Gtk.FileFilter(name=_('Images'))
@@ -120,4 +120,4 @@ class ImageChooserButton (FileChooserButton):
             title = _('Choose Image'),
             filters = all_filters,
             default_filter = image_filter,
-            **kwargs)
+            **props)

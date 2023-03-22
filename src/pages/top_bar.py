@@ -11,8 +11,8 @@ from .common import PageContent
 class TopBarPageContent (PageContent):
     __gtype_name__ = 'TopBarPageContent'
 
-    def __init__ (self, window, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, window, **props):
+        super().__init__(**props)
 
         self.window = window
 

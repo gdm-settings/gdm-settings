@@ -13,8 +13,8 @@ from .common import PageContent
 class AppearancePageContent (PageContent):
     __gtype_name__ = 'AppearancePageContent'
 
-    def __init__ (self, window, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, window, **props):
+        super().__init__(**props)
 
         self.window = window
 

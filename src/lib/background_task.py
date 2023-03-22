@@ -12,8 +12,8 @@ class AlreadyRunningError (Exception): pass
 class BackgroundTask (GObject.Object):
     __gtype_name__ = 'BackgroundTask'
 
-    def __init__ (self, function, finish_callback, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, function, finish_callback, **props):
+        super().__init__(**props)
 
         self.function = function
         self.finish_callback = finish_callback

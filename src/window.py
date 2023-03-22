@@ -22,8 +22,8 @@ class TaskCounter(GObject.Object):
     count = Property(int, default=0)
     spinner = Property(Gtk.Spinner)
 
-    def __init__ (self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, **props):
+        super().__init__(**props)
 
         self.widgets = []
 
@@ -54,8 +54,8 @@ class TaskCounter(GObject.Object):
 class GdmSettingsWindow (Adw.ApplicationWindow):
     __gtype_name__ = 'GdmSettingsWindow'
 
-    def __init__ (self, application, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, application, **props):
+        super().__init__(**props)
 
         if build_type != 'release':
             self.add_css_class('devel')
