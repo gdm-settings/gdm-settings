@@ -12,7 +12,7 @@ from ...lib import Property
 class CursorSizeButton (Gtk.ToggleButton):
     __gtype_name__ = 'CursorSizeButton'
 
-    cursor_size = Property(int, construct_only=True)
+    cursor_size = Property(int, default=24, construct_only=True)
     size_name = Property(str)
 
 
