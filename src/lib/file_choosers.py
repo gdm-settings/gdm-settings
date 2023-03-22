@@ -5,8 +5,7 @@ from gi.repository import Pango
 from gi.repository import Gio
 from gi.repository import GObject
 
-readwrite = GObject.ParamFlags.READWRITE
-construct = GObject.ParamFlags.CONSTRUCT
+from .misc import Property
 
 
 __all__ = ['FileChooserButton', 'ImageChooserButton']
@@ -52,7 +51,7 @@ class FileChooserButton (Gtk.Button):
         self.set_child(main_box)
 
 
-    @GObject.Property (type=str, flags=construct|readwrite)
+    @Property (str, construct=True)
     def title (self):
         return self._title
 
@@ -61,7 +60,7 @@ class FileChooserButton (Gtk.Button):
         self._title = value
 
 
-    @GObject.Property (type=Gtk.FileFilter, flags=construct|readwrite)
+    @Property (Gtk.FileFilter, construct=True)
     def filter (self):
         return self._filter
 
@@ -70,7 +69,7 @@ class FileChooserButton (Gtk.Button):
         self._filter = value
 
 
-    @GObject.Property (type=Gio.ListModel, flags=construct|readwrite)
+    @Property (Gio.ListModel, construct=True)
     def filters (self):
         return self._filters
 
@@ -79,7 +78,7 @@ class FileChooserButton (Gtk.Button):
         self._filters = value
 
 
-    @GObject.Property (type=str, flags=construct|readwrite)
+    @Property (str, construct=True)
     def filename (self):
         return self._filename
 
@@ -92,7 +91,7 @@ class FileChooserButton (Gtk.Button):
         self._freeze_prop_filename = False
 
 
-    @GObject.Property (type=Gio.File)
+    @Property (Gio.File)
     def file (self):
         return self._file
 
