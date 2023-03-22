@@ -19,9 +19,9 @@ class FileChooserButton (Gtk.Button):
     _default_filter = Gtk.FileFilter(name=_('All Files'))
     _default_filter.add_pattern('*')
 
-    title = Property(str, construct=True)
-    filter = Property(Gtk.FileFilter, construct=True)
-    filters = Property(Gio.ListModel, construct=True)
+    title = Property(str)
+    filter = Property(Gtk.FileFilter)
+    filters = Property(Gio.ListModel)
 
 
     def __init__ (self,
