@@ -117,17 +117,19 @@ class FileChooserButton (Gtk.Button):
 class ImageChooserButton (FileChooserButton):
     __gtype_name__ = 'ImageChooserButton'
 
-    def __init__ (self, title=_('Choose Image'), **kwargs):
-        super().__init__(title=title, **kwargs)
-
-        self.filters = Gio.ListStore()
+    def __init__ (self, **kwargs):
+        all_filters = Gio.ListStore()
 
         image_filter = Gtk.FileFilter(name=_('Images'))
         image_filter.add_mime_type('image/*')
-        self.filters.append(image_filter)
+        all_filters.append(image_filter)
 
-        all_filter = Gtk.FileFilter(name=_('All Files'))
-        all_filter.add_pattern('*')
-        self.filters.append(all_filter)
+        all_files_filter = Gtk.FileFilter(name=_('All Files'))
+        all_files_filter.add_pattern('*')
+        all_filters.append(all_files_filter)
 
-        self.default_filter = image_filter
+        super().__init__(
+            title = _('Choose Image'),
+            filters = all_filters,
+            default_filter = image_filter,
+            **kwargs)
