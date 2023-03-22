@@ -43,9 +43,7 @@ class FileChooserButton (Gtk.Button):
         main_box.append(Gtk.Separator(css_classes=['spacer'], halign=Gtk.Align.END, hexpand=True))
         main_box.append(Gtk.Image(icon_name='document-open-symbolic', halign=Gtk.Align.END))
 
-        super().__init__(**kwargs)
-
-        self.set_child(main_box)
+        super().__init__(child=main_box, **kwargs)
 
 
     @Property (str, default='')
