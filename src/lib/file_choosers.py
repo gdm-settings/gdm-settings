@@ -19,6 +19,10 @@ class FileChooserButton (Gtk.Button):
     _default_filter = Gtk.FileFilter(name=_('All Files'))
     _default_filter.add_pattern('*')
 
+    title = Property(str, construct=True)
+    filter = Property(Gtk.FileFilter, construct=True)
+    filters = Property(Gio.ListModel, construct=True)
+
 
     def __init__ (self,
             title=_('Choose File'),
@@ -49,33 +53,6 @@ class FileChooserButton (Gtk.Button):
         super().__init__(title=title, filter=filter, filters=filters, filename=filename, **kwargs)
 
         self.set_child(main_box)
-
-
-    @Property (str, construct=True)
-    def title (self):
-        return self._title
-
-    @title.setter
-    def title (self, value):
-        self._title = value
-
-
-    @Property (Gtk.FileFilter, construct=True)
-    def filter (self):
-        return self._filter
-
-    @filter.setter
-    def filter (self, value):
-        self._filter = value
-
-
-    @Property (Gio.ListModel, construct=True)
-    def filters (self):
-        return self._filters
-
-    @filters.setter
-    def filters (self, value):
-        self._filters = value
 
 
     @Property (str, construct=True)
