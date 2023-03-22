@@ -16,12 +16,10 @@ class FileChooserButton (Gtk.Button):
 
     _freeze_prop_file = False
     _freeze_prop_filename = False
-    _default_filter = Gtk.FileFilter(name=_('All Files'))
-    _default_filter.add_pattern('*')
 
     title = Property(str, default=_('Choose File'))
-    filter = Property(Gtk.FileFilter, default=_default_filter)
-    filters = Property(Gio.ListModel, default=Gio.ListStore())
+    filter = Property(Gtk.FileFilter)
+    filters = Property(Gio.ListModel)
 
 
     def __init__ (self, **kwargs):
