@@ -13,4 +13,5 @@ fi
 meson $action build --prefix="${app_dir}"/usr
 meson install -C build
 
+export LD_LIBRARY_PATH="${app_dir}/usr/lib"
 "${app_dir}"/usr/bin/gdm-settings "$@"
