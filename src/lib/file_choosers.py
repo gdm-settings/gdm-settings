@@ -14,9 +14,6 @@ __all__ = ['FileChooserButton', 'ImageChooserButton']
 class FileChooserButton (Gtk.Button):
     __gtype_name__ = 'FileChooserButton'
 
-    _freeze_prop_file = False
-    _freeze_prop_filename = False
-
     title = Property(str, default=_('Choose File'))
     filters = Property(Gio.ListModel)
     default_filter = Property(Gtk.FileFilter)
@@ -46,30 +43,23 @@ class FileChooserButton (Gtk.Button):
         super().__init__(child=main_box, **kwargs)
 
 
-    @Property (str, default='')
+    @Property(str, default='')
     def filename (self):
-        return self._filename
+        return self.file.get_path()
 
     @filename.setter
     def filename (self, value):
-        self._filename = value
-        self._freeze_prop_filename = True
-        if not self._freeze_prop_file:
-            self.file = Gio.File.new_for_path(value)
-        self._freeze_prop_filename = False
+        self.file = Gio.File.new_for_path(value)
 
 
-    @Property (Gio.File)
+    @Property(Gio.File)
     def file (self):
         return self._file
 
     @file.setter
     def file (self, value):
         self._file = value
-        self._freeze_prop_file = True
-        if not self._freeze_prop_filename:
-            self.filename = value.get_path() or ''
-        self._freeze_prop_file = False
+        self.notify('filename')
         self._update_ui()
 
 
