@@ -19,17 +19,12 @@ class FileChooserButton (Gtk.Button):
     _default_filter = Gtk.FileFilter(name=_('All Files'))
     _default_filter.add_pattern('*')
 
-    title = Property(str)
-    filter = Property(Gtk.FileFilter)
-    filters = Property(Gio.ListModel)
+    title = Property(str, default=_('Choose File'))
+    filter = Property(Gtk.FileFilter, default=_default_filter)
+    filters = Property(Gio.ListModel, default=Gio.ListStore())
 
 
-    def __init__ (self,
-            title=_('Choose File'),
-            filter=_default_filter,
-            filters=Gio.ListStore(),
-            filename='',
-            **kwargs):
+    def __init__ (self, **kwargs):
 
         none_label = Gtk.Label(label=_('(None)'))
 
@@ -50,12 +45,12 @@ class FileChooserButton (Gtk.Button):
         main_box.append(Gtk.Separator(css_classes=['spacer'], halign=Gtk.Align.END, hexpand=True))
         main_box.append(Gtk.Image(icon_name='document-open-symbolic', halign=Gtk.Align.END))
 
-        super().__init__(title=title, filter=filter, filters=filters, filename=filename, **kwargs)
+        super().__init__(**kwargs)
 
         self.set_child(main_box)
 
 
-    @Property (str, construct=True)
+    @Property (str, default='')
     def filename (self):
         return self._filename
 
@@ -124,8 +119,8 @@ class FileChooserButton (Gtk.Button):
 class ImageChooserButton (FileChooserButton):
     __gtype_name__ = 'ImageChooserButton'
 
-    def __init__ (self, title=_('Choose Image'), filename='', **kwargs):
-        super().__init__(title=title, filename=filename, **kwargs)
+    def __init__ (self, title=_('Choose Image'), **kwargs):
+        super().__init__(title=title, **kwargs)
 
         self.filters = Gio.ListStore()
 
