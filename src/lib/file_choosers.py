@@ -4,6 +4,7 @@ from gi.repository import Gtk
 from gi.repository import Pango
 from gi.repository import Gio
 from gi.repository import GObject
+from gi.repository import GLib
 
 from .misc import Property
 
@@ -41,6 +42,13 @@ class FileChooserButton (Gtk.Button):
         main_box.append(Gtk.Image(icon_name='document-open-symbolic', halign=Gtk.Align.END))
 
         super().__init__(child=main_box, **props)
+
+        self.file_dialog = Gtk.FileDialog(
+            modal = True,
+            title = self.title,
+            filters = self.filters,
+            default_filter = self.default_filter,
+            accept_label = _('Choose'))
 
 
     @Property(str, default='')
@@ -80,26 +88,17 @@ class FileChooserButton (Gtk.Button):
 
 
     def do_clicked (self):
-        self._file_chooser = Gtk.FileChooserNative(
-                                      modal = True,
-                                     filter = self.default_filter,
-                                      title = self.title,
-                                     action = Gtk.FileChooserAction.OPEN,
-                              transient_for = self.get_root(),
-                               accept_label = _('Choose'),
-                               cancel_label = _('Cancel'),
-                )
+        self.file_dialog.set_initial_file(self.file),
+        self.file_dialog.open(
+            parent = self.get_root(),
+            callback = self.file_dialog_open_finish_cb)
 
-        for filter in self.filters:
-            self._file_chooser.add_filter(filter)
-
-        self._file_chooser.connect('response', self._on_file_chooser_response)
-        self._file_chooser.show()
-
-    def _on_file_chooser_response(self, file_chooser, response):
-        if response == Gtk.ResponseType.ACCEPT:
-            self.file = file_chooser.get_file()
-        file_chooser.destroy()
+    def file_dialog_open_finish_cb(self, file_dialog, result):
+        try:
+            self.file = file_dialog.open_finish(result)
+        except GLib.Error as err:
+            if not err.matches(Gtk.dialog_error_quark(), Gtk.DialogError.DISMISSED):
+                raise
 
 
 class ImageChooserButton (FileChooserButton):
