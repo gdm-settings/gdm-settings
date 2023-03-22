@@ -18,8 +18,8 @@ class FileChooserButton (Gtk.Button):
     _freeze_prop_filename = False
 
     title = Property(str, default=_('Choose File'))
-    filter = Property(Gtk.FileFilter)
     filters = Property(Gio.ListModel)
+    default_filter = Property(Gtk.FileFilter)
 
 
     def __init__ (self, **kwargs):
@@ -94,7 +94,7 @@ class FileChooserButton (Gtk.Button):
     def do_clicked (self):
         self._file_chooser = Gtk.FileChooserNative(
                                       modal = True,
-                                     filter = self.filter,
+                                     filter = self.default_filter,
                                       title = self.title,
                                      action = Gtk.FileChooserAction.OPEN,
                               transient_for = self.get_root(),
@@ -130,4 +130,4 @@ class ImageChooserButton (FileChooserButton):
         all_filter.add_pattern('*')
         self.filters.append(all_filter)
 
-        self.filter = image_filter
+        self.default_filter = image_filter
