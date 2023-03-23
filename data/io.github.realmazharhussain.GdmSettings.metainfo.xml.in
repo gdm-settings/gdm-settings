@@ -93,6 +93,18 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="3.beta.0" type="development" date="2023-03-23">
+      <url>https://github.com/realmazharhussain/gdm-settings/releases/tag/v3.beta.0</url>
+
+      <description>
+        <p>Fixed: Fails to run on PureOS</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/realmazharhussain/gdm-settings/issues/148">#148</issue>
+      </issues>
+    </release>
+
     <release version="3.alpha.0" urgency="medium" type="development" date="2023-02-24">
       <url>https://github.com/realmazharhussain/gdm-settings/releases/tag/v3.alpha.0</url>
 
