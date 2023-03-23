@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-21 16:45+0500\n"
+"POT-Creation-Date: 2023-03-23 11:38+0500\n"
 "PO-Revision-Date: 2023-02-25 21:36+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -260,7 +260,7 @@ msgstr "Tepe çubuğu arka plan rengi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:69
+#: src/window.py:66
 msgid "Login Manager Settings"
 msgstr "Giriş Yöneticisi Ayarları"
 
@@ -317,23 +317,23 @@ msgstr "Temalar için dizin adı yerine uygun adlar gösterilir"
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "Simge teması seçerken imleç temaları gösterilmez"
 
-#: src/about.py:10 src/about.py:81
+#: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:11
+#: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:82
+#: src/about.py:83
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Telif Hakkı 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:94
+#: src/about.py:95
 msgid "translator-credits"
 msgstr "Sabri Ünal &lt;libreajans@gmail.com&gt;"
 
@@ -477,33 +477,29 @@ msgstr "Dışa aktarılamadı. İzin reddedildi"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Dışa aktarılamadı. Bu ada sahip bir dizin zaten var"
 
-#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
-msgid "All Files"
-msgstr "Tüm Dosyalar"
-
-#: src/lib/file_choosers.py:25
+#: src/lib/file_choosers.py:18
 msgid "Choose File"
 msgstr "Dosya Seç"
 
-#: src/lib/file_choosers.py:31
+#: src/lib/file_choosers.py:25
 msgid "(None)"
 msgstr "Yok"
 
-#: src/lib/file_choosers.py:132
+#: src/lib/file_choosers.py:51
 msgid "Choose"
 msgstr "Seç"
 
-#: src/lib/file_choosers.py:133 src/window.py:168
-msgid "Cancel"
-msgstr "İptal Et"
-
-#: src/lib/file_choosers.py:151
-msgid "Choose Image"
-msgstr "Resim Seç"
-
-#: src/lib/file_choosers.py:156
+#: src/lib/file_choosers.py:110
 msgid "Images"
 msgstr "Resimler"
+
+#: src/lib/file_choosers.py:114
+msgid "All Files"
+msgstr "Tüm Dosyalar"
+
+#: src/lib/file_choosers.py:119
+msgid "Choose Image"
+msgstr "Resim Seç"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -997,7 +993,7 @@ msgstr "ÖÖ/ÖS"
 msgid "24 Hours"
 msgstr "24 Saat"
 
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
 msgstr "Güç"
 
@@ -1084,69 +1080,73 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
 
-#: src/window.py:114
+#: src/window.py:111
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/window.py:115
+#: src/window.py:112
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/window.py:116
+#: src/window.py:113
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/window.py:117
+#: src/window.py:114
 msgid "Sound"
 msgstr "Ses"
 
-#: src/window.py:118
+#: src/window.py:115
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/window.py:119
+#: src/window.py:116
 msgid "Display"
 msgstr "Ekran"
 
-#: src/window.py:120
+#: src/window.py:117
 msgid "Login Screen"
 msgstr "Giriş Ekranı"
 
-#: src/window.py:122
+#: src/window.py:119
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/window.py:140
+#: src/window.py:137
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/window.py:144
+#: src/window.py:141
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/window.py:148
+#: src/window.py:145
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Uygulanmadı. Seçilen arka plan resmi artık mevcut değil. Lütfen tekrar seçin."
 
-#: src/window.py:152
+#: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
 
-#: src/window.py:158
+#: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:163
+#: src/window.py:160
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:169
+#: src/window.py:165
+msgid "Cancel"
+msgstr "İptal Et"
+
+#: src/window.py:166
 msgid "Log Out"
 msgstr "Oturumu Kapat"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-21 16:45+0500\n"
+"POT-Creation-Date: 2023-03-23 11:38+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -232,7 +232,7 @@ msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:69
+#: src/window.py:66
 msgid "Login Manager Settings"
 msgstr "تنظیمات مدیر ورود"
 
@@ -286,17 +286,17 @@ msgstr ""
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
-#: src/about.py:10 src/about.py:81
+#: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: src/about.py:11
+#: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr ""
 
-#: src/about.py:82
+#: src/about.py:83
 #, fuzzy
 #| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -304,7 +304,7 @@ msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:94
+#: src/about.py:95
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
@@ -446,33 +446,29 @@ msgstr ""
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
-#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
-msgid "All Files"
-msgstr ""
-
-#: src/lib/file_choosers.py:25
+#: src/lib/file_choosers.py:18
 msgid "Choose File"
 msgstr "انتخاب پرونده"
 
-#: src/lib/file_choosers.py:31
+#: src/lib/file_choosers.py:25
 msgid "(None)"
 msgstr "(هیچ‌کدام)"
 
-#: src/lib/file_choosers.py:132
+#: src/lib/file_choosers.py:51
 msgid "Choose"
 msgstr "گزینش"
 
-#: src/lib/file_choosers.py:133 src/window.py:168
-msgid "Cancel"
-msgstr "لغو"
-
-#: src/lib/file_choosers.py:151
-msgid "Choose Image"
-msgstr "گزینش تصویر"
-
-#: src/lib/file_choosers.py:156
+#: src/lib/file_choosers.py:110
 msgid "Images"
 msgstr "تصاویر"
+
+#: src/lib/file_choosers.py:114
+msgid "All Files"
+msgstr ""
+
+#: src/lib/file_choosers.py:119
+msgid "Choose Image"
+msgstr "گزینش تصویر"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -977,7 +973,7 @@ msgstr "صبح/عصر"
 msgid "24 Hours"
 msgstr "۲۴ ساعتی"
 
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
 msgstr "انرژی"
 
@@ -1065,66 +1061,70 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr ""
 
-#: src/window.py:114
+#: src/window.py:111
 msgid "Appearance"
 msgstr "ظاهر"
 
-#: src/window.py:115
+#: src/window.py:112
 msgid "Fonts"
 msgstr "قلم‌ها"
 
-#: src/window.py:116
+#: src/window.py:113
 msgid "Top Bar"
 msgstr "نوار بالا"
 
-#: src/window.py:117
+#: src/window.py:114
 msgid "Sound"
 msgstr "صدا"
 
-#: src/window.py:118
+#: src/window.py:115
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
-#: src/window.py:119
+#: src/window.py:116
 msgid "Display"
 msgstr "نمایشگر"
 
-#: src/window.py:120
+#: src/window.py:117
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:122
+#: src/window.py:119
 msgid "Tools"
 msgstr "ابزارها"
 
-#: src/window.py:140
+#: src/window.py:137
 msgid "Settings applied successfully"
 msgstr "تنظیمات با موفّقیت اِعمال شد"
 
-#: src/window.py:144
+#: src/window.py:141
 msgid "Failed to apply settings"
 msgstr "اِعمال تنظیمات شکست خورد"
 
-#: src/window.py:148
+#: src/window.py:145
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 
-#: src/window.py:152
+#: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 
-#: src/window.py:158
+#: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 
-#: src/window.py:163
+#: src/window.py:160
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:169
+#: src/window.py:165
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/window.py:166
 msgid "Log Out"
 msgstr ""
 
