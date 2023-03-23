@@ -4,9 +4,9 @@ from gi.repository import Gtk
 from gi.repository import Pango
 from gi.repository import Gio
 from gi.repository import GObject
+from gi.repository import GLib
 
-readwrite = GObject.ParamFlags.READWRITE
-construct = GObject.ParamFlags.CONSTRUCT
+from .misc import Property
 
 
 __all__ = ['FileChooserButton', 'ImageChooserButton']
@@ -15,18 +15,12 @@ __all__ = ['FileChooserButton', 'ImageChooserButton']
 class FileChooserButton (Gtk.Button):
     __gtype_name__ = 'FileChooserButton'
 
-    _freeze_prop_file = False
-    _freeze_prop_filename = False
-    _default_filter = Gtk.FileFilter(name=_('All Files'))
-    _default_filter.add_pattern('*')
+    title = Property(str, default=_('Choose File'))
+    filters = Property(Gio.ListModel)
+    default_filter = Property(Gtk.FileFilter)
 
 
-    def __init__ (self,
-            title=_('Choose File'),
-            filter=_default_filter,
-            filters=Gio.ListStore(),
-            filename='',
-            **kwargs):
+    def __init__ (self, **props):
 
         none_label = Gtk.Label(label=_('(None)'))
 
@@ -47,62 +41,33 @@ class FileChooserButton (Gtk.Button):
         main_box.append(Gtk.Separator(css_classes=['spacer'], halign=Gtk.Align.END, hexpand=True))
         main_box.append(Gtk.Image(icon_name='document-open-symbolic', halign=Gtk.Align.END))
 
-        super().__init__(title=title, filter=filter, filters=filters, filename=filename, **kwargs)
+        super().__init__(child=main_box, **props)
 
-        self.set_child(main_box)
-
-
-    @GObject.Property (type=str, flags=construct|readwrite)
-    def title (self):
-        return self._title
-
-    @title.setter
-    def title (self, value):
-        self._title = value
+        self.file_dialog = Gtk.FileDialog(
+            modal = True,
+            title = self.title,
+            filters = self.filters,
+            default_filter = self.default_filter,
+            accept_label = _('Choose'))
 
 
-    @GObject.Property (type=Gtk.FileFilter, flags=construct|readwrite)
-    def filter (self):
-        return self._filter
-
-    @filter.setter
-    def filter (self, value):
-        self._filter = value
-
-
-    @GObject.Property (type=Gio.ListModel, flags=construct|readwrite)
-    def filters (self):
-        return self._filters
-
-    @filters.setter
-    def filters (self, value):
-        self._filters = value
-
-
-    @GObject.Property (type=str, flags=construct|readwrite)
+    @Property(str, default='')
     def filename (self):
-        return self._filename
+        return self.file.get_path()
 
     @filename.setter
     def filename (self, value):
-        self._filename = value
-        self._freeze_prop_filename = True
-        if not self._freeze_prop_file:
-            self.file = Gio.File.new_for_path(value)
-        self._freeze_prop_filename = False
+        self.file = Gio.File.new_for_path(value)
 
 
-    @GObject.Property (type=Gio.File)
+    @Property(Gio.File)
     def file (self):
         return self._file
 
     @file.setter
     def file (self, value):
         self._file = value
-        self._freeze_prop_file = True
-        if not self._freeze_prop_filename:
-            self.filename = value.get_path() or ''
-        self._freeze_prop_file = False
+        self.notify('filename')
         self._update_ui()
 
 
@@ -123,42 +88,35 @@ class FileChooserButton (Gtk.Button):
 
 
     def do_clicked (self):
-        self._file_chooser = Gtk.FileChooserNative(
-                                      modal = True,
-                                     filter = self.filter,
-                                      title = self.title,
-                                     action = Gtk.FileChooserAction.OPEN,
-                              transient_for = self.get_root(),
-                               accept_label = _('Choose'),
-                               cancel_label = _('Cancel'),
-                )
+        self.file_dialog.set_initial_file(self.file),
+        self.file_dialog.open(
+            parent = self.get_root(),
+            callback = self.file_dialog_open_finish_cb)
 
-        for filter in self.filters:
-            self._file_chooser.add_filter(filter)
-
-        self._file_chooser.connect('response', self._on_file_chooser_response)
-        self._file_chooser.show()
-
-    def _on_file_chooser_response(self, file_chooser, response):
-        if response == Gtk.ResponseType.ACCEPT:
-            self.file = file_chooser.get_file()
-        file_chooser.destroy()
+    def file_dialog_open_finish_cb(self, file_dialog, result):
+        try:
+            self.file = file_dialog.open_finish(result)
+        except GLib.Error as err:
+            if not err.matches(Gtk.dialog_error_quark(), Gtk.DialogError.DISMISSED):
+                raise
 
 
 class ImageChooserButton (FileChooserButton):
     __gtype_name__ = 'ImageChooserButton'
 
-    def __init__ (self, title=_('Choose Image'), filename='', **kwargs):
-        super().__init__(title=title, filename=filename, **kwargs)
-
-        self.filters = Gio.ListStore()
+    def __init__ (self, **props):
+        all_filters = Gio.ListStore()
 
         image_filter = Gtk.FileFilter(name=_('Images'))
         image_filter.add_mime_type('image/*')
-        self.filters.append(image_filter)
+        all_filters.append(image_filter)
 
-        all_filter = Gtk.FileFilter(name=_('All Files'))
-        all_filter.add_pattern('*')
-        self.filters.append(all_filter)
+        all_files_filter = Gtk.FileFilter(name=_('All Files'))
+        all_files_filter.add_pattern('*')
+        all_filters.append(all_files_filter)
 
-        self.filter = image_filter
+        super().__init__(
+            title = _('Choose Image'),
+            filters = all_filters,
+            default_filter = image_filter,
+            **props)

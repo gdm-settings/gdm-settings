@@ -12,8 +12,8 @@ from .common import PageContent
 class SoundPageContent (PageContent):
     __gtype_name__ = 'SoundPageContent'
 
-    def __init__ (self, window, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, window, **props):
+        super().__init__(**props)
 
         self.window = window
 

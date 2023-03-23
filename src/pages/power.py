@@ -11,8 +11,8 @@ from .common import PageContent
 class PowerPageContent (PageContent):
     __gtype_name__ = 'PowerPageContent'
 
-    def __init__ (self, window, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, window, **props):
+        super().__init__(**props)
 
         self.window = window
 

@@ -5,6 +5,7 @@ from gi.repository import Gtk
 from gi.repository import GObject
 
 from . import info
+from .lib import Property
 
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
@@ -15,8 +16,8 @@ class ReleaseNotesFetcher(GObject.Object):
     __gtype_name__ = 'ReleaseNotesFetcher'
     _instance = None
 
-    notes = GObject.Property(type=str, default="")
-    version = GObject.Property(type=str, default="")
+    notes = Property(str, default="")
+    version = Property(str, default="")
 
     def __new__(cls):
         if not cls._instance:

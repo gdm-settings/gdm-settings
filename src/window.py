@@ -9,24 +9,21 @@ from gi.repository import GObject
 from .info import data_dir, application_id, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .lib import BackgroundTask, Settings
+from .lib import BackgroundTask, Settings, Property
 from .utils import run_on_host, resource_path
 from . import pages
 
-
-construct = GObject.ParamFlags.CONSTRUCT
-readwrite = GObject.ParamFlags.READWRITE
 
 class TaskCounter(GObject.Object):
     '''A GObject that keeps a count of background tasks and updates widgets accordingly'''
 
     __gtype_name__ = 'TaskCounter'
 
-    count = GObject.Property(type=int, default=0, flags=construct|readwrite)
-    spinner = GObject.Property(type=Gtk.Spinner)
+    count = Property(int, default=0)
+    spinner = Property(Gtk.Spinner)
 
-    def __init__ (self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, **props):
+        super().__init__(**props)
 
         self.widgets = []
 
@@ -57,8 +54,8 @@ class TaskCounter(GObject.Object):
 class GdmSettingsWindow (Adw.ApplicationWindow):
     __gtype_name__ = 'GdmSettingsWindow'
 
-    def __init__ (self, application, **kwargs):
-        super().__init__(**kwargs)
+    def __init__ (self, application, **props):
+        super().__init__(**props)
 
         if build_type != 'release':
             self.add_css_class('devel')
