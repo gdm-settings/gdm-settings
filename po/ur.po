@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-02-24 10:46+0500\n"
+"POT-Creation-Date: 2023-03-21 16:45+0500\n"
 "PO-Revision-Date: 2023-03-08 09:41+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -256,19 +256,19 @@ msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ تبد
 msgid "Top bar background color"
 msgstr "بیک گرائونڈ کا رنگ"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:69
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
 msgstr "لاگن والی سکرین کو کسٹومائز کریں"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -276,62 +276,61 @@ msgstr ""
 "جی۔ڈی۔ایم کی سیٹنگز بدلیں؛ تھیم اور بیکگرائونڈ اپلائی کریں، تیر کا تھیم، "
 "آئیکن تھیم اور رات کی روشنی کی سیٹنگز، وغیرہ بدلیں۔"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#: src/about.py:14
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "<em>New Options</em>"
 msgstr "<em>نئے آپشن</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#: src/about.py:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-#: src/about.py:17
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Option to change cursor size"
 msgstr "تیر کا سائز بدلنے کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-#: src/about.py:18
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#, fuzzy
+#| msgid "Donation Request"
+msgid "A one-time donation request"
+msgstr "عطیہ کی درخواست"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Donate option in hamburger menu"
 msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-#: src/about.py:20
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>رویہ کی تبدیلیاں</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-#: src/about.py:22
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-#: src/about.py:23
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
 
-#: src/about.py:7 src/about.py:35
+#: src/about.py:10 src/about.py:81
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: src/about.py:8
+#: src/about.py:11
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "تھیلس بِنڈا"
 
-#: src/about.py:36
+#: src/about.py:82
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:51
+#: src/about.py:94
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
@@ -1058,22 +1057,27 @@ msgstr ""
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:359
-msgctxt "Command-line output"
-msgid "Applying GResource settings for Ubuntu …"
+#: src/settings.py:365
+#, fuzzy, python-brace-format
+#| msgctxt "Command-line output"
+#| msgid "Applying GResource settings for Ubuntu …"
+msgid "Applying GResource settings for {distro_name} …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
-#: src/settings.py:364
-msgctxt "Command-line output"
-msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
+#: src/settings.py:386
+msgid "Ubuntu"
+msgstr ""
 
-#: src/settings.py:597
+#: src/settings.py:388
+msgid "generic system"
+msgstr ""
+
+#: src/settings.py:620
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/settings.py:604
+#: src/settings.py:627
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
@@ -1142,6 +1146,10 @@ msgstr "لاگ آؤٹ کریں؟"
 #: src/window.py:169
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Applying GResource settings for non-Ubuntu systems …"
+#~ msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
 #~ msgid "Added power settings"
 #~ msgstr "پاور سیٹنگز کا اضافہ کیا"

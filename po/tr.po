@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-02-24 10:46+0500\n"
+"POT-Creation-Date: 2023-03-21 16:45+0500\n"
 "PO-Revision-Date: 2023-02-25 21:36+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -258,19 +258,19 @@ msgstr "Tepe çubuğu arka planının değiştirilme durumu"
 msgid "Top bar background color"
 msgstr "Tepe çubuğu arka plan rengi"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:11
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:69
 msgid "Login Manager Settings"
 msgstr "Giriş Yöneticisi Ayarları"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
 msgstr "Giriş ekranınızı özelleştirin"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -279,62 +279,61 @@ msgstr ""
 "uygulayın, imleç temasını, simge temasını ve gece ışığı ayarlarını "
 "değiştirin."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:54
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:90
-#: src/about.py:14
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "<em>New Options</em>"
 msgstr "<em>Yeni Seçenekler</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:92
-#: src/about.py:16
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "Kullanılmadığında erişilebilir menüyü devre dışı bırakma seçeneği"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:93
-#: src/about.py:17
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Option to change cursor size"
 msgstr "İmleç boyutunu değiştirme seçeneği"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:94
-#: src/about.py:18
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#, fuzzy
+#| msgid "Donation Request"
+msgid "A one-time donation request"
+msgstr "Bağış Talebi"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Donate option in hamburger menu"
 msgstr "Ana menüde bağış seçeneği"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:96
-#: src/about.py:20
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Davranış Değişiklikleri</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:98
-#: src/about.py:22
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "Temalar için dizin adı yerine uygun adlar gösterilir"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:99
-#: src/about.py:23
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "Simge teması seçerken imleç temaları gösterilmez"
 
-#: src/about.py:7 src/about.py:35
+#: src/about.py:10 src/about.py:81
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:8
+#: src/about.py:11
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:36
+#: src/about.py:82
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Telif Hakkı 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:51
+#: src/about.py:94
 msgid "translator-credits"
 msgstr "Sabri Ünal &lt;libreajans@gmail.com&gt;"
 
@@ -1060,22 +1059,27 @@ msgstr ""
 msgid "Backing up default shell theme …"
 msgstr "Öntanımlı shell teması yedekleniyor …"
 
-#: src/settings.py:359
-msgctxt "Command-line output"
-msgid "Applying GResource settings for Ubuntu …"
+#: src/settings.py:365
+#, fuzzy, python-brace-format
+#| msgctxt "Command-line output"
+#| msgid "Applying GResource settings for Ubuntu …"
+msgid "Applying GResource settings for {distro_name} …"
 msgstr "Ubuntu için GResource ayarları uygulanıyor…"
 
-#: src/settings.py:364
-msgctxt "Command-line output"
-msgid "Applying GResource settings for non-Ubuntu systems …"
-msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
+#: src/settings.py:386
+msgid "Ubuntu"
+msgstr ""
 
-#: src/settings.py:597
+#: src/settings.py:388
+msgid "generic system"
+msgstr ""
+
+#: src/settings.py:620
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
 msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
 
-#: src/settings.py:604
+#: src/settings.py:627
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
@@ -1145,6 +1149,10 @@ msgstr "Oturum Kapatılsın Mı?"
 #: src/window.py:169
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Applying GResource settings for non-Ubuntu systems …"
+#~ msgstr "Ubuntu olmayan sistemler için GResource ayarları uygulanıyor…"
 
 #~ msgid "Added power settings"
 #~ msgstr "Güç ayarları eklendi"
