@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-03-23 11:38+0500\n"
-"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"PO-Revision-Date: 2023-03-29 12:40+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -286,10 +286,8 @@ msgid "Option to change cursor size"
 msgstr "אפשרות להחלפת גודל סמן העכבר"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
-#, fuzzy
-#| msgid "Donation Request"
 msgid "A one-time donation request"
-msgstr "בקשת תרומה"
+msgstr "בקשת תרומה חד־פעמית"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Donate option in hamburger menu"
@@ -1044,19 +1042,17 @@ msgid "Backing up default shell theme …"
 msgstr "ערכת העיצוב של המעטפת כברירת המחדל מגובית…"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "הגדרות ה־GResource חלות על אובונטו…"
+msgstr "הגדרות ה־GResource חלות על {distro_name}…"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "אובונטו"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "מערכת כלשהי"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
