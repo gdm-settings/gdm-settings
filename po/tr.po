@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-03-24 14:38+0000\n"
+"PO-Revision-Date: 2023-04-09 09:49+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -285,7 +285,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Fixed: Fails to run on PureOS"
-msgstr ""
+msgstr "Düzeltildi: PureOS'ta çalışamıyor"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
