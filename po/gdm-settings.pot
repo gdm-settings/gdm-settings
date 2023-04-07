@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-23 11:38+0500\n"
+"POT-Creation-Date: 2023-04-07 15:40+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,34 +249,38 @@ msgid "Mazhar Hussain"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Fixed: Fails to run on PureOS"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 msgid "A one-time donation request"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
