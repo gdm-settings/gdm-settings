@@ -93,6 +93,32 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="3.0" type="stable" date="2023-04-13">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.0</url>
+
+      <description>
+        <p><em>New Options</em></p>
+        <ul>
+          <li>Option to disable accessiblitly menu when not being used</li>
+          <li>Option to change cursor size</li>
+          <li>A one-time donation request</li>
+          <li>Donate option in hamburger menu</li>
+        </ul>
+        <p><em>Behavior Changes</em></p>
+        <ul>
+          <li>Proper names are shown for themes instead of name of their directory</li>
+          <li>Cursor only themes are not presented when choosing icon theme</li>
+        </ul>
+        <p>Fixed: Fails to run on PureOS</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/138">#138</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/145">#145</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/148">#148</issue>
+      </issues>
+    </release>
+
     <release version="3.beta.0" type="development" date="2023-03-23">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.beta.0</url>
 
