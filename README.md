@@ -12,38 +12,38 @@
 <br>
 
 <div align="center">
-  <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest"><img alt="Downloads"
-      src="https://img.shields.io/github/downloads/realmazharhussain/gdm-settings/total"></a>
-  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Install"><img alt="Flatpak Installs"
+  <a href="https://github.com/gdm-settings/gdm-settings/releases/latest"><img alt="Downloads"
+      src="https://img.shields.io/github/downloads/gdm-settings/gdm-settings/total"></a>
+  <a href="https://github.com/gdm-settings/gdm-settings/wiki/Install"><img alt="Flatpak Installs"
       src="https://img.shields.io/flathub/downloads/io.github.realmazharhussain.GdmSettings"></a>
   <a href="#"><img alt="Code Size"
-      src="https://img.shields.io/github/languages/code-size/realmazharhussain/gdm-settings"></a>
+      src="https://img.shields.io/github/languages/code-size/gdm-settings/gdm-settings"></a>
   <a href="https://hosted.weblate.org/projects/gdm-settings/language-names"><img alt="Translation Status"
       src="https://hosted.weblate.org/widgets/gdm-settings/-/svg-badge.svg"></a>
 </div>
 
 <div align="center">
   <h2>
-    <a href="https://github.com/realmazharhussain/gdm-settings/releases/latest/download/Login_Manager_Settings.AppImage">Download</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/releases/latest/download/Login_Manager_Settings.AppImage">Download</a>
     <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Install">Install</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/wiki/Install">Install</a>
   </h2>
 </div>
 
 <div align="center">
-  <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">
+  <a href="https://github.com/gdm-settings/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/realmazharhussain/gdm-settings/raw/screenshots/dark/screenshot-1.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/realmazharhussain/gdm-settings/raw/screenshots/light/screenshot-1.png">
+      <source srcset="https://github.com/gdm-settings/gdm-settings/raw/screenshots/dark/screenshot-1.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/gdm-settings/gdm-settings/raw/screenshots/light/screenshot-1.png">
     </picture>
   </a>
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki/Screenshots">Screenshots</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/wiki/Screenshots">Screenshots</a>
     <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/wiki">Wiki</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/wiki">Wiki</a>
   </h3>
 </div>
 
@@ -51,7 +51,7 @@
   <h4>
     <a href="https://hosted.weblate.org/engage/gdm-settings">Translate</a>
     <span> | </span>
-    <a href="https://github.com/realmazharhussain/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
     <span> | </span>
     <a href="https://realmazharhussain.github.io/donate">Donate</a>
   </h4>

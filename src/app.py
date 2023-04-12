@@ -185,7 +185,7 @@ class GdmSettingsApp(Adw.Application):
 
         message += '\n\n'
 
-        link = 'https://github.com/realmazharhussain/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
+        link = 'https://github.com/gdm-settings/gdm-settings/wiki/Dependencies#how-to-install-dependencies'
         # Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
         # a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
         message += _('Click <a href="{url}">here</a> for instructions on how '
