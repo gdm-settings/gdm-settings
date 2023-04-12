@@ -2,6 +2,8 @@ project('gdm-settings',
           version: '4.beta1+',
     meson_version: '>= 0.59',
   default_options: [
+    'buildtype=release',
+
     'gtk:media-gstreamer=disabled',
     'gtk:print-cups=disabled',
     'gtk:introspection=enabled',
