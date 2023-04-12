@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-03-24 14:38+0000\n"
+"PO-Revision-Date: 2023-04-13 09:56+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -282,7 +282,7 @@ msgstr "مظہر حسین"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Fixed: Fails to run on PureOS"
-msgstr ""
+msgstr "درست کیا: پیور او ایس پر رن نہیں ہو سکتی تھی"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
