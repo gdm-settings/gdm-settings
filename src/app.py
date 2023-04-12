@@ -69,6 +69,8 @@ class GdmSettingsApp(Adw.Application):
             print (info.application_name, f"({info.project_name})", f"v{info.version}")
             return 0
 
+        set_logging_level(3)
+
         if options.contains("verbose"):
             set_logging_level (5)
 

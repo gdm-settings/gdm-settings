@@ -1,5 +1,8 @@
+import re
+import logging
 from gettext import gettext as _, pgettext as C_
 
+import gi
 from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
@@ -11,6 +14,12 @@ from .lib import Property
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
 thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gmail.com>"
 
+
+try:
+    gi.require_version('AppStreamGlib', '1.0')
+    from gi.repository import AppStreamGlib as ASG
+except (ValueError, ImportError):
+    ASG = None
 
 class ReleaseNotesFetcher(GObject.Object):
     __gtype_name__ = 'ReleaseNotesFetcher'
@@ -25,22 +34,20 @@ class ReleaseNotesFetcher(GObject.Object):
         return cls._instance
 
     def __init__(self):
-        if type(self)._instance:
-            # Already initialized
+        if not type(self)._instance:
+            super().__init__()
+            type(self)._instance = self
+            self.store = None
+
+        if self.store:
             return
 
-        super().__init__()
-        type(self)._instance = self
-
-        try:
-            import gi
-            gi.require_version('AppStreamGlib', '1.0')
-            from gi.repository import AppStreamGlib as ASG
-        except (ValueError, ImportError):
+        if not ASG:
+            logging.warning('AppStreamGlib typelib not installed! Cannot get release information.')
             return
 
-        store = ASG.Store()
-        store.load_async(flags=ASG.StoreLoadFlags.APPDATA, callback=self.on_store_load)
+        self.store = ASG.Store()
+        self.store.load_async(flags=ASG.StoreLoadFlags.APPDATA, callback=self.on_store_load)
 
     def on_store_load(self, store, result, user_data=None):
         if not store.load_finish(result):
@@ -54,16 +61,26 @@ class ReleaseNotesFetcher(GObject.Object):
         if not releases:
             return
 
-        latest = releases[0]
-        latest_major = latest.get_version().split('.')[0]
-        relevant_releases = [r for r in releases if r.get_version().startswith(latest_major)]
+        current_major = re.findall(r'[0-9]+', info.version)[0]
+        current_releases = (r for r in releases if r.get_version().startswith(current_major))
+        current_releases_with_desc = [r for r in current_releases if r.get_description()]
+
+        if not current_releases_with_desc:
+            return
+
+        def is_stable(release):
+            return release.get_kind() is not ASG.ReleaseKind.DEVELOPMENT
+
+        relevant_releases = current_releases_with_desc
+        if is_stable(current_releases_with_desc[0]):
+            relevant_releases = [r for r in current_releases_with_desc if is_stable(r)]
 
         notes = ""
         if len(relevant_releases) == 1:
-            self.version = latest.get_version()
-            notes = latest.get_description()
+            self.version = relevant_releases[0].get_version()
+            notes = relevant_releases[0].get_description()
         else:
-            self.version = latest_major
+            self.version = current_major
             for release in relevant_releases:
                 notes += "<p>##### %s #####</p>" % release.get_version()
                 notes += release.get_description()

@@ -33,8 +33,8 @@
 <div align="center">
   <a href="https://github.com/gdm-settings/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/gdm-settings/gdm-settings/raw/screenshots/dark/screenshot-1.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/gdm-settings/gdm-settings/raw/screenshots/light/screenshot-1.png">
+      <source srcset="https://github.com/gdm-settings/screenshots/raw/main/dark/screenshot-1.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/gdm-settings/screenshots/raw/main/light/screenshot-1.png">
     </picture>
   </a>
 </div>
