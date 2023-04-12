@@ -81,14 +81,14 @@ def about_window(win):
         version          = info.version,
         developer_name   = C_("Name of Developer", "Mazhar Hussain"),
         copyright = _("Copyright 2021-2023 Mazhar Hussain"),
-        website   = "https://realmazharhussain.github.io/gdm-settings",
+        website   = "https://gdm-settings.github.io",
         developers  = [mazhar_hussain],
         designers   = [mazhar_hussain],
         documenters = [mazhar_hussain],
         artists     = [thales_binda],
 
-        support_url = "https://github.com/realmazharhussain/gdm-settings/discussions/categories/q-a",
-        issue_url   = "https://github.com/realmazharhussain/gdm-settings/issues/new/choose",
+        support_url = "https://github.com/gdm-settings/gdm-settings/discussions/categories/q-a",
+        issue_url   = "https://github.com/gdm-settings/gdm-settings/issues/new/choose",
 
         # Translators: Do not translate this string. Put your info here in the form
         # 'name <email>' including < and > but not quotes.
