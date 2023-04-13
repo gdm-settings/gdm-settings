@@ -2,7 +2,7 @@
 
 set -e
 
-export AppName='Login Manager Settings'
+export AppName='GDM Settings'
 export ApplicationId=io.github.realmazharhussain.GdmSettings
 
 

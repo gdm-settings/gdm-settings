@@ -63,7 +63,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.application = application
         self.set_application(application)
 
-        self.props.title = _('Login Manager Settings')
+        self.props.title = _('GDM Settings')
 
         self.builder = Gtk.Builder.new_from_resource(resource_path('ui/main-window.ui'))
 

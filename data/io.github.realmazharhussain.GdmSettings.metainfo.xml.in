@@ -9,7 +9,7 @@
   <launchable type="desktop-id">io.github.realmazharhussain.GdmSettings.desktop</launchable>
   <translation type="gettext">gdm-settings</translation>
 
-  <name>Login Manager Settings</name>
+  <name>GDM Settings</name>
   <summary>Customize your login screen</summary>
 
   <description>

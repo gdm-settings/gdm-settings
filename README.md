@@ -2,7 +2,7 @@
   <img src="data/icons/io.github.realmazharhussain.GdmSettings.svg" alt="GDM Settings Icon" width="100" height="100">
 </p>
 
-<h1 align="center">Login Manager Settings</h1>
+<h1 align="center">GDM Settings</h1>
 
 <div align="center">
   <p><strong>A settings app for GNOME's Login/Display Manager, GDM.</strong></p>

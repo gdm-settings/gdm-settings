@@ -233,7 +233,7 @@ class SettingsManager (GObject.Object):
     def get_setting_css(self) -> str:
         '''Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)'''
 
-        css = "\n\n/* 'Login Manager Settings' App Provided CSS */\n"
+        css = "\n\n/* 'GDM Settings' App Provided CSS */\n"
 
         ### Background ###
         background_type = BackgroundType[appearance_settings['background-type']]

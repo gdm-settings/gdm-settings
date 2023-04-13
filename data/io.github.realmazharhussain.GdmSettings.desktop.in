@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Login Manager Settings
+Name=GDM Settings
 Comment=Customize your login screen
 Icon=io.github.realmazharhussain.GdmSettings
 Exec=gdm-settings
