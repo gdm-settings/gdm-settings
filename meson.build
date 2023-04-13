@@ -1,5 +1,5 @@
 project('gdm-settings',
-          version: '3.1',
+          version: '4.alpha',
     meson_version: '>= 0.59',
   default_options: [
     'buildtype=release',
