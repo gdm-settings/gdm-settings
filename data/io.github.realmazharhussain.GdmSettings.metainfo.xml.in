@@ -89,7 +89,7 @@
   <url type="bugtracker">https://github.com/gdm-settings/gdm-settings/issues</url>
   <url type="help">https://github.com/gdm-settings/gdm-settings/wiki</url>
   <url type="translate">https://hosted.weblate.org/engage/gdm-settings</url>
-  <url type="donation">https://realmazharhussain.github.io/donate</url>
+  <url type="donation">https://gdm-settings.github.io/donate</url>
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
