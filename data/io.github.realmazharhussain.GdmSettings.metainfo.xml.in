@@ -126,7 +126,7 @@
       </issues>
     </release>
 
-    <release version="3.beta.0" type="development" date="2023-03-23">
+    <release version="3~beta.0" type="development" date="2023-03-23">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.beta.0</url>
 
       <description>
@@ -138,7 +138,7 @@
       </issues>
     </release>
 
-    <release version="3.alpha.0" urgency="medium" type="development" date="2023-02-24">
+    <release version="3~alpha.0" urgency="medium" type="development" date="2023-02-24">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.alpha.0</url>
 
       <description>
