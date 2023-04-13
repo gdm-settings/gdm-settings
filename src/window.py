@@ -6,7 +6,7 @@ from gi.repository import Gtk
 from gi.repository import Gio
 from gi.repository import GObject
 
-from .info import data_dir, application_id, build_type
+from .info import application_name, application_id, data_dir, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
 from .lib import BackgroundTask, Settings, Property
@@ -63,7 +63,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.application = application
         self.set_application(application)
 
-        self.props.title = _('GDM Settings')
+        self.props.title = application_name
 
         self.builder = Gtk.Builder.new_from_resource(resource_path('ui/main-window.ui'))
 
