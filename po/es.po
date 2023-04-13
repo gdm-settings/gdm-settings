@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-21 16:45+0500\n"
-"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"PO-Revision-Date: 2023-04-09 09:49+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -266,7 +266,7 @@ msgstr "Color de fondo de la barra superior"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:69
+#: src/window.py:66
 msgid "Login Manager Settings"
 msgstr "Configuración del gestor de inicio de sesión"
 
@@ -290,58 +290,60 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Fixed: Fails to run on PureOS"
+msgstr "Corregido: No se ejecuta en PureOS"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
 msgstr "<em>Nuevas opciones</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "Opción para deshabilitar el menú accesible cuando no se usa"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
 msgstr "Opción para cambiar el tamaño del cursor"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
-#, fuzzy
-#| msgid "Donation Request"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 msgid "A one-time donation request"
-msgstr "Solicitud de donaciones"
+msgstr "Una petición de donación única"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
 msgstr "Donar opción en el menú"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Cambios de conducta</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 "Se muestran los nombres propios de los temas en lugar del nombre de su "
 "directorio"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "Los temas de sólo cursor no se presentan al elegir el tema de icono"
 
-#: src/about.py:10 src/about.py:81
+#: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:11
+#: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:82
+#: src/about.py:83
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Derechos de autor 2021–2023 por Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:94
+#: src/about.py:95
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
 
@@ -487,33 +489,29 @@ msgstr "Error al exportar. Permiso denegado"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Error al exportar. Ya existe un directorio con ese nombre"
 
-#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
-msgid "All Files"
-msgstr "Todos los archivos"
-
-#: src/lib/file_choosers.py:25
+#: src/lib/file_choosers.py:18
 msgid "Choose File"
 msgstr "Elegir archivo"
 
-#: src/lib/file_choosers.py:31
+#: src/lib/file_choosers.py:25
 msgid "(None)"
 msgstr "(Ninguno)"
 
-#: src/lib/file_choosers.py:132
+#: src/lib/file_choosers.py:51
 msgid "Choose"
 msgstr "Elegir"
 
-#: src/lib/file_choosers.py:133 src/window.py:168
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/lib/file_choosers.py:151
-msgid "Choose Image"
-msgstr "Elegir imagen"
-
-#: src/lib/file_choosers.py:156
+#: src/lib/file_choosers.py:110
 msgid "Images"
 msgstr "Imágenes"
+
+#: src/lib/file_choosers.py:114
+msgid "All Files"
+msgstr "Todos los archivos"
+
+#: src/lib/file_choosers.py:119
+msgid "Choose Image"
+msgstr "Elegir imagen"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -1007,7 +1005,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 horas"
 
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
 msgstr "Energía"
 
@@ -1073,19 +1071,17 @@ msgid "Backing up default shell theme …"
 msgstr "Copia de seguridad del tema del shell predeterminado…"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "Aplicar la configuración de GResource para Ubuntu …"
+msgstr "Aplicando la configuración de GResource para {distro_name} …"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "sistema general"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
@@ -1099,47 +1095,47 @@ msgstr ""
 "Restableciendo la configuración de GResource para sistemas que no son de "
 "Ubuntu …"
 
-#: src/window.py:114
+#: src/window.py:111
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/window.py:115
+#: src/window.py:112
 msgid "Fonts"
 msgstr "Tipografías"
 
-#: src/window.py:116
+#: src/window.py:113
 msgid "Top Bar"
 msgstr "Barra superior"
 
-#: src/window.py:117
+#: src/window.py:114
 msgid "Sound"
 msgstr "Sonido"
 
-#: src/window.py:118
+#: src/window.py:115
 msgid "Mouse & Touchpad"
 msgstr "Ratón y panel táctil"
 
-#: src/window.py:119
+#: src/window.py:116
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/window.py:120
+#: src/window.py:117
 msgid "Login Screen"
 msgstr "Pantalla de inicio de sesión"
 
-#: src/window.py:122
+#: src/window.py:119
 msgid "Tools"
 msgstr "Herramientas"
 
-#: src/window.py:140
+#: src/window.py:137
 msgid "Settings applied successfully"
 msgstr "Configuración aplicada con éxito"
 
-#: src/window.py:144
+#: src/window.py:141
 msgid "Failed to apply settings"
 msgstr "No se ha podido aplicar la configuración"
 
-#: src/window.py:148
+#: src/window.py:145
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1147,24 +1143,28 @@ msgstr ""
 "No se ha aplicado. La imagen de fondo elegida ya no existe. Por favor, elija "
 "de nuevo."
 
-#: src/window.py:152
+#: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "No se ha aplicado. La imagen del logo elegida ya no existe. Por favor, elija "
 "de nuevo."
 
-#: src/window.py:158
+#: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "El sistema puede empezar a verse raro/con problemas hasta que vuelva a "
 "iniciar sesión o reinicie."
 
-#: src/window.py:163
+#: src/window.py:160
 msgid "Log Out?"
 msgstr "¿Cerrar sesión?"
 
-#: src/window.py:169
+#: src/window.py:165
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/window.py:166
 msgid "Log Out"
 msgstr "Cerrar sesión"
 

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-21 16:45+0500\n"
-"PO-Revision-Date: 2023-03-08 09:41+0000\n"
+"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"PO-Revision-Date: 2023-03-24 14:38+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ur/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 "X-Poedit-Basepath: .\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
@@ -258,7 +258,7 @@ msgstr "بیک گرائونڈ کا رنگ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:69
+#: src/window.py:66
 msgid "Login Manager Settings"
 msgstr "لاگن مینیجر کی سیٹنگز"
 
@@ -281,56 +281,58 @@ msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Fixed: Fails to run on PureOS"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
 msgstr "<em>نئے آپشن</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
 msgstr "تیر کا سائز بدلنے کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
-#, fuzzy
-#| msgid "Donation Request"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 msgid "A one-time donation request"
-msgstr "عطیہ کی درخواست"
+msgstr "ایک مرتبہ عطیہ کی درخواست"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
 msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>رویہ کی تبدیلیاں</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
 
-#: src/about.py:10 src/about.py:81
+#: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: src/about.py:11
+#: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "تھیلس بِنڈا"
 
-#: src/about.py:82
+#: src/about.py:83
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:94
+#: src/about.py:95
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
@@ -474,33 +476,29 @@ msgstr "ایکسپورٹ نہیں ہو سکی۔ اجازت نہیں ملی"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "ایکسپورٹ نہیں ہو سکی۔ اس نام کا ایک فولڈر پہلے سے موجود ہے"
 
-#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
-msgid "All Files"
-msgstr "ساری فائیلیں"
-
-#: src/lib/file_choosers.py:25
+#: src/lib/file_choosers.py:18
 msgid "Choose File"
 msgstr "فائل چُنیں"
 
-#: src/lib/file_choosers.py:31
+#: src/lib/file_choosers.py:25
 msgid "(None)"
 msgstr "(کچھ نہیں)"
 
-#: src/lib/file_choosers.py:132
+#: src/lib/file_choosers.py:51
 msgid "Choose"
 msgstr "انتخاب کریں"
 
-#: src/lib/file_choosers.py:133 src/window.py:168
-msgid "Cancel"
-msgstr "کینسل"
-
-#: src/lib/file_choosers.py:151
-msgid "Choose Image"
-msgstr "تصویر کا انتخاب کریں"
-
-#: src/lib/file_choosers.py:156
+#: src/lib/file_choosers.py:110
 msgid "Images"
 msgstr "تصویریں"
+
+#: src/lib/file_choosers.py:114
+msgid "All Files"
+msgstr "ساری فائیلیں"
+
+#: src/lib/file_choosers.py:119
+msgid "Choose Image"
+msgstr "تصویر کا انتخاب کریں"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -994,7 +992,7 @@ msgstr "ش/م"
 msgid "24 Hours"
 msgstr "24 گھنٹے"
 
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
 msgstr "پاوَر"
 
@@ -1058,19 +1056,17 @@ msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
+msgstr "{distro_name} کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "اوبنٹو"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "جنیرک سسٹم"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
@@ -1082,68 +1078,72 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
-#: src/window.py:114
+#: src/window.py:111
 msgid "Appearance"
 msgstr "شکل"
 
-#: src/window.py:115
+#: src/window.py:112
 msgid "Fonts"
 msgstr "خط"
 
-#: src/window.py:116
+#: src/window.py:113
 msgid "Top Bar"
 msgstr "اوپر والی پٹی"
 
-#: src/window.py:117
+#: src/window.py:114
 msgid "Sound"
 msgstr "آواز"
 
-#: src/window.py:118
+#: src/window.py:115
 msgid "Mouse & Touchpad"
 msgstr "مائوس اور ٹچ پیڈ"
 
-#: src/window.py:119
+#: src/window.py:116
 msgid "Display"
 msgstr "ڈسپلے"
 
-#: src/window.py:120
+#: src/window.py:117
 msgid "Login Screen"
 msgstr "لاگن سکرین"
 
-#: src/window.py:122
+#: src/window.py:119
 msgid "Tools"
 msgstr "آلات"
 
-#: src/window.py:140
+#: src/window.py:137
 msgid "Settings applied successfully"
 msgstr "سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/window.py:144
+#: src/window.py:141
 msgid "Failed to apply settings"
 msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/window.py:148
+#: src/window.py:145
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:152
+#: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "اپلائی نہیں کیا- لوگو والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
 
-#: src/window.py:158
+#: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
 
-#: src/window.py:163
+#: src/window.py:160
 msgid "Log Out?"
 msgstr "لاگ آؤٹ کریں؟"
 
-#: src/window.py:169
+#: src/window.py:165
+msgid "Cancel"
+msgstr "کینسل"
+
+#: src/window.py:166
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
 

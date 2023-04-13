@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-03-21 16:45+0500\n"
+"POT-Creation-Date: 2023-04-07 15:40+0500\n"
 "PO-Revision-Date: 2023-02-27 18:38+0000\n"
 "Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -256,7 +256,7 @@ msgstr "Översta fältets bakgrundsfärg"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:69
+#: src/window.py:66
 msgid "Login Manager Settings"
 msgstr "Inloggningshanteraren Inställningar"
 
@@ -279,56 +279,60 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
+msgid "Fixed: Fails to run on PureOS"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
 msgstr "<em>Nya alternativ</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:102
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
 msgstr "Alternativ för att ändra pekarstorlek"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:104
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 #, fuzzy
 #| msgid "Donation Request"
 msgid "A one-time donation request"
 msgstr "Donationsförfrågan"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
 msgstr "Donera alternativ i Hamburgermenyn"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:107
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Beteendeförändringar</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:109
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:110
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
 
-#: src/about.py:10 src/about.py:81
+#: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: src/about.py:11
+#: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: src/about.py:82
+#: src/about.py:83
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: src/about.py:94
+#: src/about.py:95
 msgid "translator-credits"
 msgstr "Luna Jernberg<lunajernberg@gnome.org>"
 
@@ -474,33 +478,29 @@ msgstr "Misslyckades att exportera. Åtkomst nekad"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Misslyckades att exportera. En katalog med det namnet finns redan"
 
-#: src/lib/file_choosers.py:20 src/lib/file_choosers.py:160
-msgid "All Files"
-msgstr "Alla filer"
-
-#: src/lib/file_choosers.py:25
+#: src/lib/file_choosers.py:18
 msgid "Choose File"
 msgstr "Välj fil"
 
-#: src/lib/file_choosers.py:31
+#: src/lib/file_choosers.py:25
 msgid "(None)"
 msgstr "(Ingen)"
 
-#: src/lib/file_choosers.py:132
+#: src/lib/file_choosers.py:51
 msgid "Choose"
 msgstr "Välj"
 
-#: src/lib/file_choosers.py:133 src/window.py:168
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/lib/file_choosers.py:151
-msgid "Choose Image"
-msgstr "Välj bild"
-
-#: src/lib/file_choosers.py:156
+#: src/lib/file_choosers.py:110
 msgid "Images"
 msgstr "Bilder"
+
+#: src/lib/file_choosers.py:114
+msgid "All Files"
+msgstr "Alla filer"
+
+#: src/lib/file_choosers.py:119
+msgid "Choose Image"
+msgstr "Välj bild"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
@@ -994,7 +994,7 @@ msgstr "AM/PM"
 msgid "24 Hours"
 msgstr "24 timmar"
 
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:121
+#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
 msgstr "Ström"
 
@@ -1082,47 +1082,47 @@ msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
 msgstr "Återställer GResource-inställningar för icke-Ubuntu system …"
 
-#: src/window.py:114
+#: src/window.py:111
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/window.py:115
+#: src/window.py:112
 msgid "Fonts"
 msgstr "Teckensnitt"
 
-#: src/window.py:116
+#: src/window.py:113
 msgid "Top Bar"
 msgstr "Övre fält"
 
-#: src/window.py:117
+#: src/window.py:114
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/window.py:118
+#: src/window.py:115
 msgid "Mouse & Touchpad"
 msgstr "Mus & Pekplatta"
 
-#: src/window.py:119
+#: src/window.py:116
 msgid "Display"
 msgstr "Skärm"
 
-#: src/window.py:120
+#: src/window.py:117
 msgid "Login Screen"
 msgstr "Inloggningsskärm"
 
-#: src/window.py:122
+#: src/window.py:119
 msgid "Tools"
 msgstr "Verktyg"
 
-#: src/window.py:140
+#: src/window.py:137
 msgid "Settings applied successfully"
 msgstr "Inställningarna har verkställts"
 
-#: src/window.py:144
+#: src/window.py:141
 msgid "Failed to apply settings"
 msgstr "Misslyckades att verkställa inställningar"
 
-#: src/window.py:148
+#: src/window.py:145
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1130,24 +1130,28 @@ msgstr ""
 "Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden "
 "existerar inte längre. Snälla! välj igen."
 
-#: src/window.py:152
+#: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Verkställde inte. Det gick inte att hitta den valda logotypbilden då den "
 "inte existerar längre. Snälla! välj igen."
 
-#: src/window.py:158
+#: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Systemet kan börja se konstigt/buggigt ut till du loggar in igen eller "
 "startar om."
 
-#: src/window.py:163
+#: src/window.py:160
 msgid "Log Out?"
 msgstr "Logga ut?"
 
-#: src/window.py:169
+#: src/window.py:165
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/window.py:166
 msgid "Log Out"
 msgstr "Logga ut"
 
