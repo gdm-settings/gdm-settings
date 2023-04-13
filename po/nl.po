@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-09 09:49+0000\n"
+"PO-Revision-Date: 2023-04-14 07:29+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -564,7 +564,7 @@ msgstr "Pictogrammen"
 
 #: src/resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr "Cursor"
+msgstr "Muisaanwijzer"
 
 #: src/resources/ui/appearance-page.blp:17
 msgid "Background"
