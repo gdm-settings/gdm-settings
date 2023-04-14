@@ -4,13 +4,14 @@
 # Luna Jernberg <lunajernberg@gnome.org>, 2022.
 # Luna Jernberg <droidbittin@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# bittin1ddc447d824349b2 <bittin@reimu.nl>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-02-27 18:38+0000\n"
-"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
+"PO-Revision-Date: 2023-04-13 09:56+0000\n"
+"Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
 "Language: sv\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.17-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -280,7 +281,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Fixed: Fails to run on PureOS"
-msgstr ""
+msgstr "Fixat: Misslyckade att köra på PureOS"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
@@ -295,10 +296,8 @@ msgid "Option to change cursor size"
 msgstr "Alternativ för att ändra pekarstorlek"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-#, fuzzy
-#| msgid "Donation Request"
 msgid "A one-time donation request"
-msgstr "Donationsförfrågan"
+msgstr "En en-gångs donationsförfrågan"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
@@ -1058,19 +1057,17 @@ msgid "Backing up default shell theme …"
 msgstr "Säkerhetskopierar standardskaltema ..."
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "Verkställer GResource-inställningar för Ubuntu ..."
+msgstr "Verkställer GResource-inställningar för{distro_name} …"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "generiskt system"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
