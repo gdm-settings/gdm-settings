@@ -96,6 +96,10 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="3.1" type="stable" date="2023-04-13">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.1</url>
+    </release>
+
     <release version="3.0" type="stable" date="2023-04-13">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.0</url>
 
