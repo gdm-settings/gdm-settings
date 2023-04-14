@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-14 07:29+0000\n"
+"PO-Revision-Date: 2023-04-14 08:27+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr "Aan-/Uitknopactie"
+msgstr "Actie van aan/uit-knop"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -344,7 +344,9 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:95
 msgid "translator-credits"
-msgstr "Heimen Stoffels &lt;vistausss@fastmail.com&gt;"
+msgstr ""
+"Heimen Stoffels &lt;vistausss@fastmail.com&gt;\n"
+"Philip Goto https://flipflop97.github.io/"
 
 #: src/app.py:58
 msgid "Show application version"
@@ -494,7 +496,7 @@ msgstr "Kies een bestand"
 
 #: src/lib/file_choosers.py:25
 msgid "(None)"
-msgstr "(Geen)"
+msgstr "(geen)"
 
 #: src/lib/file_choosers.py:51
 msgid "Choose"
@@ -753,7 +755,7 @@ msgstr "Bericht"
 
 #: src/resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr "Cursorgrootte"
+msgstr "Aanwijzergrootte"
 
 #: src/resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
@@ -911,7 +913,7 @@ msgstr "Thema"
 
 #: src/resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "Versterking"
+msgstr "Overversterking"
 
 #: src/resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
