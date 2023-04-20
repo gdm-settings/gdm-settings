@@ -32,7 +32,7 @@ PROJECT_NAME = 'gdm-settings'
 VERSION = config.version
 BUILD_TYPE = config.buildtype
 APP_DATA_DIR = APP_DIR + config.datadir + '/' + PROJECT_NAME
-resource_base_path = '/' + APP_ID.replace('.', '/') + '/'
+resource_base_path = '/app/'
 
 
 def main() -> int:

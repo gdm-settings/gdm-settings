@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/realmazharhussain/GdmSettings">
+  <gresource prefix="/app/">
     <file>ui/main-window.ui</file>
     <file>ui/appearance-page.ui</file>
     <file>ui/fonts-page.ui</file>
