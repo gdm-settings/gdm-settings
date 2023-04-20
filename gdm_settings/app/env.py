@@ -12,7 +12,7 @@ from gdm_settings import APP_ID
 from .enums import PackageType
 
 
-def read_os_release():
+def get_os_info():
     filename = None
     for fn in '/run/host/os-release', '/etc/os-release', '/usr/lib/os-release':
         if os.path.isfile(fn):
@@ -95,19 +95,19 @@ elif os.environ.get('APPDIR'):   # AppImage
 
 
 # OS Release info
-os_release = read_os_release()
+os_info = get_os_info()
 
-OS_NAME       = os_release.get('NAME',       'Linux')
-OS_ID         = os_release.get('ID',         'linux')
-OS_ID_LIKE    = os_release.get('ID_LIKE',    'linux')
-OS_VERSION_ID = os_release.get('VERSION_ID', '0')
-OS_VERSION    = os_release.get('VERSION', OS_VERSION_ID)
+OS_NAME       = os_info.get('NAME',       'Linux')
+OS_ID         = os_info.get('ID',         'linux')
+OS_ID_LIKE    = os_info.get('ID_LIKE',    'linux')
+OS_VERSION_ID = os_info.get('VERSION_ID', '0')
+OS_VERSION    = os_info.get('VERSION', OS_VERSION_ID)
 
-OS_VERSION_CODENAME = os_release.get('VERSION_CODENAME')
+OS_VERSION_CODENAME = os_info.get('VERSION_CODENAME')
 _pretty_name = f'{OS_NAME} {OS_VERSION}'
 if OS_VERSION_CODENAME: _pretty_name += f' ({OS_VERSION_CODENAME})'
 
-OS_PRETTY_NAME = os_release.get('PRETTY_NAME', _pretty_name)
+OS_PRETTY_NAME = os_info.get('PRETTY_NAME', _pretty_name)
 
 OS_IDs = [OS_ID] + OS_ID_LIKE.split()
 
