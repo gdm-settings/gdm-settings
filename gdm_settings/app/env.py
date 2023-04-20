@@ -1,8 +1,8 @@
 '''get information about program's environment'''
 
-import ast
 import os
 import re
+import ast
 import sys
 import subprocess
 
