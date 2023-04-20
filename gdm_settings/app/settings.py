@@ -8,28 +8,28 @@ from gettext import gettext as _, pgettext as C_
 
 from gi.repository import GObject, Gio
 
+from gdm_settings import APP_ID
 from gdm_settings.lib import Settings
 
 from .enums import PackageType, BackgroundType
-from .info import application_id
 from .privilege_escalation import CommandElevator
 from .theme_lists import shell_themes
 from . import env
 from . import gr_utils
 
 
-main_settings          = Settings.new_delayed(application_id)
-accessibility_settings = Settings.new_delayed(f'{application_id}.accessibility')
-appearance_settings    = Settings.new_delayed(f'{application_id}.appearance')
-font_settings          = Settings.new_delayed(f'{application_id}.fonts')
-login_screen_settings  = Settings.new_delayed(f'{application_id}.misc')
-night_light_settings   = Settings.new_delayed(f'{application_id}.night-light')
-mouse_settings         = Settings.new_delayed(f'{application_id}.mouse')
-pointing_settings      = Settings.new_delayed(f'{application_id}.pointing')
-power_settings         = Settings.new_delayed(f'{application_id}.power')
-touchpad_settings      = Settings.new_delayed(f'{application_id}.touchpad')
-sound_settings         = Settings.new_delayed(f'{application_id}.sound')
-top_bar_settings       = Settings.new_delayed(f'{application_id}.top-bar')
+main_settings          = Settings.new_delayed(APP_ID)
+accessibility_settings = Settings.new_delayed(f'{APP_ID}.accessibility')
+appearance_settings    = Settings.new_delayed(f'{APP_ID}.appearance')
+font_settings          = Settings.new_delayed(f'{APP_ID}.fonts')
+login_screen_settings  = Settings.new_delayed(f'{APP_ID}.misc')
+night_light_settings   = Settings.new_delayed(f'{APP_ID}.night-light')
+mouse_settings         = Settings.new_delayed(f'{APP_ID}.mouse')
+pointing_settings      = Settings.new_delayed(f'{APP_ID}.pointing')
+power_settings         = Settings.new_delayed(f'{APP_ID}.power')
+touchpad_settings      = Settings.new_delayed(f'{APP_ID}.touchpad')
+sound_settings         = Settings.new_delayed(f'{APP_ID}.sound')
+top_bar_settings       = Settings.new_delayed(f'{APP_ID}.top-bar')
 
 
 all_settings = (

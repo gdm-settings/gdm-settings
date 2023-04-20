@@ -7,8 +7,8 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
+from gdm_settings import APP_ID, APP_NAME, VERSION
 from gdm_settings.lib import Property
-from . import info
 
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
@@ -53,7 +53,7 @@ class ReleaseNotesFetcher(GObject.Object):
         if not store.load_finish(result):
             return
 
-        app_info = store.get_app_by_id(info.application_id)
+        app_info = store.get_app_by_id(APP_ID)
         if not app_info:
             return
 
@@ -61,7 +61,7 @@ class ReleaseNotesFetcher(GObject.Object):
         if not releases:
             return
 
-        current_major = re.findall(r'[0-9]+', info.version)[0]
+        current_major = re.findall(r'[0-9]+', VERSION)[0]
         current_releases = (r for r in releases if r.get_version().startswith(current_major))
         current_releases_with_desc = [r for r in current_releases if r.get_description()]
 
@@ -92,10 +92,10 @@ def about_window(win):
     abt = Adw.AboutWindow(
         transient_for = win,
         modal         = True,
-        application_name = info.application_name,
-        application_icon = info.application_id,
+        application_name = APP_NAME,
+        application_icon = APP_ID,
         license_type     = Gtk.License.AGPL_3_0,
-        version          = info.version,
+        version          = VERSION,
         developer_name   = C_("Name of Developer", "Mazhar Hussain"),
         copyright = _("Copyright 2021-2023 Mazhar Hussain"),
         website   = "https://gdm-settings.github.io",

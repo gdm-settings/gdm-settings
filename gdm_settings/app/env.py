@@ -7,8 +7,8 @@ import sys
 
 from gi.repository import GLib
 
+from gdm_settings import APP_ID
 from .enums import PackageType
-from .info import application_id
 
 
 def read_os_release():
@@ -78,7 +78,7 @@ XDG_RUNTIME_DIR = GLib.get_user_runtime_dir()
 
 
 # Application-specific Directories
-TEMP_DIR       = os.path.join(XDG_RUNTIME_DIR, 'app', application_id)
+TEMP_DIR       = os.path.join(XDG_RUNTIME_DIR, 'app', APP_ID)
 HOST_DATA_DIRS = PATH(os.environ.get('HOST_DATA_DIRS', '/usr/local/share:/usr/share'))
 
 

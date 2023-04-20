@@ -11,10 +11,10 @@ gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
+from gdm_settings import APP_NAME, APP_ID, PROJECT_NAME, VERSION, APP_DATA_DIR
 from gdm_settings.lib import BackgroundTask, Settings
 
-from . import info
-Gio.Resource.load(info.data_dir+'/resources.gresource')._register()
+Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 
 from .about import about_window
 from .enums import PackageType
@@ -46,7 +46,7 @@ def set_logging_level(verbosity):
 class GdmSettingsApp(Adw.Application):
     '''The main Application class'''
     def __init__(self):
-        super().__init__(application_id=info.application_id)
+        super().__init__(application_id=APP_ID)
 
         def add_option(long_name, short_name, description, argument_name=None, argument_type='NONE'):
             self.add_main_option(long_name, ord(short_name),
@@ -66,7 +66,7 @@ class GdmSettingsApp(Adw.Application):
 
     def do_handle_local_options(self, options):
         if options.contains("version"):
-            print (info.application_name, f"({info.project_name})", f"v{info.version}")
+            print(APP_NAME, f"({PROJECT_NAME})", f"v{VERSION}")
             return 0
 
         set_logging_level(3)
@@ -96,7 +96,7 @@ class GdmSettingsApp(Adw.Application):
             win.present()
             return
 
-        logging.info(f"Application Version    = {info.version}")
+        logging.info(f"Application Version    = {VERSION}")
         logging.info(f"Operating System       = {env.OS_PRETTY_NAME}")
         logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
         logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
@@ -104,7 +104,7 @@ class GdmSettingsApp(Adw.Application):
         logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
         logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
-        self.settings = Settings(info.application_id)
+        self.settings = Settings(APP_ID)
 
         self.settings_manager = SettingsManager()
 

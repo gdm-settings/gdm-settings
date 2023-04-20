@@ -6,9 +6,9 @@ from gi.repository import Gtk
 from gi.repository import Gio
 from gi.repository import GObject
 
+from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
 from gdm_settings.lib import BackgroundTask, Settings, Property
 
-from .info import application_name, application_id, data_dir, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
 from .utils import run_on_host, resource_path
@@ -58,13 +58,13 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
     def __init__ (self, application, **props):
         super().__init__(**props)
 
-        if build_type != 'release':
+        if BUILD_TYPE != 'release':
             self.add_css_class('devel')
 
         self.application = application
         self.set_application(application)
 
-        self.props.title = application_name
+        self.props.title = APP_NAME
 
         self.builder = Gtk.Builder.new_from_resource(resource_path('ui/main-window.ui'))
 
@@ -120,7 +120,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         add_page('tools',      _('Tools'),            pages.ToolsPageContent(self))
 
     def bind_to_gsettings (self):
-        self.settings = Settings(f'{application_id}.window-state')
+        self.settings = Settings(f'{APP_ID}.window-state')
 
         self.settings.bind('width', self, 'default-width')
         self.settings.bind('height', self, 'default-height')

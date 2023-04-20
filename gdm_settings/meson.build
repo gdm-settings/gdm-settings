@@ -2,8 +2,10 @@ py_module_dir = python.get_install_dir() / 'gdm_settings'
 
 config = configuration_data({
   'prefix': get_option('prefix'),
-  'data_dir': get_option('prefix') / get_option('datadir'),
-  'locale_dir': get_option('prefix') / get_option('localedir'),
+  'version': meson.project_version(),
+  'datadir': get_option('prefix') / get_option('datadir'),
+  'localedir': get_option('prefix') / get_option('localedir'),
+  'buildtype': get_option('buildtype'),
   'py_install_dir': python.get_install_dir(),
 })
 

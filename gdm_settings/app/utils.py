@@ -2,7 +2,7 @@
 
 import subprocess
 
-from .info import resource_base_path
+from gdm_settings import resource_base_path
 from .enums import PackageType
 from . import env
 

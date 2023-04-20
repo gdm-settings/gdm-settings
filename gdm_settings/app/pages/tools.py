@@ -3,10 +3,10 @@ from gettext import gettext as _, pgettext as C_
 
 from gi.repository import Adw, Gtk
 
+from gdm_settings import APP_ID
 from gdm_settings.lib import SwitchRow, BackgroundTask, Settings
 
 from ..env import TEMP_DIR
-from ..info import application_id
 from ..privilege_escalation import CommandElevator
 from ..utils import resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
@@ -33,7 +33,7 @@ class ToolsPageContent (PageContent):
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
         # Bind to Settings
-        self.settings = Settings(f"{application_id}.tools")
+        self.settings = Settings(f"{APP_ID}.tools")
         self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
 
     def on_extract_shell_theme(self, button):
