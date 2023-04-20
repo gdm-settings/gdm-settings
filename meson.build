@@ -29,7 +29,7 @@ python = import('python').find_installation('python3')
 subdir('po')
 subdir('data')
 subdir('resources')
-subdir('src')
+subdir('gdm_settings')
 
 gnome.post_install(
      glib_compile_schemas: true,
