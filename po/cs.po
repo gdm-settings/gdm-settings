@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-03-21 11:46+0000\n"
+"PO-Revision-Date: 2023-04-21 16:52+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -282,7 +282,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Fixed: Fails to run on PureOS"
-msgstr ""
+msgstr "Opraveno: problémy se spuštěním na PureOS"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
@@ -297,10 +297,8 @@ msgid "Option to change cursor size"
 msgstr "Možnost nastavit velikost kurzoru"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-#, fuzzy
-#| msgid "Donation Request"
 msgid "A one-time donation request"
-msgstr "Žádost o podpoření"
+msgstr "Jednorázový darovací požadavek"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
@@ -1060,19 +1058,17 @@ msgid "Backing up default shell theme …"
 msgstr "Zálohování výchozího tématu shellu …"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "Použití nastavení GResource pro Ubuntu …"
+msgstr "Aplikování nastavení GResource pro {distro_name} …"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "obecný systém"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
