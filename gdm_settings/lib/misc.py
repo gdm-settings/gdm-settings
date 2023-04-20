@@ -4,15 +4,15 @@ import subprocess
 from gi.repository import GObject
 
 
-__all__ = ['get_stdout', 'list_files', 'Property']
+__all__ = ['get_stdout', 'list_files', 'GProperty']
 
 
-def Property(type, default=None,
-             *args,
-             readable=True, writable=True,
-             construct=False, construct_only=False,
-             additional_flags = GObject.ParamFlags(0),
-             **kwargs):
+def GProperty(type, default=None,
+              *args,
+              readable=True, writable=True,
+              construct=False, construct_only=False,
+              additional_flags = GObject.ParamFlags(0),
+              **kwargs):
     '''A wrapper around GObject.Property decorator
 
     Provides shorter syntax for creating GObject properties.

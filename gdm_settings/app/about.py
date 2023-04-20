@@ -8,7 +8,7 @@ from gi.repository import Gtk
 from gi.repository import GObject
 
 from gdm_settings import APP_ID, APP_NAME, VERSION
-from gdm_settings.lib import Property
+from gdm_settings.lib import GProperty
 
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
@@ -25,8 +25,8 @@ class ReleaseNotesFetcher(GObject.Object):
     __gtype_name__ = 'ReleaseNotesFetcher'
     _instance = None
 
-    notes = Property(str, default="")
-    version = Property(str, default="")
+    notes = GProperty(str, default="")
+    version = GProperty(str, default="")
 
     def __new__(cls):
         if not cls._instance:

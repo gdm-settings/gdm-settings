@@ -7,13 +7,13 @@ from gi.repository import Gio
 from gi.repository import GObject
 from gi.repository import GLib
 
-from gdm_settings.lib import Property
+from gdm_settings.lib import GProperty
 
 
 class SwitchRow (Adw.ActionRow):
     __gtype_name__ = 'SwitchRow'
 
-    enabled = Property(bool, default=False)
+    enabled = GProperty(bool, default=False)
 
     def __init__ (self, **props):
         super().__init__(**props)
@@ -28,9 +28,9 @@ class SwitchRow (Adw.ActionRow):
 class FileChooserButton (Gtk.Button):
     __gtype_name__ = 'FileChooserButton'
 
-    title = Property(str, default=_('Choose File'))
-    filters = Property(Gio.ListModel)
-    default_filter = Property(Gtk.FileFilter)
+    title = GProperty(str, default=_('Choose File'))
+    filters = GProperty(Gio.ListModel)
+    default_filter = GProperty(Gtk.FileFilter)
 
 
     def __init__ (self, **props):
@@ -64,7 +64,7 @@ class FileChooserButton (Gtk.Button):
             accept_label = _('Choose'))
 
 
-    @Property(str, default='')
+    @GProperty(str, default='')
     def filename (self):
         return self.file.get_path()
 
@@ -73,7 +73,7 @@ class FileChooserButton (Gtk.Button):
         self.file = Gio.File.new_for_path(value)
 
 
-    @Property(Gio.File)
+    @GProperty(Gio.File)
     def file (self):
         return self._file
 

@@ -7,7 +7,7 @@ from gi.repository import Gio
 from gi.repository import GObject
 
 from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
-from gdm_settings.lib import BackgroundTask, Settings, Property
+from gdm_settings.lib import BackgroundTask, Settings, GProperty
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
@@ -20,8 +20,8 @@ class TaskCounter(GObject.Object):
 
     __gtype_name__ = 'TaskCounter'
 
-    count = Property(int, default=0)
-    spinner = Property(Gtk.Spinner)
+    count = GProperty(int, default=0)
+    spinner = GProperty(Gtk.Spinner)
 
     def __init__ (self, **props):
         super().__init__(**props)

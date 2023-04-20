@@ -4,7 +4,7 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdm_settings.lib import Property
+from gdm_settings.lib import GProperty
 
 from ...utils import resource_path
 
@@ -13,8 +13,8 @@ from ...utils import resource_path
 class CursorSizeButton (Gtk.ToggleButton):
     __gtype_name__ = 'CursorSizeButton'
 
-    cursor_size = Property(int, default=24, construct_only=True)
-    size_name = Property(str)
+    cursor_size = GProperty(int, default=24, construct_only=True)
+    size_name = GProperty(str)
 
 
 @Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-size-selector.ui'))
@@ -30,7 +30,7 @@ class CursorSizeSelector (Gtk.ListBoxRow, Gtk.Buildable):
         self._selected_size = 0
         self._selected_name = ''
 
-    @Property(int)
+    @GProperty(int)
     def selected_size(self):
         return self._selected_size
 
@@ -49,7 +49,7 @@ class CursorSizeSelector (Gtk.ListBoxRow, Gtk.Buildable):
         self._selected_name = btn.size_name
         self.notify('selected-name')
 
-    @Property(str, writable=False)
+    @GProperty(str, writable=False)
     def selected_name(self):
         return self._selected_name
 
