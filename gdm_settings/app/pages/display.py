@@ -1,4 +1,3 @@
-import os
 import logging
 from gettext import gettext as _, pgettext as C_
 

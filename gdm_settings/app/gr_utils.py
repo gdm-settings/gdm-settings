@@ -2,7 +2,6 @@
 
 import os
 import shutil
-import logging
 import subprocess
 
 from gdm_settings import utils

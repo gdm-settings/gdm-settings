@@ -1,5 +1,5 @@
 import os
-from gettext import gettext as _, pgettext as C_
+from gettext import gettext as _
 
 from gi.repository import Adw, Gtk
 

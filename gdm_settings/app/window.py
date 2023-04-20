@@ -3,7 +3,6 @@ from gettext import gettext as _, pgettext as C_
 
 from gi.repository import Adw
 from gi.repository import Gtk
-from gi.repository import Gio
 from gi.repository import GObject
 
 from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE

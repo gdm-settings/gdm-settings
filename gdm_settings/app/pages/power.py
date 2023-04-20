@@ -1,5 +1,3 @@
-import os
-
 from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
