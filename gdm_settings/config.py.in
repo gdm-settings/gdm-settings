@@ -1,0 +1,6 @@
+import os
+
+
+PREFIX = "@prefix@"
+DATA_DIR = "@data_dir@"
+LOCALE_DIR = "@locale_dir@"
