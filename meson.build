@@ -31,6 +31,17 @@ subdir('data')
 subdir('resources')
 subdir('gdm_settings')
 
+configure_file(
+  input: 'gdm-settings.py.in',
+  output: meson.project_name(),
+  install: true,
+  install_dir: get_option('bindir'),
+  configuration: configuration_data({
+    'prefix': get_option('prefix'),
+    'py_install_dir': python.get_install_dir(),
+  }),
+)
+
 gnome.post_install(
      glib_compile_schemas: true,
     gtk_update_icon_cache: true,
