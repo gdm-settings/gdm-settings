@@ -46,5 +46,3 @@ install_subdir('lib',
 install_subdir('pages',
   install_dir: python.get_install_dir() / 'gdm_settings'
 )
-
-subdir('resources')

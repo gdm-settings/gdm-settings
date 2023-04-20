@@ -28,6 +28,7 @@ python = import('python').find_installation('python3')
 
 subdir('po')
 subdir('data')
+subdir('resources')
 subdir('src')
 
 gnome.post_install(
