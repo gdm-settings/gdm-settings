@@ -8,9 +8,10 @@ from gettext import gettext as _, pgettext as C_
 
 from gi.repository import GObject, Gio
 
+from gdm_settings.lib import Settings
+
 from .enums import PackageType, BackgroundType
 from .info import application_id
-from .lib import Settings
 from .privilege_escalation import CommandElevator
 from .theme_lists import shell_themes
 from . import env

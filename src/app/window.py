@@ -6,10 +6,11 @@ from gi.repository import Gtk
 from gi.repository import Gio
 from gi.repository import GObject
 
+from gdm_settings.lib import BackgroundTask, Settings, Property
+
 from .info import application_name, application_id, data_dir, build_type
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .lib import BackgroundTask, Settings, Property
 from .utils import run_on_host, resource_path
 from . import pages
 

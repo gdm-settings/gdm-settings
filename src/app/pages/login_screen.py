@@ -2,7 +2,8 @@ import os
 
 from gi.repository import Gtk
 
-from ..lib import ImageChooserButton, SwitchRow
+from gdm_settings.lib import ImageChooserButton, SwitchRow
+
 from ..utils import resource_path
 from ..settings import login_screen_settings
 from .common import PageContent

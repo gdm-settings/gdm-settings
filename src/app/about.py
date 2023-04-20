@@ -7,8 +7,8 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
+from gdm_settings.lib import Property
 from . import info
-from .lib import Property
 
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"

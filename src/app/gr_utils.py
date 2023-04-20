@@ -5,8 +5,9 @@ import shutil
 import logging
 import subprocess
 
+from gdm_settings import lib
+
 from . import env
-from . import lib
 
 ThemesDir              = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
 CustomThemeIdentity    = 'custom-theme'

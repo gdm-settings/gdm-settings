@@ -2,7 +2,8 @@ import os
 
 from gi.repository import Gtk
 
-from ..lib import SwitchRow
+from gdm_settings.lib import SwitchRow
+
 from ..utils import resource_path
 from ..settings import accessibility_settings, top_bar_settings
 from .common import PageContent

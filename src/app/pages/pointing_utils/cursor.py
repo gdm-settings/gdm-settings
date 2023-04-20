@@ -4,8 +4,9 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
+from gdm_settings.lib import Property
+
 from ...utils import resource_path
-from ...lib import Property
 
 
 @Gtk.Template(resource_path=resource_path('ui/pointing-page/cursor-size-button.ui'))

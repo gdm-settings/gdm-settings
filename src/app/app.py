@@ -11,13 +11,13 @@ gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
+from gdm_settings.lib import BackgroundTask, Settings
 
 from . import info
 Gio.Resource.load(info.data_dir+'/resources.gresource')._register()
 
 from .about import about_window
 from .enums import PackageType
-from .lib import BackgroundTask, Settings
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile

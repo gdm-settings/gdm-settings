@@ -1,6 +1,7 @@
 from gi.repository import Gtk
 
-from ..lib import SwitchRow
+from gdm_settings.lib import SwitchRow
+
 from ..utils import resource_path
 from ..settings import pointing_settings, mouse_settings, touchpad_settings
 from .common import PageContent
