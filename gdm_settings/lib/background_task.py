@@ -1,6 +1,10 @@
 from gi.repository import Gio
 from gi.repository import GObject
 
+from typing import Any
+from collections.abc import Callable
+
+Callback = Callable[[], Any]
 
 __all__ = ['InvalidGioTaskError', 'AlreadyRunningError', 'BackgroundTask']
 
@@ -12,14 +16,14 @@ class AlreadyRunningError (Exception): pass
 class BackgroundTask (GObject.Object):
     __gtype_name__ = 'BackgroundTask'
 
-    def __init__ (self, function, finish_callback, **props):
+    def __init__ (self, function: Callback, finish_callback: Callback, **props):
         super().__init__(**props)
 
         self.function = function
         self.finish_callback = finish_callback
         self._current = None
 
-    def start(self):
+    def start(self) -> None:
         if self._current:
             AlreadyRunningError('Task is already running')
 
@@ -31,7 +35,7 @@ class BackgroundTask (GObject.Object):
         self._current = task
 
     @staticmethod
-    def _thread_cb (task, self, task_data, cancellable):
+    def _thread_cb (task: Gio.Task, self, task_data: object, cancellable: Gio.Cancellable):
         try:
             retval = self.function()
             task.return_value(retval)
