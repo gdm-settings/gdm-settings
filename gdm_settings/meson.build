@@ -14,8 +14,11 @@ configure_file(
   }),
 )
 
-install_data(
-  files('__init__.py'),
+install_data(files(
+    '__init__.py',
+    'widgets.py',
+  ),
+
   install_dir: py_module_dir
 )
 

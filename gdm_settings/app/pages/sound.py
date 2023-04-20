@@ -2,7 +2,7 @@ import os
 
 from gi.repository import Gtk
 
-from gdm_settings.lib import SwitchRow
+from gdm_settings.widgets import SwitchRow
 
 from ..utils import resource_path
 from ..settings import sound_settings

@@ -1,15 +1,28 @@
 from gettext import gettext as _, pgettext as C_
 
+from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import Pango
 from gi.repository import Gio
 from gi.repository import GObject
 from gi.repository import GLib
 
-from .misc import Property
+from gdm_settings.lib import Property
 
 
-__all__ = ['FileChooserButton', 'ImageChooserButton']
+class SwitchRow (Adw.ActionRow):
+    __gtype_name__ = 'SwitchRow'
+
+    enabled = Property(bool, default=False)
+
+    def __init__ (self, **props):
+        super().__init__(**props)
+
+        switch = Gtk.Switch(valign=Gtk.Align.CENTER)
+        switch.bind_property('active', self, 'enabled',
+                             GObject.BindingFlags.SYNC_CREATE|GObject.BindingFlags.BIDIRECTIONAL)
+        self.add_suffix(switch)
+        self.set_activatable_widget(switch)
 
 
 class FileChooserButton (Gtk.Button):
