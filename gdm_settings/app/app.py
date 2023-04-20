@@ -11,7 +11,7 @@ gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
-from gdm_settings import APP_NAME, APP_ID, PROJECT_NAME, VERSION, APP_DATA_DIR
+from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
 from gdm_settings.lib import BackgroundTask, Settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
@@ -66,7 +66,7 @@ class GdmSettingsApp(Adw.Application):
 
     def do_handle_local_options(self, options):
         if options.contains("version"):
-            print(APP_NAME, f"({PROJECT_NAME})", f"v{VERSION}")
+            print(APP_NAME, VERSION)
             return 0
 
         set_logging_level(3)
