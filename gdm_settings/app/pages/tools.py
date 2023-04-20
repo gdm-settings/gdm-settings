@@ -4,7 +4,7 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import Adw, Gtk
 
 from gdm_settings import APP_ID
-from gdm_settings.utils import BackgroundTask, Settings
+from gdm_settings.utils import BackgroundTask, GSettings
 from gdm_settings.widgets import SwitchRow
 
 from ..env import TEMP_DIR
@@ -33,8 +33,8 @@ class ToolsPageContent (PageContent):
         self.window.task_counter.register(self.extract_shell_theme_button)
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
-        # Bind to Settings
-        self.settings = Settings(f"{APP_ID}.tools")
+        # Bind to GSettings
+        self.settings = GSettings(f"{APP_ID}.tools")
         self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
 
     def on_extract_shell_theme(self, button):

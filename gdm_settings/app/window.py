@@ -7,7 +7,7 @@ from gi.repository import Gio
 from gi.repository import GObject
 
 from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
-from gdm_settings.utils import BackgroundTask, GProperty, Settings
+from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
@@ -120,7 +120,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         add_page('tools',      _('Tools'),            pages.ToolsPageContent(self))
 
     def bind_to_gsettings (self):
-        self.settings = Settings(f'{APP_ID}.window-state')
+        self.settings = GSettings(f'{APP_ID}.window-state')
 
         self.settings.bind('width', self, 'default-width')
         self.settings.bind('height', self, 'default-height')

@@ -128,7 +128,7 @@ class BackgroundTask (GObject.Object):
 
 
 class _MappingFuncs:
-    '''A collection of functions for 'Settings' class that convert values
+    '''A collection of functions for 'GSettings' class that convert values
     from Settings keys to GObject properties and vice versa.'''
 
     class RGBA:
@@ -173,10 +173,10 @@ class _MappingFuncs:
             return lyst[index]
 
 
-class Settings(Gio.Settings):
+class GSettings(Gio.Settings):
     '''A wrapper around Gio.Settings for easy usage in Python'''
 
-    __gtype_name__ = "Settings"
+    __gtype_name__ = "_Settings"    # "GSettings" name is not available
     _default_flag = Gio.SettingsBindFlags.DEFAULT
 
     def __init__(self, schema_id: str = None, **props):

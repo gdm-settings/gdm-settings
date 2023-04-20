@@ -9,7 +9,7 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 
 from gdm_settings import APP_ID
-from gdm_settings.utils import Settings
+from gdm_settings.utils import GSettings
 
 from .enums import PackageType, BackgroundType
 from .privilege_escalation import CommandElevator
@@ -18,18 +18,18 @@ from . import env
 from . import gr_utils
 
 
-main_settings          = Settings.new_delayed(APP_ID)
-accessibility_settings = Settings.new_delayed(f'{APP_ID}.accessibility')
-appearance_settings    = Settings.new_delayed(f'{APP_ID}.appearance')
-font_settings          = Settings.new_delayed(f'{APP_ID}.fonts')
-login_screen_settings  = Settings.new_delayed(f'{APP_ID}.misc')
-night_light_settings   = Settings.new_delayed(f'{APP_ID}.night-light')
-mouse_settings         = Settings.new_delayed(f'{APP_ID}.mouse')
-pointing_settings      = Settings.new_delayed(f'{APP_ID}.pointing')
-power_settings         = Settings.new_delayed(f'{APP_ID}.power')
-touchpad_settings      = Settings.new_delayed(f'{APP_ID}.touchpad')
-sound_settings         = Settings.new_delayed(f'{APP_ID}.sound')
-top_bar_settings       = Settings.new_delayed(f'{APP_ID}.top-bar')
+main_settings          = GSettings.new_delayed(APP_ID)
+accessibility_settings = GSettings.new_delayed(f'{APP_ID}.accessibility')
+appearance_settings    = GSettings.new_delayed(f'{APP_ID}.appearance')
+font_settings          = GSettings.new_delayed(f'{APP_ID}.fonts')
+login_screen_settings  = GSettings.new_delayed(f'{APP_ID}.misc')
+night_light_settings   = GSettings.new_delayed(f'{APP_ID}.night-light')
+mouse_settings         = GSettings.new_delayed(f'{APP_ID}.mouse')
+pointing_settings      = GSettings.new_delayed(f'{APP_ID}.pointing')
+power_settings         = GSettings.new_delayed(f'{APP_ID}.power')
+touchpad_settings      = GSettings.new_delayed(f'{APP_ID}.touchpad')
+sound_settings         = GSettings.new_delayed(f'{APP_ID}.sound')
+top_bar_settings       = GSettings.new_delayed(f'{APP_ID}.top-bar')
 
 
 all_settings = (
@@ -51,9 +51,9 @@ all_settings = (
 class LogoImageNotFoundError (FileNotFoundError): pass
 
 
-def _Settings(schema_id):
+def _GSettings(schema_id):
     if schema := Gio.SettingsSchemaSource.get_default().lookup(schema_id, recursive=True):
-        return Settings(schema_id)
+        return GSettings(schema_id)
 
 
 class SettingsManager (GObject.Object):
@@ -132,15 +132,15 @@ class SettingsManager (GObject.Object):
     def load_session_settings(self):
         '''Load user's Gnome settings into the app'''
 
-        if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
+        if user_settings := _GSettings('org.gnome.shell.extensions.user-theme'):
             appearance_settings['shell-theme'] = user_settings['name']
 
-        if user_settings := _Settings("org.gnome.desktop.a11y"):
+        if user_settings := _GSettings("org.gnome.desktop.a11y"):
             source_key = "always-show-universal-access-status"
             target_key = "always-show-accessibility-menu"
             accessibility_settings[target_key] = user_settings[source_key]
 
-        if user_settings := _Settings("org.gnome.desktop.interface"):
+        if user_settings := _GSettings("org.gnome.desktop.interface"):
             appearance_settings['icon-theme'] = user_settings["icon-theme"]
             appearance_settings['cursor-theme'] = user_settings["cursor-theme"]
 
@@ -156,25 +156,25 @@ class SettingsManager (GObject.Object):
             top_bar_settings['show-seconds'] = user_settings["clock-show-seconds"]
             top_bar_settings['show-battery-percentage'] = user_settings["show-battery-percentage"]
 
-        if user_settings := _Settings("org.gnome.desktop.sound"):
+        if user_settings := _GSettings("org.gnome.desktop.sound"):
             sound_settings['theme'] = user_settings["theme-name"]
             sound_settings['event-sounds'] = user_settings["event-sounds"]
             sound_settings['feedback-sounds'] = user_settings["input-feedback-sounds"]
             sound_settings['over-amplification'] = user_settings["allow-volume-above-100-percent"]
 
-        if user_settings := _Settings("org.gnome.desktop.peripherals.mouse"):
+        if user_settings := _GSettings("org.gnome.desktop.peripherals.mouse"):
             mouse_settings['pointer-acceleration'] = user_settings["accel-profile"]
             mouse_settings['natural-scrolling'] = user_settings["natural-scroll"]
             mouse_settings['speed'] = user_settings["speed"]
 
-        if user_settings := _Settings("org.gnome.desktop.peripherals.touchpad"):
+        if user_settings := _GSettings("org.gnome.desktop.peripherals.touchpad"):
             touchpad_settings['tap-to-click'] = user_settings["tap-to-click"]
             touchpad_settings['natural-scrolling'] = user_settings["natural-scroll"]
             touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
             touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
             touchpad_settings['speed'] = user_settings["speed"]
 
-        if user_settings := _Settings("org.gnome.settings-daemon.plugins.power"):
+        if user_settings := _GSettings("org.gnome.settings-daemon.plugins.power"):
             power_settings['power-button-action'] = user_settings['power-button-action']
             power_settings['auto-power-saver'] = user_settings['power-saver-profile-on-low-battery']
             power_settings['dim-screen'] = user_settings['idle-dim']
@@ -183,14 +183,14 @@ class SettingsManager (GObject.Object):
             power_settings['suspend-on-battery'] = user_settings['sleep-inactive-battery-type'] == 'suspend'
             power_settings['suspend-on-battery-delay'] = user_settings['sleep-inactive-battery-timeout'] / 60
 
-        if user_settings := _Settings("org.gnome.desktop.session"):
+        if user_settings := _GSettings("org.gnome.desktop.session"):
             if user_settings['idle-delay']:
                 power_settings['blank-screen'] = True
                 power_settings['idle-delay'] = user_settings['idle-delay'] / 60
             else:
                 power_settings['blank-screen'] = False
 
-        if user_settings := _Settings("org.gnome.settings-daemon.plugins.color"):
+        if user_settings := _GSettings("org.gnome.settings-daemon.plugins.color"):
             night_light_settings['enabled'] = user_settings["night-light-enabled"]
             night_light_settings['schedule-automatic'] = user_settings["night-light-schedule-automatic"]
             night_light_settings['temperature'] = user_settings["night-light-temperature"]
@@ -213,7 +213,7 @@ class SettingsManager (GObject.Object):
             night_light_settings['end-hour'] = end_hour
             night_light_settings['end-minute'] = end_minute
 
-        if user_settings := _Settings("org.gnome.login-screen"):
+        if user_settings := _GSettings("org.gnome.login-screen"):
             login_screen_settings['enable-welcome-message'] = user_settings["banner-message-enable"]
             login_screen_settings['welcome-message'] = user_settings["banner-message-text"]
             login_screen_settings['logo'] = user_settings["logo"]
@@ -576,7 +576,7 @@ class SettingsManager (GObject.Object):
             # pure/original version of the default shell theme
             # Note: We don't want to change user's shell theme if user set it explicitly to
             # default in order to match their GDM theme
-            if user_settings := _Settings('org.gnome.shell.extensions.user-theme'):
+            if user_settings := _GSettings('org.gnome.shell.extensions.user-theme'):
                 if (user_settings['name'] == ''
                 and main_settings["never-applied"]):
                     user_settings['name'] = 'default-pure'
