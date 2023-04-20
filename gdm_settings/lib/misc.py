@@ -1,18 +1,25 @@
 import os
 import subprocess
 
+from typing import Optional
+from collections.abc import Iterator
+
 from gi.repository import GObject
 
 
 __all__ = ['get_stdout', 'list_files', 'GProperty']
 
 
-def GProperty(type, default=None,
+def GProperty(type: GObject.GType,
+              default: Optional[object] = None,
               *args,
-              readable=True, writable=True,
-              construct=False, construct_only=False,
-              additional_flags = GObject.ParamFlags(0),
-              **kwargs):
+              readable: bool = True,
+              writable: bool = True,
+              construct: bool = False,
+              construct_only: bool = False,
+              additional_flags: GObject.ParamFlags = GObject.ParamFlags(0),
+              **kwargs,
+              ) -> GObject.Property:
     '''A wrapper around GObject.Property decorator
 
     Provides shorter syntax for creating GObject properties.
@@ -31,7 +38,10 @@ def GProperty(type, default=None,
     return GObject.Property(*args, type=type, default=default, flags=flags, **kwargs)
 
 
-def get_stdout(command, /, *, decode=True):
+def get_stdout(command: str | list [str],
+               /, *,
+               decode: bool = True,
+               ) -> str | bytes:
     '''get standard output of a command'''
 
     if isinstance(command, str):
@@ -45,7 +55,11 @@ def get_stdout(command, /, *, decode=True):
     return stdout
 
 
-def list_files(dir_path, base=None, *, recursive=True):
+def list_files(dir_path: str,
+               base: Optional[str] = None,
+               *,
+               recursive: bool = True,
+               ) -> Iterator[str]:
     """list files (only) inside a directory"""
 
     if base is None:
