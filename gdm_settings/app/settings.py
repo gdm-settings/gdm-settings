@@ -19,17 +19,17 @@ from . import gr_utils
 
 
 main_settings          = GSettings.new_delayed(APP_ID)
-accessibility_settings = GSettings.new_delayed(f'{APP_ID}.accessibility')
-appearance_settings    = GSettings.new_delayed(f'{APP_ID}.appearance')
-font_settings          = GSettings.new_delayed(f'{APP_ID}.fonts')
-login_screen_settings  = GSettings.new_delayed(f'{APP_ID}.misc')
-night_light_settings   = GSettings.new_delayed(f'{APP_ID}.night-light')
-mouse_settings         = GSettings.new_delayed(f'{APP_ID}.mouse')
-pointing_settings      = GSettings.new_delayed(f'{APP_ID}.pointing')
-power_settings         = GSettings.new_delayed(f'{APP_ID}.power')
-touchpad_settings      = GSettings.new_delayed(f'{APP_ID}.touchpad')
-sound_settings         = GSettings.new_delayed(f'{APP_ID}.sound')
-top_bar_settings       = GSettings.new_delayed(f'{APP_ID}.top-bar')
+accessibility_settings = GSettings.new_delayed(APP_ID + '.accessibility')
+appearance_settings    = GSettings.new_delayed(APP_ID + '.appearance')
+font_settings          = GSettings.new_delayed(APP_ID + '.fonts')
+login_screen_settings  = GSettings.new_delayed(APP_ID + '.misc')
+night_light_settings   = GSettings.new_delayed(APP_ID + '.night-light')
+mouse_settings         = GSettings.new_delayed(APP_ID + '.mouse')
+pointing_settings      = GSettings.new_delayed(APP_ID + '.pointing')
+power_settings         = GSettings.new_delayed(APP_ID + '.power')
+touchpad_settings      = GSettings.new_delayed(APP_ID + '.touchpad')
+sound_settings         = GSettings.new_delayed(APP_ID + '.sound')
+top_bar_settings       = GSettings.new_delayed(APP_ID + '.top-bar')
 
 
 all_settings = (

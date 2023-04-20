@@ -34,7 +34,7 @@ class ToolsPageContent (PageContent):
         self.extract_shell_theme_button.connect('clicked', self.on_extract_shell_theme)
 
         # Bind to GSettings
-        self.settings = GSettings(f"{APP_ID}.tools")
+        self.settings = GSettings(APP_ID + '.tools')
         self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
 
     def on_extract_shell_theme(self, button):
