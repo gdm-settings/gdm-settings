@@ -4,6 +4,7 @@ import ast
 import os
 import re
 import sys
+import subprocess
 
 from gi.repository import GLib
 
@@ -109,3 +110,13 @@ if OS_VERSION_CODENAME: _pretty_name += f' ({OS_VERSION_CODENAME})'
 OS_PRETTY_NAME = os_release.get('PRETTY_NAME', _pretty_name)
 
 OS_IDs = [OS_ID] + OS_ID_LIKE.split()
+
+
+def run_on_host(command, *args, **kwargs):
+    if isinstance(command, str):
+        command = [command]
+
+    if PACKAGE_TYPE is PackageType.Flatpak:
+        command = ['flatpak-spawn', '--host'] + command
+
+    return subprocess.run(command, *args, **kwargs)

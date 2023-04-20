@@ -1,7 +1,6 @@
 import os
 
-from .utils import run_on_host
-from .env import TEMP_DIR
+from .env import TEMP_DIR, run_on_host
 
 
 class NoCommandsFoundError(Exception): pass

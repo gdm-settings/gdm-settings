@@ -11,7 +11,6 @@ source_files = files(
   'privilege_escalation.py',
   'settings.py',
   'theme_lists.py',
-  'utils.py',
   'window.py',
 )
 install_data(source_files,

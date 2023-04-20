@@ -10,7 +10,7 @@ from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .utils import run_on_host
+from .env import run_on_host
 from . import pages
 
 
