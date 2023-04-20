@@ -45,6 +45,9 @@ def set_logging_level(verbosity):
 
 class GdmSettingsApp(Adw.Application):
     '''The main Application class'''
+
+    __gtype_name__ = "GdmSettingsApp"
+
     def __init__(self):
         super().__init__(application_id=APP_ID)
 
