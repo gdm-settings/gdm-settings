@@ -7,7 +7,6 @@ from gi.repository import Gtk
 from gdm_settings.utils import BackgroundTask
 from gdm_settings.widgets import SwitchRow
 
-from ..utils import resource_path
 from ..settings import night_light_settings as nl_settings
 from .common import PageContent
 
@@ -20,7 +19,7 @@ class DisplayPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/display-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/display-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

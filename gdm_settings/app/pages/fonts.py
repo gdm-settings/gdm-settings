@@ -1,6 +1,5 @@
 from gi.repository import Gtk
 
-from ..utils import resource_path
 from ..settings import font_settings
 from .common import PageContent
 
@@ -13,7 +12,7 @@ class FontsPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/fonts-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/fonts-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

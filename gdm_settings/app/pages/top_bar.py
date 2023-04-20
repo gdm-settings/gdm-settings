@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
 
-from ..utils import resource_path
 from ..settings import accessibility_settings, top_bar_settings
 from .common import PageContent
 
@@ -15,7 +14,7 @@ class TopBarPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/top-bar-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/top-bar-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

@@ -10,7 +10,7 @@ from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .utils import run_on_host, resource_path
+from .utils import run_on_host
 from . import pages
 
 
@@ -65,7 +65,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.props.title = APP_NAME
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/main-window.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/main-window.ui')
 
         self.set_content(self.builder.get_object('content_box'))
 

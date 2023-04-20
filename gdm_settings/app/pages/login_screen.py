@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdm_settings.widgets import ImageChooserButton, SwitchRow
 
-from ..utils import resource_path
 from ..settings import login_screen_settings
 from .common import PageContent
 
@@ -15,7 +14,7 @@ class LoginScreenPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/login-screen-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/login-screen-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

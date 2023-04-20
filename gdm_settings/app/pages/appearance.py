@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdm_settings.widgets import ImageChooserButton
 
-from ..utils import resource_path
 from ..enums import BackgroundType
 from ..settings import appearance_settings
 from ..theme_lists import shell_themes, icon_themes, cursor_themes
@@ -17,7 +16,7 @@ class AppearancePageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/appearance-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/appearance-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

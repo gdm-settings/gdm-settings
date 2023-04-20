@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
 
-from ..utils import resource_path
 from ..settings import pointing_settings, mouse_settings, touchpad_settings
 from .common import PageContent
 from .pointing_utils.cursor import CursorSizeSelector
@@ -16,7 +15,7 @@ class PointingPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/pointing-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/pointing-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

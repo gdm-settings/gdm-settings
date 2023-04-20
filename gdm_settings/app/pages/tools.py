@@ -9,7 +9,6 @@ from gdm_settings.widgets import SwitchRow
 
 from ..env import TEMP_DIR
 from ..privilege_escalation import CommandElevator
-from ..utils import resource_path
 from ..gr_utils import extract_default_theme, ThemesDir
 from .common import PageContent
 
@@ -22,7 +21,7 @@ class ToolsPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/tools-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/tools-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 

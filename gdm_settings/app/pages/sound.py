@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
 
-from ..utils import resource_path
 from ..settings import sound_settings
 from ..theme_lists import sound_themes
 from .common import PageContent
@@ -16,7 +15,7 @@ class SoundPageContent (PageContent):
 
         self.window = window
 
-        self.builder = Gtk.Builder.new_from_resource(resource_path('ui/sound-page.ui'))
+        self.builder = Gtk.Builder.new_from_resource('/app/ui/sound-page.ui')
 
         self.set_child(self.builder.get_object('content_box'))
 
