@@ -12,7 +12,7 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
 from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
-from gdm_settings.lib import BackgroundTask, Settings
+from gdm_settings.utils import BackgroundTask, Settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 

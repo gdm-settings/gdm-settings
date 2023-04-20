@@ -9,7 +9,7 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 
 from gdm_settings import APP_ID
-from gdm_settings.lib import Settings
+from gdm_settings.utils import Settings
 
 from .enums import PackageType, BackgroundType
 from .privilege_escalation import CommandElevator

@@ -17,12 +17,9 @@ configure_file(
 install_data(files(
     '__init__.py',
     'widgets.py',
+    'utils.py',
   ),
 
-  install_dir: py_module_dir
-)
-
-install_subdir('lib',
   install_dir: py_module_dir
 )
 

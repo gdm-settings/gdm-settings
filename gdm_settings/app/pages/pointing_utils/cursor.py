@@ -4,7 +4,7 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdm_settings.lib import GProperty
+from gdm_settings.utils import GProperty
 
 from ...utils import resource_path
 

@@ -7,7 +7,7 @@ from gi.repository import Gio
 from gi.repository import GObject
 
 from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
-from gdm_settings.lib import BackgroundTask, Settings, GProperty
+from gdm_settings.utils import BackgroundTask, GProperty, Settings
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError

@@ -8,7 +8,7 @@ from gi.repository import Gtk
 from gi.repository import GObject
 
 from gdm_settings import APP_ID, APP_NAME, VERSION
-from gdm_settings.lib import GProperty
+from gdm_settings.utils import GProperty
 
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"

@@ -5,7 +5,7 @@ import shutil
 import logging
 import subprocess
 
-from gdm_settings import lib
+from gdm_settings import utils
 
 from . import env
 
@@ -45,8 +45,8 @@ def is_unmodified(gresourceFile:str):
         gresourceFile = env.HOST_ROOT + gresourceFile
 
     if os.path.exists(gresourceFile):
-        if lib.get_stdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
-            if not lib.get_stdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
+        if utils.get_stdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
+            if not utils.get_stdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
                 return True
     return False
 
@@ -65,7 +65,7 @@ def extract_default_theme(destination:str, /):
 
     destination_shell_dir = os.path.join(destination, 'gnome-shell')
     gresource_file = get_default()
-    resource_list = lib.get_stdout(["gresource", "list", env.HOST_ROOT + gresource_file]).splitlines()
+    resource_list = utils.get_stdout(["gresource", "list", env.HOST_ROOT + gresource_file]).splitlines()
 
     if not gresource_file:
         raise FileNotFoundError('No unmodified GResource file of the default shell theme was found')
@@ -73,7 +73,7 @@ def extract_default_theme(destination:str, /):
     for resource in resource_list:
         filename = resource.removeprefix("/org/gnome/shell/theme/")
         filepath = os.path.join(destination_shell_dir, filename)
-        content  = lib.get_stdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource],
+        content  = utils.get_stdout(["gresource", "extract", env.HOST_ROOT + gresource_file, resource],
                                   decode=False)
 
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
@@ -137,7 +137,7 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
         print('<?xml version="1.0" encoding="UTF-8"?>',
               '<gresources>',
               ' <gresource prefix="/org/gnome/shell/theme">',
-            *('  <file>'+file+'</file>' for file in lib.list_files(temp_shell_dir)),
+            *('  <file>'+file+'</file>' for file in utils.list_files(temp_shell_dir)),
               ' </gresource>',
               '</gresources>',
 

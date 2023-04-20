@@ -4,7 +4,7 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import Adw, Gtk
 
 from gdm_settings import APP_ID
-from gdm_settings.lib import BackgroundTask, Settings
+from gdm_settings.utils import BackgroundTask, Settings
 from gdm_settings.widgets import SwitchRow
 
 from ..env import TEMP_DIR

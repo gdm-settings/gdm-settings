@@ -5,7 +5,7 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import Adw
 from gi.repository import Gtk
 
-from gdm_settings.lib import BackgroundTask
+from gdm_settings.utils import BackgroundTask
 from gdm_settings.widgets import SwitchRow
 
 from ..utils import resource_path
