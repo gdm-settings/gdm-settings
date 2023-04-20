@@ -100,7 +100,6 @@ def about_window(win):
         copyright = _("Copyright 2021-2023 Mazhar Hussain"),
         website   = "https://gdm-settings.github.io",
         developers  = [mazhar_hussain],
-        designers   = [mazhar_hussain],
         documenters = [mazhar_hussain],
         artists     = [thales_binda],
 
