@@ -10,7 +10,7 @@ from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .env import run_on_host
+from .cmd import Command
 from . import pages
 
 
@@ -170,4 +170,4 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
     def on_logout_dialog_response (self, dialog, response):
         if response == 'log-out':
-            run_on_host(['gnome-session-quit', '--no-prompt'])
+            Command('gnome-session-quit --no-prompt').run()

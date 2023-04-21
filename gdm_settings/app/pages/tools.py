@@ -8,7 +8,7 @@ from gdm_settings.utils import BackgroundTask, GSettings
 from gdm_settings.widgets import SwitchRow
 
 from ..env import TEMP_DIR
-from ..privilege_escalation import CommandElevator
+from ..cmd import Command
 from ..gr_utils import extract_default_theme, ThemesDir
 from .common import PageContent
 
@@ -68,8 +68,7 @@ class ToolsPageContent (PageContent):
                 shell_css.write(self.window.application.settings_manager.get_setting_css())
 
         # Copy extracted theme to its permanent path
-        command_elevator = CommandElevator()
-        command_elevator.add(f'cp -rfT {temp_theme_path} {perm_theme_path}')
-        status = command_elevator.run()
+        cmd = Command('cp', '-rfT', temp_theme_path, perm_theme_path)
+        res = cmd.run(as_root=True)
 
-        return status, perm_theme_name
+        return res, perm_theme_name

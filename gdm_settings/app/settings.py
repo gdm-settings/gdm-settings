@@ -12,7 +12,7 @@ from gdm_settings import APP_ID
 from gdm_settings.utils import GSettings
 
 from .enums import PackageType, BackgroundType
-from .privilege_escalation import CommandElevator
+from .cmd import CommandList
 from .theme_lists import shell_themes
 from . import env
 from . import gr_utils
@@ -63,7 +63,7 @@ class SettingsManager (GObject.Object):
 
         os.makedirs(env.TEMP_DIR, exist_ok=True)
 
-        self.command_elevator = CommandElevator()
+        self.commands = CommandList()
 
         if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
             self.load_session_settings()
@@ -314,15 +314,15 @@ class SettingsManager (GObject.Object):
         logging.info(_("Backing up default shell theme …"))
 
         if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
-            self.command_elevator.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
+            self.commands.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
 
         os.makedirs(env.TEMP_DIR, exist_ok=True)
 
         gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
 
-        self.command_elevator.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
-        self.command_elevator.add(f"mkdir -p {gr_utils.ThemesDir}")
-        self.command_elevator.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
+        self.commands.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
+        self.commands.add(f"mkdir -p {gr_utils.ThemesDir}")
+        self.commands.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
 
     def apply_shell_theme_settings(self):
         ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
@@ -368,7 +368,7 @@ class SettingsManager (GObject.Object):
         def add_commands(distro_name, special_commands):
             message = raw_message.format(distro_name = distro_name)
             logging.info(message)
-            self.command_elevator.add('\n'.join(common_commands + special_commands))
+            self.commands.add('\n'.join(common_commands + special_commands))
 
         if gr_utils.UbuntuGdmGresourceFile:
             name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
@@ -552,15 +552,15 @@ class SettingsManager (GObject.Object):
 
             logo_temp = os.path.join(env.TEMP_DIR, 'logo.temp')
             shutil.copy(logo_file, logo_temp)
-            self.command_elevator.add(f"install -m644 '{logo_temp}' -T '{logo}'")
+            self.commands.add(f"install -m644 '{logo_temp}' -T '{logo}'")
 
         overriding_files = self.get_overriding_files()
         if overriding_files:
-            self.command_elevator.add(['rm', *overriding_files])
+            self.commands.add('rm', *overriding_files)
 
-        self.command_elevator.add(f"install -Dm644 '{temp_conf_path}' -t '{gdm_conf_dir}'")
-        self.command_elevator.add(f"install -Dm644 '{temp_profile_path}' -T '{gdm_profile_path}'")
-        self.command_elevator.add("dconf update")
+        self.commands.add(f"install -Dm644 '{temp_conf_path}' -t '{gdm_conf_dir}'")
+        self.commands.add(f"install -Dm644 '{temp_profile_path}' -T '{gdm_profile_path}'")
+        self.commands.add("dconf update")
 
     def apply_settings(self) -> bool:
         ''' Apply all settings '''
@@ -568,7 +568,7 @@ class SettingsManager (GObject.Object):
         self.apply_shell_theme_settings()
         self.apply_dconf_settings()
 
-        status = self.command_elevator.run()
+        status = self.commands.run()
 
         if status.success:
             # When we change GDM shell theme it becomes the default theme but for the users
@@ -602,42 +602,42 @@ class SettingsManager (GObject.Object):
         shutil.copyfile(user_monitors_xml, temp_monitors_xml)
         os.chmod(temp_monitors_xml, 0o644)
 
-        self.command_elevator.add(['machinectl', 'shell', f'{gr_utils.GdmUsername}@', '/usr/bin/env',
-                                   'gsettings', 'set', 'experimental-features',
-                                   '"[\'scale-monitor-framebuffer\']"',
-                                   '&>/dev/null',
-                                 ])
+        self.commands.add(['machinectl', 'shell', f'{gr_utils.GdmUsername}@', '/usr/bin/env',
+                             'gsettings', 'set', 'experimental-features',
+                             '"[\'scale-monitor-framebuffer\']"',
+                             '&>/dev/null',
+                           ])
 
-        self.command_elevator.add(['install', '-Dm644',
-                                   '-o', gr_utils.GdmUsername,
-                                   temp_monitors_xml,
-                                   f'~{gr_utils.GdmUsername}/.config/monitors.xml',
-                                 ])
+        self.commands.add(['install', '-Dm644',
+                             '-o', gr_utils.GdmUsername,
+                             temp_monitors_xml,
+                             f'~{gr_utils.GdmUsername}/.config/monitors.xml',
+                           ])
 
-        return self.command_elevator.run()
+        return self.commands.run()
 
     def reset_settings(self) -> bool:
         if gr_utils.UbuntuGdmGresourceFile:
             logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
-            self.command_elevator.add(['update-alternatives',  '--quiet',  '--remove',
-                                        os.path.basename(gr_utils.UbuntuGdmGresourceFile),
-                                        gr_utils.CustomGresourceFile,
-                                     ])
-            self.command_elevator.add(f'rm -f {gr_utils.CustomGresourceFile}')
+            self.commands.add(['update-alternatives',  '--quiet',  '--remove',
+                                  os.path.basename(gr_utils.UbuntuGdmGresourceFile),
+                                  gr_utils.CustomGresourceFile,
+                               ])
+            self.commands.add(f'rm -f {gr_utils.CustomGresourceFile}')
         elif os.path.exists(gr_utils.DefaultGresourceFile):
             logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
-            self.command_elevator.add(['mv', '-f',
-                                       gr_utils.DefaultGresourceFile,
-                                       gr_utils.ShellGresourceFile,
-                                     ])
-            self.command_elevator.add(f"chown root: {gr_utils.ShellGresourceFile}")
-            self.command_elevator.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
+            self.commands.add(['mv', '-f',
+                                 gr_utils.DefaultGresourceFile,
+                                 gr_utils.ShellGresourceFile,
+                               ])
+            self.commands.add(f"chown root: {gr_utils.ShellGresourceFile}")
+            self.commands.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
 
-        self.command_elevator.add("rm -f /etc/dconf/profile/gdm")
-        self.command_elevator.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
-        self.command_elevator.add("dconf update")
+        self.commands.add("rm -f /etc/dconf/profile/gdm")
+        self.commands.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
+        self.commands.add("dconf update")
 
-        if self.command_elevator.run():
+        if self.commands.run():
 
             for settings in all_settings:
                 for key in settings.props.settings_schema.list_keys():
