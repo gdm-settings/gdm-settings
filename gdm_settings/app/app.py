@@ -12,12 +12,12 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
 from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR, resource_base_path
+from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 
 from .about import about_window
-from .enums import PackageType
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile

@@ -1,8 +1,8 @@
 from gi.repository import Gtk
 
+from gdm_settings.enums import BackgroundType
 from gdm_settings.widgets import ImageChooserButton
 
-from ..enums import BackgroundType
 from ..settings import appearance_settings
 from ..theme_lists import shell_themes, icon_themes, cursor_themes
 from .common import PageContent

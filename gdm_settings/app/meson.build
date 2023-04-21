@@ -4,7 +4,6 @@ source_files = files(
   '__init__.py',
   'about.py',
   'app.py',
-  'enums.py',
   'env.py',
   'gr_utils.py',
   'log.py',

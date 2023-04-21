@@ -2,7 +2,8 @@ import os
 import subprocess
 from collections.abc import Sequence
 
-from .enums import PackageType
+from gdm_settings.enums import PackageType
+
 from .env import TEMP_DIR, PACKAGE_TYPE
 
 

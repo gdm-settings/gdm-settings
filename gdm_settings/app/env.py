@@ -8,7 +8,7 @@ import sys
 from gi.repository import GLib
 
 from gdm_settings import APP_ID
-from .enums import PackageType
+from gdm_settings.enums import PackageType
 
 
 def get_os_info():
