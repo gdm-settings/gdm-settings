@@ -11,7 +11,7 @@ gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
-from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR, resource_base_path
+from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
 from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
 
@@ -96,7 +96,7 @@ class GdmSettingsApp(Adw.Application):
 
     def do_startup(self):
         Adw.Application.do_startup(self)
-        self.props.resource_base_path = resource_base_path
+        self.props.resource_base_path = '/app/'
 
     def do_activate(self):
         if win := self.get_active_window():
