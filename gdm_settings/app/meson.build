@@ -3,7 +3,6 @@ py_app_dir = py_module_dir / 'app'
 source_files = files(
   '__init__.py',
   'about.py',
-  'app.py',
   'gr_utils.py',
   'log.py',
   'cmd.py',
