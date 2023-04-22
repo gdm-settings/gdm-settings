@@ -5,6 +5,7 @@
 the gdm_settings package'''
 
 import os
+import pathlib
 import subprocess
 
 from enum import Enum
@@ -53,6 +54,57 @@ def list_files(dir_path: str,
             yield os.path.relpath(child_path, base)
         elif recursive:
             yield from list_files(child_path, base)
+
+
+class Path(pathlib.PosixPath):
+    def __add__(self, other: pathlib.Path | str):
+        if not isinstance(other, (pathlib.Path, str)):
+            return NotImplemented
+
+        return Path(str(self) + str(other))
+
+    def __iadd__(self, other: pathlib.Path | str):
+        return self + other
+
+    def __radd__(self, other: str):
+        if not isinstance(other, str):
+            return NotImplemented
+
+        return other + str(self)
+    
+    def with_prefix(self, prefix: pathlib.Path | str):
+        if not isinstance(prefix, (str, pathlib.Path)):
+            raise TypeError("prefix must be str or pathlib.Path, not " + repr(type(prefix)))
+        
+        if not self.is_absolute():
+            raise ValueError("adding prefix to non absolute paths is not allowed")
+
+        if str(self).startswith(str(prefix)):
+            return self
+        
+        return Path(prefix) + self
+    
+    remove = pathlib.PosixPath.unlink
+
+    def append_bytes(self, data: bytes):
+        with self.open('ab') as io:
+            io.write(data)
+
+    def append_text(self, data: str):
+        with self.open('a') as io:
+            io.write(data)
+
+    def _list_files(self, base, recursive=True):
+        for child in self.iterdir():
+            if not child.is_dir():
+                yield child.relative_to(base)
+            elif recursive:
+                yield from child._list_files(base)
+
+    def list_files(self, *, recursive=True):
+        """list only the files inside a directory"""
+
+        return self._list_files(base=self, recursive=recursive)
 
 
 def GProperty(type: GObject.GType,
