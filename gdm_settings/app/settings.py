@@ -9,12 +9,12 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import GObject, Gio
 
 from gdm_settings import APP_ID
+from gdm_settings import env
 from gdm_settings.enums import PackageType, BackgroundType
 from gdm_settings.utils import GSettings
 
 from .cmd import CommandList
 from .theme_lists import shell_themes
-from . import env
 from . import gr_utils
 
 

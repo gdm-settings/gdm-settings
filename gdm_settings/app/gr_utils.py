@@ -4,9 +4,9 @@ import os
 import shutil
 import subprocess
 
+from gdm_settings import env
 from gdm_settings import utils
 
-from . import env
 
 ThemesDir              = os.path.join(env.HOST_DATA_DIRS[0], 'themes')
 CustomThemeIdentity    = 'custom-theme'

@@ -8,7 +8,7 @@ import logging
 
 from gi.repository import GLib
 
-from .env import HOST_ROOT, HOST_DATA_DIRS
+from gdm_settings.env import HOST_ROOT, HOST_DATA_DIRS
 
 
 @dataclass

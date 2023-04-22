@@ -4,10 +4,10 @@ from gettext import gettext as _
 from gi.repository import Adw, Gtk
 
 from gdm_settings import APP_ID
+from gdm_settings.env import TEMP_DIR
 from gdm_settings.utils import BackgroundTask, GSettings
 from gdm_settings.widgets import SwitchRow
 
-from ..env import TEMP_DIR
 from ..cmd import Command
 from ..gr_utils import extract_default_theme, ThemesDir
 from .common import PageContent

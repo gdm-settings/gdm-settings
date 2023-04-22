@@ -12,6 +12,7 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
 from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
+from gdm_settings import env
 from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
 
@@ -21,7 +22,6 @@ from .about import about_window
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
-from . import env
 from . import log
 
 

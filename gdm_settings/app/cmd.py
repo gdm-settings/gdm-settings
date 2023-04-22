@@ -2,9 +2,9 @@ import os
 import subprocess
 from collections.abc import Sequence
 
-from gdm_settings.enums import PackageType
 
-from .env import TEMP_DIR, PACKAGE_TYPE
+from gdm_settings.env import TEMP_DIR, PACKAGE_TYPE
+from gdm_settings.enums import PackageType
 
 
 def _unpack_args(args: tuple):
