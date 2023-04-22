@@ -1,3 +1,5 @@
+'''A collection of general purpose and reusable widgets'''
+
 from gettext import gettext as _
 
 from gi.repository import Adw

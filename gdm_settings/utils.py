@@ -1,3 +1,9 @@
+'''A self-contained collection of general purpose and reusable utilities
+(functions & classes)
+
+'self-contained' means that this module does not depend on anything from
+the gdm_settings package'''
+
 import os
 import subprocess
 

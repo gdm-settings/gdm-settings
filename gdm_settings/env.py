@@ -1,5 +1,12 @@
 '''get information about program's environment'''
 
+# This is an initializer module i.e. it is a module that is assumed to be
+# loaded very early in the program launch process and other modules (that
+# are not self-contained) can depend on it.
+#
+# So, this module should not depend on any other module from the gdm_settings
+# package unless the other module is fully self-contained.
+
 import os
 import re
 import ast

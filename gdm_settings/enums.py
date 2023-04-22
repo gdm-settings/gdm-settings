@@ -1,4 +1,4 @@
-'''Contains Enums used in the app'''
+'''Enums used in the app'''
 
 from enum import Enum, auto
 

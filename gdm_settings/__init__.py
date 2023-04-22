@@ -1,3 +1,5 @@
+'''Python package for GDM Settings app'''
+
 import os
 import sys
 import gettext
