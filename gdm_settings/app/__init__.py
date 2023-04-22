@@ -6,8 +6,6 @@ import subprocess
 from configparser import ParsingError
 from gettext import gettext as _, pgettext as C_
 
-import gi
-gi.require_version("Adw", '1')
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 

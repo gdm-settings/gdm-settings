@@ -7,6 +7,9 @@ import locale
 
 from gettext import gettext as _
 
+import gi
+gi.require_version("Adw", '1')
+
 from . import config
 
 # This app is relocatable. APP_DIR (detected during runtime) is path
