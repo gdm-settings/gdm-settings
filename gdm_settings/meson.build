@@ -25,4 +25,6 @@ install_data(files(
   install_dir: py_module_dir
 )
 
-subdir('app')
+install_subdir('app',
+  install_dir: py_module_dir
+)
