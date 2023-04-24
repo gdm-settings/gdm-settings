@@ -7,7 +7,7 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdm_settings import APP_ID, APP_NAME, VERSION
+from gdm_settings import APP_ID, APP_NAME, VERSION, temp_log_io
 from gdm_settings.utils import GProperty
 
 logger = logging.getLogger(__name__)
@@ -91,6 +91,8 @@ class ReleaseNotesFetcher(GObject.Object):
 
 
 def about_window(win):
+    temp_log_io.seek(0)
+
     abt = Adw.AboutWindow(
         transient_for = win,
         modal         = True,
@@ -101,9 +103,11 @@ def about_window(win):
         developer_name   = C_("Name of Developer", "Mazhar Hussain"),
         copyright = _("Copyright 2021-2023 Mazhar Hussain"),
         website   = "https://gdm-settings.github.io",
+        debug_info = temp_log_io.read(),
         developers  = [mazhar_hussain],
         documenters = [mazhar_hussain],
         artists     = [thales_binda],
+        debug_info_filename = 'gdm-settings.log',
 
         support_url = "https://github.com/gdm-settings/gdm-settings/discussions/categories/q-a",
         issue_url   = "https://github.com/gdm-settings/gdm-settings/issues/new/choose",
