@@ -65,8 +65,6 @@ class GdmSettingsApp(Adw.Application):
         add_option('verbose',   'v',  _('Enable verbose mode (alias of --verbosity=5)'))
         add_option('quiet',     'q',  _('Enable quiet mode (alias of --verbosity=0)'))
 
-        self.connect('shutdown', self.on_shutdown)
-
 
     def do_handle_local_options(self, options):
         if options.contains("version"):
@@ -136,9 +134,9 @@ class GdmSettingsApp(Adw.Application):
             self.show_donation_dialog()
 
 
-    @staticmethod
-    def on_shutdown(self):
+    def do_shutdown(self):
         settings.finalize()
+        Adw.Application.do_shutdown(self)
 
 
     def check_system_dependencies(self):
