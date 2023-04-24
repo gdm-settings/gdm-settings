@@ -9,8 +9,8 @@ from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
 from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 from gdm_settings.cmd import Command
 from gdm_settings.gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
+from gdm_settings.settings import LogoImageNotFoundError
 
-from .settings import LogoImageNotFoundError
 from . import pages
 
 

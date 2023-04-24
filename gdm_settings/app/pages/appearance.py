@@ -3,8 +3,8 @@ from gi.repository import Gtk
 from gdm_settings.enums import BackgroundType
 from gdm_settings.widgets import ImageChooserButton
 from gdm_settings.themes import shell_themes, icon_themes, cursor_themes
+from gdm_settings.settings import appearance_settings
 
-from ..settings import appearance_settings
 from .common import PageContent
 
 

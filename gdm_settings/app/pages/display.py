@@ -6,8 +6,8 @@ from gi.repository import Gtk
 
 from gdm_settings.utils import BackgroundTask
 from gdm_settings.widgets import SwitchRow
+from gdm_settings.settings import night_light_settings as nl_settings
 
-from ..settings import night_light_settings as nl_settings
 from .common import PageContent
 
 logger = logging.getLogger(__name__)

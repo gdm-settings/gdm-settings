@@ -1,6 +1,6 @@
 from gi.repository import Gtk
 
-from ..settings import font_settings
+from gdm_settings.settings import font_settings
 from .common import PageContent
 
 

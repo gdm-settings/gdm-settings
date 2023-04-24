@@ -1,8 +1,8 @@
 from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
+from gdm_settings.settings import power_settings
 
-from ..settings import power_settings
 from .common import PageContent
 
 
