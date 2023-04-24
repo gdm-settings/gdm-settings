@@ -382,7 +382,7 @@ def _gresource_apply():
     else:
         add_commands(_('generic system'), fallback_commands)
 
-def apply_dconf_settings():
+def _dconf_apply():
     ''' Apply settings that are applied through 'dconf' '''
 
     gdm_conf_dir = "/etc/dconf/db/gdm.d"
@@ -560,7 +560,7 @@ def apply() -> bool:
     ''' Apply all settings '''
 
     _gresource_apply()
-    apply_dconf_settings()
+    _dconf_apply()
 
     status = _commands.run()
 
