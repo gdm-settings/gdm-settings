@@ -304,7 +304,7 @@ def get_css() -> str:
 
     return css
 
-def backup_default_shell_theme ():
+def _backup_default_shell_theme ():
     '''back up the default shell theme (if needed)'''
 
     logger.info(_("Backing up default shell theme …"))
@@ -330,7 +330,7 @@ def _gresource_apply():
     shell_gresource_is_stock = gr_utils.is_unmodified(gr_utils.ShellGresourceFile)
 
     if shell_gresource_is_stock or pure_theme_not_exists:
-        backup_default_shell_theme()
+        _backup_default_shell_theme()
 
 
     # Apply shell theme settings
