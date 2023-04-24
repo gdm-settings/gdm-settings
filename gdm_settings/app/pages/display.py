@@ -10,6 +10,8 @@ from gdm_settings.widgets import SwitchRow
 from ..settings import night_light_settings as nl_settings
 from .common import PageContent
 
+logger = logging.getLogger(__name__)
+
 
 class DisplayPageContent (PageContent):
     __gtype_name__ = 'DisplayPageContent'
@@ -88,7 +90,7 @@ class DisplayPageContent (PageContent):
             toast = Adw.Toast(timeout=2, priority="high", title=message)
             self.window.toast_overlay.add_toast(toast)
         except FileNotFoundError as err:
-            logging.debug(f"{err.strerror}: '{err.filename}'")
+            logger.debug(f"{err.strerror}: '{err.filename}'")
 
             message = _("'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current"
                         " display settings but it does not exist.\n"

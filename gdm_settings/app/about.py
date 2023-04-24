@@ -10,6 +10,8 @@ from gi.repository import GObject
 from gdm_settings import APP_ID, APP_NAME, VERSION
 from gdm_settings.utils import GProperty
 
+logger = logging.getLogger(__name__)
+
 
 mazhar_hussain = C_("Name of Developer", "Mazhar Hussain") + " <realmazharhussain@gmail.com>"
 thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gmail.com>"
@@ -43,7 +45,7 @@ class ReleaseNotesFetcher(GObject.Object):
             return
 
         if not ASG:
-            logging.warning('AppStreamGlib typelib not installed! Cannot get release information.')
+            logger.warning('AppStreamGlib typelib not installed! Cannot get release information.')
             return
 
         self.store = ASG.Store()

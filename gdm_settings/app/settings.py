@@ -17,6 +17,8 @@ from gdm_settings.utils import GSettings
 from .theme_lists import shell_themes
 from . import gr_utils
 
+logger = logging.getLogger(__name__)
+
 
 main_settings          = GSettings.new_delayed(APP_ID)
 accessibility_settings = GSettings.new_delayed(APP_ID + '.accessibility')
@@ -78,21 +80,21 @@ class SettingsManager (GObject.Object):
                 config_parser[section_name][key] = str(settings[key])
 
         if filename:
-            logging.info(_("Exporting to file '{filename}'").format(filename=filename))
+            logger.info(_("Exporting to file '{filename}'").format(filename=filename))
             try:
                 with open(filename, 'w') as outfile:
                     config_parser.write(outfile)
             except PermissionError:
-                logging.error(_("Cannot write to file '{filename}'. Permission denied"
+                logger.error(_("Cannot write to file '{filename}'. Permission denied"
                                ).format(filename=filename))
                 raise
             except IsADirectoryError:
-                logging.error(_("Cannot write to file '{filename}'. A directory with "
+                logger.error(_("Cannot write to file '{filename}'. A directory with "
                                 "the same name already exists"
                                ).format(filename=filename))
                 raise
         else:
-            logging.info(_('Exporting to standard output'))
+            logger.info(_('Exporting to standard output'))
             config_parser.write(sys.stdout)
 
     def load(self, filename=None):
@@ -100,27 +102,27 @@ class SettingsManager (GObject.Object):
 
         try:
             if filename:
-                logging.info(_("Importing from file '{filename}'").format(filename=filename))
+                logger.info(_("Importing from file '{filename}'").format(filename=filename))
                 config_parser.read(filename)
             else:
-                logging.info(_('Importing from standard input'))
+                logger.info(_('Importing from standard input'))
                 config_parser.read_file(sys.stdin)
         except ParsingError:
-            logging.error(_('Failed to parse import file'))
+            logger.error(_('Failed to parse import file'))
             raise
         except UnicodeDecodeError:
-            logging.error(_('Failed to read import file. Not encoded in UTF-8'))
+            logger.error(_('Failed to read import file. Not encoded in UTF-8'))
             raise
 
         for settings in all_settings:
             section_name = settings.props.schema_id
             if section_name not in config_parser:
-                logging.warn(_("Imported file does not have section '{section_name}'"
+                logger.warn(_("Imported file does not have section '{section_name}'"
                               ).format(section_name=section_name))
                 continue
             for key in settings:
                 if key not in config_parser[section_name]:
-                    logging.warn(_("Imported file does not have key '{key_name}' in section '{section_name}'"
+                    logger.warn(_("Imported file does not have key '{key_name}' in section '{section_name}'"
                                   ).format(key_name=key, section_name=section_name))
                     continue
                 key_type = type(settings[key])
@@ -311,7 +313,7 @@ class SettingsManager (GObject.Object):
     def backup_default_shell_theme (self):
         '''back up the default shell theme (if needed)'''
 
-        logging.info(_("Backing up default shell theme …"))
+        logger.info(_("Backing up default shell theme …"))
 
         if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
             self.commands.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
@@ -367,7 +369,7 @@ class SettingsManager (GObject.Object):
 
         def add_commands(distro_name, special_commands):
             message = raw_message.format(distro_name = distro_name)
-            logging.info(message)
+            logger.info(message)
             self.commands.add('\n'.join(common_commands + special_commands))
 
         if gr_utils.UbuntuGdmGresourceFile:
@@ -618,14 +620,14 @@ class SettingsManager (GObject.Object):
 
     def reset_settings(self) -> bool:
         if gr_utils.UbuntuGdmGresourceFile:
-            logging.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
+            logger.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
             self.commands.add(['update-alternatives',  '--quiet',  '--remove',
                                   os.path.basename(gr_utils.UbuntuGdmGresourceFile),
                                   gr_utils.CustomGresourceFile,
                                ])
             self.commands.add(f'rm -f {gr_utils.CustomGresourceFile}')
         elif os.path.exists(gr_utils.DefaultGresourceFile):
-            logging.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
+            logger.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
             self.commands.add(['mv', '-f',
                                  gr_utils.DefaultGresourceFile,
                                  gr_utils.ShellGresourceFile,

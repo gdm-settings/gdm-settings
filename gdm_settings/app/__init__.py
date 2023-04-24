@@ -10,6 +10,7 @@ from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
 from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
+from gdm_settings import stderr_log_handler
 from gdm_settings import env
 from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
@@ -20,7 +21,8 @@ from .about import about_window
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
 from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
-from . import log
+
+logger = logging.getLogger(__name__)
 
 
 def set_logging_level(verbosity):
@@ -38,7 +40,7 @@ def set_logging_level(verbosity):
     #            , with --verbosity=1 we get, (6-verbosity)*10 = (6-1)*10 = 5*10 = 50 = logging.CRITICAL
     #         And, with --verbosity=5 we get, (6-verbosity)*10 = (6-5)*10 = 1*10 = 10 = logging.DEBUG
     level = (6 - verbosity) * 10
-    log.stderr_handler.setLevel(level)
+    stderr_log_handler.setLevel(level)
 
 
 class GdmSettingsApp(Adw.Application):
@@ -101,13 +103,13 @@ class GdmSettingsApp(Adw.Application):
             win.present()
             return
 
-        logging.info(f"Application Version    = {VERSION}")
-        logging.info(f"Operating System       = {env.OS_PRETTY_NAME}")
-        logging.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
-        logging.info(f"TEMP_DIR               = {env.TEMP_DIR}")
-        logging.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
-        logging.info(f"ShellGresourceFile     = {ShellGresourceFile}")
-        logging.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
+        logger.info(f"Application Version    = {VERSION}")
+        logger.info(f"Operating System       = {env.OS_PRETTY_NAME}")
+        logger.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
+        logger.info(f"TEMP_DIR               = {env.TEMP_DIR}")
+        logger.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
+        logger.info(f"ShellGresourceFile     = {ShellGresourceFile}")
+        logger.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
 
         self.settings = GSettings(APP_ID)
 
@@ -153,9 +155,9 @@ class GdmSettingsApp(Adw.Application):
                 if proc.returncode == 0:
                     version_info = proc.stdout.decode().strip()
                     if logging_name:
-                        logging.info(f'{logging_name} {version_info}')
+                        logger.info(f'{logging_name} {version_info}')
                     else:
-                        logging.info(version_info)
+                        logger.info(version_info)
                     return True
             except FileNotFoundError: pass
 

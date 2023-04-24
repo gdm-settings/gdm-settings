@@ -4,6 +4,9 @@ import os
 import sys
 import gettext
 import locale
+import logging
+import tempfile
+from enum import Enum
 
 from gettext import gettext as _
 
@@ -37,6 +40,52 @@ PROJECT_NAME = 'gdm-settings'
 VERSION = config.version
 BUILD_TYPE = config.buildtype
 APP_DATA_DIR = APP_DIR + config.datadir + '/' + PROJECT_NAME
+
+
+# Set up logging
+
+class _Style(str, Enum):
+    RED = '\033[31m'
+    BOLD = '\033[1m'
+    BLUE = '\033[34m'
+    GREEN = '\033[32m'
+    NORMAL = '\033[0m'
+    YELLOW = '\033[33m'
+    MANENTA = '\033[35m'
+    BRIGHT_RED = '\033[91m'
+
+
+class _StdErrFormatter(logging.Formatter):
+    def format (self, record):
+        match record.levelname:
+            case 'CRITICAL': level_color = _Style.BRIGHT_RED
+            case 'ERROR':    level_color = _Style.RED
+            case 'WARNING':  level_color = _Style.YELLOW
+            case 'INFO':     level_color = _Style.GREEN
+            case default:    level_color = _Style.BLUE
+
+        return (_Style.BOLD + level_color + record.levelname + _Style.NORMAL + ':'
+                + _Style.MANENTA + record.name + _Style.NORMAL + ':'
+                + ' ' + record.getMessage())
+
+
+logger = logging.getLogger(__name__)
+
+logger.setLevel(logging.DEBUG)
+
+# FIXME: logging level of handlers can be changed only
+# if we set it to a high value here
+
+stderr_log_handler = logging.StreamHandler()
+stderr_log_handler.setFormatter(_StdErrFormatter())
+stderr_log_handler.setLevel(logging.DEBUG)
+logger.addHandler(stderr_log_handler)
+
+temp_log_io = tempfile.TemporaryFile(mode='w+')
+temp_log_handler = logging.StreamHandler(temp_log_io)
+temp_log_handler.setFormatter(logging.Formatter("%(levelname)s:%(name)s: %(message)s"))
+temp_log_handler.setLevel(logging.DEBUG)
+logger.addHandler(temp_log_handler)
 
 
 def main() -> int:

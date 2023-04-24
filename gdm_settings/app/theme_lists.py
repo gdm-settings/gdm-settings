@@ -10,6 +10,8 @@ from gi.repository import GLib
 
 from gdm_settings.env import HOST_ROOT, HOST_DATA_DIRS
 
+logger = logging.getLogger(__name__)
+
 
 @dataclass
 class ThemeInfo:
@@ -56,7 +58,7 @@ class ThemeList:
             index_file.load_from_file(filename,
                                       GLib.KeyFileFlags.KEEP_TRANSLATIONS)
         except Exception:
-            logging.debug(f"Failed to parse '{filename}'!")
+            logger.debug(f"Failed to parse '{filename}'!")
             return
 
         return index_file
