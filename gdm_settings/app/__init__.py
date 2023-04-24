@@ -114,7 +114,7 @@ class GdmSettingsApp(Adw.Application):
 
         self.settings = GSettings(APP_ID)
 
-        self.reset_settings_task = BackgroundTask(settings.reset_settings,
+        self.reset_settings_task = BackgroundTask(settings.reset,
                                                   self.on_reset_settings_finish)
 
         self.import_task = BackgroundTask(None, self.on_import_finished)

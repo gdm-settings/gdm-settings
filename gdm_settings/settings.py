@@ -615,7 +615,7 @@ def apply_user_display_settings() -> bool:
 
     return _commands.run()
 
-def reset_settings() -> bool:
+def reset() -> bool:
     if gr_utils.UbuntuGdmGresourceFile:
         logger.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
         _commands.add(['update-alternatives',  '--quiet',  '--remove',
