@@ -564,9 +564,9 @@ def apply() -> bool:
     _gresource_apply()
     _dconf_apply()
 
-    status = _commands.run()
+    result = _commands.run()
 
-    if status.success:
+    if result:
         # When we change GDM shell theme it becomes the default theme but for the users
         # who didn't want to change shell theme for their session, we need to set it to a
         # pure/original version of the default shell theme
@@ -583,7 +583,7 @@ def apply() -> bool:
         for settings in all_settings:
             settings.apply()
 
-    return status
+    return result
 
 def apply_user_display_settings() -> bool:
     ''' Apply user's current display settings '''
