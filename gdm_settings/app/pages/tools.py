@@ -66,7 +66,7 @@ class ToolsPageContent (PageContent):
         # If enabled, apply top bar tweaks
         if self.settings['top-bar-tweaks']:
             with open(os.path.join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
-                shell_css.write(settings.get_setting_css())
+                shell_css.write(settings.get_css())
 
         # Copy extracted theme to its permanent path
         cmd = Command('cp', '-rfT', temp_theme_path, perm_theme_path)

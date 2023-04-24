@@ -227,7 +227,7 @@ def drop_unapplied_changes():
     for settings in all_settings:
         settings.revert()
 
-def get_setting_css() -> str:
+def get_css() -> str:
     '''Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)'''
 
     css = "\n\n/* 'GDM Settings' App Provided CSS */\n"
@@ -345,7 +345,7 @@ def _gresource_apply():
         background_image = appearance_settings['background-image']
 
     compiled_file = gr_utils.compile(shelldir,
-          additional_css=get_setting_css(),
+          additional_css=get_css(),
         background_image=background_image
     )
 
