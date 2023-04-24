@@ -7,10 +7,10 @@ from gi.repository import GObject
 
 from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
 from gdm_settings.utils import BackgroundTask, GProperty, GSettings
+from gdm_settings.cmd import Command
 
 from .gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from .settings import LogoImageNotFoundError
-from .cmd import Command
 from . import pages
 
 
