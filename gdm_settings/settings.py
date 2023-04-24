@@ -59,15 +59,18 @@ def _GSettings(schema_id):
 
 _commands = CommandList()
 
+
 def init():
     '''Initialize the settings module'''
     os.makedirs(env.TEMP_DIR, exist_ok=True)
     if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
         load_from_session()
 
+
 def finalize():
     '''Finalize the settings module'''
     shutil.rmtree(path=env.TEMP_DIR, ignore_errors=True)
+
 
 def load_from_session():
     '''Load user's Gnome settings into the app'''
@@ -161,6 +164,7 @@ def load_from_session():
         login_screen_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
         login_screen_settings['disable-user-list'] = user_settings["disable-user-list"]
 
+
 def load_from_file(filename=None):
     config_parser = ConfigParser()
 
@@ -195,6 +199,7 @@ def load_from_file(filename=None):
             else:
                 settings[key] = key_type(config_parser[section_name][key])
 
+
 def save_to_file(filename=None):
     config_parser = ConfigParser()
 
@@ -222,10 +227,12 @@ def save_to_file(filename=None):
         logger.info(_('Exporting to standard output'))
         config_parser.write(sys.stdout)
 
+
 def drop_unapplied_changes():
     '''Forget about changes that have not been applied yet'''
     for settings in all_settings:
         settings.revert()
+
 
 def get_css() -> str:
     '''Get CSS for current settings (to append to theme's 'gnome-shell.css' resource)'''
@@ -304,6 +311,7 @@ def get_css() -> str:
 
     return css
 
+
 def _backup_default_shell_theme ():
     '''back up the default shell theme (if needed)'''
 
@@ -319,6 +327,7 @@ def _backup_default_shell_theme ():
     _commands.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
     _commands.add(f"mkdir -p {gr_utils.ThemesDir}")
     _commands.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
+
 
 def _gresource_apply():
     ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
@@ -383,6 +392,7 @@ def _gresource_apply():
         add_commands(_('Ubuntu'), ubuntu_commands)
     else:
         add_commands(_('generic system'), fallback_commands)
+
 
 def _dconf_apply():
     ''' Apply settings that are applied through 'dconf' '''
@@ -558,6 +568,7 @@ def _dconf_apply():
     _commands.add(f"install -Dm644 '{temp_profile_path}' -T '{gdm_profile_path}'")
     _commands.add("dconf update")
 
+
 def apply() -> bool:
     ''' Apply all settings '''
 
@@ -584,6 +595,7 @@ def apply() -> bool:
             settings.apply()
 
     return result
+
 
 def apply_user_display_settings() -> bool:
     ''' Apply user's current display settings '''
@@ -615,6 +627,7 @@ def apply_user_display_settings() -> bool:
 
     return _commands.run()
 
+
 def reset() -> bool:
     if gr_utils.UbuntuGdmGresourceFile:
         logger.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
@@ -643,6 +656,7 @@ def reset() -> bool:
         return True
 
     return False
+
 
 def get_overriding_files():
     gdm_conf_dir = "/etc/dconf/db/gdm.d"
