@@ -62,12 +62,12 @@ _commands = CommandList()
 def init():
     os.makedirs(env.TEMP_DIR, exist_ok=True)
     if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
-        load_session_settings()
+        load_from_session()
 
 def deinit():
     shutil.rmtree(path=env.TEMP_DIR, ignore_errors=True)
 
-def load_session_settings():
+def load_from_session():
     '''Load user's Gnome settings into the app'''
 
     if user_settings := _GSettings('org.gnome.shell.extensions.user-theme'):

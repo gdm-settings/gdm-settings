@@ -268,7 +268,7 @@ class GdmSettingsApp(Adw.Application):
 
     def load_session_settings_cb(self, action, user_data):
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
-            settings.load_session_settings()
+            settings.load_from_session()
             toast = Adw.Toast(timeout=1, priority='high', title=_('Session settings loaded successfully'))
             self.window.toast_overlay.add_toast(toast)
         else:
