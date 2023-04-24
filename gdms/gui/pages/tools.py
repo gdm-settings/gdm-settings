@@ -7,7 +7,7 @@ from gdms import APP_ID
 from gdms.env import TEMP_DIR
 from gdms.cmd import Command
 from gdms.utils import BackgroundTask, GSettings
-from gdms.gresource import extract_default_theme, ThemesDir
+from gdms import gresource
 from gdms import settings
 from gdms.gui.widgets import SwitchRow
 
@@ -49,7 +49,7 @@ class ToolsPageContent (PageContent):
             # Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
             # They will be replaced by an actual folder path and theme name during runtime.
             msg = _("Default shell theme extracted to '{folder}' as '{name}'")
-            message = msg.format(folder=ThemesDir, name=theme_name)
+            message = msg.format(folder=gresource.ThemesDir, name=theme_name)
         else:
             message = _("Failed to extract default theme")
         toast = Adw.Toast(timeout=2, priority="high", title=message)
@@ -57,11 +57,11 @@ class ToolsPageContent (PageContent):
 
     def extract_shell_theme (self):
         perm_theme_name = 'default-extracted'
-        perm_theme_path = os.path.join(ThemesDir, perm_theme_name)
+        perm_theme_path = os.path.join(gresource.ThemesDir, perm_theme_name)
         temp_theme_path = os.path.join(TEMP_DIR, 'extracted-theme')
 
         # Extract default shell theme to a temporary path
-        extract_default_theme(temp_theme_path)
+        gresource.extract_default_theme(temp_theme_path)
 
         # If enabled, apply top bar tweaks
         if self.settings['top-bar-tweaks']:
