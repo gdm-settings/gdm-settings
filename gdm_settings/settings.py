@@ -318,7 +318,7 @@ def backup_default_shell_theme ():
     _commands.add(f"mkdir -p {gr_utils.ThemesDir}")
     _commands.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
 
-def apply_shell_theme_settings():
+def _gresource_apply():
     ''' Apply settings that require modification of 'gnome-shell-theme.gresource' file '''
 
 
@@ -559,7 +559,7 @@ def apply_dconf_settings():
 def apply() -> bool:
     ''' Apply all settings '''
 
-    apply_shell_theme_settings()
+    _gresource_apply()
     apply_dconf_settings()
 
     status = _commands.run()
