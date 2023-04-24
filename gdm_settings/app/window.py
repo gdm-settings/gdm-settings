@@ -84,7 +84,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.task_counter.register(self.apply_button)
         self.apply_button.connect('clicked', self.on_apply)
-        self.apply_task = BackgroundTask(settings.apply_settings, self.on_apply_finished)
+        self.apply_task = BackgroundTask(settings.apply, self.on_apply_finished)
 
         click = Gtk.GestureClick()
         click.connect('released', self.on_sidebar_clicked, self.flap)

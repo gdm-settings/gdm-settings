@@ -556,7 +556,7 @@ def apply_dconf_settings():
     _commands.add(f"install -Dm644 '{temp_profile_path}' -T '{gdm_profile_path}'")
     _commands.add("dconf update")
 
-def apply_settings() -> bool:
+def apply() -> bool:
     ''' Apply all settings '''
 
     apply_shell_theme_settings()
