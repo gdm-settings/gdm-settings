@@ -220,11 +220,6 @@ def load_from_file(filename=None):
             else:
                 settings[key] = key_type(config_parser[section_name][key])
 
-def save_settings():
-    '''Save settings to GSettings of this app'''
-    for settings in all_settings:
-        settings.apply()
-
 def drop_changes():
     '''Save settings to GSettings of this app'''
     for settings in all_settings:
@@ -581,7 +576,10 @@ def apply_settings() -> bool:
                 user_settings['name'] = 'default-pure'
 
         main_settings["never-applied"] = False
-        save_settings()
+
+        '''Save settings to GSettings of this app'''
+        for settings in all_settings:
+            settings.apply()
 
     return status
 
