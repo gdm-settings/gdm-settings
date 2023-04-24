@@ -65,7 +65,7 @@ def init():
     if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
         load_from_session()
 
-def deinit():
+def finalize():
     '''Finalize the settings module'''
     shutil.rmtree(path=env.TEMP_DIR, ignore_errors=True)
 

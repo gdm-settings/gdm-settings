@@ -138,7 +138,7 @@ class GdmSettingsApp(Adw.Application):
 
     @staticmethod
     def on_shutdown(self):
-        settings.deinit()
+        settings.finalize()
 
 
     def check_system_dependencies(self):
