@@ -1,7 +1,7 @@
 from gi.repository import Gtk
 
-from gdms.gui.widgets import SwitchRow
 from gdms.settings import pointing_settings, mouse_settings, touchpad_settings
+from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 from .pointing_utils.cursor import CursorSizeSelector
