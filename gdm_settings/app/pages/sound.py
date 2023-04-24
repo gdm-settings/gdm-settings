@@ -1,9 +1,9 @@
 from gi.repository import Gtk
 
 from gdm_settings.widgets import SwitchRow
+from gdm_settings.themes import sound_themes
 
 from ..settings import sound_settings
-from ..theme_lists import sound_themes
 from .common import PageContent
 
 

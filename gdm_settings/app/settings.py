@@ -13,8 +13,8 @@ from gdm_settings import env
 from gdm_settings.cmd import CommandList
 from gdm_settings.enums import PackageType, BackgroundType
 from gdm_settings.utils import GSettings
+from gdm_settings.themes import shell_themes
 
-from .theme_lists import shell_themes
 from . import gr_utils
 
 logger = logging.getLogger(__name__)
