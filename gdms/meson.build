@@ -30,6 +30,6 @@ install_data(files(
   install_dir: py_module_dir
 )
 
-install_subdir('app',
+install_subdir('gui',
   install_dir: py_module_dir
 )

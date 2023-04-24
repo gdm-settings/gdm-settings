@@ -89,10 +89,10 @@ logger.addHandler(temp_log_handler)
 
 
 def main() -> int:
-    from .app import GdmSettingsApp
-    app = GdmSettingsApp()
+    from .gui import GdmSettingsApp
+    gui = GdmSettingsApp()
     
     try:
-        return app.run(sys.argv)
+        return gui.run(sys.argv)
     except KeyboardInterrupt:
         return 0
