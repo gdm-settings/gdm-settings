@@ -220,7 +220,7 @@ def load_from_file(filename=None):
             else:
                 settings[key] = key_type(config_parser[section_name][key])
 
-def drop_changes():
+def drop_unapplied_changes():
     '''Save settings to GSettings of this app'''
     for settings in all_settings:
         settings.revert()

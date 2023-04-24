@@ -260,7 +260,7 @@ class GdmSettingsApp(Adw.Application):
 
 
     def refresh_cb(self, action, user_data):
-        settings.drop_changes()
+        settings.drop_unapplied_changes()
 
         toast = Adw.Toast(timeout=1, priority='high', title=_('Settings reloaded'))
         self.window.toast_overlay.add_toast(toast)
