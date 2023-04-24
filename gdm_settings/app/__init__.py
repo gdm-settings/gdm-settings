@@ -15,7 +15,7 @@ from gdm_settings import env
 from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
 from gdm_settings.gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
-from gdm_settings.settings import SettingsManager
+from gdm_settings import settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 
@@ -97,6 +97,7 @@ class GdmSettingsApp(Adw.Application):
     def do_startup(self):
         Adw.Application.do_startup(self)
         self.props.resource_base_path = '/app/'
+        settings.init()
 
     def do_activate(self):
         if win := self.get_active_window():
@@ -113,9 +114,7 @@ class GdmSettingsApp(Adw.Application):
 
         self.settings = GSettings(APP_ID)
 
-        self.settings_manager = SettingsManager()
-
-        self.reset_settings_task = BackgroundTask(self.settings_manager.reset_settings,
+        self.reset_settings_task = BackgroundTask(settings.reset_settings,
                                                   self.on_reset_settings_finish)
 
         self.import_task = BackgroundTask(None, self.on_import_finished)
@@ -139,7 +138,7 @@ class GdmSettingsApp(Adw.Application):
 
     @staticmethod
     def on_shutdown(self):
-        self.settings_manager.cleanup()
+        settings.deinit()
 
 
     def check_system_dependencies(self):
@@ -261,7 +260,7 @@ class GdmSettingsApp(Adw.Application):
 
 
     def refresh_cb(self, action, user_data):
-        self.settings_manager.drop_changes()
+        settings.drop_changes()
 
         toast = Adw.Toast(timeout=1, priority='high', title=_('Settings reloaded'))
         self.window.toast_overlay.add_toast(toast)
@@ -269,7 +268,7 @@ class GdmSettingsApp(Adw.Application):
 
     def load_session_settings_cb(self, action, user_data):
         if env.PACKAGE_TYPE is not PackageType.Flatpak:
-            self.settings_manager.load_session_settings()
+            settings.load_session_settings()
             toast = Adw.Toast(timeout=1, priority='high', title=_('Session settings loaded successfully'))
             self.window.toast_overlay.add_toast(toast)
         else:
@@ -301,7 +300,7 @@ class GdmSettingsApp(Adw.Application):
             if response == Gtk.ResponseType.ACCEPT:
                 self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.import_task.function = lambda: self.settings_manager.load(filepath)
+                self.import_task.function = lambda: settings.load(filepath)
                 self.import_task.start()
             file_chooser.destroy()
 
@@ -343,7 +342,7 @@ class GdmSettingsApp(Adw.Application):
             if response == Gtk.ResponseType.ACCEPT:
                 self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.export_task.function = lambda: self.settings_manager.export(filepath)
+                self.export_task.function = lambda: settings.export(filepath)
                 self.export_task.start()
             file_chooser.destroy()
 

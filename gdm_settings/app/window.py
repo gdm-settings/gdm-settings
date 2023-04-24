@@ -9,7 +9,7 @@ from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
 from gdm_settings.utils import BackgroundTask, GProperty, GSettings
 from gdm_settings.cmd import Command
 from gdm_settings.gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
-from gdm_settings.settings import LogoImageNotFoundError
+from gdm_settings import settings
 
 from . import pages
 
@@ -84,7 +84,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.task_counter.register(self.apply_button)
         self.apply_button.connect('clicked', self.on_apply)
-        self.apply_task = BackgroundTask(self.application.settings_manager.apply_settings, self.on_apply_finished)
+        self.apply_task = BackgroundTask(settings.apply_settings, self.on_apply_finished)
 
         click = Gtk.GestureClick()
         click.connect('released', self.on_sidebar_clicked, self.flap)
@@ -145,7 +145,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
             message = _("Didn't apply. Chosen background image does not exist anymore. Please! choose again.")
             toast = Adw.Toast(timeout=4, priority='high', title=message)
 
-        except LogoImageNotFoundError:
+        except settings.LogoImageNotFoundError:
             message = _("Didn't apply. Chosen logo image does not exist anymore. Please! choose again.")
             toast = Adw.Toast(timeout=4, priority='high', title=message)
 

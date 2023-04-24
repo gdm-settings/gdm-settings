@@ -7,6 +7,7 @@ from gi.repository import Gtk
 from gdm_settings.utils import BackgroundTask
 from gdm_settings.widgets import SwitchRow
 from gdm_settings.settings import night_light_settings as nl_settings
+from gdm_settings import settings
 
 from .common import PageContent
 
@@ -38,8 +39,7 @@ class DisplayPageContent (PageContent):
         self.nl_end_minute_spinbutton = self.builder.get_object('nl_end_minute_spinbutton')
         self.nl_temperature_scale = self.builder.get_object('nl_temperature_scale')
 
-        settings_manager = self.window.application.settings_manager
-        self.apply_display_settings_task = BackgroundTask(settings_manager.apply_user_display_settings,
+        self.apply_display_settings_task = BackgroundTask(settings.apply_user_display_settings,
                                                           self.on_apply_display_settings_finish)
 
         # Following properties are ignored when set in .ui files.

@@ -9,6 +9,7 @@ from gdm_settings.cmd import Command
 from gdm_settings.utils import BackgroundTask, GSettings
 from gdm_settings.widgets import SwitchRow
 from gdm_settings.gr_utils import extract_default_theme, ThemesDir
+from gdm_settings import settings
 
 from .common import PageContent
 
@@ -65,7 +66,7 @@ class ToolsPageContent (PageContent):
         # If enabled, apply top bar tweaks
         if self.settings['top-bar-tweaks']:
             with open(os.path.join(temp_theme_path, 'gnome-shell', 'gnome-shell.css'), 'a') as shell_css:
-                shell_css.write(self.window.application.settings_manager.get_setting_css())
+                shell_css.write(settings.get_setting_css())
 
         # Copy extracted theme to its permanent path
         cmd = Command('cp', '-rfT', temp_theme_path, perm_theme_path)
