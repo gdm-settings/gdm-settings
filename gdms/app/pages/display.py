@@ -4,10 +4,10 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import Adw
 from gi.repository import Gtk
 
-from gdm_settings.utils import BackgroundTask
-from gdm_settings.widgets import SwitchRow
-from gdm_settings.settings import night_light_settings as nl_settings
-from gdm_settings import settings
+from gdms.utils import BackgroundTask
+from gdms.widgets import SwitchRow
+from gdms.settings import night_light_settings as nl_settings
+from gdms import settings
 
 from .common import PageContent
 

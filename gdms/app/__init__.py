@@ -9,13 +9,13 @@ from gettext import gettext as _, pgettext as C_
 from gi.repository import Gio, GLib
 from gi.repository import Adw, Gtk, Gdk
 
-from gdm_settings import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
-from gdm_settings import stderr_log_handler
-from gdm_settings import env
-from gdm_settings.enums import PackageType
-from gdm_settings.utils import BackgroundTask, GSettings
-from gdm_settings.gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
-from gdm_settings import settings
+from gdms import APP_NAME, APP_ID, VERSION, APP_DATA_DIR
+from gdms import stderr_log_handler
+from gdms import env
+from gdms.enums import PackageType
+from gdms.utils import BackgroundTask, GSettings
+from gdms.gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
+from gdms import settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 

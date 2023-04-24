@@ -7,8 +7,8 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdm_settings import APP_ID, APP_NAME, VERSION, temp_log_io
-from gdm_settings.utils import GProperty
+from gdms import APP_ID, APP_NAME, VERSION, temp_log_io
+from gdms.utils import GProperty
 
 logger = logging.getLogger(__name__)
 

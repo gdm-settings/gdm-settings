@@ -8,7 +8,7 @@ import logging
 
 from gi.repository import GLib
 
-from gdm_settings.env import HOST_ROOT, HOST_DATA_DIRS
+from gdms.env import HOST_ROOT, HOST_DATA_DIRS
 
 logger = logging.getLogger(__name__)
 

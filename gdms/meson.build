@@ -1,4 +1,4 @@
-py_module_dir = python.get_install_dir() / 'gdm_settings'
+py_module_dir = python.get_install_dir() / 'gdms'
 
 configure_file(
   input: 'config.py.in',

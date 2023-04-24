@@ -14,8 +14,8 @@ import sys
 
 from gi.repository import GLib
 
-from gdm_settings import APP_ID
-from gdm_settings.enums import PackageType
+from gdms import APP_ID
+from gdms.enums import PackageType
 
 
 def get_os_info():

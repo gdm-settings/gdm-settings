@@ -4,8 +4,8 @@ import os
 import shutil
 import subprocess
 
-from gdm_settings import env
-from gdm_settings import utils
+from gdms import env
+from gdms import utils
 
 
 ThemesDir              = os.path.join(env.HOST_DATA_DIRS[0], 'themes')

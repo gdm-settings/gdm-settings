@@ -29,7 +29,7 @@ python = import('python').find_installation('python3')
 subdir('po')
 subdir('data')
 subdir('resources')
-subdir('gdm_settings')
+subdir('gdms')
 
 configure_file(
   input: 'gdm-settings.py.in',

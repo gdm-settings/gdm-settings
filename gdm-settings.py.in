@@ -8,6 +8,6 @@ AppDir = os.path.realpath(__file__).split('@prefix@')[0]
 py_install_dir = AppDir + '@py_install_dir@'
 sys.path.insert(1, py_install_dir)
 
-import gdm_settings
-status = gdm_settings.main()
+import gdms
+status = gdms.main()
 sys.exit(status)

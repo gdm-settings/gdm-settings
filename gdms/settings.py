@@ -8,13 +8,13 @@ from gettext import gettext as _, pgettext as C_
 
 from gi.repository import Gio
 
-from gdm_settings import APP_ID
-from gdm_settings import env
-from gdm_settings import gr_utils
-from gdm_settings.cmd import CommandList
-from gdm_settings.enums import PackageType, BackgroundType
-from gdm_settings.utils import GSettings
-from gdm_settings.themes import shell_themes
+from gdms import APP_ID
+from gdms import env
+from gdms import gr_utils
+from gdms.cmd import CommandList
+from gdms.enums import PackageType, BackgroundType
+from gdms.utils import GSettings
+from gdms.themes import shell_themes
 
 logger = logging.getLogger(__name__)
 

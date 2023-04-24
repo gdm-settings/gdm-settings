@@ -5,11 +5,11 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdm_settings import APP_NAME, APP_ID, BUILD_TYPE
-from gdm_settings.utils import BackgroundTask, GProperty, GSettings
-from gdm_settings.cmd import Command
-from gdm_settings.gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
-from gdm_settings import settings
+from gdms import APP_NAME, APP_ID, BUILD_TYPE
+from gdms.utils import BackgroundTask, GProperty, GSettings
+from gdms.cmd import Command
+from gdms.gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
+from gdms import settings
 
 from . import pages
 

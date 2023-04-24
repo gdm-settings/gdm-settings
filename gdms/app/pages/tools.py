@@ -3,13 +3,13 @@ from gettext import gettext as _
 
 from gi.repository import Adw, Gtk
 
-from gdm_settings import APP_ID
-from gdm_settings.env import TEMP_DIR
-from gdm_settings.cmd import Command
-from gdm_settings.utils import BackgroundTask, GSettings
-from gdm_settings.widgets import SwitchRow
-from gdm_settings.gr_utils import extract_default_theme, ThemesDir
-from gdm_settings import settings
+from gdms import APP_ID
+from gdms.env import TEMP_DIR
+from gdms.cmd import Command
+from gdms.utils import BackgroundTask, GSettings
+from gdms.widgets import SwitchRow
+from gdms.gr_utils import extract_default_theme, ThemesDir
+from gdms import settings
 
 from .common import PageContent
 

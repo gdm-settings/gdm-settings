@@ -3,8 +3,8 @@ import subprocess
 from collections.abc import Sequence
 
 
-from gdm_settings.env import TEMP_DIR, PACKAGE_TYPE
-from gdm_settings.enums import PackageType
+from gdms.env import TEMP_DIR, PACKAGE_TYPE
+from gdms.enums import PackageType
 
 
 def _unpack_args(args: tuple):

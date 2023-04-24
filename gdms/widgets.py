@@ -9,7 +9,7 @@ from gi.repository import Gio
 from gi.repository import GObject
 from gi.repository import GLib
 
-from gdm_settings.utils import GProperty
+from gdms.utils import GProperty
 
 
 class SwitchRow (Adw.ActionRow):
