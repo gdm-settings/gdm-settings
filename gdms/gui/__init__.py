@@ -50,6 +50,7 @@ class GdmSettingsApp(Adw.Application):
 
     def __init__(self):
         super().__init__(application_id=APP_ID)
+        self.props.resource_base_path = '/app/'
 
         def add_option(long_name, short_name, description, argument_name=None, argument_type='NONE'):
             self.add_main_option(long_name, ord(short_name),
@@ -96,7 +97,6 @@ class GdmSettingsApp(Adw.Application):
 
     def do_startup(self):
         Adw.Application.do_startup(self)
-        self.props.resource_base_path = '/app/'
         settings.init()
 
     def do_activate(self):
