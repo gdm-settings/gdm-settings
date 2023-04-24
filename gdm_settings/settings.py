@@ -161,33 +161,6 @@ def load_from_session():
         login_screen_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
         login_screen_settings['disable-user-list'] = user_settings["disable-user-list"]
 
-def save_to_file(filename=None):
-    config_parser = ConfigParser()
-
-    for settings in all_settings:
-        section_name = settings.props.schema_id
-        config_parser[section_name] = {}
-        for key in settings:
-            config_parser[section_name][key] = str(settings[key])
-
-    if filename:
-        logger.info(_("Exporting to file '{filename}'").format(filename=filename))
-        try:
-            with open(filename, 'w') as outfile:
-                config_parser.write(outfile)
-        except PermissionError:
-            logger.error(_("Cannot write to file '{filename}'. Permission denied"
-                           ).format(filename=filename))
-            raise
-        except IsADirectoryError:
-            logger.error(_("Cannot write to file '{filename}'. A directory with "
-                            "the same name already exists"
-                           ).format(filename=filename))
-            raise
-    else:
-        logger.info(_('Exporting to standard output'))
-        config_parser.write(sys.stdout)
-
 def load_from_file(filename=None):
     config_parser = ConfigParser()
 
@@ -221,6 +194,33 @@ def load_from_file(filename=None):
                 settings[key] = config_parser.getboolean(section_name, key)
             else:
                 settings[key] = key_type(config_parser[section_name][key])
+
+def save_to_file(filename=None):
+    config_parser = ConfigParser()
+
+    for settings in all_settings:
+        section_name = settings.props.schema_id
+        config_parser[section_name] = {}
+        for key in settings:
+            config_parser[section_name][key] = str(settings[key])
+
+    if filename:
+        logger.info(_("Exporting to file '{filename}'").format(filename=filename))
+        try:
+            with open(filename, 'w') as outfile:
+                config_parser.write(outfile)
+        except PermissionError:
+            logger.error(_("Cannot write to file '{filename}'. Permission denied"
+                           ).format(filename=filename))
+            raise
+        except IsADirectoryError:
+            logger.error(_("Cannot write to file '{filename}'. A directory with "
+                            "the same name already exists"
+                           ).format(filename=filename))
+            raise
+    else:
+        logger.info(_('Exporting to standard output'))
+        config_parser.write(sys.stdout)
 
 def drop_unapplied_changes():
     '''Forget about changes that have not been applied yet'''
