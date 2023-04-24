@@ -221,7 +221,7 @@ def load_from_file(filename=None):
                 settings[key] = key_type(config_parser[section_name][key])
 
 def drop_unapplied_changes():
-    '''Save settings to GSettings of this app'''
+    '''Forget about changes that have not been applied yet'''
     for settings in all_settings:
         settings.revert()
 
