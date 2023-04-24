@@ -60,11 +60,13 @@ def _GSettings(schema_id):
 _commands = CommandList()
 
 def init():
+    '''Initialize the settings module'''
     os.makedirs(env.TEMP_DIR, exist_ok=True)
     if main_settings["never-applied"] and env.PACKAGE_TYPE is not PackageType.Flatpak:
         load_from_session()
 
 def deinit():
+    '''Finalize the settings module'''
     shutil.rmtree(path=env.TEMP_DIR, ignore_errors=True)
 
 def load_from_session():
