@@ -159,7 +159,7 @@ def load_from_session():
         login_screen_settings['disable-restart-buttons'] = user_settings["disable-restart-buttons"]
         login_screen_settings['disable-user-list'] = user_settings["disable-user-list"]
 
-def export(filename=None):
+def save_to_file(filename=None):
     config_parser = ConfigParser()
 
     for settings in all_settings:

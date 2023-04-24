@@ -342,7 +342,7 @@ class GdmSettingsApp(Adw.Application):
             if response == Gtk.ResponseType.ACCEPT:
                 self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.export_task.function = lambda: settings.export(filepath)
+                self.export_task.function = lambda: settings.save_to_file(filepath)
                 self.export_task.start()
             file_chooser.destroy()
 
