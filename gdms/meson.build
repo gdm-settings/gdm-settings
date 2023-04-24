@@ -23,7 +23,6 @@ install_data(files(
     'gr_utils.py',
     'settings.py',
     'themes.py',
-    'widgets.py',
     'utils.py',
   ),
 

@@ -1,6 +1,6 @@
 from gi.repository import Gtk
 
-from gdms.widgets import SwitchRow
+from gdms.gui.widgets import SwitchRow
 from gdms.settings import accessibility_settings, top_bar_settings
 
 from .common import PageContent

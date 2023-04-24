@@ -5,7 +5,7 @@ from gi.repository import Adw
 from gi.repository import Gtk
 
 from gdms.utils import BackgroundTask
-from gdms.widgets import SwitchRow
+from gdms.gui.widgets import SwitchRow
 from gdms.settings import night_light_settings as nl_settings
 from gdms import settings
 
