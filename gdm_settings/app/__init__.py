@@ -300,7 +300,7 @@ class GdmSettingsApp(Adw.Application):
             if response == Gtk.ResponseType.ACCEPT:
                 self.window.task_counter.inc()
                 filepath = file_chooser.get_file().get_path()
-                self.import_task.function = lambda: settings.load(filepath)
+                self.import_task.function = lambda: settings.load_from_file(filepath)
                 self.import_task.start()
             file_chooser.destroy()
 

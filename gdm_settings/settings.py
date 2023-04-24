@@ -186,7 +186,7 @@ def export(filename=None):
         logger.info(_('Exporting to standard output'))
         config_parser.write(sys.stdout)
 
-def load(filename=None):
+def load_from_file(filename=None):
     config_parser = ConfigParser()
 
     try:
