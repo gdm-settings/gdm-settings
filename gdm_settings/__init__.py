@@ -47,6 +47,3 @@ def main() -> int:
         return app.run(sys.argv)
     except KeyboardInterrupt:
         return 0
-
-if __name__ == '__main__':
-    sys.exit(main())

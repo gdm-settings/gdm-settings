@@ -16,6 +16,7 @@ configure_file(
 
 install_data(files(
     '__init__.py',
+    '__main__.py',
     'cmd.py',
     'enums.py',
     'env.py',
