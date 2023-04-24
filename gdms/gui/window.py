@@ -8,7 +8,7 @@ from gi.repository import GObject
 from gdms import APP_NAME, APP_ID, BUILD_TYPE
 from gdms.utils import BackgroundTask, GProperty, GSettings
 from gdms.cmd import Command
-from gdms.gr_utils import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
+from gdms.gresource import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from gdms import settings
 
 from . import pages

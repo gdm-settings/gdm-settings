@@ -10,7 +10,7 @@ from gi.repository import Gio
 
 from gdms import APP_ID
 from gdms import env
-from gdms import gr_utils
+from gdms import gresource
 from gdms.cmd import CommandList
 from gdms.enums import PackageType, BackgroundType
 from gdms.utils import GSettings
@@ -317,16 +317,16 @@ def _backup_default_shell_theme ():
 
     logger.info(_("Backing up default shell theme …"))
 
-    if gr_utils.is_unmodified(gr_utils.ShellGresourceFile):
-        _commands.add(f"cp {gr_utils.ShellGresourceFile} {gr_utils.DefaultGresourceFile}")
+    if gresource.is_unmodified(gresource.ShellGresourceFile):
+        _commands.add(f"cp {gresource.ShellGresourceFile} {gresource.DefaultGresourceFile}")
 
     os.makedirs(env.TEMP_DIR, exist_ok=True)
 
-    gr_utils.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
+    gresource.extract_default_theme(f'{env.TEMP_DIR}/default-pure')
 
-    _commands.add(f"rm -rf {gr_utils.ThemesDir}/default-pure")
-    _commands.add(f"mkdir -p {gr_utils.ThemesDir}")
-    _commands.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gr_utils.ThemesDir}")
+    _commands.add(f"rm -rf {gresource.ThemesDir}/default-pure")
+    _commands.add(f"mkdir -p {gresource.ThemesDir}")
+    _commands.add(f"cp -r {env.TEMP_DIR}/default-pure -t {gresource.ThemesDir}")
 
 
 def _gresource_apply():
@@ -336,7 +336,7 @@ def _gresource_apply():
     # If needed, back up the default shell theme
 
     pure_theme_not_exists = 'default-pure' not in shell_themes.theme_ids
-    shell_gresource_is_stock = gr_utils.is_unmodified(gr_utils.ShellGresourceFile)
+    shell_gresource_is_stock = gresource.is_unmodified(gresource.ShellGresourceFile)
 
     if shell_gresource_is_stock or pure_theme_not_exists:
         _backup_default_shell_theme()
@@ -353,7 +353,7 @@ def _gresource_apply():
     if background_type is BackgroundType.image:
         background_image = appearance_settings['background-image']
 
-    compiled_file = gr_utils.compile(shelldir,
+    compiled_file = gresource.compile(shelldir,
           additional_css=get_css(),
         background_image=background_image
     )
@@ -362,10 +362,10 @@ def _gresource_apply():
     # We need to copy the compiled gresource file instead of moving it because the
     # copy gets correct SELinux context/label where applicable and prevents breakage
     # of GDM in such situations.
-    common_commands = [f"install -m644 {compiled_file} {gr_utils.CustomGresourceFile}"]
+    common_commands = [f"install -m644 {compiled_file} {gresource.CustomGresourceFile}"]
 
     fallback_commands = [
-        f'ln -sfr {gr_utils.CustomGresourceFile} {gr_utils.ShellGresourceFile}'
+        f'ln -sfr {gresource.CustomGresourceFile} {gresource.ShellGresourceFile}'
     ]
 
     raw_message = _("Applying GResource settings for {distro_name} …")
@@ -375,18 +375,18 @@ def _gresource_apply():
         logger.info(message)
         _commands.add('\n'.join(common_commands + special_commands))
 
-    if gr_utils.UbuntuGdmGresourceFile:
-        name_of_alternative = os.path.basename(gr_utils.UbuntuGdmGresourceFile)
+    if gresource.UbuntuGdmGresourceFile:
+        name_of_alternative = os.path.basename(gresource.UbuntuGdmGresourceFile)
         ubuntu_commands = [
             ('update-alternatives --quiet --install'
-             f' {gr_utils.UbuntuGdmGresourceFile}'
+             f' {gresource.UbuntuGdmGresourceFile}'
              f' {name_of_alternative}'
-             f' {gr_utils.CustomGresourceFile}'
+             f' {gresource.CustomGresourceFile}'
              ' 0'),
 
             ('update-alternatives --quiet --set'
              f' {name_of_alternative}'
-             f' {gr_utils.CustomGresourceFile}'),
+             f' {gresource.CustomGresourceFile}'),
         ]
 
         add_commands(_('Ubuntu'), ubuntu_commands)
@@ -613,34 +613,34 @@ def apply_user_display_settings() -> bool:
     shutil.copyfile(user_monitors_xml, temp_monitors_xml)
     os.chmod(temp_monitors_xml, 0o644)
 
-    _commands.add(['machinectl', 'shell', f'{gr_utils.GdmUsername}@', '/usr/bin/env',
+    _commands.add(['machinectl', 'shell', f'{gresource.GdmUsername}@', '/usr/bin/env',
                      'gsettings', 'set', 'experimental-features',
                      '"[\'scale-monitor-framebuffer\']"',
                      '&>/dev/null',
                    ])
 
     _commands.add(['install', '-Dm644',
-                     '-o', gr_utils.GdmUsername,
+                     '-o', gresource.GdmUsername,
                      temp_monitors_xml,
-                     f'~{gr_utils.GdmUsername}/.config/monitors.xml',
+                     f'~{gresource.GdmUsername}/.config/monitors.xml',
                    ])
 
     return _commands.run()
 
 
 def reset() -> bool:
-    if gr_utils.UbuntuGdmGresourceFile:
+    if gresource.UbuntuGdmGresourceFile:
         logger.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
         _commands.add(['update-alternatives',  '--quiet',  '--remove',
-                          os.path.basename(gr_utils.UbuntuGdmGresourceFile),
-                          gr_utils.CustomGresourceFile,
+                          os.path.basename(gresource.UbuntuGdmGresourceFile),
+                          gresource.CustomGresourceFile,
                        ])
-        _commands.add(f'rm -f {gr_utils.CustomGresourceFile}')
-    elif os.path.exists(gr_utils.DefaultGresourceFile):
+        _commands.add(f'rm -f {gresource.CustomGresourceFile}')
+    elif os.path.exists(gresource.DefaultGresourceFile):
         logger.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
-        _commands.add(['mv', '-f', gr_utils.DefaultGresourceFile, gr_utils.ShellGresourceFile])
-        _commands.add(f"chown root: {gr_utils.ShellGresourceFile}")
-        _commands.add(f"chmod 644 {gr_utils.ShellGresourceFile}")
+        _commands.add(['mv', '-f', gresource.DefaultGresourceFile, gresource.ShellGresourceFile])
+        _commands.add(f"chown root: {gresource.ShellGresourceFile}")
+        _commands.add(f"chmod 644 {gresource.ShellGresourceFile}")
 
     _commands.add("rm -f /etc/dconf/profile/gdm")
     _commands.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")

@@ -7,7 +7,7 @@ from gdms import APP_ID
 from gdms.env import TEMP_DIR
 from gdms.cmd import Command
 from gdms.utils import BackgroundTask, GSettings
-from gdms.gr_utils import extract_default_theme, ThemesDir
+from gdms.gresource import extract_default_theme, ThemesDir
 from gdms import settings
 from gdms.gui.widgets import SwitchRow
 
