@@ -14,13 +14,13 @@ from gdm_settings import stderr_log_handler
 from gdm_settings import env
 from gdm_settings.enums import PackageType
 from gdm_settings.utils import BackgroundTask, GSettings
+from gdm_settings.gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
 
 from .about import about_window
 from .settings import SettingsManager
 from .window import GdmSettingsWindow
-from .gr_utils import ShellGresourceFile, UbuntuGdmGresourceFile
 
 logger = logging.getLogger(__name__)
 

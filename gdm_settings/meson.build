@@ -20,6 +20,7 @@ install_data(files(
     'cmd.py',
     'enums.py',
     'env.py',
+    'gr_utils.py',
     'themes.py',
     'widgets.py',
     'utils.py',
