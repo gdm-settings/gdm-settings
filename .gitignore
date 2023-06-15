@@ -3,6 +3,7 @@
 /*flatpak*
 /cache/
 /tmp/
+/.vscode/
 
 # Python
 __pycache__/
