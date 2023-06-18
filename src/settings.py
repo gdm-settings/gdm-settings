@@ -240,6 +240,7 @@ class SettingsManager (GObject.Object):
         background_image = appearance_settings['background-image']
         if background_type is BackgroundType.image and background_image:
             css += "\n"
+            css += ".login-dialog,\n"
             css += "#lockDialogGroup {\n"
             css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
             css += "  background-size: cover;\n"
