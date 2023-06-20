@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Andrea Brandi <git@andreabrandi.com>, 2022.
 # albanobattistella <albano_battistella@hotmail.com>, 2022.
+# Davide Neri <davnerix@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2022-12-05 06:47+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"PO-Revision-Date: 2023-06-21 21:51+0000\n"
+"Last-Translator: Davide Neri <davnerix@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
 "Language: it\n"
@@ -17,11 +18,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr "Nome Tema"
+msgstr "Nome tema"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
@@ -31,6 +32,7 @@ msgstr "Tipo di sfondo"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
+"Indica se lo sfondo di GDM deve essere un'immagine, un colore o predefinito."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -39,22 +41,22 @@ msgstr "Immagine di sfondo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "Il file immagine da usare come sfondo per GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 #: src/resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Colore di sfondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "Il colore da usare come sfondo per GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "Velocità del puntatore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -62,6 +64,9 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Velocità del puntatore per il touchpad. I valori accettati sono "
+"nell'intervallo [-1...1] (da \"non accelerato\" a \"veloce\". Il valore "
+"predefinito di sistema è 0."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -107,32 +112,38 @@ msgstr "L'ora di inizio"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Quando la \"pianificazione automatica\" è disattivata, utilizza questo "
-"inizio in ore."
+"Quando la \"pianificazione automatica\" è disattivata, utilizza questa ora "
+"per l'inizio."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Il minuto di inizio"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Quando la \"pianificazione automatica\" è disattivata, utilizza questo "
+"minuto per l'inizio."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "L'ora di fine"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"Quando la \"pianificazione automatica\" è disattivata, utilizza questa ora "
+"per la fine."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Il minuto di fine"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Quando la \"pianificazione automatica\" è disattivata, utilizza questo "
+"minuto per la fine."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
