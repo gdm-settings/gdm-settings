@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-02-24 05:46+0000\n"
+"PO-Revision-Date: 2023-05-21 13:52+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -26,10 +26,8 @@ msgstr "Tipe de fons"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Indica se lo rèireplan deu èsser un imatge, una colora o pas res."
+msgstr "Indica se lo rèireplan deu èsser un imatge, una colora o predeterminat."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"

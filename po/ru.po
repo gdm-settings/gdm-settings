@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-13 09:56+0000\n"
+"PO-Revision-Date: 2023-04-26 15:48+0000\n"
 "Last-Translator: Войнов Артем Романович <voynovar@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 4.18-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -819,7 +819,7 @@ msgstr "Скорость указателя"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Тачпад"
+msgstr "Сенсорная панель"
 
 #: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-13 09:56+0000\n"
+"PO-Revision-Date: 2023-04-15 15:51+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
@@ -552,7 +552,7 @@ msgstr "Ikoner"
 
 #: src/resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr "Pekare"
+msgstr "Muspekare"
 
 #: src/resources/ui/appearance-page.blp:17
 msgid "Background"
@@ -802,7 +802,7 @@ msgstr "Pekarhastighet"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Pekplatta"
+msgstr "Styrplatta"
 
 #: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
