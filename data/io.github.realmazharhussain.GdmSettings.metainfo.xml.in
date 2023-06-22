@@ -96,6 +96,18 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="3.2" type="stable" date="2023-06-22">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.2</url>
+
+      <description>
+        <p>Fixed: Changing background doesn't work on GNOME 44</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/148">#158</issue>
+      </issues>
+    </release>
+
     <release version="3.1" type="stable" date="2023-04-13">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.1</url>
     </release>
