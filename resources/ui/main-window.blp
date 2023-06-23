@@ -28,7 +28,7 @@ Box content_box {
     title-widget: Box {
       styles ["title"]
 
-      Label title_label { visible: bind section_label.visible inverted bidirectional; }
+      Label title_label { visible: bind-property section_label.visible inverted bidirectional; }
       Label section_label { visible: bind flap.folded; ellipsize: end; }
     };
 
@@ -46,7 +46,7 @@ Box content_box {
 
   Adw.ToastOverlay toast_overlay {
     Adw.Flap flap {
-      reveal-flap: bind toggle_pane_button.active bidirectional;
+      reveal-flap: bind-property toggle_pane_button.active bidirectional;
       swipe-to-open: bind flap.folded;
       swipe-to-close: bind flap.folded;
 

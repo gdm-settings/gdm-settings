@@ -8,18 +8,18 @@ Box content_box {
   Adw.PreferencesGroup {
     margin-top: 12;
 
-    .SwitchRow disable_restart_buttons_row {
+    $SwitchRow disable_restart_buttons_row {
       title: _("Disable Restart Buttons");
     }
 
-    .SwitchRow disable_user_list_row {
+    $SwitchRow disable_user_list_row {
       title: _("Disable User List");
     }
 
     Adw.ExpanderRow logo_expanderrow {
       title: _("Enable Logo");
       subtitle: _("Whether to show a logo below user list");
-      expanded: bind logo_switch.active bidirectional;
+      expanded: bind-property logo_switch.active bidirectional;
 
       [action]
       Switch logo_switch {
@@ -36,11 +36,11 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Welcome Message");
 
-    .SwitchRow welcome_message_row {
+    $SwitchRow welcome_message_row {
       title: _("Enable");
     }
 
-    .SwitchRow enlarge_welcome_message_row {
+    $SwitchRow enlarge_welcome_message_row {
       title: _("Enlarge");
       sensitive: bind welcome_message_row.enabled;
     }

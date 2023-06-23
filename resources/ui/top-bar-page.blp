@@ -13,7 +13,7 @@ Box content_box {
 
       [action] Switch text_color_switch {
         valign: center;
-        active: bind text_color_expanderrow.expanded bidirectional;
+        active: bind-property text_color_expanderrow.expanded bidirectional;
       }
 
       Adw.ActionRow {
@@ -30,7 +30,7 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("Change Background Color");
-      expanded: bind background_color_switch.active bidirectional;
+      expanded: bind-property background_color_switch.active bidirectional;
 
       [action] Switch background_color_switch {
         valign: center;
@@ -48,11 +48,11 @@ Box content_box {
       }
     }
 
-    .SwitchRow disable_arrows_row {
+    $SwitchRow disable_arrows_row {
       title: _("Disable Arrows");
     }
 
-    .SwitchRow disable_rounded_corners_row {
+    $SwitchRow disable_rounded_corners_row {
       title: _("Disable Rounded Corners");
     }
   }
@@ -60,7 +60,7 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Accessibility");
 
-    .SwitchRow accessibilty_menu_row {
+    $SwitchRow accessibilty_menu_row {
       title: _("Always Show Accessibility Menu");
     }
   }
@@ -68,11 +68,11 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Clock");
 
-    .SwitchRow show_weekday_row {
+    $SwitchRow show_weekday_row {
       title: _("Show Weekday");
     }
 
-    .SwitchRow show_seconds_row {
+    $SwitchRow show_seconds_row {
       title: _("Show Seconds");
     }
 
@@ -85,7 +85,7 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Power");
 
-    .SwitchRow show_battery_percentage_row {
+    $SwitchRow show_battery_percentage_row {
       title: _("Show battery percentage");
     }
   }

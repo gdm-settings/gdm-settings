@@ -11,12 +11,12 @@ Box content_box {
 
       [action] Label { label: bind cursor_size_selector.selected-name; }
 
-      .CursorSizeSelector cursor_size_selector {
-        .CursorSizeButton { cursor_size: 24; size_name: C_("Cursor Size", "Default"); }
-        .CursorSizeButton { cursor_size: 32; size_name: C_("Cursor Size", "Medium"); }
-        .CursorSizeButton { cursor_size: 48; size_name: C_("Cursor Size", "Large"); }
-        .CursorSizeButton { cursor_size: 64; size_name: C_("Cursor Size", "Larger"); }
-        .CursorSizeButton { cursor_size: 96; size_name: C_("Cursor Size", "Largest"); }
+      $CursorSizeSelector cursor_size_selector {
+        $CursorSizeButton { cursor_size: 24; size_name: C_("Cursor Size", "Default"); }
+        $CursorSizeButton { cursor_size: 32; size_name: C_("Cursor Size", "Medium"); }
+        $CursorSizeButton { cursor_size: 48; size_name: C_("Cursor Size", "Large"); }
+        $CursorSizeButton { cursor_size: 64; size_name: C_("Cursor Size", "Larger"); }
+        $CursorSizeButton { cursor_size: 96; size_name: C_("Cursor Size", "Largest"); }
       }
     }
   }
@@ -33,7 +33,7 @@ Box content_box {
       ]};
     }
 
-    .SwitchRow m_natural_scrolling_row {
+    $SwitchRow m_natural_scrolling_row {
       title: _("Natural Scrolling");
       subtitle: _("Scrolling moves the content, not the view.");
     }
@@ -51,21 +51,21 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Touchpad");
 
-    .SwitchRow t_tap_to_click_row {
+    $SwitchRow t_tap_to_click_row {
       title: _("Tap to Click");
     }
 
-    .SwitchRow t_natural_scrolling_row {
+    $SwitchRow t_natural_scrolling_row {
       title: _("Natural Scrolling");
       subtitle: _("Scrolling moves the content, not the view.");
     }
 
-    .SwitchRow t_two_finger_scrolling_row {
+    $SwitchRow t_two_finger_scrolling_row {
       title: _("Two-finger Scrolling");
       subtitle: _("Scroll by swiping with two fingers.");
     }
 
-    .SwitchRow t_disable_while_typing_row {
+    $SwitchRow t_disable_while_typing_row {
       title: _("Disable while Typing");
     }
 
