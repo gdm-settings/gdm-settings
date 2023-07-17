@@ -162,7 +162,7 @@ class GdmSettingsApp(Adw.Application):
 
             return False
 
-        gdm_installed = bool(ShellGresourceFile)
+        gdm_installed = bool(gresource.ShellGresourceFile)
         polkit_installed = check_dependency('pkexec')
 
         if gdm_installed and polkit_installed:
