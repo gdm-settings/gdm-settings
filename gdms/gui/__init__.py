@@ -102,6 +102,8 @@ class GdmSettingsApp(Adw.Application):
             win.present()
             return
 
+        default_gresouce = gresource.get_default()
+
         logger.info(f"Application Version    = {VERSION}")
         logger.info(f"Operating System       = {env.OS_PRETTY_NAME}")
         logger.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
@@ -109,7 +111,7 @@ class GdmSettingsApp(Adw.Application):
         logger.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
         logger.info(f"ShellGresourceFile     = {gresource.ShellGresourceFile}")
         logger.info(f"UbuntuGdmGresourceFile = {gresource.UbuntuGdmGresourceFile}")
-        logger.info(f"Default Gresource File = {gresource.get_default()}")
+        logger.info(f"Default Gresource File = {default_gresouce}")
 
         self.settings = GSettings(APP_ID)
 
@@ -129,6 +131,10 @@ class GdmSettingsApp(Adw.Application):
         # required to be installed on the user's system. So, we need to
         # check them and report to the user if they are missing.
         if not self.check_system_dependencies():
+            return
+
+        if not default_gresouce:
+            self.show_missing_gresource_dialog()
             return
 
         if (not self.settings['donation-dialog-shown']
@@ -208,6 +214,19 @@ class GdmSettingsApp(Adw.Application):
          body_use_markup = True,
         )
 
+        dialog.add_response('ok', _('OK'))
+        dialog.connect('response', lambda *args: self.quit())
+        dialog.present()
+
+
+    def show_missing_gresource_dialog (self):
+        heading = _("Default Shell Theme File Lost")
+        body = _(
+            "The app needs but could not find an unmodified default shell theme file. "
+            "To fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+        )
+
+        dialog = Adw.MessageDialog.new(self.window, heading, body)
         dialog.add_response('ok', _('OK'))
         dialog.connect('response', lambda *args: self.quit())
         dialog.present()
