@@ -128,7 +128,8 @@ class GdmSettingsApp(Adw.Application):
         # Some dependencies cannot be packaged along with the app but are
         # required to be installed on the user's system. So, we need to
         # check them and report to the user if they are missing.
-        self.check_system_dependencies()
+        if not self.check_system_dependencies():
+            return
 
         if (not self.settings['donation-dialog-shown']
         and not self.settings['never-applied']):
@@ -165,7 +166,7 @@ class GdmSettingsApp(Adw.Application):
         polkit_installed = check_dependency('pkexec')
 
         if gdm_installed and polkit_installed:
-            return
+            return True
 
         if env.PACKAGE_TYPE is PackageType.Flatpak:
             message = _('Following programs are required to be installed <b>on the host system</b> for'
