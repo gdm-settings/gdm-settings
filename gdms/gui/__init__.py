@@ -14,7 +14,7 @@ from gdms import stderr_log_handler
 from gdms import env
 from gdms.enums import PackageType
 from gdms.utils import BackgroundTask, GSettings
-from gdms.gresource import ShellGresourceFile, UbuntuGdmGresourceFile
+from gdms import gresource
 from gdms import settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
@@ -107,8 +107,9 @@ class GdmSettingsApp(Adw.Application):
         logger.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
         logger.info(f"TEMP_DIR               = {env.TEMP_DIR}")
         logger.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
-        logger.info(f"ShellGresourceFile     = {ShellGresourceFile}")
-        logger.info(f"UbuntuGdmGresourceFile = {UbuntuGdmGresourceFile}")
+        logger.info(f"ShellGresourceFile     = {gresource.ShellGresourceFile}")
+        logger.info(f"UbuntuGdmGresourceFile = {gresource.UbuntuGdmGresourceFile}")
+        logger.info(f"Default Gresource File = {gresource.get_default()}")
 
         self.settings = GSettings(APP_ID)
 
