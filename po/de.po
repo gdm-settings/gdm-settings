@@ -7,13 +7,14 @@
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # jagfwajgf <juri26@outlook.de>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Simon Hahne <simonhahne@web.de>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2023-07-31 14:08+0000\n"
+"Last-Translator: Simon Hahne <simonhahne@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -163,17 +164,19 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Energiesparprofil aktivieren bei niedrigem Batteriestand"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Energiesparprofil bei niedrigem Batteriestand mit power-profiles-daemon "
+"automatisch aktivieren."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Bildschirm nach einer gewissen Zeit der Inaktivität dimmen"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
@@ -189,13 +192,14 @@ msgid ""
 msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+#, fuzzy
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Zeit, bevor die Sitzung als inaktiv gilt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Anzahl der Minuten an Inaktivität, bevor die Sitzung als inaktiv gilt."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -512,8 +516,9 @@ msgid "Images"
 msgstr "Bilder"
 
 #: src/lib/file_choosers.py:114
+#, fuzzy
 msgid "All Files"
-msgstr ""
+msgstr "Alle Dateien"
 
 #: src/lib/file_choosers.py:119
 msgid "Choose Image"
@@ -535,10 +540,15 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Die Datei '$XDG_CONFIG_HOME/monitors.xml' wird benötigt um die aktuellen "
+"Anzeigeeinstellungen anzuwenden, existiert aber nicht.\n"
+"\n"
+"Um die Datei automatisch zu erstellen, öffne die Systemeinstellungen und "
+"ändere dort einige Anzeigeoptionen."
 
 #: src/pages/display.py:102
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Monitoreinstellungen nicht gefunden"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -577,7 +587,7 @@ msgstr "Art"
 
 #: src/resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/resources/ui/appearance-page.blp:21
 #: src/resources/ui/appearance-page.blp:26
@@ -602,10 +612,8 @@ msgid "Apply current display settings"
 msgstr "Aktuelle Bildschirmeinstellungen anwenden"
 
 #: src/resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Auflösung, Aktulisierungsrate, Bildschirmpositionen, etc"
+msgstr "Auflösung, Bildwiederholrate, Bildschirmpositionen, etc."
 
 #: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
 msgid "Apply"
@@ -706,11 +714,11 @@ msgstr "Einstellungen zurücksetzen"
 
 #: src/resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Aus Datei importieren"
 
 #: src/resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "In Datei exportieren"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -750,7 +758,7 @@ msgstr "Willkommensnachricht"
 
 #: src/resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Vergrößern"
 
 #: src/resources/ui/login-screen-page.blp:49
 #, fuzzy
@@ -759,15 +767,14 @@ msgid "Message"
 msgstr "Willkommensnachricht"
 
 #: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Zeiger"
+msgstr "Zeigergröße"
 
 #: src/resources/ui/pointing-page.blp:15
+#, fuzzy
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/resources/ui/pointing-page.blp:16
 #, fuzzy
@@ -779,12 +786,12 @@ msgstr "Medium"
 #: src/resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Groß"
 
 #: src/resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Größer"
 
 #: src/resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
@@ -874,16 +881,19 @@ msgid "Enables power saver mode when battery is low."
 msgstr ""
 
 #: src/resources/ui/power-page.blp:23
+#, fuzzy
 msgid "Dim Screen"
-msgstr ""
+msgstr "Bildschirm dimmen"
 
 #: src/resources/ui/power-page.blp:24
+#, fuzzy
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Verringert die Bildschirmhelligkeit, wenn der Computer inaktiv ist."
 
 #: src/resources/ui/power-page.blp:28
+#, fuzzy
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Bildschirm ausschalten"
 
 #: src/resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
