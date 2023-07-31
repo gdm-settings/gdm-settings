@@ -8,13 +8,14 @@
 # jagfwajgf <juri26@outlook.de>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Simon Hahne <simonhahne@web.de>, 2023.
+# Amr Ibrahim <amribrahim1987@hotmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-07-31 14:08+0000\n"
-"Last-Translator: Simon Hahne <simonhahne@web.de>\n"
+"PO-Revision-Date: 2023-08-01 18:05+0000\n"
+"Last-Translator: Amr Ibrahim <amribrahim1987@hotmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -34,11 +35,8 @@ msgstr "Art des Hintergrunds"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
-"Gibt an, ob der GDM-Hintergrund ein Bild, eine Farbe oder Nichts sein soll."
+msgstr "Ob der GDM-Hintergrund ein Bild, eine Farbe oder Standard sein soll."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -153,7 +151,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Aktion der Einschalttaste"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -161,6 +159,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Die Aktion, die ausgeführt werden soll, wenn der Einschalttaste des Systems "
+"gedrückt wird. Diese Aktion ist bei virtuellen Maschinen (Ausschalten) und "
+"Tablets (Anhalten) fest programmiert (und die Einstellung wird ignoriert)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -181,18 +182,22 @@ msgstr "Bildschirm nach einer gewissen Zeit der Inaktivität dimmen"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Ob der Bildschirm abgedunkelt werden soll, um Strom zu sparen, wenn der "
+"Computer im Leerlauf ist."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
 msgstr ""
+"Ob der Bildschirm ausgeblendet werden soll, wenn die Sitzung inaktiv ist"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Ob der Bildschirm ausgeblendet werden soll, um Strom zu sparen, wenn der "
+"Computer im Leerlauf ist."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
-#, fuzzy
 msgid "Time before session is considered idle"
 msgstr "Zeit, bevor die Sitzung als inaktiv gilt"
 
@@ -203,21 +208,23 @@ msgstr "Anzahl der Minuten an Inaktivität, bevor die Sitzung als inaktiv gilt."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Aussetzen bei Inaktivität und Akkuverbrauch"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Ruhezeit für den Computer im Akkubetrieb"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Die Zeit in Minuten, die der Computer im Akkubetrieb inaktiv sein muss, "
+"bevor er in den Ruhezustand übergeht. Ein Wert von 0 bedeutet nie."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Aussetzen, wenn inaktiv und eingesteckt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
@@ -575,7 +582,7 @@ msgstr "Symbole"
 
 #: src/resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr "Zeiger"
+msgstr "Mauszeiger"
 
 #: src/resources/ui/appearance-page.blp:17
 msgid "Background"
@@ -832,7 +839,7 @@ msgstr "Zeigergeschwindigkeit"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Tastfeld"
+msgstr "Touchpad"
 
 #: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
