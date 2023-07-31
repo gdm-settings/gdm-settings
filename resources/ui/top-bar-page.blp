@@ -13,7 +13,7 @@ Box content_box {
 
       [action] Switch text_color_switch {
         valign: center;
-        active: bind-property text_color_expanderrow.expanded bidirectional;
+        active: bind text_color_expanderrow.expanded bidirectional;
       }
 
       Adw.ActionRow {
@@ -30,7 +30,7 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("Change Background Color");
-      expanded: bind-property background_color_switch.active bidirectional;
+      expanded: bind background_color_switch.active bidirectional;
 
       [action] Switch background_color_switch {
         valign: center;

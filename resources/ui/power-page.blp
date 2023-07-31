@@ -27,7 +27,7 @@ Box content_box {
     Adw.ExpanderRow {
       title: _("Turn Screen Off");
       subtitle: _("Whether to turn the screen off after a period of inactivity.");
-      expanded: bind-property screen_blank_switch.active bidirectional;
+      expanded: bind screen_blank_switch.active bidirectional;
 
       [action]
       Switch screen_blank_switch {
@@ -59,7 +59,7 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("On Battery Power");
-      expanded: bind-property suspend_on_battery_switch.active bidirectional;
+      expanded: bind suspend_on_battery_switch.active bidirectional;
 
       [action]
       Switch suspend_on_battery_switch {
@@ -86,7 +86,7 @@ Box content_box {
 
     Adw.ExpanderRow {
       title: _("When Plugged In");
-      expanded: bind-property suspend_on_ac_switch.active bidirectional;
+      expanded: bind suspend_on_ac_switch.active bidirectional;
 
       [action]
       Switch suspend_on_ac_switch {

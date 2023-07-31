@@ -19,7 +19,7 @@ Box content_box {
     Adw.ExpanderRow logo_expanderrow {
       title: _("Enable Logo");
       subtitle: _("Whether to show a logo below user list");
-      expanded: bind-property logo_switch.active bidirectional;
+      expanded: bind logo_switch.active bidirectional;
 
       [action]
       Switch logo_switch {
