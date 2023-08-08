@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 # Linux User <maxonyt2@gmail.com>, 2023.
 # Grayson Hunt <Vasilkusniruk@gmail.com>, 2023.
+# Gleb <gkaraulnyi@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-05-09 17:48+0000\n"
-"Last-Translator: Grayson Hunt <Vasilkusniruk@gmail.com>\n"
+"PO-Revision-Date: 2023-08-09 12:49+0000\n"
+"Last-Translator: Gleb <gkaraulnyi@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -190,7 +191,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Час до сесії вважається неактивним"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -216,56 +217,58 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Чи призупиняти, коли неактивний і підключений"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Час очікування сплячого режиму для комп’ютера, коли його підключено"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Час у хвилинах, протягом якого комп’ютер від джерела змінного струму повинен "
+"бути неактивним, перш ніж він перейде в режим сну. Значення 0 означає ніколи."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Чи застосовувати налаштування верхньої панелі до вилученої теми"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Чи вимкнути стрілки верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Чи вимкнути округлені кути верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Чи змінювати колір тексту верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Колір тексту верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Чи змінювати фон верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Колір тла верхньої панелі"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:66
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Налаштування Login Manager"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Налаштуйте свій екран входу"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -273,92 +276,94 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Змінити налаштування GDM; Застосуйте тему та фон, змініть тему курсора, тему "
+"значків і налаштування нічного освітлення тощо."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Мазхар Хусейн"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
 msgid "Fixed: Fails to run on PureOS"
-msgstr ""
+msgstr "Виправлено: не вдалося запустити на PureOS"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Нові параметри</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr ""
+msgstr "Можливість відключити доступне меню, коли воно не використовується"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
-msgstr ""
+msgstr "Можливість змінити розмір курсору"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 msgid "A one-time donation request"
-msgstr ""
+msgstr "Одноразовий запит на пожертву"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Опція пожертви в гамбургерному меню"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
-msgstr ""
+msgstr "<em>Зміни поведінки</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Власні назви відображаються для тем замість назви їх каталогу"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
+msgstr "Під час вибору теми значків теми лише для курсору не відображаються"
 
 #: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Мазхар Хусейн"
 
 #: src/about.py:12
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Фалес Бінда"
 
 #: src/about.py:83
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "Авторське право 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:95
 msgid "translator-credits"
-msgstr ""
+msgstr "Gleb widness73@gmail.com and"
 
 #: src/app.py:58
 msgid "Show application version"
-msgstr ""
+msgstr "Показати версію програми"
 
 #: src/app.py:59
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Встановіть рівень докладності вручну (від 0 до 5)"
 
 #: src/app.py:60
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "РІВЕНЬ"
 
 #: src/app.py:61
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Увімкнути докладний режим (псевдонім --verbosity=5)"
 
 #: src/app.py:62
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Увімкнути тихий режим (псевдонім --verbosity=0)"
 
 #: src/app.py:82
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Недійсний рівень докладності {level}. Має бути 0, 5 або між ними."
 
 #: src/app.py:164
 msgid ""
@@ -366,22 +371,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Щоб програма працювала належним чином, <b>на хост-системі</b> необхідно "
+"встановити такі програми, але їх не встановлено на хост-системі."
 
 #: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Для належної роботи цієї програми потрібне наступне програмне забезпечення, "
+"але воно не встановлено."
 
 #: src/app.py:177
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: src/app.py:183
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Полкіт</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -391,18 +400,20 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Натисніть <a href=\"{url}\">тут</a>, щоб отримати інструкції щодо "
+"встановлення цих залежностей у вашій системі."
 
 #: src/app.py:198
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Відсутні Залежності"
 
 #: src/app.py:203 src/pages/display.py:107
 msgid "OK"
-msgstr ""
+msgstr "Так"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Запит на пожертвування"
 
 #: src/app.py:211
 msgid ""
@@ -411,42 +422,47 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Цей додаток є і завжди залишатиметься відкритим кодом/Libre та безкоштовним. "
+"Однак ви можете продемонструвати свою любов, зробивши пожертву розробнику.\n"
+"❤️\n"
+"Я був би дуже вдячний."
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Не Зацікавлений"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвуйте"
 
 #: src/app.py:257
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Налаштування перезавантажено"
 
 #: src/app.py:264
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Налаштування сеансу успішно завантажено"
 
 #: src/app.py:268
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Налаштування сеансу завантаження НЕ підтримуються у версії Flatpak"
 
 #: src/app.py:281
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Скидання налаштувань виконано"
 
 #: src/app.py:283
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Не вдалося скинути налаштування"
 
 #: src/app.py:302
 msgid "Import"
-msgstr ""
+msgstr "Імпорт"
 
 #: src/app.py:323
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Налаштування успішно імпортовано з файлу"
 
 #: src/app.py:325
 msgid "Failed to import. File is invalid"
