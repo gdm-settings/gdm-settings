@@ -248,6 +248,7 @@ class SettingsManager (GObject.Object):
         elif background_type is BackgroundType.color:
             background_color = appearance_settings['background-color']
             css += "\n"
+            css += ".login-dialog { background: transparent; }\n"
             css += "#lockDialogGroup { background-color: "+ background_color + "; }\n"
 
         ### Top Bar ###
