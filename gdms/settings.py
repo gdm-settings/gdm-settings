@@ -253,7 +253,7 @@ def get_css() -> str:
         background_color = appearance_settings['background-color']
         css += "\n"
         css += ".login-dialog { background: transparent; }\n"
-        css += "#lockDialogGroup { background-color: "+ background_color + "; }\n"
+        css += "#lockDialogGroup { background-color: " + background_color + "; }\n"
 
     ### Top Bar ###
     def select_elem(elem:str='') -> str:
