@@ -214,6 +214,27 @@
         </artifact>
       </artifacts>
     </release>
+
+    <release version="2.1" date="2023-2-4"/>
+    <release version="2.0" date="2022-11-22"/>
+    <release version="2~beta.1" type="development" date="2022-11-12"/>
+    <release version="2~beta.0" type="development" date="2022-10-26"/>
+    <release version="1.1" date="2022-10-08"/>
+    <release version="1.0" date="2022-09-23"/>
+    <release version="1.0~beta.4" type="development" date="2022-09-10"/>
+    <release version="1.0~beta.3" type="development" date="2022-09-06"/>
+    <release version="1.0~beta.2" type="development" date="2022-09-02"/>
+    <release version="1.0~beta.1" type="development" date="2022-09-01"/>
+    <release version="0.6" date="2022-06-20"/>
+    <release version="0.5.3" date="2022-05-08"/>
+    <release version="0.5.2" date="2022-04-28"/>
+    <release version="0.5.1" date="2022-04-24"/>
+    <release version="0.5" date="2022-04-23"/>
+    <release version="0.4-alpha" type="development" date="2022-03-16"/>
+    <release version="0.3-alpha" type="development" date="2022-02-25"/>
+    <release version="0.2-alpha" type="development" date="2022-01-31"/>
+    <release version="0.1.1-alpha" type="development" date="2022-01-23"/>
+    <release version="0.1.0-alpha" type="development" date="2022-01-22"/>
   </releases>
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
 </component>
