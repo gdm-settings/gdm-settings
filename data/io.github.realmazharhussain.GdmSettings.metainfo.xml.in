@@ -100,9 +100,10 @@
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.3</url>
 
       <description>
+        <p>Fixed:</p>
         <ul>
-          <li>Fixed: Changing background color doesn't work on GNOME 44</li>
-          <li>Fixed: Broken background image on GNOME 44 widescreen/dual monitor setups</li>
+          <li>Changing background color doesn't work on GNOME 44</li>
+          <li>Broken background image on GNOME 44 widescreen/dual monitor setups</li>
         </ul>
       </description>
 
