@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-14 08:27+0000\n"
+"PO-Revision-Date: 2023-08-16 07:53+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -52,7 +52,7 @@ msgstr "Achtergrondkleur"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
 msgid "The Color to use as GDM background"
-msgstr "De kleur die wordt ingesteld als achtergrond"
+msgstr "De kleur die wordt ingesteld als GDM-achtergrond"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -112,7 +112,7 @@ msgstr "Inschakelen om (uur)"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Als “schedule-automatic” uitgeschakeld is, dan wordt deze starttijd "
+"Als ‘schedule-automatic’ uitgeschakeld is, dan wordt deze starttijd in uren "
 "aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
@@ -122,8 +122,8 @@ msgstr "Inschakelen om (minuut)"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Als “schedule-automatic” uitgeschakeld is, dan wordt deze starttijd "
-"aangehouden."
+"Als ‘schedule-automatic’ uitgeschakeld is, dan wordt deze starttijd in "
+"minuten aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -132,7 +132,7 @@ msgstr "Uitschakelen om (uur)"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Als “schedule-automatic” uitgeschakeld is, dan wordt deze eindtijd "
+"Als ‘schedule-automatic’ uitgeschakeld is, dan wordt deze eindtijd in uren "
 "aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
@@ -142,8 +142,8 @@ msgstr "Uitschakelen om (minuut)"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Als “schedule-automatic” uitgeschakeld is, dan wordt deze eindtijd "
-"aangehouden."
+"Als ‘schedule-automatic’ uitgeschakeld is, dan wordt deze eindtijd in "
+"minuten aangehouden."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
