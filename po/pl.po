@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gdm-settings package.
 # Misiu <hubo6002@proton.me>, 2023.
+# Eryk Michalak <gnu.ewm@protonmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-08-25 23:57+0000\n"
-"Last-Translator: Misiu <hubo6002@proton.me>\n"
+"PO-Revision-Date: 2023-08-26 14:54+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
 "Language: pl\n"
@@ -330,7 +331,7 @@ msgstr "Copyright 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: src/about.py:95
 msgid "translator-credits"
-msgstr ""
+msgstr "ewm "
 
 #: src/app.py:58
 msgid "Show application version"
@@ -343,7 +344,7 @@ msgstr ""
 #: src/app.py:60
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "POZIOM"
 
 #: src/app.py:61
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -374,12 +375,12 @@ msgstr ""
 #: src/app.py:177
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: src/app.py:183
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -396,7 +397,7 @@ msgstr ""
 
 #: src/app.py:203 src/pages/display.py:107
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
@@ -416,7 +417,7 @@ msgstr ""
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Przekaż darowiznę"
 
 #: src/app.py:257
 msgid "Settings reloaded"
@@ -440,7 +441,7 @@ msgstr ""
 
 #: src/app.py:302
 msgid "Import"
-msgstr ""
+msgstr "Importuj"
 
 #: src/app.py:323
 msgid "Settings were successfully imported from file"
@@ -468,15 +469,15 @@ msgstr ""
 
 #: src/lib/file_choosers.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Brak)"
 
 #: src/lib/file_choosers.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Wybierz"
 
 #: src/lib/file_choosers.py:110
 msgid "Images"
-msgstr ""
+msgstr "Obrazy"
 
 #: src/lib/file_choosers.py:114
 msgid "All Files"
@@ -520,41 +521,41 @@ msgstr ""
 
 #: src/resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Motywy"
 
 #: src/resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Powłoka"
 
 #: src/resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Ikony"
 
 #: src/resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr ""
+msgstr "Kursor"
 
 #: src/resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Tło"
 
 #: src/resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Rodzaj"
 
 #: src/resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Domyślne"
 
 #: src/resources/ui/appearance-page.blp:21
 #: src/resources/ui/appearance-page.blp:26
 msgid "Image"
-msgstr ""
+msgstr "Obraz"
 
 #: src/resources/ui/appearance-page.blp:21
 #: src/resources/ui/appearance-page.blp:31
 msgid "Color"
-msgstr ""
+msgstr "Kolor"
 
 #: src/resources/ui/appearance-page.blp:27
 msgid "The image to use as background"
@@ -574,7 +575,7 @@ msgstr ""
 
 #: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
 msgid "Apply"
-msgstr ""
+msgstr "Zastosuj"
 
 #: src/resources/ui/display-page.blp:21
 msgid "Night Light"
@@ -583,11 +584,11 @@ msgstr ""
 #: src/resources/ui/display-page.blp:24
 #: src/resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Włącz"
 
 #: src/resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Kolejka"
 
 #: src/resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
@@ -599,17 +600,17 @@ msgstr ""
 
 #: src/resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Godziny"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Od"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: src/resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "Do"
 
 #: src/resources/ui/display-page.blp:84
 msgid "Color Temperature"
@@ -617,39 +618,39 @@ msgstr ""
 
 #: src/resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Czcionka"
 
 #: src/resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Wygładzanie"
 
 #: src/resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Standardowe"
 
 #: src/resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpixel"
 
 #: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "Brak"
 
 #: src/resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Hinting"
 
 #: src/resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Pełny"
 
 #: src/resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Średni"
 
 #: src/resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Delikatny"
 
 #: src/resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
@@ -657,7 +658,7 @@ msgstr ""
 
 #: src/resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Odśwież"
 
 #: src/resources/ui/main-window.blp:7
 msgid "Load session settings"
@@ -677,11 +678,11 @@ msgstr ""
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "O programie"
 
 #: src/resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Wyjdź"
 
 #: src/resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -701,7 +702,7 @@ msgstr ""
 
 #: src/resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: src/resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
@@ -717,7 +718,7 @@ msgstr ""
 
 #: src/resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Wiadomość"
 
 #: src/resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
@@ -726,31 +727,31 @@ msgstr ""
 #: src/resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Domyślny"
 
 #: src/resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Średni"
 
 #: src/resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Wielki"
 
 #: src/resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Większy"
 
 #: src/resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Największy"
 
 #: src/resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Myszka"
 
 #: src/resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
