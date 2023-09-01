@@ -69,7 +69,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.builder = Gtk.Builder.new_from_resource('/app/ui/main-window.ui')
 
-        self.set_content(self.builder.get_object('content_box'))
+        self.set_content(self.builder.get_object('content_view'))
 
         self.flap = self.builder.get_object('flap')
         self.stack = self.builder.get_object('stack')

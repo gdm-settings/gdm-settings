@@ -21,10 +21,10 @@ menu app_menu {
 }
 
 
-Box content_box {
-  orientation: vertical;
+Adw.ToolbarView content_view {
+  top-bar-style: raised;
 
-  Adw.HeaderBar {
+  [top] Adw.HeaderBar {
     title-widget: Box {
       styles ["title"]
 
@@ -44,7 +44,7 @@ Box content_box {
     [end] Spinner spinner { spinning: false; margin-end: 5; }
   }
 
-  Adw.ToastOverlay toast_overlay {
+  content: Adw.ToastOverlay toast_overlay {
     Adw.Flap flap {
       reveal-flap: bind toggle_pane_button.active bidirectional;
       swipe-to-open: bind flap.folded;
@@ -53,5 +53,5 @@ Box content_box {
       [flap] StackSidebar sidebar { stack: stack; styles ["background"] }
       [content] Stack stack { hexpand: true; width-request: 300; }
     }
-  }
+  };
 }
