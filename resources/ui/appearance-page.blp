@@ -19,12 +19,17 @@ Box content_box {
     Adw.ComboRow background_type_comborow {
       title: _("Type");
       model: StringList { strings [_("Default"), _("Image"), _("Color")] };
-
     }
 
     Adw.ActionRow background_image_actionrow {
       title: _("Image");
       subtitle: _("The image to use as background");
+    }
+
+    Adw.ComboRow bg_img_adj_comborow {
+      title: _("Image Adjustment");
+      model: StringList { strings [_("Fit To Screen"), _("Repeat")] };
+      visible: bind background_image_actionrow.visible;
     }
 
     Adw.ActionRow background_color_actionrow {

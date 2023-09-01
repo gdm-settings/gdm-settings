@@ -242,12 +242,19 @@ def get_css() -> str:
     ### Background ###
     background_type = BackgroundType[appearance_settings['background-type']]
     background_image = appearance_settings['background-image']
+    adjustment_strat = appearance_settings['bg-adjustment']
     if background_type is BackgroundType.image and background_image:
         css += "\n"
         css += ".login-dialog { background: transparent; }\n"
         css += "#lockDialogGroup {\n"
         css += "  background-image: url('resource:///org/gnome/shell/theme/background');\n"
-        css += "  background-size: cover;\n"
+        if adjustment_strat == 'zoom':
+            css += "  background-position: center;\n"
+            css += "  background-size: cover;\n"
+        else: # adjustment_strat == 'repeat':
+            css += "  background-position: 0 0;\n"
+            css += "  background-size: contain;\n"
+            css += "  background-repeat: repeat;\n"
         css += "}\n"
     elif background_type is BackgroundType.color:
         background_color = appearance_settings['background-color']

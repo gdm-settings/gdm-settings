@@ -25,6 +25,7 @@ class AppearancePageContent (PageContent):
         self.cursor_theme_comborow = self.builder.get_object('cursor_theme_comborow')
         
         self.background_type_comborow = self.builder.get_object('background_type_comborow')
+        self.bg_img_adj_comborow = self.builder.get_object('bg_img_adj_comborow')
         self.background_image_actionrow = self.builder.get_object('background_image_actionrow')
         self.background_color_actionrow = self.builder.get_object('background_color_actionrow')
         self.background_color_button = self.builder.get_object('background_color_button')
@@ -71,5 +72,7 @@ class AppearancePageContent (PageContent):
                                           cursor_themes.theme_ids, strict=False)
         appearance_settings.bind_via_enum('background-type', self.background_type_comborow,
                                           'selected', BackgroundType)
+        appearance_settings.bind_via_list('bg-adjustment', self.bg_img_adj_comborow, 'selected',
+                                          ['zoom', 'repeat'])
         appearance_settings.bind('background-image', self.background_image_button, 'filename')
         appearance_settings.bind_to_colorbutton('background-color', self.background_color_button)
