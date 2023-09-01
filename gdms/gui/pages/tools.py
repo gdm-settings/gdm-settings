@@ -9,7 +9,6 @@ from gdms.cmd import Command
 from gdms.utils import BackgroundTask, GSettings
 from gdms import gresource
 from gdms import settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -35,7 +34,7 @@ class ToolsPageContent (PageContent):
 
         # Bind to GSettings
         self.settings = GSettings(APP_ID + '.tools')
-        self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'enabled')
+        self.settings.bind('top-bar-tweaks', self.top_bar_tweaks_row, 'active')
 
     def on_extract_shell_theme(self, button):
         self.window.task_counter.inc()

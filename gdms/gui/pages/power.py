@@ -1,7 +1,6 @@
 from gi.repository import Gtk
 
 from gdms.settings import power_settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -33,8 +32,8 @@ class PowerPageContent (PageContent):
     def bind_to_gsettings (self):
         power_settings.bind_via_list('power-button-action', self.power_button_comborow, 'selected',
                                      ['nothing', 'suspend', 'hibernate', 'interactive'])
-        power_settings.bind('auto-power-saver', self.auto_power_saver_row, 'enabled')
-        power_settings.bind('dim-screen', self.dim_screen_row, 'enabled')
+        power_settings.bind('auto-power-saver', self.auto_power_saver_row, 'active')
+        power_settings.bind('dim-screen', self.dim_screen_row, 'active')
         power_settings.bind('blank-screen', self.screen_blank_switch, 'active')
         power_settings.bind('idle-delay', self.screen_blank_spinbutton, 'value')
         power_settings.bind('suspend-on-battery', self.suspend_on_battery_switch, 'active')

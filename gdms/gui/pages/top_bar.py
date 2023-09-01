@@ -1,7 +1,6 @@
 from gi.repository import Gtk
 
 from gdms.settings import accessibility_settings, top_bar_settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -33,15 +32,15 @@ class TopBarPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        top_bar_settings.bind('disable-arrows', self.disable_arrows_row, 'enabled')
-        top_bar_settings.bind('disable-rounded-corners', self.disable_rounded_corners_row, 'enabled')
+        top_bar_settings.bind('disable-arrows', self.disable_arrows_row, 'active')
+        top_bar_settings.bind('disable-rounded-corners', self.disable_rounded_corners_row, 'active')
         top_bar_settings.bind('change-text-color', self.text_color_switch, 'active')
         top_bar_settings.bind_to_colorbutton('text-color', self.text_color_button)
         top_bar_settings.bind('change-background-color', self.background_color_switch, 'active')
         top_bar_settings.bind_to_colorbutton('background-color', self.background_color_button)
         accessibility_settings.bind('always-show-accessibility-menu',
-                                    self.accessibilty_menu_row, 'enabled')
-        top_bar_settings.bind('show-weekday', self.show_weekday_row, 'enabled')
-        top_bar_settings.bind('show-seconds', self.show_seconds_row, 'enabled')
+                                    self.accessibilty_menu_row, 'active')
+        top_bar_settings.bind('show-weekday', self.show_weekday_row, 'active')
+        top_bar_settings.bind('show-seconds', self.show_seconds_row, 'active')
         top_bar_settings.bind_via_list('time-format', self.time_format_comborow, 'selected', ['12h', '24h'])
-        top_bar_settings.bind('show-battery-percentage', self.show_battery_percentage_row, 'enabled')
+        top_bar_settings.bind('show-battery-percentage', self.show_battery_percentage_row, 'active')

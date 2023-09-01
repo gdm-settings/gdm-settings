@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdms.themes import sound_themes
 from gdms.settings import sound_settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -30,6 +29,6 @@ class SoundPageContent (PageContent):
     def bind_to_gsettings (self):
         sound_settings.bind_via_list('theme', self.theme_comborow, 'selected',
                                      sound_themes.theme_ids, strict=False)
-        sound_settings.bind('event-sounds', self.event_sounds_row, 'enabled')
-        sound_settings.bind('feedback-sounds', self.feedback_sounds_row, 'enabled')
-        sound_settings.bind('over-amplification', self.over_amplification_row, 'enabled')
+        sound_settings.bind('event-sounds', self.event_sounds_row, 'active')
+        sound_settings.bind('feedback-sounds', self.feedback_sounds_row, 'active')
+        sound_settings.bind('over-amplification', self.over_amplification_row, 'active')

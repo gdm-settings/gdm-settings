@@ -2,7 +2,6 @@ from gi.repository import Gtk
 
 from gdms.utils import GProperty
 from gdms.settings import pointing_settings, mouse_settings, touchpad_settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -45,13 +44,13 @@ class PointingPageContent (PageContent):
         # Mouse
         mouse_settings.bind_via_list('pointer-acceleration', self.m_acceleration_comborow, 'selected',
                                      ['default', 'flat', 'adaptive'])
-        mouse_settings.bind('natural-scrolling', self.m_natural_scrolling_row, 'enabled')
+        mouse_settings.bind('natural-scrolling', self.m_natural_scrolling_row, 'active')
         mouse_settings.bind('speed', self.m_speed_scale.props.adjustment, 'value')
         # Touchpad
-        touchpad_settings.bind('tap-to-click', self.t_tap_to_click_row, 'enabled')
-        touchpad_settings.bind('natural-scrolling', self.t_natural_scrolling_row, 'enabled')
-        touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'enabled')
-        touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'enabled')
+        touchpad_settings.bind('tap-to-click', self.t_tap_to_click_row, 'active')
+        touchpad_settings.bind('natural-scrolling', self.t_natural_scrolling_row, 'active')
+        touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'active')
+        touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'active')
         touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')
 
 

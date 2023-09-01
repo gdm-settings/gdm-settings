@@ -7,7 +7,6 @@ from gi.repository import Gtk
 from gdms.utils import BackgroundTask
 from gdms.settings import night_light_settings as nl_settings
 from gdms import settings
-from gdms.gui.widgets import SwitchRow
 
 from .common import PageContent
 
@@ -66,7 +65,7 @@ class DisplayPageContent (PageContent):
         self.nl_end_box.set_sensitive(bool(selected))
 
     def bind_to_gsettings (self):
-        nl_settings.bind('enabled', self.nl_enable_row, 'enabled')
+        nl_settings.bind('enabled', self.nl_enable_row, 'active')
         nl_settings.bind_via_list('schedule-automatic', self.nl_schedule_comborow, 'selected',
                                   [True, False])
         nl_settings.bind('start-hour', self.nl_start_hour_spinbutton, 'value')
