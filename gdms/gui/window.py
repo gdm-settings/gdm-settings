@@ -64,6 +64,8 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.set_application(application)
 
         self.props.title = APP_NAME
+        self.props.width_request = 320
+        self.props.height_request = 240
 
         self.builder = Gtk.Builder.new_from_resource('/app/ui/main-window.ui')
 
