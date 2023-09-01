@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-08-26 14:54+0000\n"
-"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"PO-Revision-Date: 2023-09-01 20:55+0000\n"
+"Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
 "Language: pl\n"
@@ -31,7 +31,7 @@ msgstr "Rodzaj tła"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
+msgstr "Czy tło GDM powinno być obrazem, kolorem lub domyślne."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -76,6 +76,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Tryb oświetlenia nocnego zmienia temperaturę barw wyświetlacza po zachodzie "
+"słońca lub o zaprogramowanych porach."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
@@ -176,7 +178,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Czy wygaszać ekran, gdy sesja jest bezczynna"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
