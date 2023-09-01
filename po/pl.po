@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-01 20:55+0000\n"
+"PO-Revision-Date: 2023-09-01 21:57+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -243,7 +243,7 @@ msgstr "Czy wyłączyć zaokrąglone rogi górnego paska"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Czy zmienić kolor tekstu górnego paska"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
