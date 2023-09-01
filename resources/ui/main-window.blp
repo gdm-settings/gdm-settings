@@ -29,13 +29,13 @@ Adw.ToolbarView content_view {
       styles ["title"]
 
       Label title_label { visible: bind section_label.visible inverted bidirectional; }
-      Label section_label { visible: bind flap.folded; ellipsize: end; }
+      Label section_label { visible: bind split_view.collapsed; ellipsize: end; }
     };
 
     [start] ToggleButton toggle_pane_button {
       icon-name: "sidebar-show";
       active: true;
-      visible: bind flap.folded;
+      visible: bind split_view.collapsed;
     }
 
     [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
@@ -45,12 +45,13 @@ Adw.ToolbarView content_view {
   }
 
   content: Adw.ToastOverlay toast_overlay {
-    Adw.Flap flap {
-      reveal-flap: bind toggle_pane_button.active bidirectional;
-      swipe-to-open: bind flap.folded;
-      swipe-to-close: bind flap.folded;
+    Adw.OverlaySplitView split_view {
+      sidebar-width-fraction: 0.20;
+      show-sidebar: bind toggle_pane_button.active bidirectional;
+      enable-show-gesture: bind split_view.collapsed;
+      enable-hide-gesture: bind split_view.collapsed;
 
-      [flap] StackSidebar sidebar { stack: stack; styles ["background"] }
+      [sidebar] StackSidebar sidebar { stack: stack; styles ["background"] }
       [content] Stack stack { hexpand: true; width-request: 300; }
     }
   };

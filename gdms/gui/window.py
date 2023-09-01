@@ -71,10 +71,10 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.set_content(self.builder.get_object('content_view'))
 
-        self.flap = self.builder.get_object('flap')
         self.stack = self.builder.get_object('stack')
         self.sidebar = self.builder.get_object('sidebar')
         self.spinner = self.builder.get_object('spinner')
+        self.split_view = self.builder.get_object('split_view')
         self.title_label = self.builder.get_object('title_label')
         self.apply_button = self.builder.get_object('apply_button')
         self.section_label = self.builder.get_object('section_label')
@@ -89,17 +89,22 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.apply_task = BackgroundTask(settings.apply, self.on_apply_finished)
 
         click = Gtk.GestureClick()
-        click.connect('released', self.on_sidebar_clicked, self.flap)
+        click.connect('released', self.on_sidebar_clicked, self.split_view)
         self.sidebar.add_controller(click)
 
         self.stack.connect('notify::visible-child', self.on_section_changed)
 
+        condition = Adw.BreakpointCondition.parse('max-width: 500sp')
+        breakpoint = Adw.Breakpoint.new(condition);
+        breakpoint.add_setter(self.split_view, 'collapsed', True)
+        self.add_breakpoint(breakpoint);
+
         self.add_pages()
         self.bind_to_gsettings()
 
-    def on_sidebar_clicked (self, click, n_press, x, y, flap):
-        if flap.get_folded():
-            flap.set_reveal_flap(False)
+    def on_sidebar_clicked (self, click, n_press, x, y, split_view):
+        if split_view.props.collapsed:
+            split_view.props.show_sidebar = False
 
     def on_section_changed (self, stack, prop):
         current_page = stack.get_page(stack.props.visible_child)
