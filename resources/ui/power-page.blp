@@ -34,21 +34,16 @@ Box content_box {
         valign: center;
       }
 
-      Adw.ActionRow {
+      Adw.SpinRow screen_blank_spinrow {
         title: _("Delay");
         subtitle: _("Time in minutes after which screen will turn off.");
-
-        SpinButton screen_blank_spinbutton {
-          width-chars: 2;
-          valign: center;
-
-          adjustment: Adjustment {
-            lower: 1;
-            value: 1;
-            upper: 1440;
-            step-increment: 1;
-          };
-        }
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
       }
     }
   }
@@ -66,21 +61,16 @@ Box content_box {
         valign: center;
       }
 
-      Adw.ActionRow {
+      Adw.SpinRow suspend_on_battery_spinrow {
         title: _("Delay");
         subtitle: _("Time in minutes after which the computer will suspend.");
-
-        SpinButton suspend_on_battery_spinbutton {
-          width-chars: 2;
-          valign: center;
-
-          adjustment: Adjustment {
-            lower: 1;
-            value: 1;
-            upper: 1440;
-            step-increment: 1;
-          };
-        }
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
       }
     }
 
@@ -93,21 +83,16 @@ Box content_box {
         valign: center;
       }
 
-      Adw.ActionRow {
+      Adw.SpinRow suspend_on_ac_spinrow {
         title: _("Delay");
         subtitle: _("Time in minutes after which the computer will suspend.");
-
-        SpinButton suspend_on_ac_spinbutton {
-          width-chars: 2;
-          valign: center;
-
-          adjustment: Adjustment {
-            lower: 1;
-            value: 1;
-            upper: 1440;
-            step-increment: 1;
-          };
-        }
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
       }
     }
   }

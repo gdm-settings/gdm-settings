@@ -36,13 +36,15 @@ Box content_box {
       ]};
     }
 
-    Adw.ActionRow {
+    Adw.SpinRow scaling_factor_spinrow {
       title: _("Scaling Factor");
-
-      SpinButton scaling_factor_spinbutton {
-        digits: 2;
-        valign: center;
-      }
+      digits: 2;
+      adjustment: Adjustment {
+        lower: 0.5;
+        upper: 3.0;
+        step-increment: 0.1;
+        page-increment: 0.5;
+      };
     }
   }
 }

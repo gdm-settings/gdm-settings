@@ -19,12 +19,7 @@ class FontsPageContent (PageContent):
         self.font_button = self.builder.get_object('font_button')
         self.antialiasing_comborow = self.builder.get_object('antialiasing_comborow')
         self.hinting_comborow = self.builder.get_object('hinting_comborow')
-        self.scaling_factor_spinbutton = self.builder.get_object('scaling_factor_spinbutton')
-
-        # Following properties are ignored when set in .ui files.
-        # So, they need to be changed here.
-        self.scaling_factor_spinbutton.set_range(0.5, 3)
-        self.scaling_factor_spinbutton.set_increments(0.1,0.5)
+        self.scaling_factor_spinrow = self.builder.get_object('scaling_factor_spinrow')
 
         self.bind_to_gsettings()
 
@@ -34,4 +29,4 @@ class FontsPageContent (PageContent):
                                     ['grayscale', 'rgba', 'none'])
         font_settings.bind_via_list('hinting', self.hinting_comborow, 'selected',
                                     ['full', 'medium', 'slight', 'none'])
-        font_settings.bind('scaling-factor', self.scaling_factor_spinbutton, 'value')
+        font_settings.bind('scaling-factor', self.scaling_factor_spinrow, 'value')
