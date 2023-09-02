@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 15:56+0000\n"
+"PO-Revision-Date: 2023-09-02 16:52+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -735,7 +735,7 @@ msgstr "Wiadomość powitalna"
 
 #: src/resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Powiększ"
 
 #: src/resources/ui/login-screen-page.blp:49
 msgid "Message"
@@ -800,7 +800,7 @@ msgstr "Przewijanie przesuwa zawartość, a nie widok."
 
 #: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Prędkość wskaźnika"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -816,7 +816,7 @@ msgstr "Przewijanie dwoma palcami"
 
 #: src/resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Przewijaj, przesuwając dwoma palcami."
 
 #: src/resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
@@ -824,27 +824,27 @@ msgstr "Wyłącz podczas pisania"
 
 #: src/resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Funkcja przycisku zasilania"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Nic nie rób"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Uśpij"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernuj"
 
 #: src/resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Zapytaj"
 
 #: src/resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Automatyczne oszczędzanie energii"
 
 #: src/resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
@@ -853,11 +853,11 @@ msgstr ""
 
 #: src/resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Przyciemnij ekran"
 
 #: src/resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Zmniejsza jasność ekranu, gdy komputer jest nieaktywny."
 
 #: src/resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
@@ -926,23 +926,23 @@ msgstr ""
 
 #: src/resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Wyeksportuj domyślny motyw powłoki"
 
 #: src/resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "Eksportuj"
 
 #: src/resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Dostrajanie"
 
 #: src/resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Zmień kolor tekstu"
 
 #: src/resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Kolor tekstu"
 
 #: src/resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
