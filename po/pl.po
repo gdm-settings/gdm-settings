@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 04:49+0000\n"
+"PO-Revision-Date: 2023-09-02 05:50+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -849,6 +849,7 @@ msgstr ""
 #: src/resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
 msgstr ""
+"Włącza tryb oszczędzania energii, gdy poziom naładowania baterii jest niski."
 
 #: src/resources/ui/power-page.blp:23
 msgid "Dim Screen"
@@ -860,7 +861,7 @@ msgstr ""
 
 #: src/resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Wyłącz ekran"
 
 #: src/resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -1054,7 +1055,7 @@ msgstr "Zaimportowany plik nie ma klucza '{key_name}' w sekcji '{section_name}'"
 
 #: src/settings.py:313
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Tworzenie kopii zapasowej domyślnego motywu powłoki …"
 
 #: src/settings.py:365
 #, python-brace-format
@@ -1063,7 +1064,7 @@ msgstr ""
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
@@ -1072,32 +1073,32 @@ msgstr ""
 #: src/settings.py:620
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for Ubuntu …"
-msgstr ""
+msgstr "Resetowanie ustawień GResource dla Ubuntu …"
 
 #: src/settings.py:627
 msgctxt "Command-line output"
 msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
+msgstr "Resetowanie ustawień GResource dla systemów innych niż Ubuntu …"
 
 #: src/window.py:111
 msgid "Appearance"
-msgstr ""
+msgstr "Wygląd"
 
 #: src/window.py:112
 msgid "Fonts"
-msgstr ""
+msgstr "Czcionki"
 
 #: src/window.py:113
 msgid "Top Bar"
-msgstr ""
+msgstr "Górny pasek"
 
 #: src/window.py:114
 msgid "Sound"
-msgstr ""
+msgstr "Dźwięk"
 
 #: src/window.py:115
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Mysz i Touchpad"
 
 #: src/window.py:116
 msgid "Display"
@@ -1105,19 +1106,19 @@ msgstr ""
 
 #: src/window.py:117
 msgid "Login Screen"
-msgstr ""
+msgstr "Ekran logowania"
 
 #: src/window.py:119
 msgid "Tools"
-msgstr ""
+msgstr "Narzędzia"
 
 #: src/window.py:137
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Ustawienia zostały zastosowane pomyślnie"
 
 #: src/window.py:141
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Nie udało się zastosować ustawień"
 
 #: src/window.py:145
 msgid ""
@@ -1136,11 +1137,11 @@ msgstr ""
 
 #: src/window.py:160
 msgid "Log Out?"
-msgstr ""
+msgstr "Wylogować się?"
 
 #: src/window.py:165
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: src/window.py:166
 msgid "Log Out"
