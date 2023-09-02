@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 01:07+0000\n"
+"PO-Revision-Date: 2023-09-02 02:00+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Temperatura wyświetlacza po włączeniu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
@@ -261,7 +261,7 @@ msgstr "Kolor tła górnego paska"
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
 #: src/window.py:66
 msgid "Login Manager Settings"
-msgstr ""
+msgstr "Ustawienia menedżera logowania"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -274,6 +274,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Zmień ustawienia GDM; Zastosuj motyw i tło, zmień między innymi motyw "
+"kursora, motyw ikon i ustawienia oświetlenia nocnego."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
@@ -285,7 +287,7 @@ msgstr "Naprawiono: Problem z uruchamianiem na PureOS"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
 msgid "<em>New Options</em>"
-msgstr ""
+msgstr "<em>Nowe opcje</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
@@ -297,11 +299,11 @@ msgstr "Opcja zmiany rozmiaru kursora"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
 msgid "A one-time donation request"
-msgstr ""
+msgstr "Prośba o jednorazową darowiznę"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
-msgstr ""
+msgstr "Opcja darowizny w menu hamburgera"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
@@ -309,11 +311,12 @@ msgstr "<em>Zmiany zachowania</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
 msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
+msgstr "Właściwe nazwy są wyświetlane dla motywów zamiast nazwy ich katalogu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
+"Motywy tylko dla kursora nie są wyświetlane podczas wybierania motywu ikon"
 
 #: src/about.py:11 src/about.py:82
 msgctxt "Name of Developer"
@@ -337,11 +340,11 @@ msgstr "ewm "
 
 #: src/app.py:58
 msgid "Show application version"
-msgstr ""
+msgstr "Pokaż wersję aplikacji"
 
 #: src/app.py:59
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Ręczne ustawienie poziomu szczegółowości (od 0 do 5)"
 
 #: src/app.py:60
 msgctxt "Argument of --verbosity option"
@@ -354,12 +357,13 @@ msgstr ""
 
 #: src/app.py:62
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Włączenie trybu cichego (alias of --verbosity=0)"
 
 #: src/app.py:82
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Nieprawidłowy poziom szczegółowości {level}. Musi być 0, 5 lub pomiędzy."
 
 #: src/app.py:164
 msgid ""
@@ -367,12 +371,16 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Następujące programy muszą być zainstalowane <b>w systemie hosta</b>, aby ta "
+"aplikacja działała poprawnie, ale nie są zainstalowane w systemie hosta."
 
 #: src/app.py:168
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Ta aplikacja wymaga następującego oprogramowania do prawidłowego działania, "
+"ale nie jest ono zainstalowane."
 
 #: src/app.py:177
 msgctxt "Missing Dependency"
@@ -392,10 +400,12 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Kliknij <a href=\"{url}\">tutaj</a>, aby uzyskać instrukcje dotyczące "
+"instalowania tych zależności w systemie."
 
 #: src/app.py:198
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Brakujące zależności"
 
 #: src/app.py:203 src/pages/display.py:107
 msgid "OK"
@@ -403,7 +413,7 @@ msgstr "OK"
 
 #: src/app.py:209
 msgid "Donation Request"
-msgstr ""
+msgstr "Prośba o darowiznę"
 
 #: src/app.py:211
 msgid ""
@@ -412,6 +422,10 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Ta aplikacja jest i zawsze pozostanie Open Source/Libre i bezpłatna. Możesz "
+"jednak okazać trochę miłości, przekazując darowiznę deweloperowi.\n"
+"❤️\n"
+"Byłbym naprawdę wdzięczny."
 
 #: src/app.py:219
 msgid "Not Interested"
