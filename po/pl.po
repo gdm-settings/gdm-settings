@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 04:24+0000\n"
+"PO-Revision-Date: 2023-09-02 04:26+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -989,15 +989,15 @@ msgstr "Format czasu"
 
 #: src/resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
-msgstr ""
+msgstr "12-godzinny"
 
 #: src/resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr ""
+msgstr "24-godzinny"
 
 #: src/resources/ui/top-bar-page.blp:86 src/window.py:118
 msgid "Power"
-msgstr ""
+msgstr "Zasilanie"
 
 #: src/resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
