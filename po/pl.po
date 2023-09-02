@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 02:00+0000\n"
+"PO-Revision-Date: 2023-09-02 03:01+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -429,7 +429,7 @@ msgstr ""
 
 #: src/app.py:219
 msgid "Not Interested"
-msgstr ""
+msgstr "Nie zainteresowany"
 
 #: src/app.py:220 src/resources/ui/main-window.blp:15
 msgid "Donate"
@@ -437,23 +437,23 @@ msgstr "Przekaż darowiznę"
 
 #: src/app.py:257
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Ustawienia zostały przeładowane"
 
 #: src/app.py:264
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Ustawienia sesji zostały pomyślnie załadowane"
 
 #: src/app.py:268
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Wczytywanie ustawień sesji NIE jest obsługiwane w wersji Flatpak"
 
 #: src/app.py:281
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Pomyślne zresetowanie ustawień"
 
 #: src/app.py:283
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Nie udało się zresetować ustawień"
 
 #: src/app.py:302
 msgid "Import"
@@ -461,27 +461,27 @@ msgstr "Importuj"
 
 #: src/app.py:323
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Ustawienia zostały pomyślnie zaimportowane z pliku"
 
 #: src/app.py:325
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Import nie powiódł się. Plik jest nieprawidłowy"
 
 #: src/app.py:356
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Ustawienia zostały pomyślnie wyeksportowane"
 
 #: src/app.py:358
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Eksport nie powiódł się. Odmowa dostępu"
 
 #: src/app.py:360
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Eksport nie powiódł się. Katalog o tej nazwie już istnieje"
 
 #: src/lib/file_choosers.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Wybierz plik"
 
 #: src/lib/file_choosers.py:25
 msgid "(None)"
@@ -497,19 +497,19 @@ msgstr "Obrazy"
 
 #: src/lib/file_choosers.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Wszystkie pliki"
 
 #: src/lib/file_choosers.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Wybierz obraz"
 
 #: src/pages/display.py:85
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Zastosowane bieżące ustawienia wyświetlacza"
 
 #: src/pages/display.py:87
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Nie udało się zastosować bieżących ustawień wyświetlania"
 
 #: src/pages/display.py:93
 msgid ""
@@ -519,21 +519,26 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Plik \"$XDG_CONFIG_HOME/monitors.xml\" jest wymagany do zastosowania "
+"bieżących ustawień wyświetlania, ale nie istnieje.\n"
+"\n"
+"Aby automatycznie utworzyć ten plik, otwórz 'Ustawienia' systemu i zmień tam "
+"niektóre opcje wyświetlania."
 
 #: src/pages/display.py:102
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Nie znaleziono ustawień monitora"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: src/pages/tools.py:49
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "Domyślny motyw powłoki został rozpakowany do '{folder}' jako '{name}'"
 
 #: src/pages/tools.py:52
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Nie udało się wyodrębnić domyślnego motywu"
 
 #: src/resources/ui/appearance-page.blp:9
 msgid "Themes"
@@ -575,19 +580,19 @@ msgstr "Kolor"
 
 #: src/resources/ui/appearance-page.blp:27
 msgid "The image to use as background"
-msgstr ""
+msgstr "Obraz używany jako tło"
 
 #: src/resources/ui/appearance-page.blp:32
 msgid "The color to use as background"
-msgstr ""
+msgstr "Kolor używany jako tło"
 
 #: src/resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Zastosuj bieżące ustawienia wyświetlania"
 
 #: src/resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Rozdzielczość, częstotliwość odświeżania, położenie monitora itp."
 
 #: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
 msgid "Apply"
@@ -595,7 +600,7 @@ msgstr "Zastosuj"
 
 #: src/resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Światło nocne"
 
 #: src/resources/ui/display-page.blp:24
 #: src/resources/ui/login-screen-page.blp:40
@@ -608,11 +613,11 @@ msgstr "Kolejka"
 
 #: src/resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Od zachodu do wschodu słońca"
 
 #: src/resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "W podanych godzinach"
 
 #: src/resources/ui/display-page.blp:33
 msgid "Times"
@@ -630,7 +635,7 @@ msgstr "Do"
 
 #: src/resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Temperatura kolorów"
 
 #: src/resources/ui/fonts-page.blp:12
 msgid "Font"
@@ -670,7 +675,7 @@ msgstr "Delikatny"
 
 #: src/resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Współczynnik skalowania"
 
 #: src/resources/ui/main-window.blp:6
 msgid "Refresh"
@@ -678,11 +683,11 @@ msgstr "Odśwież"
 
 #: src/resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Wczytaj ustawienia sesji"
 
 #: src/resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Zresetuj ustawienia"
 
 #: src/resources/ui/main-window.blp:11
 msgid "Import from file"
