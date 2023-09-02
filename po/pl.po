@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 16:52+0000\n"
+"PO-Revision-Date: 2023-09-02 17:07+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -121,6 +121,8 @@ msgstr "Minuta rozpoczęcia"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Gdy opcja \"harmonogram-automatyczny\" jest wyłączona, należy użyć tego "
+"czasu rozpoczęcia w minutach."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -129,6 +131,8 @@ msgstr "Godzina końca"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"Gdy opcja \"harmonogram-automatyczny\" jest wyłączona, należy użyć tego "
+"czasu zakończenia w godzinach."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -137,6 +141,8 @@ msgstr "Końcowa minuta"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Gdy opcja \"harmonogram-automatyczny\" jest wyłączona, należy użyć tego "
+"czasu zakończenia w minutach."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
@@ -219,7 +225,7 @@ msgstr "Czy uśpić, gdy jest nieaktywny i podłączony do zasilania"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Limit czasu uśpienia komputera po podłączeniu do zasilania"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
@@ -946,7 +952,7 @@ msgstr "Kolor tekstu"
 
 #: src/resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Kolor tekstu na górnym pasku"
 
 #: src/resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
@@ -1036,11 +1042,11 @@ msgstr "Importowanie ze standardowego wejścia"
 
 #: src/settings.py:108
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Nie udało się przeanalizować zaimportowanego pliku"
 
 #: src/settings.py:111
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Nie udało się odczytać zaimportowanego pliku. Nie zakodowano w UTF-8"
 
 #: src/settings.py:117
 #, python-brace-format
@@ -1060,7 +1066,7 @@ msgstr "Tworzenie kopii zapasowej domyślnego motywu powłoki …"
 #: src/settings.py:365
 #, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr ""
+msgstr "Stosowanie ustawień GResource dla {distro_name} …"
 
 #: src/settings.py:386
 msgid "Ubuntu"
@@ -1102,7 +1108,7 @@ msgstr "Mysz i Touchpad"
 
 #: src/window.py:116
 msgid "Display"
-msgstr ""
+msgstr "Wyświetlacz"
 
 #: src/window.py:117
 msgid "Login Screen"
@@ -1134,6 +1140,8 @@ msgstr ""
 #: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"System może zacząć wyglądać dziwnie/błędnie do czasu ponownego zalogowania "
+"lub restartu."
 
 #: src/window.py:160
 msgid "Log Out?"
