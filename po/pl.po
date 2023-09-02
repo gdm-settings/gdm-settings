@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 04:29+0000\n"
+"PO-Revision-Date: 2023-09-02 04:49+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -1006,12 +1006,12 @@ msgstr "Pokaż procent naładowania baterii"
 #: src/settings.py:80
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Eksportowanie do pliku '{filename}'"
 
 #: src/settings.py:85
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Nie można zapisać do pliku '{filename}'. Brak uprawnień"
 
 #: src/settings.py:89
 #, python-brace-format
@@ -1022,16 +1022,16 @@ msgstr ""
 
 #: src/settings.py:94
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Eksportowanie do standardowego wyjścia"
 
 #: src/settings.py:102
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importowanie z pliku '{filename}'"
 
 #: src/settings.py:105
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importowanie ze standardowego wejścia"
 
 #: src/settings.py:108
 msgid "Failed to parse import file"
@@ -1044,13 +1044,13 @@ msgstr ""
 #: src/settings.py:117
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Zaimportowany plik nie zawiera sekcji '{section_name}'"
 
 #: src/settings.py:122
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "Zaimportowany plik nie ma klucza '{key_name}' w sekcji '{section_name}'"
 
 #: src/settings.py:313
 msgid "Backing up default shell theme …"
