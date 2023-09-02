@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 17:07+0000\n"
+"PO-Revision-Date: 2023-09-02 17:20+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -786,15 +786,15 @@ msgstr ""
 
 #: src/resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Automatyczna"
 
 #: src/resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączona"
 
 #: src/resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Włączona"
 
 #: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
@@ -871,32 +871,32 @@ msgstr "Wyłącz ekran"
 
 #: src/resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Określa, czy ekran ma być wyłączany po okresie bezczynności."
 
 #: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
 #: src/resources/ui/power-page.blp:97
 msgid "Delay"
-msgstr ""
+msgstr "Opóźnienie"
 
 #: src/resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Czas w minutach, po którym ekran zostanie wyłączony."
 
 #: src/resources/ui/power-page.blp:57
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Automatyczne uśpienie"
 
 #: src/resources/ui/power-page.blp:58
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Uśpij komputer po okresie bezczynności."
 
 #: src/resources/ui/power-page.blp:61
 msgid "On Battery Power"
-msgstr ""
+msgstr "Na zasilaniu bateryjnym"
 
 #: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Czas w minutach, po którym komputer zostanie uśpiony."
 
 #: src/resources/ui/power-page.blp:88
 msgid "When Plugged In"
@@ -904,15 +904,15 @@ msgstr ""
 
 #: src/resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Motyw"
 
 #: src/resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "Wzmocnienie głośności"
 
 #: src/resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Umożliwia zwiększenie głośności ponad 100%"
 
 #: src/resources/ui/sound-page.blp:19
 msgid "Event Sounds"
@@ -924,7 +924,7 @@ msgstr ""
 
 #: src/resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Domyślny motyw powłoki"
 
 #: src/resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
