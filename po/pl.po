@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 20:30+0000\n"
+"PO-Revision-Date: 2023-09-02 21:54+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -361,7 +361,7 @@ msgstr "POZIOM"
 
 #: src/app.py:61
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Włącz tryb szczegółowy (alias of --verbosity=5)"
 
 #: src/app.py:62
 msgid "Enable quiet mode (alias of --verbosity=0)"
