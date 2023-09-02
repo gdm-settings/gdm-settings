@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 03:01+0000\n"
+"PO-Revision-Date: 2023-09-02 03:12+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -691,11 +691,11 @@ msgstr "Zresetuj ustawienia"
 
 #: src/resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importuj z pliku"
 
 #: src/resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Eksportuj do pliku"
 
 #: src/resources/ui/main-window.blp:18
 msgid "About"
@@ -711,15 +711,15 @@ msgstr ""
 
 #: src/resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Wyłącz listę użytkowników"
 
 #: src/resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Włącz logo"
 
 #: src/resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Czy wyświetlać logo pod listą użytkowników"
 
 #: src/resources/ui/login-screen-page.blp:30
 msgid "Logo"
@@ -727,11 +727,11 @@ msgstr "Logo"
 
 #: src/resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Obraz, który zostanie wyświetlony pod listą użytkowników"
 
 #: src/resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Wiadomość powitalna"
 
 #: src/resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
