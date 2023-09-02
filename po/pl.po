@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-09-02 17:20+0000\n"
+"PO-Revision-Date: 2023-09-02 17:52+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -782,7 +782,7 @@ msgstr "Myszka"
 
 #: src/resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Akceleracja wskaźnika"
 
 #: src/resources/ui/pointing-page.blp:30
 msgid "Automatic"
@@ -900,7 +900,7 @@ msgstr "Czas w minutach, po którym komputer zostanie uśpiony."
 
 #: src/resources/ui/power-page.blp:88
 msgid "When Plugged In"
-msgstr ""
+msgstr "Kiedy podłączone do zasilania"
 
 #: src/resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -916,11 +916,11 @@ msgstr "Umożliwia zwiększenie głośności ponad 100%"
 
 #: src/resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "Dźwięki zdarzeń"
 
 #: src/resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Dźwięk wprowadzania"
 
 #: src/resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
@@ -928,7 +928,7 @@ msgstr "Domyślny motyw powłoki"
 
 #: src/resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Uwzględnij modyfikacje górnego paska"
 
 #: src/resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
@@ -1026,6 +1026,8 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Nie można zapisać do pliku '{filename}'. Katalog o tej samej nazwie już "
+"istnieje"
 
 #: src/settings.py:94
 msgid "Exporting to standard output"
@@ -1074,7 +1076,7 @@ msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"
-msgstr ""
+msgstr "uniwersalny system"
 
 #: src/settings.py:620
 msgctxt "Command-line output"
@@ -1130,12 +1132,12 @@ msgstr "Nie udało się zastosować ustawień"
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr ""
+msgstr "Nie zastosowano. Wybrany obraz tła już nie istnieje. Wybierz ponownie."
 
 #: src/window.py:149
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "Nie zastosowano. Wybrany obraz logo już nie istnieje. Wybierz ponownie."
 
 #: src/window.py:155
 msgid "The system may start to look weird/buggy until you re-login or reboot."
