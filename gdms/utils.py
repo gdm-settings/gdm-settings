@@ -107,7 +107,7 @@ class Path(pathlib.PosixPath):
         return self._list_files(base=self, recursive=recursive)
 
 
-def GProperty(type: GObject.GType,
+def GProperty(type: type,
               default: Optional[object] = None,
               *args,
               readable: bool = True,
