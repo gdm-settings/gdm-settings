@@ -18,5 +18,14 @@
     <file>icons/48x48/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
     <file>icons/64x64/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
     <file>icons/96x96/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/scalable/categories/appearance-symbolic.svg</file>
+    <file>icons/scalable/categories/display-symbolic.svg</file>
+    <file>icons/scalable/categories/fonts-symbolic.svg</file>
+    <file>icons/scalable/categories/misc-symbolic.svg</file>
+    <file>icons/scalable/categories/pointing-symbolic.svg</file>
+    <file>icons/scalable/categories/power-symbolic.svg</file>
+    <file>icons/scalable/categories/sound-symbolic.svg</file>
+    <file>icons/scalable/categories/tools-symbolic.svg</file>
+    <file>icons/scalable/categories/top_bar-symbolic.svg</file>
   </gresource>
 </gresources>

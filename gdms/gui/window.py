@@ -12,6 +12,7 @@ from gdms.gresource import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
 from gdms import settings
 
 from . import pages
+from .sidebar import Sidebar
 
 
 class TaskCounter(GObject.Object):
@@ -88,10 +89,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.apply_button.connect('clicked', self.on_apply)
         self.apply_task = BackgroundTask(settings.apply, self.on_apply_finished)
 
-        click = Gtk.GestureClick()
-        click.connect('released', self.on_sidebar_clicked, self.split_view)
-        self.sidebar.add_controller(click)
-
+        self.sidebar.connect('item-clicked', self.on_sidebar_clicked, self.split_view)
         self.stack.connect('notify::visible-child', self.on_section_changed)
 
         condition = Adw.BreakpointCondition.parse('max-width: 500sp')
@@ -102,7 +100,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.add_pages()
         self.bind_to_gsettings()
 
-    def on_sidebar_clicked (self, click, n_press, x, y, split_view):
+    def on_sidebar_clicked (self, sidebar, split_view):
         if split_view.props.collapsed:
             split_view.props.show_sidebar = False
 
@@ -114,6 +112,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         def add_page(name, title, content):
             page = self.stack.add_titled(content, name, title)
+            page.props.icon_name = name
 
         add_page('appearance', _('Appearance'),       pages.AppearancePageContent(self))
         add_page('fonts',      _('Fonts'),            pages.FontsPageContent(self))
