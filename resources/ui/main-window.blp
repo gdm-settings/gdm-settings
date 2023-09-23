@@ -51,7 +51,7 @@ Adw.ToolbarView content_view {
       enable-show-gesture: bind split_view.collapsed;
       enable-hide-gesture: bind split_view.collapsed;
 
-      [sidebar] StackSidebar sidebar { stack: stack; styles ["background"] }
+      [sidebar] StackSidebar sidebar { stack: stack; }
       [content] Stack stack { hexpand: true; width-request: 300; }
     }
   };
