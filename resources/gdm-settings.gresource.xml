@@ -13,11 +13,11 @@
     <file>ui/login-screen-page.ui</file>
     <file>ui/power-page.ui</file>
     <file>ui/tools-page.ui</file>
-    <file>icons/24x24/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
-    <file>icons/32x32/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
-    <file>icons/48x48/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
-    <file>icons/64x64/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
-    <file>icons/96x96/actions/io.github.realmazharhussain.GdmSettings-cursor.png</file>
+    <file>icons/24x24/actions/cursor.png</file>
+    <file>icons/32x32/actions/cursor.png</file>
+    <file>icons/48x48/actions/cursor.png</file>
+    <file>icons/64x64/actions/cursor.png</file>
+    <file>icons/96x96/actions/cursor.png</file>
     <file>icons/scalable/categories/appearance-symbolic.svg</file>
     <file>icons/scalable/categories/display-symbolic.svg</file>
     <file>icons/scalable/categories/fonts-symbolic.svg</file>
