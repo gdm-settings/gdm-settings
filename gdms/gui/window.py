@@ -99,7 +99,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
     def on_sidebar_clicked (self, sidebar, split_view):
         if split_view.props.collapsed:
-            split_view.props.show_sidebar = False
+            split_view.props.show_content = True
 
     def on_section_changed (self, stack, prop):
         current_page = stack.get_page(stack.props.visible_child)

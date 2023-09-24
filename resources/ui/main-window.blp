@@ -22,46 +22,45 @@ menu app_menu {
 
 
 Adw.ToastOverlay toast_overlay {
-  Adw.OverlaySplitView split_view {
-    sidebar-width-fraction: 0.20;
-    show-sidebar: bind toggle_pane_button.active bidirectional;
-    enable-show-gesture: bind split_view.collapsed;
-    enable-hide-gesture: bind split_view.collapsed;
+  Adw.NavigationSplitView split_view {
+    sidebar-width-fraction: 0.22;
 
-    [sidebar] Box {
-      orientation: vertical;
+    [sidebar] Adw.NavigationPage {
+      title: "Sidebar";
+      child: Adw.ToolbarView {
+        [top] Adw.HeaderBar {
+          show-title: bind split_view.collapsed;
 
-      CenterBox {
-        styles ["toolbar"]
-
-        [start] Box {
-          orientation: horizontal;
-          spacing: 5;
-
-          Button apply_button { label: _("Apply"); styles ["suggested-action"] }
-          Spinner spinner { spinning: false; }
+          [start] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
+          [start] Spinner spinner { spinning: false; margin-start: 5;}
+          title-widget: Label { styles ["title"] label: bind split_view.root as <Window>.title; };
+          [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
         }
 
-        [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
-      }
-
-      $GdmSettingsSidebar sidebar { stack: stack; }
+        $GdmSettingsSidebar sidebar { stack: stack; }
+      };
     }
 
-    [content] Box {
-      orientation: vertical;
+    [content] Adw.NavigationPage {
+      title: "Content";
+      child: Adw.ToolbarView {
+        [top] Adw.HeaderBar {
+          title-widget: Box {
+            Label section_label {
+              styles ["title"]
+              visible: bind split_view.collapsed;
+            }
 
-      Adw.HeaderBar {
-        title-widget: Label section_label { styles ["title"] };
-
-        [start] ToggleButton toggle_pane_button {
-          icon-name: "sidebar-show";
-          active: true;
-          visible: bind split_view.collapsed;
+            Label {
+              styles ["title"]
+              label: bind split_view.root as <Window>.title;
+              visible: bind split_view.collapsed inverted;
+            }
+          };
         }
-      }
 
-      Stack stack { hexpand: true; width-request: 300; }
+        Stack stack { hexpand: true; width-request: 300; }
+      };
     }
   }
 }
