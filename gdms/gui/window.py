@@ -70,18 +70,15 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         self.builder = Gtk.Builder.new_from_resource('/app/ui/main-window.ui')
 
-        self.set_content(self.builder.get_object('content_view'))
-
         self.stack = self.builder.get_object('stack')
         self.sidebar = self.builder.get_object('sidebar')
         self.spinner = self.builder.get_object('spinner')
         self.split_view = self.builder.get_object('split_view')
-        self.title_label = self.builder.get_object('title_label')
         self.apply_button = self.builder.get_object('apply_button')
         self.section_label = self.builder.get_object('section_label')
         self.toast_overlay = self.builder.get_object('toast_overlay')
 
-        self.bind_property('title', self.title_label, 'label', GObject.BindingFlags.SYNC_CREATE)
+        self.set_content(self.toast_overlay)
 
         self.task_counter = TaskCounter(spinner=self.spinner)
 

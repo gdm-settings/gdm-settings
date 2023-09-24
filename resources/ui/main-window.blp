@@ -21,38 +21,47 @@ menu app_menu {
 }
 
 
-Adw.ToolbarView content_view {
-  top-bar-style: raised;
+Adw.ToastOverlay toast_overlay {
+  Adw.OverlaySplitView split_view {
+    sidebar-width-fraction: 0.20;
+    show-sidebar: bind toggle_pane_button.active bidirectional;
+    enable-show-gesture: bind split_view.collapsed;
+    enable-hide-gesture: bind split_view.collapsed;
 
-  [top] Adw.HeaderBar {
-    title-widget: Box {
-      styles ["title"]
+    [sidebar] Box {
+      orientation: vertical;
 
-      Label title_label { visible: bind section_label.visible inverted bidirectional; }
-      Label section_label { visible: bind split_view.collapsed; ellipsize: end; }
-    };
+      CenterBox {
+        styles ["toolbar"]
 
-    [start] ToggleButton toggle_pane_button {
-      icon-name: "sidebar-show";
-      active: true;
-      visible: bind split_view.collapsed;
+        [start] Box {
+          orientation: horizontal;
+          spacing: 5;
+
+          Button apply_button { label: _("Apply"); styles ["suggested-action"] }
+          Spinner spinner { spinning: false; }
+        }
+
+        [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
+      }
+
+      $GdmSettingsSidebar sidebar { stack: stack; }
     }
 
-    [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
-    [end] Separator { margin-start: 10; }
-    [end] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
-    [end] Spinner spinner { spinning: false; margin-end: 5; }
+    [content] Box {
+      orientation: vertical;
+
+      Adw.HeaderBar {
+        title-widget: Label section_label { styles ["title"] };
+
+        [start] ToggleButton toggle_pane_button {
+          icon-name: "sidebar-show";
+          active: true;
+          visible: bind split_view.collapsed;
+        }
+      }
+
+      Stack stack { hexpand: true; width-request: 300; }
+    }
   }
-
-  content: Adw.ToastOverlay toast_overlay {
-    Adw.OverlaySplitView split_view {
-      sidebar-width-fraction: 0.20;
-      show-sidebar: bind toggle_pane_button.active bidirectional;
-      enable-show-gesture: bind split_view.collapsed;
-      enable-hide-gesture: bind split_view.collapsed;
-
-      [sidebar] $GdmSettingsSidebar sidebar { stack: stack; }
-      [content] Stack stack { hexpand: true; width-request: 300; }
-    }
-  };
 }
