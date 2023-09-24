@@ -45,18 +45,7 @@ Adw.ToastOverlay toast_overlay {
       title: "Content";
       child: Adw.ToolbarView {
         [top] Adw.HeaderBar {
-          title-widget: Box {
-            Label section_label {
-              styles ["title"]
-              visible: bind split_view.collapsed;
-            }
-
-            Label {
-              styles ["title"]
-              label: bind split_view.root as <Window>.title;
-              visible: bind split_view.collapsed inverted;
-            }
-          };
+          title-widget: Label section_label { styles ["title"] };
         }
 
         Stack stack { hexpand: true; width-request: 300; }
