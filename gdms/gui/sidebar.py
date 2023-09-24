@@ -42,30 +42,23 @@ class Sidebar(Adw.Bin):
     def __init__(self):
         super().__init__()
 
-        selection = Gtk.SingleSelection()
-        selection.connect("notify::selected", self.notify_selected_cb)
-
         factory = Gtk.SignalListItemFactory()
         factory.connect("setup", self.setup_list_item)
         factory.connect("bind", self.bind_list_item)
 
-        listview = Gtk.ListView.new(selection, factory)
-        listview.add_css_class("navigation-sidebar")
+        self.listview = Gtk.ListView.new(None, factory)
+        self.listview.add_css_class("navigation-sidebar")
 
-        self.selection = selection
-        self.props.child = listview
+        self.props.child = self.listview
         self.connect("notify::stack", self.notify_stack_cb)
 
     @staticmethod
     def notify_stack_cb (this, prop):
         if this.stack:
             pages = this.stack.props.pages
-            this.selection.props.model = pages
+            this.listview.props.model = pages
         else:
-            this.selection.props.model = None
-
-    def notify_selected_cb (self, selection, prop_name):
-        self.stack.props.visible_child_name = selection.get_selected_item().get_name()
+            this.listview.props.model = None
 
     def setup_list_item (self, factory, item: Gtk.ListItem):
         s_item = SidebarItem()
