@@ -43,10 +43,13 @@ def is_unmodified(gresourceFile:str):
     if env.HOST_ROOT and not gresourceFile.startswith(env.HOST_ROOT):
         gresourceFile = env.HOST_ROOT + gresourceFile
 
-    if os.path.exists(gresourceFile):
-        if utils.get_stdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/gnome-shell.css"]):
-            if not utils.get_stdout(f"gresource list {gresourceFile} /org/gnome/shell/theme/{CustomThemeIdentity}"):
-                return True
+    gresource_contains = lambda x: utils.get_stdout(["gresource", "list", gresourceFile, "/org/gnome/shell/theme/" + x])
+
+    if (os.path.exists(gresourceFile) and
+        (gresource_contains("gnome-shell.css") or gresource_contains("gnome-shell-dark.css")) and
+        not gresource_contains(CustomThemeIdentity)
+        ):
+            return True
     return False
 
 def get_default() -> str:
@@ -82,6 +85,14 @@ def extract_default_theme(destination:str, /):
 
 class BackgroundImageNotFoundError (FileNotFoundError): pass
 
+def append_to_file(path:str, contents:str):
+    with open(path, 'a') as f:
+        f.write(contents)
+
+def append_if_exists(path:str, contents:str):
+    if os.path.isfile(path):
+        append_to_file(path, contents)
+
 def compile(shellDir:str, additional_css:str, background_image:str=''):
     """Compile a theme into a GResource file for its use as a GDM theme"""
 
@@ -108,14 +119,34 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
 
         shutil.copytree(shellDir, temp_shell_dir, dirs_exist_ok=True)
 
+        shelldir_has_file = lambda x: os.path.isfile(os.path.join(shellDir, x))
+
         for filename, contents_default in css_files.items():
-            if not os.path.isfile(os.path.join(shellDir, filename)):
+            if not shelldir_has_file(filename):
                 continue
             with open(os.path.join(shellDir, filename)) as file_io:
                 contents_theme = file_io.read()
             with open(os.path.join(temp_shell_dir, filename), 'w') as file_io:
                 contents = contents_default + '\n\n' + contents_theme
                 file_io.write(contents)
+
+        if shelldir_has_file("gnome-shell.css"):
+            if "gnome-shell-dark.css" in css_files and not shelldir_has_file("gnome-shell-dark.css"):
+                with open(os.path.join(shellDir, "gnome-shell.css")) as file_io:
+                    contents_theme = file_io.read()
+                with open(os.path.join(temp_shell_dir, "gnome-shell-dark.css"), 'w') as file_io:
+                    contents = css_files["gnome-shell-dark.css"] + '\n\n' + contents_theme
+                    file_io.write(contents)
+
+            if "gnome-shell-light.css" in css_files and not shelldir_has_file("gnome-shell-light.css"):
+                with open(os.path.join(shellDir, "gnome-shell.css")) as file_io:
+                    contents_theme = file_io.read()
+                with open(os.path.join(temp_shell_dir, "gnome-shell-light.css"), 'w') as file_io:
+                    contents = css_files["gnome-shell-light.css"] + '\n\n' + contents_theme
+                    file_io.write(contents)
+
+            if "gnome-shell.css" not in css_files:
+                shutil.copy(f"{temp_shell_dir}/gnome-shell-dark.css", f"{temp_shell_dir}/gnome-shell.css")
 
     # Inject custom-theme identity
     open(os.path.join(temp_shell_dir, CustomThemeIdentity), 'w').close()
@@ -126,12 +157,10 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
         else:
             raise BackgroundImageNotFoundError(2, 'No such file', background_image)
 
-    with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
-        shell_css.write(additional_css)
-
-    if os.path.exists(f"{temp_shell_dir}/gnome-shell-high-contrast.css"):
-        with open(f"{temp_shell_dir}/gnome-shell-high-contrast.css", "a") as shell_css:
-            shell_css.write(additional_css)
+    append_to_file(f"{temp_shell_dir}/gnome-shell.css", additional_css)
+    append_if_exists(f"{temp_shell_dir}/gnome-shell-dark.css", additional_css)
+    append_if_exists(f"{temp_shell_dir}/gnome-shell-light.css", additional_css)
+    append_if_exists(f"{temp_shell_dir}/gnome-shell-high-contrast.css", additional_css)
 
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
