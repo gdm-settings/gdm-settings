@@ -36,20 +36,17 @@ class ReleaseNotesFetcher(GObject.Object):
         return cls._instance
 
     def __init__(self):
-        if not type(self)._instance:
-            super().__init__()
-            type(self)._instance = self
-            self.store = None
-
-        if self.store:
+        if type(self)._instance:
             return
+
+        super().__init__()
+        type(self)._instance = self
 
         if not ASG:
             logger.warning('AppStreamGlib typelib not installed! Cannot get release information.')
             return
 
-        self.store = ASG.Store()
-        self.store.load_async(flags=ASG.StoreLoadFlags.APPDATA, callback=self.on_store_load)
+        ASG.Store().load_async(flags=ASG.StoreLoadFlags.APPDATA, callback=self.on_store_load)
 
     def on_store_load(self, store, result, user_data=None):
         if not store.load_finish(result):
