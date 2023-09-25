@@ -129,6 +129,10 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
     with open(f"{temp_shell_dir}/gnome-shell.css", "a") as shell_css:
         shell_css.write(additional_css)
 
+    if os.path.exists(f"{temp_shell_dir}/gnome-shell-high-contrast.css"):
+        with open(f"{temp_shell_dir}/gnome-shell-high-contrast.css", "a") as shell_css:
+            shell_css.write(additional_css)
+
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
 
