@@ -371,36 +371,19 @@ def _gresource_apply():
     # We need to copy the compiled gresource file instead of moving it because the
     # copy gets correct SELinux context/label where applicable and prevents breakage
     # of GDM in such situations.
-    common_commands = [f"install -m644 {compiled_file} {gresource.CustomGresourceFile}"]
-
-    fallback_commands = [
-        f'ln -sfr {gresource.CustomGresourceFile} {gresource.ShellGresourceFile}'
-    ]
-
-    raw_message = _("Applying GResource settings for {distro_name} …")
-
-    def add_commands(distro_name, special_commands):
-        message = raw_message.format(distro_name = distro_name)
-        logger.info(message)
-        _commands.add('\n'.join(common_commands + special_commands))
+    _commands.add(f"install -m644 {compiled_file} {gresource.ShellGresourceFile}")
 
     if gresource.UbuntuGdmGresourceFile:
         name_of_alternative = os.path.basename(gresource.UbuntuGdmGresourceFile)
-        ubuntu_commands = [
-            ('update-alternatives --quiet --install'
-             f' {gresource.UbuntuGdmGresourceFile}'
-             f' {name_of_alternative}'
-             f' {gresource.CustomGresourceFile}'
-             ' 0'),
+        _commands.add('update-alternatives --quiet --install'
+                      f' {gresource.UbuntuGdmGresourceFile}'
+                      f' {name_of_alternative}'
+                      f' {gresource.ShellGresourceFile}'
+                      ' 0')
 
-            ('update-alternatives --quiet --set'
-             f' {name_of_alternative}'
-             f' {gresource.CustomGresourceFile}'),
-        ]
-
-        add_commands(_('Ubuntu'), ubuntu_commands)
-    else:
-        add_commands(_('generic system'), fallback_commands)
+        _commands.add('update-alternatives --quiet --set'
+                      f' {name_of_alternative}'
+                      f' {gresource.ShellGresourceFile}')
 
 
 def _dconf_apply():
@@ -639,14 +622,12 @@ def apply_user_display_settings() -> bool:
 
 def reset() -> bool:
     if gresource.UbuntuGdmGresourceFile:
-        logger.info(C_('Command-line output', "Resetting GResource settings for Ubuntu …"))
         _commands.add(['update-alternatives',  '--quiet',  '--remove',
                           os.path.basename(gresource.UbuntuGdmGresourceFile),
-                          gresource.CustomGresourceFile,
+                          gresource.ShellGresourceFile,
                        ])
-        _commands.add(f'rm -f {gresource.CustomGresourceFile}')
-    elif os.path.exists(gresource.DefaultGresourceFile):
-        logger.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
+
+    if os.path.exists(gresource.DefaultGresourceFile):
         _commands.add(['mv', '-f', gresource.DefaultGresourceFile, gresource.ShellGresourceFile])
 
     _commands.add("rm -f /etc/dconf/profile/gdm")

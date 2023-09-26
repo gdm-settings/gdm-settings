@@ -13,7 +13,6 @@ CustomThemeIdentity    = 'custom-theme'
 GdmUsername            = 'gdm'
 ShellGresourceFile     = None
 DefaultGresourceFile   = None
-CustomGresourceFile    = None
 UbuntuGdmGresourceFile = None
 
 for data_dir in env.HOST_DATA_DIRS:
@@ -21,7 +20,6 @@ for data_dir in env.HOST_DATA_DIRS:
     if os.path.isfile (env.HOST_ROOT + file):
         ShellGresourceFile   = file
         DefaultGresourceFile = ShellGresourceFile + ".default"
-        CustomGresourceFile  = ShellGresourceFile + ".gdm_settings"
         break
 
 if 'ubuntu' in env.OS_IDs:
