@@ -648,8 +648,6 @@ def reset() -> bool:
     elif os.path.exists(gresource.DefaultGresourceFile):
         logger.info(C_('Command-line output', "Resetting GResource settings for non-Ubuntu systems …"))
         _commands.add(['mv', '-f', gresource.DefaultGresourceFile, gresource.ShellGresourceFile])
-        _commands.add(f"chown root: {gresource.ShellGresourceFile}")
-        _commands.add(f"chmod 644 {gresource.ShellGresourceFile}")
 
     _commands.add("rm -f /etc/dconf/profile/gdm")
     _commands.add("rm -f /etc/dconf/db/gdm.d/95-gdm-settings")
