@@ -37,7 +37,7 @@ class Sidebar(Adw.Bin):
     __gtype_name__ = 'GdmSettingsSidebar'
 
     stack = GProperty(Gtk.Stack)
-    item_clicked = GObject.Signal()
+    activate = GObject.Signal()
 
     def __init__(self):
         super().__init__()
@@ -62,7 +62,7 @@ class Sidebar(Adw.Bin):
 
     def setup_list_item (self, factory, item: Gtk.ListItem):
         s_item = SidebarItem()
-        s_item.connect("clicked", lambda x: self.emit("item-clicked"))
+        s_item.connect("clicked", lambda x: self.emit("activate"))
         item.props.child = s_item
 
     def bind_list_item (self, factory, item: Gtk.ListItem):

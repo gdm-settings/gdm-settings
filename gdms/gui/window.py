@@ -86,7 +86,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.apply_button.connect('clicked', self.on_apply)
         self.apply_task = BackgroundTask(settings.apply, self.on_apply_finished)
 
-        self.sidebar.connect('item-clicked', self.on_sidebar_clicked, self.split_view)
+        self.sidebar.connect('activate', self.on_sidebar_activate, self.split_view)
         self.stack.connect('notify::visible-child', self.on_section_changed)
 
         condition = Adw.BreakpointCondition.parse('max-width: 500sp')
@@ -97,7 +97,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
         self.add_pages()
         self.bind_to_gsettings()
 
-    def on_sidebar_clicked (self, sidebar, split_view):
+    def on_sidebar_activate (self, sidebar, split_view):
         if split_view.props.collapsed:
             split_view.props.show_content = True
 
