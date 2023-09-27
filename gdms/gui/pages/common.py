@@ -10,7 +10,7 @@ class PageContent (Gtk.ScrolledWindow):
         self.set_propagate_natural_height(True)
 
         margin=20
-        self.clamp = Adw.Clamp(maximum_size=2000, tightening_threshold=300)
+        self.clamp = Adw.Clamp(maximum_size=1500, tightening_threshold=0)
         self.clamp.set_margin_top(margin)
         self.clamp.set_margin_bottom(margin)
         self.clamp.set_margin_start(margin)
