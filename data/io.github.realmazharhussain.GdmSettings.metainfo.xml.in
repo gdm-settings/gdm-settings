@@ -38,14 +38,16 @@
     <control>touch</control>
   </supports>
 
-  <!-- Minimum display length required -->
+  <!-- Minimum display resolution the application can work with -->
   <requires>
-    <display_length>300</display_length>
+    <display_length side="shortest">240</display_length>
+    <display_length side="longest">320</display_length>
   </requires>
 
-  <!-- Minimum display length recommended -->
+  <!-- Minimum display resolution for a good experience using the app -->
   <recommends>
-    <display_length>360</display_length>
+    <display_length side="shortest">360</display_length>
+    <display_length side="longest">420</display_length>
   </recommends>
 
   <provides>
