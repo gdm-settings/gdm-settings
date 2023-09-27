@@ -27,6 +27,7 @@ class SidebarItem(Adw.Bin):
         click.connect("released", self.on_click)
 
         self.props.child = box
+        self.props.height_request = 40
         self.add_controller(click)
 
     def on_click(self, ctrl, n_press, x, y):
