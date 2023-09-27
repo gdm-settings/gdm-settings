@@ -49,7 +49,7 @@ class Sidebar(Adw.Bin):
         self.listview = Gtk.ListView.new(None, factory)
         self.listview.add_css_class("navigation-sidebar")
 
-        self.props.child = self.listview
+        self.props.child = Gtk.ScrolledWindow(child=self.listview)
         self.connect("notify::stack", self.notify_stack_cb)
 
     @staticmethod
