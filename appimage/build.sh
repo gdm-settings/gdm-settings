@@ -71,6 +71,7 @@ echo
 
 
 cd "${BuildDir}"
+APPIMAGE=${AppName// /_}.AppImage
 VERSION_STRING=$("${AppRun}" --version)
 export VERSION=${VERSION_STRING##* }
-appimagetool "${AppDir}" "${AppName// /_}".AppImage -u "gh-releases-zsync|gdm-settings|gdm-settings|latest|Login_Manager_Settings.AppImage.zsync"
+appimagetool "${AppDir}" "${APPIMAGE}" -u "gh-releases-zsync|gdm-settings|gdm-settings|latest|${APPIMAGE}.zsync"
