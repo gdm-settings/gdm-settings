@@ -77,6 +77,25 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4~beta0" type="development" date="2023-09-29">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.beta0</url>
+
+      <description>
+        <p>First beta release of the upcoming GDM Settings version 4</p>
+        <ul>
+          <li>New UI style</li>
+          <li>Shell theme, background and top bar tweaks now work in high contrast mode as well</li>
+          <li>Window can be dragged and moved from anywhere, not just the headerbar</li>
+        </ul>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/184">GNOME 45 Support</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/180">New option to change background image adjustment</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/171">New graphical error message (replaces an unhelpful error printed on the terminal)</issue>
+      </issues>
+    </release>
+
     <release version="3.3" type="stable" date="2023-08-13">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.3</url>
 
