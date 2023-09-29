@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-09-29 17:27+0500\n"
 "PO-Revision-Date: 2023-08-16 07:53+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
@@ -45,12 +45,22 @@ msgid "The image file to use as GDM background"
 msgstr "Het afbeeldingsbestand dat wordt ingesteld als achtergrond"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "Achtergrondafbeelding"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "De kleur die wordt ingesteld als GDM-achtergrond"
 
@@ -261,10 +271,11 @@ msgid "Top bar background color"
 msgstr "Achtergrondkleur van bovenbalk"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Inlogscherm­voorkeuren"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Mouse Settings"
+msgid "GDM Settings"
+msgstr "Cursorvoorkeuren"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -281,102 +292,123 @@ msgstr ""
 "een ander cursor- of pictogramthema, pas de nachtlichtvoorkeuren aan en nog "
 "veel meer."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Foutoplossing: Startte niet onder PureOS"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "First beta release of the upcoming GDM Settings version 4"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "New UI style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid ""
+"Shell theme, background and top bar tweaks now work in high contrast mode as "
+"well"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Window can be dragged and moved from anywhere, not just the headerbar"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Fixed:"
+msgstr "Opgelost:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Changing background color doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+msgid "Fixed: Changing background doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
 msgid "<em>New Options</em>"
 msgstr "<em>Nieuwe voorkeuren</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr ""
 "Voorkeur om het toegankelijkheidsmenu uit te schakelen indien niet in gebruik"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
 msgid "Option to change cursor size"
 msgstr "Voorkeur om de aanwijzergrootte aan te passen"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
 msgid "A one-time donation request"
 msgstr "Eenmalig donatieverzoek"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
 msgid "Donate option in hamburger menu"
 msgstr "Doneermogelijkheid in menu"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Gedragswijzigingen</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 "Voortaan worden de daadwerkelijke themanamen in plaats van de mapnamen "
 "getoond"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 "Aanwijzerthema's worden niet meer getoond bij het kiezen van een "
 "pictogramthema"
 
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
+msgid "Fixed: Fails to run on PureOS"
+msgstr "Foutoplossing: Startte niet onder PureOS"
 
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr ""
-"Heimen Stoffels &lt;vistausss@fastmail.com&gt;\n"
-"Philip Goto https://flipflop97.github.io/"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "App-versie tonen"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Foutopsporingsniveau instellen (0-5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEAU"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Foutopsporingsmodus inschakelen (alias --verbosity=5)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Stille modus inschakelen (alias --verbosity=0)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "Ongeldig foutopsporingsniveau: {level}. Het niveau dient 0, 5 of "
 "daartussenin te liggen."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -385,7 +417,7 @@ msgstr ""
 "De volgende afhankelijkheden zijn vereist voor het functioneren van deze "
 "app, maar zijn niet aanwezig op het host-systeem."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -393,19 +425,19 @@ msgstr ""
 "Deze app vereist de volgende software om goed te functioneren, maar deze "
 "zijn niet geïnstalleerd op uw systeem."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "• <b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -413,19 +445,32 @@ msgid ""
 msgstr ""
 "Klik <a href=\"{url}\">hier</a> om de installatie-instructies te bekijken."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Ontbrekende afhankelijkheden"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "Oké"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "Standaard Shell-thema"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Donatieverzoek"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -437,92 +482,90 @@ msgstr ""
 "❤️\n"
 "Ik zou het heel erg op prijs stellen."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "Niet geïnteresseerd"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Doneren"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "De voorkeuren zijn opnieuw geladen"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "De sessievoorkeuren zijn geladen"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "In de Flatpak-versie is het niet mogelijk om sessievoorkeuren te importeren"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "De standaardwaarden zijn hersteld"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "De standaardwaarden kunnen niet worden hersteld"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "Importeren"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "De voorkeuren zijn geïmporteerd"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "Het importeren is mislukt omdat het bestand ongeldig is"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "De voorkeuren zijn geëxporteerd"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "Het exporteren is mislukt omdat de juiste rechten ontbreken"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Het exporteren is mislukt omdat er al een map is met die naam"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Kies een bestand"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(geen)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "Kiezen"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright 2021–2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "Afbeeldingen"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr ""
+"Heimen Stoffels &lt;vistausss@fastmail.com&gt;\n"
+"Philip Goto https://flipflop97.github.io/"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Alle bestanden"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "Afbeelding kiezen"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "De huidige beeldscherminstellingen zijn toegepast"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "De huidige beeldscherminstellingen kunnen niet worden toegepast"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -536,498 +579,168 @@ msgstr ""
 "Open de systeemvoorkeuren, ga naar het tabblad ‘Schermen’ en pas een "
 "voorkeur aan om het bestand automatisch aan te maken."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "Beeldschermvoorkeuren ontbreken"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Het standaard Shell-thema is uitgepakt naar ‘{folder}’ onder de naam ‘{name}’"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Het standaard Shell-thema kan niet worden geëxtraheerd"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Thema's"
-
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
-
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Pictogrammen"
-
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Muisaanwijzer"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Achtergrond"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Soort"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Standaard"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "Afbeelding"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Kleur"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "De afbeelding die wordt ingesteld als achtergrond"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "De kleur die wordt ingesteld als achtergrond"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Huidige beeldscherminstellingen toepassen"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Resolutie, ververssnelheid, schermposities, etc."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Toepassen"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Nachtlicht"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Inschakelen"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Schema"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Van zonsondergang tot zonsopkomst"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Eigen schema"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Tijdstippen"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "Van"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "Tot"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Kleurtemperatuur"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Lettertype"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Anti-kartelvorming"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Standaard"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Subpixel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Geen"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Hinten"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Volledig"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Gemiddeld"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Licht"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Beeldgrootte"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Herladen"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Sessievoorkeuren laden"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Standaardwaarden herstellen"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Importeren uit bestand"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Exporteren naar bestand"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "Over"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Afsluiten"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Herstartknoppen verbergen"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Gebruikerslijst verbergen"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Logo tonen"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Of er een logo dient te worden getoond onder de gebruikerslijst"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Welkomstbericht"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Vergroten"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Bericht"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "Aanwijzergrootte"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Standaard"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Gemiddeld"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Groot"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Groter"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "Grootst"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Muis"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "Aanwijzerversnelling"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Automatisch"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Uitgeschakeld"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Ingeschakeld"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Natuurlijk scrollen"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Scrollen verplaatst de inhoud, niet de weergave."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "Aanwijzersnelheid"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Touchpad"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Tik om te klikken"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "Scrollen met twee vingers"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "Scroll door met twee vingers te vegen."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Uitschakelen tijdens typen"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Na indrukken van aan-/uitknop"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Niets doen"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Pauzestand inschakelen"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Slaapstand inschakelen"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Om actie vragen"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Automatische energiebesparing"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Schakel energiebesparing in als het accuniveau laag is."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Scherm verduisteren"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Vermindert de helderheid als de computer inactief is."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Scherm uitschakelen"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Schakelt het scherm uit na een periode van inactiviteit."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Vertraging"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "Na hoeveel minuten het scherm wordt uitgeschakeld."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Automatisch onderbreken"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Zet de computer in de pauzestand na een periode van inactiviteit."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "Bij gebruik van accu"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Na hoeveel minuten de computer in de pauzestand wordt gezet."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "Bij gebruik van netstroom"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Thema"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Overversterking"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Volume verhogen tot boven de 100%"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Gebeurtenisgeluiden"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Invoergeluiden"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Standaard Shell-thema"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Aanpassingen aan bovenbalk toepassen"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Standaard Shell-thema extraheren"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Extraheren"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Afstellingen"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Tekstkleur aanpassen"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Tekstkleur"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "De kleur van de tekst op de bovenbalk"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Achtergrondkleur wijzigen"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "De kleur van de achtergrond van de bovenbalk"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Pijlen verbergen"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Geen afgeronde hoeken tonen"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Toegankelijkheid"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Toegankelijkheidsmenu altijd tonen"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Klok"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Weekdagen tonen"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Seconden tonen"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Tijdsopmaak"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 uur"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Kies een bestand"
+
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(geen)"
+
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "Kiezen"
+
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Alle bestanden"
+
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "Afbeelding kiezen"
+
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr "Vormgeving"
+
+#: gdms/gui/window.py:114
+msgid "Fonts"
+msgstr "Lettertypen"
+
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr "Bovenbalk"
+
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr "Geluid"
+
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr "Muis en touchpad"
+
+#: gdms/gui/window.py:118
+msgid "Display"
+msgstr "Beeldscherm"
+
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr "Aanmeldscherm"
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
 msgstr "Energie"
 
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Accupercentage tonen"
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr "Hulpmiddelen"
 
-#: src/settings.py:80
+#: gdms/gui/window.py:139
+msgid "Settings applied successfully"
+msgstr "De voorkeuren zijn ingesteld"
+
+#: gdms/gui/window.py:143
+msgid "Failed to apply settings"
+msgstr "De voorkeuren kunnen niet worden ingesteld"
+
+#: gdms/gui/window.py:147
+msgid ""
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
+msgstr ""
+"De afbeelding is niet ingesteld omdat het bestand niet meer bestaat. Kies "
+"een andere afbeelding."
+
+#: gdms/gui/window.py:151
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+"Het logo is niet ingesteld omdat het bestand niet meer bestaat. Kies een "
+"andere afbeelding."
+
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+"Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
+"computer herstart."
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr "Afmelden?"
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr "Afmelden"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Bezig met importeren uit ‘{filename}’…"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Bezig met importeren uit standaardinvoer…"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "Het geïmporteerde bestand kan niet worden verwerkt"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr ""
+"Het geïmporteerde bestand kan niet worden uitgelezen omdat de tekenset niet "
+"utf-8 is"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Het geïmporteerde bestand bevat geen sectie genaamd ‘{section_name}’"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"Het geïmporteerde bestand heeft geen sleutel genaamd ‘{key_name}’ in de "
+"sectie ‘{section_name}’"
+
+#: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Bezig met exporteren naar ‘{filename}’…"
 
-#: src/settings.py:85
+#: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
 "Het wegschrijven naar ‘{filename}’ is mislukt omdat de juiste rechten "
 "ontbreken"
 
-#: src/settings.py:89
+#: gdms/settings.py:222
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1036,141 +749,505 @@ msgstr ""
 "Het wegschrijven naar ‘{filename}’ is mislukt omdat er al een map is met die "
 "naam"
 
-#: src/settings.py:94
+#: gdms/settings.py:227
 msgid "Exporting to standard output"
 msgstr "Bezig met exporteren naar standaarduitvoer…"
 
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "Bezig met importeren uit ‘{filename}’…"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Bezig met importeren uit standaardinvoer…"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "Het geïmporteerde bestand kan niet worden verwerkt"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
-"Het geïmporteerde bestand kan niet worden uitgelezen omdat de tekenset niet "
-"utf-8 is"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "Het geïmporteerde bestand bevat geen sectie genaamd ‘{section_name}’"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-"Het geïmporteerde bestand heeft geen sleutel genaamd ‘{key_name}’ in de "
-"sectie ‘{section_name}’"
-
-#: src/settings.py:313
+#: gdms/settings.py:327
 msgid "Backing up default shell theme …"
 msgstr "Bezig met opslaan van het standaardthema…"
 
-#: src/settings.py:365
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Thema's"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Pictogrammen"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Muisaanwijzer"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Achtergrond"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Soort"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Standaard"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Afbeelding"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Kleur"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "De afbeelding die wordt ingesteld als achtergrond"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "Scherm verduisteren"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "De kleur die wordt ingesteld als achtergrond"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Huidige beeldscherminstellingen toepassen"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Resolutie, ververssnelheid, schermposities, etc."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Toepassen"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Nachtlicht"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Schema"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Van zonsondergang tot zonsopkomst"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Eigen schema"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Tijdstippen"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "Van"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "Tot"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Kleurtemperatuur"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Lettertype"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Anti-kartelvorming"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standaard"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Geen"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Hinten"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Volledig"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Licht"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Beeldgrootte"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Herladen"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Sessievoorkeuren laden"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Standaardwaarden herstellen"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Importeren uit bestand"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Exporteren naar bestand"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Over"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Herstartknoppen verbergen"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Gebruikerslijst verbergen"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Logo tonen"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Of er een logo dient te worden getoond onder de gebruikerslijst"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "De afbeelding die onder de gebruikerslijst wordt getoond"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Welkomstbericht"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Vergroten"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Bericht"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "Aanwijzergrootte"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Standaard"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Groot"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Groter"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "Grootst"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Muis"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "Aanwijzerversnelling"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Natuurlijk scrollen"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Scrollen verplaatst de inhoud, niet de weergave."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "Aanwijzersnelheid"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Tik om te klikken"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "Scrollen met twee vingers"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "Scroll door met twee vingers te vegen."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Uitschakelen tijdens typen"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Na indrukken van aan-/uitknop"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Niets doen"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Pauzestand inschakelen"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Slaapstand inschakelen"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Om actie vragen"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Automatische energiebesparing"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Schakel energiebesparing in als het accuniveau laag is."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Scherm verduisteren"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Vermindert de helderheid als de computer inactief is."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Scherm uitschakelen"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Schakelt het scherm uit na een periode van inactiviteit."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Vertraging"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "Na hoeveel minuten het scherm wordt uitgeschakeld."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Automatisch onderbreken"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Zet de computer in de pauzestand na een periode van inactiviteit."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "Bij gebruik van accu"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Na hoeveel minuten de computer in de pauzestand wordt gezet."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "Bij gebruik van netstroom"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Thema"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Overversterking"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Volume verhogen tot boven de 100%"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Gebeurtenisgeluiden"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Invoergeluiden"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Standaard Shell-thema"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Aanpassingen aan bovenbalk toepassen"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Standaard Shell-thema extraheren"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Extraheren"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Afstellingen"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Tekstkleur aanpassen"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Tekstkleur"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "De kleur van de tekst op de bovenbalk"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Achtergrondkleur wijzigen"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "De kleur van de achtergrond van de bovenbalk"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Pijlen verbergen"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Geen afgeronde hoeken tonen"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Toegankelijkheid"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Toegankelijkheidsmenu altijd tonen"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Klok"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Weekdagen tonen"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Seconden tonen"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Tijdsopmaak"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 uur"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Accupercentage tonen"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Inlogscherm­voorkeuren"
+
 #, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Bezig met toepassen van GResource-voorkeuren voor {distro_name}…"
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Bezig met toepassen van GResource-voorkeuren voor {distro_name}…"
 
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
 
-#: src/settings.py:388
-msgid "generic system"
-msgstr "algemeen systeem"
+#~ msgid "generic system"
+#~ msgstr "algemeen systeem"
 
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Bezig met herstellen van GResource-voorkeuren voor Ubuntu…"
 
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
-
-#: src/window.py:111
-msgid "Appearance"
-msgstr "Vormgeving"
-
-#: src/window.py:112
-msgid "Fonts"
-msgstr "Lettertypen"
-
-#: src/window.py:113
-msgid "Top Bar"
-msgstr "Bovenbalk"
-
-#: src/window.py:114
-msgid "Sound"
-msgstr "Geluid"
-
-#: src/window.py:115
-msgid "Mouse & Touchpad"
-msgstr "Muis en touchpad"
-
-#: src/window.py:116
-msgid "Display"
-msgstr "Beeldscherm"
-
-#: src/window.py:117
-msgid "Login Screen"
-msgstr "Aanmeldscherm"
-
-#: src/window.py:119
-msgid "Tools"
-msgstr "Hulpmiddelen"
-
-#: src/window.py:137
-msgid "Settings applied successfully"
-msgstr "De voorkeuren zijn ingesteld"
-
-#: src/window.py:141
-msgid "Failed to apply settings"
-msgstr "De voorkeuren kunnen niet worden ingesteld"
-
-#: src/window.py:145
-msgid ""
-"Didn't apply. Chosen background image does not exist anymore. Please! choose "
-"again."
-msgstr ""
-"De afbeelding is niet ingesteld omdat het bestand niet meer bestaat. Kies "
-"een andere afbeelding."
-
-#: src/window.py:149
-msgid ""
-"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
-"Het logo is niet ingesteld omdat het bestand niet meer bestaat. Kies een "
-"andere afbeelding."
-
-#: src/window.py:155
-msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
-"Het systeem kan kuren of vervormingen tonen totdat u opnieuw aanmeldt of de "
-"computer herstart."
-
-#: src/window.py:160
-msgid "Log Out?"
-msgstr "Afmelden?"
-
-#: src/window.py:165
-msgid "Cancel"
-msgstr "Annuleren"
-
-#: src/window.py:166
-msgid "Log Out"
-msgstr "Afmelden"
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr ""
+#~ "Bezig met herstellen van GResource-voorkeuren voor andere distibuties…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1388,9 +1465,6 @@ msgstr "Afmelden"
 #~ msgid "Wider application window on first launch"
 #~ msgstr "Breder toepassingsvenster na eerste keer opstarten"
 
-#~ msgid "Fixed:"
-#~ msgstr "Opgelost:"
-
 #~ msgid "Welcome message could not contain single quotes"
 #~ msgstr "Het welkomstbericht kon geen enkele aanhalingstekens tonen"
 
@@ -1471,8 +1545,8 @@ msgstr "Afmelden"
 #~ "<b>Do not change anything</b> here unless you know exactly what you are "
 #~ "doing. Click <a href=\"{url}\">here</a> for more information."
 #~ msgstr ""
-#~ "<b>Pas niets aan</b>, tenzij u weet wat u doet! Klik <a href="
-#~ "\"{url}\">hier</a> voor meer informatie."
+#~ "<b>Pas niets aan</b>, tenzij u weet wat u doet! Klik <a "
+#~ "href=\"{url}\">hier</a> voor meer informatie."
 
 #~ msgid "Shell Theme"
 #~ msgstr "Shell-thema"
@@ -1532,9 +1606,6 @@ msgstr "Afmelden"
 
 #~ msgid "Fixed: A fatal bug"
 #~ msgstr "Opgelost: een kritieke fout"
-
-#~ msgid "Mouse Settings"
-#~ msgstr "Cursorvoorkeuren"
 
 #~ msgid "Flatpak Support"
 #~ msgstr "Flatpakondersteuning"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-09-29 17:27+0500\n"
 "PO-Revision-Date: 2023-07-06 22:48+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -42,12 +42,22 @@ msgid "The image file to use as GDM background"
 msgstr "GDM の背景として使う画像ファイル"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "背景画像"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "背景色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "GDM の背景として使う色"
 
@@ -204,7 +214,8 @@ msgstr "バッテリー駆動時にコンピューターがスリープするま
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
-msgstr "バッテリー駆動中のコンピューターがスリープするまでに必要な、無操作状態の時間 "
+msgstr ""
+"バッテリー駆動中のコンピューターがスリープするまでに必要な、無操作状態の時間 "
 "(分)。0 を指定すると、スリープしません。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
@@ -219,7 +230,8 @@ msgstr "電源接続時にコンピューターがスリープするまでの時
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
-msgstr "電源接続中のコンピューターがスリープするまでに必要な、無操作状態の時間 (分)。"
+msgstr ""
+"電源接続中のコンピューターがスリープするまでに必要な、無操作状態の時間 (分)。"
 "0 を指定すると、スリープしません。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
@@ -251,10 +263,11 @@ msgid "Top bar background color"
 msgstr "トップバーの背景色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "ログインマネージャーの設定"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "設定をリセット"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -270,93 +283,116 @@ msgstr ""
 "GDM の設定を変更できます。例えば、テーマや背景を設定したり、カーソルテーマや"
 "アイコンテーマ、夜間モードなどの設定を変更したりできます。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "修正: PureOS 上で実行失敗する不具合"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "First beta release of the upcoming GDM Settings version 4"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "New UI style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid ""
+"Shell theme, background and top bar tweaks now work in high contrast mode as "
+"well"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Window can be dragged and moved from anywhere, not just the headerbar"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Fixed:"
+msgstr "修正点:"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Changing background color doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+msgid "Fixed: Changing background doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
 msgid "<em>New Options</em>"
 msgstr "<em>新規オプション</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "アクセシビリティメニュー未使用時は非表示にするオプション"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
 msgid "Option to change cursor size"
 msgstr "カーソルサイズを変更するオプション"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
 msgid "A one-time donation request"
 msgstr "一回寄付の依頼"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
 msgid "Donate option in hamburger menu"
 msgstr "ハンバーガーメニュー内の寄付オプション"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>挙動の変更</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "テーマのディレクトリ名ではなく適切なテーマ名を表示するように変更"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr "カーソルのみのテーマはアイコンテーマ選択時には表示しないように変更"
 
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
+msgid "Fixed: Fails to run on PureOS"
+msgstr "修正: PureOS 上で実行失敗する不具合"
 
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021-2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Ryo Nakano"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "アプリケーションのバージョンを表示"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "ログレベルを手動で設定 (0 から 5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "レベル"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "すべてのログを表示 (--verbosity=5 のエイリアス)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "ログを表示しない (--verbosity=0 のエイリアス)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "無効なログレベル {level} です。0から5の値を使用してください。"
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -365,7 +401,7 @@ msgstr ""
 "このアプリが適切に動作するには、インストールされていない以下のプログラムが "
 "<b>ホストシステム上に</b> 必要です。"
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -373,40 +409,53 @@ msgstr ""
 "このアプリが動作するには、インストールされていない以下のソフトウェアが必要で"
 "す。"
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"これらの依存関係をシステムにインストールする方法を参照するには、<a href="
-"\"{url}\">こちら</a> をクリックしてください。"
+"これらの依存関係をシステムにインストールする方法を参照するには、<a "
+"href=\"{url}\">こちら</a> をクリックしてください。"
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "依存関係が不足しています"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "デフォルトのシェルテーマ"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "寄付依頼"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -418,91 +467,87 @@ msgstr ""
 "❤️\n"
 "ご検討いただけると幸いです。"
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "興味なし"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "寄付"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "設定を再読み込みしました"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "セッションの設定を正常に読み込みました"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版では、セッションの設定の読み込みには対応していません"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "設定をリセットしました"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "設定をリセットできませんでした"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "インポート"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "設定を正常にファイルからインポートしました"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "インポートできませんでした。ファイルが無効です"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "設定を正常にエクスポートしました"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "エクスポートできませんでした。許可がありません"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "エクスポートできませんでした。同名のディレクトリがすでに存在します"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "ファイルを選択"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(なし)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "選択"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "画像"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Ryo Nakano"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "すべてのファイル"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "画像を選択"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "現在のディスプレイ設定を適用しました"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "現在のディスプレイ設定を適用できませんでした"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -516,532 +561,145 @@ msgstr ""
 "このファイルを自動的に作成するには、システムの '設定' アプリを開き、どれでも"
 "よいので何か設定を変更してください。"
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "画面設定が見つかりませんでした"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "シェルのデフォルトテーマが、'{folder}' に '{name}' という名前で復元されました"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "デフォルトテーマを復元できませんでした"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "テーマ"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "ファイルを選択"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "シェル"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(なし)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "アイコン"
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "選択"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "カーソル"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "背景"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "種類"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "デフォルト"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
+#: gdms/gui/widgets.py:110
+msgid "Images"
 msgstr "画像"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "背景色"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "すべてのファイル"
 
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "背景として使う画像"
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "画像を選択"
 
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "背景として使う色"
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr "外観"
 
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "現在のディスプレイ設定を適用"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "解像度、リフレッシュレート、画面配置など"
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "適用"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "夜間モード"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "有効"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "スケジュール"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "日没から日の出まで"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "手動"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "時間"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "開始"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "終了"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "色温度"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
+#: gdms/gui/window.py:114
+msgid "Fonts"
 msgstr "フォント"
 
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "アンチエイリアス"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "標準"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "サブピクセル"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "なし"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "ヒンティング"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "強"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "中"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "弱"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "スケーリングファクター"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "再読み込み"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "セッションの設定を読み込み"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "設定をリセット"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "ファイルからインポート"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "ファイルにエクスポート"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "“ログイン画面の設定” について"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "終了"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "再起動ボタンを表示しない"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "ユーザーを一覧表示しない"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "ロゴを表示"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "ユーザーの一覧の下にロゴを表示するかどうかの設定"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "ロゴ"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "ユーザーの一覧の下に表示する画像"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "ようこそメッセージ"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "拡大表示"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "メッセージ"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "カーソルサイズ"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "デフォルト"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "中"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "大"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "特大"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "最大"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "マウス"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "ポインターの加速"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "自動"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "無効"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "有効"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "ナチュラルスクロール"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "スクロールすると、画面ではなくコンテンツが移動します。"
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "ポインターの速度"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "タッチパッド"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "タップでクリック"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "2 本指スクロール"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "2 本指でスワイプすることでスクロールします。"
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "入力中は無効にする"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "電源ボタンの挙動"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "何もしない"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "サスペンド"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "ハイバーネート"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "確認する"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "自動省電力機能"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "バッテリー残量低下時に省電力機能を有効にします。"
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "画面を暗くする"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "コンピューターが無操作状態になったら、画面輝度を下げます。"
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "画面をオフにする"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "無操作状態が一定時間続いた場合に、画面をオフにします。"
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "時間"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "画面がオフになるまでの時間 (分単位)。"
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "自動サスペンド"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "無操作状態が一定時間続いた場合に、コンピューターを一時停止します。"
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "バッテリー電源時"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "コンピューターがサスペンドするまでの時間 (分単位)。"
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "電源接続時"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "テーマ"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "最大値以上の音量を許可"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "100% 以上の音量に設定できるようにします"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "イベント音"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "入力のフィードバック音"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "デフォルトのシェルテーマ"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "トップバーのカスタマイズを含む"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "デフォルトのシェルテーマに復元"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "復元"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "カスタマイズ"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "テキストの色を変更"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "テキストの色"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "トップバーのテキストの色"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "背景の色を変更"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "トップバーの背景色"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "矢印を無効化"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "角を丸めない"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "アクセシビリティ"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "常にアクセシビリティメニューを表示"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "時計"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "曜日を表示"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "秒を表示"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "時刻の書式"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 時制"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr "トップバー"
+
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr "サウンド"
+
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr "マウスとタッチパッド"
+
+#: gdms/gui/window.py:118
+msgid "Display"
+msgstr "ディスプレイ"
+
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr "ログイン画面"
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
 msgstr "電源"
 
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "バッテリーの割合を表示"
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr "ツール"
 
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr "ファイル '{filename}' にエクスポートしています"
+#: gdms/gui/window.py:139
+msgid "Settings applied successfully"
+msgstr "設定を正常に適用しました"
 
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "ファイル '{filename}' に書き込めません。許可がありません"
+#: gdms/gui/window.py:143
+msgid "Failed to apply settings"
+msgstr "設定を適用できませんでした"
 
-#: src/settings.py:89
-#, python-brace-format
+#: gdms/gui/window.py:147
 msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
 msgstr ""
-"ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
+"適用できません。選択された背景画像が存在しません。再度選択してください。"
 
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr "標準出力にエクスポートしています"
+#: gdms/gui/window.py:151
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+"適用できません。選択されたロゴ画像が存在しません。再度選択してください。"
 
-#: src/settings.py:102
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+"再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr "ログアウトしますか？"
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr "ログアウト"
+
+#: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "ファイル '{filename}' からインポートしています"
 
-#: src/settings.py:105
+#: gdms/settings.py:176
 msgid "Importing from standard input"
 msgstr "標準入力からインポートしています"
 
-#: src/settings.py:108
+#: gdms/settings.py:179
 msgid "Failed to parse import file"
 msgstr "インポートされたファイルを解析できませんでした"
 
-#: src/settings.py:111
+#: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 "インポートされたファイルを読み込めませんでした。UTF-8 でエンコードされていま"
 "せん"
 
-#: src/settings.py:117
+#: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "インポートされたファイルには、セクション '{section_name}' がありません"
 
-#: src/settings.py:122
+#: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -1049,102 +707,522 @@ msgstr ""
 "インポートされたファイルには、セクション '{section_name}' にキー "
 "'{key_name}' がありません"
 
-#: src/settings.py:313
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "ファイル '{filename}' にエクスポートしています"
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "ファイル '{filename}' に書き込めません。許可がありません"
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+"ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr "標準出力にエクスポートしています"
+
+#: gdms/settings.py:327
 msgid "Backing up default shell theme …"
 msgstr "シェルのデフォルトテーマをバックアップしています…"
 
-#: src/settings.py:365
-#, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "GResource 設定を {distro_name} に適用しています…"
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "テーマ"
 
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "シェル"
 
-#: src/settings.py:388
-msgid "generic system"
-msgstr "一般システム"
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "アイコン"
 
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "GResource 設定を Ubuntu 用にリセットしています…"
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "カーソル"
 
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "背景"
 
-#: src/window.py:111
-msgid "Appearance"
-msgstr "外観"
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "種類"
 
-#: src/window.py:112
-msgid "Fonts"
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "デフォルト"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "画像"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "背景色"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "背景として使う画像"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "画面を暗くする"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "背景として使う色"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "現在のディスプレイ設定を適用"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "解像度、リフレッシュレート、画面配置など"
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "適用"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "夜間モード"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "有効"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "スケジュール"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "日没から日の出まで"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "手動"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "時間"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "開始"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "終了"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "色温度"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
 msgstr "フォント"
 
-#: src/window.py:113
-msgid "Top Bar"
-msgstr "トップバー"
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "アンチエイリアス"
 
-#: src/window.py:114
-msgid "Sound"
-msgstr "サウンド"
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "標準"
 
-#: src/window.py:115
-msgid "Mouse & Touchpad"
-msgstr "マウスとタッチパッド"
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "サブピクセル"
 
-#: src/window.py:116
-msgid "Display"
-msgstr "ディスプレイ"
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "なし"
 
-#: src/window.py:117
-msgid "Login Screen"
-msgstr "ログイン画面"
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "ヒンティング"
 
-#: src/window.py:119
-msgid "Tools"
-msgstr "ツール"
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "強"
 
-#: src/window.py:137
-msgid "Settings applied successfully"
-msgstr "設定を正常に適用しました"
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "中"
 
-#: src/window.py:141
-msgid "Failed to apply settings"
-msgstr "設定を適用できませんでした"
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "弱"
 
-#: src/window.py:145
-msgid ""
-"Didn't apply. Chosen background image does not exist anymore. Please! choose "
-"again."
-msgstr ""
-"適用できません。選択された背景画像が存在しません。再度選択してください。"
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "スケーリングファクター"
 
-#: src/window.py:149
-msgid ""
-"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
-"適用できません。選択されたロゴ画像が存在しません。再度選択してください。"
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "再読み込み"
 
-#: src/window.py:155
-msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
-"再ログインまたは再起動するまで、システムの画面表示が乱れる可能性があります。"
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "セッションの設定を読み込み"
 
-#: src/window.py:160
-msgid "Log Out?"
-msgstr "ログアウトしますか？"
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "設定をリセット"
 
-#: src/window.py:165
-msgid "Cancel"
-msgstr "キャンセル"
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "ファイルからインポート"
 
-#: src/window.py:166
-msgid "Log Out"
-msgstr "ログアウト"
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "ファイルにエクスポート"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "“ログイン画面の設定” について"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "終了"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "再起動ボタンを表示しない"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "ユーザーを一覧表示しない"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "ロゴを表示"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "ユーザーの一覧の下にロゴを表示するかどうかの設定"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "ロゴ"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "ユーザーの一覧の下に表示する画像"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "ようこそメッセージ"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "拡大表示"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "メッセージ"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "カーソルサイズ"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "デフォルト"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "中"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "大"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "特大"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "最大"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "マウス"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "ポインターの加速"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "自動"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "無効"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "有効"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "ナチュラルスクロール"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "スクロールすると、画面ではなくコンテンツが移動します。"
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "ポインターの速度"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "タッチパッド"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "タップでクリック"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "2 本指スクロール"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "2 本指でスワイプすることでスクロールします。"
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "入力中は無効にする"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "電源ボタンの挙動"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "何もしない"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "サスペンド"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "ハイバーネート"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "確認する"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "自動省電力機能"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "バッテリー残量低下時に省電力機能を有効にします。"
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "画面を暗くする"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "コンピューターが無操作状態になったら、画面輝度を下げます。"
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "画面をオフにする"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "無操作状態が一定時間続いた場合に、画面をオフにします。"
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "時間"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "画面がオフになるまでの時間 (分単位)。"
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "自動サスペンド"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "無操作状態が一定時間続いた場合に、コンピューターを一時停止します。"
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "バッテリー電源時"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "コンピューターがサスペンドするまでの時間 (分単位)。"
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "電源接続時"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "テーマ"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "最大値以上の音量を許可"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "100% 以上の音量に設定できるようにします"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "イベント音"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "入力のフィードバック音"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "デフォルトのシェルテーマ"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "トップバーのカスタマイズを含む"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "デフォルトのシェルテーマに復元"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "復元"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "カスタマイズ"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "テキストの色を変更"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "テキストの色"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "トップバーのテキストの色"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "背景の色を変更"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "トップバーの背景色"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "矢印を無効化"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "角を丸めない"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "アクセシビリティ"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "常にアクセシビリティメニューを表示"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "時計"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "曜日を表示"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "秒を表示"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "時刻の書式"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 時制"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "バッテリーの割合を表示"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "ログインマネージャーの設定"
+
+#, python-brace-format
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "GResource 設定を {distro_name} に適用しています…"
+
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
+
+#~ msgid "generic system"
+#~ msgstr "一般システム"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "GResource 設定を Ubuntu 用にリセットしています…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "GResource 設定を非 Ubuntu システム用にリセットしています…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1298,9 +1376,6 @@ msgstr "ログアウト"
 
 #~ msgid "Wider application window on first launch"
 #~ msgstr "起動時、アプリケーションウィンドウをより大きく表示するように修正"
-
-#~ msgid "Fixed:"
-#~ msgstr "修正点:"
 
 #~ msgid "Welcome message could not contain single quotes"
 #~ msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-09-29 17:27+0500\n"
 "PO-Revision-Date: 2023-02-05 05:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -45,12 +45,22 @@ msgid "The image file to use as GDM background"
 msgstr "GDM 배경화면으로 사용할 이미지 파일"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "배경화면 이미지"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "배경색"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "GDM 배경화면에 사용할 색깔"
 
@@ -245,10 +255,11 @@ msgid "Top bar background color"
 msgstr "상단바 배경색"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "로그인 관리자 설정"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "설정 리셋"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -264,97 +275,116 @@ msgstr ""
 "GDM 설정 변경; 테마와 배경을 적용하고 커서 테마, 아이콘 테마, 야간 모드 설정 "
 "등을 변경합니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "First beta release of the upcoming GDM Settings version 4"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "New UI style"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid ""
+"Shell theme, background and top bar tweaks now work in high contrast mode as "
+"well"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Window can be dragged and moved from anywhere, not just the headerbar"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Fixed:"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Changing background color doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+msgid "Fixed: Changing background doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
+msgid "<em>New Options</em>"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
+msgid "Option to disable accessiblitly menu when not being used"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
+msgid "Option to change cursor size"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
+msgid "A one-time donation request"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
+msgid "Donate option in hamburger menu"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
 msgid "<em>Behavior Changes</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
+msgid "Fixed: Fails to run on PureOS"
 msgstr ""
-"안재범 &lt;ajb8533296@gmail.com&gt;\n"
-"이정희 &lt;daemul72@gmail.com&gt;"
 
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "앱 버전 보기"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "상세 정보 표시 레벨을 수동으로 설정(0~5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "레벨"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "상세 모드 활성화(별칭 --verbosity=5)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "{level} 은(는) 잘못된 상세 모드입니다.. 0 부터 5 사이여야 합니다."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -363,47 +393,60 @@ msgstr ""
 "이 앱이 제대로 작동하려면 다음 프로그램을 <b>호스트 시스템</b>에 설치해야 하"
 "지만 호스트 시스템에는 설치되어 있지 않습니다."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 "이 앱이 제대로 작동하려면 다음 소프트웨어가 필요하지만 설치되지 않았습니다."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"시스템에 이러한 종속성을 설치하는 방법에 대한 지침을 보려면 <a href="
-"\"{url}\">여기</a>를 클릭하세요."
+"시스템에 이러한 종속성을 설치하는 방법에 대한 지침을 보려면 <a "
+"href=\"{url}\">여기</a>를 클릭하세요."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "누락된 종속성"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "확인"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "기본 쉘 테마"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr ""
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -411,93 +454,91 @@ msgid ""
 "I would really appreciate it."
 msgstr ""
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr ""
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr ""
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "세션 설정이 성공적으로 불러오기되었습니다"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "세션 설정 불러오기는 Flatpak 버전에서 지원되지 않습니다"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "설정 리셋 성공"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "설정 리셋 실패"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "가져오기"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "파일에서 설정을 성공적으로 가져왔습니다"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "가져오지 못했습니다. 파일이 잘못되었습니다"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "설정을 성공적으로 내보냈습니다"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "내보내지 못했습니다. 권한이 거부되었습니다"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "내보내지 못했습니다. 해당 이름의 디렉터리가 이미 있습니다"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "파일 선택"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(없음)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "선택"
-
-#: src/lib/file_choosers.py:110
+#: gdms/gui/about.py:101
 #, fuzzy
-#| msgid "Image"
-msgid "Images"
-msgstr "이미지"
+#| msgid "Copyright 2021-2022 Mazhar Hussain"
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright 2021–2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
 msgstr ""
+"안재범 &lt;ajb8533296@gmail.com&gt;\n"
+"이정희 &lt;daemul72@gmail.com&gt;"
 
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "이미지 선택"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "적용된 현재 디스플레이 설정"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "현재 디스플레이 설정 적용에 실패했습니다"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -511,612 +552,92 @@ msgstr ""
 "해당 파일을 자동으로 생성하려면 시스템의 '설정'을 열고 거기에서 몇몇의 디스플"
 "레이 옵션을 변경하십시오."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "모니터 설정을 찾을 수 없습니다"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "'{folder}'에 '{name}'(으)로 추출된 기본 쉘 테마"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "기본 테마를 추출하지 못했습니다"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "테마"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "파일 선택"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "쉘"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(없음)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "아이콘"
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "선택"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "커서"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "배경화면"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "유형"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr ""
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
+#: gdms/gui/widgets.py:110
+#, fuzzy
+#| msgid "Image"
+msgid "Images"
 msgstr "이미지"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "단색 색깔"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "배경으로 사용할 이미지"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "배경으로 사용할 색깔"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "현재 디스플레이 설정 적용"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "해상도, 주사율, 모니터 위치 등."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "적용"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "야간 모드"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "활성화"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "일정"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "일몰에서 일출"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "일정 수동 설정"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "시간"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "시작"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "끝"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "색 온도"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "글꼴"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "안티앨리어싱"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "표준"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "서브픽셀"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "없음"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "힌팅"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "완전히"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "적당히"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "조금"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "스케일 상수"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "새로고침"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "세션 설정 불러오기"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "설정 리셋"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "파일에서 가져오기"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "파일로 내보내기"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "정보"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "종료"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "다시 시작 버튼 비활성화"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "유저 목록 비활성화"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "로고 활성화"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "사용자 목록 아래에 로고를 표시할지 결정합니다"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "로고"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "사용자 목록 아래에 표시할 이미지"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "환영 메시지"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "확대하기"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "메시지"
-
-#: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
-msgid "Cursor Size"
-msgstr "커서"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
 msgstr ""
 
-#: src/resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "적당히"
-
-#: src/resources/ui/pointing-page.blp:17
-#, fuzzy
-#| msgid "Enlarge"
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "확대하기"
-
-#: src/resources/ui/pointing-page.blp:18
-#, fuzzy
-#| msgid "Enlarge"
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "확대하기"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr ""
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "마우스"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "가속 프로파일"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "자동"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "끄기"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "켜기"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "자연스러운 스크롤"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "스크롤하면 내용을 옮기고, 뷰를 옮기지 않습니다."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "포인터 속도"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "터치패드"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "터치패드 두드리면 단추 누름으로 취급"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "두손가락 스크롤"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "두 손가락으로 스와이프하여 스크롤합니다."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "입력 도중 비활성화"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "전원 버튼 동작"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "아무것도 안함"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "절전"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "최대 절전"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "묻기"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "자동 절전 기능"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "배터리가 부족할 때 절전 모드를 활성화합니다."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "흐릿한 화면"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "컴퓨터가 비활성 상태일 때 화면 밝기를 줄입니다."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "화면 끄기"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "일정 시간 사용하지 않으면 화면을 끌지 여부입니다."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "지연시간"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "화면이 꺼지는 시간(분)입니다."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "자동 절전모드"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "일정 기간 동안 사용하지 않으면 컴퓨터를 일시 중지합니다."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "배터리 전원 켜기"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "컴퓨터가 절전모드로 되는 시간(분)입니다."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "전원이 연결되었을 때"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "테마"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "초과 증폭"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "볼륨을 100% 이상으로 올릴 수 있도록 합니다"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "효과음"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "입력 피드백 사운드"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "기본 쉘 테마"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "상단바 트윅 포함"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "기본 쉘 테마 추출"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "추출"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "트윅"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "글자 색 변경"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "글자 색상"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "상단바 글자 색상"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "배경색 변경"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "상단바 배경색"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "화살표 비활성화"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "둥근 모서리 비활성화"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr ""
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr ""
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "시계"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "요일 표시"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "초 표시"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "시각 형식"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "오전/오후"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24시간"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
-msgid "Power"
-msgstr "전원"
-
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "배터리 백분율 표시"
-
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr "'{filename}' 파일로 내보내기"
-
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습니다"
-
-#: src/settings.py:89
-#, python-brace-format
-msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
-msgstr ""
-"'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
-
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr "표준 출력으로 내보내는 중"
-
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "'{filename}' 파일에서 가져오는 중"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "표준 입력에서 가져오는 중"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "가져오기 파일을 구문 분석하지 못했습니다"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "가져오기 파일을 읽지 못했습니다. UTF-8로 인코딩되지 않음"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "가져온 파일에 '{section_name}' 섹션이 없습니다"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없습니다"
-
-#: src/settings.py:313
-msgid "Backing up default shell theme …"
-msgstr "기본 쉘 테마 백업 중…"
-
-#: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Ubuntu에 GResource 설정 적용 중…"
-
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr ""
-
-#: src/settings.py:388
-msgid "generic system"
-msgstr ""
-
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
-
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
-
-#: src/window.py:111
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "이미지 선택"
+
+#: gdms/gui/window.py:113
 msgid "Appearance"
 msgstr "모양새"
 
-#: src/window.py:112
+#: gdms/gui/window.py:114
 msgid "Fonts"
 msgstr "글꼴"
 
-#: src/window.py:113
+#: gdms/gui/window.py:115
 msgid "Top Bar"
 msgstr "상단바"
 
-#: src/window.py:114
+#: gdms/gui/window.py:116
 msgid "Sound"
 msgstr "소리"
 
-#: src/window.py:115
+#: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
 msgstr "마우스 &amp; 터치패드"
 
-#: src/window.py:116
+#: gdms/gui/window.py:118
 msgid "Display"
 msgstr "디스플레이"
 
-#: src/window.py:117
+#: gdms/gui/window.py:119
 msgid "Login Screen"
 msgstr "로그인 화면"
 
-#: src/window.py:119
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+msgid "Power"
+msgstr "전원"
+
+#: gdms/gui/window.py:121
 msgid "Tools"
 msgstr "도구"
 
-#: src/window.py:137
+#: gdms/gui/window.py:139
 msgid "Settings applied successfully"
 msgstr "설정이 성공적으로 적용되었습니다"
 
-#: src/window.py:141
+#: gdms/gui/window.py:143
 msgid "Failed to apply settings"
 msgstr "설정을 적용하지 못했습니다"
 
-#: src/window.py:145
+#: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1124,30 +645,579 @@ msgstr ""
 "적용되지 않았습니다. 선택한 배경 이미지를 찾을 수 없습니다. 다시 선택해 주십"
 "시오."
 
-#: src/window.py:149
+#: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "적용되지 않았습니다. 선택한 로고 이미지를 찾을 수 없습니다. 다시 선택해 주십"
 "시오."
 
-#: src/window.py:155
+#: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "다시 로그인하거나 재부팅할 때까지 시스템이 이상하거나 버그가 있는 것처럼 보"
 "일 수 있습니다."
 
-#: src/window.py:160
+#: gdms/gui/window.py:162
 msgid "Log Out?"
 msgstr "로그아웃 할까요?"
 
-#: src/window.py:165
+#: gdms/gui/window.py:167
 msgid "Cancel"
 msgstr "취소"
 
-#: src/window.py:166
+#: gdms/gui/window.py:168
 msgid "Log Out"
 msgstr "로그아웃"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "'{filename}' 파일에서 가져오는 중"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "표준 입력에서 가져오는 중"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "가져오기 파일을 구문 분석하지 못했습니다"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "가져오기 파일을 읽지 못했습니다. UTF-8로 인코딩되지 않음"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "가져온 파일에 '{section_name}' 섹션이 없습니다"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없습니다"
+
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "'{filename}' 파일로 내보내기"
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습니다"
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+"'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr "표준 출력으로 내보내는 중"
+
+#: gdms/settings.py:327
+msgid "Backing up default shell theme …"
+msgstr "기본 쉘 테마 백업 중…"
+
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "테마"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "쉘"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "아이콘"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "커서"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "배경화면"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "유형"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "이미지"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "단색 색깔"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "배경으로 사용할 이미지"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "흐릿한 화면"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "배경으로 사용할 색깔"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "현재 디스플레이 설정 적용"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "해상도, 주사율, 모니터 위치 등."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "적용"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "야간 모드"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "활성화"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "일정"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "일몰에서 일출"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "일정 수동 설정"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "시간"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "시작"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "끝"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "색 온도"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "글꼴"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "안티앨리어싱"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "표준"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "서브픽셀"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "없음"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "힌팅"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "완전히"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "적당히"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "조금"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "스케일 상수"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "새로고침"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "세션 설정 불러오기"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "설정 리셋"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "파일에서 가져오기"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "파일로 내보내기"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "정보"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "종료"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "다시 시작 버튼 비활성화"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "유저 목록 비활성화"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "로고 활성화"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "사용자 목록 아래에 로고를 표시할지 결정합니다"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "로고"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "사용자 목록 아래에 표시할 이미지"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "환영 메시지"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "확대하기"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "메시지"
+
+#: resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "커서"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:16
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "적당히"
+
+#: resources/ui/pointing-page.blp:17
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "확대하기"
+
+#: resources/ui/pointing-page.blp:18
+#, fuzzy
+#| msgid "Enlarge"
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "확대하기"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "마우스"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "가속 프로파일"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "자동"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "끄기"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "켜기"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "자연스러운 스크롤"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "스크롤하면 내용을 옮기고, 뷰를 옮기지 않습니다."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "포인터 속도"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "터치패드"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "터치패드 두드리면 단추 누름으로 취급"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "두손가락 스크롤"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "두 손가락으로 스와이프하여 스크롤합니다."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "입력 도중 비활성화"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "전원 버튼 동작"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "아무것도 안함"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "절전"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "최대 절전"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "묻기"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "자동 절전 기능"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "배터리가 부족할 때 절전 모드를 활성화합니다."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "흐릿한 화면"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "컴퓨터가 비활성 상태일 때 화면 밝기를 줄입니다."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "화면 끄기"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "일정 시간 사용하지 않으면 화면을 끌지 여부입니다."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "지연시간"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "화면이 꺼지는 시간(분)입니다."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "자동 절전모드"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "일정 기간 동안 사용하지 않으면 컴퓨터를 일시 중지합니다."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "배터리 전원 켜기"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "컴퓨터가 절전모드로 되는 시간(분)입니다."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "전원이 연결되었을 때"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "테마"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "초과 증폭"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "볼륨을 100% 이상으로 올릴 수 있도록 합니다"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "효과음"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "입력 피드백 사운드"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "기본 쉘 테마"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "상단바 트윅 포함"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "기본 쉘 테마 추출"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "추출"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "트윅"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "글자 색 변경"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "글자 색상"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "상단바 글자 색상"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "배경색 변경"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "상단바 배경색"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "화살표 비활성화"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "둥근 모서리 비활성화"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "시계"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "요일 표시"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "초 표시"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "시각 형식"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "오전/오후"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24시간"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "배터리 백분율 표시"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "로그인 관리자 설정"
+
+#, fuzzy, python-brace-format
+#~| msgctxt "Command-line output"
+#~| msgid "Applying GResource settings for Ubuntu …"
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Ubuntu에 GResource 설정 적용 중…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Ubuntu에 대한 GResource 설정 리셋 중…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "비 Ubuntu 시스템에 대한 GResource 설정 리셋 중…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"

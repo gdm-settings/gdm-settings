@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-09-29 17:27+0500\n"
 "PO-Revision-Date: 2023-02-05 05:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
@@ -46,12 +46,22 @@ msgid "The image file to use as GDM background"
 msgstr "图像文件用于 GDM背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "背景图像"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "背景颜色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "此颜色用于GDM背景"
 
@@ -236,10 +246,11 @@ msgid "Top bar background color"
 msgstr "顶栏背景颜色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "登录管理器设置"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "重置设置"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -253,103 +264,122 @@ msgid ""
 "theme and night light settings, among other things."
 msgstr "更改 GDM 设置； 应用主题和背景、更改光标主题、图标主题和夜灯设置等。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "马扎尔·侯赛因"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "First beta release of the upcoming GDM Settings version 4"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "New UI style"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid ""
+"Shell theme, background and top bar tweaks now work in high contrast mode as "
+"well"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Window can be dragged and moved from anywhere, not just the headerbar"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Fixed:"
+msgstr "修复："
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Changing background color doesn't work on GNOME 44"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+msgid "Fixed: Changing background doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
+msgid "<em>New Options</em>"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
+msgid "Option to disable accessiblitly menu when not being used"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
+msgid "Option to change cursor size"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
+msgid "A one-time donation request"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
+msgid "Donate option in hamburger menu"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
 msgid "<em>Behavior Changes</em>"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 
-#: src/about.py:11 src/about.py:82
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
+msgid "Fixed: Fails to run on PureOS"
 msgstr ""
 
-#: src/about.py:83
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright © 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr ""
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 #, fuzzy
 #| msgctxt "Description of --version option"
 #| msgid "Show application version"
 msgid "Show application version"
 msgstr "显示应用程序版本"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 #, fuzzy
 #| msgctxt "Description of --verbosity option"
 #| msgid "Set verbosity level manually (from 0 to 5)"
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "手动设置详细级别（从 0 到 5）"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "等级"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "启用详细模式（类似于--verbosity=5）"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "启用安静模式（等同于 --verbosity=0）"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -358,25 +388,25 @@ msgstr ""
 "以下程序需要安装<b>在主机系统上</b>，以便该应用程序正常运行，但它们没有安装在"
 "主机系统上。"
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr "这个应用需要以下软件才能正常运行，但它们没有被安装。"
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr ""
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -385,19 +415,32 @@ msgstr ""
 "点击<a href=\"{url}\">这里</a>，获取关于如何在你的系统上安装这些依赖项的说"
 "明。"
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "缺失的依赖项"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr ""
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "默认Shell主题"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr ""
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -405,105 +448,99 @@ msgid ""
 "I would really appreciate it."
 msgstr ""
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr ""
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr ""
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "重新载入设置"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
 msgstr "应用设置成功"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 #, fuzzy
 #| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak 版本不支持导入用户设置"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "重置设置成功"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "重置设置失败"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr ""
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
 msgstr "应用设置成功"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr ""
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 #, fuzzy
 #| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
 msgstr "应用设置成功"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr ""
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "选择文件"
-
-#: src/lib/file_choosers.py:25
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
 #, fuzzy
-#| msgid "None"
-msgid "(None)"
-msgstr "无"
+#| msgid "Copyright © 2021 Mazhar Hussain"
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Copyright © 2021 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:51
-#, fuzzy
-#| msgid "Choose File"
-msgid "Choose"
-msgstr "选择文件"
-
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "图像"
-
-#: src/lib/file_choosers.py:114
-msgid "All Files"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
 msgstr ""
 
-#: src/lib/file_choosers.py:119
+#: gdms/gui/about.py:101
 #, fuzzy
-#| msgid "Choose File"
-msgid "Choose Image"
-msgstr "选择文件"
+#| msgid "Copyright 2021-2022 Mazhar Hussain"
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright © 2021–2023 Mazhar Hussain"
 
-#: src/pages/display.py:85
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr ""
+
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "应用当前显示设置"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "无法应用当前显示设置"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -512,623 +549,97 @@ msgid ""
 "change some display options there."
 msgstr ""
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, fuzzy, python-brace-format
 #| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "默认 shell 主题提取到 '{path}' 作为 'default-extracted'"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "提取默认主题失败"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "主题"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "选择文件"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
-
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "图标"
-
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "光标"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "背景"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "类型"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr ""
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "图像"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "颜色"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "此图像用于背景"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "此颜色用于背景"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "应用当前显示设置"
-
-#: src/resources/ui/display-page.blp:13
+#: gdms/gui/widgets.py:25
 #, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "分辨率，刷新率，监视器位置等等"
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "应用"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "夜灯"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "开启"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "计划"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "从日落到日出"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "手动计划"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "时间"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "从"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "到"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "色温"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "字体"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "抗锯齿"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "基础"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "亚像素"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
+#| msgid "None"
+msgid "(None)"
 msgstr "无"
 
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr ""
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "完全"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "中等"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "轻微"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "比例因子"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "刷新"
-
-#: src/resources/ui/main-window.blp:7
+#: gdms/gui/widgets.py:51
 #, fuzzy
-#| msgid "Import user settings"
-msgid "Load session settings"
-msgstr "导入用户设置"
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "选择文件"
 
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "重置设置"
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "图像"
 
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
 msgstr ""
 
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr ""
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "关于"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "关闭"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "禁用重启按钮"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "禁用用户列表"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "开启Logo"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "是否在用户列表下显示Logo"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "显示在用户列表下方的图像"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "欢迎留言"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr ""
-
-#: src/resources/ui/login-screen-page.blp:49
+#: gdms/gui/widgets.py:119
 #, fuzzy
-#| msgid "Welcome Message"
-msgid "Message"
-msgstr "欢迎留言"
-
-#: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
-msgid "Cursor Size"
-msgstr "光标"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr ""
-
-#: src/resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "中等"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr ""
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr ""
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr ""
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "鼠标"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "指针加速"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "自动"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "禁用"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "开启"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "自然滚动"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "滚动移动内容，而不是视图。"
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "指针速度"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "触摸板"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "双击"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "双指滚动"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "用两根手指滑动滚动。"
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "键入时禁用"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
-msgid "Automatic Power Saver"
-msgstr "自动"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:57
-#, fuzzy
-#| msgid "Automatic"
-msgid "Automatic Suspend"
-msgstr "自动"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr ""
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr ""
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr ""
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "主题"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "过度放大"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "允许将音量提高到 100% 以上"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "事件声音"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "输入反馈声音"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "默认Shell主题"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "包括顶部栏调整"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "提取默认 shell 主题"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "提取"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "扩展"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "改变文字颜色"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "文字颜色"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "顶部栏中文本的颜色"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "更改背景颜色"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "顶栏背景颜色"
-
-#: src/resources/ui/top-bar-page.blp:52
-#, fuzzy
-msgid "Disable Arrows"
-msgstr "禁用箭头"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "禁用圆角"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr ""
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr ""
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "时钟"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "显示工作日"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "显示秒"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "时间格式"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "上午/下午"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24小时"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
-msgid "Power"
-msgstr "电源"
-
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "显示电池百分比"
-
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr ""
-
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
-
-#: src/settings.py:89
-#, python-brace-format
-msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
-msgstr ""
-
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr ""
-
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr ""
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr ""
-
-#: src/settings.py:108
-#, fuzzy
-#| msgid "Failed to reset settings"
-msgid "Failed to parse import file"
-msgstr "重置设置失败"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr ""
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-
-#: src/settings.py:313
-#, fuzzy
-#| msgid "saving default theme …"
-msgid "Backing up default shell theme …"
-msgstr "保存默认主题…"
-
-#: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "为 Ubuntu 应用 GResource 设置…"
-
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr ""
-
-#: src/settings.py:388
-msgid "generic system"
-msgstr ""
-
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "为 Ubuntu 重置 GResource 设置…"
-
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "为非 Ubuntu 系统重置 GResource 设置…"
-
-#: src/window.py:111
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "选择文件"
+
+#: gdms/gui/window.py:113
 msgid "Appearance"
 msgstr "外观"
 
-#: src/window.py:112
+#: gdms/gui/window.py:114
 msgid "Fonts"
 msgstr "字体"
 
-#: src/window.py:113
+#: gdms/gui/window.py:115
 msgid "Top Bar"
 msgstr "顶栏"
 
-#: src/window.py:114
+#: gdms/gui/window.py:116
 msgid "Sound"
 msgstr "声音"
 
-#: src/window.py:115
+#: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
 msgstr "鼠标&触摸板"
 
-#: src/window.py:116
+#: gdms/gui/window.py:118
 msgid "Display"
 msgstr "显示"
 
-#: src/window.py:117
+#: gdms/gui/window.py:119
 msgid "Login Screen"
 msgstr ""
 
-#: src/window.py:119
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+msgid "Power"
+msgstr "电源"
+
+#: gdms/gui/window.py:121
 msgid "Tools"
 msgstr "工具"
 
-#: src/window.py:137
+#: gdms/gui/window.py:139
 msgid "Settings applied successfully"
 msgstr "应用设置成功"
 
-#: src/window.py:141
+#: gdms/gui/window.py:143
 msgid "Failed to apply settings"
 msgstr "应用设置失败"
 
-#: src/window.py:145
+#: gdms/gui/window.py:147
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1138,7 +649,7 @@ msgid ""
 "again."
 msgstr "应用失败!找不到所选的背景图片,请再次选择!"
 
-#: src/window.py:149
+#: gdms/gui/window.py:151
 #, fuzzy
 #| msgid ""
 #| "Didn't apply. Chosen background image could not be found. Please! choose "
@@ -1147,21 +658,578 @@ msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "应用失败!找不到所选的背景图片,请再次选择!"
 
-#: src/window.py:155
+#: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 
-#: src/window.py:160
+#: gdms/gui/window.py:162
 msgid "Log Out?"
 msgstr ""
 
-#: src/window.py:165
+#: gdms/gui/window.py:167
 msgid "Cancel"
 msgstr ""
 
-#: src/window.py:166
+#: gdms/gui/window.py:168
 msgid "Log Out"
 msgstr ""
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr ""
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr ""
+
+#: gdms/settings.py:179
+#, fuzzy
+#| msgid "Failed to reset settings"
+msgid "Failed to parse import file"
+msgstr "重置设置失败"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr ""
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr ""
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr ""
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr ""
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr ""
+
+#: gdms/settings.py:327
+#, fuzzy
+#| msgid "saving default theme …"
+msgid "Backing up default shell theme …"
+msgstr "保存默认主题…"
+
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "主题"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "图标"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "光标"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "背景"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "类型"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "图像"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "颜色"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "此图像用于背景"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+msgid "Fit To Screen"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "此颜色用于背景"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "应用当前显示设置"
+
+#: resources/ui/display-page.blp:13
+#, fuzzy
+#| msgid "Resolution, refresh rate, monitor positions, etc"
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "分辨率，刷新率，监视器位置等等"
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "应用"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "夜灯"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "开启"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "计划"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "从日落到日出"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "手动计划"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "时间"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "从"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "到"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "色温"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "字体"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "抗锯齿"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "基础"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "亚像素"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "无"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "完全"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "中等"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "轻微"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "比例因子"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "刷新"
+
+#: resources/ui/main-window.blp:7
+#, fuzzy
+#| msgid "Import user settings"
+msgid "Load session settings"
+msgstr "导入用户设置"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "重置设置"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr ""
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr ""
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "关于"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "关闭"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "禁用重启按钮"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "禁用用户列表"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "开启Logo"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "是否在用户列表下显示Logo"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "显示在用户列表下方的图像"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "欢迎留言"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:49
+#, fuzzy
+#| msgid "Welcome Message"
+msgid "Message"
+msgstr "欢迎留言"
+
+#: resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "光标"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:16
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "中等"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "鼠标"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "指针加速"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "自动"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "禁用"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "开启"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "自然滚动"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "滚动移动内容，而不是视图。"
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "指针速度"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "触摸板"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "双击"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "双指滚动"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "用两根手指滑动滚动。"
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "键入时禁用"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr ""
+
+#: resources/ui/power-page.blp:18
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Power Saver"
+msgstr "自动"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr ""
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr ""
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr ""
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr ""
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr ""
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr ""
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr ""
+
+#: resources/ui/power-page.blp:52
+#, fuzzy
+#| msgid "Automatic"
+msgid "Automatic Suspend"
+msgstr "自动"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr ""
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr ""
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr ""
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr ""
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "主题"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "过度放大"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "允许将音量提高到 100% 以上"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "事件声音"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "输入反馈声音"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "默认Shell主题"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "包括顶部栏调整"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "提取默认 shell 主题"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "提取"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "扩展"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "改变文字颜色"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "文字颜色"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "顶部栏中文本的颜色"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "更改背景颜色"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "顶栏背景颜色"
+
+#: resources/ui/top-bar-page.blp:52
+#, fuzzy
+msgid "Disable Arrows"
+msgstr "禁用箭头"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "禁用圆角"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "时钟"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "显示工作日"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "显示秒"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "时间格式"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "上午/下午"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24小时"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "显示电池百分比"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "登录管理器设置"
+
+#, fuzzy, python-brace-format
+#~| msgctxt "Command-line output"
+#~| msgid "Applying GResource settings for Ubuntu …"
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "为 Ubuntu 应用 GResource 设置…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "为 Ubuntu 重置 GResource 设置…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "为非 Ubuntu 系统重置 GResource 设置…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1251,9 +1319,6 @@ msgstr ""
 
 #~ msgid "Wider application window on first launch"
 #~ msgstr "首次启动时应用程序窗口更宽"
-
-#~ msgid "Fixed:"
-#~ msgstr "修复："
 
 #, fuzzy
 #~| msgid "Welcome message could not contain single qoutes"

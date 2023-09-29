@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-09-29 17:27+0500\n"
 "PO-Revision-Date: 2023-04-09 09:49+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -46,12 +46,22 @@ msgid "The image file to use as GDM background"
 msgstr "Le fichier image à utiliser comme arrière-plan GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "Image d'arrière-plan"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Couleur d'arrière-plan"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "La couleur à utiliser comme arrière-plan GDM"
 
@@ -275,10 +285,11 @@ msgid "Top bar background color"
 msgstr "Couleur d'arrière-plan de la barre supérieure"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Gestionnaire de paramètres de connexion"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Mouse Settings"
+msgid "GDM Settings"
+msgstr "Paramètres de la souris"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -295,96 +306,119 @@ msgstr ""
 "le thème du curseur, le thème des icônes et les paramètres du mode nuit, "
 "entre autres."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Correction d’un bogue empêchant l’exécution avec PureOS"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
+msgid "First beta release of the upcoming GDM Settings version 4"
+msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
+msgid "New UI style"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
+msgid ""
+"Shell theme, background and top bar tweaks now work in high contrast mode as "
+"well"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
+msgid "Window can be dragged and moved from anywhere, not just the headerbar"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
+msgid "Fixed:"
+msgstr "Corrections :"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
+msgid "Changing background color doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
+msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+msgid "Fixed: Changing background doesn't work on GNOME 44"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
 msgid "<em>New Options</em>"
 msgstr "<em>Nouvelles options</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
 msgid "Option to disable accessiblitly menu when not being used"
 msgstr "Option pour désactiver le menu d’accessibilité quand non utilisé"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
 msgid "Option to change cursor size"
 msgstr "Option pour changer la taille du curseur"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
 msgid "A one-time donation request"
 msgstr "Une demande de don unique"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
 msgid "Donate option in hamburger menu"
 msgstr "Possibilité de faire un don via le menu hamburger"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
 msgid "<em>Behavior Changes</em>"
 msgstr "<em>Changements dans l’interaction</em>"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
 msgid "Proper names are shown for themes instead of name of their directory"
 msgstr "Les noms des thèmes sont affichés au lieu du nom de leur répertoire"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
 msgid "Cursor only themes are not presented when choosing icon theme"
 msgstr ""
 "Les thèmes du curseur uniquement ne sont plus proposés lors du choix d’un "
 "thème d’icônes"
 
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
+msgid "Fixed: Fails to run on PureOS"
+msgstr "Correction d’un bogue empêchant l’exécution avec PureOS"
 
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021-2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Irénée Thirion &lt;irenee.thirion@e.email&gt;"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Afficher la version de l’application"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Définition manuelle du niveau de verbosité (de 0 à 5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEAU"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Activer le mode verbeux (alias de --verbosité = 5)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Activer le mode tranquille (alias de --verbosité = 0)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "Niveau de verbosité {level} invalide. Il doit être 0, 5, ou entre les deux."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -394,7 +428,7 @@ msgstr ""
 "pour que cette application fonctionne correctement mais ils ne sont pas "
 "installés sur le système hôte."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -402,19 +436,19 @@ msgstr ""
 "Cette application requiert les logiciels suivants pour fonctionner "
 "correctement mais ils ne sont pas installés."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -423,19 +457,32 @@ msgstr ""
 "Cliquez <a href=\"{url}\">ici</a> pour obtenir des instructions pour "
 "installer ces dépendances sur votre système."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Dépendances manquantes"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "Thème par défaut du shell"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Demande de don"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -448,93 +495,89 @@ msgstr ""
 "\n"
 "Je vous en serais très reconnaissant."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "Non intéressé"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Faire un don"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "Paramètres rechargés"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "Paramètres de session chargés avec succès"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "L’importation des paramètres de session n’est PAS prise en charge dans la "
 "version Flatpak"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "Réinitialisation des paramètres réussie"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "Échec de la réinitialisation des paramètres"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "Importer"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "Les paramètres ont bien été importés depuis le fichier"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "Échec de l’importation. Fichier invalide"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "Les paramètres ont été exportés avec succès"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "Échec de l’exportation. Permission refusée"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Échec de l’exportation. Un répertoire avec ce nom existe déjà"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Choisir un fichier"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(Aucun)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "Choisir"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "Images"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Irénée Thirion &lt;irenee.thirion@e.email&gt;"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Tous les fichiers"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "Choisir une image"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "Paramètres d'affichage actuels appliqués"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "Échec de l'application des paramètres d'affichage actuels"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -548,495 +591,163 @@ msgstr ""
 "Pour créer ce fichier automatiquement, ouvrez les paramètres 'Système' et "
 "modifiez-y certains paramètres d’affichage."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "Paramètres d’écrans non trouvés"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Thème par défaut extrait vers '{folder}' sous le nom '{name}'"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Échec de l'extraction du thème par défaut"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Thèmes"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Choisir un fichier"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(Aucun)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Icônes"
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "Choisir"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Curseur"
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "Images"
 
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Arrière-plan"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Tous les fichiers"
 
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Type"
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "Choisir une image"
 
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Par défaut"
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr "Apparence"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "Image"
+#: gdms/gui/window.py:114
+msgid "Fonts"
+msgstr "Polices"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Couleur"
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr "Barre supérieure"
 
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "L'image à utiliser comme arrière-plan"
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr "Son"
 
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "La couleur à utiliser comme arrière-plan"
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr "Souris et pavé tactile"
 
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Appliquer les paramètres d'affichage actuels"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Résolution, taux de rafraîchissement, position de l'écran, etc."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Appliquer"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Mode nuit"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Activer"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Planification"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Du coucher au lever du soleil"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Planification manuelle"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Horaires"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "De"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "À"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Température des couleurs"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Police"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Anti-crénelage"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Standard"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Sous-pixel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Aucun"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
+#: gdms/gui/window.py:118
+msgid "Display"
 msgstr "Affichage"
 
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Entier"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Moyen"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Léger"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Facteur de mise à l'échelle"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Rafraîchir"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Charger les paramètres de session"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Réinitialiser les paramètres"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Importer depuis un fichier"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Exporter dans un fichier"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "À propos"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Quitter"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Désactiver les boutons de redémarrage"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Désactiver la liste d'utilisateurs"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Activer le Logo"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Affichage ou non d'un logo sous la liste des utilisateurs"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "L'image à afficher sous la liste des utilisateurs"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Message de bienvenue"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Agrandir"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Message"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "Taille du curseur"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Par défaut"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Moyenne"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Grande"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Plus grande"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "La plus grande"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Souris"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "Accélération du pointeur"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Automatique"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Désactivé"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Activé"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Défilement naturel"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Le défilement déplace le contenu, pas la vue."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "Vitesse du pointeur"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Pavé tactile"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Taper pour cliquer"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "Défilement à deux doigts"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "Faire défiler en glissant deux doigts."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Désactiver pendant la saisie"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Comportement du bouton d’alimentation"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Ne rien faire"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Mettre en veille"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Mettre en veille prolongée"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Demander"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Économiseur d’énergie automatique"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Active le mode économie d’énergie quand la batterie est faible."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Atténuer l’affichage"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Réduit la luminosité de l’écran quand l’ordinateur est inactif."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Éteindre l’écran"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Indique s’il faut éteindre l’écran après une période d’inactivité."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Délai"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "Délai en minutes à la fin duquel l’écran s’éteindra."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Mise en veille automatique"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Met en veille l’ordinateur après une période d’inactivité."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "Sur batterie"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Délai en minutes au terme duquel l’ordinateur se mettra en veille."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "Quand le câble est branché"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Thème"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Sur-amplification"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Permettre d'augmenter le volume au-dessus de 100%"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Sons d'événement"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Sons de retour d'entrée"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Thème par défaut du shell"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Inclure les modifications de la barre supérieure"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Extraire le thème par défaut du shell"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Extraire"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Ajustements"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Changer la couleur du texte"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Couleur du texte"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "La couleur du texte dans la barre supérieure"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Changer la couleur d'arrière-plan"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "La couleur de l'arrière-plan de la barre supérieure"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Désactiver les flèches"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Désactiver les angles arrondis"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Accessibilité"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Toujours afficher le menu d’accessibilité"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Horloge"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Afficher le jour de la semaine"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Afficher les secondes"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Format de l'heure"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "AM / PM"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 Heures"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr "Écran de connexion"
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
 msgstr "Énergie"
 
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Montrer le pourcentage de batterie"
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr "Outils"
 
-#: src/settings.py:80
+#: gdms/gui/window.py:139
+msgid "Settings applied successfully"
+msgstr "Paramètres appliqués avec succès"
+
+#: gdms/gui/window.py:143
+msgid "Failed to apply settings"
+msgstr "Échec de l'application des paramètres"
+
+#: gdms/gui/window.py:147
+msgid ""
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
+msgstr ""
+"N’a pas été appliqué. L’image d’arrière-plan choisie n’existe plus. Veuillez "
+"choisir à nouveau."
+
+#: gdms/gui/window.py:151
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+"N’a pas été appliqué. L’image de logo choisie n’existe plus. Veuillez "
+"choisir à nouveau."
+
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+"Le système pourrait commencer à sembler bizarre / bogué jusqu’à ce que vous "
+"vous reconnectiez ou redémarriez."
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr "Se déconnecter&nbsp;?"
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr "Annuler"
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr "Déconnexion"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Importation depuis le fichier '{filename}'"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Importation depuis l’entrée standard"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "Échec de l’analyse du fichier d’importation"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "Échec de la lecture du fichier d’importation. Non encodé en UTF-8"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Le fichier importé n’a pas de section '{section_name}'"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"Le fichier importé n’a pas la clé '{key_name}' dans la section "
+"'{section_name}'"
+
+#: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Export vers le fichier '{filename}'"
 
-#: src/settings.py:85
+#: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Impossible de modifier le fichier '{filename}'. Permission refusée"
 
-#: src/settings.py:89
+#: gdms/settings.py:222
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1045,140 +756,506 @@ msgstr ""
 "Impossible de modifier le fichier '{filename}'. Un répertoire avec le même "
 "nom existe déjà"
 
-#: src/settings.py:94
+#: gdms/settings.py:227
 msgid "Exporting to standard output"
 msgstr "Exportation vers la sortie standard"
 
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "Importation depuis le fichier '{filename}'"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Importation depuis l’entrée standard"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "Échec de l’analyse du fichier d’importation"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "Échec de la lecture du fichier d’importation. Non encodé en UTF-8"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "Le fichier importé n’a pas de section '{section_name}'"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-"Le fichier importé n’a pas la clé '{key_name}' dans la section "
-"'{section_name}'"
-
-#: src/settings.py:313
+#: gdms/settings.py:327
 msgid "Backing up default shell theme …"
 msgstr "Sauvegarde du thème par défaut du shell …"
 
-#: src/settings.py:365
-#, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Application des paramètres GResource pour {distro_name} …"
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Thèmes"
 
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
 
-#: src/settings.py:388
-msgid "generic system"
-msgstr "système générique"
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Icônes"
 
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Curseur"
 
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Arrière-plan"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Type"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Par défaut"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Image"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Couleur"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "L'image à utiliser comme arrière-plan"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
 msgstr ""
-"Réinitialisation des paramètres de GResource pour les systèmes non-Ubuntu …"
 
-#: src/window.py:111
-msgid "Appearance"
-msgstr "Apparence"
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "Atténuer l’affichage"
 
-#: src/window.py:112
-msgid "Fonts"
-msgstr "Polices"
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
 
-#: src/window.py:113
-msgid "Top Bar"
-msgstr "Barre supérieure"
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "La couleur à utiliser comme arrière-plan"
 
-#: src/window.py:114
-msgid "Sound"
-msgstr "Son"
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Appliquer les paramètres d'affichage actuels"
 
-#: src/window.py:115
-msgid "Mouse & Touchpad"
-msgstr "Souris et pavé tactile"
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Résolution, taux de rafraîchissement, position de l'écran, etc."
 
-#: src/window.py:116
-msgid "Display"
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Appliquer"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Mode nuit"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Activer"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Planification"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Du coucher au lever du soleil"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Planification manuelle"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Horaires"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "De"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "À"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Température des couleurs"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Police"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Anti-crénelage"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standard"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Sous-pixel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Aucun"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
 msgstr "Affichage"
 
-#: src/window.py:117
-msgid "Login Screen"
-msgstr "Écran de connexion"
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Entier"
 
-#: src/window.py:119
-msgid "Tools"
-msgstr "Outils"
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Moyen"
 
-#: src/window.py:137
-msgid "Settings applied successfully"
-msgstr "Paramètres appliqués avec succès"
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Léger"
 
-#: src/window.py:141
-msgid "Failed to apply settings"
-msgstr "Échec de l'application des paramètres"
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Facteur de mise à l'échelle"
 
-#: src/window.py:145
-msgid ""
-"Didn't apply. Chosen background image does not exist anymore. Please! choose "
-"again."
-msgstr ""
-"N’a pas été appliqué. L’image d’arrière-plan choisie n’existe plus. Veuillez "
-"choisir à nouveau."
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Rafraîchir"
 
-#: src/window.py:149
-msgid ""
-"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
-"N’a pas été appliqué. L’image de logo choisie n’existe plus. Veuillez "
-"choisir à nouveau."
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Charger les paramètres de session"
 
-#: src/window.py:155
-msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
-"Le système pourrait commencer à sembler bizarre / bogué jusqu’à ce que vous "
-"vous reconnectiez ou redémarriez."
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Réinitialiser les paramètres"
 
-#: src/window.py:160
-msgid "Log Out?"
-msgstr "Se déconnecter&nbsp;?"
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Importer depuis un fichier"
 
-#: src/window.py:165
-msgid "Cancel"
-msgstr "Annuler"
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Exporter dans un fichier"
 
-#: src/window.py:166
-msgid "Log Out"
-msgstr "Déconnexion"
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "À propos"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Quitter"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Désactiver les boutons de redémarrage"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Désactiver la liste d'utilisateurs"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Activer le Logo"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Affichage ou non d'un logo sous la liste des utilisateurs"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "L'image à afficher sous la liste des utilisateurs"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Message de bienvenue"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Agrandir"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Message"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "Taille du curseur"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Par défaut"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Moyenne"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Grande"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Plus grande"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "La plus grande"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Souris"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "Accélération du pointeur"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Automatique"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Activé"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Défilement naturel"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Le défilement déplace le contenu, pas la vue."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "Vitesse du pointeur"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Pavé tactile"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Taper pour cliquer"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "Défilement à deux doigts"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "Faire défiler en glissant deux doigts."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Désactiver pendant la saisie"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Comportement du bouton d’alimentation"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Ne rien faire"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Mettre en veille"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Mettre en veille prolongée"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Demander"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Économiseur d’énergie automatique"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Active le mode économie d’énergie quand la batterie est faible."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Atténuer l’affichage"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Réduit la luminosité de l’écran quand l’ordinateur est inactif."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Éteindre l’écran"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Indique s’il faut éteindre l’écran après une période d’inactivité."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Délai"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "Délai en minutes à la fin duquel l’écran s’éteindra."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Mise en veille automatique"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Met en veille l’ordinateur après une période d’inactivité."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "Sur batterie"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Délai en minutes au terme duquel l’ordinateur se mettra en veille."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "Quand le câble est branché"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Thème"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Sur-amplification"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Permettre d'augmenter le volume au-dessus de 100%"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Sons d'événement"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Sons de retour d'entrée"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Thème par défaut du shell"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Inclure les modifications de la barre supérieure"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Extraire le thème par défaut du shell"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Extraire"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Ajustements"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Changer la couleur du texte"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "La couleur du texte dans la barre supérieure"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Changer la couleur d'arrière-plan"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "La couleur de l'arrière-plan de la barre supérieure"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Désactiver les flèches"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Désactiver les angles arrondis"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Accessibilité"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Toujours afficher le menu d’accessibilité"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Horloge"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Afficher le jour de la semaine"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Afficher les secondes"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Format de l'heure"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "AM / PM"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 Heures"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Montrer le pourcentage de batterie"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Gestionnaire de paramètres de connexion"
+
+#, python-brace-format
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Application des paramètres GResource pour {distro_name} …"
+
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
+
+#~ msgid "generic system"
+#~ msgstr "système générique"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Réinitialisation des paramètres de GResource pour Ubuntu …"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr ""
+#~ "Réinitialisation des paramètres de GResource pour les systèmes non-Ubuntu "
+#~ "…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1399,9 +1476,6 @@ msgstr "Déconnexion"
 #~ msgid "Wider application window on first launch"
 #~ msgstr "Fenêtre d’application plus large au premier lancement"
 
-#~ msgid "Fixed:"
-#~ msgstr "Corrections :"
-
 #, fuzzy
 #~| msgid "Welcome message could not contain single qoutes"
 #~ msgid "Welcome message could not contain single quotes"
@@ -1514,9 +1588,6 @@ msgstr "Déconnexion"
 
 #~ msgid "Fixed: A fatal bug"
 #~ msgstr "Corrigé : Un bogue fatal"
-
-#~ msgid "Mouse Settings"
-#~ msgstr "Paramètres de la souris"
 
 #~ msgid "Flatpak Support"
 #~ msgstr "Support Flatpak"
