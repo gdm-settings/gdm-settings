@@ -37,7 +37,9 @@ Adw.ToastOverlay toast_overlay {
           [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
         }
 
-        $GdmSettingsSidebar sidebar { stack: stack; }
+        WindowHandle {
+            $GdmSettingsSidebar sidebar { stack: stack; }
+        }
       };
     }
 
@@ -48,7 +50,9 @@ Adw.ToastOverlay toast_overlay {
           title-widget: Label section_label { styles ["title"] };
         }
 
-        Stack stack { hexpand: true; width-request: 300; }
+        WindowHandle {
+            Stack stack { hexpand: true; width-request: 300; }
+        }
       };
     }
   }
