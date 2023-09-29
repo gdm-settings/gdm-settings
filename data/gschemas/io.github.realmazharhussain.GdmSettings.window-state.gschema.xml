@@ -3,11 +3,11 @@
        path="/io/github/realmazharhussain/GdmSettings/window-state/">
 
 	 <key name="width" type="u">
-	   <default>900</default>
+	   <default>950</default>
 	 </key>
 
 	 <key name="height" type="u">
-	   <default>500</default>
+	   <default>530</default>
 	 </key>
 
 	 <key name="last-visited-page" type="s">
