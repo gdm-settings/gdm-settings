@@ -4,13 +4,15 @@
 # Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
 # gallegonovato <fran-carro@hotmail.es>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2022, 2023.
+# Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-14 07:29+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2023-08-03 14:06+0000\n"
+"Last-Translator: Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate"
+".org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
 "Language: es\n"
@@ -18,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -31,7 +33,7 @@ msgstr "Tipo de fondo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Si el fondo de GDM debe ser una Imagen, Color o Predeterminado."
+msgstr "Si el fondo de GDM debe ser una imagen, un color o predeterminado."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -299,7 +301,7 @@ msgstr "<em>Nuevas opciones</em>"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
 msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Opción para deshabilitar el menú accesible cuando no se usa"
+msgstr "Opción para desactivar el menú accesible cuando no se usa"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
 msgid "Option to change cursor size"
@@ -311,7 +313,7 @@ msgstr "Una petición de donación única"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
-msgstr "Donar opción en el menú"
+msgstr "Opción para donar en el menú"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "<em>Behavior Changes</em>"
@@ -432,9 +434,9 @@ msgid ""
 "I would really appreciate it."
 msgstr ""
 "Esta aplicación es y seguirá siendo Código abierto/Libre y gratuita. Sin "
-"embargo, puedes hacer una donación al desarrollador.\n"
+"embargo, puede hacer una donación al desarrollador.\n"
 "❤️\n"
-"Te lo agradecería mucho."
+"Se lo agradecería mucho."
 
 #: src/app.py:219
 msgid "Not Interested"
@@ -814,7 +816,7 @@ msgstr "Velocidad del puntero"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Touchpad"
+msgstr "Panel táctil"
 
 #: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"

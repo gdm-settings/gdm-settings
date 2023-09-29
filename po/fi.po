@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-02-25 21:36+0000\n"
+"PO-Revision-Date: 2023-07-26 15:03+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -272,10 +272,8 @@ msgid "Option to change cursor size"
 msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-#, fuzzy
-#| msgid "Donation Request"
 msgid "A one-time donation request"
-msgstr "Lahjoituspyyntö"
+msgstr "Kertalahjoituksen pyyntö"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
 msgid "Donate option in hamburger menu"
@@ -1027,15 +1025,13 @@ msgid "Backing up default shell theme …"
 msgstr "Varmuuskopioidaan shell-teeman oletusta…"
 
 #: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
+#, python-brace-format
 msgid "Applying GResource settings for {distro_name} …"
-msgstr "Toteutetaan GResource-asetukset Ubuntulle…"
+msgstr "Toteutetaan GResource-asetukset jakelulle {distro_name}…"
 
 #: src/settings.py:386
 msgid "Ubuntu"
-msgstr ""
+msgstr "Ubuntu"
 
 #: src/settings.py:388
 msgid "generic system"

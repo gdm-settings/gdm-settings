@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-04-09 09:49+0000\n"
+"PO-Revision-Date: 2023-08-20 22:55+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -185,7 +185,8 @@ msgstr "Oturum boştayken ekranın boş bırakılıp bırakılmayacağı"
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Bilgisayar boştayken güç tasarrufu için ekranın karartılması gerekiyorsa."
+"Bilgisayar boştayken güç tasarrufu için ekranın siyah ekran olarak "
+"gösterilmesi gerekiyorsa."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
@@ -485,7 +486,7 @@ msgstr "Dosya Seç"
 
 #: src/lib/file_choosers.py:25
 msgid "(None)"
-msgstr "Yok"
+msgstr "(Yok)"
 
 #: src/lib/file_choosers.py:51
 msgid "Choose"
@@ -804,7 +805,7 @@ msgstr "İmleç Hızı"
 
 #: src/resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Dokunmatik Yüzey"
+msgstr "Dokunmatik yüzey"
 
 #: src/resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
@@ -945,7 +946,7 @@ msgstr "Metin Rengi"
 
 #: src/resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "Tepe çubuğu metin rengi"
+msgstr "Tepe çubuktaki metnin rengi"
 
 #: src/resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
@@ -953,7 +954,7 @@ msgstr "Arka Plan Rengini Değiştir"
 
 #: src/resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "Tepe çubuğu arka plan rengi"
+msgstr "Tepe çubuğu arka planının rengi"
 
 #: src/resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
