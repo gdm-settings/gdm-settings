@@ -1,0 +1,59 @@
+using Gtk 4.0;
+using Adw 1;
+
+menu app_menu {
+  section {
+    item (_("Refresh"), "app.refresh")
+    item (_("Load session settings"), "app.load_session_settings")
+    item (_("Reset settings"), "app.reset_settings")
+  }
+  section {
+    item (_("Import from file"), "app.import_from_file")
+    item (_("Export to file"), "app.export_to_file")
+  }
+  section {
+    item (_("Donate"), "app.donate")
+  }
+  section {
+    item (_("About"), "app.about")
+    item (_("Quit"), "app.quit")
+  }
+}
+
+
+Adw.ToastOverlay toast_overlay {
+  Adw.NavigationSplitView split_view {
+    sidebar-width-fraction: 0.22;
+
+    [sidebar] Adw.NavigationPage {
+      title: "Sidebar";
+      child: Adw.ToolbarView {
+        [top] Adw.HeaderBar {
+          show-title: bind split_view.collapsed;
+
+          [start] Button apply_button { label: _("Apply"); styles ["suggested-action"] }
+          [start] Spinner spinner { spinning: false; margin-start: 5;}
+          title-widget: Label { styles ["title"] label: bind split_view.root as <Window>.title; };
+          [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
+        }
+
+        WindowHandle {
+            $GdmSettingsSidebar sidebar { stack: stack; }
+        }
+      };
+    }
+
+    [content] Adw.NavigationPage {
+      title: "Content";
+      child: Adw.ToolbarView {
+        [top] Adw.HeaderBar {
+          title-widget: Label section_label { styles ["title"] };
+        }
+
+        WindowHandle {
+            Stack stack { hexpand: true; width-request: 300; }
+        }
+      };
+    }
+  }
+}

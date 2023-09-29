@@ -38,6 +38,18 @@
 	   </description>
 	 </key>
 
+	 <key name="bg-adjustment" type="s">
+	   <default>"zoom"</default>
+	   <summary>Background Image Adjustment</summary>
+	   <description>
+	     Strategy for adjustment of background image.
+	   </description>
+	   <choices>
+	     <choice value="zoom"/>
+	     <choice value="repeat"/>
+	   </choices>
+	 </key>
+
 	 <key name="background-color" type="s">
 	   <default>"rgb(40,40,40)"</default>
 	   <summary>Background Color</summary>

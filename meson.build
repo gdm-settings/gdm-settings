@@ -1,9 +1,7 @@
 project('gdm-settings',
-          version: '3.beta.0',
+          version: '4.alpha',
     meson_version: '>= 0.59',
   default_options: [
-    #'buildtype=release',
-
     'gtk:media-gstreamer=disabled',
     'gtk:print-cups=disabled',
     'gtk:introspection=enabled',
@@ -30,7 +28,19 @@ python = import('python').find_installation('python3')
 
 subdir('po')
 subdir('data')
-subdir('src')
+subdir('resources')
+subdir('gdms')
+
+configure_file(
+  input: 'gdm-settings.py.in',
+  output: meson.project_name(),
+  install: true,
+  install_dir: get_option('bindir'),
+  configuration: configuration_data({
+    'prefix': get_option('prefix'),
+    'py_install_dir': python.get_install_dir(),
+  }),
+)
 
 gnome.post_install(
      glib_compile_schemas: true,

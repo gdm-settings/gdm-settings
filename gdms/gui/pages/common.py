@@ -1,0 +1,21 @@
+from gi.repository import Adw
+from gi.repository import Gtk
+
+
+class PageContent (Gtk.ScrolledWindow):
+    '''Base class for content of a page from Gtk.Stack'''
+    def __init__ (self, **props):
+        super().__init__(**props)
+
+        self.set_propagate_natural_height(True)
+
+        margin=20
+        self.clamp = Adw.Clamp(maximum_size=1500, tightening_threshold=0)
+        self.clamp.set_margin_top(margin)
+        self.clamp.set_margin_bottom(margin)
+        self.clamp.set_margin_start(margin)
+        self.clamp.set_margin_end(margin)
+        super().set_child(self.clamp)
+
+    def set_child (self, child):
+        self.clamp.set_child(child)

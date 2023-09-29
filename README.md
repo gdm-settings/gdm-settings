@@ -2,7 +2,7 @@
   <img src="data/icons/io.github.realmazharhussain.GdmSettings.svg" alt="GDM Settings Icon" width="100" height="100">
 </p>
 
-<h1 align="center">Login Manager Settings</h1>
+<h1 align="center">GDM Settings</h1>
 
 <div align="center">
   <p><strong>A settings app for GNOME's Login/Display Manager, GDM.</strong></p>
@@ -33,8 +33,8 @@
 <div align="center">
   <a href="https://github.com/gdm-settings/gdm-settings/wiki/Screenshots">
     <picture>
-      <source srcset="https://github.com/gdm-settings/screenshots/raw/main/dark/appearance.png" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/gdm-settings/screenshots/raw/main/light/appearance.png">
+      <source srcset="https://github.com/gdm-settings/screenshots/raw/main/dark/default.png" media="(prefers-color-scheme: dark)">
+      <img src="https://github.com/gdm-settings/screenshots/raw/main/light/default.png">
     </picture>
   </a>
 </div>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/app/">
+    <file>ui/main-window.ui</file>
+    <file>ui/appearance-page.ui</file>
+    <file>ui/fonts-page.ui</file>
+    <file>ui/display-page.ui</file>
+    <file>ui/sound-page.ui</file>
+    <file>ui/top-bar-page.ui</file>
+    <file>ui/pointing-page.ui</file>
+    <file>ui/pointing-page/cursor-size-button.ui</file>
+    <file>ui/pointing-page/cursor-size-selector.ui</file>
+    <file>ui/login-screen-page.ui</file>
+    <file>ui/power-page.ui</file>
+    <file>ui/tools-page.ui</file>
+    <file>icons/24x24/actions/cursor.png</file>
+    <file>icons/32x32/actions/cursor.png</file>
+    <file>icons/48x48/actions/cursor.png</file>
+    <file>icons/64x64/actions/cursor.png</file>
+    <file>icons/96x96/actions/cursor.png</file>
+    <file>icons/scalable/categories/appearance-symbolic.svg</file>
+    <file>icons/scalable/categories/display-symbolic.svg</file>
+    <file>icons/scalable/categories/fonts-symbolic.svg</file>
+    <file>icons/scalable/categories/misc-symbolic.svg</file>
+    <file>icons/scalable/categories/pointing-symbolic.svg</file>
+    <file>icons/scalable/categories/power-symbolic.svg</file>
+    <file>icons/scalable/categories/sound-symbolic.svg</file>
+    <file>icons/scalable/categories/tools-symbolic.svg</file>
+    <file>icons/scalable/categories/top_bar-symbolic.svg</file>
+  </gresource>
+</gresources>

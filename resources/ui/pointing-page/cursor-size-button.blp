@@ -1,0 +1,11 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $CursorSizeButton : ToggleButton { styles ["flat"]
+    Image {
+        icon-name: "cursor";
+        halign: center;
+        valign: center;
+        pixel-size: bind template.cursor-size;
+    }
+}

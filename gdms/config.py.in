@@ -1,0 +1,7 @@
+# This is meant to only be used by the main __init__.py file
+
+prefix = "@prefix@"
+version = '@version@'
+datadir = "@datadir@"
+localedir = "@localedir@"
+buildtype = '@buildtype@'

@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import os
+import sys
+
+# AppDir is the directory which contains this app (detected during runtime)
+AppDir = os.path.realpath(__file__).split('@prefix@')[0]
+
+py_install_dir = AppDir + '@py_install_dir@'
+sys.path.insert(1, py_install_dir)
+
+import gdms
+status = gdms.main()
+sys.exit(status)

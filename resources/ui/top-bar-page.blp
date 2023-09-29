@@ -1,0 +1,92 @@
+using Gtk 4.0;
+using Adw 1;
+
+Box content_box {
+  orientation: vertical;
+  spacing: 25;
+
+  Adw.PreferencesGroup {
+    title: _("Tweaks");
+
+    Adw.ExpanderRow text_color_expanderrow {
+      title: _("Change Text Color");
+
+      [action] Switch text_color_switch {
+        valign: center;
+        active: bind text_color_expanderrow.expanded bidirectional;
+      }
+
+      Adw.ActionRow {
+        title: _("Text Color");
+        subtitle: _("The color of text in top bar");
+        activatable-widget: text_color_button;
+
+        ColorButton text_color_button {
+          valign: center;
+          use-alpha: true;
+        }
+      }
+    }
+
+    Adw.ExpanderRow {
+      title: _("Change Background Color");
+      expanded: bind background_color_switch.active bidirectional;
+
+      [action] Switch background_color_switch {
+        valign: center;
+      }
+
+      Adw.ActionRow {
+        title: _("Background Color");
+        subtitle: _("The color of top bar background");
+        activatable-widget: background_color_button;
+
+        ColorButton background_color_button {
+          valign: center;
+          use-alpha: true;
+        }
+      }
+    }
+
+    Adw.SwitchRow disable_arrows_row {
+      title: _("Disable Arrows");
+    }
+
+    Adw.SwitchRow disable_rounded_corners_row {
+      title: _("Disable Rounded Corners");
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Accessibility");
+
+    Adw.SwitchRow accessibilty_menu_row {
+      title: _("Always Show Accessibility Menu");
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Clock");
+
+    Adw.SwitchRow show_weekday_row {
+      title: _("Show Weekday");
+    }
+
+    Adw.SwitchRow show_seconds_row {
+      title: _("Show Seconds");
+    }
+
+    Adw.ComboRow time_format_comborow {
+      title: _("Time Format");
+      model: StringList { strings [_("AM/PM"), _("24 Hours")] };
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Power");
+
+    Adw.SwitchRow show_battery_percentage_row {
+      title: _("Show battery percentage");
+    }
+  }
+}

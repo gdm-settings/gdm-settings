@@ -1,0 +1,99 @@
+using Gtk 4.0;
+using Adw 1;
+
+Box content_box {
+  orientation: vertical;
+  spacing: 25;
+
+  Adw.PreferencesGroup {
+    margin-top: 12;
+
+    Adw.ComboRow power_button_comborow {
+      title: _("Power Button Behavior");
+      model: StringList { strings [_("Do Nothing"), _("Suspend"), _("Hibernate"), _("Ask")] };
+
+    }
+
+    Adw.SwitchRow auto_power_saver_row {
+      title: _("Automatic Power Saver");
+      subtitle: _("Enables power saver mode when battery is low.");
+    }
+
+    Adw.SwitchRow dim_screen_row {
+      title: _("Dim Screen");
+      subtitle: _("Reduces the screen brightness when the computer is inactive.");
+    }
+
+    Adw.ExpanderRow {
+      title: _("Turn Screen Off");
+      subtitle: _("Whether to turn the screen off after a period of inactivity.");
+      expanded: bind screen_blank_switch.active bidirectional;
+
+      [action]
+      Switch screen_blank_switch {
+        valign: center;
+      }
+
+      Adw.SpinRow screen_blank_spinrow {
+        title: _("Delay");
+        subtitle: _("Time in minutes after which screen will turn off.");
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
+      }
+    }
+  }
+
+  Adw.PreferencesGroup {
+    title: _("Automatic Suspend");
+    description: _("Pauses the computer after a period of inactivity.");
+
+    Adw.ExpanderRow {
+      title: _("On Battery Power");
+      expanded: bind suspend_on_battery_switch.active bidirectional;
+
+      [action]
+      Switch suspend_on_battery_switch {
+        valign: center;
+      }
+
+      Adw.SpinRow suspend_on_battery_spinrow {
+        title: _("Delay");
+        subtitle: _("Time in minutes after which the computer will suspend.");
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
+      }
+    }
+
+    Adw.ExpanderRow {
+      title: _("When Plugged In");
+      expanded: bind suspend_on_ac_switch.active bidirectional;
+
+      [action]
+      Switch suspend_on_ac_switch {
+        valign: center;
+      }
+
+      Adw.SpinRow suspend_on_ac_spinrow {
+        title: _("Delay");
+        subtitle: _("Time in minutes after which the computer will suspend.");
+        width-chars: 2;
+        adjustment: Adjustment {
+          lower: 1;
+          value: 1;
+          upper: 1440;
+          step-increment: 1;
+        };
+      }
+    }
+  }
+}

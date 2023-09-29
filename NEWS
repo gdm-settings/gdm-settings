@@ -1,0 +1,8 @@
+v4.beta0
+========
+* GNOME 45 support
+* Background image adjustment option
+* Support for high contrast mode in GDM
+* Application Window is draggable from anywhere
+* Icons in the sidebar
+* Other visual improvements
