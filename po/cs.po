@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-09-29 17:27+0500\n"
-"PO-Revision-Date: 2023-09-29 16:59+0000\n"
+"PO-Revision-Date: 2023-09-29 18:00+0000\n"
 "Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -293,17 +293,19 @@ msgstr "První beta vydání nastavení GDM v připravované verzi 4"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "New UI style"
-msgstr ""
+msgstr "Nový styl uživatelského rozhraní"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid ""
 "Shell theme, background and top bar tweaks now work in high contrast mode as "
 "well"
 msgstr ""
+"Motiv shellu, úpravy pozadí a horního panelu nyní fungují i v režimu "
+"vysokého kontrastu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
+msgstr "Okno může být přetažené a přesunuté odkudkoliv, nikoliv pouze záhlaví"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed:"
@@ -311,15 +313,17 @@ msgstr "Opraveno:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
+msgstr "Změna barvy pozadí nefunguje v GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
 msgstr ""
+"Rozbitý obrázek na pozadí v prostředí GNOME 44 pro širokoúhlou obrazovku/dva "
+"monitory"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
+msgstr "Opraveno: změna pozadí nefunguje v GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
@@ -442,16 +446,17 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Výchozí téma shellu"
+msgstr "Ztráta výchozího souboru s motivem shellu"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Aplikace potřebuje, ale nemohla najít neupravený soubor výchozího motivu "
+"shellu. K opravení tohoto problému, přeinstalujte balíček 'gnome-shell-"
+"common' nebo 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -774,17 +779,15 @@ msgstr "Obrázek pro použití na pozadí"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Úprava obrázku"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Ztlumit obrazovku"
+msgstr "Fit To Screen"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Opakovat"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
