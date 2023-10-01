@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-09-29 17:27+0500\n"
-"PO-Revision-Date: 2023-09-30 11:00+0000\n"
+"PO-Revision-Date: 2023-10-01 17:00+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -48,7 +48,7 @@ msgstr "Dostosowanie obrazu tła"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategia dostosowywania obrazu tła."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -273,10 +273,8 @@ msgstr "Kolor tła górnego paska"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "Zresetuj ustawienia"
+msgstr "Ustawienia GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -298,37 +296,43 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
+msgstr "Pierwsza wersja beta nadchodzącej wersji 4-ej ustawień GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "New UI style"
-msgstr ""
+msgstr "Nowy styl interfejsu użytkownika"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid ""
 "Shell theme, background and top bar tweaks now work in high contrast mode as "
 "well"
 msgstr ""
+"Zmiany motywu powłoki, tła i górnego paska działają teraz również w trybie "
+"wysokiego kontrastu"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Window can be dragged and moved from anywhere, not just the headerbar"
 msgstr ""
+"Okno można przeciągać i przesuwać z dowolnego miejsca, nie tylko z paska "
+"tytułowego"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed:"
-msgstr ""
+msgstr "Naprawiono:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
+msgstr "Zmiana koloru tła nie działa w środowisku GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
 msgstr ""
+"Uszkodzony obraz tła w środowisku GNOME 44 w konfiguracji szerokoekranowej/"
+"dwumonitorowej"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
+msgstr "Naprawiono: Zmiana tła nie działała w środowisku GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
@@ -451,16 +455,17 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Domyślny motyw powłoki"
+msgstr "Utrata domyślnego pliku motywu powłoki"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Aplikacja potrzebuje, ale nie może znaleźć niezmodyfikowanego domyślnego "
+"pliku motywu powłoki. Aby naprawić błąd, zainstaluj ponownie pakiet 'gnome-"
+"shell-common' lub 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -785,17 +790,15 @@ msgstr "Obraz używany jako tło"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Dostosowanie obrazu"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Przyciemnij ekran"
+msgstr "Dopasuj do ekranu"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Powtórzenie"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
