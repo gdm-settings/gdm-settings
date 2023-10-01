@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-09-29 17:27+0500\n"
-"PO-Revision-Date: 2023-04-09 09:49+0000\n"
+"PO-Revision-Date: 2023-10-01 13:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -44,14 +44,12 @@ msgid "The image file to use as GDM background"
 msgstr "קובץ התמונה שישמש כרקע ב־GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "תמונת רקע"
+msgstr "כוונון תמונת רקע"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "אסטרטגיה לכוונון תמונת הרקע."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -261,10 +259,8 @@ msgstr "צבע רקע הסרגל העליון"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "הגדרות עכבר"
+msgstr "הגדרות GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -286,21 +282,23 @@ msgstr "מזהר חוסיין"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
 msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
+msgstr "מהדורת הבטא הראשונית של הגדרות GDM בגרסה 4"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
 msgid "New UI style"
-msgstr ""
+msgstr "סגנון מנשק משתמש חדש"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
 msgid ""
 "Shell theme, background and top bar tweaks now work in high contrast mode as "
 "well"
 msgstr ""
+"ערכת העיצוב של המעטפת, הרקע ושיפורי הסרגל העליון עובדים גם במצב ניגודיות "
+"גבוהה"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
 msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
+msgstr "אפשר לגרור ולהזיז חלון לכל מקום, לא רק את שורת הכותרת"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
 msgid "Fixed:"
@@ -308,15 +306,15 @@ msgstr "תוקן:"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
 msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
+msgstr "החלפת צבע הרקע לא עובדת ב־GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
 msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
+msgstr "תמונת רקע פגומה במסך רחב/שני צגים ב־GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
 msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
+msgstr "תוקן: החלפת רקע לא עובדת ב־GNOME 44"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
@@ -436,16 +434,17 @@ msgid "OK"
 msgstr "אישור"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "ערכת העיצוב של המעטפת כברירת מחדל"
+msgstr "אובדן קובץ ערכת העיצוב של המעטפת כברירת מחדל"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"היישום צריך אבל לא מצליח למצוא קובץ ערכת עיצוב למעטפת ברירת מחדל שלא נערך. "
+"כדי לתקן את התקלה, יש להתקין את החבילות ‚gnome-shell-common’ או ‚gnome-shell’"
+" מחדש."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -762,17 +761,15 @@ msgstr "התמונה שתשמש כרקע"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "כוונון תמונה"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "עמעום המסך"
+msgstr "התאמה למסך"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "חזרה"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
