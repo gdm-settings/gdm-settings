@@ -80,7 +80,7 @@
     <release version="4~beta0" type="development" date="2023-09-29">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.beta0</url>
 
-      <description>
+      <description translatable="no">
         <p>First beta release of the upcoming GDM Settings version 4</p>
         <ul>
           <li>New UI style</li>
@@ -99,7 +99,7 @@
     <release version="3.3" type="stable" date="2023-08-13">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.3</url>
 
-      <description>
+      <description translatable="no">
         <p>Fixed:</p>
         <ul>
           <li>Changing background color doesn't work on GNOME 44</li>
@@ -115,7 +115,7 @@
     <release version="3.2" type="stable" date="2023-06-22">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.2</url>
 
-      <description>
+      <description translatable="no">
         <p>Fixed: Changing background doesn't work on GNOME 44</p>
       </description>
 
@@ -131,7 +131,7 @@
     <release version="3.0" type="stable" date="2023-04-13">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.0</url>
 
-      <description>
+      <description translatable="no">
         <p><em>New Options</em></p>
         <ul>
           <li>Option to disable accessiblitly menu when not being used</li>
@@ -157,7 +157,7 @@
     <release version="3~beta.0" type="development" date="2023-03-23">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.beta.0</url>
 
-      <description>
+      <description translatable="no">
         <p>Fixed: Fails to run on PureOS</p>
       </description>
 
@@ -169,7 +169,7 @@
     <release version="3~alpha.0" urgency="medium" type="development" date="2023-02-24">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v3.alpha.0</url>
 
-      <description>
+      <description translatable="no">
         <p><em>New Options</em></p>
         <ul>
           <li>Option to disable accessiblitly menu when not being used</li>
