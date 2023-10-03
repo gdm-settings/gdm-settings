@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-04-15 15:51+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -44,12 +44,22 @@ msgid "The image file to use as GDM background"
 msgstr "Bildfilen som ska användas som GDM-bakgrund"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "Bakgrundsbild"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Bakgrundsfärg"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "Färgen som ska användas som GDM-bakgrund"
 
@@ -256,10 +266,11 @@ msgid "Top bar background color"
 msgstr "Översta fältets bakgrundsfärg"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Inloggningshanteraren Inställningar"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "Återställ inställningar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -275,93 +286,37 @@ msgstr ""
 "Ändra GDM-inställningar; Tillämpa tema och bakgrund, ändra markörtema, "
 "ikontema och nattljusinställningar bland annat."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Fixat: Misslyckade att köra på PureOS"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
-msgstr "<em>Nya alternativ</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
-msgstr "Alternativ för att ändra pekarstorlek"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
-msgstr "En en-gångs donationsförfrågan"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
-msgstr "Donera alternativ i Hamburgermenyn"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Beteendeförändringar</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
-
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021-2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Luna Jernberg<lunajernberg@gnome.org>"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Visa program version"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Ställ in detaljnivå manuellt (från 0 till 5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVÅ"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Aktivera pratigt läge (alias för --verbosity=5)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Aktivera tyst läge (alias av -verbosity=0)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Ogiltig detaljnivå {level}. Måste vara 0, 5 eller däremellan."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -371,7 +326,7 @@ msgstr ""
 "här programmet ska fungera korrekt, men de är inte installerade på "
 "värdsystemet."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -379,19 +334,19 @@ msgstr ""
 "Detta program kräver följande programvara för att fungera korrekt men de är "
 "inte installerade."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -400,19 +355,32 @@ msgstr ""
 "Klicka <a href=\"{url}\">här</a> för instruktioner om hur du installerar "
 "dessa beroenden på ditt system."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Saknar beroenden"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "Standard skaltema"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Donationsförfrågan"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -425,91 +393,87 @@ msgstr ""
 "❤️\n"
 "Jag skulle verkligen uppskatta det."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "Inte intresserad"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Donera"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "Inställningarna har laddats om"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "Sessionsinställningarna har lästs in framgångsrikt"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Ladda sessionsinställningar stöds INTE i Flatpak-versionen"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "Återställde inställningar framgångsrikt"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "Misslyckades att återställa inställningar"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "Importera"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "Inställningarna har importerats framgångsrikt från fil"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "Misslyckades att importera. Fil är ogiltig"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "Inställningarna har exporterats framgångsrikt"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "Misslyckades att exportera. Åtkomst nekad"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Misslyckades att exportera. En katalog med det namnet finns redan"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Välj fil"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(Ingen)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "Välj"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "Bilder"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Luna Jernberg<lunajernberg@gnome.org>"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Alla filer"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "Välj bild"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "Verkställde aktuella visningsinställningar"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "Det gick inte att verkställa aktuella visningsinställningar"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -523,603 +487,90 @@ msgstr ""
 "För att skapa den filen automatiskt, öppna systemets \"Inställningar\" och "
 "ändra några visningsalternativ där."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "Skärminställningar hittades inte"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Standardtema uppackad till '{folder}' som '{name}'"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Misslyckades att packa upp standardtema"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Teman"
-
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Skal"
-
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Ikoner"
-
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Muspekare"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Bakgrund"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Typ"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Standard"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "Bild"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Färg"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Bild som ska användas som bakgrund"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Färg som ska användas som bakgrund"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Verkställ aktuella skärminställningar"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Upplösning, uppdateringsfrekvens, skärm positioner, etc."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Verkställ"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Nattlampa"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Aktivera"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Schemalägg"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Solnedgång till soluppgång"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Manuellt schema"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Tider"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "Från"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "Till"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Färgtemperatur"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Teckensnitt"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Kantutjämning"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Standard"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Subpixel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Ingen"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Hinting"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Full"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Medium"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Lätt"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Skalningsfaktor"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Uppdatera"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Ladda sessionsinställningar"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Återställ inställningar"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Importera från fil"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Exportera till fil"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "Om"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Avsluta"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Inaktivera omstartsknappar"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Inaktivera användarlista"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Aktivera logotyp"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Om en logotyp ska visas under användarlistan"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logotyp"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "Bilden som ska visas nedanför användarlistan"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Välkomstmeddelande"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Förstora"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Meddelande"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "Pekarstorlek"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Standard"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Medium"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Stor"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Större"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "Störst"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Mus"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "Pekaracceleration"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Automatisk"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Inaktiverad"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Aktiverad"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Naturlig rullning"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Genom att rulla flyttas innehållet, inte vyn."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "Pekarhastighet"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Styrplatta"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Tryck för att klicka"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "Två-fingers rullning"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "Rulla genom att svepa med två fingrar."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Inaktivera medan du skriver"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Strömknappens beteende"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Gör ingenting"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Suspendera"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Hibernera"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Fråga"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Automatisk strömsparare"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Aktiverar energisparläge när batterinivån är låg."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Dimma skärm"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Minskar skärmens ljusstyrka när datorn är inaktiv."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Slå av skärmen"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Om skärmen ska stängas av efter en period av inaktivitet."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Fördröjning"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "Tid i minuter efter vilken skärmen stängs av."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Automatisk suspendering"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Pausar datorn efter en period av inaktivitet."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "På batteriström"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Tid i minuter efter vilken datorn suspenderas."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "När inkopplad"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Tema"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Överförstärkning"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Tillåt att höja volymen över 100 %"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Händelseljud"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Ingångsfeedback ljud"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Standard skaltema"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Inkludera Översta fältet tweaks"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Packa upp standard skaltema"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Packa upp"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Tweaks"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Ändra textfärg"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Textfärg"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Färgen på texten i övre fältet"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Ändra bakgrundsfärg"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Färgen på det övre fältets bakgrund"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Inaktivera pilar"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Inaktivera rundade hörn"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Hjälpmedel"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Visa alltid Hjälpmedelsmenyn"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Klocka"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Visa veckodagar"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Visa sekunder"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Tidsformat"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 timmar"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
-msgid "Power"
-msgstr "Ström"
-
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Visa batteri procent"
-
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr "Exporterar till fil '{filename}'"
-
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "Kan inte skriva till fil '{filename}'. Åtkomst nekad"
-
-#: src/settings.py:89
-#, python-brace-format
-msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
-msgstr ""
-"Kan inte skriva till fil '{filename}'. En katalog med samma namn finns redan"
-
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr "Exporterar till standardutdata"
-
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "Importerar från fil '{filename}'"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Importerar från standardinmatning"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "Misslyckades med att analysera importfil"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "Misslyckades med att läsa importfilen. Inte kodad i UTF-8"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "Importerad fil har inte sektionen \"{section_name}\""
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-"Importerad fil har inte nyckel '{key_name}' i sektionen '{section_name}'"
-
-#: src/settings.py:313
-msgid "Backing up default shell theme …"
-msgstr "Säkerhetskopierar standardskaltema ..."
-
-#: src/settings.py:365
-#, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Verkställer GResource-inställningar för{distro_name} …"
-
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
-
-#: src/settings.py:388
-msgid "generic system"
-msgstr "generiskt system"
-
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Återställer GResource-inställningar för Ubuntu …"
-
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "Återställer GResource-inställningar för icke-Ubuntu system …"
-
-#: src/window.py:111
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Välj fil"
+
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(Ingen)"
+
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "Välj"
+
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "Bilder"
+
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Alla filer"
+
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "Välj bild"
+
+#: gdms/gui/window.py:113
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/window.py:112
+#: gdms/gui/window.py:114
 msgid "Fonts"
 msgstr "Teckensnitt"
 
-#: src/window.py:113
+#: gdms/gui/window.py:115
 msgid "Top Bar"
 msgstr "Övre fält"
 
-#: src/window.py:114
+#: gdms/gui/window.py:116
 msgid "Sound"
 msgstr "Ljud"
 
-#: src/window.py:115
+#: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
 msgstr "Mus & Pekplatta"
 
-#: src/window.py:116
+#: gdms/gui/window.py:118
 msgid "Display"
 msgstr "Skärm"
 
-#: src/window.py:117
+#: gdms/gui/window.py:119
 msgid "Login Screen"
 msgstr "Inloggningsskärm"
 
-#: src/window.py:119
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+msgid "Power"
+msgstr "Ström"
+
+#: gdms/gui/window.py:121
 msgid "Tools"
 msgstr "Verktyg"
 
-#: src/window.py:137
+#: gdms/gui/window.py:139
 msgid "Settings applied successfully"
 msgstr "Inställningarna har verkställts"
 
-#: src/window.py:141
+#: gdms/gui/window.py:143
 msgid "Failed to apply settings"
 msgstr "Misslyckades att verkställa inställningar"
 
-#: src/window.py:145
+#: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
@@ -1127,30 +578,606 @@ msgstr ""
 "Verkställde inte. Det gick inte att hitta den valda bakgrundsbilden "
 "existerar inte längre. Snälla! välj igen."
 
-#: src/window.py:149
+#: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Verkställde inte. Det gick inte att hitta den valda logotypbilden då den "
 "inte existerar längre. Snälla! välj igen."
 
-#: src/window.py:155
+#: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Systemet kan börja se konstigt/buggigt ut till du loggar in igen eller "
 "startar om."
 
-#: src/window.py:160
+#: gdms/gui/window.py:162
 msgid "Log Out?"
 msgstr "Logga ut?"
 
-#: src/window.py:165
+#: gdms/gui/window.py:167
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/window.py:166
+#: gdms/gui/window.py:168
 msgid "Log Out"
 msgstr "Logga ut"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Importerar från fil '{filename}'"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Importerar från standardinmatning"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "Misslyckades med att analysera importfil"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "Misslyckades med att läsa importfilen. Inte kodad i UTF-8"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Importerad fil har inte sektionen \"{section_name}\""
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"Importerad fil har inte nyckel '{key_name}' i sektionen '{section_name}'"
+
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "Exporterar till fil '{filename}'"
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "Kan inte skriva till fil '{filename}'. Åtkomst nekad"
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+"Kan inte skriva till fil '{filename}'. En katalog med samma namn finns redan"
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr "Exporterar till standardutdata"
+
+#: gdms/settings.py:327
+msgid "Backing up default shell theme …"
+msgstr "Säkerhetskopierar standardskaltema ..."
+
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Teman"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Skal"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Ikoner"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Muspekare"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Bakgrund"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Typ"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Standard"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Bild"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Färg"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "Bild som ska användas som bakgrund"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "Dimma skärm"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "Färg som ska användas som bakgrund"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Verkställ aktuella skärminställningar"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Upplösning, uppdateringsfrekvens, skärm positioner, etc."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Verkställ"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Nattlampa"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Aktivera"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Schemalägg"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Solnedgång till soluppgång"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Manuellt schema"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Tider"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "Från"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "Till"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Färgtemperatur"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Teckensnitt"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Kantutjämning"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standard"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Ingen"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Hinting"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Full"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Medium"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Lätt"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Skalningsfaktor"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Ladda sessionsinställningar"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Återställ inställningar"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Importera från fil"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Exportera till fil"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Om"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Avsluta"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Inaktivera omstartsknappar"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Inaktivera användarlista"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Aktivera logotyp"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Om en logotyp ska visas under användarlistan"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logotyp"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "Bilden som ska visas nedanför användarlistan"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Välkomstmeddelande"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Förstora"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Meddelande"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "Pekarstorlek"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Standard"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Medium"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Stor"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Större"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "Störst"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Mus"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "Pekaracceleration"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Aktiverad"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Naturlig rullning"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Genom att rulla flyttas innehållet, inte vyn."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "Pekarhastighet"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Styrplatta"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Tryck för att klicka"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "Två-fingers rullning"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "Rulla genom att svepa med två fingrar."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Inaktivera medan du skriver"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Strömknappens beteende"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Gör ingenting"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Suspendera"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Hibernera"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Fråga"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Automatisk strömsparare"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Aktiverar energisparläge när batterinivån är låg."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Dimma skärm"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Minskar skärmens ljusstyrka när datorn är inaktiv."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Slå av skärmen"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Om skärmen ska stängas av efter en period av inaktivitet."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Fördröjning"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "Tid i minuter efter vilken skärmen stängs av."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Automatisk suspendering"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Pausar datorn efter en period av inaktivitet."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "På batteriström"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Tid i minuter efter vilken datorn suspenderas."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "När inkopplad"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Tema"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Överförstärkning"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Tillåt att höja volymen över 100 %"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Händelseljud"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Ingångsfeedback ljud"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Standard skaltema"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Inkludera Översta fältet tweaks"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Packa upp standard skaltema"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Packa upp"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Tweaks"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Ändra textfärg"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Textfärg"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Färgen på texten i övre fältet"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Ändra bakgrundsfärg"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Färgen på det övre fältets bakgrund"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Inaktivera pilar"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Inaktivera rundade hörn"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Hjälpmedel"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Visa alltid Hjälpmedelsmenyn"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Klocka"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Visa veckodagar"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Visa sekunder"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Tidsformat"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 timmar"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Visa batteri procent"
+
+#~ msgid "Fixed:"
+#~ msgstr "Fixat:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Nya alternativ</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Alternativ för att ändra pekarstorlek"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "En en-gångs donationsförfrågan"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Donera alternativ i Hamburgermenyn"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Beteendeförändringar</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "Fixat: Misslyckade att köra på PureOS"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Inloggningshanteraren Inställningar"
+
+#, python-brace-format
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Verkställer GResource-inställningar för{distro_name} …"
+
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
+
+#~ msgid "generic system"
+#~ msgstr "generiskt system"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Återställer GResource-inställningar för Ubuntu …"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "Återställer GResource-inställningar för icke-Ubuntu system …"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1271,9 +1298,6 @@ msgstr "Logga ut"
 
 #~ msgid "Added:"
 #~ msgstr "Tillagt:"
-
-#~ msgid "Fixed:"
-#~ msgstr "Fixat:"
 
 #~ msgid "French"
 #~ msgstr "Fransk"

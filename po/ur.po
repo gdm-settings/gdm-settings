@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-04-13 09:56+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -44,12 +44,22 @@ msgid "The image file to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "بیک گرائونڈ کی تصویر"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "بیک گرائونڈ کا رنگ"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
@@ -257,10 +267,11 @@ msgid "Top bar background color"
 msgstr "بیک گرائونڈ کا رنگ"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "لاگن مینیجر کی سیٹنگز"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Mouse Settings"
+msgid "GDM Settings"
+msgstr "مائوس کی سیٹنگز"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -276,94 +287,38 @@ msgstr ""
 "جی۔ڈی۔ایم کی سیٹنگز بدلیں؛ تھیم اور بیکگرائونڈ اپلائی کریں، تیر کا تھیم، "
 "آئیکن تھیم اور رات کی روشنی کی سیٹنگز، وغیرہ بدلیں۔"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "درست کیا: پیور او ایس پر رن نہیں ہو سکتی تھی"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
-msgstr "<em>نئے آپشن</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
-msgstr "تیر کا سائز بدلنے کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
-msgstr "ایک مرتبہ عطیہ کی درخواست"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
-msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>رویہ کی تبدیلیاں</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
-
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "مظہر حسین"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "تھیلس بِنڈا"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "اَیپلی کیشن کا ورژن دکھائیں"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "وربوسِٹی کا لیوَل سیٹ کریں (0 سے 5 تک)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "لیوَل"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "وربوس موڈ لگائیں (وربوسِٹی لیوَل 5 کا ایلیئس ہے)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "خاموشی موڈ لگائیں (وربوسِٹی لیوَل 0 کا ایلیئس ہے)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "وربوسٹی لیول {level} قابل قبول نہیں ہے۔ 0، 5 یا پھر اس کے درمیان ہونا چاہیئے۔"
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -372,47 +327,60 @@ msgstr ""
 "اس ایپلیکیشن کو صحیح کام کرنے کیلئے <b>ہوسٹ سسٹم پر</b> مندرجہ ذیل سوفٹ ویئر "
 "انسٹال ہونے کی ضرورت ہے لیکن وہ ہوسٹ سسٹم پر انسٹال نہیں ہے۔"
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
 "اس ایپلیکیشن کو صحیح طرح سے کام کرنے کیلئے مندرجہ ذیل سوفٹ ویئر کی ضرورت ہے۔"
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a href="
-"\"{url}\">یہاں</a> کلک کریں۔"
+"ان ڈیپینڈینسیز کو انسٹال کرنے کی انسٹرکشنز حاصل کرنے کے لئے <a "
+"href=\"{url}\">یہاں</a> کلک کریں۔"
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "غیر حاضر ڈیپینڈنسیز"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "ٹھیک ہے"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "شیل کا ڈیفالٹ تھیم"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "عطیہ کی درخواست"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -424,91 +392,87 @@ msgstr ""
 "❤️\n"
 "بڑی مہربانی ہوگی۔"
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "دفع کرو"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "ڈونیٹ کریں"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "سیٹنگز ریلوڈ ہو گئی ہیں"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "سیشن کی سیٹنگز لوڈ ہو گئی ہیں"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "سیشن کی سیٹنگز لوڈ کرنا فلَیٹپَیک ورژن میں سپورٹڈ نہیں ہے"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "سیٹنگز ریسیٹ ہو گئی ہیں"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "سیٹنگز ریسیٹ نہیں ہو سکیں"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "امپورٹ کریں"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "سیٹنگز فائل سے کامیابی سے امپورٹ ہو گئی ہیں"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "امپورٹ نہیں ہو سکی۔ فائل انویلڈ ہے"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "سیٹنگز کامیابی سے ایکسپورٹ ہو گئی ہیں"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "ایکسپورٹ نہیں ہو سکی۔ اجازت نہیں ملی"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "ایکسپورٹ نہیں ہو سکی۔ اس نام کا ایک فولڈر پہلے سے موجود ہے"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "فائل چُنیں"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "مظہر حسین"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(کچھ نہیں)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "تھیلس بِنڈا"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "انتخاب کریں"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "تصویریں"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "ساری فائیلیں"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "تصویر کا انتخاب کریں"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی نہیں ہو سکیں"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -522,495 +486,158 @@ msgstr ""
 "اس فائیل کو آٹومیٹیکلی کریئیٹ کرنے لئے سسٹم کی سیٹنگز کو اوپن کریں اور وہاں "
 "'ڈسپلے' کی کچھ سیٹنگز تبدیل کریں۔"
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "مانیٹر کی سیٹنگز نہیں ملیں"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "ڈیفالٹ شیل تھیم '{folder}' میں '{name}' کے نام سے سیو ہو گیا ہے"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "ڈیفالٹ تھیم ایکسٹرہکٹ نہیں ہو سکا"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "تھیمز"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "فائل چُنیں"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "خول"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(کچھ نہیں)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "اَئیکان"
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "انتخاب کریں"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "تیر"
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "تصویریں"
 
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "بیک گرائونڈ"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "ساری فائیلیں"
 
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "قِسم"
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "تصویر کا انتخاب کریں"
 
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "ڈیفالٹ"
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr "شکل"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "تصویر"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "رنگ"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ۔"
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "اپلائی"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "رات کی روشنی"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "دکھائیں"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "شیڈول"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "صبح سے شام"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "اپنا شیڈول"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "اوکات"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "شروع"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "ختم"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "رنگ کا ٹمپریچر"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
+#: gdms/gui/window.py:114
+msgid "Fonts"
 msgstr "خط"
 
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "اینٹی اےلیاسِنگ"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "سٹینڈرڈ"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "سب پکسل"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "کچھ نہیں"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "ہِنٹنگ"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "فُل"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "مِیڈِیّم"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "تھوڑی"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "کھچائو کا انصر"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "ریفریش"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "سیشن کی سیٹنگز لوڈ کریں"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "سیٹنگز کو ریسیٹ کریں"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "فائل سے امپورٹ کریں"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "فائل کو ایکسپورٹ کریں"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "تفصیلات"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "بند کریں"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "ریسٹارٹ بٹن ختم کریں"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "یوزر کی لسٹ ختم کریں"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "لوگو دکھائیں"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "یوزر کی لسٹ کے نیچے لوگو دکھائیں یا نہیں"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "لوگو"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "خوش آمدید کا پیغام"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "بڑا کریں"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "پیغام"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "تیر کا سائیز"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "ڈیفالٹ"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "مِیڈِیّم"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "بڑا"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "زیادہ بڑا"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "سب سے بڑا"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "مائوس"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "پوائنٹر ایکسلریشن"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "آٹومیٹک"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "بند"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "چالو"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "قدرتی سکرولِنگ"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "سکرولِنگ سے مواد جگہ بدلتا ہے نہ کہ ویئو۔"
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "تیر کی سپیڈ"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "ٹچ پیڈ"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "کلک کیلئے ٹَیپ کریں"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "دو انگلیئوں کے ساتھ سکرولِنگ"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "دو انگلیوں کے ساتھ سوائیپ کریں۔"
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "ٹائپ کرتے وقت بند کریں"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "پاور بٹن کا بیحیویر"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "کچھ نہ کریں"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "سسپینڈ کریں"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "ہائبرنیٹ کریں"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "پوچھیں"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "آٹومیٹک پاور سیور"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "بیٹری کم ہونے پر پاور سیور آن کرتا ہے۔"
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "سکرین کی روشنی مدھم کریں"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "کمپیوٹر ان ایکٹو ہونے کی صورت میں سکرین کی روشنی مدھم کرتا ہے۔"
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "سکرین کو بند کریں"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد سکرین کو بند کریں۔"
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "وقفہ"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "منٹس میں ٹائم جس کے بعد سکرین بند ہو جائے گی۔"
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "آٹومیٹک سسپینڈ"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد کمپیوٹر کو روکتا ہے۔"
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "بیٹری کی پاور پر"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "منٹس میں ٹائم جس کے بعد کمپیوٹر سسپینڈ ہو جائے گا۔"
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "جب چارجر لگا ہو"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "تھیم"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "حد سے اونچی آواز"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "آواز 100% سے بھی اونچی ہونے دیں"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "ایوَنٹ کی آوازیں"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "اندراج کے جواب کی آوازیں"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "شیل کا ڈیفالٹ تھیم"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "اوپر والی پٹی کی ٹویکس شامل کریں"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "شیل کا ڈیفالٹ تھیم ایکسٹرہکٹ کریں"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "ایکسٹریکٹ"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "ٹویکس"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "لکھائی کا رنگ بدلیں"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "لکھائی کا رنگ"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "اوپر والی پٹی میں لکھائی کا رنگ"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "بیک گرائونڈ کا رنگ تبدیل کریں"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "تیر ختم کریں"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "مڑے ہوئے کونے ختم کریں"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "ایکسیسیبلیٹی"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "ایکسیسیبیلیٹی مینیو ہمیشہ شو ہو"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "گھڑی"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "ہفتے کا دن دکھائیں"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "سیکنڈ دکھائیں"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "ٹائم کی فارمیٹ"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "ش/م"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 گھنٹے"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr "اوپر والی پٹی"
+
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr "آواز"
+
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr "مائوس اور ٹچ پیڈ"
+
+#: gdms/gui/window.py:118
+msgid "Display"
+msgstr "ڈسپلے"
+
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr "لاگن سکرین"
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
 msgstr "پاوَر"
 
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "بیٹری کی شرح دکھائیں"
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr "آلات"
 
-#: src/settings.py:80
+#: gdms/gui/window.py:139
+msgid "Settings applied successfully"
+msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+
+#: gdms/gui/window.py:143
+msgid "Failed to apply settings"
+msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
+
+#: gdms/gui/window.py:147
+msgid ""
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
+msgstr ""
+"اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+
+#: gdms/gui/window.py:151
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr "اپلائی نہیں کیا- لوگو والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+"اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr "لاگ آؤٹ کریں؟"
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr "کینسل"
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr "لاگ آؤٹ"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "فائل '{filename}' سے امپورٹ کر رہے ہیں"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "سٹینڈرڈ ان پٹ سے امپورٹ کر رہے ہیں"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "امپورٹ فائل پارس نہیں ہو سکی"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "امپورٹ فائل کو ریڈ نہیں کر سکے۔ UTF-8 میں انکوڈڈ نہیں ہے"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے"
+
+#: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "فائل '{filename}' میں ایکسپورٹ کر رہے ہیں"
 
-#: src/settings.py:85
+#: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "فائل '{filename}' میں سیو نہیں کر سکتے۔ اجازت نہیں ملی"
 
-#: src/settings.py:89
+#: gdms/settings.py:222
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1018,134 +645,534 @@ msgid ""
 msgstr ""
 "فائل '{filename}' میں سیو نہیں کر سکتے۔ اس نام کا فولڈر پہلے سے موجود ہے"
 
-#: src/settings.py:94
+#: gdms/settings.py:227
 msgid "Exporting to standard output"
 msgstr "سٹینڈرڈ آؤٹ پٹ میں ایکسپورٹ کر رہے ہیں"
 
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "فائل '{filename}' سے امپورٹ کر رہے ہیں"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "سٹینڈرڈ ان پٹ سے امپورٹ کر رہے ہیں"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "امپورٹ فائل پارس نہیں ہو سکی"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "امپورٹ فائل کو ریڈ نہیں کر سکے۔ UTF-8 میں انکوڈڈ نہیں ہے"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-"امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے"
-
-#: src/settings.py:313
+#: gdms/settings.py:327
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: src/settings.py:365
-#, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "{distro_name} کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "تھیمز"
 
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "اوبنٹو"
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "خول"
 
-#: src/settings.py:388
-msgid "generic system"
-msgstr "جنیرک سسٹم"
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "اَئیکان"
 
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "تیر"
 
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "بیک گرائونڈ"
 
-#: src/window.py:111
-msgid "Appearance"
-msgstr "شکل"
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "قِسم"
 
-#: src/window.py:112
-msgid "Fonts"
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "ڈیفالٹ"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "تصویر"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "رنگ"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "سکرین کی روشنی مدھم کریں"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "موجودہ ڈسپلے کی سیٹنگز اپلائی کریں"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "ریزولوشن، ریفریش ریٹ، مانیٹرز کی پوزیشن، وغیرہ۔"
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "اپلائی"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "رات کی روشنی"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "دکھائیں"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "شیڈول"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "صبح سے شام"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "اپنا شیڈول"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "اوکات"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "شروع"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "ختم"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "رنگ کا ٹمپریچر"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
 msgstr "خط"
 
-#: src/window.py:113
-msgid "Top Bar"
-msgstr "اوپر والی پٹی"
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "اینٹی اےلیاسِنگ"
 
-#: src/window.py:114
-msgid "Sound"
-msgstr "آواز"
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "سٹینڈرڈ"
 
-#: src/window.py:115
-msgid "Mouse & Touchpad"
-msgstr "مائوس اور ٹچ پیڈ"
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "سب پکسل"
 
-#: src/window.py:116
-msgid "Display"
-msgstr "ڈسپلے"
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "کچھ نہیں"
 
-#: src/window.py:117
-msgid "Login Screen"
-msgstr "لاگن سکرین"
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "ہِنٹنگ"
 
-#: src/window.py:119
-msgid "Tools"
-msgstr "آلات"
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "فُل"
 
-#: src/window.py:137
-msgid "Settings applied successfully"
-msgstr "سیٹنگز اپلائی ہو گئی ہیں"
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "مِیڈِیّم"
 
-#: src/window.py:141
-msgid "Failed to apply settings"
-msgstr "سیٹنگز اپلائی نہیں ہو سکیں"
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "تھوڑی"
 
-#: src/window.py:145
-msgid ""
-"Didn't apply. Chosen background image does not exist anymore. Please! choose "
-"again."
-msgstr ""
-"اپلائی نہیں کیا۔ بیک گرائونڈ والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "کھچائو کا انصر"
 
-#: src/window.py:149
-msgid ""
-"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "اپلائی نہیں کیا- لوگو والی تصویر نہیں ملی۔ اس کا دوبارہ انتخاب کریں۔"
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "ریفریش"
 
-#: src/window.py:155
-msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
-"اگر آپ ریبوٹ یا ری لاگن نہیں کرتے تو سسٹم عجیب یا بگی دکھنا شروع ہو سکتا ہے۔"
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "سیشن کی سیٹنگز لوڈ کریں"
 
-#: src/window.py:160
-msgid "Log Out?"
-msgstr "لاگ آؤٹ کریں؟"
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "سیٹنگز کو ریسیٹ کریں"
 
-#: src/window.py:165
-msgid "Cancel"
-msgstr "کینسل"
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "فائل سے امپورٹ کریں"
 
-#: src/window.py:166
-msgid "Log Out"
-msgstr "لاگ آؤٹ"
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "فائل کو ایکسپورٹ کریں"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "تفصیلات"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "بند کریں"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "ریسٹارٹ بٹن ختم کریں"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "یوزر کی لسٹ ختم کریں"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "لوگو دکھائیں"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "یوزر کی لسٹ کے نیچے لوگو دکھائیں یا نہیں"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "لوگو"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "یوزر کی لسٹ کے نیچے دکھانے کیلئے تصویر"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "خوش آمدید کا پیغام"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "بڑا کریں"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "پیغام"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "تیر کا سائیز"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "ڈیفالٹ"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "مِیڈِیّم"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "بڑا"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "زیادہ بڑا"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "سب سے بڑا"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "مائوس"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "پوائنٹر ایکسلریشن"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "آٹومیٹک"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "بند"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "چالو"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "قدرتی سکرولِنگ"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "سکرولِنگ سے مواد جگہ بدلتا ہے نہ کہ ویئو۔"
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "تیر کی سپیڈ"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "ٹچ پیڈ"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "کلک کیلئے ٹَیپ کریں"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "دو انگلیئوں کے ساتھ سکرولِنگ"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "دو انگلیوں کے ساتھ سوائیپ کریں۔"
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "ٹائپ کرتے وقت بند کریں"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "پاور بٹن کا بیحیویر"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "کچھ نہ کریں"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "سسپینڈ کریں"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "ہائبرنیٹ کریں"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "پوچھیں"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "آٹومیٹک پاور سیور"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "بیٹری کم ہونے پر پاور سیور آن کرتا ہے۔"
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "سکرین کی روشنی مدھم کریں"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "کمپیوٹر ان ایکٹو ہونے کی صورت میں سکرین کی روشنی مدھم کرتا ہے۔"
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "سکرین کو بند کریں"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد سکرین کو بند کریں۔"
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "وقفہ"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "منٹس میں ٹائم جس کے بعد سکرین بند ہو جائے گی۔"
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "آٹومیٹک سسپینڈ"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "ان ایکٹیویٹی کے کچھ عرصے بعد کمپیوٹر کو روکتا ہے۔"
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "بیٹری کی پاور پر"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "منٹس میں ٹائم جس کے بعد کمپیوٹر سسپینڈ ہو جائے گا۔"
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "جب چارجر لگا ہو"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "تھیم"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "حد سے اونچی آواز"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "آواز 100% سے بھی اونچی ہونے دیں"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "ایوَنٹ کی آوازیں"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "اندراج کے جواب کی آوازیں"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "شیل کا ڈیفالٹ تھیم"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "اوپر والی پٹی کی ٹویکس شامل کریں"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "شیل کا ڈیفالٹ تھیم ایکسٹرہکٹ کریں"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "ایکسٹریکٹ"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "ٹویکس"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "لکھائی کا رنگ بدلیں"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "لکھائی کا رنگ"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "اوپر والی پٹی میں لکھائی کا رنگ"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "بیک گرائونڈ کا رنگ تبدیل کریں"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "اوپر والی پٹی میں بیک گرائونڈ کا رنگ"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "تیر ختم کریں"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "مڑے ہوئے کونے ختم کریں"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "ایکسیسیبلیٹی"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "ایکسیسیبیلیٹی مینیو ہمیشہ شو ہو"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "گھڑی"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "ہفتے کا دن دکھائیں"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "سیکنڈ دکھائیں"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "ٹائم کی فارمیٹ"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "ش/م"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 گھنٹے"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "بیٹری کی شرح دکھائیں"
+
+#~ msgid "Fixed:"
+#~ msgstr "ٹھیک کیا:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>نئے آپشن</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "تیر کا سائز بدلنے کا آپشن"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "ایک مرتبہ عطیہ کی درخواست"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>رویہ کی تبدیلیاں</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "درست کیا: پیور او ایس پر رن نہیں ہو سکتی تھی"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "لاگن مینیجر کی سیٹنگز"
+
+#, python-brace-format
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "{distro_name} کےلئے جی ریسورس سیٹنگز اپلائی ہو رہی ہیں …"
+
+#~ msgid "Ubuntu"
+#~ msgstr "اوبنٹو"
+
+#~ msgid "generic system"
+#~ msgstr "جنیرک سسٹم"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "ابنٹو کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "غیر ابنٹو سسٹمز کےلئے جی ریسورس سیٹنگز ریسیٹ ہو رہی ہیں …"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1326,9 +1353,6 @@ msgstr "لاگ آؤٹ"
 #~ msgid "Wider application window on first launch"
 #~ msgstr "پہلی بار ایپلیکیشن چلانے پر مزید چوڑی ونڈو"
 
-#~ msgid "Fixed:"
-#~ msgstr "ٹھیک کیا:"
-
 #, fuzzy
 #~| msgid "Welcome message could not contain single qoutes"
 #~ msgid "Welcome message could not contain single quotes"
@@ -1427,9 +1451,6 @@ msgstr "لاگ آؤٹ"
 
 #~ msgid "Fixed: A fatal bug"
 #~ msgstr "درستگی: بہت ہنگامی مسئلہ"
-
-#~ msgid "Mouse Settings"
-#~ msgstr "مائوس کی سیٹنگز"
 
 #~ msgid "Flatpak Support"
 #~ msgstr "فلَیٹپَیک کی سپورٹ"

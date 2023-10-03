@@ -1,9 +1,9 @@
 /subprojects/*/
 /subprojects/wrapdb.json
 /*flatpak*
+/.vscode/
 /cache/
 /tmp/
-/.vscode/
 
 # Python
 __pycache__/

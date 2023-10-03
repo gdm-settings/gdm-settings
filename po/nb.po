@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-03-22 14:41+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/gdm-"
@@ -42,12 +42,22 @@ msgid "The image file to use as GDM background"
 msgstr "Bildefil å bruke som GDM-bakgrunn"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "Bakgrunnsbilde"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Bakgrunnsfarge"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 #, fuzzy
 msgid "The Color to use as GDM background"
 msgstr "Helfarge å bruke som GDM-bakgrunn"
@@ -270,10 +280,11 @@ msgid "Top bar background color"
 msgstr "Bakgrunnsfarge for toppfelt"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Innstillinger for innloggingsbehandler"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "Tilbakestill innstillinger"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -289,97 +300,39 @@ msgstr ""
 "Endre GDM-innstillinger; Bruk drakt og bakgrunn, endre pekerdrakt, "
 "ikondrakt, og nattlysinnstillinger, med mer."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
-msgstr "<em>Nye alternativer</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Mulighet til å skru av tilgjengelighetsmenyen når den ikke brukes"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
-msgstr "Mulighet til å endre pekerstørrelse"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
-msgstr "En engangsforespørsel om donasjon"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
-msgstr "Donasjonsalternativ i hamburgermenyen"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Adferdsendringer</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Ordentlige navn vist for drakter istedenfor deres mappenavn"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Drakter kun for pekerendringer vises ikke ved valg av ikondrakt"
-
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Opphavsrett 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Allan Nordhøy <epost@anotheragency.no>"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Vis programversjon"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 #, fuzzy
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Sett detaljnivå manuelt (fra 0 til 5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "Nivå"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 #, fuzzy
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Skru på ordrikt modus (alias for «--verbosity=5»)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Skru på stille modus (alias for «--verbosity=0»)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, fuzzy, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Ugyldig detaljnivå «{level}», må være fra 1-5."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 #, fuzzy
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
@@ -389,7 +342,7 @@ msgstr ""
 "Følgende programmer må være installert <b>på vertssystemet</b> for at "
 "programmet skal fungerer rett, men de er ikke installert på vertssystemet."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 #, fuzzy
 msgid ""
 "This app requires the following software to function properly but they are "
@@ -398,19 +351,19 @@ msgstr ""
 "Dette programmet krever følgende programvare for å fungere, men de er ikke "
 "installert."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, fuzzy, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -419,19 +372,32 @@ msgstr ""
 "Klikk <a href=\"{url}\">her</a> for instruks om hvordan du installerer disse "
 "avhengighetene på systemet ditt."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Manglende avhengigheter"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "Forvalgt skalldrakt"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Donasjonsforespørsel"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -443,104 +409,96 @@ msgstr ""
 "❤️\n"
 "Jeg setter stor pris på det."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "Ikke interessert"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Doner"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "Innstillinger ble gjeninnlastet"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 #, fuzzy
 msgid "Session settings loaded successfully"
 msgstr "Øktinnstillinger ble innlastet"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 #, fuzzy
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Innlasting av øktinnstillinger støttes ikke i Flatpak-versjonen"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 #, fuzzy
 msgid "Reset settings successfully"
 msgstr "Innstillinger tilbakestilt"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 #, fuzzy
 msgid "Failed to reset settings"
 msgstr "Klarte ikke å tilbakestille innstillingene"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "Importer"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 #, fuzzy
 msgid "Settings were successfully imported from file"
 msgstr "Innstillinger importert fra fil"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "Kunne ikke importere. Filen er ugyldig."
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "Innstillingene ble importert"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 #, fuzzy
 msgid "Failed to export. Permission denied"
 msgstr "Klarte ikke å eksportere. Mangler tilgang."
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 #, fuzzy
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Klarte ikke å eksportere. En mappe med det navnet finnes allerede."
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Velg fil"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(Ingen)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
+#: gdms/gui/about.py:101
 #, fuzzy
-#| msgid "Choose File"
-msgid "Choose"
-msgstr "Velg fil"
+#| msgid "Copyright 2021-2022 Mazhar Hussain"
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Opphavsrett 2021–2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-#, fuzzy
-#| msgid "Image"
-msgid "Images"
-msgstr "Bilde"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Allan Nordhøy <epost@anotheragency.no>"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Alle filer"
-
-#: src/lib/file_choosers.py:119
-#, fuzzy
-#| msgid "Choose File"
-msgid "Choose Image"
-msgstr "Velg fil"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "Brukte nåværende skjerminnstillinger"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "Klarte ikke å bruke nåværende skjerminnstillinger"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 #, fuzzy
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
@@ -555,506 +513,168 @@ msgstr ""
 "For å opprette den filen automatisk kan du åpne «Innstillinger» og endre "
 "noen av skjermalternativene der."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 #, fuzzy
 msgid "Monitor Settings Not Found"
 msgstr "Fant ikke skjerminnstillinger"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Forvalgt skalldrakt pakket ut til «{folder}» som «{name}»"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Klarte ikke å pakke ut forvalgt drakt"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Drakter"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Velg fil"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Skall"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(Ingen)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Ikoner"
+#: gdms/gui/widgets.py:51
+#, fuzzy
+#| msgid "Choose File"
+msgid "Choose"
+msgstr "Velg fil"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Peker"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Bakgrunn"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Type"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Forvalg"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
+#: gdms/gui/widgets.py:110
+#, fuzzy
+#| msgid "Image"
+msgid "Images"
 msgstr "Bilde"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Farge"
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Alle filer"
 
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Bilde å bruke som bakgrunn"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Farge å bruke som bakgrunn"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Bruk nåværende skjerminnstillinger"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Oppløsning, oppdateringsfrekvens, skjermposisjoner, osv."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Bruk"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Nattlys"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Skru på"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Tidsplan"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Solnedgang til soloppgang"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Manuell plan"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Tider"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "Fra"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "Til"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Fargetemperatur"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Skrift"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Kantutjevning"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Forvalg"
-
-#: src/resources/ui/fonts-page.blp:24
+#: gdms/gui/widgets.py:119
 #, fuzzy
-msgid "Subpixel"
-msgstr "Underpiksel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Ingen"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Hinting"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Full"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Middels"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Lett"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Skaleringsfaktor"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Gjenoppfrisk"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Last inn øktinnstillinger"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Tilbakestill innstillinger"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Importer fra fil"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Eksporter til fil"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "Om"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Avslutt"
-
-#: src/resources/ui/login-screen-page.blp:12
-#, fuzzy
-msgid "Disable Restart Buttons"
-msgstr "Skru av omstartsknapper"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Skru av brukerliste"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Skru på logo"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Hvorvidt en logo skal vises under brukerlisten"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "Bilde å vise under brukerlisten"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Velkomstmelding"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Forstørr"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Melding"
-
-#: src/resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
-msgid "Cursor Size"
-msgstr "Peker"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Forvalg"
-
-#: src/resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Middels"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Stor"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Større"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "Størst"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Mus"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "Pekerakselerasjon"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Automatisk"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Avskrudd"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Påskrudd"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Naturlig rulling"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Rulling flytter innholdet, ikke visningen."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "Pekerhastighet"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Pekeflate"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Trykk for å klikke"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "Tofingerrulling"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "Rull ved å dra med to fingre."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Skru av under skriving"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Oppførsel for av/på-knapp"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Ikke gjør noe"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Hvilemodus"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Dvalemodus"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Spør"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Automatisk strømsparing"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Skru på strømsparingsmodus når batterinivået er lavt"
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Senk skjermens lysstyrke"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Reduserer skjermlysstyrken når datamaskinen er inaktiv."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Skru av skjerm"
-
-#: src/resources/ui/power-page.blp:29
-#, fuzzy
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Hvorvidt skjermen skal skrus av etter en stunds inaktivitet."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Forsinkelse"
-
-#: src/resources/ui/power-page.blp:39
-#, fuzzy
-msgid "Time in minutes after which screen will turn off."
-msgstr "Antall minutter til skjermen skrur seg av."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Automatisk hvilemodus"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Setter datamaskinen på pause etter en tids inaktivitet."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "På batteridrift"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-#, fuzzy
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Antall minutter etterpå datamaskinen går i hvilemodus."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "Når innplugget"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Drakt"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Overforsterkning"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Tillat økning av lydstyrken til over 100%"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Begivenhetslyder"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Inndatatilbakemeldingslyder"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Forvalgt skalldrakt"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Inkluder toppfeltsjusteringer"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Pakk ut forvalgt skalldrakt"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Pakk ut"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Justeringer"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Endre tekstfarge"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Tekstfarge"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Tekstfargen i toppfeltet"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Endre bakgrunnsfarge"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Farge for toppfeltets bakgrunn"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Skru av piler"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Skru av avrundede hjørner"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Tilgjengelighet"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Alltid vis tilgjengelighetsmenyen"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Klokke"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Vis ukedag"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Vis sekunder"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Tidsformat"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "AM/PM"
-
-#: src/resources/ui/top-bar-page.blp:81
-#, fuzzy
-msgid "24 Hours"
-msgstr "24-timersklokke"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
+#| msgid "Choose File"
+msgid "Choose Image"
+msgstr "Velg fil"
+
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr "Utseende"
+
+#: gdms/gui/window.py:114
+msgid "Fonts"
+msgstr "Skrifter"
+
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr "Toppfelt"
+
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr "Lyd"
+
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr "Mus og pekeflate"
+
+#: gdms/gui/window.py:118
+msgid "Display"
+msgstr "Skjerm"
+
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr "Innloggingsskjerm"
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
 msgstr "Effekt"
 
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Vis batteriprosent"
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr "Verktøy"
 
-#: src/settings.py:80
+#: gdms/gui/window.py:139
+#, fuzzy
+msgid "Settings applied successfully"
+msgstr "Innstillinger iverksatt"
+
+#: gdms/gui/window.py:143
+#, fuzzy
+msgid "Failed to apply settings"
+msgstr "Klarte ikke å bruke innstillinger"
+
+#: gdms/gui/window.py:147
+#, fuzzy
+msgid ""
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
+msgstr "Hadde ingen innvirkning fordi bakgrunnsbildet ikke finnes. Velg en ny."
+
+#: gdms/gui/window.py:151
+#, fuzzy
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr "Hadde ingen innvirkning fordi valgt logo ikke finnes. Velg en ny."
+
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+"Systemet kan begynne å se rart/feilaktig ut til du logger inn igjen eller "
+"utfører omstart."
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr "Logg ut?"
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr "Logg ut"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Importerer fra filen «{filename}»."
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Importerer fra forvalgt inndata"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "Kunne ikke tolke importfil"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "Kunne ikke lese importfil. Ikke i UTF-8-koding"
+
+#: gdms/settings.py:188
+#, fuzzy, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Importert fil mangler delen «{section_name}»"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr "Importert fil har ikke nøkkelen «{key_name}» i «{section_name}»-delen"
+
+#: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Eksporterer til filen «{filename}»"
 
-#: src/settings.py:85
+#: gdms/settings.py:218
 #, fuzzy, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Kan ikke skrive til filen «{filename}». Mangler tilgang."
 
-#: src/settings.py:89
+#: gdms/settings.py:222
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -1063,138 +683,542 @@ msgstr ""
 "Kan ikke skrive til filen «{filename}». En mappe med samme navn finnes "
 "allerede."
 
-#: src/settings.py:94
+#: gdms/settings.py:227
 msgid "Exporting to standard output"
 msgstr "Eksporterer til forvalgt utdata"
 
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "Importerer fra filen «{filename}»."
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Importerer fra forvalgt inndata"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "Kunne ikke tolke importfil"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "Kunne ikke lese importfil. Ikke i UTF-8-koding"
-
-#: src/settings.py:117
-#, fuzzy, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "Importert fil mangler delen «{section_name}»"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr "Importert fil har ikke nøkkelen «{key_name}» i «{section_name}»-delen"
-
-#: src/settings.py:313
+#: gdms/settings.py:327
 msgid "Backing up default shell theme …"
 msgstr "Sikkerhetskopierer forvalgt skalldrakt …"
 
-#: src/settings.py:365
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Drakter"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Skall"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Ikoner"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Peker"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Bakgrunn"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Type"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Forvalg"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Bilde"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Farge"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "Bilde å bruke som bakgrunn"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "Senk skjermens lysstyrke"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "Farge å bruke som bakgrunn"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Bruk nåværende skjerminnstillinger"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Oppløsning, oppdateringsfrekvens, skjermposisjoner, osv."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Bruk"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Nattlys"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Skru på"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Tidsplan"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Solnedgang til soloppgang"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Manuell plan"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Tider"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "Fra"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "Til"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Fargetemperatur"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Skrift"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Kantutjevning"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Forvalg"
+
+#: resources/ui/fonts-page.blp:24
+#, fuzzy
+msgid "Subpixel"
+msgstr "Underpiksel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Ingen"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Hinting"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Full"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Middels"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Lett"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Skaleringsfaktor"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Gjenoppfrisk"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Last inn øktinnstillinger"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Tilbakestill innstillinger"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Importer fra fil"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Eksporter til fil"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Om"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Avslutt"
+
+#: resources/ui/login-screen-page.blp:12
+#, fuzzy
+msgid "Disable Restart Buttons"
+msgstr "Skru av omstartsknapper"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Skru av brukerliste"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Skru på logo"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Hvorvidt en logo skal vises under brukerlisten"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "Bilde å vise under brukerlisten"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Velkomstmelding"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Forstørr"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Melding"
+
+#: resources/ui/pointing-page.blp:10
+#, fuzzy
+#| msgid "Cursor"
+msgid "Cursor Size"
+msgstr "Peker"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Forvalg"
+
+#: resources/ui/pointing-page.blp:16
+#, fuzzy
+#| msgid "Medium"
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Middels"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Stor"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Større"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "Størst"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Mus"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "Pekerakselerasjon"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Avskrudd"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Påskrudd"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Naturlig rulling"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Rulling flytter innholdet, ikke visningen."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "Pekerhastighet"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Pekeflate"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Trykk for å klikke"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "Tofingerrulling"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "Rull ved å dra med to fingre."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Skru av under skriving"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Oppførsel for av/på-knapp"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Ikke gjør noe"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Hvilemodus"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Dvalemodus"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Spør"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Automatisk strømsparing"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Skru på strømsparingsmodus når batterinivået er lavt"
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Senk skjermens lysstyrke"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Reduserer skjermlysstyrken når datamaskinen er inaktiv."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Skru av skjerm"
+
+#: resources/ui/power-page.blp:29
+#, fuzzy
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Hvorvidt skjermen skal skrus av etter en stunds inaktivitet."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Forsinkelse"
+
+#: resources/ui/power-page.blp:39
+#, fuzzy
+msgid "Time in minutes after which screen will turn off."
+msgstr "Antall minutter til skjermen skrur seg av."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Automatisk hvilemodus"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Setter datamaskinen på pause etter en tids inaktivitet."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "På batteridrift"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+#, fuzzy
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Antall minutter etterpå datamaskinen går i hvilemodus."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "Når innplugget"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Drakt"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Overforsterkning"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Tillat økning av lydstyrken til over 100%"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Begivenhetslyder"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Inndatatilbakemeldingslyder"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Forvalgt skalldrakt"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Inkluder toppfeltsjusteringer"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Pakk ut forvalgt skalldrakt"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Pakk ut"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Justeringer"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Endre tekstfarge"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Tekstfarge"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Tekstfargen i toppfeltet"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Endre bakgrunnsfarge"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Farge for toppfeltets bakgrunn"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Skru av piler"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Skru av avrundede hjørner"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Tilgjengelighet"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Alltid vis tilgjengelighetsmenyen"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Klokke"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Vis ukedag"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Vis sekunder"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Tidsformat"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "AM/PM"
+
+#: resources/ui/top-bar-page.blp:81
+#, fuzzy
+msgid "24 Hours"
+msgstr "24-timersklokke"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Vis batteriprosent"
+
+#~ msgid "Fixed:"
+#~ msgstr "Fikset:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Nye alternativer</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Mulighet til å skru av tilgjengelighetsmenyen når den ikke brukes"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Mulighet til å endre pekerstørrelse"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "En engangsforespørsel om donasjon"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Donasjonsalternativ i hamburgermenyen"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Adferdsendringer</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Ordentlige navn vist for drakter istedenfor deres mappenavn"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Drakter kun for pekerendringer vises ikke ved valg av ikondrakt"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Innstillinger for innloggingsbehandler"
+
 #, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Bruker GResource-innstilling for {distro_name} …"
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Bruker GResource-innstilling for {distro_name} …"
 
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
 
-#: src/settings.py:388
-msgid "generic system"
-msgstr "generisk system"
+#~ msgid "generic system"
+#~ msgstr "generisk system"
 
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Tilbakestiller GResource-innstillinger for Ubuntu …"
 
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr ""
-"Tilbakestiller GResource-innstillinger for systemer som ikke er Ubuntu …"
-
-#: src/window.py:111
-msgid "Appearance"
-msgstr "Utseende"
-
-#: src/window.py:112
-msgid "Fonts"
-msgstr "Skrifter"
-
-#: src/window.py:113
-msgid "Top Bar"
-msgstr "Toppfelt"
-
-#: src/window.py:114
-msgid "Sound"
-msgstr "Lyd"
-
-#: src/window.py:115
-msgid "Mouse & Touchpad"
-msgstr "Mus og pekeflate"
-
-#: src/window.py:116
-msgid "Display"
-msgstr "Skjerm"
-
-#: src/window.py:117
-msgid "Login Screen"
-msgstr "Innloggingsskjerm"
-
-#: src/window.py:119
-msgid "Tools"
-msgstr "Verktøy"
-
-#: src/window.py:137
-#, fuzzy
-msgid "Settings applied successfully"
-msgstr "Innstillinger iverksatt"
-
-#: src/window.py:141
-#, fuzzy
-msgid "Failed to apply settings"
-msgstr "Klarte ikke å bruke innstillinger"
-
-#: src/window.py:145
-#, fuzzy
-msgid ""
-"Didn't apply. Chosen background image does not exist anymore. Please! choose "
-"again."
-msgstr "Hadde ingen innvirkning fordi bakgrunnsbildet ikke finnes. Velg en ny."
-
-#: src/window.py:149
-#, fuzzy
-msgid ""
-"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "Hadde ingen innvirkning fordi valgt logo ikke finnes. Velg en ny."
-
-#: src/window.py:155
-msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
-"Systemet kan begynne å se rart/feilaktig ut til du logger inn igjen eller "
-"utfører omstart."
-
-#: src/window.py:160
-msgid "Log Out?"
-msgstr "Logg ut?"
-
-#: src/window.py:165
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/window.py:166
-msgid "Log Out"
-msgstr "Logg ut"
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr ""
+#~ "Tilbakestiller GResource-innstillinger for systemer som ikke er Ubuntu …"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1275,9 +1299,6 @@ msgstr "Logg ut"
 
 #~ msgid "Added:"
 #~ msgstr "Tillagt:"
-
-#~ msgid "Fixed:"
-#~ msgstr "Fikset:"
 
 #~ msgid "French"
 #~ msgstr "Fransk"

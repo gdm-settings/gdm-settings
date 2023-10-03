@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
-"PO-Revision-Date: 2023-08-20 22:55+0000\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
+"PO-Revision-Date: 2023-10-02 20:01+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -42,12 +42,20 @@ msgid "The image file to use as GDM background"
 msgstr "GDM arka planı olarak kullanılacak resim"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+msgid "Background Image Adjustment"
+msgstr "Arka Plan Resmi Ayarı"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr "Arka plan görüntüsünün ayarlanma yöntemi."
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Arka Plan Rengi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "GDM arka planı olarak kullanılacak Renk"
 
@@ -260,10 +268,9 @@ msgid "Top bar background color"
 msgstr "Tepe çubuğu arka plan rengi"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Giriş Yöneticisi Ayarları"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+msgid "GDM Settings"
+msgstr "GDM Ayarları"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -280,93 +287,37 @@ msgstr ""
 "uygulayın, imleç temasını, simge temasını ve gece ışığı ayarlarını "
 "değiştirin."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Düzeltildi: PureOS'ta çalışamıyor"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
-msgstr "<em>Yeni Seçenekler</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Kullanılmadığında erişilebilir menüyü devre dışı bırakma seçeneği"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
-msgstr "İmleç boyutunu değiştirme seçeneği"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-msgid "A one-time donation request"
-msgstr "Tek seferlik bağış talebi"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
-msgstr "Ana menüde bağış seçeneği"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Davranış Değişiklikleri</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Temalar için dizin adı yerine uygun adlar gösterilir"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Simge teması seçerken imleç temaları gösterilmez"
-
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Telif Hakkı 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Sabri Ünal &lt;libreajans@gmail.com&gt;"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Uygulama sürümünü göster"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Ayrıntı düzeyini elle ayarla (0 ile 5 arası)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "DÜZEY"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Ayrıntılı kipi etkinleştir (--verbosity=5 takma adı)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Sessiz kipi etkinleştir (--verbosity=0 takma adı)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Geçersiz ayrıntı düzeyi {level}. 0 ile 5 arasında olmalıdır."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -375,7 +326,7 @@ msgstr ""
 "Bu uygulamanın düzgün çalışması için <b>ana sistemde</b> aşağıdaki "
 "programların yüklü olması gerekiyor, ancak yüklü değiller."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -383,19 +334,19 @@ msgstr ""
 "Uygulama düzgün çalışabilmek için aşağıdaki yazılımlara ihtiyaç duyuyor "
 "fakat yüklü değiller."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "<b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -404,19 +355,33 @@ msgstr ""
 "Bağımlılıkların sisteminize nasıl kurulacağına ilişkin talimatlar için <a "
 "href=\"{url}\">buraya</a> tıklayın."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Eksik Bağımlılıklar"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "Tamam"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+msgid "Default Shell Theme File Lost"
+msgstr "Öntanımlı Shell Teması Kayıp"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+"Uygulamanın değiştirilmemiş öntanımlı shell tema dosyasına ihtiyacı var "
+"ancak bulamadı. Sorunu düzeltmek için 'gnome-shell-common' ya da 'gnome-"
+"shell' paketini yeniden kurun."
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Bağış Talebi"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -428,91 +393,87 @@ msgstr ""
 "❤️\n"
 "Gerçekten minnettar olurum."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "İlgilenmiyorum"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Bağış Yap"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "Ayarlar yeniden yüklendi"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "Oturum ayarları başarıyla yüklendi"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Flatpak sürümünde oturum ayarlarını yükleme desteklenmez"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "Ayarlar sıfırlandı"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "Ayarlar sıfırlanamadı"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "İçe aktar"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "Ayarlar dosyadan başarıyla içe aktarıldı"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "İçe aktarılamadı. Dosya geçersiz"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "Ayarlar dışa aktarıldı"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "Dışa aktarılamadı. İzin reddedildi"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Dışa aktarılamadı. Bu ada sahip bir dizin zaten var"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Dosya Seç"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(Yok)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "Seç"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Telif Hakkı 2021–2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "Resimler"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Sabri Ünal &lt;libreajans@gmail.com&gt;"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Tüm Dosyalar"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "Resim Seç"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "Uygulanan geçerli ekran ayarları"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "Geçerli ekran ayarları uygulanamadı"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -526,630 +487,691 @@ msgstr ""
 "Bu dosyayı kendiliğinden oluşturmak için, sistem 'Ayarlar'ını açın ve orada "
 "bazı görüntüleme seçeneklerini değiştirin."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "Monitör Ayarları Bulunamadı"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr "Öntanımlı shell teması '{folder}' klasörüne '{name}' adıyla çıkartıldı"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Öntanımlı shell teması çıkartılamadı"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Temalar"
-
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
-
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Simgeler"
-
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "İmleç"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Arka plan"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Tür"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Öntanımlı"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
-msgstr "Resim"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Renk"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Arka plan olarak kullanılacak resim"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Arka plan olarak kullanılacak renk"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Geçerli ekran ayarlarını uygula"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Uygula"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Gece Işığı"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Etkinleştir"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Zamanla"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Gün Batımından Gün Doğumuna"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Elle Zamanla"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Saatler"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "Başlangıç Saati"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "Bitiş Saati"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Renk Sıcaklığı"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Yazı tipi"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Kenar yumuşatma"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Standart"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Alt piksel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Yok"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Düzeltme"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Tam"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Orta"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Düşük"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Ölçekleme Oranı"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Tazeleme"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Oturum ayarlarını yükle"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Ayarları sıfırla"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Dosyadan içe aktar"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Dosyaya dışa aktar"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "Hakkında"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Çık"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Yeniden Başlatma Düğmelerini Pasifleştir"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Kullanıcı Listesini Pasifleştir"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Logo'yu Etkinleştir"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Kullanıcı listesinin altında logo gösterilme durumu"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "Kullanıcı listesinin altında gösterilecek resim"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Hoşgeldin Mesajı"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Büyüt"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Mesaj"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "İmleç Boyutu"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Öntanımlı"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Orta"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Büyük"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Daha büyük"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "En büyük"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Fare"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "İmleç Hızlandırma"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Kendiliğinden"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Pasif"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Etkin"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Doğal Kaydırma"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Kaydırma, görünümü değil içeriği taşır."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "İmleç Hızı"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Dokunmatik yüzey"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Tıklamak için Dokun"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "İki Parmak Kaydırma"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "İki parmağınızla kaydırın."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Yazarken Devre Dışı Bırak"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Güç Düğmesi Davranışı"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Hiçbir Şey Yapma"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Askıya al"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Derin uyku"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Sor"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Kendiliğinden Güç Tasarrufu"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Pil zayıfladığında güç tasarrufu modunu etkinleştirir."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Ekranı Karart"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Bilgisayar etkin olmadığında ekran parlaklığını azaltır."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Ekranı Kapat"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Belirli bir süre kullanılmadığında ekranın kapatılıp kapatılmayacağı."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Gecikme"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "Ekranın kapanacağı dakika cinsinden süre."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Kendiliğinden Askıya Al"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Bir süre işlem yapılmadığında bilgisayarı duraklatır."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "Pil Gücünde"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Bilgisayarın askıya alınacağı dakika cinsinden süre."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "Fişe Takılı Olduğunda"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Tema"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Aşırı Yükseltme"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Sesin %100’ü geçmesine izin ver"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Olay Sesleri"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Giriş Geri Bildirim Sesleri"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Öntanımlı Shell Teması"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Tepe Çubuğu İnce Ayarlarını Dahil Et"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Öntanımlı shell temasını çıkart"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Çıkart"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "İnce Ayarlar"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Metin Rengini Değiştir"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Metin Rengi"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Tepe çubuktaki metnin rengi"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Arka Plan Rengini Değiştir"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Tepe çubuğu arka planının rengi"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Okları Pasifleştir"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Yuvarlatılmış Köşeleri Pasifleştir"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Erişilebilirlik"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Erişilebilirlik Menüsünü Her Zaman Göster"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Saat"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Haftanın Günlerini Göster"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Saniyeleri Göster"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Zaman Biçimi"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "ÖÖ/ÖS"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 Saat"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
-msgid "Power"
-msgstr "Güç"
-
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Batarya yüzdesini göster"
-
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr "'{filename}' dosyasına dışa aktarılıyor"
-
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "'{filename}' dosyasına yazılamıyor. İzin reddedildi"
-
-#: src/settings.py:89
-#, python-brace-format
-msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
-msgstr "'{filename}' dosyasına yazılamıyor. Aynı ada sahip bir dizin zaten var"
-
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr "Standart çıktıya dışa aktarma"
-
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "'{filename}' dosyasından içe aktarılıyor"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Standart girdiden içe aktarma"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "İçe aktarma dosyası ayrıştırılamadı"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "İçe aktarma dosyası okunamadı. UTF-8 olarak kodlanmamış"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "İçe aktarılan dosyada '{section_name}' bölümü yok"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
-"İçe aktarılan dosyanın '{section_name}' bölümünde '{key_name}' anahtarı yok"
-
-#: src/settings.py:313
-msgid "Backing up default shell theme …"
-msgstr "Öntanımlı shell teması yedekleniyor …"
-
-#: src/settings.py:365
-#, python-brace-format
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "{distro_name} için GResource ayarları uygulanıyor…"
-
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr "Ubuntu"
-
-#: src/settings.py:388
-msgid "generic system"
-msgstr "genel sistem"
-
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
-
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
-
-#: src/window.py:111
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Dosya Seç"
+
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(Yok)"
+
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "Seç"
+
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr "Resimler"
+
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Tüm Dosyalar"
+
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "Resim Seç"
+
+#: gdms/gui/window.py:113
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/window.py:112
+#: gdms/gui/window.py:114
 msgid "Fonts"
 msgstr "Yazı Tipleri"
 
-#: src/window.py:113
+#: gdms/gui/window.py:115
 msgid "Top Bar"
 msgstr "Tepe Çubuğu"
 
-#: src/window.py:114
+#: gdms/gui/window.py:116
 msgid "Sound"
 msgstr "Ses"
 
-#: src/window.py:115
+#: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
 msgstr "Fare ve Dokunmatik Yüzey"
 
-#: src/window.py:116
+#: gdms/gui/window.py:118
 msgid "Display"
 msgstr "Ekran"
 
-#: src/window.py:117
+#: gdms/gui/window.py:119
 msgid "Login Screen"
 msgstr "Giriş Ekranı"
 
-#: src/window.py:119
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+msgid "Power"
+msgstr "Güç"
+
+#: gdms/gui/window.py:121
 msgid "Tools"
 msgstr "Araçlar"
 
-#: src/window.py:137
+#: gdms/gui/window.py:139
 msgid "Settings applied successfully"
 msgstr "Ayarlar uygulandı"
 
-#: src/window.py:141
+#: gdms/gui/window.py:143
 msgid "Failed to apply settings"
 msgstr "Ayarlar uygulanamadı"
 
-#: src/window.py:145
+#: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Uygulanmadı. Seçilen arka plan resmi artık mevcut değil. Lütfen tekrar seçin."
 
-#: src/window.py:149
+#: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr "Uygulanamadı. Seçilen logo artık yok. Lütfen tekrar seçin."
 
-#: src/window.py:155
+#: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Yeniden giriş yapana veya yeniden başlatana kadar sistem garip/hatalı "
 "görünmeye başlayabilir."
 
-#: src/window.py:160
+#: gdms/gui/window.py:162
 msgid "Log Out?"
 msgstr "Oturum Kapatılsın Mı?"
 
-#: src/window.py:165
+#: gdms/gui/window.py:167
 msgid "Cancel"
 msgstr "İptal Et"
 
-#: src/window.py:166
+#: gdms/gui/window.py:168
 msgid "Log Out"
 msgstr "Oturumu Kapat"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "'{filename}' dosyasından içe aktarılıyor"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Standart girdiden içe aktarma"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "İçe aktarma dosyası ayrıştırılamadı"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "İçe aktarma dosyası okunamadı. UTF-8 olarak kodlanmamış"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "İçe aktarılan dosyada '{section_name}' bölümü yok"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+"İçe aktarılan dosyanın '{section_name}' bölümünde '{key_name}' anahtarı yok"
+
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "'{filename}' dosyasına dışa aktarılıyor"
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "'{filename}' dosyasına yazılamıyor. İzin reddedildi"
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr "'{filename}' dosyasına yazılamıyor. Aynı ada sahip bir dizin zaten var"
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr "Standart çıktıya dışa aktarma"
+
+#: gdms/settings.py:327
+msgid "Backing up default shell theme …"
+msgstr "Öntanımlı shell teması yedekleniyor …"
+
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Temalar"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Simgeler"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "İmleç"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Arka plan"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Tür"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Resim"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Renk"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "Arka plan olarak kullanılacak resim"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr "Görüntü Ayarı"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Fit To Screen"
+msgstr "Ekrana Sığdır"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr "Yinele"
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "Arka plan olarak kullanılacak renk"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Geçerli ekran ayarlarını uygula"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Çözünürlük, yenileme hızı, monitör konumları vb."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Uygula"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Gece Işığı"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Etkinleştir"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Zamanla"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Gün Batımından Gün Doğumuna"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Elle Zamanla"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Saatler"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "Başlangıç Saati"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "Bitiş Saati"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Renk Sıcaklığı"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Yazı tipi"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Kenar yumuşatma"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Standart"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Alt piksel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Yok"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Düzeltme"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Tam"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Orta"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Düşük"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Ölçekleme Oranı"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Tazeleme"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Oturum ayarlarını yükle"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Ayarları sıfırla"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Dosyadan içe aktar"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Dosyaya dışa aktar"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Hakkında"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Çık"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Yeniden Başlatma Düğmelerini Pasifleştir"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Kullanıcı Listesini Pasifleştir"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Logo'yu Etkinleştir"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Kullanıcı listesinin altında logo gösterilme durumu"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "Kullanıcı listesinin altında gösterilecek resim"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Hoşgeldin Mesajı"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Büyüt"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Mesaj"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "İmleç Boyutu"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Öntanımlı"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Orta"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Büyük"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Daha büyük"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "En büyük"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Fare"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "İmleç Hızlandırma"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Kendiliğinden"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Pasif"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Etkin"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Doğal Kaydırma"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Kaydırma, görünümü değil içeriği taşır."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "İmleç Hızı"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Dokunmatik yüzey"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Tıklamak için Dokun"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "İki Parmak Kaydırma"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "İki parmağınızla kaydırın."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Yazarken Devre Dışı Bırak"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Güç Düğmesi Davranışı"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Hiçbir Şey Yapma"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Askıya al"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Derin uyku"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Sor"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Kendiliğinden Güç Tasarrufu"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Pil zayıfladığında güç tasarrufu modunu etkinleştirir."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Ekranı Karart"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Bilgisayar etkin olmadığında ekran parlaklığını azaltır."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Ekranı Kapat"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Belirli bir süre kullanılmadığında ekranın kapatılıp kapatılmayacağı."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Gecikme"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "Ekranın kapanacağı dakika cinsinden süre."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Kendiliğinden Askıya Al"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Bir süre işlem yapılmadığında bilgisayarı duraklatır."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "Pil Gücünde"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Bilgisayarın askıya alınacağı dakika cinsinden süre."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "Fişe Takılı Olduğunda"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Tema"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Aşırı Yükseltme"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Sesin %100’ü geçmesine izin ver"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Olay Sesleri"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Giriş Geri Bildirim Sesleri"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Öntanımlı Shell Teması"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Tepe Çubuğu İnce Ayarlarını Dahil Et"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Öntanımlı shell temasını çıkart"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Çıkart"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "İnce Ayarlar"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Metin Rengini Değiştir"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Metin Rengi"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Tepe çubuktaki metnin rengi"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Arka Plan Rengini Değiştir"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Tepe çubuğu arka planının rengi"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Okları Pasifleştir"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Yuvarlatılmış Köşeleri Pasifleştir"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Erişilebilirlik"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Erişilebilirlik Menüsünü Her Zaman Göster"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Saat"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Haftanın Günlerini Göster"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Saniyeleri Göster"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Zaman Biçimi"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "ÖÖ/ÖS"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 Saat"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Batarya yüzdesini göster"
+
+#~ msgid "Fixed:"
+#~ msgstr "Düzeltildi:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Yeni Seçenekler</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Kullanılmadığında erişilebilir menüyü devre dışı bırakma seçeneği"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "İmleç boyutunu değiştirme seçeneği"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "Tek seferlik bağış talebi"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Ana menüde bağış seçeneği"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Davranış Değişiklikleri</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Temalar için dizin adı yerine uygun adlar gösterilir"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Simge teması seçerken imleç temaları gösterilmez"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "Düzeltildi: PureOS'ta çalışamıyor"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Giriş Yöneticisi Ayarları"
+
+#, python-brace-format
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "{distro_name} için GResource ayarları uygulanıyor…"
+
+#~ msgid "Ubuntu"
+#~ msgstr "Ubuntu"
+
+#~ msgid "generic system"
+#~ msgstr "genel sistem"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Ubuntu için GResource ayarları sıfırlanıyor…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "Ubuntu olmayan sistemler için GResource ayarları sıfırlanıyor…"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1356,9 +1378,6 @@ msgstr "Oturumu Kapat"
 
 #~ msgid "Wider application window on first launch"
 #~ msgstr "İlk çalıştırmada daha geniş uygulama penceresi"
-
-#~ msgid "Fixed:"
-#~ msgstr "Düzeltildi:"
 
 #~ msgid "Welcome message could not contain single quotes"
 #~ msgstr "Hoşgeldin mesajı tek tırnak içeremez"

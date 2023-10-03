@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-04-07 15:40+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-03-09 13:37+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -42,12 +42,22 @@ msgid "The image file to use as GDM background"
 msgstr "Hình ảnh sẽ được dùng làm hình nền cho GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#: src/resources/ui/top-bar-page.blp:40
+#, fuzzy
+#| msgid "Background Image"
+msgid "Background Image Adjustment"
+msgstr "Hình nền"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Màu nền"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:45
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
 msgstr "Màu sẽ được dùng làm nền cho GDM"
 
@@ -251,10 +261,11 @@ msgid "Top bar background color"
 msgstr "Màu nền của thanh top bar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4 src/info.py.in:4
-#: src/window.py:66
-msgid "Login Manager Settings"
-msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
+#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#, fuzzy
+#| msgid "Reset settings"
+msgid "GDM Settings"
+msgstr "Khôi phục cài đặt gốc"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -270,97 +281,39 @@ msgstr ""
 "Thay đổi các cài đặt của GDM, thay đổi theme và hình nền, thay đổi cursor "
 "theme, icon theme và cài đặt Night Light, và nhiều cài đặt khác."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:100
-msgid "Fixed: Fails to run on PureOS"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:112
-msgid "<em>New Options</em>"
-msgstr "<em>Lựa chọn mới</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:114
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Tùy chọn để tắt menu trợ năng khi không sử dụng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:115
-msgid "Option to change cursor size"
-msgstr "Tùy chọn để điều chỉnh kích cỡ con trỏ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:116
-#, fuzzy
-#| msgid "Donation Request"
-msgid "A one-time donation request"
-msgstr "Yêu cầu đóng góp"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:117
-msgid "Donate option in hamburger menu"
-msgstr "Tùy chọn đóng góp trong hamburger menu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Những thay đổi hành vi</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:121
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Tên riêng được hiển thị cho các theme thay vì tên thư mục của chúng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:122
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Những theme chỉ có con trỏ sẽ không hiển thị khi chọn icon theme"
-
-#: src/about.py:11 src/about.py:82
-msgctxt "Name of Developer"
-msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
-
-#: src/about.py:12
-msgctxt "Name of Artist"
-msgid "Thales Bindá"
-msgstr "Thales Bindá"
-
-#: src/about.py:83
-msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Bản quyền 2021–2023 Mazhar Hussain"
-
-#. Translators: Do not translate this string. Put your info here in the form
-#. 'name <email>' including < and > but not quotes.
-#: src/about.py:95
-msgid "translator-credits"
-msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
-
-#: src/app.py:58
+#: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Hiển thị phiên bản của ứng dụng"
 
-#: src/app.py:59
+#: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Set mức độ hiển thị chi tiết một cách thủ công (từ 0 đến 5)"
 
-#: src/app.py:60
+#: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "MỨC ĐỘ"
 
-#: src/app.py:61
+#: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Bật chế độ hiển thị chi tiết (--verbosity=5)"
 
-#: src/app.py:62
+#: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Bật chế độ quiet (yên lặng, --verbosity=0)"
 
-#: src/app.py:82
+#: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
 "Mức độ hiển thị chi tiết {level} không hợp lệ. Nó phải nằm trong khoảng từ 0 "
 "đến 5."
 
-#: src/app.py:164
+#: gdms/gui/__init__.py:178
 msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
@@ -369,7 +322,7 @@ msgstr ""
 "Những chương trình dưới đây cần có <b>trên máy host</b> để ứng dụng này có "
 "thể hoạt động trơn tru, nhưng nó chưa được cài đặt trên máy host."
 
-#: src/app.py:168
+#: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
@@ -377,19 +330,19 @@ msgstr ""
 "Chương trình này cần có những chương trình/thư viện dưới đây để có thể hoạt "
 "động trơn tru, nhưng nó chưa được cài đặt."
 
-#: src/app.py:177
+#: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
 msgstr "• <b>GDM</b>"
 
-#: src/app.py:183
+#: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
 msgstr "• <b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
-#: src/app.py:191
+#: gdms/gui/__init__.py:205
 #, python-brace-format
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
@@ -398,19 +351,32 @@ msgstr ""
 "Click <a href=\"{url}\">ở đây</a> để xem hướng dẫn cách cài những phần mềm/"
 "thư viên này trên máy của bạn."
 
-#: src/app.py:198
+#: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
 msgstr "Thiếu thư viện"
 
-#: src/app.py:203 src/pages/display.py:107
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
 msgid "OK"
 msgstr "OK"
 
-#: src/app.py:209
+#: gdms/gui/__init__.py:223
+#, fuzzy
+#| msgid "Default Shell Theme"
+msgid "Default Shell Theme File Lost"
+msgstr "Theme mặc định của shell"
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
 msgid "Donation Request"
 msgstr "Yêu cầu đóng góp"
 
-#: src/app.py:211
+#: gdms/gui/__init__.py:238
 msgid ""
 "This app is and will always remain Open Source/Libre and free of cost. "
 "However, You can show some love by donating to the developer.\n"
@@ -422,91 +388,87 @@ msgstr ""
 "❤️\n"
 "Tôi sẽ rất cảm kích điều đó."
 
-#: src/app.py:219
+#: gdms/gui/__init__.py:246
 msgid "Not Interested"
 msgstr "Không quan tâm"
 
-#: src/app.py:220 src/resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Đóng góp"
 
-#: src/app.py:257
+#: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
-#: src/app.py:264
+#: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
 msgstr "Tải cài đặt phiên thành công"
 
-#: src/app.py:268
+#: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Tải cài đặt phiên KHÔNG ĐƯỢC hỗ trợ trong phiên bản Flatpak"
 
-#: src/app.py:281
+#: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
-#: src/app.py:283
+#: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
 
-#: src/app.py:302
+#: gdms/gui/__init__.py:329
 msgid "Import"
 msgstr "Nhập"
 
-#: src/app.py:323
+#: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
 msgstr "Nhập cài đặt từ file thành công"
 
-#: src/app.py:325
+#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr "Không nhập được. Tệp không hợp lệ"
 
-#: src/app.py:356
+#: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
 msgstr "Cài đặt đã được xuất thành công"
 
-#: src/app.py:358
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
 msgstr "Không xuất được. Quyền bị từ chối"
 
-#: src/app.py:360
+#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Không xuất được. Thư mục có tên đó đã tồn tại"
 
-#: src/lib/file_choosers.py:18
-msgid "Choose File"
-msgstr "Chọn file"
+#: gdms/gui/about.py:16 gdms/gui/about.py:100
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: src/lib/file_choosers.py:25
-msgid "(None)"
-msgstr "(Không có gì)"
+#: gdms/gui/about.py:17
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr "Thales Bindá"
 
-#: src/lib/file_choosers.py:51
-msgid "Choose"
-msgstr "Chọn"
+#: gdms/gui/about.py:101
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Bản quyền 2021–2023 Mazhar Hussain"
 
-#: src/lib/file_choosers.py:110
-msgid "Images"
-msgstr "Hình ảnh"
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:114
+msgid "translator-credits"
+msgstr "Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>"
 
-#: src/lib/file_choosers.py:114
-msgid "All Files"
-msgstr "Tất cả các tệp"
-
-#: src/lib/file_choosers.py:119
-msgid "Choose Image"
-msgstr "Chọn hình ảnh"
-
-#: src/pages/display.py:85
+#: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "Đã áp dụng cài đặt màn hình hiện tại"
 
-#: src/pages/display.py:87
+#: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
 msgstr "Áp dụng cài đặt màn hình hiên tại thất bại"
 
-#: src/pages/display.py:93
+#: gdms/gui/pages/display.py:94
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -520,634 +482,690 @@ msgstr ""
 "Để tạo tệp đó tự động, hãy mở hệ thống 'Cài đặt' và thay đổi một số tùy chọn "
 "hiển thị ở đó."
 
-#: src/pages/display.py:102
+#: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
 msgstr "Không thể tìm thấy cài đặt màn hình"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
-#: src/pages/tools.py:49
+#: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
 "Theme mặc định của shell đã được trích xuất ra '{folder}' dưới dạng '{name}'"
 
-#: src/pages/tools.py:52
+#: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
 msgstr "Trích xuất theme mặc định của shell thất bại"
 
-#: src/resources/ui/appearance-page.blp:9
-msgid "Themes"
-msgstr "Các theme"
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr "Chọn file"
 
-#: src/resources/ui/appearance-page.blp:11
-msgid "Shell"
-msgstr "Shell"
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr "(Không có gì)"
 
-#: src/resources/ui/appearance-page.blp:12
-msgid "Icons"
-msgstr "Icons"
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr "Chọn"
 
-#: src/resources/ui/appearance-page.blp:13
-msgid "Cursor"
-msgstr "Con trỏ"
-
-#: src/resources/ui/appearance-page.blp:17
-msgid "Background"
-msgstr "Hình nền"
-
-#: src/resources/ui/appearance-page.blp:20
-msgid "Type"
-msgstr "Loại"
-
-#: src/resources/ui/appearance-page.blp:21
-msgid "Default"
-msgstr "Mặc định"
-
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:26
-msgid "Image"
+#: gdms/gui/widgets.py:110
+msgid "Images"
 msgstr "Hình ảnh"
 
-#: src/resources/ui/appearance-page.blp:21
-#: src/resources/ui/appearance-page.blp:31
-msgid "Color"
-msgstr "Màu"
-
-#: src/resources/ui/appearance-page.blp:27
-msgid "The image to use as background"
-msgstr "Hình ảnh sẽ được sử dụng làm nền"
-
-#: src/resources/ui/appearance-page.blp:32
-msgid "The color to use as background"
-msgstr "Màu sẽ được dùng làm nền cho GDM"
-
-#: src/resources/ui/display-page.blp:12
-msgid "Apply current display settings"
-msgstr "Áp dụng cài đặt màn hình hiện tại"
-
-#: src/resources/ui/display-page.blp:13
-msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
-
-#: src/resources/ui/display-page.blp:16 src/resources/ui/main-window.blp:43
-msgid "Apply"
-msgstr "Áp dụng"
-
-#: src/resources/ui/display-page.blp:21
-msgid "Night Light"
-msgstr "Night Light"
-
-#: src/resources/ui/display-page.blp:24
-#: src/resources/ui/login-screen-page.blp:40
-msgid "Enable"
-msgstr "Bật"
-
-#: src/resources/ui/display-page.blp:28
-msgid "Schedule"
-msgstr "Lịch trình"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Sunset to Sunrise"
-msgstr "Từ hoàng hôn đến bình minh"
-
-#: src/resources/ui/display-page.blp:29
-msgid "Manual Schedule"
-msgstr "Lịch trình thủ công"
-
-#: src/resources/ui/display-page.blp:33
-msgid "Times"
-msgstr "Các thời điểm"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:36
-msgid "From"
-msgstr "Từ"
-
-#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
-#: src/resources/ui/display-page.blp:60
-msgid "To"
-msgstr "Đến"
-
-#: src/resources/ui/display-page.blp:84
-msgid "Color Temperature"
-msgstr "Nhiệt độ màu"
-
-#: src/resources/ui/fonts-page.blp:12
-msgid "Font"
-msgstr "Phông chữ"
-
-#: src/resources/ui/fonts-page.blp:21
-msgid "Antialiasing"
-msgstr "Khử răng cưa"
-
-#: src/resources/ui/fonts-page.blp:23
-msgid "Standard"
-msgstr "Tiêu chuẩn"
-
-#: src/resources/ui/fonts-page.blp:24
-msgid "Subpixel"
-msgstr "Subpixel"
-
-#: src/resources/ui/fonts-page.blp:25 src/resources/ui/fonts-page.blp:35
-msgid "None"
-msgstr "Không có gì"
-
-#: src/resources/ui/fonts-page.blp:30
-msgid "Hinting"
-msgstr "Gợi ý"
-
-#: src/resources/ui/fonts-page.blp:32
-msgid "Full"
-msgstr "Toàn bộ"
-
-#: src/resources/ui/fonts-page.blp:33
-msgid "Medium"
-msgstr "Trung bình"
-
-#: src/resources/ui/fonts-page.blp:34
-msgid "Slight"
-msgstr "Nhẹ"
-
-#: src/resources/ui/fonts-page.blp:40
-msgid "Scaling Factor"
-msgstr "Tỉ lệ"
-
-#: src/resources/ui/main-window.blp:6
-msgid "Refresh"
-msgstr "Làm mới"
-
-#: src/resources/ui/main-window.blp:7
-msgid "Load session settings"
-msgstr "Nhập cài đặt phiên"
-
-#: src/resources/ui/main-window.blp:8
-msgid "Reset settings"
-msgstr "Khôi phục cài đặt gốc"
-
-#: src/resources/ui/main-window.blp:11
-msgid "Import from file"
-msgstr "Nhập từ tệp"
-
-#: src/resources/ui/main-window.blp:12
-msgid "Export to file"
-msgstr "Xuất sang tệp"
-
-#: src/resources/ui/main-window.blp:18
-msgid "About"
-msgstr "Về ứng dụng này"
-
-#: src/resources/ui/main-window.blp:19
-msgid "Quit"
-msgstr "Thoát"
-
-#: src/resources/ui/login-screen-page.blp:12
-msgid "Disable Restart Buttons"
-msgstr "Tắt nút khởi động lại"
-
-#: src/resources/ui/login-screen-page.blp:16
-msgid "Disable User List"
-msgstr "Tắt danh sách người dùng"
-
-#: src/resources/ui/login-screen-page.blp:20
-msgid "Enable Logo"
-msgstr "Bật Logo"
-
-#: src/resources/ui/login-screen-page.blp:21
-msgid "Whether to show a logo below user list"
-msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
-
-#: src/resources/ui/login-screen-page.blp:30
-msgid "Logo"
-msgstr "Logo"
-
-#: src/resources/ui/login-screen-page.blp:31
-msgid "The image to show below user list"
-msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
-
-#: src/resources/ui/login-screen-page.blp:37
-msgid "Welcome Message"
-msgstr "Thông điệp chào mừng (Welcome Message)"
-
-#: src/resources/ui/login-screen-page.blp:44
-msgid "Enlarge"
-msgstr "Phóng to"
-
-#: src/resources/ui/login-screen-page.blp:49
-msgid "Message"
-msgstr "Thông điệp"
-
-#: src/resources/ui/pointing-page.blp:10
-msgid "Cursor Size"
-msgstr "Kích thước con trỏ"
-
-#: src/resources/ui/pointing-page.blp:15
-msgctxt "Cursor Size"
-msgid "Default"
-msgstr "Mặc định"
-
-#: src/resources/ui/pointing-page.blp:16
-msgctxt "Cursor Size"
-msgid "Medium"
-msgstr "Trung bình"
-
-#: src/resources/ui/pointing-page.blp:17
-msgctxt "Cursor Size"
-msgid "Large"
-msgstr "Lớn"
-
-#: src/resources/ui/pointing-page.blp:18
-msgctxt "Cursor Size"
-msgid "Larger"
-msgstr "Lớn hơn"
-
-#: src/resources/ui/pointing-page.blp:19
-msgctxt "Cursor Size"
-msgid "Largest"
-msgstr "Lớn nhất"
-
-#: src/resources/ui/pointing-page.blp:25
-msgid "Mouse"
-msgstr "Chuột"
-
-#: src/resources/ui/pointing-page.blp:28
-msgid "Pointer Acceleration"
-msgstr "Tăng tốc con trỏ (Pointer Acceleration)"
-
-#: src/resources/ui/pointing-page.blp:30
-msgid "Automatic"
-msgstr "Tự động"
-
-#: src/resources/ui/pointing-page.blp:31
-msgid "Disabled"
-msgstr "Tắt"
-
-#: src/resources/ui/pointing-page.blp:32
-msgid "Enabled"
-msgstr "Bật"
-
-#: src/resources/ui/pointing-page.blp:37 src/resources/ui/pointing-page.blp:59
-msgid "Natural Scrolling"
-msgstr "Cuộn tự nhiên (Natural Scrolling)"
-
-#: src/resources/ui/pointing-page.blp:38 src/resources/ui/pointing-page.blp:60
-msgid "Scrolling moves the content, not the view."
-msgstr "Cuộn nội dung, không phải hướng nhìn."
-
-#: src/resources/ui/pointing-page.blp:42 src/resources/ui/pointing-page.blp:73
-msgid "Pointer Speed"
-msgstr "Tốc độ con trỏ chuột/touchpad"
-
-#: src/resources/ui/pointing-page.blp:52
-msgid "Touchpad"
-msgstr "Bàn di chuột (Touchpad)"
-
-#: src/resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "Chạm để click"
-
-#: src/resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
-
-#: src/resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
-
-#: src/resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Tắt khi nhập"
-
-#: src/resources/ui/power-page.blp:12
-msgid "Power Button Behavior"
-msgstr "Hành vi của nút nguồn"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Do Nothing"
-msgstr "Không làm gì cả"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Suspend"
-msgstr "Suspend"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Hibernate"
-msgstr "Ngủ đông"
-
-#: src/resources/ui/power-page.blp:13
-msgid "Ask"
-msgstr "Hỏi"
-
-#: src/resources/ui/power-page.blp:18
-msgid "Automatic Power Saver"
-msgstr "Tiết kiệm năng lượng tự động"
-
-#: src/resources/ui/power-page.blp:19
-msgid "Enables power saver mode when battery is low."
-msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu."
-
-#: src/resources/ui/power-page.blp:23
-msgid "Dim Screen"
-msgstr "Giảm độ sáng màn hình"
-
-#: src/resources/ui/power-page.blp:24
-msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Giảm độ sáng màn hình khi máy tính không hoạt động."
-
-#: src/resources/ui/power-page.blp:28
-msgid "Turn Screen Off"
-msgstr "Tắt màn hình"
-
-#: src/resources/ui/power-page.blp:29
-msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Có nên tắt màn hình sau một thời gian không hoạt động hay không."
-
-#: src/resources/ui/power-page.blp:38 src/resources/ui/power-page.blp:70
-#: src/resources/ui/power-page.blp:97
-msgid "Delay"
-msgstr "Delay"
-
-#: src/resources/ui/power-page.blp:39
-msgid "Time in minutes after which screen will turn off."
-msgstr "Thời gian tính bằng phút sau đó màn hình sẽ tắt."
-
-#: src/resources/ui/power-page.blp:57
-msgid "Automatic Suspend"
-msgstr "Tự động suspend"
-
-#: src/resources/ui/power-page.blp:58
-msgid "Pauses the computer after a period of inactivity."
-msgstr "Tạm dừng máy tính sau một thời gian không hoạt động."
-
-#: src/resources/ui/power-page.blp:61
-msgid "On Battery Power"
-msgstr "Nguồn là pin"
-
-#: src/resources/ui/power-page.blp:71 src/resources/ui/power-page.blp:98
-msgid "Time in minutes after which the computer will suspend."
-msgstr "Thời gian tính bằng phút sau đó máy tính sẽ suspend."
-
-#: src/resources/ui/power-page.blp:88
-msgid "When Plugged In"
-msgstr "Khi được cắm điện"
-
-#: src/resources/ui/sound-page.blp:11
-msgid "Theme"
-msgstr "Theme"
-
-#: src/resources/ui/sound-page.blp:14
-msgid "Over Amplification"
-msgstr "Âm lượng quá mức"
-
-#: src/resources/ui/sound-page.blp:15
-msgid "Allow raising volume above 100%"
-msgstr "Cho phép tăng âm lượng lên trên 100%"
-
-#: src/resources/ui/sound-page.blp:19
-msgid "Event Sounds"
-msgstr "Event Sounds"
-
-#: src/resources/ui/sound-page.blp:23
-msgid "Input Feedback Sounds"
-msgstr "Âm thanh phản hồi đầu vào (Input Feedback Sounds)"
-
-#: src/resources/ui/tools-page.blp:9
-msgid "Default Shell Theme"
-msgstr "Theme mặc định của shell"
-
-#: src/resources/ui/tools-page.blp:12
-msgid "Include Top Bar Tweaks"
-msgstr "Bao gồm các cài đặt của top bar"
-
-#: src/resources/ui/tools-page.blp:16
-msgid "Extract default shell theme"
-msgstr "Trích xuất theme mặc định của shell"
-
-#: src/resources/ui/tools-page.blp:19
-msgid "Extract"
-msgstr "Trích xuất"
-
-#: src/resources/ui/top-bar-page.blp:9
-msgid "Tweaks"
-msgstr "Cài đặt"
-
-#: src/resources/ui/top-bar-page.blp:12
-msgid "Change Text Color"
-msgstr "Thay đổi màu chữ"
-
-#: src/resources/ui/top-bar-page.blp:20
-msgid "Text Color"
-msgstr "Màu chữ"
-
-#: src/resources/ui/top-bar-page.blp:21
-msgid "The color of text in top bar"
-msgstr "Màu của chữ trên top bar"
-
-#: src/resources/ui/top-bar-page.blp:32
-msgid "Change Background Color"
-msgstr "Thay đổi màu nền"
-
-#: src/resources/ui/top-bar-page.blp:41
-msgid "The color of top bar background"
-msgstr "Màu nền của thanh top bar"
-
-#: src/resources/ui/top-bar-page.blp:52
-msgid "Disable Arrows"
-msgstr "Tắt các mũi tên"
-
-#: src/resources/ui/top-bar-page.blp:56
-msgid "Disable Rounded Corners"
-msgstr "Tắt bo tròn các góc"
-
-#: src/resources/ui/top-bar-page.blp:61
-msgid "Accessibility"
-msgstr "Trợ năng"
-
-#: src/resources/ui/top-bar-page.blp:64
-msgid "Always Show Accessibility Menu"
-msgstr "Luôn hiển thị menu trợ năng"
-
-#: src/resources/ui/top-bar-page.blp:69
-msgid "Clock"
-msgstr "Đồng hồ"
-
-#: src/resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
-msgstr "Hiển thị các ngày trong tuần"
-
-#: src/resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr "Hiển thị giây"
-
-#: src/resources/ui/top-bar-page.blp:80
-msgid "Time Format"
-msgstr "Định dạng thời gian"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "AM/PM"
-msgstr "SA / CH"
-
-#: src/resources/ui/top-bar-page.blp:81
-msgid "24 Hours"
-msgstr "24 giờ"
-
-#: src/resources/ui/top-bar-page.blp:86 src/window.py:118
-msgid "Power"
-msgstr "Nguồn"
-
-#: src/resources/ui/top-bar-page.blp:89
-msgid "Show battery percentage"
-msgstr "Hiển thị phần trăm pin"
-
-#: src/settings.py:80
-#, python-brace-format
-msgid "Exporting to file '{filename}'"
-msgstr "Xuất sang tệp '{filename}'"
-
-#: src/settings.py:85
-#, python-brace-format
-msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
-
-#: src/settings.py:89
-#, python-brace-format
-msgid ""
-"Cannot write to file '{filename}'. A directory with the same name already "
-"exists"
-msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
-
-#: src/settings.py:94
-msgid "Exporting to standard output"
-msgstr "Xuất ra đầu ra tiêu chuẩn"
-
-#: src/settings.py:102
-#, python-brace-format
-msgid "Importing from file '{filename}'"
-msgstr "Đang nhập từ tệp '{filename}'"
-
-#: src/settings.py:105
-msgid "Importing from standard input"
-msgstr "Nhập từ đầu vào chuẩn"
-
-#: src/settings.py:108
-msgid "Failed to parse import file"
-msgstr "Không thể phân tích cú pháp tệp nhập"
-
-#: src/settings.py:111
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
-
-#: src/settings.py:117
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr "Tệp đã nhập không có phần '{section_name}'"
-
-#: src/settings.py:122
-#, python-brace-format
-msgid ""
-"Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
-
-#: src/settings.py:313
-msgid "Backing up default shell theme …"
-msgstr "Đang sao lưu theme mặc định của shell…"
-
-#: src/settings.py:365
-#, fuzzy, python-brace-format
-#| msgctxt "Command-line output"
-#| msgid "Applying GResource settings for Ubuntu …"
-msgid "Applying GResource settings for {distro_name} …"
-msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
-
-#: src/settings.py:386
-msgid "Ubuntu"
-msgstr ""
-
-#: src/settings.py:388
-msgid "generic system"
-msgstr ""
-
-#: src/settings.py:620
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for Ubuntu …"
-msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
-
-#: src/settings.py:627
-msgctxt "Command-line output"
-msgid "Resetting GResource settings for non-Ubuntu systems …"
-msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
-
-#: src/window.py:111
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr "Tất cả các tệp"
+
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr "Chọn hình ảnh"
+
+#: gdms/gui/window.py:113
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: src/window.py:112
+#: gdms/gui/window.py:114
 msgid "Fonts"
 msgstr "Phông chữ"
 
-#: src/window.py:113
+#: gdms/gui/window.py:115
 msgid "Top Bar"
 msgstr "Top Bar"
 
-#: src/window.py:114
+#: gdms/gui/window.py:116
 msgid "Sound"
 msgstr "Âm thanh"
 
-#: src/window.py:115
+#: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
 msgstr "Chuột &amp; Touchpad"
 
-#: src/window.py:116
+#: gdms/gui/window.py:118
 msgid "Display"
 msgstr "Màn hình"
 
-#: src/window.py:117
+#: gdms/gui/window.py:119
 msgid "Login Screen"
 msgstr "Màn hình đăng nhập"
 
-#: src/window.py:119
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+msgid "Power"
+msgstr "Nguồn"
+
+#: gdms/gui/window.py:121
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: src/window.py:137
+#: gdms/gui/window.py:139
 msgid "Settings applied successfully"
 msgstr "Áp dụng cài đặt thành công"
 
-#: src/window.py:141
+#: gdms/gui/window.py:143
 msgid "Failed to apply settings"
 msgstr "Áp dụng cài đặt thất bại"
 
-#: src/window.py:145
+#: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
 "Không áp dụng. Hình nền đã chọn không tồn tại nữa. Xin vui lòng chọn lại."
 
-#: src/window.py:149
+#: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
 "Không áp dụng được do logo được chọn không còn tồn tại nữa. Làm ơn! Chọn lại "
 "đi mà."
 
-#: src/window.py:155
+#: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Hệ thống có thể bắt đầu trông khá kỳ lạ/lỗi cho đến khi bạn đăng nhập lại "
 "hoặc khởi động lại."
 
-#: src/window.py:160
+#: gdms/gui/window.py:162
 msgid "Log Out?"
 msgstr "Đăng xuất?"
 
-#: src/window.py:165
+#: gdms/gui/window.py:167
 msgid "Cancel"
 msgstr "Hủy bỏ"
 
-#: src/window.py:166
+#: gdms/gui/window.py:168
 msgid "Log Out"
 msgstr "Đăng xuất"
+
+#: gdms/settings.py:173
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr "Đang nhập từ tệp '{filename}'"
+
+#: gdms/settings.py:176
+msgid "Importing from standard input"
+msgstr "Nhập từ đầu vào chuẩn"
+
+#: gdms/settings.py:179
+msgid "Failed to parse import file"
+msgstr "Không thể phân tích cú pháp tệp nhập"
+
+#: gdms/settings.py:182
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
+
+#: gdms/settings.py:188
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "Tệp đã nhập không có phần '{section_name}'"
+
+#: gdms/settings.py:193
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
+
+#: gdms/settings.py:213
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr "Xuất sang tệp '{filename}'"
+
+#: gdms/settings.py:218
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
+
+#: gdms/settings.py:222
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
+
+#: gdms/settings.py:227
+msgid "Exporting to standard output"
+msgstr "Xuất ra đầu ra tiêu chuẩn"
+
+#: gdms/settings.py:327
+msgid "Backing up default shell theme …"
+msgstr "Đang sao lưu theme mặc định của shell…"
+
+#: resources/ui/appearance-page.blp:9
+msgid "Themes"
+msgstr "Các theme"
+
+#: resources/ui/appearance-page.blp:11
+msgid "Shell"
+msgstr "Shell"
+
+#: resources/ui/appearance-page.blp:12
+msgid "Icons"
+msgstr "Icons"
+
+#: resources/ui/appearance-page.blp:13
+msgid "Cursor"
+msgstr "Con trỏ"
+
+#: resources/ui/appearance-page.blp:17
+msgid "Background"
+msgstr "Hình nền"
+
+#: resources/ui/appearance-page.blp:20
+msgid "Type"
+msgstr "Loại"
+
+#: resources/ui/appearance-page.blp:21
+msgid "Default"
+msgstr "Mặc định"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+msgid "Image"
+msgstr "Hình ảnh"
+
+#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+msgid "Color"
+msgstr "Màu"
+
+#: resources/ui/appearance-page.blp:26
+msgid "The image to use as background"
+msgstr "Hình ảnh sẽ được sử dụng làm nền"
+
+#: resources/ui/appearance-page.blp:30
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+#, fuzzy
+#| msgid "Dim Screen"
+msgid "Fit To Screen"
+msgstr "Giảm độ sáng màn hình"
+
+#: resources/ui/appearance-page.blp:31
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:37
+msgid "The color to use as background"
+msgstr "Màu sẽ được dùng làm nền cho GDM"
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr "Áp dụng cài đặt màn hình hiện tại"
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr "Độ phân giải, tốc độ làm mới, vị trí màn hình, v.v."
+
+#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+msgid "Apply"
+msgstr "Áp dụng"
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr "Night Light"
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr "Bật"
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr "Lịch trình"
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr "Từ hoàng hôn đến bình minh"
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr "Lịch trình thủ công"
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr "Các thời điểm"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr "Từ"
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr "Đến"
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr "Nhiệt độ màu"
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr "Phông chữ"
+
+#: resources/ui/fonts-page.blp:21
+msgid "Antialiasing"
+msgstr "Khử răng cưa"
+
+#: resources/ui/fonts-page.blp:23
+msgid "Standard"
+msgstr "Tiêu chuẩn"
+
+#: resources/ui/fonts-page.blp:24
+msgid "Subpixel"
+msgstr "Subpixel"
+
+#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+msgid "None"
+msgstr "Không có gì"
+
+#: resources/ui/fonts-page.blp:30
+msgid "Hinting"
+msgstr "Gợi ý"
+
+#: resources/ui/fonts-page.blp:32
+msgid "Full"
+msgstr "Toàn bộ"
+
+#: resources/ui/fonts-page.blp:33
+msgid "Medium"
+msgstr "Trung bình"
+
+#: resources/ui/fonts-page.blp:34
+msgid "Slight"
+msgstr "Nhẹ"
+
+#: resources/ui/fonts-page.blp:40
+msgid "Scaling Factor"
+msgstr "Tỉ lệ"
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr "Làm mới"
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr "Nhập cài đặt phiên"
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr "Khôi phục cài đặt gốc"
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr "Nhập từ tệp"
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr "Xuất sang tệp"
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr "Về ứng dụng này"
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr "Thoát"
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr "Tắt nút khởi động lại"
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr "Tắt danh sách người dùng"
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr "Bật Logo"
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr "Có nên hiển thị logo dưới danh sách người dùng hay không"
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr "Logo"
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr "Hình ảnh được dùng để hiển thị dưới danh sách người dùng"
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr "Thông điệp chào mừng (Welcome Message)"
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr "Phóng to"
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr "Thông điệp"
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr "Kích thước con trỏ"
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr "Mặc định"
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr "Trung bình"
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr "Lớn"
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr "Lớn hơn"
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr "Lớn nhất"
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr "Chuột"
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr "Tăng tốc con trỏ (Pointer Acceleration)"
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr "Tự động"
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr "Tắt"
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr "Bật"
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+msgid "Natural Scrolling"
+msgstr "Cuộn tự nhiên (Natural Scrolling)"
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+msgid "Scrolling moves the content, not the view."
+msgstr "Cuộn nội dung, không phải hướng nhìn."
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+msgid "Pointer Speed"
+msgstr "Tốc độ con trỏ chuột/touchpad"
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr "Bàn di chuột (Touchpad)"
+
+#: resources/ui/pointing-page.blp:55
+msgid "Tap to Click"
+msgstr "Chạm để click"
+
+#: resources/ui/pointing-page.blp:64
+msgid "Two-finger Scrolling"
+msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
+
+#: resources/ui/pointing-page.blp:65
+msgid "Scroll by swiping with two fingers."
+msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
+
+#: resources/ui/pointing-page.blp:69
+msgid "Disable while Typing"
+msgstr "Tắt khi nhập"
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr "Hành vi của nút nguồn"
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr "Không làm gì cả"
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr "Suspend"
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr "Ngủ đông"
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr "Hỏi"
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr "Tiết kiệm năng lượng tự động"
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr "Kích hoạt cài đặt nguồn điện thấp khi pin yếu."
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr "Giảm độ sáng màn hình"
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr "Giảm độ sáng màn hình khi máy tính không hoạt động."
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr "Tắt màn hình"
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr "Có nên tắt màn hình sau một thời gian không hoạt động hay không."
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr "Delay"
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr "Thời gian tính bằng phút sau đó màn hình sẽ tắt."
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr "Tự động suspend"
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr "Tạm dừng máy tính sau một thời gian không hoạt động."
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr "Nguồn là pin"
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr "Thời gian tính bằng phút sau đó máy tính sẽ suspend."
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr "Khi được cắm điện"
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr "Theme"
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr "Âm lượng quá mức"
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr "Cho phép tăng âm lượng lên trên 100%"
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr "Event Sounds"
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr "Âm thanh phản hồi đầu vào (Input Feedback Sounds)"
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr "Theme mặc định của shell"
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr "Bao gồm các cài đặt của top bar"
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr "Trích xuất theme mặc định của shell"
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr "Trích xuất"
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr "Cài đặt"
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr "Thay đổi màu chữ"
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr "Màu chữ"
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr "Màu của chữ trên top bar"
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr "Thay đổi màu nền"
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr "Màu nền của thanh top bar"
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr "Tắt các mũi tên"
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr "Tắt bo tròn các góc"
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr "Trợ năng"
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr "Luôn hiển thị menu trợ năng"
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr "Đồng hồ"
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Weekday"
+msgstr "Hiển thị các ngày trong tuần"
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Seconds"
+msgstr "Hiển thị giây"
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Time Format"
+msgstr "Định dạng thời gian"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "AM/PM"
+msgstr "SA / CH"
+
+#: resources/ui/top-bar-page.blp:81
+msgid "24 Hours"
+msgstr "24 giờ"
+
+#: resources/ui/top-bar-page.blp:89
+msgid "Show battery percentage"
+msgstr "Hiển thị phần trăm pin"
+
+#~ msgid "Fixed:"
+#~ msgstr "Đã sửa các lỗi:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Lựa chọn mới</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Tùy chọn để tắt menu trợ năng khi không sử dụng"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Tùy chọn để điều chỉnh kích cỡ con trỏ"
+
+#, fuzzy
+#~| msgid "Donation Request"
+#~ msgid "A one-time donation request"
+#~ msgstr "Yêu cầu đóng góp"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Tùy chọn đóng góp trong hamburger menu"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Những thay đổi hành vi</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Tên riêng được hiển thị cho các theme thay vì tên thư mục của chúng"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Những theme chỉ có con trỏ sẽ không hiển thị khi chọn icon theme"
+
+#~ msgid "Login Manager Settings"
+#~ msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"
+
+#, fuzzy, python-brace-format
+#~| msgctxt "Command-line output"
+#~| msgid "Applying GResource settings for Ubuntu …"
+#~ msgid "Applying GResource settings for {distro_name} …"
+#~ msgstr "Đang áp dụng các cài đặt GResource cho Ubuntu…"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for Ubuntu …"
+#~ msgstr "Đặt lại cài đặt GResource cho Ubuntu …"
+
+#~ msgctxt "Command-line output"
+#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
+#~ msgstr "Đang đặt lại cài đặt GResource cho các hệ thống không phải Ubuntu …"
 
 #~ msgctxt "Command-line output"
 #~ msgid "Applying GResource settings for non-Ubuntu systems …"
@@ -1352,9 +1370,6 @@ msgstr "Đăng xuất"
 
 #~ msgid "Wider application window on first launch"
 #~ msgstr "Cửa sổ rộng hơn trong lần chạy đầu tiên"
-
-#~ msgid "Fixed:"
-#~ msgstr "Đã sửa các lỗi:"
 
 #~ msgid "Welcome message could not contain single quotes"
 #~ msgstr "Welcome message không thể chứa dấu '"
