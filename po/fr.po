@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-04-09 09:49+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
@@ -309,87 +309,6 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "Corrections :"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>Nouvelles options</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Option pour désactiver le menu d’accessibilité quand non utilisé"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "Option pour changer la taille du curseur"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-msgid "A one-time donation request"
-msgstr "Une demande de don unique"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "Possibilité de faire un don via le menu hamburger"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Changements dans l’interaction</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Les noms des thèmes sont affichés au lieu du nom de leur répertoire"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr ""
-"Les thèmes du curseur uniquement ne sont plus proposés lors du choix d’un "
-"thème d’icônes"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Correction d’un bogue empêchant l’exécution avec PureOS"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -1233,6 +1152,38 @@ msgstr "24 Heures"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "Montrer le pourcentage de batterie"
+
+#~ msgid "Fixed:"
+#~ msgstr "Corrections :"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Nouvelles options</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Option pour désactiver le menu d’accessibilité quand non utilisé"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Option pour changer la taille du curseur"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "Une demande de don unique"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Possibilité de faire un don via le menu hamburger"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Changements dans l’interaction</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Les noms des thèmes sont affichés au lieu du nom de leur répertoire"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr ""
+#~ "Les thèmes du curseur uniquement ne sont plus proposés lors du choix d’un "
+#~ "thème d’icônes"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "Correction d’un bogue empêchant l’exécution avec PureOS"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "Gestionnaire de paramètres de connexion"

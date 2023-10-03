@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-10-01 21:01+0000\n"
 "Last-Translator: Eduardo Malaspina <vaio0@swismail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -300,92 +300,6 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr "Primera versión beta de la próxima versión 4 de GDM Settings"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr "Nuevo estilo de interfaz de usuario"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-"Los ajustes del tema shell, del fondo y de la barra superior ahora también "
-"funcionan en el modo de alto contraste"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
-"La ventana puede ser arrastrada y movida desde cualquier lugar, no sólo "
-"desde la barra de encabezado"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "Corregido:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr "Cambiar el color de fondo no funciona en GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
-"Imagen de fondo rota en ajustes de monitor de pantalla ancha/dual de GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr "Corregido: Cambiar el fondo no funciona en GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>Nuevas opciones</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Opción para desactivar el menú accesible cuando no se usa"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "Opción para cambiar el tamaño del cursor"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-msgid "A one-time donation request"
-msgstr "Una petición de donación única"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "Opción para donar en el menú"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Cambios de conducta</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr ""
-"Se muestran los nombres propios de los temas en lugar del nombre de su "
-"directorio"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Los temas de sólo cursor no se presentan al elegir el tema de icono"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Corregido: No se ejecuta en PureOS"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -1229,6 +1143,68 @@ msgstr "24 horas"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "Mostrar porcentaje de la batería"
+
+#~ msgid "First beta release of the upcoming GDM Settings version 4"
+#~ msgstr "Primera versión beta de la próxima versión 4 de GDM Settings"
+
+#~ msgid "New UI style"
+#~ msgstr "Nuevo estilo de interfaz de usuario"
+
+#~ msgid ""
+#~ "Shell theme, background and top bar tweaks now work in high contrast mode "
+#~ "as well"
+#~ msgstr ""
+#~ "Los ajustes del tema shell, del fondo y de la barra superior ahora "
+#~ "también funcionan en el modo de alto contraste"
+
+#~ msgid ""
+#~ "Window can be dragged and moved from anywhere, not just the headerbar"
+#~ msgstr ""
+#~ "La ventana puede ser arrastrada y movida desde cualquier lugar, no sólo "
+#~ "desde la barra de encabezado"
+
+#~ msgid "Fixed:"
+#~ msgstr "Corregido:"
+
+#~ msgid "Changing background color doesn't work on GNOME 44"
+#~ msgstr "Cambiar el color de fondo no funciona en GNOME 44"
+
+#~ msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
+#~ msgstr ""
+#~ "Imagen de fondo rota en ajustes de monitor de pantalla ancha/dual de "
+#~ "GNOME 44"
+
+#~ msgid "Fixed: Changing background doesn't work on GNOME 44"
+#~ msgstr "Corregido: Cambiar el fondo no funciona en GNOME 44"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Nuevas opciones</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Opción para desactivar el menú accesible cuando no se usa"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Opción para cambiar el tamaño del cursor"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "Una petición de donación única"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Opción para donar en el menú"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Cambios de conducta</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr ""
+#~ "Se muestran los nombres propios de los temas en lugar del nombre de su "
+#~ "directorio"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Los temas de sólo cursor no se presentan al elegir el tema de icono"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "Corregido: No se ejecuta en PureOS"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "Configuración del gestor de inicio de sesión"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-03-09 13:37+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -284,87 +284,6 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "Đã sửa các lỗi:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>Lựa chọn mới</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Tùy chọn để tắt menu trợ năng khi không sử dụng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "Tùy chọn để điều chỉnh kích cỡ con trỏ"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-#, fuzzy
-#| msgid "Donation Request"
-msgid "A one-time donation request"
-msgstr "Yêu cầu đóng góp"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "Tùy chọn đóng góp trong hamburger menu"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Những thay đổi hành vi</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Tên riêng được hiển thị cho các theme thay vì tên thư mục của chúng"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Những theme chỉ có con trỏ sẽ không hiển thị khi chọn icon theme"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr ""
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -1201,6 +1120,35 @@ msgstr "24 giờ"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "Hiển thị phần trăm pin"
+
+#~ msgid "Fixed:"
+#~ msgstr "Đã sửa các lỗi:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Lựa chọn mới</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Tùy chọn để tắt menu trợ năng khi không sử dụng"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Tùy chọn để điều chỉnh kích cỡ con trỏ"
+
+#, fuzzy
+#~| msgid "Donation Request"
+#~ msgid "A one-time donation request"
+#~ msgstr "Yêu cầu đóng góp"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Tùy chọn đóng góp trong hamburger menu"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Những thay đổi hành vi</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Tên riêng được hiển thị cho các theme thay vì tên thư mục của chúng"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Những theme chỉ có con trỏ sẽ không hiển thị khi chọn icon theme"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "Cài đặt trình quản lý đăng nhập (Login Manager) (GDM)"

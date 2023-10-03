@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-04-15 15:51+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -289,85 +289,6 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "Fixat:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>Nya alternativ</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "Alternativ för att ändra pekarstorlek"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-msgid "A one-time donation request"
-msgstr "En en-gångs donationsförfrågan"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "Donera alternativ i Hamburgermenyn"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>Beteendeförändringar</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr "Fixat: Misslyckade att köra på PureOS"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -1206,6 +1127,36 @@ msgstr "24 timmar"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "Visa batteri procent"
+
+#~ msgid "Fixed:"
+#~ msgstr "Fixat:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>Nya alternativ</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "Alternativ för att inaktivera Hjälpmedelsmenyn när du inte används"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "Alternativ för att ändra pekarstorlek"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "En en-gångs donationsförfrågan"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "Donera alternativ i Hamburgermenyn"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>Beteendeförändringar</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "Korrekt namn visas för teman istället för namnet på deras katalog"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "Endast pekarteman presenteras inte när du väljer ikontema"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "Fixat: Misslyckade att köra på PureOS"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "Inloggningshanteraren Inställningar"

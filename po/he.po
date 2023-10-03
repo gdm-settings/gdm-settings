@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-10-01 13:00+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
@@ -280,87 +280,6 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "מזהר חוסיין"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr "מהדורת הבטא הראשונית של הגדרות GDM בגרסה 4"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr "סגנון מנשק משתמש חדש"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-"ערכת העיצוב של המעטפת, הרקע ושיפורי הסרגל העליון עובדים גם במצב ניגודיות "
-"גבוהה"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr "אפשר לגרור ולהזיז חלון לכל מקום, לא רק את שורת הכותרת"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "תוקן:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr "החלפת צבע הרקע לא עובדת ב־GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr "תמונת רקע פגומה במסך רחב/שני צגים ב־GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr "תוקן: החלפת רקע לא עובדת ב־GNOME 44"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>אפשרויות חדשות</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "אפשרות להשבתת תפריט נגישות כשאינו בשימוש"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "אפשרות להחלפת גודל סמן העכבר"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-msgid "A one-time donation request"
-msgstr "בקשת תרומה חד־פעמית"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "אפשרות תרומה בתפריט ההמבורגר"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>שינויי התנהגות</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "שמות עצם פרטיים מופיעים לערכות העיצוב במקום בשם של התיקיות שלהן"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "ערכות עיצוב לסמני עכבר בלבד אינם מופיעים כשבוחרים ערכות סמלים"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr "תיקונים: הריצה על PureOS נכשלה"
-
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "הצגת גרסת היישום"
@@ -443,8 +362,8 @@ msgid ""
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
 "היישום צריך אבל לא מצליח למצוא קובץ ערכת עיצוב למעטפת ברירת מחדל שלא נערך. "
-"כדי לתקן את התקלה, יש להתקין את החבילות ‚gnome-shell-common’ או ‚gnome-shell’"
-" מחדש."
+"כדי לתקן את התקלה, יש להתקין את החבילות ‚gnome-shell-common’ או ‚gnome-"
+"shell’ מחדש."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -1186,6 +1105,62 @@ msgstr "24 שעות"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "הצגת אחוז סוללה"
+
+#~ msgid "First beta release of the upcoming GDM Settings version 4"
+#~ msgstr "מהדורת הבטא הראשונית של הגדרות GDM בגרסה 4"
+
+#~ msgid "New UI style"
+#~ msgstr "סגנון מנשק משתמש חדש"
+
+#~ msgid ""
+#~ "Shell theme, background and top bar tweaks now work in high contrast mode "
+#~ "as well"
+#~ msgstr ""
+#~ "ערכת העיצוב של המעטפת, הרקע ושיפורי הסרגל העליון עובדים גם במצב ניגודיות "
+#~ "גבוהה"
+
+#~ msgid ""
+#~ "Window can be dragged and moved from anywhere, not just the headerbar"
+#~ msgstr "אפשר לגרור ולהזיז חלון לכל מקום, לא רק את שורת הכותרת"
+
+#~ msgid "Fixed:"
+#~ msgstr "תוקן:"
+
+#~ msgid "Changing background color doesn't work on GNOME 44"
+#~ msgstr "החלפת צבע הרקע לא עובדת ב־GNOME 44"
+
+#~ msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
+#~ msgstr "תמונת רקע פגומה במסך רחב/שני צגים ב־GNOME 44"
+
+#~ msgid "Fixed: Changing background doesn't work on GNOME 44"
+#~ msgstr "תוקן: החלפת רקע לא עובדת ב־GNOME 44"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>אפשרויות חדשות</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "אפשרות להשבתת תפריט נגישות כשאינו בשימוש"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "אפשרות להחלפת גודל סמן העכבר"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "בקשת תרומה חד־פעמית"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "אפשרות תרומה בתפריט ההמבורגר"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>שינויי התנהגות</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "שמות עצם פרטיים מופיעים לערכות העיצוב במקום בשם של התיקיות שלהן"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "ערכות עיצוב לסמני עכבר בלבד אינם מופיעים כשבוחרים ערכות סמלים"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "תיקונים: הריצה על PureOS נכשלה"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "הגדרות מנהל הכניסה"

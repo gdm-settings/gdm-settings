@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-09-29 17:27+0500\n"
+"POT-Creation-Date: 2023-10-03 07:13+0500\n"
 "PO-Revision-Date: 2023-04-13 09:56+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -290,85 +290,6 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "مظہر حسین"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:84
-msgid "First beta release of the upcoming GDM Settings version 4"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:86
-msgid "New UI style"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:87
-msgid ""
-"Shell theme, background and top bar tweaks now work in high contrast mode as "
-"well"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:88
-msgid "Window can be dragged and moved from anywhere, not just the headerbar"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:103
-msgid "Fixed:"
-msgstr "ٹھیک کیا:"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:105
-msgid "Changing background color doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:106
-msgid "Broken background image on GNOME 44 widescreen/dual monitor setups"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:119
-msgid "Fixed: Changing background doesn't work on GNOME 44"
-msgstr ""
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:135
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:173
-msgid "<em>New Options</em>"
-msgstr "<em>نئے آپشن</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:137
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:175
-msgid "Option to disable accessiblitly menu when not being used"
-msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:138
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:176
-msgid "Option to change cursor size"
-msgstr "تیر کا سائز بدلنے کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:139
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:177
-msgid "A one-time donation request"
-msgstr "ایک مرتبہ عطیہ کی درخواست"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:140
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:178
-msgid "Donate option in hamburger menu"
-msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:142
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:180
-msgid "<em>Behavior Changes</em>"
-msgstr "<em>رویہ کی تبدیلیاں</em>"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:144
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:182
-msgid "Proper names are shown for themes instead of name of their directory"
-msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:145
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:183
-msgid "Cursor only themes are not presented when choosing icon theme"
-msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
-
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:147
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:161
-msgid "Fixed: Fails to run on PureOS"
-msgstr "درست کیا: پیور او ایس پر رن نہیں ہو سکتی تھی"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -1201,6 +1122,36 @@ msgstr "24 گھنٹے"
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
 msgstr "بیٹری کی شرح دکھائیں"
+
+#~ msgid "Fixed:"
+#~ msgstr "ٹھیک کیا:"
+
+#~ msgid "<em>New Options</em>"
+#~ msgstr "<em>نئے آپشن</em>"
+
+#~ msgid "Option to disable accessiblitly menu when not being used"
+#~ msgstr "جب وہ استعمال نہ ہو رہا ہو تو ایکسیسیبلیٹی مینو کو چھپانے کا آپشن"
+
+#~ msgid "Option to change cursor size"
+#~ msgstr "تیر کا سائز بدلنے کا آپشن"
+
+#~ msgid "A one-time donation request"
+#~ msgstr "ایک مرتبہ عطیہ کی درخواست"
+
+#~ msgid "Donate option in hamburger menu"
+#~ msgstr "ہیم برگر مینیو میں عطیہ کا آپشن"
+
+#~ msgid "<em>Behavior Changes</em>"
+#~ msgstr "<em>رویہ کی تبدیلیاں</em>"
+
+#~ msgid "Proper names are shown for themes instead of name of their directory"
+#~ msgstr "تھیمز کی ڈائریکٹری کے نام کی بجائے ان کے اپنے پراپر نام شو ہونگے"
+
+#~ msgid "Cursor only themes are not presented when choosing icon theme"
+#~ msgstr "آئکن تھیمز کو چوز کرتے وقت کرسر تھیمز شو نہیں ہونگے"
+
+#~ msgid "Fixed: Fails to run on PureOS"
+#~ msgstr "درست کیا: پیور او ایس پر رن نہیں ہو سکتی تھی"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "لاگن مینیجر کی سیٹنگز"
