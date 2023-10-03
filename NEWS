@@ -1,3 +1,7 @@
+v4.beta1
+========
+* Workaround Flathub's annoying behavior of silently stripping out some app info
+
 v4.beta0
 ========
 * GNOME 45 support
