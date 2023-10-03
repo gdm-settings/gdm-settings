@@ -1,5 +1,5 @@
 project('gdm-settings',
-          version: '4.beta1',
+          version: '4.beta1+',
     meson_version: '>= 0.59',
   default_options: [
     'gtk:media-gstreamer=disabled',
