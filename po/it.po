@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-10-07 08:11+0000\n"
+"PO-Revision-Date: 2023-10-08 04:15+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "Se la modalità luce notturna è abilitata"
+msgstr "Se la modalità notturna è attiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -436,13 +436,13 @@ msgstr ""
 
 #: gdms/gui/about.py:101
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr ""
+msgstr "Albano Battistella"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -490,19 +490,19 @@ msgstr ""
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Immagini"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Tutti i file"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Scegli immagine"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Aspetto"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
@@ -565,7 +565,7 @@ msgstr ""
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Annulla"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
@@ -626,15 +626,15 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Temi"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Icone"
 
 #: resources/ui/appearance-page.blp:13
 msgid "Cursor"
@@ -646,19 +646,19 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Predefinito"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
-msgstr ""
+msgstr "Immagine"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
 msgid "Color"
-msgstr ""
+msgstr "Colore"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
@@ -682,23 +682,23 @@ msgstr ""
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Applica le impostazioni di visualizzazione correnti"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Risoluzione, frequenza di aggiornamento, posizioni del monitor, ecc."
 
 #: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
 msgid "Apply"
-msgstr ""
+msgstr "Applica"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Luce notturna"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Abilita"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
@@ -706,49 +706,49 @@ msgstr ""
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Dal tramonto all'alba"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Programmazione manuale"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Orario"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Da"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "A"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Temperatura colore"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Font"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Antialiasing"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpixel"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "Nessuno"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
@@ -768,132 +768,132 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Fattore di scala"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Aggiorna"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Carica le impostazioni della sessione"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Ripristina impostazioni"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importa da file"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Esporta su file"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Informazioni"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Esci"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Disabilita i pulsanti di riavvio"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Disabilita elenco utenti"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Abilita logo"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Indica se mostrare un logo sotto l'elenco degli utenti"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "L'immagine da mostrare sotto l'elenco degli utenti"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Messaggio di benvenuto"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Ingrandire"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Messaggio"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Dimensione cursore"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Predefinito"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Più grande"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Più grande"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Mouse"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Accelerazione del puntatore"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Automatico"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "Disabilitato"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Abilitato"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Scorrimento naturale"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Lo scorrimento sposta il contenuto, non la visualizzazione."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Velocità del puntatore"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -901,72 +901,73 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
-msgstr ""
+msgstr "Tocca per fare clic"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Scorrimento con due dita"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Scorri scorrendo con due dita."
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Disabilita durante la digitazione"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Comportamento del pulsante di accensione"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Non fare nulla"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Sospendi"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Ibernazione"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Chiedi"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Risparmio energetico automatico"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
 msgstr ""
+"Abilita la modalità di risparmio energetico quando la batteria è scarica."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Schermo scuro"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Riduce la luminosità dello schermo quando il computer è inattivo."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Spegni lo schermo"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Se spegnere lo schermo dopo un periodo di inattività."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "Ritardo"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Tempo in minuti dopo il quale lo schermo si spegnerà."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
