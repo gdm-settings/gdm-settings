@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-10-08 04:15+0000\n"
+"PO-Revision-Date: 2023-10-08 13:02+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
@@ -187,90 +187,102 @@ msgstr "Oscura lo schermo dopo un periodo di inattività"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Se lo schermo deve essere oscurato per risparmiare energia quando il "
+"computer è inattivo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Se oscurare lo schermo quando la sessione è inattiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Se lo schermo deve essere oscurato per risparmiare energia quando il "
+"computer è inattivo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Il tempo prima della sessione è considerato inattivo"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"Il numero di minuti di inattività prima che la sessione sia considerata "
+"inattiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Se sospendere quando inattivo e utilizzando la batteria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Timeout di sospensione per il computer quando è alimentato a batteria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Il tempo in minuti durante il quale il computer alimentato a batteria deve "
+"rimanere inattivo prima di entrare in modalità di sospensione. Un valore "
+"pari a 0 significa mai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Se sospendere quando inattivo e collegato"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Timeout di sospensione per il computer quando è collegato"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Il tempo in minuti durante il quale il computer alimentato tramite CA deve "
+"rimanere inattivo prima di entrare in modalità di sospensione. Un valore "
+"pari a 0 significa mai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Se applicare le modifiche della barra superiore al tema estratto"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Se disabilitare le frecce della barra superiore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Se disabilitare gli angoli arrotondati della barra superiore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Se cambiare il colore del testo della barra superiore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Colore del testo della barra superiore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Se cambiare lo sfondo della barra superiore"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Colore di sfondo della barra superiore"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "Impostazioni GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalizza la tua schermata di accesso"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -278,36 +290,41 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Modifica le impostazioni GDM; Applica tema e sfondo, modifica il tema del "
+"cursore, il tema delle icone e le impostazioni della luce notturna, tra le "
+"altre cose."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
-msgstr ""
+msgstr "Mostra la versione dell'applicazione"
 
 #: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Imposta manualmente il livello di verbosità (da 0 a 5)"
 
 #: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "LIVELLO"
 
 #: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Abilita la modalità dettagliata (alias di --verbosity=5)"
 
 #: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Abilita la modalità silenziosa (alias di --verbosity=0)"
 
 #: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Livello di dettaglio {level} non valido. Deve essere 0, 5 o un valore "
+"intermedio."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -315,22 +332,27 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"È necessario installare i seguenti programmi <b>sul sistema host</b> "
+"affinché questa app funzioni correttamente, ma non sono installati sul "
+"sistema host."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Questa app richiede i seguenti software per funzionare correttamente ma non "
+"sono installati."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -340,29 +362,34 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Fai clic <a href=\"{url}\">qui</a> per istruzioni su come installare queste "
+"dipendenze sul tuo sistema."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Dipendenze mancanti"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "File del tema predefinito della shell perso"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"L'app necessita, ma non è riuscita a trovare, un file del tema della shell "
+"predefinito non modificato. Per risolvere il problema, reinstallare il "
+"pacchetto \"gnome-shell-common\" o \"gnome-shell\"."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Richiesta di donazione"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -371,68 +398,74 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Questa app è e rimarrà sempre Open Source/Libre e gratuita. Tuttavia, puoi "
+"mostrare un po' d'amore facendo una donazione allo sviluppatore.\n"
+"❤️\n"
+"Lo apprezzerei molto."
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "Non interessato"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Donazione"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Impostazioni ricaricate"
 
 #: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Le impostazioni della sessione sono state caricate correttamente"
 
 #: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
+"Le impostazioni della sessione di caricamento NON sono supportate nella "
+"versione Flatpak"
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Ripristinato le impostazioni con successo"
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Impossibile ripristinare le impostazioni"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "Importa"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Le impostazioni sono state importate correttamente dal file"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Impossibile importare. Il file non è valido"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Le impostazioni sono state esportate con successo"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Impossibile esportare. Permesso negato"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Impossibile esportare. Esiste già una directory con quel nome"
 
 #: gdms/gui/about.py:16 gdms/gui/about.py:100
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:17
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:101
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -460,33 +493,38 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Il file '$XDG_CONFIG_HOME/monitors.xml' è necessario per applicare le "
+"impostazioni di visualizzazione correnti ma non esiste.\n"
+"\n"
+"Per creare automaticamente quel file, apri le \"Impostazioni\" del sistema e "
+"modifica lì alcune opzioni di visualizzazione."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Impostazioni del monitor non trovate"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "Tema della shell predefinito estratto in '{folder}' come '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Impossibile estrarre il tema predefinito"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Scegli file"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Nessuno)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Scegli"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
@@ -506,27 +544,27 @@ msgstr "Aspetto"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Font"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra superiore"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Suono"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Mouse &amp; Touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Schermo"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Schermata di accesso"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
@@ -534,34 +572,40 @@ msgstr ""
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Strumenti"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Impostazioni applicate correttamente"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Impossibile applicare le impostazioni"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"Non applicato. L'immagine di sfondo scelta non esiste più. Per favore! "
+"scegli di nuovo."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"Non applicato. L'immagine del logo scelta non esiste più. Per favore! scegli "
+"di nuovo."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Il sistema potrebbe iniziare a sembrare strano/bacato finché non si effettua "
+"nuovamente l'accesso o non si riavvia."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Disconnettersi?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -569,45 +613,47 @@ msgstr "Annulla"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Log Out"
 
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importazione dal file '{filename}'"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importazione da input standard"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Impossibile analizzare il file di importazione"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Impossibile leggere il file di importazione. Non codificato in UTF-8"
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Il file importato non ha la sezione '{section_name}'"
 
 #: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Il file importato non ha la chiave '{key_name}' nella sezione "
+"'{section_name}'"
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Esportazione nel file '{filename}'"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Impossibile scrivere nel file '{filename}'. Permesso negato"
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -615,14 +661,16 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Impossibile scrivere nel file '{filename}'. Esiste già una directory con lo "
+"stesso nome"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Esportazione nell'output standard"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Backup del tema della shell predefinito…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
@@ -642,7 +690,7 @@ msgstr "Cursore"
 
 #: resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Sfondo"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
@@ -662,23 +710,23 @@ msgstr "Colore"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "L'immagine da utilizzare come sfondo"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Regolazione dell'immagine"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Adatta allo schermo"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Ripeti"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "Il colore da utilizzare come sfondo"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
@@ -702,7 +750,7 @@ msgstr "Abilita"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Pianificazione"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
