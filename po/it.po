@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-10-08 13:02+0000\n"
+"PO-Revision-Date: 2023-10-08 14:03+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
@@ -479,11 +479,11 @@ msgstr "Albano Battistella"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Impostazioni di visualizzazione correnti applicate"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Impossibile applicare le impostazioni di visualizzazione correnti"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -568,7 +568,7 @@ msgstr "Schermata di accesso"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "Energia"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
@@ -800,19 +800,19 @@ msgstr "Nessuno"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Visualizzazione"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Pieno"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Leggero"
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
