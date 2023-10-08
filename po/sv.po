@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-04-15 15:51+0000\n"
+"PO-Revision-Date: 2023-10-08 08:03+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -44,14 +44,12 @@ msgid "The image file to use as GDM background"
 msgstr "Bildfilen som ska användas som GDM-bakgrund"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Bakgrundsbild"
+msgstr "Bakgrundsbild justering"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategi för justering av bakgrundsbild."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -267,10 +265,8 @@ msgstr "Översta fältets bakgrundsfärg"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "Återställ inställningar"
+msgstr "GDM inställningar"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -365,16 +361,17 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Standard skaltema"
+msgstr "Förinställd skaltemafil förlorad"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Appen behöver men kunde inte hitta en omodifierad standard skaltemafil. För "
+"att åtgärda problemet, installera om paketet \"gnome-shell-common\" eller "
+"\"gnome-shell\"."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -700,17 +697,15 @@ msgstr "Bild som ska användas som bakgrund"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Bildjustering"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Dimma skärm"
+msgstr "Anpassa till skärm"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Upprepa"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
