@@ -4,13 +4,14 @@
 # Andrea Brandi <git@andreabrandi.com>, 2022.
 # albanobattistella <albano_battistella@hotmail.com>, 2022, 2023.
 # Davide Neri <davnerix@gmail.com>, 2023.
+# "Jorge - vitrubio.net" <jorge@vitrubio.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-10-08 14:03+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"PO-Revision-Date: 2023-10-13 13:02+0000\n"
+"Last-Translator: \"Jorge - vitrubio.net\" <jorge@vitrubio.net>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
 "Language: it\n"
@@ -909,7 +910,7 @@ msgstr "Più grande"
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr "Più grande"
+msgstr "Il più grande"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
