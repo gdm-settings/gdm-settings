@@ -63,12 +63,13 @@ def extract_default_theme(destination:str, /):
     if os.path.exists(destination):
         shutil.rmtree(destination)
 
-    destination_shell_dir = os.path.join(destination, 'gnome-shell')
     gresource_file = get_default()
-    resource_list = utils.get_stdout(["gresource", "list", env.HOST_ROOT + gresource_file]).splitlines()
 
     if not gresource_file:
         raise FileNotFoundError('No unmodified GResource file of the default shell theme was found')
+
+    destination_shell_dir = os.path.join(destination, 'gnome-shell')
+    resource_list = utils.get_stdout(["gresource", "list", env.HOST_ROOT + gresource_file]).splitlines()
 
     for resource in resource_list:
         filename = resource.removeprefix("/org/gnome/shell/theme/")
