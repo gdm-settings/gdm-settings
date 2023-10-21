@@ -147,6 +147,13 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
             if "gnome-shell.css" not in css_files:
                 shutil.copy(f"{temp_shell_dir}/gnome-shell-dark.css", f"{temp_shell_dir}/gnome-shell.css")
 
+        elif shelldir_has_file("gnome-shell-dark.css") and "gnome-shell.css" in css_files:
+            with open(os.path.join(shellDir, "gnome-shell-dark.css")) as file_io:
+                contents_theme = file_io.read()
+            with open(os.path.join(temp_shell_dir, "gnome-shell.css"), 'w') as file_io:
+                contents = css_files["gnome-shell.css"] + '\n\n' + contents_theme
+                file_io.write(contents)
+
     # Inject custom-theme identity
     open(os.path.join(temp_shell_dir, CustomThemeIdentity), 'w').close()
 
