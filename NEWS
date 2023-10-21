@@ -7,6 +7,7 @@ v4.0
 v4.beta1
 ========
 * Workaround Flathub's annoying behavior of silently stripping out some app info
+* Mark appstream release descriptions as not translatable
 
 v4.beta0
 ========
