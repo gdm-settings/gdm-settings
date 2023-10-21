@@ -59,12 +59,15 @@
 
   <screenshots>
     <screenshot type="default">
+      <caption>Main Window (Desktop Mode)</caption>
       <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/default.png</image>
     </screenshot>
     <screenshot>
+      <caption>Sidebar (Mobile Mode)</caption>
       <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/tall-sidebar.png</image>
     </screenshot>
     <screenshot>
+      <caption>Appearance Settings (Mobile Mode)</caption>
       <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/tall-content.png</image>
     </screenshot>
   </screenshots>
