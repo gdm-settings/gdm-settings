@@ -9,13 +9,14 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Simon Hahne <simonhahne@web.de>, 2023.
 # Amr Ibrahim <amribrahim1987@hotmail.com>, 2023.
+# Ettore Atalan <atalanttore@googlemail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-08-01 18:05+0000\n"
-"Last-Translator: Amr Ibrahim <amribrahim1987@hotmail.com>\n"
+"PO-Revision-Date: 2023-10-16 04:19+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -48,14 +49,12 @@ msgid "The image file to use as GDM background"
 msgstr "Das Bild, welches als GDM-Hintergrund verwendet werden soll"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Hintergrundbild"
+msgstr "Anpassung des Hintergrundbildes"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategie zur Anpassung des Hintergrundbildes."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -280,10 +279,8 @@ msgstr "Hintergrundfarbe der oberen Leiste"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "Maus-Einstellungen"
+msgstr "GDM-Einstellungen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -348,20 +345,14 @@ msgstr ""
 "korrekt zu funktionieren."
 
 #: gdms/gui/__init__.py:191
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -381,7 +372,7 @@ msgstr "Fehlende Abhängigkeiten"
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 #, fuzzy
@@ -443,7 +434,7 @@ msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "Importieren"
 
 #: gdms/gui/__init__.py:350
 #, fuzzy
@@ -483,10 +474,8 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:101
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright © 2021–2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -548,7 +537,6 @@ msgid "Images"
 msgstr "Bilder"
 
 #: gdms/gui/widgets.py:114
-#, fuzzy
 msgid "All Files"
 msgstr "Alle Dateien"
 
@@ -582,7 +570,7 @@ msgstr "Anzeige"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Anmeldebildschirm"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"

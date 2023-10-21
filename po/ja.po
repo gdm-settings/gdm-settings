@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-07-06 22:48+0000\n"
+"PO-Revision-Date: 2023-10-21 04:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -42,14 +42,12 @@ msgid "The image file to use as GDM background"
 msgstr "GDM の背景として使う画像ファイル"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "背景画像"
+msgstr "背景画像の位置調整"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "背景画像の位置調整方法です。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -264,10 +262,8 @@ msgstr "トップバーの背景色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "設定をリセット"
+msgstr "GDM Settings"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -361,16 +357,17 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "デフォルトのシェルテーマ"
+msgstr "デフォルトのシェルテーマファイルが存在しません"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"未変更のデフォルトシェルテーマファイルが必要ですが、見つかりませんでした。こ"
+"の問題を修正するには、'gnome-shell-common' または 'gnome-shell' "
+"パッケージを再インストールしてください。"
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -476,11 +473,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"現在のディスプレイ設定を適用するには、現在存在しない '$XDG_CONFIG_HOME/"
-"monitors.xml' ファイルが必要です。\n"
+"現在のディスプレイ設定を適用するには '$XDG_CONFIG_HOME/monitors.xml' "
+"ファイルが必要ですが、ファイルが存在しません。\n"
 "\n"
-"このファイルを自動的に作成するには、システムの '設定' アプリを開き、どれでも"
-"よいので何か設定を変更してください。"
+"このファイルを自動的に作成するには、システムの '設定' "
+"アプリを開き、どれでもよいので何か設定を変更してください。"
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -696,17 +693,15 @@ msgstr "背景として使う画像"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "画像の位置調整"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "画面を暗くする"
+msgstr "画面に合わせる"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "並べる"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
