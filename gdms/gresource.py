@@ -168,6 +168,9 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
     append_if_exists(f"{temp_shell_dir}/gnome-shell-light.css", additional_css)
     append_if_exists(f"{temp_shell_dir}/gnome-shell-high-contrast.css", additional_css)
 
+    if not os.path.isfile(os.path.join(temp_shell_dir, 'gnome-shell.css')):
+        shutil.copy(f"{temp_shell_dir}/gnome-shell-dark.css", f"{temp_shell_dir}/gnome-shell.css")
+
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm.css")
     shutil.copy(f"{temp_shell_dir}/gnome-shell.css", f"{temp_shell_dir}/gdm3.css")
 
