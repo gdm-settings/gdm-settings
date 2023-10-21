@@ -156,7 +156,7 @@ def compile(shellDir:str, additional_css:str, background_image:str=''):
         else:
             raise BackgroundImageNotFoundError(2, 'No such file', background_image)
 
-    append_to_file(f"{temp_shell_dir}/gnome-shell.css", additional_css)
+    append_if_exists(f"{temp_shell_dir}/gnome-shell.css", additional_css)
     append_if_exists(f"{temp_shell_dir}/gnome-shell-dark.css", additional_css)
     append_if_exists(f"{temp_shell_dir}/gnome-shell-light.css", additional_css)
     append_if_exists(f"{temp_shell_dir}/gnome-shell-high-contrast.css", additional_css)
