@@ -80,6 +80,17 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4.1" type="stable" date="2023-10-22">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.1</url>
+      <description translatable="no">
+        <p>Fixed "Apply current display settings" feature not working</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/199">#199</issue>
+      </issues>
+    </release>
+
     <release version="4.0" type="stable" date="2023-10-21">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.0</url>
       <description translatable="no">
