@@ -72,7 +72,7 @@ class Command:
     def __str__(self) -> str:
         if isinstance(self._data, str):
             return self._data
-        return ' '.join(repr(segment) for segment in self._data)
+        return ' '.join(self._data)
 
     def prefix(self, *prefix: str):
         command = self._data

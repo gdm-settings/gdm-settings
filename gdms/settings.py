@@ -290,8 +290,8 @@ def get_css() -> str:
     # Text Color
     if change_text_color:
         css += "\n"
-        css +=  select_elem('panel-button')
-        css +=  " {\n"
+        css +=  select_elem('panel-button') + ",\n"
+        css +=  select_elem('panel-button.clock-display') + " {\n"
         css += f"  color: {text_color};\n"
         css +=  "}\n"
     # Background Color

@@ -1,3 +1,18 @@
+v4.1
+====
+* Fix: "Apply current display settings" feature not working
+
+v4.0
+====
+* Fix: Wrong error shown if default gresource file deleted after launching gdm-settings
+* Fix: Top bar text color not applying to clock on GNOME 45
+* Allow applying GNOME45+ only shell themes on GNOME 44 and below as well
+
+v4.beta1
+========
+* Workaround Flathub's annoying behavior of silently stripping out some app info
+* Mark appstream release descriptions as not translatable
+
 v4.beta0
 ========
 * GNOME 45 support

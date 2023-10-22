@@ -34,7 +34,7 @@ copy /usr/lib/libresolv.*
 copy /usr/lib/librt.*
 copy /usr/lib/libthread_db.so*
 copy /usr/lib/libutil.*
-copy /usr/lib/locale/C.UTF-8
+copy /usr/lib/locale/C.utf8
 copy /usr/lib/rcrt1.o
 copy /usr/share/locale/*/LC_MESSAGES/libc.mo
 

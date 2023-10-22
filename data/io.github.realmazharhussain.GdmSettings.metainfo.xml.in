@@ -59,13 +59,16 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.beta0/light/default.png</image>
+      <caption>Main Window (Desktop Mode)</caption>
+      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/default.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.beta0/light/tall-sidebar.png</image>
+      <caption>Sidebar (Mobile Mode)</caption>
+      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/tall-sidebar.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.beta0/light/tall-content.png</image>
+      <caption>Appearance Settings (Mobile Mode)</caption>
+      <image>https://raw.githubusercontent.com/gdm-settings/screenshots/v4.0/light/tall-content.png</image>
     </screenshot>
   </screenshots>
 
@@ -77,6 +80,45 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4.1" type="stable" date="2023-10-22">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.1</url>
+      <description translatable="no">
+        <p>Fixed "Apply current display settings" feature not working</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/199">#199</issue>
+      </issues>
+    </release>
+
+    <release version="4.0" type="stable" date="2023-10-21">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.0</url>
+      <description translatable="no">
+        <p>GDM Settings 4 brings</p>
+        <ul>
+          <li>New UI style</li>
+          <li>GNOME 45 Support</li>
+          <li>Background image adjustment option</li>
+          <li>Shell theme, background and top bar tweaks working in high contrast mode as well</li>
+          <li>Application Window dragable from anywhere, not just the headerbar</li>
+          <li>Untranslated release information</li>
+        </ul>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/184">#184</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/180">#180</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/171">#171</issue>
+      </issues>
+    </release>
+
+    <release version="4~beta1" type="development" date="2023-10-03">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.beta1</url>
+      <description translatable="no">
+        <p>Workaround Flathub's annoying behavior of silently stripping out some app info</p>
+      </description>
+    </release>
+
     <release version="4~beta0" type="development" date="2023-09-29">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.beta0</url>
 
@@ -84,15 +126,17 @@
         <p>First beta release of the upcoming GDM Settings version 4</p>
         <ul>
           <li>New UI style</li>
+          <li>GNOME 45 Support</li>
+          <li>New option to change background image adjustment</li>
           <li>Shell theme, background and top bar tweaks now work in high contrast mode as well</li>
           <li>Window can be dragged and moved from anywhere, not just the headerbar</li>
         </ul>
       </description>
 
       <issues>
-        <issue url="https://github.com/gdm-settings/gdm-settings/issues/184">GNOME 45 Support</issue>
-        <issue url="https://github.com/gdm-settings/gdm-settings/issues/180">New option to change background image adjustment</issue>
-        <issue url="https://github.com/gdm-settings/gdm-settings/issues/171">New graphical error message (replaces an unhelpful error printed on the terminal)</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/184">#184</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/180">#180</issue>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/171">#171</issue>
       </issues>
     </release>
 
