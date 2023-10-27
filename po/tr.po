@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-10-02 20:01+0000\n"
+"PO-Revision-Date: 2023-10-28 04:14+0000\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -293,15 +293,15 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Ana Pencere (Masaüstü Kipi)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Kenar Çubuğu (Mobil Kip)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Görünüm Ayarları (Mobil Kip)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
