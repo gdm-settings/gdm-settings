@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-08-16 07:53+0000\n"
+"PO-Revision-Date: 2023-10-30 05:15+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -272,10 +272,8 @@ msgstr "Achtergrondkleur van bovenbalk"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "Cursorvoorkeuren"
+msgstr "GDM-instellingen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -298,15 +296,15 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Hoofd­venster (bureaublad­modus)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Zijbalk (mobiele modus)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Weergave-instellingen (mobiele modus)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -383,10 +381,8 @@ msgid "OK"
 msgstr "Oké"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Standaard Shell-thema"
+msgstr "Kon bestand voor standaard Shell-thema niet vinden"
 
 #: gdms/gui/__init__.py:225
 msgid ""
