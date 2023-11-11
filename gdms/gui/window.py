@@ -108,7 +108,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
 
         def add_page(name, title, content):
             page = self.stack.add_titled(content, name, title)
-            page.props.icon_name = name
+            page.props.icon_name = name + '-symbolic'
 
         add_page('appearance', _('Appearance'),       pages.AppearancePageContent(self))
         add_page('fonts',      _('Fonts'),            pages.FontsPageContent(self))
