@@ -5,13 +5,14 @@
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # rene-coty <irenee.thirion@e.email>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-04-09 09:49+0000\n"
-"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
+"PO-Revision-Date: 2023-11-18 16:03+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.2\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -46,14 +47,12 @@ msgid "The image file to use as GDM background"
 msgstr "Le fichier image à utiliser comme arrière-plan GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Image d'arrière-plan"
+msgstr "Ajustement de l’image d’arrière-plan"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Stratégie d'ajustement de l'image de fond."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -286,10 +285,8 @@ msgstr "Couleur d'arrière-plan de la barre supérieure"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "Paramètres de la souris"
+msgstr "Paramètres de GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -312,15 +309,15 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Fenêtre principale (mode Bureau)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Barre latérale (mode mobile)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Paramètres d'apparence (mode mobile)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -737,7 +734,7 @@ msgstr "L'image à utiliser comme arrière-plan"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Ajustement d’image"
 
 #: resources/ui/appearance-page.blp:31
 #, fuzzy
