@@ -54,7 +54,9 @@
     <binary>gdm-settings</binary>
   </provides>
 
-  <developer_name>Mazhar Hussain</developer_name>
+  <developer id="realmazharhussain.github.io">
+      <name>Mazhar Hussain</name>
+  </developer>
   <update_contact>realmazharhussain_at_gmail.com</update_contact>
 
   <screenshots>
