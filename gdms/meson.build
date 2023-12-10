@@ -18,6 +18,7 @@ install_data(files(
     '__init__.py',
     '__main__.py',
     'cmd.py',
+    'debug_info.py',
     'enums.py',
     'env.py',
     'gresource.py',

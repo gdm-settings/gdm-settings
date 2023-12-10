@@ -15,6 +15,7 @@ from gdms import env
 from gdms.enums import PackageType
 from gdms.utils import BackgroundTask, GSettings
 from gdms import gresource
+from gdms import debug_info
 from gdms import settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
@@ -102,16 +103,10 @@ class GdmSettingsApp(Adw.Application):
             win.present()
             return
 
-        default_gresouce = gresource.get_default()
-
-        logger.info(f"Application Version    = {VERSION}")
-        logger.info(f"Operating System       = {env.OS_PRETTY_NAME}")
-        logger.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
-        logger.info(f"TEMP_DIR               = {env.TEMP_DIR}")
-        logger.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
-        logger.info(f"ShellGresourceFile     = {gresource.ShellGresourceFile}")
-        logger.info(f"UbuntuGdmGresourceFile = {gresource.UbuntuGdmGresourceFile}")
-        logger.info(f"Default Gresource File = {default_gresouce}")
+        BOLD = '\033[1m'
+        NORMAL = '\033[0m'
+        for key, val in debug_info.debug_info:
+            logger.info(f"{BOLD}{key}{NORMAL}: {val}")
 
         self.settings = GSettings(APP_ID)
 
@@ -133,7 +128,7 @@ class GdmSettingsApp(Adw.Application):
         if not self.check_system_dependencies():
             return
 
-        if not default_gresouce:
+        if not gresource.get_default():
             self.show_missing_gresource_dialog()
             return
 
