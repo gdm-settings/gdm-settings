@@ -81,12 +81,6 @@ stderr_log_handler.setFormatter(_StdErrFormatter())
 stderr_log_handler.setLevel(logging.DEBUG)
 logger.addHandler(stderr_log_handler)
 
-temp_log_io = tempfile.TemporaryFile(mode='w+')
-temp_log_handler = logging.StreamHandler(temp_log_io)
-temp_log_handler.setFormatter(logging.Formatter("%(levelname)s:%(name)s: %(message)s"))
-temp_log_handler.setLevel(logging.DEBUG)
-logger.addHandler(temp_log_handler)
-
 
 def main() -> int:
     from .gui import GdmSettingsApp
