@@ -60,16 +60,21 @@ class GdmSettingsApp(Adw.Application):
                                  description, argument_name,
                                  )
 
-        add_option('version',   '\0', _('Show application version'))
-        add_option('verbosity', '\0', _('Set verbosity level manually (from 0 to 5)'),
+        add_option('debug-info', 'i',  _('Show debug information (in Markdown format)'))
+        add_option('version',    '\0', _('Show application version'))
+        add_option('verbosity',  '\0', _('Set verbosity level manually (from 0 to 5)'),
                    C_('Argument of --verbosity option', 'LEVEL'), 'INT')
-        add_option('verbose',   'v',  _('Enable verbose mode (alias of --verbosity=5)'))
-        add_option('quiet',     'q',  _('Enable quiet mode (alias of --verbosity=0)'))
+        add_option('verbose',    'v',  _('Enable verbose mode (alias of --verbosity=5)'))
+        add_option('quiet',      'q',  _('Enable quiet mode (alias of --verbosity=0)'))
 
 
     def do_handle_local_options(self, options):
         if options.contains("version"):
             print(APP_NAME, VERSION)
+            return 0
+
+        if options.contains("debug-info"):
+            print(debug_info.as_markdown())
             return 0
 
         set_logging_level(3)
