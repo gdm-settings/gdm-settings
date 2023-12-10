@@ -12,7 +12,7 @@ thales_binda   = C_("Name of Artist",    "Thales Bindá") +   " <thales.i.o.b@gm
 def about_window(win):
     temp_log_io.seek(0)
 
-    abt = Adw.AboutWindow.new_from_appdata("/app/info.xml")
+    abt = Adw.AboutWindow.new_from_appdata("/app/info.xml", VERSION.split(".")[0] + ".0")
     abt.set_properties(
         artists = [thales_binda],
         copyright = _("Copyright 2021-2023 Mazhar Hussain"),
