@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-12-14 16:06+0000\n"
+"PO-Revision-Date: 2023-12-14 18:07+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ca/>\n"
@@ -789,75 +789,75 @@ msgstr "Lletra"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Antialiàsing"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Estàndard"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpíxel"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Suggeriment"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Plena"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Mitjana"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Lleugera"
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Factor d'escala"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Refresca"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Carrega la configuració de la sessió"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Restableix els paràmetres"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importa des d'un fitxer"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exporta a un fitxer"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Surt"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Inhabilita els botons de reinici"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Inhabilita la llista d'usuaris"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
