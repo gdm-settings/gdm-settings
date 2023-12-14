@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-12-14 11:06+0000\n"
+"PO-Revision-Date: 2023-12-14 16:06+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ca/>\n"
@@ -593,65 +593,72 @@ msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"No s'ha aplicat. La imatge de fons triada ja no existeix. Si us plau, trieu-"
+"ne una altra."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"No s'ha aplicat. La imatge del logotip triada ja no existeix. Si us plau, "
+"trieu-ne una altra."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"El sistema pot començar a semblar estrany o amb errors fins que torneu a "
+"iniciar la sessió o el reinicieu."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "En voleu sortir?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Surt"
 
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importació des del fitxer {filename}"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importació des de l'entrada estàndard"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "No s'ha pogut analitzar el fitxer importat."
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "No s'ha pogut llegir el fitxer importat. No està codificat en UTF-8."
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "El fitxer importat no té la secció {section_name}."
 
 #: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"El fitxer importat no té la clau '{key_name}' a la secció '{section_name}'."
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "S'exporta al fitxer {filename}"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "No es pot escriure al fitxer {filename}: permís denegat."
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -659,10 +666,12 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"No es pot escriure al fitxer {filename}. Ja existeix un directori amb el "
+"mateix nom."
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exportació a la sortida estàndard"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
@@ -670,7 +679,7 @@ msgstr "Es fa una còpia de seguretat del tema predeterminat…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Temes"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
@@ -678,105 +687,105 @@ msgstr "Intèrpret d'ordres"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Icones"
 
 #: resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr ""
+msgstr "Cursor"
 
 #: resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Fons"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Per defecte"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
-msgstr ""
+msgstr "Imatge"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "La imatge per usar com a fons"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Retoc de la imatge"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Adapta a la pantalla"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Repeteix"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "El color per usar com a fons"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Aplica la configuració actual de la pantalla"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Resolució, freqüència de refresc, posicions del monitor, etc."
 
 #: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
 msgid "Apply"
-msgstr ""
+msgstr "Aplica-ho"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Llum nocturna"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Habilita"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Programa"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "De la posta a la sortida del sol"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Programació manual"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Hores"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "De"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "a"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Temperatura del color"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Lletra"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
