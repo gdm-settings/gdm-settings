@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-12-14 10:05+0000\n"
+"PO-Revision-Date: 2023-12-14 11:06+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ca/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.3-rc\n"
+"X-Generator: Weblate 5.3\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -379,16 +379,16 @@ msgstr "D'acord"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "S'ha perdut el fitxer del tema predeterminat del Shell."
+msgstr "S'ha perdut el fitxer del tema predeterminat de l'intèrpret d'ordres."
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"L'aplicació necessita un fitxer de tema predeterminat del Shell sense "
-"modificar, però no l'ha pogut trobar. Per solucionar el problema, torneu a "
-"instal·lar el paquet gnome-shell-common o gnome-shell."
+"L'aplicació necessita un fitxer de tema predeterminat de l'intèrpret "
+"d'ordres sense modificar, però no l'ha pogut trobar. Per solucionar el "
+"problema, torneu a instal·lar el paquet gnome-shell-common o gnome-shell."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -443,51 +443,51 @@ msgstr "Importa"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "La configuració s'ha importat correctament del fitxer."
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "No s'ha pogut importar. El fitxer no és vàlid."
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "La configuració s'ha importat correctament del fitxer."
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "No s'ha pogut exportar. Permís denegat."
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "No s'ha pogut exportar. Ja existeix un directori amb aquest nom."
 
 #: gdms/gui/about.py:16 gdms/gui/about.py:100
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:17
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:101
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "Drets de reproducció, 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr ""
+msgstr "opensusecatala@gmail.com"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "S'ha aplicat la configuració de la visualització actual."
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "No s'ha pogut aplicar la configuració de la visualització actual."
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -497,10 +497,15 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"El fitxer $XDG_CONFIG_HOME/monitors.xml és necessari per aplicar la "
+"configuració de visualització actual, però no existeix.\n"
+"\n"
+"Per crear aquest fitxer automàticament, obriu la Configuració del sistema i "
+"canvieu-hi algunes opcions de visualització."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "No s'ha trobat la configuració del monitor."
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -508,78 +513,80 @@ msgstr ""
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
+"El tema de l'intèrpret d'ordres predeterminat s'ha extret a {folder} com a "
+"{name}."
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "No s'ha pogut extreure el tema predeterminat."
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Trieu un fitxer"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Cap)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Trieu"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Imatges"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Tots els fitxers"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Trieu una imatge"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Aparença"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Lletres"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra superior"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "So"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Ratolí i ratolí tàctil"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Pantalla"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Pantalla d'inici de sessió"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "Energia"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Eines"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "La configuració s'ha aplicat correctament."
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "No s'ha pogut aplicar la configuració."
 
 #: gdms/gui/window.py:147
 msgid ""
@@ -659,7 +666,7 @@ msgstr ""
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Es fa una còpia de seguretat del tema predeterminat…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
@@ -667,7 +674,7 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Intèrpret d'ordres"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
@@ -1047,7 +1054,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Tema predeterminat de l'intèrpret d'ordres"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
@@ -1055,7 +1062,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Extreu el tema predeterminat de l'intèrpret d'ordres"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
