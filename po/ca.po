@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-12-14 09:04+0000\n"
+"PO-Revision-Date: 2023-12-14 10:05+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ca/>\n"
@@ -118,34 +118,41 @@ msgstr "Hora d'inici"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"Quan la programació automàtica està inhabilitada, s'usa aquesta hora d'inici."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "El minut de l'hora d'inici"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Quan la programació automàtica està inhabilitada, s'usa aquest inici en "
+"minuts."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "L'hora d'acabament"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"Quan la programació automàtica està inhabilitada, s'usa aquesta hora "
+"d'acabament."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "El minut d'acabament"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Quan la programació automàtica està inhabilitada, s'usa aquest acabament en "
+"minuts."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Acció del botó d'engegar"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -153,108 +160,122 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"L'acció que cal dur a terme quan es prem el botó d'engegar el sistema. "
+"Aquesta acció està codificada (i la configuració s'ignora) a les màquines "
+"virtuals (aturada) i tauletes (suspensió)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Habilita el perfil d'estalvi d'energia quan la bateria és baixa"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Habilita automàticament el perfil d'estalvi d'energia mitjançant el dimoni "
+"de perfils d'energia si la bateria és baixa."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Atenua la pantalla després d'un període d'inactivitat"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Si la pantalla s'ha d'atenuar per estalviar energia quan l'ordinador està "
+"inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Si cal posar la pantalla en blanc quan la sessió està inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Si la pantalla ha d'estar en blanc per estalviar energia quan l'ordinador "
+"està inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "El temps abans que la sessió es consideri inactiva"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"El nombre de minuts d'inactivitat abans que la sessió es consideri inactiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Si s'ha de suspendre quan estigui inactiu i usi bateria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Temps d'espera de repòs per a l'ordinador amb bateria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La quantitat de temps en minuts que l'ordinador amb bateria ha d'estar "
+"inactiu abans d'adormir-se. Un valor de 0 significa mai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Si s'ha de suspendre quan està inactiu i endollat"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Temps d'espera per a l'ordinador quan està endollat"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La quantitat de temps en minuts que l'ordinador amb alimentació directa ha "
+"d'estar inactiu abans d'adormir-se. Un valor de 0 significa mai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Si s'han d'aplicar retocs de la barra superior al tema extret"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Si s'han d'inhabilitar les fletxes de la barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Si s'han d'inhabilitar els cantons arrodonits de la barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Si s'ha de canviar el color del text de la barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Color del text de la barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Si s'ha de canviar el fons de la barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Color de fons de la barra superior"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "Configuració del GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personalitzeu la pantalla d'inici de sessió"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -262,48 +283,51 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Canvieu la configuració del GDM. Apliqueu-hi un tema i un fons, canvieu el "
+"tema del cursor, el tema de les icones i la configuració de la llum "
+"nocturna, entre altres coses."
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Finestra principal (mode d'escriptori)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Barra lateral (mode de mòbil)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Configuració de l'aparença (mode de mòbil)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
-msgstr ""
+msgstr "Mostra la versió de l'aplicació"
 
 #: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Estableix el nivell de verbositat manualment (de 0 a 5)"
 
 #: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "NIVELL"
 
 #: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Habilita el mode més detallat (àlies de --verbosity=5)"
 
 #: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Habilita el mode més discret (àlies de --verbosity=0)"
 
 #: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Nivell de verbositat {level} no vàlid. Ha de ser 0, 5 o entremig."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -311,22 +335,27 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Cal que els programes següents estiguin instal·lats <b>al sistema amfitrió</"
+"b> perquè aquesta aplicació funcioni correctament, però no hi estan "
+"instal·lats."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Aquesta aplicació requereix el programari següent per funcionar "
+"correctament, però no està instal·lat."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -336,29 +365,34 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Cliqueu <a href=\"{url}\">aquí</a> per obtenir instruccions sobre com instal·"
+"lar aquestes dependències al sistema."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Manquen dependències"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "D'acord"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "S'ha perdut el fitxer del tema predeterminat del Shell."
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"L'aplicació necessita un fitxer de tema predeterminat del Shell sense "
+"modificar, però no l'ha pogut trobar. Per solucionar el problema, torneu a "
+"instal·lar el paquet gnome-shell-common o gnome-shell."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Sol·licitud de donació"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -367,38 +401,45 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Aquesta aplicació és i serà sempre de codi obert / lliure i gratuïta. "
+"Tanmateix, podeu mostrar una mica d'amor fent una donació al desenvolupador."
+"\n"
+"❤️\n"
+"Ho agrairia molt."
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "No hi estic interessat"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Fer una donació"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
-msgstr ""
+msgstr "S'ha tornat a carregar la configuració."
 
 #: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "La configuració de la sessió s'ha carregat correctament."
 
 #: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
+"La càrrega de la configuració de la sessió NO és compatible amb la versió de "
+"Flatpak."
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "S'han restablert els paràmetres correctament."
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Ha fallat restablir els paràmetres."
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "Importa"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
