@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-10-21 04:16+0000\n"
+"PO-Revision-Date: 2023-12-24 01:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -285,15 +285,15 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "メインウィンドウ (デスクトップモード)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "サイドバー (モバイルモード)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "外観の設定 (モバイルモード)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -831,7 +831,7 @@ msgstr "ファイルにエクスポート"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr "“ログイン画面の設定” について"
+msgstr "“GDM Settings” について"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
