@@ -46,6 +46,8 @@
     <binary>gdm-settings</binary>
   </provides>
 
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>Mazhar Hussain</developer_name>
   <developer id="realmazharhussain.github.io">
       <name>Mazhar Hussain</name>
   </developer>
