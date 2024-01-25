@@ -5,13 +5,14 @@
 # YgorJ <ygor-skat@hotmail.com>, 2022.
 # Marcelo dos Santos Mafra <msmafra@gmail.com>, 2023.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2023.
+# delvani <inavleb@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-12-09 21:05+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2024-01-25 16:01+0000\n"
+"Last-Translator: delvani <inavleb@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -27,12 +28,12 @@ msgstr "Nome do Tema"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr "Tipo de Fundo"
+msgstr "Tipo de plano de fundo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Se o fundo do GDM deve ser uma Imagem, Cor ou Padrão."
+msgstr "Se o plano de fundo do GDM deve ser uma imagem, cor ou padrão."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -41,7 +42,7 @@ msgstr "Imagem de Fundo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr "O arquivo de imagem para usar como fundo do GDM"
+msgstr "O arquivo de imagem a ser usado como plano de fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 msgid "Background Image Adjustment"
@@ -59,7 +60,7 @@ msgstr "Cor de fundo"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
-msgstr "A cor para usar como fundo do GDM"
+msgstr "A cor a ser usada como plano de fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
@@ -73,7 +74,7 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 "Velocidade de ponteiro para o touchpad. Valores aceitáveis estão na faixa "
-"[-1..1] (de desacelerado a rápido). O valor 0 é o padrão do systema."
+"[-1..1] (de desacelerado a rápido). O valor 0 é o padrão do sistema."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -298,11 +299,11 @@ msgstr "Janela Principal (Modo Desktop)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Barra lateral (dispositivo móvel)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Configurações de aparência (dispositivo móvel)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -380,16 +381,17 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Tema Padrão da Shell"
+msgstr "Arquivo Perdido Tema Padrão da Shell"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"O aplicativo precisa, mas não conseguiu encontrar, um arquivo de tema padrão "
+"da shell não modificado. Para corrigir o problema, reinstale o pacote ‘gnome-"
+"shell-common’ ou ‘gnome-shell’."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -477,7 +479,7 @@ msgstr "Direitos autorais 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr "Marcelo dos Santos Mafra "
+msgstr "BRAZILIAN TRANSLATION TEAM"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -715,17 +717,15 @@ msgstr "Imagem para usar como fundo"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Ajuste de imagem"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Tela escurecida"
+msgstr "Ajustar a tela"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
