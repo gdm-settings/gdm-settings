@@ -31,7 +31,7 @@ Adw.ToastOverlay toast_overlay {
         [top] Adw.HeaderBar {
           show-title: bind split_view.collapsed;
 
-          [start] Button apply_button { label: _("_Apply"); styles ["suggested-action"] use-underline: true; }
+          [start] Button apply_button { label: _("_Apply"); use-underline: true; styles ["suggested-action"] }
           [start] Spinner spinner { spinning: false; margin-start: 5;}
           title-widget: Label { styles ["title"] label: bind split_view.root as <Window>.title; };
           [end] MenuButton { icon-name: "open-menu-symbolic"; menu-model: app_menu; }
