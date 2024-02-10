@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-10 14:01+0000\n"
+"PO-Revision-Date: 2024-02-10 15:01+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -150,6 +150,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"सिस्टम पावर बटन दबाए जाने पर की जाने वाली क्रिया। वर्चुअल मशीन (पावर बंद) और "
+"टैबलेट (निलंबन) पर यह क्रिया हार्ड-कोडेड है (और सेटिंग को अनदेखा किया गया "
+"है)।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -160,6 +163,8 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"यदि बैटरी कम है तो power-profiles-daemon का उपयोग करके \"पावर-सेवर\" प्रोफ़ा"
+"इल को स्वचालित रूप से सक्षम करता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
@@ -171,7 +176,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "क्या सत्र निष्क्रिय होने पर स्क्रीन खाली करनी है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
