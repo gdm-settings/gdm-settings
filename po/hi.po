@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-10 13:01+0000\n"
+"PO-Revision-Date: 2024-02-10 14:01+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -20,16 +20,16 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "थीम का नाम"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "पृष्ठभूमि के प्रकार"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
+msgstr "क्या GDM पृष्ठभूमि एक छवि, रंग या डिफ़ॉल्ट होनी चाहिए।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -38,7 +38,7 @@ msgstr "पृष्ठभूमि छवि"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "GDM पृष्ठभूमि के रूप में उपयोग की जाने वाली छवि फ़ाइल"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 msgid "Background Image Adjustment"
@@ -46,7 +46,7 @@ msgstr "पृष्ठभूमि छवि समायोजन"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "पृष्ठभूमि छवि के समायोजन के लिए रणनीति।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -56,12 +56,12 @@ msgstr "पृष्ठभूमि का रंग"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "GDM पृष्ठभूमि के रूप में उपयोग करने के लिए रंग"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "संकेतक गति"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -69,30 +69,37 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"टचपैड के लिए सूचक गति. स्वीकृत मान [-1..1] श्रेणी में हैं (\"अनएक्सलेरेटेड\" "
+"से \"तेज़\")। 0 का मान सिस्टम डिफ़ॉल्ट है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "यदि रात्रि प्रकाश मोड सक्षम है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"जब सूरज ढल गया हो या पूर्व निर्धारित समय पर रात्रि प्रकाश मोड आपके डिस्प्ले "
+"का रंग तापमान बदल देता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "सक्षम होने पर डिस्प्ले का तापमान"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"केल्विन में इस तापमान का उपयोग रात्रि प्रकाश मोड सक्षम होने पर स्क्रीन टोन को"
+" संशोधित करने के लिए किया जाता है। उच्च मान नीला होता हैं, निचले मान लाल होता"
+" हैं।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "सूर्योदय और सूर्यास्त का उपयोग करें"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
@@ -340,7 +347,7 @@ msgstr "ठीक है"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "डिफ़ॉल्ट शैल थीम फ़ाइल खो गई"
+msgstr "डिफ़ॉल्ट शैल थीम फाइल खो गई"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -394,7 +401,7 @@ msgstr "आयात"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr "सेटिंग्स फ़ाइल से सफलतापूर्वक आयात की गई"
+msgstr "सेटिंग्स फाइल से सफलतापूर्वक आयात की गई"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
@@ -572,7 +579,7 @@ msgstr "मानक इनपुट से आयात किया जा र
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr "आयात फ़ाइल को पार्स करने में विफल"
+msgstr "आयात फाइल को पढने में विफल"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -612,7 +619,7 @@ msgstr "मानक आउटपुट पर निर्यात करन�
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr "डिफ़ॉल्ट शेल थीम का बैकअप लिया जा रहा है…"
+msgstr "डिफ़ॉल्ट शैल थीम का बैकअप लिया जा रहा है…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
@@ -775,11 +782,11 @@ msgstr "सेटिंग्स रीसेट करें"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr "फ़ाइल से आयात करें"
+msgstr "फाइल से आयात"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr "फ़ाइल में निर्यात करें"
+msgstr "फाइल में निर्यात"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -990,7 +997,7 @@ msgstr "अति प्रवर्धन"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "वॉल्यूम को 100% से ऊपर बढ़ाने की अनुमति दें"
+msgstr "वॉल्यूम को 100% से ऊपर बढ़ाने के लिए"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
