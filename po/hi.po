@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-10 05:02+0000\n"
+"PO-Revision-Date: 2024-02-10 13:01+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -186,7 +186,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr "बैटरी चालू होने पर कंप्यूटर के लिए स्लीप टाइमआउट"
+msgstr "स्लीप टाइमआउट जब कंप्यूटर बैटरी पर हो"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -370,7 +370,7 @@ msgstr "दान करें"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
-msgstr "सेटिंग्स फिर से लोड की गईं"
+msgstr "सेटिंग्स फिर से लोड की गई"
 
 #: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
@@ -382,7 +382,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr "सेटिंग्स सफलतापूर्वक रीसेट हो गईं"
+msgstr "सेटिंग्स सफलतापूर्वक रीसेट हो गई"
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
@@ -394,11 +394,11 @@ msgstr "आयात"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr "सेटिंग्स फ़ाइल से सफलतापूर्वक आयात की गईं"
+msgstr "सेटिंग्स फ़ाइल से सफलतापूर्वक आयात की गई"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr "आयात करने में विफल. फ़ाइल अमान्य है"
+msgstr "आयात करने में विफल. फाइल अमान्य है"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
@@ -435,7 +435,7 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr "वर्तमान प्रदर्शन सेटिंग्स लागू की गईं"
+msgstr "वर्तमान प्रदर्शन सेटिंग्स लागू की गई"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
@@ -527,7 +527,7 @@ msgstr ""
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr "सेटिंग्स सफलतापूर्वक लागू हो गईं"
+msgstr "सेटिंग्स सफलतापूर्वक लागू हो गई"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
@@ -576,7 +576,7 @@ msgstr "आयात फ़ाइल को पार्स करने मे�
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "आयात फ़ाइल पढ़ने में विफल. UTF-8 में एन्कोड नहीं किया गया"
+msgstr "आयात फाइल पढ़ने में विफल. UTF-8 में एन्कोड नहीं किया गया"
 
 #: gdms/settings.py:188
 #, python-brace-format
@@ -620,7 +620,7 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr "शेल"
+msgstr "शैल"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
