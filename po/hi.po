@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-11 07:02+0000\n"
+"PO-Revision-Date: 2024-02-11 09:02+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -69,8 +69,8 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"टचपैड के लिए सूचक गति. स्वीकृत मान [-1..1] श्रेणी में हैं (\"अनएक्सलेरेटेड\" "
-"से \"तेज़\")। 0 का मान सिस्टम डिफ़ॉल्ट है।"
+"टचपैड के लिए संकेतक गति. स्वीकृत मान [-1..1] श्रेणी में हैं (\"अनएक्सलेरेटे"
+"ड\" से \"तेज़\")। 0 का मान सिस्टम डिफ़ॉल्ट है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -110,35 +110,38 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "घंटे में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस प्रारंभ समय का उपयोग घंटों के रूप में"
+" करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "मिनट में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस प्रारंभ समय मिनट का उपयोग करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "घंटे में समाप्ति समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस समाप्ति समय का उपयोग घंटों में करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "मिनट में समाप्ति समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस अंतिम समय मिनट का उपयोग करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
@@ -188,7 +191,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "इस समय के बाद सत्र निष्क्रिय माना जयेगा"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -197,7 +200,7 @@ msgstr "सत्र से पहले निष्क्रियता क�
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "अगर निष्क्रिय और बैटरी का उपयोग करते समय निलंबित करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
@@ -213,7 +216,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "अगर निष्क्रिय और प्लग इन होने पर निलंबित करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
@@ -229,19 +232,19 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "अगर निकाली गई थीम पर टॉप बार ट्विक्स लागू करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "अगर शीर्ष बार तीरों को अक्षम करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "अगर शीर्ष बार के गोलाकार कोनों को अक्षम करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "अगर टॉप बार टेक्स्ट का रंग बदलना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
@@ -249,7 +252,7 @@ msgstr "शीर्ष बार टेक्स्ट का रंग"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "अगर टॉप बार का बैकग्राउंड बदलना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
@@ -296,7 +299,7 @@ msgstr "एप्लिकेशन वर्शन दिखाएं"
 
 #: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "वर्बोसिटी स्तर मैन्युअल रूप से सेट करें (0 से 5 तक)"
 
 #: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
@@ -314,7 +317,7 @@ msgstr "शांत मोड सक्षम करें (--verbosity=0 क�
 #: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "अमान्य वर्बोसिटी स्तर {level}. 0, 5, या इनके बीच होना चाहिए।"
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -461,8 +464,9 @@ msgstr "कॉपीराइट 2021-2023 मजहर हुसैन"
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
+#, fuzzy
 msgid "translator-credits"
-msgstr "Scrambled777 "
+msgstr "Scrambled777"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -559,7 +563,7 @@ msgstr "पावर"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "औज़ार"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
@@ -676,7 +680,7 @@ msgstr "पृष्ठभूमि"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "प्रकार"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
@@ -842,7 +846,7 @@ msgstr "लोगो सक्षम करें"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "अगर उपयोगकर्ता सूची के नीचे लोगो दिखाना है"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
@@ -854,7 +858,7 @@ msgstr "उपयोगकर्ता सूची के नीचे दि�
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "स्वागत संदेश"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
@@ -899,7 +903,7 @@ msgstr "माउस"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr "सूचक त्वरण"
+msgstr "संकेतक त्वरण"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
@@ -923,7 +927,7 @@ msgstr "स्क्रॉल करने से सामग्री चल�
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr "सूचक गति"
+msgstr "संकेतक गति"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -935,7 +939,7 @@ msgstr "क्लिक करने के लिए टैप करें"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "दो-उंगली से स्क्रॉल करना"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
@@ -987,7 +991,7 @@ msgstr "स्क्रीन बंद करें"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "अगर निष्क्रियता की अवधि के बाद स्क्रीन को बंद कर देना चाहिए।"
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
@@ -996,7 +1000,7 @@ msgstr "देरी"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "समय मिनटों में जिसके बाद स्क्रीन बंद हो जाएगी।"
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -1012,11 +1016,11 @@ msgstr "बैटरी पावर पर"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "समय मिनटों में जिसके बाद कंप्यूटर निलंबित हो जाएगा।"
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "प्लग इन होने पर"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1056,7 +1060,7 @@ msgstr "निकालें"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "ट्विक्स"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
