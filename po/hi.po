@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-11 09:02+0000\n"
+"PO-Revision-Date: 2024-02-11 12:02+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -464,9 +464,8 @@ msgstr "कॉपीराइट 2021-2023 मजहर हुसैन"
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
-#, fuzzy
 msgid "translator-credits"
-msgstr "Scrambled777"
+msgstr "Scrambled777 weblate.scrambled777@simplelogin.com"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
