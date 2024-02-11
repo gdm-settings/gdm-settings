@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-11 06:01+0000\n"
+"PO-Revision-Date: 2024-02-11 07:02+0000\n"
 "Last-Translator: Nitin Khalia <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -193,7 +193,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "सत्र से पहले निष्क्रियता के मिनटों की संख्या को निष्क्रिय माना जाता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -245,7 +245,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "शीर्ष बार टेक्स्ट का रंग"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "शीर्ष बार पृष्ठभूमि का रंग"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
@@ -330,6 +330,8 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"इस ऐप को ठीक से काम करने के लिए निम्नलिखित सॉफ़्टवेयर की आवश्यकता है लेकिन वे"
+" इंस्टॉल नहीं हैं।"
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
@@ -385,6 +387,10 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"यह ऐप हमेशा ओपन सोर्स/लिब्रे और निःशुल्क रहेगा। हालाँकि, आप डेवलपर को दान दे"
+"कर कुछ प्यार दिखा सकते हैं।\n"
+"❤️\n"
+"मैं वास्तव में इसकी सराहना करूंगा।"
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
@@ -456,7 +462,7 @@ msgstr "कॉपीराइट 2021-2023 मजहर हुसैन"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr ""
+msgstr "Scrambled777 "
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -529,7 +535,7 @@ msgstr "फोंट्स"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "शीर्ष बार"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
@@ -578,6 +584,8 @@ msgstr "लागू नहीं किया। चुनी गई लोग�
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"जब तक आप पुनः लॉगिन या रीबूट नहीं करते, सिस्टम अजीब/बगी दिखना शुरू हो सकता "
+"है।"
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
@@ -648,7 +656,7 @@ msgstr "डिफ़ॉल्ट शैल थीम का बैकअप ल�
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "थीम्स"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
@@ -684,7 +692,7 @@ msgstr "रंग"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "पृष्ठभूमि के रूप में उपयोग की जाने वाली छवि"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
@@ -700,7 +708,7 @@ msgstr "दोहराएं"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "पृष्ठभूमि के रूप में उपयोग करने योग्य रंग"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
@@ -736,7 +744,7 @@ msgstr "मैनुअल अनुसूची"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "समय"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
@@ -746,7 +754,7 @@ msgstr "इस समय से"
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "तक"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
@@ -842,7 +850,7 @@ msgstr "लोगो"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "उपयोगकर्ता सूची के नीचे दिखाने के लिए छवि"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
@@ -919,7 +927,7 @@ msgstr "सूचक गति"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "टचपैड"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
@@ -975,7 +983,7 @@ msgstr "कंप्यूटर निष्क्रिय होने पर
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "स्क्रीन बंद करें"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -1012,7 +1020,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "थीम"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
@@ -1068,7 +1076,7 @@ msgstr "पृष्ठभूमि का रंग बदलें"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "शीर्ष बार पृष्ठभूमि का रंग"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
@@ -1100,7 +1108,7 @@ msgstr "सेकंड दिखाएँ"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr ""
+msgstr "समय प्रारूप"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
