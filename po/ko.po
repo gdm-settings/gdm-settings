@@ -4,13 +4,14 @@
 # 안재범 <ajb8533296@gmail.com>, 2022.
 # 이정희 <daemul72@gmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2024-02-12 17:53+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
 "Language: ko\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -460,8 +461,8 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 #: gdms/gui/about.py:114
 msgid "translator-credits"
 msgstr ""
-"안재범 &lt;ajb8533296@gmail.com&gt;\n"
-"이정희 &lt;daemul72@gmail.com&gt;"
+"안재범 <ajb8533296@gmail.com>\n"
+"이정희 <daemul72@gmail.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
