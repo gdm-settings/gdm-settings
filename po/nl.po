@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Heimen Stoffels <vistausss@fastmail.com>, 2022, 2023.
-# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022, 2024.
 # Philip Goto <philip.goto@gmail.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-04 15:01+0000\n"
-"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
+"PO-Revision-Date: 2024-02-12 17:53+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -476,7 +476,7 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 #: gdms/gui/about.py:114
 msgid "translator-credits"
 msgstr ""
-"Heimen Stoffels &lt;vistausss@fastmail.com&gt;\n"
+"Heimen Stoffels <vistausss@fastmail.com>\n"
 "Philip Goto https://flipflop97.github.io/"
 
 #: gdms/gui/pages/display.py:86
