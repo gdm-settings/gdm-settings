@@ -4,22 +4,23 @@
 # Linux User <maxonyt2@gmail.com>, 2023.
 # Grayson Hunt <Vasilkusniruk@gmail.com>, 2023.
 # Gleb <gkaraulnyi@gmail.com>, 2023.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-08-09 12:49+0000\n"
-"Last-Translator: Gleb <gkaraulnyi@gmail.com>\n"
+"PO-Revision-Date: 2024-02-12 17:53+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -474,7 +475,7 @@ msgstr "Авторське право 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr "Gleb widness73@gmail.com and"
+msgstr "Gleb <widness73@gmail.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
