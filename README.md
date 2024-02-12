@@ -53,6 +53,6 @@
     <span> | </span>
     <a href="https://github.com/gdm-settings/gdm-settings/issues/new?assignees=&labels=bug&template=bug_report.yml">Report Bugs</a>
     <span> | </span>
-    <a href="https://realmazharhussain.github.io/donate">Donate</a>
+    <a href="https://gdm-settings.github.io/donate">Donate</a>
   </h4>
 </div>

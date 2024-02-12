@@ -15,6 +15,7 @@ from gdms import env
 from gdms.enums import PackageType
 from gdms.utils import BackgroundTask, GSettings
 from gdms import gresource
+from gdms import debug_info
 from gdms import settings
 
 Gio.Resource.load(APP_DATA_DIR + '/resources.gresource')._register()
@@ -59,16 +60,21 @@ class GdmSettingsApp(Adw.Application):
                                  description, argument_name,
                                  )
 
-        add_option('version',   '\0', _('Show application version'))
-        add_option('verbosity', '\0', _('Set verbosity level manually (from 0 to 5)'),
+        add_option('debug-info', 'i',  _('Show debug information (in Markdown format)'))
+        add_option('version',    '\0', _('Show application version'))
+        add_option('verbosity',  '\0', _('Set verbosity level manually (from 0 to 5)'),
                    C_('Argument of --verbosity option', 'LEVEL'), 'INT')
-        add_option('verbose',   'v',  _('Enable verbose mode (alias of --verbosity=5)'))
-        add_option('quiet',     'q',  _('Enable quiet mode (alias of --verbosity=0)'))
+        add_option('verbose',    'v',  _('Enable verbose mode (alias of --verbosity=5)'))
+        add_option('quiet',      'q',  _('Enable quiet mode (alias of --verbosity=0)'))
 
 
     def do_handle_local_options(self, options):
         if options.contains("version"):
             print(APP_NAME, VERSION)
+            return 0
+
+        if options.contains("debug-info"):
+            print(debug_info.as_markdown())
             return 0
 
         set_logging_level(3)
@@ -102,16 +108,10 @@ class GdmSettingsApp(Adw.Application):
             win.present()
             return
 
-        default_gresouce = gresource.get_default()
-
-        logger.info(f"Application Version    = {VERSION}")
-        logger.info(f"Operating System       = {env.OS_PRETTY_NAME}")
-        logger.info(f"PackageType            = {env.PACKAGE_TYPE.name}")
-        logger.info(f"TEMP_DIR               = {env.TEMP_DIR}")
-        logger.info(f"HOST_DATA_DIRS         = {env.HOST_DATA_DIRS}")
-        logger.info(f"ShellGresourceFile     = {gresource.ShellGresourceFile}")
-        logger.info(f"UbuntuGdmGresourceFile = {gresource.UbuntuGdmGresourceFile}")
-        logger.info(f"Default Gresource File = {default_gresouce}")
+        BOLD = '\033[1m'
+        NORMAL = '\033[0m'
+        for key, val in debug_info.debug_info:
+            logger.info(f"{BOLD}{key}{NORMAL}: {val}")
 
         self.settings = GSettings(APP_ID)
 
@@ -133,7 +133,7 @@ class GdmSettingsApp(Adw.Application):
         if not self.check_system_dependencies():
             return
 
-        if not default_gresouce:
+        if not gresource.get_default():
             self.show_missing_gresource_dialog()
             return
 

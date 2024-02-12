@@ -11,7 +11,7 @@ from enum import Enum
 from gettext import gettext as _
 
 import gi
-gi.require_version("Adw", '1')
+gi.require_version('Adw', '1')
 
 from . import config
 
@@ -21,8 +21,8 @@ from . import config
 APP_DIR = os.path.realpath(__file__).split(config.prefix)[0]
 
 _localedir = APP_DIR + config.localedir
-locale.bindtextdomain("gdm-settings", _localedir)
-locale.textdomain("gdm-settings")
+locale.bindtextdomain('gdm-settings', _localedir)
+locale.textdomain('gdm-settings')
 gettext.bindtextdomain('gdm-settings', _localedir)
 gettext.textdomain('gdm-settings')
 
@@ -80,12 +80,6 @@ stderr_log_handler = logging.StreamHandler()
 stderr_log_handler.setFormatter(_StdErrFormatter())
 stderr_log_handler.setLevel(logging.DEBUG)
 logger.addHandler(stderr_log_handler)
-
-temp_log_io = tempfile.TemporaryFile(mode='w+')
-temp_log_handler = logging.StreamHandler(temp_log_io)
-temp_log_handler.setFormatter(logging.Formatter("%(levelname)s:%(name)s: %(message)s"))
-temp_log_handler.setLevel(logging.DEBUG)
-logger.addHandler(temp_log_handler)
 
 
 def main() -> int:

@@ -27,5 +27,6 @@
     <file>icons/scalable/categories/sound-symbolic.svg</file>
     <file>icons/scalable/categories/tools-symbolic.svg</file>
     <file>icons/scalable/categories/top_bar-symbolic.svg</file>
+    <file alias="info.xml">../data/io.github.realmazharhussain.GdmSettings.metainfo.xml</file>
   </gresource>
 </gresources>
