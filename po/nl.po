@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2024-02-16 09:01+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
 "Language: nl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -50,7 +50,7 @@ msgstr "Achtergrond­aanpassing"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategie voor aanpassing van de achtergrond­afbeelding."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -387,6 +387,9 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"De app heeft een ongewijzigd standaard shell-themabestand nodig, maar kan "
+"deze niet vinden. Om het probleem op te lossen, installeert u het pakket "
+"‘gnome-shell-common’ of ‘gnome-shell’ opnieuw."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -721,17 +724,15 @@ msgstr "De afbeelding die wordt ingesteld als achtergrond"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Afbeeldings­aanpassing"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Scherm verduisteren"
+msgstr "Aanpassen aan scherm"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Herhalen"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
