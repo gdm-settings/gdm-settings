@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2024-02-19 20:02+0000\n"
+"PO-Revision-Date: 2024-02-22 14:02+0000\n"
 "Last-Translator: antieksi <deustarkek@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
@@ -801,7 +801,7 @@ msgstr "Стандарт"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr "Субпиксель"
+msgstr "Субпиксельное"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
