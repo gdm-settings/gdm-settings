@@ -77,6 +77,20 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4.2" type="stable" date="2024-02-25">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.2</url>
+      <description translatable="no">
+        <p>Fixed "About" window crashing, some icons being colored in the sidebar, and
+           "Apply current display settings" not working properly. Improved app store
+           page (a.k.a metainfo). Added a mneumonic to the "Apply" button (It can be
+           activated with Ctrl+A keyboard shortcut).</p>
+      </description>
+
+      <issues>
+        <issue url="https://github.com/gdm-settings/gdm-settings/issues/210">#210</issue>
+      </issues>
+    </release>
+
     <release version="4.1" type="stable" date="2023-10-22">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.1</url>
       <description translatable="no">
