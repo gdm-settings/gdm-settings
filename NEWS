@@ -1,3 +1,11 @@
+v4.2
+====
+* Add a mneumonic to the "Apply" button (It can be activated with Ctrl+A keyboard shortcut)
+* Improve: App store page (a.k.a metainfo)
+* Fix: "About" window crashing
+* Fix: Some icons in the sidebar showing up colored instead of symbolic
+* Fix: "Apply current display settings" not working properly
+
 v4.1
 ====
 * Fix: "Apply current display settings" feature not working
