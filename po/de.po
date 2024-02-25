@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-10-16 04:19+0000\n"
+"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"PO-Revision-Date: 2023-12-25 17:09+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -299,6 +299,18 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+msgid "Main Window (Desktop Mode)"
+msgstr "Hauptfenster (Desktop-Modus)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+msgid "Sidebar (Mobile Mode)"
+msgstr "Seitenleiste (Mobiler Modus)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+msgid "Appearance Settings (Mobile Mode)"
+msgstr ""
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"

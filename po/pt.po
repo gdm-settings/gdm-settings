@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-06-21 21:51+0000\n"
+"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"PO-Revision-Date: 2023-12-18 16:09+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.3\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -49,7 +49,7 @@ msgstr "Imagem de Fundo"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Estratégia para ajuste da imagem de plano de fundo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -295,6 +295,18 @@ msgstr ""
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+msgid "Main Window (Desktop Mode)"
+msgstr "Janela Principal (Modo Desktop)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+msgid "Sidebar (Mobile Mode)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+msgid "Appearance Settings (Mobile Mode)"
+msgstr ""
+
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
 msgstr "Mostra versão da aplicação"
@@ -381,6 +393,9 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"A app precisa, mas não conseguiu encontrar um ficheiro de tema padrão não "
+"modificado. Para corrigir o problema, reinstale o pacote 'gnome-shell-"
+"common' ou 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -706,7 +721,7 @@ msgstr "Imagem para usar como fundo"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Ajuste de imagem"
 
 #: resources/ui/appearance-page.blp:31
 #, fuzzy
@@ -716,7 +731,7 @@ msgstr "Ecrã escurecido"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"

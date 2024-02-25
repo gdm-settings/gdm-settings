@@ -2,15 +2,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Heimen Stoffels <vistausss@fastmail.com>, 2022, 2023.
-# Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
-# Philip Goto <philip.goto@gmail.com>, 2022, 2023.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2022, 2024.
+# Philip Goto <philip.goto@gmail.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: 2023-08-16 07:53+0000\n"
+"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"PO-Revision-Date: 2024-02-16 09:01+0000\n"
 "Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/nl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -45,14 +45,12 @@ msgid "The image file to use as GDM background"
 msgstr "Het afbeeldingsbestand dat wordt ingesteld als achtergrond"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Achtergrondafbeelding"
+msgstr "Achtergrond­aanpassing"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategie voor aanpassing van de achtergrond­afbeelding."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -272,10 +270,8 @@ msgstr "Achtergrondkleur van bovenbalk"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "Cursorvoorkeuren"
+msgstr "GDM-instellingen"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -295,6 +291,18 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+msgid "Main Window (Desktop Mode)"
+msgstr "Hoofd­venster (bureaublad­modus)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+msgid "Sidebar (Mobile Mode)"
+msgstr "Zijbalk (mobiele modus)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+msgid "Appearance Settings (Mobile Mode)"
+msgstr "Weergave-instellingen (mobiele modus)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
@@ -371,16 +379,17 @@ msgid "OK"
 msgstr "Oké"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Standaard Shell-thema"
+msgstr "Kon bestand voor standaard Shell-thema niet vinden"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"De app heeft een ongewijzigd standaard shell-themabestand nodig, maar kan "
+"deze niet vinden. Om het probleem op te lossen, installeert u het pakket "
+"‘gnome-shell-common’ of ‘gnome-shell’ opnieuw."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -470,7 +479,7 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 #: gdms/gui/about.py:114
 msgid "translator-credits"
 msgstr ""
-"Heimen Stoffels &lt;vistausss@fastmail.com&gt;\n"
+"Heimen Stoffels <vistausss@fastmail.com>\n"
 "Philip Goto https://flipflop97.github.io/"
 
 #: gdms/gui/pages/display.py:86
@@ -715,17 +724,15 @@ msgstr "De afbeelding die wordt ingesteld als achtergrond"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Afbeeldings­aanpassing"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Scherm verduisteren"
+msgstr "Aanpassen aan scherm"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Herhalen"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"

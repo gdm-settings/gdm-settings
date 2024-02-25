@@ -1,72 +1,68 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Eshagh Shahedany <eshagh094@gmail.com>, 2022.
-# Eshagh shahidani <eshagh094@gmail.com>, 2022.
+# This file is distributed under the same license as the gdm-settings package.
+# Nitin Khalia <weblate.scrambled777@simplelogin.com>, 2024.
+# Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2022-09-19 18:16+0000\n"
-"Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
-"Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
-"language-names/fa/>\n"
-"Language: fa\n"
+"PO-Revision-Date: 2024-02-12 17:53+0000\n"
+"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/hi/>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 4.14.1\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr "نام زمینه"
+msgstr "थीम का नाम"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr "نوع پس‌زمینه"
+msgstr "पृष्ठभूमि के प्रकार"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "پس‌زمینهٔ مدیر ورود گنوم باید یک تصویر، رنگ یا هیچ‌کدام باشد."
+msgstr "क्या GDM पृष्ठभूमि एक छवि, रंग या डिफ़ॉल्ट होनी चाहिए।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr "تصویر پس‌زمینه"
+msgstr "पृष्ठभूमि छवि"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
+msgstr "GDM पृष्ठभूमि के रूप में उपयोग की जाने वाली छवि फ़ाइल"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "تصویر پس‌زمینه"
+msgstr "पृष्ठभूमि छवि समायोजन"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "पृष्ठभूमि छवि के समायोजन के लिए रणनीति।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr "رنگ پس‌زمینه"
+msgstr "पृष्ठभूमि का रंग"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
-msgstr "رنگی که به عنوان پس‌زمینه GDM استفاده می‌شود"
+msgstr "GDM पृष्ठभूमि के रूप में उपयोग करने के लिए रंग"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr "سرعت نشانگر"
+msgstr "संकेतक गति"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -74,72 +70,83 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"टचपैड के लिए संकेतक गति. स्वीकृत मान [-1..1] श्रेणी में हैं (\"अनएक्सलेरेटे"
+"ड\" से \"तेज़\")। 0 का मान सिस्टम डिफ़ॉल्ट है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "اگر حالت نور شب به کار افتاده باشد"
+msgstr "यदि रात्रि प्रकाश मोड सक्षम है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"जब सूरज ढल गया हो या पूर्व निर्धारित समय पर रात्रि प्रकाश मोड आपके डिस्प्ले "
+"का रंग तापमान बदल देता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "सक्षम होने पर डिस्प्ले का तापमान"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"केल्विन में इस तापमान का उपयोग रात्रि प्रकाश मोड सक्षम होने पर स्क्रीन टोन को"
+" संशोधित करने के लिए किया जाता है। उच्च मान नीला होता हैं, निचले मान लाल होता"
+" हैं।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "सूर्योदय और सूर्यास्त का उपयोग करें"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"वर्तमान स्थान से सूर्योदय और सूर्यास्त के समय की स्वचालित रूप से गणना करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "घंटे में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस प्रारंभ समय का उपयोग घंटों के रूप में"
+" करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "मिनट में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस प्रारंभ समय मिनट का उपयोग करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "घंटे में समाप्ति समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस समाप्ति समय का उपयोग घंटों में करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "मिनट में समाप्ति समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "जब \"शेड्यूल-स्वचालित\" अक्षम हो, तो इस अंतिम समय मिनट का उपयोग करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "पावर बटन क्रिया"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -147,110 +154,120 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"सिस्टम पावर बटन दबाए जाने पर की जाने वाली क्रिया। वर्चुअल मशीन (पावर बंद) और "
+"टैबलेट (निलंबन) पर यह क्रिया हार्ड-कोडेड है (और सेटिंग को अनदेखा किया गया "
+"है)।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "बैटरी कम होने पर पावर-सेवर प्रोफ़ाइल सक्षम करें"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"यदि बैटरी कम है तो power-profiles-daemon का उपयोग करके \"पावर-सेवर\" प्रोफ़ा"
+"इल को स्वचालित रूप से सक्षम करता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "निष्क्रियता की अवधि के बाद स्क्रीन को मंद कर दें"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"यदि कंप्यूटर निष्क्रिय हो तो बिजली बचाने के लिए स्क्रीन को मंद कर देना चाहिए।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "क्या सत्र निष्क्रिय होने पर स्क्रीन खाली करनी है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"यदि कंप्यूटर निष्क्रिय हो तो बिजली बचाने के लिए स्क्रीन को खाली कर देना "
+"चाहिए।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "इस समय के बाद सत्र निष्क्रिय माना जयेगा"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "सत्र से पहले निष्क्रियता के मिनटों की संख्या को निष्क्रिय माना जाता है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "अगर निष्क्रिय और बैटरी का उपयोग करते समय निलंबित करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "स्लीप टाइमआउट जब कंप्यूटर बैटरी पर हो"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"बैटरी पावर पर चलने वाले कंप्यूटर को सोने से पहले निष्क्रिय होने में लगने वाले"
+" समय (मिनटों में) की मात्रा। 0 का मान कभी नहीं होता।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "अगर निष्क्रिय और प्लग इन होने पर निलंबित करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "प्लग इन होने पर कंप्यूटर के लिए स्लीप टाइमआउट"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"AC पावर पर कंप्यूटर को सोने से पहले निष्क्रिय होने के लिए मिनटों में जितना "
+"समय चाहिए। 0 का मान कभी नहीं होता।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "अगर निकाली गई थीम पर टॉप बार ट्विक्स लागू करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "अगर शीर्ष बार तीरों को अक्षम करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "अगर शीर्ष बार के गोलाकार कोनों को अक्षम करना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "अगर टॉप बार टेक्स्ट का रंग बदलना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr "رنگ متن نوار بالا"
+msgstr "शीर्ष बार टेक्स्ट का रंग"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "अगर टॉप बार का बैकग्राउंड बदलना है"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr "رنگ پس‌زمینهٔ نوار بالا"
+msgstr "शीर्ष बार पृष्ठभूमि का रंग"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "تنظیمات موشی"
+msgstr "GDM सेटिंग्स"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "अपनी लॉगिन स्क्रीन कस्टमाइज़ करें"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -258,50 +275,50 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"تغییرات تنظیمات GDM؛ اِعمال زمینه و پس‌زمینه، تغییر زمینهٔ اشاره‌گر، زمینه نقشک "
-"و تنظیمات نور شب، و همینطور چیزهایی دیگر."
+"GDM सेटिंग्स बदलें; थीम और पृष्ठभूमि लागू करें, अन्य चीज़ों के अलावा कर्सर थी"
+"म, आइकन थीम और नाइट लाइट सेटिंग्स बदलें।"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
-msgstr "مظهر حسین"
+msgstr "मजहर हुसैन"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "मुख्य विंडो (डेस्कटॉप मोड)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "साइडबार (मोबाइल मोड)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "दिखावट सेटिंग (मोबाइल मोड)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
-msgstr "نمایش نگارش برنامه"
+msgstr "एप्लिकेशन वर्शन दिखाएं"
 
 #: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "वर्बोसिटी स्तर मैन्युअल रूप से सेट करें (0 से 5 तक)"
 
 #: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "स्तर"
 
 #: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "वर्बोज़ मोड सक्षम करें (--verbosity=5 का उपनाम)"
 
 #: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "शांत मोड सक्षम करें (--verbosity=0 का उपनाम)"
 
 #: gdms/gui/__init__.py:86
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "अमान्य वर्बोसिटी स्तर {level}. 0, 5, या इनके बीच होना चाहिए।"
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -309,22 +326,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"इस ऐप को ठीक से काम करने के लिए निम्नलिखित प्रोग्राम को <b>होस्ट सिस्टम पर</"
+"b> इंस्टॉल करना आवश्यक है, लेकिन वे होस्ट सिस्टम पर इंस्टॉल नहीं हैं।"
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"इस ऐप को ठीक से काम करने के लिए निम्नलिखित सॉफ़्टवेयर की आवश्यकता है लेकिन वे"
+" इंस्टॉल नहीं हैं।"
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -334,31 +355,34 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"अपने सिस्टम पर इन निर्भरताओं को स्थापित करने के तरीके के निर्देशों के लिए <a "
+"href=\"{url}\">यहां</a> क्लिक करें।"
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "निर्भरताएँ गायब हैं"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "ठीक है"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
+msgstr "डिफ़ॉल्ट शैल थीम फाइल खो गई"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"ऐप को एक असंशोधित डिफ़ॉल्ट शेल थीम फ़ाइल की आवश्यकता है लेकिन उसे नहीं मिल "
+"सका। समस्या को ठीक करने के लिए, 'gnome-shell-common' या 'gnome-shell' पैकेज "
+"को पुनः स्थापित करें।"
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "दान अनुरोध"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -367,96 +391,90 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"यह ऐप हमेशा ओपन सोर्स/लिब्रे और निःशुल्क रहेगा। हालाँकि, आप डेवलपर को दान दे"
+"कर कुछ प्यार दिखा सकते हैं।\n"
+"❤️\n"
+"मैं वास्तव में इसकी सराहना करूंगा।"
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "रुचि नहीं"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "दान करें"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
-msgstr "تنظیمات مجدداً بارگزاری شد"
+msgstr "सेटिंग्स फिर से लोड की गई"
 
 #: gdms/gui/__init__.py:291
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "सत्र सेटिंग सफलतापूर्वक लोड हो गईं"
 
 #: gdms/gui/__init__.py:295
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
+msgstr "लोड सत्र सेटिंग फ़्लैटपैक संस्करण में समर्थित नहीं है"
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr "تنظیمات با موفّقیت بازنشانی شدند"
+msgstr "सेटिंग्स सफलतापूर्वक रीसेट हो गई"
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
-msgstr "بازنشانی تنظیمات شکست خورد"
+msgstr "सेटिंग्स रीसेट करने में विफल"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "आयात"
 
 #: gdms/gui/__init__.py:350
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "सेटिंग्स फाइल से सफलतापूर्वक आयात की गई"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "आयात करने में विफल. फाइल अमान्य है"
 
 #: gdms/gui/__init__.py:383
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "सेटिंग्स सफलतापूर्वक निर्यात की गईं"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "निर्यात करने में विफल. अनुमति नहीं मिली"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "निर्यात करने में विफल. उस नाम की एक डॉयरेक्टरी पहले से मौजूद है"
 
 #: gdms/gui/about.py:16 gdms/gui/about.py:100
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "مظهر حسین"
+msgstr "मजहर हुसैन"
 
 #: gdms/gui/about.py:17
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "थेल्स बिंदा"
 
 #: gdms/gui/about.py:101
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
+msgstr "कॉपीराइट 2021-2023 मजहर हुसैन"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
+msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr "تنظیمات کنونی نمایشگر اِعمال شد"
+msgstr "वर्तमान प्रदर्शन सेटिंग्स लागू की गई"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr "اِعمال تنظیمات کنونی نمایشگر شکست خورد"
+msgstr "वर्तमान प्रदर्शन सेटिंग लागू करने में विफल"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -466,157 +484,162 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"वर्तमान डिस्प्ले सेटिंग्स लागू करने के लिए '$XDG_CONFIG_HOME/monitors.xml' "
+"फ़ाइल आवश्यक है लेकिन यह मौजूद नहीं है।\n"
+"\n"
+"उस फ़ाइल को स्वचालित रूप से बनाने के लिए, सिस्टम 'सेटिंग्स' खोलें और वहां कु"
+"छ डिस्प्ले विकल्प बदलें।"
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "मॉनिटर सेटिंग्स नहीं मिलीं"
 
-# در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «⁨{name}⁩» در «⁨{folder}⁩» استخراج شد"
+msgstr "डिफ़ॉल्ट शेल थीम को '{folder}' में '{name}' के रूप में निकाला लिया गया"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
+msgstr "डिफ़ॉल्ट थीम निष्कर्षण में विफल"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr "انتخاب پرونده"
+msgstr "फाइलें चुनें"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr "(هیچ‌کدام)"
+msgstr "(कोई नहीं)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr "گزینش"
+msgstr "चुनें"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr "تصاویر"
+msgstr "छवियां"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "सभी फाइलें"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr "گزینش تصویر"
+msgstr "छवि चुनें"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr "ظاهر"
+msgstr "दिखावट"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr "قلم‌ها"
+msgstr "फोंट्स"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr "نوار بالا"
+msgstr "शीर्ष बार"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr "صدا"
+msgstr "आवाज़"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "موشی و صفحه‌لمسی"
+msgstr "माउस और टचपैड"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr "نمایشگر"
+msgstr "डिस्प्ले"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "लॉगिन स्क्रीन"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr "انرژی"
+msgstr "पावर"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr "ابزارها"
+msgstr "औज़ार"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "सेटिंग्स सफलतापूर्वक लागू हो गई"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr "اِعمال تنظیمات شکست خورد"
+msgstr "सेटिंग लागू करने में विफल"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"लागू नहीं किया। चुनी गई पृष्ठभूमि छवि अब मौजूद नहीं है. कृपया! फिर से चुनें।"
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "लागू नहीं किया। चुनी गई लोगो छवि अब मौजूद नहीं है. कृपया! फिर से चुनें।"
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"जब तक आप पुनः लॉगिन या रीबूट नहीं करते, सिस्टम अजीब/बगी दिखना शुरू हो सकता "
+"है।"
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "लॉग आउट?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr "لغو"
+msgstr "रद्द करें"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "लॉग आउट"
 
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "फाइल '{filename}' से आयात करना"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "मानक इनपुट से आयात किया जा रहा है"
 
 #: gdms/settings.py:179
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "بازنشانی تنظیمات شکست خورد"
+msgstr "आयात फाइल को पढने में विफल"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "आयात फाइल पढ़ने में विफल. UTF-8 में एन्कोड नहीं किया गया"
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "आयातित फ़ाइल में अनुभाग '{section_name}' नहीं है"
 
 #: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "आयातित फ़ाइल में अनुभाग '{section_name}' में कुंजी '{key_name}' नहीं है"
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "फाइल '{filename}' में निर्यात किया जा रहा है"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "फाइल '{filename}' में नहीं लिखा जा सकता. अनुमति नहीं मिली"
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -624,656 +647,481 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"फाइल '{filename}' में नहीं लिखा जा सकता. इसी नाम की एक डॉयरेक्टरी पहले से "
+"मौजूद है"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "मानक आउटपुट पर निर्यात करना"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
+msgstr "डिफ़ॉल्ट शैल थीम का बैकअप लिया जा रहा है…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr "زمینه‌ها"
+msgstr "थीम्स"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr "پوسته"
+msgstr "शैल"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr "نقشک‌ها"
+msgstr "आइकॉन"
 
 #: resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr "مکان‌نما"
+msgstr "कर्सर"
 
 #: resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr "پس‌زمینه"
+msgstr "पृष्ठभूमि"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr "نوع"
+msgstr "प्रकार"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "डिफ़ॉल्ट"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
-msgstr "تصویر"
+msgstr "छवि"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
 msgid "Color"
-msgstr "رنگ"
+msgstr "रंग"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr "تصویری که به عنوان پس‌زمینه استفاده می‌شود"
+msgstr "पृष्ठभूमि के रूप में उपयोग की जाने वाली छवि"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "छवि समायोजन"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "स्क्रीन में फिट"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "दोहराएं"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr "رنگی که به عنوان پس‌زمینه استفاده می‌شود"
+msgstr "पृष्ठभूमि के रूप में उपयोग करने योग्य रंग"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr "اِعمال تنظیمات نمایشگر کنونی"
+msgstr "वर्तमान प्रदर्शन सेटिंग लागू करें"
 
 #: resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
+msgstr "रिज़ॉल्यूशन, ताज़ा दर, मॉनिटर स्थिति, आदि।"
 
 #: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
 msgid "Apply"
-msgstr "اِعمال"
+msgstr "लागू"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr "نور شب"
+msgstr "रात्रि प्रकाश"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr "به کار انداختن"
+msgstr "सक्षम"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr "زمان‌بندی"
+msgstr "अनुसूची"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr "غروب تا طلوع"
+msgstr "सूर्यास्त से सूर्योदय तक"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr "زمان‌بندی دستی"
+msgstr "मैनुअल अनुसूची"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr "زمان‌ها"
+msgstr "समय"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr "از"
+msgstr "इस समय से"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr "تا"
+msgstr "तक"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr "دمای رنگ"
+msgstr "रंग तापमान"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr "قلم"
+msgstr "फ़ॉन्ट"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr "حذف لبه‌های ناصاف"
+msgstr "एंटीएलियासिंग"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr "استاندارد"
+msgstr "मानक"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr "زیرپیکسل"
+msgstr "सबपिक्सेल"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr "هیچ‌کدام"
+msgstr "कोई नहीं"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr "راهنمایی"
+msgstr "संकेत"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr "کامل"
+msgstr "पूर्ण"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr "متوسّط"
+msgstr "मध्यम"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr "خفیف"
+msgstr "थोड़ा"
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr "ضریب مقیاس"
+msgstr "स्केलिंग कारक"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr "نوسازی"
+msgstr "ताज़ा करें"
 
 #: resources/ui/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "درون‌ریزی تنظیمات کاربر"
+msgstr "सत्र सेटिंग लोड करें"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr "بازنشانی تنظیمات"
+msgstr "सेटिंग्स रीसेट करें"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "फाइल से आयात"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "फाइल में निर्यात"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr "درباره"
+msgstr "बारे में"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr "خروج"
+msgstr "छोड़ें"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "از کار انداختن دکمه‌های شروع مجدد"
+msgstr "पुनरारंभ बटन अक्षम करें"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr "از کار انداختن فهرست کاربران"
+msgstr "उपयोगकर्ता सूची अक्षम करें"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr "به کار انداختن لوگو"
+msgstr "लोगो सक्षम करें"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr "اینکه یک لوگو در پایین فهرست کاربران نمایش داده شود"
+msgstr "अगर उपयोगकर्ता सूची के नीचे लोगो दिखाना है"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr "لوگو"
+msgstr "लोगो"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr "تصویری که در پایین فهرست کاربران نمایش داده می‌شود"
+msgstr "उपयोगकर्ता सूची के नीचे दिखाने के लिए छवि"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr "پیام خوشامدگویی"
+msgstr "स्वागत संदेश"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "बड़ा करें"
 
 #: resources/ui/login-screen-page.blp:49
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "پیام خوشامدگویی"
+msgstr "संदेश"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "مکان‌نما"
+msgstr "कर्सर का आकार"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "डिफ़ॉल्ट"
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "متوسّط"
+msgstr "मध्यम"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "बड़ा"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "अधिक बड़ा"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "सबसे बड़ा"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr "موشی"
+msgstr "माउस"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "संकेतक त्वरण"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr "خودکار"
+msgstr "स्वचालित"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr "از کار افتاده"
+msgstr "अक्षम"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr "به کار افتاده"
+msgstr "सक्रिय"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "प्राकृतिक स्क्रॉलिंग"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "स्क्रॉल करने से सामग्री चलती है, दृश्य नहीं।"
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr "سرعت نشانگر"
+msgstr "संकेतक गति"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "صفحهٔ لمسی"
+msgstr "टचपैड"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
-msgstr "ضربه برای کلیک"
+msgstr "क्लिक करने के लिए टैप करें"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "दो-उंगली से स्क्रॉल करना"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "दो अंगुलियों से स्वाइप करके स्क्रॉल करें।"
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "टाइप करते समय अक्षम करें"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "पावर बटन व्यवहार"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "कुछ न करें"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "निलंबित करें"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "हाइबरनेट"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "पूछें"
 
 #: resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "خودکار"
+msgstr "स्वचालित पावर सेवर"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "बैटरी कम होने पर पावर सेवर मोड सक्षम करता है।"
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "मंद स्क्रीन"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "कंप्यूटर निष्क्रिय होने पर स्क्रीन की चमक कम कर देता है।"
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "स्क्रीन बंद करें"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "अगर निष्क्रियता की अवधि के बाद स्क्रीन को बंद कर देना चाहिए।"
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "देरी"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "समय मिनटों में जिसके बाद स्क्रीन बंद हो जाएगी।"
 
 #: resources/ui/power-page.blp:52
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "خودکار"
+msgstr "स्वचालित निलंबन"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "कुछ समय की निष्क्रियता के बाद कंप्यूटर को रोक देता है।"
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "बैटरी पावर पर"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "समय मिनटों में जिसके बाद कंप्यूटर निलंबित हो जाएगा।"
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "प्लग इन होने पर"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr "زمینه"
+msgstr "थीम"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "بیش‌تقویت"
+msgstr "अति प्रवर्धन"
 
-# در این ترجمه از نویسهٔ LRM استفاده شده است
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "اجازه به افزایش صدا بیش‌تر از ‎۱۰۰٪"
+msgstr "वॉल्यूम को 100% से ऊपर बढ़ाने के लिए"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr "صدای رویدادها"
+msgstr "घटना ध्वनियाँ"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "इनपुट फीडबैक ध्वनियाँ"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
+msgstr "डिफ़ॉल्ट शैल थीम"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "شامل سیخونک‌های نوار بالا"
+msgstr "टॉप बार ट्विक्स शामिल करें"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr "استخراج زمینهٔ پیش‌گزیدهٔ پوسته"
+msgstr "डिफ़ॉल्ट शेल थीम निष्कर्षण"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr "استخراج"
+msgstr "निकालें"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr "سیخونک‌ها"
+msgstr "ट्विक्स"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr "تغییر رنگ متن"
+msgstr "टेक्स्ट का रंग बदलें"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr "رنگ متن"
+msgstr "टेक्स्ट का रंग"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "رنگ متن درون نوار بالا"
+msgstr "शीर्ष बार में टेक्स्ट का रंग"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr "تغییر رنگ پس‌زمینه"
+msgstr "पृष्ठभूमि का रंग बदलें"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "رنگ پس‌زمینهٔ نوار بالا"
+msgstr "शीर्ष बार पृष्ठभूमि का रंग"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr "از کار انداختن پیکان‌ها"
+msgstr "तीरों को अक्षम करें"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr "از کار انداختن گوشه‌های گرد"
+msgstr "गोल कोनों को अक्षम करें"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "अभिगम्यता"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "हमेशा अभिगम्यता मेनू दिखाएँ"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr "ساعت"
+msgstr "घड़ी"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
-msgstr "نمایش روز هفته"
+msgstr "कार्यदिवस दिखाएँ"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
-msgstr "نمایش ثانیه"
+msgstr "सेकंड दिखाएँ"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr "قالب زمان"
+msgstr "समय प्रारूप"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
-msgstr "صبح/عصر"
+msgstr "AM/PM"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr "۲۴ ساعتی"
+msgstr "24 घंटे"
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
-msgstr "نمایش درصد باتری"
-
-#~ msgid "Fixed:"
-#~ msgstr "برطرف شده:"
-
-#~ msgid "Login Manager Settings"
-#~ msgstr "تنظیمات مدیر ورود"
-
-#, fuzzy, python-brace-format
-#~| msgctxt "Command-line output"
-#~| msgid "Applying GResource settings for Ubuntu …"
-#~ msgid "Applying GResource settings for {distro_name} …"
-#~ msgstr "در حال اعمال تنظیمات GResource برای اوبونتو …"
-
-#, fuzzy
-#~| msgid "Reset settings"
-#~ msgid "Added power settings"
-#~ msgstr "بازنشانی تنظیمات"
-
-#, fuzzy
-#~| msgid "Standard"
-#~ msgctxt "Cursor Size"
-#~ msgid "Non-Standard"
-#~ msgstr "استاندارد"
-
-#~ msgid "Updated screenshots"
-#~ msgstr "نماگرفت‌های به‌روز رسانی شده"
-
-#, fuzzy
-#~| msgid "New Translations:"
-#~ msgid "Updated translations"
-#~ msgstr "ترجمه‌های جدید:"
-
-#~ msgid "A settings app for GNOME's Login Manager, GDM"
-#~ msgstr "یک کارهٔ تنظیمات برای مدیر ورود گنوم، GDM"
-
-#~ msgid "Homepage"
-#~ msgstr "صفحهٔ خانگی"
-
-#~ msgid "User settings imported"
-#~ msgstr "تنظیمات کاربر درون‌ریزی شد"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "متفرقه"
-
-#~ msgid "Added:"
-#~ msgstr "اضافه شده:"
-
-#~ msgid "Support for verbose/quiet mode"
-#~ msgstr "پشتیبانی از حالت پُر حرف و ساکت"
-
-#~ msgid "Support for setting manual verbosity level"
-#~ msgstr "پشتیبانی از تنظیم سطح برای پُر حرفی دستی"
-
-#~ msgid ""
-#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
-#~ msgstr "گزینهٔ خط فرمانی برای حالت پُر حرفی و ساکت و سطح پُر حرفی دستی"
-
-#~ msgid "Command-line option --version"
-#~ msgstr "گزینهٔ خط فرمانی ‎--version"
-
-#~ msgid "Wider application window on first launch"
-#~ msgstr "پنجرهٔ گسترده‌تر در اولین اجرای برنامه"
-
-#, fuzzy
-#~| msgid "Welcome message could not contain single qoutes"
-#~ msgid "Welcome message could not contain single quotes"
-#~ msgstr "پیام خوشامدگویی نمی‌تواند شامل نویسهٔ نقل‌قول تکی باشد"
-
-#~ msgid ""
-#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-#~ msgstr ""
-#~ "مدیر ورود (GDM) در سامانه با اس‌ای‌لینوکس به کار افتاده، از هم پاشید (عمدتاً "
-#~ "فدورا)"
-
-#~ msgid ""
-#~ "Maximized or big application window looked bad (content was much smaller "
-#~ "than the window)"
-#~ msgstr ""
-#~ "پنجره برنامه بیشینه یا بزرگ بد به نظر می رسید (محتوا بسیار کوچکتر از "
-#~ "پنجره بود)"
-
-#~ msgid ""
-#~ "Showed wrong destination directory/folder path while extracting default "
-#~ "shell theme"
-#~ msgstr ""
-#~ "هنگام استخراج زمینهٔ پیش‌گزیدهٔ پوسته، مسیر شاخه/پوشه مقصد اشتباه را نشان "
-#~ "می‌داد"
-
-#~ msgid ""
-#~ "Clicking 'Apply' did nothing if selected background image was deleted "
-#~ "before applying"
-#~ msgstr ""
-#~ "اگر تصویر پس‌زمینه انتخابی قبل از اعمال حذف شده بود، با کلیک روی «اعمال» "
-#~ "کاری انجام نمی‌داد"
-
-#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-#~ msgstr "با کلیک بر روی «اعمال» فقط برخی از تنظیمات در اوبونتو اعمال شد"
-
-#~ msgid "French"
-#~ msgstr "فرانسوی"
-
-#~ msgid "Hebrew"
-#~ msgstr "عبری"
-
-#~ msgid "Persian"
-#~ msgstr "فارسی"
-
-#~ msgid "German"
-#~ msgstr "آلمانی"
-
-#~ msgid "Occitan"
-#~ msgstr "اکسیتانی"
-
-#~ msgid "Spanish"
-#~ msgstr "اسپانیایی"
-
-#~ msgid "Urdu"
-#~ msgstr "اُردو"
-
-#, fuzzy
-#~ msgid "Shell Theme"
-#~ msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
-
-#, fuzzy
-#~| msgid "Failed to extract default theme"
-#~ msgid "What to overlay on top of the default theme?"
-#~ msgstr "استخراج زمینهٔ پیش‌گزیده شکست خورد"
-
-#~ msgid "Added: Support for Ubuntu"
-#~ msgstr "اضافه شده: پشتیبانی از اوبونتو"
-
-#~ msgid "Fixed: Could not apply settings on some systems"
-#~ msgstr "برطرف شده: اِعمال نشدن تنظیمات در بعضی سامانه‌ها"
-
-#~ msgid ""
-#~ "Fixed: Could not change background-image/wallpaper if language is not "
-#~ "English"
-#~ msgstr ""
-#~ "برطرف شده: تغییر نکردن تصویر پس‌زمینه/کاغذ دیواری اگر زبان انگلیسی نباشد"
-
-#~ msgid "Fixed: A fatal bug"
-#~ msgstr "برطرف شده: یک مشکل مهلک"
-
-#~ msgid "Flatpak Support"
-#~ msgstr "پشتیبانی فلت‌پک"
-
-#~ msgid "Improved:"
-#~ msgstr "بهبود یافته:"
-
-#~ msgid "Support for Right-to-Left Languages"
-#~ msgstr "پشتیبانی از زبان‌های راست‌به‌چپ"
-
-#~ msgid "More Text got Translated"
-#~ msgstr "متن‌های بیشتری ترجمه شدند"
-
-# در این رشته از نویسهٔ LRM استفاده شده است
-#~ msgid ""
-#~ "Default shell theme extracted to '/usr/share/themes' as 'default-"
-#~ "extracted'"
-#~ msgstr ""
-#~ "زمینهٔ پیش‌گزیدهٔ پوسته با عنوان «default-extracted» در «‎/usr/share/themes» "
-#~ "استخراج شد"
+msgstr "बैटरी प्रतिशत दिखाएँ"

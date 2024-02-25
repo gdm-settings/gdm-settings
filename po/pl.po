@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-03 07:13+0500\n"
+"POT-Creation-Date: 2023-10-22 09:54+0500\n"
 "PO-Revision-Date: 2023-10-01 17:00+0000\n"
 "Last-Translator: Misiu <hubo6002@proton.me>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
@@ -293,6 +293,18 @@ msgstr ""
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+msgid "Main Window (Desktop Mode)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+msgid "Sidebar (Mobile Mode)"
+msgstr ""
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+msgid "Appearance Settings (Mobile Mode)"
+msgstr ""
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"

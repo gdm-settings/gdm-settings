@@ -1,64 +1,67 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gdm-settings package.
-# Jozef Gaal <preklady@mayday.sk>, 2023.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-03 07:13+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: sk\n"
+"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"PO-Revision-Date: 2023-12-29 20:10+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/ka/>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "თემის სახელი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
-msgstr ""
+msgstr "ფონის ტიპი"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
+msgstr "GDM-ის ფონი უნდა იყოს გამოსახულება, ფერი თუ ნაგულისხმევ."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
-msgstr ""
+msgstr "ფონის სურათი"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "გამოსახულების ფაილი GDM-ის ფონისთვის"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 msgid "Background Image Adjustment"
-msgstr ""
+msgstr "ფონის სურათის გასწორება"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "ფონის სურათის გასწორების სტრატეგია."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "ფონის ფერი"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "ფერი GDM-ის ფონისთვის"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "მაჩვენებლის სიჩქარე"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
@@ -66,40 +69,50 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"კურსორის სიჩქარე თაჩპედისთვის. მისაღები მნიშვნელობებია [-1..1] შუალედი ("
+"'აჩქარების გარეშედან' 'ჩქარამდე). ნულოვანი მნიშვნელობა სისტემის "
+"ნაგულისხმევია."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "თუ ჩართულია ღამის განათების რეჟიმი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"ღამის რეჟიმი ცვლის თქვენი ეკრანის ფერის ტემპერატურას, როცა მზე ჩავა, ან "
+"მაშინ, როცა მოინდომებთ."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "ეკრანის ტემპერატურა, როცა ჩართულია"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"ეს ტემპერატურა კელვინებშია და გამოიყენება ეკრანის ტონის შესაცვლელად, როცა "
+"ღამის რეჟიმ ჩართულია. მაღალი მნიშვნელობები უფრო ლურჯია, დაბალი კი უფრო "
+"წითელი."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "აისისა და დაისის გამოყენება"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"აისის და დაისის დროების ავტომატური გამოთვლა მიმდინარე მდებარეობაზე "
+"დაყრდნობით."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "დაწყების დროის საათი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
@@ -107,7 +120,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "დაწყების დროის წუთი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
@@ -115,7 +128,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "დასრულების დროის საათი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
@@ -123,7 +136,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "დასრულების დროის წუთი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
@@ -131,7 +144,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "ჩართვის ღილაკის ქმედება"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -142,21 +155,24 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "ენერგიის-დაზოგვის პროფილის გამოყენება, როცა ელემენტის მუხტი ცოტაღაა"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"როცა ელემენტი თითქმის დაჯდება, power-profiles-daemon-ის გამოყენებით "
+"\"ელემენტის-დაზოგვის\" პროფილის გამოყენება."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "ეკრანის მინავლება უქმე პერიოდის შემდეგ"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"უნდა გამკრთალდეს თუ არა ეკრანი ენერგიის დასაზოგად, როცა კომპიუტერი უქმედაა."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -169,7 +185,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "დრო, სანამ სესია უქმედ გამოცხადდება"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -178,11 +194,11 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "პროგრამული ძილი, აპარატურული თუ არაფერი ვქნა, როცა კომპიუტერი უქმადაა"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "ძილის დრო უქმეობის შემდეგ, როცა კვება ელემენტიდანაა"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -218,29 +234,29 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "შევცვალო თუ არა ზედა პანელის ტექსტის ფერი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "ზედა პანელის ტექსტის ფერი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "შევცვალო თუ არა ზედა პანელის ფონი"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "ზედა პანელის ფონის ფერი"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "GDM-ის მორგება"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "მოირგეთ შესვლის ეკრანი"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -251,11 +267,23 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+msgid "Main Window (Desktop Mode)"
+msgstr "მთავარი ფანჯარა (სამუშაო მაგიდის რეჟიმი)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+msgid "Sidebar (Mobile Mode)"
+msgstr "გვერდითი პანელი (მობილური რეჟიმი)"
+
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+msgid "Appearance Settings (Mobile Mode)"
+msgstr "გარეგნობის მორგება (მობილური რეჟიმი)"
 
 #: gdms/gui/__init__.py:62
 msgid "Show application version"
-msgstr ""
+msgstr "აპლიკაციის ვერსიის ჩვენება"
 
 #: gdms/gui/__init__.py:63
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -264,7 +292,7 @@ msgstr ""
 #: gdms/gui/__init__.py:64
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "დონე"
 
 #: gdms/gui/__init__.py:65
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -272,7 +300,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:66
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "ჩუმი რეჟიმის ჩართვა (იგივე, რაც --verbosity=0)"
 
 #: gdms/gui/__init__.py:86
 #, python-brace-format
@@ -295,12 +323,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -313,12 +341,12 @@ msgstr ""
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "ნაკლული დამოკიდებულებები"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "დიახ"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -332,7 +360,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "შეწირულობის მოთხოვნა"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -344,19 +372,19 @@ msgstr ""
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "არ მაინტერესებს"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "შემოწირულობა"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
-msgstr ""
+msgstr "პარამეტრები თავიდან ჩაიტვირთა"
 
 #: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "სესიის პარამეტრები წარმატებით ჩაიტვირთა"
 
 #: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -364,63 +392,63 @@ msgstr ""
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "პარამეტრების ჩამოყრა წარმატებულია"
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "პარამეტრების ჩამოყრა ჩავარდა"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "შემოტანა"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "პარამეტრების ფაილიდან შემოტანა წარმატებულია"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "შემოტანა ჩავარდა. ფაილი არასწორია"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "პარამეტრების გატანა წარმატებით დასრულდა"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "გატანა ჩავარდა. წვდომა აკრძალულია"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "გატანა ჩავარდა. საქაღალდე ამ სახელით უკვე არსებობს"
 
 #: gdms/gui/about.py:16 gdms/gui/about.py:100
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:17
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:101
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:114
 msgid "translator-credits"
-msgstr ""
+msgstr "თარგმანი-შესრულებულია"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "მიმდინარე ეკრანის პარამეტრები გადატარდა"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "მიმდინარე ეკრანის პარამეტრების გადატარება ჩავარდა"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -433,7 +461,7 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "ეკრანის პარამეტრები ვერ ვიპოვე"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -444,75 +472,75 @@ msgstr ""
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "ნაგულისხმევი თემის გაშლა ჩავარდა"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "ფაილის არჩევა"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(არცერთი)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "აირჩიეთ"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "გამოსახულებები"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "ყველა ფაილი"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "აირჩიეთ სურათი"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "გარეგნობა"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "ფონტები"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "ზედა ზოლი"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "ხმა"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "თაგუნა &amp; თაჩპედი"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "ჩვენება"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "შესვლის ეკრანი"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "კვება"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "ხელსაწყოები"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "პარამეტრები წარმატებით გადატარდა"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "პარამეტრების გადატარების შეცდომა"
 
 #: gdms/gui/window.py:147
 msgid ""
@@ -531,28 +559,28 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "გავიდე?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "გაუქმება"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "გასვლა"
 
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "შემოტანა ფაილიდან '{filename}'"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "შემოტანა სტანდარტული შეყვანიდან"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "შემოსატანი ფაილის დამუშავება ჩავარდა"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -572,7 +600,7 @@ msgstr ""
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "გატანა ფაილში '{filename}'"
 
 #: gdms/settings.py:218
 #, python-brace-format
@@ -596,63 +624,63 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "თემები"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "გარსი"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "ხატულები"
 
 #: resources/ui/appearance-page.blp:13
 msgid "Cursor"
-msgstr ""
+msgstr "კურსორი"
 
 #: resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "ფონი"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "ტიპი"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმევი"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
-msgstr ""
+msgstr "გამოსახულება"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
 msgid "Color"
-msgstr ""
+msgstr "ფერი"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "ფონად გამოსაყენებელი სურათი"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "გამოსახულების რეგულირება"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "ეკრანზე ჩატევა"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "გამეორება"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "ფერი ფონისთვის"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "მიმდინარე ეკრანის პარამეტრების გადატარება"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
@@ -660,202 +688,202 @@ msgstr ""
 
 #: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
 msgid "Apply"
-msgstr ""
+msgstr "გადატარება"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "ღამის სინათლე"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "ჩართვა"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "განრიგი"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "დაისიდან აისამდე"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "ხელით მითითება"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "რამდენჯერ"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "დაწყებული"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "სადამდე"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "ფერის ტერმპერატურა"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "ფონტი"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "მომრგვალება"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "სტანდარტული"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "ქვეპიქსელი"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "არაფერი"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "მოგლუვება"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "სრული"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "საშუალო"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "ოდნავ"
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "გადიდების მასშტაბი"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "განახლება"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "სესიის პარამეტრების ჩატვირთვა"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "პარამეტრების ნაგულისხმებ მნიშვნელობაზე დაბრუნება"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "ფაილიდან შემოტანა"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "ფაილში გატანა"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "პროგრამის შესახებ"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "გასვლა"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "რესტარტის ღილაკის ჩვენების გამორთვა"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "მომხმარებლების სიის გამორთვა"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "ლოგოს ჩართვა"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "ვაჩვენო თუ არა ლოგო მომხმარებლების სიის ქვემოთ"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "ლოგო"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "მომხმარებლების სიის ქვემოთ ნაჩვენები გამოსახულება"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "მისალმების შეტყობინება"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "გაზრდა"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "შეტყობინება"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "კურსორის ზომა"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "აქტივობების მმართველის ჩვენება"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "საშუალო"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "დიდი"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "უფრო დიდი"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "უდიდესი"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "თაგუნა"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "კურსორის აჩქარება"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "ავტომატური"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "გამოირთო"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "აქტიური"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "ჩვეულებრივი გადახვევა"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
@@ -863,67 +891,67 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr ""
+msgstr "მაჩვენებლის სიჩქარე"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "თაჩპედი"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
-msgstr ""
+msgstr "დასაწკაპუნებლად დაატყაპუნეთ"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "ორი თითით აწევ-ჩამოწევა"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "გადახვევა ორი თითის გასმით."
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "კრეფისას გამორთვა"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "ჩართვის ღილაკის ქცევა"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "არაფერი ქნა"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "ძილი"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "პროგრამული ძილი"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "კითხვა"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "ენერგიის ავტომატური დაზოგვა"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "ენერგიის დაზოგვის პროფილის გამოყენება, როცა ელემენტის მუხტი ცოტაღაა."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "ეკრანის ჩაქრობა"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "შეამცირებს ეკრანის სიკაშკაშეს, როცა კომპიუტერი უქმედაა."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "ეკრანის გამორთვა"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -932,7 +960,7 @@ msgstr ""
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "დაყოვნება"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
@@ -940,15 +968,15 @@ msgstr ""
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "ავტომატურად შეჩერება"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "შეაჩერებს კომპიუტერის მუშაობას უქმე პერიოდის შემდეგ."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "იკვებება ელემენტიდან"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
@@ -956,11 +984,11 @@ msgstr ""
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "როცა შეერთებულია"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "თემა"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
@@ -972,7 +1000,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "მოვლენის ხმები"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
@@ -980,7 +1008,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "ნაგულისხმევი გარსის თემა"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
@@ -992,72 +1020,72 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "გაშლა"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "მცირე ცვლილებები"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "ტექსტის ფერის შეცვლა"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "ტექსტის ფერი"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "ტექსტის ფერი ზედა პანელზე"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "ფონის ფერის შეცვლა"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "ზედა პანელის ფონის ფერი"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "ისრების გამორთვა"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "მომრგვალებული კუთხეების გამორთვა"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "წვდომადობა"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "წვდომადობის მენიუ ყოველთვის იქნება ნაჩვენები"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "საათი"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
-msgstr ""
+msgstr "კვირის დღის ჩვენება"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
-msgstr ""
+msgstr "წამების ჩვენება"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr ""
+msgstr "დროის ფორმატი"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr ""
+msgstr "24 საათი"
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
-msgstr ""
+msgstr "ელემენტის პროცენტულობის ჩვენება"
