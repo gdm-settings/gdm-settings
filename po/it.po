@@ -5,13 +5,14 @@
 # albanobattistella <albano_battistella@hotmail.com>, 2022, 2023.
 # Davide Neri <davnerix@gmail.com>, 2023.
 # "Jorge - vitrubio.net" <jorge@vitrubio.net>, 2023.
+# repex97 <repetto.andrea025@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-10-22 18:02+0000\n"
-"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
+"PO-Revision-Date: 2024-02-26 22:02+0000\n"
+"Last-Translator: repex97 <repetto.andrea025@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
 "Language: it\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -569,7 +570,7 @@ msgstr "Suono"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Mouse &amp; Touchpad"
+msgstr "Mouse & Touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
