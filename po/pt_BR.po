@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-28 20:02+0000\n"
+"PO-Revision-Date: 2024-02-28 21:02+0000\n"
 "Last-Translator: delvani <inavleb@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/pt_BR/>\n"
@@ -387,7 +387,7 @@ msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "Arquivo Perdido Tema Padrão da Shell"
+msgstr "Arquivo Shell do Tema Padrão Não Encontrado"
 
 #: gdms/gui/__init__.py:225
 msgid ""
