@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-01-25 16:01+0000\n"
+"PO-Revision-Date: 2024-02-28 20:02+0000\n"
 "Last-Translator: delvani <inavleb@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
-"settings/language-names/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gdm-settings/language-names/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -46,7 +46,7 @@ msgstr "O arquivo de imagem a ser usado como plano de fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
 msgid "Background Image Adjustment"
-msgstr "Ajuste da Imagem de Fundo"
+msgstr "Ajustar Imagem de Fundo"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
@@ -308,7 +308,7 @@ msgstr "Configurações de aparência (dispositivo móvel)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Mostrar informações de depuração (no formato Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -373,7 +373,7 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"Clique <a href=\"{url}\">here</a> para obter instruções sobre como instalar "
+"Clique <a href=\"{url}\">aqui</a> para obter instruções sobre como instalar "
 "estas dependências em seu sistema."
 
 #: gdms/gui/__init__.py:212
@@ -855,10 +855,8 @@ msgid "Quit"
 msgstr "Sair"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Aplicar"
+msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
