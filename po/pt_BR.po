@@ -10,11 +10,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"POT-Creation-Date: 2024-02-28 22:39+0500\n"
 "PO-Revision-Date: 2024-01-25 16:01+0000\n"
 "Last-Translator: delvani <inavleb@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"gdm-settings/language-names/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
+"settings/language-names/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -289,44 +289,49 @@ msgstr ""
 "Alterar definições GDM; Aplicar tema e fundo, alterar tema do cursor, tema "
 "do ícone e definições de luz nocturna, entre outras coisas."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
 msgstr "Janela Principal (Modo Desktop)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
 msgstr "Barra lateral (dispositivo móvel)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr "Configurações de aparência (dispositivo móvel)"
 
-#: gdms/gui/__init__.py:62
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr ""
+
+#: gdms/gui/__init__.py:64
 msgid "Show application version"
 msgstr "Mostra versão do aplicativo"
 
-#: gdms/gui/__init__.py:63
+#: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Definir o nível de verbosidade manualmente (de 0 a 5)"
 
-#: gdms/gui/__init__.py:64
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NÍVEL"
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Habilitar modo verboso (alias de --verbosidade=5)"
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Habilitar modo silencioso (alias de --verbosidade=0)"
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
@@ -461,23 +466,23 @@ msgstr "Falha na exportação. Permissão negada"
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Falha na exportação. Já existe um diretório com esse nome"
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Direitos autorais 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr "BRAZILIAN TRANSLATION TEAM"
 
@@ -739,7 +744,7 @@ msgstr "Aplicar configurações atuais do display"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolução, taxa de atualização, posições de monitor, etc."
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -848,6 +853,12 @@ msgstr "Sobre"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "Sair"
+
+#: resources/ui/main-window.blp:34
+#, fuzzy
+#| msgid "Apply"
+msgid "_Apply"
+msgstr "Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"

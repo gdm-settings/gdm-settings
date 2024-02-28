@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"POT-Creation-Date: 2024-02-28 22:39+0500\n"
 "PO-Revision-Date: 2022-09-19 18:16+0000\n"
 "Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
@@ -261,44 +261,49 @@ msgstr ""
 "تغییرات تنظیمات GDM؛ اِعمال زمینه و پس‌زمینه، تغییر زمینهٔ اشاره‌گر، زمینه نقشک "
 "و تنظیمات نور شب، و همینطور چیزهایی دیگر."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr ""
 
-#: gdms/gui/__init__.py:62
-msgid "Show application version"
-msgstr "نمایش نگارش برنامه"
-
 #: gdms/gui/__init__.py:63
-msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show debug information (in Markdown format)"
 msgstr ""
 
 #: gdms/gui/__init__.py:64
+msgid "Show application version"
+msgstr "نمایش نگارش برنامه"
+
+#: gdms/gui/__init__.py:65
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
@@ -428,17 +433,17 @@ msgstr ""
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "مظهر حسین"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr ""
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 #, fuzzy
 #| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -446,7 +451,7 @@ msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
 
@@ -699,7 +704,7 @@ msgstr "اِعمال تنظیمات نمایشگر کنونی"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "اِعمال"
 
@@ -810,6 +815,12 @@ msgstr "درباره"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "خروج"
+
+#: resources/ui/main-window.blp:34
+#, fuzzy
+#| msgid "Apply"
+msgid "_Apply"
+msgstr "اِعمال"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
