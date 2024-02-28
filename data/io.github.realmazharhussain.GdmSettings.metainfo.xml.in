@@ -24,6 +24,11 @@
     <value key="GnomeSoftware::key-colors">[(70, 140, 255), (50, 100, 200)]</value>
   </custom>
 
+  <branding>
+    <color type="primary" scheme_preference="dark">#3264c8</color>
+    <color type="primary" scheme_preference="light">#468cff</color>
+  </branding>
+
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
