@@ -82,6 +82,14 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4.3" type="stable" date="2024-02-25">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.3</url>
+      <description translatable="no">
+        <p>Improved brand colors for this app on GNOME Software and added brand
+           colors for this app on other software centers.</p>
+      </description>
+    </release>
+
     <release version="4.2" type="stable" date="2024-02-25">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.2</url>
       <description translatable="no">
