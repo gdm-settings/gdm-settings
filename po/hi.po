@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 # Nitin Khalia <weblate.scrambled777@simplelogin.com>, 2024.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2024-02-29 01:02+0000\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
 "Language: hi\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -288,7 +289,7 @@ msgstr "दिखावट सेटिंग (मोबाइल मोड)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "डिबग जानकारी दिखाएँ (मार्कडाउन प्रारूप में)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -824,10 +825,8 @@ msgid "Quit"
 msgstr "छोड़ें"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "लागू"
+msgstr "_लागू"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
