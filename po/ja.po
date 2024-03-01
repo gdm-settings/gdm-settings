@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Ryo Nakano <ryonakaknock3@gmail.com>, 2022, 2023.
+# Ryo Nakano <ryonakaknock3@gmail.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2023-12-24 01:10+0000\n"
+"PO-Revision-Date: 2024-03-01 13:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -298,7 +298,7 @@ msgstr "外観の設定 (モバイルモード)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "デバッグ情報を表示 (Markdown 形式)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -843,10 +843,8 @@ msgid "Quit"
 msgstr "終了"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "適用"
+msgstr "適用(_A)"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
