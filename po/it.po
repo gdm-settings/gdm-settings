@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Andrea Brandi <git@andreabrandi.com>, 2022.
-# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023.
+# albanobattistella <albano_battistella@hotmail.com>, 2022, 2023, 2024.
 # Davide Neri <davnerix@gmail.com>, 2023.
 # "Jorge - vitrubio.net" <jorge@vitrubio.net>, 2023.
 # repex97 <repetto.andrea025@gmail.com>, 2024.
@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-26 22:02+0000\n"
-"Last-Translator: repex97 <repetto.andrea025@gmail.com>\n"
+"PO-Revision-Date: 2024-03-07 21:01+0000\n"
+"Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
 "Language: it\n"
@@ -315,7 +315,7 @@ msgstr "Impostazioni dell'aspetto (modalità mobile)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Mostra informazioni di debug (in formato Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -866,10 +866,8 @@ msgid "Quit"
 msgstr "Esci"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Applica"
+msgstr "_Applica"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
