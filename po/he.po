@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-29 06:02+0000\n"
+"PO-Revision-Date: 2024-03-11 22:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/he/>\n"
@@ -295,7 +295,7 @@ msgstr "הגדרות מראה (מצב לניידים)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "הצגת פרטי ניפוי תקלות (בתבנית Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
