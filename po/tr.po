@@ -4,13 +4,14 @@
 # Sabri Ünal <libreajans@gmail.com>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
+# NukeSource <dede48076@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2024-03-17 11:01+0000\n"
+"Last-Translator: NukeSource <dede48076@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
 "Language: tr\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -307,7 +308,7 @@ msgstr "Görünüm Ayarları (Mobil Kip)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Hata ayıklama bilgilerini göster (Markdown formatında)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -847,10 +848,8 @@ msgid "Quit"
 msgstr "Çık"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Uygula"
+msgstr "_Uygula"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
