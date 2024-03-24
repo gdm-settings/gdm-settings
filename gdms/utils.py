@@ -270,7 +270,7 @@ class GSettings(Gio.Settings):
               flags: Gio.SettingsBindFlags = _default_flag) -> None:
         super().bind(key, obj, prop, flags)
 
-    def bind_to_colorbutton(self, key: str, colorbutton: Gtk.ColorButton,
+    def bind_to_colorbutton(self, key: str, colorbutton: Gtk.ColorDialogButton,
                             flags: Gio.SettingsBindFlags = _default_flag,
                             ) -> None:
         self.bind_with_mapping(key, colorbutton, 'rgba', flags,
