@@ -1,3 +1,6 @@
+from typing import cast
+
+from gi.repository import Adw
 from gi.repository import Gtk
 
 from gdms.settings import font_settings
@@ -14,12 +17,12 @@ class FontsPageContent (PageContent):
 
         self.builder = Gtk.Builder.new_from_resource('/app/ui/fonts-page.ui')
 
-        self.set_child(self.builder.get_object('content_box'))
+        self.set_child(cast(Gtk.Widget, self.builder.get_object('content_box')))
 
-        self.font_button = self.builder.get_object('font_button')
-        self.antialiasing_comborow = self.builder.get_object('antialiasing_comborow')
-        self.hinting_comborow = self.builder.get_object('hinting_comborow')
-        self.scaling_factor_spinrow = self.builder.get_object('scaling_factor_spinrow')
+        self.font_button = cast(Gtk.FontDialogButton, self.builder.get_object('font_button'))
+        self.antialiasing_comborow = cast(Adw.ComboRow, self.builder.get_object('antialiasing_comborow'))
+        self.hinting_comborow = cast(Adw.ComboRow, self.builder.get_object('hinting_comborow'))
+        self.scaling_factor_spinrow = cast(Adw.SpinRow, self.builder.get_object('scaling_factor_spinrow'))
 
         self.bind_to_gsettings()
 
