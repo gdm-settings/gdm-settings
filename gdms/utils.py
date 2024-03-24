@@ -15,6 +15,7 @@ from collections.abc import Callable, Iterator, Sequence
 
 from gi.repository import Adw
 from gi.repository import Gtk
+from gi.repository import Pango
 from gi.repository import Gdk
 from gi.repository import Gio
 from gi.repository import GObject
@@ -189,6 +190,15 @@ class _MappingFuncs:
     '''A collection of functions for 'GSettings' class that convert values
     from Settings keys to GObject properties and vice versa.'''
 
+    class FontDescription:
+        @staticmethod
+        def from_string(string: str, user_data=None) -> Pango.FontDescription:
+            return Pango.FontDescription.from_string(string)
+
+        @staticmethod
+        def to_string(font_desc: Pango.FontDescription, user_data=None) -> str:
+            return font_desc.to_string()
+
     class RGBA:
         def from_string(string: str, user_data=None) -> Gdk.RGBA:
             rgba = Gdk.RGBA()
@@ -269,6 +279,13 @@ class GSettings(Gio.Settings):
     def bind (self, key: str, obj: GObject.Object, prop: str,
               flags: Gio.SettingsBindFlags = _default_flag) -> None:
         super().bind(key, obj, prop, flags)
+
+    def bind_to_fontbutton(self, key: str, fontbutton: Gtk.FontDialogButton,
+                            flags: Gio.SettingsBindFlags = _default_flag,
+                            ) -> None:
+        self.bind_with_mapping(key, fontbutton, 'font-desc', flags,
+                               _MappingFuncs.FontDescription.from_string,
+                               _MappingFuncs.FontDescription.to_string)
 
     def bind_to_colorbutton(self, key: str, colorbutton: Gtk.ColorDialogButton,
                             flags: Gio.SettingsBindFlags = _default_flag,

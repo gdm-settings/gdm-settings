@@ -24,7 +24,7 @@ class FontsPageContent (PageContent):
         self.bind_to_gsettings()
 
     def bind_to_gsettings (self):
-        font_settings.bind('font', self.font_button, 'font')
+        font_settings.bind_to_fontbutton('font', self.font_button)
         font_settings.bind_via_list('antialiasing', self.antialiasing_comborow, 'selected',
                                     ['grayscale', 'rgba', 'none'])
         font_settings.bind_via_list('hinting', self.hinting_comborow, 'selected',
