@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-29 01:02+0000\n"
+"PO-Revision-Date: 2024-03-28 12:01+0000\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -762,7 +762,7 @@ msgstr "फ़ॉन्ट"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr "एंटीएलियासिंग"
+msgstr "उपघटन प्रतिरोधी"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
@@ -826,7 +826,7 @@ msgstr "छोड़ें"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr "_लागू"
+msgstr "लागू (_A)"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
