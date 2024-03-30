@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Thales Ruan de Souza Silva <thales.i.o.b@gmail.com>, 2022.
 # ssantos <ssantos@web.de>, 2023.
+# Marcelo Cerqueira <mcerqueiram@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2023-12-18 16:09+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2024-03-30 06:01+0000\n"
+"Last-Translator: Marcelo Cerqueira <mcerqueiram@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pt/>\n"
 "Language: pt\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -42,10 +43,8 @@ msgid "The image file to use as GDM background"
 msgstr "O ficheiro de imagem para usar como fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Imagem de Fundo"
+msgstr "Ajuste da imagem de fundo"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
@@ -272,10 +271,8 @@ msgstr "Cor de fundo da barra superior"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "Redefinir configurações"
+msgstr "configurações GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -302,15 +299,15 @@ msgstr "Janela Principal (Modo Desktop)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Barra lateral (modo móvel)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Configurações de aparência (modo móvel)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Mostrar informações de depuração (no formato Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -388,10 +385,8 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Tema Padrão da Shell"
+msgstr "Arquivo de tema padrão do shell perdido"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -488,7 +483,7 @@ msgstr "Direitos autorais 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "Marcelo <mcerqueiram@gmail.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -729,10 +724,8 @@ msgid "Image Adjustment"
 msgstr "Ajuste de imagem"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Ecrã escurecido"
+msgstr "Ajuste à tela"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
@@ -861,10 +854,8 @@ msgid "Quit"
 msgstr "Sair"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Aplicar"
+msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
