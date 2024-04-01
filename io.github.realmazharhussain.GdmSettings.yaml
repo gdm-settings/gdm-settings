@@ -2,7 +2,7 @@ app-id: io.github.realmazharhussain.GdmSettings
 command: gdm-settings
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "master"
 
 finish-args:
   - --share=ipc
@@ -39,6 +39,7 @@ modules:
   - name: gdm-settings
     builddir: true
     buildsystem: meson
+    run-tests: true
     sources:
       - type: dir
         path: '.'
