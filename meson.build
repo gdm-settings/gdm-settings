@@ -19,6 +19,8 @@ project('gdm-settings',
   ]
 )
 
+app_id = 'io.github.realmazharhussain.GdmSettings'
+
 dependency('glib-2.0')
 dependency('pygobject-3.0')
 dependency('gtk4', version: '>=4.10')

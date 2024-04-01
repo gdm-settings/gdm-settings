@@ -1,6 +1,6 @@
 appstream_file = i18n.merge_file(
-        input: 'io.github.realmazharhussain.GdmSettings.metainfo.xml.in',
-       output: '@BASENAME@',
+        input: 'gdm-settings.metainfo.xml',
+       output: app_id + '.metainfo.xml',
        po_dir: '../po',
       install: true,
   install_dir: get_option('datadir') / 'metainfo',
@@ -25,8 +25,8 @@ if appstream_util.found()
 endif
 
 desktop_file = i18n.merge_file(
-        input: 'io.github.realmazharhussain.GdmSettings.desktop.in',
-       output: '@BASENAME@',
+        input: 'gdm-settings.desktop',
+       output: app_id + '.desktop',
          type: 'desktop',
        po_dir: '../po',
       install: true,
@@ -43,8 +43,8 @@ if desktop_utils.found()
 endif
 
 configure_file(
-          input: 'io.github.realmazharhussain.GdmSettings.service.in',
-         output: 'io.github.realmazharhussain.GdmSettings.service',
+          input: 'gdm-settings.service.in',
+         output: app_id + '.service',
         install: true,
     install_dir: get_option('datadir') / 'dbus-1/services',
   configuration: configuration_data({
