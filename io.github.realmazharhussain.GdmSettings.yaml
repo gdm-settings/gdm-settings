@@ -39,6 +39,7 @@ modules:
   - name: gdm-settings
     builddir: true
     buildsystem: meson
+    run-tests: true
     sources:
       - type: dir
         path: '.'
