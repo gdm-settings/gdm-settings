@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-04-03 10:22+0000\n"
-"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-04-03 11:02+0000\n"
+"Last-Translator: Gabriel <gabrieldamoiseau.mobile@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -77,8 +77,8 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 "Vitesse du pointeur pour le pavé tactile. Les valeurs acceptées se situent "
-"dans la plage [-1..1] (de «&nbsp;non-accéléré&nbsp;» à «&nbsp;"
-"rapide&nbsp;»). La valeur 0 est la valeur par défaut du système."
+"dans la plage [-1..1] (de «lent» à «rapide»). La valeur 0 est la valeur par "
+"défaut du système."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -323,7 +323,7 @@ msgstr "Paramètres d'apparence (mode mobile)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr "Montrer les informations de débogage (en format Markdown)"
+msgstr "Afficher les informations de débogage (en format Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -404,17 +404,16 @@ msgstr "OK"
 #, fuzzy
 #| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Thème par défaut du shell"
+msgstr "Le fichier du thème par défaut du shell est perdu"
 
 #: gdms/gui/__init__.py:225
-#, fuzzy
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"L'application nécessite, mais ne trouve pas, un fichier de thème de shell "
-"par défaut non-modifié. Pour résoudre ce problème, réinstallez le paquet "
-"'gnome-shell' ou 'gnome-shell-common'"
+"L'application a besoin d'un ficher de thème shell par défaut non modifié "
+"mais ne le trouve pas. Pour résoudre le problème, réinstallez le paquet "
+"'gnome-shell-common' ou 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -430,7 +429,7 @@ msgstr ""
 "Cette application est et restera toujours open-source / libre et gratuite. "
 "Cependant, vous pouvez montrer votre soutien en faisant un don au "
 "développeur.\n"
-"\n"
+"❤️\n"
 "Je vous en serais très reconnaissant."
 
 #: gdms/gui/__init__.py:246
@@ -975,7 +974,7 @@ msgstr "Le défilement déplace le contenu, pas la vue."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr "Vitesse du pointeur"
+msgstr "Vitesse du Pointeur"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
