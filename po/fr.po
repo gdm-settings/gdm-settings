@@ -6,13 +6,14 @@
 # rene-coty <irenee.thirion@e.email>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2023.
+# Gabriel <gabrieldamoiseau.mobile@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2024-04-03 10:22+0000\n"
+"Last-Translator: Gabriel <gabrieldamoiseau.mobile@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -322,7 +323,7 @@ msgstr "Paramètres d'apparence (mode mobile)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Montrer les informations de débogage (en format Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -406,10 +407,14 @@ msgid "Default Shell Theme File Lost"
 msgstr "Thème par défaut du shell"
 
 #: gdms/gui/__init__.py:225
+#, fuzzy
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"L'application nécessite, mais ne trouve pas, un fichier de thème de shell "
+"par défaut non-modifié. Pour résoudre ce problème, réinstallez le paquet "
+"'gnome-shell' ou 'gnome-shell-common'"
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -742,14 +747,12 @@ msgid "Image Adjustment"
 msgstr "Ajustement d’image"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Atténuer l’affichage"
+msgstr "Ajuster à l'écran"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Répéter"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
