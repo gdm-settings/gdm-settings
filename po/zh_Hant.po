@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-04-12 10:01+0000\n"
+"PO-Revision-Date: 2024-04-12 18:01+0000\n"
 "Last-Translator: happylittle7 <Lance20501@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
-msgstr ""
+msgstr "主題名稱"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
 msgid "Type of Background"
@@ -1024,11 +1024,11 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "更改文字顏色"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "文字顏色"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
@@ -1036,7 +1036,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "更改背景顏色"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
@@ -1060,19 +1060,19 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "時鐘"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
-msgstr ""
+msgstr "顯示工作日"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
-msgstr ""
+msgstr "顯示秒"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr ""
+msgstr "時間格式"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
@@ -1080,8 +1080,8 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr ""
+msgstr "24 小時"
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
-msgstr ""
+msgstr "顯示電池百分比"
