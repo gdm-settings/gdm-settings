@@ -82,6 +82,13 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="4.4" type="stable" date="2024-05-09">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.4</url>
+      <description translatable="no">
+        <p>Add a request for donations.</p>
+      </description>
+    </release>
+
     <release version="4.3" type="stable" date="2024-02-25">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v4.3</url>
       <description translatable="no">
