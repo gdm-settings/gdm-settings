@@ -137,7 +137,7 @@ class GdmSettingsApp(Adw.Application):
             self.show_missing_gresource_dialog()
             return
 
-        if (not self.settings['donation-dialog-shown']
+        if (not self.settings['no-donation-dialog']
         and not self.settings['never-applied']):
             self.show_donation_dialog()
 
@@ -233,15 +233,24 @@ class GdmSettingsApp(Adw.Application):
 
 
     def show_donation_dialog (self):
-        heading = _("Donation Request")
+        heading = _("GDM Settings Needs Your Help!")
         body = _(
-            "This app is and will always remain Open Source/Libre and free of cost. "
-            "However, You can show some love by donating to the developer.\n"
-            "❤️\n"
-            "I would really appreciate it."
+            "Lately, I haven't had any time or energy to work on this app.\n"
+            "\n"
+            "If you would like for GDM Settings to keep getting updates/improvements, you can choose to donate.\n"
+            "With enough donations, I might be able to pay someone else to work on it.\n"
+            "\n"
+            "Thank you! ❤️"
         )
 
-        dialog = Adw.MessageDialog.new(self.window, heading, body)
+        checkbutton = Gtk.CheckButton.new_with_label(_("Don't show this dialog again"))
+        checkbutton.set_margin_top(10)
+        checkbutton.set_halign(Gtk.Align.CENTER)
+        self.settings.bind("no-donation-dialog", checkbutton, "active")
+
+        dialog = Adw.AlertDialog.new(heading, body)
+
+        dialog.set_extra_child(checkbutton)
 
         dialog.add_response('close', _("Not Interested"))
         dialog.add_response('donate', _("Donate"))
@@ -251,9 +260,7 @@ class GdmSettingsApp(Adw.Application):
 
         dialog.connect('response::donate', lambda *args: self.activate_action('donate'))
 
-        dialog.present()
-
-        self.settings['donation-dialog-shown'] = True
+        dialog.present(self.window)
 
 
     def keyboard_shortcuts(self):
@@ -391,7 +398,7 @@ class GdmSettingsApp(Adw.Application):
 
 
     def donate_cb(self, action, user_data):
-        Gtk.show_uri(self.window, 'https://gdm-settings.github.io/donate', Gdk.CURRENT_TIME)
+        Gtk.show_uri(self.window, 'https://opencollective.com/gdm-settings', Gdk.CURRENT_TIME)
 
 
     def about_cb(self, action, user_data):
