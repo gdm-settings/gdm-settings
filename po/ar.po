@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # oussaid1 <oussaid.abdellatif@gmail.com>, 2022.
 # Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
+# Abdullah Albaroty <albaroty@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2022-08-30 18:22+0000\n"
-"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
+"PO-Revision-Date: 2024-05-09 10:52+0000\n"
+"Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
 "Language: ar\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 5.5.4-rc\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -1015,11 +1016,11 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "سمة الشل الافتراضية"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "ضمّن تطويعات الشريط العلوي"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
@@ -1031,27 +1032,27 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "تطويعات"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "غيّر لون النص"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "لون النص"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "لون النص في الشريط العلوي"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "غيّر لون الخلفية"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "الون الخلفي للشريط العلوي"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
@@ -1075,23 +1076,23 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
-msgstr ""
+msgstr "أظهر أيام الأسبوع"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
-msgstr ""
+msgstr "أظهر الثواني"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr ""
+msgstr "تنسيق الوقت"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
-msgstr ""
+msgstr "ص/م"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr ""
+msgstr "٢٤ ساعة"
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
