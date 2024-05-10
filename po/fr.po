@@ -6,13 +6,15 @@
 # rene-coty <irenee.thirion@e.email>, 2022, 2023.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2023.
+# Wedone <wedoneoperate@outlook.fr>, 2024.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2023-10-22 09:54+0500\n"
 "PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"Last-Translator: Wedone <wedoneoperate@outlook.fr>, 2024\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -744,7 +746,7 @@ msgstr "Atténuer l’affichage"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Répéter"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
