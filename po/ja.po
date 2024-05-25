@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-03-01 13:00+0000\n"
+"PO-Revision-Date: 2024-05-25 06:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -298,15 +298,15 @@ msgstr "外観の設定 (モバイルモード)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr "デバッグ情報を表示 (Markdown 形式)"
+msgstr "デバッグ情報を表示する (Markdown 形式)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr "アプリケーションのバージョンを表示"
+msgstr "アプリケーションのバージョンを表示する"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "ログレベルを手動で設定 (0 から 5)"
+msgstr "ログレベルを手動で設定する (0 から 5)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
@@ -315,7 +315,7 @@ msgstr "レベル"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "すべてのログを表示 (--verbosity=5 のエイリアス)"
+msgstr "すべてのログを表示する (--verbosity=5 のエイリアス)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
@@ -324,7 +324,7 @@ msgstr "ログを表示しない (--verbosity=0 のエイリアス)"
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr "無効なログレベル {level} です。0から5の値を使用してください。"
+msgstr "無効なログレベル {level} です。0 から 5 の値を使用してください。"
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -600,7 +600,7 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr "ログアウトしますか？"
+msgstr "ログアウトしますか?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -836,7 +836,7 @@ msgstr "ファイルにエクスポート"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr "“GDM Settings” について"
+msgstr "GDM Settings について"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
