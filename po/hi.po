@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-05-27 16:09+0000\n"
+"PO-Revision-Date: 2024-05-27 17:09+0000\n"
 "Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hi/>\n"
@@ -67,13 +67,12 @@ msgstr "संकेतक गति"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
-#, fuzzy
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"टचपैड के लिए संकेतक गति। स्वीकृत मान [-1..1] श्रेणी में हैं (“unaccelerated” "
-"से “fast”)। 0 का मान सिस्टम तयशुदा है।"
+"टचपैड के लिए संकेतक गति। स्वीकृत मान [-1..1] श्रेणी में हैं (“अत्वरित” से "
+"“तेज”)। 0 का मान सिस्टम तयशुदा है।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -114,30 +113,27 @@ msgid "The start time's hour"
 msgstr "घंटे में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
-#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"जब “schedule-automatic” अक्षम हो, तो इस प्रारंभ समय का उपयोग घंटों के रूप में"
-" करें।"
+"जब “स्वचालित-अनुसूची” अक्षम हो, तो इस प्रारंभ समय का उपयोग घंटों के रूप में "
+"करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
 msgstr "मिनट में प्रारंभ समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
-#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr "जब “schedule-automatic” अक्षम हो, तो इस प्रारंभ समय मिनट का उपयोग करें।"
+msgstr "जब “स्वचालित-अनुसूची” अक्षम हो, तो इस प्रारंभ समय मिनट का उपयोग करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
 msgstr "घंटे में समाप्ति समय"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
-#, fuzzy
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"जब “schedule-automatic” अक्षम हो, तो इस समाप्ति समय का उपयोग घंटों में करें।"
+"जब “स्वचालित-अनुसूची” अक्षम हो, तो इस समाप्ति समय का उपयोग घंटों में करें।"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
