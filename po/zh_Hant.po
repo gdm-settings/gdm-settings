@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-05-30 10:09+0000\n"
+"PO-Revision-Date: 2024-05-30 11:09+0000\n"
 "Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
@@ -47,7 +47,7 @@ msgstr "背景圖片調整"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "背景圖片調整策略。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -73,7 +73,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "如果已啟用夜燈模式"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "啟用時顯示器的溫度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "使用日出和日落"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
@@ -103,7 +103,7 @@ msgstr "自動從目前位置計算日出和日落時間。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "開始時間的小時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
@@ -111,7 +111,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "開始時間的分鐘"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
@@ -119,7 +119,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "結束時間的小時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
@@ -127,7 +127,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "結束時間的分鐘"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
@@ -135,7 +135,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "電源按鈕動作"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -146,7 +146,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "電池電量低時啟用省電模式"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
@@ -173,7 +173,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "工作階段被視為空閒之前的時間"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -226,7 +226,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "頂欄文字顏色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "頂欄背景顏色"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
@@ -244,7 +244,7 @@ msgstr "GDM 設定"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "自訂你的登入畫面"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -260,7 +260,7 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "主視窗（桌面模式）"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
@@ -268,7 +268,7 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "外觀設定（移動模式）"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
@@ -293,7 +293,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "啟用安靜模式（別名 --verbosity=0）"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
@@ -377,7 +377,7 @@ msgstr "設定已重新載入"
 
 #: gdms/gui/__init__.py:291
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "工作階段設定已成功載入"
 
 #: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -389,7 +389,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "重置設定失敗"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
@@ -397,23 +397,23 @@ msgstr "匯入"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "設定已成功從檔案匯入"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "匯入失敗。檔案無效"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "設定已成功匯出"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "匯出失敗。權限被拒絕"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "匯出失敗。具有該名稱的目錄已存在"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -427,7 +427,7 @@ msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "版權所有 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -437,11 +437,11 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "已套用目前顯示設定"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "套用目前顯示設定失敗"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -454,7 +454,7 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "找不到顯視器設定"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -465,7 +465,7 @@ msgstr ""
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "提取預設主題失敗"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
@@ -533,7 +533,7 @@ msgstr ""
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "套用設定失敗"
 
 #: gdms/gui/window.py:147
 msgid ""
@@ -573,11 +573,11 @@ msgstr ""
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "解析匯入檔案失敗"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "讀取匯入檔案失敗。不是使用 UTF-8 編碼"
 
 #: gdms/settings.py:188
 #, python-brace-format
@@ -613,7 +613,7 @@ msgstr ""
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "正在備份預設外殼主題…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
@@ -653,7 +653,7 @@ msgstr "顏色"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "用作背景的圖片"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
@@ -669,7 +669,7 @@ msgstr "重複"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "用作背景的顏色"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
@@ -677,7 +677,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "解析度、重新整理頻率、顯示器位置等。"
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
@@ -795,11 +795,11 @@ msgstr "套用 (&A)"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "停用重新啟動按鈕"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "停用使用者列表"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
@@ -896,7 +896,7 @@ msgstr "觸控板"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
-msgstr ""
+msgstr "點擊以點擊"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
@@ -908,11 +908,11 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "打字時停用"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "電源按鈕行為"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
@@ -1005,7 +1005,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "預設外殼主題"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
@@ -1049,7 +1049,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "停用圓角"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
