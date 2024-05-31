@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-05-31 03:09+0000\n"
+"PO-Revision-Date: 2024-05-31 04:09+0000\n"
 "Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
@@ -79,7 +79,7 @@ msgstr "如果已啟用夜燈模式"
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
-msgstr ""
+msgstr "夜燈模式會在日落時或預定時間變更顯示器的色溫。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
@@ -89,7 +89,7 @@ msgstr "啟用時顯示器的溫度"
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
-msgstr ""
+msgstr "此開爾文溫度用於在啟用夜燈模式時修改螢幕色調。數值越高越藍，越低越紅。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
@@ -107,7 +107,7 @@ msgstr "開始時間的小時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
+msgstr "當「自動排程」已停用時，使用此開始時間的小時。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -115,7 +115,7 @@ msgstr "開始時間的分鐘"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
+msgstr "當「自動排程」已停用時，使用此開始時間的分鐘。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -123,7 +123,7 @@ msgstr "結束時間的小時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr ""
+msgstr "當「自動排程」已停用時，使用此結束時間的小時。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -131,7 +131,7 @@ msgstr "結束時間的分鐘"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
+msgstr "當「自動排程」已停用時，使用此結束時間的分鐘。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
@@ -142,7 +142,8 @@ msgid ""
 "The action to take when the system power button is pressed. This action is "
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
-msgstr ""
+msgstr "按下系統電源按鈕時要執行的動作。此動作在虛擬機器（關閉電源）和平板電腦（暫停"
+"）上是硬編碼的（而且設定被忽略）。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -152,11 +153,11 @@ msgstr "電池電量低時啟用省電模式"
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
-msgstr ""
+msgstr "如果電池電量低時，使用 power-profiles-daemon 自動啟用「power-saver」設定檔。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "一段時間沒有活動後暗淡螢幕"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
@@ -164,7 +165,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "是否在工作階段空閒時顯示空白螢幕"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
@@ -182,7 +183,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "是否在沒有活動和使用電池時暫停"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
@@ -196,7 +197,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "是否在沒有活動和使用外接電源時暫停"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
@@ -210,7 +211,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "是否將頂欄調整套用於提取的主題"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
@@ -280,7 +281,7 @@ msgstr "顯示應用程式版本"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "手動設定詳細等級（從 0 至 5）"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
@@ -807,7 +808,7 @@ msgstr "啟用標識"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "是否在使用者列表下方顯示標識"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
@@ -815,7 +816,7 @@ msgstr "標識"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "顯示在使用者列表下方的圖片"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
@@ -884,7 +885,7 @@ msgstr "自然捲動"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "捲動移動的是內容，而不是視圖。"
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
@@ -952,7 +953,7 @@ msgstr "關閉螢幕"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "是否在一段時間沒有活動後關閉螢幕。"
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
@@ -1033,7 +1034,7 @@ msgstr "文字顏色"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "頂欄文字顏色"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
