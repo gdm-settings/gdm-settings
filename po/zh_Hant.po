@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-05-30 11:09+0000\n"
+"PO-Revision-Date: 2024-05-31 03:09+0000\n"
 "Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
@@ -186,7 +186,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "使用電池時電腦的睡眠逾時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -200,7 +200,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "使用外接電源時電腦的睡眠逾時"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
@@ -214,15 +214,15 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "是否停用頂欄箭頭"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "是否停用頂欄圓角"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "是否變更頂欄文字顏色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
@@ -230,7 +230,7 @@ msgstr "頂欄文字顏色"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "是否變更頂欄背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
@@ -264,7 +264,7 @@ msgstr "主視窗（桌面模式）"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "側邊欄（移動模式）"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
@@ -272,11 +272,11 @@ msgstr "外觀設定（移動模式）"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "顯示偵錯資訊（以 Markdown 格式）"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "顯示應用程式版本"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -289,7 +289,7 @@ msgstr "等級"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "啟用詳細模式（別名 --verbosity=5）"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
@@ -343,7 +343,7 @@ msgstr "好的"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "預設外殼主題檔案遺失"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -385,7 +385,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "重置設定成功"
 
 #: gdms/gui/__init__.py:310
 msgid "Failed to reset settings"
@@ -509,7 +509,7 @@ msgstr "聲音"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "滑鼠和觸控板"
 
 #: gdms/gui/window.py:118
 msgid "Display"
@@ -529,7 +529,7 @@ msgstr "工具"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "設定套用成功"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
@@ -565,11 +565,11 @@ msgstr "登出"
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "正在從檔案「{filename}」匯入"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "正在從標準輸入匯入"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
@@ -582,7 +582,7 @@ msgstr "讀取匯入檔案失敗。不是使用 UTF-8 編碼"
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "匯入的檔案沒有章節「{section_name}」"
 
 #: gdms/settings.py:193
 #, python-brace-format
@@ -593,12 +593,12 @@ msgstr ""
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "正在匯出至檔案「{filename}」"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "無法寫入檔案「{filename}」。權限被拒絕"
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -609,7 +609,7 @@ msgstr ""
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "正在匯出至標準輸出"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
@@ -673,7 +673,7 @@ msgstr "用作背景的顏色"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "套用目前顯示設定"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
@@ -697,7 +697,7 @@ msgstr "排程"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "從日落至日出"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
@@ -735,7 +735,7 @@ msgstr "標準"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
-msgstr ""
+msgstr "亞像素"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
@@ -743,7 +743,7 @@ msgstr "無"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "微調"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
@@ -767,7 +767,7 @@ msgstr "重新整理"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "載入工作階段設定"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -775,11 +775,11 @@ msgstr "重置設定"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "從檔案匯入"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "匯出至檔案"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -904,7 +904,7 @@ msgstr "雙指捲動"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "用兩根手指滑動即可捲動。"
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
@@ -940,7 +940,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "暗淡螢幕"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -965,7 +965,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "自動暫停"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
@@ -989,19 +989,19 @@ msgstr "主題"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "過度放大"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "允許將音量提高到 100% 以上"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "事件聲音"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "輸入回饋聲音"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
@@ -1009,11 +1009,11 @@ msgstr "預設外殼主題"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "包括頂欄調整"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "提取預設外殼主題"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
@@ -1041,11 +1041,11 @@ msgstr "更改背景顏色"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "頂欄背景顏色"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "停用箭頭"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
@@ -1057,7 +1057,7 @@ msgstr "無障礙"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "總是顯示無障礙選單"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
