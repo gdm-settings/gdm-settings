@@ -6,13 +6,14 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 # antieksi <deustarkek@gmail.com>, 2024.
+# maksxqwq <maks.sxwq@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-22 14:02+0000\n"
-"Last-Translator: antieksi <deustarkek@gmail.com>\n"
+"PO-Revision-Date: 2024-06-09 22:09+0000\n"
+"Last-Translator: maksxqwq <maks.sxwq@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
 "Language: ru\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -312,7 +313,7 @@ msgstr "Настройки внешнего вида (Мобильный реж�
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Показать информацию для отладки (в Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
