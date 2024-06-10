@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-06-09 22:09+0000\n"
+"PO-Revision-Date: 2024-06-10 14:09+0000\n"
 "Last-Translator: maksxqwq <maks.sxwq@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ru/>\n"
@@ -313,7 +313,7 @@ msgstr "Настройки внешнего вида (Мобильный реж�
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr "Показать информацию для отладки (в Markdown)"
+msgstr "Показать отладочную информацию(в формате markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -862,8 +862,6 @@ msgid "Quit"
 msgstr "Выйти"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
 msgstr "Применить"
 
