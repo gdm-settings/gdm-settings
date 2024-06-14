@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-05-31 04:09+0000\n"
+"PO-Revision-Date: 2024-06-14 09:09+0000\n"
 "Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
@@ -161,7 +161,7 @@ msgstr "一段時間沒有活動後暗淡螢幕"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
-msgstr ""
+msgstr "當電腦空閒時，是否應該將螢幕調暗以節電。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -170,7 +170,7 @@ msgstr "是否在工作階段空閒時顯示空白螢幕"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "當電腦空閒時，是否應該將螢幕顯示為空白以節電。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
@@ -179,7 +179,7 @@ msgstr "工作階段被視為空閒之前的時間"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "在工作階段被視為空閒之前的不活動分鐘數。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -193,7 +193,8 @@ msgstr "使用電池時電腦的睡眠逾時"
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
-msgstr ""
+msgstr "使用電池供電的電腦在進入睡眠狀態之前需要處於不活動狀態的時間，以分鐘為單位。"
+"數值 0 表示永不。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
