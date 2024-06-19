@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-06-17 19:09+0000\n"
+"PO-Revision-Date: 2024-06-19 19:26+0000\n"
 "Last-Translator: Jozef Gaal <webdesign@mayday.sk>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.6-rc\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -259,11 +259,11 @@ msgstr ""
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Hlavné okno (Režim plochy)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Bočný panel (mobilný režim)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
@@ -315,12 +315,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -330,15 +330,17 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Kliknutím <a href=\"{url}\">sem</a> získate pokyny, ako nainštalovať tieto "
+"závislosti do vášho systému."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Chýbajúce závislosti"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -484,19 +486,19 @@ msgstr ""
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Všetky súbory"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Vybrať obrázok"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Vzhľad"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Písma"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
@@ -504,15 +506,15 @@ msgstr ""
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Zvuk"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Myš a touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Obrazovka"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
@@ -520,11 +522,11 @@ msgstr ""
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "Napájanie"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Nástroje"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
@@ -551,15 +553,15 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Odhlásiť sa?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušiť"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Odhlásiť sa"
 
 #: gdms/settings.py:173
 #, python-brace-format
@@ -911,35 +913,35 @@ msgstr ""
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Správanie tlačidla napájania"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Nespraviť nič"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Uspať"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernovať"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Opýtať sa"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Automatická úspora energie"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Zapne režim šetrenia energie, keď je batéria slabá."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Stmaviť obrazovku"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -964,7 +966,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Automatické uspanie"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
@@ -1084,4 +1086,4 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Zobraziť percento batérie"
