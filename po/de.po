@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-06-21 09:09+0000\n"
+"PO-Revision-Date: 2024-06-21 10:09+0000\n"
 "Last-Translator: Mathieu Graf <mathieu.graf@proton.me>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
@@ -314,11 +314,11 @@ msgstr "Seitenleiste (Mobiler Modus)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Design-Einstellungen (mobiler Modus)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Debugging-Informationen anzeigen (im Markdown-Format)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -405,10 +405,13 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Die App benötigt eine unmodifizierte Standard-Shell-Theme-Datei, die jedoch "
+"nicht gefunden werden kann. Um das Problem zu beheben, installieren Sie das "
+"Paket 'gnome-shell-common' oder 'gnome-shell' erneut."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Spendenanfrage"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -417,14 +420,19 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Diese App ist und wird immer Open Source/Frei und kostenlos bleiben. Sie "
+"können jedoch Ihre Wertschätzung zeigen, indem Sie dem Entwickler eine "
+"Spende zukommen lassen.\n"
+"❤️\n"
+"Ich würde es sehr zu schätzen wissen."
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "Nicht interessiert"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
@@ -464,7 +472,7 @@ msgstr "Einstellungen erfolgreich angewendet"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Import fehlgeschlagen. Datei ist ungültig"
 
 #: gdms/gui/__init__.py:383
 #, fuzzy
@@ -474,11 +482,12 @@ msgstr "Einstellungen erfolgreich angewendet"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Export fehlgeschlagen. Zugriff verweigert"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
+"Exxport fehlgeschlagen. Ein Verzeichnis mit diesem Namen existiert bereits"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -659,7 +668,7 @@ msgstr ""
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importieren aus Standardeingabe"
 
 #: gdms/settings.py:179
 #, fuzzy
@@ -669,7 +678,7 @@ msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Lesen von Importdatei fehlgeschlagen. Nicht mit UTF-8 kodiert"
 
 #: gdms/settings.py:188
 #, python-brace-format
