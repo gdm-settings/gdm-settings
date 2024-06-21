@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-06-21 10:09+0000\n"
+"PO-Revision-Date: 2024-06-21 11:09+0000\n"
 "Last-Translator: Mathieu Graf <mathieu.graf@proton.me>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
@@ -683,7 +683,7 @@ msgstr "Lesen von Importdatei fehlgeschlagen. Nicht mit UTF-8 kodiert"
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Sektion ‘{section_name}’ nicht vorhanden in importierter Datei"
 
 #: gdms/settings.py:193
 #, python-brace-format
@@ -1087,19 +1087,19 @@ msgstr "Automatisch"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Pausiert den Computer nach einer Zeit der Inaktivität."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "Bei Akkunutzung"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Zeit in Minuten, nach der der Computer in den Ruhezustand wechselt."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "Bei Netzbetrieb"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1171,11 +1171,11 @@ msgstr "Abgerundete Ecken deaktivieren"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Barrierefreiheit"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Menü für Barrierefreiheit immer anzeigen"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
