@@ -4,13 +4,14 @@
 # Vojtěch Perník <translations@pervoj.cz>, 2022.
 # vikdevelop <super-vik1@protonmail.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Kryštof Černý <cleverline1mc@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-29 08:02+0000\n"
-"Last-Translator: vikdevelop <super-vik1@protonmail.com>\n"
+"PO-Revision-Date: 2024-07-06 14:09+0000\n"
+"Last-Translator: Kryštof Černý <cleverline1mc@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
 "Language: cs\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -976,7 +977,7 @@ msgstr "Nedělat nic"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr "Přerušit"
+msgstr "Uspat"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
