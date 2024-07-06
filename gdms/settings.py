@@ -116,6 +116,7 @@ def load_from_session():
         touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
         touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
         touchpad_settings['speed'] = user_settings["speed"]
+        touchpad_settings['send-events'] = user_settings["send-events"]
 
     if user_settings := _GSettings("org.gnome.settings-daemon.plugins.power"):
         power_settings['power-button-action'] = user_settings['power-button-action']
@@ -470,6 +471,7 @@ def _dconf_apply():
         natural_scrolling = str(touchpad_settings['natural-scrolling']).lower()
         two_finger_scrolling = str(touchpad_settings['two-finger-scrolling']).lower()
         disable_while_typing = str(touchpad_settings['disable-while-typing']).lower()
+        send_events = str(touchpad_settings['send-events']).lower()
 
         gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
         gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
@@ -479,6 +481,7 @@ def _dconf_apply():
         gdm_conf_contents += f"natural-scroll={natural_scrolling}\n"
         gdm_conf_contents += f"two-finger-scrolling-enabled={two_finger_scrolling}\n"
         gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
+        gdm_conf_contents += f"send-events='{send_events}'\n"
         gdm_conf_contents +=  "\n"
 
         power_button_action = power_settings['power-button-action']

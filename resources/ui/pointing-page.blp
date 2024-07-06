@@ -77,5 +77,14 @@ Box content_box {
         hexpand: true;
       }
     }
+
+    Adw.ComboRow t_send_events_row {
+      title: _("Send events touchpad");
+      model: StringList { strings [
+        _("Enabled"),
+        _("Disabled"),
+        _("Disabled-on-external-mouse"),
+      ]};
+    }
   }
 }
