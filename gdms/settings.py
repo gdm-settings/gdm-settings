@@ -606,7 +606,7 @@ def apply_user_display_settings() -> bool:
     os.chmod(temp_monitors_xml, 0o644)
 
     _commands.add(['machinectl', 'shell', f'{gresource.GdmUsername}@', '/usr/bin/env',
-                     'gsettings', 'set', 'org.gnome.mutter' 'experimental-features',
+                     'gsettings', 'set', 'org.gnome.mutter', 'experimental-features',
                      '"[\'scale-monitor-framebuffer\']"',
                      '&>/dev/null',
                    ])
