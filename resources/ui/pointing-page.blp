@@ -78,13 +78,16 @@ Box content_box {
       }
     }
 
-    Adw.ComboRow t_send_events_row {
-      title: _("Send events touchpad");
-      model: StringList { strings [
-        _("Enabled"),
-        _("Disabled"),
-        _("Disabled-on-external-mouse"),
-      ]};
+    Adw.ExpanderRow text_send_text_expanderrow {
+      title: _("Enable Send events");
+
+      [action] Switch t_send_events_row {
+        valign: center;
+        active: bind text_send_text_expanderrow.expanded bidirectional;
+      }
+      Adw.SwitchRow t_disabled_on_external_mouse_row {
+        title: _("Disable on external mouse");
+      }
     }
   }
 }

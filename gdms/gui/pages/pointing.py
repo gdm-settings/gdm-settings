@@ -32,7 +32,8 @@ class PointingPageContent (PageContent):
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
         self.t_send_events_row = self.builder.get_object('t_send_events_row')
-       
+        self.t_disabled_on_external_mouse_row = self.builder.get_object('t_disabled_on_external_mouse_row')
+
         # Following properties are ignored when set in .ui files.
         # So, they need to be changed here.
         self.m_speed_scale.set_range(-1, 1)
@@ -54,8 +55,10 @@ class PointingPageContent (PageContent):
         touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'active')
         touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'active')
         touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')
-        touchpad_settings.bind_via_list('send-events', self.t_send_events_row, 'selected',
-                                     ['enabled', 'disabled', 'disabled-on-external-mouse'])
+        touchpad_settings.bind('send-events', self.t_send_events_row, 'active')
+        touchpad_settings.bind('disabled-on-external-mouse', self.t_disabled_on_external_mouse_row, 'active')
+        #touchpad_settings.bind_via_list('send-events', self.t_send_events_row, 'selected',
+        #                             ['enabled', 'disabled', 'disabled-on-external-mouse'])
 
 @Gtk.Template(resource_path='/app/ui/pointing-page/cursor-size-button.ui')
 class CursorSizeButton (Gtk.ToggleButton):
