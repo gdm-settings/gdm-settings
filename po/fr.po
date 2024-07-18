@@ -7,13 +7,14 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2023, 2024.
 # Gabriel <gabrieldamoiseau.mobile@gmail.com>, 2024.
+# Quentin PAGÈS <quentinantonin@free.fr>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-04-03 11:02+0000\n"
-"Last-Translator: Gabriel <gabrieldamoiseau.mobile@gmail.com>\n"
+"PO-Revision-Date: 2024-07-18 19:09+0000\n"
+"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -219,7 +220,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
 msgstr ""
-"Indique si il faut mettre en veille lors d’une inactivité et d’un "
+"Indique s’il faut mettre en veille lors d’une inactivité et d’un "
 "fonctionnement sur batterie"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
@@ -239,7 +240,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
 msgstr ""
-"Indique si il faut mettre en veille l’ordinateur lorsqu’il est inactif et "
+"Indique s’il faut mettre en veille l’ordinateur lorsqu’il est inactif et "
 "branché"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
