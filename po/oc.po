@@ -1,11 +1,11 @@
-# Quentin PAGÈS <quentinantonin@free.fr>, 2022, 2023.
+# Quentin PAGÈS <quentinantonin@free.fr>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2023-05-21 13:52+0000\n"
+"PO-Revision-Date: 2024-07-18 19:09+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -47,7 +47,7 @@ msgstr "Imatge de fons"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Estrategia d’ajustament de l’imatge de fons."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -210,7 +210,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Indica se cal metre en velha en inactivitat e en usatge de la batariá"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
@@ -221,6 +221,8 @@ msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La quantitat de temps en minutas que l’ordenador sus batariá deu èsser "
+"inactiu abans de se metre en velha. Una valor de 0 significa jamai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
@@ -235,6 +237,8 @@ msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"La quantitat de temps en minutas que l’ordenador sus sector deu èsser "
+"inactiu abans de se metre en velha. Una valor de 0 significa jamai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -294,19 +298,19 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Fenèstra principala (mòde burèu)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Barra laterala (mòde mobile)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Paramètres d’aparéncia (mòde mobile)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Afichar las informacions de desbugatge (al format Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -396,7 +400,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Demanda de don"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -408,11 +412,11 @@ msgstr ""
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "Non interessat"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Far un don"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
@@ -448,7 +452,7 @@ msgstr "Paramètres importats corrèctament del fichièr"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Fracàs de l’importacion. Fichièr invalid"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
@@ -456,11 +460,11 @@ msgstr "Paramètres importats corrèctament"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Fracàs de l’exportacion. Autorizacion refusada"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Fracàs de l’exportacion. Un repertòri amb aqueste nom existís ja"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -552,7 +556,7 @@ msgstr "Imatges"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Totes los fichièrs"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
@@ -641,11 +645,11 @@ msgstr "Desconnexion"
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importacion del fichièr « {filename} » estant"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importacion de l’entrada estandarda estant"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
@@ -654,11 +658,12 @@ msgstr "Fracàs de l'analisi del fichièr d’import"
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
+"Fracàs de la lectura del fichièr d’importacion. Non es pas encodat en UTF-8"
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Lo fichièr importat a pas cap de seccion « {section_name} »"
 
 #: gdms/settings.py:193
 #, python-brace-format
@@ -717,7 +722,7 @@ msgstr "Tipe"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Per defaut"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
@@ -743,7 +748,7 @@ msgstr "Escuresir l’ecran"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
@@ -918,7 +923,7 @@ msgstr "Cursor"
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Per defaut"
 
 #: resources/ui/pointing-page.blp:16
 #, fuzzy
@@ -1000,7 +1005,7 @@ msgstr "Desactivar en picant"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Compòrtament del boton d’alimentacion"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
@@ -1141,11 +1146,11 @@ msgstr "Caires arredondits desactivats"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibilitat"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Totjorn afichar lo menú d’accessibilitat"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
