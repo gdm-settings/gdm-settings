@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-07-18 19:09+0000\n"
+"PO-Revision-Date: 2024-07-19 15:09+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -397,6 +397,9 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"L'aplicacion a besonh d’un fichièr de tèma de shell per defaut non modificat "
+"mas a pas pogut o trobar. Per corregir lo problèma, tornatz installar lo "
+"paquet 'gnome-shell-common' o 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -409,6 +412,10 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Aquesta aplicacion es e demorarà totjorn liura e gratuita. Pasmens, podètz "
+"mostrar un pauc d'amor en donant al desvolopaire.\n"
+"❤️\n"
+"O apreciariái plan."
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
@@ -670,16 +677,18 @@ msgstr "Lo fichièr importat a pas cap de seccion « {section_name} »"
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Lo fichièr importat a pas la clau « {nom_de_clau} » dins la seccion « "
+"{nom_de_seccion} »"
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Expòrt cap al fichièr '{filename}'"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Escritura impossibla al fichièr '{filename}'. Autorizacion refusada"
 
 #: gdms/settings.py:222
 #, python-brace-format
