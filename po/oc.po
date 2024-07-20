@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-07-19 15:09+0000\n"
+"PO-Revision-Date: 2024-07-20 10:09+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -40,10 +40,8 @@ msgid "The image file to use as GDM background"
 msgstr "Lo fichièr imatge d’emplegar coma fons de GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Imatge de fons"
+msgstr "Ajustament de l’imatge de fons"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
@@ -271,10 +269,8 @@ msgstr "Color de fons barra superiora"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "Paramètres de la mirga"
+msgstr "Paramètres de GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -387,10 +383,8 @@ msgid "OK"
 msgstr "D’acòrdi"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Tèma Shell per defaut"
+msgstr "Fichièr de tèma Shell per defaut perdut"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -434,11 +428,9 @@ msgid "Session settings loaded successfully"
 msgstr "Paramètres de session corrèctament cargats"
 
 #: gdms/gui/__init__.py:295
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
-"L’importacion dels paramètres utilizaire es pas suportada dins la version "
+"Lo cargament dels paramètres de session es pas suportat dins la version "
 "Flatpak"
 
 #: gdms/gui/__init__.py:308
@@ -484,10 +476,8 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021–2023 Mazhar Hussain"
+msgstr "Copyright 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -504,16 +494,6 @@ msgid "Failed to apply current display settings"
 msgstr "Fracàs en aplicant los paramètres d’afichatge actuals"
 
 #: gdms/gui/pages/display.py:94
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -522,13 +502,10 @@ msgid ""
 "change some display options there."
 msgstr ""
 "Lo fichièr « $XDG_CONFIG_HOME/monitors.xml » es requerit per aplicar los "
-"paramètres d’afichatge actuals mas existisson pas.\n"
+"paramètres d’afichatge actuals mas existís pas.\n"
 "\n"
-"Per crear automaticament aqueste fichièr,\n"
-"\n"
-"1. Anatz al panèl « Afichatge » dels paramètres sistèma.\n"
-"2. Modificatz d’unes reglatges enlà.\n"
-"3. Aplicatz las modificacions."
+"Per crear automaticament aqueste fichièr, anatz als paramètres sistèma e "
+"modificatz d’unes reglatges enlà."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -629,9 +606,6 @@ msgstr ""
 "autre."
 
 #: gdms/gui/window.py:157
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
 "Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
@@ -677,8 +651,8 @@ msgstr "Lo fichièr importat a pas cap de seccion « {section_name} »"
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
-"Lo fichièr importat a pas la clau « {nom_de_clau} » dins la seccion « "
-"{nom_de_seccion} »"
+"Lo fichièr importat a pas la clau « {key_name} » dins la seccion « "
+"{section_name} »"
 
 #: gdms/settings.py:213
 #, python-brace-format
@@ -696,10 +670,12 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Escritura impossibla al fichièr « {filename} ». Un repertòri amb lo meteis "
+"nom existís ja"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exportacion cap a la sortida estandarda"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
@@ -747,13 +723,11 @@ msgstr "L’imatge d’emplegar coma fons"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Ajustament de l’imatge"
 
 #: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "Escuresir l’ecran"
+msgstr "Adaptar a l’ecran"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
@@ -882,10 +856,8 @@ msgid "Quit"
 msgstr "Quitar"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Aplicar"
+msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -924,10 +896,8 @@ msgid "Message"
 msgstr "Messatge"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Cursor"
+msgstr "Talha del cursor"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
@@ -935,30 +905,24 @@ msgid "Default"
 msgstr "Per defaut"
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "Mejan"
+msgstr "Mejana"
 
 #: resources/ui/pointing-page.blp:17
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Agrandir"
+msgstr "Granda"
 
 #: resources/ui/pointing-page.blp:18
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Agrandir"
+msgstr "Mai granda"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "La mai granda"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -1046,7 +1010,7 @@ msgstr "Escuresir l’ecran"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Reduire la luminositat de l’ecran quand l’ordenador es inactiu."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
@@ -1054,7 +1018,7 @@ msgstr "Atudar l’ecran"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Indica se cal atudar l’ecran aprèp un periòde d’inactivitat."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
@@ -1063,7 +1027,7 @@ msgstr "Relambi"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Relambi en minutas abans l’extincion de l’ecran."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -1071,7 +1035,7 @@ msgstr "Velha automatica"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Met l’ordenador en velha aprèp un periòde d’inactivitat."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
@@ -1079,7 +1043,7 @@ msgstr "Sus batariá"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Relambi en minutas abans la mesa en velha de l’ordenador."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
