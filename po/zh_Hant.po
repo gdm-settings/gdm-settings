@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 # happylittle7 <Lance20501@gmail.com>, 2024.
 # hugoalh <hugoalh@users.noreply.hosted.weblate.org>, 2024.
+# Peter Dave Hello <hsu@peterdavehello.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-06-14 09:09+0000\n"
-"Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-08-05 14:09+0000\n"
+"Last-Translator: Peter Dave Hello <hsu@peterdavehello.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "gdm-settings/language-names/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -253,7 +254,7 @@ msgstr "自訂你的登入畫面"
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
-msgstr ""
+msgstr "更改 GDM 設定；套用主題和背景、變更游標主題、圖示主題和夜燈設定等。"
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
@@ -313,7 +314,7 @@ msgstr ""
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
-msgstr ""
+msgstr "此應用程式需要以下軟體才能正常運作，但它們尚未被安裝。"
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
@@ -332,7 +333,7 @@ msgstr "<b>Polkit</b>"
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr ""
+msgstr "點點選<a href=\"{url}\">這裡</a>檢視如何在您的系統上安裝這些相依套件的說明。"
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
@@ -352,6 +353,8 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"應用程式需要、但找不到未修改的預設 shell 主題檔案。要解決此問題，請重新安裝 "
+"'gnome-shell-common' 或 'gnome-shell' 套件。"
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -364,6 +367,10 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"這個應用程式永遠都會開放原始碼、自由而且免費。不過，您可以透過贊助來對開發者"
+"來表達一些愛意。\n"
+"❤️\n"
+"我會非常感激。"
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
@@ -383,7 +390,7 @@ msgstr "工作階段設定已成功載入"
 
 #: gdms/gui/__init__.py:295
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "載入會話設定在 Flatpak 版本中不支援"
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
@@ -453,6 +460,10 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"需要 '$XDG_CONFIG_HOME/monitors.xml' "
+"檔案來套用目前的顯示設定，但該檔案不存在。\n"
+"\n"
+"為了自動建立該檔案，請打開系統「設定」並更改一些顯示選項。"
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -463,7 +474,7 @@ msgstr "找不到顯視器設定"
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "預設的 shell 主題已提取到 '{folder}'，名稱為 '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
@@ -541,7 +552,7 @@ msgstr "套用設定失敗"
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr ""
+msgstr "未套用。選擇的背景圖片已不存在。請重新選擇。"
 
 #: gdms/gui/window.py:151
 msgid ""
@@ -550,7 +561,7 @@ msgstr ""
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
+msgstr "系統可能會開始看起來怪怪的或有錯誤，直到你重新登入或重新開機。"
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
@@ -607,7 +618,7 @@ msgstr "無法寫入檔案「{filename}」。權限被拒絕"
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "無法寫入檔案 '{filename}'。已經存在相同名稱的目錄"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
