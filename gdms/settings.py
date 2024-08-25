@@ -94,6 +94,7 @@ def load_from_session():
 
         pointing_settings['cursor-size'] = user_settings["cursor-size"]
 
+        top_bar_settings['show-date'] = user_settings["clock-show-date"]
         top_bar_settings['show-weekday'] = user_settings["clock-show-weekday"]
         top_bar_settings['time-format'] = user_settings["clock-format"]
         top_bar_settings['show-seconds'] = user_settings["clock-show-seconds"]
@@ -409,6 +410,7 @@ def _dconf_apply():
         time_format = top_bar_settings['time-format']
         cursor_size = pointing_settings['cursor-size']
         cursor_theme = appearance_settings['cursor-theme']
+        show_date = str(top_bar_settings['show-date']).lower()
         show_seconds = str(top_bar_settings['show-seconds']).lower()
         show_weekday = str(top_bar_settings['show-weekday']).lower()
         antialiasing = font_settings['antialiasing']
@@ -422,6 +424,7 @@ def _dconf_apply():
         gdm_conf_contents += f"cursor-size={cursor_size}\n"
         gdm_conf_contents += f"icon-theme='{icon_theme}'\n"
         gdm_conf_contents += f"show-battery-percentage={show_battery_percentage}\n"
+        gdm_conf_contents += f"clock-show-date={show_date}\n"
         gdm_conf_contents += f"clock-show-seconds={show_seconds}\n"
         gdm_conf_contents += f"clock-show-weekday={show_weekday}\n"
         gdm_conf_contents += f"clock-format='{time_format}'\n"
@@ -513,7 +516,7 @@ def _dconf_apply():
         schedule_from  = night_light_settings['start-hour']
         schedule_from += night_light_settings['start-minute'] / 60
         schedule_to  = night_light_settings['end-hour']
-        schedule_to += night_light_settings['end-minute'] / 60 
+        schedule_to += night_light_settings['end-minute'] / 60
 
         gdm_conf_contents +=  "#------------- Night Light --------------\n"
         gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"

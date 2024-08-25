@@ -24,6 +24,7 @@ class TopBarPageContent (PageContent):
         self.disable_arrows_row = self.builder.get_object('disable_arrows_row')
         self.disable_rounded_corners_row = self.builder.get_object('disable_rounded_corners_row')
         self.accessibilty_menu_row = self.builder.get_object('accessibilty_menu_row')
+        self.show_date_row = self.builder.get_object('show_date_row')
         self.show_weekday_row = self.builder.get_object('show_weekday_row')
         self.show_seconds_row = self.builder.get_object('show_seconds_row')
         self.time_format_comborow = self.builder.get_object('time_format_comborow')
@@ -40,6 +41,7 @@ class TopBarPageContent (PageContent):
         top_bar_settings.bind_to_colorbutton('background-color', self.background_color_button)
         accessibility_settings.bind('always-show-accessibility-menu',
                                     self.accessibilty_menu_row, 'active')
+        top_bar_settings.bind('show-date', self.show_date_row, 'active')
         top_bar_settings.bind('show-weekday', self.show_weekday_row, 'active')
         top_bar_settings.bind('show-seconds', self.show_seconds_row, 'active')
         top_bar_settings.bind_via_list('time-format', self.time_format_comborow, 'selected', ['12h', '24h'])
