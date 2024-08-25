@@ -137,7 +137,7 @@ class GdmSettingsApp(Adw.Application):
             self.show_missing_gresource_dialog()
             return
 
-        if (not self.settings['no-donation-dialog']
+        if (not self.settings['donation-dialog-shown']
         and not self.settings['never-applied']):
             self.show_donation_dialog()
 
@@ -233,24 +233,13 @@ class GdmSettingsApp(Adw.Application):
 
 
     def show_donation_dialog (self):
-        heading = _("GDM Settings Needs Your Help!")
+        heading = _("Donation Request")
         body = _(
-            "Lately, I haven't had any time or energy to work on this app.\n"
-            "\n"
-            "If you would like for GDM Settings to keep getting updates/improvements, you can choose to donate.\n"
-            "With enough donations, I might be able to pay someone else to work on it.\n"
-            "\n"
-            "Thank you! ❤️"
+            "If you like this app, please consider donating so that we can keep improving it.\n"
+            "Thank you! ❤️️"
         )
 
-        checkbutton = Gtk.CheckButton.new_with_label(_("Don't show this dialog again"))
-        checkbutton.set_margin_top(10)
-        checkbutton.set_halign(Gtk.Align.CENTER)
-        self.settings.bind("no-donation-dialog", checkbutton, "active")
-
         dialog = Adw.AlertDialog.new(heading, body)
-
-        dialog.set_extra_child(checkbutton)
 
         dialog.add_response('close', _("Not Interested"))
         dialog.add_response('donate', _("Donate"))
@@ -261,6 +250,8 @@ class GdmSettingsApp(Adw.Application):
         dialog.connect('response::donate', lambda *args: self.activate_action('donate'))
 
         dialog.present(self.window)
+
+        self.settings['donation-dialog-shown'] = True
 
 
     def keyboard_shortcuts(self):
