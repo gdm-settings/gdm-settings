@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-09-11 09:16+0000\n"
+"PO-Revision-Date: 2024-09-11 10:09+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
@@ -70,7 +70,7 @@ msgstr "سرعت نشانگر"
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
-msgstr ""
+msgstr "سرعت نشانگر برای صفحه‌لمسی."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -81,30 +81,34 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"حالت نور شب هنگام غروب یا در زمان‌های از پیش تنظیم شده دمای رنگ نمایشگرتان را "
+"تغییر می‌دهد."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "دمای نمایشگر هنگام به کار افتادن"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"این دما به کلوین برای دستکاری تن صفحه هنگام به کار افتادن نور شب استفاده می‌"
+"شود. مقدارهای بیش‌تر آبی‌تر و مقدارهای پایین سرخ‌ترند."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "استفاده از طلوع و غروب"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr ""
+msgstr "محاسبهٔ خودکار زمان‌های طلوع و غروب در مکان کنونی."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "ساعت زمان آغاز"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
@@ -112,7 +116,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "دقیقهٔ زمان آغاز"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
@@ -120,7 +124,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "ساعت زمان پایان"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
@@ -128,7 +132,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "دقیقهٔ زمان پایان"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
@@ -136,7 +140,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "کنش دکمهٔ روشن"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -147,21 +151,24 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "به کار انداختن نمایهٔ ذخیرهٔ نیرو هنگام کم بودن باتری"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"به کار انداختن خودکار نمایهٔ ذخیرهٔ نیرو با استفاده از power-profiles-daemon "
+"اگر باتری کم باشد."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "کم‌نور کردن صفحه پس از دوره‌ای بی‌کاری"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"این که صفحه باید هنگام بی‌کاری رایانه برای ذخیرهٔ نیرو کم‌نور شود یا نه."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -174,7 +181,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "زمان پیش از در نظر گرفتن نشست به عنوان بی‌کار"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
@@ -239,15 +246,13 @@ msgstr "رنگ پس‌زمینهٔ نوار بالا"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Mouse Settings"
 msgid "GDM Settings"
-msgstr "تنظیمات موشی"
+msgstr "تنظیمات GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "شخصی سازی صفحهٔ ورودتان"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -265,15 +270,15 @@ msgstr "مظهر حسین"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "پنجرهٔ اصلی (حالت میزکار)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "نوار کناری (حالت همراه)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "تنظیمات ظاهر (حالت همراه)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
@@ -347,10 +352,8 @@ msgid "OK"
 msgstr "قبول"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "زمینهٔ پوستهٔ پیش‌گزیده"
+msgstr "پروندهٔ زمینهٔ پوستهٔ پیش‌گزیده از دست رفت"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -383,16 +386,12 @@ msgid "Settings reloaded"
 msgstr "تنظیمات مجدداً بارگزاری شد"
 
 #: gdms/gui/__init__.py:291
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "تنظیمات نشست با موفّقیت بار شد"
 
 #: gdms/gui/__init__.py:295
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "درون‌ریزی تنظیمات کاربر در نگارش فلت‌پک پشتیبانی نمی‌شود"
+msgstr "بار کردن تنظیمات نشست در نگارش فلت‌پک پشتیبانی نمی‌شود"
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
@@ -407,20 +406,16 @@ msgid "Import"
 msgstr "درون‌ریزی"
 
 #: gdms/gui/__init__.py:350
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "تنظیمات با موفّقیت از پرونده بار شد"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr ""
 
 #: gdms/gui/__init__.py:383
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "تنظیمات با موفّقیت اِعمال شد"
+msgstr "تنظیمات با موفّقیت برون‌ریزی شد"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
@@ -438,19 +433,19 @@ msgstr "مظهر حسین"
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "تالس بیندا"
 
 #: gdms/gui/about.py:17
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "حق رونوشت © ۲۰۲۱ مظهر حسین"
+msgstr "حق رونوشت © ۲۰۲۱-۲۰۲۳ مظهر حسین"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>"
+msgstr ""
+"سید اسحاق مقیم شهیدانی <eshagh094@gmail.com>\n"
+"دانیال بهزادی <dani.behzi@ubuntu.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -503,7 +498,7 @@ msgstr "تصاویر"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "همهٔ پرونده‌ها"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
@@ -535,7 +530,7 @@ msgstr "نمایشگر"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "صفحهٔ ورود"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
@@ -570,7 +565,7 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "خروج؟"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -578,7 +573,7 @@ msgstr "لغو"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "خروج"
 
 #: gdms/settings.py:173
 #, python-brace-format
@@ -590,10 +585,8 @@ msgid "Importing from standard input"
 msgstr ""
 
 #: gdms/settings.py:179
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "بازنشانی تنظیمات شکست خورد"
+msgstr "شکست در تجزیهٔ پروندهٔ درون‌ریزی"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -677,11 +670,11 @@ msgstr "تصویری که به عنوان پس‌زمینه استفاده می�
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "تنظیم تصویر"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "برازش به صفحه"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
@@ -697,7 +690,7 @@ msgstr "اِعمال تنظیمات نمایشگر کنونی"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
+msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
@@ -786,10 +779,8 @@ msgid "Refresh"
 msgstr "نوسازی"
 
 #: resources/ui/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "درون‌ریزی تنظیمات کاربر"
+msgstr "بار کردن تنظیمات نشست"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -797,11 +788,11 @@ msgstr "بازنشانی تنظیمات"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "درون ریزی از پرونده"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "برون‌ریزی در پرونده"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -825,7 +816,7 @@ msgstr "از کار انداختن فهرست کاربران"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr "به کار انداختن لوگو"
+msgstr "به کار انداختن نشان"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
@@ -852,10 +843,8 @@ msgid "Message"
 msgstr "پیام"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "مکان‌نما"
+msgstr "اندازهٔ نشانگر"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
@@ -908,7 +897,7 @@ msgstr "لغزش طبیعی"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "لغزش محتوا را جابه‌جا می‌کند، نه نما را."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
@@ -924,23 +913,23 @@ msgstr "ضربه برای کلیک"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "لغزش دو انگشتی"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "لفزش با کشیدن دو انگشت."
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "از کار انداختن هنگام نوشتن"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "رفتار دکمهٔ نیرو"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "کاری نکردن"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
@@ -955,30 +944,28 @@ msgid "Ask"
 msgstr "پرسش"
 
 #: resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "خودکار"
+msgstr "ذخیره‌ساز نیروی خودکار"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "حالت ذخیرهٔ نیرو را هنگام کم بودن باتری به کار می‌اندازد."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "تاریکی صفحه"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "روشنایی صفحه را هنگام غیرفعّال بودن رایانه کم می‌کند."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "خاموش کردن صفحه"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "این که صفحه پس از مدّتی غیرفعّال بودن خاموش شود یا نه."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
@@ -987,29 +974,27 @@ msgstr "تأخیر"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "زمانی که پس از آن صفحه خاموش می‌شود به دقیقه."
 
 #: resources/ui/power-page.blp:52
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "خودکار"
+msgstr "تعلیق خودکار"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "رایانه را پس از دوره‌ای غیرفعّال بودن مکث می‌کند."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "روی نیروی باتری"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "زمانی که پس از آن رایانه معلّق می‌شود به دقیقه."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "هنگام وصل بودن"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1030,7 +1015,7 @@ msgstr "صدای رویدادها"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "صداهای بازخورد ورودی"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
@@ -1086,7 +1071,7 @@ msgstr "دسترسی‌پذیری"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "نمایش همیشگی فهرست دسترسی‌پذیری"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
