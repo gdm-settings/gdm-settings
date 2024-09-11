@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Eshagh Shahedany <eshagh094@gmail.com>, 2022.
 # Eshagh shahidani <eshagh094@gmail.com>, 2022.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2022-09-19 18:16+0000\n"
-"Last-Translator: Eshagh shahidani <eshagh094@gmail.com>\n"
+"PO-Revision-Date: 2024-09-11 09:16+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
 "Language: fa\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -29,10 +30,8 @@ msgstr "نوع پس‌زمینه"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "پس‌زمینهٔ مدیر ورود گنوم باید یک تصویر، رنگ یا هیچ‌کدام باشد."
+msgstr "پس‌زمینهٔ مدیر ورود گنوم باید یک تصویر، رنگ یا پیش‌گزیده باشد."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -44,10 +43,8 @@ msgid "The image file to use as GDM background"
 msgstr "پروندهٔ تصویری که به عنوان پس‌زمینه GDM استفاده می‌شود"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "تصویر پس‌زمینه"
+msgstr "تنظیم تصویر پس‌زمینه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
@@ -293,7 +290,7 @@ msgstr ""
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "LEVEL"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -324,12 +321,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -347,7 +344,7 @@ msgstr ""
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "قبول"
 
 #: gdms/gui/__init__.py:223
 #, fuzzy
@@ -379,7 +376,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "اعانه"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
@@ -407,7 +404,7 @@ msgstr "بازنشانی تنظیمات شکست خورد"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "درون‌ریزی"
 
 #: gdms/gui/__init__.py:350
 #, fuzzy
@@ -664,7 +661,7 @@ msgstr "نوع"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "پیش‌گزیده"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
@@ -688,7 +685,7 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "تکرار"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
@@ -699,8 +696,6 @@ msgid "Apply current display settings"
 msgstr "اِعمال تنظیمات نمایشگر کنونی"
 
 #: resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "تفکیک‌پذیری، نرخ نوسازی، موقعیت‌های نمایشگر و غیره"
 
@@ -817,10 +812,8 @@ msgid "Quit"
 msgstr "خروج"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "اِعمال"
+msgstr "_اِعمال"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -852,13 +845,11 @@ msgstr "پیام خوشامدگویی"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "بزرگ کردن"
 
 #: resources/ui/login-screen-page.blp:49
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "پیام خوشامدگویی"
+msgstr "پیام"
 
 #: resources/ui/pointing-page.blp:10
 #, fuzzy
@@ -869,11 +860,9 @@ msgstr "مکان‌نما"
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "پیش‌گزیده"
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "متوسّط"
@@ -881,17 +870,17 @@ msgstr "متوسّط"
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "بزرگ"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "بزرگ‌تر"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "بزرگ‌ترین"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -899,7 +888,7 @@ msgstr "موشی"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "شتاب‌دهی نشانگر"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
@@ -915,7 +904,7 @@ msgstr "به کار افتاده"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "لغزش طبیعی"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
@@ -955,15 +944,15 @@ msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "تعلیق"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "خواب زمستانی"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "پرسش"
 
 #: resources/ui/power-page.blp:18
 #, fuzzy
@@ -994,7 +983,7 @@ msgstr ""
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "تأخیر"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
@@ -1093,7 +1082,7 @@ msgstr "از کار انداختن گوشه‌های گرد"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "دسترسی‌پذیری"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
