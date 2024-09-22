@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-08-13 03:09+0000\n"
+"PO-Revision-Date: 2024-09-22 03:40+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -492,47 +492,47 @@ msgstr ""
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "جميع الملفات"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "اختر صورة"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "المظهر"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "الخطوط"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "الشريط العلوي"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "الصوت"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "الفأرة ولوحة اللمس"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "الشاشة"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "شاشة الدخول"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "الطاقة"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "الأدوات"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
@@ -563,11 +563,11 @@ msgstr ""
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "تسجيل الخروج"
 
 #: gdms/settings.py:173
 #, python-brace-format
