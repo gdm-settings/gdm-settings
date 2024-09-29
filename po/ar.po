@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-09-22 10:40+0000\n"
+"PO-Revision-Date: 2024-09-29 12:15+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -142,7 +142,7 @@ msgstr "استخدام هذا الوقت كدقيقة الانتهاء عند ت
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "إجراء زر التشغيل"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
