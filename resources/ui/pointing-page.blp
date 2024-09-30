@@ -51,6 +51,15 @@ Box content_box {
   Adw.PreferencesGroup {
     title: _("Touchpad");
 
+    header-suffix:  Adw.SwitchRow t_send_events_row {
+
+    };
+    Adw.SwitchRow t_disabled_on_external_mouse_row {
+          title: _("Disable on external mouse");
+    }
+    Adw.SwitchRow t_disable_while_typing_row {
+      title: _("Disable while Typing");
+    }
     Adw.SwitchRow t_tap_to_click_row {
       title: _("Tap to Click");
     }
@@ -65,28 +74,12 @@ Box content_box {
       subtitle: _("Scroll by swiping with two fingers.");
     }
 
-    Adw.SwitchRow t_disable_while_typing_row {
-      title: _("Disable while Typing");
-    }
-
-    Adw.ActionRow {
+    Adw.ActionRow t_speed_scalerow {
       title: _("Pointer Speed");
 
       Scale t_speed_scale {
         orientation: horizontal;
         hexpand: true;
-      }
-    }
-
-    Adw.ExpanderRow text_send_text_expanderrow {
-      title: _("Enable Send events");
-
-      [action] Switch t_send_events_row {
-        valign: center;
-        active: bind text_send_text_expanderrow.expanded bidirectional;
-      }
-      Adw.SwitchRow t_disabled_on_external_mouse_row {
-        title: _("Disable on external mouse");
       }
     }
   }
