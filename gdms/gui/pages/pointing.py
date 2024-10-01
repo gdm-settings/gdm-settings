@@ -32,7 +32,7 @@ class PointingPageContent (PageContent):
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
         self.t_speed_scalerow= self.builder.get_object('t_speed_scalerow')
         self.t_enable_row = self.builder.get_object('t_enable_row')
-        self.t_disabled_on_external_mouse_row = self.builder.get_object('t_disabled_on_external_mouse_row')
+        self.t_disable_on_external_mouse_row = self.builder.get_object('t_disable_on_external_mouse_row')
 
         self.t_enable_row.connect("notify::active", self.on_switch_clicked);
 
@@ -50,7 +50,7 @@ class PointingPageContent (PageContent):
 
         # Perform actions based on the switch state
         if is_active:
-            self.t_disabled_on_external_mouse_row.set_sensitive(True)
+            self.t_disable_on_external_mouse_row.set_sensitive(True)
             self.t_tap_to_click_row.set_sensitive(True)
             self.t_natural_scrolling_row.set_sensitive(True)
             self.t_two_finger_scrolling_row.set_sensitive(True)
@@ -58,7 +58,7 @@ class PointingPageContent (PageContent):
             self.t_speed_scalerow.set_sensitive(True)
             # Do something when the switch is active
         else:
-            self.t_disabled_on_external_mouse_row.set_sensitive(False)
+            self.t_disable_on_external_mouse_row.set_sensitive(False)
             self.t_tap_to_click_row.set_sensitive(False)
             self.t_natural_scrolling_row.set_sensitive(False)
             self.t_two_finger_scrolling_row.set_sensitive(False)
@@ -80,7 +80,7 @@ class PointingPageContent (PageContent):
         touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'active')
         touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')
         touchpad_settings.bind('enable', self.t_enable_row, 'active')
-        touchpad_settings.bind('disabled-on-external-mouse', self.t_disabled_on_external_mouse_row, 'active')
+        touchpad_settings.bind('disable-on-external-mouse', self.t_disable_on_external_mouse_row, 'active')
 
 @Gtk.Template(resource_path='/app/ui/pointing-page/cursor-size-button.ui')
 class CursorSizeButton (Gtk.ToggleButton):

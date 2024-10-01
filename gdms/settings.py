@@ -118,13 +118,13 @@ def load_from_session():
         touchpad_settings['speed'] = user_settings["speed"]
         if user_settings["send-events"] == 'enabled' :
             touchpad_settings['enable'] = True
-            touchpad_settings['disabled-on-external-mouse'] = False
+            touchpad_settings['disable-on-external-mouse'] = False
         elif user_settings["send-events"] == 'disabled' :
             touchpad_settings['enable'] = False
-            touchpad_settings['disabled-on-external-mouse'] = False
+            touchpad_settings['disable-on-external-mouse'] = False
         else:
             touchpad_settings['enable'] = True
-            touchpad_settings['disabled-on-external-mouse'] = True
+            touchpad_settings['disable-on-external-mouse'] = True
 
     if user_settings := _GSettings("org.gnome.settings-daemon.plugins.power"):
         power_settings['power-button-action'] = user_settings['power-button-action']
@@ -480,7 +480,7 @@ def _dconf_apply():
         two_finger_scrolling = str(touchpad_settings['two-finger-scrolling']).lower()
         disable_while_typing = str(touchpad_settings['disable-while-typing']).lower()
         enable_touchpad = str(touchpad_settings['enable']).lower()
-        disabled_on_external_mouse = str(touchpad_settings['disabled-on-external-mouse']).lower()
+        disable_on_external_mouse = str(touchpad_settings['disable-on-external-mouse']).lower()
 
         gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
         gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
@@ -492,7 +492,7 @@ def _dconf_apply():
         gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
         if enable_touchpad== 'false':
             gdm_conf_contents += f"send-events='disabled'\n"
-        elif enable_touchpad== 'true' and disabled_on_external_mouse=='true' :
+        elif enable_touchpad== 'true' and disable_on_external_mouse=='true' :
              gdm_conf_contents += f"send-events='disabled-on-external-mouse'\n"
         else:
              gdm_conf_contents += f"send-events='enabled'\n"

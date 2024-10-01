@@ -6,7 +6,7 @@
       <default>true</default>
     </key>
 
-    <key name="disabled-on-external-mouse" type="b">
+    <key name="disable-on-external-mouse" type="b">
       <default>false</default>
     </key>
 
