@@ -34,7 +34,7 @@ class PointingPageContent (PageContent):
         self.t_enable_switch = self.builder.get_object('t_enable_switch')
         self.t_disable_on_external_mouse_row = self.builder.get_object('t_disable_on_external_mouse_row')
 
-        self.t_enable_switch.connect("notify::active", self.on_switch_clicked);
+        self.t_enable_switch.connect("notify::active", self.on_t_enable_switch_notify_active);
 
         # Following properties are ignored when set in .ui files.
         # So, they need to be changed here.
@@ -42,21 +42,17 @@ class PointingPageContent (PageContent):
         self.t_speed_scale.set_range(-1, 1)
 
         self.bind_to_gsettings()
-        self.on_switch_clicked(self.t_enable_switch,None)
+        self.on_t_enable_switch_notify_active(self.t_enable_switch, None)
 
 
-    def on_switch_clicked(self,widget, data):
-        is_active = widget.get_active()
-
-        # Perform actions based on the switch state
-        if is_active:
+    def on_t_enable_switch_notify_active(self, switch: Gtk.Switch, data):
+        if switch.props.active:
             self.t_disable_on_external_mouse_row.set_sensitive(True)
             self.t_tap_to_click_row.set_sensitive(True)
             self.t_natural_scrolling_row.set_sensitive(True)
             self.t_two_finger_scrolling_row.set_sensitive(True)
             self.t_disable_while_typing_row.set_sensitive(True)
             self.t_speed_scalerow.set_sensitive(True)
-            # Do something when the switch is active
         else:
             self.t_disable_on_external_mouse_row.set_sensitive(False)
             self.t_tap_to_click_row.set_sensitive(False)
