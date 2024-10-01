@@ -31,10 +31,10 @@ class PointingPageContent (PageContent):
         self.t_disable_while_typing_row = self.builder.get_object('t_disable_while_typing_row')
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
         self.t_speed_scalerow= self.builder.get_object('t_speed_scalerow')
-        self.t_enable_row = self.builder.get_object('t_enable_row')
+        self.t_enable_switch = self.builder.get_object('t_enable_switch')
         self.t_disable_on_external_mouse_row = self.builder.get_object('t_disable_on_external_mouse_row')
 
-        self.t_enable_row.connect("notify::active", self.on_switch_clicked);
+        self.t_enable_switch.connect("notify::active", self.on_switch_clicked);
 
         # Following properties are ignored when set in .ui files.
         # So, they need to be changed here.
@@ -42,7 +42,7 @@ class PointingPageContent (PageContent):
         self.t_speed_scale.set_range(-1, 1)
 
         self.bind_to_gsettings()
-        self.on_switch_clicked(self.t_enable_row,None)
+        self.on_switch_clicked(self.t_enable_switch,None)
 
 
     def on_switch_clicked(self,widget, data):
@@ -79,7 +79,7 @@ class PointingPageContent (PageContent):
         touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'active')
         touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'active')
         touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')
-        touchpad_settings.bind('enable', self.t_enable_row, 'active')
+        touchpad_settings.bind('enable', self.t_enable_switch, 'active')
         touchpad_settings.bind('disable-on-external-mouse', self.t_disable_on_external_mouse_row, 'active')
 
 @Gtk.Template(resource_path='/app/ui/pointing-page/cursor-size-button.ui')
