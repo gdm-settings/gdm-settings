@@ -116,13 +116,13 @@ def load_from_session():
         touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
         touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
         touchpad_settings['speed'] = user_settings["speed"]
-        if user_settings["send-events"] == 'enabled' :
+        if user_settings["send-events"] == 'enabled':
             touchpad_settings['enable'] = True
             touchpad_settings['disable-on-external-mouse'] = False
-        elif user_settings["send-events"] == 'disabled' :
+        elif user_settings["send-events"] == 'disabled':
             touchpad_settings['enable'] = False
             touchpad_settings['disable-on-external-mouse'] = False
-        else:
+        elif user_settings["send-events"] == 'disabled-on-external-mouse':
             touchpad_settings['enable'] = True
             touchpad_settings['disable-on-external-mouse'] = True
 
