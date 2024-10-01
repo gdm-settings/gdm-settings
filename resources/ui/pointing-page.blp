@@ -50,12 +50,10 @@ Box content_box {
 
   Adw.PreferencesGroup {
     title: _("Touchpad");
+    header-suffix:  Gtk.Switch t_enable_switch { valign: center; };
 
-    header-suffix:  Adw.SwitchRow t_send_events_row {
-
-    };
-    Adw.SwitchRow t_disabled_on_external_mouse_row {
-          title: _("Disable on external mouse");
+    Adw.SwitchRow t_disable_on_external_mouse_row {
+          title: _("Disable on External Mouse");
     }
     Adw.SwitchRow t_disable_while_typing_row {
       title: _("Disable while Typing");

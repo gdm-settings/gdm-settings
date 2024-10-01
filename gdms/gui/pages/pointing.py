@@ -31,10 +31,10 @@ class PointingPageContent (PageContent):
         self.t_disable_while_typing_row = self.builder.get_object('t_disable_while_typing_row')
         self.t_speed_scale = self.builder.get_object('t_speed_scale')
         self.t_speed_scalerow= self.builder.get_object('t_speed_scalerow')
-        self.t_send_events_row = self.builder.get_object('t_send_events_row')
-        self.t_disabled_on_external_mouse_row = self.builder.get_object('t_disabled_on_external_mouse_row')
+        self.t_enable_switch = self.builder.get_object('t_enable_switch')
+        self.t_disable_on_external_mouse_row = self.builder.get_object('t_disable_on_external_mouse_row')
 
-        self.t_send_events_row.connect("notify::active", self.on_switch_clicked);
+        self.t_enable_switch.connect("notify::active", self.on_t_enable_switch_notify_active);
 
         # Following properties are ignored when set in .ui files.
         # So, they need to be changed here.
@@ -42,23 +42,19 @@ class PointingPageContent (PageContent):
         self.t_speed_scale.set_range(-1, 1)
 
         self.bind_to_gsettings()
-        self.on_switch_clicked(self.t_send_events_row,None)
+        self.on_t_enable_switch_notify_active(self.t_enable_switch, None)
 
 
-    def on_switch_clicked(self,widget, data):
-        is_active = widget.get_active()
-
-        # Perform actions based on the switch state
-        if is_active:
-            self.t_disabled_on_external_mouse_row.set_sensitive(True)
+    def on_t_enable_switch_notify_active(self, switch: Gtk.Switch, data):
+        if switch.props.active:
+            self.t_disable_on_external_mouse_row.set_sensitive(True)
             self.t_tap_to_click_row.set_sensitive(True)
             self.t_natural_scrolling_row.set_sensitive(True)
             self.t_two_finger_scrolling_row.set_sensitive(True)
             self.t_disable_while_typing_row.set_sensitive(True)
             self.t_speed_scalerow.set_sensitive(True)
-            # Do something when the switch is active
         else:
-            self.t_disabled_on_external_mouse_row.set_sensitive(False)
+            self.t_disable_on_external_mouse_row.set_sensitive(False)
             self.t_tap_to_click_row.set_sensitive(False)
             self.t_natural_scrolling_row.set_sensitive(False)
             self.t_two_finger_scrolling_row.set_sensitive(False)
@@ -79,8 +75,8 @@ class PointingPageContent (PageContent):
         touchpad_settings.bind('two-finger-scrolling', self.t_two_finger_scrolling_row, 'active')
         touchpad_settings.bind('disable-while-typing', self.t_disable_while_typing_row, 'active')
         touchpad_settings.bind('speed', self.t_speed_scale.props.adjustment, 'value')
-        touchpad_settings.bind('send-events', self.t_send_events_row, 'active')
-        touchpad_settings.bind('disabled-on-external-mouse', self.t_disabled_on_external_mouse_row, 'active')
+        touchpad_settings.bind('enable', self.t_enable_switch, 'active')
+        touchpad_settings.bind('disable-on-external-mouse', self.t_disable_on_external_mouse_row, 'active')
 
 @Gtk.Template(resource_path='/app/ui/pointing-page/cursor-size-button.ui')
 class CursorSizeButton (Gtk.ToggleButton):

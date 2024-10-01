@@ -116,15 +116,15 @@ def load_from_session():
         touchpad_settings['two-finger-scrolling'] = user_settings["two-finger-scrolling-enabled"]
         touchpad_settings['disable-while-typing'] = user_settings["disable-while-typing"]
         touchpad_settings['speed'] = user_settings["speed"]
-        if user_settings["send-events"] == 'enabled' :
-            touchpad_settings['send-events'] = True
-            touchpad_settings['disabled-on-external-mouse'] = False
-        elif user_settings["send-events"] == 'disabled' :
-            touchpad_settings['send-events'] = False
-            touchpad_settings['disabled-on-external-mouse'] = False
-        else:
-            touchpad_settings['send-events'] = True
-            touchpad_settings['disabled-on-external-mouse'] = True
+        if user_settings["send-events"] == 'enabled':
+            touchpad_settings['enable'] = True
+            touchpad_settings['disable-on-external-mouse'] = False
+        elif user_settings["send-events"] == 'disabled':
+            touchpad_settings['enable'] = False
+            touchpad_settings['disable-on-external-mouse'] = False
+        elif user_settings["send-events"] == 'disabled-on-external-mouse':
+            touchpad_settings['enable'] = True
+            touchpad_settings['disable-on-external-mouse'] = True
 
     if user_settings := _GSettings("org.gnome.settings-daemon.plugins.power"):
         power_settings['power-button-action'] = user_settings['power-button-action']
@@ -479,8 +479,8 @@ def _dconf_apply():
         natural_scrolling = str(touchpad_settings['natural-scrolling']).lower()
         two_finger_scrolling = str(touchpad_settings['two-finger-scrolling']).lower()
         disable_while_typing = str(touchpad_settings['disable-while-typing']).lower()
-        send_events = str(touchpad_settings['send-events']).lower()
-        disabled_on_external_mouse = str(touchpad_settings['disabled-on-external-mouse']).lower()
+        enable_touchpad = touchpad_settings['enable']
+        disable_on_external_mouse = touchpad_settings['disable-on-external-mouse']
 
         gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
         gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
@@ -490,9 +490,9 @@ def _dconf_apply():
         gdm_conf_contents += f"natural-scroll={natural_scrolling}\n"
         gdm_conf_contents += f"two-finger-scrolling-enabled={two_finger_scrolling}\n"
         gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
-        if send_events== 'false':
+        if not enable_touchpad:
             gdm_conf_contents += f"send-events='disabled'\n"
-        elif send_events== 'true' and disabled_on_external_mouse=='true' :
+        elif disable_on_external_mouse:
              gdm_conf_contents += f"send-events='disabled-on-external-mouse'\n"
         else:
              gdm_conf_contents += f"send-events='enabled'\n"
@@ -532,7 +532,7 @@ def _dconf_apply():
         schedule_from  = night_light_settings['start-hour']
         schedule_from += night_light_settings['start-minute'] / 60
         schedule_to  = night_light_settings['end-hour']
-        schedule_to += night_light_settings['end-minute'] / 60 
+        schedule_to += night_light_settings['end-minute'] / 60
 
         gdm_conf_contents +=  "#------------- Night Light --------------\n"
         gdm_conf_contents +=  "[org/gnome/settings-daemon/plugins/color]\n"
