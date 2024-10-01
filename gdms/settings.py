@@ -479,8 +479,8 @@ def _dconf_apply():
         natural_scrolling = str(touchpad_settings['natural-scrolling']).lower()
         two_finger_scrolling = str(touchpad_settings['two-finger-scrolling']).lower()
         disable_while_typing = str(touchpad_settings['disable-while-typing']).lower()
-        enable_touchpad = str(touchpad_settings['enable']).lower()
-        disable_on_external_mouse = str(touchpad_settings['disable-on-external-mouse']).lower()
+        enable_touchpad = touchpad_settings['enable']
+        disable_on_external_mouse = touchpad_settings['disable-on-external-mouse']
 
         gdm_conf_contents +=  "#-------------- Touchpad ---------------\n"
         gdm_conf_contents +=  "[org/gnome/desktop/peripherals/touchpad]\n"
@@ -490,9 +490,9 @@ def _dconf_apply():
         gdm_conf_contents += f"natural-scroll={natural_scrolling}\n"
         gdm_conf_contents += f"two-finger-scrolling-enabled={two_finger_scrolling}\n"
         gdm_conf_contents += f"disable-while-typing={disable_while_typing}\n"
-        if enable_touchpad== 'false':
+        if not enable_touchpad:
             gdm_conf_contents += f"send-events='disabled'\n"
-        elif enable_touchpad== 'true' and disable_on_external_mouse=='true' :
+        elif disable_on_external_mouse:
              gdm_conf_contents += f"send-events='disabled-on-external-mouse'\n"
         else:
              gdm_conf_contents += f"send-events='enabled'\n"
