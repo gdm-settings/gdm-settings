@@ -2,7 +2,7 @@
   <schema id="io.github.realmazharhussain.GdmSettings.touchpad"
        path="/io/github/realmazharhussain/GdmSettings/touchpad/">
 
-    <key name="send-events" type="b">
+    <key name="enable" type="b">
       <default>true</default>
     </key>
 
