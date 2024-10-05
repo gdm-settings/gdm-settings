@@ -5,13 +5,14 @@
 # Grayson Hunt <Vasilkusniruk@gmail.com>, 2023.
 # Gleb <gkaraulnyi@gmail.com>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
+# Володимир Давибіда <mrvovavova17@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2024-10-05 17:15+0000\n"
+"Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -45,14 +46,12 @@ msgid "The image file to use as GDM background"
 msgstr "Файл зі зображенням для фону GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Фонове зображення"
+msgstr "Змінити фонове зображення"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Стратегії налаштування фонового зображення."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -273,7 +272,7 @@ msgstr "Колір тла верхньої панелі"
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "Налаштування GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
@@ -296,19 +295,19 @@ msgstr "Мазхар Хусейн"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Головне вікно (Режим Робочого столу)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Бічна панель (Mобільний Режим)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Налаштування зовнішнього вигляду (Mобільний Режим)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Показати інформацію про налагодження (у форматі розмітки)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -385,13 +384,16 @@ msgstr "Так"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "Файл теми оболонки за замовчуванням втрачено"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Додатку потрібен незмінений файл теми оболонки за замовчуванням, але він не "
+"знайшов його. Щоб вирішити проблему, переінсталюйте пакет 'gnome-shell-"
+"common' або 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -448,19 +450,19 @@ msgstr "Налаштування успішно імпортовано з фай
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Не вдалося імпортувати. Файл недійсний"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Налаштування успішно експортовано"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Не вдалося експортувати. Відмовлено в доступі"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Не вдалося експортувати. Каталог із такою назвою вже існує"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -484,11 +486,11 @@ msgstr "Gleb <widness73@gmail.com>"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Застосовано поточні налаштування дисплею"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Не вдалося застосувати поточні налаштування дисплея"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -498,112 +500,123 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Файл '$XDG_CONFIG_HOME/monitors.xml' потрібен для застосування поточних "
+"налаштувань відображення, але його не існує.\n"
+"\n"
+"Щоб створити цей файл автоматично, відкрийте «Налаштування» системи та "
+"змініть там деякі параметри відображення."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Налаштування Монітора Не Знайдено"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "Тема оболонки за замовчуванням витягнута в '{folder}' як '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Не вдалося видобути тему за умовчанням"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Оберіть файл"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Нічого)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Оберіть"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Зображення"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Усі Файли"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Оберіть Зображення"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Зовнішній вигляд"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Шрифти"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Верхня Панель"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Звук"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Миша та Тачпад"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Дисплей"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Екран Входу"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr ""
+msgstr "Живлення"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Інструменти"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Налаштування успішно застосовано"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Не вдалося застосувати налаштування"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"Не застосовано. Вибране фонове зображення більше не існує. Будь ласка! "
+"оберіть знову."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"Не застосовано. Вибране зображення логотипу більше не існує. Будь ласка! "
+"оберіть знову."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Система може почати виглядати дивно/з помилками, доки ви повторно не "
+"ввійдете чи не перезавантажите пристрій."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Вийти?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Відмінити"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
@@ -612,40 +625,40 @@ msgstr "Вийти"
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Імпортування з файлу '{filename}'"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Імпортування зі стандартного введення"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Не вдалося проаналізувати імпортований файл"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Не вдалося прочитати файл імпорту. Не закодовано в UTF-8"
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Імпортований файл не має розділу '{section_name}'"
 
 #: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "Імпортований файл не має ключа '{key_name}' у розділі '{section_name}'"
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Експорт у файл '{filename}'"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Неможливо записати у файл '{filename}'. Відмовлено в доступі"
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -653,26 +666,27 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Неможливо записати у файл '{filename}'. Каталог із такою назвою вже існує"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Експорт до стандартного виводу"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Резервне копіювання теми оболонки за замовчуванням…"
 
 #: resources/ui/appearance-page.blp:9
 msgid "Themes"
-msgstr ""
+msgstr "Теми"
 
 #: resources/ui/appearance-page.blp:11
 msgid "Shell"
-msgstr ""
+msgstr "Оболонка"
 
 #: resources/ui/appearance-page.blp:12
 msgid "Icons"
-msgstr ""
+msgstr "Значки"
 
 #: resources/ui/appearance-page.blp:13
 msgid "Cursor"
@@ -680,105 +694,105 @@ msgstr "Курсор"
 
 #: resources/ui/appearance-page.blp:17
 msgid "Background"
-msgstr ""
+msgstr "Фон"
 
 #: resources/ui/appearance-page.blp:20
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "За замовчуванням"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
-msgstr ""
+msgstr "Зображення"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
 msgid "Color"
-msgstr ""
+msgstr "Колір"
 
 #: resources/ui/appearance-page.blp:26
 msgid "The image to use as background"
-msgstr ""
+msgstr "Зображення для фону"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Налаштування Зображення"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "За Розміром Екрана"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Повторити"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
-msgstr ""
+msgstr "Колір для використання як фону"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Застосувати поточні налаштування дисплея"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Роздільна здатність, частота оновлення, положення монітора, тощо."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Застосувати"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Нічне Світло"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Увімкнути"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Розклад"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Від Заходу до Сходу сонця"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Розклад Вручну"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Час"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Від"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "До"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Температура Кольору"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Шрифт"
 
 #: resources/ui/fonts-page.blp:21
 msgid "Antialiasing"
-msgstr ""
+msgstr "Згладжування"
 
 #: resources/ui/fonts-page.blp:23
 msgid "Standard"
-msgstr ""
+msgstr "Стандартний"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Subpixel"
@@ -786,156 +800,156 @@ msgstr "Субпіксель"
 
 #: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
 msgid "None"
-msgstr ""
+msgstr "Нічого"
 
 #: resources/ui/fonts-page.blp:30
 msgid "Hinting"
-msgstr ""
+msgstr "Підказки"
 
 #: resources/ui/fonts-page.blp:32
 msgid "Full"
-msgstr ""
+msgstr "Повні"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Medium"
-msgstr ""
+msgstr "Середні"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Slight"
-msgstr ""
+msgstr "Незначні"
 
 #: resources/ui/fonts-page.blp:40
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Коефіцієнт масштабування"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Оновити"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Завантажити налаштування сеансу"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Скидання налаштувань"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Імпортувати з файлу"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Експортувати у файл"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Про додаток"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Вийти"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Застосувати"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Вимкнути Кнопки Перезавантаження"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Відключити Список Користувачів"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Активувати Логотипи"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Чи показувати логотип під списком користувачів"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Логотип"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Зображення під списком користувачів"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Вітальне Повідомлення"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Збільшити"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Повідомлення"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Розмір Курсора"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Стандартний"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Середній"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Великий"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Більший"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Найбільший"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Миша"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Прискорення миші"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Автоматично"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "Вимкнено"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Увімкнено"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Природне Прокручування"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Прокручування переміщує вміст, а не перегляд."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Швидкість Вказівника"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
