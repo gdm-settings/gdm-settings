@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-10-05 17:15+0000\n"
+"PO-Revision-Date: 2024-10-05 18:15+0000\n"
 "Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -416,9 +416,8 @@ msgid "Not Interested"
 msgstr "Не Зацікавлений"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
-#, fuzzy
 msgid "Donate"
-msgstr "Пожертвуйте"
+msgstr "Пожертвування"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
@@ -957,196 +956,196 @@ msgstr "Сенсорна панель"
 
 #: resources/ui/pointing-page.blp:55
 msgid "Tap to Click"
-msgstr ""
+msgstr "Торкніться, щоб клацнути"
 
 #: resources/ui/pointing-page.blp:64
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Прокручування двома пальцями"
 
 #: resources/ui/pointing-page.blp:65
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Прокрутіть, провівши двома пальцями."
 
 #: resources/ui/pointing-page.blp:69
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Вимкнути під час набору тексту"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Поведінка Кнопки Живлення"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Не робити нічого"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Перейти у сплячий режим"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Перейти у режим гібернації"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Запитувати"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Автоматичний Режим Енергозбереження"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Вмикає режим енергозбереження, коли акумулятор розряджений."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Затемнення Екрану"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Зменшує яскравість екрана, коли комп’ютер неактивний."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Вимикання Екрану"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Чи вимикати екран після періоду бездіяльності."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "Затримка"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Час у хвилинах, після якого екран вимкнеться."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Автоматичний Режим Сну"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Призупиняє роботу комп’ютера після періоду бездіяльності."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "Від Батареї"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Час у хвилинах, після якого комп’ютер перейде у режим сну."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "Живлення Від Розетки"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "Підсилення Гучності"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Дозволити збільшення гучності понад 100%"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "Звуки подій"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Звуки Зворотного Зв'язку Введення"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Тема Оболонки За Замовчуванням"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Включити Твіки Верхньої Панелі"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Видобути тему оболонки за замовчуванням"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "Видобути"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Твіки"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Змінити Колір Тексту"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Колір Тексту"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Колір тексту у верхній панелі"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "Змінити Колір Фону"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Колір фону верхньої панелі"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Вимкнути Стрілки"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Вимкніть Заокруглені Кути"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Спеціальні можливості"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Завжди Показувати Меню Спеціальних Можливостей"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "Годинник"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Weekday"
-msgstr ""
+msgstr "Показувати День Тижня"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Seconds"
-msgstr ""
+msgstr "Показувати Секунди"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Time Format"
-msgstr ""
+msgstr "Формат Часу"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "AM/PM"
-msgstr ""
+msgstr "До/Після полудня"
 
 #: resources/ui/top-bar-page.blp:81
 msgid "24 Hours"
-msgstr ""
+msgstr "24 Години"
 
 #: resources/ui/top-bar-page.blp:89
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Показати відсоток заряду акумулятора"
 
 #~ msgid "<em>New Options</em>"
 #~ msgstr "<em>Нові параметри</em>"
