@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-08-05 14:09+0000\n"
+"PO-Revision-Date: 2024-10-11 17:15+0000\n"
 "Last-Translator: Peter Dave Hello <hsu@peterdavehello.org>\n"
-"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
-"gdm-settings/language-names/zh_Hant/>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/gdm-settings/language-names/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -63,14 +63,15 @@ msgstr "用來作為GDM背景的顏色"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
 msgid "Pointer speed"
-msgstr ""
+msgstr "游標速度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
-msgstr ""
+msgstr "觸控板游標速度。可接受的數值範圍為 [-1..1]（從「沒有加速」到「快速」）。 0 "
+"為系統預設值。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -209,7 +210,8 @@ msgstr "使用外接電源時電腦的睡眠逾時"
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
-msgstr ""
+msgstr "電腦在接通交流電時，閒置多久（分鐘）後進入睡眠模式。若設定為 "
+"0，則表示永不進入睡眠模式。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -301,7 +303,7 @@ msgstr "啟用安靜模式（別名 --verbosity=0）"
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "無效的詳細程度 {level}。必須是 0、5 或介於兩者之間。"
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -601,7 +603,7 @@ msgstr "匯入的檔案沒有章節「{section_name}」"
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "匯入的檔案在「{section_name}」區段中沒有「{key_name}」這個鍵值"
 
 #: gdms/settings.py:213
 #, python-brace-format
@@ -674,7 +676,7 @@ msgstr "圖片調整"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "符合螢幕尺寸"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
@@ -877,7 +879,7 @@ msgstr "滑鼠"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "游標加速"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
@@ -901,7 +903,7 @@ msgstr "捲動移動的是內容，而不是視圖。"
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
 msgid "Pointer Speed"
-msgstr ""
+msgstr "游標速度"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -929,11 +931,11 @@ msgstr "電源按鈕行為"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "什麼都不做"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "暫停"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
@@ -949,7 +951,7 @@ msgstr "自動節電"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "當電池電量低時啟用省電模式。"
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
@@ -957,7 +959,7 @@ msgstr "暗淡螢幕"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "當電腦閒置時降低螢幕亮度。"
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
@@ -974,7 +976,7 @@ msgstr "延遲"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "螢幕將在幾分鐘後關閉。"
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -990,7 +992,7 @@ msgstr "使用電池供電時"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "電腦將在幾分鐘後待機。"
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
