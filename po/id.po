@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Bima <abimanyusrisetyo@gmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Andika Triwidada <andika@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2024-10-18 04:15+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/id/>\n"
 "Language: id\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.8-rc\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -29,10 +30,8 @@ msgstr "Jenis Latar Belakang"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Latar belakang GDM harus berupa Gambar, Warna atau Tidak Ada."
+msgstr "Apakah latar belakang GDM harus berupa Gambar, Warna, atau Baku."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
 msgid "Background Image"
@@ -44,14 +43,12 @@ msgid "The image file to use as GDM background"
 msgstr "File gambar untuk digunakan sebagai latar belakang GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "Gambar Latar Belakang"
+msgstr "Penyetelan Gambar Latar Belakang"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategi untuk penyetelan gambar latar belakang."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
 #: resources/ui/top-bar-page.blp:40
@@ -154,7 +151,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Aksi tombol daya"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -162,20 +159,25 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Aksi yang diambil ketika tombol daya sistem ditekan. Aksi ini ditanam (dan "
+"pengaturan diabaikan) pada mesin virtual (matikan daya) dan tablet "
+"(suspensi)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Fungsikan profil penghemat daya ketika baterai lemah"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Secara otomatis memfungsikan profil \"penghemat daya\" memakai power-"
+"profiles-daemon bila baterai lemah."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Redupkan layar setelah suatu periode tanpa aktivitas"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
