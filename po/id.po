@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-10-21 00:15+0000\n"
+"PO-Revision-Date: 2024-10-21 16:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/id/>\n"
@@ -209,27 +209,31 @@ msgstr "Apakah disuspensi ketika tidak aktif dan menggunakan baterai"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Tenggat waktu tidur bagi komputer saat memakai baterai"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Waktu dalam menit komputer dengan daya baterai harus tidak aktif sebelum "
+"tidur. Nilai 0 berarti tidak pernah."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Apakah disuspensi ketika tidak aktif dan tertancap"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Waktu tidur untuk komputer ketika tertancap"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Waktu dalam menit komputer dengan daya AC harus tidak aktif sebelum tidur. "
+"Nilai 0 berarti tidak pernah."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -261,15 +265,13 @@ msgstr "Warna latar belakang bilah atas"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "Setel ulang pengaturan"
+msgstr "Pengaturan GDM"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
 #: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Sesuaikan layar login Anda"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
@@ -287,19 +289,19 @@ msgstr "Mazhar Hussain"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Jendela Utama (Modus Desktop)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Bilah Sisi (Modus Seluler)"
 
 #: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Pengaturan Penampilan (Modus Seluler)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Tampilkan informasi debug (dalam format Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -345,20 +347,14 @@ msgstr ""
 "tetapi tidak diinstal."
 
 #: gdms/gui/__init__.py:191
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>GDM</b>"
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr " • <b>GDM</b>"
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
-#, fuzzy
-#| msgctxt "Missing Dependency"
-#| msgid " • <b>Polkit</b>"
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr " • <b>Polkit</b>"
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -378,23 +374,24 @@ msgstr "Dependensi yang Hilang"
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Tema Shell Default"
+msgstr "Berkas Tema Shell Baku Hilang"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Aplikasi perlu tetapi tidak dapat menemukan berkas tema shell baku yang "
+"tidak dimodifikasi. Untuk memperbaiki masalah, pasang ulang paket 'gnome-"
+"shell-common' atau 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Permintaan Donasi"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -417,16 +414,12 @@ msgid "Settings reloaded"
 msgstr "Pengaturan dimuat ulang"
 
 #: gdms/gui/__init__.py:291
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Pengaturan berhasil diterapkan"
+msgstr "Pengaturan sesi berhasil dimuat"
 
 #: gdms/gui/__init__.py:295
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Mengimpor pengaturan pengguna TIDAK didukung dalam versi Flatpak"
+msgstr "Memuat pengaturan sesi TIDAK didukung dalam versi Flatpak"
 
 #: gdms/gui/__init__.py:308
 msgid "Reset settings successfully"
@@ -441,20 +434,16 @@ msgid "Import"
 msgstr ""
 
 #: gdms/gui/__init__.py:350
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Pengaturan berhasil diterapkan"
+msgstr "Pengaturan berhasil diimpor dari berkas"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
 msgstr ""
 
 #: gdms/gui/__init__.py:383
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Pengaturan berhasil diterapkan"
+msgstr "Pengaturan berhasil diekspor"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
@@ -470,16 +459,11 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:10
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Hak Cipta © 2021–2023 Mazhar Hussain"
 
@@ -552,8 +536,6 @@ msgid "Choose"
 msgstr "Memilih"
 
 #: gdms/gui/widgets.py:110
-#, fuzzy
-#| msgid "Image"
 msgid "Images"
 msgstr "Gambar"
 
@@ -610,35 +592,23 @@ msgid "Failed to apply settings"
 msgstr "Gagal menerapkan setelan"
 
 #: gdms/gui/window.py:147
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Tidak berlaku. Gambar latar belakang yang dipilih tidak dapat ditemukan. "
-"Silahkan! memilih lagi."
+"Tidak berlaku. Gambar latar yang dipilih tidak ada lagi. Silakan memilih "
+"lagi."
 
 #: gdms/gui/window.py:151
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Tidak berlaku. Gambar latar belakang yang dipilih tidak dapat ditemukan. "
-"Silahkan! memilih lagi."
+"Tidak berlaku. Gambar logo yang dipilih tidak ada lagi. Silakan memilih lagi."
 
 #: gdms/gui/window.py:157
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
-"Sistem mungkin mulai terlihat aneh / buggy sampai Anda masuk kembali atau "
+"Sistem mungkin mulai terlihat aneh/buggy sampai Anda masuk kembali atau "
 "reboot."
 
 #: gdms/gui/window.py:162
@@ -663,10 +633,8 @@ msgid "Importing from standard input"
 msgstr ""
 
 #: gdms/settings.py:179
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Gagal mengatur ulang pengaturan"
+msgstr "Gagal mengurai berkas impor"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -769,10 +737,8 @@ msgid "Apply current display settings"
 msgstr "Terapkan pengaturan tampilan saat ini"
 
 #: resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Resolusi, kecepatan refresh, posisi monitor, dll"
+msgstr "Resolusi, kecepatan refresh, posisi monitor, dll."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
@@ -861,10 +827,8 @@ msgid "Refresh"
 msgstr "Menyegarkan"
 
 #: resources/ui/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "Impor pengaturan pengguna"
+msgstr "Muat pengaturan sesi"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -887,10 +851,8 @@ msgid "Quit"
 msgstr "Keluar"
 
 #: resources/ui/main-window.blp:34
-#, fuzzy
-#| msgid "Apply"
 msgid "_Apply"
-msgstr "Terapkan"
+msgstr "Ter_apkan"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -925,16 +887,12 @@ msgid "Enlarge"
 msgstr ""
 
 #: resources/ui/login-screen-page.blp:49
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "Pesan Selamat Datang"
+msgstr "Pesan"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "Kursor"
+msgstr "Ukuran Kursor"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
@@ -942,8 +900,6 @@ msgid "Default"
 msgstr ""
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "Sedang"
@@ -1036,10 +992,8 @@ msgid "Ask"
 msgstr ""
 
 #: resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "Otomatis"
+msgstr "Penghemat Daya Otomatis"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
@@ -1071,10 +1025,8 @@ msgid "Time in minutes after which screen will turn off."
 msgstr ""
 
 #: resources/ui/power-page.blp:52
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "Otomatis"
+msgstr "Suspensi Otomatis"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
