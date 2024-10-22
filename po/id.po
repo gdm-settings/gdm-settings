@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-10-21 16:16+0000\n"
+"PO-Revision-Date: 2024-10-22 14:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/id/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -403,11 +403,11 @@ msgstr ""
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
-msgstr ""
+msgstr "Tidak Tertarik"
 
 #: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Donasikan"
 
 #: gdms/gui/__init__.py:284
 msgid "Settings reloaded"
@@ -431,7 +431,7 @@ msgstr "Gagal mengatur ulang pengaturan"
 
 #: gdms/gui/__init__.py:329
 msgid "Import"
-msgstr ""
+msgstr "Impor"
 
 #: gdms/gui/__init__.py:350
 msgid "Settings were successfully imported from file"
@@ -439,7 +439,7 @@ msgstr "Pengaturan berhasil diimpor dari berkas"
 
 #: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Gagal mengimpor. Berkas tidak valid"
 
 #: gdms/gui/__init__.py:383
 msgid "Settings were successfully exported"
@@ -447,11 +447,11 @@ msgstr "Pengaturan berhasil diekspor"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Gagal mengekspor. Izin ditolak"
 
 #: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Gagal mengekspor. Sudah ada suatu direktori dengan nama itu"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
