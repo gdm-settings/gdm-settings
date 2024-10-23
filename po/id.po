@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-10-22 14:16+0000\n"
+"PO-Revision-Date: 2024-10-23 11:15+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/id/>\n"
@@ -400,6 +400,10 @@ msgid ""
 "❤️\n"
 "I would really appreciate it."
 msgstr ""
+"Aplikasi ini adalah dan akan selalu Open Source/Libre dan bebas biaya. "
+"Namun, Anda dapat menunjukkan rasa sayang dengan menyumbang ke pengembang.\n"
+"❤️\n"
+"Saya sangat menghargainya."
 
 #: gdms/gui/__init__.py:246
 msgid "Not Interested"
@@ -482,16 +486,6 @@ msgid "Failed to apply current display settings"
 msgstr "Gagal menerapkan pengaturan tampilan saat ini"
 
 #: gdms/gui/pages/display.py:94
-#, fuzzy
-#| msgid ""
-#| "The file '$XDG_CONFIG_HOME/monitors.xml' is required to apply current "
-#| "display settings but it does not exist.\n"
-#| "\n"
-#| "In order to create that file automatically,\n"
-#| "\n"
-#| "1. Go to 'Display' panel of System Settings.\n"
-#| "2. Change some settings there.\n"
-#| "3. Apply."
 msgid ""
 "'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
 "settings but it does not exist.\n"
@@ -499,14 +493,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"File '$XDG_CONFIG_HOME/monitors.xml' diperlukan untuk menerapkan pengaturan "
-"tampilan saat ini tetapi tidak ada.\n"
+"Berkas '$XDG_CONFIG_HOME/monitors.xml' diperlukan untuk menerapkan "
+"pengaturan tampilan saat ini tetapi tidak ada.\n"
 "\n"
-"Untuk membuat file itu secara otomatis,\n"
-"\n"
-"1. Buka panel 'Tampilan' dari Pengaturan Sistem.\n"
-"2. Ubah beberapa pengaturan di sana.\n"
-"3. Terapkan."
+"Untuk membuat berkas itu secara otomatis, buka panel 'Pengaturan' dan ubah "
+"beberapa opsi tampilan di sana."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -541,7 +532,7 @@ msgstr "Gambar"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Semua Berkas"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
@@ -573,11 +564,11 @@ msgstr "Tampilan"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Layar Log Masuk"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
 msgid "Power"
-msgstr "Power"
+msgstr "Daya"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
@@ -626,11 +617,11 @@ msgstr "Keluar"
 #: gdms/settings.py:173
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Mengimpor dari berkas '{filename}'"
 
 #: gdms/settings.py:176
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Mengimpor dari masukan standar"
 
 #: gdms/settings.py:179
 msgid "Failed to parse import file"
@@ -638,28 +629,30 @@ msgstr "Gagal mengurai berkas impor"
 
 #: gdms/settings.py:182
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Gagal membaca berkas impor. Tidak dikodekan dalam UTF-8"
 
 #: gdms/settings.py:188
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Berkas yang diimpor tidak memiliki bagian '{section_name}'"
 
 #: gdms/settings.py:193
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Berkas yang diimpor tidak memiliki kunci '{key_name}' dalam bagian "
+"'{section_name}'"
 
 #: gdms/settings.py:213
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Mengekspor ke berkas '{filename}'"
 
 #: gdms/settings.py:218
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Tidak bisa menulis ke berkas '{filename}': Izin ditolak"
 
 #: gdms/settings.py:222
 #, python-brace-format
@@ -667,10 +660,12 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Tidak bisa menulis ke berkas '{filename}'. Direktori dengan nama yang sama "
+"sudah ada"
 
 #: gdms/settings.py:227
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Mengekspor ke keluaran standar"
 
 #: gdms/settings.py:327
 msgid "Backing up default shell theme …"
@@ -702,7 +697,7 @@ msgstr "Jenis"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Default"
-msgstr ""
+msgstr "Baku"
 
 #: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
 msgid "Image"
@@ -718,15 +713,15 @@ msgstr "Gambar yang akan digunakan sebagai latar belakang"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Penyesuaian Gambar"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Pas Ke Layar"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Repeat"
-msgstr ""
+msgstr "Ulangi"
 
 #: resources/ui/appearance-page.blp:37
 msgid "The color to use as background"
@@ -836,11 +831,11 @@ msgstr "Setel ulang pengaturan"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Impor dari berkas"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Ekspor ke berkas"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -884,7 +879,7 @@ msgstr "Pesan Selamat Datang"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Perbesar"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
@@ -897,7 +892,7 @@ msgstr "Ukuran Kursor"
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Baku"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
@@ -907,17 +902,17 @@ msgstr "Sedang"
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Besar"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Lebih Besar"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Paling Besar"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -973,23 +968,23 @@ msgstr "Nonaktifkan saat Mengetik"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Perilaku Tombol Daya"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Tak Lakukan Apa Pun"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Suspensi"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Hibernasi"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Tanyakan"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
@@ -997,32 +992,32 @@ msgstr "Penghemat Daya Otomatis"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Memfungsikan mode penghemat daya ketika baterai lemah."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Redupkan Layar"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Mengurangi kecerahan layar saat komputer tidak aktif."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Matikan Layar"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Apakah mematikan layar setelah suatu periode tanpa aktivitas."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "Tunda"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Waktu dalam menit setelahnya layar akan mati."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -1030,19 +1025,19 @@ msgstr "Suspensi Otomatis"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Mengistirahatkan komputer setelah periode tanpa aktivitas."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "Pada Daya Baterai"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Waktu dalam menit setelahnya komputer akan disuspensi."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "Saat Ditancapkan"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1114,11 +1109,11 @@ msgstr "Nonaktifkan Sudut Bulat"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Aksesibilitas"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Selalu Tampilkan Menu Aksesabilitas"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
