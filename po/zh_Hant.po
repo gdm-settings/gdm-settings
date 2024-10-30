@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-02-28 22:39+0500\n"
-"PO-Revision-Date: 2024-10-11 17:15+0000\n"
-"Last-Translator: Peter Dave Hello <hsu@peterdavehello.org>\n"
+"PO-Revision-Date: 2024-10-30 06:02+0000\n"
+"Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/gdm-settings/language-names/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -310,7 +310,8 @@ msgid ""
 "Following programs are required to be installed <b>on the host system</b> "
 "for this app to function properly but they are not installed on the host "
 "system."
-msgstr ""
+msgstr "為了使此應用程式正常運行，需要<b>在主機系統上</b>安裝以下程式，但是它們並沒有"
+"安裝在主機系統上。"
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -559,7 +560,7 @@ msgstr "未套用。選擇的背景圖片已不存在。請重新選擇。"
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "沒有套用。選擇的標識圖片不再存在。請！再次選擇。"
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
@@ -984,7 +985,7 @@ msgstr "自動暫停"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "一段時間不活動後暫停電腦。"
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
