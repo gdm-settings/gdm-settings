@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2024-02-28 22:39+0500\n"
+"POT-Creation-Date: 2024-11-01 21:39+0500\n"
 "PO-Revision-Date: 2023-03-09 13:37+0000\n"
 "Last-Translator: Hoàng Minh Thiên <hoangminhthien05022009@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -62,12 +62,12 @@ msgid "The Color to use as GDM background"
 msgstr "Màu sẽ được dùng làm nền cho GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "Tốc độ con trỏ chuột/touchpad"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -260,20 +260,18 @@ msgstr "Có nên thay đổi nền của thanh top bar hay không"
 msgid "Top bar background color"
 msgstr "Màu nền của thanh top bar"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 #, fuzzy
 #| msgid "Reset settings"
 msgid "GDM Settings"
 msgstr "Khôi phục cài đặt gốc"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
 msgstr "Tùy chỉnh màn hình đăng nhập của bạn"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -282,19 +280,19 @@ msgstr ""
 "theme, icon theme và cài đặt Night Light, và nhiều cài đặt khác."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:55
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:63
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:67
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:71
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr ""
 
@@ -395,65 +393,60 @@ msgstr "Yêu cầu đóng góp"
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
-"Ứng dụng này đang và sẽ luôn là ứng dụng mã nguồn mở và miễn phí. Tuy nhiên, "
-"bạn có thể đóng góp để thể hiện tình yêu của bạn.\n"
-"❤️\n"
-"Tôi sẽ rất cảm kích điều đó."
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
 msgstr "Không quan tâm"
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Đóng góp"
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr "Cài đặt đã được tải lại"
 
-#: gdms/gui/__init__.py:291
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
 msgstr "Tải cài đặt phiên thành công"
 
-#: gdms/gui/__init__.py:295
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Tải cài đặt phiên KHÔNG ĐƯỢC hỗ trợ trong phiên bản Flatpak"
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr "Khôi phục cài đặt gốc thành công"
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr "Khôi phục cài đặt gốc thất bại"
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
 msgstr "Nhập"
 
-#: gdms/gui/__init__.py:350
+#: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
 msgstr "Nhập cài đặt từ file thành công"
 
-#: gdms/gui/__init__.py:352
+#: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr "Không nhập được. Tệp không hợp lệ"
 
-#: gdms/gui/__init__.py:383
+#: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
 msgstr "Cài đặt đã được xuất thành công"
 
-#: gdms/gui/__init__.py:385
+#: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
 msgstr "Không xuất được. Quyền bị từ chối"
 
-#: gdms/gui/__init__.py:387
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Không xuất được. Thư mục có tên đó đã tồn tại"
 
@@ -567,7 +560,7 @@ msgstr "Màn hình"
 msgid "Login Screen"
 msgstr "Màn hình đăng nhập"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
 msgstr "Nguồn"
 
@@ -615,56 +608,56 @@ msgstr "Hủy bỏ"
 msgid "Log Out"
 msgstr "Đăng xuất"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:183
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Đang nhập từ tệp '{filename}'"
 
-#: gdms/settings.py:176
+#: gdms/settings.py:186
 msgid "Importing from standard input"
 msgstr "Nhập từ đầu vào chuẩn"
 
-#: gdms/settings.py:179
+#: gdms/settings.py:189
 msgid "Failed to parse import file"
 msgstr "Không thể phân tích cú pháp tệp nhập"
 
-#: gdms/settings.py:182
+#: gdms/settings.py:192
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Không thể đọc tệp nhập. Không được mã hóa bằng UTF-8"
 
-#: gdms/settings.py:188
+#: gdms/settings.py:198
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Tệp đã nhập không có phần '{section_name}'"
 
-#: gdms/settings.py:193
+#: gdms/settings.py:203
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "Tệp đã nhập không có khóa '{key_name}' trong phần '{section_name}'"
 
-#: gdms/settings.py:213
+#: gdms/settings.py:223
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Xuất sang tệp '{filename}'"
 
-#: gdms/settings.py:218
+#: gdms/settings.py:228
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Không thể ghi vào tệp '{filename}'. Quyền bị từ chối"
 
-#: gdms/settings.py:222
+#: gdms/settings.py:232
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr "Không thể ghi vào tệp '{filename}'. Thư mục có cùng tên đã tồn tại"
 
-#: gdms/settings.py:227
+#: gdms/settings.py:237
 msgid "Exporting to standard output"
 msgstr "Xuất ra đầu ra tiêu chuẩn"
 
-#: gdms/settings.py:327
+#: gdms/settings.py:337
 msgid "Backing up default shell theme …"
 msgstr "Đang sao lưu theme mặc định của shell…"
 
@@ -780,39 +773,39 @@ msgstr "Nhiệt độ màu"
 msgid "Font"
 msgstr "Phông chữ"
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr "Khử răng cưa"
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr "Tiêu chuẩn"
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr "Subpixel"
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr "Không có gì"
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
 msgstr "Gợi ý"
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr "Toàn bộ"
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr "Trung bình"
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr "Nhẹ"
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr "Tỉ lệ"
 
@@ -935,15 +928,15 @@ msgstr "Tắt"
 msgid "Enabled"
 msgstr "Bật"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
 msgstr "Cuộn tự nhiên (Natural Scrolling)"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr "Cuộn nội dung, không phải hướng nhìn."
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
 msgstr "Tốc độ con trỏ chuột/touchpad"
 
@@ -951,21 +944,25 @@ msgstr "Tốc độ con trỏ chuột/touchpad"
 msgid "Touchpad"
 msgstr "Bàn di chuột (Touchpad)"
 
-#: resources/ui/pointing-page.blp:55
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr "Tắt khi nhập"
+
+#: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
 msgstr "Chạm để click"
 
-#: resources/ui/pointing-page.blp:64
+#: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
 msgstr "Cuộn bằng hai ngón tay (trên touchpad)"
 
-#: resources/ui/pointing-page.blp:65
+#: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
 msgstr "Cuồn bằng cách vuốt bằng hai ngón tay."
-
-#: resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Tắt khi nhập"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
@@ -1121,28 +1118,43 @@ msgid "Clock"
 msgstr "Đồng hồ"
 
 #: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
 msgstr "Hiển thị các ngày trong tuần"
 
-#: resources/ui/top-bar-page.blp:76
+#: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
 msgstr "Hiển thị giây"
 
-#: resources/ui/top-bar-page.blp:80
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
 msgstr "Định dạng thời gian"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
 msgstr "SA / CH"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
 msgstr "24 giờ"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "Hiển thị phần trăm pin"
+
+#~ msgid ""
+#~ "This app is and will always remain Open Source/Libre and free of cost. "
+#~ "However, You can show some love by donating to the developer.\n"
+#~ "❤️\n"
+#~ "I would really appreciate it."
+#~ msgstr ""
+#~ "Ứng dụng này đang và sẽ luôn là ứng dụng mã nguồn mở và miễn phí. Tuy "
+#~ "nhiên, bạn có thể đóng góp để thể hiện tình yêu của bạn.\n"
+#~ "❤️\n"
+#~ "Tôi sẽ rất cảm kích điều đó."
 
 #~ msgid "Fixed:"
 #~ msgstr "Đã sửa các lỗi:"
