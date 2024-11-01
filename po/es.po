@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-02-29 13:02+0000\n"
+"PO-Revision-Date: 2024-11-01 19:00+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -409,6 +409,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Si te gusta esta aplicación, considera hacer una donación para que podamos "
+"seguir mejorándola.\n"
+"¡Gracias! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -959,7 +962,7 @@ msgstr "Panel táctil"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Deshabilitar en el ratón externo"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1132,7 +1135,7 @@ msgstr "Reloj"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Mostrar fechas"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
