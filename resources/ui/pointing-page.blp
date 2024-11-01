@@ -50,7 +50,14 @@ Box content_box {
 
   Adw.PreferencesGroup {
     title: _("Touchpad");
+    header-suffix:  Gtk.Switch t_enable_switch { valign: center; };
 
+    Adw.SwitchRow t_disable_on_external_mouse_row {
+          title: _("Disable on External Mouse");
+    }
+    Adw.SwitchRow t_disable_while_typing_row {
+      title: _("Disable while Typing");
+    }
     Adw.SwitchRow t_tap_to_click_row {
       title: _("Tap to Click");
     }
@@ -65,11 +72,7 @@ Box content_box {
       subtitle: _("Scroll by swiping with two fingers.");
     }
 
-    Adw.SwitchRow t_disable_while_typing_row {
-      title: _("Disable while Typing");
-    }
-
-    Adw.ActionRow {
+    Adw.ActionRow t_speed_scalerow {
       title: _("Pointer Speed");
 
       Scale t_speed_scale {

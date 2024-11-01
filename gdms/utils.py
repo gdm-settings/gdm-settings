@@ -8,13 +8,13 @@ import os
 import pathlib
 import subprocess
 
-from enum import Enum
-from typing import Any, Optional, TypeVar
+from enum import EnumType, Enum
+from typing import Any, Optional, TypeVar, cast
 from collections.abc import Callable, Iterator, Sequence
-
 
 from gi.repository import Adw
 from gi.repository import Gtk
+from gi.repository import Pango
 from gi.repository import Gdk
 from gi.repository import Gio
 from gi.repository import GObject
@@ -163,8 +163,9 @@ class BackgroundTask (GObject.Object):
         self._current = task
 
     @staticmethod
-    def _thread_cb (task: Gio.Task, self, task_data: object, cancellable: Gio.Cancellable):
+    def _thread_cb (task: Gio.Task, self: GObject.Object, task_data: Any, cancellable: Gio.Cancellable | None):
         try:
+            assert isinstance(self, BackgroundTask)
             retval = self.function()
             task.return_value(retval)
         except Exception as e:
@@ -174,10 +175,13 @@ class BackgroundTask (GObject.Object):
         task = self._current
         self._current = None
 
+        if task is None:
+            return
+
         if not Gio.Task.is_valid(task, self):
             raise InvalidGioTaskError()
 
-        value = task.propagate_value().value
+        _, value = task.propagate_value()
 
         if isinstance(value, Exception):
             raise value
@@ -189,44 +193,61 @@ class _MappingFuncs:
     '''A collection of functions for 'GSettings' class that convert values
     from Settings keys to GObject properties and vice versa.'''
 
+    class FontDescription:
+        @staticmethod
+        def from_string(string: str, user_data=None) -> Pango.FontDescription:
+            return Pango.FontDescription.from_string(string)
+
+        @staticmethod
+        def to_string(font_desc: Pango.FontDescription, user_data=None) -> str:
+            return font_desc.to_string()
+
     class RGBA:
+        @staticmethod
         def from_string(string: str, user_data=None) -> Gdk.RGBA:
             rgba = Gdk.RGBA()
             rgba.parse(string)
             return rgba
 
+        @staticmethod
         def to_string(rgba: Gdk.RGBA, user_data=None) -> str:
             return rgba.to_string()
 
     class ComboRow:
+        @staticmethod
         def string_to_selected(string: str, comborow: Adw.ComboRow) -> int:
-            string_list = comborow.get_model()
+            string_list = cast(Gtk.StringList, comborow.get_model())
             for position, string_object in enumerate(string_list):
-                if string == string_object.get_string():
+                if string == cast(Gtk.StringObject, string_object).get_string():
                     return position
             return 0
 
+        @staticmethod
         def selected_to_string(position: int, comborow: Adw.ComboRow) -> str:
-            selected_item = comborow.get_selected_item()
+            selected_item = cast(Gtk.StringObject, comborow.get_selected_item())
             return selected_item.get_string()
 
     class Enum:
-        def name_to_value(name: str, enum: Enum) -> Any:
-            return enum[name].value
-
-        def value_to_name(value: Any, enum: Enum) -> str:
-            return enum(value).name
+        @staticmethod
+        def name_to_value(name: str, enum: EnumType) -> Any:
+            return cast(Enum, enum[name]).value
+        @staticmethod
+        def value_to_name(value: Any, enum: EnumType) -> str:
+            return cast(Enum, enum(value)).name
 
     class List:
+        @staticmethod
         def value_to_index_non_strict(value: Any, lyst: Sequence) -> int:
             try:
                 return lyst.index(value)
             except ValueError:
                 return 0
 
+        @staticmethod
         def value_to_index_strict (value: Any, lyst: Sequence) -> int:
             return lyst.index(value)
 
+        @staticmethod
         def index_to_value (index: int, lyst: Sequence) -> Any:
             return lyst[index]
 
@@ -237,8 +258,11 @@ class GSettings(Gio.Settings):
     __gtype_name__ = "_Settings"    # "GSettings" name is not available
     _default_flag = Gio.SettingsBindFlags.DEFAULT
 
-    def __init__(self, schema_id: str = None, **props):
-        super().__init__(schema_id=schema_id, **props)
+    def __init__(self, schema_id: str | None = None, **props):
+        if (schema_id is not None):
+            super().__init__(schema_id=schema_id, **props)
+        else:
+            super().__init__(**props)
 
     @classmethod
     def new(cls, schema_id: str):
@@ -270,7 +294,14 @@ class GSettings(Gio.Settings):
               flags: Gio.SettingsBindFlags = _default_flag) -> None:
         super().bind(key, obj, prop, flags)
 
-    def bind_to_colorbutton(self, key: str, colorbutton: Gtk.ColorButton,
+    def bind_to_fontbutton(self, key: str, fontbutton: Gtk.FontDialogButton,
+                            flags: Gio.SettingsBindFlags = _default_flag,
+                            ) -> None:
+        self.bind_with_mapping(key, fontbutton, 'font-desc', flags,
+                               _MappingFuncs.FontDescription.from_string,
+                               _MappingFuncs.FontDescription.to_string)
+
+    def bind_to_colorbutton(self, key: str, colorbutton: Gtk.ColorDialogButton,
                             flags: Gio.SettingsBindFlags = _default_flag,
                             ) -> None:
         self.bind_with_mapping(key, colorbutton, 'rgba', flags,
@@ -285,7 +316,7 @@ class GSettings(Gio.Settings):
                                _MappingFuncs.ComboRow.selected_to_string,
                                comborow)
 
-    def bind_via_enum(self, key: str, obj: GObject.Object, prop: str, enum: Enum,
+    def bind_via_enum(self, key: str, obj: GObject.Object, prop: str, enum: EnumType,
                       flags: Gio.SettingsBindFlags = _default_flag,
                       ) -> None:
         self.bind_with_mapping(key, obj, prop, flags,
@@ -314,8 +345,8 @@ class GSettings(Gio.Settings):
 
     def bind_with_mapping(self, key: str, obj: GObject.Object, prop: str,
                           flags: Gio.SettingsBindFlags = _default_flag,
-                          key_to_prop: Callable[[BindingKey, UserData], BindingProp] = None,
-                          prop_to_key: Callable[[BindingProp, UserData], BindingKey] = None,
+                          key_to_prop: Callable[[BindingKey, UserData], BindingProp] | None = None,
+                          prop_to_key: Callable[[BindingProp, UserData], BindingKey] | None = None,
                           user_data: UserData = None,
                           ) -> None:
         '''
@@ -328,11 +359,13 @@ class GSettings(Gio.Settings):
         '''
 
         self._ignore_key_changed = False
+        self._ignore_prop_changed = False
 
         def key_changed(self, key: str) -> None:
             if self._ignore_key_changed:
                 return
             self._ignore_prop_changed = True
+            assert key_to_prop is not None
             obj.set_property(prop, key_to_prop(self[key], user_data))
             self._ignore_prop_changed = False
 
@@ -340,7 +373,8 @@ class GSettings(Gio.Settings):
             if self._ignore_prop_changed:
                 return
             self._ignore_key_changed = True
-            self[key] = prop_to_key(obj.get_property(prop), user_data)
+            assert prop_to_key is not None
+            cast(dict, self)[key] = prop_to_key(obj.get_property(prop), user_data)
             self._ignore_key_changed = False
 
         if not (key_to_prop or prop_to_key):

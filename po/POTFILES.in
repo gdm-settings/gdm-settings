@@ -14,8 +14,8 @@ data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml
 data/gschemas/io.github.realmazharhussain.GdmSettings.window-state.gschema.xml
-data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in
-data/io.github.realmazharhussain.GdmSettings.desktop.in
+data/gdm-settings.metainfo.xml
+data/gdm-settings.desktop
 gdm-settings.py.in
 gdms/gui/__init__.py
 gdms/gui/about.py

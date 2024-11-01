@@ -21,9 +21,9 @@ Box content_box {
         subtitle: _("The color of text in top bar");
         activatable-widget: text_color_button;
 
-        ColorButton text_color_button {
+        ColorDialogButton text_color_button {
           valign: center;
-          use-alpha: true;
+          dialog: ColorDialog {};
         }
       }
     }
@@ -41,9 +41,9 @@ Box content_box {
         subtitle: _("The color of top bar background");
         activatable-widget: background_color_button;
 
-        ColorButton background_color_button {
+        ColorDialogButton background_color_button {
           valign: center;
-          use-alpha: true;
+          dialog: ColorDialog {};
         }
       }
     }
@@ -67,6 +67,10 @@ Box content_box {
 
   Adw.PreferencesGroup {
     title: _("Clock");
+
+    Adw.SwitchRow show_date_row {
+      title: _("Show Date");
+    }
 
     Adw.SwitchRow show_weekday_row {
       title: _("Show Weekday");

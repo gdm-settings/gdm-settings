@@ -37,8 +37,11 @@ Box content_box {
       subtitle: _("The color to use as background");
       activatable-widget: background_color_button;
 
-      ColorButton background_color_button {
+      ColorDialogButton background_color_button {
         valign: center;
+        dialog: ColorDialog {
+          with-alpha: false;
+        };
       }
     }
   }

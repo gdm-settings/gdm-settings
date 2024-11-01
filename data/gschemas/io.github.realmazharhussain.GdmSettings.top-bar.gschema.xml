@@ -32,6 +32,10 @@
       <summary>Top bar background color</summary>
     </key>
 
+    <key name="show-date" type="b">
+      <default>true</default>
+    </key>
+
     <key name="show-weekday" type="b">
       <default>false</default>
     </key>

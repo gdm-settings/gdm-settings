@@ -235,13 +235,11 @@ class GdmSettingsApp(Adw.Application):
     def show_donation_dialog (self):
         heading = _("Donation Request")
         body = _(
-            "This app is and will always remain Open Source/Libre and free of cost. "
-            "However, You can show some love by donating to the developer.\n"
-            "❤️\n"
-            "I would really appreciate it."
+            "If you like this app, please consider donating so that we can keep improving it.\n"
+            "Thank you! ❤️️"
         )
 
-        dialog = Adw.MessageDialog.new(self.window, heading, body)
+        dialog = Adw.AlertDialog.new(heading, body)
 
         dialog.add_response('close', _("Not Interested"))
         dialog.add_response('donate', _("Donate"))
@@ -251,7 +249,7 @@ class GdmSettingsApp(Adw.Application):
 
         dialog.connect('response::donate', lambda *args: self.activate_action('donate'))
 
-        dialog.present()
+        dialog.present(self.window)
 
         self.settings['donation-dialog-shown'] = True
 
@@ -391,7 +389,7 @@ class GdmSettingsApp(Adw.Application):
 
 
     def donate_cb(self, action, user_data):
-        Gtk.show_uri(self.window, 'https://gdm-settings.github.io/donate', Gdk.CURRENT_TIME)
+        Gtk.show_uri(self.window, 'https://opencollective.com/gdm-settings', Gdk.CURRENT_TIME)
 
 
     def about_cb(self, action, user_data):

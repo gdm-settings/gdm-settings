@@ -2,6 +2,18 @@
   <schema id="io.github.realmazharhussain.GdmSettings.touchpad"
        path="/io/github/realmazharhussain/GdmSettings/touchpad/">
 
+    <key name="enable" type="b">
+      <default>true</default>
+    </key>
+
+    <key name="disable-on-external-mouse" type="b">
+      <default>false</default>
+    </key>
+
+    <key name="disable-while-typing" type="b">
+      <default>true</default>
+    </key>
+
     <key name="tap-to-click" type="b">
       <default>true</default>
     </key>
@@ -11,10 +23,6 @@
     </key>
 
     <key name="two-finger-scrolling" type="b">
-      <default>true</default>
-    </key>
-
-    <key name="disable-while-typing" type="b">
       <default>true</default>
     </key>
 

@@ -1,5 +1,5 @@
 project('gdm-settings',
-          version: '4.2+',
+          version: '4.3+',
     meson_version: '>= 0.59',
   default_options: [
     'buildtype=release',
@@ -18,6 +18,8 @@ project('gdm-settings',
     'libadwaita:examples=false',
   ]
 )
+
+app_id = 'io.github.realmazharhussain.GdmSettings'
 
 dependency('glib-2.0')
 dependency('pygobject-3.0')
