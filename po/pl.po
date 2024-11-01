@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-10-11 12:15+0000\n"
+"PO-Revision-Date: 2024-11-01 18:00+0000\n"
 "Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -407,10 +407,13 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Rozważ przekazanie darowizny, jeśli podoba Ci się ta aplikacja, abyśmy mogli "
+"ją dalej udoskonalać.\n"
+"Dziękujemy! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr "Nie zainteresowany"
+msgstr "Niezainteresowany"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
@@ -561,7 +564,7 @@ msgstr "Dźwięk"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Mysz i Touchpad"
+msgstr "Mysz i touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
@@ -918,7 +921,7 @@ msgstr "Największy"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr "Myszka"
+msgstr "Mysz"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
@@ -954,7 +957,7 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Wyłącz przy zewnętrznej myszy"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1128,7 +1131,7 @@ msgstr "Zegar"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Pokaż datę"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
