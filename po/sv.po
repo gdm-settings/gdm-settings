@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-02-28 21:02+0000\n"
+"PO-Revision-Date: 2024-11-02 12:00+0000\n"
 "Last-Translator: bittin1ddc447d824349b2 <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sv/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -398,6 +398,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Om du gillar det här programmet, överväg att donera så att vi kan fortsätta "
+"att förbättra det.\n"
+"Tack så mycket! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -945,7 +948,7 @@ msgstr "Styrplatta"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Inaktivera på extern mus"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1118,7 +1121,7 @@ msgstr "Klocka"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Visa datum"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
