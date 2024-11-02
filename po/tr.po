@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-11-02 13:00+0000\n"
+"PO-Revision-Date: 2024-11-02 14:00+0000\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
@@ -951,7 +951,7 @@ msgstr "Dokunmatik yüzey"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Harici Farelerde Devre Dışı Bırak"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1124,7 +1124,7 @@ msgstr "Saat"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Tarihi Göster"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
