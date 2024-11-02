@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-05-25 06:09+0000\n"
+"PO-Revision-Date: 2024-11-02 06:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -394,6 +394,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"このアプリを気に入っていただけましたら、"
+"今後の開発のために寄付をご検討いただけると\n"
+"嬉しいです!❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -942,7 +945,7 @@ msgstr "タッチパッド"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "マウス使用中は無効にする"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1115,7 +1118,7 @@ msgstr "時計"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "日付を表示"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
