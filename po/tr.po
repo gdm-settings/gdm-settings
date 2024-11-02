@@ -5,13 +5,14 @@
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 # NukeSource <dede48076@gmail.com>, 2024.
+# Sabri Ünal <yakushabb@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-01 21:39+0500\n"
-"PO-Revision-Date: 2024-03-17 11:01+0000\n"
-"Last-Translator: NukeSource <dede48076@gmail.com>\n"
+"PO-Revision-Date: 2024-11-02 13:00+0000\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
 "Language: tr\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
 msgid "Theme Name"
@@ -404,6 +405,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Uygulamayı beğendiyseniz daha da iyileştirmemize yardımcı olmak için bağış "
+"yapabilirsiniz.\n"
+"Teşekkürler! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
