@@ -1,0 +1,51 @@
+button.toggle.accent {
+  border-radius: 50%;
+  padding: 3px;
+  margin: 12px 6px;
+  background: var(--accent-bg-color);
+  min-width: 24px;
+  min-height: 24px;
+  outline: none;
+  background-clip: content-box;
+  box-shadow: none;
+}
+
+button.toggle.accent:checked {
+  box-shadow: 0 0 0 3px var(--accent-bg-color);
+}
+
+button.toggle.accent.blue {
+    --accent-bg-color: var(--accent-blue);
+}
+
+button.toggle.accent.teal {
+    --accent-bg-color: var(--accent-teal);
+}
+
+button.toggle.accent.green {
+    --accent-bg-color: var(--accent-green);
+}
+
+button.toggle.accent.yellow {
+    --accent-bg-color: var(--accent-yellow);
+}
+
+button.toggle.accent.orange {
+    --accent-bg-color: var(--accent-orange);
+}
+
+button.toggle.accent.red {
+    --accent-bg-color: var(--accent-red);
+}
+
+button.toggle.accent.purple {
+    --accent-bg-color: var(--accent-purple);
+}
+
+button.toggle.accent.pink {
+    --accent-bg-color: var(--accent-pink);
+}
+
+button.toggle.accent.slate {
+    --accent-bg-color: var(--accent-slate);
+}

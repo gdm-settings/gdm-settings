@@ -6,6 +6,16 @@ Box content_box {
   spacing: 25;
 
   Adw.PreferencesGroup {
+    title: _("Accent Color");
+    description: _("NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell theme.");
+
+    Adw.PreferencesRow {
+      title: _("Accent Color");
+      child: $AccentSelector accent_selector {};
+    }
+  }
+
+  Adw.PreferencesGroup {
     title: _("Themes");
 
     Adw.ComboRow shell_theme_comborow { title: _("Shell"); }
