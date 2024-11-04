@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2024-11-01 21:39+0500\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
 "PO-Revision-Date: 2024-11-02 06:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/gdm-settings/"
@@ -19,43 +19,43 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.8.2-dev\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "テーマ名"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "背景の種類"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr "GDM の背景を、画像・単色・デフォルトのいずれかから選択します。"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "背景画像"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "GDM の背景として使う画像ファイル"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
 msgstr "背景画像の位置調整"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
 msgstr "背景画像の位置調整方法です。"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "背景色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "GDM の背景として使う色"
 
@@ -394,8 +394,8 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
-"このアプリを気に入っていただけましたら、"
-"今後の開発のために寄付をご検討いただけると\n"
+"このアプリを気に入っていただけましたら、今後の開発のために寄付をご検討いただ"
+"けると\n"
 "嬉しいです!❤️️"
 
 #: gdms/gui/__init__.py:244
@@ -469,6 +469,42 @@ msgstr "Copyright 2021-2023 Mazhar Hussain"
 #: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr "Ryo Nakano"
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -606,31 +642,31 @@ msgstr "キャンセル"
 msgid "Log Out"
 msgstr "ログアウト"
 
-#: gdms/settings.py:183
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "ファイル '{filename}' からインポートしています"
 
-#: gdms/settings.py:186
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr "標準入力からインポートしています"
 
-#: gdms/settings.py:189
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr "インポートされたファイルを解析できませんでした"
 
-#: gdms/settings.py:192
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 "インポートされたファイルを読み込めませんでした。UTF-8 でエンコードされていま"
 "せん"
 
-#: gdms/settings.py:198
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "インポートされたファイルには、セクション '{section_name}' がありません"
 
-#: gdms/settings.py:203
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -638,17 +674,17 @@ msgstr ""
 "インポートされたファイルには、セクション '{section_name}' にキー "
 "'{key_name}' がありません"
 
-#: gdms/settings.py:223
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "ファイル '{filename}' にエクスポートしています"
 
-#: gdms/settings.py:228
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "ファイル '{filename}' に書き込めません。許可がありません"
 
-#: gdms/settings.py:232
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -656,67 +692,79 @@ msgid ""
 msgstr ""
 "ファイル '{filename}' に書き込めません。同名のディレクトリがすでに存在します"
 
-#: gdms/settings.py:237
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr "標準出力にエクスポートしています"
 
-#: gdms/settings.py:337
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "シェルのデフォルトテーマをバックアップしています…"
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "テキストの色"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "テーマ"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "シェル"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "アイコン"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "カーソル"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "背景"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "種類"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr "デフォルト"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "画像"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "背景色"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "背景として使う画像"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
 msgstr "画像の位置調整"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
 msgstr "画面に合わせる"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
 msgstr "並べる"
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "背景として使う色"
 

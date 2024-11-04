@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 2.0\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2024-11-01 21:39+0500\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
 "PO-Revision-Date: 2023-04-13 09:56+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/gdm-settings/"
@@ -21,45 +21,45 @@ msgstr ""
 "X-Generator: Weblate 4.17-dev\n"
 "X-Poedit-Basepath: .\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "تھیم کا نام"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "بیک گرائونڈ کی قصم"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr "جی۔ڈی۔ایم کا بیکگرائونڈ تصویر ہو یا رنگ یا ڈیفالٹ۔"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "بیک گرائونڈ کی تصویر"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 #, fuzzy
 #| msgid "Background Image"
 msgid "Background Image Adjustment"
 msgstr "بیک گرائونڈ کی تصویر"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
 msgstr ""
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "بیک گرائونڈ کا رنگ"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
@@ -474,6 +474,42 @@ msgstr "کاپی رائیٹ 2023–2021 © مظہر حسین"
 msgid "translator-credits"
 msgstr "مظہر حسین <mmazharhussainkgb1145@gmail.com>"
 
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr ""
+
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
 msgstr "ڈسپلے کی سیٹنگز اپلائی ہو گئی ہیں"
@@ -608,46 +644,46 @@ msgstr "کینسل"
 msgid "Log Out"
 msgstr "لاگ آؤٹ"
 
-#: gdms/settings.py:183
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "فائل '{filename}' سے امپورٹ کر رہے ہیں"
 
-#: gdms/settings.py:186
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr "سٹینڈرڈ ان پٹ سے امپورٹ کر رہے ہیں"
 
-#: gdms/settings.py:189
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr "امپورٹ فائل پارس نہیں ہو سکی"
 
-#: gdms/settings.py:192
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "امپورٹ فائل کو ریڈ نہیں کر سکے۔ UTF-8 میں انکوڈڈ نہیں ہے"
 
-#: gdms/settings.py:198
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "امپورٹ کی ہوئی فائل میں '{section_name}' سیکشن نہیں ہے"
 
-#: gdms/settings.py:203
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 "امپورٹ کی ہوئی فائل کے '{section_name}' سیکشن میں '{key_name}' کی نہیں ہے"
 
-#: gdms/settings.py:223
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "فائل '{filename}' میں ایکسپورٹ کر رہے ہیں"
 
-#: gdms/settings.py:228
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "فائل '{filename}' میں سیو نہیں کر سکتے۔ اجازت نہیں ملی"
 
-#: gdms/settings.py:232
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -655,69 +691,81 @@ msgid ""
 msgstr ""
 "فائل '{filename}' میں سیو نہیں کر سکتے۔ اس نام کا فولڈر پہلے سے موجود ہے"
 
-#: gdms/settings.py:237
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr "سٹینڈرڈ آؤٹ پٹ میں ایکسپورٹ کر رہے ہیں"
 
-#: gdms/settings.py:337
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "ڈیفالٹ تھیم سیو ہو رہا ہے …"
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "لکھائی کا رنگ"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "تھیمز"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "خول"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "اَئیکان"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "تیر"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "بیک گرائونڈ"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "قِسم"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr "ڈیفالٹ"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "تصویر"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "رنگ"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کی تصویر"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 #, fuzzy
 #| msgid "Dim Screen"
 msgid "Fit To Screen"
 msgstr "سکرین کی روشنی مدھم کریں"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "بیک گرائونڈ کے لیے استعمال کرنے کا رنگ"
 
