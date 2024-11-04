@@ -84,6 +84,7 @@ def load_from_session():
         accessibility_settings[target_key] = user_settings[source_key]
 
     if user_settings := _GSettings("org.gnome.desktop.interface"):
+        appearance_settings['accent-color'] = user_settings["accent-color"]
         appearance_settings['icon-theme'] = user_settings["icon-theme"]
         appearance_settings['cursor-theme'] = user_settings["cursor-theme"]
 
@@ -419,6 +420,7 @@ def _dconf_apply():
         time_format = top_bar_settings['time-format']
         cursor_size = pointing_settings['cursor-size']
         cursor_theme = appearance_settings['cursor-theme']
+        accent_color = appearance_settings['accent-color']
         show_date = str(top_bar_settings['show-date']).lower()
         show_seconds = str(top_bar_settings['show-seconds']).lower()
         show_weekday = str(top_bar_settings['show-weekday']).lower()
@@ -429,6 +431,7 @@ def _dconf_apply():
         gdm_conf_contents  =  "#-------- Interface ---------\n"
         gdm_conf_contents +=  "[org/gnome/desktop/interface]\n"
         gdm_conf_contents +=  "#----------------------------\n"
+        gdm_conf_contents += f"accent-color='{accent_color}'\n"
         gdm_conf_contents += f"cursor-theme='{cursor_theme}'\n"
         gdm_conf_contents += f"cursor-size={cursor_size}\n"
         gdm_conf_contents += f"icon-theme='{icon_theme}'\n"

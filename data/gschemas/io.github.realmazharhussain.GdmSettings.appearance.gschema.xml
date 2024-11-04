@@ -2,6 +2,21 @@
   <schema id="io.github.realmazharhussain.GdmSettings.appearance"
        path="/io/github/realmazharhussain/GdmSettings/appearance/">
 
+	 <key name="accent-color" type="s">
+	   <default>"blue"</default>
+	   <choices>
+	     <choice value="blue"/>
+	     <choice value="teal"/>
+	     <choice value="green"/>
+	     <choice value="yellow"/>
+	     <choice value="orange"/>
+	     <choice value="red"/>
+	     <choice value="pink"/>
+	     <choice value="purple"/>
+	     <choice value="slate"/>
+	   </choices>
+	 </key>
+
 	 <key name="shell-theme" type="s">
 	   <default>"default"</default>
 	   <summary>Theme Name</summary>
