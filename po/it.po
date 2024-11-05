@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-03-07 21:01+0000\n"
+"PO-Revision-Date: 2024-11-05 14:00+0000\n"
 "Last-Translator: albanobattistella <albano_battistella@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/it/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -414,6 +414,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Se ti piace questa app, ti preghiamo di considerare di fare una donazione in "
+"modo che possiamo continuare a migliorarla.\n"
+"Grazie! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -491,39 +494,39 @@ msgstr "Albano Battistella"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Blu"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Verde acqua"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Giallo"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Arancione"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Rosso"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Rosa"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Viola"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Ardesia"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -721,16 +724,16 @@ msgid "Backing up default shell theme …"
 msgstr "Backup del tema della shell predefinito…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Colore del testo"
+msgstr "Colore accento"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"NOTA: funzionerà solo su GNOME 47 (e versioni successive) con il tema shell "
+"'Default'."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -1013,7 +1016,7 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Disabilita su mouse esterno"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1187,7 +1190,7 @@ msgstr "Orologio"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Mostra data"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
