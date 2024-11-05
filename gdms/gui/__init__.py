@@ -137,6 +137,9 @@ class GdmSettingsApp(Adw.Application):
             self.show_missing_gresource_dialog()
             return
 
+        if self.settings['initial-warning']:
+            self.show_initial_warning()
+
         if (not self.settings['donation-dialog-shown']
         and not self.settings['never-applied']):
             self.show_donation_dialog()
@@ -230,6 +233,23 @@ class GdmSettingsApp(Adw.Application):
         dialog.add_response('ok', _('OK'))
         dialog.connect('response', lambda *args: self.quit())
         dialog.present()
+
+
+    def show_initial_warning (self):
+        heading = _("Caution!")
+        body = _(
+            "In order for some important features to work, the app modifies a critical system file"
+            " and has the potential to <b>break your system</b>."
+        )
+
+        check_button = Gtk.CheckButton(label=_("Don't show again"), halign=Gtk.Align.CENTER)
+        self.settings.bind("initial-warning", check_button, "active", Gio.SettingsBindFlags.INVERT_BOOLEAN)
+
+        dialog = Adw.AlertDialog.new(heading, body)
+        dialog.props.body_use_markup = True
+        dialog.props.extra_child = check_button
+        dialog.add_response('ok', _("I Understand"))
+        dialog.present(self.window)
 
 
     def show_donation_dialog (self):

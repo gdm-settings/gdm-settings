@@ -19,6 +19,10 @@
       <default>false</default>
     </key>
 
+    <key name="initial-warning" type="b">
+      <default>true</default>
+    </key>
+
     <key name="never-applied" type="b">
       <default>true</default>
     </key>
