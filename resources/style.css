@@ -10,8 +10,17 @@ button.toggle.accent {
   box-shadow: none;
 }
 
+.compact button.toggle.accent {
+    margin: 6px 2px;
+    padding: 2.3px;
+}
+
 button.toggle.accent:checked {
   box-shadow: 0 0 0 3px var(--accent-bg-color);
+}
+
+.compact button.toggle.accent:checked {
+  box-shadow: 0 0 0 2.3px var(--accent-bg-color);
 }
 
 button.toggle.accent.blue {

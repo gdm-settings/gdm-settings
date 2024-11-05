@@ -111,10 +111,14 @@ class AccentSelector (Gtk.Box):
     }
 
     selected: str = GProperty(str, default="blue")
+    compact: str = GProperty(bool, default=False)
 
     def __init__(self, **props):
         super().__init__(**props)
         self.props.halign = Gtk.Align.CENTER
+        self.props.valign = Gtk.Align.CENTER
+
+        self.connect("notify::compact", self.on_notify_compact)
 
         # Add children
         for accent, tooltip in self.accents.items():
@@ -139,6 +143,12 @@ class AccentSelector (Gtk.Box):
 
     def on_accent_selected(self, btn: AccentButton):
         self.selected = btn.accent
+
+    def on_notify_compact(self, x=None, y=None):
+        if self.compact:
+            self.add_css_class("compact")
+        else:
+            self.remove_css_class("compact")
 
     def on_notify_selected(self, x=None, y=None):
         child = self.get_first_child()

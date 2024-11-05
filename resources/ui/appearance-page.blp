@@ -11,7 +11,16 @@ Box content_box {
 
     Adw.PreferencesRow {
       title: _("Accent Color");
-      child: $AccentSelector accent_selector {};
+      child: Adw.BreakpointBin {
+        width-request: 300;
+        height-request: 56;
+        child: $AccentSelector accent_selector {};
+
+        Adw.Breakpoint {
+          condition("max-width: 480px")
+          setters { accent_selector.compact: true; }
+        }
+      };
     }
   }
 

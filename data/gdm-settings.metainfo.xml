@@ -37,8 +37,8 @@
 
   <!-- Minimum display resolution the application can work with -->
   <requires>
-    <display_length side="shortest">240</display_length>
-    <display_length side="longest">320</display_length>
+    <display_length side="shortest">360</display_length>
+    <display_length side="longest">360</display_length>
   </requires>
 
   <!-- Minimum display resolution for a good experience using the app -->
