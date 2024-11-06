@@ -1,3 +1,11 @@
+v5.beta0
+========
+* Fix: Failed to apply current display settings (scaling not working)
+* Add settings to enable/disable touchpad altogether or when external mouse is connected
+* Add option to show/hide date in the top bar
+* Add accent color setting
+* Show a warning on app startup
+
 v4.4
 ====
 * Add a request for donations
