@@ -2,15 +2,15 @@
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2022.
 # Eduardo Malaspina <vaio0@swismail.com>, 2022, 2023.
 # Miguel Angel Alonso <miguelalonso2@gmail.com>, 2022.
-# gallegonovato <fran-carro@hotmail.es>, 2022, 2023.
+# gallegonovato <fran-carro@hotmail.es>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2022, 2023.
 # Óscar Fernández Díaz <oscfdezdz@users.noreply.hosted.weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-10-22 12:02+0000\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
+"PO-Revision-Date: 2024-11-04 22:00+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/es/>\n"
@@ -19,55 +19,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.8.2\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "Nombre del tema"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "Tipo de fondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr "Si el fondo de GDM debe ser una imagen, un color o predeterminado."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "Imagen de fondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "El archivo de imagen que se usará como fondo de GDM"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
 msgstr "Ajusta la imagen del fondo"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
 msgstr "Estrategia de ajuste de la imagen de fondo."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Color de fondo"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "El color a usar como fondo de GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "Velocidad del puntero"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -273,18 +273,16 @@ msgstr "Si se cambia el fondo de la barra superior"
 msgid "Top bar background color"
 msgstr "Color de fondo de la barra superior"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
 msgstr "Ajustes del GDM"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
 msgstr "Personalice su pantalla de inicio de sesión"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -293,44 +291,49 @@ msgstr ""
 "del cursor, el tema de los iconos y la configuración de la luz nocturna, "
 "entre otras cosas."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
 msgstr "Ventana principal (Modo escritorio)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
 msgstr "Barra lateral (Modo móvil)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr "Configuración de la apariencia (Modo móvil)"
 
-#: gdms/gui/__init__.py:62
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr "Mostrar información de depuración (en formato Markdown)"
+
+#: gdms/gui/__init__.py:64
 msgid "Show application version"
 msgstr "Mostrar la versión de la aplicación"
 
-#: gdms/gui/__init__.py:63
+#: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "Establecer manualmente el nivel de verbosidad (de 0 a 5)"
 
-#: gdms/gui/__init__.py:64
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "NIVEL"
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "Activar el modo verboso (alias de --verbosity=5)"
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "Activar el modo silencioso (alias de --verbosity=0)"
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "Nivel de verbosidad {level} no válido. Debe ser 0, 5, o intermedio."
@@ -402,88 +405,122 @@ msgstr "Solicitud de donaciones"
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
-"Esta aplicación es y seguirá siendo Código abierto/Libre y gratuita. Sin "
-"embargo, puede hacer una donación al desarrollador.\n"
-"❤️\n"
-"Se lo agradecería mucho."
+"Si te gusta esta aplicación, considera hacer una donación para que podamos "
+"seguir mejorándola.\n"
+"¡Gracias! ❤️️"
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
 msgstr "No me interesa"
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Donar"
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr "Configuración recargada"
 
-#: gdms/gui/__init__.py:291
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
 msgstr "La configuración de la sesión se ha cargado correctamente"
 
-#: gdms/gui/__init__.py:295
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 "Cargar la configuración de la sesión NO es compatible con la versión Flatpak"
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr "Restablecida la configuración correctamente"
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr "Fallo en el restablecimiento de la configuración"
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
 msgstr "Importar"
 
-#: gdms/gui/__init__.py:350
+#: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
 msgstr "La configuración se ha importado correctamente desde el archivo"
 
-#: gdms/gui/__init__.py:352
+#: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr "Fallo en la importación. El archivo no es válido"
 
-#: gdms/gui/__init__.py:383
+#: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
 msgstr "La configuración se ha exportado correctamente"
 
-#: gdms/gui/__init__.py:385
+#: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
 msgstr "Error al exportar. Permiso denegado"
 
-#: gdms/gui/__init__.py:387
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Error al exportar. Ya existe un directorio con ese nombre"
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Derechos de autor 2021–2023 por Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr "Óscar Fernández Díaz <oscfdezdz@tuta.io>"
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr "Azul"
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr "Turquesa"
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr "Verde"
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr "Naranja"
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr "Rojo"
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr "Rosa"
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr "Violeta"
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr "Pizarra"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -574,7 +611,7 @@ msgstr "Pantalla"
 msgid "Login Screen"
 msgstr "Pantalla de inicio de sesión"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
 msgstr "Energía"
 
@@ -623,29 +660,29 @@ msgstr "Cancelar"
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Importando desde el archivo '{filename}'"
 
-#: gdms/settings.py:176
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr "Importando desde la entrada estándar"
 
-#: gdms/settings.py:179
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr "Fallo al analizar el archivo de importación"
 
-#: gdms/settings.py:182
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "Fallo al leer el archivo de importación. No está codificado en UTF-8"
 
-#: gdms/settings.py:188
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "El archivo importado no tiene la sección '{section_name}'"
 
-#: gdms/settings.py:193
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
@@ -653,17 +690,17 @@ msgstr ""
 "El archivo importado no tiene la clave '{key_name}' en la sección "
 "'{section_name}'"
 
-#: gdms/settings.py:213
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Exportando a un archivo '{filename}'"
 
-#: gdms/settings.py:218
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "No se puede escribir en el archivo '{filename}'. Permiso denegado"
 
-#: gdms/settings.py:222
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -672,67 +709,79 @@ msgstr ""
 "No se puede escribir en el archivo '{filename}'. Ya existe un directorio con "
 "el mismo nombre"
 
-#: gdms/settings.py:227
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr "Exportando a la salida estándar"
 
-#: gdms/settings.py:327
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "Copia de seguridad del tema del shell predeterminado…"
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+msgid "Accent Color"
+msgstr "Acentuar el color"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+"NOTA: Esto solo funcionará en GNOME 47 (y superior) con el tema de shell "
+"“Predeterminado”."
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "Temas"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "Shell"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "Iconos"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "Cursor"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "Fondo"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "Tipo"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr "Predeterminado"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "Imagen"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "Color"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "La imagen a usar como fondo"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
 msgstr "Ajuste de la imagen"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
 msgstr "Ajustar a la pantalla"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
 msgstr "Repetir"
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "El color a usar como fondo"
 
@@ -744,7 +793,7 @@ msgstr "Aplicar la configuración actual de la pantalla"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resolución, tasa de refresco, posiciones de los monitores, etc."
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "Aplicar"
 
@@ -790,39 +839,39 @@ msgstr "Temperatura del color"
 msgid "Font"
 msgstr "Tipografía"
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr "Antialiasing"
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr "Estándar"
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr "Subpixel"
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr "Ninguno"
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
 msgstr "Sugerencia"
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr "Completo"
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr "Medio"
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr "Ligero"
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr "Factor de escalado"
 
@@ -853,6 +902,10 @@ msgstr "Acerca de"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "Salir"
+
+#: resources/ui/main-window.blp:34
+msgid "_Apply"
+msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -939,15 +992,15 @@ msgstr "Desactivado"
 msgid "Enabled"
 msgstr "Activado"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
 msgstr "Desplazamiento natural"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr "El desplazamiento mueve la vista, no el contenido."
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
 msgstr "Velocidad del puntero"
 
@@ -955,21 +1008,25 @@ msgstr "Velocidad del puntero"
 msgid "Touchpad"
 msgstr "Panel táctil"
 
-#: resources/ui/pointing-page.blp:55
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr "Deshabilitar en el ratón externo"
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr "Desactivar mientras se teclea"
+
+#: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
 msgstr "Tocar para pulsar"
 
-#: resources/ui/pointing-page.blp:64
+#: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
 msgstr "Desplazamiento con dos dedos"
 
-#: resources/ui/pointing-page.blp:65
+#: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
 msgstr "Desplazar deslizando dos dedos."
-
-#: resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Desactivar mientras se teclea"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
@@ -1125,28 +1182,43 @@ msgid "Clock"
 msgstr "Reloj"
 
 #: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr "Mostrar fechas"
+
+#: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
 msgstr "Mostrar día de la semana"
 
-#: resources/ui/top-bar-page.blp:76
+#: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
 msgstr "Mostrar segundos"
 
-#: resources/ui/top-bar-page.blp:80
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
 msgstr "Formato de la hora"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
 msgstr "AM/PM"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
 msgstr "24 horas"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "Mostrar porcentaje de la batería"
+
+#~ msgid ""
+#~ "This app is and will always remain Open Source/Libre and free of cost. "
+#~ "However, You can show some love by donating to the developer.\n"
+#~ "❤️\n"
+#~ "I would really appreciate it."
+#~ msgstr ""
+#~ "Esta aplicación es y seguirá siendo Código abierto/Libre y gratuita. Sin "
+#~ "embargo, puede hacer una donación al desarrollador.\n"
+#~ "❤️\n"
+#~ "Se lo agradecería mucho."
 
 #~ msgid "First beta release of the upcoming GDM Settings version 4"
 #~ msgstr "Primera versión beta de la próxima versión 4 de GDM Settings"

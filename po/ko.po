@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
 "PO-Revision-Date: 2024-02-12 17:53+0000\n"
 "Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
@@ -21,57 +21,57 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.4-dev\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "테마명"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "배경화면 방식"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 #, fuzzy
 #| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr "GDM 배경화면이 이미지나 단색배경인지, 없음이어야 하는지 여부."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "배경화면 이미지"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "GDM 배경화면으로 사용할 이미지 파일"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 #, fuzzy
 #| msgid "Background Image"
 msgid "Background Image Adjustment"
 msgstr "배경화면 이미지"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
 msgstr ""
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "배경색"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "GDM 배경화면에 사용할 색깔"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "포인터 속도"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -255,20 +255,18 @@ msgstr "상단바 배경 변경 여부"
 msgid "Top bar background color"
 msgstr "상단바 배경색"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 #, fuzzy
 #| msgid "Reset settings"
 msgid "GDM Settings"
 msgstr "설정 리셋"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
 msgstr "로그인 화면 사용자 정의"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -276,44 +274,49 @@ msgstr ""
 "GDM 설정 변경; 테마와 배경을 적용하고 커서 테마, 아이콘 테마, 야간 모드 설정 "
 "등을 변경합니다."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr ""
 
-#: gdms/gui/__init__.py:62
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr ""
+
+#: gdms/gui/__init__.py:64
 msgid "Show application version"
 msgstr "앱 버전 보기"
 
-#: gdms/gui/__init__.py:63
+#: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "상세 정보 표시 레벨을 수동으로 설정(0~5)"
 
-#: gdms/gui/__init__.py:64
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "레벨"
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "상세 모드 활성화(별칭 --verbosity=5)"
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "정숙 모드 활성화(별칭 --verbosity=0)"
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr "{level} 은(는) 잘못된 상세 모드입니다.. 0 부터 5 사이여야 합니다."
@@ -382,75 +385,74 @@ msgstr ""
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
 msgstr ""
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr ""
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr "설정 새로고침"
 
-#: gdms/gui/__init__.py:291
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
 msgstr "세션 설정이 성공적으로 불러오기되었습니다"
 
-#: gdms/gui/__init__.py:295
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "세션 설정 불러오기는 Flatpak 버전에서 지원되지 않습니다"
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr "설정 리셋 성공"
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr "설정 리셋 실패"
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
 msgstr "가져오기"
 
-#: gdms/gui/__init__.py:350
+#: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
 msgstr "파일에서 설정을 성공적으로 가져왔습니다"
 
-#: gdms/gui/__init__.py:352
+#: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr "가져오지 못했습니다. 파일이 잘못되었습니다"
 
-#: gdms/gui/__init__.py:383
+#: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
 msgstr "설정을 성공적으로 내보냈습니다"
 
-#: gdms/gui/__init__.py:385
+#: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
 msgstr "내보내지 못했습니다. 권한이 거부되었습니다"
 
-#: gdms/gui/__init__.py:387
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
 msgstr "내보내지 못했습니다. 해당 이름의 디렉터리가 이미 있습니다"
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 #, fuzzy
 #| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -458,11 +460,47 @@ msgstr "Copyright 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr ""
 "안재범 <ajb8533296@gmail.com>\n"
 "이정희 <daemul72@gmail.com>"
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -555,7 +593,7 @@ msgstr "디스플레이"
 msgid "Login Screen"
 msgstr "로그인 화면"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
 msgstr "전원"
 
@@ -604,45 +642,45 @@ msgstr "취소"
 msgid "Log Out"
 msgstr "로그아웃"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "'{filename}' 파일에서 가져오는 중"
 
-#: gdms/settings.py:176
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr "표준 입력에서 가져오는 중"
 
-#: gdms/settings.py:179
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr "가져오기 파일을 구문 분석하지 못했습니다"
 
-#: gdms/settings.py:182
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr "가져오기 파일을 읽지 못했습니다. UTF-8로 인코딩되지 않음"
 
-#: gdms/settings.py:188
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "가져온 파일에 '{section_name}' 섹션이 없습니다"
 
-#: gdms/settings.py:193
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr "가져온 파일의 '{section_name}' 섹션에 '{key_name}' 키가 없습니다"
 
-#: gdms/settings.py:213
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "'{filename}' 파일로 내보내기"
 
-#: gdms/settings.py:218
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "'{filename}' 파일에 쓸 수 없습니다. 권한이 거부되었습니다"
 
-#: gdms/settings.py:222
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -650,69 +688,81 @@ msgid ""
 msgstr ""
 "'{filename}' 파일에 쓸 수 없습니다. 같은 이름의 디렉터리가 이미 존재합니다"
 
-#: gdms/settings.py:227
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr "표준 출력으로 내보내는 중"
 
-#: gdms/settings.py:327
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "글자 색상"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "테마"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "쉘"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "아이콘"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "커서"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "배경화면"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "유형"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "이미지"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "단색 색깔"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "배경으로 사용할 이미지"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 #, fuzzy
 #| msgid "Dim Screen"
 msgid "Fit To Screen"
 msgstr "흐릿한 화면"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "배경으로 사용할 색깔"
 
@@ -724,7 +774,7 @@ msgstr "현재 디스플레이 설정 적용"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "해상도, 주사율, 모니터 위치 등."
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "적용"
 
@@ -770,39 +820,39 @@ msgstr "색 온도"
 msgid "Font"
 msgstr "글꼴"
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr "안티앨리어싱"
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr "표준"
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr "서브픽셀"
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr "없음"
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
 msgstr "힌팅"
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr "완전히"
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr "적당히"
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr "조금"
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr "스케일 상수"
 
@@ -833,6 +883,12 @@ msgstr "정보"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "종료"
+
+#: resources/ui/main-window.blp:34
+#, fuzzy
+#| msgid "Apply"
+msgid "_Apply"
+msgstr "적용"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -927,15 +983,15 @@ msgstr "끄기"
 msgid "Enabled"
 msgstr "켜기"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
 msgstr "자연스러운 스크롤"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr "스크롤하면 내용을 옮기고, 뷰를 옮기지 않습니다."
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
 msgstr "포인터 속도"
 
@@ -943,21 +999,25 @@ msgstr "포인터 속도"
 msgid "Touchpad"
 msgstr "터치패드"
 
-#: resources/ui/pointing-page.blp:55
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr "입력 도중 비활성화"
+
+#: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
 msgstr "터치패드 두드리면 단추 누름으로 취급"
 
-#: resources/ui/pointing-page.blp:64
+#: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
 msgstr "두손가락 스크롤"
 
-#: resources/ui/pointing-page.blp:65
+#: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
 msgstr "두 손가락으로 스와이프하여 스크롤합니다."
-
-#: resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "입력 도중 비활성화"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
@@ -1113,26 +1173,30 @@ msgid "Clock"
 msgstr "시계"
 
 #: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
 msgstr "요일 표시"
 
-#: resources/ui/top-bar-page.blp:76
+#: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
 msgstr "초 표시"
 
-#: resources/ui/top-bar-page.blp:80
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
 msgstr "시각 형식"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
 msgstr "오전/오후"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
 msgstr "24시간"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "배터리 백분율 표시"
 

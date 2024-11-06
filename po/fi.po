@@ -1,14 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Jiri Grönroos <jiri.gronroos@iki.fi>, 2022, 2023.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-07-26 15:03+0000\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
+"PO-Revision-Date: 2024-06-25 09:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fi/>\n"
@@ -17,64 +18,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.6-rc\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "Teeman nimi"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "Taustakuvan tyyppi"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
-"Käytetäänkö GDM:n taustana kuvaa (Image), väriä (Color) vai ei mitään (None)."
+"Käytetäänkö GDM:n taustana kuvaa (Image), väriä (Color) vai oletus (Default)."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "Taustakuva"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "GDM:n taustakuvana käytettävä kuvatiedosto"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "Taustakuva"
+msgstr "Taustakuvan säätö"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategia taustakuvan säätämiseksi."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "Taustaväri"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "GDM:n taustana käytettävä väri"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "Osoittimen nopeus"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Osoittimen nopeus kosketuslevylle. Hyväksytyt arvot ovat alueella [-1...1] "
+"(\"kiihtämättömästä\" \"nopeaan\"). Arvo 0 on järjestelmän oletusarvo."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -85,6 +84,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Yövalotila muuttaa näytön värilämpötilaa, kun aurinko on laskenut tai "
+"ennalta asetettuina aikoina."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
@@ -95,6 +96,9 @@ msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Tätä lämpötilaa Kelvin-yksiköissä (K) käytetään näytön sävyjen "
+"muokkaamiseen, kun yövalotila on käytössä. Suuremmat arvot ovat sinisempiä, "
+"pienemmät punaisempia."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
@@ -105,26 +109,31 @@ msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Laske auringonnousun ja -laskun ajat automaattisesti nykyisestä sijainnista."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "Alkamisajan kellonaika"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"Kun \"Automaattinen aikataulu\" on poissa käytöstä, käytä tätä alkamisaikaa "
+"tunneissa."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Alkamisaika minuutteina"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Kun \"Automaattinen aikataulu\" on poissa käytöstä, käytä tätä alkamisaikaa "
+"minuutteina."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "Päättymisajan tunti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
@@ -132,7 +141,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Päättymisajan minuutti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
@@ -148,6 +157,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Toiminto, joka suoritetaan, kun järjestelmän virtapainiketta painetaan. Tämä "
+"toiminto on koodattu (ja asetus jätetään huomioimatta) virtuaalikoneen "
+"(virrankatkaisu) ja tablet-tietokoneiden (keskeytys) yhteydessä."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -158,46 +170,56 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Ota \"power-saver\"-profiili automaattisesti käyttöön käyttämällä power-"
+"profiles-daemonia, jos akku on vähissä."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Himmentää näyttöä käyttämättömän ajan jälkeen"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Jos näyttöä pitäisi himmentää virran säästämiseksi tietokoneen ollessa "
+"käyttämättömänä."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Tyhjennetäänkö näyttö istunnon ollessa käyttämättömänä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Jos näyttö pitäisi pimentää virran säästämiseksi tietokoneen ollessa "
+"käyttämättömänä."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Aikaa ennen istuntoa pidetään tyhjänä"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
+"Käyttämättömyyden minuuttien lukumäärä ennen istuntoa katsotaan "
+"käyttämättömäksi."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Keskeytetäänkö, kun ei ole aktiivinen ja akkua käytetään"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Tietokoneen lepotilan aikakatkaisu akulla"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Aika minuuteissa, jonka akkuvirralla olevan tietokoneen on oltava "
+"passiivinen ennen kuin se siirtyy lepotilaan. Arvo 0 tarkoittaa ei koskaan."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
@@ -241,20 +263,16 @@ msgstr "Muutetaanko yläpalkin tausta"
 msgid "Top bar background color"
 msgstr "Yläpalkin taustaväri"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr "Palauta oletusarvot"
+msgstr "GDM:n asetukset"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
 msgstr "Mukauta kirjautumisnäkymää"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
@@ -262,44 +280,49 @@ msgstr ""
 "Muuta GDM:n asetuksia; aseta teema ja tausta, vaihda kursori- ja "
 "kuvaketeema, määritä yövalon asetukset ja paljon muuta."
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Pääikkuna (työpöytätila)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Sivupalkki (mobiilitila)"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Ulkoasun asetukset (mobiilitila)"
 
-#: gdms/gui/__init__.py:62
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr "Näytä vianjäljitystietoja (Markdown-muodossa)"
+
+#: gdms/gui/__init__.py:64
 msgid "Show application version"
 msgstr "Näytä sovelluksen versio"
 
-#: gdms/gui/__init__.py:63
+#: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr ""
 
-#: gdms/gui/__init__.py:64
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
@@ -367,83 +390,118 @@ msgstr "Lahjoituspyyntö"
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
 msgstr "Ei kiitos"
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr "Lahjoita"
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr "Asetukset ladattu uudelleen"
 
-#: gdms/gui/__init__.py:291
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
 msgstr "Istunnon asetukset ladattu uudelleen"
 
-#: gdms/gui/__init__.py:295
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr "Istunnon asetusten lataaminen EI OLE tuettu Flatpak-versiossa"
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr "Asetukset on palautettu oletusarvoihin"
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr "Asetusten palauttaminen oletusarvoihin epäonnistui"
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
 msgstr "Tuo"
 
-#: gdms/gui/__init__.py:350
+#: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
 msgstr "Asetukset tuotu tiedostosta"
 
-#: gdms/gui/__init__.py:352
+#: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr "Tuonti epäonnistui. Tiedosto on virheellinen"
 
-#: gdms/gui/__init__.py:383
+#: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
 msgstr "Asetukset vietiin onnistuneesti"
 
-#: gdms/gui/__init__.py:385
+#: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
 msgstr "Vienti epäonnistui. Riittämättömät käyttöoikeudet"
 
-#: gdms/gui/__init__.py:387
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
 msgstr "Vienti epäonnistui. Kansio samalla nimellä on jo olemassa"
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr "Tekijänoikeus 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -530,7 +588,7 @@ msgstr "Näyttö"
 msgid "Login Screen"
 msgstr "Kirjautumisnäkymä"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
 msgstr "Virta"
 
@@ -575,46 +633,46 @@ msgstr "Peru"
 msgid "Log Out"
 msgstr "Kirjaudu ulos"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr "Tuodaan tiedostosta '{filename}'"
 
-#: gdms/settings.py:176
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr ""
 
-#: gdms/settings.py:179
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr "Tuontitiedoston jäsennys epäonnistui"
 
-#: gdms/settings.py:182
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 
-#: gdms/settings.py:188
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr "Tuodussa tiedostossa ei ole osiota '{section_name}'"
 
-#: gdms/settings.py:193
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 "Tuodussa tiedostossa ei ole avainta '{key_name}' osiossa '{section_name}'"
 
-#: gdms/settings.py:213
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr "Viedään tiedostoon '{filename}'"
 
-#: gdms/settings.py:218
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr "Tiedostoon '{filename}' ei voi kirjoittaa. Pääsy evätty"
 
-#: gdms/settings.py:222
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
@@ -623,69 +681,79 @@ msgstr ""
 "Tiedostoon '{filename}' ei voi kirjoittaa. Kansio samalla nimellä on jo "
 "olemassa"
 
-#: gdms/settings.py:227
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr ""
 
-#: gdms/settings.py:327
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "Varmuuskopioidaan shell-teeman oletusta…"
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "Tekstin väri"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "Teemat"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "Käyttöliittymä"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "Kuvakkeet"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "Kursori"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "Taustakuva"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "Tyyppi"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr "Oletus"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "Kuva"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "Väri"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "Taustakuvana käytettävä kuva"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Kuvan säätö"
 
-#: resources/ui/appearance-page.blp:31
-#, fuzzy
-#| msgid "Dim Screen"
+#: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr "Himmennä näyttö"
+msgstr "Sovita näytölle"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "Toista"
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "Taustana käytettävä väri"
 
@@ -697,7 +765,7 @@ msgstr "Toteuta nykyiset näyttöasetukset"
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr "Resoluutio, virkistystaajuus, näytön sijainti jne."
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "Toteuta"
 
@@ -743,39 +811,39 @@ msgstr "Värilämpötila"
 msgid "Font"
 msgstr "Fontti"
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr "Reunanpehmennys"
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr "Standardi"
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr "Alipikseli"
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr "Ei mitään"
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
 msgstr "Vihjeistys"
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr "Täysi"
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr "Keskitaso"
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr "Hieman"
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr "Skaalauskerroin"
 
@@ -806,6 +874,10 @@ msgstr "Tietoja"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "Lopeta"
+
+#: resources/ui/main-window.blp:34
+msgid "_Apply"
+msgstr "_Toteuta"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -892,15 +964,15 @@ msgstr "Pois käytöstä"
 msgid "Enabled"
 msgstr "Käytössä"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
 msgstr "Luonnollinen vieritys"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr "Vieritys liikuttaa sisältöä, ei näkymää."
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
 msgstr "Osoittimen nopeus"
 
@@ -908,21 +980,25 @@ msgstr "Osoittimen nopeus"
 msgid "Touchpad"
 msgstr "Kosketuslevy"
 
-#: resources/ui/pointing-page.blp:55
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr "Poista käytöstä kirjoittaessa"
+
+#: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
 msgstr "Napsauta napauttamalla"
 
-#: resources/ui/pointing-page.blp:64
+#: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
 msgstr "Kahden sormen vieritys"
 
-#: resources/ui/pointing-page.blp:65
+#: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
 msgstr "Vieritä vetämällä kahdella sormella."
-
-#: resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
-msgstr "Poista käytöstä kirjoittaessa"
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
@@ -1081,26 +1157,30 @@ msgid "Clock"
 msgstr "Kello"
 
 #: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
 msgstr "Näytä viikonpäivä"
 
-#: resources/ui/top-bar-page.blp:76
+#: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
 msgstr "Näytä sekunnit"
 
-#: resources/ui/top-bar-page.blp:80
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
 msgstr "Aikamuoto"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
 msgstr "AM/PM"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
 msgstr "24 tuntia"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "Näytä akun prosentti"
 

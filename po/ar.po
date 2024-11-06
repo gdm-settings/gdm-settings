@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # oussaid1 <oussaid.abdellatif@gmail.com>, 2022.
 # Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
+# Abdullah Albaroty <albaroty@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2022-08-30 18:22+0000\n"
-"Last-Translator: Ibrahim Muhammad <ebraheem010@gmail.com>\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
+"PO-Revision-Date: 2024-09-29 12:15+0000\n"
+"Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
 "Language: ar\n"
@@ -18,59 +19,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "اسم السمة"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "نوع الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "أيجب أن تكون خلفية شاشة الدخول صورة أم لون أم لا شيء."
+msgstr "أيجب أن تكون خلفية شاشة الدخول صورة أو لون أو الافتراضي."
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "صورة الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "ملف الصورة المستخدمة كخلفية لشاشة الدخول"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "صورة الخلفية"
+msgstr "تعديل صورة الخلفية"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
 msgstr ""
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "لون الخلفية"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "اللون المستخدم كخلفية شاشة الدخول"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "سرعة المؤشر"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -145,7 +142,7 @@ msgstr "استخدام هذا الوقت كدقيقة الانتهاء عند ت
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "إجراء زر التشغيل"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -246,61 +243,64 @@ msgstr ""
 msgid "Top bar background color"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
 msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
 msgstr ""
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
 msgstr ""
 
-#: gdms/gui/__init__.py:62
-msgid "Show application version"
-msgstr ""
-
 #: gdms/gui/__init__.py:63
-msgid "Set verbosity level manually (from 0 to 5)"
+msgid "Show debug information (in Markdown format)"
 msgstr ""
 
 #: gdms/gui/__init__.py:64
+msgid "Show application version"
+msgstr ""
+
+#: gdms/gui/__init__.py:65
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr ""
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr ""
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr ""
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
@@ -362,82 +362,117 @@ msgstr ""
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
 msgstr ""
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
 msgstr ""
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr ""
 
-#: gdms/gui/__init__.py:291
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
 msgstr ""
 
-#: gdms/gui/__init__.py:295
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr ""
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr ""
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
 msgstr ""
 
-#: gdms/gui/__init__.py:350
+#: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
 msgstr ""
 
-#: gdms/gui/__init__.py:352
+#: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr ""
 
-#: gdms/gui/__init__.py:383
+#: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
 msgstr ""
 
-#: gdms/gui/__init__.py:385
+#: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
 msgstr ""
 
-#: gdms/gui/__init__.py:387
+#: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
 msgstr ""
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
 msgstr ""
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr ""
 
-#: gdms/gui/about.py:101
+#: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
 msgstr ""
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
 msgstr ""
 
 #: gdms/gui/pages/display.py:86
@@ -490,47 +525,47 @@ msgstr ""
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "جميع الملفات"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "اختر صورة"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "المظهر"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "الخطوط"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "الشريط العلوي"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "الصوت"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "الفأرة ولوحة اللمس"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "الشاشة"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "شاشة الدخول"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "الطاقة"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "الأدوات"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
@@ -561,118 +596,130 @@ msgstr ""
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "تسجيل الخروج"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
 msgstr ""
 
-#: gdms/settings.py:176
+#: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr ""
 
-#: gdms/settings.py:179
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
 msgstr ""
 
-#: gdms/settings.py:182
+#: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
 
-#: gdms/settings.py:188
+#: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
 msgstr ""
 
-#: gdms/settings.py:193
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
 
-#: gdms/settings.py:213
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
 msgstr ""
 
-#: gdms/settings.py:218
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
 
-#: gdms/settings.py:222
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
 
-#: gdms/settings.py:227
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
 msgstr ""
 
-#: gdms/settings.py:327
+#: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "لون النص"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
 msgstr ""
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr ""
 
@@ -684,7 +731,7 @@ msgstr ""
 msgid "Resolution, refresh rate, monitor positions, etc."
 msgstr ""
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr ""
 
@@ -730,39 +777,39 @@ msgstr ""
 msgid "Font"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr ""
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr ""
 
@@ -794,6 +841,10 @@ msgstr ""
 msgid "Quit"
 msgstr ""
 
+#: resources/ui/main-window.blp:34
+msgid "_Apply"
+msgstr ""
+
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
 msgstr ""
@@ -812,7 +863,7 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "الشّعار"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
@@ -820,95 +871,99 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "رسالة ترحيب"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "تكبير"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "الرسالة"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "حجم المؤشر"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "المبدئي"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "متوسط"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "كبير"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "أكبر"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "الأكبر"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "الفأرة"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "تسارع المؤشر"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "تلقائي"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "معطّل"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "ممكّن"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "التمرير الطبيعي"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr ""
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr ""
+msgstr "سُرعة المؤشر"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
 msgstr ""
 
-#: resources/ui/pointing-page.blp:55
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
 msgstr ""
 
-#: resources/ui/pointing-page.blp:64
+#: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
 msgstr ""
 
-#: resources/ui/pointing-page.blp:65
+#: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
-msgstr ""
-
-#: resources/ui/pointing-page.blp:69
-msgid "Disable while Typing"
 msgstr ""
 
 #: resources/ui/power-page.blp:12
@@ -1006,11 +1061,11 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "سمة الشل الافتراضية"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "ضمّن تطويعات الشريط العلوي"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
@@ -1022,27 +1077,27 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "تطويعات"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "غيّر لون النص"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "لون النص"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "لون النص في الشريط العلوي"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "غيّر لون الخلفية"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "الون الخلفي للشريط العلوي"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
@@ -1065,26 +1120,30 @@ msgid "Clock"
 msgstr ""
 
 #: resources/ui/top-bar-page.blp:72
-msgid "Show Weekday"
+msgid "Show Date"
 msgstr ""
 
 #: resources/ui/top-bar-page.blp:76
-msgid "Show Seconds"
-msgstr ""
+msgid "Show Weekday"
+msgstr "أظهر أيام الأسبوع"
 
 #: resources/ui/top-bar-page.blp:80
+msgid "Show Seconds"
+msgstr "أظهر الثواني"
+
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr ""
+msgstr "تنسيق الوقت"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr ""
+msgstr "ص/م"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr ""
+msgstr "٢٤ ساعة"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr ""
 

@@ -5,13 +5,14 @@
 # YXT <yxteee@126.com>, 2022.
 # Jason Clermont <lunme1008@gmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
+# 复予 <clonewith@qq.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
-"POT-Creation-Date: 2023-10-22 09:54+0500\n"
-"PO-Revision-Date: 2023-02-05 05:38+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
+"PO-Revision-Date: 2024-03-19 03:01+0000\n"
+"Last-Translator: 复予 <clonewith@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/gdm-"
 "settings/language-names/zh_Hans/>\n"
 "Language: zh\n"
@@ -19,59 +20,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:7
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
 msgstr "主题名称"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
 msgstr "背景类型"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "GDM 背景应该是图像、颜色还是无。"
+msgstr "GDM 背景应该是图像、颜色还是默认背景。"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:34
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
 msgstr "背景图像"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:36
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
 msgstr "图像文件用于 GDM背景"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:43
-#, fuzzy
-#| msgid "Background Image"
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "背景图像"
+msgstr "背景图像调整"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:44
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "背景图像调整策略。"
 
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:55
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
 msgstr "背景颜色"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:57
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
 msgstr "此颜色用于GDM背景"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:23
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
 msgstr "指针速度"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
-#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:24
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
 msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
@@ -144,7 +141,7 @@ msgstr "当“计划自动”被禁用时，使用此结束时间分钟。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "电源按钮操作"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -152,70 +149,74 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"按下系统电源按钮时要进行的操作。此操作在虚拟机（关机）与平板电脑（挂起）中是"
+"硬编码的（因此会忽略设置）。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "当电量低时启用省电模式"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
-msgstr ""
+msgstr "当电量较低时，用 power-profiles-daemon 自动启用“power-saver”模式。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "一段时间不活跃后暗化屏幕"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
-msgstr ""
+msgstr "当计算机空闲时，屏幕是否应变暗以节电。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "会话空闲时是否显示空白屏幕"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
-msgstr ""
+msgstr "计算机空闲时，是否应显示空白屏幕以节电。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "认为会话空闲前的时间"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "认为会话空闲前，不活跃的分钟数。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "不活跃且使用电池时是否挂起"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "用电池供电时的睡眠超时"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"在电池供电的计算机进入睡眠状态前，不活跃的分钟数。数值为 0 代表永不睡眠。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "不活跃且外接电源时是否挂起"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "外接电源供电时的睡眠超时"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"在外接电源供电的计算机进入睡眠状态前，不活跃的分钟数。数值为 0 代表永不睡眠。"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -245,72 +246,67 @@ msgstr "是否改变顶栏背景"
 msgid "Top bar background color"
 msgstr "顶栏背景颜色"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:12
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:4
-#, fuzzy
-#| msgid "Reset settings"
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr "重置设置"
+msgstr "GDM 设置"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:13
-#: data/io.github.realmazharhussain.GdmSettings.desktop.in:5
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "自定义登录屏幕"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:17
+#: data/gdm-settings.metainfo.xml:17
 msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr "更改 GDM 设置； 应用主题和背景、更改光标主题、图标主题和夜灯设置等。"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:57
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
 msgstr "马扎尔·侯赛因"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:62
+#: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "主窗口（桌面模式）"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:66
+#: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "侧边栏（移动模式）"
 
-#: data/io.github.realmazharhussain.GdmSettings.metainfo.xml.in:70
+#: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "外观设置（移动模式）"
 
-#: gdms/gui/__init__.py:62
-#, fuzzy
-#| msgctxt "Description of --version option"
-#| msgid "Show application version"
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr "显示调试信息（以 Markdown格式）"
+
+#: gdms/gui/__init__.py:64
 msgid "Show application version"
 msgstr "显示应用程序版本"
 
-#: gdms/gui/__init__.py:63
-#, fuzzy
-#| msgctxt "Description of --verbosity option"
-#| msgid "Set verbosity level manually (from 0 to 5)"
+#: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
 msgstr "手动设置详细级别（从 0 到 5）"
 
-#: gdms/gui/__init__.py:64
+#: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "等级"
 
-#: gdms/gui/__init__.py:65
+#: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
 msgstr "启用详细模式（类似于--verbosity=5）"
 
-#: gdms/gui/__init__.py:66
+#: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
 msgstr "启用安静模式（等同于 --verbosity=0）"
 
-#: gdms/gui/__init__.py:86
+#: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "详细度 {level} 无效。必须在 0 到 5 之间。"
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -330,12 +326,12 @@ msgstr "这个应用需要以下软件才能正常运行，但它们没有被安
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -355,114 +351,137 @@ msgstr "缺失的依赖项"
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "好的"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "默认Shell主题"
+msgstr "默认 Shell 主题文件丢失"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"本应用需要未修改的默认 Shell 主题文件，但无法找到。要修复此问题，请重新安装 "
+"'gnome-shell-common' 或 'gnome-shell' 软件包。"
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "捐赠请求"
 
 #: gdms/gui/__init__.py:238
 msgid ""
-"This app is and will always remain Open Source/Libre and free of cost. "
-"However, You can show some love by donating to the developer.\n"
-"❤️\n"
-"I would really appreciate it."
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
 msgstr ""
 
-#: gdms/gui/__init__.py:246
+#: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "不感兴趣"
 
-#: gdms/gui/__init__.py:247 resources/ui/main-window.blp:15
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "捐赠"
 
-#: gdms/gui/__init__.py:284
+#: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
 msgstr "重新载入设置"
 
-#: gdms/gui/__init__.py:291
-#, fuzzy
-#| msgid "Settings applied successfully"
+#: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr "应用设置成功"
+msgstr "会话设置加载成功"
 
-#: gdms/gui/__init__.py:295
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
+#: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Flatpak 版本不支持导入用户设置"
+msgstr "Flatpak 版本不支持加载会话设置"
 
-#: gdms/gui/__init__.py:308
+#: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
 msgstr "重置设置成功"
 
-#: gdms/gui/__init__.py:310
+#: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
 msgstr "重置设置失败"
 
-#: gdms/gui/__init__.py:329
+#: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "导入"
+
+#: gdms/gui/__init__.py:348
+msgid "Settings were successfully imported from file"
+msgstr "从文件导入设置成功"
 
 #: gdms/gui/__init__.py:350
-#, fuzzy
-#| msgid "Settings applied successfully"
-msgid "Settings were successfully imported from file"
-msgstr "应用设置成功"
-
-#: gdms/gui/__init__.py:352
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "导入失败。文件无效"
+
+#: gdms/gui/__init__.py:381
+msgid "Settings were successfully exported"
+msgstr "设置导出成功"
 
 #: gdms/gui/__init__.py:383
-#, fuzzy
-#| msgid "Settings applied successfully"
-msgid "Settings were successfully exported"
-msgstr "应用设置成功"
+msgid "Failed to export. Permission denied"
+msgstr "导出失败。权限被拒绝"
 
 #: gdms/gui/__init__.py:385
-msgid "Failed to export. Permission denied"
-msgstr ""
-
-#: gdms/gui/__init__.py:387
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "导出失败。已存在同名目录"
 
-#: gdms/gui/about.py:16 gdms/gui/about.py:100
-#, fuzzy
-#| msgid "Copyright © 2021 Mazhar Hussain"
+#: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "Copyright © 2021 Mazhar Hussain"
+msgstr "Mazhar Hussain"
 
-#: gdms/gui/about.py:17
+#: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
-#: gdms/gui/about.py:101
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
+#: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright © 2021–2023 Mazhar Hussain"
+msgstr "版权所有 2021–2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
-#: gdms/gui/about.py:114
+#: gdms/gui/about.py:27
 msgid "translator-credits"
+msgstr "复予 <clonewith@qq.com> 及其他人"
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
 msgstr ""
 
 #: gdms/gui/pages/display.py:86
@@ -481,18 +500,21 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"需要 '$XDG_CONFIG_HOME/monitors.xml' 文件以应用当前显示设置，但此文件不存"
+"在。\n"
+"\n"
+"为了自动创建此文件，请打开系统的“设置”应用，并更改其中的显示设置。"
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "找不到监视器设置"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
-#, fuzzy, python-brace-format
-#| msgid "Default shell theme extracted to '{path}' as 'default-extracted'"
+#, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "默认 shell 主题提取到 '{path}' 作为 'default-extracted'"
+msgstr "默认 shell 主题已提取到 '{folder}' 作为 '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
@@ -503,16 +525,12 @@ msgid "Choose File"
 msgstr "选择文件"
 
 #: gdms/gui/widgets.py:25
-#, fuzzy
-#| msgid "None"
 msgid "(None)"
-msgstr "无"
+msgstr "（无）"
 
 #: gdms/gui/widgets.py:51
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose"
-msgstr "选择文件"
+msgstr "选择"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
@@ -520,13 +538,11 @@ msgstr "图像"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "所有文件"
 
 #: gdms/gui/widgets.py:119
-#, fuzzy
-#| msgid "Choose File"
 msgid "Choose Image"
-msgstr "选择文件"
+msgstr "选择图像"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
@@ -554,9 +570,9 @@ msgstr "显示"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "登录屏幕"
 
-#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:86
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
 msgstr "电源"
 
@@ -573,150 +589,150 @@ msgid "Failed to apply settings"
 msgstr "应用设置失败"
 
 #: gdms/gui/window.py:147
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "应用失败!找不到所选的背景图片,请再次选择!"
+msgstr "应用失败。找不到所选的背景图片，请再次选择。"
 
 #: gdms/gui/window.py:151
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "应用失败!找不到所选的背景图片,请再次选择!"
+msgstr "应用失败。找不到所选的 Logo 图片，请再次选择。"
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
-msgstr ""
+msgstr "在重新登录或重新启动前，系统可能会看起来奇怪或出错。"
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "注销吗？"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "注销"
 
-#: gdms/settings.py:173
+#: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "正在从文件“{filename}”导入"
 
-#: gdms/settings.py:176
+#: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "正在从标准输入导入"
 
-#: gdms/settings.py:179
-#, fuzzy
-#| msgid "Failed to reset settings"
+#: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr "重置设置失败"
-
-#: gdms/settings.py:182
-msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
-
-#: gdms/settings.py:188
-#, python-brace-format
-msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "导入文件解析失败"
 
 #: gdms/settings.py:193
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr "读取导入文件失败。编码不是 UTF-8"
+
+#: gdms/settings.py:199
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr "导入文件没有小节“{section_name}”"
+
+#: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "导入文件的小节“{section_name}”中没有键“{key_name}”"
 
-#: gdms/settings.py:213
+#: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "正在导出到文件“{filename}”"
 
-#: gdms/settings.py:218
+#: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "无法写入文件“{filename}”。权限被拒绝"
 
-#: gdms/settings.py:222
+#: gdms/settings.py:233
 #, python-brace-format
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "无法写入文件“{filename}”。已存在同名目录"
 
-#: gdms/settings.py:227
+#: gdms/settings.py:238
 msgid "Exporting to standard output"
+msgstr "正在导出到标准输出"
+
+#: gdms/settings.py:338
+msgid "Backing up default shell theme …"
+msgstr "正在备份默认主题…"
+
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+#, fuzzy
+#| msgid "Text Color"
+msgid "Accent Color"
+msgstr "文字颜色"
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
 msgstr ""
 
-#: gdms/settings.py:327
-#, fuzzy
-#| msgid "saving default theme …"
-msgid "Backing up default shell theme …"
-msgstr "保存默认主题…"
-
-#: resources/ui/appearance-page.blp:9
+#: resources/ui/appearance-page.blp:19
 msgid "Themes"
 msgstr "主题"
 
-#: resources/ui/appearance-page.blp:11
+#: resources/ui/appearance-page.blp:21
 msgid "Shell"
 msgstr "Shell"
 
-#: resources/ui/appearance-page.blp:12
+#: resources/ui/appearance-page.blp:22
 msgid "Icons"
 msgstr "图标"
 
-#: resources/ui/appearance-page.blp:13
+#: resources/ui/appearance-page.blp:23
 msgid "Cursor"
 msgstr "光标"
 
-#: resources/ui/appearance-page.blp:17
+#: resources/ui/appearance-page.blp:27
 msgid "Background"
 msgstr "背景"
 
-#: resources/ui/appearance-page.blp:20
+#: resources/ui/appearance-page.blp:30
 msgid "Type"
 msgstr "类型"
 
-#: resources/ui/appearance-page.blp:21
+#: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:25
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
 msgstr "图像"
 
-#: resources/ui/appearance-page.blp:21 resources/ui/appearance-page.blp:36
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
 msgstr "颜色"
 
-#: resources/ui/appearance-page.blp:26
+#: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
 msgstr "此图像用于背景"
 
-#: resources/ui/appearance-page.blp:30
+#: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "图像调整"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "适应屏幕"
 
-#: resources/ui/appearance-page.blp:31
+#: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "重复"
 
-#: resources/ui/appearance-page.blp:37
+#: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
 msgstr "此颜色用于背景"
 
@@ -725,12 +741,10 @@ msgid "Apply current display settings"
 msgstr "应用当前显示设置"
 
 #: resources/ui/display-page.blp:13
-#, fuzzy
-#| msgid "Resolution, refresh rate, monitor positions, etc"
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "分辨率，刷新率，监视器位置等等"
+msgstr "分辨率，刷新率，监视器位置等等。"
 
-#: resources/ui/display-page.blp:16 resources/ui/main-window.blp:34
+#: resources/ui/display-page.blp:16
 msgid "Apply"
 msgstr "应用"
 
@@ -776,39 +790,39 @@ msgstr "色温"
 msgid "Font"
 msgstr "字体"
 
-#: resources/ui/fonts-page.blp:21
+#: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
 msgstr "抗锯齿"
 
-#: resources/ui/fonts-page.blp:23
+#: resources/ui/fonts-page.blp:24
 msgid "Standard"
 msgstr "基础"
 
-#: resources/ui/fonts-page.blp:24
+#: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
 msgstr "亚像素"
 
-#: resources/ui/fonts-page.blp:25 resources/ui/fonts-page.blp:35
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
 msgstr "无"
 
-#: resources/ui/fonts-page.blp:30
+#: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr ""
+msgstr "微调"
 
-#: resources/ui/fonts-page.blp:32
+#: resources/ui/fonts-page.blp:33
 msgid "Full"
 msgstr "完全"
 
-#: resources/ui/fonts-page.blp:33
+#: resources/ui/fonts-page.blp:34
 msgid "Medium"
 msgstr "中等"
 
-#: resources/ui/fonts-page.blp:34
+#: resources/ui/fonts-page.blp:35
 msgid "Slight"
 msgstr "轻微"
 
-#: resources/ui/fonts-page.blp:40
+#: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
 msgstr "比例因子"
 
@@ -817,10 +831,8 @@ msgid "Refresh"
 msgstr "刷新"
 
 #: resources/ui/main-window.blp:7
-#, fuzzy
-#| msgid "Import user settings"
 msgid "Load session settings"
-msgstr "导入用户设置"
+msgstr "加载会话设置"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -828,11 +840,11 @@ msgstr "重置设置"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "从文件导入"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "导出到文件"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -841,6 +853,10 @@ msgstr "关于"
 #: resources/ui/main-window.blp:19
 msgid "Quit"
 msgstr "关闭"
+
+#: resources/ui/main-window.blp:34
+msgid "_Apply"
+msgstr "应用 (_A)"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -872,28 +888,22 @@ msgstr "欢迎留言"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "放大"
 
 #: resources/ui/login-screen-page.blp:49
-#, fuzzy
-#| msgid "Welcome Message"
 msgid "Message"
-msgstr "欢迎留言"
+msgstr "消息"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "光标"
+msgstr "光标大小"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
 msgstr "中等"
@@ -901,17 +911,17 @@ msgstr "中等"
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "更大"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "最大"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -933,15 +943,15 @@ msgstr "禁用"
 msgid "Enabled"
 msgstr "开启"
 
-#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:59
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
 msgstr "自然滚动"
 
-#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:60
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
 msgstr "滚动移动内容，而不是视图。"
 
-#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:73
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
 msgstr "指针速度"
 
@@ -949,98 +959,98 @@ msgstr "指针速度"
 msgid "Touchpad"
 msgstr "触摸板"
 
-#: resources/ui/pointing-page.blp:55
-msgid "Tap to Click"
-msgstr "双击"
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
 
-#: resources/ui/pointing-page.blp:64
-msgid "Two-finger Scrolling"
-msgstr "双指滚动"
-
-#: resources/ui/pointing-page.blp:65
-msgid "Scroll by swiping with two fingers."
-msgstr "用两根手指滑动滚动。"
-
-#: resources/ui/pointing-page.blp:69
+#: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
 msgstr "键入时禁用"
 
+#: resources/ui/pointing-page.blp:62
+msgid "Tap to Click"
+msgstr "双击"
+
+#: resources/ui/pointing-page.blp:71
+msgid "Two-finger Scrolling"
+msgstr "双指滚动"
+
+#: resources/ui/pointing-page.blp:72
+msgid "Scroll by swiping with two fingers."
+msgstr "用两根手指滑动滚动。"
+
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "电源按钮行为"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "无操作"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "挂起"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "休眠"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "询问"
 
 #: resources/ui/power-page.blp:18
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Power Saver"
-msgstr "自动"
+msgstr "自动节电"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "电量低时启用节电模式。"
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "暗化屏幕"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "计算机不活跃时降低屏幕亮度。"
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "关闭屏幕"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "一段时间不活跃后是否关闭屏幕。"
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "延迟"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "关闭屏幕前的分钟数。"
 
 #: resources/ui/power-page.blp:52
-#, fuzzy
-#| msgid "Automatic"
 msgid "Automatic Suspend"
-msgstr "自动"
+msgstr "自动挂起"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "在不活跃一段时间后挂起计算机。"
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "电池供电时"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "挂起计算机前的分钟数。"
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "外接电源时"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1103,7 +1113,6 @@ msgid "The color of top bar background"
 msgstr "顶栏背景颜色"
 
 #: resources/ui/top-bar-page.blp:52
-#, fuzzy
 msgid "Disable Arrows"
 msgstr "禁用箭头"
 
@@ -1113,39 +1122,54 @@ msgstr "禁用圆角"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "可访问性"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "总是显示可访问性菜单"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
 msgstr "时钟"
 
 #: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
 msgstr "显示工作日"
 
-#: resources/ui/top-bar-page.blp:76
+#: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
 msgstr "显示秒"
 
-#: resources/ui/top-bar-page.blp:80
+#: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
 msgstr "时间格式"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
 msgstr "上午/下午"
 
-#: resources/ui/top-bar-page.blp:81
+#: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
 msgstr "24小时"
 
-#: resources/ui/top-bar-page.blp:89
+#: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "显示电池百分比"
+
+#~ msgid ""
+#~ "This app is and will always remain Open Source/Libre and free of cost. "
+#~ "However, You can show some love by donating to the developer.\n"
+#~ "❤️\n"
+#~ "I would really appreciate it."
+#~ msgstr ""
+#~ "本应用是开源/自由与免费的，并且一直如此。但您可以通过向开发者捐赠表达喜"
+#~ "爱。\n"
+#~ "❤️\n"
+#~ "我将十分感谢。"
 
 #~ msgid "Fixed:"
 #~ msgstr "修复："
