@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-05 08:00+0000\n"
+"PO-Revision-Date: 2024-11-10 23:00+0000\n"
 "Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
 "Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/oc/>\n"
@@ -473,7 +473,7 @@ msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021-2023 Mazhar Hussain"
+msgstr "Dreches d'autor 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -515,7 +515,7 @@ msgstr "Violet"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Gris lausa"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -714,16 +714,16 @@ msgid "Backing up default shell theme …"
 msgstr "Salvagarda del tèma per defaut…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Color del tèxt"
+msgstr "Color d'accentuacion"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"NÒTA : foncionarà sonque sus GNOME 47 (e superior) amb lo tèma shell « "
+"Default »."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -1006,7 +1006,7 @@ msgstr "Pavat tactil"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Desactivar sus morga extèrna"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1179,7 +1179,7 @@ msgstr "Relòtge"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Afichar la data"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
