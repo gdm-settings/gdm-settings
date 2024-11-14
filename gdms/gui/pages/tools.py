@@ -5,7 +5,7 @@ from gi.repository import Adw, Gtk
 
 from gdms import APP_ID
 from gdms.env import TEMP_DIR
-from gdms.cmd import Command
+from gdms.cmd import CommandList
 from gdms.utils import BackgroundTask, GSettings
 from gdms import gresource
 from gdms import settings
@@ -68,7 +68,9 @@ class ToolsPageContent (PageContent):
                 shell_css.write(settings.get_css())
 
         # Copy extracted theme to its permanent path
-        cmd = Command('cp', '-rfT', temp_theme_path, perm_theme_path)
+        cmd = CommandList()
+        cmd.add('mkdir', '-p', gresource.ThemesDir)
+        cmd.add('cp', '-rfT', temp_theme_path, perm_theme_path)
         res = cmd.run(as_root=True)
 
         return res, perm_theme_name
