@@ -80,6 +80,17 @@
 
   <!-- Note: AppStream docs recommend keeping notes of old versions -->
   <releases>
+    <release version="5.0" type="stable" date="2024-11-27">
+      <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v5.0</url>
+      <description translatable="no" translate="no">
+        <p>Added accent color settings, and settings to enable/disable touchpad or
+           disable touchpad when external mouse is connected. Added an option to
+           show/hide date in the top bar. Added a warning on app startup.</p>
+        <p>Fixed a bug where display scaling was not being applied to login screen.
+           Fixed "Extract Shell Theme" functionality not working</p>
+      </description>
+    </release>
+
     <release version="5~beta0" type="development" date="2024-11-06">
       <url>https://github.com/gdm-settings/gdm-settings/releases/tag/v5.beta0</url>
       <description translatable="no" translate="no">
