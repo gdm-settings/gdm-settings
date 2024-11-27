@@ -6,12 +6,13 @@
 # Gleb <gkaraulnyi@gmail.com>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 # Володимир Давибіда <mrvovavova17@gmail.com>, 2024.
+# Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-10-05 18:15+0000\n"
+"PO-Revision-Date: 2024-11-25 07:00+0000\n"
 "Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -29,7 +30,7 @@ msgstr "Назва теми"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr "Тип фона"
+msgstr "Тип фону"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
@@ -403,6 +404,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Якщо вам подобається ця програма, зробіть пожертву, щоб ми могли "
+"продовжувати її вдосконалювати.\n"
+"дякую! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -478,39 +482,39 @@ msgstr "Gleb <widness73@gmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Синій"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Чирок"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Зелений"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Жовтий"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Помаранчевий"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Червоний"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Рожевий"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Фіолетовий"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Шифер"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -705,16 +709,16 @@ msgid "Backing up default shell theme …"
 msgstr "Резервне копіювання теми оболонки за замовчуванням…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Колір Тексту"
+msgstr "Колір акценту"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"ПРИМІТКА. Це працюватиме лише в GNOME 47 (і вище) із темою оболонки «За "
+"замовчуванням»."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -997,7 +1001,7 @@ msgstr "Сенсорна панель"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Вимкнути на зовнішній миші"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1170,7 +1174,7 @@ msgstr "Годинник"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Показати дату"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"

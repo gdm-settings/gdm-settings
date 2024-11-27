@@ -1,66 +1,67 @@
-# Quentin PAGÈS <quentinantonin@free.fr>, 2022, 2023, 2024.
-# Allan Nordhøy <epost@anotheragency.no>, 2023.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gdm-settings package.
+# Priit Jõerüüt <hwlate@joeruut.com>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version: gdm-settings\n"
+"Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-10 23:00+0000\n"
-"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
-"Language-Team: Occitan <https://hosted.weblate.org/projects/gdm-settings/"
-"language-names/oc/>\n"
-"Language: oc\n"
+"PO-Revision-Date: 2024-11-11 18:00+0000\n"
+"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/et/>\n"
+"Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.2\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr "Nom del tèma"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr "Tipe de fons"
+msgstr "Tausta tüüp"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
-"Indica se lo rèireplan deu èsser un imatge, una colora o predeterminat."
+msgstr "Kas kasutame GDMi taustana pilti, värvi või vakimisi eelistist."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr "Imatge de fons"
+msgstr "Taustapilt"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr "Lo fichièr imatge d’emplegar coma fons de GDM"
+msgstr "GDMi taustapildina kasutatav pilt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "Ajustament de l’imatge de fons"
+msgstr "Taustapildi kohandamine"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr "Estrategia d’ajustament de l’imatge de fons."
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr "Color de fons"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr "La color d’emplegar coma fons de GDM"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr "Velocitat del puntador"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -68,89 +69,72 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"Velocitat del puntador pel pavat tactil. Las valors acceptadas son dins la "
-"plaja [-1..1] (a partir de « cap d’accelaracion » fins a « rapid »). La "
-"valor 0 es la valor per defaut del sistèma."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "Se lo mòde nuèch es activat"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"Lo mòde nuèch modifica la temperatura de las colors de l’ecran quand la lutz "
-"baissa o a d’oras definidas."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr "La temperatura de l’ecran es activada quand"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
-"Aquesta temperatura en gras Kelvin permet de modificar las colors "
-"d’afichatge quand lo mòde lum de nuèch es activat. Las valors mai nautas "
-"tiban al blau, las mai baissas al roge."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr "Utilizar la sortida del solelh e la colcada del solelh"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
-"Calcul automatic de l'ora de sortida e de colcada del solelh a partir de la "
-"posicion actuala."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr "Ora de debuta"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
-"Quand « schedule-automatic » es desactivat, utilizar aquesta ora de debuta."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr "Minuta de l’ora de debuta"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Quand la foncion de lum nocturn automatica es activada, utilizar aquesta ora "
-"de debuta en minutas."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr "L’ora de fin"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
-"ora de fin en oras."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr "Minuta de l’ora de fin"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Quand la foncion de lum nocturn automatica es desactivada, utilizar aquesta "
-"ora de fin en minutas."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr "Accion del boton d’alimentacion"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -158,122 +142,106 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
-"L’accion a menar quand lo boton d’alimentacion del sistèma es quichat. "
-"L’accion es codada en dur (e lo paramètre ignorat) sus las maquinas "
-"virtualas (atudar) e las tauletas (mesa en velha)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr "Activar lo perfil d’estalvi d’energia quand la batariá es febla"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
-"Activar automaticament lo perfil d’estalvi d’energia en utilizant lo paquet "
-"gnome-settings-daemon quand la batariá es febla."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr "Escuresir l’ecran aprèp un periòde d’inactivitat"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
-"Indica se l’ecran deu s’escuresir per estalviar d’energia quand l’ordenador "
-"es inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr "Indica se l’ecran deu èsser negre quand la session es inactiva"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Indica se l’ecran deu èsser atudat per estalviar l’energia quand l’ordenador "
-"es inactiu."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr "Durada abans que se considèra la session coma inactiva"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
 msgstr ""
-"Lo nombre de minutas d’inactivitat abans de considerar una session coma "
-"inactiva."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr "Indica se cal metre en velha en inactivitat e en usatge de la batariá"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr "Temps abans la mesa en velha de l'ordenador sus batariá"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
-"La quantitat de temps en minutas que l’ordenador sus batariá deu èsser "
-"inactiu abans de se metre en velha. Una valor de 0 significa jamai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr "Indica se cal metre l’ordenador en velha quand es inactiu e brancat"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr "Relambi abans la mesa en velha de l’ordenador quand es brancat"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
-"La quantitat de temps en minutas que l’ordenador sus sector deu èsser "
-"inactiu abans de se metre en velha. Una valor de 0 significa jamai."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
-"Indica se cal aplicar los paramètres de la barra superiora al tèma extrach"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr "Indicar se cal activar o desactivar las sagetas de la barra superiora"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr "Indicar se cal utilizar los angles redonds de la barra superiora"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr "Indica se cal cambiar la color del tèxte de la barra superiora"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr "Color del tèxte de la barra superiora"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr "Indica se cal cambiar lo fons de la barra superiora"
+msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr "Color de fons barra superiora"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr "Paramètres de GDM"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr "Personalizatz l’ecran de connexion"
+msgstr ""
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -281,56 +249,53 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Cambiar paramètres GDM : aplicar tèmas e fonzes, cambiar lo tèma dels "
-"cursors, de las icònas e los paramètres de lum nocturna, demest autras "
-"causas."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr "Fenèstra principala (mòde burèu)"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr "Barra laterala (mòde mobile)"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr "Paramètres d’aparéncia (mòde mobile)"
+msgstr ""
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr "Afichar las informacions de desbugatge (al format Markdown)"
+msgstr ""
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr "Afichar la version de l’aplicacion"
+msgstr ""
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Definir manualament lo nivèl de verbiositat (de 0 a 5)"
+msgstr ""
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr "NIVÈL"
+msgstr ""
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Activar lo mòde verbiós (alias de --verbosity=5)"
+msgstr ""
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Activar lo mòde silenciós (alias of --verbosity=0)"
+msgstr ""
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr "Nivèl de verbositat invalid {level}. Deu èsser 0 o 5, o entre los dos."
+msgstr ""
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -338,27 +303,22 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Los programas seguents devon èsser installats <b>sul sistèma òste</b> per "
-"qu’aquesta aplicacion foncione corrèctament mas son pas installats sul "
-"sistèma òste."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Aquesta aplicacion requerís los logicials seguent per foncionar "
-"corrèctament, mas son pas installats."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr "• <b>GDM</b>"
+msgstr ""
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr "• <b>Polkit</b>"
+msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -368,34 +328,29 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"Clicatz <a href=\"{url}\">aicí</a> per obténer las instruccions "
-"d’installacion d’aquestas dependéncias sul sistèma."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr "Dependéncias absentas"
+msgstr ""
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr "D’acòrdi"
+msgstr ""
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "Fichièr de tèma Shell per defaut perdut"
+msgstr ""
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"L'aplicacion a besonh d’un fichièr de tèma de shell per defaut non modificat "
-"mas a pas pogut o trobar. Per corregir lo problèma, tornatz installar lo "
-"paquet 'gnome-shell-common' o 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr "Demanda de don"
+msgstr ""
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -403,127 +358,122 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
-"Se vos agrada aquesta aplicacion, pensatz de far un don per que poscam téner "
-"de la melhor.\n"
-"Mercés ! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr "Non interessat"
+msgstr ""
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr "Far un don"
+msgstr ""
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr "Paramètres recargats"
+msgstr ""
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr "Paramètres de session corrèctament cargats"
+msgstr ""
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
-"Lo cargament dels paramètres de session es pas suportat dins la version "
-"Flatpak"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr "Reïnicializacion dels paramètres reüssida"
+msgstr ""
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr "Fracàs en reïnicializant los paramètres"
+msgstr ""
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr "Importar"
+msgstr ""
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr "Paramètres importats corrèctament del fichièr"
+msgstr ""
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr "Fracàs de l’importacion. Fichièr invalid"
+msgstr ""
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr "Paramètres importats corrèctament"
+msgstr ""
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr "Fracàs de l’exportacion. Autorizacion refusada"
+msgstr ""
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr "Fracàs de l’exportacion. Un repertòri amb aqueste nom existís ja"
+msgstr ""
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+msgstr ""
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr "Thales Bindá"
+msgstr ""
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Dreches d'autor 2021-2023 Mazhar Hussain"
+msgstr ""
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "Quentin PAGÈS"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr "Blau"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr "Esmerauda"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr "Verd"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr "Jaune"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr "Irange"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr "Roge"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr "Ròse"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr "Violet"
+msgstr ""
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr "Gris lausa"
+msgstr ""
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr "Paramètres d’afichatge actual aplicats"
+msgstr ""
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr "Fracàs en aplicant los paramètres d’afichatge actuals"
+msgstr ""
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -533,168 +483,154 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
-"Lo fichièr « $XDG_CONFIG_HOME/monitors.xml » es requerit per aplicar los "
-"paramètres d’afichatge actuals mas existís pas.\n"
-"\n"
-"Per crear automaticament aqueste fichièr, anatz als paramètres sistèma e "
-"modificatz d’unes reglatges enlà."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr "Paramètres del monitor pas trobats"
+msgstr ""
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "Tèma shell predeterminat extrach dins « {folder} » coma « {name}  »"
+msgstr ""
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr "Fracàs en ensajar de traire lo tèma shell per defaut"
+msgstr ""
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr "Causir un fichièr"
+msgstr ""
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr "(Pas cap)"
+msgstr ""
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr "Causir"
+msgstr ""
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr "Imatges"
+msgstr ""
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr "Totes los fichièrs"
+msgstr ""
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr "Causir un imatge"
+msgstr ""
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr "Aparéncia"
+msgstr ""
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr "Poliças"
+msgstr ""
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr "Barra superiora"
+msgstr ""
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr "Son"
+msgstr ""
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Mirga & pavat tac­til"
+msgstr ""
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr "Afichatge"
+msgstr ""
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr "Ecran de connexion"
+msgstr ""
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr "Energia"
+msgstr ""
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr "Aisinas"
+msgstr ""
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr "Paramètres aplicats corrèctament"
+msgstr ""
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr "Fracàs de l’aplicacion dels paramètres"
+msgstr ""
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"S’es pas aplicat. L’imatge de fons causit existís pas pus. Mercés de ne "
-"causir un autre."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"S’es pas aplicat. Lo logotipe causit existís pas pus. Mercés de ne causir un "
-"autre."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
-"Poiriá arribar que lo sistèma semble estranh/laid fins que vos tornetz "
-"connectar o reavietz."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr "Se desconnectar ?"
+msgstr ""
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr "Anullar"
+msgstr ""
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr "Desconnexion"
+msgstr ""
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr "Importacion del fichièr « {filename} » estant"
+msgstr ""
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr "Importacion de l’entrada estandarda estant"
+msgstr ""
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr "Fracàs de l'analisi del fichièr d’import"
+msgstr ""
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
-"Fracàs de la lectura del fichièr d’importacion. Non es pas encodat en UTF-8"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr "Lo fichièr importat a pas cap de seccion « {section_name} »"
+msgstr ""
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
-"Lo fichièr importat a pas la clau « {key_name} » dins la seccion "
-"« {section_name} »"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr "Expòrt cap al fichièr '{filename}'"
+msgstr ""
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr "Escritura impossibla al fichièr '{filename}'. Autorizacion refusada"
+msgstr ""
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -702,836 +638,501 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
-"Escritura impossibla al fichièr « {filename} ». Un repertòri amb lo meteis "
-"nom existís ja"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr "Exportacion cap a la sortida estandarda"
+msgstr ""
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr "Salvagarda del tèma per defaut…"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
-msgstr "Color d'accentuacion"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
-"NÒTA : foncionarà sonque sus GNOME 47 (e superior) amb lo tèma shell « "
-"Default »."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr "Tèmas"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr "Shell"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr "Icònas"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr "Cursor"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr "Fonzes"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr "Tipe"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr "Per defaut"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr "Imatge"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr "Color"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr "L’imatge d’emplegar coma fons"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr "Ajustament de l’imatge"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr "Adaptar a l’ecran"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr "Repetir"
+msgstr ""
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr "La color d’emplegar coma fons"
+msgstr ""
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr "Aplicar los paramètres d’afichatge actuals"
+msgstr ""
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr "Resolucion, frequéncia de refrescament, posicions del monitor, etc."
+msgstr ""
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr "Aplicar"
+msgstr ""
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr "Lum nocturna"
+msgstr ""
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr "Activar"
+msgstr ""
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr "Programar"
+msgstr ""
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr "Levar al colcar del solelh"
+msgstr ""
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr "Programacion manuala"
+msgstr ""
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr "Oras"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr "De"
+msgstr ""
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr "dusca"
+msgstr ""
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr "Temperatura de la color"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr "Poliça"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr "Anticrenelatge"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr "Estandard"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr "Sospixèl"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr "Pas cap"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr "Optimizacion"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr "Complèt"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr "Mejan"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr "Leugièr"
+msgstr ""
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr "Factor d'escala"
+msgstr ""
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr "Refrescar"
+msgstr ""
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr "Cargar paramètres de l’utilizaire"
+msgstr ""
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr "Reïnicializar los paramètres"
+msgstr ""
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr "Importar d’un fichièr"
+msgstr ""
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr "Exportar dins un fichièr"
+msgstr ""
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr "A prepaus de"
+msgstr ""
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr "Quitar"
+msgstr ""
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr "_Aplicar"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "Desactivar los botons de reaviada"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr "Desactivar la lista d’utilizaires"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr "Activar lo lògo"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr "Indica se cal afichar un lògo jos la lista d’utilizaires"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr "Lògo"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr "L’imatge d’afichar jos la lista d’utilizaires"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr "Messatge de benvenguda"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr "Agrandir"
+msgstr ""
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr "Messatge"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr "Talha del cursor"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr "Per defaut"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "Mejana"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "Granda"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Mai granda"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr "La mai granda"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr "Mirga"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr "Acceleracion del puntador"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr "Automatic"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr "Desactivat"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr "Activat"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
-msgstr "Desfilament natural"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr "Lo desfilament desplaça lo contengut, pas la vista."
+msgstr ""
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr "Velocitat del puntador"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Pavat tactil"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr "Desactivar sus morga extèrna"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr "Desactivar en picant"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
-msgstr "Tocar per clicar"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
-msgstr "Desfilament de dos dets"
+msgstr ""
 
 #: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
-msgstr "Desfilar en bolegant dos dets."
+msgstr ""
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr "Compòrtament del boton d’alimentacion"
+msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr "Far pas res"
+msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr "Metre en velha"
+msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr "Ibernar"
+msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr "Demandar"
+msgstr ""
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr "Estalviador d’energia automatic"
+msgstr ""
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr "Activar l’estalviador d’energia quand la batariá es febla."
+msgstr ""
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr "Escuresir l’ecran"
+msgstr ""
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr "Reduire la luminositat de l’ecran quand l’ordenador es inactiu."
+msgstr ""
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr "Atudar l’ecran"
+msgstr ""
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Indica se cal atudar l’ecran aprèp un periòde d’inactivitat."
+msgstr ""
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr "Relambi"
+msgstr ""
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr "Relambi en minutas abans l’extincion de l’ecran."
+msgstr ""
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr "Velha automatica"
+msgstr ""
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr "Met l’ordenador en velha aprèp un periòde d’inactivitat."
+msgstr ""
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr "Sus batariá"
+msgstr ""
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr "Relambi en minutas abans la mesa en velha de l’ordenador."
+msgstr ""
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr "Sul sector"
+msgstr ""
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr "Tèma"
+msgstr ""
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "Subre-amplificacion"
+msgstr ""
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "Permetre lo volum al dessús de 100%"
+msgstr ""
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr "Sons dels eveniments"
+msgstr ""
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr "Entrada de retorn sonòr"
+msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr "Tèma Shell per defaut"
+msgstr ""
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "Inclure ajustament barra superiora"
+msgstr ""
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr "Traire lo tèma shell per defaut"
+msgstr ""
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr "Traire"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr "Ajustaments"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr "Cambiar la color del tèxt"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr "Color del tèxt"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "Color del tèxte barra superiora"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr "Cambiar la color de fons"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "Color de fons barra superiora"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr "Desactivar sagetas"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr "Caires arredondits desactivats"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr "Accessibilitat"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr "Totjorn afichar lo menú d’accessibilitat"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr "Relòtge"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr "Afichar la data"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
-msgstr "Afichar los jorns de la setmana"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
-msgstr "Afichar las segondas"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr "Format de l'ora"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr "AM/PM"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr "24 oras"
+msgstr ""
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
-msgstr "Afichar lo percentatge de batariá"
-
-#~ msgid ""
-#~ "This app is and will always remain Open Source/Libre and free of cost. "
-#~ "However, You can show some love by donating to the developer.\n"
-#~ "❤️\n"
-#~ "I would really appreciate it."
-#~ msgstr ""
-#~ "Aquesta aplicacion es e demorarà totjorn liura e gratuita. Pasmens, "
-#~ "podètz mostrar un pauc d'amor en donant al desvolopaire.\n"
-#~ "❤️\n"
-#~ "O apreciariái plan."
-
-#~ msgid "Fixed:"
-#~ msgstr "Reglats :"
-
-#~ msgid "Login Manager Settings"
-#~ msgstr "Paramètres del gestionari de fenèstra de connexion"
-
-#, fuzzy, python-brace-format
-#~| msgctxt "Command-line output"
-#~| msgid "Applying GResource settings for Ubuntu …"
-#~ msgid "Applying GResource settings for {distro_name} …"
-#~ msgstr "Aplicacions des paramètres GResource per Ubuntu…"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Resetting GResource settings for Ubuntu …"
-#~ msgstr "Reïnicializacion dels paramètres de GResource per Ubuntu…"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
-#~ msgstr "Reïnicializacion dels paramètres GResource pels sistèma non-Ubuntu…"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Applying GResource settings for non-Ubuntu systems …"
-#~ msgstr "Aplicacion dels paramètres GResource pels sistèma non-Ubuntu…"
-
-#~ msgid "Added power settings"
-#~ msgstr "Paramètres d’alimentacion aponduts"
-
-#~ msgid "Added options to import/export settings in the global menu"
-#~ msgstr ""
-#~ "Apondre d’opcions per importar / exportar los paramètres al menú principal"
-
-#~ msgid "Added an option to enlarge welcome message"
-#~ msgstr "Apondon d’una opcion per agrandir lo messatge de benvenguda"
-
-#~ msgid "Added color to command-line output"
-#~ msgstr "Apondon d’una color pel resultat en linha de comanda"
-
-#~ msgid "Turned main window adaptive"
-#~ msgstr "Fenèstra principala ara adaptativa"
-
-#~ msgid "Turned pop-up dialogs adaptive"
-#~ msgstr "Bóstias de dialòg contextualas ara adaptativas"
-
-#~ msgid "Updated \"about\" window to the new style"
-#~ msgstr "Actualizacion de la fenèstra « A prepaus » cap a l’estil novèl"
-
-#~ msgid "Improved style of welcome message input field"
-#~ msgstr ""
-#~ "Melhorament de l’estil del camp de picada del messatge de benvenguda"
-
-#~ msgid "Fixed some typos"
-#~ msgstr "Correccions d’unas decas"
-
-#, fuzzy
-#~| msgid "Standard"
-#~ msgctxt "Cursor Size"
-#~ msgid "Non-Standard"
-#~ msgstr "Estandard"
-
-#~ msgid "Updated screenshots"
-#~ msgstr "Capturas d’ecran actualizadas"
-
-#~ msgid "Updated translations"
-#~ msgstr "Traduccions actualizadas"
-
-#~ msgid "A settings app for GNOME's Login Manager, GDM"
-#~ msgstr "Una aplicacion per parametrar lo gestionari de connexion GNOME, GDM"
-
-#~ msgid ""
-#~ "Warning: You will lose some settings after updating from v0.6 or any "
-#~ "earlier version to this or any later version."
-#~ msgstr ""
-#~ "Avertiment : perdretz d’unes paramètres aprèp la mesa a jorn a partir de "
-#~ "la v0.6 o mai anciana o superiora."
-
-#~ msgid "Added support for incomplete shell themes"
-#~ msgstr "Apondon de la presa en carga dels tèma de shell incomplets"
-
-#~ msgid ""
-#~ "Fixed: Cannot change login screen logo from Flatpak version of the app"
-#~ msgstr ""
-#~ "Corregit : cambiament impossibla de logotipe de l’ecran de verrolhatge "
-#~ "amb la version Flatpak de l’aplicacion"
-
-#~ msgid ""
-#~ "Prevent app launch when argument provided to `--verbosity` option is "
-#~ "invalid"
-#~ msgstr ""
-#~ "Evitar lo lançament de l’aplicacion quand l’argument donat a l’opcion `--"
-#~ "verbosity` es invalid"
-
-#~ msgid "Updated the info shown on app's software-store page"
-#~ msgstr "Pagina de la botiga amb info de l’aplicacion actualizada"
-
-#~ msgid "New App Icon that follows GNOME HIG"
-#~ msgstr "Icònas novèlas d’aplicacion per seguir GNOME HIG"
-
-#~ msgid "Only one instance of the app can be open at a time"
-#~ msgstr "Se pot sonque dobrir una instància de l’aplicacion al còp"
-
-#~ msgid "When applying settings, the app does not freeze anymore"
-#~ msgstr "En aplicant los paramètres, l’aplicacion s’immobiliza pas pus"
-
-#~ msgid "The app shows a \"Log Out\" dialog right after settings are applied"
-#~ msgstr ""
-#~ "L’aplicacion aficha una fenèstra amb « Se desconnectar » aprèp "
-#~ "l’aplicacion dels paramètres"
-
-#~ msgid ""
-#~ "Added new dialogs to show errors to the user instead of panicking on the "
-#~ "terminal"
-#~ msgstr ""
-#~ "Apondon de fenèstras novèlas per afichar las errors a l’utilizaire a la "
-#~ "plaça de crear d’error al terminal"
-
-#~ msgid ""
-#~ "When applying current display settings, scaling is also applied (may not "
-#~ "work on all systems)"
-#~ msgstr ""
-#~ "En aplicant la configuracion d’afichatge actuala, la mesa a l’escala se "
-#~ "realiza tanben (pòt arribar que foncione pas sus totes los sistèmas)"
-
-#~ msgid "The app is now DBusActivatable"
-#~ msgstr "L’aplicacion es ara DBusActivatable"
-
-#~ msgctxt "Missing Dependency"
-#~ msgid " • <b>GLib</b> (Developer Edition)"
-#~ msgstr " • <b>GLib</b> (Edicion pel desvelopament)"
-
-#~ msgid "Homepage"
-#~ msgstr "Pagina d’acuèlh"
-
-#~ msgid "User settings imported"
-#~ msgstr "Paramètres de l’utilizaire importats"
-
-#~ msgid "Miscellaneous"
-#~ msgstr "Divèrs"
-
-#~ msgid ""
-#~ "Fixed: Release info for version 1.0-beta.2 not shown in GNOME Software"
-#~ msgstr ""
-#~ "Corregit : donadas de version per 1.0-beta.2 s’afichan pas dins GNOME "
-#~ "Software"
-
-#~ msgid ""
-#~ "Fixed: Extracting default shell theme saved it directly to /usr/local/"
-#~ "share directory instead of /usr/local/share/themes"
-#~ msgstr ""
-#~ "Corregit : extraccion del tèma shell per defaut salvat dirèctament dins "
-#~ "usr/local/share directory instead a la plaça de /usr/local/share/themes"
-
-#~ msgid "Inverse Scrolling"
-#~ msgstr "Desfilament inversat"
-
-#, python-brace-format
-#~ msgid ""
-#~ "{level} is an invalid verbosity level. Accepted values are 0 to 5.\n"
-#~ "Assuming Verbosity level 4."
-#~ msgstr ""
-#~ "{level} es un nivèl de verbiositat invalid. Las valors acceptadas son de "
-#~ "0 a 5.\n"
-#~ "Consideram que lo nivèl es a 4."
-
-#~ msgid "Added:"
-#~ msgstr "Ajustat :"
-
-#~ msgid "Support for verbose/quiet mode"
-#~ msgstr "Presa en carga mòde verbiós/silenciós"
-
-#~ msgid "Support for setting manual verbosity level"
-#~ msgstr "Presa en carga del nivèl manual de verbiositat"
-
-#~ msgid ""
-#~ "Command-line options for verbose/qeiet mode and manual verbosity level"
-#~ msgstr ""
-#~ "Opcion de linha de comanda pel mòde verbiós/silenciós e nivèl manual de "
-#~ "verbiositat"
-
-#~ msgid "Command-line option --version"
-#~ msgstr "Opcion de linha de comanda --version"
-
-#~ msgid "Wider application window on first launch"
-#~ msgstr "Agrandir la fenèstra de l’aplicacion a la primièra aviada"
-
-#~ msgid "Welcome message could not contain single quotes"
-#~ msgstr "Lo messatge de benvenguda pòt pas conténer d’apostrofe sola"
-
-#~ msgid ""
-#~ "Login Manager (GDM) broke on systems with SELinux enabled (mainly Fedora)"
-#~ msgstr ""
-#~ "Lo gestionari de connexion (GDM) se copava sus de sistèma amb SELinux "
-#~ "activat (principalament Fedora)"
-
-#~ msgid ""
-#~ "Maximized or big application window looked bad (content was much smaller "
-#~ "than the window)"
-#~ msgstr ""
-#~ "La fenèstra maximizada marcava mal (lo contengut èra plan petit rapòrt a "
-#~ "la fenèstra)"
-
-#~ msgid ""
-#~ "Showed wrong destination directory/folder path while extracting default "
-#~ "shell theme"
-#~ msgstr ""
-#~ "Se vesiá un marrida camin d’accès de destinacion pendent l’extraccion del "
-#~ "tèma shell per defaut"
-
-#~ msgid ""
-#~ "Clicking 'Apply' did nothing if selected background image was deleted "
-#~ "before applying"
-#~ msgstr ""
-#~ "Clicar « Aplicar » fasiá pas res se l’imatge de rèireplan èra suprimida "
-#~ "abans aplicacion"
-
-#~ msgid "Clicking 'Apply' applied only some settings on Ubuntu"
-#~ msgstr "Clicar « Aplicar » aplicava sonque d’unes paramètres sus Ubuntu"
-
-#~ msgid "French"
-#~ msgstr "Francés"
-
-#~ msgid "Hebrew"
-#~ msgstr "Ebrèu"
-
-#~ msgid "Persian"
-#~ msgstr "Persian"
-
-#~ msgid "Dutch"
-#~ msgstr "Neerlandés"
-
-#~ msgid "German"
-#~ msgstr "Alemand"
-
-#~ msgid "Occitan"
-#~ msgstr "Occitan"
-
-#~ msgid "Spanish"
-#~ msgstr "Espanhòl"
-
-#~ msgid "Urdu"
-#~ msgstr "Ordo"
-
-#~ msgid ""
-#~ "Whether the chosen Shell theme should be overlayed on top of the default "
-#~ "shell theme."
-#~ msgstr "Indica se lo tèma deu se superpausar al tèma shell per defaut"
-
-#~ msgid "App Preferences"
-#~ msgstr "Preferéncias de l’aplicacion"
-
-#~ msgid "Shell Theme"
-#~ msgstr "Tèma Shell per defaut"
-
-#~ msgid "Overlay"
-#~ msgstr "Superposicion"
-
-#, fuzzy
-#~| msgid "Should the theme be overlayed on top of the default theme?"
-#~ msgid "What to overlay on top of the default theme?"
-#~ msgstr "Lo tèma deu se superpausar al tèma per defaut ?"
-
-#~ msgid "Resources Only"
-#~ msgstr "Ressorsas sonque"
-
-#~ msgid "Everything"
-#~ msgstr "Tot"
-
-#~ msgid "Apply Method"
-#~ msgstr "Aplicar lo metòde"
-
-#~ msgid "Overlay Resources"
-#~ msgstr "Ressorsas de superposicion"
-
-#~ msgid "Complete Overlay"
-#~ msgstr "Superposicion complèta"
-
-#~ msgid "Assuming Verbosity level 4."
-#~ msgstr "Nivèl de verbiositat entendut coma 4."
-
-#~ msgid "Added: Support for Ubuntu"
-#~ msgstr "Ajustat : presa en carga d’Ubuntu"
-
-#~ msgid "Fixed: Could not apply settings on some systems"
-#~ msgstr "Reglat : aplicacion impossibla dels paramètres sus d’unes sistèmas"
-
-#~ msgid ""
-#~ "Fixed: Could not change background-image/wallpaper if language is not "
-#~ "English"
-#~ msgstr ""
-#~ "Reglat : cambiament impossible del rèireplan se la lenga es pas l’anglés"
-
-#~ msgid "Fixed: A fatal bug"
-#~ msgstr "Reglat : anomalia critica"
-
-#~ msgid "Flatpak Support"
-#~ msgstr "Presa en carga de Flatpak"
-
-#~ msgid "Improved:"
-#~ msgstr "Melhorat :"
-
-#~ msgid "Support for Right-to-Left Languages"
-#~ msgstr "Presa en carga de las lengas RTL"
-
-#~ msgid "More Text got Translated"
-#~ msgstr "Mai de tèxtes traduches"
-
-#~ msgid "Login;"
-#~ msgstr "Login;"
-
-#~ msgid "Select"
-#~ msgstr "Seleccionar"
-
-#~ msgid "Touchpad Speed"
-#~ msgstr "Velocitat del pavat tactil"
-
-#~ msgid "updating backup of default theme ..."
-#~ msgstr "actualizacion de la salvagarda del tèma per defaut…"
-
-#~ msgid "restoring default theme from backup ..."
-#~ msgstr "restauracion del tèma per defaut de la salvagarda estant…"
+msgstr ""

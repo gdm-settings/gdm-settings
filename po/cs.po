@@ -5,13 +5,14 @@
 # vikdevelop <super-vik1@protonmail.com>, 2022, 2023, 2024.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Kryštof Černý <cleverline1mc@gmail.com>, 2024.
+# vikdevelop <vikdevelop@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-07-06 14:09+0000\n"
-"Last-Translator: Kryštof Černý <cleverline1mc@gmail.com>\n"
+"PO-Revision-Date: 2024-11-15 21:00+0000\n"
+"Last-Translator: vikdevelop <vikdevelop@proton.me>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
 "Language: cs\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -401,6 +402,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Pokud se vám tato aplikace líbí, zvažte prosím možnost přispět, abychom ji "
+"mohli dále vylepšovat.\n"
+"Díky! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -476,39 +480,39 @@ msgstr "vikdevelop https://github.com/vikdevelop"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Modrá"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Čajová"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Zelená"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Žlutá"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Oranžová"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Červená"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Růžová"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Fialová"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Břidlicová"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -702,16 +706,16 @@ msgid "Backing up default shell theme …"
 msgstr "Zálohování výchozího tématu shellu …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Barva textu"
+msgstr "Barva přízvuku"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"POZNÁMKA: Toto funguje pouze na GNOME 47 (nebo vyšší) s výchozím motivem "
+"shellu."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -994,7 +998,7 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Zakázat na externí myši"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1167,7 +1171,7 @@ msgstr "Hodiny"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Zobrazit datum"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
