@@ -1,3 +1,8 @@
+v5.0
+====
+* Fix: failed to extract shell theme
+* Fix: Wrong subproject argument gtk:demos
+
 v5.beta0
 ========
 * Fix: Failed to apply current display settings (scaling not working)
