@@ -41,7 +41,7 @@ while true; do
 done
 
 
-meson setup "${build_dir}" --prefix=/app --buildtype=plain
+meson setup "${build_dir}" --prefix=/app
 meson install -C "${build_dir}" --destdir="${temp_dir}"
 
 glib-compile-schemas "${app_dir}"/share/glib-2.0/schemas
