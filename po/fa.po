@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-09-11 10:09+0000\n"
+"PO-Revision-Date: 2024-11-28 01:00+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -221,7 +221,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "این که پیکان‌های نوار بالایی از کار بیفتند یا نه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
@@ -237,7 +237,7 @@ msgstr "رنگ متن نوار بالا"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "این که پس‌زمینهٔ نوار بالایی عوض شود یا نه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
@@ -296,11 +296,11 @@ msgstr "LEVEL"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "به کار انداختن حالت پرگو (نام مستعار برای ‬--verbosity=5‬)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "به کار انداختن حالت ساکت (نام مستعار برای ‪--verbosity=0‬)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
@@ -341,7 +341,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "وابستگی‌های ناموجود"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
@@ -360,7 +360,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "درخواست اعانه"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -371,7 +371,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "مایل نیستم"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
@@ -407,7 +407,7 @@ msgstr "تنظیمات با موفّقیت از پرونده بار شد"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "شکست در درون ریزی. پرونده نامعتبر"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
@@ -415,7 +415,7 @@ msgstr "تنظیمات با موفّقیت برون‌ریزی شد"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "شکست در برون ریزی. اجازه رد شد"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
@@ -445,39 +445,39 @@ msgstr ""
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "آبی"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "سبزآبی"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "سبز"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "زرد"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "نارنجی"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "قرمز"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "صورتی"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "ارغوانی"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "سنگی"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -498,7 +498,7 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "تنظیمات نمایشگر پیدا نشد"
 
 # در این رشته از نویسهٔ LRM استفاده شده است
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
@@ -610,11 +610,11 @@ msgstr "خروج"
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "درون ریختن از پروندهٔ {filename}"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "درون ریختن از ورودی استاندارد"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
@@ -638,7 +638,7 @@ msgstr ""
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "برون ریزی به {filename}"
 
 #: gdms/settings.py:229
 #, python-brace-format
@@ -654,17 +654,15 @@ msgstr ""
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "برون ریختن به خروجی استاندارد"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
 msgstr "در حال پشتیبان گیری از زمینهٔ پیش‌گزیدهٔ پوسته …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "رنگ متن"
+msgstr "رنگ لهجه"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
@@ -953,7 +951,7 @@ msgstr "صفحهٔ لمسی"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "از کار انداختن روی موشی خارجی"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1127,7 +1125,7 @@ msgstr "ساعت"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "نمایش تاریخ"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
