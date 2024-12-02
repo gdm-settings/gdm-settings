@@ -7,58 +7,64 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-02 21:00+0000\n"
+"Last-Translator: Yauhen <haxycGM@gmail.com>\n"
+"Language-Team: Belarusian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr ""
+msgstr "Назва тэмы"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr ""
+msgstr "Тып фону"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
+"Вызначае якім будзе фон GDM: выява (Image), колер (Color) або прадвызначаны "
+"(Default)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr ""
+msgstr "Фонавая выява"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "Файл выявы, якая выкарыстоўваецца ў якасці фону GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr ""
+msgstr "Дапасаванне фонавай выявы"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Спосаб дапасавання фонавая выявы."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Фонавы колер"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "Колер, які выкарыстоўваецца ў якасці фону GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr ""
+msgstr "Хуткасць указальніка мышы"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -66,72 +72,89 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Хуткасць указальніка для сэнсарнай панэлі. Дапушчальныя значэнні знаходзяцца "
+"ў дыяпазоне [-1..1] (ад «павольнай» да «хуткай»). Прадвызначанае сістэмнае "
+"значэнне – 0."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Калі ўключаны рэжым начнога святла"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Рэжым начнога святла мяняе колеравую тэмпературу экрана пры заходзе сонца "
+"або ў прадвызначаны час."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Тэмпература колераў экрана, калі ўключана"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Тэмпература ў Кельвінах, якая вызначае адценні экрана пры ўключэнні рэжыму "
+"начнога святла. Большыя значэнні адпавядаюць сіняму, а меншыя - чырвонаму."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Выкарыстоўваць усход і заход сонца"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Аўтаматычна вылічваць час усходу і заходу сонца ў адпаведнасці з бягучым "
+"месцазнаходжаннем."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "Гадзіна для часу пачатку"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"Калі ключ «schedule-automatic» адключаны, гэтая гадзіна выкарыстоўваецца ў "
+"часе пачатку."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Хвіліна для часу пачатку"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Калі ключ «schedule-automatic» адключаны, гэтая хвіліна выкарыстоўваецца ў "
+"часе пачатку."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "Гадзіна для часу заканчэння"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"Калі ключ «schedule-automatic» адключаны, гэтая гадзіна выкарыстоўваецца ў "
+"часе заканчэння."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Хвіліна для часу заканчэння"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Калі ключ «schedule-automatic» адключаны, гэтая хвіліна выкарыстоўваецца ў "
+"часе заканчэння."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Дзеянне кнопкі сілкавання"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -139,106 +162,118 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Дзеянне, якое трэба выканаць пры націсканні кнопкі сілкавання. Дзеянне "
+"цвёрда зададзена (і налада ігнаруецца) на віртуальных машынах (выключыць) і "
+"планшэтах (прыпыніць працу)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Уключаць профіль энергазберажэння, калі зарад батарэі нізкі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Аўтаматычна ўключаць профіль «power-saver» (энергазберажэнне) праз дэман "
+"power-profiles-daemon, калі зарад батарэі нізкі."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Прыцямніць экран пасля перыяду бяздзейнасці"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Ці прыцямняць экран для захавання энергіі калі камп'ютар нічога не робіць."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Ці адключаць экран пры бяздзейнасці"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"Ці павінен экран гаснуць дзеля энергазберажэння, калі на камп'ютары не "
+"выконваецца дзеянняў."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "Час, каб лічыць сеанс неактыўным"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "Час (хвілін) бяздзейнасці, пасля якога сеанс лічыцца неактыўным."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "Ці прыпыняць працу пры бяздзейнасці і працы ад батарэі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Час пераходу ў рэжым сну, калі камп'ютар сілкуецца ад батарэі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Час (хвілін) бяздзейнасці, пасля якога камп'ютар пры сілкаванне ад батарэі, "
+"павінен перайсці ў рэжым сну. Значэнне 0 азначае ніколі."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "Ці прыпыняць працу пры бяздзейнасці і працы ад электрасеткі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Час пераходу ў рэжым сну, калі камп'ютар сілкуецца ад электрасеткі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Час (хвілін) бяздзейнасці, пасля якога камп'ютар пры сілкаванне ад "
+"электрасеткі, павінен перайсці ў рэжым сну. Значэнне 0 азначае ніколі."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr ""
+msgstr "Ці ўжываць налады верхняй панэлі да вынятай тэмы"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "Ці адключыць стрэлкі на верхняй панэлі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "Ці адключыць скругленыя вуглы верхняй панэлі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "Ці змяняць колер тэксту на верхняй панэлі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Колер тэксту на верхняй панэлі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Ці змяняць фон верхняй панэлі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Колер фону верхняй панэлі"
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "Налады GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Наладзьце свой экран уваходу"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -246,53 +281,55 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Змяненне налад GDM; Ужыванне тэмы і фону, змяненне тэмы курсора, тэмы "
+"значкоў, налад начнога святла і шмат іншага."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Галоўнае акно (рэжым для камп'ютара)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Бакавая панэль (мабільны рэжым)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Налады выгляду (мабільны рэжым)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Паказаць адладачныя звесткі (у фармаце Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "Паказаць версію праграмы"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "Задаць узровень падрабязнасці ўручную (ад 0 да 5)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "УЗРОВЕНЬ"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Уключыць падрабязны рэжым (псеўданім --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Уключыць ціхі рэжым (псеўданім --verbosity=0)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "Няправільны ўзровень падрабязнасці {level}. Павінен быць ад 0 да 5."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -300,22 +337,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Каб праграма працавала належным чынам, <b>на галоўнай сістэме</b> павінна "
+"быць наступнае праграмнае забеспячэнне, але яго не ўсталявана."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Каб праграма працавала належным чынам, патрабуецца наступнае праграмнае "
+"забеспячэнне, але яно не ўсталявана."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -325,29 +366,34 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Націсніце <a href=\"{url}\">сюды</a>, каб даведацца як усталяваць гэтыя "
+"залежнасці."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Адсутныя залежнасці"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "ОК"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "Не знойдзены файл прадвызначанай тэмы абалонкі"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Праграме не ўдалося знайсці не зменены файл прадвызначанай тэмы абалонкі. "
+"Каб выправіць праблему, трэба пераўсталяваць пакет «gnome-shell-common» або "
+"«gnome-shell» package»."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Прапанова ахвяраваць"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -355,122 +401,125 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Калі вам падабаецца праграма, падумайце пра магчымасць ахвяравання, каб мы "
+"маглі і надалей паляпшаць яе.\n"
+"Дзякуй! ️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "Не цікава"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Ахвяраваць"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Налады перазагружаны"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Налады сеанса паспяхова загружаны"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Загрузка налад сеанса НЕ падтрымліваюцца ў Flatpak-версіі"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Налады паспяхова скінуты"
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Не ўдалося скінуць налады"
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "Імпартаваць"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Налады паспяхова імпартаваны з файла"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Не ўдалося імпартаваць. Няправільны файл"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Налады паспяхова экспартаваны"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Не ўдалося экспартаваць. Доступ забаронены"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Не ўдалося экспартаваць. Каталог з такой назвай ужо існуе"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "Аўтарскае права 2021-2023 Mazhar Hussain"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "Юрась Шумовіч <shumovichy@gmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Сіні"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Сіне-зялёны"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Зялёны"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Жоўты"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Аранжавы"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Чырвоны"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Ружовы"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Фіялетавы"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Сіне-шэры"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Бягучыя налады дысплэя ўжыты"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Не ўдалося ўжыць бягучыя налады дысплэя"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -480,154 +529,161 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Каб ужыць бягучыя налады дысплэя, патрабуецца файл '$XDG_CONFIG_HOME/"
+"monitors.xml', якога не існуе\n"
+"\n"
+"Каб яго аўтаматычна стварыць, адкрыйце «Налады» і змяніце там якія-небудзь "
+"параметры дысплэя."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Налады манітора не знойдзены"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "Прадвызначаная тэма абалонкі вынята ў '{folder}' пад назвай '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Не ўдалося выняць прадвызначаную тэму"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Выбраць файл"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Няма)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Выбраць"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Выявы"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Усе файлы"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Выбраць выяву"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Выгляд"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Шрыфты"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Верхняя панэль"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Гук"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Мыш і сэнсарная панэль"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Дысплэй"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Экран уваходу"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "Сілкаванне"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Інструменты"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Налады паспяхова ўжыты"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Не ўдалося ўжыць налады"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr ""
+msgstr "Не ўжыта. Выбраная фонавая выява больш не існуе. Выберыце зноў."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "Не ўжыта. Выбраная для лагатыпа выява больш не існуе. Выберыце зноў."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Сістэма можа выглядаць незвычайна пакуль вы не выйдзеце з яе і ўвойдзеце "
+"зноў або пакуль не выканаеце перазапуск."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Выйсці?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Скасаваць"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Выйсці"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Імпартаванне з файла'{filename}'"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Імпартаванне са стандартнага месца ўводу"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Не ўдалося разабраць імпартаваны файл"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Не ўдалося прачытаць імпартаваны файл, ён закадаваны не ў UTF-8"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Імпартаваны файл не мае раздзела '{section_name}'"
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
-msgstr ""
+msgstr "Імпартаваны файл не мае ключа '{key_name}' у раздзеле '{section_name}'"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Экспартаванне ў файл '{filename}'"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Немагчыма выканаць запіс у файл '{filename}'. Доступ забаронены"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -635,501 +691,505 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Немагчыма выканаць запіс у файл '{filename}'. Ужо існуе каталог з такой "
+"назвай"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Экспартаванне ў стандартнае месца вываду"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Рэзерваванне прадвызначанай тэмы абалонкі…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
-msgstr ""
+msgstr "Акцэнтны колер"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"Заўвага. Функцыя працуе толькі ў GNOME версіі 47 (і вышэй) з прадвызначанай "
+"тэмай."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "Тэмы"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "Абалонка"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "Значкі"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "Курсор"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "Фон"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "Тып"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "Прадвызначаная"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "Выява"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "Колер"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr ""
+msgstr "Выява, якая выкарыстоўваецца ў якасці фону"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Дапасаванне выявы"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Маштабаваць пад экран"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "Паўтараць"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr ""
+msgstr "Колер, які выкарыстоўваецца ў якасці фону"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Ужыць бягучыя налады дысплэя"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Раздзяляльнасць, частата абнаўлення, пазіцыя манітора і г.д."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Ужыць"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Начное святло"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Уключыць"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Расклад"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Ад заходу да ўсходу"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Вызначаецца ўручную"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Час"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "З"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "Да"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Колеравая тэмпература"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Шрыфт"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr ""
+msgstr "Згладжванне"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "Стандартнае"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr ""
+msgstr "Субпіксельнае (для LCD экранаў)"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "Няма"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr ""
+msgstr "Хінтынг"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr ""
+msgstr "Поўны"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr ""
+msgstr "Сярэдні"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr ""
+msgstr "Грубы"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Каэфіцыент маштабавання"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Абнавіць"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Загрузіць налады сеанса"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Скінуць налады"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Імпартаваць з файла"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Экспартаваць у файл"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Аб праграме"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Выйсці"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Ужыць"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Адключыць кнопкі перазапуску"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Адключыць спіс карыстальнікаў"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Уключыць лагатып"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Ці паказваць лагатып пад спісам карыстальнікаў"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Лагатып"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "Выява пад спісам карыстальнікаў"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Прывітальнае паведамленне"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Павялічыць"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Паведамленне"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Памер курсора"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Стандартны"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Сярэдні"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Вялікі"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Вельмі вялікі"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Самы вялікі"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Мыш"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Дапамога з перамяшчэннем указальніка"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Аўтаматычна"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "Адключана"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Уключана"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Натуральная прагортка"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "Прагортка перамяшчае змесціва, а не паласу прагорткі (інверсія)."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Хуткасць указальніка мышы"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "Сэнсарная панэль"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Адключаць, пры падлучэнні мышы"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Адключаць, калі набіраецца тэкст"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
-msgstr ""
+msgstr "Націсканне дотыкам"
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "Прагортка двума пальцамі"
 
 #: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "Правядзіце двума пальцамі па панэлі, каб гартаць."
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "Паводзіны кнопкі сілкавання"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "Нічога не рабіць"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "Прыпыненне працы"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "Гібернацыя"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Спытаць"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "Аўтаматычны рэжым энергазберажэння"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "Калі зарад акумулятара нізкі, уключаецца рэжым энергазберажэння."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "Прыцямненне экрана"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "Яркасць экрана паніжаецца, калі камп'ютар бяздзейнічае."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Выключэнне экрана"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "Ці выключаць экран пасля пазначанага перыяду бяздзейнасці."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "Затрымка"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "Час (хвілін) пасля якога экран выключаецца."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "Аўтаматычнае прыпыненне працы"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "Камп'ютар прыпыняе працу пасля пазначанага перыяду бяздзейнасці."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "Ад батарэі"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "Час (хвілін) пасля якога камп'ютар прыпыняе працу."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "Сілкуючыся ад электрасеткі"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Тэма"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "Узмацненне гуку звыш меры"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "Дазваляе павялічваць гучнасць вышэй за 100%"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "Гукі падзей"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "Гукі пры ўводзе"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Прадвызначаная тэма абалонкі"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "Уключаць налады верхняй панэлі"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Выняць прадвызначаную тэму абалонкі"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "Выняць"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Налады"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "Змяніць колер тэксту"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Колер тэксту"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "Колер тэксту на верхняй панэлі"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "Змяніць фонавы колер"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "Колер фону верхняй панэлі"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "Адключыць стрэлкі"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "Адключыць скругленыя вуглы"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "Спецыяльныя магчымасці"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "Заўсёды паказваць меню спецыяльных магчымасцей"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "Гадзіннік"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Паказваць дату"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
-msgstr ""
+msgstr "Паказваць дзень тыдня"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
-msgstr ""
+msgstr "Паказваць секунды"
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr ""
+msgstr "Фармат часу"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr ""
+msgstr "24 гадзіны"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
-msgstr ""
+msgstr "Паказваць зарад батарэі ў працэнтах"
