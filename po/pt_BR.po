@@ -6,21 +6,22 @@
 # Marcelo dos Santos Mafra <msmafra@gmail.com>, 2023.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2023.
 # delvani <inavleb@users.noreply.hosted.weblate.org>, 2024.
+# "Artur V. Neto" <arturvanderleineto@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-02-28 21:02+0000\n"
-"Last-Translator: delvani <inavleb@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
-"settings/language-names/pt_BR/>\n"
+"PO-Revision-Date: 2024-12-02 17:00+0000\n"
+"Last-Translator: \"Artur V. Neto\" <arturvanderleineto@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
+"gdm-settings/language-names/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -406,6 +407,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Se você gostou deste aplicativo, considere doar para que possamos continuar "
+"melhorando.\n"
+"Muito Obrigado! ❤️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -481,39 +485,39 @@ msgstr "BRAZILIAN TRANSLATION TEAM"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Azul"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Azul-petróleo"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Amarelo"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Laranja"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Vermelho"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Rosa"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Roxo"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Ardósia"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -710,16 +714,16 @@ msgid "Backing up default shell theme …"
 msgstr "Cópia de segurança do tema padrão da Shell …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Cor do texto"
+msgstr "Cor de destaque"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"NOTA: Isto vai funcionar apenas no GNOME 47 (ou superior) com o tema do "
+"shell padrão."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -1002,7 +1006,7 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Desabilitar ao usar Mouse Externo"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1175,7 +1179,7 @@ msgstr "Relógio"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Mostrar Data"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
