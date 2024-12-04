@@ -4,4 +4,4 @@ prefix = "@prefix@"
 version = '@version@'
 datadir = "@datadir@"
 localedir = "@localedir@"
-buildtype = '@buildtype@'
+debug = @debug@

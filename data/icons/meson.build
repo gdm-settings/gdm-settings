@@ -1,6 +1,6 @@
 hicolor_dir = get_option('datadir') / 'icons/hicolor'
 
-if get_option('buildtype') == 'release'
+if not get_option('debug')
   install_data('io.github.realmazharhussain.GdmSettings.svg',
     install_dir: hicolor_dir/'scalable/apps',
   )

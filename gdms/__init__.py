@@ -38,7 +38,7 @@ APP_NAME = _('GDM Settings')
 PROJECT_NAME = 'gdm-settings'
 
 VERSION = config.version
-BUILD_TYPE = config.buildtype
+DEBUG = config.debug
 APP_DATA_DIR = APP_DIR + config.datadir + '/' + PROJECT_NAME
 
 
