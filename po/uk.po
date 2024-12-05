@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-05 18:00+0000\n"
+"PO-Revision-Date: 2024-12-05 19:00+0000\n"
 "Last-Translator: volkov <volkov@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -113,7 +113,7 @@ msgstr "Використовувати схід та захід сонця"
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr "Прораховувати коли схід або захід сонця у вашому регіоні автоматично."
+msgstr "Автоматично прораховувати коли схід або захід сонця у вашому регіоні."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
@@ -131,7 +131,7 @@ msgstr "Хвилина початку часу"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Якщо «schedule-automatic» вимкнено, використовуйте цей час початку в "
+"Якщо “schedule-automatic” вимкнено, використовуйте цей час початку в "
 "хвилинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
@@ -141,7 +141,7 @@ msgstr "Година кінця часу"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Якщо «schedule-automatic» вимкнено, використовуйте цей кінцевий час в "
+"Якщо “schedule-automatic” вимкнено, використовуйте цей кінцевий час в "
 "годинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
@@ -151,12 +151,12 @@ msgstr "Хвилина кінця часу"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Якщо «schedule-automatic» вимкнено, використовуйте цей кінцевий час в "
+"Якщо “schedule-automatic” вимкнено, використовуйте цей кінцевий час в "
 "хвилинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr "Дія кнопки живлення"
+msgstr "Поведінка кнопки живлення"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -164,84 +164,88 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
-"Дія при натисканні кнопки живлення. Ця дія жорстко закодована (і ваш "
-"параметр ігорується) на віртуальних машинах (вимкнення живлення) і планшетах "
-"(режим сну)."
+"Поведінка при натисканні кнопки живлення. Ця дія вшита (ця опція ігнорується)"
+" на віртуальних машинах (вимкнення живлення) і планшетах (призупинення)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr "Ввімкнення профілю енергозбереження при низькому рівні заряду батареї"
+msgstr ""
+"Увімкнути режим заощадження енергії при низькому рівні заряду акумулятора"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
-"Автоматичне ввімкнення профілю \"Енергозбереження\" за допомоги power-"
-"profiles-daemon, якщо рівень заряду батареї низький."
+"Автоматичне увімкнення режиму \"Заощадження енергії\" за допомогою power-"
+"profiles-daemon, якщо рівень акумулятора низький."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr "Затемнення екрану після періоду бездіяльності"
+msgstr "Притлумлення екрану після періоду бездіяльності"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
-"Екран мусить бути затемненим для економії енергії, коли комп'ютер "
-"знаходиться в режимі очікування."
+"Екран мусить бути притлумлений для заощадження енергії, коли пристрій є "
+"бездіяльний."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr "Вимикати екран у режимі очікування"
+msgstr "Вимикати екран коли пристрій є бездіяльний"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Екран має бути вимкненим для економії енергії, коли комп'ютер перебуває в "
-"режимі очікування."
+"Екран має бути вимкненим для заощадження енергії, коли пристрій є "
+"бездіяльний."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr "Час до сесії вважається неактивним"
+msgstr "Час до того, коли пристрій вважається бездіяльним"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr "Кількість хвилин бездіяльності перед тим як вважати сеанс неактивним."
+msgstr ""
+"Кількість хвилин бездіяльності перед тим як вважати пристрій бездіяльним."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr "Призупиняти сеанс після періоду неактивності при живленні від батареї"
+msgstr ""
+"Призупиняти пристрій після періоду бездіяльності при живленні від акумулятора"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr "Тайм-аут для режиму сну при живленні від батареї"
+msgstr "Час перед призупиненням пристрою при живлені від акумулятора"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
-"Проміжок часу в хвилинах, протягом якого комп'ютер, що працює від батареї, "
-"повинен бути неактивним, перш ніж він перейде в режим сну. Значення 0 "
-"означає ніколи."
+"Проміжок часу в хвилинах, протягом якого пристрій, що працює від "
+"акумулятора, повинен бути бездіяльним, перш ніж його буде призупинено. "
+"Значення 0 означає не призупиняти."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr "Чи призупиняти, коли неактивний і підключений"
+msgstr ""
+"Чи призупиняти пристрій, коли він є бездіяльний і підключений до живлення"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr "Час очікування сплячого режиму для комп’ютера, коли його підключено"
+msgstr "Час очікування призупинення пристрою, коли він підключений до живлення"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
-"Час у хвилинах, протягом якого комп’ютер від джерела змінного струму повинен "
-"бути неактивним, перш ніж він перейде в режим сну. Значення 0 означає ніколи."
+"Час у хвилинах, протягом якого пристрій, під'єднаний до джерела змінного "
+"струму, повинен бути бездіяльним, перш ніж його буде призупинено. Значення 0 "
+"означає не призупиняти."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -265,7 +269,7 @@ msgstr "Колір тексту верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr "Чи змінювати фон верхньої панелі"
+msgstr "Чи змінювати тло верхньої панелі"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
@@ -277,7 +281,7 @@ msgstr "Налаштування GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr "Налаштуйте свій екран входу"
+msgstr "Налаштуйте ваш екран входу"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -285,33 +289,33 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Змінити налаштування GDM; Застосуйте тему та фон, змініть тему курсора, тему "
-"значків і налаштування нічного освітлення тощо."
+"Зміна налаштувань GDM (GNOME Display Manager); Застосування тем, курсора, "
+"значків, тла, налаштування нічного світла і інших параметрів."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr "Мазхар Хусейн"
+msgstr ""
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr "Головне вікно (Режим Робочого столу)"
+msgstr "Головне вікно (режим робочого столу)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr "Бічна панель (Mобільний Режим)"
+msgstr "Бічна панель (мобільний режим)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr "Налаштування зовнішнього вигляду (Mобільний Режим)"
+msgstr "Налаштування вигляду (мобільний режим)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr "Показати інформацію про налагодження (у форматі розмітки)"
+msgstr "Показати інформацію про налагодження (у форматі Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr "Показати версію програми"
+msgstr "Показати версію додатка"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -324,11 +328,11 @@ msgstr "РІВЕНЬ"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Увімкнути докладний режим (псевдонім --verbosity=5)"
+msgstr "Увімкнути докладний режим (псевдонім до --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Увімкнути тихий режим (псевдонім --verbosity=0)"
+msgstr "Увімкнути тихий режим (псевдонім до --verbosity=0)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
@@ -341,26 +345,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Щоб програма працювала належним чином, <b>на хост-системі</b> необхідно "
-"встановити такі програми, але їх не встановлено на хост-системі."
+"Щоб додаток працював належним чином, <b>на хост-системі</b> необхідно, щоб "
+"були встановлені такі програми, але вони не встановлені."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Для належної роботи цієї програми потрібне наступне програмне забезпечення, "
-"але воно не встановлено."
+"Для належної роботи цього додатку, необхідно, щоб були встановлені такі "
+"програми, але вони не встановлені."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr "<b>GDM</b>"
+msgstr ""
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr "<b>Полкіт</b>"
+msgstr ""
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -370,17 +374,17 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"Натисніть <a href=\"{url}\">тут</a>, щоб отримати інструкції щодо "
+"Клацніть <a href=\"{url}\">тут</a>, щоб отримати інструкції щодо "
 "встановлення цих залежностей у вашій системі."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr "Відсутні Залежності"
+msgstr "Відсутні залежності"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr "Так"
+msgstr "Добре"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -392,7 +396,7 @@ msgid ""
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
 "Додатку потрібен незмінений файл теми оболонки за замовчуванням, але він не "
-"знайшов його. Щоб вирішити проблему, переінсталюйте пакет 'gnome-shell-"
+"знайшов його. Щоб вирішити цю проблему, перевстановіть пакет 'gnome-shell-"
 "common' або 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
@@ -405,13 +409,13 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
-"Якщо вам подобається ця програма, зробіть пожертву, щоб ми могли "
-"продовжувати її вдосконалювати.\n"
-"дякую! ❤️️"
+"Якщо вам подобається цей додаток, зробіть пожертвування, щоб ми могли "
+"продовжувати його вдосконалювати.\n"
+"Дякуємо! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr "Не Зацікавлений"
+msgstr "Не зацікавлений"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
@@ -427,7 +431,7 @@ msgstr "Налаштування сеансу успішно завантаже�
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr "Налаштування сеансу завантаження НЕ підтримуються у версії Flatpak"
+msgstr "Завантаження налаштувань сеансу НЕ підтримуються у Flatpak версії"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
@@ -464,12 +468,12 @@ msgstr "Не вдалося експортувати. Каталог із так
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "Мазхар Хусейн"
+msgstr ""
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr "Фалес Бінда"
+msgstr ""
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -487,7 +491,7 @@ msgstr "Синій"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr "Чирок"
+msgstr "Синьо-зелений"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
@@ -511,19 +515,19 @@ msgstr "Рожевий"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr "Фіолетовий"
+msgstr "Пурпуровий"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr "Шифер"
+msgstr "Сизий"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr "Застосовано поточні налаштування дисплею"
+msgstr "Застосовано поточні налаштування екрану"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr "Не вдалося застосувати поточні налаштування дисплея"
+msgstr "Не вдалося застосувати поточні налаштування екрану"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -534,25 +538,25 @@ msgid ""
 "change some display options there."
 msgstr ""
 "Файл '$XDG_CONFIG_HOME/monitors.xml' потрібен для застосування поточних "
-"налаштувань відображення, але його не існує.\n"
+"налаштувань дисплеїв, але його не існує.\n"
 "\n"
 "Щоб створити цей файл автоматично, відкрийте «Налаштування» системи та "
-"змініть там деякі параметри відображення."
+"змініть там деякі параметри дисплею."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr "Налаштування Монітора Не Знайдено"
+msgstr "Налаштувань дисплею не знайдено"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "Тема оболонки за замовчуванням витягнута в '{folder}' як '{name}'"
+msgstr "Тема оболонки за замовчуванням видобути в '{folder}' як '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr "Не вдалося видобути тему за умовчанням"
+msgstr "Не вдалося видобути тему за замовченням"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
@@ -572,15 +576,15 @@ msgstr "Зображення"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr "Усі Файли"
+msgstr "Усі файли"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr "Оберіть Зображення"
+msgstr "Оберіть зображення"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr "Зовнішній вигляд"
+msgstr "Вигляд"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
@@ -588,7 +592,7 @@ msgstr "Шрифти"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr "Верхня Панель"
+msgstr "Верхня панель"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
@@ -596,7 +600,7 @@ msgstr "Звук"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Миша та Тачпад"
+msgstr "Миша та сенсорний пристрій"
 
 #: gdms/gui/window.py:118
 msgid "Display"
@@ -604,7 +608,7 @@ msgstr "Дисплей"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr "Екран Входу"
+msgstr "Екран входу"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
@@ -627,15 +631,15 @@ msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Не застосовано. Вибране фонове зображення більше не існує. Будь ласка! "
-"оберіть знову."
+"Не застосовано. Вибране зображення тла більше не існує. Будь ласка, оберіть "
+"знову!"
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Не застосовано. Вибране зображення логотипу більше не існує. Будь ласка! "
-"оберіть знову."
+"Не застосовано. Вибране зображення логотипу більше не існує. Будь ласка, "
+"оберіть знову!"
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
@@ -649,7 +653,7 @@ msgstr "Вийти?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr "Відмінити"
+msgstr "Скасувати"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
@@ -670,7 +674,7 @@ msgstr "Не вдалося проаналізувати імпортовани�
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr "Не вдалося прочитати файл імпорту. Не закодовано в UTF-8"
+msgstr "Не вдалося прочитати імпортований файл. Він не закодований в UTF-8"
 
 #: gdms/settings.py:199
 #, python-brace-format
@@ -718,8 +722,8 @@ msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
-"ПРИМІТКА. Це працюватиме лише в GNOME 47 (і вище) із темою оболонки «За "
-"замовчуванням»."
+"ПРИМІТКА: Це працюватиме лише в GNOME 47 (і вище) із темою оболонки "
+"«Default»."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -731,7 +735,7 @@ msgstr "Оболонка"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr "Значки"
+msgstr "Піктограми"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
@@ -739,7 +743,7 @@ msgstr "Курсор"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr "Фон"
+msgstr "Тло"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
