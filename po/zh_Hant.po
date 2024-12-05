@@ -4,13 +4,14 @@
 # happylittle7 <Lance20501@gmail.com>, 2024.
 # hugoalh <hugoalh@users.noreply.hosted.weblate.org>, 2024.
 # Peter Dave Hello <hsu@peterdavehello.org>, 2024.
+# hanyang cheng <cinxiafortis@tutanota.de>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-10-30 06:02+0000\n"
-"Last-Translator: hugoalh <hugoalh@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-12-05 05:00+0000\n"
+"Last-Translator: hanyang cheng <cinxiafortis@tutanota.de>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/gdm-settings/language-names/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -668,10 +669,8 @@ msgid "Backing up default shell theme …"
 msgstr "正在備份預設外殼主題…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "文字顏色"
+msgstr "強調色"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
