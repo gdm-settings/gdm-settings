@@ -7,13 +7,14 @@
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
 # Володимир Давибіда <mrvovavova17@gmail.com>, 2024.
 # Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
+# volkov <volkov@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-25 07:00+0000\n"
-"Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
+"PO-Revision-Date: 2024-12-05 18:00+0000\n"
+"Last-Translator: volkov <volkov@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -30,44 +31,44 @@ msgstr "Назва теми"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr "Тип фону"
+msgstr "Тип тла"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Чи повинен фон GDM бути зображенням, кольором або по замовчуванням."
+msgstr "Чи повинно тло GDM бути зображенням, кольором або по замовчуванням."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr "Фонове зображення"
+msgstr "Зображення тла"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr "Файл зі зображенням для фону GDM"
+msgstr "Файл зі зображенням для тла GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "Змінити фонове зображення"
+msgstr "Змінити зображення тла"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr "Стратегії налаштування фонового зображення."
+msgstr "Стратегія для коригування зображення тла."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr "Колір фону"
+msgstr "Колір тла"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr "Колір для фону GDM"
+msgstr "Колір для тла GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr "Швидкість вказівника миші"
+msgstr "Швидкість вказівника"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -75,9 +76,9 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
-"Швидкість вказівника миші для сенсорної панелі. Допустимі значення в "
-"діапазоні [-1..1] (з “неприскореного” до “швидкого”). Значення 0 по "
-"замовчуванню в системі."
+"Швидкість вказівника для сенсорного пристрою. Допустимі значення в діапазоні "
+"[-1..1] (від “неприскореного” до “швидкого”). Значення 0 по замовчуванню в "
+"системі."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -88,8 +89,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"Нічне світло змінює колір вашого екрану коли сонце зайшло, або за вказаним "
-"часом."
+"Нічне світло змінює температуру кольорів вашого екрану коли сонце зайшло, "
+"або за вказаним часом."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
