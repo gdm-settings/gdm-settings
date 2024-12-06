@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-05 20:05+0000\n"
-"Last-Translator: volkov <volkov@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2024-12-06 09:00+0000\n"
+"Last-Translator: Максим Горпиніч <mgorpinic2005@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -295,7 +295,7 @@ msgstr ""
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Мазхар Хусейн"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
@@ -359,12 +359,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -468,12 +468,12 @@ msgstr "Не вдалося експортувати. Каталог із так
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Мазхар Хусейн"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Фалес Бінда"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -631,15 +631,15 @@ msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Не застосовано. Вибране зображення тла більше не існує. Будь ласка, оберіть "
-"знову!"
+"Не застосовувався. Вибране фонове зображення більше не існує. Будь ласка! "
+"вибрати знову."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Не застосовано. Вибране зображення логотипу більше не існує. Будь ласка, "
-"оберіть знову!"
+"Не застосовувався. Вибране зображення логотипу більше не існує. Будь ласка! "
+"вибрати знову."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
@@ -657,7 +657,7 @@ msgstr "Скасувати"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr "Вийти"
+msgstr "вийти"
 
 #: gdms/settings.py:184
 #, python-brace-format
@@ -998,7 +998,7 @@ msgstr "Гортання переміщує вміст, а не перегляд
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr "Швидкість вказівника"
+msgstr "Швидкість покажчика"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -1026,11 +1026,11 @@ msgstr "Гортання двома пальцями на сенсорному �
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr "Поведінка кнопки живлення"
+msgstr "поведінка кнопки живлення"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr "Нічого"
+msgstr "Нічого не робити"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
@@ -1155,7 +1155,7 @@ msgstr "Змінити колір тла"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "Колір тла верхньої панелі"
+msgstr "Колір фону верхньої панелі"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
