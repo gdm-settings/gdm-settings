@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-09 10:00+0000\n"
+"PO-Revision-Date: 2024-12-06 15:00+0000\n"
 "Last-Translator: Jozef Gaal <preklady@mayday.sk>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -552,7 +552,7 @@ msgstr "Obrazovka"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Prihlasovacia obrazovka"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
@@ -670,11 +670,11 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "Ikony"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "Kurzor"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
@@ -726,7 +726,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Použiť"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
@@ -828,7 +828,7 @@ msgstr ""
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "O aplikácii"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
@@ -836,7 +836,7 @@ msgstr ""
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Použiť"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -876,32 +876,32 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Veľkosť kurzora"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Predvolená"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Stredná"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Veľká"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Väčšia"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Najväčšia"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
