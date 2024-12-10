@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-06 15:00+0000\n"
+"PO-Revision-Date: 2024-12-10 03:09+0000\n"
 "Last-Translator: Jozef Gaal <preklady@mayday.sk>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/sk/>\n"
@@ -856,7 +856,7 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
@@ -864,15 +864,15 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Uvítacia správa"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Zväčšiť"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Správa"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
@@ -905,7 +905,7 @@ msgstr "Najväčšia"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Myš"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
@@ -1034,7 +1034,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Téma"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
@@ -1066,11 +1066,11 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "Extrahovať"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "Vyladenia"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
@@ -1110,11 +1110,11 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "Hodiny"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Zobraziť dátum"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
@@ -1130,11 +1130,11 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr ""
+msgstr "AM/PM"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr ""
+msgstr "24 hodín"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
