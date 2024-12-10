@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-10 13:00+0000\n"
+"PO-Revision-Date: 2024-12-10 13:12+0000\n"
 "Last-Translator: volkov <volkov@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -468,12 +468,12 @@ msgstr "Не вдалося експортувати. Каталог із так
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "Мазхар Хусейн"
+msgstr ""
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr "Фалес Бінда"
+msgstr ""
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -631,7 +631,7 @@ msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Не застосовувався. Вибране фонове зображення більше не існує. Будь ласка! "
+"Не застосовувалося. Вибране зображення тла більше не існує. Будь ласка! "
 "вибрати знову."
 
 #: gdms/gui/window.py:151
@@ -657,7 +657,7 @@ msgstr "Скасувати"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr "вийти"
+msgstr "Вийти"
 
 #: gdms/settings.py:184
 #, python-brace-format
