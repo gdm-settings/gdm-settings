@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-06 09:00+0000\n"
-"Last-Translator: Максим Горпиніч <mgorpinic2005@gmail.com>\n"
+"PO-Revision-Date: 2024-12-10 13:00+0000\n"
+"Last-Translator: volkov <volkov@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -998,7 +998,7 @@ msgstr "Гортання переміщує вміст, а не перегляд
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr "Швидкість покажчика"
+msgstr "Швидкість вказівника"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
@@ -1026,11 +1026,11 @@ msgstr "Гортання двома пальцями на сенсорному �
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr "поведінка кнопки живлення"
+msgstr "Поведінка кнопки живлення"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr "Нічого не робити"
+msgstr "Нічого"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
@@ -1155,7 +1155,7 @@ msgstr "Змінити колір тла"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "Колір фону верхньої панелі"
+msgstr "Колір тла верхньої панелі"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
