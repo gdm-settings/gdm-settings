@@ -11,13 +11,14 @@
 # Amr Ibrahim <amribrahim1987@hotmail.com>, 2023.
 # Ettore Atalan <atalanttore@googlemail.com>, 2023.
 # Mathieu Graf <mathieu.graf@proton.me>, 2024.
+# Aircraft192 <finnwiggers2006@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-06-21 11:09+0000\n"
-"Last-Translator: Mathieu Graf <mathieu.graf@proton.me>\n"
+"PO-Revision-Date: 2024-12-20 15:01+0000\n"
+"Last-Translator: Aircraft192 <finnwiggers2006@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-rc\n"
+"X-Generator: Weblate 5.9.2-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -343,6 +344,7 @@ msgstr "Stillen Modus aktivieren (Alias von --verbosity=0)"
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Ungültiges Detaillevel {level}. Der Wert sollte zwischen 0 und 5 liegen."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -506,35 +508,35 @@ msgstr "Philipp Kiemle <philipp.kiemle@gmail.com>, 2022"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Blau"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Türkis"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Grün"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Gelb"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Rot"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Pink"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Lila"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
