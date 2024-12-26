@@ -4,13 +4,14 @@
 # Bima <abimanyusrisetyo@gmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Andika Triwidada <andika@gmail.com>, 2024.
+# Doctorredits_here <alkaf.alkaf2018@tutamail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-10-23 11:15+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"PO-Revision-Date: 2024-12-26 12:00+0000\n"
+"Last-Translator: Doctorredits_here <alkaf.alkaf2018@tutamail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/id/>\n"
 "Language: id\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -397,6 +398,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Jika Anda menyukai aplikasi ini, mohon pertimbangkan untuk berdonasi agar "
+"kami dapat terus meningkatkannya.\n"
+"Terima kasih! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -472,39 +476,39 @@ msgstr "Abimanyu Sri Setyo"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Biru"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Biru kehijauan"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Hijau"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Kuning"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Merah"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Pink"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Ungu"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Batu tulis"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -701,16 +705,16 @@ msgid "Backing up default shell theme …"
 msgstr "Mencadangkan tema shell default …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Warna Teks"
+msgstr "Warna Aksen"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"CATATAN: Ini hanya akan bekerja pada GNOME 47 (dan di atasnya) dengan tema "
+"shell 'Default'."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -993,7 +997,7 @@ msgstr "Panel sentuh"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Nonaktifkan pada Mouse Eksternal"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1166,7 +1170,7 @@ msgstr "Jam"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Tanggal Pertunjukan"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
