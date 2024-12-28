@@ -7,58 +7,62 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-28 10:00+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr ""
+msgstr "கருப்பொருள் பெயர்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr ""
+msgstr "பின்னணி வகை"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
+"சி.டி.எம் பின்னணி ஒரு படம், வண்ணம் அல்லது இயல்புநிலையாக இருக்க வேண்டுமா."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr ""
+msgstr "பின்னணி படம்"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "சி.டி.எம் பின்னணியாகப் பயன்படுத்த படக் கோப்பு"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr ""
+msgstr "பின்னணி பட சரிசெய்தல்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "பின்னணி படத்தை சரிசெய்வதற்கான உத்தி."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "பின்னணி நிறம்"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "சி.டி.எம் பின்னணியாகப் பயன்படுத்த வேண்டிய வண்ணம்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr ""
+msgstr "சுட்டிக்காட்டி விரைவு"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -66,72 +70,84 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"டச்பேடிற்கான சுட்டிக்காட்டி விரைவு. ஏற்றுக்கொள்ளப்பட்ட மதிப்புகள் [-1..1] வரம்பில் உள்ளன "
+"(“அங்கீகரிக்கப்படாதது” முதல் “விரைவான” வரை). 0 இன் மதிப்பு என்பது கணினி இயல்புநிலை."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "இரவு ஒளி பயன்முறை இயக்கப்பட்டிருந்தால்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"இரவு ஒளி பயன்முறை சூரியன் குறைந்துவிட்டால் அல்லது முன்னமைக்கப்பட்ட நேரங்களில் உங்கள் "
+"காட்சியின் வண்ண வெப்பநிலையை மாற்றுகிறது."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "இயக்கப்பட்டிருக்கும் போது காட்சியின் வெப்பநிலை"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"கெல்வினில் இந்த வெப்பநிலை இரவு ஒளி பயன்முறை இயக்கப்பட்டிருக்கும் போது திரை டோன்களை மாற்ற "
+"பயன்படுகிறது. அதிக மதிப்புகள் ப்ளூ, குறைந்த சிவப்பு."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "சூரிய தோன்றுகை மற்றும் சூரிய மறைவு பயன்படுத்தவும்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"தற்போதைய இடத்திலிருந்து தானாகவே சூரிய தோன்றுகை மற்றும் சூரிய மறைவு நேரங்களைக் "
+"கணக்கிடுங்கள்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "தொடக்க நேரத்தின் மணி"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"“அட்டவணை-தானியங்கி” முடக்கப்பட்டால், இந்த தொடக்க நேரத்தை மணிநேரங்களில் பயன்படுத்தவும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "தொடக்க நேரத்தின் மணித்துளி"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"“அட்டவணை-தானியங்கி” முடக்கப்பட்டால், இந்த தொடக்க நேர நிமிடங்களைப் பயன்படுத்தவும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "இறுதி நேர மணி"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"“அட்டவணை-தானியங்கி” முடக்கப்பட்டால், இந்த இறுதி நேரத்தை மணிநேரங்களில் பயன்படுத்தவும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "இறுதி நேரத்தின் மணித்துளி"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"“அட்டவணை-தானியங்கி” முடக்கப்பட்டால், இந்த இறுதி நேர நிமிடங்களைப் பயன்படுத்தவும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "பவர் பொத்தான் செயல்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -139,106 +155,119 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"கணினி ஆற்றல் பொத்தானை அழுத்தும்போது எடுக்க வேண்டிய நடவடிக்கை. இந்த நடவடிக்கை மெய்நிகர் "
+"இயந்திரங்கள் (பவர் ஆஃப்) மற்றும் டேப்லெட்டுகள் (இடைநீக்கம்) ஆகியவற்றில் கடின குறியீட்டு (மற்றும்"
+" அமைப்பு புறக்கணிக்கப்பட்டது)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "பேட்டரி குறைவாக இருக்கும்போது பவர்-சேவ் சுயவிவரத்தை இயக்கவும்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"பேட்டரி குறைவாக இருந்தால் பவர்-ப்ரொஃபைல்கள்-டெய்மனைப் பயன்படுத்தி \"பவர்-சேவர்\" "
+"சுயவிவரத்தை தானாக இயக்கவும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "செயலற்ற காலத்திற்குப் பிறகு திரையை மங்கச் செய்யுங்கள்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"கணினி சும்மா இருக்கும்போது சக்தியைச் சேமிக்க திரை மங்கலாக இருக்க வேண்டும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "அமர்வு சும்மா இருக்கும்போது வெற்று திரை வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"கணினி சும்மா இருக்கும்போது சக்தியைச் சேமிக்க திரை வெறுமனே இருக்க வேண்டும்."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "அமர்வுக்கு முந்தைய நேரம் சும்மா கருதப்படுகிறது"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "அமர்வுக்கு முன் செயலற்ற நிமிடங்களின் எண்ணிக்கை சும்மா கருதப்படுகிறது."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
 msgstr ""
+"செயலற்ற போது இடைநீக்கம் செய்ய வேண்டுமா மற்றும் பேட்டரியைப் பயன்படுத்துவதா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "பேட்டரியில் இருக்கும்போது கணினிக்கான தூக்க நேரம் முடிந்தது"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
+"நிமிடங்களில் நேரத்தின் அளவு பேட்டரி சக்தியில் உள்ள கணினி தூங்குவதற்கு முன் செயலற்றதாக "
+"இருக்க வேண்டும். 0 இன் மதிப்பு என்பது ஒருபோதும் இல்லை."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr ""
+msgstr "செயலற்ற மற்றும் செருகப்பட்டபோது இடைநீக்கம் செய்ய வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "செருகும்போது கணினிக்கான தூக்க நேரம் முடிந்தது"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"நிமிடங்களில் உள்ள நேரம் ஏசி பவர் கணினி தூங்குவதற்கு முன் செயலற்றதாக இருக்க வேண்டும். 0 இன்"
+" மதிப்பு என்பது ஒருபோதும் இல்லை."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
 msgstr ""
+"பிரித்தெடுக்கப்பட்ட கருப்பொருளுக்கு டாப் பார் மாற்றங்களை பயன்படுத்தலாமா?"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "டாப் பார் அம்புகளை முடக்க வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "டாப் பார் வட்டமான மூலைகளை முடக்க வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "டாப் பார் உரை நிறத்தை மாற்ற வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "மேல் பார் உரை நிறம்"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "டாப் பார் பின்னணியை மாற்ற வேண்டுமா"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "மேல் பார் பின்னணி நிறம்"
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "சி.டி.எம் அமைப்புகள்"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "உங்கள் உள்நுழைவு திரையைத் தனிப்பயனாக்குங்கள்"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -246,53 +275,55 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"சி.டி.எம் அமைப்புகளை மாற்றவும்; கருப்பொருள் மற்றும் பின்னணியைப் பயன்படுத்துங்கள், கர்சர் "
+"கருப்பொருள், படவுரு கருப்பொருள் மற்றும் இரவு ஒளி அமைப்புகளை மாற்றவும்."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "மசர் உசேன்"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "முதன்மையான சாளரம் (டெச்க்டாப் பயன்முறை)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "பக்கப்பட்டி (மொபைல் பயன்முறை)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "தோற்ற அமைப்புகள் (மொபைல் பயன்முறை)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "பிழைத்திருத்த தகவலைக் காட்டு (மார்க் பேரூர் வடிவத்தில்)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "பயன்பாட்டு பதிப்பைக் காட்டு"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "சொற்களஞ்சியம் அளவை கைமுறையாக அமைக்கவும் (0 முதல் 5 வரை)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "நிலை"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "வாய்மொழி பயன்முறையை இயக்கவும் (--verbosity = 5 இன் மாற்றுப்பெயர்)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "அமைதியான பயன்முறையை இயக்கவும் (--verbosity = 0 இன் மாற்றுப்பெயர்)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "தவறான சொற்களஞ்சியம் நிலை {level}. 0, 5, அல்லது இடையில் இருக்க வேண்டும்."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -300,22 +331,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"இந்த பயன்பாடு சரியாக செயல்பட புரவலன் சிச்டத்தில் <b> இல் பின்வரும் நிரல்கள் நிறுவப்பட "
+"வேண்டும் </b> அவை புரவலன் கணினியில் நிறுவப்படவில்லை."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"இந்த பயன்பாட்டிற்கு சரியாக செயல்பட பின்வரும் மென்பொருள் தேவைப்படுகிறது, ஆனால் அவை "
+"நிறுவப்படவில்லை."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b> சி.டி.எம் </b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b> போல்கிட் </b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -325,29 +360,34 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"உங்கள் கணினியில் இந்த சார்புகளை எவ்வாறு நிறுவுவது என்பதற்கான வழிமுறைகளுக்கு </a> இங்கே "
+"</a> இங்கே <a href = \"{url}\"> என்பதைக் சொடுக்கு செய்க."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "சார்புகளைக் காணவில்லை"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "சரி"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "இயல்புநிலை செல் கருப்பொருள் கோப்பு இழந்தது"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"பயன்பாட்டிற்கு தேவை, ஆனால் மாற்றப்படாத இயல்புநிலை செல் கருப்பொருள் கோப்பைக் கண்டுபிடிக்க "
+"முடியவில்லை. சிக்கலை சரிசெய்ய, 'க்னோம்-செல்-காமன்' அல்லது 'க்னோம்-செல்' தொகுப்பை மீண்டும் "
+"நிறுவவும்."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "நன்கொடை கோரிக்கை"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -355,122 +395,125 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"இந்த பயன்பாட்டை நீங்கள் விரும்பினால், தயவுசெய்து நன்கொடை அளிப்பதைக் கவனியுங்கள், இதன்மூலம் "
+"நாங்கள் அதை மேம்படுத்திக் கொள்ள முடியும்.\n"
+" நன்றி! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "ஆர்வம் இல்லை"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "நன்கொடை"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr ""
+msgstr "அமைப்புகள் மீண்டும் ஏற்றப்பட்டன"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "அமர்வு அமைப்புகள் வெற்றிகரமாக ஏற்றப்பட்டன"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "சுமை அமர்வு அமைப்புகள் பிளாட்பேக் பதிப்பில் ஆதரிக்கப்படவில்லை"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "அமைப்புகளை வெற்றிகரமாக மீட்டமைக்கவும்"
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "அமைப்புகளை மீட்டமைக்கத் தவறிவிட்டது"
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "இறக்குமதி"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "அமைப்புகள் வெற்றிகரமாக கோப்பிலிருந்து இறக்குமதி செய்யப்பட்டன"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "இறக்குமதி செய்யத் தவறிவிட்டது. கோப்பு தவறானது"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "அமைப்புகள் வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டன"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "ஏற்றுமதி செய்யத் தவறிவிட்டது. இசைவு மறுக்கப்பட்டது"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "ஏற்றுமதி செய்யத் தவறிவிட்டது. அந்த பெயருடன் ஒரு அடைவு ஏற்கனவே உள்ளது"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "மசர் உசேன்"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "தலேச் பிண்டே"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "பதிப்புரிமை 2021-2023 மசார் உசைன்"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "மொழிபெயர்ப்பாளர்-வரவு"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "நீலம்"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "டீல்"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "பச்சை"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "மஞ்சள்"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "ஆரஞ்சு"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "சிவப்பு"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "இளஞ்சிவப்பு"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "ஊதா"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "ச்லேட்"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "தற்போதைய காட்சி அமைப்புகள்"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "தற்போதைய காட்சி அமைப்புகளைப் பயன்படுத்துவதில் தோல்வி"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -480,10 +523,15 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"தற்போதைய காட்சி அமைப்புகளைப் பயன்படுத்துவதற்கு '$ XDG_CONFIG_HOME/MONITORS.XML' "
+"கோப்பு தேவை, ஆனால் அது இல்லை.\n"
+"\n"
+" அந்த கோப்பை தானாக உருவாக்க, கணினி 'அமைப்புகளை' திறந்து சில காட்சி விருப்பங்களை "
+"மாற்றவும்."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "அமைப்புகள் காணப்படவில்லை"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -491,143 +539,152 @@ msgstr ""
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
+"இயல்புநிலை செல் கருப்பொருள் '{folder}' என '{name}' என பிரித்தெடுக்கப்பட்டது"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "இயல்புநிலை கருப்பொருளைப் பிரித்தெடுப்பதில் தோல்வி"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "கோப்பைத் தேர்வுசெய்க"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(எதுவுமில்லை)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "தேர்வு"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "படங்கள்"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "அனைத்து கோப்புகள்"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "படத்தைத் தேர்வுசெய்க"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "தோற்றம்"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "எழுத்துருக்கள்"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "மேல் பட்டி"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "ஒலி"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "மவுச் & டச்பேட்"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "காட்சி"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "உள்நுழைவு திரை"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "விசை"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "கருவிகள்"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "அமைப்புகள் வெற்றிகரமாக பயன்படுத்தப்படுகின்றன"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "அமைப்புகளைப் பயன்படுத்துவதில் தோல்வி"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"விண்ணப்பிக்கவில்லை. தேர்ந்தெடுக்கப்பட்ட பின்னணி படம் இனி இல்லை. தயவுசெய்து! மீண்டும் தேர்வு "
+"செய்யவும்."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"விண்ணப்பிக்கவில்லை. தேர்ந்தெடுக்கப்பட்ட லோகோ படம் இனி இல்லை. தயவுசெய்து! மீண்டும் தேர்வு "
+"செய்யவும்."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"நீங்கள் மீண்டும் பதிவுசெய்யும் அல்லது மறுதொடக்கம் செய்யும் வரை கணினி வித்தியாசமாக/தரமற்றதாகத்"
+" தோன்றலாம்."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "வெளியேறு?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "ரத்துசெய்"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "விடுபதிகை"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "'{filename}' கோப்பிலிருந்து இறக்குமதி செய்தல்"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "நிலையான உள்ளீட்டிலிருந்து இறக்குமதி செய்தல்"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "இறக்குமதி கோப்பை அலசத் தவறிவிட்டது"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
+"இறக்குமதி கோப்பைப் படிக்கத் தவறிவிட்டது. யுடிஎஃப் -8 இல் குறியாக்கம் செய்யப்படவில்லை"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "இறக்குமதி செய்யப்பட்ட கோப்பில் '{section_name}' பிரிவு இல்லை"
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"இறக்குமதி செய்யப்பட்ட கோப்பில் '{key_name}' பிரிவில் '{section_name}' இல்லை"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "'{filename}' கோப்புக்கு ஏற்றுமதி செய்தல்"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "'{filename}' கோப்புக்கு எழுத முடியாது. இசைவு மறுக்கப்பட்டது"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -635,501 +692,504 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"'{filename}' கோப்புக்கு எழுத முடியாது. அதே பெயருடன் ஒரு அடைவு ஏற்கனவே உள்ளது"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "நிலையான வெளியீட்டிற்கு ஏற்றுமதி"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "இயல்புநிலை செல் கருப்பொருள் காப்புப் பிரதி எடுக்கிறது…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
-msgstr ""
+msgstr "உச்சரிப்பு நிறம்"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"குறிப்பு: இது 'இயல்புநிலை' செல் கருப்பொருளுடன் க்னோம் 47 (மற்றும் மேலே) மட்டுமே வேலை "
+"செய்யும்."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "கருப்பொருள்கள்"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "ஓடு"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "சின்னங்கள்"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "கர்சர்"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "பின்னணி"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "வகை"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "இயல்புநிலை"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "படம்"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "நிறம்"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr ""
+msgstr "பின்னணியாகப் பயன்படுத்த வேண்டிய படம்"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "பட சரிசெய்தல்"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "திரைக்கு பொருந்தும்"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "மீண்டும்"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr ""
+msgstr "பின்னணியாகப் பயன்படுத்த வேண்டிய வண்ணம்"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "தற்போதைய காட்சி அமைப்புகளைப் பயன்படுத்துங்கள்"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "தீர்மானம், புதுப்பித்தல் வீதம், கண்காணிப்பு நிலைகள் போன்றவை."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "இடு"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "இரவு ஒளி"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "இயக்கு"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "அட்டவணை"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "சூரிய உதயத்திற்கு சூரிய மறைவு"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "கையேடு அட்டவணை"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "பெருக்கல்"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "இருந்து"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "பெறுநர்"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "வண்ண வெப்பநிலை"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "எழுத்துரு"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr ""
+msgstr "ஆன்டிலிசிங்"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "தரநிலை"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr ""
+msgstr "சப் படப்புள்ளி"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "எதுவுமில்லை"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr ""
+msgstr "குறிப்பு"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr ""
+msgstr "முழு"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr ""
+msgstr "சராசரி"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr ""
+msgstr "லேசான"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr ""
+msgstr "அளவிடுதல் காரணி"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "புதுப்பிப்பு"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "அமர்வு அமைப்புகளை ஏற்றவும்"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "அமைப்புகளை மீட்டமைக்கவும்"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "கோப்பிலிருந்து இறக்குமதி"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "கோப்புக்கு ஏற்றுமதி"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "பற்றி"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "வெளியேறு"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Aplay"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "மறுதொடக்கம் பொத்தான்களை முடக்கு"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "பயனர் பட்டியலை முடக்கு"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "லோகோவை இயக்கவும்"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "பயனர் பட்டியலுக்குக் கீழே ஒரு லோகோவைக் காட்ட வேண்டுமா"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "சின்னம்"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "பயனர் பட்டியலுக்குக் கீழே காண்பிக்க வேண்டிய படம்"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "வரவேற்பு செய்தி"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "பெரிதாக்கு"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "செய்தி"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "கர்சர் அளவு"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "இயல்புநிலை"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "சராசரி"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "பெரிய"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "பெரியது"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "பெரிய"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "சுட்டி"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "சுட்டிக்காட்டி முடுக்கம்"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "தானியங்கி"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "முடக்கப்பட்டது"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "இயக்கப்பட்டது"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "இயற்கை ச்க்ரோலிங்"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "ச்க்ரோலிங் உள்ளடக்கத்தை நகர்த்துகிறது, பார்வை அல்ல."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr ""
+msgstr "சுட்டிக்காட்டி விரைவு"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "டச்பேட்"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "வெளிப்புற சுட்டியில் முடக்கு"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr ""
+msgstr "தட்டச்சு செய்யும் போது முடக்கு"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
-msgstr ""
+msgstr "சொடுக்கு செய்ய தட்டவும்"
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "இரண்டு விரல் ச்க்ரோலிங்"
 
 #: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "இரண்டு விரல்களால் ச்வைப் செய்வதன் மூலம் உருட்டவும்."
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "ஆற்றல் பொத்தான் நடத்தை"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "எதுவும் செய்ய வேண்டாம்"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "இடைநீக்கம்"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "ஐபர்னேட்"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "கேளுங்கள்"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "தானியங்கி ஆற்றல் சேமிப்பாளர்"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "பேட்டரி குறைவாக இருக்கும்போது பவர் சேவர் பயன்முறையை இயக்குகிறது."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "மங்கலான திரை"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "கணினி செயலற்ற நிலையில் இருக்கும்போது திரை பிரகாசத்தை குறைக்கிறது."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "திரையை அணைக்கவும்"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "செயலற்ற காலத்திற்குப் பிறகு திரையை அணைக்க வேண்டுமா."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "சுணக்கம்"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "சில நிமிடங்களில் திரை அணைக்கப்படும் நேரம்."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "தானியங்கி இடைநீக்கம்"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "செயலற்ற காலத்திற்குப் பிறகு கணினியை இடைநிறுத்துகிறது."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "பேட்டரி சக்தியில்"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "கணினி இடைநிறுத்தப்படும் நிமிடங்களில் நேரம்."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "செருகும்போது"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "கருப்பொருள்"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "ஓவர் பெருக்கம்"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "100% க்கு மேல் அளவை உயர்த்த அனுமதிக்கவும்"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "நிகழ்வு ஒலிகள்"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "உள்ளீட்டு பின்னூட்ட ஒலிகள்"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "இயல்புநிலை செல் கருப்பொருள்"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr ""
+msgstr "டாப் பார் மாற்றங்களைச் சேர்க்கவும்"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "இயல்புநிலை செல் கருப்பொருள் பிரித்தெடுக்கவும்"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "பிரித்தெடுக்கவும்"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr ""
+msgstr "மாற்றங்கள்"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr ""
+msgstr "உரை நிறத்தை மாற்றவும்"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "உரை நிறம்"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr ""
+msgstr "மேல் பட்டியில் உரையின் நிறம்"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr ""
+msgstr "பின்னணி நிறத்தை மாற்றவும்"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr ""
+msgstr "டாப் பார் பின்னணியின் நிறம்"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "அம்புகளை முடக்கு"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "வட்டமான மூலைகளை முடக்கு"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "அணுகல்"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "அணுகல் மெனுவை எப்போதும் காண்பி"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "கடிகை"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "தேதியைக் காட்டு"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
-msgstr ""
+msgstr "வார நாள் காட்டு"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
-msgstr ""
+msgstr "விநாடிகளைக் காட்டு"
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr ""
+msgstr "நேர வடிவம்"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr ""
+msgstr "Am/pm"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr ""
+msgstr "24 மணி நேரம்"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
-msgstr ""
+msgstr "பேட்டரி சதவீதத்தைக் காட்டு"
