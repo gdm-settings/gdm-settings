@@ -5,7 +5,7 @@ from gi.repository import Adw
 from gi.repository import Gtk
 from gi.repository import GObject
 
-from gdms import APP_NAME, APP_ID, BUILD_TYPE
+from gdms import APP_NAME, APP_ID, DEBUG
 from gdms.utils import BackgroundTask, GProperty, GSettings
 from gdms.cmd import Command
 from gdms.gresource import UbuntuGdmGresourceFile, BackgroundImageNotFoundError
@@ -58,7 +58,7 @@ class GdmSettingsWindow (Adw.ApplicationWindow):
     def __init__ (self, application, **props):
         super().__init__(**props)
 
-        if BUILD_TYPE != 'release':
+        if DEBUG:
             self.add_css_class('devel')
 
         self.application = application

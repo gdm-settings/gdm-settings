@@ -10,7 +10,7 @@ configure_file(
     'version': meson.project_version(),
     'datadir': get_option('prefix') / get_option('datadir'),
     'localedir': get_option('prefix') / get_option('localedir'),
-    'buildtype': get_option('buildtype'),
+    'debug': get_option('debug'),
   }),
 )
 
