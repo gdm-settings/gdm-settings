@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # oussaid1 <oussaid.abdellatif@gmail.com>, 2022.
 # Ibrahim Muhammad <ebraheem010@gmail.com>, 2022.
-# Abdullah Albaroty <albaroty@gmail.com>, 2024.
+# Abdullah Albaroty <albaroty@gmail.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-13 16:00+0000\n"
+"PO-Revision-Date: 2025-01-18 04:00+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -150,6 +150,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"الإجراء الذي يجب اتخاذه عند الضغط على زر تشغيل النظام. يتم برمجة هذا الإجراء "
+"بشكل ثابت (ويتم تجاهل الإعداد) على الأجهزة الافتراضية (إيقاف التشغيل) "
+"والأجهزة اللوحية (تعليق)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -160,32 +163,36 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"تمكين ملف تعريف \"موفر الطاقة\" تلقائيًا باستخدام power-profiles-daemon إذا "
+"كانت البطارية منخفضة."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "تعتيم الشاشة بعد فترة من عدم النشاط"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"إذا كان يجب تعتيم الشاشة لتوفير الطاقة عندما يكون الكمبيوتر في وضع الخمول."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "ما إذا كانت الشاشة فارغة عندما تكون الجلسة خاملة"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
+"إذا كان يجب أن تكون الشاشة فارغة لتوفير الطاقة عندما يكون الكمبيوتر خاملاً."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
-msgstr ""
+msgstr "الوقت الذي يسبق الجلسة يعتبر خاملاً"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
 msgid ""
 "The number of minutes of inactivity before the session is considered idle."
-msgstr ""
+msgstr "عدد دقائق عدم النشاط قبل اعتبار الجلسة خاملة."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
@@ -667,27 +674,27 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "السمات"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "الشل"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "الأيقونات"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "المؤشر"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "الخلفية"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "النوع"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
@@ -695,11 +702,11 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "الصورة"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "اللون"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
@@ -731,7 +738,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "طبق"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
@@ -739,11 +746,11 @@ msgstr ""
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "مكن"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "الجدول الزمني"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
@@ -755,17 +762,17 @@ msgstr ""
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "الأوقات"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "من"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "إلى"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
@@ -773,15 +780,15 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "الخط"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr ""
+msgstr "التنعيم"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "قياسي"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
@@ -789,23 +796,23 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "بدون"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr ""
+msgstr "التلميح"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr ""
+msgstr "كامل"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr ""
+msgstr "متوسط"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr ""
+msgstr "خفيف"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
@@ -813,7 +820,7 @@ msgstr ""
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "حدث"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
@@ -833,11 +840,11 @@ msgstr ""
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "حول"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "إنهاء"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
@@ -942,7 +949,7 @@ msgstr "سُرعة المؤشر"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "لوح اللمس"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
@@ -1039,7 +1046,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "سمة"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
@@ -1115,7 +1122,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "الساعة"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
