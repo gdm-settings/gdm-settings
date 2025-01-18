@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-18 09:00+0000\n"
+"PO-Revision-Date: 2025-01-18 13:00+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -196,11 +196,11 @@ msgstr "عدد دقائق عدم النشاط قبل اعتبار الجلسة �
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
 msgid "Whether to suspend when inactive and using battery"
-msgstr ""
+msgstr "ما إذا كان سيتم التعليق عند عدم النشاط واستخدام البطارية"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "مهلة السكون للكمبيوتر عند تشغيل البطارية"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -252,7 +252,7 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "إعدادات GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
@@ -328,12 +328,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -346,7 +346,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "التبعيات المفقودة"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
@@ -365,7 +365,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "طلب تبرع"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -376,7 +376,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "غير مهتم"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
@@ -429,12 +429,12 @@ msgstr ""
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "مظهر حسين"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "تاليس بيندا"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -599,7 +599,7 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "تسجيل الخروج؟"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -792,7 +792,7 @@ msgstr "قياسي"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr ""
+msgstr "تحت بكسلي"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
@@ -977,7 +977,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
-msgstr ""
+msgstr "لا تفعل شيئاً"
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
@@ -1001,7 +1001,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr ""
+msgstr "أعتِم الشاشة"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -1026,7 +1026,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
-msgstr ""
+msgstr "تعليق تلقائي"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
@@ -1126,7 +1126,7 @@ msgstr "الساعة"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "اعرض التاريخ"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
