@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-18 04:00+0000\n"
+"PO-Revision-Date: 2025-01-18 09:00+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -268,7 +268,7 @@ msgstr ""
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "مظهر حسين"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
@@ -351,7 +351,7 @@ msgstr ""
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "حسنًا"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -380,11 +380,11 @@ msgstr ""
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "تبرع"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr ""
+msgstr "أعد تحميل الإعدادات"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
@@ -404,7 +404,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "استورد"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
@@ -448,39 +448,39 @@ msgstr ""
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "أزرق"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "أزرق مخضر"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "أخضر"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "أصفر"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "برتقالي"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "أحمر"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "وردي"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "أرجواني"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "رمادي مزرق"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -516,19 +516,19 @@ msgstr ""
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "اختر ملفًا"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(لا شيئ)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "اختر"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "الصور"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
@@ -698,7 +698,7 @@ msgstr "النوع"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "الافتراضي"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
@@ -722,7 +722,7 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "التكرار"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
@@ -742,7 +742,7 @@ msgstr "طبق"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "الإضاءة الليلية"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
@@ -758,7 +758,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "جدول زمني يدوي"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
@@ -776,7 +776,7 @@ msgstr "إلى"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "درجة حرارة اللون"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
@@ -816,7 +816,7 @@ msgstr "خفيف"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr ""
+msgstr "نسبة التكبير"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
@@ -828,7 +828,7 @@ msgstr ""
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "أعد ضبط الإعدادات"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
@@ -848,7 +848,7 @@ msgstr "إنهاء"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_طبق"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
@@ -860,7 +860,7 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "مكن الشعار"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
@@ -965,7 +965,7 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
-msgstr ""
+msgstr "التمرير بإصبعين"
 
 #: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
@@ -981,15 +981,15 @@ msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Suspend"
-msgstr ""
+msgstr "تعليق"
 
 #: resources/ui/power-page.blp:13
 msgid "Hibernate"
-msgstr ""
+msgstr "إسبات"
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "إسأل"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
@@ -1018,7 +1018,7 @@ msgstr ""
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr ""
+msgstr "التأخير"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
@@ -1050,7 +1050,7 @@ msgstr "سمة"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr ""
+msgstr "التكبير الزائد"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
@@ -1058,7 +1058,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr ""
+msgstr "أصوات الحدث"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
@@ -1114,7 +1114,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
-msgstr ""
+msgstr "إمكانية الوصول"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
