@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-22 14:01+0000\n"
+"PO-Revision-Date: 2025-01-22 19:02+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -297,17 +297,20 @@ msgid "Show application version"
 msgstr "اظهر إصدار التطبيق"
 
 #: gdms/gui/__init__.py:65
+#, fuzzy
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "عين مستوى الإسهاب يدويًا (من 0 إلى 5)"
 
 #: gdms/gui/__init__.py:66
+#, fuzzy
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "مستوى"
 
 #: gdms/gui/__init__.py:67
+#, fuzzy
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "مكن وضع الإسهاب (إختصار ل --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
