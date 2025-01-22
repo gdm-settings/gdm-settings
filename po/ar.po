@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-22 13:02+0000\n"
+"PO-Revision-Date: 2025-01-22 14:01+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr "ما إذا كان سيتم التعليق عند عدم النشاط والتوصيل أم لا"
+msgstr "ما إذا كان سيتم التعليق عند عدم النشاط والتوصيل"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
@@ -232,27 +232,27 @@ msgstr "ما إذا كنت تريد تطبيق تعديلات الشريط ال�
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr ""
+msgstr "ما إذا كان سيتم تعطيل أسهم الشريط العلوي"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "ما إذا كان سيتم تعطيل الزوايا المستديرة للشريط العلوي"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "ما إذا كنت تريد تغيير لون نص الشريط العلوي"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "لون نص الشريط العلوي"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "ما إذا كنت تريد تغيير خلفية الشريط العلوي"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "لون خلفية الشريط العلوي"
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
@@ -260,7 +260,7 @@ msgstr "إعدادات GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "تخصيص شاشة تسجيل الدخول"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -268,6 +268,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"تغيير إعدادات GDM؛ تطبيق السمة والخلفية، وتغيير سمة المؤشر، وسمة الأيقونة، "
+"وإعدادات الإضاءة الليلية، وغيرها من الأمور الأخرى."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
@@ -276,23 +278,23 @@ msgstr "مظهر حسين"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "النافذة الرئيسية (وضع سطح المكتب)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "الشريط الجانبي (وضع الهاتف المحمول)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "إعدادات المظهر (وضع الهاتف المحمول)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "اظهر معلومات التصحيح (بتنسيق Markdown)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "اظهر إصدار التطبيق"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -868,7 +870,7 @@ msgstr "مكن الشعار"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "ما إذا كان سيتم إظهار شعار أسفل قائمة المستخدمين"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
@@ -1017,7 +1019,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr ""
+msgstr "ما إذا كان سيتم إيقاف تشغيل الشاشة بعد فترة من عدم النشاط."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
