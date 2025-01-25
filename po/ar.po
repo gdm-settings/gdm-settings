@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-25 09:05+0000\n"
+"PO-Revision-Date: 2025-01-25 10:01+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -732,15 +732,15 @@ msgstr "اللون"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr ""
+msgstr "الصورة المراد استخدامها كخلفية"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "تضبيط الصورة"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "مناسب للشاشة"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
@@ -748,15 +748,15 @@ msgstr "التكرار"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr ""
+msgstr "اللون المراد استخدامه كخلفية"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "طبق إعدادات العرض الحالية"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "الدقة، ومعدل التحديث، ومواضع الشاشة، وغير ذلك."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
@@ -776,7 +776,7 @@ msgstr "الجدول الزمني"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "الغروب إلى الشروق"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
@@ -846,7 +846,7 @@ msgstr "حدث"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "حمل إعدادات الجلسة"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
@@ -854,11 +854,11 @@ msgstr "أعد ضبط الإعدادات"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "استورد من ملف"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "صدر إلى ملف"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -874,11 +874,11 @@ msgstr "_طبق"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "عطل أزرار إعادة التشغيل"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "عطل قائمة المستخدمين"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
@@ -894,7 +894,7 @@ msgstr "الشّعار"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "الصورة تظهر اسفل قائمة المستخدمين"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
@@ -963,7 +963,7 @@ msgstr "التمرير الطبيعي"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "التمرير يحرك المحتوى، وليس العرض."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
@@ -975,15 +975,15 @@ msgstr "لوح اللمس"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "عطل الفأرة الخارجية"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr ""
+msgstr "عطل أثناء الكتابة"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
-msgstr ""
+msgstr "النقر بالإصبع"
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
@@ -991,11 +991,11 @@ msgstr "التمرير بإصبعين"
 
 #: resources/ui/pointing-page.blp:72
 msgid "Scroll by swiping with two fingers."
-msgstr ""
+msgstr "تحريك الإصبعين للتمرير."
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr ""
+msgstr "سلوك زر الطاقة"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
@@ -1015,11 +1015,11 @@ msgstr "إسأل"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "توفير الطاقة التلقائي"
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "مكن وضع توفير الطاقة عندما تكون البطارية منخفضة."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
@@ -1027,11 +1027,11 @@ msgstr "أعتِم الشاشة"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "يقلل سطوع الشاشة عندما يكون الكمبيوتر غير نشط."
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "إيقاف تشغيل الشاشة"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -1044,7 +1044,7 @@ msgstr "التأخير"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr ""
+msgstr "الوقت بالدقائق التي سيتم بعدها إيقاف تشغيل الشاشة."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -1052,19 +1052,19 @@ msgstr "تعليق تلقائي"
 
 #: resources/ui/power-page.blp:53
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "إيقاف الكمبيوتر مؤقتاً بعد فترة من عدم النشاط."
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "على طاقة البطارية"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
-msgstr ""
+msgstr "الوقت بالدقائق التي سيتعلق بعدها الكمبيوتر."
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr ""
+msgstr "عند توصيل الطاقة"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1076,7 +1076,7 @@ msgstr "التكبير الزائد"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr ""
+msgstr "السماح برفع مستوى الصوت فوق 100%"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
@@ -1084,7 +1084,7 @@ msgstr "أصوات الحدث"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
-msgstr ""
+msgstr "أصوات ارجاع الدخل"
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
@@ -1096,11 +1096,11 @@ msgstr "ضمّن تطويعات الشريط العلوي"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "استخرج سمة shell المبدئية"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "استخرج"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
@@ -1128,11 +1128,11 @@ msgstr "الون الخلفي للشريط العلوي"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr ""
+msgstr "عطل الأسهم"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr ""
+msgstr "عطل الزوايا المستديرة"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
@@ -1140,7 +1140,7 @@ msgstr "إمكانية الوصول"
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "اظهر قائمة إمكانية الوصول دائماً"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
@@ -1172,7 +1172,7 @@ msgstr "٢٤ ساعة"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
-msgstr ""
+msgstr "اظهر نسبة الشحن للبطارية"
 
 #~ msgid "Login Manager Settings"
 #~ msgstr "اعدادات مدير الدخول"
