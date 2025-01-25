@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-22 19:02+0000\n"
+"PO-Revision-Date: 2025-01-25 08:01+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -297,29 +297,26 @@ msgid "Show application version"
 msgstr "اظهر إصدار التطبيق"
 
 #: gdms/gui/__init__.py:65
-#, fuzzy
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "عين مستوى الإسهاب يدويًا (من 0 إلى 5)"
+msgstr "عين مستوى التفصيل يدويًا (من 0 إلى 5)"
 
 #: gdms/gui/__init__.py:66
-#, fuzzy
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
 msgstr "مستوى"
 
 #: gdms/gui/__init__.py:67
-#, fuzzy
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "مكن وضع الإسهاب (إختصار ل --verbosity=5)"
+msgstr "مكن الوضع التفصيلي (إختصار ل --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "مكن الوضع البسيط (إختصار ل --verbosity=0)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
+msgstr "مستوى التفصيل غير صالح {level}. يجب أن يكون 0 أو 5 أو بينهما."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -327,12 +324,14 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"يجب تثبيت البرامج التالية <b> على النظام المضيف </b> لكي يعمل هذا التطبيق "
+"بشكل صحيح ولكنها غير مثبتة على النظام المضيف."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
-msgstr ""
+msgstr "يتطلب هذا التطبيق البرامج التالية ليعمل بشكل صحيح ولكنها غير مثبتة."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
@@ -352,6 +351,8 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"اضغط <a href=\"{url}\">هنا</a> للحصول على إرشادات حول كيفية تثبيت هذه "
+"التبعيات على نظامك."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
@@ -364,13 +365,16 @@ msgstr "حسنًا"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "ملف سمة Shell المبدئي مفقود"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"يحتاج التطبيق إلى ملف سمة shell المبدئي غير معدلة ولكنه لم يتمكن من العثور "
+"عليها. لإصلاح المشكلة، أعد تثبيت حزمة 'gnome-shell-common' أو حزمة 'gnome-"
+"shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -382,6 +386,8 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"إذا أعجبك هذا التطبيق، يُرجى التفكير في التبرع حتى نتمكن من مواصلة تحسينه.\n"
+"شكراً لكم! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -397,19 +403,19 @@ msgstr "أعد تحميل الإعدادات"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "تم تحميل إعدادات الجلسة بنجاح"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "تحميل إعدادات الجلسة غير مدعوم في إصدار Flatpak"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "أعيد ضبط الإعدادات بنجاح"
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "فشلت إعادة ضبط الإعدادات"
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
@@ -417,23 +423,23 @@ msgstr "استورد"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "نجح استيراد الإعدادات من الملف"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "فشل الاستيراد. الملف غير صالح"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "صدرت الإعدادات بنجاح"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "فشل التصدير. رُفض الإذن"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "فشل التصدير. يوجد دليل بهذا الاسم بالفعل"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -447,7 +453,7 @@ msgstr "تاليس بيندا"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr ""
+msgstr "حقوق النشر 2021-2023 مظهر حسين"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -507,6 +513,10 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"'$XDG_CONFIG_HOME/monitors.xml' الملف مطلوب لتطبيق إعدادات العرض الحالية "
+"ولكنه غير موجود.\n"
+"\n"
+"لإنشاء هذا الملف تلقائيًا، افتح 'إعدادات' النظام وغير بعض خيارات العرض هناك."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -595,7 +605,7 @@ msgstr ""
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr ""
+msgstr "لم تطبق. صورة الخلفية المختارة لم تعد موجودة. الرجاء الاختيار مرة أخرى."
 
 #: gdms/gui/window.py:151
 msgid ""
@@ -661,7 +671,7 @@ msgstr ""
 msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
-msgstr ""
+msgstr "لا يمكن الكتابة إلى ملف '{filename}'. يوجد دليل بنفس الاسم بالفعل"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
@@ -679,7 +689,7 @@ msgstr "لون التمييز"
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
-msgstr ""
+msgstr "ملحوظة: لن يعمل هذا إلا على GNOME 47 (وما فوق) مع سمة shell 'المبدئية'."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
