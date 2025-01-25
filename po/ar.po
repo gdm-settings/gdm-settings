@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-01-25 08:01+0000\n"
+"PO-Revision-Date: 2025-01-25 09:05+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ar/>\n"
@@ -459,7 +459,7 @@ msgstr "حقوق النشر 2021-2023 مظهر حسين"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "Abdullah Albaroty <albaroty@gmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
@@ -499,11 +499,11 @@ msgstr "رمادي مزرق"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "طبقت إعدادات العرض الحالية"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "فشل تطبيق إعدادات العرض الحالية"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -520,18 +520,18 @@ msgstr ""
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "إعدادات الشاشة غير موجودة"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "استخرجت سمة shell المبدئية إلى '{folder}' باسم '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "فشل استخراج السمة المبدئية"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
@@ -595,11 +595,11 @@ msgstr "الأدوات"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "طبقت الإعدادات بنجاح"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "فشل تطبيق الإعدادات"
 
 #: gdms/gui/window.py:147
 msgid ""
@@ -610,11 +610,13 @@ msgstr "لم تطبق. صورة الخلفية المختارة لم تعد مو
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr ""
+msgstr "لم تطبق. صورة الشعار المختار لم تعد موجودة. من فضلك اختر مرة أخرى."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"قد يبدأ النظام في الظهور بمظهر غريب/خاطئ حتى تقوم بإعادة تسجيل الدخول أو "
+"إعادة التشغيل."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
@@ -631,40 +633,41 @@ msgstr "تسجيل الخروج"
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "الاستيراد من ملف'{filename}'"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "الاستيراد من الدخل القياسي"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "فشل تحليل ملف الاستيراد"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "فشل في قراءة ملف الاستيراد. لم يتم ترميزه بـ UTF-8"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "لا يحتوي الملف المستورد على القسم '{section_name}'"
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"الملف المستورد لا يحتوي على المفتاح '{key_name}' في القسم '{section_name}'"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "التصدير إلى ملف '{filename}'"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "لا يمكن الكتابة إلى الملف '{filename}'. الإذن مرفوض"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -675,11 +678,11 @@ msgstr "لا يمكن الكتابة إلى ملف '{filename}'. يوجد دلي
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "التصدير إلى الخرج القياسي"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "النسخ الاحتياطي لسمة shell المبدئية …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
