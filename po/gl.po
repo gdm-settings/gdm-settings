@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-02 01:03+0000\n"
+"PO-Revision-Date: 2025-02-02 02:02+0000\n"
 "Last-Translator: PolGZ <polgz@tutanota.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/gl/>\n"
@@ -337,12 +337,17 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Os seguintes programas deben estar instalados <b>no sistema principal (host "
+"system)</b> para que esta aplicación funcione correctamente, pero non están "
+"instalados no sistema principal."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Esta aplicación require o seguinte software para funcionar correctamente "
+"pero non está instalado."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
@@ -362,10 +367,12 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Fai click <a href=\"{url}\">aquí</a> para obter instrucións sobre como "
+"instalar estas dependencias no teu sistema."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Dependencias faltantes"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
@@ -374,17 +381,20 @@ msgstr ""
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "Perdeuse o arquivo do tema por defecto do Shell"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"A aplicaicón necesita -pero non puido atopar- un arquivo non modificado do "
+"tema do Shell por defecto. Para arreglar o erro, reinstale o paquete 'gnome-"
+"shell-common' ou 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Petición de doazón"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -392,58 +402,61 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Se che gusta esta app, por favor considera doar para que podamos seguir "
+"mellorándoa.\n"
+"Grazas! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "Non estou interesado"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Doar"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Axustes refrescados"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Os axustes de sesión foron cargados correctamente"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Cargar axustes de sesión NON está soportado na versión Flatpak"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Reseteo de axustes existoso"
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Erro no reseteo dos axustes"
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Os axustes foron importados con éxito dende o arquivo"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Erro na importación. O arquivo é inválido"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Os axustes foron exportados con éxito"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Erro na exportación. Non ten suficientes permisos"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Erro na exportación. Xa existe unha carpeta con ese nome"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -463,11 +476,11 @@ msgstr ""
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "PolGZ <galego@polgz.mailer.me>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Azul"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
@@ -475,39 +488,40 @@ msgstr ""
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Amarelo"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Laranxa"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Vermello"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Rosa"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Violeta"
 
 #: gdms/gui/pages/appearance.py:110
+#, fuzzy
 msgid "Slate"
-msgstr ""
+msgstr "Gris azulado (\"slate\")"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Aplicáronse os axustes actuais de pantalla"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Erro aplicando os axustes actuais de pantalla"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -517,154 +531,167 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"O arquivo '$XDG_CONFIG_HOME/monitors.xml' é necesario para aplicar os "
+"axustes actuais de pantalla, pero non existe.\n"
+"\n"
+"Para crear o arquivo automaticamente, abre os 'Axustes' de sistema e cambia "
+"alí algunha opción das pantallas."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "Axustes de monitor non atopados"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr ""
+msgstr "O tema por defecto do Shell foi extraído a '{folder}' como '{name}'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Erro extraendo o tema por defecto"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Escolle un arquivo"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Ningún)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Escolle"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Imaxes"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Todos os arquivos"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Escolle unha imaxe"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Apariencia"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Fontes"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Barra superior"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Son"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Rato e panel táctil"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Pantalla"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Pantalla de inicio de sesión"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "Enerxía"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Axustes aplicados con éxito"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Erro aplicando os axustes"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"Non se aplicou. A imaxe elixida xa non existe. Por favor! escolle outra vez."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"Non se aplicou. O logo elixido xa non existe. Por favor! escolle outra vez."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"Pode que o sistema se vexa de forma estraña/rara ata que volvas iniciar "
+"sesión ou reinicies."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Pechar sesión?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Pechar sesión"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importando a partir do arquivo '{filename}'"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importando a partir de entrada estándar"
 
 #: gdms/settings.py:190
+#, fuzzy
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Non se puido analizar o ficheiro de importación"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
 msgstr ""
+"Erro na lectura do ficheiro de importación. Non está codificado en UTF-8"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "O ficheiro importado non ten a sección '{section_name}'"
 
 #: gdms/settings.py:204
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"O ficheiro importado non ten a clave '{key_name}' na sección '{section_name}'"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Exportando ó arquivo '{filename}'"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
 msgstr ""
+"Non se puido gardar como arquivo '{filename}'. Non tes suficientes permisos"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -672,262 +699,267 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Non se puido gardar como arquivo '{filename}'. Xa existe unha carpeta co "
+"mesmo nome"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exportando como saída estándar"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Creando copia de seguridade do tema por defecto do Shell …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
-msgstr ""
+msgstr "Cor de acento"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"NOTA: Isto só vai funcionar en GNOME 47 (e superiores) co tema do Shell por "
+"'Defecto'."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "Temas"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "Iconas"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "Punteiro"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "Fondo"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "Imaxe"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr ""
+msgstr "A imaxe a usar como fondo"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Axuste da imaxe"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Axustar á pantalla"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "Repetir(mosaico)"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr ""
+msgstr "A cor a usar como fondo"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Aplicar os axustes actuais de pantalla"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Resolución, taxa de refresco, posicións dos monitores, etc."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Luz nocturna"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Activar"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Programar"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Solpor - Amencer"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Programación manual"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Horas"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Dende"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "Ata"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Temperatura de cor"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Fonte"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr ""
+msgstr "Antialiasing"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "Estándar"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr ""
+msgstr "Subpíxel"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "Ningún"
 
 #: resources/ui/fonts-page.blp:31
+#, fuzzy
 msgid "Hinting"
-msgstr ""
+msgstr "Axuste de contornos(hinting)"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr ""
+msgstr "Completo"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr ""
+msgstr "Leve"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Factor de escalado"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Refrescar"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Cargar axustes da sesión"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Resetear os axustes"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Importar dende un ficheiro"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Exportar a un ficheiro"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Saír"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Desactivar botóns de reinicio"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Desactivar a lista de usuarios"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Activar logo"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Se mostrar un logo debaixo da lista de usuarios"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "A imaxe a mostrar debaixo da lista de usuarios"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Mensaxe de benvida"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Agrandar"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Mensaxe"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Tamaño do punteiro"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Medio"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Máis grande"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
