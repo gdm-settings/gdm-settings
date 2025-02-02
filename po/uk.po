@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-02 16:03+0000\n"
+"PO-Revision-Date: 2025-02-02 17:02+0000\n"
 "Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -346,15 +346,15 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Щоб додаток працював належним чином, <b>на хост-системі</b> необхідно, щоб "
-"були встановлені такі програми, але вони не встановлені."
+"Наступні програми повинні бути встановленні <b>на хост-системі</b> щоб цей "
+"додаток працював належним чином, але вони не встановлені."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
-"Для належної роботи цього додатку, необхідно, щоб були встановлені такі "
+"Для належної роботи цього додатка необхідно, щоб були встановлені наступні "
 "програми, але вони не встановлені."
 
 #: gdms/gui/__init__.py:191
@@ -385,19 +385,19 @@ msgstr "Відсутні залежності"
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr "Добре"
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "Файл теми оболонки за замовчуванням втрачено"
+msgstr "Файл початкової теми оболонки втрачено"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"Додатку потрібен незмінений файл теми оболонки за замовчуванням, але він не "
-"знайшов його. Щоб вирішити цю проблему, перевстановіть пакет 'gnome-shell-"
+"Додатку потрібен незмінений файл початкової теми оболонки, але його не було "
+"знайдено. Щоб вирішити цю проблему, перевстановіть пакет 'gnome-shell-"
 "common' або 'gnome-shell'."
 
 #: gdms/gui/__init__.py:236
