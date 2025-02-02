@@ -5,7 +5,7 @@
 # Grayson Hunt <Vasilkusniruk@gmail.com>, 2023.
 # Gleb <gkaraulnyi@gmail.com>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
-# Володимир Давибіда <mrvovavova17@gmail.com>, 2024.
+# Володимир Давибіда <mrvovavova17@gmail.com>, 2024, 2025.
 # Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 # volkov <volkov@users.noreply.hosted.weblate.org>, 2024.
 msgid ""
@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-10 14:00+0000\n"
-"Last-Translator: Максим Горпиніч <mgorpinic2005@gmail.com>\n"
+"PO-Revision-Date: 2025-02-02 16:03+0000\n"
+"Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -36,7 +36,7 @@ msgstr "Тип тла"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Чи повинно тло GDM бути зображенням, кольором або по замовчуванням."
+msgstr "Чи повинно тло GDM бути зображенням, кольором або за замовчуванням."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
@@ -53,7 +53,7 @@ msgstr "Змінити зображення тла"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr "Стратегія для коригування зображення тла."
+msgstr "Стратегія коригування зображення тла."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
@@ -63,7 +63,7 @@ msgstr "Колір тла"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr "Колір для тла GDM"
+msgstr "Колір тла GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
@@ -77,8 +77,8 @@ msgid ""
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
 "Швидкість вказівника для сенсорного пристрою. Допустимі значення в діапазоні "
-"[-1..1] (від “неприскореного” до “швидкого”). Значення 0 по замовчуванню в "
-"системі."
+"[-1..1] (від “неприскореного” до “швидкого”). Значення 0 стандартне "
+"налаштування в системі."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -89,7 +89,7 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"Нічне світло змінює температуру кольорів вашого екрану коли сонце зайшло, "
+"Нічне світло змінює температуру кольорів вашого екрану після заходу сонця, "
 "або за вказаним часом."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
@@ -113,7 +113,9 @@ msgstr "Використовувати схід та захід сонця"
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
-msgstr "Автоматично прораховувати коли схід або захід сонця у вашому регіоні."
+msgstr ""
+"Автоматично прораховувати схід або захід сонця на основі вашого "
+"місцезнаходження."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
@@ -187,7 +189,7 @@ msgstr "Притлумлення екрану після періоду безд
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
-"Екран мусить бути притлумлений для заощадження енергії, коли пристрій є "
+"Екран мусить бути притлумлений для заощадження енергії, коли пристрій "
 "бездіяльний."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
@@ -198,8 +200,7 @@ msgstr "Вимикати екран коли пристрій є бездіял�
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Екран має бути вимкненим для заощадження енергії, коли пристрій є "
-"бездіяльний."
+"Екран має бути вимкненим для заощадження енергії, коли пристрій бездіяльний."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
 msgid "Time before session is considered idle"
@@ -289,8 +290,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Зміна налаштувань GDM (GNOME Display Manager); Застосування тем, курсора, "
-"значків, тла, налаштування нічного світла і інших параметрів."
+"Зміна налаштувань GDM; Застосування тем та тла, зміна теми вказівника, "
+"піктограм, а також налаштування нічного світла та інших параметрів."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
