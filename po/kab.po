@@ -7,13 +7,16 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-11 11:02+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Kabyle <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -310,12 +313,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -333,7 +336,7 @@ msgstr ""
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "Ih"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -362,7 +365,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Mudd tawsa"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
@@ -386,7 +389,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
-msgstr ""
+msgstr "Kter"
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
@@ -426,11 +429,11 @@ msgstr ""
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "Athmane MOKRAOUI <butterflyoffire@protonmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Azegzaw"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
@@ -438,27 +441,27 @@ msgstr ""
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Adal"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Awraɣ"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Ačinawi"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Azeggaɣ"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Axuxi"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Arẓaẓ"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
@@ -502,15 +505,15 @@ msgstr ""
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Ula yiwen)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Fren"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Tugniwin"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
@@ -522,11 +525,11 @@ msgstr ""
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Udem"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Tisefsiyin"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
@@ -534,7 +537,7 @@ msgstr ""
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Imesli"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
@@ -542,7 +545,7 @@ msgstr ""
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Askan"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
@@ -550,11 +553,11 @@ msgstr ""
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "Tazmart"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Ifecka"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
@@ -585,7 +588,7 @@ msgstr ""
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Semmet"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
@@ -656,15 +659,15 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "Isental"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "Tignitin"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
@@ -672,23 +675,23 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "Agilal"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "Anaw"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "Amezwer"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "Tugna"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "Ini"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
