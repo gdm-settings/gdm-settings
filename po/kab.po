@@ -1,0 +1,1135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gdm-settings package.
+# ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: gdm-settings 3.alpha\n"
+"Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
+"POT-Creation-Date: 2024-11-05 01:17+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: kab\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
+msgid "Theme Name"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
+msgid "Type of Background"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
+msgid "Whether GDM background should be an Image, Color or Default."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
+msgid "Background Image"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
+msgid "The image file to use as GDM background"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
+msgid "Background Image Adjustment"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
+msgid "Strategy for adjustment of background image."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
+#: resources/ui/top-bar-page.blp:40
+msgid "Background Color"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
+msgid "The Color to use as GDM background"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
+msgid "Pointer speed"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
+msgid ""
+"Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
+"(from “unaccelerated” to “fast”). A value of 0 is the system default."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
+msgid "If the night light mode is enabled"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
+msgid ""
+"Night light mode changes the color temperature of your display when the sun "
+"has gone down or at preset times."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
+msgid "Temperature of the display when enabled"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
+msgid ""
+"This temperature in Kelvin is used to modify the screen tones when night "
+"light mode is enabled. Higher values are bluer, lower redder."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
+msgid "Use the sunrise and sunset"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
+msgid ""
+"Calculate the sunrise and sunset times automatically, from the current "
+"location."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
+msgid "The start time's hour"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
+msgid "When “schedule-automatic” is disabled, use this start time in hours."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
+msgid "The start time's minute"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
+msgid "When “schedule-automatic” is disabled, use this start time minutes."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
+msgid "The end time's hour"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
+msgid "When “schedule-automatic” is disabled, use this end time in hours."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
+msgid "The end time's minute"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
+msgid "When “schedule-automatic” is disabled, use this end time minutes."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
+msgid "Power button action"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
+msgid ""
+"The action to take when the system power button is pressed. This action is "
+"hard-coded (and the setting ignored) on virtual machines (power off) and "
+"tablets (suspend)."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
+msgid "Enable power-saver profile when battery is low"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
+msgid ""
+"Automatically enable the \"power-saver\" profile using power-profiles-daemon "
+"if the battery is low."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
+msgid "Dim the screen after a period of inactivity"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
+msgid "If the screen should be dimmed to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
+msgid "Whether to blank screen when session is idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
+msgid ""
+"If the screen should be blanked to save power when the computer is idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
+msgid "Time before session is considered idle"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:38
+msgid ""
+"The number of minutes of inactivity before the session is considered idle."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:43
+msgid "Whether to suspend when inactive and using battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
+msgid "Sleep timeout for computer when on battery"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
+msgid ""
+"The amount of time in minutes the computer on battery power needs to be "
+"inactive before it goes to sleep. A value of 0 means never."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
+msgid "Whether to suspend when inactive and plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
+msgid "Sleep timeout for computer when plugged in"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
+msgid ""
+"The amount of time in minutes the computer on AC power needs to be inactive "
+"before it goes to sleep. A value of 0 means never."
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
+msgid "Whether to apply top bar tweaks to extracted theme"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
+msgid "Whether to disable top bar arrows"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
+msgid "Whether to disable top bar rounded corners"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
+msgid "Whether to change top bar text color"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
+msgid "Top bar text color"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
+msgid "Whether to change top bar background"
+msgstr ""
+
+#: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
+msgid "Top bar background color"
+msgstr ""
+
+#: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
+msgid "GDM Settings"
+msgstr ""
+
+#: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
+msgid "Customize your login screen"
+msgstr ""
+
+#. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
+#: data/gdm-settings.metainfo.xml:17
+msgid ""
+"Change GDM Settings; Apply theme and background, change cursor theme, icon "
+"theme and night light settings, among other things."
+msgstr ""
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
+msgid "Mazhar Hussain"
+msgstr ""
+
+#: data/gdm-settings.metainfo.xml:63
+msgid "Main Window (Desktop Mode)"
+msgstr ""
+
+#: data/gdm-settings.metainfo.xml:67
+msgid "Sidebar (Mobile Mode)"
+msgstr ""
+
+#: data/gdm-settings.metainfo.xml:71
+msgid "Appearance Settings (Mobile Mode)"
+msgstr ""
+
+#: gdms/gui/__init__.py:63
+msgid "Show debug information (in Markdown format)"
+msgstr ""
+
+#: gdms/gui/__init__.py:64
+msgid "Show application version"
+msgstr ""
+
+#: gdms/gui/__init__.py:65
+msgid "Set verbosity level manually (from 0 to 5)"
+msgstr ""
+
+#: gdms/gui/__init__.py:66
+msgctxt "Argument of --verbosity option"
+msgid "LEVEL"
+msgstr ""
+
+#: gdms/gui/__init__.py:67
+msgid "Enable verbose mode (alias of --verbosity=5)"
+msgstr ""
+
+#: gdms/gui/__init__.py:68
+msgid "Enable quiet mode (alias of --verbosity=0)"
+msgstr ""
+
+#: gdms/gui/__init__.py:92
+#, python-brace-format
+msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
+msgstr ""
+
+#: gdms/gui/__init__.py:178
+msgid ""
+"Following programs are required to be installed <b>on the host system</b> "
+"for this app to function properly but they are not installed on the host "
+"system."
+msgstr ""
+
+#: gdms/gui/__init__.py:182
+msgid ""
+"This app requires the following software to function properly but they are "
+"not installed."
+msgstr ""
+
+#: gdms/gui/__init__.py:191
+msgctxt "Missing Dependency"
+msgid "<b>GDM</b>"
+msgstr ""
+
+#: gdms/gui/__init__.py:197
+msgctxt "Missing Dependency"
+msgid "<b>Polkit</b>"
+msgstr ""
+
+#. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
+#. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
+#: gdms/gui/__init__.py:205
+#, python-brace-format
+msgid ""
+"Click <a href=\"{url}\">here</a> for instructions on how to install these "
+"dependencies on your system."
+msgstr ""
+
+#: gdms/gui/__init__.py:212
+msgid "Missing Dependencies"
+msgstr ""
+
+#: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
+#: gdms/gui/pages/display.py:108
+msgid "OK"
+msgstr ""
+
+#: gdms/gui/__init__.py:223
+msgid "Default Shell Theme File Lost"
+msgstr ""
+
+#: gdms/gui/__init__.py:225
+msgid ""
+"The app needs but could not find an unmodified default shell theme file. To "
+"fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
+msgstr ""
+
+#: gdms/gui/__init__.py:236
+msgid "Donation Request"
+msgstr ""
+
+#: gdms/gui/__init__.py:238
+msgid ""
+"If you like this app, please consider donating so that we can keep improving "
+"it.\n"
+"Thank you! ❤️️"
+msgstr ""
+
+#: gdms/gui/__init__.py:244
+msgid "Not Interested"
+msgstr ""
+
+#: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
+msgid "Donate"
+msgstr ""
+
+#: gdms/gui/__init__.py:282
+msgid "Settings reloaded"
+msgstr ""
+
+#: gdms/gui/__init__.py:289
+msgid "Session settings loaded successfully"
+msgstr ""
+
+#: gdms/gui/__init__.py:293
+msgid "Load session settings is NOT supported in Flatpak version"
+msgstr ""
+
+#: gdms/gui/__init__.py:306
+msgid "Reset settings successfully"
+msgstr ""
+
+#: gdms/gui/__init__.py:308
+msgid "Failed to reset settings"
+msgstr ""
+
+#: gdms/gui/__init__.py:327
+msgid "Import"
+msgstr ""
+
+#: gdms/gui/__init__.py:348
+msgid "Settings were successfully imported from file"
+msgstr ""
+
+#: gdms/gui/__init__.py:350
+msgid "Failed to import. File is invalid"
+msgstr ""
+
+#: gdms/gui/__init__.py:381
+msgid "Settings were successfully exported"
+msgstr ""
+
+#: gdms/gui/__init__.py:383
+msgid "Failed to export. Permission denied"
+msgstr ""
+
+#: gdms/gui/__init__.py:385
+msgid "Failed to export. A directory with that name already exists"
+msgstr ""
+
+#: gdms/gui/about.py:9
+msgctxt "Name of Developer"
+msgid "Mazhar Hussain"
+msgstr ""
+
+#: gdms/gui/about.py:10
+msgctxt "Name of Artist"
+msgid "Thales Bindá"
+msgstr ""
+
+#: gdms/gui/about.py:17
+msgid "Copyright 2021-2023 Mazhar Hussain"
+msgstr ""
+
+#. Translators: Do not translate this string. Put your info here in the form
+#. 'name <email>' including < and > but not quotes.
+#: gdms/gui/about.py:27
+msgid "translator-credits"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:102
+msgid "Blue"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:103
+msgid "Teal"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:104
+msgid "Green"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:105
+msgid "Yellow"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:106
+msgid "Orange"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:107
+msgid "Red"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:108
+msgid "Pink"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:109
+msgid "Purple"
+msgstr ""
+
+#: gdms/gui/pages/appearance.py:110
+msgid "Slate"
+msgstr ""
+
+#: gdms/gui/pages/display.py:86
+msgid "Applied current display settings"
+msgstr ""
+
+#: gdms/gui/pages/display.py:88
+msgid "Failed to apply current display settings"
+msgstr ""
+
+#: gdms/gui/pages/display.py:94
+msgid ""
+"'$XDG_CONFIG_HOME/monitors.xml' file is required to apply current display "
+"settings but it does not exist.\n"
+"\n"
+"In order to create that file automatically, open system 'Settings' and "
+"change some display options there."
+msgstr ""
+
+#: gdms/gui/pages/display.py:103
+msgid "Monitor Settings Not Found"
+msgstr ""
+
+#. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
+#. They will be replaced by an actual folder path and theme name during runtime.
+#: gdms/gui/pages/tools.py:50
+#, python-brace-format
+msgid "Default shell theme extracted to '{folder}' as '{name}'"
+msgstr ""
+
+#: gdms/gui/pages/tools.py:53
+msgid "Failed to extract default theme"
+msgstr ""
+
+#: gdms/gui/widgets.py:18
+msgid "Choose File"
+msgstr ""
+
+#: gdms/gui/widgets.py:25
+msgid "(None)"
+msgstr ""
+
+#: gdms/gui/widgets.py:51
+msgid "Choose"
+msgstr ""
+
+#: gdms/gui/widgets.py:110
+msgid "Images"
+msgstr ""
+
+#: gdms/gui/widgets.py:114
+msgid "All Files"
+msgstr ""
+
+#: gdms/gui/widgets.py:119
+msgid "Choose Image"
+msgstr ""
+
+#: gdms/gui/window.py:113
+msgid "Appearance"
+msgstr ""
+
+#: gdms/gui/window.py:114
+msgid "Fonts"
+msgstr ""
+
+#: gdms/gui/window.py:115
+msgid "Top Bar"
+msgstr ""
+
+#: gdms/gui/window.py:116
+msgid "Sound"
+msgstr ""
+
+#: gdms/gui/window.py:117
+msgid "Mouse & Touchpad"
+msgstr ""
+
+#: gdms/gui/window.py:118
+msgid "Display"
+msgstr ""
+
+#: gdms/gui/window.py:119
+msgid "Login Screen"
+msgstr ""
+
+#: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
+msgid "Power"
+msgstr ""
+
+#: gdms/gui/window.py:121
+msgid "Tools"
+msgstr ""
+
+#: gdms/gui/window.py:139
+msgid "Settings applied successfully"
+msgstr ""
+
+#: gdms/gui/window.py:143
+msgid "Failed to apply settings"
+msgstr ""
+
+#: gdms/gui/window.py:147
+msgid ""
+"Didn't apply. Chosen background image does not exist anymore. Please! choose "
+"again."
+msgstr ""
+
+#: gdms/gui/window.py:151
+msgid ""
+"Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
+msgstr ""
+
+#: gdms/gui/window.py:157
+msgid "The system may start to look weird/buggy until you re-login or reboot."
+msgstr ""
+
+#: gdms/gui/window.py:162
+msgid "Log Out?"
+msgstr ""
+
+#: gdms/gui/window.py:167
+msgid "Cancel"
+msgstr ""
+
+#: gdms/gui/window.py:168
+msgid "Log Out"
+msgstr ""
+
+#: gdms/settings.py:184
+#, python-brace-format
+msgid "Importing from file '{filename}'"
+msgstr ""
+
+#: gdms/settings.py:187
+msgid "Importing from standard input"
+msgstr ""
+
+#: gdms/settings.py:190
+msgid "Failed to parse import file"
+msgstr ""
+
+#: gdms/settings.py:193
+msgid "Failed to read import file. Not encoded in UTF-8"
+msgstr ""
+
+#: gdms/settings.py:199
+#, python-brace-format
+msgid "Imported file does not have section '{section_name}'"
+msgstr ""
+
+#: gdms/settings.py:204
+#, python-brace-format
+msgid ""
+"Imported file does not have key '{key_name}' in section '{section_name}'"
+msgstr ""
+
+#: gdms/settings.py:224
+#, python-brace-format
+msgid "Exporting to file '{filename}'"
+msgstr ""
+
+#: gdms/settings.py:229
+#, python-brace-format
+msgid "Cannot write to file '{filename}'. Permission denied"
+msgstr ""
+
+#: gdms/settings.py:233
+#, python-brace-format
+msgid ""
+"Cannot write to file '{filename}'. A directory with the same name already "
+"exists"
+msgstr ""
+
+#: gdms/settings.py:238
+msgid "Exporting to standard output"
+msgstr ""
+
+#: gdms/settings.py:338
+msgid "Backing up default shell theme …"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
+msgid "Accent Color"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:10
+msgid ""
+"NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
+"theme."
+msgstr ""
+
+#: resources/ui/appearance-page.blp:19
+msgid "Themes"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:21
+msgid "Shell"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:22
+msgid "Icons"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:23
+msgid "Cursor"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:27
+msgid "Background"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:30
+msgid "Type"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31
+msgid "Default"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
+msgid "Image"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
+msgid "Color"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:36
+msgid "The image to use as background"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:40
+msgid "Image Adjustment"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:41
+msgid "Fit To Screen"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:41
+msgid "Repeat"
+msgstr ""
+
+#: resources/ui/appearance-page.blp:47
+msgid "The color to use as background"
+msgstr ""
+
+#: resources/ui/display-page.blp:12
+msgid "Apply current display settings"
+msgstr ""
+
+#: resources/ui/display-page.blp:13
+msgid "Resolution, refresh rate, monitor positions, etc."
+msgstr ""
+
+#: resources/ui/display-page.blp:16
+msgid "Apply"
+msgstr ""
+
+#: resources/ui/display-page.blp:21
+msgid "Night Light"
+msgstr ""
+
+#: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
+msgid "Enable"
+msgstr ""
+
+#: resources/ui/display-page.blp:28
+msgid "Schedule"
+msgstr ""
+
+#: resources/ui/display-page.blp:29
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: resources/ui/display-page.blp:29
+msgid "Manual Schedule"
+msgstr ""
+
+#: resources/ui/display-page.blp:33
+msgid "Times"
+msgstr ""
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:36
+msgid "From"
+msgstr ""
+
+#. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
+#: resources/ui/display-page.blp:60
+msgid "To"
+msgstr ""
+
+#: resources/ui/display-page.blp:84
+msgid "Color Temperature"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:12
+msgid "Font"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:22
+msgid "Antialiasing"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:24
+msgid "Standard"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:25
+msgid "Subpixel"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
+msgid "None"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:31
+msgid "Hinting"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:33
+msgid "Full"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:34
+msgid "Medium"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:35
+msgid "Slight"
+msgstr ""
+
+#: resources/ui/fonts-page.blp:41
+msgid "Scaling Factor"
+msgstr ""
+
+#: resources/ui/main-window.blp:6
+msgid "Refresh"
+msgstr ""
+
+#: resources/ui/main-window.blp:7
+msgid "Load session settings"
+msgstr ""
+
+#: resources/ui/main-window.blp:8
+msgid "Reset settings"
+msgstr ""
+
+#: resources/ui/main-window.blp:11
+msgid "Import from file"
+msgstr ""
+
+#: resources/ui/main-window.blp:12
+msgid "Export to file"
+msgstr ""
+
+#: resources/ui/main-window.blp:18
+msgid "About"
+msgstr ""
+
+#: resources/ui/main-window.blp:19
+msgid "Quit"
+msgstr ""
+
+#: resources/ui/main-window.blp:34
+msgid "_Apply"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:12
+msgid "Disable Restart Buttons"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:16
+msgid "Disable User List"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:20
+msgid "Enable Logo"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:21
+msgid "Whether to show a logo below user list"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:30
+msgid "Logo"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:31
+msgid "The image to show below user list"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:37
+msgid "Welcome Message"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:44
+msgid "Enlarge"
+msgstr ""
+
+#: resources/ui/login-screen-page.blp:49
+msgid "Message"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:10
+msgid "Cursor Size"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:15
+msgctxt "Cursor Size"
+msgid "Default"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:16
+msgctxt "Cursor Size"
+msgid "Medium"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:17
+msgctxt "Cursor Size"
+msgid "Large"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:18
+msgctxt "Cursor Size"
+msgid "Larger"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:19
+msgctxt "Cursor Size"
+msgid "Largest"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:25
+msgid "Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:28
+msgid "Pointer Acceleration"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:30
+msgid "Automatic"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:31
+msgid "Disabled"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:32
+msgid "Enabled"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
+msgid "Natural Scrolling"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
+msgid "Scrolling moves the content, not the view."
+msgstr ""
+
+#: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
+msgid "Pointer Speed"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:52
+msgid "Touchpad"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:56
+msgid "Disable on External Mouse"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:59
+msgid "Disable while Typing"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:62
+msgid "Tap to Click"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:71
+msgid "Two-finger Scrolling"
+msgstr ""
+
+#: resources/ui/pointing-page.blp:72
+msgid "Scroll by swiping with two fingers."
+msgstr ""
+
+#: resources/ui/power-page.blp:12
+msgid "Power Button Behavior"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Do Nothing"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Suspend"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Hibernate"
+msgstr ""
+
+#: resources/ui/power-page.blp:13
+msgid "Ask"
+msgstr ""
+
+#: resources/ui/power-page.blp:18
+msgid "Automatic Power Saver"
+msgstr ""
+
+#: resources/ui/power-page.blp:19
+msgid "Enables power saver mode when battery is low."
+msgstr ""
+
+#: resources/ui/power-page.blp:23
+msgid "Dim Screen"
+msgstr ""
+
+#: resources/ui/power-page.blp:24
+msgid "Reduces the screen brightness when the computer is inactive."
+msgstr ""
+
+#: resources/ui/power-page.blp:28
+msgid "Turn Screen Off"
+msgstr ""
+
+#: resources/ui/power-page.blp:29
+msgid "Whether to turn the screen off after a period of inactivity."
+msgstr ""
+
+#: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
+#: resources/ui/power-page.blp:87
+msgid "Delay"
+msgstr ""
+
+#: resources/ui/power-page.blp:39
+msgid "Time in minutes after which screen will turn off."
+msgstr ""
+
+#: resources/ui/power-page.blp:52
+msgid "Automatic Suspend"
+msgstr ""
+
+#: resources/ui/power-page.blp:53
+msgid "Pauses the computer after a period of inactivity."
+msgstr ""
+
+#: resources/ui/power-page.blp:56
+msgid "On Battery Power"
+msgstr ""
+
+#: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
+msgid "Time in minutes after which the computer will suspend."
+msgstr ""
+
+#: resources/ui/power-page.blp:78
+msgid "When Plugged In"
+msgstr ""
+
+#: resources/ui/sound-page.blp:11
+msgid "Theme"
+msgstr ""
+
+#: resources/ui/sound-page.blp:14
+msgid "Over Amplification"
+msgstr ""
+
+#: resources/ui/sound-page.blp:15
+msgid "Allow raising volume above 100%"
+msgstr ""
+
+#: resources/ui/sound-page.blp:19
+msgid "Event Sounds"
+msgstr ""
+
+#: resources/ui/sound-page.blp:23
+msgid "Input Feedback Sounds"
+msgstr ""
+
+#: resources/ui/tools-page.blp:9
+msgid "Default Shell Theme"
+msgstr ""
+
+#: resources/ui/tools-page.blp:12
+msgid "Include Top Bar Tweaks"
+msgstr ""
+
+#: resources/ui/tools-page.blp:16
+msgid "Extract default shell theme"
+msgstr ""
+
+#: resources/ui/tools-page.blp:19
+msgid "Extract"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:9
+msgid "Tweaks"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:12
+msgid "Change Text Color"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:20
+msgid "Text Color"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:21
+msgid "The color of text in top bar"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:32
+msgid "Change Background Color"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:41
+msgid "The color of top bar background"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:52
+msgid "Disable Arrows"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:56
+msgid "Disable Rounded Corners"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:61
+msgid "Accessibility"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:64
+msgid "Always Show Accessibility Menu"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:69
+msgid "Clock"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:72
+msgid "Show Date"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:76
+msgid "Show Weekday"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:80
+msgid "Show Seconds"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:84
+msgid "Time Format"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:85
+msgid "AM/PM"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:85
+msgid "24 Hours"
+msgstr ""
+
+#: resources/ui/top-bar-page.blp:93
+msgid "Show battery percentage"
+msgstr ""
