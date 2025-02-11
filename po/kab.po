@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-11 11:02+0000\n"
+"PO-Revision-Date: 2025-02-11 12:02+0000\n"
 "Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Kabyle <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/kab/>\n"
@@ -752,7 +752,7 @@ msgstr ""
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Seg"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
@@ -765,7 +765,7 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Tasefsit"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
@@ -781,7 +781,7 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "Ula yiwet"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
@@ -825,11 +825,11 @@ msgstr ""
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Ɣef"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Ffeɣ"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
@@ -853,7 +853,7 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Alugu"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
@@ -869,7 +869,7 @@ msgstr ""
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Izen"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
@@ -878,7 +878,7 @@ msgstr ""
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Amezwer"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
