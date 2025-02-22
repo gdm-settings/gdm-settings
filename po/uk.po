@@ -8,13 +8,14 @@
 # Володимир Давибіда <mrvovavova17@gmail.com>, 2024, 2025.
 # Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 # volkov <volkov@users.noreply.hosted.weblate.org>, 2024.
+# Volodymyr Davybida <mrvovavova17@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-02 17:02+0000\n"
-"Last-Translator: Володимир Давибіда <mrvovavova17@gmail.com>\n"
+"PO-Revision-Date: 2025-02-22 05:06+0000\n"
+"Last-Translator: Volodymyr Davybida <mrvovavova17@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.10.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -484,7 +485,9 @@ msgstr "Авторське право 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "Gleb <widness73@gmail.com>"
+msgstr ""
+"Gleb <widness73@gmail.com>\n"
+"Onatari <onatari.mail@gmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
