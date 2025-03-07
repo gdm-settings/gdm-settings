@@ -8,13 +8,14 @@
 # ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>, 2023, 2024.
 # Gabriel <gabrieldamoiseau.mobile@gmail.com>, 2024.
 # Quentin PAGÈS <quentinantonin@free.fr>, 2024.
+# Ricoland0 <yanisranque@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-07-18 19:09+0000\n"
-"Last-Translator: Quentin PAGÈS <quentinantonin@free.fr>\n"
+"PO-Revision-Date: 2025-03-07 11:02+0000\n"
+"Last-Translator: Ricoland0 <yanisranque@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -501,39 +502,40 @@ msgstr "Irénée Thirion <irenee.thirion@e.email>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Bleu"
 
 #: gdms/gui/pages/appearance.py:103
+#, fuzzy
 msgid "Teal"
-msgstr ""
+msgstr "Bleu sarcelle"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Vert"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Jaune"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Rouge"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Rose"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Violet"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Ardoise"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -1195,8 +1197,9 @@ msgid "Clock"
 msgstr "Horloge"
 
 #: resources/ui/top-bar-page.blp:72
+#, fuzzy
 msgid "Show Date"
-msgstr ""
+msgstr "Afficher la date"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
