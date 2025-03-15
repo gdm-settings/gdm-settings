@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-03-15 00:01+0000\n"
+"PO-Revision-Date: 2025-03-15 01:01+0000\n"
 "Last-Translator: Tóth Zsolt <toth19zsolt86@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hu/>\n"
@@ -87,59 +87,72 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "A kijelző hőmérséklete, ha engedélyezve van"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Ez a kelvinben kifejezett hőmérséklet a képernyő színhőmérsékletének "
+"módosítására szolgál, ha az éjszakai fény mód be van kapcsolva. A magasabb "
+"értékek kékebbek, az alacsonyabbak vörösebbek."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Használja a napkeltét és a naplementét"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"A napkelte és napnyugta időpontjának automatikus kiszámítása az aktuális "
+"helyről."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "A kezdés időpontja, órában"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
 msgstr ""
+"Ha az „automatikus ütemezés” le van tiltva, használja ezt a kezdési időt "
+"órákban."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "A kezdési idő percben"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Ha az „automatikus ütemezés” le van tiltva, használja ezt a kezdési időt, "
+"percet."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "Időzítés vége, órában"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
+"Ha az „automatikus ütemezés” ki van kapcsolva, használja ezt a befejezési "
+"időt órákban."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Időzítés vége, percben"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
+"Ha az „automatikus ütemezés” le van tiltva, használja ezt a befejezési időt, "
+"percben."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Bekapcsológomb művelet"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -147,28 +160,36 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"A rendszer bekapcsológombjának megnyomásakor végrehajtandó művelet. Ez a "
+"művelet a virtuális gépeken (kikapcsolás) és a táblagépeken (felfüggesztés) "
+"kódolt (és figyelmen kívül hagyja a beállítást)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
 msgstr ""
+"Energiatakarékos profil engedélyezése, ha az akkumulátor töltöttsége alacsony"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Ha az akkumulátor lemerült, automatikusan engedélyezze a \"Energiatakarékos\""
+" profilt a power-profiles-daemon segítségével."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Egy ideig tartó tétlenség után halványítsa el a képernyőt"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Ha a képernyőt el kell halványítani az energiatakarékosság érdekében, amikor "
+"a számítógép tétlen."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr ""
+msgstr "Halványítsa el a képernyőt, ha a munkamenet tétlen"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
