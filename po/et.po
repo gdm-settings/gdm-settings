@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gdm-settings package.
 # Priit Jõerüüt <hwlate@joeruut.com>, 2024.
 # Indrek Haav <IndrekHaav@users.noreply.hosted.weblate.org>, 2025.
+# Indrek Haav <indrek.haav@hotmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-03-18 09:01+0000\n"
-"Last-Translator: Indrek Haav <IndrekHaav@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-03-18 23:01+0000\n"
+"Last-Translator: Indrek Haav <indrek.haav@hotmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/et/>\n"
 "Language: et\n"
@@ -70,6 +71,8 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Puuteplaadi kursori kiirus. Lubatud väärtused on vahemikus -1..1 ("
+"\"kiirendamata\" kuni \"kiire\"). Vaikimisi väärtus on 0."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -106,7 +109,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
-msgstr ""
+msgstr "Algusaja tund"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
@@ -114,7 +117,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
-msgstr ""
+msgstr "Algusaja minut"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
@@ -122,7 +125,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
-msgstr ""
+msgstr "Lõppaja tund"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
@@ -130,7 +133,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
-msgstr ""
+msgstr "Lõppaja minut"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
@@ -191,7 +194,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "Unerežiimi ooteaeg, kui arvuti on akutoitel"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -205,7 +208,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "Unerežiimi ooteaeg, kui arvuti on võrgutoitel"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
@@ -255,6 +258,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Muuda GDM'i seadeid; Rakenda kujundus ja taust, muuda kursori välimust, "
+"ikoone ning öövalguse seadeid, ja muud."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
@@ -349,16 +354,16 @@ msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr "Liidese vaikimisi kujundusfail on kadunud"
+msgstr "Kesta vaikimisi kujunduse fail on kadunud"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"Rakendus vajab graafilise liidese vaikimisi kujunduse faili, kuid ta ei "
-"suuda seda leida. Vea parandamiseks paigalda uuesti „gnome-shell-common“ või "
-"„gnome-shell“ paketid."
+"Rakendus vajab kesta vaikimisi kujunduse faili, kuid ei suuda seda leida. "
+"Vea parandamiseks paigalda uuesti \"gnome-shell-common\" või \"gnome-shell\" "
+"paketid."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -388,7 +393,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr ""
+msgstr "Sessiooni seaded edukalt laaditud"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
@@ -444,7 +449,9 @@ msgstr "Autoriõigused 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "Priit Jõerüüt 2024, Indrek Haav"
+msgstr ""
+"Priit Jõerüüt 2024\n"
+"Indrek Haav <indrek.haav@pm.me>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
@@ -484,11 +491,11 @@ msgstr "Kiltkivi"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Praegused kuva seaded rakendatud"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "Praeguste kuva seadete rakendamine ebaõnnestus"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -498,6 +505,11 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"Fail \"$XDG_CONFIG_HOME/monitors.xml\" on nõutud, et praeguseid kuva seadeid "
+"rakendada, aga seda ei eksisteeri.\n"
+"\n"
+"Faili automaatseks lisamiseks ava süsteemi \"Seaded\" ja muuda seal mõnda "
+"kuva seadet."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
@@ -509,10 +521,11 @@ msgstr ""
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
+"Vaikimisi kesta kujundus ekstraktitud kausta \"{folder}\" nimega \"{name}\""
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Vaikimisi kujunduse ekstraktimine ebaõnnestus"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
@@ -624,18 +637,19 @@ msgstr ""
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Imporditud faili lugemine ebaõnnestus. Fail pole UTF-8 kodeeringus"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Imporditud failis puudub sektsioon \"{section_name}\""
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Imporditud faili sektsioonis \"{section_name}\" puudub võti \"{key_name}\""
 
 #: gdms/settings.py:224
 #, python-brace-format
@@ -645,7 +659,7 @@ msgstr "Eksportimine faili \"{filename}\""
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Faili \"{filename}\" kirjutamine ebaõnnestus. Puuduvad õigused"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -653,6 +667,8 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Faili \"{filename}\" kirjutamine ebaõnnestus. Sama nimega kataloog on juba "
+"olemas"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
@@ -660,7 +676,7 @@ msgstr "Eksportimine standardväljundisse"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Vaikimisi kesta kujunduse varundamine …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
@@ -671,6 +687,8 @@ msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"MÄRKUS: See töötab ainult GNOME 47-s (ja uuemates) 'Vaikimisi' kesta "
+"kujundusega."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -754,7 +772,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Päikesetõusust loojanguni"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
@@ -762,7 +780,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Kellaajad"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
@@ -1066,7 +1084,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr ""
+msgstr "Vaikimisi kesta kujundus"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
@@ -1074,7 +1092,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr ""
+msgstr "Ekstrakti vaikimisi kesta kujundus"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
