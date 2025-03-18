@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gdm-settings package.
 # Priit Jõerüüt <hwlate@joeruut.com>, 2024.
+# Indrek Haav <IndrekHaav@users.noreply.hosted.weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-16 09:00+0000\n"
-"Last-Translator: Priit Jõerüüt <hwlate@joeruut.com>\n"
+"PO-Revision-Date: 2025-03-18 08:01+0000\n"
+"Last-Translator: Indrek Haav <IndrekHaav@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/et/>\n"
 "Language: et\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-rc\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -29,7 +30,7 @@ msgstr "Tausta tüüp"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Kas kasutame GDMi taustana pilti, värvi või vakimisi eelistist."
+msgstr "Kas kasutada GDM'i taustana pilti, värvi või vaikimisi eelistust."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
@@ -38,7 +39,7 @@ msgstr "Taustapilt"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr "GDMi taustapildina kasutatav pilt"
+msgstr "GDM'i taustapildina kasutatav pildifail"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
@@ -46,22 +47,22 @@ msgstr "Taustapildi kohandamine"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Taustapildi kohandamise strateegia."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Taustavärv"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "GDM'i taustana kasutatav värv"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr ""
+msgstr "Kursori kiirus"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -72,17 +73,19 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr ""
+msgstr "Kas öövalgusrežiim on lubatud"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
+"Öövalgusrežiim muudab kuvari värvitemperatuuri päikeseloojangul või "
+"etteantud aegadel."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Kuvari värvitemperatuur"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
@@ -92,13 +95,14 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Kasuta päikesetõusu ja -loojangut"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Arvuta automaatselt asukoha põhjal päikesetõusu ja päikeseloojangu ajad."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
@@ -134,7 +138,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Toitenupu tegevus"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -145,13 +149,15 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
-msgstr ""
+msgstr "Aktiveeri madala akutaseme puhul voolusäästeprofiil"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:20
 msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
+"Aktiveeri automaatselt power-profiles-daemon abil \"power-saver\" profiil, "
+"kui akutase on madal."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
@@ -237,7 +243,7 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "GDM'i seaded"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
@@ -253,7 +259,7 @@ msgstr ""
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
@@ -269,11 +275,11 @@ msgstr ""
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Kuva tõrkeotsingu infot (Markdown-formaadis)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "Kuva rakenduse versioon"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -282,7 +288,7 @@ msgstr ""
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "TASE"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
@@ -309,6 +315,7 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"See rakendus vajab töötamiseks järgnevat tarkvara, mis pole paigaldatud."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
@@ -328,8 +335,8 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"Klõpsides <a href=\"{url}\">siin</a>, leiad juhendi, kuidas neid sõltuvusi "
-"oma arvutisse lisada."
+"Kliki <a href=\"{url}\">siin</a>, et saada infot, kuidas neid sõltuvusi oma "
+"arvutisse paigaldada."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
@@ -338,7 +345,7 @@ msgstr "Puuduvad sõltuvused"
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr "Sobib"
+msgstr "OK"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
@@ -363,14 +370,17 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Kui sulle meeldib see rakendus, siis palun kaalu annetamist, et saaksime "
+"selle arendamist jätkata.\n"
+"Aitäh! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "Ei ole huvitatud"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Anneta"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
@@ -382,15 +392,15 @@ msgstr ""
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
-msgstr ""
+msgstr "Sessiooni seadete laadimine EI OLE Flatpak versioonis toetatud"
 
 #: gdms/gui/__init__.py:306
 msgid "Reset settings successfully"
-msgstr ""
+msgstr "Seaded edukalt lähtestatud"
 
 #: gdms/gui/__init__.py:308
 msgid "Failed to reset settings"
-msgstr ""
+msgstr "Seadete lähtestamine ebaõnnestus"
 
 #: gdms/gui/__init__.py:327
 msgid "Import"
@@ -398,23 +408,23 @@ msgstr ""
 
 #: gdms/gui/__init__.py:348
 msgid "Settings were successfully imported from file"
-msgstr ""
+msgstr "Seaded edukalt failist imporditud"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
-msgstr ""
+msgstr "Importimine ebaõnnestus. Fail on vigane"
 
 #: gdms/gui/__init__.py:381
 msgid "Settings were successfully exported"
-msgstr ""
+msgstr "Seaded edukalt eksporditud"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
-msgstr ""
+msgstr "Eksportimine ebaõnnestus. Puuduvad õigused"
 
 #: gdms/gui/__init__.py:385
 msgid "Failed to export. A directory with that name already exists"
-msgstr ""
+msgstr "Eksportimine ebaõnnestus. Selle nimega kataloog on juba olemas"
 
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
@@ -434,7 +444,7 @@ msgstr "Autoriõigused 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "Priit Jõerüüt 2024"
+msgstr "Priit Jõerüüt 2024, Indrek Haav"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
@@ -506,7 +516,7 @@ msgstr ""
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Vali fail"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
@@ -514,27 +524,27 @@ msgstr ""
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Vali"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Pildid"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Kõik failid"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Vali pilt"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Välimus"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Fondid"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
@@ -542,15 +552,15 @@ msgstr ""
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Heli"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Hiir ja puuteplaat"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Kuva"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
@@ -558,19 +568,19 @@ msgstr ""
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "Toide"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Tööriistad"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Seaded edukalt rakendatud"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Seadete rakendamine ebaõnnestus"
 
 #: gdms/gui/window.py:147
 msgid ""
@@ -589,24 +599,24 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Logi välja?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Katkesta"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Logi välja"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importimine failist \"{filename}\""
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importimine standardsisendist"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
@@ -630,7 +640,7 @@ msgstr ""
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Eksportimine faili \"{filename}\""
 
 #: gdms/settings.py:229
 #, python-brace-format
@@ -646,7 +656,7 @@ msgstr ""
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Eksportimine standardväljundisse"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
