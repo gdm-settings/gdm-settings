@@ -7,21 +7,25 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-01 06:02+0000\n"
+"Last-Translator: Dejan <downaload1@gmail.com>\n"
+"Language-Team: Croatian <https://hosted.weblate.org/projects/gdm-settings/"
+"language-names/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr ""
+msgstr "Naziv teme"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
-msgstr ""
+msgstr "Vrsta pozadine"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
@@ -30,35 +34,35 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr ""
+msgstr "Pozadinska slika"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr ""
+msgstr "Slika koja se koristi kao GDM pozadina"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr ""
+msgstr "Podešavanje pozadinske slike"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "Strategija za podešavanje pozadinske slike."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Boja pozadine"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
 msgid "The Color to use as GDM background"
-msgstr ""
+msgstr "Boja za korištenje kao GDM pozadina"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:20
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:31
 msgid "Pointer speed"
-msgstr ""
+msgstr "Brzina strelice"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.mouse.gschema.xml:21
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.touchpad.gschema.xml:32
@@ -79,7 +83,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
-msgstr ""
+msgstr "Temperatura boje slike kada je uključen"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:14
 msgid ""
@@ -89,13 +93,14 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
-msgstr ""
+msgstr "Koristi zoru i zalazak sunca"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:20
 msgid ""
 "Calculate the sunrise and sunset times automatically, from the current "
 "location."
 msgstr ""
+"Izračunaj zoru i zalazak sunca automatski, bazirano po trenutnoj lokaciji."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:25
 msgid "The start time's hour"
@@ -131,7 +136,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr ""
+msgstr "Radnja tipke za gašenje"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -139,6 +144,9 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
+"Radnja koja će se izvršiti kada se pritisne tipka za gašenje. Ova radnja je "
+"fiksna (i postavke ignorirane) na virtualnim mašinama (isključi) i tabletima "
+"(način spavanja)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
 msgid "Enable power-saver profile when battery is low"
@@ -152,11 +160,12 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr ""
+msgstr "Zatamni ekran nakon perioda neaktivnosti"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
+"Treba li ekran biti zatamljen da uštedi struju dok se računalo ne koristi."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
@@ -203,6 +212,8 @@ msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
+"Količina vremena u minutama kojem treba računalu uštekanom u struju da bude "
+"neaktivno prije nego što uđe u način mirovanja. Parametar 0 znači nikada."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
