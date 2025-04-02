@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-04-01 07:02+0000\n"
+"PO-Revision-Date: 2025-04-02 19:08+0000\n"
 "Last-Translator: Dejan <downaload1@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hr/>\n"
@@ -247,11 +247,11 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "GDM Postavke"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Personaliziraj svoj ekran za prijavu"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -259,6 +259,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"Promjeni GDM postavke: Primjeni temu i pozadinu, promjeni izgled strelice za "
+"miš, temu ikona, postavke noćnog svijetla, zajedno sa drugim stvarima."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
@@ -267,7 +269,7 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Glavni Prozor (Mod radne površine)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
@@ -275,7 +277,7 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Postavke izgleda (Mobilni način)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
@@ -283,7 +285,7 @@ msgstr ""
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "Prikaži verziju aplikacije"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
@@ -319,11 +321,13 @@ msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Ova aplikacija zahtjeva sljedeći softver da funkcionira pravilno ali nije "
+"instaliran."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
