@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-04-02 21:04+0000\n"
+"PO-Revision-Date: 2025-04-02 22:08+0000\n"
 "Last-Translator: Dejan <downaload1@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hr/>\n"
@@ -30,7 +30,7 @@ msgstr "Vrsta pozadine"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr ""
+msgstr "Treba li GDM pozadina biti slika, boja, ili zadano."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
@@ -70,6 +70,8 @@ msgid ""
 "Pointer speed for the touchpad. Accepted values are in the [-1..1] range "
 "(from “unaccelerated” to “fast”). A value of 0 is the system default."
 msgstr ""
+"Brzina strelice za dodirnu plohu. Dopušteni brojevi su [-1..1] rang (od "
+"\"neubrzano\" do \"brzo\"). Broj 0 je brzina zadana sustavom."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
@@ -618,12 +620,12 @@ msgstr "Odustani"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Odjava"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Uvoz iz datoteke {filename}"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
