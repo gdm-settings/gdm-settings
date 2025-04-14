@@ -9,13 +9,14 @@
 # Gabriel <gabrieldamoiseau.mobile@gmail.com>, 2024.
 # Quentin PAGÈS <quentinantonin@free.fr>, 2024.
 # Ricoland0 <yanisranque@gmail.com>, 2025.
+# p-sage <hemionn@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-03-07 11:02+0000\n"
-"Last-Translator: Ricoland0 <yanisranque@gmail.com>\n"
+"PO-Revision-Date: 2025-04-14 15:01+0000\n"
+"Last-Translator: p-sage <hemionn@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fr/>\n"
 "Language: fr\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.3-dev\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -401,8 +402,6 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
 msgstr "Le fichier du thème par défaut du shell est perdu"
 
@@ -425,6 +424,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Si vous aimez cette application, pensez à faire un don pour que nous "
+"puissions continuer à l'améliorer.\n"
+"Merci ! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -505,7 +507,6 @@ msgid "Blue"
 msgstr "Bleu"
 
 #: gdms/gui/pages/appearance.py:103
-#, fuzzy
 msgid "Teal"
 msgstr "Bleu sarcelle"
 
@@ -733,16 +734,16 @@ msgid "Backing up default shell theme …"
 msgstr "Sauvegarde du thème par défaut du shell …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Couleur du texte"
+msgstr "Couleur d'accentuation"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"NOTE : Ceci ne fonctionnera que sur GNOME 47 (et plus) avec le thème de "
+"shell « Default »."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -1025,7 +1026,7 @@ msgstr "Pavé tactile"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Désactiver pour la souris externe"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1197,7 +1198,6 @@ msgid "Clock"
 msgstr "Horloge"
 
 #: resources/ui/top-bar-page.blp:72
-#, fuzzy
 msgid "Show Date"
 msgstr "Afficher la date"
 
