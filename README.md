@@ -24,11 +24,13 @@
 
 <div align="center">
   <h2>
-    <a href="https://github.com/gdm-settings/gdm-settings/releases/latest/download/Login_Manager_Settings.AppImage">Download</a>
+    <a href="https://github.com/gdm-settings/gdm-settings/releases/latest/download/GDM_Settings.AppImage">Download</a>
     <span> | </span>
     <a href="https://github.com/gdm-settings/gdm-settings/wiki/Install">Install</a>
   </h2>
 </div>
+
+
 
 <div align="center">
   <a href="https://github.com/gdm-settings/gdm-settings/wiki/Screenshots">
