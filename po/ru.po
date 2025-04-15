@@ -8,22 +8,23 @@
 # antieksi <deustarkek@gmail.com>, 2024.
 # maksxqwq <maks.sxwq@gmail.com>, 2024.
 # Aleksandr Melman <alexmelman88@gmail.com>, 2024.
+# Fraxinus Acer <>, 2025.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: PACKAGE VERSION.0.1\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-07-23 11:09+0000\n"
-"Last-Translator: Aleksandr Melman <alexmelman88@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/gdm-settings/"
-"language-names/ru/>\n"
+"PO-Revision-Date: 2025-04-13 16:34+0300\n"
+"Last-Translator: Fraxinus Acer <>\n"
+"Language-Team: Russian\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7-dev\n"
+"X-Generator: Gtranslator 48.0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -411,6 +412,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Если вам нравится это приложение, пожалуйста, подумайте о пожертвовании, "
+"чтобы мы могли продолжать улучшать его.\n"
+"Спасибо! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -488,39 +492,39 @@ msgstr ""
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "Голубой"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "Бирюзовый"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "Зелёный"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Жёлтый"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Оранжевый"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Красный"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Розовый"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Лиловый"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Серый"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -719,16 +723,15 @@ msgid "Backing up default shell theme …"
 msgstr "Резервное копирование темы оболочки по умолчанию …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "Цвет текста"
+msgstr "Акцентный цвет"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"ИНФО: Это работает только в GNOME 47 (и выше) с \"Обычной\" темой оболочки."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -1011,7 +1014,7 @@ msgstr "Сенсорная панель"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Отключать при внешней мыши"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1185,7 +1188,7 @@ msgstr "Часы"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Показывать дату"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
@@ -1210,155 +1213,3 @@ msgstr "24-часовой"
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
 msgstr "Показать процент заряда батареи"
-
-#~ msgid ""
-#~ "This app is and will always remain Open Source/Libre and free of cost. "
-#~ "However, You can show some love by donating to the developer.\n"
-#~ "❤️\n"
-#~ "I would really appreciate it."
-#~ msgstr ""
-#~ "Это приложение есть и всегда будет бесплатным приложением с открытым "
-#~ "исходным кодом. Однако, вы можете проявить немного любви, сделав "
-#~ "пожертвование разработчику.\n"
-#~ "❤️\n"
-#~ "Я был бы вам очень признателен."
-
-#~ msgid "<em>New Options</em>"
-#~ msgstr "<em>Новые возможности</em>"
-
-#~ msgid "Option to disable accessiblitly menu when not being used"
-#~ msgstr ""
-#~ "Возможность отключить меню специальных возможностей, когда оно не "
-#~ "используется"
-
-#~ msgid "Option to change cursor size"
-#~ msgstr "Возможность изменения размера курсора"
-
-#~ msgid "A one-time donation request"
-#~ msgstr "Запрос на единовременное пожертвование"
-
-#~ msgid "Donate option in hamburger menu"
-#~ msgstr "Пожертвование на гамбургер в меню"
-
-#~ msgid "<em>Behavior Changes</em>"
-#~ msgstr "<em>Изменения в поведении</em>"
-
-#~ msgid "Proper names are shown for themes instead of name of their directory"
-#~ msgstr "Для тем отображаются собственные имена, а не название их каталога"
-
-#~ msgid "Cursor only themes are not presented when choosing icon theme"
-#~ msgstr ""
-#~ "Темы, доступные только для курсора, не отображаются при выборе темы значка"
-
-#~ msgid "Fixed: Fails to run on PureOS"
-#~ msgstr "Исправлено: не удается запустить на PureOS"
-
-#~ msgid "Login Manager Settings"
-#~ msgstr "Настройки менеджера входа в систему"
-
-#, python-brace-format
-#~ msgid "Applying GResource settings for {distro_name} …"
-#~ msgstr "Применение настроек ресурсов для {distro_name} …"
-
-#~ msgid "Ubuntu"
-#~ msgstr "Ubuntu"
-
-#~ msgid "generic system"
-#~ msgstr "общая система"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Resetting GResource settings for Ubuntu …"
-#~ msgstr "Сброс настроек ресурсов для Ubuntu …"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Resetting GResource settings for non-Ubuntu systems …"
-#~ msgstr "Сброс настроек ресурсов для систем, отличных от Ubuntu …"
-
-#~ msgctxt "Command-line output"
-#~ msgid "Applying GResource settings for non-Ubuntu systems …"
-#~ msgstr "Применение настроек ресурсов для систем, отличных от Ubuntu …"
-
-#~ msgid "Added power settings"
-#~ msgstr "Добавлены настройки питания"
-
-#~ msgid "Added options to import/export settings in the global menu"
-#~ msgstr "Добавлены опции для импорта / экспорта настроек в глобальном меню"
-
-#~ msgid "Added an option to enlarge welcome message"
-#~ msgstr "Добавлена возможность увеличения приветственного сообщения"
-
-#~ msgid "Added color to command-line output"
-#~ msgstr "Добавлен цвет для вывода из командной строки"
-
-#~ msgid "Turned main window adaptive"
-#~ msgstr "Главное окно теперь адаптивное"
-
-#~ msgid "Turned pop-up dialogs adaptive"
-#~ msgstr "Всплывающие диалоги теперь адаптивные"
-
-#~ msgid "Updated \"about\" window to the new style"
-#~ msgstr "Обновлено окно \"О программе\" в новом стиле"
-
-#~ msgid "Improved style of welcome message input field"
-#~ msgstr "Улучшен стиль поля ввода приветственного сообщения"
-
-#~ msgid "Renamed sidebar section \"Miscellaneous\" to \"Login Screen\""
-#~ msgstr ""
-#~ "Переименован раздел боковой панели \"Разное\" в \"Экран входа в систему\""
-
-#~ msgid ""
-#~ "Renamed global menu option \"Import user settings\" to \"Load session "
-#~ "settings\""
-#~ msgstr ""
-#~ "Переименован пункт глобального меню \"Импорт пользовательских настроек\" "
-#~ "в \"Загрузить настройки сеанса\""
-
-#~ msgid ""
-#~ "The app, now, shows an error notification when trying to apply settings "
-#~ "if logo is enabled and the chosen logo image does not exist on the system "
-#~ "anymore"
-#~ msgstr ""
-#~ "Теперь приложение показывает уведомление об ошибке при попытке применить "
-#~ "настройки, если логотип включен, а выбранное изображение логотипа больше "
-#~ "не существует в системе"
-
-#~ msgid ""
-#~ "Fixed \"Apply Current Display Settings\" feature not working on some "
-#~ "Ubuntu-based systems"
-#~ msgstr ""
-#~ "Исправлена ошибка, из-за которой функция \"Применить текущие настройки "
-#~ "отображения\" не работала в некоторых системах на базе Ubuntu"
-
-#~ msgid "Fixed some text showing up untranslated even if translation existed"
-#~ msgstr ""
-#~ "Исправлено, что некоторые тексты отображались непереведенными, даже если "
-#~ "перевод существовал"
-
-#~ msgid "Fixed not being able to change logo image sometimes"
-#~ msgstr ""
-#~ "Исправлена ошибка, из-за которой иногда не удавалось изменить изображение "
-#~ "логотипа"
-
-#~ msgid "Fixed some typos"
-#~ msgstr "Исправлены некоторые опечатки"
-
-#~ msgctxt "Cursor Size"
-#~ msgid "Non-Standard"
-#~ msgstr "Нестандартный"
-
-#~ msgid "Updated screenshots"
-#~ msgstr "Обновленные скриншоты"
-
-#~ msgid "Updated translations"
-#~ msgstr "Обновленные переводы"
-
-#~ msgid "Fixed developer name in about window not being translated"
-#~ msgstr ""
-#~ "Исправлено, что имя разработчика в окне \"О программе\" не переводилось"
-
-#~ msgid ""
-#~ "Fixed \"Apply Current Display Settings\" feature not working on Ubuntu "
-#~ "and Ubuntu-like systems"
-#~ msgstr ""
-#~ "Исправлена ошибка, из-за которой функция \"Применить текущие настройки "
-#~ "отображения\" не работала в Ubuntu и системах, подобных Ubuntu"
