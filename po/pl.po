@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-06-08 17:01+0000\n"
+"PO-Revision-Date: 2025-06-11 18:05+0000\n"
 "Last-Translator: Adam Lewicki <a.lewicki95@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pl/>\n"
@@ -293,7 +293,7 @@ msgstr ""
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+msgstr "Hussain Mazhar"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
@@ -467,12 +467,12 @@ msgstr "Eksport nie powiódł się. Katalog o tej nazwie już istnieje"
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr "Mazhar Hussain"
+msgstr "Hussain Mazhar"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr "Thales Bindá"
+msgstr "Bindá Thales"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -843,7 +843,7 @@ msgstr "Standardowe"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr "Subpixel"
+msgstr "Subpiksel"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
