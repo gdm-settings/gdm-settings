@@ -630,9 +630,14 @@ def apply_user_display_settings() -> bool:
     shutil.copyfile(user_monitors_xml, temp_monitors_xml)
     os.chmod(temp_monitors_xml, 0o644)
 
+    experimental_features = []
+    if user_settings := _GSettings('org.gnome.mutter'):
+        experimental_features = user_settings['experimental-features']
+
+
     _commands.add(['machinectl', 'shell', f'{gresource.GdmUsername}@', '/usr/bin/env',
                      'gsettings', 'set', 'org.gnome.mutter', 'experimental-features',
-                     '"[\'scale-monitor-framebuffer\']"',
+                     f'"{experimental_features}"',
                      '&>/dev/null',
                    ])
 
@@ -642,6 +647,7 @@ def apply_user_display_settings() -> bool:
                      f'~{gresource.GdmUsername}/.config/monitors.xml',
                    ])
 
+    print(_commands)
     return _commands.run()
 
 
