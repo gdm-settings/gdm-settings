@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Eshagh Shahedany <eshagh094@gmail.com>, 2022.
 # Eshagh shahidani <eshagh094@gmail.com>, 2022.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2024.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-11-28 01:00+0000\n"
+"PO-Revision-Date: 2025-07-26 14:06+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/fa/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -48,7 +48,7 @@ msgstr "تنظیم تصویر پس‌زمینه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "رویکرد تنظیم تصویر پس‌زمینه."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
@@ -193,7 +193,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr ""
+msgstr "زمان‌سنج خواب رایانه روی باتری"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
@@ -207,7 +207,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr ""
+msgstr "زمان‌سنج خواب برای رایانه هنگام وصل بودن به برق"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
@@ -225,11 +225,11 @@ msgstr "این که پیکان‌های نوار بالایی از کار بیف
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr ""
+msgstr "این که گوشه‌های گرد نوار بالایی از کار بیفتد یا نه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr ""
+msgstr "این که رنگ متن نوا ربالایی عوض شود یا نه"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
@@ -279,7 +279,7 @@ msgstr "تنظیمات ظاهر (حالت همراه)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "نمایش اطّلاعات اشکال‌زدایی (در قالب مارک‌دون)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -287,7 +287,7 @@ msgstr "نمایش نگارش برنامه"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "تنظیم دستی سطح پرگویی (از ۰ تا ۵)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
@@ -627,7 +627,7 @@ msgstr ""
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "پروندهٔ درون‌ریخته بخش {section_name} را ندارد"
 
 #: gdms/settings.py:204
 #, python-brace-format
@@ -643,7 +643,7 @@ msgstr "برون ریزی به {filename}"
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "نمی‌توان روی پروندهٔ {filename} نوشت. اجازه رد شد"
 
 #: gdms/settings.py:233
 #, python-brace-format
