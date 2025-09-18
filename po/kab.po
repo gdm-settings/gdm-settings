@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-11 12:02+0000\n"
+"PO-Revision-Date: 2025-09-18 08:01+0000\n"
 "Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Kabyle <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/kab/>\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr ""
+msgstr "Isem n usentel"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr ""
+msgstr "Tugna n uɣawas n deffir"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
@@ -51,7 +51,7 @@ msgstr ""
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
 msgid "Background Color"
-msgstr ""
+msgstr "Ini n uɣawas n deffir"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:72
@@ -237,7 +237,7 @@ msgstr ""
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "Iɣewwaren n GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
@@ -253,7 +253,7 @@ msgstr ""
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
@@ -414,12 +414,12 @@ msgstr ""
 #: gdms/gui/about.py:9
 msgctxt "Name of Developer"
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:10
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
-msgstr ""
+msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
 msgid "Copyright 2021-2023 Mazhar Hussain"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Fren afaylu"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
@@ -517,11 +517,11 @@ msgstr "Tugniwin"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Akk ifuyla"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Fren tugna"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
@@ -533,7 +533,7 @@ msgstr "Tisefsiyin"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Afeggag n ufella"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
@@ -549,7 +549,7 @@ msgstr "Askan"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Agdil n tuqqna"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
@@ -584,7 +584,7 @@ msgstr ""
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Senser tuqqna?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -592,7 +592,7 @@ msgstr "Semmet"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Ffeɣ"
 
 #: gdms/settings.py:184
 #, python-brace-format
@@ -671,7 +671,7 @@ msgstr "Tignitin"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "Taḥnaccaḍṭ"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
@@ -703,7 +703,7 @@ msgstr ""
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Sezg ɣer ugdil"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
@@ -723,7 +723,7 @@ msgstr ""
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Snes"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
@@ -731,11 +731,11 @@ msgstr ""
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Sermed"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Sɣiwes"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
@@ -773,7 +773,7 @@ msgstr ""
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "Amslugen"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
@@ -817,11 +817,11 @@ msgstr ""
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Kter-d si kra n ufaylu"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Sifeḍ ɣer ufaylu"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
@@ -902,7 +902,7 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Amumed"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
@@ -910,7 +910,7 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Awurman"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
@@ -918,7 +918,7 @@ msgstr ""
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Yermed"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
@@ -974,7 +974,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:13
 msgid "Ask"
-msgstr ""
+msgstr "Suter"
 
 #: resources/ui/power-page.blp:18
 msgid "Automatic Power Saver"
@@ -994,7 +994,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:28
 msgid "Turn Screen Off"
-msgstr ""
+msgstr "Sexsi agdil"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
@@ -1019,7 +1019,7 @@ msgstr ""
 
 #: resources/ui/power-page.blp:56
 msgid "On Battery Power"
-msgstr ""
+msgstr "Icudd ɣer uzṛu"
 
 #: resources/ui/power-page.blp:66 resources/ui/power-page.blp:88
 msgid "Time in minutes after which the computer will suspend."
@@ -1031,7 +1031,7 @@ msgstr ""
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
-msgstr ""
+msgstr "Asentel"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
@@ -1063,7 +1063,7 @@ msgstr ""
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr ""
+msgstr "Ssef"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
@@ -1075,7 +1075,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
-msgstr ""
+msgstr "Ini n uḍris"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
@@ -1107,7 +1107,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
-msgstr ""
+msgstr "Tamrilt"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
@@ -1123,15 +1123,15 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr ""
+msgstr "Amasal n usrag"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
-msgstr ""
+msgstr "AM / PM"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "24 Hours"
-msgstr ""
+msgstr "24 n yesragen"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
