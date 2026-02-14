@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-12 19:09+0000\n"
+"PO-Revision-Date: 2026-02-14 20:09+0000\n"
 "Last-Translator: Romhányi-Kakucska Viktor <viktor@romhanyi.dev>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hu/>\n"
@@ -258,23 +258,23 @@ msgstr "A felső sáv szövegének színének megváltoztatása"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
-msgstr ""
+msgstr "Felső sáv szöveg színe"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr ""
+msgstr "Felső sáv háttérének megváltoztatása"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
-msgstr ""
+msgstr "Feslő sáv háttérszíne"
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
 msgid "GDM Settings"
-msgstr ""
+msgstr "GDM beállítások"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr ""
+msgstr "Bejelentkezési képernyő testreszabása"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -282,48 +282,50 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
+"GDM beállítások módosítása; Többek között a Téma és háttér alkalmazása, "
+"kurzor téma, ikon téma és éjszakai fény beállítások módosítása."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
 msgid "Mazhar Hussain"
-msgstr ""
+msgstr "Hussain Mazhar"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "Főablak (asztali mód)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Oldalsáv (mobil mód)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "Megjelenési beállítások (mobil mód)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "Hibakeresési információk megjelenítése (Markdown formátumban)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
-msgstr ""
+msgstr "Alkalmazás verziójának megjelenítése"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr ""
+msgstr "A részletesség szintjét manuálisan beállítása (0 és 5 között)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr ""
+msgstr "SZINT"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr ""
+msgstr "Részletes mód bekapcsolása (--verbosity=5 alias-a)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr ""
+msgstr "Csendes mód bekapcsolása (--verbosity=0 alias-a)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
