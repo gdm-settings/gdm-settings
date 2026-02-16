@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-14 20:09+0000\n"
+"PO-Revision-Date: 2026-02-16 07:09+0000\n"
 "Last-Translator: Romhányi-Kakucska Viktor <viktor@romhanyi.dev>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hu/>\n"
@@ -331,6 +331,8 @@ msgstr "Csendes mód bekapcsolása (--verbosity=0 alias-a)"
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
+"Érvénytelen részletességi szint {level}. 0, 5 vagy ezek közötti érték "
+"szükséges."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -338,22 +340,26 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
+"Eme alkalmazás megfelelő működéséhez a következő programokat kell telepíteni "
+"<b>a gazdaszerverre</b>, de ezek nincsenek telepítve a gazdarendszerre."
 
 #: gdms/gui/__init__.py:182
 msgid ""
 "This app requires the following software to function properly but they are "
 "not installed."
 msgstr ""
+"Ez az alkalmazás megfelelő működéséhez a következő szoftverek szükségesek, "
+"amely azonban nincs telepítve."
 
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr ""
+msgstr "<b>GDM</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr ""
+msgstr "<b>Polkit</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -363,29 +369,33 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
+"Kattintson <a href=\"{url}\">ide</a> a függőségek telepítési útmutatójához."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
-msgstr ""
+msgstr "Hiányzó függőségek"
 
 #: gdms/gui/__init__.py:217 gdms/gui/__init__.py:230
 #: gdms/gui/pages/display.py:108
 msgid "OK"
-msgstr ""
+msgstr "Rendben"
 
 #: gdms/gui/__init__.py:223
 msgid "Default Shell Theme File Lost"
-msgstr ""
+msgstr "Az alapértelmezett Shell téma fájl elveszett"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"Az alkalmazásnak szüksége van egy módosítatlan alapértelmezett shell "
+"témafájlra, de nem találja azt. A probléma megoldásához telepítse újra a „"
+"gnome-shell-common” vagy a „gnome-shell” csomagot."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "Adománykérés"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -393,18 +403,21 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Ha tetszik ez az alkalmazás, kérjük, fontoljon a továbbfejlesztési lehetőség "
+"véget egy adományt.\n"
+"Köszönjük! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "Nem érdekel"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr ""
+msgstr "Adományozon"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr ""
+msgstr "Beállítások ujratöltve"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
