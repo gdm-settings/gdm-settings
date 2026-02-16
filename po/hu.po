@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-16 16:09+0000\n"
+"PO-Revision-Date: 2026-02-16 17:09+0000\n"
 "Last-Translator: Romhányi-Kakucska Viktor <viktor@romhanyi.dev>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hu/>\n"
@@ -839,176 +839,176 @@ msgstr "Élsimitás"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 #: resources/ui/fonts-page.blp:25
 msgid "Subpixel"
-msgstr ""
+msgstr "Alpixel"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr ""
+msgstr "Nincs"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
-msgstr ""
+msgstr "Célzás"
 
 #: resources/ui/fonts-page.blp:33
 msgid "Full"
-msgstr ""
+msgstr "Teljes"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr ""
+msgstr "Közepes"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
-msgstr ""
+msgstr "Enyhe"
 
 #: resources/ui/fonts-page.blp:41
 msgid "Scaling Factor"
-msgstr ""
+msgstr "Méretezési tényező"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr ""
+msgstr "Frissítés"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
-msgstr ""
+msgstr "Munkameneti beállítások betöltése"
 
 #: resources/ui/main-window.blp:8
 msgid "Reset settings"
-msgstr ""
+msgstr "Beállítások visszaállítása"
 
 #: resources/ui/main-window.blp:11
 msgid "Import from file"
-msgstr ""
+msgstr "Import fájlból"
 
 #: resources/ui/main-window.blp:12
 msgid "Export to file"
-msgstr ""
+msgstr "Export fájlba"
 
 #: resources/ui/main-window.blp:18
 msgid "About"
-msgstr ""
+msgstr "Rólunk"
 
 #: resources/ui/main-window.blp:19
 msgid "Quit"
-msgstr ""
+msgstr "Kilépés"
 
 #: resources/ui/main-window.blp:34
 msgid "_Apply"
-msgstr ""
+msgstr "_Alkalmaz"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr ""
+msgstr "Újraindítás gombok letiltása"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr ""
+msgstr "Felhasználói lista letiltása"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr ""
+msgstr "Logo engedélyezés"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
-msgstr ""
+msgstr "Logo mutatása a felhasználói lista alatt"
 
 #: resources/ui/login-screen-page.blp:30
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr ""
+msgstr "A kép amit a felhasználói lista alatt mutat"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
-msgstr ""
+msgstr "Üdvözlő üzenet"
 
 #: resources/ui/login-screen-page.blp:44
 msgid "Enlarge"
-msgstr ""
+msgstr "Nagyítás"
 
 #: resources/ui/login-screen-page.blp:49
 msgid "Message"
-msgstr ""
+msgstr "Üzenet"
 
 #: resources/ui/pointing-page.blp:10
 msgid "Cursor Size"
-msgstr ""
+msgstr "Mutató mérete"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr ""
+msgstr "Közepes"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr ""
+msgstr "Nagy"
 
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr ""
+msgstr "Nagyobb"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "Legnagyobb"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
-msgstr ""
+msgstr "Egér"
 
 #: resources/ui/pointing-page.blp:28
 msgid "Pointer Acceleration"
-msgstr ""
+msgstr "Mutató gyorsulása"
 
 #: resources/ui/pointing-page.blp:30
 msgid "Automatic"
-msgstr ""
+msgstr "Automatikus"
 
 #: resources/ui/pointing-page.blp:31
 msgid "Disabled"
-msgstr ""
+msgstr "Letiltott"
 
 #: resources/ui/pointing-page.blp:32
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezett"
 
 #: resources/ui/pointing-page.blp:37 resources/ui/pointing-page.blp:66
 msgid "Natural Scrolling"
-msgstr ""
+msgstr "Természetes görgetés"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr ""
+msgstr "A görgetés a tartalmat mozgatja, nem a nézetet."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
-msgstr ""
+msgstr "Mutató sebessége"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr ""
+msgstr "Érintő pad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Kikapcsol ha külső egér csatlakoztatott"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr ""
+msgstr "Kikapcsol míg gépel"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
