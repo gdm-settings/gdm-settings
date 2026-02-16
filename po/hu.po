@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-16 13:09+0000\n"
+"PO-Revision-Date: 2026-02-16 16:09+0000\n"
 "Last-Translator: Romhányi-Kakucska Viktor <viktor@romhanyi.dev>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16-dev\n"
+"X-Generator: Weblate 5.16\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -493,35 +493,35 @@ msgstr "Zöldeskék"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "Sárga"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "Narancssárga"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "Piros"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "Rózsaszín"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "Bíbor"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Pala"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr ""
+msgstr "Alkalmazott jelenlegi megjelenítési beállítások"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
-msgstr ""
+msgstr "A jelenlegi megjelenítési beállítások alkalmazása sikertelen"
 
 #: gdms/gui/pages/display.py:94
 msgid ""
@@ -531,10 +531,15 @@ msgid ""
 "In order to create that file automatically, open system 'Settings' and "
 "change some display options there."
 msgstr ""
+"A jelenlegi kijelzőbeállítások alkalmazásához szükséges a '$XDG_CONFIG_HOME/"
+"monitors.xml' fájl, de ez nem létezik.\n"
+"\n"
+"A fájl automatikus létrehozásához nyissa meg a rendszer 'Beállítások' "
+"menüpontját, és módosítson néhány kijelzőbeállítást."
 
 #: gdms/gui/pages/display.py:103
 msgid "Monitor Settings Not Found"
-msgstr ""
+msgstr "A monitor beállításai nem találhatók"
 
 #. Translators: Do not translate '{folder}' and '{name}'. Keep these as they are.
 #. They will be replaced by an actual folder path and theme name during runtime.
@@ -542,143 +547,153 @@ msgstr ""
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
 msgstr ""
+"Az alapértelmezett shell téma a '{folder}' mappába lett kibontva mint '{name}"
+"'"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
-msgstr ""
+msgstr "Az alapértelmezett téma kibontása sikertelen"
 
 #: gdms/gui/widgets.py:18
 msgid "Choose File"
-msgstr ""
+msgstr "Válasszon fájlt"
 
 #: gdms/gui/widgets.py:25
 msgid "(None)"
-msgstr ""
+msgstr "(Nincs)"
 
 #: gdms/gui/widgets.py:51
 msgid "Choose"
-msgstr ""
+msgstr "Válasszon"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr ""
+msgstr "Képek"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "Minden fájl"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr ""
+msgstr "Válasszon képet"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
-msgstr ""
+msgstr "Megjelenés"
 
 #: gdms/gui/window.py:114
 msgid "Fonts"
-msgstr ""
+msgstr "Betűtípusok"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr ""
+msgstr "Felső sáv"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
-msgstr ""
+msgstr "Hang"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr ""
+msgstr "Egér és érintő pad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
-msgstr ""
+msgstr "Kijelző"
 
 #: gdms/gui/window.py:119
 msgid "Login Screen"
-msgstr ""
+msgstr "Bejelentkezési képernyő"
 
 #: gdms/gui/window.py:120 resources/ui/top-bar-page.blp:90
 msgid "Power"
-msgstr ""
+msgstr "Energia"
 
 #: gdms/gui/window.py:121
 msgid "Tools"
-msgstr ""
+msgstr "Eszközök"
 
 #: gdms/gui/window.py:139
 msgid "Settings applied successfully"
-msgstr ""
+msgstr "Beállítások sikeresen alkalmazva"
 
 #: gdms/gui/window.py:143
 msgid "Failed to apply settings"
-msgstr ""
+msgstr "Beállítások sikertelen alkalmazása"
 
 #: gdms/gui/window.py:147
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
+"Nincs alkalmazva. A kiválasztott háttérkép már nem létezik. Kérjük, "
+"válasszon újra!"
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
+"Nincs alkalmazva. A kiválasztott logo már nem létezik. Kérjük, válasszon "
+"újra!"
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
+"A rendszer furcsán/hibásan működhet, amíg újra be nem jelentkezik vagy újra "
+"nem indítja."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr ""
+msgstr "Kijelentkezés?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importálás {filename} fájlból"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr ""
+msgstr "Importálás standard bemenetről"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
-msgstr ""
+msgstr "Sikertelen importfájl elemzés"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
-msgstr ""
+msgstr "Sikertelen importfájl beolvasása. Nem UTF-8 kódolt"
 
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr ""
+msgstr "Importfájl nem rendelkezik '{section_name}'"
 
 #: gdms/settings.py:204
 #, python-brace-format
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Importfájl nem rendelkezik '{key_name}' kulcssal a '{section_name}' "
+"szakaszban"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Exportálás '{filename}' fájlba"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Sikertelen írás '{filename}' fájlba. Engedély megtagadva"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -686,138 +701,141 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Sikertelen írás '{filename}' fájlba. Már létezik egy azonos nevű könyvtár"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr ""
+msgstr "Exportálás a standard kimenetre"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
-msgstr ""
+msgstr "Alapértelmezett shell téma biztonsági mentése …"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
 msgid "Accent Color"
-msgstr ""
+msgstr "Kiemelő szín"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
 msgstr ""
+"MEGJEGYZÉS: Ez csak a GNOME 47 (és újabb) verziókon működik, az „"
+"Alapértelmezett” shell témával."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
-msgstr ""
+msgstr "Témák"
 
 #: resources/ui/appearance-page.blp:21
 msgid "Shell"
-msgstr ""
+msgstr "Shell"
 
 #: resources/ui/appearance-page.blp:22
 msgid "Icons"
-msgstr ""
+msgstr "Ikonok"
 
 #: resources/ui/appearance-page.blp:23
 msgid "Cursor"
-msgstr ""
+msgstr "Mutató"
 
 #: resources/ui/appearance-page.blp:27
 msgid "Background"
-msgstr ""
+msgstr "Háttér"
 
 #: resources/ui/appearance-page.blp:30
 msgid "Type"
-msgstr ""
+msgstr "Típus"
 
 #: resources/ui/appearance-page.blp:31
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr ""
+msgstr "Kép"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
-msgstr ""
+msgstr "Szín"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr ""
+msgstr "Háttérképként használt kép"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "Kép beállítás"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
-msgstr ""
+msgstr "Képernyőhez illeszkedő"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
-msgstr ""
+msgstr "Ismétlés"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr ""
+msgstr "Háttérként használt szín"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr ""
+msgstr "Jelenlegi megjelenítési beállítások alkalmazása"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
-msgstr ""
+msgstr "Felbontás, frissítési gyakoriság, monitor pozíciók stb."
 
 #: resources/ui/display-page.blp:16
 msgid "Apply"
-msgstr ""
+msgstr "Alkalmaz"
 
 #: resources/ui/display-page.blp:21
 msgid "Night Light"
-msgstr ""
+msgstr "Esti fény"
 
 #: resources/ui/display-page.blp:24 resources/ui/login-screen-page.blp:40
 msgid "Enable"
-msgstr ""
+msgstr "Engedélyezés"
 
 #: resources/ui/display-page.blp:28
 msgid "Schedule"
-msgstr ""
+msgstr "Ütemezés"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Napnyugtától Napkeltéig"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr ""
+msgstr "Kézi ütemezés"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
-msgstr ""
+msgstr "Idő"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:36
 msgid "From"
-msgstr ""
+msgstr "Kezdés"
 
 #. Translators: This is part of the timespan in which Night Light is active, e. g. "From 21:00 To 06:00".
 #: resources/ui/display-page.blp:60
 msgid "To"
-msgstr ""
+msgstr "vége"
 
 #: resources/ui/display-page.blp:84
 msgid "Color Temperature"
-msgstr ""
+msgstr "Szín hőmérséklet"
 
 #: resources/ui/fonts-page.blp:12
 msgid "Font"
-msgstr ""
+msgstr "Betűtípus"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr ""
+msgstr "Élsimitás"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
