@@ -7,21 +7,22 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2023.
 # delvani <inavleb@users.noreply.hosted.weblate.org>, 2024.
 # "Artur V. Neto" <arturvanderleineto@gmail.com>, 2024.
+# Iagocds <cdsiago@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-02 17:00+0000\n"
-"Last-Translator: \"Artur V. Neto\" <arturvanderleineto@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"gdm-settings/language-names/pt_BR/>\n"
+"PO-Revision-Date: 2026-02-25 16:09+0000\n"
+"Last-Translator: Iagocds <cdsiago@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
+"settings/language-names/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -47,7 +48,7 @@ msgstr "O arquivo de imagem a ser usado como plano de fundo do GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "Ajustar Imagem de Fundo"
+msgstr "Ajuste da Imagem de Fundo"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
@@ -86,8 +87,8 @@ msgid ""
 "Night light mode changes the color temperature of your display when the sun "
 "has gone down or at preset times."
 msgstr ""
-"O modo Luz norturna muda a temperatura de cor de sua tela quando o Sol se "
-"pôe ou em momentos pré-definidos."
+"O modo Luz noturna muda a temperatura de cor de sua tela quando o Sol se põe "
+"ou em momentos pré-definidos."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:13
 msgid "Temperature of the display when enabled"
@@ -131,7 +132,7 @@ msgstr "O minuto do horário de início"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
-"Quanto \"agendamento automático\" está desativado, use este para definir os "
+"Quanto \"agendamento automático\" está desativado, use isso para definir os "
 "minutos."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
@@ -141,8 +142,8 @@ msgstr "O horário de término"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
 msgstr ""
-"Quando \"agendamento automático\" está desativa, use este horário de término "
-"em horas."
+"Quando \"agendamento automático\" está desativado, use este horário de "
+"término em horas."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -151,12 +152,12 @@ msgstr "O minuto do horário de término"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
 msgstr ""
-"Quando \"agendamento automático\" está desativado, use este horário de "
+"Quando \"agendamento automático\" estiver desativado, use este horário de "
 "término em minutos."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
-msgstr "Ação do botão Liga/Desliga"
+msgstr "Ação do botão de energia"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:14
 msgid ""
@@ -164,8 +165,8 @@ msgid ""
 "hard-coded (and the setting ignored) on virtual machines (power off) and "
 "tablets (suspend)."
 msgstr ""
-"A ação para executar quando o botão de ligar do sistema é pressionado. Esta "
-"ação é \"hard-coded\" (e a definição é ignorada) em máquinas virtuais "
+"A ação para executar quando o botão de energia do sistema é pressionado. "
+"Esta ação é \"imutável\" (e a configuração é ignorada) em máquinas virtuais "
 "(desligar) e tablets (suspender)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:19
@@ -177,12 +178,12 @@ msgid ""
 "Automatically enable the \"power-saver\" profile using power-profiles-daemon "
 "if the battery is low."
 msgstr ""
-"Automaticamente ativar perfil \"economica de energia\" usando power-profiles-"
-"daemon se a carga da bateria estivar baixa."
+"Automaticamente ativar o perfil \"economia de energia\" usando power-"
+"profiles-daemon se a carga da bateria estivar baixa."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:25
 msgid "Dim the screen after a period of inactivity"
-msgstr "Escurecer a tela depois de um período de inatividade"
+msgstr "Esmaecer a tela depois de um período de inatividade"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
@@ -655,7 +656,7 @@ msgstr "Cancelar"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr "Sair"
+msgstr "Desligar Sessão"
 
 #: gdms/settings.py:184
 #, python-brace-format
