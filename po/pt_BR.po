@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-25 16:09+0000\n"
+"PO-Revision-Date: 2026-02-25 17:09+0000\n"
 "Last-Translator: Iagocds <cdsiago@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
 "settings/language-names/pt_BR/>\n"
@@ -188,18 +188,18 @@ msgstr "Esmaecer a tela depois de um período de inatividade"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:26
 msgid "If the screen should be dimmed to save power when the computer is idle."
 msgstr ""
-"Se a tela deveria escurecer para economizar energia quando o computador "
+"Se a tela deveria esmaecer para economizar energia quando o computador "
 "estiver ocioso."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:31
 msgid "Whether to blank screen when session is idle"
-msgstr "Se deve desativar a tela quando a sessão estiger ociosa"
+msgstr "Se deve desligar a tela quando a sessão estiver ociosa"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:32
 msgid ""
 "If the screen should be blanked to save power when the computer is idle."
 msgstr ""
-"Se a tela deveria ser desativada para economicar energia quando o computador "
+"Se a tela deveria ser desativada para economizar energia quando o computador "
 "está ocioso."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:37
@@ -218,15 +218,15 @@ msgstr "Se deve suspender quando ocioso usando bateria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:48
 msgid "Sleep timeout for computer when on battery"
-msgstr "Tempo limite do Dormir quando em bateria"
+msgstr "Tempo limite de dormir quando em bateria"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:49
 msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
-"A quantidade de tempo em minutos que o computador em bateria precisa de "
-"estar inactivo antes de adormecer. Um valor de 0 significa nunca."
+"A quantidade de tempo em minutos que o computador na bateria precisa de "
+"estar inativo antes de dormir. Um valor de 0 significa nunca."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
@@ -234,15 +234,15 @@ msgstr "Se deve suspender quando ocioso mas na tomada"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr "Tempo limite para o computador ligado a tomada"
+msgstr "Tempo limite de dormir para o computador ligado a tomada"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
-"A quantidade de tempo em minutos que o computador em corrente alternada "
-"precisa de estar inactivo antes de ir dormir. Um valor de 0 significa nunca."
+"A quantidade de tempo em minutos que o computador ligado na tomada precisa "
+"de estar inativo antes de ir dormir. Um valor de 0 significa nunca."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
@@ -250,11 +250,11 @@ msgstr "Se deve aplicar ajustes de barra superior ao tema extraído"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr "Se deve desactivar as setas da barra superior"
+msgstr "Se deve desativar as setas da barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr "Se deve desactivar os cantos arredondados da barra superior"
+msgstr "Se deve desativar os cantos arredondados da barra superior"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
@@ -278,7 +278,7 @@ msgstr "Configurações do GDM"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
-msgstr "Personalize o sua tela de início de sessão"
+msgstr "Personalize a sua tela de início de sessão"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gdm-settings.metainfo.xml:17
@@ -286,8 +286,8 @@ msgid ""
 "Change GDM Settings; Apply theme and background, change cursor theme, icon "
 "theme and night light settings, among other things."
 msgstr ""
-"Alterar definições GDM; Aplicar tema e fundo, alterar tema do cursor, tema "
-"do ícone e definições de luz nocturna, entre outras coisas."
+"Alterar definições do GDM; Aplicar tema e fundo, alterar tema do cursor, "
+"tema do ícone e definições de luz noturna, entre outras coisas."
 
 #. developer_name tag deprecated with Appstream 1.0
 #: data/gdm-settings.metainfo.xml:55 data/gdm-settings.metainfo.xml:57
@@ -325,17 +325,16 @@ msgstr "NÍVEL"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Habilitar modo verboso (alias de --verbosidade=5)"
+msgstr "Habilitar modo verboso (alias de --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Habilitar modo silencioso (alias de --verbosidade=0)"
+msgstr "Habilitar modo silencioso (alias de --verbosity=0)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
-msgstr ""
-"Nível de verbosidade inválido {level}. Deve ser 0, 5, ou intermediário."
+msgstr "Nível de verbosidade inválido {level}. Deve ser 0 a 5 ou intermediário."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -343,9 +342,9 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Os seguintes programas devem ser instalados <b> no sistema host </b> para "
-"que este aplicativo funcione corretamente, mas eles não estão instalados no "
-"sistema host."
+"Os seguintes programas devem ser instalados <b> no sistema hospedeiro </b> "
+"para que este aplicativo funcione corretamente, mas eles não estão "
+"instalados no sistema hospedeiro."
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -482,7 +481,7 @@ msgstr "Direitos autorais 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr "BRAZILIAN TRANSLATION TEAM"
+msgstr "Iago <cdsiago@gmail.com>"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
@@ -522,7 +521,7 @@ msgstr "Ardósia"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
-msgstr "Definições de visualização actuais aplicadas"
+msgstr "Definições de exibição atuais aplicadas"
 
 #: gdms/gui/pages/display.py:88
 msgid "Failed to apply current display settings"
@@ -575,7 +574,7 @@ msgstr "Imagens"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr "Todos Arquivos"
+msgstr "Todos os Arquivos"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
@@ -599,7 +598,7 @@ msgstr "Som"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Mouse &amp; Touchpad"
+msgstr "Mouse & Touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
@@ -630,25 +629,25 @@ msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Não se aplicou. A imagem de fundo escolhida não existe mais. Por favor! "
+"Falha na aplicação. A imagem de fundo escolhida não existe mais. Por favor! "
 "escolha novamente."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Não se aplicou. A imagem do logotipo escolhido não existe mais. Por favor! "
-"escolha novamente."
+"Falha na aplicação. A imagem do logotipo escolhido não existe mais. Por "
+"favor! escolha novamente."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
-"O sistema pode começar a parecer estranho/buggy até que você faça o login "
+"O sistema pode começar a parecer estranho/bugado até que você faça o login "
 "novamente ou reinicialize."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
-msgstr "Sair?"
+msgstr "Encerrar Sessão?"
 
 #: gdms/gui/window.py:167
 msgid "Cancel"
@@ -656,7 +655,7 @@ msgstr "Cancelar"
 
 #: gdms/gui/window.py:168
 msgid "Log Out"
-msgstr "Desligar Sessão"
+msgstr "Encerrar Sessão"
 
 #: gdms/settings.py:184
 #, python-brace-format
@@ -665,7 +664,7 @@ msgstr "Importando do arquivo '{filename}'"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
-msgstr "Importação a partir de entrada padrão"
+msgstr "Importação a partir da entrada padrão"
 
 #: gdms/settings.py:190
 msgid "Failed to parse import file"
@@ -678,7 +677,7 @@ msgstr "Falha na leitura do arquivo de importação. Não codificado em UTF-8"
 #: gdms/settings.py:199
 #, python-brace-format
 msgid "Imported file does not have section '{section_name}'"
-msgstr "O arquivo importado não tem seção '{section_name}'"
+msgstr "O arquivo importado não tem a seção '{section_name}'"
 
 #: gdms/settings.py:204
 #, python-brace-format
@@ -708,7 +707,7 @@ msgstr ""
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
-msgstr "Exportando para saída padrão"
+msgstr "Exportando para a saída padrão"
 
 #: gdms/settings.py:338
 msgid "Backing up default shell theme …"
@@ -764,7 +763,7 @@ msgstr "Cor"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr "Imagem para usar como fundo"
+msgstr "Imagem para usar de plano de fundo"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
@@ -780,11 +779,11 @@ msgstr "Repetir"
 
 #: resources/ui/appearance-page.blp:47
 msgid "The color to use as background"
-msgstr "Cor para usar como fundo"
+msgstr "Cor para usar como plano de fundo"
 
 #: resources/ui/display-page.blp:12
 msgid "Apply current display settings"
-msgstr "Aplicar configurações atuais do display"
+msgstr "Aplicar configurações atuais da tela"
 
 #: resources/ui/display-page.blp:13
 msgid "Resolution, refresh rate, monitor positions, etc."
@@ -808,7 +807,7 @@ msgstr "Cronograma"
 
 #: resources/ui/display-page.blp:29
 msgid "Sunset to Sunrise"
-msgstr "Pôr-do-sol ao nascer do sol"
+msgstr "Pôr do sol ao nascer do sol"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
@@ -838,7 +837,7 @@ msgstr "Fonte"
 
 #: resources/ui/fonts-page.blp:22
 msgid "Antialiasing"
-msgstr "Antialiasing"
+msgstr "Anti-aliasing"
 
 #: resources/ui/fonts-page.blp:24
 msgid "Standard"
@@ -850,7 +849,7 @@ msgstr "Subpixel"
 
 #: resources/ui/fonts-page.blp:26 resources/ui/fonts-page.blp:36
 msgid "None"
-msgstr "None"
+msgstr "Nenhum"
 
 #: resources/ui/fonts-page.blp:31
 msgid "Hinting"
@@ -862,7 +861,7 @@ msgstr "Completo"
 
 #: resources/ui/fonts-page.blp:34
 msgid "Medium"
-msgstr "Média(o)"
+msgstr "Médio"
 
 #: resources/ui/fonts-page.blp:35
 msgid "Slight"
@@ -874,7 +873,7 @@ msgstr "Fator de Escala"
 
 #: resources/ui/main-window.blp:6
 msgid "Refresh"
-msgstr "Atualização"
+msgstr "Atualizar"
 
 #: resources/ui/main-window.blp:7
 msgid "Load session settings"
@@ -906,7 +905,7 @@ msgstr "_Aplicar"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "Desativar Botões de Reinício"
+msgstr "Desativar Botões de Reiniciar"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
@@ -952,7 +951,7 @@ msgstr "Padrão"
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "Média(o)"
+msgstr "Médio"
 
 #: resources/ui/pointing-page.blp:17
 msgctxt "Cursor Size"
@@ -962,12 +961,12 @@ msgstr "Grande"
 #: resources/ui/pointing-page.blp:18
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "Maiores"
+msgstr "Grandão"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr "A maior"
+msgstr "Maior"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -995,7 +994,7 @@ msgstr "Rolagem Natural"
 
 #: resources/ui/pointing-page.blp:38 resources/ui/pointing-page.blp:67
 msgid "Scrolling moves the content, not the view."
-msgstr "A rolagem move o conteúdo, não a visão."
+msgstr "A rolagem move o conteúdo, não a tela."
 
 #: resources/ui/pointing-page.blp:42 resources/ui/pointing-page.blp:76
 msgid "Pointer Speed"
@@ -1011,7 +1010,7 @@ msgstr "Desabilitar ao usar Mouse Externo"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
-msgstr "Desativar enquanto digita"
+msgstr "Desabilitar enquanto digita"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
@@ -1027,7 +1026,7 @@ msgstr "Rolar deslizando com dois dedos."
 
 #: resources/ui/power-page.blp:12
 msgid "Power Button Behavior"
-msgstr "Comportamento do botão Power Button"
+msgstr "Comportamento do botão de Energia"
 
 #: resources/ui/power-page.blp:13
 msgid "Do Nothing"
@@ -1055,7 +1054,7 @@ msgstr "Ativa o modo de economia de energia quando a bateria está fraca."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
-msgstr "Tela escurecida"
+msgstr "Esmaecer a tela"
 
 #: resources/ui/power-page.blp:24
 msgid "Reduces the screen brightness when the computer is inactive."
@@ -1072,7 +1071,7 @@ msgstr "Se a tela deve ser desligada após um período de inatividade."
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
 msgid "Delay"
-msgstr "Adiamento"
+msgstr "Espera"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
@@ -1132,7 +1131,7 @@ msgstr "Extrair o tema padrão da Shell"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
-msgstr "Extrai"
+msgstr "Extrair"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
@@ -1180,11 +1179,11 @@ msgstr "Relógio"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr "Mostrar Data"
+msgstr "Mostrar a Data"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
-msgstr "Mostra Dia da semana"
+msgstr "Mostra o dia da semana"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
@@ -1192,7 +1191,7 @@ msgstr "Mostrar Segundos"
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
-msgstr "Formato de tempo"
+msgstr "Formato do relógio"
 
 #: resources/ui/top-bar-page.blp:85
 msgid "AM/PM"
