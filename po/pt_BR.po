@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: v0.6\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-02-25 17:09+0000\n"
+"PO-Revision-Date: 2026-02-25 18:09+0000\n"
 "Last-Translator: Iagocds <cdsiago@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/gdm-"
 "settings/language-names/pt_BR/>\n"
@@ -342,7 +342,7 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Os seguintes programas devem ser instalados <b> no sistema hospedeiro </b> "
+"Os seguintes programas devem ser instalados <b>no sistema hospedeiro</b> "
 "para que este aplicativo funcione corretamente, mas eles não estão "
 "instalados no sistema hospedeiro."
 
@@ -598,7 +598,7 @@ msgstr "Som"
 
 #: gdms/gui/window.py:117
 msgid "Mouse & Touchpad"
-msgstr "Mouse & Touchpad"
+msgstr "Mouse e Touchpad"
 
 #: gdms/gui/window.py:118
 msgid "Display"
