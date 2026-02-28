@@ -4,13 +4,14 @@
 # Priit Jõerüüt <hwlate@joeruut.com>, 2024.
 # Indrek Haav <IndrekHaav@users.noreply.hosted.weblate.org>, 2025.
 # Indrek Haav <indrek.haav@hotmail.com>, 2025.
+# PizzaPoot <pizzapoot@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-03-18 23:01+0000\n"
-"Last-Translator: Indrek Haav <indrek.haav@hotmail.com>\n"
+"PO-Revision-Date: 2026-02-28 15:09+0000\n"
+"Last-Translator: PizzaPoot <pizzapoot@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/et/>\n"
 "Language: et\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 5.16.1-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -95,6 +96,9 @@ msgid ""
 "This temperature in Kelvin is used to modify the screen tones when night "
 "light mode is enabled. Higher values are bluer, lower redder."
 msgstr ""
+"Seda kelvinites väljendatud temperatuuri kasutatakse ekraanitoonide "
+"muutmiseks öövalgustuse režiimis. Kõrgemad väärtused on sinisemad, madalamad "
+"punasemad."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:19
 msgid "Use the sunrise and sunset"
@@ -113,7 +117,7 @@ msgstr "Algusaja tund"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
+msgstr "Kui „schedule-automatic“ on keelatud, kasutage seda algusaega tundides."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -122,6 +126,7 @@ msgstr "Algusaja minut"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
 msgstr ""
+"Kui „schedule-automatic“ on keelatud, kasutage seda algusaega minutites."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
