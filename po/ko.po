@@ -5,13 +5,14 @@
 # 이정희 <daemul72@gmail.com>, 2022.
 # Allan Nordhøy <epost@anotheragency.no>, 2023.
 # Mazhar Hussain <realmazharhussain@gmail.com>, 2024.
+# clearstripe <sakurasan000510@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-02-12 17:53+0000\n"
-"Last-Translator: Mazhar Hussain <realmazharhussain@gmail.com>\n"
+"PO-Revision-Date: 2026-03-14 09:09+0000\n"
+"Last-Translator: clearstripe <sakurasan000510@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ko/>\n"
 "Language: ko\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -31,10 +32,8 @@ msgstr "배경화면 방식"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
-#, fuzzy
-#| msgid "Whether GDM background should be an Image, Color or None."
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "GDM 배경화면이 이미지나 단색배경인지, 없음이어야 하는지 여부."
+msgstr "GDM 배경은 이미지, 색깔 또는 과태이어야 합니다."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
@@ -46,14 +45,12 @@ msgid "The image file to use as GDM background"
 msgstr "GDM 배경화면으로 사용할 이미지 파일"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
-#, fuzzy
-#| msgid "Background Image"
 msgid "Background Image Adjustment"
-msgstr "배경화면 이미지"
+msgstr "배경 이미지 조정"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr ""
+msgstr "배경 이미지의 조정을 위한 전략."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
@@ -256,10 +253,8 @@ msgid "Top bar background color"
 msgstr "상단바 배경색"
 
 #: data/gdm-settings.metainfo.xml:12 data/gdm-settings.desktop:4
-#, fuzzy
-#| msgid "Reset settings"
 msgid "GDM Settings"
-msgstr "설정 리셋"
+msgstr "사이트맵 계정 설정"
 
 #: data/gdm-settings.metainfo.xml:13 data/gdm-settings.desktop:5
 msgid "Customize your login screen"
@@ -281,19 +276,19 @@ msgstr "Mazhar Hussain"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr ""
+msgstr "주요 창 (Desktop 형태)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr ""
+msgstr "Sidebar (모바일 모드)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
-msgstr ""
+msgstr "외관 설정 (모바일 모드)"
 
 #: gdms/gui/__init__.py:63
 msgid "Show debug information (in Markdown format)"
-msgstr ""
+msgstr "데뷔 정보 표시 (Markdown 형식)"
 
 #: gdms/gui/__init__.py:64
 msgid "Show application version"
@@ -368,20 +363,20 @@ msgid "OK"
 msgstr "확인"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "기본 쉘 테마"
+msgstr "기본 Shell Theme 파일 잃어버린"
 
 #: gdms/gui/__init__.py:225
 msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
+"앱이 필요하지만 변경되지 않은 기본 쉘 테마 파일을 찾을 수 없습니다. 문제를 "
+"해결하려면 'gnome-shell-common' 또는 'gnome-shell' 패키지를 다시 설치합니다."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
-msgstr ""
+msgstr "기부 요청"
 
 #: gdms/gui/__init__.py:238
 msgid ""
@@ -389,10 +384,13 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"이 응용 프로그램을 좋아한다면, 우리가 그것을 개선 할 수 있도록 "
+"기부하십시오.\n"
+"감사합니다! ₢ 킹"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
-msgstr ""
+msgstr "관심이 없는"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
@@ -453,10 +451,8 @@ msgid "Thales Bindá"
 msgstr "Thales Bindá"
 
 #: gdms/gui/about.py:17
-#, fuzzy
-#| msgid "Copyright 2021-2022 Mazhar Hussain"
 msgid "Copyright 2021-2023 Mazhar Hussain"
-msgstr "Copyright 2021–2023 Mazhar Hussain"
+msgstr "2019.08.01 00:00 오전 프로모션"
 
 #. Translators: Do not translate this string. Put your info here in the form
 #. 'name <email>' including < and > but not quotes.
@@ -559,7 +555,7 @@ msgstr "이미지"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
-msgstr ""
+msgstr "모든 파일"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
@@ -697,16 +693,14 @@ msgid "Backing up default shell theme …"
 msgstr "기본 쉘 테마 백업 중…"
 
 #: resources/ui/appearance-page.blp:9 resources/ui/appearance-page.blp:13
-#, fuzzy
-#| msgid "Text Color"
 msgid "Accent Color"
-msgstr "글자 색상"
+msgstr "강조색깔"
 
 #: resources/ui/appearance-page.blp:10
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
-msgstr ""
+msgstr "참고: 이것은 '기본' 쉘 테마와 함께 GNOME 47 (그리고 위)에서만 작동합니다."
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -750,13 +744,11 @@ msgstr "배경으로 사용할 이미지"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr ""
+msgstr "이미지 조정"
 
 #: resources/ui/appearance-page.blp:41
-#, fuzzy
-#| msgid "Dim Screen"
 msgid "Fit To Screen"
-msgstr "흐릿한 화면"
+msgstr "스크린에 적합"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Repeat"
@@ -927,41 +919,33 @@ msgid "Message"
 msgstr "메시지"
 
 #: resources/ui/pointing-page.blp:10
-#, fuzzy
-#| msgid "Cursor"
 msgid "Cursor Size"
-msgstr "커서"
+msgstr "Cursor 크기"
 
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr ""
+msgstr "기본 정보"
 
 #: resources/ui/pointing-page.blp:16
-#, fuzzy
-#| msgid "Medium"
 msgctxt "Cursor Size"
 msgid "Medium"
-msgstr "적당히"
+msgstr "주요 특징"
 
 #: resources/ui/pointing-page.blp:17
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Large"
-msgstr "확대하기"
+msgstr "주요 특징"
 
 #: resources/ui/pointing-page.blp:18
-#, fuzzy
-#| msgid "Enlarge"
 msgctxt "Cursor Size"
 msgid "Larger"
-msgstr "확대하기"
+msgstr "더 많은"
 
 #: resources/ui/pointing-page.blp:19
 msgctxt "Cursor Size"
 msgid "Largest"
-msgstr ""
+msgstr "가장 큰"
 
 #: resources/ui/pointing-page.blp:25
 msgid "Mouse"
@@ -1001,7 +985,7 @@ msgstr "터치패드"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "외부 마우스에서 끄는"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1166,7 +1150,7 @@ msgstr ""
 
 #: resources/ui/top-bar-page.blp:64
 msgid "Always Show Accessibility Menu"
-msgstr ""
+msgstr "항상 접근성 메뉴 표시"
 
 #: resources/ui/top-bar-page.blp:69
 msgid "Clock"
@@ -1174,7 +1158,7 @@ msgstr "시계"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "전시 날짜"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
