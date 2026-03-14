@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gdm-settings package.
 # தமிழ்நேரம் <anishprabu.t@gmail.com>, 2024, 2025.
+# தமிழ்நேரம் <tamilneram247@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-06-30 20:01+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"PO-Revision-Date: 2026-03-14 20:09+0000\n"
+"Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/ta/>\n"
 "Language: ta\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -331,8 +332,8 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"இந்த பயன்பாடு சரியாக செயல்பட புரவலன் சிச்டத்தில் <b> இல் பின்வரும் நிரல்கள் நிறுவப்பட "
-"வேண்டும் </b> அவை புரவலன் கணினியில் நிறுவப்படவில்லை."
+"இந்தப் பயன்பாடு சரியாகச் செயல்பட புரவலன் அமைப்பில்<b> பின்வரும் நிரல்கள் நிறுவப்பட வேண்டும்</"
+"b> அவை புரவலன் கணினியில் நிறுவப்படவில்லை."
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -345,12 +346,12 @@ msgstr ""
 #: gdms/gui/__init__.py:191
 msgctxt "Missing Dependency"
 msgid "<b>GDM</b>"
-msgstr "<b> சி.டி.எம் </b>"
+msgstr "<b>சிடிஎம்</b>"
 
 #: gdms/gui/__init__.py:197
 msgctxt "Missing Dependency"
 msgid "<b>Polkit</b>"
-msgstr "<b> போல்கிட் </b>"
+msgstr "<b>போல்கிட்</b>"
 
 #. Translators: Keep '<a href="{url}">' and '</a>' as is. The words between them will become
 #. a link to '{url}' and '{url}' will be replaced by a real URL during program execution.
@@ -360,8 +361,8 @@ msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
 msgstr ""
-"உங்கள் கணினியில் இந்தச் சார்புகளை எவ்வாறு நிறுவுவது என்பதற்கான வழிமுறைகளுக்கு <a href="
-"\"{url}\">இங்கே </a> என்பதைக் சொடுக்குக."
+"உங்கள் கணினியில் இந்தச் சார்புகளை எவ்வாறு நிறுவுவது என்பதற்கான வழிமுறைகளுக்கு <a href=\""
+"{url}\">இங்கே</a> என்பதைக் சொடுக்குக."
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
