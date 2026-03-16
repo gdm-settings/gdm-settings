@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-03-05 23:09+0000\n"
+"PO-Revision-Date: 2026-03-16 08:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -221,12 +221,15 @@ msgid ""
 "The amount of time in minutes the computer on battery power needs to be "
 "inactive before it goes to sleep. A value of 0 means never."
 msgstr ""
-"Doba v minutách, po kterou musí být počítač napájený z baterie neaktivní, "
-"než přejde do režimu spánku. Hodnota 0 znamená nikdy."
+"Doba (v minutách) po kterou když (při provozu z akumulátoru) uživatel nebude "
+"na počítači nic dělat, tento přejde do režimu spánku. Hodnota 0 (nula) "
+"znamená nikdy."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:54
 msgid "Whether to suspend when inactive and plugged in"
-msgstr "Zda se má pozastavit, když je zařízení neaktivní a připojené k síti"
+msgstr ""
+"Zda (při externím napájení) přecházet do režimu spánku, když počítač není "
+"používán"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
@@ -312,26 +315,27 @@ msgstr "Zobrazit verzi aplikace"
 
 #: gdms/gui/__init__.py:65
 msgid "Set verbosity level manually (from 0 to 5)"
-msgstr "Ruční nastavení úrovně hovorovosti (od 0 do 5)"
+msgstr "Ručně nastavit stupeň podrobnosti vypisování (od 0 do 5)"
 
 #: gdms/gui/__init__.py:66
 msgctxt "Argument of --verbosity option"
 msgid "LEVEL"
-msgstr "ÚROVEŇ"
+msgstr "STUPEŇ"
 
 #: gdms/gui/__init__.py:67
 msgid "Enable verbose mode (alias of --verbosity=5)"
-msgstr "Povolit hovorový režim (alias --verbosity=5)"
+msgstr "Vypisovat vše (stejné jako --verbosity=5)"
 
 #: gdms/gui/__init__.py:68
 msgid "Enable quiet mode (alias of --verbosity=0)"
-msgstr "Povolit tichý režim (alias --verbosity=0)"
+msgstr "Nic nevypisovat (stejné jako --verbosity=0)"
 
 #: gdms/gui/__init__.py:92
 #, python-brace-format
 msgid "Invalid verbosity level {level}. Must be 0, 5, or in-between."
 msgstr ""
-"Nesprávná úroveň hovorovosti {level}. Musí být 0, 5 nebo něco mezi tím."
+"Nesprávné určení stupně podrobnosti vypisování {level}. Je třeba, aby bylo z "
+"rozmezí 0 až 5."
 
 #: gdms/gui/__init__.py:178
 msgid ""
@@ -339,9 +343,8 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"Pro správnou funkci této aplikace je nutné nainstalovat následující programy "
-"<b>v hostitelském systému</b>, které však v hostitelském systému "
-"nainstalovány nejsou."
+"Aby aplikace fungovala jak má, je třeba aby <b>v systému</b> byly "
+"nainstalované následující programy (které v něm zatím chybí):"
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -390,9 +393,9 @@ msgid ""
 "The app needs but could not find an unmodified default shell theme file. To "
 "fix the issue, reinstall 'gnome-shell-common' or 'gnome-shell' package."
 msgstr ""
-"Aplikace potřebuje, ale nemohla najít neupravený soubor výchozího motivu "
-"shellu. K opravení tohoto problému, přeinstalujte balíček 'gnome-shell-"
-"common' nebo 'gnome-shell'."
+"Aplikace potřebuje (ale nepodařilo se najít) neupravený soubor výchozího "
+"motivu shellu. Tento problém opravíte přeinstalací balíčku „gnome-shell-"
+"common“ nebo „gnome-shell“."
 
 #: gdms/gui/__init__.py:236
 msgid "Donation Request"
@@ -414,15 +417,15 @@ msgstr "Nemám zájem"
 
 #: gdms/gui/__init__.py:245 resources/ui/main-window.blp:15
 msgid "Donate"
-msgstr "Podpořit"
+msgstr "Podpořit darováním"
 
 #: gdms/gui/__init__.py:282
 msgid "Settings reloaded"
-msgstr "Nastavení obnovena"
+msgstr "Nastavení znovu načtena"
 
 #: gdms/gui/__init__.py:289
 msgid "Session settings loaded successfully"
-msgstr "Nastavení sezení se načetla úspěšně"
+msgstr "Nastavení sezení úspěšně načtena"
 
 #: gdms/gui/__init__.py:293
 msgid "Load session settings is NOT supported in Flatpak version"
