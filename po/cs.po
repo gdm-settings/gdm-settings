@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-03-16 08:09+0000\n"
+"PO-Revision-Date: 2026-03-16 09:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/cs/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
-msgstr "Jméno tématu"
+msgstr "Název motivu vzhledu"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:35
 msgid "Type of Background"
@@ -35,7 +35,7 @@ msgstr "Typ pozadí"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
-msgstr "Zda-li má být pozadí GDM obrázek, barva, nebo výchozí."
+msgstr "Zda má být pozadí GDM obrázek, barva, nebo výchozí."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
@@ -80,7 +80,7 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:7
 msgid "If the night light mode is enabled"
-msgstr "Jestli je povolen režim nočního světla"
+msgstr "Pokud je povolen režim nočního světla"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:8
 msgid ""
@@ -233,31 +233,34 @@ msgstr ""
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:59
 msgid "Sleep timeout for computer when plugged in"
-msgstr "Časový limit spánku pro počítač, když je připojen k síti"
+msgstr ""
+"Časový limit (neaktivity uživatele) před uspáním počítače (při externím "
+"napájení)"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:60
 msgid ""
 "The amount of time in minutes the computer on AC power needs to be inactive "
 "before it goes to sleep. A value of 0 means never."
 msgstr ""
-"Doba v minutách, po kterou musí být počítač při napájení ze sítě neaktivní, "
-"než přejde do režimu spánku. Hodnota 0 znamená nikdy."
+"Doba (v minutách) po kterou když uživatel na počítači (externě napájeném) "
+"nebude aktivní, tento přejde do režimu spánku. Hodnota 0 (nula) znamená "
+"nikdy."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.tools.gschema.xml:7
 msgid "Whether to apply top bar tweaks to extracted theme"
-msgstr "Jestli použít úpravy horní lišty pro extrahované téma"
+msgstr "Zda použít úpravy horní lišty pro extrahované téma"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:7
 msgid "Whether to disable top bar arrows"
-msgstr "Jestli vypnout šipky v horní liště"
+msgstr "Zda vypnout šipky v horní liště"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:12
 msgid "Whether to disable top bar rounded corners"
-msgstr "Jestli vypnout zaoblené rohy horní lišty"
+msgstr "Zda vypnout zaoblování rohů horní lišty"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:17
 msgid "Whether to change top bar text color"
-msgstr "Jestli změnit barvu textu horní lišty"
+msgstr "Zda změnit barvu textu horní lišty"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:22
 msgid "Top bar text color"
@@ -265,7 +268,7 @@ msgstr "Barva textu horní lišty"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:27
 msgid "Whether to change top bar background"
-msgstr "Jestli změnit pozadí horní lišty"
+msgstr "Zda změnit pozadí horní lišty"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.top-bar.gschema.xml:32
 msgid "Top bar background color"
@@ -295,11 +298,11 @@ msgstr "Mazhar Hussain"
 
 #: data/gdm-settings.metainfo.xml:63
 msgid "Main Window (Desktop Mode)"
-msgstr "Hlavní okno (režim desktopu)"
+msgstr "Hlavní okno (desktopový režim)"
 
 #: data/gdm-settings.metainfo.xml:67
 msgid "Sidebar (Mobile Mode)"
-msgstr "Boční panel (mobilní režim)"
+msgstr "Postranní panel (mobilní režim)"
 
 #: data/gdm-settings.metainfo.xml:71
 msgid "Appearance Settings (Mobile Mode)"
