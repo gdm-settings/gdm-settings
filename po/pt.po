@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Thales Ruan de Souza Silva <thales.i.o.b@gmail.com>, 2022.
-# ssantos <ssantos@web.de>, 2023.
+# ssantos <ssantos@web.de>, 2023, 2026.
 # Marcelo Cerqueira <mcerqueiram@gmail.com>, 2024.
 # Windy Test <theolmena12@gmail.com>, 2026.
 msgid ""
@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-01-04 15:01+0000\n"
-"Last-Translator: Windy Test <theolmena12@gmail.com>\n"
+"PO-Revision-Date: 2026-05-25 20:11+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/pt/>\n"
 "Language: pt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -1005,7 +1005,7 @@ msgstr "Touchpad"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "Desativar ao usar um Rato Externo"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1178,7 +1178,7 @@ msgstr "Relógio"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "Mostrar a Data"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
