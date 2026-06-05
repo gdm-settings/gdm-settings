@@ -7,13 +7,14 @@
 # NukeSource <dede48076@gmail.com>, 2024.
 # Sabri Ünal <yakushabb@gmail.com>, 2024.
 # Nuri KÜÇÜKLER <enatsek@gmail.com>, 2025.
+# Batu Emir Seven <sbatuemir@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-05-03 18:03+0000\n"
-"Last-Translator: Nuri KÜÇÜKLER <enatsek@gmail.com>\n"
+"PO-Revision-Date: 2026-06-05 11:01+0000\n"
+"Last-Translator: Batu Emir Seven <sbatuemir@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/tr/>\n"
 "Language: tr\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 2026.6\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -43,7 +44,7 @@ msgstr "Arka Plan Resmi"
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr "GDM arka planı olarak kullanılacak resim"
+msgstr "GDM arkaplanı olarak kullanılacak resim"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
