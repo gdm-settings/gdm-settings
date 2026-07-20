@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import logging
 import sys
@@ -11,7 +12,7 @@ from gi.repository import Gio
 from gdms import APP_ID
 from gdms import env
 from gdms import gresource
-from gdms.cmd import CommandList
+from gdms.cmd import Command, CommandList
 from gdms.enums import PackageType, BackgroundType
 from gdms.utils import GSettings
 from gdms.themes import shell_themes
@@ -58,6 +59,28 @@ def _GSettings(schema_id):
 
 
 _commands = CommandList()
+
+
+def _get_gnome_major_version() -> int | None:
+    '''Return the host GNOME Shell major version, if available.'''
+
+    command = Command('gnome-shell', '--version')
+
+    try:
+        proc = command.run(capture_output=True, text=True)
+    except FileNotFoundError:
+        return None
+
+    if proc.returncode != 0:
+        return None
+
+    if match := re.search(r'\b(\d+)\b', proc.stdout):
+        return int(match.group(1))
+
+
+def _is_gnome_49_or_newer() -> bool:
+    gnome_major_version = _get_gnome_major_version()
+    return gnome_major_version is not None and gnome_major_version >= 49
 
 
 def init():
@@ -648,11 +671,14 @@ def apply_user_display_settings() -> bool:
                      '&>/dev/null',
                    ])
 
-    _commands.add(['install', '-Dm644',
-                     '-o', gresource.GdmUsername,
-                     temp_monitors_xml,
-                     f'~{gresource.GdmUsername}/.config/monitors.xml',
-                   ])
+    if _is_gnome_49_or_newer():
+        _commands.add(['install', '-Dm644', temp_monitors_xml, '/etc/xdg/monitors.xml'])
+    else:
+        _commands.add(['install', '-Dm644',
+                         '-o', gresource.GdmUsername,
+                         temp_monitors_xml,
+                         f'~{gresource.GdmUsername}/.config/monitors.xml',
+                       ])
 
     return _commands.run()
 
