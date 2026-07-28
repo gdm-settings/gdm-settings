@@ -16,6 +16,11 @@ project('gdm-settings',
     'libadwaita:vapi=false',
     'libadwaita:tests=false',
     'libadwaita:examples=false',
+
+    'sassc:warning_level=0',
+    'sassc:werror=false',
+    'libsass:warning_level=0',
+    'libsass:werror=false',
   ]
 )
 

@@ -14,21 +14,23 @@ source "${ScriptDir}"/deps/CloudProviders.sh
 echo 'Copying GTK'
 
 # Dependencies
-copy /usr/lib/libfreetype.so*
-copy /usr/lib/libfribidi.so*
-copy /usr/lib/libstemmer.so*
-copy /usr/lib/libicu*.so*
-copy /usr/lib/libfontconfig.so*
-copy /usr/lib/libwayland-*.so*
+copy ${LIBDIR}/libfreetype.so*
+copy ${LIBDIR}/libfribidi.so*
+copy ${LIBDIR}/libstemmer.so*
+copy ${LIBDIR}/libicu*.so*
+copy ${LIBDIR}/libfontconfig.so*
+copy ${LIBDIR}/libwayland-*.so*
 
 # Files
-copy /usr/lib/gtk-4.0
-copy /usr/lib/libgtk-4.so*
-copy /usr/lib/girepository-1.0/Gdk-4.0.typelib
-copy /usr/lib/girepository-1.0/GdkWayland-4.0.typelib
-copy /usr/lib/girepository-1.0/GdkX11-4.0.typelib
-copy /usr/lib/girepository-1.0/Gsk-4.0.typelib
-copy /usr/lib/girepository-1.0/Gtk-4.0.typelib
+copy ${LIBDIR}/gtk-4.0
+copy ${LIBDIR}/libgtk-4.so*
+copy ${LIBDIR}/girepository-1.0/Gdk-4.0.typelib
+copy ${LIBDIR}/girepository-1.0/GdkWayland-4.0.typelib
+copy ${LIBDIR}/girepository-1.0/GdkX11-4.0.typelib
+copy ${LIBDIR}/girepository-1.0/Gsk-4.0.typelib
+copy ${LIBDIR}/girepository-1.0/Gtk-4.0.typelib
 copy /usr/share/gtk-4.0
 copy /usr/share/glib-2.0/schemas/org.gtk.gtk4.Settings.*.gschema.xml
-copy /usr/share/locale/*/LC_MESSAGES/gtk40.mo
+try_copy_optional \
+  "/usr/share/locale/*/LC_MESSAGES/gtk40.mo" \
+  "/usr/share/locale-langpack/*/LC_MESSAGES/gtk40.mo"

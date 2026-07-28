@@ -3,13 +3,15 @@
 echo 'Copying GLib'
 
 # Dependencies
-copy /usr/lib/libpcre.so*
+copy ${LIBDIR}/libpcre*.so*
 
 # Files
 copy /usr/bin/glib-compile-resources
-copy /usr/lib/libgio-2.0.so*
-copy /usr/lib/libglib-2.0.so*
-copy /usr/lib/libgmodule-2.0.so*
-copy /usr/lib/libgobject-2.0.so*
-copy /usr/lib/libgthread-2.0.so*
-copy /usr/share/locale/*/LC_MESSAGES/glib20.mo
+copy ${LIBDIR}/libgio-2.0.so*
+copy ${LIBDIR}/libglib-2.0.so*
+copy ${LIBDIR}/libgmodule-2.0.so*
+copy ${LIBDIR}/libgobject-2.0.so*
+copy ${LIBDIR}/libgthread-2.0.so*
+try_copy_optional \
+  "/usr/share/locale/*/LC_MESSAGES/glib20.mo" \
+  "/usr/share/locale-langpack/*/LC_MESSAGES/glib20.mo"
