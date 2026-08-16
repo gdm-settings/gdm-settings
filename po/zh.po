@@ -8,13 +8,14 @@
 # 复予 <clonewith@qq.com>, 2024.
 # ZHAO20060708 <zxybbb7892020@outlook.com>, 2025.
 # "Alioc." <hit.177411245@gmail.com>, 2025.
+# xiezhihai <xiezhihai7321@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-07-14 06:02+0000\n"
-"Last-Translator: \"Alioc.\" <hit.177411245@gmail.com>\n"
+"PO-Revision-Date: 2026-08-16 22:51+0000\n"
+"Last-Translator: xiezhihai <xiezhihai7321@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/gdm-settings/language-names/zh_Hans/>\n"
 "Language: zh\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -316,8 +317,8 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"以下程序需要安装<b>在主机系统上</b>，以便该应用程序正常运行，但它们没有安装在"
-"主机系统上。"
+"以下程序需要安装在<b>主机系统</b>上，以便此应用程序正常运行，但它们未安装在主"
+"机系统上。"
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -342,9 +343,7 @@ msgstr "<b>Polkit</b>"
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr ""
-"点击<a href=\"{url}\">这里</a>，获取关于如何在你的系统上安装这些依赖项的说"
-"明。"
+msgstr "点击 <a href=\"{url}\">这里</a> 查看在您的系统上安装这些依赖项的说明。"
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
