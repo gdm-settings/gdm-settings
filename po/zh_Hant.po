@@ -6,13 +6,14 @@
 # Peter Dave Hello <hsu@peterdavehello.org>, 2024.
 # hanyang cheng <cinxiafortis@tutanota.de>, 2024.
 # Victor Tseng <palatis@gmail.com>, 2026.
+# xiezhihai <xiezhihai7321@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-01-11 23:01+0000\n"
-"Last-Translator: Victor Tseng <palatis@gmail.com>\n"
+"PO-Revision-Date: 2026-08-21 18:51+0000\n"
+"Last-Translator: xiezhihai <xiezhihai7321@outlook.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/gdm-settings/language-names/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -316,8 +317,8 @@ msgid ""
 "for this app to function properly but they are not installed on the host "
 "system."
 msgstr ""
-"為了使此應用程式正常運行，需要<b>在主機系統上</b>安裝以下程式，但是它們並沒有"
-"安裝在主機系統上。"
+"以下程式需要安裝在<b>主機系統</b>上，以便此應用程式正常運作，但它們尚未安裝在"
+"主機系統上。"
 
 #: gdms/gui/__init__.py:182
 msgid ""
@@ -342,8 +343,7 @@ msgstr "<b>Polkit</b>"
 msgid ""
 "Click <a href=\"{url}\">here</a> for instructions on how to install these "
 "dependencies on your system."
-msgstr ""
-"點點選<a href=\"{url}\">這裡</a>檢視如何在您的系統上安裝這些相依套件的說明。"
+msgstr "點擊 <a href=\"{url}\">這裡</a> 了解如何在您的系統上安裝這些依賴項的說明。"
 
 #: gdms/gui/__init__.py:212
 msgid "Missing Dependencies"
@@ -449,43 +449,43 @@ msgstr "版權所有 2021-2023 Mazhar Hussain"
 #. 'name <email>' including < and > but not quotes.
 #: gdms/gui/about.py:27
 msgid "translator-credits"
-msgstr ""
+msgstr "翻譯者致謝"
 
 #: gdms/gui/pages/appearance.py:102
 msgid "Blue"
-msgstr ""
+msgstr "藍色"
 
 #: gdms/gui/pages/appearance.py:103
 msgid "Teal"
-msgstr ""
+msgstr "藍綠色"
 
 #: gdms/gui/pages/appearance.py:104
 msgid "Green"
-msgstr ""
+msgstr "綠色"
 
 #: gdms/gui/pages/appearance.py:105
 msgid "Yellow"
-msgstr ""
+msgstr "黃色"
 
 #: gdms/gui/pages/appearance.py:106
 msgid "Orange"
-msgstr ""
+msgstr "橙色"
 
 #: gdms/gui/pages/appearance.py:107
 msgid "Red"
-msgstr ""
+msgstr "紅色"
 
 #: gdms/gui/pages/appearance.py:108
 msgid "Pink"
-msgstr ""
+msgstr "粉紅色"
 
 #: gdms/gui/pages/appearance.py:109
 msgid "Purple"
-msgstr ""
+msgstr "紫色"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "板岩"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -679,7 +679,7 @@ msgstr "強調色"
 msgid ""
 "NOTE: This will only work on GNOME 47 (and above) with the 'Default' shell "
 "theme."
-msgstr ""
+msgstr "注意：這只適用於 GNOME 47（及以上版本）使用「預設」桌面主題時。"
 
 #: resources/ui/appearance-page.blp:19
 msgid "Themes"
@@ -962,7 +962,7 @@ msgstr "觸控板"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr ""
+msgstr "在外接滑鼠上停用"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -1135,7 +1135,7 @@ msgstr "時鐘"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr ""
+msgstr "顯示日期"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
