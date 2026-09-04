@@ -9,13 +9,14 @@
 # Максим Горпиніч <mgorpinic2005@gmail.com>, 2024.
 # volkov <volkov@users.noreply.hosted.weblate.org>, 2024.
 # Volodymyr Davybida <mrvovavova17@gmail.com>, 2025.
+# Димко <Dymkovych@proton.me>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2025-02-22 05:06+0000\n"
-"Last-Translator: Volodymyr Davybida <mrvovavova17@gmail.com>\n"
+"PO-Revision-Date: 2026-09-04 07:51+0000\n"
+"Last-Translator: Димко <Dymkovych@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
 "Language: uk\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.10.1-dev\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -596,7 +597,7 @@ msgstr "Шрифти"
 
 #: gdms/gui/window.py:115
 msgid "Top Bar"
-msgstr "Верхня панель"
+msgstr "Панель"
 
 #: gdms/gui/window.py:116
 msgid "Sound"
@@ -815,7 +816,7 @@ msgstr "Від заходу до сходу сонця"
 
 #: resources/ui/display-page.blp:29
 msgid "Manual Schedule"
-msgstr "Вказати розклад вручну"
+msgstr "Вказати вручну"
 
 #: resources/ui/display-page.blp:33
 msgid "Times"
