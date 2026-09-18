@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-09-18 08:51+0000\n"
+"PO-Revision-Date: 2026-09-18 09:51+0000\n"
 "Last-Translator: Димко <Dymkovych@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -887,15 +887,15 @@ msgstr "_Застосувати"
 
 #: resources/ui/login-screen-page.blp:12
 msgid "Disable Restart Buttons"
-msgstr "Вимкнути кнопки перезавантаження"
+msgstr "Приховати кнопки перезавантаження"
 
 #: resources/ui/login-screen-page.blp:16
 msgid "Disable User List"
-msgstr "Вимкнути список користувачів"
+msgstr "Приховати список користувачів"
 
 #: resources/ui/login-screen-page.blp:20
 msgid "Enable Logo"
-msgstr "Ввімкнути логотип"
+msgstr "Логотип"
 
 #: resources/ui/login-screen-page.blp:21
 msgid "Whether to show a logo below user list"
@@ -928,7 +928,7 @@ msgstr "Розмір курсора"
 #: resources/ui/pointing-page.blp:15
 msgctxt "Cursor Size"
 msgid "Default"
-msgstr "Стандартний"
+msgstr "Типовий"
 
 #: resources/ui/pointing-page.blp:16
 msgctxt "Cursor Size"
@@ -984,11 +984,11 @@ msgstr "Швидкість вказівника"
 
 #: resources/ui/pointing-page.blp:52
 msgid "Touchpad"
-msgstr "Сенсорний пристрій"
+msgstr "Сенсорна панель"
 
 #: resources/ui/pointing-page.blp:56
 msgid "Disable on External Mouse"
-msgstr "Вимкнути при використанні зовнішньої миші"
+msgstr "Вимикати за наявності миші"
 
 #: resources/ui/pointing-page.blp:59
 msgid "Disable while Typing"
@@ -996,7 +996,7 @@ msgstr "Вимикати під час набирання тексту"
 
 #: resources/ui/pointing-page.blp:62
 msgid "Tap to Click"
-msgstr "Натиск для клацання"
+msgstr "Торкання як клацання"
 
 #: resources/ui/pointing-page.blp:71
 msgid "Two-finger Scrolling"
@@ -1032,7 +1032,7 @@ msgstr "Автоматичний режим заощадження енергі�
 
 #: resources/ui/power-page.blp:19
 msgid "Enables power saver mode when battery is low."
-msgstr "Вмикає режим заощадження енергії при низькому рівні заряду акумулятора."
+msgstr "Вмикає режим заощадження енергії у разі виснаження акумулятора."
 
 #: resources/ui/power-page.blp:23
 msgid "Dim Screen"
@@ -1048,7 +1048,7 @@ msgstr "Вимикання екрана"
 
 #: resources/ui/power-page.blp:29
 msgid "Whether to turn the screen off after a period of inactivity."
-msgstr "Чи вимикати екран після коли пристрій бездіяльний."
+msgstr "Чи вимикати екран після періоду бездіяльності."
 
 #: resources/ui/power-page.blp:38 resources/ui/power-page.blp:65
 #: resources/ui/power-page.blp:87
@@ -1057,7 +1057,7 @@ msgstr "Затримка"
 
 #: resources/ui/power-page.blp:39
 msgid "Time in minutes after which screen will turn off."
-msgstr "Час у хвилинах, після якого екран вимкнеться."
+msgstr "Час у хвилинах до вимкнення екрана."
 
 #: resources/ui/power-page.blp:52
 msgid "Automatic Suspend"
@@ -1077,7 +1077,7 @@ msgstr "Час у хвилинах, після якого пристрій бу�
 
 #: resources/ui/power-page.blp:78
 msgid "When Plugged In"
-msgstr "Живлення від розетки"
+msgstr "Живлення від мережі"
 
 #: resources/ui/sound-page.blp:11
 msgid "Theme"
@@ -1085,15 +1085,15 @@ msgstr "Тема"
 
 #: resources/ui/sound-page.blp:14
 msgid "Over Amplification"
-msgstr "Підсилення гучності"
+msgstr "Надмірне підсилення"
 
 #: resources/ui/sound-page.blp:15
 msgid "Allow raising volume above 100%"
-msgstr "Дозволити збільшення гучності понад 100%"
+msgstr "Дозволити рівень гучності понад 100%"
 
 #: resources/ui/sound-page.blp:19
 msgid "Event Sounds"
-msgstr "Звуки попередження"
+msgstr "Звуки подій"
 
 #: resources/ui/sound-page.blp:23
 msgid "Input Feedback Sounds"
@@ -1105,7 +1105,7 @@ msgstr "Типова тема оболонки"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "Увімкнути налаштування панелі"
+msgstr "Додати налаштування панелі"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
@@ -1121,7 +1121,7 @@ msgstr "Долаштування"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
-msgstr "Змінити колір тексту"
+msgstr "Колір тексту"
 
 #: resources/ui/top-bar-page.blp:20
 msgid "Text Color"
@@ -1129,23 +1129,23 @@ msgstr "Колір тексту"
 
 #: resources/ui/top-bar-page.blp:21
 msgid "The color of text in top bar"
-msgstr "Колір тексту у верхній панелі"
+msgstr "Колір тексту панелі"
 
 #: resources/ui/top-bar-page.blp:32
 msgid "Change Background Color"
-msgstr "Змінити колір тла"
+msgstr "Колір тла"
 
 #: resources/ui/top-bar-page.blp:41
 msgid "The color of top bar background"
-msgstr "Колір тла верхньої панелі"
+msgstr "Колір тла панелі"
 
 #: resources/ui/top-bar-page.blp:52
 msgid "Disable Arrows"
-msgstr "Вимкнути стрілки"
+msgstr "Приховати стрілки"
 
 #: resources/ui/top-bar-page.blp:56
 msgid "Disable Rounded Corners"
-msgstr "Вимкніть заокруглені кути"
+msgstr "Без заокруглених кутів"
 
 #: resources/ui/top-bar-page.blp:61
 msgid "Accessibility"
@@ -1161,15 +1161,15 @@ msgstr "Годинник"
 
 #: resources/ui/top-bar-page.blp:72
 msgid "Show Date"
-msgstr "Показувати дату"
+msgstr "Дата"
 
 #: resources/ui/top-bar-page.blp:76
 msgid "Show Weekday"
-msgstr "Показувати день тижня"
+msgstr "День тижня"
 
 #: resources/ui/top-bar-page.blp:80
 msgid "Show Seconds"
-msgstr "Показувати секунди"
+msgstr "Секунди"
 
 #: resources/ui/top-bar-page.blp:84
 msgid "Time Format"
@@ -1185,7 +1185,7 @@ msgstr "24 години"
 
 #: resources/ui/top-bar-page.blp:93
 msgid "Show battery percentage"
-msgstr "Показувати відсоток заряду акумулятора"
+msgstr "Відсоток акумулятора"
 
 #~ msgid ""
 #~ "This app is and will always remain Open Source/Libre and free of cost. "
