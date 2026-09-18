@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2026-09-04 07:51+0000\n"
+"PO-Revision-Date: 2026-09-18 07:15+0000\n"
 "Last-Translator: Димко <Dymkovych@proton.me>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/uk/>\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 2026.9\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -125,8 +125,7 @@ msgstr "Година початку часу"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:26
 msgid "When “schedule-automatic” is disabled, use this start time in hours."
-msgstr ""
-"Якщо “schedule-automatic” вимкнено, використовуйте цей час початку в годинах."
+msgstr "Коли schedule-automatic вимкнено, діє цей час початку в годинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:32
 msgid "The start time's minute"
@@ -134,9 +133,7 @@ msgstr "Хвилина початку часу"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:33
 msgid "When “schedule-automatic” is disabled, use this start time minutes."
-msgstr ""
-"Якщо “schedule-automatic” вимкнено, використовуйте цей час початку в "
-"хвилинах."
+msgstr "Коли schedule-automatic вимкнено, діє цей час початку в хвилинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:39
 msgid "The end time's hour"
@@ -144,9 +141,7 @@ msgstr "Година кінця часу"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:40
 msgid "When “schedule-automatic” is disabled, use this end time in hours."
-msgstr ""
-"Якщо “schedule-automatic” вимкнено, використовуйте цей кінцевий час в "
-"годинах."
+msgstr "Коли schedule-automatic вимкнено, діє цей час завершення в годинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:46
 msgid "The end time's minute"
@@ -154,9 +149,7 @@ msgstr "Хвилина кінця часу"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.night-light.gschema.xml:47
 msgid "When “schedule-automatic” is disabled, use this end time minutes."
-msgstr ""
-"Якщо “schedule-automatic” вимкнено, використовуйте цей кінцевий час в "
-"хвилинах."
+msgstr "Коли schedule-automatic вимкнено, діє цей час завершення в хвилинах."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.power.gschema.xml:13
 msgid "Power button action"
@@ -557,7 +550,7 @@ msgstr "Налаштувань дисплею не знайдено"
 #: gdms/gui/pages/tools.py:50
 #, python-brace-format
 msgid "Default shell theme extracted to '{folder}' as '{name}'"
-msgstr "Тема оболонки за замовчуванням видобути в '{folder}' як '{name}'"
+msgstr "Тема оболонки видобута в «{folder}» як «{name}»"
 
 #: gdms/gui/pages/tools.py:53
 msgid "Failed to extract default theme"
@@ -1124,15 +1117,15 @@ msgstr "Звуки зворотного зв'язку під час введен
 
 #: resources/ui/tools-page.blp:9
 msgid "Default Shell Theme"
-msgstr "Тема оболонки за замовчуванням"
+msgstr "Типова тема оболонки"
 
 #: resources/ui/tools-page.blp:12
 msgid "Include Top Bar Tweaks"
-msgstr "Увімкнути налаштування верхньої панелі"
+msgstr "Увімкнути налаштування панелі"
 
 #: resources/ui/tools-page.blp:16
 msgid "Extract default shell theme"
-msgstr "Видобути тему оболонки за замовчуванням"
+msgstr "Видобути типову тему оболонки"
 
 #: resources/ui/tools-page.blp:19
 msgid "Extract"
@@ -1140,7 +1133,7 @@ msgstr "Видобути"
 
 #: resources/ui/top-bar-page.blp:9
 msgid "Tweaks"
-msgstr "Налаштування"
+msgstr "Долаштування"
 
 #: resources/ui/top-bar-page.blp:12
 msgid "Change Text Color"
