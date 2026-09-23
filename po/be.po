@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the gdm-settings package.
 # Yauhen <haxycGM@gmail.com>, 2024.
+# Yauhen <bugomol@users.noreply.hosted.weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gdm-settings 3.alpha\n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-02 21:00+0000\n"
-"Last-Translator: Yauhen <haxycGM@gmail.com>\n"
+"PO-Revision-Date: 2026-09-23 00:51+0000\n"
+"Last-Translator: Yauhen <bugomol@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/be/>\n"
 "Language: be\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -31,25 +32,25 @@ msgstr "Тып фону"
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:37
 msgid "Whether GDM background should be an Image, Color or Default."
 msgstr ""
-"Вызначае якім будзе фон GDM: выява (Image), колер (Color) або прадвызначаны "
-"(Default)."
+"Вызначае якім будзе фон GDM: відарыс (Image), колер (Color) або "
+"прадвызначаны (Default)."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:49
 msgid "Background Image"
-msgstr "Фонавая выява"
+msgstr "Фонавы відарыс"
 
 #. Translators: GDM is an acronym for GNOME Display Manager (which is also GNOME's Login Manager).
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:51
 msgid "The image file to use as GDM background"
-msgstr "Файл выявы, якая выкарыстоўваецца ў якасці фону GDM"
+msgstr "Файл відарыса, які выкарыстоўваецца ў якасці фону GDM"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:58
 msgid "Background Image Adjustment"
-msgstr "Дапасаванне фонавай выявы"
+msgstr "Дапасаванне фонавага відарыса"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:59
 msgid "Strategy for adjustment of background image."
-msgstr "Спосаб дапасавання фонавая выявы."
+msgstr "Спосаб дапасавання фонавага відарыса."
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:70
 #: resources/ui/top-bar-page.blp:40
@@ -564,7 +565,7 @@ msgstr "Выбраць"
 
 #: gdms/gui/widgets.py:110
 msgid "Images"
-msgstr "Выявы"
+msgstr "Відарысы"
 
 #: gdms/gui/widgets.py:114
 msgid "All Files"
@@ -572,7 +573,7 @@ msgstr "Усе файлы"
 
 #: gdms/gui/widgets.py:119
 msgid "Choose Image"
-msgstr "Выбраць выяву"
+msgstr "Выбраць відарыс"
 
 #: gdms/gui/window.py:113
 msgid "Appearance"
@@ -622,12 +623,12 @@ msgstr "Не ўдалося ўжыць налады"
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
-msgstr "Не ўжыта. Выбраная фонавая выява больш не існуе. Выберыце зноў."
+msgstr "Не ўжыта. Выбраны фонавы відарыс больш не існуе. Выберыце зноў."
 
 #: gdms/gui/window.py:151
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
-msgstr "Не ўжыта. Выбраная для лагатыпа выява больш не існуе. Выберыце зноў."
+msgstr "Не ўжыта. Выбраны для лагатыпа відарыс больш не існуе. Выберыце зноў."
 
 #: gdms/gui/window.py:157
 msgid "The system may start to look weird/buggy until you re-login or reboot."
@@ -744,7 +745,7 @@ msgstr "Прадвызначаная"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:35
 msgid "Image"
-msgstr "Выява"
+msgstr "Відарыс"
 
 #: resources/ui/appearance-page.blp:31 resources/ui/appearance-page.blp:46
 msgid "Color"
@@ -752,11 +753,11 @@ msgstr "Колер"
 
 #: resources/ui/appearance-page.blp:36
 msgid "The image to use as background"
-msgstr "Выява, якая выкарыстоўваецца ў якасці фону"
+msgstr "Відарыс, які выкарыстоўваецца ў якасці фону"
 
 #: resources/ui/appearance-page.blp:40
 msgid "Image Adjustment"
-msgstr "Дапасаванне выявы"
+msgstr "Дапасаванне відарыса"
 
 #: resources/ui/appearance-page.blp:41
 msgid "Fit To Screen"
@@ -914,7 +915,7 @@ msgstr "Лагатып"
 
 #: resources/ui/login-screen-page.blp:31
 msgid "The image to show below user list"
-msgstr "Выява пад спісам карыстальнікаў"
+msgstr "Відарыс пад спісам карыстальнікаў"
 
 #: resources/ui/login-screen-page.blp:37
 msgid "Welcome Message"
