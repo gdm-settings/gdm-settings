@@ -12,13 +12,14 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2023.
 # Mathieu Graf <mathieu.graf@proton.me>, 2024.
 # Aircraft192 <finnwiggers2006@gmail.com>, 2024.
+# xiezhihai <xiezhihai7321@outlook.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: realmazharhussain@gmail.com\n"
 "POT-Creation-Date: 2024-11-05 01:17+0500\n"
-"PO-Revision-Date: 2024-12-20 15:01+0000\n"
-"Last-Translator: Aircraft192 <finnwiggers2006@gmail.com>\n"
+"PO-Revision-Date: 2026-10-04 16:51+0000\n"
+"Last-Translator: xiezhihai <xiezhihai7321@outlook.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/gdm-settings/"
 "language-names/de/>\n"
 "Language: de\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2-dev\n"
+"X-Generator: Weblate 2026.10.1.dev0\n"
 
 #: data/gschemas/io.github.realmazharhussain.GdmSettings.appearance.gschema.xml:22
 msgid "Theme Name"
@@ -395,10 +396,8 @@ msgid "OK"
 msgstr "OK"
 
 #: gdms/gui/__init__.py:223
-#, fuzzy
-#| msgid "Default Shell Theme"
 msgid "Default Shell Theme File Lost"
-msgstr "Shell-Vorgabethema"
+msgstr "Standard-Shell-Theme-Datei verloren"
 
 #: gdms/gui/__init__.py:225
 msgid ""
@@ -419,6 +418,9 @@ msgid ""
 "it.\n"
 "Thank you! ❤️️"
 msgstr ""
+"Wenn dir diese App gefällt, zieh bitte in Betracht, zu spenden, damit wir "
+"sie weiter verbessern können.\n"
+" Danke! ❤️️"
 
 #: gdms/gui/__init__.py:244
 msgid "Not Interested"
@@ -433,17 +435,13 @@ msgid "Settings reloaded"
 msgstr "Einstellungen wurden neu geladen"
 
 #: gdms/gui/__init__.py:289
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Session settings loaded successfully"
-msgstr "Einstellungen erfolgreich angewendet"
+msgstr "Sitzungseinstellungen erfolgreich geladen"
 
 #: gdms/gui/__init__.py:293
-#, fuzzy
-#| msgid "Importing user settings is NOT supported in Flatpak version"
 msgid "Load session settings is NOT supported in Flatpak version"
 msgstr ""
-"Das Importieren von Benutzereinstellungen wird in der Flatpak-Version NICHT "
+"Das Laden von Sitzungseinstellungen wird in der Flatpak-Version NICHT "
 "unterstützt"
 
 #: gdms/gui/__init__.py:306
@@ -459,20 +457,16 @@ msgid "Import"
 msgstr "Importieren"
 
 #: gdms/gui/__init__.py:348
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully imported from file"
-msgstr "Einstellungen erfolgreich angewendet"
+msgstr "Einstellungen wurden erfolgreich aus der Datei importiert"
 
 #: gdms/gui/__init__.py:350
 msgid "Failed to import. File is invalid"
 msgstr "Import fehlgeschlagen. Datei ist ungültig"
 
 #: gdms/gui/__init__.py:381
-#, fuzzy
-#| msgid "Settings applied successfully"
 msgid "Settings were successfully exported"
-msgstr "Einstellungen erfolgreich angewendet"
+msgstr "Einstellungen wurden erfolgreich exportiert"
 
 #: gdms/gui/__init__.py:383
 msgid "Failed to export. Permission denied"
@@ -489,9 +483,6 @@ msgid "Mazhar Hussain"
 msgstr "Mazhar Hussain"
 
 #: gdms/gui/about.py:10
-#, fuzzy
-#| msgctxt "Name of Designer"
-#| msgid "Thales Bindá"
 msgctxt "Name of Artist"
 msgid "Thales Bindá"
 msgstr "Thales Bindá"
@@ -540,7 +531,7 @@ msgstr "Lila"
 
 #: gdms/gui/pages/appearance.py:110
 msgid "Slate"
-msgstr ""
+msgstr "Schiefer"
 
 #: gdms/gui/pages/display.py:86
 msgid "Applied current display settings"
@@ -648,36 +639,25 @@ msgid "Failed to apply settings"
 msgstr "Anwenden der Einstellungen fehlgeschlagen"
 
 #: gdms/gui/window.py:147
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen background image does not exist anymore. Please! choose "
 "again."
 msgstr ""
-"Nicht angewendet. Das ausgewählte Hintergrundbild konnte nicht gefunden "
-"werden. Bitte versuchen Sie es erneut."
+"Nicht angewendet. Das gewählte Hintergrundbild existiert nicht mehr. Bitte! "
+"wählen Sie erneut."
 
 #: gdms/gui/window.py:151
-#, fuzzy
-#| msgid ""
-#| "Didn't apply. Chosen background image could not be found. Please! choose "
-#| "again."
 msgid ""
 "Didn't apply. Chosen logo image does not exist anymore. Please! choose again."
 msgstr ""
-"Nicht angewendet. Das ausgewählte Hintergrundbild konnte nicht gefunden "
-"werden. Bitte versuchen Sie es erneut."
+"Nicht angewendet. Das gewählte Logo-Bild existiert nicht mehr. Bitte! wählen "
+"Sie erneut."
 
 #: gdms/gui/window.py:157
-#, fuzzy
-#| msgid ""
-#| "The system may start to look weird/buggy untill you re-login or reboot."
 msgid "The system may start to look weird/buggy until you re-login or reboot."
 msgstr ""
-"Der Rechner könnte merkwürdig oder fehlerhaft aussehen, bis Sie sich neu "
-"anmelden oder neu starten."
+"Das System kann anfänglich merkwürdig/fehlerhaft aussehen, bis Sie sich "
+"erneut anmelden oder neu starten."
 
 #: gdms/gui/window.py:162
 msgid "Log Out?"
@@ -694,17 +674,15 @@ msgstr "Abmelden"
 #: gdms/settings.py:184
 #, python-brace-format
 msgid "Importing from file '{filename}'"
-msgstr ""
+msgstr "Importieren aus Datei '{filename}'"
 
 #: gdms/settings.py:187
 msgid "Importing from standard input"
 msgstr "Importieren aus Standardeingabe"
 
 #: gdms/settings.py:190
-#, fuzzy
-#| msgid "Failed to reset settings"
 msgid "Failed to parse import file"
-msgstr "Zurücksetzen der Einstellungen fehlgeschlagen"
+msgstr "Importdatei konnte nicht geparst werden"
 
 #: gdms/settings.py:193
 msgid "Failed to read import file. Not encoded in UTF-8"
@@ -720,16 +698,18 @@ msgstr "Sektion ‘{section_name}’ nicht vorhanden in importierter Datei"
 msgid ""
 "Imported file does not have key '{key_name}' in section '{section_name}'"
 msgstr ""
+"Die importierte Datei enthält den Schlüssel '{key_name}' im Abschnitt '"
+"{section_name}' nicht"
 
 #: gdms/settings.py:224
 #, python-brace-format
 msgid "Exporting to file '{filename}'"
-msgstr ""
+msgstr "Exportiere in Datei '{filename}'"
 
 #: gdms/settings.py:229
 #, python-brace-format
 msgid "Cannot write to file '{filename}'. Permission denied"
-msgstr ""
+msgstr "Kann nicht in die Datei '{filename}' schreiben. Zugriff verweigert"
 
 #: gdms/settings.py:233
 #, python-brace-format
@@ -737,6 +717,8 @@ msgid ""
 "Cannot write to file '{filename}'. A directory with the same name already "
 "exists"
 msgstr ""
+"Kann nicht in die Datei '{filename}' schreiben. Ein Verzeichnis mit "
+"demselben Namen existiert bereits"
 
 #: gdms/settings.py:238
 msgid "Exporting to standard output"
